@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-account-recovery-state-integrity",
+  "title": "OWASP Forgot Password",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "identity",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "security-token-design",
+    "concurrency-reasoning"
+  ],
+  "version": null,
+  "summary": "Explains account-bound recovery challenges, limited lifetime and reuse, consistent responses, attempt controls, notifications and post-reset session handling.",
+  "defensive_use": "Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements.",
+  "prerequisites": [
+    "Basic authentication and session concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public official guidance."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T16:59:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Living guidance; original publication and latest-update dates were not established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html",
+      "title": "Forgot Password Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T16:59:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Password reset and multifactor recovery are distinct security decisions."
+  ],
+  "content_scope": "defensive_education"
+}

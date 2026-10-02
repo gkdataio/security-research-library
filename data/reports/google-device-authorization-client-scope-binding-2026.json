@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-device-authorization-client-scope-binding-2026",
+  "title": "Google device grants lost client and permission binding",
+  "organization": "Google",
+  "product": "Google OAuth device authorization",
+  "researchers": [
+    "weirdmachine64"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authentication",
+  "secondary_category_ids": [
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "integration-threat-modeling",
+    "authorization-modeling",
+    "security-token-design"
+  ],
+  "summary": "The researcher reports a USD 13,337 award for one device-authorization chain.",
+  "root_cause": "Sign-in state and the grant’s client identity and permissions were not consistently bound throughout authorization.",
+  "impact": "The author reports unauthorized downstream account access and broader data permissions. Universal-impact claims are not independently verified.",
+  "defensive_takeaways": [
+    "Preserve the original client, subject and permission binding throughout a grant’s lifecycle.",
+    "Require meaningful device confirmation and accurate authorization audit records."
+  ],
+  "reward": {
+    "amount": 13337,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Google Vulnerability Reward Program",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Rewarded $13,337",
+    "evidence_location": "Disclosure Timeline, April 2, 2026 row",
+    "usd_equivalent": null,
+    "notes": "One chain award, counted once. The source uses $; USD follows official program currency context, not a reward-table inference. Cash receipt is unverified."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2026-02-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-04-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Researcher records marked-fixed status on March 28, 2026; deployment date is not independently established."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html",
+      "title": "Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking",
+      "type": "researcher",
+      "author": "weirdmachine64",
+      "retrieved_at": "2026-10-02T17:03:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html",
+      "title": "VRP news from Nullcon",
+      "type": "vendor",
+      "author": "Google Security Blog",
+      "retrieved_at": "2026-10-02T17:03:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T17:03:00Z",
+    "method": "Read the full primary disclosure and award timeline; checked USD program context and existing-record identity.",
+    "limitations": [
+      "No independent vendor-hosted confirmation of the individual award or reported reach was retrieved.",
+      "The issue-status date does not establish the deployment date.",
+      "No bank settlement or exact public disclosure earlier than the article is verified."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

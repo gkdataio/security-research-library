@@ -4,13 +4,15 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-35 individual report/chain awards meet the USD 10,000 threshold: 34 bug bounties and one explicitly labeled competition entry. Eleven publication dates fall within October 2, 2025–October 2, 2026; 21 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+37 individual report/chain awards meet the USD 10,000 threshold: 36 bug bounties and one explicitly labeled competition entry. Thirteen publication dates fall within October 2, 2025–October 2, 2026; 21 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 35 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 37 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
 | [Chrome graphics input validation weakened an isolation boundary](data/reports/google-chrome-angle-input-validation-2026.json) | USD 250,000 | 2026-09-03 | Vendor confirmed |
+| [Apple PCC startup archive processing lacked path confinement](data/reports/apple-pcc-boot-archive-path-validation-2026.json) | USD 150,000 | 2026-07-31 | Researcher reproduces vendor offer |
+| [Google device grants lost client and permission binding](data/reports/google-device-authorization-client-scope-binding-2026.json) | USD 13,337 | 2026-07-15 | Researcher reported |
 | [Meta service-identity exposure amplified by excessive secret access](data/reports/meta-service-identity-secrets-trust-boundary-2026.json) | USD 150,000 | 2026-05-28 | Researcher reproduces vendor message |
 | [PostgreSQL text-encoding invariant failure caused memory corruption](data/reports/postgresql-multibyte-validation-cve-2026-2006.json) | USD 30,000 (competition entry) | 2026-05-04 | Competition organizer confirmed |
 | [Google support API exposed customer and agent data](data/reports/google-support-api-authorization-2026.json) | USD 14,337 | 2026-03-31 | Researcher reproduces vendor message |
@@ -46,19 +48,19 @@ The collection contains 35 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest increment adds the historical LiteSpeed Cache authentication case, recording its explicit USD 14,400 Zero Day award component and preserving the later USD 16,400 total separately in notes. New OWASP transaction-authorization guidance strengthens the approval-state and security-token learning material.
+The latest increment adds two July 2026 disclosures: Google device-grant binding (USD 13,337) and Apple PCC archive-path validation (USD 150,000). Both award amounts are researcher-reported; Apple’s CNA independently corroborates the PCC vulnerability and fixed version. OWASP recovery guidance and a new recovery-state diagram connect the account-lifecycle cases.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Ten official educational resources and five evidence-linked conceptual diagrams are maintained separately from the 35 award reports.
+Eleven official educational resources and six evidence-linked conceptual diagrams are maintained separately from the 37 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
 - [Separate resources and diagrams JSON export](exports/resources.json)
 
-The visuals cover approval-version integrity, AI content/authority separation, identity-claim binding, tenant-scoped workload authority, and server-request destination controls. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
+The visuals cover approval-version integrity, AI content/authority separation, identity-claim binding, tenant-scoped workload authority, server-request destination controls, and account-recovery challenge integrity. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
 
 ## Layout
 

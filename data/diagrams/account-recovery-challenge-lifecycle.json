@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "id": "account-recovery-challenge-lifecycle",
+  "title": "Recovery must preserve account ownership",
+  "alt_text": "A limited recovery request creates an account-bound challenge. Only valid, unexpired, unused proof permits a reset. Failure preserves account state; success consumes the challenge and notifies the owner.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "gitlab-recovery-address-binding-cve-2023-7028",
+    "microsoft-account-recovery-rate-limit-consistency-2021",
+    "instagram-recovery-challenge-account-binding-2019"
+  ],
+  "linked_resource_ids": [
+    "owasp-account-recovery-state-integrity"
+  ],
+  "evidence_urls": [
+    "https://hackerone.com/reports/2293343",
+    "https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account",
+    "https://thezerohack.com/hack-instagram-again",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-02T16:59:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "request",
+        "label": "Limit requests; keep responses private",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "challenge",
+        "label": "Bind unpredictable, expiring challenge to account",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "validate",
+        "label": "Correct account, unused proof, valid time and attempt policy?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "unchanged",
+        "label": "Reject; preserve account state",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "reset",
+        "label": "Consume challenge and reset password",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "notify",
+        "label": "Notify owner; apply session policy and normal sign-in",
+        "shape": "box",
+        "kind": "data"
+      }
+    ],
+    "edges": [
+      {
+        "from": "request",
+        "to": "challenge",
+        "label": null
+      },
+      {
+        "from": "challenge",
+        "to": "validate",
+        "label": null
+      },
+      {
+        "from": "validate",
+        "to": "unchanged",
+        "label": "No"
+      },
+      {
+        "from": "validate",
+        "to": "reset",
+        "label": "Yes"
+      },
+      {
+        "from": "reset",
+        "to": "notify",
+        "label": null
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/account-recovery-challenge-lifecycle.mmd",
+    "graphviz": "diagrams/account-recovery-challenge-lifecycle.dot",
+    "svg": "diagrams/account-recovery-challenge-lifecycle.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

@@ -14,7 +14,7 @@ Learn to distinguish mutable object names from immutable versions, document exac
 
 ## 2. Cloud identities and integration permissions
 
-**Cases:** Meta service-identity and secret-access boundaries; Actifio driver and service-identity isolation
+**Cases:** Meta service-identity and secret-access boundaries; Actifio driver and service-identity isolation; Apple PCC provisioning and mutable-configuration integrity
 
 Learn effective-permission review, service authentication, secret ownership, and least privilege across integrations. Produce an identity-to-resource access matrix and a justified minimum-permission design. Separate reported reach from actual data access; stop evidence collection once the approved review objective is met.
 
@@ -50,11 +50,13 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 ## 6. Account recovery and identity binding
 
-**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
+**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
 
 Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
 
 **Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`, `security-token-design`
+
+**Reference:** [OWASP Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html) · [Recovery-state visual](visual-theory.md#preserve-ownership-through-account-recovery)
 
 ## 7. Cross-API consistency and safe serialization
 

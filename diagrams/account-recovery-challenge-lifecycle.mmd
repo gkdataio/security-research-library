@@ -1,0 +1,12 @@
+flowchart TB
+  request["Limit requests; keep responses private"]
+  challenge["Bind unpredictable, expiring challenge to account"]
+  validate{"Correct account, unused proof, valid time and attempt policy?"}
+  unchanged["Reject; preserve account state"]
+  reset["Consume challenge and reset password"]
+  notify["Notify owner; apply session policy and normal sign-in"]
+  request --> challenge
+  challenge --> validate
+  validate -->|No| unchanged
+  validate -->|Yes| reset
+  reset --> notify

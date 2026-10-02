@@ -58,6 +58,26 @@
       "primary_technical_status": "Public report reviewed; detailed disclosure March 5, 2026; CVE-2026-1355.",
       "reason_not_counted": "An award event is visible, but the individual bounty and total are hidden. No exact amount is verified.",
       "reviewed_at": "2026-10-02T16:31:00Z"
+    },
+    {
+      "primary_technical_url": "https://0xnayel.com/publications/ato-plus",
+      "reason_not_counted": "Researcher explicitly states both chains were duplicate reports and received zero bounty.",
+      "reviewed_at": "2026-10-02T17:03:00Z"
+    },
+    {
+      "primary_technical_url": "https://medium.com/@Seek404/how-a-simple-rbac-mistake-led-to-a-20k-admin-takeover-d196694791dd",
+      "reason_not_counted": "USD20K+ is an aggregate of multiple separately submitted findings; no qualifying individual award established.",
+      "reviewed_at": "2026-10-02T17:03:00Z"
+    },
+    {
+      "primary_technical_url": "https://medium.com/@tanvir.infosec/i-found-a-critical-vulnerability-they-paid-me-15-500-9976ce313544",
+      "reason_not_counted": "Claims USD15,500 but offers no identifiable vendor/report evidence or dated disclosure timeline. Excluded from strong-evidence recommendations.",
+      "reviewed_at": "2026-10-02T17:03:00Z"
+    },
+    {
+      "primary_technical_url": "https://weirdmachine64.github.io/research/google-cloud-ato-url-parsing.html",
+      "reason_not_counted": "Confirms a bounty without disclosing an exact amount.",
+      "reviewed_at": "2026-10-02T17:03:00Z"
     }
   ]
 }

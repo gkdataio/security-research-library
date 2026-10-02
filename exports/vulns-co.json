@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T16:42:07Z",
+  "latest_reviewed_at": "2026-10-02T17:03:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 35,
-    "within_preferred_window": 11,
+    "included": 37,
+    "within_preferred_window": 13,
     "older_or_uncertain": 24,
-    "bug_bounty": 34,
+    "bug_bounty": 36,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -336,6 +336,350 @@
           "Award decisions are established; payment completion is not.",
           "Fixed status and publicly available stable release are separate dates.",
           "Release credits an anonymous researcher. No identity or per-person split is inferred."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-pcc-boot-archive-path-validation-2026",
+      "title": "Apple PCC startup archive processing lacked path confinement",
+      "organization": "Apple",
+      "product": "Private Cloud Compute server software",
+      "researchers": [
+        "Drinor Selmanaj"
+      ],
+      "cve_ids": [
+        "CVE-2026-20685"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-22",
+          "basis": "source_explicit",
+          "source_id": "primary",
+          "note": "Researcher explicitly identifies the path-traversal weakness class."
+        }
+      ],
+      "category_id": "cloud-security",
+      "secondary_category_ids": [
+        "ai-security"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "summary": "Sentry documents a USD 150,000 award to Drinor Selmanaj for CVE-2026-20685.",
+      "root_cause": "Privileged startup archive handling did not adequately confine output paths; mutable configuration could undermine runtime integrity assumptions.",
+      "impact": "Researcher demonstrated configuration changes and telemetry disclosure in Apple’s virtual environment. Apple confirms potential sensitive-information leakage from a privileged network position.",
+      "defensive_takeaways": [
+        "Confine archive output and authenticate provisioning inputs.",
+        "Include security-relevant mutable configuration in integrity review.",
+        "Use the fixed PCC release and preserve the vendor’s impact prerequisites."
+      ],
+      "reward": {
+        "amount": 150000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "type": "bug_bounty",
+        "awarding_organization": "Apple Security Bounty",
+        "status": "awarded",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "primary",
+        "evidence_quote": "Drinor was awarded $150,000 for CVE-2026-20685",
+        "evidence_location": "Article opening; researcher-hosted award-offer image provides corroboration",
+        "usd_equivalent": null,
+        "notes": "Individual CVE award attributed to Selmanaj. Researcher-hosted Apple offer is not vendor-hosted payment confirmation. USD follows official program context; cash settlement and award date are unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "publication-index",
+          "note": "Sentry’s own article listing supplies the date."
+        },
+        "public_disclosure": {
+          "value": "2026-05-18",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cna",
+          "note": "CVE publication timestamp; detailed researcher article appeared later."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Apple identifies PCC Release 5E290.3 as fixed; exact release/deployment date was not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://blog.sentry.security/beyond-prompt-injection-hacking-apples-private-cloud-compute/",
+          "title": "Beyond Prompt Injection: Hacking Apple's Private Cloud Compute",
+          "type": "researcher",
+          "author": "Drinor Selmanaj / Sentry",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "reward",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "publication-index",
+          "url": "https://blog.sentry.security/",
+          "title": "Sentry article listing",
+          "type": "researcher",
+          "author": "Sentry",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "dates"
+          ]
+        },
+        {
+          "id": "vendor-cna",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/20xxx/CVE-2026-20685.json",
+          "title": "Apple CNA record for CVE-2026-20685",
+          "type": "vendor",
+          "author": "Apple CNA, distributed through the CVE Program",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "award-image",
+          "url": "https://storage.ghost.io/c/3c/85/3c852989-e4b5-4868-8226-9c9bebdfb8f2/content/images/2026/07/150k-post2.png",
+          "title": "Researcher-hosted Apple award-offer graphic",
+          "type": "researcher",
+          "author": "Sentry",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/",
+          "title": "Apple Security Bounty US-dollar program context",
+          "type": "vendor",
+          "author": "Apple Newsroom",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:03:00Z",
+        "method": "Read the researcher article, publication index, full Apple-authored CNA record and official currency context; reviewed the researcher-hosted offer graphic.",
+        "limitations": [
+          "Research was demonstrated in Apple’s virtual environment; production was not tested by the researcher.",
+          "No confirmed production prompt-content leakage is claimed here.",
+          "Award attribution is researcher-hosted; vendor CNA evidence corroborates the vulnerability and fixed version, not payout.",
+          "No exact report, award, fix deployment or payment date was established."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-device-authorization-client-scope-binding-2026",
+      "title": "Google device grants lost client and permission binding",
+      "organization": "Google",
+      "product": "Google OAuth device authorization",
+      "researchers": [
+        "weirdmachine64"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "security-token-design"
+      ],
+      "summary": "The researcher reports a USD 13,337 award for one device-authorization chain.",
+      "root_cause": "Sign-in state and the grant’s client identity and permissions were not consistently bound throughout authorization.",
+      "impact": "The author reports unauthorized downstream account access and broader data permissions. Universal-impact claims are not independently verified.",
+      "defensive_takeaways": [
+        "Preserve the original client, subject and permission binding throughout a grant’s lifecycle.",
+        "Require meaningful device confirmation and accurate authorization audit records."
+      ],
+      "reward": {
+        "amount": 13337,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Google Vulnerability Reward Program",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Rewarded $13,337",
+        "evidence_location": "Disclosure Timeline, April 2, 2026 row",
+        "usd_equivalent": null,
+        "notes": "One chain award, counted once. The source uses $; USD follows official program currency context, not a reward-table inference. Cash receipt is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2026-02-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-04-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Researcher records marked-fixed status on March 28, 2026; deployment date is not independently established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html",
+          "title": "Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking",
+          "type": "researcher",
+          "author": "weirdmachine64",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html",
+          "title": "VRP news from Nullcon",
+          "type": "vendor",
+          "author": "Google Security Blog",
+          "retrieved_at": "2026-10-02T17:03:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:03:00Z",
+        "method": "Read the full primary disclosure and award timeline; checked USD program context and existing-record identity.",
+        "limitations": [
+          "No independent vendor-hosted confirmation of the individual award or reported reach was retrieved.",
+          "The issue-status date does not establish the deployment date.",
+          "No bank settlement or exact public disclosure earlier than the article is verified."
         ]
       },
       "content_scope": "historical_defensive_summary"

@@ -1,0 +1,17 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Recovery must preserve account ownership"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"request" [label="Limit requests; keep\nresponses private", shape="box", fillcolor="#f1f5f9"];
+"challenge" [label="Bind unpredictable,\nexpiring challenge to\naccount", shape="box", fillcolor="#f1f5f9"];
+"validate" [label="Correct account, unused\nproof, valid time and\nattempt policy?", shape="diamond", fillcolor="#e0ecf8"];
+"unchanged" [label="Reject; preserve account\nstate", shape="box", fillcolor="#fef3c7"];
+"reset" [label="Consume challenge and reset\npassword", shape="box", fillcolor="#dcfce7"];
+"notify" [label="Notify owner; apply session\npolicy and normal sign-in", shape="box", fillcolor="#f1f5f9"];
+"request" -> "challenge" [label=""];
+"challenge" -> "validate" [label=""];
+"validate" -> "unchanged" [label="No"];
+"validate" -> "reset" [label="Yes"];
+"reset" -> "notify" [label=""];
+}

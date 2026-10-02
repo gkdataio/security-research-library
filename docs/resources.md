@@ -16,6 +16,8 @@ This collection is separate from paid-award reports. It contains official educat
 
 - [OWASP Transaction Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html): bind approval to significant data and validate state transitions
 
+- [OWASP Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html): preserve account binding through recovery and reset
+
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 
 [Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)
