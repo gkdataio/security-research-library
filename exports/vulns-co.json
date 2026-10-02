@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T19:03:00Z",
+  "latest_reviewed_at": "2026-10-02T19:21:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,11 +15,11 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 50,
-    "within_preferred_window": 19,
+    "included": 52,
+    "within_preferred_window": 21,
     "older_or_uncertain": 31,
     "bug_bounty": 42,
-    "competition_award": 8
+    "competition_award": 10
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
   "taxonomy": {
@@ -1250,6 +1250,233 @@
           "No independent vendor-hosted confirmation of the individual award or reported reach was retrieved.",
           "The issue-status date does not establish the deployment date.",
           "No bank settlement or exact public disclosure earlier than the article is verified."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "redis-deserialization-object-ownership-2026",
+      "title": "Redis deserialization cleanup violated object-ownership invariants",
+      "organization": "Redis",
+      "product": "Redis serialized-object loading",
+      "researchers": [
+        "Emil Lerner"
+      ],
+      "cve_ids": [
+        "CVE-2026-25243"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-122",
+          "basis": "source_explicit",
+          "source_id": "vendor-cve",
+          "note": "Vendor CNA category retained as published; the researcher describes double-free mechanisms within this broader advisory."
+        }
+      ],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "memory-safety-review",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "summary": "Wiz confirms USD 30,000 for Emil Lerner’s Redis competition entry. Two related disclosed defects remain one awarded entry.",
+      "root_cause": "The researcher traced object ownership through deserialization and failure cleanup. Validation and conversion interpreted legacy data differently, while another cleanup path released an object still owned elsewhere. Both defects violated the invariant that each allocation is released exactly once; accepting a data-import request did not make its contents trustworthy.",
+      "impact": "The researcher demonstrated code execution in the competition. The vendor confirms possible execution under Redis-process authority for an authenticated user with import permission. Host or tenant reach depends on deployment privileges and isolation; it is not established for every Redis installation.",
+      "defensive_takeaways": [
+        "Make ownership transfer and cleanup responsibility explicit on success and failure paths.",
+        "Require validators and converters to interpret the same serialized representation consistently.",
+        "Follow vendor patch guidance; restrict unnecessary import permissions using access controls while remediation is assessed."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Wiz / ZeroDay.cloud",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "$30,000 awarded",
+        "evidence_location": "Redis: Emil Lerner entry in the organizer’s Day 1 results",
+        "usd_equivalent": null,
+        "notes": "One individually identified competition entry. The organizer uses $; its current rules establish US-dollar notation but concern 2026, not an archived 2025 rules snapshot. Exact award decision and cash settlement are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-02",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "researcher-report",
+          "note": "The article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline."
+        },
+        "public_disclosure": {
+          "value": "2025-12-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-tracker",
+          "note": "Public competition demonstration; separate from later vendor advisory and technical publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-05-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-release",
+          "note": "Official Redis 8.6.3 release names the CVE. Researcher also identifies fixed versions in four other maintained series."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-12-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Organizer recap confirms the per-entry award; decision and payment dates remain unknown."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "competition-results",
+          "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+          "title": "ZeroDay.cloud 2025 individual competition results",
+          "type": "competition_organizer",
+          "author": "Nir Ohfeld / Wiz Research",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "competition-tracker",
+          "url": "https://www.zeroday.cloud/vulnerability-tracker",
+          "title": "ZeroDay.cloud vulnerability tracker",
+          "type": "competition_organizer",
+          "author": "Wiz / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "cve"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.zeroday.cloud/rules",
+          "title": "ZeroDay.cloud current rules: US-dollar denomination",
+          "type": "competition_organizer",
+          "author": "Wiz",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "researcher-report",
+          "url": "https://www.zeroday.cloud/blog/redis-cve-2026-25243-deep-dive",
+          "title": "CVE-2026-25243: Two Redis RESTORE Bugs Leading to RCE",
+          "type": "researcher",
+          "author": "Emil Lerner / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://github.com/redis/redis/security/advisories/GHSA-c8h9-259x-jff4",
+          "title": "Redis serialized-value validation advisory GHSA-c8h9-259x-jff4",
+          "type": "vendor",
+          "author": "Redis",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-cve",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/25xxx/CVE-2026-25243.json",
+          "title": "CVE-2026-25243 CNA record",
+          "type": "vendor",
+          "author": "Redis / GitHub CNA",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-release",
+          "url": "https://github.com/redis/redis/releases/tag/8.6.3",
+          "title": "Redis 8.6.3 security release",
+          "type": "vendor",
+          "author": "Redis",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:21:00Z",
+        "method": "Matched the individual award, exact CVE tracker row, named researcher explanation and vendor advisory. Checked release metadata for the fix date and kept two defects inside the single awarded entry.",
+        "limitations": [
+          "The vendor advisory also credits Joseph Surin; the reviewed award names Emil Lerner only, so no reward allocation to the additional credited researcher is inferred.",
+          "The advisory’s patched-version field still says TBD, while the official 8.6.3 release explicitly lists the CVE as fixed; the CNA affected range also excludes 8.6.3.",
+          "The researcher explains double-free mechanisms, while the CNA supplies CWE-122; neither classification is silently substituted for the other.",
+          "Original vendor-report, award decision and settlement dates remain unknown; June 2 publication year is inferred.",
+          "Current rules provide explicit USD context but are not the archived 2025 rules."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -2621,6 +2848,203 @@
         "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
           "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "postgresql-extension-input-type-validation-2026",
+      "title": "PostgreSQL extension estimator trusted an unchecked input type",
+      "organization": "PostgreSQL",
+      "product": "PostgreSQL intarray extension",
+      "researchers": [
+        "Daniel Firer"
+      ],
+      "cve_ids": [
+        "CVE-2026-2004"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-1287",
+          "basis": "source_explicit",
+          "source_id": "vendor-cve",
+          "note": "The PostgreSQL CNA explicitly classifies improper validation of the specified input type."
+        }
+      ],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "memory-safety-review",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "summary": "Wiz confirms a USD 30,000 competition award for Daniel Firer’s PostgreSQL entry, uniquely mapped by the organizer to CVE-2026-2004.",
+      "root_cause": "The extension’s selectivity estimator accepted input without checking that its type matched the routine’s expectations. This broke the contract between database objects an authorized user could create and native extension code running with database-process authority.",
+      "impact": "The vendor confirms possible code execution as the database operating-system account. A user needed permission to install the vulnerable extension, or an existing installation plus object-creation permission. The public sources do not establish a universal unauthenticated or cross-tenant compromise.",
+      "defensive_takeaways": [
+        "Validate input types at extension boundaries before applying native-code assumptions.",
+        "Review extension installation and object-creation privileges together; either permission in isolation can hide the relevant trust boundary.",
+        "Verify the vendor’s fixed releases and keep the database process identity limited to necessary resources."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Wiz / ZeroDay.cloud",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "$30,000 awarded",
+        "evidence_location": "PostgreSQL: Daniel Firer entry in the organizer’s Day 1 results",
+        "usd_equivalent": null,
+        "notes": "One individually identified competition entry. The organizer uses $; its current rules establish US-dollar notation but concern 2026, not an archived 2025 rules snapshot. Exact award decision and cash settlement are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-02-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cve",
+          "note": "Publication of the vendor CNA record; no separate detailed researcher article was established."
+        },
+        "public_disclosure": {
+          "value": "2025-12-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-tracker",
+          "note": "Public competition demonstration; separate from later vendor advisory and technical publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-02-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-advisory",
+          "note": "Vendor release date for PostgreSQL 18.2, 17.8, 16.12, 15.16 and 14.21; individual deployment dates remain unknown."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-12-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Organizer recap confirms the per-entry award; decision and payment dates remain unknown."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "competition-results",
+          "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+          "title": "ZeroDay.cloud 2025 individual competition results",
+          "type": "competition_organizer",
+          "author": "Nir Ohfeld / Wiz Research",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "competition-tracker",
+          "url": "https://www.zeroday.cloud/vulnerability-tracker",
+          "title": "ZeroDay.cloud vulnerability tracker",
+          "type": "competition_organizer",
+          "author": "Wiz / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "cve"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.zeroday.cloud/rules",
+          "title": "ZeroDay.cloud current rules: US-dollar denomination",
+          "type": "competition_organizer",
+          "author": "Wiz",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://www.postgresql.org/support/security/CVE-2026-2004/",
+          "title": "PostgreSQL CVE-2026-2004 security advisory",
+          "type": "vendor",
+          "author": "PostgreSQL",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-cve",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/2xxx/CVE-2026-2004.json",
+          "title": "CVE-2026-2004 PostgreSQL CNA record",
+          "type": "vendor",
+          "author": "PostgreSQL CNA / CVE Program",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-advisory",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:21:00Z",
+        "method": "Matched the organizer’s named PostgreSQL award to the tracker’s exact CVE, then checked the vendor advisory and CNA prerequisites. Summary remains within the published technical evidence.",
+        "limitations": [
+          "The technical basis is the vendor advisory, not a detailed researcher walkthrough; discovery reasoning beyond that evidence is unknown.",
+          "The December competition demonstration, February advisory publication, award announcement and unknown payment date are distinct events.",
+          "Current rules provide explicit USD context but are not the archived 2025 rules."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -7670,12 +8094,14 @@
         "untrusted-input-handling",
         "integration-threat-modeling"
       ],
-      "summary": "The researcher reports a USD 66,000 bounty for this single disclosed finding or chain.",
-      "root_cause": "Cross-window message authentication relied on a callback value generated by a non-cryptographic random source. A message consumer also failed to preserve the boundary between data and active HTML.",
-      "impact": "The researcher reports Facebook account takeover when a user visited a link within the mobile application. The described impact depends on the application’s browser and embedding behavior.",
+      "summary": "A USD 66,000 researcher-reported award illustrates how weak message authentication and unsafe rendering can invalidate an SDK trust boundary.",
+      "root_cause": "The researcher followed messages from an embedded plugin into SDK handlers and examined their authority checks. A callback identifier was treated as an authentication secret despite coming from non-cryptographic randomness. Separately, a handler interpreted supplied content as active HTML. An origin check alone did not establish that the message content was authorized or safe to render.",
+      "impact": "The researcher reports script execution and Facebook account takeover under mobile in-app browser conditions. Impact on an arbitrary embedding site depended on its framing controls. The article does not establish that every website using the SDK was affected equally.",
       "defensive_takeaways": [
-        "Use cryptographic randomness when token unpredictability is a security requirement.",
-        "Validate message context independently and handle supplied content as data."
+        "Use cryptographic randomness and context binding for values that authorize message handling.",
+        "Validate the sender, expected message relationship and permitted operation independently of rendering safety.",
+        "Keep externally supplied content inert and review embedded-browser permissions as a separate trust boundary.",
+        "Treat these as defensive design recommendations; the source dates a fix but does not establish the precise vendor patch implementation."
       ],
       "reward": {
         "amount": 66000,
@@ -7763,7 +8189,7 @@
           "title": "Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK",
           "type": "researcher",
           "author": "Youssef Sammouda",
-          "retrieved_at": "2026-10-02T19:03:00Z",
+          "retrieved_at": "2026-10-02T19:21:00Z",
           "supports": [
             "reward",
             "dates",
@@ -7787,8 +8213,8 @@
       "primary_source_id": "researcher-writeup",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T19:03:00Z",
-        "method": "Read the researcher’s dated reward and remediation timeline and high-level trust-boundary explanation. Retained archive display date only in publication notes; original-publication recency remains unknown.",
+        "reviewed_at": "2026-10-02T19:21:00Z",
+        "method": "Re-read the SDK introduction, trust checks, randomness analysis, bounded impact and timeline. Expanded conceptual reasoning without adding reproduction instructions. Original publication remains unknown.",
         "limitations": [
           "Researcher-reported award; no independent vendor confirmation or audited transfer.",
           "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",

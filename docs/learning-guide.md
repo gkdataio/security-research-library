@@ -42,7 +42,7 @@ Learn data provenance and the difference between retrieved text and user authori
 
 ## 5. Parser contracts and memory safety
 
-**Cases:** PostgreSQL CVE-2026-2006 encoding contracts and CVE-2026-2005 buffer capacity (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity
+**Cases:** PostgreSQL CVE-2026-2006 encoding contracts, CVE-2026-2005 buffer capacity and CVE-2026-2004 input-type validation (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity and deserialization ownership
 
 Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit. The MariaDB example also teaches evidence calibration: a controlled code-execution demonstration does not establish the same reliability in every deployment.
 
@@ -73,6 +73,8 @@ Learn how the same entitlement can be represented across API surfaces and framew
 **Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Facebook SDK message authentication and Meta Pixel context binding; Chrome graphics input validation; Pixel authentication-state binding
 
 Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
+
+The [Facebook SDK record](../data/reports/facebook-sdk-message-authentication-randomness-2023.json) gives a concrete reasoning example: examine what grants a message authority, then assess how accepted content is consumed. Authentication, rendering safety and embedding permissions are separate invariants. The record distinguishes reported mobile-browser impact from broader effects that depend on deployment, and labels remediation guidance as recommendations rather than an undocumented vendor patch.
 
 **Taxonomy:** `browser-isolation-review`, `approval-state-integrity`, `identity-lifecycle-review`, `secure-parser-review`
 

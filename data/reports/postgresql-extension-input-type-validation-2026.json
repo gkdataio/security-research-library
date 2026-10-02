@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0.0",
+  "id": "postgresql-extension-input-type-validation-2026",
+  "title": "PostgreSQL extension estimator trusted an unchecked input type",
+  "organization": "PostgreSQL",
+  "product": "PostgreSQL intarray extension",
+  "researchers": [
+    "Daniel Firer"
+  ],
+  "cve_ids": [
+    "CVE-2026-2004"
+  ],
+  "cwe_mappings": [
+    {
+      "id": "CWE-1287",
+      "basis": "source_explicit",
+      "source_id": "vendor-cve",
+      "note": "The PostgreSQL CNA explicitly classifies improper validation of the specified input type."
+    }
+  ],
+  "category_id": "memory-safety",
+  "secondary_category_ids": [
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "memory-safety-review",
+    "untrusted-input-handling",
+    "patch-verification"
+  ],
+  "summary": "Wiz confirms a USD 30,000 competition award for Daniel Firer’s PostgreSQL entry, uniquely mapped by the organizer to CVE-2026-2004.",
+  "root_cause": "The extension’s selectivity estimator accepted input without checking that its type matched the routine’s expectations. This broke the contract between database objects an authorized user could create and native extension code running with database-process authority.",
+  "impact": "The vendor confirms possible code execution as the database operating-system account. A user needed permission to install the vulnerable extension, or an existing installation plus object-creation permission. The public sources do not establish a universal unauthenticated or cross-tenant compromise.",
+  "defensive_takeaways": [
+    "Validate input types at extension boundaries before applying native-code assumptions.",
+    "Review extension installation and object-creation privileges together; either permission in isolation can hide the relevant trust boundary.",
+    "Verify the vendor’s fixed releases and keep the database process identity limited to necessary resources."
+  ],
+  "reward": {
+    "amount": 30000,
+    "currency": "USD",
+    "scope": "single_competition_entry",
+    "type": "competition_award",
+    "awarding_organization": "Wiz / ZeroDay.cloud",
+    "status": "awarded",
+    "evidence_level": "organizer_confirmed",
+    "source_id": "competition-results",
+    "evidence_quote": "$30,000 awarded",
+    "evidence_location": "PostgreSQL: Daniel Firer entry in the organizer’s Day 1 results",
+    "usd_equivalent": null,
+    "notes": "One individually identified competition entry. The organizer uses $; its current rules establish US-dollar notation but concern 2026, not an archived 2025 rules snapshot. Exact award decision and cash settlement are unknown."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-02-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-cve",
+      "note": "Publication of the vendor CNA record; no separate detailed researcher article was established."
+    },
+    "public_disclosure": {
+      "value": "2025-12-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "competition-tracker",
+      "note": "Public competition demonstration; separate from later vendor advisory and technical publication."
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt."
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": "2026-02-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-advisory",
+      "note": "Vendor release date for PostgreSQL 18.2, 17.8, 16.12, 15.16 and 14.21; individual deployment dates remain unknown."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": "2025-12-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "competition-results",
+      "note": "Organizer recap confirms the per-entry award; decision and payment dates remain unknown."
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "competition-results",
+      "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+      "title": "ZeroDay.cloud 2025 individual competition results",
+      "type": "competition_organizer",
+      "author": "Nir Ohfeld / Wiz Research",
+      "retrieved_at": "2026-10-02T19:21:00Z",
+      "supports": [
+        "reward",
+        "dates"
+      ]
+    },
+    {
+      "id": "competition-tracker",
+      "url": "https://www.zeroday.cloud/vulnerability-tracker",
+      "title": "ZeroDay.cloud vulnerability tracker",
+      "type": "competition_organizer",
+      "author": "Wiz / ZeroDay.cloud",
+      "retrieved_at": "2026-10-02T19:21:00Z",
+      "supports": [
+        "dates",
+        "cve"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.zeroday.cloud/rules",
+      "title": "ZeroDay.cloud current rules: US-dollar denomination",
+      "type": "competition_organizer",
+      "author": "Wiz",
+      "retrieved_at": "2026-10-02T19:21:00Z",
+      "supports": [
+        "reward"
+      ]
+    },
+    {
+      "id": "vendor-advisory",
+      "url": "https://www.postgresql.org/support/security/CVE-2026-2004/",
+      "title": "PostgreSQL CVE-2026-2004 security advisory",
+      "type": "vendor",
+      "author": "PostgreSQL",
+      "retrieved_at": "2026-10-02T19:21:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "vendor-cve",
+      "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/2xxx/CVE-2026-2004.json",
+      "title": "CVE-2026-2004 PostgreSQL CNA record",
+      "type": "vendor",
+      "author": "PostgreSQL CNA / CVE Program",
+      "retrieved_at": "2026-10-02T19:21:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    }
+  ],
+  "primary_source_id": "vendor-advisory",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T19:21:00Z",
+    "method": "Matched the organizer’s named PostgreSQL award to the tracker’s exact CVE, then checked the vendor advisory and CNA prerequisites. Summary remains within the published technical evidence.",
+    "limitations": [
+      "The technical basis is the vendor advisory, not a detailed researcher walkthrough; discovery reasoning beyond that evidence is unknown.",
+      "The December competition demonstration, February advisory publication, award announcement and unknown payment date are distinct events.",
+      "Current rules provide explicit USD context but are not the archived 2025 rules."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}
