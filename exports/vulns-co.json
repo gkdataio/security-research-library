@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T17:03:00Z",
+  "latest_reviewed_at": "2026-10-02T17:14:30Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 37,
+    "included": 38,
     "within_preferred_window": 13,
-    "older_or_uncertain": 24,
-    "bug_bounty": 36,
+    "older_or_uncertain": 25,
+    "bug_bounty": 37,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -4021,6 +4021,203 @@
         "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
         "limitations": [
           "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-pixel-lock-screen-state-binding-2022",
+      "title": "Pixel lock-screen completion lost security-state binding",
+      "organization": "Google",
+      "product": "Google Pixel / Android lock-screen state management",
+      "researchers": [
+        "David Schütz"
+      ],
+      "cve_ids": [
+        "CVE-2022-20465"
+      ],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "client-security",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "concurrency-reasoning",
+        "approval-state-integrity",
+        "patch-verification"
+      ],
+      "summary": "A researcher-published vendor decision documents a USD 70,000 award for CVE-2022-20465.",
+      "root_cause": "The researcher’s patch analysis attributes the issue to completion events dismissing a different active security challenge after concurrent state changes.",
+      "impact": "Physical access could bypass the lock screen on tested Pixel 5 and 6 devices. Broader Android coverage was not established by the researcher.",
+      "defensive_takeaways": [
+        "Bind authentication completion to the exact challenge and security context it satisfies.",
+        "Model concurrent authentication-state transitions and reject stale completion events.",
+        "Distinguish a security patch-level label from the date an update reached devices."
+      ],
+      "reward": {
+        "amount": 70000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Google Android Security Rewards",
+        "status": "awarded",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "report-transcript",
+        "evidence_quote": "we are happy to reward you the full amount of $70,000 USD",
+        "evidence_location": "Reproduced vendor response dated October 12, 2022",
+        "usd_equivalent": null,
+        "notes": "Explicit USD decision for this report. It was initially marked duplicate; the reproduced response explains an exception because the report enabled remediation. Cash receipt is not separately documented."
+      },
+      "dates": {
+        "published": {
+          "value": "2022-11-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2022-11-08",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cna",
+          "note": "CVE record publication. The Android bulletin is dated November 7; its original snapshot was not retrieved, so first appearance of this entry is not asserted."
+        },
+        "reported": {
+          "value": "2022-06-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "report-transcript",
+          "note": null
+        },
+        "awarded": {
+          "value": "2022-10-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "report-transcript",
+          "note": null
+        },
+        "fixed": {
+          "value": "2022-11",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "report-transcript",
+          "note": "Reported fixed in the November update. The 2022-11-05 patch-level label is not used as an exact rollout date."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://bugs.xdavidhu.me/google/2022/11/10/accidental-70k-google-pixel-lock-screen-bypass/",
+          "title": "Accidental $70k Google Pixel Lock Screen Bypass",
+          "type": "researcher",
+          "author": "David Schütz",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "report-transcript",
+          "url": "https://feed.bugs.xdavidhu.me/bugs/0016",
+          "title": "Report 0016: Complete Lock Screen Bypass on Google Pixel devices",
+          "type": "researcher",
+          "author": "David Schütz",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "android-bulletin",
+          "url": "https://source.android.com/docs/security/bulletin/2022-11-01",
+          "title": "Android Security Bulletin, November 2022",
+          "type": "vendor",
+          "author": "Android Open Source Project / Google",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "dates",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "pixel-bulletin",
+          "url": "https://source.android.com/docs/security/bulletin/pixel/2022-11-01",
+          "title": "Pixel Update Bulletin, November 2022",
+          "type": "vendor",
+          "author": "Google",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "dates",
+            "remediation"
+          ]
+        },
+        {
+          "id": "vendor-cna",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2022/20xxx/CVE-2022-20465.json",
+          "title": "Google Android CNA record for CVE-2022-20465",
+          "type": "vendor",
+          "author": "Google Android CNA, distributed through the CVE Program",
+          "retrieved_at": "2026-10-02T17:14:30Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:14:30Z",
+        "method": "Read the researcher article, full reproduced report discussion and vendor bulletins; checked the explicit award decision and unique CVE. Cross-checked the Google-authored CNA record publication date.",
+        "limitations": [
+          "The award decision is reproduced by the researcher, not independently published by the vendor.",
+          "Payment completion is unverified.",
+          "Vendor patch-level labels and bulletin publication dates do not establish each device’s update deployment date."
         ]
       },
       "content_scope": "historical_defensive_summary"

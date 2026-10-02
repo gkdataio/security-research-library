@@ -68,7 +68,7 @@ Learn how the same entitlement can be represented across API surfaces and framew
 
 ## 8. Browser permission and consent lifecycle
 
-**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Chrome graphics input validation
+**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Chrome graphics input validation; Pixel authentication-state binding
 
 Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
 
@@ -81,6 +81,14 @@ Learn origin identity, permission persistence, request semantics, and consent in
 Review the documented parsing contract across proxies and application servers. Each layer should agree on message boundaries and reject ambiguous input. Record deployment-specific assumptions and check that updated runtimes and self-contained applications are actually deployed. A useful artifact is a parser-contract matrix linked to vendor remediation evidence.
 
 **Taxonomy:** `secure-parser-review`, `untrusted-input-handling`, `integration-threat-modeling`, `patch-verification`
+
+## 10. Multi-app authorization context
+
+**Resource:** [USENIX Security 2025 research on integration-platform OAuth bindings](https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan)
+
+Keep the intended integration app and authorization issuer consistent throughout account linking. Model which component owns each identity check and how compatibility transitions preserve it. This research considers a different multi-app threat model from the Google device-grant case.
+
+**Taxonomy:** `integration-threat-modeling`, `authorization-modeling`, `identity-lifecycle-review`
 
 ## Common reporting skill
 

@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-37 individual report/chain awards meet the USD 10,000 threshold: 36 bug bounties and one explicitly labeled competition entry. Thirteen publication dates fall within October 2, 2025–October 2, 2026; 21 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+38 individual report/chain awards meet the USD 10,000 threshold: 37 bug bounties and one explicitly labeled competition entry. Thirteen publication dates fall within October 2, 2025–October 2, 2026; 22 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 37 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 38 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -35,6 +35,7 @@ The collection contains 37 records after source-backed historical expansion. It 
 | [GraphQL object authorization exposed private-program metadata](data/reports/hackerone-private-program-graphql-object-authorization-2025.json) | USD 25,000 | 2025-01-21 (historical) | Vendor confirmed |
 | [LiteSpeed Cache privileged user simulation relied on weak security tokens](data/reports/litespeed-cache-user-simulation-authentication-2024.json) | USD 14,400 (Zero Day component) | 2024-08-21 (historical) | Platform confirmed |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
+| [Pixel lock-screen completion lost security-state binding](data/reports/google-pixel-lock-screen-state-binding-2022.json) | USD 70,000 | 2022-11-10 (historical) | Researcher reproduces vendor decision |
 | [GitHub Actions trust depended on invalid repository references](data/reports/github-actions-reference-validation-2021.json) | USD 25,000 | 2021-03-17 (historical) | Researcher reported |
 | [GitHub fork collaboration applied inconsistent authorization](data/reports/github-fork-collaboration-authorization-2021.json) | USD 20,000 | 2021-03-10 (historical) | Researcher reported |
 | [GitHub GraphQL collaboration changes lacked author consent](data/reports/github-fork-collaboration-consent-2021.json) | USD 10,000 | 2021-03-10 (historical) | Researcher reported |
@@ -48,13 +49,13 @@ The collection contains 37 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest increment adds two July 2026 disclosures: Google device-grant binding (USD 13,337) and Apple PCC archive-path validation (USD 150,000). Both award amounts are researcher-reported; Apple’s CNA independently corroborates the PCC vulnerability and fixed version. OWASP recovery guidance and a new recovery-state diagram connect the account-lifecycle cases.
+The latest increment adds the historical Pixel lock-screen state-binding case (USD 70,000), with an explicitly dated researcher-published vendor award decision. A USENIX Security 2025 paper adds multi-app authorization-context lessons to the separate resource collection. Aggregate rewards remain excluded.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Eleven official educational resources and six evidence-linked conceptual diagrams are maintained separately from the 37 award reports.
+Twelve official educational resources and six evidence-linked conceptual diagrams are maintained separately from the 38 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)

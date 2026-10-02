@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 11,
+    "resources": 12,
     "diagrams": 6
   },
   "taxonomy": {
@@ -34,6 +34,10 @@
       {
         "id": "training-lab",
         "title": "Training Lab"
+      },
+      {
+        "id": "research-paper",
+        "title": "Research Paper"
       }
     ],
     "topics": [
@@ -1073,6 +1077,104 @@
         "Build L1 provenance alone does not provide tamper protection.",
         "The specification version is 1.2, while the build-provenance predicate identifier remains https://slsa.dev/provenance/v1; the page explains this major-version convention.",
         "A recorded attestation is useful only within an explicit trust and verification model."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "usenix-2025-integration-platform-oauth-bindings",
+      "title": "Universal Cross-app Attacks: Exploiting and Securing OAuth 2.0 in Integration Platforms",
+      "publisher": "USENIX Association",
+      "authors": [
+        "Kaixuan Luo",
+        "Xianbo Wang",
+        "Pui Ho Adonis Fung",
+        "Wing Cheong Lau",
+        "Julien Lecomte"
+      ],
+      "primary_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "identity-lifecycle-review"
+      ],
+      "version": "USENIX Security 2025",
+      "summary": "Studies account linking across multi-app integration platforms and identifies inconsistent app identity as a trust-boundary problem. Proposes app-specific authorization-context binding.",
+      "defensive_use": "Review whether an owned integration preserves the intended app and authorization issuer throughout account linking, including compatibility migrations.",
+      "prerequisites": [
+        "OAuth client and authorization-server roles",
+        "Authorization response and session binding"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official open-access publication page and publisher-hosted prepublication paper."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Month in the publisher’s proceedings citation; an earlier prepublication date is not established."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T17:12:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official publication record and relevant sections of its linked prepublication manuscript; no testing artifact was retrieved or executed."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan",
+          "title": "Universal Cross-app Attacks: Exploiting and Securing OAuth 2.0 in Integration Platforms",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "prepublication",
+          "url": "https://www.usenix.org/system/files/conference/usenixsecurity25/sec24winter-prepub-332-luo.pdf",
+          "title": "Publisher-hosted prepublication manuscript",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T17:12:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Research measurements are historical, not a statement of current vendor exposure.",
+        "The paper reports $35K across multiple vendors; no individual qualifying award is inferred.",
+        "The final PDF exceeded retrieval limits. The official abstract, bibliography and prepublication defense/disclosure sections were reviewed."
       ],
       "content_scope": "defensive_education"
     }

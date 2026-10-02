@@ -78,6 +78,21 @@
       "primary_technical_url": "https://weirdmachine64.github.io/research/google-cloud-ato-url-parsing.html",
       "reason_not_counted": "Confirms a bounty without disclosing an exact amount.",
       "reviewed_at": "2026-10-02T17:03:00Z"
+    },
+    {
+      "title": "Google Home device-linking research",
+      "reported_reward": "$107,500 total, including later bonuses",
+      "primary_technical_url": "https://downrightnifty.me/blog/2022/12/26/hacking-google-home.html",
+      "primary_technical_status": "Primary researcher article and timeline reviewed; published December 26, 2022.",
+      "reason_not_counted": "The total covers multiple security issues and bonus rewards. A per-report allocation or unambiguous single awarded chain scope was not established, so the total is not added to the qualified collection.",
+      "reviewed_at": "2026-10-02T17:12:00Z"
+    },
+    {
+      "title": "Cross-app OAuth integration-platform research",
+      "reported_reward": "$35K across multiple vendors",
+      "primary_technical_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan",
+      "reason_not_counted": "Aggregate multi-vendor rewards do not establish an individual award. Included separately as an educational research resource.",
+      "reviewed_at": "2026-10-02T17:12:00Z"
     }
   ]
 }

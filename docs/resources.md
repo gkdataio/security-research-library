@@ -18,6 +18,8 @@ This collection is separate from paid-award reports. It contains official educat
 
 - [OWASP Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html): preserve account binding through recovery and reset
 
+- [USENIX Security 2025: Cross-app OAuth bindings](https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan): study app-specific authorization context in integration platforms
+
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 
 [Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)
