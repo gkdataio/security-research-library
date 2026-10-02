@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0.0",
+  "as_of": "2026-10-02",
+  "excluded_candidates": [
+    {
+      "title": "Meta customer-support authorization issue",
+      "reported_reward": "$78,000",
+      "researcher": "Rony K Roy",
+      "primary_technical_url": "https://whiteauth.com/2026/07/17/broken-access-control-in-meta-com-support-infrastructure/",
+      "primary_technical_status": "403 Forbidden in retrieval; no indexed text found",
+      "primary_reward_corroboration_url": "https://in.linkedin.com/in/ronykroy",
+      "secondary_locator_url": "https://www.securityweek.com/meta-pays-78000-bounty-for-vulnerability-exposing-customer-support-data/",
+      "reason_not_counted": "Researcher's LinkedIn confirms a $78,000 bounty but technical source unavailable. SecurityWeek explicitly says Meta had not confirmed the claims. Leave out of strictly primary technical dataset until researcher source can be reviewed."
+    },
+    {
+      "title": "GitHub Copilot approval race and AI integration issue",
+      "primary_technical_url": "https://adnanthekhan.com/posts/copilot-or-co-conspirator/",
+      "reason_not_counted": "The researcher confirms a bounty but does not disclose an exact amount. No award-table inference permitted."
+    },
+    {
+      "title": "Dependabot Core CI approval race",
+      "primary_technical_url": "https://adnanthekhan.com/posts/dependabot-core-toctou-writeup/",
+      "reason_not_counted": "The primary write-up confirms award timing but gives no exact amount."
+    }
+  ]
+}

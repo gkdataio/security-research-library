@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-gemini-enterprise-connected-content-memory-integrity-2026",
+  "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
+  "organization": "Google",
+  "product": "Gemini Enterprise Jira integration",
+  "researchers": [
+    "Behi"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "ai-security",
+  "secondary_category_ids": [
+    "authorization"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "authorization-modeling",
+    "untrusted-input-handling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A researcher reports a $15,000 Google bounty for a Gemini Enterprise integration issue affecting persistent assistant memory.",
+  "root_cause": "Content retrieved from an external collaboration system was treated as authority for a state-changing memory operation. The defensive lesson is to preserve provenance and require explicit authorization for persistent-state changes.",
+  "impact": "Researcher reports modification or deletion of another test account's persistent assistant memory.",
+  "defensive_takeaways": [
+    "Keep retrieved content separate from authority to change persistent state.",
+    "Require independent authorization for memory changes.",
+    "Preserve connector provenance throughout downstream decisions."
+  ],
+  "reward": {
+    "amount": 15000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "status": "paid",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Google paid me $15,000 for this Prompt Injection bug.",
+    "evidence_location": "Article title",
+    "usd_equivalent": null,
+    "notes": "The researcher reports being paid $15,000 for this distinct finding; do not combine the separate $1,337 example. Exact award/settlement date is unknown. Dollar-denominated Google bounty; USD normalization. The individual write-up uses the $ symbol rather than spelling out USD."
+  },
+  "dates": {
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "published": {
+      "value": "2026-03-12",
+      "precision": "day",
+      "basis": "inferred",
+      "source_id": "primary",
+      "note": "DEV article March 12, 2026; the researcher's Reddit write-up is dated March 9, 2026. Original X post is linked but its exact date was not independently established. No exact report, award, or fix dates were found."
+    },
+    "public_disclosure": {
+      "value": "2026-03-09",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "source-2",
+      "note": "Earlier researcher publication on Reddit; linked original X post might be earlier."
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6",
+      "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
+      "type": "researcher",
+      "author": "Behi",
+      "retrieved_at": "2026-10-02T03:54:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "source-2",
+      "url": "https://www.reddit.com/r/bugbounty/comments/1row41z/google_paid_me_15000_for_this_prompt_injection_bug/",
+      "title": "Supporting primary disclosure source",
+      "type": "researcher",
+      "author": "Behi",
+      "retrieved_at": "2026-10-02T03:54:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T03:54:00Z",
+    "method": "Primary public sources read; reward distinguished from maximums and aggregates. Historical defensive summary only; no vulnerability testing performed.",
+    "limitations": [
+      "No vendor-hosted confirmation of this individual payout found",
+      "Do not confuse this finding with the separate $1,337 memory issue mentioned in the introduction",
+      "Remediation date and current status not independently established"
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

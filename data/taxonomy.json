@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "categories": [
+    {
+      "id": "authorization",
+      "title": "Authorization and tenant boundaries",
+      "description": "Object, role, account, and tenant access-control design"
+    },
+    {
+      "id": "authentication",
+      "title": "Authentication and identity",
+      "description": "Account lifecycle, session integrity, identity-provider trust"
+    },
+    {
+      "id": "business-logic",
+      "title": "Business logic and concurrency",
+      "description": "State transitions, approval integrity, and transactional invariants"
+    },
+    {
+      "id": "cloud-security",
+      "title": "Cloud permissions and isolation",
+      "description": "Service identities, IAM boundaries, tenant isolation, and delegated authority"
+    },
+    {
+      "id": "supply-chain",
+      "title": "Software supply-chain security",
+      "description": "Build systems, package provenance, release integrity, and automation trust"
+    },
+    {
+      "id": "injection",
+      "title": "Injection and untrusted input",
+      "description": "Separation between untrusted data and executable interpretation"
+    },
+    {
+      "id": "ai-security",
+      "title": "AI integration boundaries",
+      "description": "Authority boundaries around model input, tools, and downstream actions"
+    },
+    {
+      "id": "client-security",
+      "title": "Client and browser security",
+      "description": "Client-side isolation, memory safety, and security-sensitive state"
+    },
+    {
+      "id": "server-request-trust",
+      "title": "Server-side request trust",
+      "description": "Destination validation and boundaries in server-initiated requests"
+    },
+    {
+      "id": "memory-safety",
+      "title": "Memory safety and parser contracts",
+      "description": "Safe length, lifetime, encoding, and component-boundary assumptions"
+    }
+  ],
+  "skillsets": [
+    {
+      "id": "authorization-modeling",
+      "title": "Model access-control invariants",
+      "defensive_objective": "Document expected actor, action, resource, and tenant relationships in an authorized design review"
+    },
+    {
+      "id": "identity-lifecycle-review",
+      "title": "Review identity lifecycle",
+      "defensive_objective": "Assess binding, verification, recovery, linking, and revocation requirements using approved test accounts"
+    },
+    {
+      "id": "approval-state-integrity",
+      "title": "Review approval-state integrity",
+      "defensive_objective": "Check that approval records bind to immutable content and survive state changes safely"
+    },
+    {
+      "id": "concurrency-reasoning",
+      "title": "Reason about concurrent state",
+      "defensive_objective": "Model ordering assumptions and prove security invariants with local state-machine or unit tests"
+    },
+    {
+      "id": "cloud-iam-review",
+      "title": "Review cloud IAM boundaries",
+      "defensive_objective": "Compare intended service authority with documented effective permissions and least-privilege requirements"
+    },
+    {
+      "id": "integration-threat-modeling",
+      "title": "Threat-model integrations",
+      "defensive_objective": "Trace documented trust assumptions between services and identify where authorization responsibility changes"
+    },
+    {
+      "id": "pipeline-trust-modeling",
+      "title": "Model build and release trust",
+      "defensive_objective": "Map trusted and untrusted inputs, artifacts, jobs, and identity boundaries in approved architecture diagrams"
+    },
+    {
+      "id": "cache-artifact-isolation",
+      "title": "Review artifact isolation",
+      "defensive_objective": "Assess separation of caches and artifacts by trust level, and define integrity controls"
+    },
+    {
+      "id": "dependency-provenance",
+      "title": "Review dependency provenance",
+      "defensive_objective": "Check explicit registries, namespace ownership, lockfiles, source pinning, and package-origin policy"
+    },
+    {
+      "id": "machine-identity-governance",
+      "title": "Review machine identities",
+      "defensive_objective": "Document bot and service identity privileges, rotation, approvals, and separation of duties"
+    },
+    {
+      "id": "secrets-containment",
+      "title": "Review secrets containment",
+      "defensive_objective": "Assess whether secrets are limited to the minimum necessary trusted execution contexts"
+    },
+    {
+      "id": "untrusted-input-handling",
+      "title": "Review input trust boundaries",
+      "defensive_objective": "Assess validation and data/code separation without collecting offensive payloads"
+    },
+    {
+      "id": "ai-authority-boundaries",
+      "title": "Review AI authority boundaries",
+      "defensive_objective": "Assess least privilege and independent validation at tool execution and data disclosure boundaries"
+    },
+    {
+      "id": "secure-parser-review",
+      "title": "Review parsing and serialization",
+      "defensive_objective": "Reason about parser consistency, validation, and safe serialization contracts"
+    },
+    {
+      "id": "browser-isolation-review",
+      "title": "Review client isolation",
+      "defensive_objective": "Study process, origin, memory-safety, and permission boundaries in patched historical cases"
+    },
+    {
+      "id": "defensive-evidence-writing",
+      "title": "Write bounded security evidence",
+      "defensive_objective": "Separate demonstrated impact, modeled impact, remediation, and source uncertainty in review findings"
+    },
+    {
+      "id": "encoding-invariant-review",
+      "title": "Review text-encoding invariants",
+      "defensive_objective": "Identify and document validation contracts at extension and parser boundaries, then verify them with safe unit tests"
+    },
+    {
+      "id": "memory-safety-review",
+      "title": "Review memory-safety assumptions",
+      "defensive_objective": "Assess length, bounds, allocation, and lifetime assumptions in owned source code and vendor patches"
+    },
+    {
+      "id": "patch-verification",
+      "title": "Verify remediation evidence",
+      "defensive_objective": "Compare vendor advisories, affected versions, fixes, and regression coverage without reproducing an exploit"
+    }
+  ]
+}

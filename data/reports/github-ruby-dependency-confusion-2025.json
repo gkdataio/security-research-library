@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-ruby-dependency-confusion-2025",
+  "title": "GitHub package-source trust allowed dependency confusion",
+  "organization": "GitHub",
+  "product": "GitHub build and development services",
+  "researchers": [
+    "Furbreeze"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "supply-chain",
+  "secondary_category_ids": [
+    "injection"
+  ],
+  "skillset_ids": [
+    "dependency-provenance",
+    "pipeline-trust-modeling",
+    "secrets-containment",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A researcher reported one dependency-confusion finding affecting GitHub build and development services and a $20,000 award.",
+  "root_cause": "Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source.",
+  "impact": "The researcher observed code execution across multiple service contexts. The disclosed account does not establish a broader compromise beyond those observations.",
+  "defensive_takeaways": [
+    "Define explicit package sources and reserve internal namespaces where applicable.",
+    "Treat build and developer environments as separate trust zones and minimize their credentials."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Issue closed, bounty of $20k rewarded.",
+    "evidence_location": "Timeline, October 21 entry",
+    "usd_equivalent": null,
+    "notes": "The researcher states this was a critical report and that the bounty was paid; no separate payment date or public HackerOne report is supplied.",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub"
+  },
+  "dates": {
+    "published": {
+      "value": "2025-10-28",
+      "precision": "day",
+      "basis": "url_date",
+      "source_id": "primary",
+      "note": "Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established."
+    },
+    "public_disclosure": {
+      "value": "2025-10-28",
+      "precision": "day",
+      "basis": "url_date",
+      "source_id": "primary",
+      "note": "Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established."
+    },
+    "reported": {
+      "value": "2025-09-01",
+      "precision": "day",
+      "basis": "inferred",
+      "source_id": "primary",
+      "note": "The timeline supplies September 1; year is inferred from the 2025 publication context."
+    },
+    "awarded": {
+      "value": "2025-10-21",
+      "precision": "day",
+      "basis": "inferred",
+      "source_id": "primary",
+      "note": "The timeline supplies October 21; year is inferred from the 2025 publication context."
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Cash settlement date not independently established."
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html",
+      "title": "Vibecoding my way to a crit on Github",
+      "type": "researcher",
+      "author": "Furbreeze",
+      "retrieved_at": "2026-10-02T03:49:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T03:49:00Z",
+    "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+    "limitations": [
+      "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

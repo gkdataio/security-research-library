@@ -1,0 +1,460 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Defensive security disclosure record",
+  "description": "Confirmed reported individual USD awards, preserving primary-source attribution. No exploit instructions.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "product": {
+      "type": "string",
+      "minLength": 1
+    },
+    "researchers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "cve_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^CVE-\\d{4}-\\d{4,}$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "cwe_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^CWE-\\d+$"
+          },
+          "basis": {
+            "enum": [
+              "source_explicit",
+              "analyst_mapping"
+            ]
+          },
+          "source_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "basis",
+          "source_id",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0
+    },
+    "category_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "secondary_category_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "skillset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "root_cause": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    },
+    "impact": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200
+    },
+    "defensive_takeaways": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 600
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reward": {
+      "type": "object",
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 10000
+        },
+        "currency": {
+          "const": "USD"
+        },
+        "scope": {
+          "enum": [
+            "single_report",
+            "single_vulnerability",
+            "single_competition_entry"
+          ]
+        },
+        "status": {
+          "enum": [
+            "awarded",
+            "paid"
+          ]
+        },
+        "evidence_level": {
+          "enum": [
+            "vendor_confirmed",
+            "platform_confirmed",
+            "organizer_confirmed",
+            "researcher_reported",
+            "researcher_reported_with_vendor_quote"
+          ]
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_quote": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 350
+        },
+        "evidence_location": {
+          "type": "string",
+          "minLength": 1
+        },
+        "usd_equivalent": {
+          "type": "null"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "bug_bounty",
+            "competition_award"
+          ]
+        },
+        "awarding_organization": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "amount",
+        "currency",
+        "scope",
+        "status",
+        "evidence_level",
+        "source_id",
+        "evidence_quote",
+        "evidence_location",
+        "usd_equivalent",
+        "notes",
+        "type",
+        "awarding_organization"
+      ],
+      "additionalProperties": false
+    },
+    "dates": {
+      "type": "object",
+      "properties": {
+        "published": {
+          "$ref": "#/$defs/date"
+        },
+        "public_disclosure": {
+          "$ref": "#/$defs/date"
+        },
+        "reported": {
+          "$ref": "#/$defs/date"
+        },
+        "awarded": {
+          "$ref": "#/$defs/date"
+        },
+        "fixed": {
+          "$ref": "#/$defs/date"
+        },
+        "paid": {
+          "$ref": "#/$defs/date"
+        },
+        "award_announced": {
+          "$ref": "#/$defs/date"
+        },
+        "mitigated": {
+          "$ref": "#/$defs/date"
+        }
+      },
+      "required": [
+        "published",
+        "public_disclosure",
+        "reported",
+        "awarded",
+        "fixed",
+        "paid",
+        "award_announced",
+        "mitigated"
+      ],
+      "additionalProperties": false
+    },
+    "recency": {
+      "type": "object",
+      "properties": {
+        "as_of": {
+          "type": "string",
+          "format": "date"
+        },
+        "window_start": {
+          "type": "string",
+          "format": "date"
+        },
+        "within_preferred_window": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "basis": {
+          "const": "published"
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "as_of",
+        "window_start",
+        "within_preferred_window",
+        "basis",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      },
+      "minItems": 1
+    },
+    "primary_source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "verification": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "const": "included"
+        },
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "reviewed_at",
+        "method",
+        "limitations"
+      ],
+      "additionalProperties": false
+    },
+    "content_scope": {
+      "const": "historical_defensive_summary"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "organization",
+    "product",
+    "researchers",
+    "cve_ids",
+    "cwe_mappings",
+    "category_id",
+    "secondary_category_ids",
+    "skillset_ids",
+    "summary",
+    "root_cause",
+    "impact",
+    "defensive_takeaways",
+    "reward",
+    "dates",
+    "recency",
+    "sources",
+    "primary_source_id",
+    "verification",
+    "content_scope"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "date": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            null
+          ]
+        },
+        "basis": {
+          "enum": [
+            "explicit",
+            "inferred",
+            "url_date",
+            "not_reported"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "precision",
+        "basis",
+        "source_id",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "vendor",
+            "platform",
+            "researcher",
+            "competition_organizer"
+          ]
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "supports": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "reward",
+              "dates",
+              "root_cause",
+              "impact",
+              "remediation",
+              "cve"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "url",
+        "title",
+        "type",
+        "author",
+        "retrieved_at",
+        "supports"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

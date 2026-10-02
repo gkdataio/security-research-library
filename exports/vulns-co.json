@@ -1,0 +1,1081 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "security-research-library",
+  "as_of": "2026-10-02",
+  "latest_reviewed_at": "2026-10-02T03:54:00Z",
+  "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
+  "inclusion_policy": {
+    "minimum_individual_award": 10000,
+    "currency": "USD",
+    "preferred_publication_window_months": 12,
+    "counts_award_announcements": true,
+    "independent_cash_settlement_audit": false,
+    "program_maximums_and_aggregate_earnings_excluded": true,
+    "competition_awards_explicitly_labeled": true,
+    "payloads_and_reproduction_steps_excluded": true
+  },
+  "counts": {
+    "included": 6,
+    "within_preferred_window": 5,
+    "older_or_uncertain": 1,
+    "bug_bounty": 5,
+    "competition_award": 1
+  },
+  "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
+  "taxonomy": {
+    "schema_version": "1.0.0",
+    "categories": [
+      {
+        "id": "authorization",
+        "title": "Authorization and tenant boundaries",
+        "description": "Object, role, account, and tenant access-control design"
+      },
+      {
+        "id": "authentication",
+        "title": "Authentication and identity",
+        "description": "Account lifecycle, session integrity, identity-provider trust"
+      },
+      {
+        "id": "business-logic",
+        "title": "Business logic and concurrency",
+        "description": "State transitions, approval integrity, and transactional invariants"
+      },
+      {
+        "id": "cloud-security",
+        "title": "Cloud permissions and isolation",
+        "description": "Service identities, IAM boundaries, tenant isolation, and delegated authority"
+      },
+      {
+        "id": "supply-chain",
+        "title": "Software supply-chain security",
+        "description": "Build systems, package provenance, release integrity, and automation trust"
+      },
+      {
+        "id": "injection",
+        "title": "Injection and untrusted input",
+        "description": "Separation between untrusted data and executable interpretation"
+      },
+      {
+        "id": "ai-security",
+        "title": "AI integration boundaries",
+        "description": "Authority boundaries around model input, tools, and downstream actions"
+      },
+      {
+        "id": "client-security",
+        "title": "Client and browser security",
+        "description": "Client-side isolation, memory safety, and security-sensitive state"
+      },
+      {
+        "id": "server-request-trust",
+        "title": "Server-side request trust",
+        "description": "Destination validation and boundaries in server-initiated requests"
+      },
+      {
+        "id": "memory-safety",
+        "title": "Memory safety and parser contracts",
+        "description": "Safe length, lifetime, encoding, and component-boundary assumptions"
+      }
+    ],
+    "skillsets": [
+      {
+        "id": "authorization-modeling",
+        "title": "Model access-control invariants",
+        "defensive_objective": "Document expected actor, action, resource, and tenant relationships in an authorized design review"
+      },
+      {
+        "id": "identity-lifecycle-review",
+        "title": "Review identity lifecycle",
+        "defensive_objective": "Assess binding, verification, recovery, linking, and revocation requirements using approved test accounts"
+      },
+      {
+        "id": "approval-state-integrity",
+        "title": "Review approval-state integrity",
+        "defensive_objective": "Check that approval records bind to immutable content and survive state changes safely"
+      },
+      {
+        "id": "concurrency-reasoning",
+        "title": "Reason about concurrent state",
+        "defensive_objective": "Model ordering assumptions and prove security invariants with local state-machine or unit tests"
+      },
+      {
+        "id": "cloud-iam-review",
+        "title": "Review cloud IAM boundaries",
+        "defensive_objective": "Compare intended service authority with documented effective permissions and least-privilege requirements"
+      },
+      {
+        "id": "integration-threat-modeling",
+        "title": "Threat-model integrations",
+        "defensive_objective": "Trace documented trust assumptions between services and identify where authorization responsibility changes"
+      },
+      {
+        "id": "pipeline-trust-modeling",
+        "title": "Model build and release trust",
+        "defensive_objective": "Map trusted and untrusted inputs, artifacts, jobs, and identity boundaries in approved architecture diagrams"
+      },
+      {
+        "id": "cache-artifact-isolation",
+        "title": "Review artifact isolation",
+        "defensive_objective": "Assess separation of caches and artifacts by trust level, and define integrity controls"
+      },
+      {
+        "id": "dependency-provenance",
+        "title": "Review dependency provenance",
+        "defensive_objective": "Check explicit registries, namespace ownership, lockfiles, source pinning, and package-origin policy"
+      },
+      {
+        "id": "machine-identity-governance",
+        "title": "Review machine identities",
+        "defensive_objective": "Document bot and service identity privileges, rotation, approvals, and separation of duties"
+      },
+      {
+        "id": "secrets-containment",
+        "title": "Review secrets containment",
+        "defensive_objective": "Assess whether secrets are limited to the minimum necessary trusted execution contexts"
+      },
+      {
+        "id": "untrusted-input-handling",
+        "title": "Review input trust boundaries",
+        "defensive_objective": "Assess validation and data/code separation without collecting offensive payloads"
+      },
+      {
+        "id": "ai-authority-boundaries",
+        "title": "Review AI authority boundaries",
+        "defensive_objective": "Assess least privilege and independent validation at tool execution and data disclosure boundaries"
+      },
+      {
+        "id": "secure-parser-review",
+        "title": "Review parsing and serialization",
+        "defensive_objective": "Reason about parser consistency, validation, and safe serialization contracts"
+      },
+      {
+        "id": "browser-isolation-review",
+        "title": "Review client isolation",
+        "defensive_objective": "Study process, origin, memory-safety, and permission boundaries in patched historical cases"
+      },
+      {
+        "id": "defensive-evidence-writing",
+        "title": "Write bounded security evidence",
+        "defensive_objective": "Separate demonstrated impact, modeled impact, remediation, and source uncertainty in review findings"
+      },
+      {
+        "id": "encoding-invariant-review",
+        "title": "Review text-encoding invariants",
+        "defensive_objective": "Identify and document validation contracts at extension and parser boundaries, then verify them with safe unit tests"
+      },
+      {
+        "id": "memory-safety-review",
+        "title": "Review memory-safety assumptions",
+        "defensive_objective": "Assess length, bounds, allocation, and lifetime assumptions in owned source code and vendor patches"
+      },
+      {
+        "id": "patch-verification",
+        "title": "Verify remediation evidence",
+        "defensive_objective": "Compare vendor advisories, affected versions, fixes, and regression coverage without reproducing an exploit"
+      }
+    ]
+  },
+  "reports": [
+    {
+      "schema_version": "1.0.0",
+      "id": "meta-service-identity-secrets-trust-boundary-2026",
+      "title": "Meta service-identity exposure amplified by excessive secret access",
+      "organization": "Meta",
+      "product": "Internal development and cloud-service integrations",
+      "researchers": [
+        "Preben Ver Eecke",
+        "Sectricity"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "cloud-security",
+      "secondary_category_ids": [
+        "authorization",
+        "authentication"
+      ],
+      "skillset_ids": [
+        "cloud-iam-review",
+        "machine-identity-governance",
+        "secrets-containment",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A researcher organization reports a $150,000 base award for an exposed service identity with excessive downstream integration authority.",
+      "root_cause": "An exposed service identity had unnecessarily broad access to secrets, with downstream integration credentials extending the potential impact into private source repositories. Apply strong service authentication, minimize identity permissions, and separate trust between integrations.",
+      "impact": "Researchers report potential read/write access to 507 private repositories; their write-up says they confirmed the count and did not clone or browse repository contents.",
+      "defensive_takeaways": [
+        "Require authenticated, explicitly authorized access to service identities.",
+        "Constrain secret access and integration privileges to the minimum required.",
+        "Document exposure without copying private customer or source data."
+      ],
+      "reward": {
+        "amount": 150000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "status": "awarded",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "primary",
+        "evidence_quote": "After reviewing this issue, we have decided to award you a bounty of $150000.",
+        "evidence_location": "Meta response reproduced by researcher organization",
+        "usd_equivalent": null,
+        "notes": "Use the $150,000 base award. The headline says $157K, but the stated 5% bonus would imply $157,500; exact total is not asserted. USD normalization of the dollar-denominated Meta award; the reproduced individual message uses $."
+      },
+      "dates": {
+        "reported": {
+          "value": "2026-03-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-04-29",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The source says mitigated, not that a final software fix was released."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": "2026-03-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Triaged and mitigated according to the researcher timeline."
+        },
+        "published": {
+          "value": "2026-05-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Earliest public disclosure has not been independently established."
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/",
+          "title": "Meta service-identity exposure amplified by excessive secret access",
+          "type": "researcher",
+          "author": "Preben Ver Eecke, Sectricity",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://sectricity.com/about/method-ethics/",
+          "title": "Supporting primary disclosure source",
+          "type": "researcher",
+          "author": "Preben Ver Eecke, Sectricity",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:54:00Z",
+        "method": "Primary public sources read; reward distinguished from maximums and aggregates. Historical defensive summary only; no vulnerability testing performed.",
+        "limitations": [
+          "Headline states $157K, while $150,000 plus 5% arithmetically equals $157,500; use the undisputed $150,000 base and preserve this discrepancy",
+          "Vendor response is reproduced by the researcher organization, not independently hosted by Meta",
+          "The exposed Grafana dashboard was a discovery signal, not established as the underlying rewarded vulnerability"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "postgresql-multibyte-validation-cve-2026-2006",
+      "title": "PostgreSQL text-encoding invariant failure caused memory corruption",
+      "organization": "PostgreSQL",
+      "product": "PostgreSQL text handling and pgcrypto extension",
+      "researchers": [
+        "Paul Gerste",
+        "Moritz Sanft",
+        "Team Bugz Bunnies"
+      ],
+      "cve_ids": [
+        "CVE-2026-2006"
+      ],
+      "cwe_mappings": [],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "injection"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "encoding-invariant-review",
+        "memory-safety-review",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "summary": "A PostgreSQL encoding-validation failure earned Team Bugz Bunnies a $30,000 individual-entry award at ZeroDay.cloud. The vendor subsequently issued CVE-2026-2006.",
+      "root_cause": "A trusted extension did not uphold a database-wide text-encoding invariant, while downstream text routines relied on that invariant for memory-safe length calculations. Defensive reviews should verify contracts across parser and extension boundaries.",
+      "impact": "Vendor confirms that an authenticated database user could reach code execution with the database operating-system account's privileges.",
+      "defensive_takeaways": [
+        "Validate encoding contracts at every trusted extension boundary.",
+        "Avoid relying on unverified text invariants for memory-length calculations.",
+        "Apply supported vendor fixes and retain regression coverage."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Wiz / ZeroDay.cloud",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "PostgreSQL: Team Bugz Bunnies (Paul Gerste & Moritz Sanft) – SUCCESSFUL – $30,000 awarded",
+        "evidence_location": "Day 2 results, PostgreSQL Team Bugz Bunnies entry",
+        "usd_equivalent": null,
+        "notes": "Per-finding competition award to a team, not a vendor bounty or the team's combined event earnings. Exact cash-transfer date is unknown. USD normalization of the organizer's dollar-denominated competition award."
+      },
+      "dates": {
+        "reported": {
+          "value": "2025-12-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-3",
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-02-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-4",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-12-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Organizer recap announces the individual entry award; exact award/transfer date not published."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "published": {
+          "value": "2026-05-04",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "source-3",
+          "note": "On-stage demonstration and vendor disclosure are explicitly December 11, 2025. Organizer payout recap was published December 16; cash transfer date is not stated. Detailed researcher article is dated May 4, with year contextualized by its 2026 fix timeline."
+        },
+        "public_disclosure": {
+          "value": "2025-12-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Public competition demonstration; detailed technical publication followed in 2026."
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+          "title": "PostgreSQL text-encoding invariant failure caused memory corruption",
+          "type": "competition_organizer",
+          "author": "Wiz / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://www.zeroday.cloud/vulnerability-tracker",
+          "title": "Supporting primary disclosure source",
+          "type": "competition_organizer",
+          "author": "Wiz / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "cve",
+            "dates"
+          ]
+        },
+        {
+          "id": "source-3",
+          "url": "https://www.zeroday.cloud/blog/postgresql-cve-2026-2005-deep-dive",
+          "title": "Supporting primary disclosure source",
+          "type": "researcher",
+          "author": "Paul Gerste, Moritz Sanft, Team Bugz Bunnies",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "root_cause",
+            "impact",
+            "dates",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "source-4",
+          "url": "https://www.postgresql.org/support/security/CVE-2026-2006/",
+          "title": "PostgreSQL CVE-2026-2006 vendor advisory",
+          "type": "vendor",
+          "author": "PostgreSQL Global Development Group",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "cve",
+            "root_cause",
+            "impact",
+            "dates",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:54:00Z",
+        "method": "Primary public sources read; reward distinguished from maximums and aggregates. Historical defensive summary only; no vulnerability testing performed.",
+        "limitations": [
+          "This is a per-finding competition award, not a traditional vendor bounty; keep award_type visible",
+          "Do not count the team's $40,000 combined Grafana and PostgreSQL earnings as this finding's reward",
+          "Actual funds-transfer date not published"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-gemini-enterprise-connected-content-memory-integrity-2026",
+      "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
+      "organization": "Google",
+      "product": "Gemini Enterprise Jira integration",
+      "researchers": [
+        "Behi"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "ai-security",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "untrusted-input-handling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A researcher reports a $15,000 Google bounty for a Gemini Enterprise integration issue affecting persistent assistant memory.",
+      "root_cause": "Content retrieved from an external collaboration system was treated as authority for a state-changing memory operation. The defensive lesson is to preserve provenance and require explicit authorization for persistent-state changes.",
+      "impact": "Researcher reports modification or deletion of another test account's persistent assistant memory.",
+      "defensive_takeaways": [
+        "Keep retrieved content separate from authority to change persistent state.",
+        "Require independent authorization for memory changes.",
+        "Preserve connector provenance throughout downstream decisions."
+      ],
+      "reward": {
+        "amount": 15000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Google",
+        "status": "paid",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Google paid me $15,000 for this Prompt Injection bug.",
+        "evidence_location": "Article title",
+        "usd_equivalent": null,
+        "notes": "The researcher reports being paid $15,000 for this distinct finding; do not combine the separate $1,337 example. Exact award/settlement date is unknown. Dollar-denominated Google bounty; USD normalization. The individual write-up uses the $ symbol rather than spelling out USD."
+      },
+      "dates": {
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "published": {
+          "value": "2026-03-12",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "primary",
+          "note": "DEV article March 12, 2026; the researcher's Reddit write-up is dated March 9, 2026. Original X post is linked but its exact date was not independently established. No exact report, award, or fix dates were found."
+        },
+        "public_disclosure": {
+          "value": "2026-03-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Earlier researcher publication on Reddit; linked original X post might be earlier."
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6",
+          "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
+          "type": "researcher",
+          "author": "Behi",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://www.reddit.com/r/bugbounty/comments/1row41z/google_paid_me_15000_for_this_prompt_injection_bug/",
+          "title": "Supporting primary disclosure source",
+          "type": "researcher",
+          "author": "Behi",
+          "retrieved_at": "2026-10-02T03:54:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:54:00Z",
+        "method": "Primary public sources read; reward distinguished from maximums and aggregates. Historical defensive summary only; no vulnerability testing performed.",
+        "limitations": [
+          "No vendor-hosted confirmation of this individual payout found",
+          "Do not confuse this finding with the separate $1,337 memory issue mentioned in the introduction",
+          "Remediation date and current status not independently established"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "angular-ci-cache-trust-2026",
+      "title": "Angular automation trust and cache isolation weakness",
+      "organization": "Google",
+      "product": "Angular development and release infrastructure",
+      "researchers": [
+        "Adnan Khan"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "supply-chain",
+      "secondary_category_ids": [
+        "injection",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "pipeline-trust-modeling",
+        "cache-artifact-isolation",
+        "machine-identity-governance",
+        "secrets-containment",
+        "approval-state-integrity",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A Google-rewarded report connected an adjacent CI misconfiguration with insufficient separation of automation trust, creating a potential Angular supply-chain impact.",
+      "root_cause": "Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence.",
+      "impact": "The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification. Google classified the report as a flagship supply-chain compromise.",
+      "defensive_takeaways": [
+        "Separate caches and artifacts according to trust level.",
+        "Apply consistent review invalidation and least-privilege rules to automated identities.",
+        "Record which impacts were directly demonstrated versus established through design evidence."
+      ],
+      "reward": {
+        "amount": 31337,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "primary",
+        "evidence_quote": "decided to issue a reward of $31337.00 for your report",
+        "evidence_location": "Success section, quoted Google award email",
+        "usd_equivalent": null,
+        "notes": "A Google award email is quoted within the researcher publication. This is researcher-published evidence, not an independently accessed vendor award record.",
+        "type": "bug_bounty",
+        "awarding_organization": "Google"
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2026-03-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publication of this write-up; earliest disclosure elsewhere was not independently established."
+        },
+        "reported": {
+          "value": "2025-12-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-01-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-12-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Cash settlement date not independently established."
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/",
+          "title": "Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning",
+          "type": "researcher",
+          "author": "Adnan Khan",
+          "retrieved_at": "2026-10-02T03:49:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:49:00Z",
+        "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+        "limitations": [
+          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-ruby-dependency-confusion-2025",
+      "title": "GitHub package-source trust allowed dependency confusion",
+      "organization": "GitHub",
+      "product": "GitHub build and development services",
+      "researchers": [
+        "Furbreeze"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "supply-chain",
+      "secondary_category_ids": [
+        "injection"
+      ],
+      "skillset_ids": [
+        "dependency-provenance",
+        "pipeline-trust-modeling",
+        "secrets-containment",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A researcher reported one dependency-confusion finding affecting GitHub build and development services and a $20,000 award.",
+      "root_cause": "Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source.",
+      "impact": "The researcher observed code execution across multiple service contexts. The disclosed account does not establish a broader compromise beyond those observations.",
+      "defensive_takeaways": [
+        "Define explicit package sources and reserve internal namespaces where applicable.",
+        "Treat build and developer environments as separate trust zones and minimize their credentials."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Issue closed, bounty of $20k rewarded.",
+        "evidence_location": "Timeline, October 21 entry",
+        "usd_equivalent": null,
+        "notes": "The researcher states this was a critical report and that the bounty was paid; no separate payment date or public HackerOne report is supplied.",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub"
+      },
+      "dates": {
+        "published": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "url_date",
+          "source_id": "primary",
+          "note": "Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established."
+        },
+        "public_disclosure": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "url_date",
+          "source_id": "primary",
+          "note": "Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established."
+        },
+        "reported": {
+          "value": "2025-09-01",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "primary",
+          "note": "The timeline supplies September 1; year is inferred from the 2025 publication context."
+        },
+        "awarded": {
+          "value": "2025-10-21",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "primary",
+          "note": "The timeline supplies October 21; year is inferred from the 2025 publication context."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Cash settlement date not independently established."
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html",
+          "title": "Vibecoding my way to a crit on Github",
+          "type": "researcher",
+          "author": "Furbreeze",
+          "retrieved_at": "2026-10-02T03:49:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:49:00Z",
+        "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+        "limitations": [
+          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-cloud-build-approval-toctou-2025",
+      "title": "Cloud Build approval was not bound to immutable code",
+      "organization": "Google",
+      "product": "Google Cloud Build GitHub integration",
+      "researchers": [
+        "Adnan Khan"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [
+        {
+          "id": "CWE-367",
+          "basis": "analyst_mapping",
+          "source_id": "primary",
+          "note": "The source explicitly names a time-of-check/time-of-use vulnerability; numeric CWE mapping is editorial."
+        }
+      ],
+      "category_id": "business-logic",
+      "secondary_category_ids": [
+        "cloud-security",
+        "supply-chain",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "approval-state-integrity",
+        "concurrency-reasoning",
+        "integration-threat-modeling",
+        "pipeline-trust-modeling",
+        "secrets-containment"
+      ],
+      "summary": "A Cloud Build integration report identified a mismatch between maintainer approval and the code ultimately executed; Google awarded $30,000.",
+      "root_cause": "The approval decision and later code-reference resolution were not bound to the same immutable version, creating a time-of-check/time-of-use flaw.",
+      "impact": "Unreviewed code could run with the privileges and secrets available to a build. Impact depended on the permissions of the affected pipeline.",
+      "defensive_takeaways": [
+        "Bind approval decisions to immutable content identities.",
+        "Validate that the executed revision matches the authorized revision.",
+        "Limit build identity privileges and isolate untrusted contributions."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "January 28, 2025 - Awarded $30,000 Bounty",
+        "evidence_location": "Disclosure Timeline",
+        "usd_equivalent": null,
+        "notes": "Older reference: public write-up predates the preferred 12-month window; original report was in 2024.",
+        "type": "bug_bounty",
+        "awarding_organization": "Google"
+      },
+      "dates": {
+        "published": {
+          "value": "2025-07-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2025-07-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publication of this write-up; earliest disclosure elsewhere was not independently established."
+        },
+        "reported": {
+          "value": "2024-11-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-01-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-06-18",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Cash settlement date not independently established."
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Older reference, outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://adnanthekhan.com/posts/cloud-build-toctou/",
+          "title": "Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000",
+          "type": "researcher",
+          "author": "Adnan Khan",
+          "retrieved_at": "2026-10-02T03:49:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T03:49:00Z",
+        "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+        "limitations": [
+          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    }
+  ]
+}

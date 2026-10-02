@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-cloud-build-approval-toctou-2025",
+  "title": "Cloud Build approval was not bound to immutable code",
+  "organization": "Google",
+  "product": "Google Cloud Build GitHub integration",
+  "researchers": [
+    "Adnan Khan"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [
+    {
+      "id": "CWE-367",
+      "basis": "analyst_mapping",
+      "source_id": "primary",
+      "note": "The source explicitly names a time-of-check/time-of-use vulnerability; numeric CWE mapping is editorial."
+    }
+  ],
+  "category_id": "business-logic",
+  "secondary_category_ids": [
+    "cloud-security",
+    "supply-chain",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "approval-state-integrity",
+    "concurrency-reasoning",
+    "integration-threat-modeling",
+    "pipeline-trust-modeling",
+    "secrets-containment"
+  ],
+  "summary": "A Cloud Build integration report identified a mismatch between maintainer approval and the code ultimately executed; Google awarded $30,000.",
+  "root_cause": "The approval decision and later code-reference resolution were not bound to the same immutable version, creating a time-of-check/time-of-use flaw.",
+  "impact": "Unreviewed code could run with the privileges and secrets available to a build. Impact depended on the permissions of the affected pipeline.",
+  "defensive_takeaways": [
+    "Bind approval decisions to immutable content identities.",
+    "Validate that the executed revision matches the authorized revision.",
+    "Limit build identity privileges and isolate untrusted contributions."
+  ],
+  "reward": {
+    "amount": 30000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "January 28, 2025 - Awarded $30,000 Bounty",
+    "evidence_location": "Disclosure Timeline",
+    "usd_equivalent": null,
+    "notes": "Older reference: public write-up predates the preferred 12-month window; original report was in 2024.",
+    "type": "bug_bounty",
+    "awarding_organization": "Google"
+  },
+  "dates": {
+    "published": {
+      "value": "2025-07-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2025-07-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication of this write-up; earliest disclosure elsewhere was not independently established."
+    },
+    "reported": {
+      "value": "2024-11-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-01-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-06-18",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Cash settlement date not independently established."
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Older reference, outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://adnanthekhan.com/posts/cloud-build-toctou/",
+      "title": "Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000",
+      "type": "researcher",
+      "author": "Adnan Khan",
+      "retrieved_at": "2026-10-02T03:49:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T03:49:00Z",
+    "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+    "limitations": [
+      "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

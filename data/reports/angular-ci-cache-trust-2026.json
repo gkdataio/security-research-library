@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0.0",
+  "id": "angular-ci-cache-trust-2026",
+  "title": "Angular automation trust and cache isolation weakness",
+  "organization": "Google",
+  "product": "Angular development and release infrastructure",
+  "researchers": [
+    "Adnan Khan"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "supply-chain",
+  "secondary_category_ids": [
+    "injection",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "cache-artifact-isolation",
+    "machine-identity-governance",
+    "secrets-containment",
+    "approval-state-integrity",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A Google-rewarded report connected an adjacent CI misconfiguration with insufficient separation of automation trust, creating a potential Angular supply-chain impact.",
+  "root_cause": "Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence.",
+  "impact": "The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification. Google classified the report as a flagship supply-chain compromise.",
+  "defensive_takeaways": [
+    "Separate caches and artifacts according to trust level.",
+    "Apply consistent review invalidation and least-privilege rules to automated identities.",
+    "Record which impacts were directly demonstrated versus established through design evidence."
+  ],
+  "reward": {
+    "amount": 31337,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "evidence_level": "researcher_reported_with_vendor_quote",
+    "source_id": "primary",
+    "evidence_quote": "decided to issue a reward of $31337.00 for your report",
+    "evidence_location": "Success section, quoted Google award email",
+    "usd_equivalent": null,
+    "notes": "A Google award email is quoted within the researcher publication. This is researcher-published evidence, not an independently accessed vendor award record.",
+    "type": "bug_bounty",
+    "awarding_organization": "Google"
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2026-03-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication of this write-up; earliest disclosure elsewhere was not independently established."
+    },
+    "reported": {
+      "value": "2025-12-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-01-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-12-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Cash settlement date not independently established."
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/",
+      "title": "Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning",
+      "type": "researcher",
+      "author": "Adnan Khan",
+      "retrieved_at": "2026-10-02T03:49:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T03:49:00Z",
+    "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+    "limitations": [
+      "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}
