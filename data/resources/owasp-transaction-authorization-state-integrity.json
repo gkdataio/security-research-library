@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-transaction-authorization-state-integrity",
+  "title": "OWASP Transaction Authorization",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "business-logic",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "approval-state-integrity",
+    "concurrency-reasoning",
+    "authorization-modeling",
+    "security-token-design"
+  ],
+  "version": null,
+  "summary": "Explains operation-specific approval: show significant transaction details, preserve authorized data, enforce valid state transitions and recheck authorization at execution.",
+  "defensive_use": "Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant.",
+  "prerequisites": [
+    "Authentication versus operation authorization",
+    "Basic application state-machine concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public official guidance."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T16:39:51Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Living guidance; original publication and latest-update dates were not established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html",
+      "title": "Transaction Authorization Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T16:39:51Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Approval controls must match the application’s risk and workflow. This reference does not prescribe financial or legal policy."
+  ],
+  "content_scope": "defensive_education"
+}

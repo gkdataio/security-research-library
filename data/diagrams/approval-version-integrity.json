@@ -10,14 +10,16 @@
     "github-actions-reference-validation-2021"
   ],
   "linked_resource_ids": [
-    "owasp-authorization-cheat-sheet"
+    "owasp-authorization-cheat-sheet",
+    "owasp-transaction-authorization-state-integrity"
   ],
   "evidence_urls": [
     "https://adnanthekhan.com/posts/cloud-build-toctou/",
     "https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html",
-    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html"
   ],
-  "reviewed_at": "2026-10-02T14:50:00Z",
+  "reviewed_at": "2026-10-02T16:39:51Z",
   "source_graph": {
     "direction": "TB",
     "nodes": [

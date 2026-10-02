@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T16:32:49Z",
+  "latest_reviewed_at": "2026-10-02T16:42:07Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 34,
+    "included": 35,
     "within_preferred_window": 11,
-    "older_or_uncertain": 23,
-    "bug_bounty": 33,
+    "older_or_uncertain": 24,
+    "bug_bounty": 34,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -171,6 +171,11 @@
         "id": "patch-verification",
         "title": "Verify remediation evidence",
         "defensive_objective": "Compare vendor advisories, affected versions, fixes, and regression coverage without reproducing an exploit"
+      },
+      {
+        "id": "security-token-design",
+        "title": "Review security-token design",
+        "defensive_objective": "Assess unpredictable generation, subject and operation binding, limited lifetime, single-use semantics and safe validation of security-sensitive tokens"
       }
     ]
   },
@@ -3373,6 +3378,169 @@
           "Award events establish an award, not independently audited settlement.",
           "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
           "Implementation-level patch details are not public. Updated comment timestamps are distinct from original event dates."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "litespeed-cache-user-simulation-authentication-2024",
+      "title": "LiteSpeed Cache privileged user simulation relied on weak security tokens",
+      "organization": "LiteSpeed Technologies",
+      "product": "LiteSpeed Cache WordPress plugin",
+      "researchers": [
+        "John Blackbourn"
+      ],
+      "cve_ids": [
+        "CVE-2024-28000"
+      ],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "security-token-design",
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "summary": "Patchstack confirmed a USD 14,400 Zero Day award for an authentication-boundary flaw.",
+      "root_cause": "Privileged user simulation relied on a predictable, reusable token without adequate context binding.",
+      "impact": "Unauthenticated users could obtain administrator privileges on affected installations. The advisory identifies an operating-system limitation, so plugin installation totals do not establish affected-site counts.",
+      "defensive_takeaways": [
+        "Use cryptographically secure token generation, explicit authorization, context binding and limited lifetimes.",
+        "Treat impersonation and user-simulation features as privileged authentication boundaries."
+      ],
+      "reward": {
+        "amount": 14400,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Patchstack Zero Day program",
+        "evidence_level": "platform_confirmed",
+        "source_id": "platform-advisory",
+        "evidence_quote": "Patchstack Zero Day program has awarded the researcher $14,400 USD in cash.",
+        "evidence_location": "Opening advisory paragraphs.",
+        "usd_equivalent": null,
+        "notes": "Records the explicitly isolated Zero Day component. Later platform sources report USD 16,400 paid for this single finding; the USD 2,000 difference is not apportioned or counted separately. The researcher acknowledges receiving payment; exact component settlement dates are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2024-08-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "platform-advisory",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2024-08-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "platform-advisory",
+          "note": "Initial platform vulnerability-database publication preceded the full advisory."
+        },
+        "reported": {
+          "value": "2024-08-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "platform-advisory",
+          "note": "Report received by Patchstack; vendor contacted August 5."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2024-08-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "platform-advisory",
+          "note": "Release of version 6.4."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Payment acknowledged in September 6, 2024 interview, without a settlement date."
+        },
+        "award_announced": {
+          "value": "2024-08-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "platform-advisory",
+          "note": "Direct award amount stated in the advisory; earliest announcement not independently established."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred publication window."
+      },
+      "sources": [
+        {
+          "id": "platform-advisory",
+          "url": "https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/",
+          "title": "LiteSpeed Cache CVE-2024-28000 coordinated advisory",
+          "type": "platform",
+          "author": "Rafie Muhammad / Patchstack",
+          "retrieved_at": "2026-10-02T16:42:07Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "platform-interview",
+          "url": "https://patchstack.com/articles/interview-with-john-blackbourn/",
+          "title": "Interview with John Blackbourn",
+          "type": "platform",
+          "author": "Maciek Palmowski / Patchstack",
+          "retrieved_at": "2026-10-02T16:42:07Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "platform-retrospective",
+          "url": "https://patchstack.com/whitepaper/state-of-wordpress-security-in-2025/",
+          "title": "State of WordPress Security 2025",
+          "type": "platform",
+          "author": "Patchstack",
+          "retrieved_at": "2026-10-02T16:42:07Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "platform-advisory",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:42:07Z",
+        "method": "Read platform advisory, coordinated timeline, researcher interview and later platform retrospective.",
+        "limitations": [
+          "Exact award and payment dates are absent. The recorded component is not the later reported total.",
+          "The advisory describes Windows-specific limitations.",
+          "The disclosed patch added token checks and lifetime controls; the researcher’s recommended random-generator improvement was deferred for compatibility."
         ]
       },
       "content_scope": "historical_defensive_summary"

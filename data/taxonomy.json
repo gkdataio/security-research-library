@@ -147,6 +147,11 @@
       "id": "patch-verification",
       "title": "Verify remediation evidence",
       "defensive_objective": "Compare vendor advisories, affected versions, fixes, and regression coverage without reproducing an exploit"
+    },
+    {
+      "id": "security-token-design",
+      "title": "Review security-token design",
+      "defensive_objective": "Assess unpredictable generation, subject and operation binding, limited lifetime, single-use semantics and safe validation of security-sensitive tokens"
     }
   ]
 }

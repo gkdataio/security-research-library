@@ -58,6 +58,10 @@
     {
       "id": "cloud-security",
       "title": "Cloud Security"
+    },
+    {
+      "id": "business-logic",
+      "title": "Business Logic and State Integrity"
     }
   ]
 }

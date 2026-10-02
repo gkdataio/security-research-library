@@ -10,6 +10,8 @@ Learn to distinguish mutable object names from immutable versions, document exac
 
 **Taxonomy:** `approval-state-integrity`, `concurrency-reasoning`, `integration-threat-modeling`
 
+**Reference:** [OWASP Transaction Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html)
+
 ## 2. Cloud identities and integration permissions
 
 **Cases:** Meta service-identity and secret-access boundaries; Actifio driver and service-identity isolation
@@ -48,11 +50,11 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 ## 6. Account recovery and identity binding
 
-**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; GitLab recovery-address binding
+**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
 
 Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
 
-**Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`
+**Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`, `security-token-design`
 
 ## 7. Cross-API consistency and safe serialization
 
