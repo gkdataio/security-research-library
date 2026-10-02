@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T17:23:00Z",
+  "latest_reviewed_at": "2026-10-02T17:39:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,11 +15,11 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 41,
-    "within_preferred_window": 16,
-    "older_or_uncertain": 25,
+    "included": 43,
+    "within_preferred_window": 17,
+    "older_or_uncertain": 26,
     "bug_bounty": 37,
-    "competition_award": 4
+    "competition_award": 6
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
   "taxonomy": {
@@ -2793,6 +2793,208 @@
       "content_scope": "historical_defensive_summary"
     },
     {
+      "schema_version": "1.0.0",
+      "id": "redis-lua-object-lifetime-isolation-2025",
+      "title": "Redis Lua object lifetime failure crossed the scripting boundary",
+      "organization": "Redis",
+      "product": "Redis with Lua scripting",
+      "researchers": [
+        "Benny Isaacs",
+        "Nir Brakha",
+        "Sagi Tzadik"
+      ],
+      "cve_ids": [
+        "CVE-2025-49844"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-416",
+          "basis": "source_explicit",
+          "source_id": "vendor-advisory",
+          "note": "Explicit classification in the vendor security advisory."
+        }
+      ],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "summary": "ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry.",
+      "root_cause": "Lua garbage collection could leave an object referenced after its memory was freed, undermining the interpreter’s memory-safety assumptions.",
+      "impact": "The vendor confirms possible native code execution by an authenticated user able to run Lua scripts. This crosses the scripting boundary; host impact remains dependent on process privileges and deployment isolation.",
+      "defensive_takeaways": [
+        "Review object-lifetime invariants across embedded interpreters and native components.",
+        "Grant scripting access only where needed and retain least-privilege service execution.",
+        "Check corrected vendor release guidance instead of relying on an early fixed-version summary."
+      ],
+      "reward": {
+        "amount": 40000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Trend Micro Zero Day Initiative / Pwn2Own Berlin",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "They earn $40,000",
+        "evidence_location": "Named Wiz researchers’ entry in the organizer’s dated daily results",
+        "usd_equivalent": null,
+        "notes": "One competition-entry award, not the researchers’ event total. Official rules specify US currency; recipient allocation and actual cash settlement are unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-10-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-report",
+          "note": "Primary research article publication; earlier competition results are separately dated."
+        },
+        "public_disclosure": {
+          "value": "2025-05-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Public demonstration and result; vendor technical advisory followed later."
+        },
+        "reported": {
+          "value": "2025-05-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-report",
+          "note": "Researcher timeline explicitly ties this CVE to its May 16 Pwn2Own report."
+        },
+        "awarded": {
+          "value": "2025-05-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Award announced for the named individual entry."
+        },
+        "fixed": {
+          "value": "2025-10-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-report",
+          "note": "Researcher article states that Redis released its advisory and patched version on this date. This is not a universal customer-deployment date; later vendor corrections affected some Redis Software fixed-version labels."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-05-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "researcher-report",
+          "url": "https://www.wiz.io/blog/wiz-research-redis-rce-cve-2025-49844",
+          "title": "RediShell: Redis CVE-2025-49844",
+          "type": "researcher",
+          "author": "Benny Isaacs and Nir Brakha / Wiz Research",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "competition-results",
+          "url": "https://www.zerodayinitiative.com/blog/2025/5/16/pwn2own-berlin-2025-day-two-results",
+          "title": "Pwn2Own Berlin 2025 daily results",
+          "type": "competition_organizer",
+          "author": "Dustin Childs / Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "competition-rules",
+          "url": "https://www.zerodayinitiative.com/Pwn2OwnBerlin2025Rules.html",
+          "title": "Pwn2Own Berlin 2025 rules",
+          "type": "competition_organizer",
+          "author": "Trend Micro Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://github.com/redis/redis/security/advisories/GHSA-4789-qfc9-5f9q",
+          "title": "Redis Lua Use-After-Free security advisory",
+          "type": "vendor",
+          "author": "Redis maintainers",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-guidance",
+          "url": "https://redis.io/blog/security-advisory-cve-2025-49844/",
+          "title": "Redis CVE-2025-49844 remediation guidance and corrections",
+          "type": "vendor",
+          "author": "Riaz Lakhani / Redis",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:39:00Z",
+        "method": "Read the researcher’s explicit CVE-to-Pwn2Own submission timeline and matched its date, product and named researchers to the organizer’s individual-entry award; corroborated CVE and scope with vendor guidance. Official rules establish USD denomination.",
+        "limitations": [
+          "Single competition-entry award; individual recipient splits and cash-transfer date are unknown.",
+          "The October 6 article is the primary research publication; May demonstration and October 3 vendor advisory are distinct events.",
+          "Vendor Redis Software release labels were corrected on October 27 and October 30, 2025; this record does not assume every product variant was fixed in its originally listed version."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
       "schema_version": "1.1.0",
       "id": "github-cross-repository-comparison-authorization-2025",
       "title": "GitHub comparison output lacked source-repository authorization",
@@ -3243,6 +3445,207 @@
         "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
           "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nvidia-container-runtime-environment-trust-2025",
+      "title": "NVIDIA container initialization inherited untrusted execution context",
+      "organization": "NVIDIA",
+      "product": "NVIDIA Container Toolkit",
+      "researchers": [
+        "Nir Ohfeld",
+        "Shir Tamari"
+      ],
+      "cve_ids": [
+        "CVE-2025-23266"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-426",
+          "basis": "source_explicit",
+          "source_id": "vendor-advisory",
+          "note": "Explicit classification in the vendor security advisory."
+        }
+      ],
+      "category_id": "cloud-security",
+      "secondary_category_ids": [
+        "injection"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "summary": "ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
+      "root_cause": "A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority.",
+      "impact": "An untrusted container image could lead to code execution with elevated host permissions. Scope depends on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE.",
+      "defensive_takeaways": [
+        "Keep privileged runtime initialization independent of workload-controlled configuration.",
+        "Use layered tenant isolation and verify vendor-specific runtime applicability before remediation."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Trend Micro Zero Day Initiative / Pwn2Own Berlin",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "This unique bug earns them $30,000",
+        "evidence_location": "Named Wiz researchers’ entry in the organizer’s dated daily results",
+        "usd_equivalent": null,
+        "notes": "One competition-entry award, not the researchers’ event total. Official rules specify US currency; recipient allocation and actual cash settlement are unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-07-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-report",
+          "note": "Primary research article publication; earlier competition results are separately dated."
+        },
+        "public_disclosure": {
+          "value": "2025-05-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Public demonstration and result; vendor technical advisory followed later."
+        },
+        "reported": {
+          "value": "2025-05-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-report",
+          "note": "The researchers explicitly date this CVE’s initial vendor report at Pwn2Own to May 17. ZDI separately lists June 5 as its vendor-notification date; that later coordination event is not substituted for the initial report."
+        },
+        "awarded": {
+          "value": "2025-05-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Award announced for the named individual entry."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor bulletin initially released July 15, 2025 and later revised affected products and fixes; the exact release date for each patched component was not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-05-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference: published before October 2, 2025."
+      },
+      "sources": [
+        {
+          "id": "researcher-report",
+          "url": "https://www.wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape",
+          "title": "NVIDIAScape: NVIDIA Container Toolkit CVE-2025-23266",
+          "type": "researcher",
+          "author": "Nir Ohfeld and Shir Tamari / Wiz Research",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "competition-results",
+          "url": "https://www.zerodayinitiative.com/blog/2025/5/17/pwn2own-berlin-2025-day-three-results",
+          "title": "Pwn2Own Berlin 2025 daily results",
+          "type": "competition_organizer",
+          "author": "Dustin Childs / Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "competition-rules",
+          "url": "https://www.zerodayinitiative.com/Pwn2OwnBerlin2025Rules.html",
+          "title": "Pwn2Own Berlin 2025 rules",
+          "type": "competition_organizer",
+          "author": "Trend Micro Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://nvidia.custhelp.com/app/answers/detail/a_id/5659",
+          "title": "NVIDIA Container Toolkit security bulletin, July 2025",
+          "type": "vendor",
+          "author": "NVIDIA PSIRT",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "zdi-advisory",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-25-626/",
+          "title": "ZDI-25-626 NVIDIA Container Toolkit advisory",
+          "type": "competition_organizer",
+          "author": "Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:39:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:39:00Z",
+        "method": "Read the researcher’s explicit CVE-to-Pwn2Own submission timeline and matched its date, product and named researchers to the organizer’s individual-entry award; corroborated CVE and scope with vendor guidance. Official rules establish USD denomination.",
+        "limitations": [
+          "Historical technical publication, outside the preferred twelve-month window.",
+          "One awarded competition entry shared by two named researchers; recipient splits and cash-transfer date are unknown.",
+          "NVIDIA credits an additional finder, without assigning that person this competition award.",
+          "Vendor bulletin was updated after initial disclosure; affected configurations and product-specific fixed releases should be read there."
         ]
       },
       "content_scope": "historical_defensive_summary"

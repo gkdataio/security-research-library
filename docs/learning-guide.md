@@ -42,7 +42,7 @@ Learn data provenance and the difference between retrieved text and user authori
 
 ## 5. Parser contracts and memory safety
 
-**Cases:** PostgreSQL CVE-2026-2006 (competition award); Chrome V8 type consistency and initialization checks
+**Cases:** PostgreSQL CVE-2026-2006 (competition award); Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity
 
 Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit.
 
@@ -97,6 +97,14 @@ Keep the intended integration app and authorization issuer consistent throughout
 Review both explicit agent actions and background tool operations. Security decisions must describe the operation the interpreter will execute, while repository-controlled configuration must not silently gain host authority. Preserve independent filesystem controls and distinguish ordinary repository content from local execution settings.
 
 **Taxonomy:** `ai-authority-boundaries`, `secure-parser-review`, `integration-threat-modeling`, `untrusted-input-handling`
+
+## 12. Workload-to-host trust boundaries
+
+**Cases:** NVIDIA container-initialization context (historical 2025 entry); Redis scripting isolation
+
+Separate workload-controlled configuration from privileged runtime initialization. Document where isolation relies on language memory safety, container boundaries, host identities, or virtualization. Check runtime-specific exceptions and corrected vendor release information. An architecture-review deliverable should identify each boundary and its independent safeguards, without assuming that all containers or all managed services share the same impact.
+
+**Taxonomy:** `integration-threat-modeling`, `untrusted-input-handling`, `memory-safety-review`, `patch-verification`
 
 ## Common reporting skill
 
