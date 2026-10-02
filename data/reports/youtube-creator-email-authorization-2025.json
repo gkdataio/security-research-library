@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "id": "youtube-creator-email-authorization-2025",
+  "title": "YouTube creator metadata exposed private email addresses",
+  "organization": "Google",
+  "product": "YouTube Studio and Content ID APIs",
+  "researchers": [
+    "Arvin Shivram (Brutecat)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A cross-API privacy finding received a USD 20,000 award after a documented adjustment.",
+  "root_cause": "Inconsistent field-level access controls exposed private creator metadata across related APIs.",
+  "impact": "Private email addresses associated with monetized channels could be disclosed.",
+  "defensive_takeaways": [
+    "Apply field-level authorization consistently across APIs.",
+    "Treat cross-service identifiers as data, never as proof of entitlement."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Panel awards $13,337. … Panel awards an additional $6,663.",
+    "evidence_location": "Timeline, January 21 and January 23 entries; ellipsis joins excerpts",
+    "usd_equivalent": null,
+    "notes": "USD 13,337 initial award plus USD 6,663 adjustment for this same report; awarded date records the final adjustment."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-03-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2025-03-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "reported": {
+      "value": "2024-12-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-01-23",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-02-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://brutecat.com/articles/youtube-creator-emails/",
+      "title": "Disclosing YouTube Creator Emails for a $20k Bounty",
+      "type": "researcher",
+      "author": "Arvin Shivram (Brutecat)",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

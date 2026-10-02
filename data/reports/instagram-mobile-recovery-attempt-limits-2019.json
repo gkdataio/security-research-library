@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "id": "instagram-mobile-recovery-attempt-limits-2019",
+  "title": "Instagram mobile account recovery had inconsistent verification limits",
+  "organization": "Facebook / Instagram",
+  "product": "Instagram account recovery",
+  "researchers": [
+    "Laxman Muthiyah"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authentication",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "concurrency-reasoning",
+    "authorization-modeling"
+  ],
+  "summary": "The cited researcher documents a USD 30,000 award for this finding.",
+  "root_cause": "Account recovery relied on verification limits that did not provide a consistent account-level security boundary under concurrent activity. Centralized, atomic attempt accounting is the defensive concern.",
+  "impact": "The researcher demonstrated unauthorized password reset and reports remediation before publication.",
+  "defensive_takeaways": [
+    "Bind recovery attempts and verification state to the intended account.",
+    "Use atomic security counters and test concurrent state transitions locally."
+  ],
+  "reward": {
+    "amount": 30000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Facebook / Instagram",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Facebook and Instagram security team fixed the issue and rewarded me $30000 as a part of their bounty program.",
+    "evidence_location": "Primary article award statement",
+    "usd_equivalent": null,
+    "notes": "Individual finding, distinct from the researcher’s other Instagram recovery report; exact award/payment dates are unknown."
+  },
+  "dates": {
+    "published": {
+      "value": "2019-07-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "source-2",
+      "note": "Original publication date preserved by the author’s archive; current article header is a later update."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical primary publication, outside the preferred last-12-month window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://thezerohack.com/hack-any-instagram",
+      "title": "Instagram mobile account recovery had inconsistent verification limits",
+      "type": "researcher",
+      "author": "Laxman Muthiyah",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "source-2",
+      "url": "https://thezerohack.com/digital-marketing",
+      "title": "Original publication archive",
+      "type": "researcher",
+      "author": "Laxman Muthiyah",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:43:00Z",
+    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "limitations": [
+      "The current 2024 article header is not the original disclosure date",
+      "Exact report, fix, and award dates are unavailable",
+      "Distinct from the August 2019 device-binding report",
+      "Current article update: 2024-10-19; original publication is stored separately."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

@@ -20,6 +20,8 @@ Keep source IDs stable, bind claims to sources, and use direct primary URLs. Sou
 
 Preserve important source disagreements. For example, the Meta account's USD 150,000 base and 5% bonus imply USD 157,500, while its headline rounds to USD 157K. This collection records only the undisputed base and explicitly notes the discrepancy.
 
+An empty researcher array means the primary sources reviewed do not identify the researcher; never invent a name.
+
 CWE mappings are optional. Set `source_explicit` only when a cited source supplies the classification; label an editorial mapping `analyst_mapping` with a rationale. Do not guess CVE identifiers from URL slugs.
 
 ## Defensive scope

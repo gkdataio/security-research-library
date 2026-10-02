@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-support-api-authorization-2026",
+  "title": "Google support API exposed customer and agent data",
+  "organization": "Google",
+  "product": "Google Real-time Support API",
+  "researchers": [
+    "Michael Dalton"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A support-system authorization flaw received a documented USD 14,337 award.",
+  "root_cause": "An internal support-data operation lacked the necessary restriction on ordinary authenticated accounts.",
+  "impact": "Customer contact details and agent activity information were exposed. The total affected record count was not confirmed by Google.",
+  "defensive_takeaways": [
+    "Apply authorization consistently to every internal-data operation.",
+    "Minimize sensitive information returned by support integrations."
+  ],
+  "reward": {
+    "amount": 14337,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported_with_vendor_quote",
+    "source_id": "primary",
+    "evidence_quote": "Google VRP panel has decided to issue a reward of $14337.00 USD for your report.",
+    "evidence_location": "Timeline, June 10, 2025",
+    "usd_equivalent": null,
+    "notes": "Single report award includes a USD 1,000 report-quality bonus; no settlement date is given."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2026-03-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "reported": {
+      "value": "2025-06-01",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-06-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-11-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://michaeldalton.au/posts/hacking-google-support",
+      "title": "Hacking Google Support: Leaking millions of customer records ($14k bounty)",
+      "type": "researcher",
+      "author": "Michael Dalton",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

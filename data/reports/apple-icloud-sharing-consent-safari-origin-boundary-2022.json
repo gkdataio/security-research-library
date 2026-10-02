@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-icloud-sharing-consent-safari-origin-boundary-2022",
+  "title": "iCloud sharing consent and Safari trust boundaries failed together",
+  "organization": "Apple",
+  "product": "iCloud Sharing and Safari",
+  "researchers": [
+    "Ryan Pickren"
+  ],
+  "cve_ids": [
+    "CVE-2021-30861",
+    "CVE-2021-30975"
+  ],
+  "cwe_mappings": [],
+  "category_id": "client-security",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "approval-state-integrity",
+    "integration-threat-modeling",
+    "identity-lifecycle-review"
+  ],
+  "summary": "The cited researcher documents a USD 100,500 award for this reported chain.",
+  "root_cause": "Consent to open shared content remained effective after material content changes, and cross-application trust handling failed to preserve browser isolation. Review whether persisted consent remains valid as shared resources evolve.",
+  "impact": "The researcher reports access across website security contexts and media permissions; additional research covered local-file exposure.",
+  "defensive_takeaways": [
+    "Use one coherent origin model for permission enforcement.",
+    "Invalidate persistent consent when the underlying resource or trust context materially changes."
+  ],
+  "reward": {
+    "amount": 100500,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Apple",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "I reported this chain to Apple and was awarded $100,500 as a bounty.",
+    "evidence_location": "Primary article award statement",
+    "usd_equivalent": null,
+    "notes": "One award for the reported vulnerability chain, not this amount per CVE."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The primary researcher page does not supply a publication date; no exact date is inferred."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2021-07",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": null,
+    "basis": "published",
+    "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.ryanpickren.com/safari-uxss",
+      "title": "iCloud sharing consent and Safari trust boundaries failed together",
+      "type": "researcher",
+      "author": "Ryan Pickren",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "source-2",
+      "url": "https://support.apple.com/en-us/103237",
+      "title": "Apple security release advisory",
+      "type": "vendor",
+      "author": "Apple",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "dates",
+        "cve",
+        "remediation"
+      ]
+    },
+    {
+      "id": "source-3",
+      "url": "https://support.apple.com/en-us/103236",
+      "title": "Apple security release advisory",
+      "type": "vendor",
+      "author": "Apple",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "dates",
+        "cve",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:43:00Z",
+    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "limitations": [
+      "One award for a reported chain; not a separate award per CVE",
+      "Broader research included four bugs, only two used for the camera demonstration",
+      "Complete remediation and payment dates are not stated; page says all issues patched by early 2022",
+      "Publication date is unknown in the primary source, so recency is explicitly uncertain."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

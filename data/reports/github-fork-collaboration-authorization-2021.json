@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-fork-collaboration-authorization-2021",
+  "title": "GitHub fork collaboration applied inconsistent authorization",
+  "organization": "GitHub",
+  "product": "GitHub fork collaboration",
+  "researchers": [
+    "Teddy Katz"
+  ],
+  "cve_ids": [
+    "CVE-2021-22861"
+  ],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "approval-state-integrity",
+    "defensive-evidence-writing"
+  ],
+  "summary": "The first fork-collaboration finding in this article earned USD 20,000.",
+  "root_cause": "Permission checks differed between creation and modification of the same collaboration setting.",
+  "impact": "An unauthorized user could obtain write access to affected public forks.",
+  "defensive_takeaways": [
+    "Centralize entitlement checks across mutation paths.",
+    "Verify that only an authorized owner can grant collaboration privileges."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "GitHub awarded a $20000 bounty for the first issue",
+    "evidence_location": "Timeline, March 2, 2021",
+    "usd_equivalent": null,
+    "notes": "Only the first report is recorded. A distinct second report earned USD 10,000; its reward is not combined here."
+  },
+  "dates": {
+    "published": {
+      "value": "2021-03-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2021-01-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2021-03-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2021-01-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html",
+      "title": "Messing with GitHub’s fork collaboration for fun and profit",
+      "type": "researcher",
+      "author": "Teddy Katz",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

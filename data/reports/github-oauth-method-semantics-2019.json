@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-oauth-method-semantics-2019",
+  "title": "GitHub OAuth consent failed across request-method semantics",
+  "organization": "GitHub",
+  "product": "GitHub OAuth authorization",
+  "researchers": [
+    "Teddy Katz"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "authentication",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "identity-lifecycle-review",
+    "secure-parser-review",
+    "approval-state-integrity"
+  ],
+  "summary": "A framework/controller interpretation mismatch undermined OAuth consent and earned USD 25,000.",
+  "root_cause": "Routing and application logic disagreed about request semantics, allowing a state-changing operation outside its intended consent checks.",
+  "impact": "Unauthorized OAuth grants could expose or modify private account data after user interaction.",
+  "defensive_takeaways": [
+    "Make state-changing handlers explicitly validate their permitted methods and consent.",
+    "Verify that framework defaults preserve application security assumptions."
+  ],
+  "reward": {
+    "amount": 25000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "GitHub awards $25000 bounty",
+    "evidence_location": "Timeline, June 26, 2019",
+    "usd_equivalent": null,
+    "notes": "Individual report; production fix date is for github.com, with enterprise releases following June 26."
+  },
+  "dates": {
+    "published": {
+      "value": "2019-11-05",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2019-06-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2019-06-26",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2019-06-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html",
+      "title": "Bypassing GitHub’s OAuth flow",
+      "type": "researcher",
+      "author": "Teddy Katz",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

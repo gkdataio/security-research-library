@@ -42,6 +42,30 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 **Taxonomy:** `secure-parser-review`, `encoding-invariant-review`, `memory-safety-review`, `patch-verification`
 
+## 6. Account recovery and identity binding
+
+**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple
+
+Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
+
+**Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`
+
+## 7. Cross-API consistency and safe serialization
+
+**Cases:** Google Support; YouTube creator privacy; GitHub fork collaboration; HackerOne report serialization
+
+Learn how the same entitlement can be represented across API surfaces and framework layers. Define response allowlists, ownership checks, and privacy-contract tests. Compare the intended policies at creation, editing, serialization, and consumption rather than assuming an earlier check remains sufficient.
+
+**Taxonomy:** `authorization-modeling`, `secure-parser-review`, `untrusted-input-handling`, `patch-verification`
+
+## 8. Browser permission and consent lifecycle
+
+**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent
+
+Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
+
+**Taxonomy:** `browser-isolation-review`, `approval-state-integrity`, `identity-lifecycle-review`, `secure-parser-review`
+
 ## Common reporting skill
 
 For every review, distinguish the observed behavior, the intended invariant, the evidence supporting impact, and the limits of that evidence. Document remediation and residual uncertainty. A large historical award is neither a forecast of future earnings nor permission to test a target.

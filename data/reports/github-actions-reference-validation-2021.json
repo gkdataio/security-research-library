@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-actions-reference-validation-2021",
+  "title": "GitHub Actions trust depended on invalid repository references",
+  "organization": "GitHub",
+  "product": "GitHub Actions and GitHub Enterprise Server",
+  "researchers": [
+    "Teddy Katz"
+  ],
+  "cve_ids": [
+    "CVE-2021-22862"
+  ],
+  "cwe_mappings": [],
+  "category_id": "supply-chain",
+  "secondary_category_ids": [
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "authorization-modeling",
+    "secrets-containment",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A reference-validation flaw crossed the GitHub Actions trust boundary and earned USD 25,000.",
+  "root_cause": "Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced.",
+  "impact": "Repository secrets and write authority could become available to an unauthorized workflow.",
+  "defensive_takeaways": [
+    "Enforce security invariants at every mutation and at their privileged consumers.",
+    "Keep repository secrets confined to explicitly trusted execution contexts."
+  ],
+  "reward": {
+    "amount": 25000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "GitHub awarded a $25000 bug bounty",
+    "evidence_location": "Timeline, March 3, 2021",
+    "usd_equivalent": null,
+    "notes": "Single finding; the later 2022 follow-up earned USD 7,500 and is excluded."
+  },
+  "dates": {
+    "published": {
+      "value": "2021-03-17",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2021-02-04",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2021-03-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2021-03-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "GitHub Enterprise Server 3.0.1 release; github.com was fixed earlier in February, without an exact final timestamp in the source."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html",
+      "title": "Stealing arbitrary GitHub Actions secrets",
+      "type": "researcher",
+      "author": "Teddy Katz",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

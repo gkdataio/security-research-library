@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-bard-workspace-output-boundary-2024",
+  "title": "Bard Workspace integration weakened output-data boundaries",
+  "organization": "Google",
+  "product": "Bard Workspace integration",
+  "researchers": [
+    "Roni Carta",
+    "Justin Gardner"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "ai-security",
+  "secondary_category_ids": [
+    "client-security",
+    "injection"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "untrusted-input-handling"
+  ],
+  "summary": "One Workspace data-disclosure finding within a broader research article earned USD 20,000.",
+  "root_cause": "Generated content and browser output restrictions did not maintain the intended boundary around connected Workspace data.",
+  "impact": "The researchers demonstrated disclosure of email content from a controlled account.",
+  "defensive_takeaways": [
+    "Independently constrain external destinations for sensitive model output.",
+    "Review connector data access and rendering as a single end-to-end trust boundary."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "we ended up with a 20,000$ bounty",
+    "evidence_location": "Google Workspace leakage through Bard section",
+    "usd_equivalent": null,
+    "notes": "Records the individual base award, not the article’s USD 50,000 aggregate. A USD 1,337 event bonus for this finding is stated separately."
+  },
+  "dates": {
+    "published": {
+      "value": "2024-03-04",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://depi.security/blog/20240304-google-hack-50000/",
+      "title": "We Hacked Google A.I. for $50,000",
+      "type": "researcher",
+      "author": "Roni Carta",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

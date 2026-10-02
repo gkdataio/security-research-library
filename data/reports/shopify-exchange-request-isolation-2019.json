@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "id": "shopify-exchange-request-isolation-2019",
+  "title": "Shopify Exchange screenshot service crossed internal boundaries",
+  "organization": "Shopify",
+  "product": "Shopify Exchange screenshot service",
+  "researchers": [
+    "André Baptista (0xacb)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "server-request-trust",
+  "secondary_category_ids": [
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "cloud-iam-review",
+    "secrets-containment",
+    "defensive-evidence-writing"
+  ],
+  "summary": "Shopify confirms a USD 25,000 award for a screenshot-service isolation flaw.",
+  "root_cause": "Server-initiated requests could reach internal infrastructure and metadata that should have been isolated.",
+  "impact": "Root access was possible within one infrastructure subset. Shopify explicitly says its core platform was outside that subset.",
+  "defensive_takeaways": [
+    "Restrict service egress and protect infrastructure metadata.",
+    "Preserve strong isolation between infrastructure groups."
+  ],
+  "reward": {
+    "amount": 25000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Shopify",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "primary",
+    "evidence_quote": "SSRF in Exchange leads to ROOT access in all instances - Bounty: $25,000",
+    "evidence_location": "Top Three Interesting Bugs, first entry",
+    "usd_equivalent": null,
+    "notes": "Vendor retrospective explicitly ties this amount to one report. Original report, award, and fix dates are not supplied."
+  },
+  "dates": {
+    "published": {
+      "value": "2019-04-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://shopify.engineering/one-million-dollars-in-bug-bounties",
+      "title": "One Million Dollars in Bug Bounties",
+      "type": "vendor",
+      "author": "Peter Yaworski / Shopify",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "The 2019 date is the vendor retrospective publication, not the original discovery date.",
+      "The cited HackerOne report link did not expose readable report metadata during this review."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

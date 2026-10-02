@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-gemini-colab-rendering-boundary-2025",
+  "title": "Gemini-to-Colab rendering boundary exposed Workspace data",
+  "organization": "Google",
+  "product": "Gemini Export to Colab",
+  "researchers": [
+    "Valentino Massaro"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "ai-security",
+  "secondary_category_ids": [
+    "injection",
+    "client-security"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "secure-parser-review",
+    "untrusted-input-handling"
+  ],
+  "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
+  "root_cause": "Different sanitization and rendering assumptions across integrated applications weakened data-output restrictions.",
+  "impact": "The researcher demonstrated potential disclosure of Workspace information through the affected export workflow.",
+  "defensive_takeaways": [
+    "Maintain consistent content-handling contracts across integration boundaries.",
+    "Enforce output destinations independently from generated or retrieved text."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported_with_vendor_quote",
+    "source_id": "primary",
+    "evidence_quote": "decided to issue a reward of $20000.00 for your report",
+    "evidence_location": "Colaboratory markdown sanitizer bypass, May 20 timeline",
+    "usd_equivalent": null,
+    "notes": "This amount belongs to the Colab finding; a separate Gemini-only finding was marked duplicate."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-11",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "publication-index",
+      "note": "Author homepage supplies November 2025; exact publication day is not established."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2025-04-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-05-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/",
+      "title": "Hacking Gemini: A Multi-Layered Approach",
+      "type": "researcher",
+      "author": "Valentino Massaro",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "publication-index",
+      "url": "https://buganizer.cc/",
+      "title": "Valentino’s issue tracker",
+      "type": "researcher",
+      "author": "Valentino Massaro",
+      "retrieved_at": "2026-10-02T14:39:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:39:00Z",
+    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "limitations": [
+      "Award is reported by the cited source; cash settlement is not independently audited."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

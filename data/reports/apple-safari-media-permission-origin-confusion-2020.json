@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-safari-media-permission-origin-confusion-2020",
+  "title": "Safari origin confusion undermined stored media permissions",
+  "organization": "Apple",
+  "product": "Safari media permissions",
+  "researchers": [
+    "Ryan Pickren"
+  ],
+  "cve_ids": [
+    "CVE-2020-3852",
+    "CVE-2020-3864",
+    "CVE-2020-3865"
+  ],
+  "cwe_mappings": [],
+  "category_id": "client-security",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "secure-parser-review",
+    "identity-lifecycle-review",
+    "patch-verification"
+  ],
+  "summary": "The cited researcher documents a USD 75,000 award for this reported chain.",
+  "root_cause": "URL parsing, origin identity, and secure-context decisions were inconsistent with the identity used for stored permissions. Defensive design should use one coherent origin model across permission enforcement.",
+  "impact": "Unauthorized camera and microphone access under previously granted website permissions.",
+  "defensive_takeaways": [
+    "Use one coherent origin model for permission enforcement.",
+    "Invalidate persistent consent when the underlying resource or trust context materially changes."
+  ],
+  "reward": {
+    "amount": 75000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Apple",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "awarded me $75,000",
+    "evidence_location": "Primary article award statement",
+    "usd_equivalent": null,
+    "notes": "One award for the reported vulnerability chain, not this amount per CVE."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The primary researcher page does not supply a publication date; no exact date is inferred."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": "2020-01-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "source-2",
+      "note": "Safari 13.0.5 vendor release date; the advisory entry was added February 6."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": null,
+    "basis": "published",
+    "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.ryanpickren.com/webcam-hacking-overview",
+      "title": "Safari origin confusion undermined stored media permissions",
+      "type": "researcher",
+      "author": "Ryan Pickren",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "source-2",
+      "url": "https://support.apple.com/en-sa/103780",
+      "title": "Apple security release advisory",
+      "type": "vendor",
+      "author": "Apple",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "dates",
+        "cve",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:43:00Z",
+    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "limitations": [
+      "One reported chain, not a $75,000 award for each CVE",
+      "Broader project found seven bugs; source attributes this award to the camera exploit",
+      "The researcher's page has no explicit publication date",
+      "Publication date is unknown in the primary source, so recency is explicitly uncertain."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

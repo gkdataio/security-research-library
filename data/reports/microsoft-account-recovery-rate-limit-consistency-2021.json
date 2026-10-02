@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "id": "microsoft-account-recovery-rate-limit-consistency-2021",
+  "title": "Microsoft account recovery lacked consistent attempt-limit enforcement",
+  "organization": "Microsoft",
+  "product": "Microsoft account recovery",
+  "researchers": [
+    "Laxman Muthiyah"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authentication",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "concurrency-reasoning",
+    "authorization-modeling"
+  ],
+  "summary": "The cited researcher documents a USD 50,000 award for this finding.",
+  "root_cause": "Recovery controls did not enforce attempt limits consistently across simultaneous verification operations. Defensive reviews should verify atomic, account-bound limits and consistent treatment of recovery and multifactor checks.",
+  "impact": "Potential account takeover; the researcher says Microsoft classified severity as Important because practical exploitation required substantial resources.",
+  "defensive_takeaways": [
+    "Bind recovery attempts and verification state to the intended account.",
+    "Use atomic security counters and test concurrent state transitions locally."
+  ],
+  "reward": {
+    "amount": 50000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Microsoft",
+    "status": "paid",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "I received the bounty of $50,000 USD on Feb 9th, 2021 through hackerone",
+    "evidence_location": "Primary article award statement",
+    "usd_equivalent": null,
+    "notes": "Researcher says the bounty was received on February 9, 2021; that is the payment date, not a separately confirmed award-decision date."
+  },
+  "dates": {
+    "published": {
+      "value": "2021-03-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "source-2",
+      "note": "Original publication date preserved by the author’s archive; current article header is a later update."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": "2020-11",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "paid": {
+      "value": "2021-02-09",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical primary publication, outside the preferred last-12-month window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account",
+      "title": "Microsoft account recovery lacked consistent attempt-limit enforcement",
+      "type": "researcher",
+      "author": "Laxman Muthiyah",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "source-2",
+      "url": "https://thezerohack.com/digital-marketing",
+      "title": "Original publication archive",
+      "type": "researcher",
+      "author": "Laxman Muthiyah",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:43:00Z",
+    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "limitations": [
+      "The article header now shows a 2024 update; its archive preserves March 2, 2021 publication",
+      "No independent vendor-hosted payout confirmation retrieved",
+      "Current article update: 2024-12-06; original publication is stored separately."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

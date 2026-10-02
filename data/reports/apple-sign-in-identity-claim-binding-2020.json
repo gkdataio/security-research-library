@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-sign-in-identity-claim-binding-2020",
+  "title": "Sign in with Apple failed to bind identity claims to the authenticated user",
+  "organization": "Apple",
+  "product": "Sign in with Apple",
+  "researchers": [
+    "Bhavuk Jain"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "The cited researcher documents a USD 100,000 award for this finding.",
+  "root_cause": "Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications. Cryptographic validity alone did not establish correct claim ownership.",
+  "impact": "Potential takeover of third-party application accounts using the integration without additional safeguards. Named third-party applications were not tested by the researcher.",
+  "defensive_takeaways": [
+    "Validate identity-claim ownership in addition to token cryptographic validity.",
+    "Document relying-party assumptions and additional authentication safeguards."
+  ],
+  "reward": {
+    "amount": 100000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "Apple",
+    "status": "paid",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "For this vulnerability, I was paid $100,000 by Apple under their Apple Security Bounty program.",
+    "evidence_location": "Primary article award statement",
+    "usd_equivalent": null,
+    "notes": "Researcher explicitly says they were paid; exact settlement date is not supplied."
+  },
+  "dates": {
+    "published": {
+      "value": "2020-05-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical primary publication, outside the preferred last-12-month window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://bhavukjain.com/blog/2020/05/30/zeroday-signin-with-apple/",
+      "title": "Sign in with Apple failed to bind identity claims to the authenticated user",
+      "type": "researcher",
+      "author": "Bhavuk Jain",
+      "retrieved_at": "2026-10-02T14:43:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T14:43:00Z",
+    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "limitations": [
+      "No exact report, fix, or payment date stated",
+      "Researcher says Apple's investigation found no misuse; independent vendor payout confirmation was not retrieved"
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T03:54:00Z",
+  "latest_reviewed_at": "2026-10-02T14:43:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 6,
-    "within_preferred_window": 5,
-    "older_or_uncertain": 1,
-    "bug_bounty": 5,
+    "included": 21,
+    "within_preferred_window": 7,
+    "older_or_uncertain": 14,
+    "bug_bounty": 20,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -510,6 +510,138 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "google-support-api-authorization-2026",
+      "title": "Google support API exposed customer and agent data",
+      "organization": "Google",
+      "product": "Google Real-time Support API",
+      "researchers": [
+        "Michael Dalton"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A support-system authorization flaw received a documented USD 14,337 award.",
+      "root_cause": "An internal support-data operation lacked the necessary restriction on ordinary authenticated accounts.",
+      "impact": "Customer contact details and agent activity information were exposed. The total affected record count was not confirmed by Google.",
+      "defensive_takeaways": [
+        "Apply authorization consistently to every internal-data operation.",
+        "Minimize sensitive information returned by support integrations."
+      ],
+      "reward": {
+        "amount": 14337,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Google",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "primary",
+        "evidence_quote": "Google VRP panel has decided to issue a reward of $14337.00 USD for your report.",
+        "evidence_location": "Timeline, June 10, 2025",
+        "usd_equivalent": null,
+        "notes": "Single report award includes a USD 1,000 report-quality bonus; no settlement date is given."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2026-03-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "reported": {
+          "value": "2025-06-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-06-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-11-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://michaeldalton.au/posts/hacking-google-support",
+          "title": "Hacking Google Support: Leaking millions of customer records ($14k bounty)",
+          "type": "researcher",
+          "author": "Michael Dalton",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "google-gemini-enterprise-connected-content-memory-integrity-2026",
       "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
       "organization": "Google",
@@ -798,6 +930,153 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "google-gemini-colab-rendering-boundary-2025",
+      "title": "Gemini-to-Colab rendering boundary exposed Workspace data",
+      "organization": "Google",
+      "product": "Gemini Export to Colab",
+      "researchers": [
+        "Valentino Massaro"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "ai-security",
+      "secondary_category_ids": [
+        "injection",
+        "client-security"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "secure-parser-review",
+        "untrusted-input-handling"
+      ],
+      "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
+      "root_cause": "Different sanitization and rendering assumptions across integrated applications weakened data-output restrictions.",
+      "impact": "The researcher demonstrated potential disclosure of Workspace information through the affected export workflow.",
+      "defensive_takeaways": [
+        "Maintain consistent content-handling contracts across integration boundaries.",
+        "Enforce output destinations independently from generated or retrieved text."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Google",
+        "evidence_level": "researcher_reported_with_vendor_quote",
+        "source_id": "primary",
+        "evidence_quote": "decided to issue a reward of $20000.00 for your report",
+        "evidence_location": "Colaboratory markdown sanitizer bypass, May 20 timeline",
+        "usd_equivalent": null,
+        "notes": "This amount belongs to the Colab finding; a separate Gemini-only finding was marked duplicate."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-11",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "publication-index",
+          "note": "Author homepage supplies November 2025; exact publication day is not established."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2025-04-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-05-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/",
+          "title": "Hacking Gemini: A Multi-Layered Approach",
+          "type": "researcher",
+          "author": "Valentino Massaro",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "publication-index",
+          "url": "https://buganizer.cc/",
+          "title": "Valentino’s issue tracker",
+          "type": "researcher",
+          "author": "Valentino Massaro",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "github-ruby-dependency-confusion-2025",
       "title": "GitHub package-source trust allowed dependency confusion",
       "organization": "GitHub",
@@ -1073,6 +1352,1849 @@
         "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
           "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "hackerone-report-json-serialization-data-exposure-2025",
+      "title": "Framework serialization change exposed private HackerOne user attributes",
+      "organization": "HackerOne",
+      "product": "HackerOne report serialization",
+      "researchers": [],
+      "cve_ids": [],
+      "cwe_mappings": [
+        {
+          "id": "CWE-200",
+          "basis": "source_explicit",
+          "source_id": "primary",
+          "note": "The vendor explicitly labels the report Information Disclosure (CWE-200)."
+        }
+      ],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "summary": "The cited vendor documents a USD 25,000 award for this finding.",
+      "root_cause": "A framework upgrade changed JSON serialization behavior, exposing private user attributes in public report data. Explicit response allowlists and privacy-focused contract tests help prevent this class of regression.",
+      "impact": "Sensitive user-data exposure and cross-program linking risk. HackerOne describes the report as Critical and confirms remediation and retesting.",
+      "defensive_takeaways": [
+        "Serialize only explicitly allowed response fields.",
+        "Include privacy-contract regression checks in framework upgrades."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "HackerOne",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "Reward: $25,000",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Vendor confirms the individual report’s reward; exact award and payment dates are not supplied."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-06-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.hackerone.com/blog/hai-insight-agent-case-study",
+          "title": "Framework serialization change exposed private HackerOne user attributes",
+          "type": "vendor",
+          "author": "Crystal Hazen / HackerOne",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "June 24 is the vendor case-study date, not an asserted first disclosure or payment date",
+          "Public report requires JavaScript; exact timeline and researcher identity were not recovered",
+          "The security issue was serialization, not a vulnerability in Hai itself"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "youtube-creator-email-authorization-2025",
+      "title": "YouTube creator metadata exposed private email addresses",
+      "organization": "Google",
+      "product": "YouTube Studio and Content ID APIs",
+      "researchers": [
+        "Arvin Shivram (Brutecat)"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A cross-API privacy finding received a USD 20,000 award after a documented adjustment.",
+      "root_cause": "Inconsistent field-level access controls exposed private creator metadata across related APIs.",
+      "impact": "Private email addresses associated with monetized channels could be disclosed.",
+      "defensive_takeaways": [
+        "Apply field-level authorization consistently across APIs.",
+        "Treat cross-service identifiers as data, never as proof of entitlement."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Google",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Panel awards $13,337. … Panel awards an additional $6,663.",
+        "evidence_location": "Timeline, January 21 and January 23 entries; ellipsis joins excerpts",
+        "usd_equivalent": null,
+        "notes": "USD 13,337 initial award plus USD 6,663 adjustment for this same report; awarded date records the final adjustment."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-03-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2025-03-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "reported": {
+          "value": "2024-12-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-01-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-02-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://brutecat.com/articles/youtube-creator-emails/",
+          "title": "Disclosing YouTube Creator Emails for a $20k Bounty",
+          "type": "researcher",
+          "author": "Arvin Shivram (Brutecat)",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-bard-workspace-output-boundary-2024",
+      "title": "Bard Workspace integration weakened output-data boundaries",
+      "organization": "Google",
+      "product": "Bard Workspace integration",
+      "researchers": [
+        "Roni Carta",
+        "Justin Gardner"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "ai-security",
+      "secondary_category_ids": [
+        "client-security",
+        "injection"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "untrusted-input-handling"
+      ],
+      "summary": "One Workspace data-disclosure finding within a broader research article earned USD 20,000.",
+      "root_cause": "Generated content and browser output restrictions did not maintain the intended boundary around connected Workspace data.",
+      "impact": "The researchers demonstrated disclosure of email content from a controlled account.",
+      "defensive_takeaways": [
+        "Independently constrain external destinations for sensitive model output.",
+        "Review connector data access and rendering as a single end-to-end trust boundary."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Google",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "we ended up with a 20,000$ bounty",
+        "evidence_location": "Google Workspace leakage through Bard section",
+        "usd_equivalent": null,
+        "notes": "Records the individual base award, not the article’s USD 50,000 aggregate. A USD 1,337 event bonus for this finding is stated separately."
+      },
+      "dates": {
+        "published": {
+          "value": "2024-03-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://depi.security/blog/20240304-google-hack-50000/",
+          "title": "We Hacked Google A.I. for $50,000",
+          "type": "researcher",
+          "author": "Roni Carta",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-actions-reference-validation-2021",
+      "title": "GitHub Actions trust depended on invalid repository references",
+      "organization": "GitHub",
+      "product": "GitHub Actions and GitHub Enterprise Server",
+      "researchers": [
+        "Teddy Katz"
+      ],
+      "cve_ids": [
+        "CVE-2021-22862"
+      ],
+      "cwe_mappings": [],
+      "category_id": "supply-chain",
+      "secondary_category_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "pipeline-trust-modeling",
+        "authorization-modeling",
+        "secrets-containment",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A reference-validation flaw crossed the GitHub Actions trust boundary and earned USD 25,000.",
+      "root_cause": "Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced.",
+      "impact": "Repository secrets and write authority could become available to an unauthorized workflow.",
+      "defensive_takeaways": [
+        "Enforce security invariants at every mutation and at their privileged consumers.",
+        "Keep repository secrets confined to explicitly trusted execution contexts."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "GitHub awarded a $25000 bug bounty",
+        "evidence_location": "Timeline, March 3, 2021",
+        "usd_equivalent": null,
+        "notes": "Single finding; the later 2022 follow-up earned USD 7,500 and is excluded."
+      },
+      "dates": {
+        "published": {
+          "value": "2021-03-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2021-02-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2021-03-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2021-03-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "GitHub Enterprise Server 3.0.1 release; github.com was fixed earlier in February, without an exact final timestamp in the source."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html",
+          "title": "Stealing arbitrary GitHub Actions secrets",
+          "type": "researcher",
+          "author": "Teddy Katz",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-fork-collaboration-authorization-2021",
+      "title": "GitHub fork collaboration applied inconsistent authorization",
+      "organization": "GitHub",
+      "product": "GitHub fork collaboration",
+      "researchers": [
+        "Teddy Katz"
+      ],
+      "cve_ids": [
+        "CVE-2021-22861"
+      ],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "approval-state-integrity",
+        "defensive-evidence-writing"
+      ],
+      "summary": "The first fork-collaboration finding in this article earned USD 20,000.",
+      "root_cause": "Permission checks differed between creation and modification of the same collaboration setting.",
+      "impact": "An unauthorized user could obtain write access to affected public forks.",
+      "defensive_takeaways": [
+        "Centralize entitlement checks across mutation paths.",
+        "Verify that only an authorized owner can grant collaboration privileges."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "GitHub awarded a $20000 bounty for the first issue",
+        "evidence_location": "Timeline, March 2, 2021",
+        "usd_equivalent": null,
+        "notes": "Only the first report is recorded. A distinct second report earned USD 10,000; its reward is not combined here."
+      },
+      "dates": {
+        "published": {
+          "value": "2021-03-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2021-01-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2021-03-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2021-01-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html",
+          "title": "Messing with GitHub’s fork collaboration for fun and profit",
+          "type": "researcher",
+          "author": "Teddy Katz",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "microsoft-account-recovery-rate-limit-consistency-2021",
+      "title": "Microsoft account recovery lacked consistent attempt-limit enforcement",
+      "organization": "Microsoft",
+      "product": "Microsoft account recovery",
+      "researchers": [
+        "Laxman Muthiyah"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "concurrency-reasoning",
+        "authorization-modeling"
+      ],
+      "summary": "The cited researcher documents a USD 50,000 award for this finding.",
+      "root_cause": "Recovery controls did not enforce attempt limits consistently across simultaneous verification operations. Defensive reviews should verify atomic, account-bound limits and consistent treatment of recovery and multifactor checks.",
+      "impact": "Potential account takeover; the researcher says Microsoft classified severity as Important because practical exploitation required substantial resources.",
+      "defensive_takeaways": [
+        "Bind recovery attempts and verification state to the intended account.",
+        "Use atomic security counters and test concurrent state transitions locally."
+      ],
+      "reward": {
+        "amount": 50000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Microsoft",
+        "status": "paid",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "I received the bounty of $50,000 USD on Feb 9th, 2021 through hackerone",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Researcher says the bounty was received on February 9, 2021; that is the payment date, not a separately confirmed award-decision date."
+      },
+      "dates": {
+        "published": {
+          "value": "2021-03-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Original publication date preserved by the author’s archive; current article header is a later update."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2020-11",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": "2021-02-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account",
+          "title": "Microsoft account recovery lacked consistent attempt-limit enforcement",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://thezerohack.com/digital-marketing",
+          "title": "Original publication archive",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "The article header now shows a 2024 update; its archive preserves March 2, 2021 publication",
+          "No independent vendor-hosted payout confirmation retrieved",
+          "Current article update: 2024-12-06; original publication is stored separately."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-sign-in-identity-claim-binding-2020",
+      "title": "Sign in with Apple failed to bind identity claims to the authenticated user",
+      "organization": "Apple",
+      "product": "Sign in with Apple",
+      "researchers": [
+        "Bhavuk Jain"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "The cited researcher documents a USD 100,000 award for this finding.",
+      "root_cause": "Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications. Cryptographic validity alone did not establish correct claim ownership.",
+      "impact": "Potential takeover of third-party application accounts using the integration without additional safeguards. Named third-party applications were not tested by the researcher.",
+      "defensive_takeaways": [
+        "Validate identity-claim ownership in addition to token cryptographic validity.",
+        "Document relying-party assumptions and additional authentication safeguards."
+      ],
+      "reward": {
+        "amount": 100000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Apple",
+        "status": "paid",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "For this vulnerability, I was paid $100,000 by Apple under their Apple Security Bounty program.",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Researcher explicitly says they were paid; exact settlement date is not supplied."
+      },
+      "dates": {
+        "published": {
+          "value": "2020-05-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://bhavukjain.com/blog/2020/05/30/zeroday-signin-with-apple/",
+          "title": "Sign in with Apple failed to bind identity claims to the authenticated user",
+          "type": "researcher",
+          "author": "Bhavuk Jain",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "No exact report, fix, or payment date stated",
+          "Researcher says Apple's investigation found no misuse; independent vendor payout confirmation was not retrieved"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-oauth-method-semantics-2019",
+      "title": "GitHub OAuth consent failed across request-method semantics",
+      "organization": "GitHub",
+      "product": "GitHub OAuth authorization",
+      "researchers": [
+        "Teddy Katz"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "authentication",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "secure-parser-review",
+        "approval-state-integrity"
+      ],
+      "summary": "A framework/controller interpretation mismatch undermined OAuth consent and earned USD 25,000.",
+      "root_cause": "Routing and application logic disagreed about request semantics, allowing a state-changing operation outside its intended consent checks.",
+      "impact": "Unauthorized OAuth grants could expose or modify private account data after user interaction.",
+      "defensive_takeaways": [
+        "Make state-changing handlers explicitly validate their permitted methods and consent.",
+        "Verify that framework defaults preserve application security assumptions."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "GitHub awards $25000 bounty",
+        "evidence_location": "Timeline, June 26, 2019",
+        "usd_equivalent": null,
+        "notes": "Individual report; production fix date is for github.com, with enterprise releases following June 26."
+      },
+      "dates": {
+        "published": {
+          "value": "2019-11-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2019-06-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2019-06-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2019-06-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html",
+          "title": "Bypassing GitHub’s OAuth flow",
+          "type": "researcher",
+          "author": "Teddy Katz",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "instagram-recovery-challenge-account-binding-2019",
+      "title": "Instagram recovery challenges were insufficiently bound to accounts",
+      "organization": "Facebook / Instagram",
+      "product": "Instagram account recovery",
+      "researchers": [
+        "Laxman Muthiyah"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "concurrency-reasoning",
+        "authorization-modeling"
+      ],
+      "summary": "The cited researcher documents a USD 10,000 award for this finding.",
+      "root_cause": "Recovery challenge state did not maintain sufficiently strict binding among account, device context, and verification secret. Review challenge ownership and uniqueness throughout the recovery lifecycle.",
+      "impact": "Researcher reports a separate, lower-severity account-takeover finding, fixed before publication.",
+      "defensive_takeaways": [
+        "Bind recovery attempts and verification state to the intended account.",
+        "Use atomic security counters and test concurrent state transitions locally."
+      ],
+      "reward": {
+        "amount": 10000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Facebook / Instagram",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Facebook and Instagram security team fixed the issue and rewarded me $10000 as a part of their bounty program.",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Individual finding, distinct from the researcher’s other Instagram recovery report; exact award/payment dates are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2019-08-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Original publication date preserved by the author’s archive; current article header is a later update."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://thezerohack.com/hack-instagram-again",
+          "title": "Instagram recovery challenges were insufficiently bound to accounts",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://thezerohack.com/digital-marketing",
+          "title": "Original publication archive",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "The current 2024 article header is not the original disclosure date",
+          "Exact report, fix, and award dates are unavailable",
+          "No independent vendor-hosted payout confirmation retrieved",
+          "Current article update: 2024-12-06; original publication is stored separately."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "instagram-mobile-recovery-attempt-limits-2019",
+      "title": "Instagram mobile account recovery had inconsistent verification limits",
+      "organization": "Facebook / Instagram",
+      "product": "Instagram account recovery",
+      "researchers": [
+        "Laxman Muthiyah"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "concurrency-reasoning",
+        "authorization-modeling"
+      ],
+      "summary": "The cited researcher documents a USD 30,000 award for this finding.",
+      "root_cause": "Account recovery relied on verification limits that did not provide a consistent account-level security boundary under concurrent activity. Centralized, atomic attempt accounting is the defensive concern.",
+      "impact": "The researcher demonstrated unauthorized password reset and reports remediation before publication.",
+      "defensive_takeaways": [
+        "Bind recovery attempts and verification state to the intended account.",
+        "Use atomic security counters and test concurrent state transitions locally."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Facebook / Instagram",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Facebook and Instagram security team fixed the issue and rewarded me $30000 as a part of their bounty program.",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Individual finding, distinct from the researcher’s other Instagram recovery report; exact award/payment dates are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2019-07-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Original publication date preserved by the author’s archive; current article header is a later update."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://thezerohack.com/hack-any-instagram",
+          "title": "Instagram mobile account recovery had inconsistent verification limits",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://thezerohack.com/digital-marketing",
+          "title": "Original publication archive",
+          "type": "researcher",
+          "author": "Laxman Muthiyah",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "The current 2024 article header is not the original disclosure date",
+          "Exact report, fix, and award dates are unavailable",
+          "Distinct from the August 2019 device-binding report",
+          "Current article update: 2024-10-19; original publication is stored separately."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "shopify-exchange-request-isolation-2019",
+      "title": "Shopify Exchange screenshot service crossed internal boundaries",
+      "organization": "Shopify",
+      "product": "Shopify Exchange screenshot service",
+      "researchers": [
+        "André Baptista (0xacb)"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "server-request-trust",
+      "secondary_category_ids": [
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "cloud-iam-review",
+        "secrets-containment",
+        "defensive-evidence-writing"
+      ],
+      "summary": "Shopify confirms a USD 25,000 award for a screenshot-service isolation flaw.",
+      "root_cause": "Server-initiated requests could reach internal infrastructure and metadata that should have been isolated.",
+      "impact": "Root access was possible within one infrastructure subset. Shopify explicitly says its core platform was outside that subset.",
+      "defensive_takeaways": [
+        "Restrict service egress and protect infrastructure metadata.",
+        "Preserve strong isolation between infrastructure groups."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Shopify",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "SSRF in Exchange leads to ROOT access in all instances - Bounty: $25,000",
+        "evidence_location": "Top Three Interesting Bugs, first entry",
+        "usd_equivalent": null,
+        "notes": "Vendor retrospective explicitly ties this amount to one report. Original report, award, and fix dates are not supplied."
+      },
+      "dates": {
+        "published": {
+          "value": "2019-04-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://shopify.engineering/one-million-dollars-in-bug-bounties",
+          "title": "One Million Dollars in Bug Bounties",
+          "type": "vendor",
+          "author": "Peter Yaworski / Shopify",
+          "retrieved_at": "2026-10-02T14:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:39:00Z",
+        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "limitations": [
+          "The 2019 date is the vendor retrospective publication, not the original discovery date.",
+          "The cited HackerOne report link did not expose readable report metadata during this review."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-safari-media-permission-origin-confusion-2020",
+      "title": "Safari origin confusion undermined stored media permissions",
+      "organization": "Apple",
+      "product": "Safari media permissions",
+      "researchers": [
+        "Ryan Pickren"
+      ],
+      "cve_ids": [
+        "CVE-2020-3852",
+        "CVE-2020-3864",
+        "CVE-2020-3865"
+      ],
+      "cwe_mappings": [],
+      "category_id": "client-security",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "secure-parser-review",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "summary": "The cited researcher documents a USD 75,000 award for this reported chain.",
+      "root_cause": "URL parsing, origin identity, and secure-context decisions were inconsistent with the identity used for stored permissions. Defensive design should use one coherent origin model across permission enforcement.",
+      "impact": "Unauthorized camera and microphone access under previously granted website permissions.",
+      "defensive_takeaways": [
+        "Use one coherent origin model for permission enforcement.",
+        "Invalidate persistent consent when the underlying resource or trust context materially changes."
+      ],
+      "reward": {
+        "amount": 75000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Apple",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "awarded me $75,000",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "One award for the reported vulnerability chain, not this amount per CVE."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The primary researcher page does not supply a publication date; no exact date is inferred."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2020-01-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "source-2",
+          "note": "Safari 13.0.5 vendor release date; the advisory entry was added February 6."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.ryanpickren.com/webcam-hacking-overview",
+          "title": "Safari origin confusion undermined stored media permissions",
+          "type": "researcher",
+          "author": "Ryan Pickren",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://support.apple.com/en-sa/103780",
+          "title": "Apple security release advisory",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates",
+            "cve",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "One reported chain, not a $75,000 award for each CVE",
+          "Broader project found seven bugs; source attributes this award to the camera exploit",
+          "The researcher's page has no explicit publication date",
+          "Publication date is unknown in the primary source, so recency is explicitly uncertain."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-icloud-sharing-consent-safari-origin-boundary-2022",
+      "title": "iCloud sharing consent and Safari trust boundaries failed together",
+      "organization": "Apple",
+      "product": "iCloud Sharing and Safari",
+      "researchers": [
+        "Ryan Pickren"
+      ],
+      "cve_ids": [
+        "CVE-2021-30861",
+        "CVE-2021-30975"
+      ],
+      "cwe_mappings": [],
+      "category_id": "client-security",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "approval-state-integrity",
+        "integration-threat-modeling",
+        "identity-lifecycle-review"
+      ],
+      "summary": "The cited researcher documents a USD 100,500 award for this reported chain.",
+      "root_cause": "Consent to open shared content remained effective after material content changes, and cross-application trust handling failed to preserve browser isolation. Review whether persisted consent remains valid as shared resources evolve.",
+      "impact": "The researcher reports access across website security contexts and media permissions; additional research covered local-file exposure.",
+      "defensive_takeaways": [
+        "Use one coherent origin model for permission enforcement.",
+        "Invalidate persistent consent when the underlying resource or trust context materially changes."
+      ],
+      "reward": {
+        "amount": 100500,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "Apple",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "I reported this chain to Apple and was awarded $100,500 as a bounty.",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "One award for the reported vulnerability chain, not this amount per CVE."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The primary researcher page does not supply a publication date; no exact date is inferred."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2021-07",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.ryanpickren.com/safari-uxss",
+          "title": "iCloud sharing consent and Safari trust boundaries failed together",
+          "type": "researcher",
+          "author": "Ryan Pickren",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "source-2",
+          "url": "https://support.apple.com/en-us/103237",
+          "title": "Apple security release advisory",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates",
+            "cve",
+            "remediation"
+          ]
+        },
+        {
+          "id": "source-3",
+          "url": "https://support.apple.com/en-us/103236",
+          "title": "Apple security release advisory",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-02T14:43:00Z",
+          "supports": [
+            "dates",
+            "cve",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T14:43:00Z",
+        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "limitations": [
+          "One award for a reported chain; not a separate award per CVE",
+          "Broader research included four bugs, only two used for the camera demonstration",
+          "Complete remediation and payment dates are not stated; page says all issues patched by early 2022",
+          "Publication date is unknown in the primary source, so recency is explicitly uncertain."
         ]
       },
       "content_scope": "historical_defensive_summary"
