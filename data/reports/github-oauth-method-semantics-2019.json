@@ -20,12 +20,14 @@
     "secure-parser-review",
     "approval-state-integrity"
   ],
-  "summary": "A framework/controller interpretation mismatch undermined OAuth consent and earned USD 25,000.",
-  "root_cause": "Routing and application logic disagreed about request semantics, allowing a state-changing operation outside its intended consent checks.",
-  "impact": "Unauthorized OAuth grants could expose or modify private account data after user interaction.",
+  "summary": "A USD 25,000 researcher-reported award illustrates how differing framework and controller assumptions can remove an OAuth consent boundary.",
+  "root_cause": "The researcher compared the consent screen’s intended state change with routing and controller logic. The framework accepted a wider set of request semantics than the controller expected. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply. The failed invariant was that every new grant required the user’s explicit, validated approval.",
+  "impact": "The researcher reports that a user visiting a malicious website could unintentionally grant an application access to read or modify private GitHub data. This demonstrates unauthorized delegated access, rather than evidence that the attacker learned the account password or that all unrelated account controls failed.",
   "defensive_takeaways": [
-    "Make state-changing handlers explicitly validate their permitted methods and consent.",
-    "Verify that framework defaults preserve application security assumptions."
+    "Require positive validation of the intended state-changing operation; reject unrecognized alternatives rather than defaulting to a privileged action.",
+    "Model framework routing, request interpretation and consent enforcement as separate layers whose assumptions must agree.",
+    "Verify that consent and request-integrity checks remain attached to every path that creates a grant.",
+    "The source dates the production fix and later Enterprise releases, but does not document the exact patch here; these lessons are defensive recommendations."
   ],
   "reward": {
     "amount": 25000,
@@ -113,7 +115,7 @@
       "title": "Bypassing GitHub’s OAuth flow",
       "type": "researcher",
       "author": "Teddy Katz",
-      "retrieved_at": "2026-10-02T14:39:00Z",
+      "retrieved_at": "2026-10-02T19:39:00Z",
       "supports": [
         "reward",
         "dates",
@@ -126,10 +128,11 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T14:39:00Z",
-    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "reviewed_at": "2026-10-02T19:39:00Z",
+    "method": "Re-read the researcher’s intended-consent model, framework/controller distinction, impact and remediation timeline. Expanded the original explanation while omitting the triggering request and reproduction details.",
     "limitations": [
-      "Award is reported by the cited source; cash settlement is not independently audited."
+      "Researcher-reported award; cash settlement is not independently audited.",
+      "The reported impact requires user interaction. Exact vendor patch implementation and evidence of real-world abuse are not supplied."
     ]
   },
   "content_scope": "historical_defensive_summary"

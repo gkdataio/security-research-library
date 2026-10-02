@@ -8,10 +8,10 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 2, 2026**
 
-- **52 qualifying report records:** 42 bug-bounty awards and 10 explicitly labeled competition entries
+- **53 qualifying report records:** 43 bug-bounty awards and 10 explicitly labeled competition entries
 - **15 educational resources** and **7 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 21 within October 2, 2025–October 2, 2026; 26 older; 5 with unknown original publication dates
+- **Publication coverage:** 21 within October 2, 2025–October 2, 2026; 27 older; 5 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -58,10 +58,6 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 - **Diagram assets:** [diagrams/](diagrams/) contains SVG, Mermaid (`.mmd`), and Graphviz (`.dot`) companions. Both text formats come from the canonical graph; the SVGs are rendered with Graphviz, not a Mermaid engine.
 
 The `vulns-co.json` filename identifies a future adaptation target. Compatibility with a vulns.co ingestion API has not been established; this repository does not perform ingestion or deployment.
-
-### What a report contains
-
-Read `summary`, `root_cause`, `impact`, and `defensive_takeaways` for the substantive original analysis. Use `sources`, `reward`, `dates`, and `verification` to inspect the evidence, award scope, chronology, and remaining limitations. Category and skillset IDs connect cases to the learning taxonomy.
 
 ### Interpret the evidence carefully
 
@@ -138,6 +134,7 @@ Each link opens the canonical record with source URLs, evidence notes, date prov
 | [LiteSpeed Cache privileged user simulation relied on weak security tokens](data/reports/litespeed-cache-user-simulation-authentication-2024.json) | USD 14,400 (Zero Day component) | 2024-08-21 (historical) | Platform confirmed |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
 | [Instagram embedding fallback changed the authorization context](data/reports/instagram-embedding-privileged-fallback-2023.json) | USD 14,500 (including bonuses) | 2023-10-12 (historical) | Researcher reported |
+| [Meta Quest login migration lost OAuth credential confinement](data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) | USD 44,250 (including bonuses) | 2023-01-29 (historical) | Vendor confirmed |
 | [Meta account verification weakened linked SMS authentication state](data/reports/meta-account-verification-attempt-state-binding-2022.json) | USD 27,200 | 2023-01-20 (historical) | Vendor confirmed |
 | [Pixel lock-screen completion lost security-state binding](data/reports/google-pixel-lock-screen-state-binding-2022.json) | USD 70,000 | 2022-11-10 (historical) | Researcher reproduces vendor decision |
 | [GitHub Actions trust depended on invalid repository references](data/reports/github-actions-reference-validation-2021.json) | USD 25,000 | 2021-03-17 (historical) | Researcher reported |

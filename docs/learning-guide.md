@@ -52,9 +52,11 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 ## 6. Account recovery and identity binding
 
-**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; Meta linked-account SMS verification; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
+**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; Meta Quest login-migration credential confinement; Meta linked-account SMS verification; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
 
 Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
+
+The [Meta Quest migration case](../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) highlights a change-management question: does an existing login destination still preserve the same security guarantees after the identity flow changes? Document the intended recipient of a credential throughout its lifecycle and distinguish the reported fix from assumptions about every related component.
 
 **Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`, `security-token-design`
 

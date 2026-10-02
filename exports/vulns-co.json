@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T19:21:00Z",
+  "latest_reviewed_at": "2026-10-02T19:39:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 52,
+    "included": 53,
     "within_preferred_window": 21,
-    "older_or_uncertain": 31,
-    "bug_bounty": 42,
+    "older_or_uncertain": 32,
+    "bug_bounty": 43,
     "competition_award": 10
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -6012,6 +6012,172 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "meta-quest-oauth-redirect-confidentiality-2022",
+      "title": "Meta Quest login migration lost OAuth credential confinement",
+      "organization": "Meta",
+      "product": "Meta Quest / Oculus account login",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "authorization",
+        "client-security"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "security-token-design",
+        "browser-isolation-review"
+      ],
+      "summary": "Meta confirms a USD 44,250 total award, including bonuses, for this Quest OAuth account-access report.",
+      "root_cause": "The researcher compared login behavior across an identity-system migration. A previously permitted OAuth return destination began forwarding credentials through a changed redirect flow, losing an earlier containment control. Trust in the initial destination did not establish that the eventual recipient was authorized to receive the credential.",
+      "impact": "The researcher reports exposure of a privileged first-party credential with account-access implications. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. Those statements do not establish that customer accounts were actually compromised.",
+      "defensive_takeaways": [
+        "Reassess credential handling and destination trust whenever an identity provider or login flow changes.",
+        "Preserve authorization checks through the full return flow; an initially permitted destination is not a guarantee about later recipients.",
+        "Treat recommendations here as defensive design principles, not a reconstruction of the vendor’s undisclosed patch."
+      ],
+      "reward": {
+        "amount": 44250,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-retrospective",
+        "evidence_quote": "total of $44,250, including program bonuses",
+        "evidence_location": "Connecting the Bug Bounty Community With the Metaverse, paragraph naming Youssef Sammouda’s Quest OAuth report",
+        "usd_equivalent": null,
+        "notes": "Vendor-confirmed total attached to one report. Researcher identifies BountyCon and Highest Impact Report bonuses but gives no component allocation; they are not added again. USD uses earlier official program context. Award confirmation does not establish cash settlement."
+      },
+      "dates": {
+        "published": {
+          "value": "2023-01-29",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Article date also appears in the researcher’s archive index; historical publication, not the archive’s separate January 2026 entries."
+        },
+        "public_disclosure": {
+          "value": "2022-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-retrospective",
+          "note": "Dated vendor summary precedes the technical article. The page’s December 2024 update explicitly concerns another report."
+        },
+        "reported": {
+          "value": "2022-08-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2022-09-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Researcher’s dated total including bonuses; exact funds-transfer date is not established."
+        },
+        "fixed": {
+          "value": "2022-09-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Researcher labels this as the Meta fix date. The article withholds details of a separate redirect component that it says was not fully fixed; this is not a claim that every component was remediated that day."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2022-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-retrospective",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical January 2023 technical article describing a 2022 report and award."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html",
+          "title": "Account takeover of Facebook/Oculus accounts due to First-Party access_token stealing",
+          "type": "researcher",
+          "author": "Youssef Sammouda",
+          "retrieved_at": "2026-10-02T19:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "vendor-retrospective",
+          "url": "https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/",
+          "title": "Looking Back at Our Bug Bounty Program in 2022",
+          "type": "vendor",
+          "author": "Neta Oren / Meta",
+          "retrieved_at": "2026-10-02T19:39:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:39:00Z",
+        "method": "Matched the researcher, Quest/Oculus OAuth issue and identical report-specific total across the researcher timeline and Meta retrospective. Summarized the migration-related trust failure without reproducing the operational flow.",
+        "limitations": [
+          "Bonus components are not individually quantified; the documented total is counted once.",
+          "The technical article says an associated redirect detail was withheld because it was not fully fixed at publication. No current vulnerability or exact patch implementation is inferred.",
+          "The vendor reports no evidence of abuse; this is not proof that abuse was impossible.",
+          "Cash settlement is unverified; USD denomination uses earlier official program context."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "meta-account-verification-attempt-state-binding-2022",
       "title": "Meta account verification weakened linked SMS authentication state",
       "organization": "Meta",
@@ -7242,12 +7408,14 @@
         "secure-parser-review",
         "approval-state-integrity"
       ],
-      "summary": "A framework/controller interpretation mismatch undermined OAuth consent and earned USD 25,000.",
-      "root_cause": "Routing and application logic disagreed about request semantics, allowing a state-changing operation outside its intended consent checks.",
-      "impact": "Unauthorized OAuth grants could expose or modify private account data after user interaction.",
+      "summary": "A USD 25,000 researcher-reported award illustrates how differing framework and controller assumptions can remove an OAuth consent boundary.",
+      "root_cause": "The researcher compared the consent screen’s intended state change with routing and controller logic. The framework accepted a wider set of request semantics than the controller expected. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply. The failed invariant was that every new grant required the user’s explicit, validated approval.",
+      "impact": "The researcher reports that a user visiting a malicious website could unintentionally grant an application access to read or modify private GitHub data. This demonstrates unauthorized delegated access, rather than evidence that the attacker learned the account password or that all unrelated account controls failed.",
       "defensive_takeaways": [
-        "Make state-changing handlers explicitly validate their permitted methods and consent.",
-        "Verify that framework defaults preserve application security assumptions."
+        "Require positive validation of the intended state-changing operation; reject unrecognized alternatives rather than defaulting to a privileged action.",
+        "Model framework routing, request interpretation and consent enforcement as separate layers whose assumptions must agree.",
+        "Verify that consent and request-integrity checks remain attached to every path that creates a grant.",
+        "The source dates the production fix and later Enterprise releases, but does not document the exact patch here; these lessons are defensive recommendations."
       ],
       "reward": {
         "amount": 25000,
@@ -7335,7 +7503,7 @@
           "title": "Bypassing GitHub’s OAuth flow",
           "type": "researcher",
           "author": "Teddy Katz",
-          "retrieved_at": "2026-10-02T14:39:00Z",
+          "retrieved_at": "2026-10-02T19:39:00Z",
           "supports": [
             "reward",
             "dates",
@@ -7348,10 +7516,11 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:39:00Z",
-        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "reviewed_at": "2026-10-02T19:39:00Z",
+        "method": "Re-read the researcher’s intended-consent model, framework/controller distinction, impact and remediation timeline. Expanded the original explanation while omitting the triggering request and reproduction details.",
         "limitations": [
-          "Award is reported by the cited source; cash settlement is not independently audited."
+          "Researcher-reported award; cash settlement is not independently audited.",
+          "The reported impact requires user interaction. Exact vendor patch implementation and evidence of real-world abuse are not supplied."
         ]
       },
       "content_scope": "historical_defensive_summary"
