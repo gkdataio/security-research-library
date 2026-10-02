@@ -8,6 +8,8 @@ Use the historical cases as architecture-review examples. The goal is to underst
 
 Learn to distinguish mutable object names from immutable versions, document exactly what an approval authorizes, and model ordering assumptions. A useful review artifact is a state diagram with the approved version, executed version, and invalidation conditions. Local unit tests should demonstrate the invariant across ordinary state changes.
 
+The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025.json) distinguishes the observed revision mismatch from possible consequences under a pipeline’s privileges. Its fix-status confirmation is kept separate from an unknown deployment date.
+
 **Taxonomy:** `approval-state-integrity`, `concurrency-reasoning`, `integration-threat-modeling`
 
 **Reference:** [OWASP Transaction Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html)
@@ -42,7 +44,7 @@ Learn data provenance and the difference between retrieved text and user authori
 
 ## 5. Parser contracts and memory safety
 
-**Cases:** PostgreSQL CVE-2026-2006 encoding contracts, CVE-2026-2005 buffer capacity and CVE-2026-2004 input-type validation (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity and deserialization ownership
+**Cases:** PostgreSQL CVE-2026-2006 encoding contracts, CVE-2026-2005 buffer capacity and CVE-2026-2004 input-type validation (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity, deserialization ownership and replication-state lifetime
 
 Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit. The MariaDB example also teaches evidence calibration: a controlled code-execution demonstration does not establish the same reliability in every deployment.
 

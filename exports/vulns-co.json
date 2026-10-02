@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T19:49:00Z",
+  "latest_reviewed_at": "2026-10-02T20:00:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,11 +15,11 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 53,
-    "within_preferred_window": 21,
+    "included": 54,
+    "within_preferred_window": 22,
     "older_or_uncertain": 32,
     "bug_bounty": 43,
-    "competition_award": 10
+    "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
   "taxonomy": {
@@ -1250,6 +1250,248 @@
           "No independent vendor-hosted confirmation of the individual award or reported reach was retrieved.",
           "The issue-status date does not establish the deployment date.",
           "No bank settlement or exact public disclosure earlier than the article is verified."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "redis-replication-interpreter-lifetime-2026",
+      "title": "Redis replication state changes invalidated an active interpreter",
+      "organization": "Redis",
+      "product": "Redis replication and Lua function execution",
+      "researchers": [
+        "Yoni Sherez"
+      ],
+      "cve_ids": [
+        "CVE-2026-23631"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-416",
+          "basis": "source_explicit",
+          "source_id": "vendor-cve",
+          "note": "Use After Free classification is explicit in the vendor CNA record."
+        }
+      ],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "cloud-security",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "concurrency-reasoning",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "summary": "Wiz confirms a USD 30,000 individual competition award for Yoni Sherez’s Redis entry, identified as CVE-2026-23631.",
+      "root_cause": "The researcher compared ordinary command handling with replication-related state changes during ongoing function execution. The latter did not preserve equivalent lifetime checks, so interpreter state could be released while still in use. The failed invariant was that background synchronization must not invalidate objects needed by active work.",
+      "impact": "Code execution was demonstrated in the competition. The vendor limits exposure to authenticated access and replicas configured, or configurable, for writes. It reported Redis Cloud patched by its May 2026 announcement. These conditions do not establish equivalent exposure across all deployments.",
+      "defensive_takeaways": [
+        "Apply lifetime invariants to background synchronization and administrative state transitions as well as normal request paths.",
+        "Treat reentrant event handling as a concurrency boundary even in a nominally single-threaded service.",
+        "Review replica configuration and scripting privileges, and verify fixed versions against the vendor’s product-specific guidance."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Wiz / ZeroDay.cloud",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "$30,000 awarded",
+        "evidence_location": "Redis: Yoni Sherez entry in the organizer’s Day 1 results",
+        "usd_equivalent": null,
+        "notes": "One individually identified competition entry. The organizer uses $; its current rules establish US-dollar notation but concern 2026, not an archived 2025 rules snapshot. Exact award decision and cash settlement are unknown."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-02",
+          "precision": "day",
+          "basis": "inferred",
+          "source_id": "researcher-report",
+          "note": "Article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline."
+        },
+        "public_disclosure": {
+          "value": "2025-12-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-tracker",
+          "note": "Public competition demonstration; separate from later vendor advisory and technical publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-05-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-release",
+          "note": "Official Redis 8.6.3 release names the CVE. Other supported release lines are listed separately by the vendor; this date is not a customer deployment date."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-12-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Organizer recap confirms the per-entry award; decision and payment dates remain unknown."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "competition-results",
+          "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+          "title": "ZeroDay.cloud 2025 individual competition results",
+          "type": "competition_organizer",
+          "author": "Nir Ohfeld / Wiz Research",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "competition-tracker",
+          "url": "https://www.zeroday.cloud/vulnerability-tracker",
+          "title": "ZeroDay.cloud vulnerability tracker",
+          "type": "competition_organizer",
+          "author": "Wiz / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "cve"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.zeroday.cloud/rules",
+          "title": "ZeroDay.cloud current rules: US-dollar denomination",
+          "type": "competition_organizer",
+          "author": "Wiz",
+          "retrieved_at": "2026-10-02T19:21:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "researcher-report",
+          "url": "https://www.zeroday.cloud/blog/redis-cve-2026-23631-dark-replica",
+          "title": "DarkReplica (CVE-2026-23631): Redis Use-After-Free Leads to Post-Auth RCE",
+          "type": "researcher",
+          "author": "Yoni Sherez / ZeroDay.cloud",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://github.com/redis/redis/security/advisories/GHSA-8ghh-qpmp-7826",
+          "title": "Redis Lua lifetime advisory GHSA-8ghh-qpmp-7826",
+          "type": "vendor",
+          "author": "Redis",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-cve",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/23xxx/CVE-2026-23631.json",
+          "title": "CVE-2026-23631 CNA record",
+          "type": "vendor",
+          "author": "Redis / GitHub CNA",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-release",
+          "url": "https://github.com/redis/redis/releases/tag/8.6.3",
+          "title": "Redis 8.6.3 security release",
+          "type": "vendor",
+          "author": "Redis",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-product-guidance",
+          "url": "https://redis.io/blog/security-advisory-cve202623479-cve202625243-cve-2026-25588-cve202625589-cve-2026-23631/",
+          "title": "Redis May 2026 security advisory and product remediation table",
+          "type": "vendor",
+          "author": "Riaz Lakhani / Redis",
+          "retrieved_at": "2026-10-02T20:00:00Z",
+          "supports": [
+            "dates",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T20:00:00Z",
+        "method": "Matched the individual award to the exact tracker CVE, researcher article and vendor credit. Cross-checked configuration prerequisites, CNA classification and the official release date.",
+        "limitations": [
+          "The tracker spells the researcher’s surname Sharez; the matching CVE, vendor credit and researcher article identify Yoni Sherez.",
+          "The advisory’s structured affected field starts at 7.0.0 and says patched versions TBD, while its prose is broader; vendor guidance and the official release identify corrected versions. No universal version range is inferred.",
+          "Competition code execution and vendor-qualified deployment exposure are distinct claims; the vendor says it had no evidence of customer exploitation at publication.",
+          "Exact initial vendor-report, award-decision and cash-settlement dates are unknown. The June publication year is inferred.",
+          "USD context comes from current organizer rules, explicitly distinct from an archived 2025 rules snapshot."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -4207,13 +4449,13 @@
         "pipeline-trust-modeling",
         "secrets-containment"
       ],
-      "summary": "A Cloud Build integration report identified a mismatch between maintainer approval and the code ultimately executed; Google awarded $30,000.",
-      "root_cause": "The approval decision and later code-reference resolution were not bound to the same immutable version, creating a time-of-check/time-of-use flaw.",
-      "impact": "Unreviewed code could run with the privileges and secrets available to a build. Impact depended on the permissions of the affected pipeline.",
+      "summary": "A researcher-reported USD 30,000 award illustrates a gap between approval of a contribution and selection of the code executed.",
+      "root_cause": "The researcher compared the identity available to the approval event with the revision later selected by the build. Approval referred to mutable contribution state without preserving the exact reviewed version. The execution boundary therefore relied on an assumption that the approved and executed content remained identical.",
+      "impact": "The controlled demonstration executed a newer, unreviewed revision. Access to secrets or cloud resources was a potential consequence of the build’s assigned privileges, not evidence that all pipelines exposed those assets.",
       "defensive_takeaways": [
-        "Bind approval decisions to immutable content identities.",
-        "Validate that the executed revision matches the authorized revision.",
-        "Limit build identity privileges and isolate untrusted contributions."
+        "Bind approval and execution to immutable content identities, with explicit confirmation when the intended revision is ambiguous.",
+        "The researcher’s fix analysis describes check-to-commit binding and explicit commit selection; it does not establish a universal patch recipe.",
+        "Limit build identity privileges and secret availability independently of human approval."
       ],
       "reward": {
         "amount": 30000,
@@ -4259,11 +4501,11 @@
           "note": null
         },
         "fixed": {
-          "value": "2025-06-18",
-          "precision": "day",
-          "basis": "explicit",
-          "source_id": "primary",
-          "note": null
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The researcher says Google marked the issue fixed on June 18, 2025. The exact deployment date is not established."
         },
         "paid": {
           "value": null,
@@ -4301,7 +4543,7 @@
           "title": "Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000",
           "type": "researcher",
           "author": "Adnan Khan",
-          "retrieved_at": "2026-10-02T03:49:00Z",
+          "retrieved_at": "2026-10-02T20:00:00Z",
           "supports": [
             "reward",
             "dates",
@@ -4314,10 +4556,12 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T03:49:00Z",
-        "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+        "reviewed_at": "2026-10-02T20:00:00Z",
+        "method": "Re-read the approval model, observed build result, fix analysis and timeline; separated demonstrated behavior, conditional consequences and vendor fix-status confirmation.",
         "limitations": [
-          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+          "Researcher-reported award; cash settlement was not independently audited.",
+          "The June 18, 2025 status change confirms the issue was marked fixed, not the exact deployment date.",
+          "The public account’s broader security consequences depend on pipeline permissions; no universal secret exposure is established."
         ]
       },
       "content_scope": "historical_defensive_summary"

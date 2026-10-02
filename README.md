@@ -8,10 +8,10 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 2, 2026**
 
-- **53 qualifying report records:** 43 bug-bounty awards and 10 explicitly labeled competition entries
+- **54 qualifying report records:** 43 bug-bounty awards and 11 explicitly labeled competition entries
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 21 within October 2, 2025–October 2, 2026; 27 older; 5 with unknown original publication dates
+- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 27 older; 5 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -105,6 +105,7 @@ Each link opens the canonical record with source URLs, evidence notes, date prov
 | [Codex metadata collection trusted repository execution helpers](data/reports/openai-codex-repository-metadata-helper-trust-2026.json) | USD 10,000 (competition entry) | 2026-09-01 | Competition organizer confirmed |
 | [Apple PCC startup archive processing lacked path confinement](data/reports/apple-pcc-boot-archive-path-validation-2026.json) | USD 150,000 | 2026-07-31 | Researcher reproduces vendor offer |
 | [Google device grants lost client and permission binding](data/reports/google-device-authorization-client-scope-binding-2026.json) | USD 13,337 | 2026-07-15 | Researcher reported |
+| [Redis replication state changes invalidated an active interpreter](data/reports/redis-replication-interpreter-lifetime-2026.json) | USD 30,000 (competition entry) | 2026-06-02 (year inferred) | Competition organizer confirmed |
 | [Redis deserialization cleanup violated object-ownership invariants](data/reports/redis-deserialization-object-ownership-2026.json) | USD 30,000 (competition entry) | 2026-06-02 (year inferred) | Competition organizer confirmed |
 | [Meta service-identity exposure amplified by excessive secret access](data/reports/meta-service-identity-secrets-trust-boundary-2026.json) | USD 150,000 | 2026-05-28 | Researcher reproduces vendor message |
 | [PostgreSQL cryptographic parsing omitted a buffer-capacity check](data/reports/postgresql-pgcrypto-buffer-capacity-validation-2026.json) | USD 30,000 (competition entry) | 2026-05-04 (year inferred) | Competition organizer confirmed |
