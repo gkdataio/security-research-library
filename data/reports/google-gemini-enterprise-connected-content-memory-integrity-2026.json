@@ -21,12 +21,13 @@
     "defensive-evidence-writing"
   ],
   "summary": "A researcher reports a $15,000 Google bounty for a Gemini Enterprise integration issue affecting persistent assistant memory.",
-  "root_cause": "Content retrieved from an external collaboration system was treated as authority for a state-changing memory operation. The defensive lesson is to preserve provenance and require explicit authorization for persistent-state changes.",
-  "impact": "Researcher reports modification or deletion of another test account's persistent assistant memory.",
+  "root_cause": "The researcher compared user-confirmed actions with persistent memory changes. Retrieved collaboration content could influence an operation that changed saved state without equivalent confirmation. The failed boundary was between permission to read connected data and authority to mutate the user’s lasting assistant state.",
+  "impact": "In a two-account setup, the researcher confirmed deletion of the test recipient’s saved memories. The scenario required shared-project content access and user-initiated retrieval. Broader cross-tenant access, mailbox compromise and lasting changes to every future response were not demonstrated.",
   "defensive_takeaways": [
-    "Keep retrieved content separate from authority to change persistent state.",
-    "Require independent authorization for memory changes.",
-    "Preserve connector provenance throughout downstream decisions."
+    "Model persistent memory as a security-sensitive write operation with its own authorization decision.",
+    "Preserve provenance when retrieved content passes between a connector, model and state-changing component.",
+    "Require a trusted authorization signal for each write; permission to summarize content should not imply permission to alter saved preferences.",
+    "Separate observed state changes from speculative downstream behavior in impact reports; the public article does not establish the vendor’s remediation design."
   ],
   "reward": {
     "amount": 15000,
@@ -111,10 +112,10 @@
     {
       "id": "primary",
       "url": "https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6",
-      "title": "Gemini Enterprise connected-content trust failure allowed persistent-memory modification",
+      "title": "Google paid me $15,000 for this Prompt Injection bug.",
       "type": "researcher",
       "author": "Behi",
-      "retrieved_at": "2026-10-02T03:54:00Z",
+      "retrieved_at": "2026-10-02T20:20:00Z",
       "supports": [
         "reward",
         "dates",
@@ -137,12 +138,13 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T03:54:00Z",
-    "method": "Primary public sources read; reward distinguished from maximums and aggregates. Historical defensive summary only; no vulnerability testing performed.",
+    "reviewed_at": "2026-10-02T20:20:00Z",
+    "method": "Re-read the researcher’s primary article, preserving its individual payout attribution and distinguishing the observed test-account memory deletion from broader inferred impact.",
     "limitations": [
       "No vendor-hosted confirmation of this individual payout found",
       "Do not confuse this finding with the separate $1,337 memory issue mentioned in the introduction",
-      "Remediation date and current status not independently established"
+      "Remediation date, exact patch design and current status are not independently established",
+      "The reported demonstration used two researcher-controlled accounts; it does not establish actual customer compromise"
     ]
   },
   "content_scope": "historical_defensive_summary"

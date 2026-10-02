@@ -127,6 +127,14 @@
       "primary_technical_status": "Primary researcher article published September 8, 2026 reviewed.",
       "reason_not_counted": "No individual award amount is disclosed. The researcher states the shared service was already decommissioned by report completion; do not infer a payout from impact.",
       "reviewed_at": "2026-10-02T18:24:00Z"
+    },
+    {
+      "title": "Meta Business Manager temporary-access expiration authority",
+      "researcher": "Gtm Mänôz (Manoj Gautam)",
+      "primary_technical_url": "https://gtm0x01.medium.com/temporary-hacking-permanent-access-a-meta-bug-bounty-story-1f72da3e63cf",
+      "primary_technical_status": "Primary researcher article read; published November 30, 2025. Timeline records June 16, 2023 reporting, June 29 award and May 22, 2024 fix.",
+      "reason_not_counted": "The researcher confirms an award and bonuses but replaces the amount with dollar symbols. No individual USD 10,000 threshold can be established.",
+      "reviewed_at": "2026-10-02T20:20:00Z"
     }
   ]
 }

@@ -20,6 +20,8 @@ The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025
 
 Learn effective-permission review, service authentication, secret ownership, and least privilege across integrations. Produce an identity-to-resource access matrix and a justified minimum-permission design. Separate reported reach from actual data access; stop evidence collection once the approved review objective is met.
 
+The [Instagram application-credential case](../data/reports/instagram-application-credential-client-containment-2022.json) illustrates credential classification: data delivered to a client should not carry server-level authority. Its vendor-confirmed award coexists with explicit limits on downstream impact.
+
 **Taxonomy:** `cloud-iam-review`, `machine-identity-governance`, `secrets-containment`
 
 **Reference:** [AWS IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
@@ -39,6 +41,8 @@ Learn registry provenance, namespace governance, artifact integrity, cache separ
 **Case:** Gemini Enterprise persistent-memory integrity
 
 Learn data provenance and the difference between retrieved text and user authorization. Document which operations change persistent state, what independent checks authorize them, and how connector content is kept out of the authority path. Use synthetic content and a local mock integration for regression coverage.
+
+The [Gemini memory record](../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json) distinguishes an observed deletion in a researcher-controlled account from broader consequences. Its conceptual lesson is that reading permission does not authorize a lasting state change; the vendor’s exact fix remains unknown.
 
 **Taxonomy:** `ai-authority-boundaries`, `authorization-modeling`, `untrusted-input-handling`
 

@@ -8,10 +8,10 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 2, 2026**
 
-- **54 qualifying report records:** 43 bug-bounty awards and 11 explicitly labeled competition entries
+- **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 27 older; 5 with unknown original publication dates
+- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -138,6 +138,7 @@ Each link opens the canonical record with source URLs, evidence notes, date prov
 | [Meta Quest login migration lost OAuth credential confinement](data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) | USD 44,250 (including bonuses) | 2023-01-29 (historical) | Vendor confirmed |
 | [Meta account verification weakened linked SMS authentication state](data/reports/meta-account-verification-attempt-state-binding-2022.json) | USD 27,200 | 2023-01-20 (historical) | Vendor confirmed |
 | [Pixel lock-screen completion lost security-state binding](data/reports/google-pixel-lock-screen-state-binding-2022.json) | USD 70,000 | 2022-11-10 (historical) | Researcher reproduces vendor decision |
+| [Instagram client configuration exposed an application credential](data/reports/instagram-application-credential-client-containment-2022.json) | USD 30,000 (base only) | 2022-07-20 (vendor bulletin; historical) | Vendor confirmed |
 | [GitHub Actions trust depended on invalid repository references](data/reports/github-actions-reference-validation-2021.json) | USD 25,000 | 2021-03-17 (historical) | Researcher reported |
 | [GitHub fork collaboration applied inconsistent authorization](data/reports/github-fork-collaboration-authorization-2021.json) | USD 20,000 | 2021-03-10 (historical) | Researcher reported |
 | [GitHub GraphQL collaboration changes lacked author consent](data/reports/github-fork-collaboration-consent-2021.json) | USD 10,000 | 2021-03-10 (historical) | Researcher reported |
