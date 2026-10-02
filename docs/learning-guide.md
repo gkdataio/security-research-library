@@ -48,6 +48,8 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 **Taxonomy:** `secure-parser-review`, `encoding-invariant-review`, `memory-safety-review`, `patch-verification`
 
+**Reference:** [Chromium Rule of Two](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md) · [Parsing and authority visual](visual-theory.md#separate-parsing-safety-from-action-authority)
+
 ## 6. Account recovery and identity binding
 
 **Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
@@ -105,6 +107,8 @@ Review both explicit agent actions and background tool operations. Security deci
 Separate workload-controlled configuration from privileged runtime initialization. Document where isolation relies on language memory safety, container boundaries, host identities, or virtualization. Check runtime-specific exceptions and corrected vendor release information. An architecture-review deliverable should identify each boundary and its independent safeguards, without assuming that all containers or all managed services share the same impact.
 
 **Taxonomy:** `integration-threat-modeling`, `untrusted-input-handling`, `memory-safety-review`, `patch-verification`
+
+**Reference:** [NIST SP 800-190](https://csrc.nist.gov/pubs/sp/800/190/final) (historical 2017 guidance)
 
 ## Common reporting skill
 

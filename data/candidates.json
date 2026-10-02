@@ -110,6 +110,16 @@
       "primary_technical_status": "Researcher and vendor articles read; primary researcher publication April 28, 2026.",
       "reason_not_counted": "Vendor describes one of its highest awards, but neither reviewed primary article supplies an exact amount. Superlatives do not establish a numerical award.",
       "reviewed_at": "2026-10-02T17:39:00Z"
+    },
+    {
+      "title": "Grafana ZeroDay.cloud 2025 competition entry",
+      "researcher": "Team Bugz Bunnies (Paul Gerste and Moritz Sanft)",
+      "reported_reward": "$10,000 individual-entry award reported by organizer",
+      "primary_reward_corroboration_url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+      "primary_technical_url": "https://www.zeroday.cloud/vulnerability-tracker",
+      "primary_technical_status": "Organizer tracker still lists the CVE as TBD and supplies no technical article for this entry.",
+      "reason_not_counted": "Award and competition entry are confirmed, but a public technical source supporting a bounded root-cause summary was not established. Do not infer identity from unrelated Grafana advisories.",
+      "reviewed_at": "2026-10-02T17:52:00Z"
     }
   ]
 }

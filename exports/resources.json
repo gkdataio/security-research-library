@@ -5,8 +5,8 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 12,
-    "diagrams": 6
+    "resources": 14,
+    "diagrams": 7
   },
   "taxonomy": {
     "schema_version": "1.0.0",
@@ -76,6 +76,10 @@
       {
         "id": "business-logic",
         "title": "Business Logic and State Integrity"
+      },
+      {
+        "id": "memory-safety",
+        "title": "Memory Safety and Process Isolation"
       }
     ]
   },
@@ -263,6 +267,83 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "chromium-rule-of-two-input-isolation",
+      "title": "Chromium Rule of Two: input trust, memory safety and privilege",
+      "publisher": "Chromium Project",
+      "authors": [],
+      "primary_url": "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "memory-safety",
+        "verification"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "secure-parser-review",
+        "browser-isolation-review",
+        "untrusted-input-handling"
+      ],
+      "version": null,
+      "summary": "An architecture policy for avoiding the combination of untrusted input, memory-unsafe implementation and high privilege. It explains safer parsing, privilege separation and careful review of unsafe code behind safe interfaces.",
+      "defensive_use": "For an owned component, map input origin, language guarantees and execution privilege. Keep semantic authorization separate from successful parsing.",
+      "prerequisites": [
+        "Basic understanding of parsing, process privileges and memory lifetime"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official source-tree documentation is publicly readable."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T17:52:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Current HEAD documentation reviewed; no original publication or last-update date inferred."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+          "title": "The Rule Of 2",
+          "publisher": "Chromium Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T17:52:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Memory safety does not establish data trust or permission to perform an operation.",
+        "Chromium-specific exceptions are not blanket guarantees for other projects."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "hackerone-quality-vulnerability-reports",
       "title": "Quality Reports",
       "publisher": "HackerOne Help Center",
@@ -332,6 +413,102 @@
       ],
       "caveats": [
         "The official source includes technical examples; this catalog retains reporting-quality lessons only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nist-sp-800-190-container-isolation-guide",
+      "title": "NIST SP 800-190: Application Container Security Guide",
+      "publisher": "National Institute of Standards and Technology",
+      "authors": [
+        "Murugiah Souppaya",
+        "John Morello",
+        "Karen Scarfone"
+      ],
+      "primary_url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "cloud-security",
+        "supply-chain"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "dependency-provenance",
+        "patch-verification"
+      ],
+      "version": "SP 800-190 (2017 final)",
+      "summary": "A foundational model of container images, registries, orchestration, runtimes and host security. It explains shared-kernel risk, workload separation, constrained runtime permissions and lifecycle maintenance.",
+      "defensive_use": "Build an owned environment’s boundary-and-responsibility map, then compare product-specific controls with current vendor guidance.",
+      "prerequisites": [
+        "Operating-system, networking and security expertise",
+        "Familiarity with hypervisors and virtual machines"
+      ],
+      "prerequisites_basis": "publisher_explicit",
+      "access": {
+        "cost": "free",
+        "note": "Official publication and PDF are publicly available."
+      },
+      "dates": {
+        "published": {
+          "value": "2017-09-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "catalog",
+          "note": "Exact final-publication date from NIST document history; the PDF cover gives September 2017."
+        },
+        "version_released": {
+          "value": "2017-09-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "catalog",
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2017-09",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "catalog",
+          "note": "Catalog publication label. The September 2020 planning note concerns a translation, not a new edition."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T17:52:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Historical 2017 final publication. Reviewed catalog, audience, executive summary, and container/runtime/host countermeasure sections; no claim of a new 2026 edition."
+      },
+      "sources": [
+        {
+          "id": "catalog",
+          "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+          "title": "NIST SP 800-190 publication catalog",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T17:52:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "publication",
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf",
+          "title": "NIST SP 800-190, audience and sections 4.4–4.5",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T17:52:00Z",
+          "supports": [
+            "summary",
+            "prerequisites",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "Historical architectural guidance; use current vendor documentation for versions and configuration details.",
+        "The guide itself advises consulting newer material because container technology changes."
       ],
       "content_scope": "defensive_education"
     },
@@ -1557,6 +1734,107 @@
         "mermaid": "diagrams/identity-claim-binding.mmd",
         "graphviz": "diagrams/identity-claim-binding.dot",
         "svg": "diagrams/identity-claim-binding.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "parsing-safety-action-authority",
+      "title": "Parsing safety and action authority",
+      "alt_text": "Untrusted input is parsed with memory safety and limited privileges. A bounded typed result still requires an independent meaning and authorization check before any scoped operation; failed checks reject the request.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+      "linked_report_ids": [
+        "google-chrome-v8-type-consistency-2025",
+        "redis-lua-object-lifetime-isolation-2025"
+      ],
+      "linked_resource_ids": [
+        "chromium-rule-of-two-input-isolation"
+      ],
+      "evidence_urls": [
+        "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+        "https://securitylab.github.com/advisories/GHSL-2025-114_Chromium/",
+        "https://github.com/redis/redis/security/advisories/GHSA-4789-qfc9-5f9q"
+      ],
+      "reviewed_at": "2026-10-02T17:52:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "input",
+            "label": "Untrusted input",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "parse",
+            "label": "Memory-safe parsing with limited privileges",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "result",
+            "label": "Bounded typed result; still untrusted",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "validate",
+            "label": "Meaning and action authority valid?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "deny",
+            "label": "Reject; preserve protected state",
+            "shape": "box",
+            "kind": "denied"
+          },
+          {
+            "id": "allow",
+            "label": "Perform only the approved operation",
+            "shape": "box",
+            "kind": "allowed"
+          }
+        ],
+        "edges": [
+          {
+            "from": "input",
+            "to": "parse",
+            "label": null
+          },
+          {
+            "from": "parse",
+            "to": "result",
+            "label": null
+          },
+          {
+            "from": "result",
+            "to": "validate",
+            "label": null
+          },
+          {
+            "from": "validate",
+            "to": "deny",
+            "label": "No"
+          },
+          {
+            "from": "validate",
+            "to": "allow",
+            "label": "Yes"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/parsing-safety-action-authority.mmd",
+        "graphviz": "diagrams/parsing-safety-action-authority.dot",
+        "svg": "diagrams/parsing-safety-action-authority.svg"
       },
       "rendering": {
         "renderer": "Graphviz dot 2.42.4",

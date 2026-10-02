@@ -1,0 +1,17 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Parsing safety and action authority"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"input" [label="Untrusted input", shape="box", fillcolor="#f1f5f9"];
+"parse" [label="Memory-safe parsing with\nlimited privileges", shape="box", fillcolor="#f1f5f9"];
+"result" [label="Bounded typed result; still\nuntrusted", shape="box", fillcolor="#f1f5f9"];
+"validate" [label="Meaning and action\nauthority valid?", shape="diamond", fillcolor="#e0ecf8"];
+"deny" [label="Reject; preserve protected\nstate", shape="box", fillcolor="#fef3c7"];
+"allow" [label="Perform only the approved\noperation", shape="box", fillcolor="#dcfce7"];
+"input" -> "parse" [label=""];
+"parse" -> "result" [label=""];
+"result" -> "validate" [label=""];
+"validate" -> "deny" [label="No"];
+"validate" -> "allow" [label="Yes"];
+}

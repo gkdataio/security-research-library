@@ -1,0 +1,12 @@
+flowchart TB
+  input["Untrusted input"]
+  parse["Memory-safe parsing with limited privileges"]
+  result["Bounded typed result; still untrusted"]
+  validate{"Meaning and action authority valid?"}
+  deny["Reject; preserve protected state"]
+  allow["Perform only the approved operation"]
+  input --> parse
+  parse --> result
+  result --> validate
+  validate -->|No| deny
+  validate -->|Yes| allow

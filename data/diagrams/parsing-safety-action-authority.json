@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "id": "parsing-safety-action-authority",
+  "title": "Parsing safety and action authority",
+  "alt_text": "Untrusted input is parsed with memory safety and limited privileges. A bounded typed result still requires an independent meaning and authorization check before any scoped operation; failed checks reject the request.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "google-chrome-v8-type-consistency-2025",
+    "redis-lua-object-lifetime-isolation-2025"
+  ],
+  "linked_resource_ids": [
+    "chromium-rule-of-two-input-isolation"
+  ],
+  "evidence_urls": [
+    "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+    "https://securitylab.github.com/advisories/GHSL-2025-114_Chromium/",
+    "https://github.com/redis/redis/security/advisories/GHSA-4789-qfc9-5f9q"
+  ],
+  "reviewed_at": "2026-10-02T17:52:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "input",
+        "label": "Untrusted input",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "parse",
+        "label": "Memory-safe parsing with limited privileges",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "result",
+        "label": "Bounded typed result; still untrusted",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "validate",
+        "label": "Meaning and action authority valid?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "deny",
+        "label": "Reject; preserve protected state",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "allow",
+        "label": "Perform only the approved operation",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "parse",
+        "label": null
+      },
+      {
+        "from": "parse",
+        "to": "result",
+        "label": null
+      },
+      {
+        "from": "result",
+        "to": "validate",
+        "label": null
+      },
+      {
+        "from": "validate",
+        "to": "deny",
+        "label": "No"
+      },
+      {
+        "from": "validate",
+        "to": "allow",
+        "label": "Yes"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/parsing-safety-action-authority.mmd",
+    "graphviz": "diagrams/parsing-safety-action-authority.dot",
+    "svg": "diagrams/parsing-safety-action-authority.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

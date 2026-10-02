@@ -20,6 +20,9 @@ This collection is separate from paid-award reports. It contains official educat
 
 - [USENIX Security 2025: Cross-app OAuth bindings](https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan): study app-specific authorization context in integration platforms
 
+- [Chromium Rule of Two](https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md): separate input trust, memory safety and process privilege
+- [NIST SP 800-190](https://csrc.nist.gov/pubs/sp/800/190/final): study container/runtime/host boundaries using explicitly historical 2017 guidance
+
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 
 [Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)

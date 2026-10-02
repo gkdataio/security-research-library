@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "chromium-rule-of-two-input-isolation",
+  "title": "Chromium Rule of Two: input trust, memory safety and privilege",
+  "publisher": "Chromium Project",
+  "authors": [],
+  "primary_url": "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "memory-safety",
+    "verification"
+  ],
+  "skillset_ids": [
+    "memory-safety-review",
+    "secure-parser-review",
+    "browser-isolation-review",
+    "untrusted-input-handling"
+  ],
+  "version": null,
+  "summary": "An architecture policy for avoiding the combination of untrusted input, memory-unsafe implementation and high privilege. It explains safer parsing, privilege separation and careful review of unsafe code behind safe interfaces.",
+  "defensive_use": "For an owned component, map input origin, language guarantees and execution privilege. Keep semantic authorization separate from successful parsing.",
+  "prerequisites": [
+    "Basic understanding of parsing, process privileges and memory lifetime"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official source-tree documentation is publicly readable."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T17:52:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Current HEAD documentation reviewed; no original publication or last-update date inferred."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/rule-of-2.md",
+      "title": "The Rule Of 2",
+      "publisher": "Chromium Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T17:52:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Memory safety does not establish data trust or permission to perform an operation.",
+    "Chromium-specific exceptions are not blanket guarantees for other projects."
+  ],
+  "content_scope": "defensive_education"
+}

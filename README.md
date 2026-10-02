@@ -54,19 +54,21 @@ The collection contains 43 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest increment adds Redis scripting-memory isolation (USD 40,000; research published October 6, 2025) and historical NVIDIA container-initialization trust (USD 30,000; July 17, 2025). Both are organizer-confirmed individual Pwn2Own Berlin 2025 entries, linked by explicit researcher disclosure timelines and vendor advisories. The separate NVIDIA 2026 award remains a candidate until its technical report can be matched.
+The latest report increment adds Redis scripting-memory isolation (USD 40,000; research published October 6, 2025) and historical NVIDIA container-initialization trust (USD 30,000; July 17, 2025). Both are organizer-confirmed individual Pwn2Own Berlin 2025 entries, linked by explicit researcher disclosure timelines and vendor advisories. The separate NVIDIA 2026 award remains a candidate until its technical report can be matched.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Twelve official educational resources and six evidence-linked conceptual diagrams are maintained separately from the 43 award reports.
+Fourteen official educational resources and seven evidence-linked conceptual diagrams are maintained separately from the 43 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
 - [Separate resources and diagrams JSON export](exports/resources.json)
 
-The visuals cover approval-version integrity, AI content/authority separation, identity-claim binding, tenant-scoped workload authority, server-request destination controls, and account-recovery challenge integrity. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
+The visuals cover approval-version integrity, AI content/authority separation, identity-claim binding, tenant-scoped workload authority, server-request destination controls, account-recovery challenge integrity, and parsing/action-authority separation. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
+
+The latest learning addition pairs Chromium’s Rule of Two with NIST’s historical container-isolation guide, plus an original diagram showing why a safely parsed result still needs an independent authorization decision.
 
 ## Layout
 

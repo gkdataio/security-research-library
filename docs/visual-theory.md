@@ -50,6 +50,14 @@ Review challenge binding, consistent attempt accounting and post-reset session p
 
 [Evidence and metadata](../data/diagrams/account-recovery-challenge-lifecycle.json) · [Mermaid source](../diagrams/account-recovery-challenge-lifecycle.mmd)
 
+## Separate parsing safety from action authority
+
+![Untrusted input is safely parsed into a bounded result. A separate meaning and authorization check controls the permitted operation; failed checks reject the request.](../diagrams/parsing-safety-action-authority.svg)
+
+Memory safety and restricted privileges reduce parsing risk. They do not authorize the meaning of parsed data. Keep the final policy decision independent of the parser.
+
+[Evidence and metadata](../data/diagrams/parsing-safety-action-authority.json) · [Mermaid source](../diagrams/parsing-safety-action-authority.mmd)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:

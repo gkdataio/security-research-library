@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nist-sp-800-190-container-isolation-guide",
+  "title": "NIST SP 800-190: Application Container Security Guide",
+  "publisher": "National Institute of Standards and Technology",
+  "authors": [
+    "Murugiah Souppaya",
+    "John Morello",
+    "Karen Scarfone"
+  ],
+  "primary_url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "cloud-security",
+    "supply-chain"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "dependency-provenance",
+    "patch-verification"
+  ],
+  "version": "SP 800-190 (2017 final)",
+  "summary": "A foundational model of container images, registries, orchestration, runtimes and host security. It explains shared-kernel risk, workload separation, constrained runtime permissions and lifecycle maintenance.",
+  "defensive_use": "Build an owned environment’s boundary-and-responsibility map, then compare product-specific controls with current vendor guidance.",
+  "prerequisites": [
+    "Operating-system, networking and security expertise",
+    "Familiarity with hypervisors and virtual machines"
+  ],
+  "prerequisites_basis": "publisher_explicit",
+  "access": {
+    "cost": "free",
+    "note": "Official publication and PDF are publicly available."
+  },
+  "dates": {
+    "published": {
+      "value": "2017-09-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "catalog",
+      "note": "Exact final-publication date from NIST document history; the PDF cover gives September 2017."
+    },
+    "version_released": {
+      "value": "2017-09-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "catalog",
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2017-09",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "catalog",
+      "note": "Catalog publication label. The September 2020 planning note concerns a translation, not a new edition."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T17:52:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Historical 2017 final publication. Reviewed catalog, audience, executive summary, and container/runtime/host countermeasure sections; no claim of a new 2026 edition."
+  },
+  "sources": [
+    {
+      "id": "catalog",
+      "url": "https://csrc.nist.gov/pubs/sp/800/190/final",
+      "title": "NIST SP 800-190 publication catalog",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T17:52:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "publication",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf",
+      "title": "NIST SP 800-190, audience and sections 4.4–4.5",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T17:52:00Z",
+      "supports": [
+        "summary",
+        "prerequisites",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Historical architectural guidance; use current vendor documentation for versions and configuration details.",
+    "The guide itself advises consulting newer material because container technology changes."
+  ],
+  "content_scope": "defensive_education"
+}

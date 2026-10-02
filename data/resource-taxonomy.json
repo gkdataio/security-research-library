@@ -66,6 +66,10 @@
     {
       "id": "business-logic",
       "title": "Business Logic and State Integrity"
+    },
+    {
+      "id": "memory-safety",
+      "title": "Memory Safety and Process Isolation"
     }
   ]
 }
