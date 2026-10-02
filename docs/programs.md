@@ -103,7 +103,7 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/
 [Official program](<https://bounty.github.com/>) · [Policy](<https://bounty.github.com/rules>) · [Canonical record](<../data/programs/github-bug-bounty.json>)
 
 **Platform:** HackerOne submission channel  
-**Last verified:** 2026-10-02T21:01:00Z
+**Last verified:** 2026-10-02T21:43:18Z
 
 **Submission status:** unknown. Official policy reviewed, but a live submission-acceptance indicator was not separately established\.
 
@@ -119,10 +119,13 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/
 - Published reward amounts are discretionary guidelines, not fixed payouts\.
 - Dollar signs are shown without an explicit ISO currency code in reviewed pages; currency-normalized bounds remain null\.
 - No dedicated policy change-log URL was verified\.
+- Official cross-platform program identity link refreshed at 21:43 UTC; other policy summaries retain the earlier same-day review\.
+
+[Official linked program](<https://hackerone.com/github>) — GitHub’s official program homepage links to this HackerOne submission program\. This verifies identity, not the dynamically rendered HackerOne policy\.
 
 **Official evidence and updates**
 
-- [GitHub Bug Bounty](<https://bounty.github.com/>) — GitHub; retrieved 2026-10-02T21:01:00Z.
+- [GitHub Bug Bounty](<https://bounty.github.com/>) — GitHub; retrieved 2026-10-02T21:43:18Z.
 - [GitHub reward guidelines](<https://bounty.github.com/rewards>) — GitHub; retrieved 2026-10-02T21:01:00Z.
 - [GitHub program rules](<https://bounty.github.com/rules>) — GitHub; retrieved 2026-10-02T21:01:00Z.
 - [GitHub ineligible submissions](<https://bounty.github.com/ineligible>) — GitHub; retrieved 2026-10-02T21:01:00Z.

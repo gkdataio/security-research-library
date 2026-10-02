@@ -15,6 +15,12 @@ def validate_program(rec, schema):
         if not set(rec[field]['source_ids']) <= set(sources): raise Invalid('unknown program claim source')
     if rec['submission_status']['value'] != 'unknown' and not rec['submission_status']['source_ids']:
         raise Invalid('known submission status requires evidence')
+    aliases=set()
+    for alias in rec.get('official_program_links',[]):
+        if not set(alias['source_ids']) <= set(sources): raise Invalid('unknown official program link source')
+        normalized=normalize_url(alias['url'])
+        if normalized in aliases: raise Invalid('duplicate official program link')
+        aliases.add(normalized)
     urls = {normalize_url(s['url']) for s in sources.values()}
     required = [rec['program_url'], rec['policy_url'], *rec['announcement_urls']]
     if rec['change_log_url']: required.append(rec['change_log_url'])
@@ -50,6 +56,8 @@ def build(root=ROOT):
                   '**Advertised rewards:** '+text(p['rewards']['summary']), '', '**Eligibility:** '+text(p['eligibility']['summary']), '',
                   '**Restrictions and exclusions:** '+text(p['restrictions']['summary']), '', '**Verification limits**', '']
         lines += ['- '+text(x) for x in p['limitations']]
+        for alias in p.get('official_program_links',[]):
+            lines += ['', link('Official linked program',alias['url'])+' — '+text(alias['note'])]
         lines += ['', '**Official evidence and updates**', '']
         lines += ['- '+link(s['title'],s['url'])+' — '+text(s['publisher'])+'; retrieved '+text(s['retrieved_at'])+'.' for s in p['sources']]
         lines += ['', 'Change-log link: '+(link('Official updates',p['change_log_url']) if p['change_log_url'] else 'No dedicated change-log URL verified; consult the current policy and linked announcements')+'.', '']

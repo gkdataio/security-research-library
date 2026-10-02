@@ -1,0 +1,2152 @@
+{
+  "schema_version": "1.0.0",
+  "id": "intigriti-directory-2026-10-02",
+  "platform": "Intigriti",
+  "reviewed_at": "2026-10-02T21:33:33Z",
+  "review_state": "directory_listing_only",
+  "coverage": {
+    "completeness": "complete_visible_listing",
+    "filters": "All industries; All program types; Newest programs; empty search.",
+    "pagination_note": "Observed all 8 advertised pages: seven pages of 24 cards and final page of 20 (188 total). Page 8 selected; Next Page and Last Page controls were not links; 20 final-page cards observed.",
+    "continuation_note": "No next page at snapshot. Revisit the official directory on a future review and compare program URLs; policy verification remains pending.",
+    "limitations": [
+      "Snapshot of all 8 pages advertised by the public marketing directory, not a claim of all programs on Intigriti.",
+      "All 188 records are listing-only candidates. Program policies and current submission eligibility were not reviewed.",
+      "Public listing does not establish active status or permission to participate; some cards state application or other requirements.",
+      "Official program URLs were read from directory anchors and were not individually opened or redirect-verified.",
+      "Transient client-side loading produced empty card sets on pages 4 and 5; those pages were revisited and all 24 cards on each were read.",
+      "No scope lists, target assets/domains, vulnerability details, or testing instructions were cataloged.",
+      "Observation window 2026-10-02T21:29:08Z through 2026-10-02T21:33:33Z; sources use the end-of-review timestamp."
+    ]
+  },
+  "sources": [
+    {
+      "id": "page-1",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 1 (24 cards)"
+    },
+    {
+      "id": "page-2",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=2",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 2 (24 cards)"
+    },
+    {
+      "id": "page-3",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=3",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 3 (24 cards)"
+    },
+    {
+      "id": "page-4",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=4",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 4 (24 cards)"
+    },
+    {
+      "id": "page-5",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=5",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 5 (24 cards)"
+    },
+    {
+      "id": "page-6",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=6",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 6 (24 cards)"
+    },
+    {
+      "id": "page-7",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=7",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 7 (24 cards)"
+    },
+    {
+      "id": "page-8",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs?programs_prod%5Bpage%5D=8",
+      "observed_at": "2026-10-02T21:33:33Z",
+      "access_method": "browser",
+      "page_label": "Intigriti directory page 8 (20 cards)"
+    }
+  ],
+  "entries": [
+    {
+      "id": "intigriti-3aad97cfcaed8ee2",
+      "name": "NxtPort VDP",
+      "program_url": "https://app.intigriti.com/programs/portofantwerp/nxtportvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-905e49fd1148d7d3",
+      "name": "Intel® Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f9f68f87b387ad01",
+      "name": "ADAC Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3af054740d0c40d4",
+      "name": "Adobe Public",
+      "program_url": "https://app.intigriti.com/programs/adobe/adobepublic",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-fda0bd80021e632b",
+      "name": "Dutch Lottery VDP",
+      "program_url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-1a0aae59e52c9c25",
+      "name": "Mateco VDP",
+      "program_url": "https://app.intigriti.com/programs/mateco/matecovdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-9b3a3e0723acf795",
+      "name": "Ivo: AI VDP",
+      "program_url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-07f90746b449bbc9",
+      "name": "Dashlane Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b1b4764dcf6ec91f",
+      "name": "Spacelift VDP",
+      "program_url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-eb5a113d92468770",
+      "name": "TrueLayer VDP",
+      "program_url": "https://app.intigriti.com/programs/truelayer/truelayervdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5a06714e43ae1210",
+      "name": "Salto Vulnerability Disclosure",
+      "program_url": "https://app.intigriti.com/programs/saltosystems/saltovulnerabilitydisclosure",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7aa05d09059a0c26",
+      "name": "NVIDIA Public Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-cfeefdb6d9f78faf",
+      "name": "Grafana Labs - Vulnerability Disclosure Program (VDP)",
+      "program_url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a53684d9038a9278",
+      "name": "European Space Agency (ESA) VDP",
+      "program_url": "https://app.intigriti.com/programs/europeanspaceagency/europeanspaceagencyvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-962bf54056ec27b7",
+      "name": "OURA Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/ourahealthoy/ouravulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e4396437b33f824f",
+      "name": "Daytona Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/daytona/daytonabugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-fde109f400bfe650",
+      "name": "SolarWinds VDP",
+      "program_url": "https://app.intigriti.com/programs/solarwinds/solarwindsvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-55bbb5a9af1f8729",
+      "name": "Wärtsilä Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/wartsila/wartsila-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bf63534d8866625c",
+      "name": "University of Basel VDP",
+      "program_url": "https://app.intigriti.com/programs/universityofbasel/universityofbaselvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-69a169d48d1d8d54",
+      "name": "Tekion VDP",
+      "program_url": "https://app.intigriti.com/programs/tekion/tekionvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-98515362e3663f96",
+      "name": "Attentia VDP",
+      "program_url": "https://app.intigriti.com/programs/attentia/attentiavdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-911f216d142ceba6",
+      "name": "Atolls Vulnerability Disclosure Program (VDP)",
+      "program_url": "https://app.intigriti.com/programs/atolls/atollsvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-35318824993b148c",
+      "name": "CARIAD VDP",
+      "program_url": "https://app.intigriti.com/programs/skodaauto/cariadvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e01da94530cd8bf0",
+      "name": "Coveo Public Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-1"
+      ],
+      "evidence_note": "Directory page 1 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-93fdbdcad690f969",
+      "name": "Posten Bring Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/postenbringas/vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d32f03c94f468710",
+      "name": "ICI PARIS XL",
+      "program_url": "https://app.intigriti.com/programs/aswatson/iciparisxl",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2f2afe2d9629a12c",
+      "name": "The Perfume Shop",
+      "program_url": "https://app.intigriti.com/programs/aswatson/theperfumeshop",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e94903c743cf5371",
+      "name": "Marionnaud",
+      "program_url": "https://app.intigriti.com/programs/aswatson/marionnaud",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2f33df335e66cf37",
+      "name": "Superdrug",
+      "program_url": "https://app.intigriti.com/programs/aswatson/superdrug",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-488ae04eb94bb38f",
+      "name": "Kruidvat",
+      "program_url": "https://app.intigriti.com/programs/aswatson/kruidvat",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a0e554654771f864",
+      "name": "Watsons",
+      "program_url": "https://app.intigriti.com/programs/aswatson/watsons",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-4d8f7513f117109a",
+      "name": "Storebrand Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/spp-storebrand/storebrand-rd",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-8ac18099f04723f8",
+      "name": "Anaconda Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/anacondainc/anacondavdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ae62addf0fe136d2",
+      "name": "Nutaku Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/nutaku-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b89f92cb496b8747",
+      "name": "Brazzers Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/brazzers-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-fa268c09399b222d",
+      "name": "Pornhub Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/pornhub-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-6c718f89002da960",
+      "name": "MyDirtyHobby Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/mydirtyhobby-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-8307183f06cec029",
+      "name": "TrafficJunky Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/trafficjunky-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-9b1c87de2b2d754c",
+      "name": "Probiller Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aylo/probiller-bbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d0a3ed48199e1998",
+      "name": "DIGI Responsible Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/digi/digi-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7c4cb679dde2f6f6",
+      "name": "Voi Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/voi/voivulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-332e6a0578a13e1d",
+      "name": "Toast VDP",
+      "program_url": "https://app.intigriti.com/programs/toast/toastvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7024f970275792fe",
+      "name": "Trusted Firmware",
+      "program_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-73b7bb0ccfbda71d",
+      "name": "Liferay VDP",
+      "program_url": "https://app.intigriti.com/programs/liferay/liferay-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-513fd6c1fe6e31d9",
+      "name": "Water-Link VDP",
+      "program_url": "https://app.intigriti.com/programs/waterlink/water-linkvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e80762bd94c58a62",
+      "name": "Ubisoft Game Security BBP",
+      "program_url": "https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d53f4a5e29389737",
+      "name": "Liferay DXP",
+      "program_url": "https://app.intigriti.com/programs/liferay/liferaydxp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-499c24019a091619",
+      "name": "Exoscale Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-2"
+      ],
+      "evidence_note": "Directory page 2 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-20f4a2c914dd5066",
+      "name": "Bitvavo VDP",
+      "program_url": "https://app.intigriti.com/programs/bitvavo/bitvavovdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d1462efed85ac2f4",
+      "name": "Dropbox Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/dropbox/dropbox-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f8ddece776b17b6f",
+      "name": "Qualified Responsible Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/qualified/qualifiedresponsibledisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-91b2b9c5cf81d988",
+      "name": "Dropbox Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/dropbox/dropbox",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bd47d549c2be9d0e",
+      "name": "NVIDIA Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/nvidia/nvidiavdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3de0bcfe2e06a672",
+      "name": "Proof.com VDP",
+      "program_url": "https://app.intigriti.com/programs/proof/proofvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b8ab13ada1a476fd",
+      "name": "VDP",
+      "program_url": "https://app.intigriti.com/programs/showpad/vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e9990df40838ede3",
+      "name": "Coveo VDP",
+      "program_url": "https://app.intigriti.com/programs/coveo/coveovulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bc5107b94ac916be",
+      "name": "Arm",
+      "program_url": "https://app.intigriti.com/programs/arm/arm",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c603f7193e1e96cc",
+      "name": "QC VDP",
+      "program_url": "https://app.intigriti.com/programs/quadcode/qcvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ea19e082b5d5e691",
+      "name": "Exact Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/exact/exactvulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-1c92df8e83902323",
+      "name": "Farfetch Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/farfetch/farfetchbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d372db26d2f75530",
+      "name": "Nexuzhealth VDP",
+      "program_url": "https://app.intigriti.com/programs/nexuzhealth/nexuzhealthvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-496fe858682dfcad",
+      "name": "Nexuzhealth",
+      "program_url": "https://app.intigriti.com/programs/nexuzhealth/nexuzhealth",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3bb18b6d5f9e811a",
+      "name": "HRS Group VDP",
+      "program_url": "https://app.intigriti.com/programs/hrsgroup/hrsgroupvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b55474e14e0b3b6c",
+      "name": "Zabka Group Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/zabkapolska/zabkagroup-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-664853044aa6c6c4",
+      "name": "Donorbox Vulnerability Disclosure Project",
+      "program_url": "https://app.intigriti.com/programs/donorbox/donorboxvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f7fc65b58e385e70",
+      "name": "RGF BE - VDP",
+      "program_url": "https://app.intigriti.com/programs/rgfstaffing/rgfbe-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d3173c928939a800",
+      "name": "Arbonia VDP program",
+      "program_url": "https://app.intigriti.com/programs/arbonia/arboniavdpprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bb81fb899e41a887",
+      "name": "Altera",
+      "program_url": "https://app.intigriti.com/programs/altera/altera",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-878aaebced7e0cc3",
+      "name": "Monzo Public Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/monzobank/monzopublicbugbountyprogram",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-78f5d4ac33ca017b",
+      "name": "Aikido Security: Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/aikido/aikido",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-771e6e682c937142",
+      "name": "Grafana Labs",
+      "program_url": "https://app.intigriti.com/programs/grafanalabs/grafanaossbbp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-470709229eebc322",
+      "name": "Cloudways by DigitalOcean",
+      "program_url": "https://app.intigriti.com/programs/digitalocean/cloudways",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-3"
+      ],
+      "evidence_note": "Directory page 3 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-828a6d2b7d8511ec",
+      "name": "DigitalOcean",
+      "program_url": "https://app.intigriti.com/programs/digitalocean/digitalocean",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-4845d26582742e2b",
+      "name": "House of HR Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/houseofhr/houseofhrvulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5bab61afe0c2dd07",
+      "name": "BMW Group Automotive",
+      "program_url": "https://app.intigriti.com/programs/bmw/bmwgroup-automotive",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-91226fb5a2d63d42",
+      "name": "BMW Group",
+      "program_url": "https://app.intigriti.com/programs/bmw/bmwgroup",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7302ab87a2ba2fc5",
+      "name": "Driessen Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/driessengroep/driessenvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-8f3035264a273126",
+      "name": "9altitudes - Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/ninealtitudes/VDP",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-55c83c3f0956a24f",
+      "name": "Axel Springer SE Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/axelspringerse/axelspringersevulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-8d6c96ab7bcd799c",
+      "name": "Signicat Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/signicat/signicatresponsibledisclosure",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2a050558aa4f54b0",
+      "name": "Skoda Auto Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/skodaauto/skodaautoprivatebugbountyprogram",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-002fab24f790d839",
+      "name": "Nexo",
+      "program_url": "https://app.intigriti.com/programs/nexo/nexo",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-9bd5047c19ab30ea",
+      "name": "Orbia Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/orbia/orbiavdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ea436f180ddfd4ad",
+      "name": "Allegro",
+      "program_url": "https://app.intigriti.com/programs/allegro/allegrobugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-601518518838cb37",
+      "name": "Citymesh Responsible Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/citymesh/responsiblevulnerabilitydisclosureprogram",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3c19f25a33aa3695",
+      "name": "The Coca-Cola Company Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/tccc/coca-cola",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-00ed5a8db53140a0",
+      "name": "e-tracker",
+      "program_url": "https://app.intigriti.com/programs/bpost/e-tracker",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-14ecf0266527c3a1",
+      "name": "Kiwa Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/kiwa/kiwavdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2310f52431fb92bd",
+      "name": "Capture Our Flag",
+      "program_url": "https://app.intigriti.com/programs/intigriti/captureourflag",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-beabd2ad0581e1a0",
+      "name": "Dstny",
+      "program_url": "https://app.intigriti.com/programs/dstny/dstnybugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-631624525009fdeb",
+      "name": "Veriff Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/veriff/veriffbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-105b3716ec3b4c43",
+      "name": "MAGNIFIC VDP",
+      "program_url": "https://app.intigriti.com/programs/freepik/freepikcompany",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b88cdb7491448c6e",
+      "name": "Rivian Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/rivian/rivianbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-889c288a61bfde6a",
+      "name": "Bühler Group VDP",
+      "program_url": "https://app.intigriti.com/programs/buhlergroup/buhlergroupvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-6a936ae77e6153a3",
+      "name": "AMD Product Security Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/amd/amd",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-6880eb71eafb4af7",
+      "name": "Posti Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/posti/postibugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-4"
+      ],
+      "evidence_note": "Directory page 4 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c2c21827100d7db4",
+      "name": "Webnode",
+      "program_url": "https://app.intigriti.com/programs/combell/webnode",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-11ea6c34a5fc8e32",
+      "name": "Leapsome",
+      "program_url": "https://app.intigriti.com/programs/leapsome/leapsome",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-96112892dc3cd75e",
+      "name": "DHL Group Vulnerability Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/dhlgroup/dhlvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-069d131a65f4f903",
+      "name": "UpCloud Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/upcloud/upcloud",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-97e5aeee2d209191",
+      "name": "Revolut VDP",
+      "program_url": "https://app.intigriti.com/programs/revolut/revolutvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-362590268f25ee10",
+      "name": "ING Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/ing/ing-responsible-disclosure",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b9d8a9493ffb0e45",
+      "name": "Universitätsspital Zürich VDP",
+      "program_url": "https://app.intigriti.com/programs/universitatsspitalzurich/usz-vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5c2f8a1fd693afa1",
+      "name": "Social Deal",
+      "program_url": "https://app.intigriti.com/programs/socialdeal/socialdeal",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-42afa90b3827da99",
+      "name": "Axel Springer National Media & Tech",
+      "program_url": "https://app.intigriti.com/programs/axelspringerse/nmt",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-8d27f62ed1acb3a9",
+      "name": "Ubisoft Responsible Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/ubisoft/ubisoftvdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-cac050d725fa29b1",
+      "name": "Yahoo Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/yahoo/yahoobugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-50368e0e356572c8",
+      "name": "RAMPF Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/rampf/rampfbugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d346f2c3e002e82e",
+      "name": "Ninja Kiwi Games Bug Bounty program",
+      "program_url": "https://app.intigriti.com/programs/ninjakiwigames/ninjakiwigames",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3455bc1c56793e22",
+      "name": "Capital.com",
+      "program_url": "https://app.intigriti.com/programs/capitalcom/capitalcom",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-545a9316e98fac09",
+      "name": "Uitgeverij Deviant Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/uitgeverijdeviant/uitgeverijdeviant",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e8a8e25cbf83374c",
+      "name": "WP Engine Bug Bounty",
+      "program_url": "https://app.intigriti.com/programs/wpengine/wpenginebugbounty",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-6e7c18751a748f03",
+      "name": "RIPE NCC",
+      "program_url": "https://app.intigriti.com/programs/ripencc/ripencc",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-4a06d3848424d3ea",
+      "name": "Housing Application (huisvestingsapp) Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/kuleuven/huisvesting",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-489c0446da1855be",
+      "name": "TrueLayer",
+      "program_url": "https://app.intigriti.com/programs/truelayer/truelayer",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-301c300de67f9961",
+      "name": "Voi Scooters",
+      "program_url": "https://app.intigriti.com/programs/voi/voiscooters",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5f7fed28e93009c4",
+      "name": "WP Engine VDP",
+      "program_url": "https://app.intigriti.com/programs/wpengine/wpengine",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-b179780cc1d1f514",
+      "name": "Ideals Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/ideals/ideals",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-247b5b0bf0908a57",
+      "name": "Doccle Bug Bounty program",
+      "program_url": "https://app.intigriti.com/programs/doccle/doccle",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-74aef9cc44da08ce",
+      "name": "PeopleCert VDP",
+      "program_url": "https://app.intigriti.com/programs/peoplecert/peoplecert",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-5"
+      ],
+      "evidence_note": "Directory page 5 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-70bf65309a7f6da3",
+      "name": "Visma Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/visma/VismaResponsibleDisclosure",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3ad3c43ed99c04e2",
+      "name": "Nestlé VDP",
+      "program_url": "https://app.intigriti.com/programs/nestl%C3%A9/nestl%C3%A9vdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ddf5e27b05715e56",
+      "name": "Canada Post - Responsible Disclosure Program",
+      "program_url": "https://app.intigriti.com/programs/innovapost/innovapost",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e2f3e3ddec74de2c",
+      "name": "Fortnox Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/fortnox/fortnox",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-75e73143438d2023",
+      "name": "Kahoot Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/kahoot/kahoot",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bf5627ed97dc18ea",
+      "name": "Soundtrack Technologies",
+      "program_url": "https://app.intigriti.com/programs/syb/soundtrackyourbrand",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-28c8c743c9f94ea7",
+      "name": "Mobile Vikings",
+      "program_url": "https://app.intigriti.com/programs/mv/mobilevikings",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-158f7f944718a82f",
+      "name": "Fing Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/lansweeper/fing",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-beab12b356c66cbc",
+      "name": "Vlerick Business School",
+      "program_url": "https://app.intigriti.com/programs/vlerickbusinessschool/vlerickbusinessschool",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f67fd7e02341ee40",
+      "name": "Personio",
+      "program_url": "https://app.intigriti.com/programs/personio/personio",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-27539c66a2b5fa2a",
+      "name": "SimScale",
+      "program_url": "https://app.intigriti.com/programs/simscale/simscale",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a3ffa1f1256a691e",
+      "name": "Here Technologies",
+      "program_url": "https://app.intigriti.com/programs/heretechnologies/heretechnologies",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-e2cf6e416bbf0ab4",
+      "name": "PDQ bug bounty program",
+      "program_url": "https://app.intigriti.com/programs/pdq/pdqcomprivate",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c2b0db1b0d386293",
+      "name": "Intertoys",
+      "program_url": "https://app.intigriti.com/programs/intertoys/intertoys",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a0750d02c3db9a20",
+      "name": "BMC",
+      "program_url": "https://app.intigriti.com/programs/randstad/bmc",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-53e89133e9571255",
+      "name": "SBB - Swiss Federal Railways",
+      "program_url": "https://app.intigriti.com/programs/sbb/sbbglobal",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c8a95c35047985f8",
+      "name": "KU Leuven Vulnerability Disclosure Program (VDP)",
+      "program_url": "https://app.intigriti.com/programs/kuleuven/kuleuvenrdp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-97eafb499da2fdb9",
+      "name": "DataCamp",
+      "program_url": "https://app.intigriti.com/programs/datacamp/datacamp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3b4650952b890d2a",
+      "name": "Liveperson Conversational Cloud",
+      "program_url": "https://app.intigriti.com/programs/liveperson/livepersonconversationalcloud",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-0c5bec9f65e46eb9",
+      "name": "Allekabels",
+      "program_url": "https://app.intigriti.com/programs/rpip/allekabels",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-43c2b66cd2246ab7",
+      "name": "Wireless Logic",
+      "program_url": "https://app.intigriti.com/programs/wl/wirelesslogic",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-d77b941b28bf7b97",
+      "name": "Lansweeper Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/lansweeper/lansweeper1",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2c18ef465c4e31be",
+      "name": "Water-Link",
+      "program_url": "https://app.intigriti.com/programs/waterlink/water-link",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-31a3459c141c4946",
+      "name": "Intergamma",
+      "program_url": "https://app.intigriti.com/programs/intergamma/intergamma",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-6"
+      ],
+      "evidence_note": "Directory page 6 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c5efdb02e4f8b4e2",
+      "name": "VRT",
+      "program_url": "https://app.intigriti.com/programs/vrtnv/vrtnv",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-297bce59fcbb3886",
+      "name": "Het Laatste Nieuws",
+      "program_url": "https://app.intigriti.com/programs/dpgm/hetlaatstenieuws",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-62f2aa9e0e5fc2f1",
+      "name": "Cyber Security Coalition",
+      "program_url": "https://app.intigriti.com/programs/cybersecuritycoalition/cybersecuritycoalition",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f80b2fe8a24e9060",
+      "name": "12Build Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/onetwobuild/12build",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-12936eec3f8c8c8b",
+      "name": "Visma",
+      "program_url": "https://app.intigriti.com/programs/visma/visma",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-faccd7a67d359b6c",
+      "name": "Newpharma",
+      "program_url": "https://app.intigriti.com/programs/colruyt/newpharma",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ab40d9046879fe60",
+      "name": "InnoGames",
+      "program_url": "https://app.intigriti.com/programs/innogames/innogames",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7d5ba7d6826b3b2d",
+      "name": "Sqills",
+      "program_url": "https://app.intigriti.com/programs/sqills/sqillscorporatewebsite",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-21feb0f6bec3be88",
+      "name": "CM.com",
+      "program_url": "https://app.intigriti.com/programs/cmcom/cmcom",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-ce47061ed8e1ea9b",
+      "name": "Libelle",
+      "program_url": "https://app.intigriti.com/programs/dpgm/libelle",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a36852fc9ef38048",
+      "name": "Colruyt Group",
+      "program_url": "https://app.intigriti.com/programs/colruyt/colruytgroupidcheck",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-7d9777b80a650ca2",
+      "name": "Algemeen Dagblad",
+      "program_url": "https://app.intigriti.com/programs/dpgm/algemeendagblad",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f17795eb7018403f",
+      "name": "Red Bull",
+      "program_url": "https://app.intigriti.com/programs/redbull/redbull",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c1e7680283f3b791",
+      "name": "My.sdworx.com",
+      "program_url": "https://app.intigriti.com/programs/sdworx/myworkandme",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-0cd7fd23ae2071f6",
+      "name": "Speakap Responsible Disclosure",
+      "program_url": "https://app.intigriti.com/programs/speakap/speakapresponsibledisclosure",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-07fe0cf3635a7152",
+      "name": "VTM GO",
+      "program_url": "https://app.intigriti.com/programs/dpgm/vtmgo",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a92fe9ae2d52c86d",
+      "name": "Port of Antwerp-Bruges",
+      "program_url": "https://app.intigriti.com/programs/portofantwerp/portofantwerp",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-bb77675d6cfe285d",
+      "name": "Uphold",
+      "program_url": "https://app.intigriti.com/programs/Uphold/upholdcom",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-1f85285dd7bc512c",
+      "name": "Yacht",
+      "program_url": "https://app.intigriti.com/programs/randstad/yacht",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c0ec7140e624a76f",
+      "name": "GULP",
+      "program_url": "https://app.intigriti.com/programs/randstad/gulp",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5b8c3132b79487a4",
+      "name": "UZ Leuven",
+      "program_url": "https://app.intigriti.com/programs/uz%20leuven/uzleuven",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-aaf1ffd728850feb",
+      "name": "Tempo-Team",
+      "program_url": "https://app.intigriti.com/programs/randstad/tempo-team",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-5bfd84aa5993ae61",
+      "name": "Het Parool",
+      "program_url": "https://app.intigriti.com/programs/dpgm/hetparool",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3910db8612daa791",
+      "name": "De Morgen",
+      "program_url": "https://app.intigriti.com/programs/dpgm/demorgen",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-7"
+      ],
+      "evidence_note": "Directory page 7 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-9112625a73815592",
+      "name": "Trouw",
+      "program_url": "https://app.intigriti.com/programs/dpgm/trouw",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-84d7a98b220b8a42",
+      "name": "Humo",
+      "program_url": "https://app.intigriti.com/programs/dpgm/humo",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-4f3851c94514719c",
+      "name": "Telenet - Base - Wyre - Tadaam",
+      "program_url": "https://app.intigriti.com/programs/telenet/telenetgroup",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-a9d9849de0a71f23",
+      "name": "DPG Media",
+      "program_url": "https://app.intigriti.com/programs/dpgm/dpgmedia",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-89bb666ee26487d3",
+      "name": "Randstad",
+      "program_url": "https://app.intigriti.com/programs/randstad/randstad",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f6f7221a746d596f",
+      "name": "Bpost",
+      "program_url": "https://app.intigriti.com/programs/bpost/dummy",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-70430e00f2feb4a3",
+      "name": "Online enrollment for students Bug Bounty Program",
+      "program_url": "https://app.intigriti.com/programs/kuleuven/onlineinschrijvingenbetalingstoepassing",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-aa94c0ecbba29b2b",
+      "name": "Torfs",
+      "program_url": "https://app.intigriti.com/programs/torfs/torfs",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-f065597c6124c877",
+      "name": "Tomorrowland",
+      "program_url": "https://app.intigriti.com/programs/tomorrowland/tomorrowland",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-3f2575fc1f1953c9",
+      "name": "Venly",
+      "program_url": "https://app.intigriti.com/programs/arkane/arkanenetwork",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-c825fcbd13fba543",
+      "name": "De Volkskrant",
+      "program_url": "https://app.intigriti.com/programs/dpgm/devolkskrant",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-0ca8029dcf9778cb",
+      "name": "EURid",
+      "program_url": "https://app.intigriti.com/programs/eurid/eurid",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-aa34891c6a4d965a",
+      "name": "Belfius",
+      "program_url": "https://app.intigriti.com/programs/belfius/belfius",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-6720415fe466096d",
+      "name": "Delen Private Bank",
+      "program_url": "https://app.intigriti.com/programs/delenprivatebank/privatebankdelen",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-eec6a40c38d455c1",
+      "name": "Tweakers",
+      "program_url": "https://app.intigriti.com/programs/dpgm/tweakers",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-2c2dabee89176699",
+      "name": "intigriti",
+      "program_url": "https://app.intigriti.com/programs/intigriti/intigriti",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-74e2d3d36d7b75ef",
+      "name": "eHealth Hub VZN KUL",
+      "program_url": "https://app.intigriti.com/programs/uz%20leuven/ehealthhub&meta-hubvznkul",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-99876348498f2157",
+      "name": "Cross Border Fines",
+      "program_url": "https://app.intigriti.com/programs/bpost/crossborderfines",
+      "program_type": "vulnerability_disclosure",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Responsible disclosure; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-1bcc010eacd4c9da",
+      "name": "Nexuzhealth Web PACS",
+      "program_url": "https://app.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    },
+    {
+      "id": "intigriti-db015fcfa248d8c2",
+      "name": "Kinepolis Group",
+      "program_url": "https://app.intigriti.com/programs/kinepolis/website",
+      "program_type": "paid_bounty",
+      "submission_status": "unknown",
+      "source_ids": [
+        "page-8"
+      ],
+      "evidence_note": "Directory page 8 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown."
+    }
+  ],
+  "content_scope": "public_program_listing_metadata",
+  "rights": "Original selection and commentary CC BY 4.0; facts, linked sources and trademarks retain their own rights."
+}

@@ -2,7 +2,7 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Program directory](docs/programs.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Verified programs](docs/programs.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
@@ -10,6 +10,7 @@ Source-backed public security disclosures, official learning resources, and orig
 
 - **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
 - **8 public program-policy summaries**, maintained separately from award evidence
+- **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates
@@ -49,6 +50,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 
 | Collection | Canonical records | Schema | Portable export |
 |---|---|---|---|
+| Official directory observations | [data/program-discovery/](data/program-discovery/) | [Discovery schema](schema/program-discovery.schema.json) | [exports/program-discovery.json](exports/program-discovery.json) |
 | Public program policies | [data/programs/](data/programs/) | [Program schema](schema/program.schema.json) | [exports/programs.json](exports/programs.json) |
 | Award-backed reports | [data/reports/](data/reports/) | [Report schema](schema/report.schema.json) | [exports/vulns-co.json](exports/vulns-co.json) |
 | Educational resources | [data/resources/](data/resources/) | [Resource schema](schema/resource.schema.json) | [exports/resources.json](exports/resources.json) |
@@ -85,6 +87,7 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [render_diagrams.py](scripts/render_diagrams.py) | Generates Mermaid/DOT source and uses local Graphviz to produce SVG diagrams |
 | [build_navigation.py](scripts/build_navigation.py) | Generates readable report pages and the static diagram gallery |
 | [export_programs.py](scripts/export_programs.py) | Validates program-policy metadata and builds its separate export and directory |
+| [export_program_discovery.py](scripts/export_program_discovery.py) | Validates official directory observations, deduplicates program pages and preserves continuation provenance |
 | [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |
 
 These are offline maintenance utilities. They do not contact research targets, collect credentials, scan systems or run the disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
@@ -101,6 +104,7 @@ python3 scripts/render_diagrams.py --check
 python3 scripts/export.py --check
 python3 scripts/export_resources.py --check
 python3 scripts/export_programs.py --check
+python3 scripts/export_program_discovery.py --check
 python3 scripts/build_navigation.py --check
 ```
 
@@ -110,6 +114,7 @@ After editing canonical records, regenerate the exports:
 python3 scripts/export.py
 python3 scripts/export_resources.py
 python3 scripts/export_programs.py
+python3 scripts/export_program_discovery.py
 python3 scripts/build_navigation.py
 ```
 

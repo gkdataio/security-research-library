@@ -32,6 +32,13 @@ class ProgramTests(unittest.TestCase):
     def test_unreviewed_link(self):
         self.rec['policy_url']='https://example.invalid/policy'
         with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
+    def test_official_link_needs_source(self):
+        self.rec['official_program_links']=[{'url':'https://hackerone.com/example','source_ids':['missing'],'note':'Official link'}]
+        with self.assertRaises(Invalid):validate_program(self.rec,self.schema)
+    def test_duplicate_official_link(self):
+        item={'url':'https://hackerone.com/example','source_ids':[self.rec['sources'][0]['id']],'note':'Official link'}
+        self.rec['official_program_links']=[item,item]
+        with self.assertRaises(Invalid):validate_program(self.rec,self.schema)
     def test_status_needs_evidence(self):
         self.rec['submission_status'].update(value='paused',source_ids=[])
         with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
