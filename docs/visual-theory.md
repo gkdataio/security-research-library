@@ -26,6 +26,14 @@ A valid signature is one check among several. The issued claims must still refer
 
 [Evidence and metadata](../data/diagrams/identity-claim-binding.json) · [Mermaid source](../diagrams/identity-claim-binding.mmd)
 
+## Keep workload authority tenant-scoped
+
+![A verified workload identity and requested operation reach one policy decision. Role, action, resource and tenant must match; approved scope is allowed, other access is denied, and each decision is recorded.](../diagrams/workload-identity-tenant-scope.svg)
+
+Authenticating a workload does not determine everything it may access. Bind authorization to the requested operation and tenant, keep credentials short-lived where supported, and review unused permissions separately. This connects the Meta and Actifio cases with AWS IAM guidance.
+
+[Evidence and metadata](../data/diagrams/workload-identity-tenant-scope.json) · [Mermaid source](../diagrams/workload-identity-tenant-scope.mmd)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:

@@ -32,7 +32,8 @@ def graphviz_text(record):
     return '\n'.join(lines)+'\n'
 
 def build(root=ROOT, check=False):
-    for path in sorted((root/'data/diagrams').glob('*.json')):
+    paths=sorted((root/'data/diagrams').glob('*.json'))
+    for path in paths:
         rec=json.loads(path.read_text())
         for kind,text in [('mermaid',mermaid_text(rec)),('graphviz',graphviz_text(rec))]:
             target=root/rec['files'][kind]
@@ -45,7 +46,7 @@ def build(root=ROOT, check=False):
             out=out.replace('<svg ', '<svg role="img" aria-label="'+html.escape(rec['title'],quote=True)+'" ',1)
             out=re.sub(r'<title>.*?</title>',lambda m:'<title>'+html.escape(rec['title'])+'</title><desc>'+html.escape(rec['alt_text'])+'</desc>',out,count=1)
             (root/rec['files']['svg']).write_text(out)
-    print('Diagram source equivalence checked.' if check else 'Rendered three Graphviz SVG companions and Mermaid sources.')
+    print('Diagram source equivalence checked.' if check else f'Rendered {len(paths)} Graphviz SVG companions and Mermaid sources.')
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--check',action='store_true');a=p.parse_args();build(check=a.check)

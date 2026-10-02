@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.1.0",
+  "id": "hackerone-private-program-graphql-object-authorization-2025",
+  "title": "GraphQL object authorization exposed private-program metadata",
+  "organization": "HackerOne",
+  "product": "HackerOne GraphQL object access",
+  "researchers": [
+    "haxta4ok00"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "HackerOne awarded USD 25,000 for one private-program object-authorization report.",
+  "root_cause": "GraphQL object access did not consistently enforce private-program visibility rules.",
+  "impact": "Private-program metadata and report titles could be disclosed without authorization. HackerOne stated its investigation found no exploitation beyond the researcher’s demonstration.",
+  "defensive_takeaways": [
+    "Apply authorization to every object and relationship boundary.",
+    "Treat metadata fields as part of the privacy contract."
+  ],
+  "reward": {
+    "amount": 25000,
+    "currency": "USD",
+    "scope": "single_report",
+    "type": "bug_bounty",
+    "awarding_organization": "HackerOne",
+    "status": "awarded",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "primary",
+    "evidence_quote": "rewarded haxta4ok00 with a $25,000 bounty.",
+    "evidence_location": "Bounty event July 5, 2022 at 16:15 UTC, activity 17427955.",
+    "usd_equivalent": null,
+    "notes": "Dollar notation appears in the report UI; USD denomination is contextual from HackerOne’s disclosure policy. Award events do not establish cash receipt."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-01-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2025-01-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "reported": {
+      "value": "2022-06-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2022-07-05",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Report status changed to Resolved on July 5, 2022; exact deployment time is not stated."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical primary publication, outside the preferred last-12-month window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://hackerone.com/reports/1618347",
+      "title": "GraphQL object authorization exposed private-program metadata (report 1618347)",
+      "type": "vendor",
+      "author": "HackerOne and the credited researchers",
+      "retrieved_at": "2026-10-02T15:45:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+      "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
+      "type": "platform",
+      "author": "HackerOne",
+      "retrieved_at": "2026-10-02T15:43:47Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T15:45:00Z",
+    "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+    "limitations": [
+      "Award events establish an award, not independently audited settlement.",
+      "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
+      "Implementation-level patch details are not public. Updated comment timestamps are distinct from original event dates."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

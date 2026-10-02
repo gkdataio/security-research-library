@@ -44,6 +44,13 @@
       "primary_technical_status": "Search retrieval denied by robots.txt",
       "reason_not_counted": "Primary article and award not reviewed; index amount alone is insufficient.",
       "reviewed_at": "2026-10-02T15:31:00Z"
+    },
+    {
+      "title": "GitHub highest single award in 2023",
+      "reported_reward": "USD 75,000; vendor confirms highest single payment",
+      "primary_reward_corroboration_url": "https://github.blog/security/vulnerability-research/10-years-of-the-github-security-bug-bounty-program/",
+      "reason_not_counted": "The official retrospective confirms one paid award but does not identify its finding or provide enough technical context for a source-backed root-cause record. Do not associate secondary technical claims without a matching primary report.",
+      "reviewed_at": "2026-10-02T15:41:00Z"
     }
   ]
 }

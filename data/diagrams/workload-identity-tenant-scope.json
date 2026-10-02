@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "id": "workload-identity-tenant-scope",
+  "title": "Keep workload authority tenant-scoped",
+  "alt_text": "A verified workload identity and a requested operation enter an independent authorization decision. Policy checks the role, action, resource and tenant together. Only the approved resource scope is allowed; other requests are denied. Both decisions produce an audit record.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "meta-service-identity-secrets-trust-boundary-2026",
+    "google-actifio-driver-service-identity-isolation-2025"
+  ],
+  "linked_resource_ids": [
+    "aws-iam-machine-identity-best-practices"
+  ],
+  "evidence_urls": [
+    "https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/",
+    "https://stazot.com/?article=dataprep-actifio-jar-swapping-rce",
+    "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
+  ],
+  "reviewed_at": "2026-10-02T15:41:13Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "identity",
+        "label": "Verified workload identity and tenant context",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "request",
+        "label": "Requested action and resource",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "policy",
+        "label": "Do role, action, resource and tenant match policy?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "allow",
+        "label": "Allow only the approved resource scope",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "deny",
+        "label": "Deny access",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "audit",
+        "label": "Record the authorization decision",
+        "shape": "box",
+        "kind": "data"
+      }
+    ],
+    "edges": [
+      {
+        "from": "identity",
+        "to": "policy",
+        "label": "Verified context"
+      },
+      {
+        "from": "request",
+        "to": "policy",
+        "label": "Operation"
+      },
+      {
+        "from": "policy",
+        "to": "allow",
+        "label": "Yes"
+      },
+      {
+        "from": "policy",
+        "to": "deny",
+        "label": "No"
+      },
+      {
+        "from": "allow",
+        "to": "audit",
+        "label": null
+      },
+      {
+        "from": "deny",
+        "to": "audit",
+        "label": null
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/workload-identity-tenant-scope.mmd",
+    "graphviz": "diagrams/workload-identity-tenant-scope.dot",
+    "svg": "diagrams/workload-identity-tenant-scope.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T15:31:00Z",
+  "latest_reviewed_at": "2026-10-02T15:45:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 25,
+    "included": 27,
     "within_preferred_window": 7,
-    "older_or_uncertain": 18,
-    "bug_bounty": 24,
+    "older_or_uncertain": 20,
+    "bug_bounty": 26,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -1211,6 +1211,151 @@
       "content_scope": "historical_defensive_summary"
     },
     {
+      "schema_version": "1.1.0",
+      "id": "hackerone-support-confluence-access-boundary-2025",
+      "title": "Support integration exposed internal Confluence documentation",
+      "organization": "HackerOne",
+      "product": "HackerOne support and internal documentation",
+      "researchers": [
+        "madara_",
+        "red_darkin"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "One support-integration report received USD 12,500 split between two researchers.",
+      "root_cause": "Support-system configuration extended external identities’ access into internal documentation.",
+      "impact": "The vendor summary describes external access to internal Confluence material and limited modification.",
+      "defensive_takeaways": [
+        "Separate customer-support identity from employee-documentation entitlement.",
+        "Review transitive permissions across third-party integrations."
+      ],
+      "reward": {
+        "amount": 12500,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "HackerOne",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "rewarded red_darkin with a $5,000 bounty. … rewarded madara_ with a $7,500 bounty.",
+        "evidence_location": "Two award events May 30, 2025 at 21:16 UTC; ellipsis joins fragments.",
+        "usd_equivalent": null,
+        "notes": "Dollar notation appears in the report UI; USD denomination is contextual from HackerOne’s disclosure policy. Award events do not establish cash receipt. One-report total: USD 5,000 to red_darkin and USD 7,500 to madara_; neither recipient individually received USD 10,000."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "inferred",
+          "source_id": "primary",
+          "note": "Disclosure events appear August 13 and August 15, 2025. The sidebar shows August 15; month retained because first public day is ambiguous."
+        },
+        "public_disclosure": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "inferred",
+          "source_id": "primary",
+          "note": "Disclosure events appear August 13 and August 15, 2025. The sidebar shows August 15; month retained because first public day is ambiguous."
+        },
+        "reported": {
+          "value": "2025-04-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-05-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Report marked Resolved June 3, 2025; exact deployment date is unknown. A later edited retest comment is not a deployment timestamp."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://hackerone.com/reports/3113398",
+          "title": "Support integration exposed internal Confluence documentation (report 3113398)",
+          "type": "vendor",
+          "author": "HackerOne and the credited researchers",
+          "retrieved_at": "2026-10-02T15:45:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T15:43:47Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T15:45:00Z",
+        "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+        "limitations": [
+          "Award events establish an award, not independently audited settlement.",
+          "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
+          "Technical report and comment bodies are redacted; interpretation is limited to the vendor’s public summary and event metadata."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
       "schema_version": "1.0.0",
       "id": "google-cloud-build-approval-toctou-2025",
       "title": "Cloud Build approval was not bound to immutable code",
@@ -2081,6 +2226,150 @@
           "The source uses dollar notation, with USD established from Google program context.",
           "No public report ID, recipient split, or exact fix-deployment date is provided.",
           "Separate from the March 2025 creator-metadata report and its USD 20,000 award."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "hackerone-private-program-graphql-object-authorization-2025",
+      "title": "GraphQL object authorization exposed private-program metadata",
+      "organization": "HackerOne",
+      "product": "HackerOne GraphQL object access",
+      "researchers": [
+        "haxta4ok00"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "HackerOne awarded USD 25,000 for one private-program object-authorization report.",
+      "root_cause": "GraphQL object access did not consistently enforce private-program visibility rules.",
+      "impact": "Private-program metadata and report titles could be disclosed without authorization. HackerOne stated its investigation found no exploitation beyond the researcher’s demonstration.",
+      "defensive_takeaways": [
+        "Apply authorization to every object and relationship boundary.",
+        "Treat metadata fields as part of the privacy contract."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "HackerOne",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "rewarded haxta4ok00 with a $25,000 bounty.",
+        "evidence_location": "Bounty event July 5, 2022 at 16:15 UTC, activity 17427955.",
+        "usd_equivalent": null,
+        "notes": "Dollar notation appears in the report UI; USD denomination is contextual from HackerOne’s disclosure policy. Award events do not establish cash receipt."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-01-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": "2025-01-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "reported": {
+          "value": "2022-06-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2022-07-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Report status changed to Resolved on July 5, 2022; exact deployment time is not stated."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://hackerone.com/reports/1618347",
+          "title": "GraphQL object authorization exposed private-program metadata (report 1618347)",
+          "type": "vendor",
+          "author": "HackerOne and the credited researchers",
+          "retrieved_at": "2026-10-02T15:45:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T15:43:47Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T15:45:00Z",
+        "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+        "limitations": [
+          "Award events establish an award, not independently audited settlement.",
+          "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
+          "Implementation-level patch details are not public. Updated comment timestamps are distinct from original event dates."
         ]
       },
       "content_scope": "historical_defensive_summary"

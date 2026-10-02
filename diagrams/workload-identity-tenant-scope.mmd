@@ -1,0 +1,13 @@
+flowchart TB
+  identity["Verified workload identity and tenant context"]
+  request["Requested action and resource"]
+  policy{"Do role, action, resource and tenant match policy?"}
+  allow["Allow only the approved resource scope"]
+  deny["Deny access"]
+  audit["Record the authorization decision"]
+  identity -->|Verified context| policy
+  request -->|Operation| policy
+  policy -->|Yes| allow
+  policy -->|No| deny
+  allow --> audit
+  deny --> audit
