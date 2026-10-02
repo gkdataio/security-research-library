@@ -13,6 +13,8 @@ This is a small, manually reviewed starting directory, not a complete or continu
 **Platform:** Independent  
 **Last verified:** 2026-10-02T21:01:00Z
 
+**Submission status:** unknown. Official policy reviewed, but a live submission-acceptance indicator was not separately established\.
+
 **Advertised rewards:** Published base maximum $2,000,000; potential above $5,000,000 with applicable bonuses\. Awards depend on demonstrated outcome, validation requirements and Apple’s discretion\.
 
 **Eligibility:** First complete actionable report through Apple’s portal; current-software/configuration requirements apply\. Former employees, contractors and interns generally wait 18 months\. Sanctions restrictions apply\.
@@ -42,6 +44,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** HackerOne submission channel  
 **Last verified:** 2026-10-02T21:01:00Z
 
+**Submission status:** unknown. Official policy reviewed, but a live submission-acceptance indicator was not separately established\.
+
 **Advertised rewards:** Public-program guidelines list $250 low, $2,000 medium, $5,000 high and $10,000 critical\. Defense-in-depth reports receive merchandise\. Private-program figures are separate\.
 
 **Eligibility:** First reproducible report; current employees/contractors and those within six months of leaving are excluded\. Sanctions and legal requirements apply\.
@@ -64,12 +68,96 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## GitLab Bug Bounty
+
+[Official program](<https://hackerone.com/gitlab?type=team>) · [Policy](<https://hackerone.com/gitlab?type=team>) · [Canonical record](<../data/programs/gitlab-bug-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-02T21:10:00Z
+
+**Submission status:** unknown. An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated\.
+
+**Advertised rewards:** Advertised ranges: Low $100–$750; Medium $1,000–$2,500; High $5,000–$15,000; Critical $20,000–$35,000\. Business impact and reduced category schedules affect awards\.
+
+**Eligibility:** Current employees are excluded; former employees, immediate family and potentially conflicted associates receive additional review\. Reports require verifiable evidence\.
+
+**Restrictions and exclusions:** Privacy violations, disruption, unverified automated reports and third-party/customer installations are excluded\. A shared mitigation generally receives one award; GitLab determines severity and payment\.
+
+**Verification limits**
+
+- Browser-rendered policy reviewed; static retrieval returned a JavaScript placeholder\.
+- Policy updated July 21, 2026; the displayed reward-table date is November 22, 2021\. Its age is retained rather than assumed obsolete\.
+- Only dollar signs appear; ISO currency and normalized bounds remain null\. Full live policy includes additional conditions\.
+
+**Official evidence and updates**
+
+- [GitLab Bug Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/gitlab?type=team>) — GitLab / HackerOne; retrieved 2026-10-02T21:10:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## HackerOne Security Bounty
+
+[Official program](<https://hackerone.com/security?type=team>) · [Policy](<https://hackerone.com/security?type=team>) · [Canonical record](<../data/programs/hackerone-security-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-02T21:09:00Z
+
+**Submission status:** unknown. An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated\.
+
+**Advertised rewards:** Advertised ranges: Low $100–$200; Medium $1,000–$1,500; High $3,000–$7,000; Critical $6,000–$15,000\.
+
+**Eligibility:** Program compliance is required for reward eligibility\. Employment-exclusive findings and unapproved report sources can be ineligible\.
+
+**Restrictions and exclusions:** Do not access customer programs, environments or data, or unauthorized third-party infrastructure\. Encountering sensitive information requires stopping and notifying the program\.
+
+**Verification limits**
+
+- Policy and reward table were reviewed in the browser; static retrieval returned a JavaScript placeholder\.
+- The page displays policy update September 24, 2026 and reward-table update July 28, 2026\.
+- Only dollar signs appear; ISO currency and normalized bounds remain null\. Requirements are not exhaustively reproduced\.
+
+**Official evidence and updates**
+
+- [HackerOne Security Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/security?type=team>) — HackerOne / HackerOne; retrieved 2026-10-02T21:09:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Mozilla Web Bug Bounty
+
+[Official program](<https://hackerone.com/mozilla?type=team>) · [Policy](<https://hackerone.com/mozilla?type=team>) · [Canonical record](<../data/programs/mozilla-web-bug-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-02T21:10:00Z
+
+**Submission status:** paused. Web submissions paused September 11, 2026; reopening expected Q1 2027\. Existing reports retain current-rate handling\. Critical or actively exploited web issues retain a Bugzilla route\. Firefox client bounty is unaffected\.
+
+**Advertised rewards:** Displayed critical-site ranges: High $3,000–$6,000 and Critical $6,000–$15,000\. Core-category ranges: High $1,000–$3,000 and Critical $3,000–$5,000; special exceptions apply\.
+
+**Eligibility:** Generally original unreported findings, excluding reporters who contributed the faulty code or have a Mozilla business relationship\. Age, payment and US sanctions requirements apply\.
+
+**Restrictions and exclusions:** Low/medium reports generally receive no bounty\. Respect privacy, availability and coordinated-disclosure requirements\.
+
+**Verification limits**
+
+- Policy and September 11, 2026 notice were directly reviewed in the browser\.
+- Displayed rewards during the web-program pause do not imply general submission availability\.
+- Only dollar signs appear; ISO currency and normalized bounds remain null\. Reopening is an expectation, not a confirmed future event\.
+
+**Official evidence and updates**
+
+- [Mozilla Web Bug Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/mozilla?type=team>) — Mozilla / HackerOne; retrieved 2026-10-02T21:10:00Z.
+- [Mozilla Web Bug Bounty \| Updates \| HackerOne](<https://hackerone.com/mozilla/updates?type=team>) — Mozilla / HackerOne; retrieved 2026-10-02T21:10:00Z.
+
+Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=team>).
+
 ## OpenAI Security Bug Bounty
 
 [Official program](<https://bugcrowd.com/engagements/openai>) · [Policy](<https://bugcrowd.com/engagements/openai>) · [Canonical record](<../data/programs/openai-security-bug-bounty.json>)
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-02T21:01:00Z
+
+**Submission status:** accepting reports. Program displayed active status at review; live terms and eligibility still apply\.
 
 **Advertised rewards:** Advertised maximum $100,000 for exceptional critical findings; category-dependent schedules include amounts from $50\. The historical $20,000 ceiling is outdated\.
 

@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 3
+    "programs": 6
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
   "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
   "programs": [
     {
-      "schema_version": "1.0.0",
+      "schema_version": "1.1.0",
       "id": "apple-security-bounty",
       "name": "Apple Security Bounty",
       "operator": "Apple",
@@ -98,10 +98,15 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
+        "source_ids": []
+      }
     },
     {
-      "schema_version": "1.0.0",
+      "schema_version": "1.1.0",
       "id": "github-bug-bounty",
       "name": "GitHub Bug Bounty",
       "operator": "GitHub",
@@ -179,10 +184,203 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
+        "source_ids": []
+      }
     },
     {
-      "schema_version": "1.0.0",
+      "schema_version": "1.1.0",
+      "id": "gitlab-bug-bounty",
+      "name": "GitLab Bug Bounty",
+      "operator": "GitLab",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/gitlab?type=team",
+      "policy_url": "https://hackerone.com/gitlab?type=team",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised ranges: Low $100–$750; Medium $1,000–$2,500; High $5,000–$15,000; Critical $20,000–$35,000. Business impact and reduced category schedules affect awards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Current employees are excluded; former employees, immediate family and potentially conflicted associates receive additional review. Reports require verifiable evidence.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Privacy violations, disruption, unverified automated reports and third-party/customer installations are excluded. A shared mitigation generally receives one award; GitLab determines severity and payment.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:10:00Z",
+      "limitations": [
+        "Browser-rendered policy reviewed; static retrieval returned a JavaScript placeholder.",
+        "Policy updated July 21, 2026; the displayed reward-table date is November 22, 2021. Its age is retained rather than assumed obsolete.",
+        "Only dollar signs appear; ISO currency and normalized bounds remain null. Full live policy includes additional conditions."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "GitLab Bug Bounty | Bounty Policy | HackerOne",
+          "url": "https://hackerone.com/gitlab?type=team",
+          "publisher": "GitLab / HackerOne",
+          "retrieved_at": "2026-10-02T21:10:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "unknown",
+        "summary": "An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated.",
+        "source_ids": [
+          "policy"
+        ]
+      }
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "hackerone-security-bounty",
+      "name": "HackerOne Security Bounty",
+      "operator": "HackerOne",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/security?type=team",
+      "policy_url": "https://hackerone.com/security?type=team",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised ranges: Low $100–$200; Medium $1,000–$1,500; High $3,000–$7,000; Critical $6,000–$15,000.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Program compliance is required for reward eligibility. Employment-exclusive findings and unapproved report sources can be ineligible.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Do not access customer programs, environments or data, or unauthorized third-party infrastructure. Encountering sensitive information requires stopping and notifying the program.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:09:00Z",
+      "limitations": [
+        "Policy and reward table were reviewed in the browser; static retrieval returned a JavaScript placeholder.",
+        "The page displays policy update September 24, 2026 and reward-table update July 28, 2026.",
+        "Only dollar signs appear; ISO currency and normalized bounds remain null. Requirements are not exhaustively reproduced."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "HackerOne Security Bounty | Bounty Policy | HackerOne",
+          "url": "https://hackerone.com/security?type=team",
+          "publisher": "HackerOne / HackerOne",
+          "retrieved_at": "2026-10-02T21:09:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "unknown",
+        "summary": "An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated.",
+        "source_ids": [
+          "policy"
+        ]
+      }
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "mozilla-web-bug-bounty",
+      "name": "Mozilla Web Bug Bounty",
+      "operator": "Mozilla",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/mozilla?type=team",
+      "policy_url": "https://hackerone.com/mozilla?type=team",
+      "announcement_urls": [
+        "https://hackerone.com/mozilla/updates?type=team"
+      ],
+      "change_log_url": "https://hackerone.com/mozilla/updates?type=team",
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Displayed critical-site ranges: High $3,000–$6,000 and Critical $6,000–$15,000. Core-category ranges: High $1,000–$3,000 and Critical $3,000–$5,000; special exceptions apply.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Generally original unreported findings, excluding reporters who contributed the faulty code or have a Mozilla business relationship. Age, payment and US sanctions requirements apply.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Low/medium reports generally receive no bounty. Respect privacy, availability and coordinated-disclosure requirements.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:10:00Z",
+      "limitations": [
+        "Policy and September 11, 2026 notice were directly reviewed in the browser.",
+        "Displayed rewards during the web-program pause do not imply general submission availability.",
+        "Only dollar signs appear; ISO currency and normalized bounds remain null. Reopening is an expectation, not a confirmed future event."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Mozilla Web Bug Bounty | Bounty Policy | HackerOne",
+          "url": "https://hackerone.com/mozilla?type=team",
+          "publisher": "Mozilla / HackerOne",
+          "retrieved_at": "2026-10-02T21:10:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "updates",
+          "title": "Mozilla Web Bug Bounty | Updates | HackerOne",
+          "url": "https://hackerone.com/mozilla/updates?type=team",
+          "publisher": "Mozilla / HackerOne",
+          "retrieved_at": "2026-10-02T21:10:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "paused",
+        "summary": "Web submissions paused September 11, 2026; reopening expected Q1 2027. Existing reports retain current-rate handling. Critical or actively exploited web issues retain a Bugzilla route. Firefox client bounty is unaffected.",
+        "source_ids": [
+          "updates"
+        ]
+      }
+    },
+    {
+      "schema_version": "1.1.0",
       "id": "openai-security-bug-bounty",
       "name": "OpenAI Security Bug Bounty",
       "operator": "OpenAI",
@@ -255,7 +453,14 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "Program displayed active status at review; live terms and eligibility still apply.",
+        "source_ids": [
+          "policy"
+        ]
+      }
     }
   ]
 }

@@ -9,7 +9,7 @@ from urllib.parse import unquote, urlsplit
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from validate import Invalid
 from export_programs import build as programs, validate_program
-from build_navigation import build as navigation, text
+from build_navigation import build as navigation, text, link
 from validate_extra import validate_inert_svg
 
 class ProgramTests(unittest.TestCase):
@@ -32,6 +32,9 @@ class ProgramTests(unittest.TestCase):
     def test_unreviewed_link(self):
         self.rec['policy_url']='https://example.invalid/policy'
         with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
+    def test_status_needs_evidence(self):
+        self.rec['submission_status'].update(value='paused',source_ids=[])
+        with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
     def test_deterministic(self): self.assertEqual(programs(),programs())
 
 class NavigationTests(unittest.TestCase):
@@ -50,6 +53,10 @@ class NavigationTests(unittest.TestCase):
                 self.assertTrue(path.is_file(),f'{name}: {target}')
                 if url.fragment:
                     self.assertIn(f'id="{url.fragment}"',path.read_text())
+    def test_escape_link_destination(self):
+        result=link("source", "https://example.invalid/\n><img src=x>")
+        self.assertNotIn("<img",result);self.assertNotIn("\n",result)
+        self.assertIn("%3E%3Cimg%20src=x%3E",result)
     def test_escape_untrusted_text(self):
         escaped=text('<script>[x](y)')
         self.assertNotIn('<script>',escaped);self.assertIn('\\[',escaped)

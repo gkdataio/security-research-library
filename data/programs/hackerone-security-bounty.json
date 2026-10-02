@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.1.0",
+  "id": "hackerone-security-bounty",
+  "name": "HackerOne Security Bounty",
+  "operator": "HackerOne",
+  "platform": "HackerOne",
+  "program_url": "https://hackerone.com/security?type=team",
+  "policy_url": "https://hackerone.com/security?type=team",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised ranges: Low $100–$200; Medium $1,000–$1,500; High $3,000–$7,000; Critical $6,000–$15,000.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Program compliance is required for reward eligibility. Employment-exclusive findings and unapproved report sources can be ineligible.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Do not access customer programs, environments or data, or unauthorized third-party infrastructure. Encountering sensitive information requires stopping and notifying the program.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:09:00Z",
+  "limitations": [
+    "Policy and reward table were reviewed in the browser; static retrieval returned a JavaScript placeholder.",
+    "The page displays policy update September 24, 2026 and reward-table update July 28, 2026.",
+    "Only dollar signs appear; ISO currency and normalized bounds remain null. Requirements are not exhaustively reproduced."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "HackerOne Security Bounty | Bounty Policy | HackerOne",
+      "url": "https://hackerone.com/security?type=team",
+      "publisher": "HackerOne / HackerOne",
+      "retrieved_at": "2026-10-02T21:09:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "submission_status": {
+    "value": "unknown",
+    "summary": "An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated.",
+    "source_ids": [
+      "policy"
+    ]
+  }
+}

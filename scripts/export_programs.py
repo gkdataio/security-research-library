@@ -11,8 +11,10 @@ def validate_program(rec, schema):
     check_schema(rec, schema, schema)
     sources = {s['id']: s for s in rec['sources']}
     if len(sources) != len(rec['sources']): raise Invalid('duplicate program source ID')
-    for field in ('rewards', 'eligibility', 'restrictions'):
+    for field in ('rewards', 'eligibility', 'restrictions', 'submission_status'):
         if not set(rec[field]['source_ids']) <= set(sources): raise Invalid('unknown program claim source')
+    if rec['submission_status']['value'] != 'unknown' and not rec['submission_status']['source_ids']:
+        raise Invalid('known submission status requires evidence')
     urls = {normalize_url(s['url']) for s in sources.values()}
     required = [rec['program_url'], rec['policy_url'], *rec['announcement_urls']]
     if rec['change_log_url']: required.append(rec['change_log_url'])
@@ -36,7 +38,7 @@ def build(root=ROOT):
         url = normalize_url(rec['program_url'])
         if path.stem != rec['id'] or rec['id'] in identities or url in urls: raise Invalid('duplicate or mismatched program identity')
         identities.add(rec['id']); urls.add(url); programs.append(rec)
-    export = {'schema_version':'1.0.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
+    export = {'schema_version':'1.1.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
               'notice':'Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.',
               'rights':'Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.', 'programs':programs}
     lines = ['# Public program directory', '', '[Library home](../README.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
@@ -44,6 +46,7 @@ def build(root=ROOT):
     for p in programs:
         lines += ['## '+text(p['name']), '', link('Official program',p['program_url'])+' · '+link('Policy',p['policy_url'])+' · '+link('Canonical record','../data/programs/'+p['id']+'.json'), '',
                   '**Platform:** '+text(p['platform'])+'  ', '**Last verified:** '+text(p['last_verified_at']), '',
+                  '**Submission status:** '+text(p['submission_status']['value'].replace('_', ' '))+'. '+text(p['submission_status']['summary']), '',
                   '**Advertised rewards:** '+text(p['rewards']['summary']), '', '**Eligibility:** '+text(p['eligibility']['summary']), '',
                   '**Restrictions and exclusions:** '+text(p['restrictions']['summary']), '', '**Verification limits**', '']
         lines += ['- '+text(x) for x in p['limitations']]

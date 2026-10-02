@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.1.0",
+  "id": "gitlab-bug-bounty",
+  "name": "GitLab Bug Bounty",
+  "operator": "GitLab",
+  "platform": "HackerOne",
+  "program_url": "https://hackerone.com/gitlab?type=team",
+  "policy_url": "https://hackerone.com/gitlab?type=team",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised ranges: Low $100–$750; Medium $1,000–$2,500; High $5,000–$15,000; Critical $20,000–$35,000. Business impact and reduced category schedules affect awards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Current employees are excluded; former employees, immediate family and potentially conflicted associates receive additional review. Reports require verifiable evidence.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Privacy violations, disruption, unverified automated reports and third-party/customer installations are excluded. A shared mitigation generally receives one award; GitLab determines severity and payment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:10:00Z",
+  "limitations": [
+    "Browser-rendered policy reviewed; static retrieval returned a JavaScript placeholder.",
+    "Policy updated July 21, 2026; the displayed reward-table date is November 22, 2021. Its age is retained rather than assumed obsolete.",
+    "Only dollar signs appear; ISO currency and normalized bounds remain null. Full live policy includes additional conditions."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "GitLab Bug Bounty | Bounty Policy | HackerOne",
+      "url": "https://hackerone.com/gitlab?type=team",
+      "publisher": "GitLab / HackerOne",
+      "retrieved_at": "2026-10-02T21:10:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "submission_status": {
+    "value": "unknown",
+    "summary": "An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated.",
+    "source_ids": [
+      "policy"
+    ]
+  }
+}

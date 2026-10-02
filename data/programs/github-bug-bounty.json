@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "github-bug-bounty",
   "name": "GitHub Bug Bounty",
   "operator": "GitHub",
@@ -77,5 +77,10 @@
     }
   ],
   "content_scope": "public_program_policy_summary",
-  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "submission_status": {
+    "value": "unknown",
+    "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
+    "source_ids": []
+  }
 }

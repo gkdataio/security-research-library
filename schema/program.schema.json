@@ -2,7 +2,7 @@
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "const": "1.1.0"
     },
     "id": {
       "type": "string",
@@ -207,6 +207,36 @@
     },
     "rights": {
       "const": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    "submission_status": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "enum": [
+            "accepting_reports",
+            "paused",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "value",
+        "summary",
+        "source_ids"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -226,7 +256,8 @@
     "limitations",
     "sources",
     "content_scope",
-    "rights"
+    "rights",
+    "submission_status"
   ],
   "additionalProperties": false,
   "$schema": "https://json-schema.org/draft/2020-12/schema",

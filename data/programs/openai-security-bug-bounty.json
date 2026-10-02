@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "id": "openai-security-bug-bounty",
   "name": "OpenAI Security Bug Bounty",
   "operator": "OpenAI",
@@ -72,5 +72,12 @@
     }
   ],
   "content_scope": "public_program_policy_summary",
-  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "Program displayed active status at review; live terms and eligibility still apply.",
+    "source_ids": [
+      "policy"
+    ]
+  }
 }

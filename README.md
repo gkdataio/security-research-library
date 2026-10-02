@@ -9,7 +9,7 @@ Source-backed public security disclosures, official learning resources, and orig
 **Snapshot: October 2, 2026**
 
 - **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
-- **3 public program-policy summaries**, maintained separately from award evidence
+- **6 public program-policy summaries**, maintained separately from award evidence
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates

@@ -3,6 +3,7 @@
 import argparse
 import re
 from pathlib import Path
+from urllib.parse import quote
 from validate import ROOT
 from validate_extra import validate_all
 
@@ -14,7 +15,8 @@ def text(value):
 
 
 def link(label, url):
-    return f'[{text(label)}](<{url}>)'
+    safe_url = quote(str(url), safe="/:#?&=@[]!$'()*+,;%-._~")
+    return f'[{text(label)}](<{safe_url}>)'
 
 
 def build(root=ROOT):

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.1.0",
+  "id": "mozilla-web-bug-bounty",
+  "name": "Mozilla Web Bug Bounty",
+  "operator": "Mozilla",
+  "platform": "HackerOne",
+  "program_url": "https://hackerone.com/mozilla?type=team",
+  "policy_url": "https://hackerone.com/mozilla?type=team",
+  "announcement_urls": [
+    "https://hackerone.com/mozilla/updates?type=team"
+  ],
+  "change_log_url": "https://hackerone.com/mozilla/updates?type=team",
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Displayed critical-site ranges: High $3,000–$6,000 and Critical $6,000–$15,000. Core-category ranges: High $1,000–$3,000 and Critical $3,000–$5,000; special exceptions apply.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Generally original unreported findings, excluding reporters who contributed the faulty code or have a Mozilla business relationship. Age, payment and US sanctions requirements apply.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Low/medium reports generally receive no bounty. Respect privacy, availability and coordinated-disclosure requirements.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:10:00Z",
+  "limitations": [
+    "Policy and September 11, 2026 notice were directly reviewed in the browser.",
+    "Displayed rewards during the web-program pause do not imply general submission availability.",
+    "Only dollar signs appear; ISO currency and normalized bounds remain null. Reopening is an expectation, not a confirmed future event."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Mozilla Web Bug Bounty | Bounty Policy | HackerOne",
+      "url": "https://hackerone.com/mozilla?type=team",
+      "publisher": "Mozilla / HackerOne",
+      "retrieved_at": "2026-10-02T21:10:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "updates",
+      "title": "Mozilla Web Bug Bounty | Updates | HackerOne",
+      "url": "https://hackerone.com/mozilla/updates?type=team",
+      "publisher": "Mozilla / HackerOne",
+      "retrieved_at": "2026-10-02T21:10:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "submission_status": {
+    "value": "paused",
+    "summary": "Web submissions paused September 11, 2026; reopening expected Q1 2027. Existing reports retain current-rate handling. Critical or actively exploited web issues retain a Bugzilla route. Firefox client bounty is unaffected.",
+    "source_ids": [
+      "updates"
+    ]
+  }
+}
