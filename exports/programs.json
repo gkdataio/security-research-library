@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "content_scope": "public_program_policy_summary",
+  "counts": {
+    "programs": 3
+  },
+  "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
+  "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "programs": [
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-security-bounty",
+      "name": "Apple Security Bounty",
+      "operator": "Apple",
+      "platform": "Independent",
+      "program_url": "https://security.apple.com/bounty/",
+      "policy_url": "https://security.apple.com/bounty/guidelines/",
+      "announcement_urls": [
+        "https://security.apple.com/blog/apple-security-bounty-evolved/"
+      ],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Published base maximum $2,000,000; potential above $5,000,000 with applicable bonuses. Awards depend on demonstrated outcome, validation requirements and Apple’s discretion.",
+        "source_ids": [
+          "rewards",
+          "announcement"
+        ]
+      },
+      "eligibility": {
+        "summary": "First complete actionable report through Apple’s portal; current-software/configuration requirements apply. Former employees, contractors and interns generally wait 18 months. Sanctions restrictions apply.",
+        "source_ids": [
+          "policy",
+          "terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Preserve confidentiality until Apple’s update and advisory; do not harm others’ data or availability. Apple Pay, non-public systems, third-party services, social engineering and unvalidated reports are excluded.",
+        "source_ids": [
+          "policy",
+          "terms"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:01:00Z",
+      "limitations": [
+        "Reviewed pages display dollar signs without an explicit ISO currency code; numeric currency-normalized bounds remain null.",
+        "Bonus-qualified ceilings are not guaranteed awards and must not be treated as ordinary base payouts.",
+        "No dedicated policy change-log URL was verified."
+      ],
+      "sources": [
+        {
+          "id": "program",
+          "title": "Apple Security Bounty",
+          "url": "https://security.apple.com/bounty/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "rewards",
+          "title": "Apple bounty categories",
+          "url": "https://security.apple.com/bounty/categories/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Apple bounty guidelines",
+          "url": "https://security.apple.com/bounty/guidelines/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "terms",
+          "title": "Apple security terms and conditions",
+          "url": "https://security.apple.com/terms-and-conditions/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "announcement",
+          "title": "Apple Security Bounty evolved",
+          "url": "https://security.apple.com/blog/apple-security-bounty-evolved/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-bug-bounty",
+      "name": "GitHub Bug Bounty",
+      "operator": "GitHub",
+      "platform": "HackerOne submission channel",
+      "program_url": "https://bounty.github.com/",
+      "policy_url": "https://bounty.github.com/rules",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Public-program guidelines list $250 low, $2,000 medium, $5,000 high and $10,000 critical. Defense-in-depth reports receive merchandise. Private-program figures are separate.",
+        "source_ids": [
+          "rewards"
+        ]
+      },
+      "eligibility": {
+        "summary": "First reproducible report; current employees/contractors and those within six months of leaving are excluded. Sanctions and legal requirements apply.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Protect others’ information; no social engineering, physical attacks, volumetric disruption, spam or excessive automation. Product-specific exclusions apply; coordinate disclosure until a fix is public.",
+        "source_ids": [
+          "policy",
+          "exclusions"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:01:00Z",
+      "limitations": [
+        "Official GitHub-hosted rules were retrieved; the HackerOne submission page required JavaScript and was not independently reviewed as policy evidence.",
+        "Published reward amounts are discretionary guidelines, not fixed payouts.",
+        "Dollar signs are shown without an explicit ISO currency code in reviewed pages; currency-normalized bounds remain null.",
+        "No dedicated policy change-log URL was verified."
+      ],
+      "sources": [
+        {
+          "id": "program",
+          "title": "GitHub Bug Bounty",
+          "url": "https://bounty.github.com/",
+          "publisher": "GitHub",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "rewards",
+          "title": "GitHub reward guidelines",
+          "url": "https://bounty.github.com/rewards",
+          "publisher": "GitHub",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "GitHub program rules",
+          "url": "https://bounty.github.com/rules",
+          "publisher": "GitHub",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "exclusions",
+          "title": "GitHub ineligible submissions",
+          "url": "https://bounty.github.com/ineligible",
+          "publisher": "GitHub",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "openai-security-bug-bounty",
+      "name": "OpenAI Security Bug Bounty",
+      "operator": "OpenAI",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/openai",
+      "policy_url": "https://bugcrowd.com/engagements/openai",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/openai/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/openai/announcements",
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised maximum $100,000 for exceptional critical findings; category-dependent schedules include amounts from $50. The historical $20,000 ceiling is outdated.",
+        "source_ids": [
+          "policy",
+          "updates"
+        ]
+      },
+      "eligibility": {
+        "summary": "First qualifying previously unknown issue with meaningful security impact; Bugcrowd account, age-of-majority and payment eligibility requirements apply.",
+        "source_ids": [
+          "policy",
+          "terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Use only owned or expressly authorized accounts/data; avoid disruption, destruction, social engineering and unrelated third parties. Model-only content issues and intended sandbox behavior generally do not qualify. Disclosure requires permission.",
+        "source_ids": [
+          "policy",
+          "terms"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:01:00Z",
+      "limitations": [
+        "Live policy was reviewed in a browser because text retrieval omitted its dynamic content.",
+        "The page displayed active status and an August 19, 2026 update; this is not proof of its full change history.",
+        "Reward ranges vary by category and remain discretionary; consult the live policy.",
+        "Currency is displayed as a dollar sign; linked standard terms mention USD generally but program-specific denomination was not explicit. Normalized bounds remain null."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "OpenAI Security Bug Bounty",
+          "url": "https://bugcrowd.com/engagements/openai",
+          "publisher": "OpenAI / Bugcrowd",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "updates",
+          "title": "OpenAI program announcements",
+          "url": "https://bugcrowd.com/engagements/openai/announcements",
+          "publisher": "OpenAI / Bugcrowd",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T21:01:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    }
+  ]
+}

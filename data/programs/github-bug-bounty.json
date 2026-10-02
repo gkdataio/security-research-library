@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-bug-bounty",
+  "name": "GitHub Bug Bounty",
+  "operator": "GitHub",
+  "platform": "HackerOne submission channel",
+  "program_url": "https://bounty.github.com/",
+  "policy_url": "https://bounty.github.com/rules",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Public-program guidelines list $250 low, $2,000 medium, $5,000 high and $10,000 critical. Defense-in-depth reports receive merchandise. Private-program figures are separate.",
+    "source_ids": [
+      "rewards"
+    ]
+  },
+  "eligibility": {
+    "summary": "First reproducible report; current employees/contractors and those within six months of leaving are excluded. Sanctions and legal requirements apply.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Protect others’ information; no social engineering, physical attacks, volumetric disruption, spam or excessive automation. Product-specific exclusions apply; coordinate disclosure until a fix is public.",
+    "source_ids": [
+      "policy",
+      "exclusions"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:01:00Z",
+  "limitations": [
+    "Official GitHub-hosted rules were retrieved; the HackerOne submission page required JavaScript and was not independently reviewed as policy evidence.",
+    "Published reward amounts are discretionary guidelines, not fixed payouts.",
+    "Dollar signs are shown without an explicit ISO currency code in reviewed pages; currency-normalized bounds remain null.",
+    "No dedicated policy change-log URL was verified."
+  ],
+  "sources": [
+    {
+      "id": "program",
+      "title": "GitHub Bug Bounty",
+      "url": "https://bounty.github.com/",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "rewards",
+      "title": "GitHub reward guidelines",
+      "url": "https://bounty.github.com/rewards",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "GitHub program rules",
+      "url": "https://bounty.github.com/rules",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "exclusions",
+      "title": "GitHub ineligible submissions",
+      "url": "https://bounty.github.com/ineligible",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

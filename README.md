@@ -2,13 +2,14 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for understanding defensive security design. Each report connects a documented award with its evidence, root cause, bounded impact, and defensive lessons.
 
-[Browse reports](#report-index) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Program directory](docs/programs.md) · [Diagram gallery](docs/diagram-gallery.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
 **Snapshot: October 2, 2026**
 
 - **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
+- **3 public program-policy summaries**, maintained separately from award evidence
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates
@@ -47,6 +48,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 
 | Collection | Canonical records | Schema | Portable export |
 |---|---|---|---|
+| Public program policies | [data/programs/](data/programs/) | [Program schema](schema/program.schema.json) | [exports/programs.json](exports/programs.json) |
 | Award-backed reports | [data/reports/](data/reports/) | [Report schema](schema/report.schema.json) | [exports/vulns-co.json](exports/vulns-co.json) |
 | Educational resources | [data/resources/](data/resources/) | [Resource schema](schema/resource.schema.json) | [exports/resources.json](exports/resources.json) |
 | Conceptual diagrams | [data/diagrams/](data/diagrams/) | [Diagram schema](schema/diagram.schema.json) | Included in [resources.json](exports/resources.json) |
@@ -80,6 +82,8 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [export.py](scripts/export.py) | Generates the portable report JSON from validated records |
 | [export_resources.py](scripts/export_resources.py) | Generates the separate resource and diagram JSON |
 | [render_diagrams.py](scripts/render_diagrams.py) | Generates Mermaid/DOT source and uses local Graphviz to produce SVG diagrams |
+| [build_navigation.py](scripts/build_navigation.py) | Generates readable report pages and the static diagram gallery |
+| [export_programs.py](scripts/export_programs.py) | Validates program-policy metadata and builds its separate export and directory |
 | [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |
 
 These are offline maintenance utilities. They do not contact research targets, collect credentials, scan systems or run the disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
@@ -95,6 +99,8 @@ python3 -m unittest discover -s tests -v
 python3 scripts/render_diagrams.py --check
 python3 scripts/export.py --check
 python3 scripts/export_resources.py --check
+python3 scripts/export_programs.py --check
+python3 scripts/build_navigation.py --check
 ```
 
 After editing canonical records, regenerate the exports:
@@ -102,6 +108,8 @@ After editing canonical records, regenerate the exports:
 ```sh
 python3 scripts/export.py
 python3 scripts/export_resources.py
+python3 scripts/export_programs.py
+python3 scripts/build_navigation.py
 ```
 
 Regenerating SVGs also requires an installed **Graphviz `dot`** executable. Run `python3 scripts/render_diagrams.py` and visually inspect the resulting SVGs after graph edits. The renderer's `--check` compares generated source text; it does not rerender SVGs or replace visual review.
@@ -110,7 +118,7 @@ The validator implements the schema features used by this project, plus cross-re
 
 ## Report index
 
-Each link opens the canonical record with source URLs, evidence notes, date provenance, and defensive takeaways. Amounts retain their scope and qualifications; they are not a severity ranking.
+For prose pages with evidence and related diagrams, use the [readable report index](docs/reports.md). The links below open canonical records with source URLs, evidence notes, date provenance, and defensive takeaways. Amounts retain their scope and qualifications; they are not a severity ranking.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|

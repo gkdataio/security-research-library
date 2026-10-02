@@ -54,3 +54,11 @@ Do not push over an unexpected remote change. Read the current branch and existi
 Educational resources use a separate schema, taxonomy, and export. They do not claim bounty qualification. Prefer official documentation, standards, first-party research, and controlled training environments. Preserve known publication/version dates, leave unknown dates null, and label prerequisites as editorial unless explicitly documented. Review freshness without claiming a living document is immutable.
 
 Diagrams are original conceptual defensive models with linked report/resource evidence and alternate text. Do not include operational attack sequences or exploit details. Keep Mermaid source and SVG rendering provenance explicit. Both source formats must match the canonical graph; rendered SVGs need visual inspection after edits.
+
+## Public program directory
+
+Program policies are a separate reference collection under `data/programs/`, with their own schema, export and readable directory. They do not qualify as award-backed reports. Advertised ceilings, category guidelines and bonuses must never be treated as individual awarded or paid amounts. Keep currency-normalized numbers null when the reviewed source does not establish a denomination; preserve displayed notation and explain the limitation.
+
+Use only official program, policy and announcement links. Bind rewards, eligibility and restriction summaries to reviewed source IDs; record retrieval method, last verification and gaps. A review timestamp is not a promise of current eligibility, policy completeness or legal protection. Live terms prevail. Do not copy program scope tables, asset inventories, target domains or testing instructions. These records grant no authorization. Preserve original-summary and third-party-rights distinctions.
+
+Readable report pages and the diagram gallery are generated offline from canonical records. Regenerate them after content edits and check deterministic output. SVG validation uses an allowlist of static elements and attributes, rejecting executable, interactive and reference-bearing content. No website deployment or repository hosting configuration is performed by these scripts.

@@ -1,0 +1,61 @@
+# Read the reports
+
+[Library home](../README.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)
+
+Original defensive summaries with award provenance, distinct event dates and verification limits. These historical disclosures do not authorize testing. Generated from canonical records; edit the JSON, then regenerate.
+
+- [Apple PCC startup archive processing lacked path confinement](<reports/apple-pcc-boot-archive-path-validation-2026.md>) — USD 150,000; bug\_bounty
+- [Safari origin confusion undermined stored media permissions](<reports/apple-safari-media-permission-origin-confusion-2020.md>) — USD 75,000; bug\_bounty
+- [Sign in with Apple failed to bind identity claims to the authenticated user](<reports/apple-sign-in-identity-claim-binding-2020.md>) — USD 100,000; bug\_bounty
+- [iCloud sharing consent and Safari trust boundaries failed together](<reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.md>) — USD 100,500; bug\_bounty
+- [Instagram mobile account recovery had inconsistent verification limits](<reports/instagram-mobile-recovery-attempt-limits-2019.md>) — USD 30,000; bug\_bounty
+- [Instagram recovery challenges were insufficiently bound to accounts](<reports/instagram-recovery-challenge-account-binding-2019.md>) — USD 10,000; bug\_bounty
+- [GitHub Actions trust depended on invalid repository references](<reports/github-actions-reference-validation-2021.md>) — USD 25,000; bug\_bounty
+- [GitHub GraphQL collaboration changes lacked author consent](<reports/github-fork-collaboration-consent-2021.md>) — USD 10,000; bug\_bounty
+- [GitHub OAuth consent failed across request-method semantics](<reports/github-oauth-method-semantics-2019.md>) — USD 25,000; bug\_bounty
+- [GitHub comparison output lacked source-repository authorization](<reports/github-cross-repository-comparison-authorization-2025.md>) — USD 10,000; bug\_bounty
+- [GitHub fork collaboration applied inconsistent authorization](<reports/github-fork-collaboration-authorization-2021.md>) — USD 20,000; bug\_bounty
+- [GitHub package-source trust allowed dependency confusion](<reports/github-ruby-dependency-confusion-2025.md>) — USD 20,000; bug\_bounty
+- [GitLab recovery delivery lacked verified-address binding](<reports/gitlab-recovery-address-binding-cve-2023-7028.md>) — USD 35,000; bug\_bounty
+- [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — USD 10,000; bug\_bounty
+- [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — USD 31,337; bug\_bounty
+- [Bard Workspace integration weakened output-data boundaries](<reports/google-bard-workspace-output-boundary-2024.md>) — USD 20,000; bug\_bounty
+- [Chrome graphics input validation weakened an isolation boundary](<reports/google-chrome-angle-input-validation-2026.md>) — USD 250,000; bug\_bounty
+- [Cloud Build approval was not bound to immutable code](<reports/google-cloud-build-approval-toctou-2025.md>) — USD 30,000; bug\_bounty
+- [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](<reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md>) — USD 15,000; bug\_bounty
+- [Gemini-to-Colab rendering boundary exposed Workspace data](<reports/google-gemini-colab-rendering-boundary-2025.md>) — USD 20,000; bug\_bounty
+- [Google IDX worker messaging crossed browser trust boundaries](<reports/google-idx-worker-message-trust-2025.md>) — USD 22,500; bug\_bounty
+- [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>) — USD 13,337; bug\_bounty
+- [Google support API exposed customer and agent data](<reports/google-support-api-authorization-2026.md>) — USD 14,337; bug\_bounty
+- [Pixel lock-screen completion lost security-state binding](<reports/google-pixel-lock-screen-state-binding-2022.md>) — USD 70,000; bug\_bounty
+- [V8 control-flow analysis omitted required initialization checks](<reports/google-chrome-v8-initialization-checks-2025.md>) — USD 50,000; bug\_bounty
+- [V8 optimized object handling retained invalid type assumptions](<reports/google-chrome-v8-type-consistency-2025.md>) — USD 50,000; bug\_bounty
+- [YouTube and Pixel Recorder exposed cross-product identity links](<reports/youtube-pixel-recorder-identity-privacy-2025.md>) — USD 10,633; bug\_bounty
+- [YouTube creator metadata exposed private email addresses](<reports/youtube-creator-email-authorization-2025.md>) — USD 20,000; bug\_bounty
+- [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>) — USD 25,000; bug\_bounty
+- [GraphQL object authorization exposed private-program metadata](<reports/hackerone-private-program-graphql-object-authorization-2025.md>) — USD 25,000; bug\_bounty
+- [Support integration exposed internal Confluence documentation](<reports/hackerone-support-confluence-access-boundary-2025.md>) — USD 12,500; bug\_bounty
+- [LiteSpeed Cache privileged user simulation relied on weak security tokens](<reports/litespeed-cache-user-simulation-authentication-2024.md>) — USD 14,400; bug\_bounty
+- [MariaDB JSON normalization exceeded allocated buffer capacity](<reports/mariadb-json-normalization-buffer-capacity-2026.md>) — USD 30,000; competition\_award
+- [Facebook SDK message authentication relied on insecure randomness](<reports/facebook-sdk-message-authentication-randomness-2023.md>) — USD 66,000; bug\_bounty
+- [Instagram client configuration exposed an application credential](<reports/instagram-application-credential-client-containment-2022.md>) — USD 30,000; bug\_bounty
+- [Instagram embedding fallback changed the authorization context](<reports/instagram-embedding-privileged-fallback-2023.md>) — USD 14,500; bug\_bounty
+- [Meta AI media access lacked object-ownership authorization](<reports/meta-ai-media-object-authorization-2025.md>) — USD 10,000; bug\_bounty
+- [Meta Pixel cross-window handling lost message and token authority](<reports/meta-pixel-cross-window-authority-binding-2024.md>) — USD 32,500; bug\_bounty
+- [Meta Quest login migration lost OAuth credential confinement](<reports/meta-quest-oauth-redirect-confidentiality-2022.md>) — USD 44,250; bug\_bounty
+- [Meta account verification weakened linked SMS authentication state](<reports/meta-account-verification-attempt-state-binding-2022.md>) — USD 27,200; bug\_bounty
+- [Meta service-identity exposure amplified by excessive secret access](<reports/meta-service-identity-secrets-trust-boundary-2026.md>) — USD 150,000; bug\_bounty
+- [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>) — USD 65,000; bug\_bounty
+- [Kestrel HTTP framing differed across proxy and application boundaries](<reports/microsoft-kestrel-http-framing-consistency-2025.md>) — USD 10,000; bug\_bounty
+- [Microsoft account recovery lacked consistent attempt-limit enforcement](<reports/microsoft-account-recovery-rate-limit-consistency-2021.md>) — USD 50,000; bug\_bounty
+- [NVIDIA container initialization inherited untrusted execution context](<reports/nvidia-container-runtime-environment-trust-2025.md>) — USD 30,000; competition\_award
+- [Codex automated Git operations trusted repository hook settings](<reports/openai-codex-repository-hook-execution-trust-2026.md>) — USD 20,000; competition\_award
+- [Codex command approval relied on inconsistent parser semantics](<reports/openai-codex-command-parser-approval-consistency-2026.md>) — USD 40,000; competition\_award
+- [Codex metadata collection trusted repository execution helpers](<reports/openai-codex-repository-metadata-helper-trust-2026.md>) — USD 10,000; competition\_award
+- [PostgreSQL cryptographic parsing omitted a buffer-capacity check](<reports/postgresql-pgcrypto-buffer-capacity-validation-2026.md>) — USD 30,000; competition\_award
+- [PostgreSQL extension estimator trusted an unchecked input type](<reports/postgresql-extension-input-type-validation-2026.md>) — USD 30,000; competition\_award
+- [PostgreSQL text-encoding invariant failure caused memory corruption](<reports/postgresql-multibyte-validation-cve-2026-2006.md>) — USD 30,000; competition\_award
+- [Redis Lua object lifetime failure crossed the scripting boundary](<reports/redis-lua-object-lifetime-isolation-2025.md>) — USD 40,000; competition\_award
+- [Redis deserialization cleanup violated object-ownership invariants](<reports/redis-deserialization-object-ownership-2026.md>) — USD 30,000; competition\_award
+- [Redis replication state changes invalidated an active interpreter](<reports/redis-replication-interpreter-lifetime-2026.md>) — USD 30,000; competition\_award
+- [Shopify Exchange screenshot service crossed internal boundaries](<reports/shopify-exchange-request-isolation-2019.md>) — USD 25,000; bug\_bounty

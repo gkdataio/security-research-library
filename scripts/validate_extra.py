@@ -47,14 +47,22 @@ def validate_diagram(rec,schema,reports,resources,root=ROOT):
         if not (root/p).is_file():raise Invalid('missing diagram asset')
     if (root/rec['files']['mermaid']).read_text()!=mermaid_text(rec):raise Invalid('stale Mermaid source')
     if (root/rec['files']['graphviz']).read_text()!=graphviz_text(rec):raise Invalid('stale Graphviz source')
-    svg=ET.parse(root/rec['files']['svg']).getroot();ns='{http://www.w3.org/2000/svg}'
+    validate_inert_svg(root/rec['files']['svg'])
+    if rec['rendering']['visual_qa']!='passed':raise Invalid('diagram visual QA incomplete')
+
+def validate_inert_svg(path):
+    """Accept only the static Graphviz vocabulary used by this collection."""
+    svg=ET.parse(path).getroot();ns='{http://www.w3.org/2000/svg}'
     desc=svg.find('.//'+ns+'desc')
     if svg.tag!=ns+'svg' or desc is None or not desc.text:raise Invalid('inaccessible SVG')
+    tags={'svg','g','path','polygon','text','title','desc','ellipse','polyline','rect','circle','line'}
+    attrs={'aria-label','class','d','fill','font-family','font-size','height','id','points','role','stroke',
+           'text-anchor','transform','viewBox','width','x','y','x1','x2','y1','y2','cx','cy','rx','ry','r','stroke-width'}
     for el in svg.iter():
-        if el.tag.split('}')[-1] in ('script','foreignObject'):raise Invalid('active SVG content is prohibited')
-        if any(k.split('}')[-1] in ('href','src') and v.startswith(('http:','https:','javascript:')) for k,v in el.attrib.items()):
-            raise Invalid('external SVG dependencies are prohibited')
-    if rec['rendering']['visual_qa']!='passed':raise Invalid('diagram visual QA incomplete')
+        if el.tag not in {ns+t for t in tags}:raise Invalid('non-static SVG element prohibited')
+        for key,value in el.attrib.items():
+            if key not in attrs:raise Invalid('non-static SVG attribute prohibited')
+            if 'url(' in value.lower() or 'javascript:' in value.lower():raise Invalid('SVG references prohibited')
 
 def validate_all(root=ROOT):
     reports,skills=validate_library(root);reports={r['id']:r for r in reports};skills={s['id'] for s in skills['skillsets']}

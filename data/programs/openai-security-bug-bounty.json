@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "openai-security-bug-bounty",
+  "name": "OpenAI Security Bug Bounty",
+  "operator": "OpenAI",
+  "platform": "Bugcrowd",
+  "program_url": "https://bugcrowd.com/engagements/openai",
+  "policy_url": "https://bugcrowd.com/engagements/openai",
+  "announcement_urls": [
+    "https://bugcrowd.com/engagements/openai/announcements"
+  ],
+  "change_log_url": "https://bugcrowd.com/engagements/openai/announcements",
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised maximum $100,000 for exceptional critical findings; category-dependent schedules include amounts from $50. The historical $20,000 ceiling is outdated.",
+    "source_ids": [
+      "policy",
+      "updates"
+    ]
+  },
+  "eligibility": {
+    "summary": "First qualifying previously unknown issue with meaningful security impact; Bugcrowd account, age-of-majority and payment eligibility requirements apply.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Use only owned or expressly authorized accounts/data; avoid disruption, destruction, social engineering and unrelated third parties. Model-only content issues and intended sandbox behavior generally do not qualify. Disclosure requires permission.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:01:00Z",
+  "limitations": [
+    "Live policy was reviewed in a browser because text retrieval omitted its dynamic content.",
+    "The page displayed active status and an August 19, 2026 update; this is not proof of its full change history.",
+    "Reward ranges vary by category and remain discretionary; consult the live policy.",
+    "Currency is displayed as a dollar sign; linked standard terms mention USD generally but program-specific denomination was not explicit. Normalized bounds remain null."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "OpenAI Security Bug Bounty",
+      "url": "https://bugcrowd.com/engagements/openai",
+      "publisher": "OpenAI / Bugcrowd",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "updates",
+      "title": "OpenAI program announcements",
+      "url": "https://bugcrowd.com/engagements/openai/announcements",
+      "publisher": "OpenAI / Bugcrowd",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-security-bounty",
+  "name": "Apple Security Bounty",
+  "operator": "Apple",
+  "platform": "Independent",
+  "program_url": "https://security.apple.com/bounty/",
+  "policy_url": "https://security.apple.com/bounty/guidelines/",
+  "announcement_urls": [
+    "https://security.apple.com/blog/apple-security-bounty-evolved/"
+  ],
+  "change_log_url": null,
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Published base maximum $2,000,000; potential above $5,000,000 with applicable bonuses. Awards depend on demonstrated outcome, validation requirements and Apple’s discretion.",
+    "source_ids": [
+      "rewards",
+      "announcement"
+    ]
+  },
+  "eligibility": {
+    "summary": "First complete actionable report through Apple’s portal; current-software/configuration requirements apply. Former employees, contractors and interns generally wait 18 months. Sanctions restrictions apply.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Preserve confidentiality until Apple’s update and advisory; do not harm others’ data or availability. Apple Pay, non-public systems, third-party services, social engineering and unvalidated reports are excluded.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ]
+  },
+  "last_verified_at": "2026-10-02T21:01:00Z",
+  "limitations": [
+    "Reviewed pages display dollar signs without an explicit ISO currency code; numeric currency-normalized bounds remain null.",
+    "Bonus-qualified ceilings are not guaranteed awards and must not be treated as ordinary base payouts.",
+    "No dedicated policy change-log URL was verified."
+  ],
+  "sources": [
+    {
+      "id": "program",
+      "title": "Apple Security Bounty",
+      "url": "https://security.apple.com/bounty/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "rewards",
+      "title": "Apple bounty categories",
+      "url": "https://security.apple.com/bounty/categories/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Apple bounty guidelines",
+      "url": "https://security.apple.com/bounty/guidelines/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "terms",
+      "title": "Apple security terms and conditions",
+      "url": "https://security.apple.com/terms-and-conditions/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "announcement",
+      "title": "Apple Security Bounty evolved",
+      "url": "https://security.apple.com/blog/apple-security-bounty-evolved/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-02T21:01:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
