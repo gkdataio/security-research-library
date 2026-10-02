@@ -26,9 +26,11 @@ CWE mappings are optional. Set `source_explicit` only when a cited source suppli
 
 ## Public-content-only rule
 
-Every committed file must be suitable for eventual public reading: public-source research and original educational analysis only. Exclude private findings, customer or client data, internal business details, credentials, personal user context, private messages and internal task identifiers. Do not add bulk target inventories. Public source links do not authorize testing.
+Every committed file must be suitable for public reading: public-source research and original educational analysis only. Exclude private findings, customer or client data, internal business details, credentials, personal user context, private messages and internal task identifiers. Do not add bulk target inventories. Public source links do not authorize testing.
 
-The repository remains private. Any future visibility change requires an explicit publication request and a review of both current contents and repository history.
+Repository visibility is a separate release decision. Public release requires explicit authorization and a review of both current contents and repository history. This content policy applies before and after release; licensing files alone do not establish that publication has occurred.
+
+Apply the [licensing scope](LICENSE.md) to original material only. Preserve source attribution and third-party exclusions in canonical records and exports. Do not claim ownership of source reports, quoted material, trademarks or facts. Keep original code/schema licensing separate from educational-content licensing.
 
 ## Defensive scope
 

@@ -2,7 +2,7 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for understanding defensive security design. Each report connects a documented award with its evidence, root cause, bounded impact, and defensive lessons.
 
-[Browse reports](#report-index) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json)
+[Browse reports](#report-index) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
@@ -68,6 +68,21 @@ The `vulns-co.json` filename identifies a future adaptation target. Compatibilit
 - **Attribution stays explicit.** An empty researcher array means the reviewed source did not identify a researcher. Editorial CWE mappings are distinguished from source-supplied classifications.
 
 See [DATA_POLICY.md](DATA_POLICY.md) for the complete rules.
+
+## Why the Python scripts are included
+
+The scripts keep the collection consistent and reusable. Reading the reports or viewing diagrams does not require running Python.
+
+| File | Purpose |
+|---|---|
+| [validate.py](scripts/validate.py) | Checks report fields, source references, dates, award thresholds, taxonomy and duplicate identities |
+| [validate_extra.py](scripts/validate_extra.py) | Checks resource records, diagram references and local SVG constraints |
+| [export.py](scripts/export.py) | Generates the portable report JSON from validated records |
+| [export_resources.py](scripts/export_resources.py) | Generates the separate resource and diagram JSON |
+| [render_diagrams.py](scripts/render_diagrams.py) | Generates Mermaid/DOT source and uses local Graphviz to produce SVG diagrams |
+| [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |
+
+These are offline maintenance utilities. They do not contact research targets, collect credentials, scan systems or run the disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
 
 ## Validate and regenerate
 
@@ -163,4 +178,6 @@ The diagrams are conceptual learning models, not claims about a vendor's exact a
 
 For updates, follow the [maintenance policy](DATA_POLICY.md#release-procedure): verify primary sources, preserve stable identities and uncertainty, refresh recency, validate, and regenerate the affected outputs. A review that finds no qualifying new source needs no filler record.
 
-Sources remain copyrighted by their respective authors. Attribution and source links are retained with each record.
+## Licensing
+
+Original maintenance code, tests and schemas use [MIT](LICENSES/MIT.txt). Original educational documentation, summaries and diagrams use [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [license scope and attribution guide](LICENSE.md) for canonical JSON, mixed exports and third-party exclusions. Facts are not claimed as proprietary; source reports and quotations retain their own rights.
