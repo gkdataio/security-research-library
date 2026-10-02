@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T20:20:00Z",
+  "latest_reviewed_at": "2026-10-02T21:18:25Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -5375,12 +5375,13 @@
         "defensive-evidence-writing"
       ],
       "summary": "One recovery report received USD 35,000 across two award events.",
-      "root_cause": "Password recovery did not consistently bind delivery to a verified account address.",
-      "impact": "Unauthorized password changes could lead to account takeover. The vendor states that enforced second-factor authentication still prevented login, although password reset remained possible.",
+      "root_cause": "A secondary-address recovery feature expanded delivery choices without consistently preserving verified-address ownership. The vendor attributes the regression to email verification; recovery authorization must remain bound to trusted account state as features change.",
+      "impact": "Unauthorized password changes could lead to account takeover. Enforced second-factor authentication still prevented login, but did not prevent password reset. Offering SSO alone did not eliminate exposure when password authentication remained available.",
       "defensive_takeaways": [
-        "Bind recovery delivery to verified account state.",
-        "Validate security-sensitive input types and recipient cardinality.",
-        "Review recovery paths independently of primary authentication."
+        "Bind recovery delivery to verified account state and validate security-sensitive input contracts.",
+        "Review recovery paths independently of primary authentication and optional SSO.",
+        "Vendor remediation added end-to-end reset tests covering address handling, email generation and content; review the whole recovery contract rather than one validation function.",
+        "Separate patch deployment from compromise assessment; apply the vendor’s incident-response guidance where compromise is suspected."
       ],
       "reward": {
         "amount": 35000,
@@ -5482,7 +5483,7 @@
           "title": "GitLab Critical Security Release: 16.7.2, 16.6.4, 16.5.6",
           "type": "vendor",
           "author": "GitLab",
-          "retrieved_at": "2026-10-02T15:59:43Z",
+          "retrieved_at": "2026-10-02T21:18:25Z",
           "supports": [
             "dates",
             "cve",
@@ -5506,12 +5507,13 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T16:01:44Z",
-        "method": "Original public report and both award events read in the cloud browser; official vendor release notes independently corroborate the CVE, impact boundary and patched release.",
+        "reviewed_at": "2026-10-02T21:18:25Z",
+        "method": "Original public report and both award events read in the cloud browser; official vendor release notes independently corroborate the CVE, impact boundary and patched release. Re-read the vendor FAQ to distinguish secondary-address regression, second-factor and SSO boundaries, and documented regression-test coverage.",
         "limitations": [
           "Award events do not establish cash settlement.",
           "The report UI has no CVE field value; CVE association comes from the matching vendor advisory.",
-          "Detailed report publication is not the first public advisory date."
+          "Detailed report publication is not the first public advisory date.",
+          "The advisory’s historical observation of no detected abuse on vendor-managed platforms does not establish present-day absence of compromise or the state of self-managed deployments."
         ]
       },
       "content_scope": "historical_defensive_summary"

@@ -2,11 +2,101 @@
   "schema_version": "1.1.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 6
+    "programs": 8
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
   "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
   "programs": [
+    {
+      "schema_version": "1.1.0",
+      "id": "1password-bug-bounty",
+      "name": "1Password Bug Bounty",
+      "operator": "1Password",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/1password?type=team",
+      "policy_url": "https://hackerone.com/1password?type=team",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": "USD",
+        "minimum": null,
+        "maximum": 1000000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Standard advertised tiers span $50–$30,000. The exceptional USD 1,000,000 ceiling applies only to the designated cryptographic challenge’s complete required proof; partial/theoretical claims do not qualify. That challenge now belongs to this same program, without separate invitation.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "First valid reports receive precedence; related findings may share one bounty. Payment restrictions include sanctions/employer eligibility and guardian handling for minors.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "restrictions": {
+        "summary": "Ordinary research is restricted to owned accounts. Privacy violations, destruction, disruption and unauthorized disclosure are prohibited; automation is limited. Local-root scenarios, accepted design limitations and unsupported-impact reports are excluded.",
+        "source_ids": [
+          "policy",
+          "restrictions"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:22:00Z",
+      "limitations": [
+        "Current policy and restrictions were read in the browser; static retrieval returned a JavaScript shell.",
+        "The normalized maximum is the exceptional challenge ceiling, not the ordinary reward cap. Normalized minimum is null to avoid conflating schedules.",
+        "The scope page has stricter ownership language than general permission wording; this summary preserves the stricter restriction.",
+        "Policy displayed September 25, 2026 update. Older separate-program challenge descriptions are superseded by current policy."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "1Password bounty policy",
+          "url": "https://hackerone.com/1password?type=team",
+          "publisher": "1Password / HackerOne",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "restrictions",
+          "title": "1Password program restrictions",
+          "url": "https://hackerone.com/1password/policy_scopes",
+          "publisher": "1Password / HackerOne",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "migration",
+          "title": "1Password security assessments",
+          "url": "https://support.1password.com/security-assessments/",
+          "publisher": "1Password",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "currency",
+          "title": "HackerOne vulnerability disclosure guidelines",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "publisher": "HackerOne",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "Official support describes a public ongoing program and confirms the December 2024 migration from Bugcrowd to HackerOne.",
+        "source_ids": [
+          "migration"
+        ]
+      }
+    },
     {
       "schema_version": "1.1.0",
       "id": "apple-security-bounty",
@@ -103,6 +193,97 @@
         "value": "unknown",
         "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
         "source_ids": []
+      }
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "atlassian-bug-bounty",
+      "name": "Atlassian Bug Bounty",
+      "operator": "Atlassian",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/atlassian",
+      "policy_url": "https://bugcrowd.com/engagements/atlassian",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/atlassian/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/atlassian/announcements",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 100,
+        "maximum": 12000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Tier-dependent advertised awards span $100–$12,000. Product/severity schedules differ and awards are discretionary. April 16, 2026 updates raised top-tier P1/P2 awards and reduced P3/P4 awards.",
+        "source_ids": [
+          "policy",
+          "currency",
+          "updates"
+        ]
+      },
+      "eligibility": {
+        "summary": "First valid previously unknown report for cash eligibility. Designated researcher accounts, owned instances and latest applicable product versions are required.",
+        "source_ids": [
+          "policy",
+          "eligibility"
+        ]
+      },
+      "restrictions": {
+        "summary": "No customer data, others’ repositories, credential validation, automated scanners, social engineering, physical attacks or post-exploitation pivoting. Cloud denial-of-service and low-impact categories are excluded. Plain-text reports and permission before disclosure are required; safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-02T21:22:00Z",
+      "limitations": [
+        "Full policy and announcement reviewed in the cloud browser; web text retrieval supplied only a login shell.",
+        "Program charts use dollar signs; USD normalization relies on official Bugcrowd accounting documentation describing reward transactions, not an explicit ISO code in this brief.",
+        "Policy displayed June 12, 2026 update. Summaries omit asset lists and are not exhaustive."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Atlassian program brief",
+          "url": "https://bugcrowd.com/engagements/atlassian",
+          "publisher": "Atlassian / Bugcrowd",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "updates",
+          "title": "Atlassian program announcements",
+          "url": "https://bugcrowd.com/engagements/atlassian/announcements",
+          "publisher": "Atlassian / Bugcrowd",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd fund management overview",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "eligibility",
+          "title": "Getting rewarded",
+          "url": "https://docs.bugcrowd.com/researchers/receiving-rewards/getting-rewarded/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T21:22:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "Official page displayed In progress and an ongoing period; eligibility and current restrictions still apply.",
+        "source_ids": [
+          "policy"
+        ]
       }
     },
     {

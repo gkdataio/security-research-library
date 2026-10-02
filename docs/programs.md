@@ -6,6 +6,37 @@ Advertised rewards are not report awards. This directory grants no authorization
 
 This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.
 
+## 1Password Bug Bounty
+
+[Official program](<https://hackerone.com/1password?type=team>) · [Policy](<https://hackerone.com/1password?type=team>) · [Canonical record](<../data/programs/1password-bug-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-02T21:22:00Z
+
+**Submission status:** accepting reports. Official support describes a public ongoing program and confirms the December 2024 migration from Bugcrowd to HackerOne\.
+
+**Advertised rewards:** Standard advertised tiers span $50–$30,000\. The exceptional USD 1,000,000 ceiling applies only to the designated cryptographic challenge’s complete required proof; partial/theoretical claims do not qualify\. That challenge now belongs to this same program, without separate invitation\.
+
+**Eligibility:** First valid reports receive precedence; related findings may share one bounty\. Payment restrictions include sanctions/employer eligibility and guardian handling for minors\.
+
+**Restrictions and exclusions:** Ordinary research is restricted to owned accounts\. Privacy violations, destruction, disruption and unauthorized disclosure are prohibited; automation is limited\. Local-root scenarios, accepted design limitations and unsupported-impact reports are excluded\.
+
+**Verification limits**
+
+- Current policy and restrictions were read in the browser; static retrieval returned a JavaScript shell\.
+- The normalized maximum is the exceptional challenge ceiling, not the ordinary reward cap\. Normalized minimum is null to avoid conflating schedules\.
+- The scope page has stricter ownership language than general permission wording; this summary preserves the stricter restriction\.
+- Policy displayed September 25, 2026 update\. Older separate-program challenge descriptions are superseded by current policy\.
+
+**Official evidence and updates**
+
+- [1Password bounty policy](<https://hackerone.com/1password?type=team>) — 1Password / HackerOne; retrieved 2026-10-02T21:22:00Z.
+- [1Password program restrictions](<https://hackerone.com/1password/policy_scopes>) — 1Password / HackerOne; retrieved 2026-10-02T21:22:00Z.
+- [1Password security assessments](<https://support.1password.com/security-assessments/>) — 1Password; retrieved 2026-10-02T21:22:00Z.
+- [HackerOne vulnerability disclosure guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T21:22:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Apple Security Bounty
 
 [Official program](<https://security.apple.com/bounty/>) · [Policy](<https://security.apple.com/bounty/guidelines/>) · [Canonical record](<../data/programs/apple-security-bounty.json>)
@@ -36,6 +67,36 @@ This is a small, manually reviewed starting directory, not a complete or continu
 - [Apple Security Bounty evolved](<https://security.apple.com/blog/apple-security-bounty-evolved/>) — Apple; retrieved 2026-10-02T21:01:00Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Atlassian Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/atlassian>) · [Policy](<https://bugcrowd.com/engagements/atlassian>) · [Canonical record](<../data/programs/atlassian-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-02T21:22:00Z
+
+**Submission status:** accepting reports. Official page displayed In progress and an ongoing period; eligibility and current restrictions still apply\.
+
+**Advertised rewards:** Tier-dependent advertised awards span $100–$12,000\. Product/severity schedules differ and awards are discretionary\. April 16, 2026 updates raised top-tier P1/P2 awards and reduced P3/P4 awards\.
+
+**Eligibility:** First valid previously unknown report for cash eligibility\. Designated researcher accounts, owned instances and latest applicable product versions are required\.
+
+**Restrictions and exclusions:** No customer data, others’ repositories, credential validation, automated scanners, social engineering, physical attacks or post-exploitation pivoting\. Cloud denial-of-service and low-impact categories are excluded\. Plain-text reports and permission before disclosure are required; safe harbor is conditional\.
+
+**Verification limits**
+
+- Full policy and announcement reviewed in the cloud browser; web text retrieval supplied only a login shell\.
+- Program charts use dollar signs; USD normalization relies on official Bugcrowd accounting documentation describing reward transactions, not an explicit ISO code in this brief\.
+- Policy displayed June 12, 2026 update\. Summaries omit asset lists and are not exhaustive\.
+
+**Official evidence and updates**
+
+- [Atlassian program brief](<https://bugcrowd.com/engagements/atlassian>) — Atlassian / Bugcrowd; retrieved 2026-10-02T21:22:00Z.
+- [Atlassian program announcements](<https://bugcrowd.com/engagements/atlassian/announcements>) — Atlassian / Bugcrowd; retrieved 2026-10-02T21:22:00Z.
+- [Bugcrowd fund management overview](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T21:22:00Z.
+- [Getting rewarded](<https://docs.bugcrowd.com/researchers/receiving-rewards/getting-rewarded/>) — Bugcrowd; retrieved 2026-10-02T21:22:00Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/announcements>).
 
 ## GitHub Bug Bounty
 

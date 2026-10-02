@@ -1,15 +1,15 @@
 # Security Research Library
 
-Source-backed public security disclosures, official learning resources, and original diagrams for understanding defensive security design. Each report connects a documented award with its evidence, root cause, bounded impact, and defensive lessons.
+Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Program directory](docs/programs.md) · [Diagram gallery](docs/diagram-gallery.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Program directory](docs/programs.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
 **Snapshot: October 2, 2026**
 
 - **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
-- **6 public program-policy summaries**, maintained separately from award evidence
+- **8 public program-policy summaries**, maintained separately from award evidence
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates
@@ -21,6 +21,7 @@ These counts describe the collection at the review date. Award evidence is attri
 | If you want to… | Start with… |
 |---|---|
 | Find a disclosure and inspect its evidence | [Complete report index](#report-index), then the linked JSON record |
+| Study hypotheses, code review, contained exercises and evidence | [Research methodology](docs/research-methodology.md) |
 | Study defensive design principles by topic | [Defensive learning guide](docs/learning-guide.md) |
 | Find standards, documentation, and controlled training | [Official learning resources](docs/resources.md) |
 | Understand a security boundary visually | [Visual guide](docs/visual-theory.md), with SVGs, source graphs, and evidence links |

@@ -1,6 +1,6 @@
 # Defensive learning guide
 
-Use the historical cases as architecture-review examples. The goal is to understand and verify security invariants in an owned or authorized environment, not to replay a public exploit against other systems.
+Use the historical cases as architecture-review examples. Researchers and authorized offensive-security teams can also use the [methodology guide](research-methodology.md) for hypothesis formation, code-review reasoning and contained learning exercises. The goal is to understand and verify security invariants in an owned or authorized environment, not to replay a public exploit against other systems.
 
 ## 1. Approval and concurrency integrity
 
@@ -63,6 +63,8 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
 
 The [Meta Quest migration case](../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) highlights a change-management question: does an existing login destination still preserve the same security guarantees after the identity flow changes? Document the intended recipient of a credential throughout its lifecycle and distinguish the reported fix from assumptions about every related component.
+
+The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028.md) separates password-reset integrity from login protection. A second factor can preserve the login boundary while recovery remains flawed. Its documented remediation covers the complete reset flow, including address handling and generated email, rather than only a single input check.
 
 **Taxonomy:** `identity-lifecycle-review`, `authorization-modeling`, `concurrency-reasoning`, `security-token-design`
 
