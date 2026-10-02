@@ -5,7 +5,10 @@
   "type": "object",
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
     },
     "id": {
       "type": "string",
@@ -322,6 +325,34 @@
     },
     "content_scope": {
       "const": "historical_defensive_summary"
+    },
+    "report_identity": {
+      "type": "object",
+      "description": "Required for separate awarded reports documented by one primary article; currently supports only disjoint, source-explicit CVEs.",
+      "properties": {
+        "kind": {
+          "const": "cve"
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^CVE-\\d{4}-\\d{4,}$"
+        },
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_location": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "kind",
+        "value",
+        "source_id",
+        "evidence_location"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [

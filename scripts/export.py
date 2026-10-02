@@ -9,7 +9,7 @@ def build_export(root=ROOT):
     records, taxonomy = validate_library(root)
     records.sort(key=lambda x: (x['dates']['published']['value'] or '', x['id']), reverse=True)
     return {
-        'schema_version': '1.0.0',
+        'schema_version': '1.1.0',
         'dataset': 'security-research-library',
         'as_of': max(r['recency']['as_of'] for r in records),
         'latest_reviewed_at': max(r['verification']['reviewed_at'] for r in records),

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.1.0",
+  "id": "google-idx-worker-message-trust-2025",
+  "title": "Google IDX worker messaging crossed browser trust boundaries",
+  "organization": "Google",
+  "product": "Project IDX / Cloud Workstations",
+  "researchers": [
+    "sudi (Sudistark)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "client-security",
+  "secondary_category_ids": [
+    "injection"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "integration-threat-modeling",
+    "untrusted-input-handling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A browser-IDE trust-boundary report received a USD 22,500 award.",
+  "root_cause": "Messaging and embedded-content trust assumptions allowed untrusted input to reach a privileged worker context.",
+  "impact": "The researcher demonstrated worker-context script execution. The reproduced award notice limits severity because prior access to an affected resource was required.",
+  "defensive_takeaways": [
+    "Bind messaging trust to a verified origin and context.",
+    "Review nested rendering and worker privileges together."
+  ],
+  "reward": {
+    "amount": 22500,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported_with_vendor_quote",
+    "source_id": "award-image",
+    "evidence_quote": "Google Vulnerability Reward Program panel has decided to issue a reward of $22500.00 for your report.",
+    "evidence_location": "Researcher-published award email image, central award paragraph",
+    "usd_equivalent": null,
+    "notes": "The image states a $22,500 award. USD follows Google web VRP denomination documented by google-usd-context; no currency conversion. Bonus mentioned but not separately itemized. Settlement date unknown."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-07-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Date displayed by the researcher article."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2024",
+      "precision": "year",
+      "basis": "inferred",
+      "source_id": "primary",
+      "note": "Article says the report was submitted last year; year inferred from its 2025 publication header."
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://sudistark.github.io/2025/07/02/idx.html",
+      "title": "XSS in Google IDX Workstation",
+      "type": "researcher",
+      "author": "sudi (Sudistark)",
+      "retrieved_at": "2026-10-02T15:12:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "award-image",
+      "url": "https://sudistark.github.io/tmp/cdn-images/Pasted%20image%2020250729220436.png",
+      "title": "Researcher-published Google award email for IDX report",
+      "type": "researcher",
+      "author": "sudi (Sudistark), reproducing a Google award notice",
+      "retrieved_at": "2026-10-02T15:12:00Z",
+      "supports": [
+        "reward",
+        "impact"
+      ]
+    },
+    {
+      "id": "google-usd-context",
+      "url": "https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515",
+      "title": "Google and Alphabet VRP reward-denomination announcement, July 11, 2024",
+      "type": "vendor",
+      "author": "Sam Erb and Krzysztof Kotowicz / Google",
+      "retrieved_at": "2026-10-02T15:14:47Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T15:14:47Z",
+    "method": "Researcher article read; award image visually inspected in the cloud browser. Google program currency context read separately. Official 2024 program announcement was read in the cloud browser for USD denomination only; its advertised maximum is not award evidence.",
+    "limitations": [
+      "Award evidence is not an independently audited cash receipt.",
+      "The image is researcher-published, not independently retrieved vendor correspondence.",
+      "Exact original-report, award, payment, fix and first-disclosure dates are unavailable. The linked Bug Hunters report returned no readable text.",
+      "Article credits Matan Berson for the underlying discovery and Sreeram and Sivanesh for supporting research; recipient split is not stated."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

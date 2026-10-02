@@ -125,6 +125,16 @@ def validate_record(record, taxonomy, schema):
     refs += [d['source_id'] for d in record['dates'].values() if d['source_id'] is not None]
     if not set(refs) <= set(sources):
         fail(record['id'], 'unknown source reference')
+    identity = record.get('report_identity')
+    if identity:
+        if record['schema_version'] != '1.1.0':
+            fail(record['id'], 'report identity requires schema version 1.1.0')
+        if identity['value'] not in record['cve_ids']:
+            fail(record['id'], 'report identity must name a CVE belonging to this record')
+        if identity['source_id'] != record['primary_source_id']:
+            fail(record['id'], 'report identity must be distinguished by the primary source')
+        if not {'cve', 'reward', 'dates'} <= set(sources[identity['source_id']]['supports']):
+            fail(record['id'], 'report identity needs primary CVE, award and date evidence')
     reward = record['reward']
     src = sources[reward['source_id']]
     required_type = {'vendor_confirmed':'vendor', 'platform_confirmed':'platform', 'organizer_confirmed':'competition_organizer'}
@@ -168,15 +178,39 @@ def validate_library(root=ROOT):
         ids = [x['id'] for x in taxonomy[field]]
         if len(ids) != len(set(ids)):
             fail('taxonomy', f'duplicate {field} IDs')
-    records, ids, urls = [], set(), set()
+    records, ids, urls, cves, quote_words = [], set(), {}, set(), {}
     for path in sorted((root/'data/reports').glob('*.json')):
         record = json.loads(path.read_text())
         url = validate_record(record, taxonomy, schema)
         if path.stem != record['id']:
             fail(str(path), 'filename and stable ID differ')
-        if record['id'] in ids or url in urls:
-            fail(str(path), 'duplicate stable ID or primary source URL')
-        ids.add(record['id']); urls.add(url); records.append(record)
+        if record['id'] in ids:
+            fail(str(path), 'duplicate stable ID')
+        if cves.intersection(record['cve_ids']):
+            fail(str(path), 'CVE counted in multiple award records; reconcile the reports first')
+        cves.update(record['cve_ids'])
+        urls.setdefault(url, []).append(record)
+        reward = record['reward']
+        reward_source = next(s for s in record['sources'] if s['id'] == reward['source_id'])
+        quote_url = normalize_url(reward_source['url'])
+        quote_words[quote_url] = quote_words.get(quote_url, 0) + len(reward['evidence_quote'].split())
+        if quote_words[quote_url] > 25:
+            fail(str(path), 'combined reward quotations from one source exceed 25 words')
+        ids.add(record['id']); records.append(record)
+    for url, group in urls.items():
+        if len(group) <= 1:
+            continue
+        # A shared article never creates extra records by itself. Each must identify
+        # a separate source-explicit CVE and a distinct individually awarded report.
+        if not all(r.get('report_identity') and r['reward']['scope'] in
+                   ('single_report', 'single_vulnerability') and
+                   r['reward']['source_id'] == r['primary_source_id'] and
+                   r['dates']['reported']['value'] and r['dates']['awarded']['value']
+                   for r in group):
+            fail(url, 'duplicate primary source URL without evidenced report identities')
+        for field in ('evidence_quote', 'evidence_location'):
+            if len({r['reward'][field] for r in group}) != len(group):
+                fail(url, 'shared-source reports need distinct award evidence')
     if not records:
         fail(str(root), 'no records')
     return records, taxonomy

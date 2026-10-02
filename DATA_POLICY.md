@@ -4,7 +4,7 @@
 
 An included record requires a primary researcher, vendor, platform, or competition-organizer source describing an actual individual report/entry award of at least USD 10,000. “Individual” describes a finding/report, not an assertion that a team award was paid to one person. Advertised maximums, ranges, event totals, lifetime earnings, hypothetical values, and rewards inferred solely from severity do not qualify.
 
-The initial set uses US-dollar-denominated program or organizer awards. Each source's notation and limitations remain in the record. Non-USD reports should remain separate candidates until an explicitly dated, authoritative conversion method is supported by the schema; never silently convert or reinterpret ambiguous currency.
+The initial set uses US-dollar-denominated program or organizer awards. Each source's notation and limitations remain in the record. Non-USD reports should remain separate candidates until an explicitly dated, authoritative conversion method is supported by the schema; never silently convert or reinterpret ambiguous currency. When a report uses only $, an official contemporaneous program source can establish USD denomination; cite it explicitly and use it solely for currency context, never as evidence that a particular advertised award was paid.
 
 A reproduced vendor email is still researcher-published evidence. It does not become `vendor_confirmed`. `awarded` and `paid` are different: use `paid` only when the source explicitly says payment occurred, and keep the settlement date null when unknown. No independent bank-transfer audit is implied.
 
@@ -16,7 +16,7 @@ The preferred window is the previous 12 calendar months by detailed publication 
 
 ## Sources and content
 
-Keep source IDs stable, bind claims to sources, and use direct primary URLs. Sources must be read; a search snippet is not enough for a technical or reward claim. Normalize primary URLs to detect duplicate records. Use at most 25 quoted words from any single non-lyrical source across a release and keep source-derived text concise. Do not store whole copied articles, screenshots containing secrets, or private user data.
+Keep source IDs stable, bind claims to sources, and use direct primary URLs. Sources must be read; a search snippet is not enough for a technical or reward claim. Normalize primary URLs to detect duplicate records. A shared primary article is allowed only for explicitly distinct individually awarded reports: each record needs a source-backed `report_identity`, non-overlapping CVEs, separate award evidence, and known report/award dates. A chain remains one record, even if it has multiple CVEs. The validator rejects a CVE reused across records and enforces the 25-word reward-quotation limit across all records sharing a source. URL fragments cannot distinguish reports. Record schema 1.1.0 adds this optional identity while accepting unchanged 1.0.0 records. Use at most 25 quoted words from any single non-lyrical source across a release and keep source-derived text concise. Do not store whole copied articles, screenshots containing secrets, or private user data.
 
 Preserve important source disagreements. For example, the Meta account's USD 150,000 base and 5% bonus imply USD 157,500, while its headline rounds to USD 157K. This collection records only the undisputed base and explicitly notes the discrepancy.
 

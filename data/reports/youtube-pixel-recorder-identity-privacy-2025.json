@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.1.0",
+  "id": "youtube-pixel-recorder-identity-privacy-2025",
+  "title": "YouTube and Pixel Recorder exposed cross-product identity links",
+  "organization": "Google",
+  "product": "YouTube and Pixel Recorder",
+  "researchers": [
+    "Arvin Shivram (Brutecat)",
+    "Nathan (schizo.org)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "One cross-product privacy report received USD 3,133 and a USD 7,500 adjustment, totaling USD 10,633.",
+  "root_cause": "Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity.",
+  "impact": "Researchers reported that private email addresses associated with YouTube users could be revealed. No mass breach is established.",
+  "defensive_takeaways": [
+    "Treat cross-product identifiers as sensitive correlation data.",
+    "Require entitlement before returning identity attributes.",
+    "Verify remediation across every affected component."
+  ],
+  "reward": {
+    "amount": 10633,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Panel awards $3,133 … Panel awards an additional $7,500",
+    "evidence_location": "Timeline, November 5 and December 12, 2024; ellipsis joins excerpts",
+    "usd_equivalent": null,
+    "notes": "One report: December 3 entry explicitly says it returned for additional reward consideration. Headline rounds to $10,000. Exact arithmetic is $10,633. USD uses Google web VRP denomination documented by google-usd-context. Awarded, not confirmed paid."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-02-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": "2025-02-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "reported": {
+      "value": "2024-09-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2024-12-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Final additional award; initial award was November 5, 2024."
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Researcher confirmed both components fixed on February 9, 2025; actual deployment date is not supplied."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://brutecat.com/articles/leaking-youtube-emails/",
+      "title": "Leaking the email of any YouTube user for $10,000",
+      "type": "researcher",
+      "author": "Arvin Shivram and Nathan",
+      "retrieved_at": "2026-10-02T15:12:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "google-usd-context",
+      "url": "https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515",
+      "title": "Google and Alphabet VRP reward-denomination announcement, July 11, 2024",
+      "type": "vendor",
+      "author": "Sam Erb and Krzysztof Kotowicz / Google",
+      "retrieved_at": "2026-10-02T15:14:47Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T15:14:47Z",
+    "method": "Primary source reviewed; individual award and attribution checked. Historical defensive summary only. Official 2024 program announcement was read in the cloud browser for USD denomination only; its advertised maximum is not award evidence.",
+    "limitations": [
+      "Award evidence is not an independently audited cash receipt.",
+      "The source uses dollar notation, with USD established from Google program context.",
+      "No public report ID, recipient split, or exact fix-deployment date is provided.",
+      "Separate from the March 2025 creator-metadata report and its USD 20,000 award."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-21 individual report/chain awards meet the USD 10,000 threshold: 20 bug bounties and one explicitly labeled competition entry. Seven publication dates fall within October 2, 2025–October 2, 2026; 12 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+24 individual report/chain awards meet the USD 10,000 threshold: 23 bug bounties and one explicitly labeled competition entry. Seven publication dates fall within October 2, 2025–October 2, 2026; 15 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection grew from six to 21 records in the historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 24 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -18,11 +18,14 @@ The collection grew from six to 21 records in the historical expansion. It now c
 | [Gemini-to-Colab rendering boundary exposed Workspace data](data/reports/google-gemini-colab-rendering-boundary-2025.json) | USD 20,000 | 2025-11 | Researcher reproduces vendor message |
 | [GitHub package-source trust allowed dependency confusion](data/reports/github-ruby-dependency-confusion-2025.json) | USD 20,000 | 2025-10-28 | Researcher reported |
 | [Cloud Build approval was not bound to immutable code](data/reports/google-cloud-build-approval-toctou-2025.json) | USD 30,000 | 2025-07-21 (historical) | Researcher reported |
+| [Google IDX worker messaging crossed browser trust boundaries](data/reports/google-idx-worker-message-trust-2025.json) | USD 22,500 | 2025-07-02 (historical) | Researcher reproduces vendor image |
 | [Framework serialization change exposed private HackerOne user attributes](data/reports/hackerone-report-json-serialization-data-exposure-2025.json) | USD 25,000 | 2025-06-24 (historical) | Vendor confirmed |
 | [YouTube creator metadata exposed private email addresses](data/reports/youtube-creator-email-authorization-2025.json) | USD 20,000 | 2025-03-13 (historical) | Researcher reported |
+| [YouTube and Pixel Recorder exposed cross-product identity links](data/reports/youtube-pixel-recorder-identity-privacy-2025.json) | USD 10,633 | 2025-02-12 (historical) | Researcher reported |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
 | [GitHub Actions trust depended on invalid repository references](data/reports/github-actions-reference-validation-2021.json) | USD 25,000 | 2021-03-17 (historical) | Researcher reported |
 | [GitHub fork collaboration applied inconsistent authorization](data/reports/github-fork-collaboration-authorization-2021.json) | USD 20,000 | 2021-03-10 (historical) | Researcher reported |
+| [GitHub GraphQL collaboration changes lacked author consent](data/reports/github-fork-collaboration-consent-2021.json) | USD 10,000 | 2021-03-10 (historical) | Researcher reported |
 | [Microsoft account recovery lacked consistent attempt-limit enforcement](data/reports/microsoft-account-recovery-rate-limit-consistency-2021.json) | USD 50,000 | 2021-03-02 (historical) | Researcher reported |
 | [Sign in with Apple failed to bind identity claims to the authenticated user](data/reports/apple-sign-in-identity-claim-binding-2020.json) | USD 100,000 | 2020-05-30 (historical) | Researcher reported |
 | [GitHub OAuth consent failed across request-method semantics](data/reports/github-oauth-method-semantics-2019.json) | USD 25,000 | 2019-11-05 (historical) | Researcher reported |
@@ -32,11 +35,13 @@ The collection grew from six to 21 records in the historical expansion. It now c
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
+The latest additions include an image-backed IDX award, the precise USD 10,633 YouTube/Pixel Recorder adjustment total, and a separately awarded GitHub collaboration-consent report. Two records may share an article only with explicit, non-overlapping CVEs and separate award evidence.
+
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Six official educational resources and three evidence-linked conceptual diagrams are maintained separately from the 21 award reports.
+Six official educational resources and three evidence-linked conceptual diagrams are maintained separately from the 24 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
@@ -49,7 +54,7 @@ The visuals cover approval-version integrity, AI content/authority separation, a
 - `data/reports/`: canonical JSON records; filename equals stable ID
 - `data/taxonomy.json`: categories and defensive skillset definitions
 - `data/candidates.json`: unqualified leads and exclusion reasons; excluded from qualified exports
-- `schema/report.schema.json`: strict JSON Schema, version 1.0.0
+- `schema/report.schema.json`: strict JSON Schema, version 1.1.0 (also accepts existing 1.0.0 records)
 - `docs/learning-guide.md`: grouped defensive learning objectives
 - `DATA_POLICY.md`: evidence, date, update, and safety rules
 - `scripts/validate.py`: offline standard-library validation

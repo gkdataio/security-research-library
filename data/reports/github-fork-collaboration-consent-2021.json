@@ -1,14 +1,14 @@
 {
   "schema_version": "1.1.0",
-  "id": "github-fork-collaboration-authorization-2021",
-  "title": "GitHub fork collaboration applied inconsistent authorization",
+  "id": "github-fork-collaboration-consent-2021",
+  "title": "GitHub GraphQL collaboration changes lacked author consent",
   "organization": "GitHub",
-  "product": "GitHub fork collaboration",
+  "product": "GitHub fork collaboration / GraphQL",
   "researchers": [
     "Teddy Katz"
   ],
   "cve_ids": [
-    "CVE-2021-22861"
+    "CVE-2021-22863"
   ],
   "cwe_mappings": [],
   "category_id": "authorization",
@@ -20,15 +20,15 @@
     "approval-state-integrity",
     "defensive-evidence-writing"
   ],
-  "summary": "The first fork-collaboration finding in this article earned USD 20,000.",
-  "root_cause": "Permission checks differed between creation and modification of the same collaboration setting.",
-  "impact": "An unauthorized user could obtain write access to affected public forks.",
+  "summary": "The second fork-collaboration report received its own USD 10,000 award.",
+  "root_cause": "One API path omitted the pull-request-author entitlement required to change collaboration consent.",
+  "impact": "A base-repository maintainer could gain unauthorized write access to a contributor branch.",
   "defensive_takeaways": [
-    "Centralize entitlement checks across mutation paths.",
-    "Verify that only an authorized owner can grant collaboration privileges."
+    "Keep collaboration consent separate from ordinary metadata privileges.",
+    "Enforce identical ownership rules across API implementations."
   ],
   "reward": {
-    "amount": 20000,
+    "amount": 10000,
     "currency": "USD",
     "scope": "single_report",
     "status": "awarded",
@@ -36,10 +36,10 @@
     "awarding_organization": "GitHub",
     "evidence_level": "researcher_reported",
     "source_id": "primary",
-    "evidence_quote": "GitHub awarded a $20000 bounty for the first issue",
-    "evidence_location": "Timeline, March 2, 2021",
+    "evidence_quote": "GitHub awarded a $10000 bounty for the second issue",
+    "evidence_location": "Timeline, March 2, 2021, 22:26:36 UTC",
     "usd_equivalent": null,
-    "notes": "First report only; the separately awarded CVE-2021-22863 is a different record."
+    "notes": "Separate report and award, initially marked duplicate then reopened after its distinct fix requirement was confirmed."
   },
   "dates": {
     "published": {
@@ -57,7 +57,7 @@
       "note": null
     },
     "reported": {
-      "value": "2021-01-22",
+      "value": "2021-01-24",
       "precision": "day",
       "basis": "explicit",
       "source_id": "primary",
@@ -71,7 +71,7 @@
       "note": null
     },
     "fixed": {
-      "value": "2021-01-27",
+      "value": "2021-01-28",
       "precision": "day",
       "basis": "explicit",
       "source_id": "primary",
@@ -122,6 +122,21 @@
         "remediation",
         "cve"
       ]
+    },
+    {
+      "id": "vendor-release",
+      "url": "https://docs.github.com/en/enterprise-server@3.0/admin/release-notes",
+      "title": "GitHub Enterprise Server 3.0.1 security fixes",
+      "type": "vendor",
+      "author": "GitHub",
+      "retrieved_at": "2026-10-02T15:12:00Z",
+      "supports": [
+        "cve",
+        "root_cause",
+        "impact",
+        "remediation",
+        "dates"
+      ]
     }
   ],
   "primary_source_id": "primary",
@@ -130,14 +145,14 @@
     "reviewed_at": "2026-10-02T15:12:00Z",
     "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
     "limitations": [
-      "Award is reported by the cited source; cash settlement is not independently audited."
+      "Award remains researcher-reported; vendor release notes corroborate the distinct CVE and remediation."
     ]
   },
   "content_scope": "historical_defensive_summary",
   "report_identity": {
     "kind": "cve",
-    "value": "CVE-2021-22861",
+    "value": "CVE-2021-22863",
     "source_id": "primary",
-    "evidence_location": "Timeline identifies the first issue as CVE-2021-22861 and assigns its own award."
+    "evidence_location": "Timeline identifies the second issue as CVE-2021-22863 and assigns its own award."
   }
 }

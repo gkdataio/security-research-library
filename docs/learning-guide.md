@@ -52,7 +52,7 @@ Learn to express which account a verification challenge or token represents, whi
 
 ## 7. Cross-API consistency and safe serialization
 
-**Cases:** Google Support; YouTube creator privacy; GitHub fork collaboration; HackerOne report serialization
+**Cases:** Google Support; YouTube creator privacy; YouTube/Pixel Recorder identity correlation; both GitHub fork-collaboration reports; HackerOne report serialization
 
 Learn how the same entitlement can be represented across API surfaces and framework layers. Define response allowlists, ownership checks, and privacy-contract tests. Compare the intended policies at creation, editing, serialization, and consumption rather than assuming an earlier check remains sufficient.
 
@@ -60,7 +60,7 @@ Learn how the same entitlement can be represented across API surfaces and framew
 
 ## 8. Browser permission and consent lifecycle
 
-**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent
+**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation
 
 Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
 
