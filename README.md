@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-30 individual report/chain awards meet the USD 10,000 threshold: 29 bug bounties and one explicitly labeled competition entry. Nine publication dates fall within October 2, 2025–October 2, 2026; 19 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+32 individual report/chain awards meet the USD 10,000 threshold: 31 bug bounties and one explicitly labeled competition entry. Eleven publication dates fall within October 2, 2025–October 2, 2026; 19 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 30 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 32 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -17,7 +17,9 @@ The collection contains 30 records after source-backed historical expansion. It 
 | [V8 optimized object handling retained invalid type assumptions](data/reports/google-chrome-v8-type-consistency-2025.json) | USD 50,000 | 2026-03-17 | Vendor confirmed |
 | [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json) | USD 15,000 | 2026-03-12 | Researcher reported |
 | [Angular automation trust and cache isolation weakness](data/reports/angular-ci-cache-trust-2026.json) | USD 31,337 | 2026-03-03 | Researcher reproduces vendor message |
+| [V8 control-flow analysis omitted required initialization checks](data/reports/google-chrome-v8-initialization-checks-2025.json) | USD 50,000 | 2026-01-22 | Vendor confirmed |
 | [Gemini-to-Colab rendering boundary exposed Workspace data](data/reports/google-gemini-colab-rendering-boundary-2025.json) | USD 20,000 | 2025-11 | Researcher reproduces vendor message |
+| [Kestrel HTTP framing differed across proxy and application boundaries](data/reports/microsoft-kestrel-http-framing-consistency-2025.json) | USD 10,000 | 2025-11-07 | Researcher reported |
 | [GitHub package-source trust allowed dependency confusion](data/reports/github-ruby-dependency-confusion-2025.json) | USD 20,000 | 2025-10-28 | Researcher reported |
 | [Support integration exposed internal Confluence documentation](data/reports/hackerone-support-confluence-access-boundary-2025.json) | USD 12,500 (one report; two recipients) | 2025-08 (historical) | Vendor confirmed |
 | [Cloud Build approval was not bound to immutable code](data/reports/google-cloud-build-approval-toctou-2025.json) | USD 30,000 | 2025-07-21 (historical) | Researcher reported |
@@ -41,13 +43,13 @@ The collection contains 30 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest increment adds two recent Chrome disclosures with individually documented USD 250,000 and USD 50,000 awards, plus GitLab’s historical USD 35,000 recovery report. Award decisions, stable releases, public advisories and detailed-publication dates remain distinct. The counting unit is one report or chain, not one person.
+The latest increment adds a distinct Chrome initialization-check report with a vendor-confirmed USD 50,000 award and an ASP.NET Core HTTP-framing report with a researcher-reported USD 10,000 award. Both detailed publications fall within the preferred window. Award decisions, fixes and public disclosures remain separately dated.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Eight official educational resources and four evidence-linked conceptual diagrams are maintained separately from the 30 award reports.
+Eight official educational resources and four evidence-linked conceptual diagrams are maintained separately from the 32 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)

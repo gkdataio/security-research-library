@@ -40,7 +40,7 @@ Learn data provenance and the difference between retrieved text and user authori
 
 ## 5. Parser contracts and memory safety
 
-**Cases:** PostgreSQL CVE-2026-2006 (competition award); Chrome V8 type consistency
+**Cases:** PostgreSQL CVE-2026-2006 (competition award); Chrome V8 type consistency and initialization checks
 
 Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit.
 
@@ -69,6 +69,14 @@ Learn how the same entitlement can be represented across API surfaces and framew
 Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
 
 **Taxonomy:** `browser-isolation-review`, `approval-state-integrity`, `identity-lifecycle-review`, `secure-parser-review`
+
+## 9. HTTP message-boundary consistency
+
+**Case:** ASP.NET Core Kestrel framing consistency
+
+Review the documented parsing contract across proxies and application servers. Each layer should agree on message boundaries and reject ambiguous input. Record deployment-specific assumptions and check that updated runtimes and self-contained applications are actually deployed. A useful artifact is a parser-contract matrix linked to vendor remediation evidence.
+
+**Taxonomy:** `secure-parser-review`, `untrusted-input-handling`, `integration-threat-modeling`, `patch-verification`
 
 ## Common reporting skill
 

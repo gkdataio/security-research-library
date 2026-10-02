@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T16:08:00Z",
+  "latest_reviewed_at": "2026-10-02T16:21:50Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 30,
-    "within_preferred_window": 9,
+    "included": 32,
+    "within_preferred_window": 11,
     "older_or_uncertain": 21,
-    "bug_bounty": 29,
+    "bug_bounty": 31,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -1263,6 +1263,340 @@
         "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
           "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "google-chrome-v8-initialization-checks-2025",
+      "title": "V8 control-flow analysis omitted required initialization checks",
+      "organization": "Google",
+      "product": "Chrome / V8",
+      "researchers": [
+        "Aorui Zhang"
+      ],
+      "cve_ids": [
+        "CVE-2025-12429"
+      ],
+      "cwe_mappings": [],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "browser-isolation-review",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A distinct V8 initialization-check report received a vendor-confirmed USD 50,000 award.",
+      "root_cause": "Control-flow analysis treated an initialization safety check as redundant without preserving its guarantee across every incoming path.",
+      "impact": "The report demonstrated sandboxed renderer memory corruption. A sandbox escape or full-machine compromise is not established.",
+      "defensive_takeaways": [
+        "Check-removal optimizations must preserve initialization guarantees across all control-flow paths.",
+        "Separate a compiler fix, stable-release availability and public report access in remediation records."
+      ],
+      "reward": {
+        "amount": 50000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "type": "bug_bounty",
+        "awarding_organization": "Google / Chrome VRP",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-report",
+        "evidence_quote": "Panel has decided to award you $50000.00 for this report.",
+        "evidence_location": "Public Chromium issue comment #17.",
+        "usd_equivalent": null,
+        "notes": "Panel decision and tracker reward metadata identify one report. Dollar notation uses official Chromium USD context. Cash receipt is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-01-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": "Comment #24 records removal of issue access restrictions."
+        },
+        "public_disclosure": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Vendor advisory preceded full issue access."
+        },
+        "reported": {
+          "value": "2025-10-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-10-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Stable release announced staged rollout; main fix recorded October 10 and Fixed status October 15."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Listed in the dated release notice; no original-page snapshot reviewed."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-report",
+          "url": "https://issues.chromium.org/issues/450618029",
+          "title": "Chromium issue 450618029",
+          "type": "vendor",
+          "author": "Google Chromium security team",
+          "retrieved_at": "2026-10-02T16:21:50Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr",
+          "title": "Chrome Stable Channel Update for Desktop, 2025-10-28",
+          "type": "vendor",
+          "author": "Google Chrome team",
+          "retrieved_at": "2026-10-02T16:21:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "cve",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://blog.chromium.org/2013/08/security-rewards-at-google-two.html",
+          "title": "Security rewards at Google: Two MEEELLION Dollars Later",
+          "type": "vendor",
+          "author": "Chromium team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:21:50Z",
+        "method": "Read the public rendered Chromium issue and official release; cross-checked panel decision, reward metadata and distinct CVE.",
+        "limitations": [
+          "Payment completion is unverified; USD relies on official program context.",
+          "Issue dates follow displayed calendar dates; timestamp timezone was not established.",
+          "Release page was corrected November 17 to add other CVEs. This entry remains in the original main list."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "microsoft-kestrel-http-framing-consistency-2025",
+      "title": "Kestrel HTTP framing differed across proxy and application boundaries",
+      "organization": "Microsoft",
+      "product": "ASP.NET Core / Kestrel",
+      "researchers": [
+        "Siddhant Kalgutkar (Praetorian)"
+      ],
+      "cve_ids": [
+        "CVE-2025-55315"
+      ],
+      "cwe_mappings": [],
+      "category_id": "injection",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "integration-threat-modeling",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A Kestrel request-framing report earned a researcher-reported USD 10,000 award.",
+      "root_cause": "Permissive HTTP framing validation could disagree with an upstream parser about message boundaries.",
+      "impact": "Security controls could be bypassed in affected deployments. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel.",
+      "defensive_takeaways": [
+        "Define consistent message-boundary contracts across intermediaries and application servers; reject ambiguous framing.",
+        "Verify deployed runtimes and self-contained applications receive the applicable vendor updates."
+      ],
+      "reward": {
+        "amount": 10000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "type": "bug_bounty",
+        "awarding_organization": "Microsoft / .NET Bounty Program",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "Bounty Awarded: July 21, 2025 ($10,000)",
+        "evidence_location": "Timeline section.",
+        "usd_equivalent": null,
+        "notes": "Exact award comes from the researcher. The July 31, 2025 official program announcement supplies USD context only; its later award-table changes do not establish this amount. Payment completion is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-11-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Detailed article date; vendor disclosure preceded it."
+        },
+        "public_disclosure": {
+          "value": "2025-10-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-advisory",
+          "note": null
+        },
+        "reported": {
+          "value": "2025-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-07-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-10-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Public patch release; vendor advisory independently identifies patched versions."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "First public award-announcement date is not established."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/",
+          "title": "ASP.NET Core CVE-2025-55315 disclosure and award timeline",
+          "type": "researcher",
+          "author": "Siddhant Kalgutkar / Praetorian",
+          "retrieved_at": "2026-10-02T16:20:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor-advisory",
+          "url": "https://github.com/dotnet/aspnetcore/security/advisories/GHSA-5rrx-jjjq-q2r5",
+          "title": "Microsoft Security Advisory CVE-2025-55315",
+          "type": "vendor",
+          "author": "Microsoft .NET security team",
+          "retrieved_at": "2026-10-02T16:20:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.microsoft.com/en-us/msrc/blog/2025/07/net-bounty-program-now-offers-up-to-40000-in-awards",
+          "title": ".NET Bounty Program update, July 31, 2025",
+          "type": "vendor",
+          "author": "Madeline Eckert and Barry Dorrans / Microsoft",
+          "retrieved_at": "2026-10-02T16:21:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:21:00Z",
+        "method": "Read the primary researcher article and timeline, vendor advisory and July 2025 official USD-denominated program announcement.",
+        "limitations": [
+          "The award and its date are researcher-reported, not independently vendor-confirmed.",
+          "Impact varies with deployment architecture; generic consequences are not evidence of actual victim compromise.",
+          "Dollar notation is interpreted through official program currency context; no conversion is used."
         ]
       },
       "content_scope": "historical_defensive_summary"

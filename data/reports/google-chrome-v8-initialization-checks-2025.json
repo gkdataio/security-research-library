@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.1.0",
+  "id": "google-chrome-v8-initialization-checks-2025",
+  "title": "V8 control-flow analysis omitted required initialization checks",
+  "organization": "Google",
+  "product": "Chrome / V8",
+  "researchers": [
+    "Aorui Zhang"
+  ],
+  "cve_ids": [
+    "CVE-2025-12429"
+  ],
+  "cwe_mappings": [],
+  "category_id": "memory-safety",
+  "secondary_category_ids": [
+    "client-security"
+  ],
+  "skillset_ids": [
+    "memory-safety-review",
+    "browser-isolation-review",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A distinct V8 initialization-check report received a vendor-confirmed USD 50,000 award.",
+  "root_cause": "Control-flow analysis treated an initialization safety check as redundant without preserving its guarantee across every incoming path.",
+  "impact": "The report demonstrated sandboxed renderer memory corruption. A sandbox escape or full-machine compromise is not established.",
+  "defensive_takeaways": [
+    "Check-removal optimizations must preserve initialization guarantees across all control-flow paths.",
+    "Separate a compiler fix, stable-release availability and public report access in remediation records."
+  ],
+  "reward": {
+    "amount": 50000,
+    "currency": "USD",
+    "scope": "single_vulnerability",
+    "type": "bug_bounty",
+    "awarding_organization": "Google / Chrome VRP",
+    "status": "awarded",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "vendor-report",
+    "evidence_quote": "Panel has decided to award you $50000.00 for this report.",
+    "evidence_location": "Public Chromium issue comment #17.",
+    "usd_equivalent": null,
+    "notes": "Panel decision and tracker reward metadata identify one report. Dollar notation uses official Chromium USD context. Cash receipt is unverified."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-01-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": "Comment #24 records removal of issue access restrictions."
+    },
+    "public_disclosure": {
+      "value": "2025-10-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Vendor advisory preceded full issue access."
+    },
+    "reported": {
+      "value": "2025-10-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-10-17",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-10-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Stable release announced staged rollout; main fix recorded October 10 and Fixed status October 15."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": "2025-10-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Listed in the dated release notice; no original-page snapshot reviewed."
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "vendor-report",
+      "url": "https://issues.chromium.org/issues/450618029",
+      "title": "Chromium issue 450618029",
+      "type": "vendor",
+      "author": "Google Chromium security team",
+      "retrieved_at": "2026-10-02T16:21:50Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr",
+      "title": "Chrome Stable Channel Update for Desktop, 2025-10-28",
+      "type": "vendor",
+      "author": "Google Chrome team",
+      "retrieved_at": "2026-10-02T16:21:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "cve",
+        "remediation"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://blog.chromium.org/2013/08/security-rewards-at-google-two.html",
+      "title": "Security rewards at Google: Two MEEELLION Dollars Later",
+      "type": "vendor",
+      "author": "Chromium team",
+      "retrieved_at": "2026-10-02T16:08:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "vendor-report",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T16:21:50Z",
+    "method": "Read the public rendered Chromium issue and official release; cross-checked panel decision, reward metadata and distinct CVE.",
+    "limitations": [
+      "Payment completion is unverified; USD relies on official program context.",
+      "Issue dates follow displayed calendar dates; timestamp timezone was not established.",
+      "Release page was corrected November 17 to add other CVEs. This entry remains in the original main list."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}
