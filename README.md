@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-43 individual report/chain awards meet the USD 10,000 threshold: 37 bug bounties and six explicitly labeled competition entries. Seventeen publication dates fall within October 2, 2025–October 2, 2026; 23 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+45 individual report/chain awards meet the USD 10,000 threshold: 37 bug bounties and eight explicitly labeled competition entries. Nineteen publication dates fall within October 2, 2025–October 2, 2026; 23 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 43 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 45 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -17,6 +17,8 @@ The collection contains 43 records after source-backed historical expansion. It 
 | [Apple PCC startup archive processing lacked path confinement](data/reports/apple-pcc-boot-archive-path-validation-2026.json) | USD 150,000 | 2026-07-31 | Researcher reproduces vendor offer |
 | [Google device grants lost client and permission binding](data/reports/google-device-authorization-client-scope-binding-2026.json) | USD 13,337 | 2026-07-15 | Researcher reported |
 | [Meta service-identity exposure amplified by excessive secret access](data/reports/meta-service-identity-secrets-trust-boundary-2026.json) | USD 150,000 | 2026-05-28 | Researcher reproduces vendor message |
+| [PostgreSQL cryptographic parsing omitted a buffer-capacity check](data/reports/postgresql-pgcrypto-buffer-capacity-validation-2026.json) | USD 30,000 (competition entry) | 2026-05-04 (year inferred) | Competition organizer confirmed |
+| [MariaDB JSON normalization exceeded allocated buffer capacity](data/reports/mariadb-json-normalization-buffer-capacity-2026.json) | USD 30,000 (competition entry) | 2026-05-04 (year inferred) | Competition organizer confirmed |
 | [PostgreSQL text-encoding invariant failure caused memory corruption](data/reports/postgresql-multibyte-validation-cve-2026-2006.json) | USD 30,000 (competition entry) | 2026-05-04 | Competition organizer confirmed |
 | [Google support API exposed customer and agent data](data/reports/google-support-api-authorization-2026.json) | USD 14,337 | 2026-03-31 | Researcher reproduces vendor message |
 | [V8 optimized object handling retained invalid type assumptions](data/reports/google-chrome-v8-type-consistency-2025.json) | USD 50,000 | 2026-03-17 | Vendor confirmed |
@@ -54,13 +56,13 @@ The collection contains 43 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest report increment adds Redis scripting-memory isolation (USD 40,000; research published October 6, 2025) and historical NVIDIA container-initialization trust (USD 30,000; July 17, 2025). Both are organizer-confirmed individual Pwn2Own Berlin 2025 entries, linked by explicit researcher disclosure timelines and vendor advisories. The separate NVIDIA 2026 award remains a candidate until its technical report can be matched.
+The latest report increment adds two distinct Team Xint Code database findings, each with a USD 30,000 organizer-announced ZeroDay.cloud 2025 entry award. Both technical articles display May 4; the 2026 year is inferred from their remediation timelines. MariaDB’s vendor qualifies code execution as dependent on controlled conditions, and that limit stays explicit in the record.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Fourteen official educational resources and seven evidence-linked conceptual diagrams are maintained separately from the 43 award reports.
+Fourteen official educational resources and seven evidence-linked conceptual diagrams are maintained separately from the 45 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)

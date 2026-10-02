@@ -1,0 +1,226 @@
+{
+  "schema_version": "1.0.0",
+  "id": "mariadb-json-normalization-buffer-capacity-2026",
+  "title": "MariaDB JSON normalization exceeded allocated buffer capacity",
+  "organization": "MariaDB",
+  "product": "MariaDB Server JSON schema validation",
+  "researchers": [
+    "Team Xint Code"
+  ],
+  "cve_ids": [
+    "CVE-2026-32710"
+  ],
+  "cwe_mappings": [
+    {
+      "id": "CWE-122",
+      "basis": "source_explicit",
+      "source_id": "vendor-cve",
+      "note": "Explicit heap-based buffer overflow classification in the CNA record."
+    }
+  ],
+  "category_id": "memory-safety",
+  "secondary_category_ids": [
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "memory-safety-review",
+    "untrusted-input-handling",
+    "patch-verification"
+  ],
+  "summary": "The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay.cloud 2025 competition entry.",
+  "root_cause": "JSON normalization copied variable-length text into an undersized allocation. The fix uses storage management that grows the buffer to fit the value.",
+  "impact": "An authenticated database user could crash the server. The researcher demonstrated code execution at the event; the vendor-authored CVE record qualifies that outcome as dependent on unusually controlled memory conditions, generally associated with a lab.",
+  "defensive_takeaways": [
+    "Make input length and allocated capacity explicit invariants in normalization code.",
+    "Prefer capacity-aware storage operations and safe local regression coverage.",
+    "Separate a controlled demonstration from deployment-wide impact claims."
+  ],
+  "reward": {
+    "amount": 30000,
+    "currency": "USD",
+    "scope": "single_competition_entry",
+    "type": "competition_award",
+    "awarding_organization": "Wiz / ZeroDay.cloud",
+    "status": "awarded",
+    "evidence_level": "organizer_confirmed",
+    "source_id": "competition-results",
+    "evidence_quote": "$30,000 awarded",
+    "evidence_location": "MariaDB: Team Xint Code entry in the organizer's Day 2 results",
+    "usd_equivalent": null,
+    "notes": "One entry award, excluding the team’s other database entries. The results use $; USD denomination is contextualized by the organizer’s current rules, which concern 2026 rather than an archived 2025 rules snapshot. No conversion or cash-settlement claim is made."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-04",
+      "precision": "day",
+      "basis": "inferred",
+      "source_id": "researcher-report",
+      "note": "Displayed May 4; year inferred from the completed 2026 remediation timeline."
+    },
+    "public_disclosure": {
+      "value": "2025-12-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "competition-tracker",
+      "note": "Public competition demonstration. Subsequent CVE/advisory publication and full technical article are separate events."
+    },
+    "reported": {
+      "value": "2025-12-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-report",
+      "note": "Researcher timeline explicitly dates the report and vendor acknowledgement."
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": "2026-02-04",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-release",
+      "note": "Vendor patch release, not proof of deployment by every customer."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": "2025-12-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "competition-results",
+      "note": "Dated organizer recap announces the exact entry award; decision and transfer dates remain unknown."
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "researcher-report",
+      "url": "https://www.zeroday.cloud/blog/mariadb-cve-2026-32710-deep-dive",
+      "title": "CVE-2026-32710: MariaDB JSON_SCHEMA_VALID heap buffer overflow leading to RCE",
+      "type": "researcher",
+      "author": "Team Xint Code / ZeroDay.cloud",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "competition-results",
+      "url": "https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes",
+      "title": "ZeroDay.cloud 2025 individual competition results",
+      "type": "competition_organizer",
+      "author": "Nir Ohfeld / Wiz Research",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "reward",
+        "dates"
+      ]
+    },
+    {
+      "id": "competition-tracker",
+      "url": "https://www.zeroday.cloud/vulnerability-tracker",
+      "title": "ZeroDay.cloud vulnerability tracker",
+      "type": "competition_organizer",
+      "author": "Wiz / ZeroDay.cloud",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "dates",
+        "cve"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.zeroday.cloud/rules",
+      "title": "ZeroDay.cloud current rules: US-dollar denomination",
+      "type": "competition_organizer",
+      "author": "Wiz",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "reward"
+      ]
+    },
+    {
+      "id": "vendor-advisory",
+      "url": "https://github.com/MariaDB/server/security/advisories/GHSA-4rj5-2227-9wgc",
+      "title": "MariaDB heap-based buffer overflow in JSON_SCHEMA_VALID",
+      "type": "vendor",
+      "author": "MariaDB",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "vendor-cve",
+      "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/32xxx/CVE-2026-32710.json",
+      "title": "CVE-2026-32710 CNA record",
+      "type": "vendor",
+      "author": "GitHub CNA, MariaDB advisory / CVE Program",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "dates",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "vendor-release",
+      "url": "https://mariadb.com/docs/release-notes/community-server/11.4/11.4.10",
+      "title": "MariaDB 11.4.10 release notes",
+      "type": "vendor",
+      "author": "MariaDB",
+      "retrieved_at": "2026-10-02T18:12:00Z",
+      "supports": [
+        "dates",
+        "remediation",
+        "cve"
+      ]
+    }
+  ],
+  "primary_source_id": "researcher-report",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T18:12:00Z",
+    "method": "Read the named researcher report, organizer CVE tracker and per-entry award result; cross-checked vendor advisories and CNA records. Currency context is explicitly distinguished from award evidence. No vulnerability testing performed.",
+    "limitations": [
+      "Vendor CVE wording conditions code execution on tight memory control generally obtainable in a lab; do not infer reliable production-wide compromise.",
+      "Vendor advisory also lists patched 12.2.2, beyond the two release series emphasized in the research article. The February 4 fix date refers to the reviewed 11.4.10 release.",
+      "The article shows May 4 without a year; 2026 is inferred from its explicitly dated remediation timeline.",
+      "Exact award decision and funds-transfer dates are not reported; December 16 is the dated organizer announcement.",
+      "Current rules establish program US-dollar notation but are not an archived snapshot of the 2025 rules."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

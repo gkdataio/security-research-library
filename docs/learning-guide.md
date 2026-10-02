@@ -42,9 +42,9 @@ Learn data provenance and the difference between retrieved text and user authori
 
 ## 5. Parser contracts and memory safety
 
-**Cases:** PostgreSQL CVE-2026-2006 (competition award); Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity
+**Cases:** PostgreSQL CVE-2026-2006 encoding contracts and CVE-2026-2005 buffer capacity (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity
 
-Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit.
+Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit. The MariaDB example also teaches evidence calibration: a controlled code-execution demonstration does not establish the same reliability in every deployment.
 
 **Taxonomy:** `secure-parser-review`, `encoding-invariant-review`, `memory-safety-review`, `patch-verification`
 
