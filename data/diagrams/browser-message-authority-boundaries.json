@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "id": "browser-message-authority-boundaries",
+  "title": "Browser messages need separate trust checks",
+  "alt_text": "An incoming browser message first passes origin, sender-context and format validation. A separate decision checks the operation and recipient. Failed checks reject the message without disclosure or state change. Approved content remains data and only the permitted action is performed.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Original defensive model combining OWASP messaging and authorization guidance with the linked historical cases. These are independent design checks, not a vendor patch diagram or an operational reproduction.",
+  "linked_report_ids": [
+    "facebook-sdk-message-authentication-randomness-2023",
+    "meta-pixel-cross-window-authority-binding-2024"
+  ],
+  "linked_resource_ids": [
+    "owasp-browser-message-trust-boundaries",
+    "owasp-authorization-cheat-sheet"
+  ],
+  "evidence_urls": [
+    "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+    "https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html",
+    "https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html"
+  ],
+  "reviewed_at": "2026-10-02T19:49:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "message",
+        "label": "Incoming browser message",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "validate",
+        "label": "Origin, sender context and format valid?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "authorize",
+        "label": "Operation and recipient allowed?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "reject",
+        "label": "Reject; no disclosure or state change",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "data",
+        "label": "Keep accepted content as data",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "allow",
+        "label": "Perform only the permitted action",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "message",
+        "to": "validate",
+        "label": null
+      },
+      {
+        "from": "validate",
+        "to": "reject",
+        "label": "No"
+      },
+      {
+        "from": "validate",
+        "to": "authorize",
+        "label": "Yes"
+      },
+      {
+        "from": "authorize",
+        "to": "reject",
+        "label": "No"
+      },
+      {
+        "from": "authorize",
+        "to": "data",
+        "label": "Yes"
+      },
+      {
+        "from": "data",
+        "to": "allow",
+        "label": null
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/browser-message-authority-boundaries.mmd",
+    "graphviz": "diagrams/browser-message-authority-boundaries.dot",
+    "svg": "diagrams/browser-message-authority-boundaries.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

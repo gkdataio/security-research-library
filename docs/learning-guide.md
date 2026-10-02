@@ -78,6 +78,8 @@ Learn origin identity, permission persistence, request semantics, and consent in
 
 The [Facebook SDK record](../data/reports/facebook-sdk-message-authentication-randomness-2023.json) gives a concrete reasoning example: examine what grants a message authority, then assess how accepted content is consumed. Authentication, rendering safety and embedding permissions are separate invariants. The record distinguishes reported mobile-browser impact from broader effects that depend on deployment, and labels remediation guidance as recommendations rather than an undocumented vendor patch.
 
+The Meta Pixel case adds a data-disclosure boundary: sender identity does not determine the recipient’s authority over page context. [OWASP messaging guidance](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html) and the [message-boundary visual](visual-theory.md#keep-browser-message-identity-separate-from-authority) keep transport checks, action authorization and content safety distinct.
+
 **Taxonomy:** `browser-isolation-review`, `approval-state-integrity`, `identity-lifecycle-review`, `secure-parser-review`
 
 ## 9. HTTP message-boundary consistency

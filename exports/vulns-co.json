@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T19:39:00Z",
+  "latest_reviewed_at": "2026-10-02T19:49:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -7977,12 +7977,14 @@
         "integration-threat-modeling",
         "browser-isolation-review"
       ],
-      "summary": "The researcher reports a USD 32,500 bounty for this single disclosed finding or chain.",
-      "root_cause": "A trusted-origin check did not establish the authority of cross-window messages. Sensitive page context could enter requests under another identity, alongside inconsistent authorization-grant binding.",
-      "impact": "The researcher reports exposure of Instagram authorization material and consequent account takeover under the documented interaction conditions. Broad script deployment does not establish identical impact on every embedding site.",
+      "summary": "The USD 32,500 researcher-reported award illustrates the distinction between message origin and disclosure authority.",
+      "root_cause": "The researcher followed how browser messages influenced requests containing page context. A trusted-origin check substituted for a complete authorization decision: the requested operation and recipient identity were not bound to the protected context. The failure allowed sensitive information to cross into a different identity’s request context.",
+      "impact": "The researcher reports authorization-material exposure and consequent Instagram takeover with user interaction. Wider script deployment does not establish equivalent impact on every embedding site or evidence of real-world abuse.",
       "defensive_takeaways": [
-        "Bind cross-window messages to their expected sender and transaction context.",
-        "Keep authorization material out of general analytics data and verify grant-to-client binding."
+        "Check the expected sender relationship and message structure, then independently authorize the requested operation and recipient.",
+        "Define a minimal disclosure contract for analytics and integration messages; omit authentication artifacts from general page context.",
+        "Review grant-to-client binding separately from message transport and preserve those distinctions in evidence.",
+        "These are defensive recommendations; the precise vendor patch and the separately alleged grant-binding fix are not independently verified."
       ],
       "reward": {
         "amount": 32500,
@@ -8032,7 +8034,7 @@
           "precision": "day",
           "basis": "explicit",
           "source_id": "researcher-writeup",
-          "note": "Researcher timeline explicitly labels this as the vendor fix date."
+          "note": "Overall fix date in the researcher timeline. A separately alleged, disputed grant-binding component has no confirmed fix date; this timestamp does not cover it."
         },
         "paid": {
           "value": null,
@@ -8070,7 +8072,7 @@
           "title": "Instagram account takeover via Meta Pixel script abuse",
           "type": "researcher",
           "author": "Youssef Sammouda",
-          "retrieved_at": "2026-10-02T19:03:00Z",
+          "retrieved_at": "2026-10-02T19:49:00Z",
           "supports": [
             "reward",
             "dates",
@@ -8094,12 +8096,13 @@
       "primary_source_id": "researcher-writeup",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T19:03:00Z",
-        "method": "Read the researcher’s dated reward and remediation timeline and high-level trust-boundary explanation. Retained archive display date only in publication notes; original-publication recency remains unknown.",
+        "reviewed_at": "2026-10-02T19:49:00Z",
+        "method": "Reviewed the primary explanation and timeline; clarified component-level uncertainty while preserving unknown original publication.",
         "limitations": [
           "Researcher-reported award; no independent vendor confirmation or audited transfer.",
           "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",
-          "USD normalization uses earlier official program context rather than an award receipt."
+          "USD normalization uses earlier official program context rather than an award receipt.",
+          "A separate grant-binding flaw is alleged and described as disputed; vendor confirmation and its precise fix date are unverified."
         ]
       },
       "content_scope": "historical_defensive_summary"

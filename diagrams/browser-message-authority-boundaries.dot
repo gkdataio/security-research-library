@@ -1,0 +1,18 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Browser messages need separate trust checks"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"message" [label="Incoming browser message", shape="box", fillcolor="#f1f5f9"];
+"validate" [label="Origin, sender context and\nformat valid?", shape="diamond", fillcolor="#e0ecf8"];
+"authorize" [label="Operation and recipient\nallowed?", shape="diamond", fillcolor="#e0ecf8"];
+"reject" [label="Reject; no disclosure or\nstate change", shape="box", fillcolor="#fef3c7"];
+"data" [label="Keep accepted content as\ndata", shape="box", fillcolor="#f1f5f9"];
+"allow" [label="Perform only the permitted\naction", shape="box", fillcolor="#dcfce7"];
+"message" -> "validate" [label=""];
+"validate" -> "reject" [label="No"];
+"validate" -> "authorize" [label="Yes"];
+"authorize" -> "reject" [label="No"];
+"authorize" -> "data" [label="Yes"];
+"data" -> "allow" [label=""];
+}

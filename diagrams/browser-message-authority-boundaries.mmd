@@ -1,0 +1,13 @@
+flowchart TB
+  message["Incoming browser message"]
+  validate{"Origin, sender context and format valid?"}
+  authorize{"Operation and recipient allowed?"}
+  reject["Reject; no disclosure or state change"]
+  data["Keep accepted content as data"]
+  allow["Perform only the permitted action"]
+  message --> validate
+  validate -->|No| reject
+  validate -->|Yes| authorize
+  authorize -->|No| reject
+  authorize -->|Yes| data
+  data --> allow

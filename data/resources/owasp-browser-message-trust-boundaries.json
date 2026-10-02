@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-browser-message-trust-boundaries",
+  "title": "HTML5 Security Cheat Sheet: Web Messaging",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "untrusted-input-handling",
+    "authorization-modeling",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "OWASP explains origin checks, expected message formats and treating exchanged content as data. These controls address different assumptions at browser communication boundaries.",
+  "defensive_use": "Document the expected sender, operation, recipient and permitted data for browser messages. Review identity checks, data validation, application authorization and rendering safety separately in owned application designs.",
+  "prerequisites": [
+    "Basic browser origin and document concepts",
+    "Familiarity with event-driven JavaScript"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T19:49:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official Web Messaging guidance and related communication sections reviewed. No original publication or version date is stated; this catalog entry focuses on messaging rather than claiming a review of every HTML5 topic."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html",
+      "title": "HTML5 Security Cheat Sheet: Web Messaging",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T19:49:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Living guidance; review supported browser behavior and application context before implementation.",
+    "Origin and format validation do not by themselves define which business operations or disclosures are authorized."
+  ],
+  "content_scope": "defensive_education"
+}

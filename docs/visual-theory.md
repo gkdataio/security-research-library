@@ -58,6 +58,14 @@ Memory safety and restricted privileges reduce parsing risk. They do not authori
 
 [Evidence and metadata](../data/diagrams/parsing-safety-action-authority.json) · [Mermaid source](../diagrams/parsing-safety-action-authority.mmd)
 
+## Keep browser message identity separate from authority
+
+![A browser message passes origin, sender-context and format checks, then a separate operation and recipient decision. Failures reject without disclosure or state changes; approved content remains data.](../diagrams/browser-message-authority-boundaries.svg)
+
+Knowing where a message came from does not settle what it may request or which data its recipient may receive. Keep those decisions explicit and prevent accepted content from becoming executable markup. This is a conceptual design model, not a description of Meta’s exact patch.
+
+[Evidence and metadata](../data/diagrams/browser-message-authority-boundaries.json) · [Mermaid source](../diagrams/browser-message-authority-boundaries.mmd)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:
