@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T17:14:30Z",
+  "latest_reviewed_at": "2026-10-02T17:23:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,11 +15,11 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 38,
-    "within_preferred_window": 13,
+    "included": 41,
+    "within_preferred_window": 16,
     "older_or_uncertain": 25,
     "bug_bounty": 37,
-    "competition_award": 1
+    "competition_award": 4
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
   "taxonomy": {
@@ -336,6 +336,566 @@
           "Award decisions are established; payment completion is not.",
           "Fixed status and publicly available stable release are separate dates.",
           "Release credits an anonymous researcher. No identity or per-person split is inferred."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "openai-codex-repository-metadata-helper-trust-2026",
+      "title": "Codex metadata collection trusted repository execution helpers",
+      "organization": "OpenAI",
+      "product": "Codex CLI and Codex Desktop",
+      "researchers": [
+        "maitai"
+      ],
+      "cve_ids": [
+        "CVE-2026-19592"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-15",
+          "basis": "source_explicit",
+          "source_id": "vendor-cna",
+          "note": "Explicit classification in the vendor-authored CNA record."
+        }
+      ],
+      "category_id": "ai-security",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "summary": "ZDI awarded Doyensec USD 10,000 for this distinct Pwn2Own Berlin entry.",
+      "root_cause": "Background metadata collection honored a repository-controlled filesystem-monitor helper without applying the intended approval and sandbox boundaries.",
+      "impact": "The vendor confirms possible user-privilege code execution from preserved local repository settings. An ordinary Git clone does not preserve the required configuration.",
+      "defensive_takeaways": [
+        "Make background metadata collection independent of untrusted execution settings.",
+        "Review ambient tool configuration as part of the application’s authority model."
+      ],
+      "reward": {
+        "amount": 10000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Trend Micro Zero Day Initiative / Pwn2Own Berlin",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "They still earn $10,000 and 2 Master of Pwn points",
+        "evidence_location": "Doyensec Codex entry in the dated daily results",
+        "usd_equivalent": null,
+        "notes": "Organizer records a collision with a vendor-known issue and a reduced USD 10,000 award. This is not a USD 40,000 first-round win. The vendor also credits Fudan researchers, without assigning them this competition award. Event rules explicitly denominate prizes in US currency; cash settlement is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cna",
+          "note": "Vendor-authored technical CNA publication. ZDI published its advisory on September 10."
+        },
+        "public_disclosure": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Public competition demonstration and result, before technical CNA publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original submission to the competition organizer is unknown. ZDI later lists 2026-09-09 as reported to vendor; this is a separate event, not the original submission date. That listed date also follows the September 1 CNA publication; the discrepancy is unresolved."
+        },
+        "awarded": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Individual-entry award reported in the day’s results."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor CNA lists fixed versions, but an exact release/deployment date was not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-cna",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19592.json",
+          "title": "OpenAI CNA record for CVE-2026-19592",
+          "type": "vendor",
+          "author": "OpenAI CNA, distributed through the CVE Program",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "competition-results",
+          "url": "https://www.zerodayinitiative.com/blog/2026/5/13/pwn2own-berlin-2026-day-one-results",
+          "title": "Pwn2Own Berlin 2026 daily results",
+          "type": "competition_organizer",
+          "author": "Dustin Childs / Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "competition-rules",
+          "url": "https://www.zerodayinitiative.com/Pwn2OwnBerlin2026Rules.html",
+          "title": "Pwn2Own Berlin 2026 rules",
+          "type": "competition_organizer",
+          "author": "Trend Micro Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "zdi-advisory",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-650/",
+          "title": "ZDI-26-650 Codex advisory",
+          "type": "competition_organizer",
+          "author": "Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-cna",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:23:00Z",
+        "method": "Matched organizer result to the credited team, product and distinct CVE in the vendor CNA and Pwn2Own-tagged ZDI advisory; checked official currency and one-entry-per-target rules.",
+        "limitations": [
+          "Competition award, not an ordinary vendor bounty or a team’s total earnings.",
+          "Original organizer submission and cash-transfer dates are unknown.",
+          "Public demonstration, later vendor notification and technical publication are distinct events.",
+          "The ZDI vendor-report date follows the CNA publication; it is preserved only as a qualified note, not treated as an original report date."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "openai-codex-repository-hook-execution-trust-2026",
+      "title": "Codex automated Git operations trusted repository hook settings",
+      "organization": "OpenAI",
+      "product": "Codex Desktop",
+      "researchers": [
+        "Sina Kheirkhah"
+      ],
+      "cve_ids": [
+        "CVE-2026-19590"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-427",
+          "basis": "source_explicit",
+          "source_id": "vendor-cna",
+          "note": "Explicit classification in the vendor-authored CNA record."
+        }
+      ],
+      "category_id": "ai-security",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "summary": "ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry.",
+      "root_cause": "Automated repository operations honored repository-local Git hook configuration outside the intended command-approval boundary.",
+      "impact": "The vendor confirms possible user-privilege code execution when specially prepared local repository configuration is preserved. An ordinary Git clone does not preserve that configuration.",
+      "defensive_takeaways": [
+        "Treat repository-local execution settings as untrusted input.",
+        "Apply execution policy to background tooling as well as user-visible agent commands."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Trend Micro Zero Day Initiative / Pwn2Own Berlin",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "earning $20,000 and 4 Master of Pwn points",
+        "evidence_location": "Summoning Team Codex entry in the dated daily results",
+        "usd_equivalent": null,
+        "notes": "The successful second-round entry earned USD 20,000. The advertised first-round maximum and researcher’s other event entries are not this award. Event rules explicitly denominate prizes in US currency; cash settlement is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cna",
+          "note": "Vendor-authored technical CNA publication. ZDI published its advisory on September 10."
+        },
+        "public_disclosure": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Public competition demonstration and result, before technical CNA publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original submission to the competition organizer is unknown. ZDI later lists 2026-06-02 as reported to vendor; this is a separate event, not the original submission date."
+        },
+        "awarded": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Individual-entry award reported in the day’s results."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor CNA lists fixed versions, but an exact release/deployment date was not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2026-05-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-cna",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19590.json",
+          "title": "OpenAI CNA record for CVE-2026-19590",
+          "type": "vendor",
+          "author": "OpenAI CNA, distributed through the CVE Program",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "competition-results",
+          "url": "https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results",
+          "title": "Pwn2Own Berlin 2026 daily results",
+          "type": "competition_organizer",
+          "author": "Dustin Childs / Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "competition-rules",
+          "url": "https://www.zerodayinitiative.com/Pwn2OwnBerlin2026Rules.html",
+          "title": "Pwn2Own Berlin 2026 rules",
+          "type": "competition_organizer",
+          "author": "Trend Micro Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "zdi-advisory",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-648/",
+          "title": "ZDI-26-648 Codex advisory",
+          "type": "competition_organizer",
+          "author": "Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-cna",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:23:00Z",
+        "method": "Matched organizer result to the credited team, product and distinct CVE in the vendor CNA and Pwn2Own-tagged ZDI advisory; checked official currency and one-entry-per-target rules.",
+        "limitations": [
+          "Competition award, not an ordinary vendor bounty or a team’s total earnings.",
+          "Original organizer submission and cash-transfer dates are unknown.",
+          "Public demonstration, later vendor notification and technical publication are distinct events."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "openai-codex-command-parser-approval-consistency-2026",
+      "title": "Codex command approval relied on inconsistent parser semantics",
+      "organization": "OpenAI",
+      "product": "Codex CLI and Codex Desktop",
+      "researchers": [
+        "Emanuele Barbeno",
+        "Cyrill Bannwart",
+        "Yves Bieri",
+        "Lukasz D.",
+        "Urs Mueller"
+      ],
+      "cve_ids": [
+        "CVE-2026-19591"
+      ],
+      "cwe_mappings": [
+        {
+          "id": "CWE-150",
+          "basis": "source_explicit",
+          "source_id": "vendor-cna",
+          "note": "Explicit classification in the vendor-authored CNA record."
+        }
+      ],
+      "category_id": "injection",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "ai-authority-boundaries",
+        "patch-verification"
+      ],
+      "summary": "ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry.",
+      "root_cause": "Command-safety analysis and the invoked shell interpreted control syntax differently, so the approval decision did not consistently describe the resulting operation.",
+      "impact": "The vendor describes possible code execution with user privileges after untrusted repository instructions are followed. Shell availability and filesystem protections constrain impact; command approval failure does not itself disable the filesystem sandbox.",
+      "defensive_takeaways": [
+        "Keep safety classification consistent with actual command interpretation.",
+        "Apply independent filesystem restrictions and protect security-sensitive configuration."
+      ],
+      "reward": {
+        "amount": 40000,
+        "currency": "USD",
+        "scope": "single_competition_entry",
+        "type": "competition_award",
+        "awarding_organization": "Trend Micro Zero Day Initiative / Pwn2Own Berlin",
+        "status": "awarded",
+        "evidence_level": "organizer_confirmed",
+        "source_id": "competition-results",
+        "evidence_quote": "earning $40,000 and 4 Master of Pwn points",
+        "evidence_location": "Compass Security Codex entry in the dated daily results",
+        "usd_equivalent": null,
+        "notes": "Single competition entry awarded to the Compass team; individual recipient splits and cash-transfer date are unknown. Event rules explicitly denominate prizes in US currency; cash settlement is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-cna",
+          "note": "Vendor-authored technical CNA publication. ZDI published its advisory on September 10."
+        },
+        "public_disclosure": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Public competition demonstration and result, before technical CNA publication."
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original submission to the competition organizer is unknown. ZDI later lists 2026-06-02 as reported to vendor; this is a separate event, not the original submission date."
+        },
+        "awarded": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": "Individual-entry award reported in the day’s results."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor CNA lists fixed versions, but an exact release/deployment date was not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "competition-results",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-cna",
+          "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19591.json",
+          "title": "OpenAI CNA record for CVE-2026-19591",
+          "type": "vendor",
+          "author": "OpenAI CNA, distributed through the CVE Program",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "competition-results",
+          "url": "https://www.zerodayinitiative.com/blog/2026/5/13/pwn2own-berlin-2026-day-one-results",
+          "title": "Pwn2Own Berlin 2026 daily results",
+          "type": "competition_organizer",
+          "author": "Dustin Childs / Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "competition-rules",
+          "url": "https://www.zerodayinitiative.com/Pwn2OwnBerlin2026Rules.html",
+          "title": "Pwn2Own Berlin 2026 rules",
+          "type": "competition_organizer",
+          "author": "Trend Micro Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "zdi-advisory",
+          "url": "https://www.zerodayinitiative.com/advisories/ZDI-26-649/",
+          "title": "ZDI-26-649 Codex advisory",
+          "type": "competition_organizer",
+          "author": "Zero Day Initiative",
+          "retrieved_at": "2026-10-02T17:23:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-cna",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T17:23:00Z",
+        "method": "Matched organizer result to the credited team, product and distinct CVE in the vendor CNA and Pwn2Own-tagged ZDI advisory; checked official currency and one-entry-per-target rules.",
+        "limitations": [
+          "Competition award, not an ordinary vendor bounty or a team’s total earnings.",
+          "Original organizer submission and cash-transfer dates are unknown.",
+          "Public demonstration, later vendor notification and technical publication are distinct events."
         ]
       },
       "content_scope": "historical_defensive_summary"

@@ -90,6 +90,14 @@ Keep the intended integration app and authorization issuer consistent throughout
 
 **Taxonomy:** `integration-threat-modeling`, `authorization-modeling`, `identity-lifecycle-review`
 
+## 11. Coding-tool execution boundaries
+
+**Cases:** Codex command-parser approval consistency, repository hook configuration, and metadata-helper configuration
+
+Review both explicit agent actions and background tool operations. Security decisions must describe the operation the interpreter will execute, while repository-controlled configuration must not silently gain host authority. Preserve independent filesystem controls and distinguish ordinary repository content from local execution settings.
+
+**Taxonomy:** `ai-authority-boundaries`, `secure-parser-review`, `integration-threat-modeling`, `untrusted-input-handling`
+
 ## Common reporting skill
 
 For every review, distinguish the observed behavior, the intended invariant, the evidence supporting impact, and the limits of that evidence. Document remediation and residual uncertainty. A large historical award is neither a forecast of future earnings nor permission to test a target.
