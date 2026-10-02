@@ -1,0 +1,19 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Layer server-request destination controls"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"input" [label="Requested destination", shape="box", fillcolor="#f1f5f9"];
+"parse" [label="Consistent parsing and\nvalidation", shape="box", fillcolor="#f1f5f9"];
+"policy" [label="Destination permitted by\napplication policy?", shape="diamond", fillcolor="#e0ecf8"];
+"network" [label="Independent egress policy\npermits access?", shape="diamond", fillcolor="#e0ecf8"];
+"allow" [label="Request only the approved\ndestination", shape="box", fillcolor="#dcfce7"];
+"deny" [label="Reject the request", shape="box", fillcolor="#fef3c7"];
+"input" -> "parse" [label=""];
+"parse" -> "policy" [label="Valid"];
+"parse" -> "deny" [label="Invalid or ambiguous"];
+"policy" -> "network" [label="Yes"];
+"policy" -> "deny" [label="No"];
+"network" -> "allow" [label="Yes"];
+"network" -> "deny" [label="No"];
+}

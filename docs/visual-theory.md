@@ -34,6 +34,14 @@ Authenticating a workload does not determine everything it may access. Bind auth
 
 [Evidence and metadata](../data/diagrams/workload-identity-tenant-scope.json) · [Mermaid source](../diagrams/workload-identity-tenant-scope.mmd)
 
+## Layer server-request destination controls
+
+![Requests pass parsing, application destination policy and independent network egress checks. Any failure is rejected.](../diagrams/server-request-destination-policy.svg)
+
+Combine application policy with an independent network boundary. Choose destination restrictions that fit the service’s documented purpose.
+
+[Evidence and metadata](../data/diagrams/server-request-destination-policy.json) · [Mermaid source](../diagrams/server-request-destination-policy.mmd)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:

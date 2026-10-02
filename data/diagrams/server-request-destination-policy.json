@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "id": "server-request-destination-policy",
+  "title": "Layer server-request destination controls",
+  "alt_text": "A requested destination passes consistent parsing, application policy and independent network egress checks. Invalid input or either policy failure is rejected. Only an approved destination is requested.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Original conceptual defense-in-depth model linked to the historical Shopify Exchange case and OWASP guidance. It is not a vendor architecture diagram. Policy must fit the service’s destination requirements.",
+  "linked_report_ids": [
+    "shopify-exchange-request-isolation-2019"
+  ],
+  "linked_resource_ids": [
+    "owasp-server-request-destination-boundaries"
+  ],
+  "evidence_urls": [
+    "https://shopify.engineering/one-million-dollars-in-bug-bounties",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-02T16:29:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "input",
+        "label": "Requested destination",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "parse",
+        "label": "Consistent parsing and validation",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "policy",
+        "label": "Destination permitted by application policy?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "network",
+        "label": "Independent egress policy permits access?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "allow",
+        "label": "Request only the approved destination",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "deny",
+        "label": "Reject the request",
+        "shape": "box",
+        "kind": "denied"
+      }
+    ],
+    "edges": [
+      {
+        "from": "input",
+        "to": "parse",
+        "label": null
+      },
+      {
+        "from": "parse",
+        "to": "policy",
+        "label": "Valid"
+      },
+      {
+        "from": "parse",
+        "to": "deny",
+        "label": "Invalid or ambiguous"
+      },
+      {
+        "from": "policy",
+        "to": "network",
+        "label": "Yes"
+      },
+      {
+        "from": "policy",
+        "to": "deny",
+        "label": "No"
+      },
+      {
+        "from": "network",
+        "to": "allow",
+        "label": "Yes"
+      },
+      {
+        "from": "network",
+        "to": "deny",
+        "label": "No"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/server-request-destination-policy.mmd",
+    "graphviz": "diagrams/server-request-destination-policy.dot",
+    "svg": "diagrams/server-request-destination-policy.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats share the canonical graph; Graphviz renders the SVG.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

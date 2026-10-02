@@ -5,8 +5,8 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 8,
-    "diagrams": 4
+    "resources": 9,
+    "diagrams": 5
   },
   "taxonomy": {
     "schema_version": "1.0.0",
@@ -556,6 +556,82 @@
       "caveats": [
         "Includes attack examples; this collection uses it as a defensive-design reference",
         "Guidance evolves and individual examples require contextual evaluation"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-server-request-destination-boundaries",
+      "title": "OWASP Server-Side Request Forgery Prevention",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "web-foundations",
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "secrets-containment"
+      ],
+      "version": null,
+      "summary": "Explains destination validation and network isolation for server-initiated requests, distinguishing fixed trusted destinations from services that need broader external access.",
+      "defensive_use": "Review owned-service destination policy, parser consistency, redirect behavior and independent egress restrictions.",
+      "prerequisites": [
+        "Basic knowledge of web requests and application/network boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public official guidance."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T16:29:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Living guidance; publication and update dates were not established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+          "title": "Server-Side Request Forgery Prevention Cheat Sheet",
+          "publisher": "OWASP",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T16:29:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The destination-policy design depends on business requirements. Metadata protections complement application validation and network isolation."
       ],
       "content_scope": "defensive_education"
     },
@@ -1118,6 +1194,115 @@
         "renderer": "Graphviz dot 2.42.4",
         "mermaid_engine_executed": false,
         "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "server-request-destination-policy",
+      "title": "Layer server-request destination controls",
+      "alt_text": "A requested destination passes consistent parsing, application policy and independent network egress checks. Invalid input or either policy failure is rejected. Only an approved destination is requested.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Original conceptual defense-in-depth model linked to the historical Shopify Exchange case and OWASP guidance. It is not a vendor architecture diagram. Policy must fit the service’s destination requirements.",
+      "linked_report_ids": [
+        "shopify-exchange-request-isolation-2019"
+      ],
+      "linked_resource_ids": [
+        "owasp-server-request-destination-boundaries"
+      ],
+      "evidence_urls": [
+        "https://shopify.engineering/one-million-dollars-in-bug-bounties",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html"
+      ],
+      "reviewed_at": "2026-10-02T16:29:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "input",
+            "label": "Requested destination",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "parse",
+            "label": "Consistent parsing and validation",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "policy",
+            "label": "Destination permitted by application policy?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "network",
+            "label": "Independent egress policy permits access?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "allow",
+            "label": "Request only the approved destination",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "deny",
+            "label": "Reject the request",
+            "shape": "box",
+            "kind": "denied"
+          }
+        ],
+        "edges": [
+          {
+            "from": "input",
+            "to": "parse",
+            "label": null
+          },
+          {
+            "from": "parse",
+            "to": "policy",
+            "label": "Valid"
+          },
+          {
+            "from": "parse",
+            "to": "deny",
+            "label": "Invalid or ambiguous"
+          },
+          {
+            "from": "policy",
+            "to": "network",
+            "label": "Yes"
+          },
+          {
+            "from": "policy",
+            "to": "deny",
+            "label": "No"
+          },
+          {
+            "from": "network",
+            "to": "allow",
+            "label": "Yes"
+          },
+          {
+            "from": "network",
+            "to": "deny",
+            "label": "No"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/server-request-destination-policy.mmd",
+        "graphviz": "diagrams/server-request-destination-policy.dot",
+        "svg": "diagrams/server-request-destination-policy.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats share the canonical graph; Graphviz renders the SVG.",
         "visual_qa": "passed"
       },
       "content_scope": "conceptual_defensive_model"

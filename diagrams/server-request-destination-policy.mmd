@@ -1,0 +1,14 @@
+flowchart TB
+  input["Requested destination"]
+  parse["Consistent parsing and validation"]
+  policy{"Destination permitted by application policy?"}
+  network{"Independent egress policy permits access?"}
+  allow["Request only the approved destination"]
+  deny["Reject the request"]
+  input --> parse
+  parse -->|Valid| policy
+  parse -->|Invalid or ambiguous| deny
+  policy -->|Yes| network
+  policy -->|No| deny
+  network -->|Yes| allow
+  network -->|No| deny

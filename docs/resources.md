@@ -12,6 +12,8 @@ This collection is separate from paid-award reports. It contains official educat
 - [SLSA v1.2](https://slsa.dev/spec/v1.2/): review build provenance, artifact integrity, and distinct assurance levels
 - [AWS IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html): assess workload identities, short-lived credentials, permission scope, and access lifecycle
 
+- [OWASP SSRF Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html): combine destination policy with independent network isolation
+
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 
 [Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)

@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-server-request-destination-boundaries",
+  "title": "OWASP Server-Side Request Forgery Prevention",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "web-foundations",
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "secrets-containment"
+  ],
+  "version": null,
+  "summary": "Explains destination validation and network isolation for server-initiated requests, distinguishing fixed trusted destinations from services that need broader external access.",
+  "defensive_use": "Review owned-service destination policy, parser consistency, redirect behavior and independent egress restrictions.",
+  "prerequisites": [
+    "Basic knowledge of web requests and application/network boundaries"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public official guidance."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T16:29:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Living guidance; publication and update dates were not established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html",
+      "title": "Server-Side Request Forgery Prevention Cheat Sheet",
+      "publisher": "OWASP",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T16:29:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The destination-policy design depends on business requirements. Metadata protections complement application validation and network isolation."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.1.0",
+  "id": "github-cross-repository-comparison-authorization-2025",
+  "title": "GitHub comparison output lacked source-repository authorization",
+  "organization": "GitHub",
+  "product": "GitHub Enterprise Server",
+  "researchers": [
+    "furbreeze"
+  ],
+  "cve_ids": [
+    "CVE-2025-8447"
+  ],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing",
+    "patch-verification"
+  ],
+  "summary": "A cross-repository access-control report received a vendor-confirmed USD 10,000 award.",
+  "root_cause": "A comparison feature did not consistently authorize access to both source repositories.",
+  "impact": "Limited private code content could cross repository permission boundaries.",
+  "defensive_takeaways": [
+    "Authorize every source object before producing a combined or derived view.",
+    "Keep comparison output subject to the access rules of all contributing repositories."
+  ],
+  "reward": {
+    "amount": 10000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "vendor-report",
+    "evidence_quote": "rewarded furbreeze with a $10,000 bounty.",
+    "evidence_location": "August 26, 2025 bounty event, activity-36550008.",
+    "usd_equivalent": null,
+    "notes": "One report award; HackerOne policy supplies USD context. Payment receipt is unverified."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-09-23",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": "Detailed report disclosure event, activity-37054322."
+    },
+    "public_disclosure": {
+      "value": "2025-08-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-release",
+      "note": "Vendor advisory in Enterprise Server 3.17.5 release notes preceded the detailed report."
+    },
+    "reported": {
+      "value": "2025-05-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "awarded": {
+      "value": "2025-08-26",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "fixed": {
+      "value": "2025-08-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-release",
+      "note": "Public GHES 3.17.5 release. Report Resolved status is August 26; GitHub.com deployment timing is not established."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical detailed disclosure falls nine days before the preferred publication window."
+  },
+  "sources": [
+    {
+      "id": "vendor-report",
+      "url": "https://hackerone.com/reports/3124517",
+      "title": "GitHub HackerOne report 3124517",
+      "type": "vendor",
+      "author": "GitHub security team and furbreeze",
+      "retrieved_at": "2026-10-02T16:31:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "vendor-release",
+      "url": "https://docs.github.com/en/enterprise-server@3.17/admin/release-notes#3.17.5",
+      "title": "GitHub Enterprise Server 3.17.5 release notes",
+      "type": "vendor",
+      "author": "GitHub",
+      "retrieved_at": "2026-10-02T16:32:49Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+      "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
+      "type": "platform",
+      "author": "HackerOne",
+      "retrieved_at": "2026-10-02T15:43:47Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "vendor-report",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T16:32:49Z",
+    "method": "Read rendered public HackerOne vendor summary and award/disclosure events; independently read vendor release notes.",
+    "limitations": [
+      "The public vendor summary does not supply implementation-level patch detail.",
+      "Cash receipt is unverified. USD notation uses platform policy context.",
+      "Release availability, report resolution and detailed publication have different dates."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

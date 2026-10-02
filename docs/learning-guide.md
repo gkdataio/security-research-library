@@ -56,7 +56,7 @@ Learn to express which account a verification challenge or token represents, whi
 
 ## 7. Cross-API consistency and safe serialization
 
-**Cases:** Google Support; YouTube creator privacy; YouTube/Pixel Recorder identity correlation; both GitHub fork-collaboration reports; HackerOne report serialization, private-program objects and support integration
+**Cases:** Google Support; YouTube creator privacy; YouTube/Pixel Recorder identity correlation; both GitHub fork-collaboration reports and cross-repository comparisons; HackerOne report serialization, private-program objects and support integration; Meta AI media ownership
 
 Learn how the same entitlement can be represented across API surfaces and framework layers. Define response allowlists, ownership checks, and privacy-contract tests. Compare the intended policies at creation, editing, serialization, and consumption rather than assuming an earlier check remains sufficient.
 

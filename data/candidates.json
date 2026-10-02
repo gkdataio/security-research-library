@@ -51,6 +51,13 @@
       "primary_reward_corroboration_url": "https://github.blog/security/vulnerability-research/10-years-of-the-github-security-bug-bounty-program/",
       "reason_not_counted": "The official retrospective confirms one paid award but does not identify its finding or provide enough technical context for a source-backed root-cause record. Do not associate secondary technical claims without a matching primary report.",
       "reviewed_at": "2026-10-02T15:41:00Z"
+    },
+    {
+      "title": "GitHub Enterprise repository migration authorization",
+      "primary_technical_url": "https://hackerone.com/reports/3506183",
+      "primary_technical_status": "Public report reviewed; detailed disclosure March 5, 2026; CVE-2026-1355.",
+      "reason_not_counted": "An award event is visible, but the individual bounty and total are hidden. No exact amount is verified.",
+      "reviewed_at": "2026-10-02T16:31:00Z"
     }
   ]
 }
