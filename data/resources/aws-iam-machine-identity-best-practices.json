@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "aws-iam-machine-identity-best-practices",
+  "title": "AWS IAM security best practices for workload identities",
+  "publisher": "Amazon Web Services",
+  "authors": [],
+  "primary_url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "cloud-security",
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "cloud-iam-review",
+    "machine-identity-governance",
+    "identity-lifecycle-review",
+    "secrets-containment"
+  ],
+  "version": null,
+  "summary": "Use this guide to review machine identity design: favor short-lived role credentials for workloads, limit permissions to required actions and resources, and retire unnecessary access. It also explains policy validation, access reviews, and organizational guardrails that help keep workload access aligned with its purpose.",
+  "defensive_use": "Compare an owned workload’s documented identity lifecycle and minimum permission needs with the guide, recording unnecessary access for review.",
+  "prerequisites": [
+    "Basic understanding of cloud workloads, roles, and identity policies",
+    "Familiarity with authentication versus authorization"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official documentation was publicly readable at review time; implementation services can have separate costs."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T15:32:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Living guidance checked on the verification date; no numerical release or documented update date claimed"
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+      "title": "Temporary workload credentials, least privilege, access cleanup, policy validation, and permissions guardrails",
+      "publisher": "Amazon Web Services",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "AWS-managed policies may need further narrowing for a specific workload.",
+    "Organization-level guardrails constrain permissions; they do not grant access by themselves."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -12,11 +12,13 @@ Learn to distinguish mutable object names from immutable versions, document exac
 
 ## 2. Cloud identities and integration permissions
 
-**Case:** Meta service-identity and secret-access boundaries
+**Cases:** Meta service-identity and secret-access boundaries; Actifio driver and service-identity isolation
 
 Learn effective-permission review, service authentication, secret ownership, and least privilege across integrations. Produce an identity-to-resource access matrix and a justified minimum-permission design. Separate reported reach from actual data access; stop evidence collection once the approved review objective is met.
 
 **Taxonomy:** `cloud-iam-review`, `machine-identity-governance`, `secrets-containment`
+
+**Reference:** [AWS IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 
 ## 3. Build systems and dependency provenance
 
@@ -25,6 +27,8 @@ Learn effective-permission review, service authentication, secret ownership, and
 Learn registry provenance, namespace governance, artifact integrity, cache separation, and bot authorization. Produce a trust-boundary diagram identifying who can create each input and which execution context consumes it. Review both direct privileges and shared state without assuming a read-only job is isolated.
 
 **Taxonomy:** `pipeline-trust-modeling`, `dependency-provenance`, `cache-artifact-isolation`, `machine-identity-governance`
+
+**Reference:** [SLSA v1.2](https://slsa.dev/spec/v1.2/)
 
 ## 4. AI tools and persistent-state authorization
 

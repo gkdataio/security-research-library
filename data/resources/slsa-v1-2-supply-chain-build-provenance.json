@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "id": "slsa-v1-2-supply-chain-build-provenance",
+  "title": "SLSA v1.2: supply-chain security and build provenance",
+  "publisher": "SLSA Community",
+  "authors": [],
+  "primary_url": "https://slsa.dev/spec/v1.2/",
+  "resource_type_id": "security-standard",
+  "topic_ids": [
+    "supply-chain",
+    "verification"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "cache-artifact-isolation",
+    "dependency-provenance",
+    "defensive-evidence-writing"
+  ],
+  "version": "1.2",
+  "summary": "Learn to assess software supply-chain assurance using distinct source and build tracks. The build track progresses from recording provenance to authenticated hosted builds and stronger platform isolation. Build provenance connects an artifact to its builder, inputs, and build definition so consumers can evaluate whether its production matches expectations.",
+  "defensive_use": "Map documented build controls and provenance expectations to an approved architecture review; distinguish attestation presence from trusted verification.",
+  "prerequisites": [
+    "Basic familiarity with version control and continuous integration",
+    "Understanding of software artifacts, hashes, and digital-signature concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official documentation was publicly readable at review time; implementation services can have separate costs."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": "2025-11-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T15:32:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Version-specific approved specification; stable entry point currently redirects to v1.2. Working Draft is separately labeled and was not treated as a stable release."
+  },
+  "sources": [
+    {
+      "id": "stable-entry",
+      "url": "https://slsa.dev/spec/",
+      "title": "Official stable entry point redirects to v1.2",
+      "publisher": "SLSA Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "version"
+      ]
+    },
+    {
+      "id": "primary",
+      "url": "https://slsa.dev/spec/v1.2/",
+      "title": "Version 1.2 and Approved status",
+      "publisher": "SLSA Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://slsa.dev/blog/2025/11/announce-slsa-v1.2",
+      "title": "SLSA Community release announcement dated 24 November 2025",
+      "publisher": "SLSA Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "dates",
+        "version"
+      ]
+    },
+    {
+      "id": "build-levels",
+      "url": "https://slsa.dev/spec/v1.2/build-track-basics",
+      "title": "Build-level distinctions and provenance limitations",
+      "publisher": "SLSA Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "build-provenance",
+      "url": "https://slsa.dev/spec/v1.2/build-provenance",
+      "title": "Build provenance model and predicate-version convention",
+      "publisher": "SLSA Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T15:32:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Build L1 provenance alone does not provide tamper protection.",
+    "The specification version is 1.2, while the build-provenance predicate identifier remains https://slsa.dev/provenance/v1; the page explains this major-version convention.",
+    "A recorded attestation is useful only within an explicit trust and verification model."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -50,6 +50,14 @@
     {
       "id": "web-foundations",
       "title": "Web Foundations"
+    },
+    {
+      "id": "supply-chain",
+      "title": "Software Supply Chain"
+    },
+    {
+      "id": "cloud-security",
+      "title": "Cloud Security"
     }
   ]
 }

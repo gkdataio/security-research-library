@@ -21,6 +21,29 @@
       "title": "Dependabot Core CI approval race",
       "primary_technical_url": "https://adnanthekhan.com/posts/dependabot-core-toctou-writeup/",
       "reason_not_counted": "The primary write-up confirms award timing but gives no exact amount."
+    },
+    {
+      "title": "Looker directory-operation and service-identity findings",
+      "primary_technical_url": "https://flatt.tech/research/posts/remote-command-execution-in-google-cloud-with-single-directory-deletion/",
+      "primary_technical_status": "Primary researcher article reviewed; published March 23, 2026",
+      "reason_not_counted": "No exact award amount is disclosed. Severity, event participation and confirmed remediation do not establish a qualifying payment.",
+      "reviewed_at": "2026-10-02T15:31:00Z"
+    },
+    {
+      "title": "Google OAuth client management UI report",
+      "reported_reward": "$13,340 in an unverified discovery index",
+      "primary_technical_url": "https://random-unknown-username.github.io/random-unknown-username/",
+      "primary_technical_status": "Linked researcher URL returned 404; focused title search found only the discovery index",
+      "reason_not_counted": "Primary technical content and actual individual award could not be verified.",
+      "reviewed_at": "2026-10-02T15:31:00Z"
+    },
+    {
+      "title": "Google Web Designer symlink issue CVE-2025-1079",
+      "reported_reward": "$11,250 in an unverified discovery index",
+      "primary_technical_url": "https://balintmagyar.com/articles/google-web-designer-symlink-client-side-rce-cve-2025-1079",
+      "primary_technical_status": "Search retrieval denied by robots.txt",
+      "reason_not_counted": "Primary article and award not reviewed; index amount alone is insufficient.",
+      "reviewed_at": "2026-10-02T15:31:00Z"
     }
   ]
 }

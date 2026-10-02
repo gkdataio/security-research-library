@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-24 individual report/chain awards meet the USD 10,000 threshold: 23 bug bounties and one explicitly labeled competition entry. Seven publication dates fall within October 2, 2025–October 2, 2026; 15 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+25 individual report/chain awards meet the USD 10,000 threshold: 24 bug bounties and one explicitly labeled competition entry. Seven publication dates fall within October 2, 2025–October 2, 2026; 16 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 24 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 25 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -20,6 +20,7 @@ The collection contains 24 records after source-backed historical expansion. It 
 | [Cloud Build approval was not bound to immutable code](data/reports/google-cloud-build-approval-toctou-2025.json) | USD 30,000 | 2025-07-21 (historical) | Researcher reported |
 | [Google IDX worker messaging crossed browser trust boundaries](data/reports/google-idx-worker-message-trust-2025.json) | USD 22,500 | 2025-07-02 (historical) | Researcher reproduces vendor image |
 | [Framework serialization change exposed private HackerOne user attributes](data/reports/hackerone-report-json-serialization-data-exposure-2025.json) | USD 25,000 | 2025-06-24 (historical) | Vendor confirmed |
+| [Actifio driver execution exposed excessive shared-service authority](data/reports/google-actifio-driver-service-identity-isolation-2025.json) | USD 10,000 | 2025-05-04 (historical) | Researcher reported |
 | [YouTube creator metadata exposed private email addresses](data/reports/youtube-creator-email-authorization-2025.json) | USD 20,000 | 2025-03-13 (historical) | Researcher reported |
 | [YouTube and Pixel Recorder exposed cross-product identity links](data/reports/youtube-pixel-recorder-identity-privacy-2025.json) | USD 10,633 | 2025-02-12 (historical) | Researcher reported |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
@@ -35,13 +36,13 @@ The collection contains 24 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest additions include an image-backed IDX award, the precise USD 10,633 YouTube/Pixel Recorder adjustment total, and a separately awarded GitHub collaboration-consent report. Two records may share an article only with explicit, non-overlapping CVEs and separate award evidence.
+The latest increment adds one Actifio report with a documented collaboration multiplier, plus SLSA build-provenance and AWS workload-identity guidance. The unrelated Dataprep finding described by the same researcher received no cash award and is not counted. Two records may share an article only with explicit, non-overlapping CVEs and separate award evidence.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Six official educational resources and three evidence-linked conceptual diagrams are maintained separately from the 24 award reports.
+Eight official educational resources and three evidence-linked conceptual diagrams are maintained separately from the 25 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)

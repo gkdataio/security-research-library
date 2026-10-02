@@ -9,6 +9,9 @@ This collection is separate from paid-award reports. It contains official educat
 - [HackerOne Quality Reports](https://docs.hackerone.com/en/articles/8475116-quality-reports): communicate evidence-backed impact, scope, and remediation clearly
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security): study fundamentals in provider-controlled training environments
 
+- [SLSA v1.2](https://slsa.dev/spec/v1.2/): review build provenance, artifact integrity, and distinct assurance levels
+- [AWS IAM security best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html): assess workload identities, short-lived credentials, permission scope, and access lifecycle
+
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 
 [Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)
