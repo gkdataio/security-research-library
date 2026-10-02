@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T15:45:00Z",
+  "latest_reviewed_at": "2026-10-02T16:08:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 27,
-    "within_preferred_window": 7,
-    "older_or_uncertain": 20,
-    "bug_bounty": 26,
+    "included": 30,
+    "within_preferred_window": 9,
+    "older_or_uncertain": 21,
+    "bug_bounty": 29,
     "competition_award": 1
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -175,6 +175,166 @@
     ]
   },
   "reports": [
+    {
+      "schema_version": "1.1.0",
+      "id": "google-chrome-angle-input-validation-2026",
+      "title": "Chrome graphics input validation weakened an isolation boundary",
+      "organization": "Google",
+      "product": "Chrome / ANGLE",
+      "researchers": [],
+      "cve_ids": [
+        "CVE-2026-14382"
+      ],
+      "cwe_mappings": [],
+      "category_id": "client-security",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "untrusted-input-handling",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "One Chrome graphics report earned USD 250,000 across two award decisions.",
+      "root_cause": "The graphics translation layer insufficiently validated untrusted input.",
+      "impact": "Insufficiently validated graphics input could cross a browser security boundary; the vendor classified the issue High.",
+      "defensive_takeaways": [
+        "Validate untrusted graphics inputs at security boundaries and verify that mitigations cover all relevant input paths.",
+        "Distinguish issue-status fixes from stable-release availability."
+      ],
+      "reward": {
+        "amount": 250000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "type": "bug_bounty",
+        "awarding_organization": "Google / Chrome VRP",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-report",
+        "evidence_quote": "award you $25000.00 for this report … award you $225000.00 for this report",
+        "evidence_location": "Public Chromium issue comments #25 and #30; ellipsis joins excerpts.",
+        "usd_equivalent": null,
+        "notes": "USD 25,000 on June 4 plus USD 225,000 on June 29 for one report. Case notices use $; USD is contextual from the official Chromium program source. No currency conversion or cash-receipt claim."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": "Full report access restrictions removed; vendor release notice appeared earlier."
+        },
+        "public_disclosure": {
+          "value": "2026-06-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Vendor release disclosure; full issue access was enabled later."
+        },
+        "reported": {
+          "value": "2026-03-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-06-29",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-06-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Documented stable release; issue was marked Fixed 2026-05-27. Backport availability may differ."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2026-06-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Per-issue reward listed in the public release notice."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-report",
+          "url": "https://issues.chromium.org/issues/492218546",
+          "title": "Chromium issue 492218546",
+          "type": "vendor",
+          "author": "Google Chromium security team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1",
+          "title": "Chrome Stable Channel Update for Desktop, 2026-06-30",
+          "type": "vendor",
+          "author": "Google Chrome team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "cve",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://blog.chromium.org/2013/08/security-rewards-at-google-two.html",
+          "title": "Security rewards at Google: Two MEEELLION Dollars Later",
+          "type": "vendor",
+          "author": "Chromium team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-report",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:08:00Z",
+        "method": "Public Chromium issue award/date metadata read in the cloud browser; official release corroborates exact per-issue total and CVE. No operational details retained.",
+        "limitations": [
+          "Case notices use dollar notation; USD denomination relies on official Chromium program context.",
+          "Award decisions are established; payment completion is not.",
+          "Fixed status and publicly available stable release are separate dates.",
+          "Release credits an anonymous researcher. No identity or per-person split is inferred."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
     {
       "schema_version": "1.0.0",
       "id": "meta-service-identity-secrets-trust-boundary-2026",
@@ -636,6 +796,185 @@
         "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
         "limitations": [
           "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "google-chrome-v8-type-consistency-2025",
+      "title": "V8 optimized object handling retained invalid type assumptions",
+      "organization": "Google",
+      "product": "Chrome / V8",
+      "researchers": [
+        "Man Yue Mo (GitHub Security Lab)"
+      ],
+      "cve_ids": [
+        "CVE-2025-12428"
+      ],
+      "cwe_mappings": [],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "browser-isolation-review",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "One V8 type-consistency report earned a USD 50,000 award.",
+      "root_cause": "Optimized object handling could retain invalid type assumptions, producing a type-consistency failure.",
+      "impact": "Memory read/write was possible; broader code execution required an additional boundary failure.",
+      "defensive_takeaways": [
+        "Optimized execution must invalidate cached assumptions when object state changes and handle all supported object families consistently.",
+        "Distinguish issue-status fixes from stable-release availability."
+      ],
+      "reward": {
+        "amount": 50000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "type": "bug_bounty",
+        "awarding_organization": "Google / Chrome VRP",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-report",
+        "evidence_quote": "award you $50000.00 for this report",
+        "evidence_location": "Public Chromium issue comment #13.",
+        "usd_equivalent": null,
+        "notes": "Case notices use $; USD is contextual from the official Chromium program source. No currency conversion or cash-receipt claim."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-advisory",
+          "note": "Detailed researcher advisory; public issue access opened January 13, 2026, after the October 2025 vendor notice."
+        },
+        "public_disclosure": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Vendor release disclosure; full issue access was enabled later."
+        },
+        "reported": {
+          "value": "2025-09-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-10-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-report",
+          "note": null
+        },
+        "fixed": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Documented stable release; issue was marked Fixed 2025-10-06. Backport availability may differ."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2025-10-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Per-issue reward listed in the public release notice."
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "vendor-report",
+          "url": "https://issues.chromium.org/issues/447613211",
+          "title": "Chromium issue 447613211",
+          "type": "vendor",
+          "author": "Google Chromium security team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr",
+          "title": "Chrome Stable Channel Update for Desktop, 2025-10-28",
+          "type": "vendor",
+          "author": "Google Chrome team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "cve",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://blog.chromium.org/2013/08/security-rewards-at-google-two.html",
+          "title": "Security rewards at Google: Two MEEELLION Dollars Later",
+          "type": "vendor",
+          "author": "Chromium team",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "researcher-advisory",
+          "url": "https://securitylab.github.com/advisories/GHSL-2025-114_Chromium/",
+          "title": "GHSL-2025-114: Chromium V8 advisory",
+          "type": "researcher",
+          "author": "Man Yue Mo / GitHub Security Lab",
+          "retrieved_at": "2026-10-02T16:08:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "cve",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-advisory",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:08:00Z",
+        "method": "Public Chromium issue award/date metadata read in the cloud browser; official release corroborates exact per-issue total and CVE. Researcher advisory independently reviewed.",
+        "limitations": [
+          "Case notices use dollar notation; USD denomination relies on official Chromium program context.",
+          "Award decisions are established; payment completion is not.",
+          "Fixed status and publicly available stable release are separate dates.",
+          "Release list revised November 17, 2025; it identifies the newly added entries separately as CVE-2025-13226 through 13230. This record retains the October 28 release disclosure."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -2078,6 +2417,172 @@
         "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
         "limitations": [
           "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "gitlab-recovery-address-binding-cve-2023-7028",
+      "title": "GitLab recovery delivery lacked verified-address binding",
+      "organization": "GitLab",
+      "product": "GitLab Community and Enterprise Editions",
+      "researchers": [
+        "asterion04"
+      ],
+      "cve_ids": [
+        "CVE-2023-7028"
+      ],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "secure-parser-review",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "One recovery report received USD 35,000 across two award events.",
+      "root_cause": "Password recovery did not consistently bind delivery to a verified account address.",
+      "impact": "Unauthorized password changes could lead to account takeover. The vendor states that enforced second-factor authentication still prevented login, although password reset remained possible.",
+      "defensive_takeaways": [
+        "Bind recovery delivery to verified account state.",
+        "Validate security-sensitive input types and recipient cardinality.",
+        "Review recovery paths independently of primary authentication."
+      ],
+      "reward": {
+        "amount": 35000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "GitLab",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "rewarded asterion04 with a $1,000 bounty. … rewarded asterion04 with a $34,000 bounty.",
+        "evidence_location": "Public award events December 22, 2023 and January 12, 2024; ellipsis joins fragments.",
+        "usd_equivalent": null,
+        "notes": "USD 1,000 initial plus USD 34,000 additional award for one report. Dollar notation uses HackerOne policy currency context; cash receipt unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-02-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Detailed report publication, later than the vendor advisory."
+        },
+        "public_disclosure": {
+          "value": "2024-01-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Public vendor advisory; detailed report followed February 26, 2025."
+        },
+        "reported": {
+          "value": "2023-12-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2024-01-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Final award event; initial award December 22, 2023."
+        },
+        "fixed": {
+          "value": "2024-01-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Public patched release. GitLab.com was patched earlier; its exact deployment date is not supplied."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://hackerone.com/reports/2293343",
+          "title": "Account Takeover via Password Reset without user interactions",
+          "type": "vendor",
+          "author": "GitLab and asterion04",
+          "retrieved_at": "2026-10-02T16:00:19Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-16-7-2-released/",
+          "title": "GitLab Critical Security Release: 16.7.2, 16.6.4, 16.5.6",
+          "type": "vendor",
+          "author": "GitLab",
+          "retrieved_at": "2026-10-02T15:59:43Z",
+          "supports": [
+            "dates",
+            "cve",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T15:43:47Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T16:01:44Z",
+        "method": "Original public report and both award events read in the cloud browser; official vendor release notes independently corroborate the CVE, impact boundary and patched release.",
+        "limitations": [
+          "Award events do not establish cash settlement.",
+          "The report UI has no CVE field value; CVE association comes from the matching vendor advisory.",
+          "Detailed report publication is not the first public advisory date."
         ]
       },
       "content_scope": "historical_defensive_summary"

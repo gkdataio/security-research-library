@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.1.0",
+  "id": "google-chrome-angle-input-validation-2026",
+  "title": "Chrome graphics input validation weakened an isolation boundary",
+  "organization": "Google",
+  "product": "Chrome / ANGLE",
+  "researchers": [],
+  "cve_ids": [
+    "CVE-2026-14382"
+  ],
+  "cwe_mappings": [],
+  "category_id": "client-security",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "untrusted-input-handling",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "summary": "One Chrome graphics report earned USD 250,000 across two award decisions.",
+  "root_cause": "The graphics translation layer insufficiently validated untrusted input.",
+  "impact": "Insufficiently validated graphics input could cross a browser security boundary; the vendor classified the issue High.",
+  "defensive_takeaways": [
+    "Validate untrusted graphics inputs at security boundaries and verify that mitigations cover all relevant input paths.",
+    "Distinguish issue-status fixes from stable-release availability."
+  ],
+  "reward": {
+    "amount": 250000,
+    "currency": "USD",
+    "scope": "single_vulnerability",
+    "type": "bug_bounty",
+    "awarding_organization": "Google / Chrome VRP",
+    "status": "awarded",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "vendor-report",
+    "evidence_quote": "award you $25000.00 for this report … award you $225000.00 for this report",
+    "evidence_location": "Public Chromium issue comments #25 and #30; ellipsis joins excerpts.",
+    "usd_equivalent": null,
+    "notes": "USD 25,000 on June 4 plus USD 225,000 on June 29 for one report. Case notices use $; USD is contextual from the official Chromium program source. No currency conversion or cash-receipt claim."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": "Full report access restrictions removed; vendor release notice appeared earlier."
+    },
+    "public_disclosure": {
+      "value": "2026-06-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Vendor release disclosure; full issue access was enabled later."
+    },
+    "reported": {
+      "value": "2026-03-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-06-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-report",
+      "note": null
+    },
+    "fixed": {
+      "value": "2026-06-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Documented stable release; issue was marked Fixed 2026-05-27. Backport availability may differ."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": "2026-06-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "release",
+      "note": "Per-issue reward listed in the public release notice."
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "vendor-report",
+      "url": "https://issues.chromium.org/issues/492218546",
+      "title": "Chromium issue 492218546",
+      "type": "vendor",
+      "author": "Google Chromium security team",
+      "retrieved_at": "2026-10-02T16:08:00Z",
+      "supports": [
+        "reward",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1",
+      "title": "Chrome Stable Channel Update for Desktop, 2026-06-30",
+      "type": "vendor",
+      "author": "Google Chrome team",
+      "retrieved_at": "2026-10-02T16:08:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "cve",
+        "remediation"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://blog.chromium.org/2013/08/security-rewards-at-google-two.html",
+      "title": "Security rewards at Google: Two MEEELLION Dollars Later",
+      "type": "vendor",
+      "author": "Chromium team",
+      "retrieved_at": "2026-10-02T16:08:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "vendor-report",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T16:08:00Z",
+    "method": "Public Chromium issue award/date metadata read in the cloud browser; official release corroborates exact per-issue total and CVE. No operational details retained.",
+    "limitations": [
+      "Case notices use dollar notation; USD denomination relies on official Chromium program context.",
+      "Award decisions are established; payment completion is not.",
+      "Fixed status and publicly available stable release are separate dates.",
+      "Release credits an anonymous researcher. No identity or per-person split is inferred."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

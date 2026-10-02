@@ -4,15 +4,17 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-27 individual report/chain awards meet the USD 10,000 threshold: 26 bug bounties and one explicitly labeled competition entry. Seven publication dates fall within October 2, 2025–October 2, 2026; 18 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+30 individual report/chain awards meet the USD 10,000 threshold: 29 bug bounties and one explicitly labeled competition entry. Nine publication dates fall within October 2, 2025–October 2, 2026; 19 are clearly older, and two historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 27 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 30 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
+| [Chrome graphics input validation weakened an isolation boundary](data/reports/google-chrome-angle-input-validation-2026.json) | USD 250,000 | 2026-09-03 | Vendor confirmed |
 | [Meta service-identity exposure amplified by excessive secret access](data/reports/meta-service-identity-secrets-trust-boundary-2026.json) | USD 150,000 | 2026-05-28 | Researcher reproduces vendor message |
 | [PostgreSQL text-encoding invariant failure caused memory corruption](data/reports/postgresql-multibyte-validation-cve-2026-2006.json) | USD 30,000 (competition entry) | 2026-05-04 | Competition organizer confirmed |
 | [Google support API exposed customer and agent data](data/reports/google-support-api-authorization-2026.json) | USD 14,337 | 2026-03-31 | Researcher reproduces vendor message |
+| [V8 optimized object handling retained invalid type assumptions](data/reports/google-chrome-v8-type-consistency-2025.json) | USD 50,000 | 2026-03-17 | Vendor confirmed |
 | [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json) | USD 15,000 | 2026-03-12 | Researcher reported |
 | [Angular automation trust and cache isolation weakness](data/reports/angular-ci-cache-trust-2026.json) | USD 31,337 | 2026-03-03 | Researcher reproduces vendor message |
 | [Gemini-to-Colab rendering boundary exposed Workspace data](data/reports/google-gemini-colab-rendering-boundary-2025.json) | USD 20,000 | 2025-11 | Researcher reproduces vendor message |
@@ -23,6 +25,7 @@ The collection contains 27 records after source-backed historical expansion. It 
 | [Framework serialization change exposed private HackerOne user attributes](data/reports/hackerone-report-json-serialization-data-exposure-2025.json) | USD 25,000 | 2025-06-24 (historical) | Vendor confirmed |
 | [Actifio driver execution exposed excessive shared-service authority](data/reports/google-actifio-driver-service-identity-isolation-2025.json) | USD 10,000 | 2025-05-04 (historical) | Researcher reported |
 | [YouTube creator metadata exposed private email addresses](data/reports/youtube-creator-email-authorization-2025.json) | USD 20,000 | 2025-03-13 (historical) | Researcher reported |
+| [GitLab recovery delivery lacked verified-address binding](data/reports/gitlab-recovery-address-binding-cve-2023-7028.json) | USD 35,000 | 2025-02-26 (historical) | Vendor confirmed |
 | [YouTube and Pixel Recorder exposed cross-product identity links](data/reports/youtube-pixel-recorder-identity-privacy-2025.json) | USD 10,633 | 2025-02-12 (historical) | Researcher reported |
 | [GraphQL object authorization exposed private-program metadata](data/reports/hackerone-private-program-graphql-object-authorization-2025.json) | USD 25,000 | 2025-01-21 (historical) | Vendor confirmed |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
@@ -38,13 +41,13 @@ The collection contains 27 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest increment adds two platform-verified historical HackerOne disclosures and a tenant-scoped workload-identity diagram. The USD 12,500 support report is explicitly a two-recipient total; the counting unit is one report, not one person. Two records may share an article only with explicit, non-overlapping CVEs and separate award evidence.
+The latest increment adds two recent Chrome disclosures with individually documented USD 250,000 and USD 50,000 awards, plus GitLab’s historical USD 35,000 recovery report. Award decisions, stable releases, public advisories and detailed-publication dates remain distinct. The counting unit is one report or chain, not one person.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Eight official educational resources and four evidence-linked conceptual diagrams are maintained separately from the 27 award reports.
+Eight official educational resources and four evidence-linked conceptual diagrams are maintained separately from the 30 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
