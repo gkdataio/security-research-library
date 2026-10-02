@@ -50,6 +50,11 @@
       "id": "memory-safety",
       "title": "Memory safety and parser contracts",
       "description": "Safe length, lifetime, encoding, and component-boundary assumptions"
+    },
+    {
+      "id": "information-exposure",
+      "title": "Information exposure and response privacy",
+      "description": "Unintended disclosure through error responses, diagnostics and output contracts"
     }
   ],
   "skillsets": [
@@ -152,6 +157,11 @@
       "id": "security-token-design",
       "title": "Review security-token design",
       "defensive_objective": "Assess unpredictable generation, subject and operation binding, limited lifetime, single-use semantics and safe validation of security-sensitive tokens"
+    },
+    {
+      "id": "error-response-design",
+      "title": "Review secure error behavior",
+      "defensive_objective": "Verify that failure responses minimize disclosure and that fallback paths preserve the original authorization context"
     }
   ]
 }

@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0.0",
+  "id": "facebook-error-response-data-isolation-2019",
+  "title": "Facebook error responses exposed unintended application data",
+  "organization": "Meta (Facebook)",
+  "product": "Facebook copyright-management endpoint and shared error handling",
+  "researchers": [
+    "Youssef Sammouda"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "information-exposure",
+  "secondary_category_ids": [],
+  "skillset_ids": [
+    "error-response-design",
+    "secure-parser-review",
+    "defensive-evidence-writing",
+    "patch-verification"
+  ],
+  "summary": "Facebook confirms a USD 65,000 bounty payment for an error-response data-exposure report.",
+  "root_cause": "An error-handling configuration could include unintended application data in a response; subsequent review found a broader framework issue.",
+  "impact": "A copyright-management request could return data fragments not intended for the requester. The award reflected the vendor’s assessment of potential wider impact.",
+  "defensive_takeaways": [
+    "Apply data-minimization rules to error responses as well as successful responses.",
+    "Review shared exception-handling behavior after an endpoint-level fix."
+  ],
+  "reward": {
+    "amount": 65000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "paid",
+    "type": "bug_bounty",
+    "awarding_organization": "Meta",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "vendor-retrospective",
+    "evidence_quote": "Su pago por recompensa equivalente a USD$ 65,000",
+    "evidence_location": "Identificación de errores, Youssef Sammouda finding",
+    "usd_equivalent": null,
+    "notes": "Vendor explicitly identifies USD and says the report was paid. Exact transfer date is unknown; this is not the event or program total."
+  },
+  "dates": {
+    "published": {
+      "value": "2020-02-07",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-retrospective",
+      "note": "Initial page date; a separate May 7, 2020 update is displayed."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed vendor retrospective was published February 7, 2020; earliest public disclosure is not established."
+    },
+    "reported": {
+      "value": "2019-09",
+      "precision": "month",
+      "basis": "inferred",
+      "source_id": "vendor-retrospective",
+      "note": "September event in the vendor’s 2019 retrospective; the day is unspecified."
+    },
+    "awarded": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Vendor states an initial fix followed within hours of the report, then broader framework remediation; exact deployment dates are not supplied."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Vendor confirms payment but gives no transfer date."
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical 2019 finding, described by the vendor in February 2020."
+  },
+  "sources": [
+    {
+      "id": "vendor-retrospective",
+      "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+      "title": "2019 Bug Bounty highlights, official Spanish edition",
+      "type": "vendor",
+      "author": "Dan Gurfinkel / Facebook",
+      "retrieved_at": "2026-10-02T18:24:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    }
+  ],
+  "primary_source_id": "vendor-retrospective",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T18:24:00Z",
+    "method": "Read the official vendor retrospective and its explicit US-dollar per-report payment. Summaries retain the vendor’s bounded impact statement.",
+    "limitations": [
+      "Historical case; exact award, settlement and deployment dates are unknown.",
+      "The source gives a high-level finding, not a complete technical advisory."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

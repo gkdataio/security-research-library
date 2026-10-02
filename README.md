@@ -4,9 +4,9 @@ Source-backed public security disclosures, organized for defensive learning and 
 
 ## Current inventory: October 2, 2026
 
-45 individual report/chain awards meet the USD 10,000 threshold: 37 bug bounties and eight explicitly labeled competition entries. Nineteen publication dates fall within October 2, 2025–October 2, 2026; 23 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
+47 individual report/chain awards meet the USD 10,000 threshold: 39 bug bounties and eight explicitly labeled competition entries. Nineteen publication dates fall within October 2, 2025–October 2, 2026; 25 are clearly older, and three historical researcher pages have unknown publication dates. Historical examples are labeled rather than presented as recent discoveries.
 
-The collection contains 45 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
+The collection contains 47 records after source-backed historical expansion. It now covers account recovery, federated identity, API authorization and serialization, approval consistency, browser permissions, cloud isolation, build pipelines, and AI integration boundaries.
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
@@ -42,12 +42,14 @@ The collection contains 45 records after source-backed historical expansion. It 
 | [GraphQL object authorization exposed private-program metadata](data/reports/hackerone-private-program-graphql-object-authorization-2025.json) | USD 25,000 | 2025-01-21 (historical) | Vendor confirmed |
 | [LiteSpeed Cache privileged user simulation relied on weak security tokens](data/reports/litespeed-cache-user-simulation-authentication-2024.json) | USD 14,400 (Zero Day component) | 2024-08-21 (historical) | Platform confirmed |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
+| [Instagram embedding fallback changed the authorization context](data/reports/instagram-embedding-privileged-fallback-2023.json) | USD 14,500 (including bonuses) | 2023-10-12 (historical) | Researcher reported |
 | [Pixel lock-screen completion lost security-state binding](data/reports/google-pixel-lock-screen-state-binding-2022.json) | USD 70,000 | 2022-11-10 (historical) | Researcher reproduces vendor decision |
 | [GitHub Actions trust depended on invalid repository references](data/reports/github-actions-reference-validation-2021.json) | USD 25,000 | 2021-03-17 (historical) | Researcher reported |
 | [GitHub fork collaboration applied inconsistent authorization](data/reports/github-fork-collaboration-authorization-2021.json) | USD 20,000 | 2021-03-10 (historical) | Researcher reported |
 | [GitHub GraphQL collaboration changes lacked author consent](data/reports/github-fork-collaboration-consent-2021.json) | USD 10,000 | 2021-03-10 (historical) | Researcher reported |
 | [Microsoft account recovery lacked consistent attempt-limit enforcement](data/reports/microsoft-account-recovery-rate-limit-consistency-2021.json) | USD 50,000 | 2021-03-02 (historical) | Researcher reported |
 | [Sign in with Apple failed to bind identity claims to the authenticated user](data/reports/apple-sign-in-identity-claim-binding-2020.json) | USD 100,000 | 2020-05-30 (historical) | Researcher reported |
+| [Facebook error responses exposed unintended application data](data/reports/facebook-error-response-data-isolation-2019.json) | USD 65,000 | 2020-02-07 (historical) | Vendor confirms payment |
 | [GitHub OAuth consent failed across request-method semantics](data/reports/github-oauth-method-semantics-2019.json) | USD 25,000 | 2019-11-05 (historical) | Researcher reported |
 | [Instagram recovery challenges were insufficiently bound to accounts](data/reports/instagram-recovery-challenge-account-binding-2019.json) | USD 10,000 | 2019-08-25 (historical) | Researcher reported |
 | [Instagram mobile account recovery had inconsistent verification limits](data/reports/instagram-mobile-recovery-attempt-limits-2019.json) | USD 30,000 | 2019-07-14 (historical) | Researcher reported |
@@ -56,13 +58,13 @@ The collection contains 45 records after source-backed historical expansion. It 
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 
-The latest report increment adds two distinct Team Xint Code database findings, each with a USD 30,000 organizer-announced ZeroDay.cloud 2025 entry award. Both technical articles display May 4; the 2026 year is inferred from their remediation timelines. MariaDB’s vendor qualifies code execution as dependent on controlled conditions, and that limit stays explicit in the record.
+The latest report increment adds historical Facebook error-response exposure (vendor-confirmed USD 65,000 payment) and Instagram privileged fallback behavior (researcher-reported USD 14,500 including bonuses). Both illustrate why failure paths need explicit privacy and authorization contracts.
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
 ## General resources and visual theory
 
-Fourteen official educational resources and seven evidence-linked conceptual diagrams are maintained separately from the 45 award reports.
+Fifteen official educational resources and seven evidence-linked conceptual diagrams are maintained separately from the 47 award reports.
 
 - [Official learning resources](docs/resources.md)
 - [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
@@ -70,7 +72,7 @@ Fourteen official educational resources and seven evidence-linked conceptual dia
 
 The visuals cover approval-version integrity, AI content/authority separation, identity-claim binding, tenant-scoped workload authority, server-request destination controls, account-recovery challenge integrity, and parsing/action-authority separation. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
 
-The latest learning addition pairs Chromium’s Rule of Two with NIST’s historical container-isolation guide, plus an original diagram showing why a safely parsed result still needs an independent authorization decision.
+The latest learning addition is OWASP’s error-handling guide, with a new information-exposure category and an error-response design skill. Existing visuals remain unchanged.
 
 ## Layout
 

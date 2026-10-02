@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 14,
+    "resources": 15,
     "diagrams": 7
   },
   "taxonomy": {
@@ -183,6 +183,11 @@
       "id": "security-token-design",
       "title": "Review security-token design",
       "defensive_objective": "Assess unpredictable generation, subject and operation binding, limited lifetime, single-use semantics and safe validation of security-sensitive tokens"
+    },
+    {
+      "id": "error-response-design",
+      "title": "Review secure error behavior",
+      "defensive_objective": "Verify that failure responses minimize disclosure and that fallback paths preserve the original authorization context"
     }
   ],
   "resources": [
@@ -745,6 +750,82 @@
         }
       ],
       "caveats": [],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-error-response-data-minimization",
+      "title": "Error Handling Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "error-response-design",
+        "secure-parser-review"
+      ],
+      "version": null,
+      "summary": "OWASP guidance on centralized handling of unexpected failures, generic client-facing responses and server-side diagnostic records that do not reveal implementation details to clients.",
+      "defensive_use": "Define separate public-error and internal-diagnostic contracts, then review ordinary failure handling in owned application code. Keep logging controls separate from response formatting.",
+      "prerequisites": [
+        "Basic HTTP response semantics",
+        "Server-side exception handling"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T18:24:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official introduction, objective and global-error-handler guidance reviewed. No original publication or version date is stated."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html",
+          "title": "Error Handling Cheat Sheet",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Living guidance; framework examples should be checked against the application’s supported runtime version.",
+        "This resource concerns response disclosure; it does not by itself prove that authorization is preserved in privileged fallback paths."
+      ],
       "content_scope": "defensive_education"
     },
     {

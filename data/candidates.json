@@ -120,6 +120,13 @@
       "primary_technical_status": "Organizer tracker still lists the CVE as TBD and supplies no technical article for this entry.",
       "reason_not_counted": "Award and competition entry are confirmed, but a public technical source supporting a bounded root-cause summary was not established. Do not infer identity from unrelated Grafana advisories.",
       "reviewed_at": "2026-10-02T17:52:00Z"
+    },
+    {
+      "title": "ChatGPT shared-service cross-account isolation research",
+      "primary_technical_url": "https://research.checkpoint.com/2026/the-shared-clipboard-inside-the-sandbox-cross-account-data-leakage-in-chatgpt/",
+      "primary_technical_status": "Primary researcher article published September 8, 2026 reviewed.",
+      "reason_not_counted": "No individual award amount is disclosed. The researcher states the shared service was already decommissioned by report completion; do not infer a payout from impact.",
+      "reviewed_at": "2026-10-02T18:24:00Z"
     }
   ]
 }

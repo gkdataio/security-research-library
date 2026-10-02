@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "id": "instagram-embedding-privileged-fallback-2023",
+  "title": "Instagram embedding fallback changed the authorization context",
+  "organization": "Meta",
+  "product": "Instagram media embedding",
+  "researchers": [
+    "003random"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "error-response-design",
+    "defensive-evidence-writing"
+  ],
+  "summary": "The researcher documents USD 14,500 for one report: a 10,000 base bounty and two event bonuses.",
+  "root_cause": "A client-specific error path retrieved media under an elevated service identity, losing the original requester’s privacy constraints.",
+  "impact": "Private post text and media could be exposed. The researcher did not establish the same effect for profile embedding.",
+  "defensive_takeaways": [
+    "Preserve requester authorization across error handling and fallback paths.",
+    "Keep policy decisions consistent across client-specific code paths.",
+    "Distinguish demonstrated data exposure from unverified adjacent features."
+  ],
+  "reward": {
+    "amount": 14500,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Meta",
+    "evidence_level": "researcher_reported",
+    "source_id": "researcher-writeup",
+    "evidence_quote": "$10,000 bounty\n$2,000 event bonus\n$2,500 additional event bonus (special scope)",
+    "evidence_location": "Timeline: three September 25, 2022 entries for this report",
+    "usd_equivalent": null,
+    "notes": "One report: 10,000 base plus 2,000 and 2,500 bonuses. Classified as a bug bounty with event bonuses, not a separate placement prize. The article uses $; USD is contextualized by Facebook’s official program and BountyCon reporting, which predates this award."
+  },
+  "dates": {
+    "published": {
+      "value": "2023-10-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "This article is dated October 12, 2023. November 9, 2022 is permission to disclose, not proof of public publication."
+    },
+    "reported": {
+      "value": "2022-09-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "awarded": {
+      "value": "2022-09-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "All three report-linked reward components share this timeline date."
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The article says the issue was fixed, without an exact deployment date."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical research published October 2023, describing a 2022 report."
+  },
+  "sources": [
+    {
+      "id": "researcher-writeup",
+      "url": "https://003random.com/posts/meta-bountycon-instagram-writeup/",
+      "title": "How I Exposed Instagram's Private Posts by Blocking Users",
+      "type": "researcher",
+      "author": "003random",
+      "retrieved_at": "2026-10-02T18:24:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+      "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+      "type": "vendor",
+      "author": "Dan Gurfinkel / Facebook",
+      "retrieved_at": "2026-10-02T18:24:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "researcher-writeup",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T18:24:00Z",
+    "method": "Read researcher timeline, bounded impact and attributed vendor explanation. Summed only the three reward components explicitly attached to this report; used official program context for USD notation.",
+    "limitations": [
+      "Researcher-reported award, not independent vendor confirmation or audited settlement.",
+      "Currency context comes from an earlier official program retrospective, not a reproduced award receipt.",
+      "The account-restriction root cause is the researcher’s account of vendor clarification."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

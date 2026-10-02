@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T18:12:00Z",
+  "latest_reviewed_at": "2026-10-02T18:24:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 45,
+    "included": 47,
     "within_preferred_window": 19,
-    "older_or_uncertain": 26,
-    "bug_bounty": 37,
+    "older_or_uncertain": 28,
+    "bug_bounty": 39,
     "competition_award": 8
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -74,6 +74,11 @@
         "id": "memory-safety",
         "title": "Memory safety and parser contracts",
         "description": "Safe length, lifetime, encoding, and component-boundary assumptions"
+      },
+      {
+        "id": "information-exposure",
+        "title": "Information exposure and response privacy",
+        "description": "Unintended disclosure through error responses, diagnostics and output contracts"
       }
     ],
     "skillsets": [
@@ -176,6 +181,11 @@
         "id": "security-token-design",
         "title": "Review security-token design",
         "defensive_objective": "Assess unpredictable generation, subject and operation binding, limited lifetime, single-use semantics and safe validation of security-sensitive tokens"
+      },
+      {
+        "id": "error-response-design",
+        "title": "Review secure error behavior",
+        "defensive_objective": "Verify that failure responses minimize disclosure and that fallback paths preserve the original authorization context"
       }
     ]
   },
@@ -5429,6 +5439,155 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "instagram-embedding-privileged-fallback-2023",
+      "title": "Instagram embedding fallback changed the authorization context",
+      "organization": "Meta",
+      "product": "Instagram media embedding",
+      "researchers": [
+        "003random"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "error-response-design",
+        "defensive-evidence-writing"
+      ],
+      "summary": "The researcher documents USD 14,500 for one report: a 10,000 base bounty and two event bonuses.",
+      "root_cause": "A client-specific error path retrieved media under an elevated service identity, losing the original requester’s privacy constraints.",
+      "impact": "Private post text and media could be exposed. The researcher did not establish the same effect for profile embedding.",
+      "defensive_takeaways": [
+        "Preserve requester authorization across error handling and fallback paths.",
+        "Keep policy decisions consistent across client-specific code paths.",
+        "Distinguish demonstrated data exposure from unverified adjacent features."
+      ],
+      "reward": {
+        "amount": 14500,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "$10,000 bounty\n$2,000 event bonus\n$2,500 additional event bonus (special scope)",
+        "evidence_location": "Timeline: three September 25, 2022 entries for this report",
+        "usd_equivalent": null,
+        "notes": "One report: 10,000 base plus 2,000 and 2,500 bonuses. Classified as a bug bounty with event bonuses, not a separate placement prize. The article uses $; USD is contextualized by Facebook’s official program and BountyCon reporting, which predates this award."
+      },
+      "dates": {
+        "published": {
+          "value": "2023-10-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "This article is dated October 12, 2023. November 9, 2022 is permission to disclose, not proof of public publication."
+        },
+        "reported": {
+          "value": "2022-09-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2022-09-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "All three report-linked reward components share this timeline date."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The article says the issue was fixed, without an exact deployment date."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical research published October 2023, describing a 2022 report."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://003random.com/posts/meta-bountycon-instagram-writeup/",
+          "title": "How I Exposed Instagram's Private Posts by Blocking Users",
+          "type": "researcher",
+          "author": "003random",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T18:24:00Z",
+        "method": "Read researcher timeline, bounded impact and attributed vendor explanation. Summed only the three reward components explicitly attached to this report; used official program context for USD notation.",
+        "limitations": [
+          "Researcher-reported award, not independent vendor confirmation or audited settlement.",
+          "Currency context comes from an earlier official program retrospective, not a reproduced award receipt.",
+          "The account-restriction root cause is the researcher’s account of vendor clarification."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "google-pixel-lock-screen-state-binding-2022",
       "title": "Pixel lock-screen completion lost security-state binding",
       "organization": "Google",
@@ -6337,6 +6496,140 @@
         "limitations": [
           "No exact report, fix, or payment date stated",
           "Researcher says Apple's investigation found no misuse; independent vendor payout confirmation was not retrieved"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "facebook-error-response-data-isolation-2019",
+      "title": "Facebook error responses exposed unintended application data",
+      "organization": "Meta (Facebook)",
+      "product": "Facebook copyright-management endpoint and shared error handling",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "information-exposure",
+      "secondary_category_ids": [],
+      "skillset_ids": [
+        "error-response-design",
+        "secure-parser-review",
+        "defensive-evidence-writing",
+        "patch-verification"
+      ],
+      "summary": "Facebook confirms a USD 65,000 bounty payment for an error-response data-exposure report.",
+      "root_cause": "An error-handling configuration could include unintended application data in a response; subsequent review found a broader framework issue.",
+      "impact": "A copyright-management request could return data fragments not intended for the requester. The award reflected the vendor’s assessment of potential wider impact.",
+      "defensive_takeaways": [
+        "Apply data-minimization rules to error responses as well as successful responses.",
+        "Review shared exception-handling behavior after an endpoint-level fix."
+      ],
+      "reward": {
+        "amount": 65000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "paid",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-retrospective",
+        "evidence_quote": "Su pago por recompensa equivalente a USD$ 65,000",
+        "evidence_location": "Identificación de errores, Youssef Sammouda finding",
+        "usd_equivalent": null,
+        "notes": "Vendor explicitly identifies USD and says the report was paid. Exact transfer date is unknown; this is not the event or program total."
+      },
+      "dates": {
+        "published": {
+          "value": "2020-02-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-retrospective",
+          "note": "Initial page date; a separate May 7, 2020 update is displayed."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The reviewed vendor retrospective was published February 7, 2020; earliest public disclosure is not established."
+        },
+        "reported": {
+          "value": "2019-09",
+          "precision": "month",
+          "basis": "inferred",
+          "source_id": "vendor-retrospective",
+          "note": "September event in the vendor’s 2019 retrospective; the day is unspecified."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor states an initial fix followed within hours of the report, then broader framework remediation; exact deployment dates are not supplied."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor confirms payment but gives no transfer date."
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical 2019 finding, described by the vendor in February 2020."
+      },
+      "sources": [
+        {
+          "id": "vendor-retrospective",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "2019 Bug Bounty highlights, official Spanish edition",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        }
+      ],
+      "primary_source_id": "vendor-retrospective",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T18:24:00Z",
+        "method": "Read the official vendor retrospective and its explicit US-dollar per-report payment. Summaries retain the vendor’s bounded impact statement.",
+        "limitations": [
+          "Historical case; exact award, settlement and deployment dates are unknown.",
+          "The source gives a high-level finding, not a complete technical advisory."
         ]
       },
       "content_scope": "historical_defensive_summary"

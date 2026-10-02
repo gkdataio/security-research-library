@@ -110,6 +110,16 @@ Separate workload-controlled configuration from privileged runtime initializatio
 
 **Reference:** [NIST SP 800-190](https://csrc.nist.gov/pubs/sp/800/190/final) (historical 2017 guidance)
 
+## 13. Failure-path privacy and authorization
+
+**Cases:** Facebook error-response exposure; Instagram privileged embedding fallback (historical)
+
+Treat failure handling as part of the security contract. Error responses should avoid returning unintended data, while alternate execution paths should retain the requester’s original authority. Review common handlers and exceptional paths separately: a generic error message alone does not ensure a safe authorization decision.
+
+**Taxonomy:** `error-response-design`, `authorization-modeling`, `secure-parser-review`
+
+**Reference:** [OWASP Error Handling](https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html) · [OWASP Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
+
 ## Common reporting skill
 
 For every review, distinguish the observed behavior, the intended invariant, the evidence supporting impact, and the limits of that evidence. Document remediation and residual uncertainty. A large historical award is neither a forecast of future earnings nor permission to test a target.
