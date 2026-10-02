@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0.0",
+  "id": "meta-account-verification-attempt-state-binding-2022",
+  "title": "Meta account verification weakened linked SMS authentication state",
+  "organization": "Meta",
+  "product": "Meta Accounts Center, Instagram and Facebook SMS verification",
+  "researchers": [
+    "Gtm Mänôz"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authentication",
+  "secondary_category_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "security-token-design",
+    "authorization-modeling",
+    "integration-threat-modeling"
+  ],
+  "summary": "Meta confirms a USD 27,200 total award for this account-verification report.",
+  "root_cause": "Insufficient verification-attempt limits undermined phone ownership checks, while linked-account state changes could affect an existing SMS authentication factor.",
+  "impact": "The vendor confirms possible SMS-based two-factor authentication bypass. The researcher demonstrated factor revocation; this alone does not establish password disclosure or an authenticated session.",
+  "defensive_takeaways": [
+    "Enforce verification-attempt limits consistently across linked applications.",
+    "Require verified ownership before changing another account’s recovery or second-factor state."
+  ],
+  "reward": {
+    "amount": 27200,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Meta",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "vendor-retrospective",
+    "evidence_quote": "We awarded a $27,200 bounty for this report.",
+    "evidence_location": "Bug Highlights, 2FA Bypass paragraph naming Gtm Mänôz",
+    "usd_equivalent": null,
+    "notes": "Vendor total for one report. Researcher describes an initial September award and a December adjustment; component amounts are unknown and are not added on top. USD is contextualized by earlier official program reporting; settlement is unverified."
+  },
+  "dates": {
+    "published": {
+      "value": "2023-01-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "Primary technical article date; distinct from the earlier vendor summary."
+    },
+    "public_disclosure": {
+      "value": "2022-12-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-retrospective",
+      "note": "Vendor’s high-level public summary. Researcher confirms this same-day highlight; a 2024 update concerns another case."
+    },
+    "reported": {
+      "value": "2022-09-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "awarded": {
+      "value": "2022-12-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "Final additional award; initial amount was awarded September 24, 2022."
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Researcher received fix confirmation October 17, 2022; exact deployment date is not established."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": "2022-12-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor-retrospective",
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical technical publication in January 2023, describing a 2022 report."
+  },
+  "sources": [
+    {
+      "id": "researcher-writeup",
+      "url": "https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c",
+      "title": "Two Factor Authentication Bypass On Facebook",
+      "type": "researcher",
+      "author": "Gtm Mänôz",
+      "retrieved_at": "2026-10-02T19:03:00Z",
+      "supports": [
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "vendor-retrospective",
+      "url": "https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/",
+      "title": "Looking Back at Our Bug Bounty Program in 2022",
+      "type": "vendor",
+      "author": "Neta Oren / Meta",
+      "retrieved_at": "2026-10-02T19:03:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+      "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+      "type": "vendor",
+      "author": "Dan Gurfinkel / Facebook",
+      "retrieved_at": "2026-10-02T18:24:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "researcher-writeup",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T19:03:00Z",
+    "method": "Matched the researcher’s explicit vendor-retrospective link, name and account-verification issue to Meta’s per-report award. Retained final reward adjustment separately from cash settlement and fix confirmation.",
+    "limitations": [
+      "Exact reward-component amounts and cash-transfer date are unknown.",
+      "Fix-confirmation date does not prove an exact deployment date.",
+      "USD notation uses earlier official program context."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

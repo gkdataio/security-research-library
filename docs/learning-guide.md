@@ -52,7 +52,7 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 ## 6. Account recovery and identity binding
 
-**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
+**Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; Meta linked-account SMS verification; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
 
 Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
 
@@ -70,7 +70,7 @@ Learn how the same entitlement can be represented across API surfaces and framew
 
 ## 8. Browser permission and consent lifecycle
 
-**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Chrome graphics input validation; Pixel authentication-state binding
+**Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Facebook SDK message authentication and Meta Pixel context binding; Chrome graphics input validation; Pixel authentication-state binding
 
 Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
 

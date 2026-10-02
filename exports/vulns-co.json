@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T18:24:00Z",
+  "latest_reviewed_at": "2026-10-02T19:03:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 47,
+    "included": 50,
     "within_preferred_window": 19,
-    "older_or_uncertain": 28,
-    "bug_bounty": 39,
+    "older_or_uncertain": 31,
+    "bug_bounty": 42,
     "competition_award": 8
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -5588,6 +5588,168 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "meta-account-verification-attempt-state-binding-2022",
+      "title": "Meta account verification weakened linked SMS authentication state",
+      "organization": "Meta",
+      "product": "Meta Accounts Center, Instagram and Facebook SMS verification",
+      "researchers": [
+        "Gtm Mänôz"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "security-token-design",
+        "authorization-modeling",
+        "integration-threat-modeling"
+      ],
+      "summary": "Meta confirms a USD 27,200 total award for this account-verification report.",
+      "root_cause": "Insufficient verification-attempt limits undermined phone ownership checks, while linked-account state changes could affect an existing SMS authentication factor.",
+      "impact": "The vendor confirms possible SMS-based two-factor authentication bypass. The researcher demonstrated factor revocation; this alone does not establish password disclosure or an authenticated session.",
+      "defensive_takeaways": [
+        "Enforce verification-attempt limits consistently across linked applications.",
+        "Require verified ownership before changing another account’s recovery or second-factor state."
+      ],
+      "reward": {
+        "amount": 27200,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "vendor-retrospective",
+        "evidence_quote": "We awarded a $27,200 bounty for this report.",
+        "evidence_location": "Bug Highlights, 2FA Bypass paragraph naming Gtm Mänôz",
+        "usd_equivalent": null,
+        "notes": "Vendor total for one report. Researcher describes an initial September award and a December adjustment; component amounts are unknown and are not added on top. USD is contextualized by earlier official program reporting; settlement is unverified."
+      },
+      "dates": {
+        "published": {
+          "value": "2023-01-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Primary technical article date; distinct from the earlier vendor summary."
+        },
+        "public_disclosure": {
+          "value": "2022-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-retrospective",
+          "note": "Vendor’s high-level public summary. Researcher confirms this same-day highlight; a 2024 update concerns another case."
+        },
+        "reported": {
+          "value": "2022-09-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2022-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Final additional award; initial amount was awarded September 24, 2022."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Researcher received fix confirmation October 17, 2022; exact deployment date is not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": "2022-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-retrospective",
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical technical publication in January 2023, describing a 2022 report."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c",
+          "title": "Two Factor Authentication Bypass On Facebook",
+          "type": "researcher",
+          "author": "Gtm Mänôz",
+          "retrieved_at": "2026-10-02T19:03:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "vendor-retrospective",
+          "url": "https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/",
+          "title": "Looking Back at Our Bug Bounty Program in 2022",
+          "type": "vendor",
+          "author": "Neta Oren / Meta",
+          "retrieved_at": "2026-10-02T19:03:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:03:00Z",
+        "method": "Matched the researcher’s explicit vendor-retrospective link, name and account-verification issue to Meta’s per-report award. Retained final reward adjustment separately from cash settlement and fix confirmation.",
+        "limitations": [
+          "Exact reward-component amounts and cash-transfer date are unknown.",
+          "Fix-confirmation date does not prove an exact deployment date.",
+          "USD notation uses earlier official program context."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "google-pixel-lock-screen-state-binding-2022",
       "title": "Pixel lock-screen completion lost security-state binding",
       "organization": "Google",
@@ -7201,6 +7363,155 @@
       "content_scope": "historical_defensive_summary"
     },
     {
+      "schema_version": "1.0.0",
+      "id": "meta-pixel-cross-window-authority-binding-2024",
+      "title": "Meta Pixel cross-window handling lost message and token authority",
+      "organization": "Meta",
+      "product": "Meta Pixel and Instagram account integrations",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "authentication",
+        "client-security"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "browser-isolation-review"
+      ],
+      "summary": "The researcher reports a USD 32,500 bounty for this single disclosed finding or chain.",
+      "root_cause": "A trusted-origin check did not establish the authority of cross-window messages. Sensitive page context could enter requests under another identity, alongside inconsistent authorization-grant binding.",
+      "impact": "The researcher reports exposure of Instagram authorization material and consequent account takeover under the documented interaction conditions. Broad script deployment does not establish identical impact on every embedding site.",
+      "defensive_takeaways": [
+        "Bind cross-window messages to their expected sender and transaction context.",
+        "Keep authorization material out of general analytics data and verify grant-to-client binding."
+      ],
+      "reward": {
+        "amount": 32500,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "$32,500 bounty awarded by Meta",
+        "evidence_location": "Researcher timeline, dated award entry",
+        "usd_equivalent": null,
+        "notes": "One researcher-reported bug bounty, not an event total. The article uses $; prior official Meta program reporting supplies USD context. Actual cash settlement is not established."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Current archive page displays 2026-01-16. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Earliest public disclosure remains unverified; the current archive header does not resolve it."
+        },
+        "reported": {
+          "value": "2024-10-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-02-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "fixed": {
+          "value": "2024-10-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Researcher timeline explicitly labels this as the vendor fix date."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Original publication is unknown; the January 2026 archive header is not counted as recent research. Report and award timelines remain separately dated."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html",
+          "title": "Instagram account takeover via Meta Pixel script abuse",
+          "type": "researcher",
+          "author": "Youssef Sammouda",
+          "retrieved_at": "2026-10-02T19:03:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:03:00Z",
+        "method": "Read the researcher’s dated reward and remediation timeline and high-level trust-boundary explanation. Retained archive display date only in publication notes; original-publication recency remains unknown.",
+        "limitations": [
+          "Researcher-reported award; no independent vendor confirmation or audited transfer.",
+          "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",
+          "USD normalization uses earlier official program context rather than an award receipt."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
       "schema_version": "1.1.0",
       "id": "meta-ai-media-object-authorization-2025",
       "title": "Meta AI media access lacked object-ownership authorization",
@@ -7333,6 +7644,155 @@
           "Vendor wording is researcher-published, not independent vendor confirmation.",
           "An updated date does not establish original publication. Full-fix confirmation does not establish deployment timing.",
           "Cash receipt is not established."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "facebook-sdk-message-authentication-randomness-2023",
+      "title": "Facebook SDK message authentication relied on insecure randomness",
+      "organization": "Meta",
+      "product": "Facebook JavaScript SDK and mobile application web content",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "client-security",
+        "injection"
+      ],
+      "skillset_ids": [
+        "security-token-design",
+        "browser-isolation-review",
+        "untrusted-input-handling",
+        "integration-threat-modeling"
+      ],
+      "summary": "The researcher reports a USD 66,000 bounty for this single disclosed finding or chain.",
+      "root_cause": "Cross-window message authentication relied on a callback value generated by a non-cryptographic random source. A message consumer also failed to preserve the boundary between data and active HTML.",
+      "impact": "The researcher reports Facebook account takeover when a user visited a link within the mobile application. The described impact depends on the application’s browser and embedding behavior.",
+      "defensive_takeaways": [
+        "Use cryptographic randomness when token unpredictability is a security requirement.",
+        "Validate message context independently and handle supplied content as data."
+      ],
+      "reward": {
+        "amount": 66000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "$66,000 bounty awarded by Meta",
+        "evidence_location": "Researcher timeline, dated award entry",
+        "usd_equivalent": null,
+        "notes": "One researcher-reported bug bounty, not an event total. The article uses $; prior official Meta program reporting supplies USD context. Actual cash settlement is not established."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Current archive page displays 2026-01-17. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Earliest public disclosure remains unverified; the current archive header does not resolve it."
+        },
+        "reported": {
+          "value": "2023-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2023-06-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "fixed": {
+          "value": "2023-12-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Researcher timeline explicitly labels this as the vendor fix date."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Original publication is unknown; the January 2026 archive header is not counted as recent research. Report and award timelines remain separately dated."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html",
+          "title": "Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK",
+          "type": "researcher",
+          "author": "Youssef Sammouda",
+          "retrieved_at": "2026-10-02T19:03:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-02T18:24:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T19:03:00Z",
+        "method": "Read the researcher’s dated reward and remediation timeline and high-level trust-boundary explanation. Retained archive display date only in publication notes; original-publication recency remains unknown.",
+        "limitations": [
+          "Researcher-reported award; no independent vendor confirmation or audited transfer.",
+          "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",
+          "USD normalization uses earlier official program context rather than an award receipt."
         ]
       },
       "content_scope": "historical_defensive_summary"
