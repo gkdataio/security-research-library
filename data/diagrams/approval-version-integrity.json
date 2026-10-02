@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "approval-version-integrity",
+  "title": "Approval stays attached to the reviewed version",
+  "alt_text": "Reviewed content and its immutable version are bound to an approval. Execution independently checks that the version still matches. Matching requests proceed with least privilege; mismatches require a new review.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "google-cloud-build-approval-toctou-2025",
+    "github-actions-reference-validation-2021"
+  ],
+  "linked_resource_ids": [
+    "owasp-authorization-cheat-sheet"
+  ],
+  "evidence_urls": [
+    "https://adnanthekhan.com/posts/cloud-build-toctou/",
+    "https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-02T14:50:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "review",
+        "label": "Review content and immutable version",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "approval",
+        "label": "Record approval for that version",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "check",
+        "label": "Does execution match the approved version?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "run",
+        "label": "Allow least-privilege execution",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "stop",
+        "label": "Stop and request a new review",
+        "shape": "box",
+        "kind": "denied"
+      }
+    ],
+    "edges": [
+      {
+        "from": "review",
+        "to": "approval",
+        "label": null
+      },
+      {
+        "from": "approval",
+        "to": "check",
+        "label": null
+      },
+      {
+        "from": "check",
+        "to": "run",
+        "label": "Yes"
+      },
+      {
+        "from": "check",
+        "to": "stop",
+        "label": "No"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/approval-version-integrity.mmd",
+    "graphviz": "diagrams/approval-version-integrity.dot",
+    "svg": "diagrams/approval-version-integrity.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

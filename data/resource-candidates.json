@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0.0",
+  "candidates": [
+    {
+      "id": "google-understanding-security-vulnerability-reports",
+      "url": "https://bughunters.google.com/learn/improving-your-reports/getting-started/what-is-a-security-vulnerability",
+      "reason_not_included": "Only indexed text was available; full primary page content was not retrieved. Replaced with a fully readable official HackerOne reporting guide."
+    }
+  ]
+}

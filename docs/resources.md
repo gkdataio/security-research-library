@@ -1,0 +1,14 @@
+# Official learning resources
+
+This collection is separate from paid-award reports. It contains official educational references, with original summaries, source review dates, version information where known, and clearly marked editorial prerequisites.
+
+- [OWASP ASVS 5.0.0](https://owasp.org/projects/asvs): turn security goals into versioned verification requirements
+- [OAuth security best practice, RFC 9700](https://www.rfc-editor.org/rfc/rfc9700.html): review identity integration assumptions and token protections
+- [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html): make authorization consistent, explicit, and testable
+- [OWASP LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html): reason about untrusted content, tool permissions, and defense in depth
+- [HackerOne Quality Reports](https://docs.hackerone.com/en/articles/8475116-quality-reports): communicate evidence-backed impact, scope, and remediation clearly
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security): study fundamentals in provider-controlled training environments
+
+The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
+
+[Machine-readable export](../exports/resources.json) · [Resource taxonomy](../data/resource-taxonomy.json) · [Conceptual visual guide](visual-theory.md)

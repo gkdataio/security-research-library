@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rfc-9700-oauth-security-best-current-practice",
+  "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+  "publisher": "Internet Engineering Task Force / RFC Editor",
+  "authors": [],
+  "primary_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+  "resource_type_id": "technical-standard",
+  "topic_ids": [
+    "identity"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "integration-threat-modeling"
+  ],
+  "version": "RFC 9700 / BCP 240",
+  "summary": "Consensus guidance updating OAuth's security model with deployment experience, stronger protocol requirements, and deprecated insecure patterns. A primary reference for identity integration reviews.",
+  "defensive_use": "Compare an owned integration's documented design against the standard and record deviations and compensating controls.",
+  "prerequisites": [
+    "OAuth roles and authorization flows",
+    "HTTP redirects and TLS",
+    "Basic token and session concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-01",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T14:50:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T14:50:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [],
+  "content_scope": "defensive_education"
+}

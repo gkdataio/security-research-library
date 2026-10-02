@@ -1,0 +1,298 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "publisher": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "primary_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "resource_type_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "topic_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "skillset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "defensive_use": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1000
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "prerequisites_basis": {
+      "enum": [
+        "editorial_guidance",
+        "publisher_explicit"
+      ]
+    },
+    "access": {
+      "type": "object",
+      "properties": {
+        "cost": {
+          "enum": [
+            "free",
+            "paid",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "cost",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "dates": {
+      "type": "object",
+      "properties": {
+        "published": {
+          "$ref": "#/$defs/date"
+        },
+        "version_released": {
+          "$ref": "#/$defs/date"
+        },
+        "source_displayed": {
+          "$ref": "#/$defs/date"
+        }
+      },
+      "required": [
+        "published",
+        "version_released",
+        "source_displayed"
+      ],
+      "additionalProperties": false
+    },
+    "freshness": {
+      "type": "object",
+      "properties": {
+        "reviewed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "living_resource": {
+          "type": "boolean"
+        },
+        "status": {
+          "const": "primary_source_reviewed"
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "reviewed_at",
+        "living_resource",
+        "status",
+        "note"
+      ],
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "provenance": {
+            "const": "official_primary"
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "supports": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "summary",
+                "version",
+                "dates",
+                "prerequisites"
+              ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "title",
+          "publisher",
+          "provenance",
+          "retrieved_at",
+          "supports"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "caveats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "content_scope": {
+      "const": "defensive_education"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "publisher",
+    "authors",
+    "primary_url",
+    "resource_type_id",
+    "topic_ids",
+    "skillset_ids",
+    "version",
+    "summary",
+    "defensive_use",
+    "prerequisites",
+    "prerequisites_basis",
+    "access",
+    "dates",
+    "freshness",
+    "sources",
+    "caveats",
+    "content_scope"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "General defensive security resource",
+  "$defs": {
+    "date": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}(?:-\\d{2}(?:-\\d{2})?)?$"
+        },
+        "precision": {
+          "enum": [
+            "day",
+            "month",
+            "year",
+            null
+          ]
+        },
+        "basis": {
+          "enum": [
+            "explicit",
+            "inferred",
+            "url_date",
+            "not_reported"
+          ]
+        },
+        "source_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "value",
+        "precision",
+        "basis",
+        "source_id",
+        "note"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

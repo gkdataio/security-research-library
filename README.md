@@ -34,6 +34,16 @@ The collection grew from six to 21 records in the historical expansion. It now c
 
 These are evidence-backed award reports, not independently audited bank transfers. Program maximums, researcher career totals, team event totals, and undisclosed amounts are excluded. Reward attribution and date uncertainty stay visible in every record. A chain or team entry is counted once, not once per CVE or person. An empty researcher array means the reviewed primary source did not identify the researcher.
 
+## General resources and visual theory
+
+Six official educational resources and three evidence-linked conceptual diagrams are maintained separately from the 21 award reports.
+
+- [Official learning resources](docs/resources.md)
+- [Visual guide with rendered SVGs and Mermaid sources](docs/visual-theory.md)
+- [Separate resources and diagrams JSON export](exports/resources.json)
+
+The visuals cover approval-version integrity, AI content/authority separation, and identity-claim binding. SVGs are rendered offline with Graphviz from the same source graph as the Mermaid files.
+
 ## Layout
 
 - `data/reports/`: canonical JSON records; filename equals stable ID
@@ -57,6 +67,9 @@ python3 scripts/validate.py
 python3 -m unittest discover -s tests -v
 python3 scripts/export.py
 python3 scripts/export.py --check
+python3 scripts/validate_extra.py
+python3 scripts/render_diagrams.py --check
+python3 scripts/export_resources.py --check
 ```
 
 Recurring research maintenance is configured through the assistant. No GitHub Actions workflow is configured. `validate.py` implements the schema features used here plus cross-record editorial checks. If the JSON Schema gains new keywords, update the validator and tests.

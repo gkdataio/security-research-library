@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "id": "identity-claim-binding",
+  "title": "An identity claim must belong to the user",
+  "alt_text": "The identity provider authenticates a subject and binds issued claims to it. The relying application validates the issuer, audience, signature, and ownership binding before mapping to a local account. Failed validation is rejected.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "apple-sign-in-identity-claim-binding-2020",
+    "github-oauth-method-semantics-2019"
+  ],
+  "linked_resource_ids": [
+    "rfc-9700-oauth-security-best-current-practice"
+  ],
+  "evidence_urls": [
+    "https://bhavukjain.com/blog/2020/05/30/zeroday-signin-with-apple/",
+    "https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html",
+    "https://www.rfc-editor.org/rfc/rfc9700.html"
+  ],
+  "reviewed_at": "2026-10-02T14:50:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "subject",
+        "label": "Authenticated subject",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "claims",
+        "label": "Issue claims bound to that subject",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "validate",
+        "label": "Valid issuer, audience, signature and subject binding?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "account",
+        "label": "Map to the authorized local account",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "reject",
+        "label": "Reject inconsistent identity claims",
+        "shape": "box",
+        "kind": "denied"
+      }
+    ],
+    "edges": [
+      {
+        "from": "subject",
+        "to": "claims",
+        "label": null
+      },
+      {
+        "from": "claims",
+        "to": "validate",
+        "label": null
+      },
+      {
+        "from": "validate",
+        "to": "account",
+        "label": "Yes"
+      },
+      {
+        "from": "validate",
+        "to": "reject",
+        "label": "No"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/identity-claim-binding.mmd",
+    "graphviz": "diagrams/identity-claim-binding.dot",
+    "svg": "diagrams/identity-claim-binding.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

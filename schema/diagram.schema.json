@@ -1,0 +1,212 @@
+{
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "alt_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "diagram_type": {
+      "const": "defensive_data_flow"
+    },
+    "interpretation": {
+      "type": "string",
+      "minLength": 1
+    },
+    "linked_report_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "linked_resource_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "source_graph": {
+      "type": "object",
+      "properties": {
+        "direction": {
+          "const": "TB"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "shape": {
+                "enum": [
+                  "box",
+                  "diamond"
+                ]
+              },
+              "kind": {
+                "enum": [
+                  "data",
+                  "decision",
+                  "allowed",
+                  "denied"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "shape",
+              "kind"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "edges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "to": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "from",
+              "to",
+              "label"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "direction",
+        "nodes",
+        "edges"
+      ],
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "object",
+      "properties": {
+        "mermaid": {
+          "type": "string",
+          "minLength": 1
+        },
+        "graphviz": {
+          "type": "string",
+          "minLength": 1
+        },
+        "svg": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "mermaid",
+        "graphviz",
+        "svg"
+      ],
+      "additionalProperties": false
+    },
+    "rendering": {
+      "type": "object",
+      "properties": {
+        "renderer": {
+          "const": "Graphviz dot 2.42.4"
+        },
+        "mermaid_engine_executed": {
+          "const": false
+        },
+        "equivalence_basis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "visual_qa": {
+          "enum": [
+            "pending",
+            "passed"
+          ]
+        }
+      },
+      "required": [
+        "renderer",
+        "mermaid_engine_executed",
+        "equivalence_basis",
+        "visual_qa"
+      ],
+      "additionalProperties": false
+    },
+    "content_scope": {
+      "const": "conceptual_defensive_model"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "alt_text",
+    "diagram_type",
+    "interpretation",
+    "linked_report_ids",
+    "linked_resource_ids",
+    "evidence_urls",
+    "reviewed_at",
+    "source_graph",
+    "files",
+    "rendering",
+    "content_scope"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Evidence-linked conceptual defensive diagram"
+}

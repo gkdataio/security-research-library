@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-llm-prompt-injection-prevention",
+  "title": "LLM Prompt Injection Prevention Cheat Sheet",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "ai-security"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "untrusted-input-handling"
+  ],
+  "version": null,
+  "summary": "Defense-in-depth guidance for LLM applications that consume untrusted content or invoke tools. Covers data provenance, least privilege, action authorization, monitoring, and the limitations of guardrails.",
+  "defensive_use": "Review permissions and action boundaries around an owned AI integration; treat filters and model-based checks as partial defenses rather than guarantees.",
+  "prerequisites": [
+    "LLM application and tool-call basics",
+    "Trust boundaries",
+    "An understanding of the application's data and permissions"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T14:50:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "title": "LLM Prompt Injection Prevention Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T14:50:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Includes attack examples; this collection uses it as a defensive-design reference",
+    "Guidance evolves and individual examples require contextual evaluation"
+  ],
+  "content_scope": "defensive_education"
+}

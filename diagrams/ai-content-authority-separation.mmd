@@ -1,0 +1,12 @@
+flowchart TB
+  user["User intent and approved scope"]
+  data["Retrieved connector content: untrusted data"]
+  model["AI proposes a response or action"]
+  policy{"Does independent policy authorize the action?"}
+  change["Apply only the approved state change"]
+  deny["Keep state unchanged"]
+  user -->|Intent| model
+  data -->|Content| model
+  model -->|Proposal| policy
+  policy -->|Yes| change
+  policy -->|No| deny

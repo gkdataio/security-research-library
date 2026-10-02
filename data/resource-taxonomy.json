@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "resource_types": [
+    {
+      "id": "security-standard",
+      "title": "Security Standard"
+    },
+    {
+      "id": "technical-standard",
+      "title": "Technical Standard"
+    },
+    {
+      "id": "implementation-guide",
+      "title": "Implementation Guide"
+    },
+    {
+      "id": "architecture-guide",
+      "title": "Architecture Guide"
+    },
+    {
+      "id": "reporting-guide",
+      "title": "Reporting Guide"
+    },
+    {
+      "id": "training-lab",
+      "title": "Training Lab"
+    }
+  ],
+  "topics": [
+    {
+      "id": "verification",
+      "title": "Verification"
+    },
+    {
+      "id": "identity",
+      "title": "Identity"
+    },
+    {
+      "id": "authorization",
+      "title": "Authorization"
+    },
+    {
+      "id": "ai-security",
+      "title": "Ai Security"
+    },
+    {
+      "id": "reporting",
+      "title": "Reporting"
+    },
+    {
+      "id": "web-foundations",
+      "title": "Web Foundations"
+    }
+  ]
+}

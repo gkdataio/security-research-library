@@ -1,0 +1,10 @@
+flowchart TB
+  review["Review content and immutable version"]
+  approval["Record approval for that version"]
+  check{"Does execution match the approved version?"}
+  run["Allow least-privilege execution"]
+  stop["Stop and request a new review"]
+  review --> approval
+  approval --> check
+  check -->|Yes| run
+  check -->|No| stop

@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-authorization-cheat-sheet",
+  "title": "Authorization Cheat Sheet",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "cloud-iam-review"
+  ],
+  "version": null,
+  "summary": "Practical design guidance covering least privilege, deny-by-default behavior, consistent per-request decisions, failure handling, logging, and authorization regression tests.",
+  "defensive_use": "Document which identities may perform which operations on each resource and check implementation and tests against that policy.",
+  "prerequisites": [
+    "Authentication versus authorization",
+    "Application roles and resource ownership",
+    "Basic server-side development"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T14:50:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "title": "Authorization Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T14:50:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [],
+  "content_scope": "defensive_education"
+}

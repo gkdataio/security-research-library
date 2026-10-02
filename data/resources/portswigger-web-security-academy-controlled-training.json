@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "portswigger-web-security-academy-controlled-training",
+  "title": "Web Security Academy: Free Online Training from PortSwigger",
+  "publisher": "PortSwigger",
+  "authors": [],
+  "primary_url": "https://portswigger.net/web-security",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "identity-lifecycle-review",
+    "concurrency-reasoning"
+  ],
+  "version": null,
+  "summary": "Free web-security lessons and deliberately designed interactive training environments. Covers authentication, access control, business logic, API security, and other application-security fundamentals.",
+  "defensive_use": "Learn concepts in the provider's controlled exercises, then use that understanding for secure-design and remediation work within an approved scope.",
+  "prerequisites": [
+    "Basic HTTP and browser concepts",
+    "A free account for progress tracking",
+    "Use only the supplied training environments for exercises"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-02T14:50:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://portswigger.net/web-security",
+      "title": "Web Security Academy: Free Online Training from PortSwigger",
+      "publisher": "PortSwigger",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-02T14:50:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Some labs have additional software requirements; no software or tool recommendations are included here",
+    "Training access is not authorization to test third-party systems"
+  ],
+  "content_scope": "defensive_education"
+}

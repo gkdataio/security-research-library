@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ai-content-authority-separation",
+  "title": "Retrieved content is data, not authority",
+  "alt_text": "User intent and untrusted connector content enter the AI workflow separately. A proposed action reaches an independent policy decision. Only an authorized state change proceeds; otherwise state remains unchanged.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+  "linked_report_ids": [
+    "google-gemini-enterprise-connected-content-memory-integrity-2026",
+    "google-gemini-colab-rendering-boundary-2025"
+  ],
+  "linked_resource_ids": [
+    "owasp-llm-prompt-injection-prevention"
+  ],
+  "evidence_urls": [
+    "https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6",
+    "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-02T14:50:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "user",
+        "label": "User intent and approved scope",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "data",
+        "label": "Retrieved connector content: untrusted data",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "model",
+        "label": "AI proposes a response or action",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "policy",
+        "label": "Does independent policy authorize the action?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "change",
+        "label": "Apply only the approved state change",
+        "shape": "box",
+        "kind": "allowed"
+      },
+      {
+        "id": "deny",
+        "label": "Keep state unchanged",
+        "shape": "box",
+        "kind": "denied"
+      }
+    ],
+    "edges": [
+      {
+        "from": "user",
+        "to": "model",
+        "label": "Intent"
+      },
+      {
+        "from": "data",
+        "to": "model",
+        "label": "Content"
+      },
+      {
+        "from": "model",
+        "to": "policy",
+        "label": "Proposal"
+      },
+      {
+        "from": "policy",
+        "to": "change",
+        "label": "Yes"
+      },
+      {
+        "from": "policy",
+        "to": "deny",
+        "label": "No"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/ai-content-authority-separation.mmd",
+    "graphviz": "diagrams/ai-content-authority-separation.dot",
+    "svg": "diagrams/ai-content-authority-separation.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

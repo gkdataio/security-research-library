@@ -40,3 +40,9 @@ The offline scripts validate and export this collection only. They do not access
 6. Commit a concise summary of source-backed changes; no empty or fabricated daily additions
 
 Do not push over an unexpected remote change. Read the current branch and existing files, then create a fast-forward commit preserving unrelated work. No repository workflow or deployment should be added without explicit scope.
+
+## General resources and diagrams
+
+Educational resources use a separate schema, taxonomy, and export. They do not claim bounty qualification. Prefer official documentation, standards, first-party research, and controlled training environments. Preserve known publication/version dates, leave unknown dates null, and label prerequisites as editorial unless explicitly documented. Review freshness without claiming a living document is immutable.
+
+Diagrams are original conceptual defensive models with linked report/resource evidence and alternate text. Do not include operational attack sequences or exploit details. Keep Mermaid source and SVG rendering provenance explicit. Both source formats must match the canonical graph; rendered SVGs need visual inspection after edits.

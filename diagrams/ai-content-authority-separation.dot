@@ -1,0 +1,17 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Retrieved content is data, not authority"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"user" [label="User intent and approved\nscope", shape="box", fillcolor="#f1f5f9"];
+"data" [label="Retrieved connector\ncontent: untrusted data", shape="box", fillcolor="#f1f5f9"];
+"model" [label="AI proposes a response or\naction", shape="box", fillcolor="#f1f5f9"];
+"policy" [label="Does independent policy\nauthorize the action?", shape="diamond", fillcolor="#e0ecf8"];
+"change" [label="Apply only the approved\nstate change", shape="box", fillcolor="#dcfce7"];
+"deny" [label="Keep state unchanged", shape="box", fillcolor="#fef3c7"];
+"user" -> "model" [label="Intent"];
+"data" -> "model" [label="Content"];
+"model" -> "policy" [label="Proposal"];
+"policy" -> "change" [label="Yes"];
+"policy" -> "deny" [label="No"];
+}

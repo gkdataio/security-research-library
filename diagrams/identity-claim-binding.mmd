@@ -1,0 +1,10 @@
+flowchart TB
+  subject["Authenticated subject"]
+  claims["Issue claims bound to that subject"]
+  validate{"Valid issuer, audience, signature and subject binding?"}
+  account["Map to the authorized local account"]
+  reject["Reject inconsistent identity claims"]
+  subject --> claims
+  claims --> validate
+  validate -->|Yes| account
+  validate -->|No| reject

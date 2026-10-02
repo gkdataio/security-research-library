@@ -1,0 +1,913 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "security-research-library-resources",
+  "as_of": "2026-10-02",
+  "repository_url": "https://github.com/gkdataio/security-research-library",
+  "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
+  "counts": {
+    "resources": 6,
+    "diagrams": 3
+  },
+  "taxonomy": {
+    "schema_version": "1.0.0",
+    "resource_types": [
+      {
+        "id": "security-standard",
+        "title": "Security Standard"
+      },
+      {
+        "id": "technical-standard",
+        "title": "Technical Standard"
+      },
+      {
+        "id": "implementation-guide",
+        "title": "Implementation Guide"
+      },
+      {
+        "id": "architecture-guide",
+        "title": "Architecture Guide"
+      },
+      {
+        "id": "reporting-guide",
+        "title": "Reporting Guide"
+      },
+      {
+        "id": "training-lab",
+        "title": "Training Lab"
+      }
+    ],
+    "topics": [
+      {
+        "id": "verification",
+        "title": "Verification"
+      },
+      {
+        "id": "identity",
+        "title": "Identity"
+      },
+      {
+        "id": "authorization",
+        "title": "Authorization"
+      },
+      {
+        "id": "ai-security",
+        "title": "Ai Security"
+      },
+      {
+        "id": "reporting",
+        "title": "Reporting"
+      },
+      {
+        "id": "web-foundations",
+        "title": "Web Foundations"
+      }
+    ]
+  },
+  "skillset_definitions": [
+    {
+      "id": "authorization-modeling",
+      "title": "Model access-control invariants",
+      "defensive_objective": "Document expected actor, action, resource, and tenant relationships in an authorized design review"
+    },
+    {
+      "id": "identity-lifecycle-review",
+      "title": "Review identity lifecycle",
+      "defensive_objective": "Assess binding, verification, recovery, linking, and revocation requirements using approved test accounts"
+    },
+    {
+      "id": "approval-state-integrity",
+      "title": "Review approval-state integrity",
+      "defensive_objective": "Check that approval records bind to immutable content and survive state changes safely"
+    },
+    {
+      "id": "concurrency-reasoning",
+      "title": "Reason about concurrent state",
+      "defensive_objective": "Model ordering assumptions and prove security invariants with local state-machine or unit tests"
+    },
+    {
+      "id": "cloud-iam-review",
+      "title": "Review cloud IAM boundaries",
+      "defensive_objective": "Compare intended service authority with documented effective permissions and least-privilege requirements"
+    },
+    {
+      "id": "integration-threat-modeling",
+      "title": "Threat-model integrations",
+      "defensive_objective": "Trace documented trust assumptions between services and identify where authorization responsibility changes"
+    },
+    {
+      "id": "pipeline-trust-modeling",
+      "title": "Model build and release trust",
+      "defensive_objective": "Map trusted and untrusted inputs, artifacts, jobs, and identity boundaries in approved architecture diagrams"
+    },
+    {
+      "id": "cache-artifact-isolation",
+      "title": "Review artifact isolation",
+      "defensive_objective": "Assess separation of caches and artifacts by trust level, and define integrity controls"
+    },
+    {
+      "id": "dependency-provenance",
+      "title": "Review dependency provenance",
+      "defensive_objective": "Check explicit registries, namespace ownership, lockfiles, source pinning, and package-origin policy"
+    },
+    {
+      "id": "machine-identity-governance",
+      "title": "Review machine identities",
+      "defensive_objective": "Document bot and service identity privileges, rotation, approvals, and separation of duties"
+    },
+    {
+      "id": "secrets-containment",
+      "title": "Review secrets containment",
+      "defensive_objective": "Assess whether secrets are limited to the minimum necessary trusted execution contexts"
+    },
+    {
+      "id": "untrusted-input-handling",
+      "title": "Review input trust boundaries",
+      "defensive_objective": "Assess validation and data/code separation without collecting offensive payloads"
+    },
+    {
+      "id": "ai-authority-boundaries",
+      "title": "Review AI authority boundaries",
+      "defensive_objective": "Assess least privilege and independent validation at tool execution and data disclosure boundaries"
+    },
+    {
+      "id": "secure-parser-review",
+      "title": "Review parsing and serialization",
+      "defensive_objective": "Reason about parser consistency, validation, and safe serialization contracts"
+    },
+    {
+      "id": "browser-isolation-review",
+      "title": "Review client isolation",
+      "defensive_objective": "Study process, origin, memory-safety, and permission boundaries in patched historical cases"
+    },
+    {
+      "id": "defensive-evidence-writing",
+      "title": "Write bounded security evidence",
+      "defensive_objective": "Separate demonstrated impact, modeled impact, remediation, and source uncertainty in review findings"
+    },
+    {
+      "id": "encoding-invariant-review",
+      "title": "Review text-encoding invariants",
+      "defensive_objective": "Identify and document validation contracts at extension and parser boundaries, then verify them with safe unit tests"
+    },
+    {
+      "id": "memory-safety-review",
+      "title": "Review memory-safety assumptions",
+      "defensive_objective": "Assess length, bounds, allocation, and lifetime assumptions in owned source code and vendor patches"
+    },
+    {
+      "id": "patch-verification",
+      "title": "Verify remediation evidence",
+      "defensive_objective": "Compare vendor advisories, affected versions, fixes, and regression coverage without reproducing an exploit"
+    }
+  ],
+  "resources": [
+    {
+      "schema_version": "1.0.0",
+      "id": "hackerone-quality-vulnerability-reports",
+      "title": "Quality Reports",
+      "publisher": "HackerOne Help Center",
+      "authors": [],
+      "primary_url": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
+      "resource_type_id": "reporting-guide",
+      "topic_ids": [
+        "reporting"
+      ],
+      "skillset_ids": [
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Official guidance for concise security reports: clear titles, expected versus actual behavior, evidence-backed impact, useful supporting material, scope checks, and remediation suggestions.",
+      "defensive_use": "Document a finding from authorized work with clear impact, evidence limits, and remediation context; omit unrelated details.",
+      "prerequisites": [
+        "Understanding of the program’s authorized scope",
+        "A documented finding from authorized work"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2025-02-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Date displayed by the help article; original publication versus update is not distinguished."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:58:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
+          "title": "Quality Reports",
+          "publisher": "HackerOne Help Center",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:58:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The official source includes technical examples; this catalog retains reporting-quality lessons only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-asvs-5-security-verification-standard",
+      "title": "OWASP Application Security Verification Standard (ASVS)",
+      "publisher": "OWASP Foundation",
+      "authors": [],
+      "primary_url": "https://owasp.org/projects/asvs",
+      "resource_type_id": "security-standard",
+      "topic_ids": [
+        "verification"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "version": "5.0.0",
+      "summary": "Versioned requirements for secure development and reviewing web-application security controls. Useful for turning lessons from disclosures into traceable acceptance criteria and regression coverage.",
+      "defensive_use": "Select applicable requirements for an owned application, retain the versioned identifiers, and record evidence for each control.",
+      "prerequisites": [
+        "Basic web-application architecture",
+        "Familiarity with authentication and authorization",
+        "A defined review scope"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": "2025-05-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "release",
+          "note": "Official GitHub release metadata gives published_at 2025-05-30T09:35:31Z; this is a version release, not the homepage publication."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:50:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://owasp.org/projects/asvs",
+          "title": "OWASP Application Security Verification Standard (ASVS)",
+          "publisher": "OWASP Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/OWASP/ASVS/releases/tag/v5.0.0_release",
+          "title": "ASVS 5.0.0 release",
+          "publisher": "OWASP",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-authorization-cheat-sheet",
+      "title": "Authorization Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "cloud-iam-review"
+      ],
+      "version": null,
+      "summary": "Practical design guidance covering least privilege, deny-by-default behavior, consistent per-request decisions, failure handling, logging, and authorization regression tests.",
+      "defensive_use": "Document which identities may perform which operations on each resource and check implementation and tests against that policy.",
+      "prerequisites": [
+        "Authentication versus authorization",
+        "Application roles and resource ownership",
+        "Basic server-side development"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:50:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html",
+          "title": "Authorization Cheat Sheet",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-llm-prompt-injection-prevention",
+      "title": "LLM Prompt Injection Prevention Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "ai-security"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "integration-threat-modeling",
+        "untrusted-input-handling"
+      ],
+      "version": null,
+      "summary": "Defense-in-depth guidance for LLM applications that consume untrusted content or invoke tools. Covers data provenance, least privilege, action authorization, monitoring, and the limitations of guardrails.",
+      "defensive_use": "Review permissions and action boundaries around an owned AI integration; treat filters and model-based checks as partial defenses rather than guarantees.",
+      "prerequisites": [
+        "LLM application and tool-call basics",
+        "Trust boundaries",
+        "An understanding of the application's data and permissions"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:50:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html",
+          "title": "LLM Prompt Injection Prevention Cheat Sheet",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Includes attack examples; this collection uses it as a defensive-design reference",
+        "Guidance evolves and individual examples require contextual evaluation"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "portswigger-web-security-academy-controlled-training",
+      "title": "Web Security Academy: Free Online Training from PortSwigger",
+      "publisher": "PortSwigger",
+      "authors": [],
+      "primary_url": "https://portswigger.net/web-security",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "concurrency-reasoning"
+      ],
+      "version": null,
+      "summary": "Free web-security lessons and deliberately designed interactive training environments. Covers authentication, access control, business logic, API security, and other application-security fundamentals.",
+      "defensive_use": "Learn concepts in the provider's controlled exercises, then use that understanding for secure-design and remediation work within an approved scope.",
+      "prerequisites": [
+        "Basic HTTP and browser concepts",
+        "A free account for progress tracking",
+        "Use only the supplied training environments for exercises"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:50:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://portswigger.net/web-security",
+          "title": "Web Security Academy: Free Online Training from PortSwigger",
+          "publisher": "PortSwigger",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Some labs have additional software requirements; no software or tool recommendations are included here",
+        "Training access is not authorization to test third-party systems"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "rfc-9700-oauth-security-best-current-practice",
+      "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "authors": [],
+      "primary_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "identity"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "integration-threat-modeling"
+      ],
+      "version": "RFC 9700 / BCP 240",
+      "summary": "Consensus guidance updating OAuth's security model with deployment experience, stronger protocol requirements, and deprecated insecure patterns. A primary reference for identity integration reviews.",
+      "defensive_use": "Compare an owned integration's documented design against the standard and record deviations and compensating controls.",
+      "prerequisites": [
+        "OAuth roles and authorization flows",
+        "HTTP redirects and TLS",
+        "Basic token and session concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Verified as free at review time; optional accounts or provider features may have separate terms."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-01",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-02T14:50:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.rfc-editor.org/rfc/rfc9700.html",
+          "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+          "publisher": "Internet Engineering Task Force / RFC Editor",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-02T14:50:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [],
+      "content_scope": "defensive_education"
+    }
+  ],
+  "diagrams": [
+    {
+      "schema_version": "1.0.0",
+      "id": "ai-content-authority-separation",
+      "title": "Retrieved content is data, not authority",
+      "alt_text": "User intent and untrusted connector content enter the AI workflow separately. A proposed action reaches an independent policy decision. Only an authorized state change proceeds; otherwise state remains unchanged.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+      "linked_report_ids": [
+        "google-gemini-enterprise-connected-content-memory-integrity-2026",
+        "google-gemini-colab-rendering-boundary-2025"
+      ],
+      "linked_resource_ids": [
+        "owasp-llm-prompt-injection-prevention"
+      ],
+      "evidence_urls": [
+        "https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6",
+        "https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/",
+        "https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html"
+      ],
+      "reviewed_at": "2026-10-02T14:50:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "user",
+            "label": "User intent and approved scope",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "data",
+            "label": "Retrieved connector content: untrusted data",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "model",
+            "label": "AI proposes a response or action",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "policy",
+            "label": "Does independent policy authorize the action?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "change",
+            "label": "Apply only the approved state change",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "deny",
+            "label": "Keep state unchanged",
+            "shape": "box",
+            "kind": "denied"
+          }
+        ],
+        "edges": [
+          {
+            "from": "user",
+            "to": "model",
+            "label": "Intent"
+          },
+          {
+            "from": "data",
+            "to": "model",
+            "label": "Content"
+          },
+          {
+            "from": "model",
+            "to": "policy",
+            "label": "Proposal"
+          },
+          {
+            "from": "policy",
+            "to": "change",
+            "label": "Yes"
+          },
+          {
+            "from": "policy",
+            "to": "deny",
+            "label": "No"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/ai-content-authority-separation.mmd",
+        "graphviz": "diagrams/ai-content-authority-separation.dot",
+        "svg": "diagrams/ai-content-authority-separation.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "approval-version-integrity",
+      "title": "Approval stays attached to the reviewed version",
+      "alt_text": "Reviewed content and its immutable version are bound to an approval. Execution independently checks that the version still matches. Matching requests proceed with least privilege; mismatches require a new review.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+      "linked_report_ids": [
+        "google-cloud-build-approval-toctou-2025",
+        "github-actions-reference-validation-2021"
+      ],
+      "linked_resource_ids": [
+        "owasp-authorization-cheat-sheet"
+      ],
+      "evidence_urls": [
+        "https://adnanthekhan.com/posts/cloud-build-toctou/",
+        "https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+      ],
+      "reviewed_at": "2026-10-02T14:50:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "review",
+            "label": "Review content and immutable version",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "approval",
+            "label": "Record approval for that version",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "check",
+            "label": "Does execution match the approved version?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "run",
+            "label": "Allow least-privilege execution",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "stop",
+            "label": "Stop and request a new review",
+            "shape": "box",
+            "kind": "denied"
+          }
+        ],
+        "edges": [
+          {
+            "from": "review",
+            "to": "approval",
+            "label": null
+          },
+          {
+            "from": "approval",
+            "to": "check",
+            "label": null
+          },
+          {
+            "from": "check",
+            "to": "run",
+            "label": "Yes"
+          },
+          {
+            "from": "check",
+            "to": "stop",
+            "label": "No"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/approval-version-integrity.mmd",
+        "graphviz": "diagrams/approval-version-integrity.dot",
+        "svg": "diagrams/approval-version-integrity.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "identity-claim-binding",
+      "title": "An identity claim must belong to the user",
+      "alt_text": "The identity provider authenticates a subject and binds issued claims to it. The relying application validates the issuer, audience, signature, and ownership binding before mapping to a local account. Failed validation is rejected.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model derived from the linked cases and official guidance; not a vendor architecture diagram or an exploitation sequence.",
+      "linked_report_ids": [
+        "apple-sign-in-identity-claim-binding-2020",
+        "github-oauth-method-semantics-2019"
+      ],
+      "linked_resource_ids": [
+        "rfc-9700-oauth-security-best-current-practice"
+      ],
+      "evidence_urls": [
+        "https://bhavukjain.com/blog/2020/05/30/zeroday-signin-with-apple/",
+        "https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html",
+        "https://www.rfc-editor.org/rfc/rfc9700.html"
+      ],
+      "reviewed_at": "2026-10-02T14:50:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "subject",
+            "label": "Authenticated subject",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "claims",
+            "label": "Issue claims bound to that subject",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "validate",
+            "label": "Valid issuer, audience, signature and subject binding?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "account",
+            "label": "Map to the authorized local account",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "reject",
+            "label": "Reject inconsistent identity claims",
+            "shape": "box",
+            "kind": "denied"
+          }
+        ],
+        "edges": [
+          {
+            "from": "subject",
+            "to": "claims",
+            "label": null
+          },
+          {
+            "from": "claims",
+            "to": "validate",
+            "label": null
+          },
+          {
+            "from": "validate",
+            "to": "account",
+            "label": "Yes"
+          },
+          {
+            "from": "validate",
+            "to": "reject",
+            "label": "No"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/identity-claim-binding.mmd",
+        "graphviz": "diagrams/identity-claim-binding.dot",
+        "svg": "diagrams/identity-claim-binding.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    }
+  ],
+  "asset_note": "Diagram asset paths are relative to the repository. SVGs are generated by Graphviz from the same canonical node/edge graph as the Mermaid sources; a Mermaid engine was not executed."
+}

@@ -1,0 +1,15 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Approval stays attached to the reviewed version"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"review" [label="Review content and\nimmutable version", shape="box", fillcolor="#f1f5f9"];
+"approval" [label="Record approval for that\nversion", shape="box", fillcolor="#f1f5f9"];
+"check" [label="Does execution match the\napproved version?", shape="diamond", fillcolor="#e0ecf8"];
+"run" [label="Allow least-privilege\nexecution", shape="box", fillcolor="#dcfce7"];
+"stop" [label="Stop and request a new\nreview", shape="box", fillcolor="#fef3c7"];
+"review" -> "approval" [label=""];
+"approval" -> "check" [label=""];
+"check" -> "run" [label="Yes"];
+"check" -> "stop" [label="No"];
+}
