@@ -55,6 +55,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - The advisory retains old prose saying no fixed release exists, while its patched-version metadata identifies 1\.18\.0 and the dated release corroborates stream-limit hardening\. These distinct source states are preserved\.
 - No production incident, measured billing loss or bounty amount was established\. Learning prerequisites and generalized design advice are editorial\.
 - The cited software release is dated 2026-06-13; it is distinct from the advisory publication and is not a claim about the latest available release\.
+- The advisory lists affected versions as &gt;=1\.13\.0 and patched versions as &gt;=1\.18\.0; its affected-range metadata lacks an upper bound\. These overlapping published fields do not establish that patched releases remain vulnerable\.
 
 ## Sources and attribution
 

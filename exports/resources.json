@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 46,
+    "resources": 48,
     "diagrams": 9
   },
   "taxonomy": {
@@ -550,7 +550,8 @@
         "The advisory credits asadeddin as reporter; jasonsaayman is the publishing maintainer, not an inferred discoverer.",
         "The advisory retains old prose saying no fixed release exists, while its patched-version metadata identifies 1.18.0 and the dated release corroborates stream-limit hardening. These distinct source states are preserved.",
         "No production incident, measured billing loss or bounty amount was established. Learning prerequisites and generalized design advice are editorial.",
-        "The cited software release is dated 2026-06-13; it is distinct from the advisory publication and is not a claim about the latest available release."
+        "The cited software release is dated 2026-06-13; it is distinct from the advisory publication and is not a claim about the latest available release.",
+        "The advisory lists affected versions as >=1.13.0 and patched versions as >=1.18.0; its affected-range metadata lacks an upper bound. These overlapping published fields do not establish that patched releases remain vulnerable."
       ],
       "content_scope": "defensive_education"
     },
@@ -1857,6 +1858,88 @@
       "caveats": [
         "Public clients are outside this profile’s scope.",
         "Security claims depend on the stated model and complete implementation; this record is not certification."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "outline-2026-webhook-revocation-lifecycle",
+      "title": "Outline: integration authority must end with its owning account",
+      "publisher": "Outline",
+      "authors": [
+        "tommoor"
+      ],
+      "primary_url": "https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "identity",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "authorization-modeling"
+      ],
+      "version": null,
+      "summary": "GHSA-33jq-x32c-3ccw describes webhook authority surviving deletion of its creator. Account cleanup omitted webhook subscriptions, while delivery trusted their enabled state. The maintainer-published report describes a local demonstration of document content delivery after the administrator account was deleted.",
+      "defensive_use": "Editorial lesson: revocation must cover durable integrations and every terminal account state, with delivery-time checks as defense in depth. The advisory identifies 1.8.0 as patched. Its proposed cleanup changes are recommendations, not evidence of the implemented patch.",
+      "prerequisites": [
+        "Basic server-side authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public disclosure readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-06-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:59:36Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Public primary disclosure reviewed; deployed remediation and source immutability were not established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw",
+          "title": "Webhook subscription persists after creator's account deletion",
+          "publisher": "Outline",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:59:36Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires a webhook previously configured by an administrator, followed by account deletion and a matching document event. The demonstrated deployment used 0.86.0; the maintainer lists versions through 1.7.1 as affected.",
+        "Continued delivery was demonstrated locally; no production incident, measured duration or customer exposure is established. Persistent exposure is the report’s inference from absent expiry and revalidation.",
+        "Published June 6, 2026 by tommoor, with dizconnectz credited as reporter. Publication does not establish the release date of 1.8.0. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
     },
@@ -3708,6 +3791,100 @@
         "The maintainer requires a prerendered route. SSRF additionally requires adapter-node without a configured origin and without reverse-proxy host validation. The advisory distinguishes the broader DoS case starting at SvelteKit 2.44.0 from the origin-dependent case starting at 2.19.0.",
         "The article provides demonstrations, not evidence of an actual third-party production compromise. Cache-related browser impact is conditional, not universal.",
         "The article displays January 2026 without a day; January 15 is its separately stated patch/advisory date. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "umbraco-2026-group-assignment-authority",
+      "title": "Umbraco: editing an account does not authorize assigning every role",
+      "publisher": "GitHub Security Lab",
+      "authors": [
+        "Jaroslav Lobačevski"
+      ],
+      "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-065_Umbraco_CMS/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-31834 separates authority over an account from authority to grant its roles. Research on Umbraco CMS 17.2.0 found that group-membership changes checked access to target users but omitted restrictions applied by the ordinary user-editing flow. A qualifying non-administrator API account could obtain administrator membership.",
+      "defensive_use": "Editorial lesson: model both the target account and the proposed privilege as authorization inputs, using consistent policy across bulk and individual operations. The maintainer confirms the role-assignment defect and fixes in 16.5.1 and 17.2.2; upgrade affected installations rather than relying on interface restrictions.",
+      "prerequisites": [
+        "Basic server-side authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public disclosure readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established. The research dates software fixes 16.5.1 and 17.2.2 to March 10, 2026, separately from its September publication."
+        },
+        "source_displayed": {
+          "value": "2026-09-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:59:36Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Public primary disclosure reviewed; deployed remediation and source immutability were not established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://securitylab.github.com/advisories/GHSL-2026-065_Umbraco_CMS/",
+          "title": "GHSL-2026-065: Unauthorized group assignment enables privilege escalation in Umbraco CMS",
+          "publisher": "GitHub Security Lab",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:59:36Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer-advisory",
+          "url": "https://github.com/umbraco/Umbraco-CMS/security/advisories/GHSA-rhcg-3h8r-v6vp",
+          "title": "Vertical Privilege Escalation via Missing Authorization Checks",
+          "publisher": "Umbraco",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:59:36Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an authenticated backoffice API user with access to the Users section. The vendor notes that this is ordinarily restricted to administrators, making custom delegation important to exposure.",
+        "The research reports administrator membership; the vendor describes resulting administrative control. Neither source establishes a customer incident or exploitation prevalence.",
+        "Research reported February 25, 2026; acknowledged as a duplicate the next day. The vendor advisory was published March 10; detailed research September 21.",
+        "The vendor affected-range field and listed patched releases do not yield a clean single interval; no normalized range is inferred here.",
+        "The byline is Jaroslav Lobačevski; discovery is credited to the GitHub Security Lab Taskflow Agent with his manual verification. The maintainer credits odgrso separately. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
     },
