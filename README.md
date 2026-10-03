@@ -2,7 +2,7 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Verified programs](docs/programs.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) · [Verified programs](docs/programs.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
@@ -11,7 +11,7 @@ Source-backed public security disclosures, official learning resources, and orig
 - **61 qualifying report records:** 50 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **66 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
+- **68 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 8 with unknown original publication dates
 

@@ -1,6 +1,6 @@
 # Read the reports
 
-[Library home](../README.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)
+[Library home](../README.md) · [Browse by topic](report-topics.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)
 
 Original defensive summaries with award provenance, distinct event dates and verification limits. These historical disclosures do not authorize testing. Generated from canonical records; edit the JSON, then regenerate.
 

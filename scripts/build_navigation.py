@@ -21,6 +21,33 @@ def link(label, url):
 
 
 
+def report_topic_page(reports, taxonomy):
+    """Index validated report category memberships without creating new records."""
+    ordered = sorted(reports, key=lambda r: (r['title'].casefold(), r['id']))
+    categories = sorted(taxonomy['categories'], key=lambda c: (c['title'].casefold(), c['id']))
+    groups = [(category, [rec for rec in ordered
+                          if category['id'] == rec['category_id']
+                          or category['id'] in rec['secondary_category_ids']])
+              for category in categories]
+    lines = ['# Award-backed reports by topic', '',
+             '[Report index](reports.md) · [Library home](../README.md)', '',
+             'Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.', '',
+             f'{len(ordered)} distinct award-backed reports across {len(categories)} taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.', '',
+             'Each entry labels its primary or secondary category membership. Categories and reports are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy categories are shown explicitly. Regeneration does not reverify sources or advance review timestamps.', '',
+             '## Browse topics', '']
+    for category, records in groups:
+        anchor = 'category-'+quote(category['id'], safe='')
+        lines.append('- '+link(category['title'], '#'+anchor)+f' — {len(records)} distinct '+('report.' if len(records) == 1 else 'reports.'))
+    for category, records in groups:
+        anchor = 'category-'+quote(category['id'], safe='')
+        lines += ['', f'<a id="{anchor}"></a>', '## '+text(category['title']), '',
+                  f'{len(records)} distinct '+('report.' if len(records) == 1 else 'reports.'), '']
+        lines += ['- '+link(rec['title'], 'reports/'+rec['id']+'.md')+' — '+text(rec['organization'])+
+                  '; '+('primary' if rec['category_id'] == category['id'] else 'secondary')+' category.'
+                  for rec in records] or ['No reports currently assigned to this category.']
+    return '\n'.join(lines)+'\n'
+
+
 def resource_topic_page(resources, taxonomy):
     """Group canonical memberships, retaining one distinct record count."""
     ordered = sorted(resources, key=lambda r: (r['title'].casefold(), r['id']))
@@ -127,7 +154,7 @@ def build(root=ROOT):
     reports = [json.loads(p.read_text()) for p in sorted((root/'data/reports').glob('*.json'))]
     skills = json.loads((root/'data/taxonomy.json').read_text())
     pages = resource_pages(resources, diagrams, taxonomy, skills)
-    index = ['# Read the reports', '', '[Library home](../README.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)', '',
+    index = ['# Read the reports', '', '[Library home](../README.md) · [Browse by topic](report-topics.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)', '',
              'Original defensive summaries with award provenance, distinct event dates and verification limits. These historical disclosures do not authorize testing. Generated from canonical records; edit the JSON, then regenerate.', '']
     for rec in sorted(reports, key=lambda r: (r['organization'], r['title'])):
         rid = rec['id']; reward = rec['reward']
@@ -153,6 +180,7 @@ def build(root=ROOT):
         lines += ['', 'Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).', '']
         pages['docs/reports/'+rid+'.md'] = '\n'.join(lines)
     pages['docs/reports.md'] = '\n'.join(index)+ '\n'
+    pages['docs/report-topics.md'] = report_topic_page(reports, skills)
     gallery = ['# Diagram gallery', '', '[Library home](../README.md) · [Report index](reports.md) · [Visual learning guide](visual-theory.md)', '',
                'Original conceptual defensive models. Images are local, inert SVGs; no script, embeds, external dependencies or interactive links. These are not vendor architecture diagrams or operational sequences.', '']
     for d in diagrams:

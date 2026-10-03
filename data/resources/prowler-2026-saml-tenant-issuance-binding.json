@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "prowler-2026-saml-tenant-issuance-binding",
+  "title": "Prowler SAML: retain validated tenant authority",
+  "publisher": "Prowler",
+  "authors": [],
+  "primary_url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "security-token-design",
+    "authorization-modeling"
+  ],
+  "version": null,
+  "summary": "CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration. Maintainers describe potential cross-tenant account takeover. Their account-linking demonstration alone does not establish complete token issuance or production compromise.",
+  "defensive_use": "Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent. The advisory lists Prowler API through 5.30.2 as affected and 5.30.3 as patched; no patch-release date is established here.",
+  "prerequisites": [
+    "Basic federation and object-level authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-06-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": "Advisory publication, not software patch release."
+    },
+    "source_displayed": {
+      "value": "2026-06-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": "Advisory publication, not software patch release."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:49:44Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory reviewed; no immutable educational edition established."
+  },
+  "sources": [
+    {
+      "id": "maintainer",
+      "url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
+      "title": "SAML Domain Claiming Enables Cross-Tenant Account Takeover",
+      "publisher": "Prowler",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:49:44Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires SAML, authenticated control of a tenant configuration and identity provider, and a target domain mapped to another SAML tenant; no victim interaction.",
+    "Configured domains remain globally unique. The advisory narrative corrects conflicting older demonstration comments.",
+    "Credits: EQSTLab, reporter; AdriiiPRodri, remediation developer; jfagoagas, coordinator/publishing account; josema-xyz, analyst. Article authorship is not established.",
+    "Broader access and persistence are potential consequences. The fix was not independently audited."
+  ],
+  "content_scope": "defensive_education"
+}

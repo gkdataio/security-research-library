@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 66,
+    "resources": 68,
     "diagrams": 9
   },
   "taxonomy": {
@@ -2091,6 +2091,86 @@
         "The maintainer artifact patch merged January 19, 2026, separately from February 3 publication. Exact affected-version and first-fixed-release bounds were not established from reviewed primary sources.",
         "The underlying finding predates this article; 2026 labels the detailed educational publication. No bounty amount or independent exploit verification is claimed."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "n8n-2026-dynamic-credential-object-authority",
+      "title": "n8n Dynamic Credentials: authorize credential lifecycle operations",
+      "publisher": "n8n",
+      "authors": [],
+      "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "CVE-2026-54305 concerns authenticated Dynamic Credentials operations missing workflow and credential ownership or scope checks. Maintainers report unauthorized credential metadata access, OAuth identity replacement and token revocation. Subsequent integration execution may use the substituted identity; production exploitation is not established.",
+      "defensive_use": "Apply object authorization consistently to discovery, authorization and revocation, including indirect workflow references. Maintainers list fixes in 1.123.55, 2.25.7 and 2.26.2. Restricting access to trusted users or disabling the feature is temporary mitigation, explicitly not full remediation.",
+      "prerequisites": [
+        "Basic federation and object-level authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication, not software patch release."
+        },
+        "source_displayed": {
+          "value": "2026-06-10",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication, not software patch release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T11:49:44Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory reviewed; no immutable educational edition established."
+      },
+      "sources": [
+        {
+          "id": "maintainer",
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf",
+          "title": "Cross-Tenant Credential Takeover via Dynamic Credentials EE Endpoints",
+          "publisher": "n8n",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T11:49:44Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an Enterprise instance with Dynamic Credentials enabled and an authenticated session, without requiring project membership or credential sharing.",
+        "Jubke is the publishing account; Solidscripting and Har1sh-k are credited reporters. Article authorship is not established.",
+        "Impact statements lack separate observed-versus-modeled demonstrations. Exfiltration and persistence remain maintainer-described consequences.",
+        "Fixed versions apply within respective release lines; software release dates are not established.",
+        "Distinct from the existing refresh-grant audience-binding resource."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
@@ -4316,6 +4396,85 @@
       "caveats": [
         "Some labs have additional software requirements; no software or tool recommendations are included here",
         "Training access is not authorization to test third-party systems"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "prowler-2026-saml-tenant-issuance-binding",
+      "title": "Prowler SAML: retain validated tenant authority",
+      "publisher": "Prowler",
+      "authors": [],
+      "primary_url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "security-token-design",
+        "authorization-modeling"
+      ],
+      "version": null,
+      "summary": "CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration. Maintainers describe potential cross-tenant account takeover. Their account-linking demonstration alone does not establish complete token issuance or production compromise.",
+      "defensive_use": "Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent. The advisory lists Prowler API through 5.30.2 as affected and 5.30.3 as patched; no patch-release date is established here.",
+      "prerequisites": [
+        "Basic federation and object-level authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication, not software patch release."
+        },
+        "source_displayed": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication, not software patch release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T11:49:44Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory reviewed; no immutable educational edition established."
+      },
+      "sources": [
+        {
+          "id": "maintainer",
+          "url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
+          "title": "SAML Domain Claiming Enables Cross-Tenant Account Takeover",
+          "publisher": "Prowler",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T11:49:44Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires SAML, authenticated control of a tenant configuration and identity provider, and a target domain mapped to another SAML tenant; no victim interaction.",
+        "Configured domains remain globally unique. The advisory narrative corrects conflicting older demonstration comments.",
+        "Credits: EQSTLab, reporter; AdriiiPRodri, remediation developer; jfagoagas, coordinator/publishing account; josema-xyz, analyst. Article authorship is not established.",
+        "Broader access and persistence are potential consequences. The fix was not independently audited."
       ],
       "content_scope": "defensive_education"
     },
