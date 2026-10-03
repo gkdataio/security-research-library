@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 73 related resources · 8 diagrams
+**Vulnerability family** · 34 reports · 74 related resources · 8 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -104,6 +104,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [OWASP Forgot Password](<../resources/owasp-account-recovery-state-integrity.md>) — diagram: [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>).
 - [OWASP LLM05:2025: generated-output consumer trust](<../resources/owasp-llm-output-consumer-trust.md>) — diagram: [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>).
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<../resources/owasp-rag-retrieval-permission-boundaries.md>) — topic: Authorization.
+- [OWASP Session Management: privilege-transition integrity](<../resources/owasp-session-privilege-transition-integrity.md>) — topic: Authorization.
 - [OWASP Transaction Authorization](<../resources/owasp-transaction-authorization-state-integrity.md>) — topic: Authorization; diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>).
 - [pac4j JWT validation: confidentiality does not establish authenticity](<../resources/pac4j-2026-token-authenticity-enforcement.md>) — topic: Authorization.
 - [Paymenter: refund entitlement and ledger changes need one atomic transition](<../resources/paymenter-2026-refund-transition-atomicity.md>) — topic: Authorization.

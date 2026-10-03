@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 40 related resources · 4 diagrams
+**Vulnerability family** · 16 reports · 41 related resources · 4 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -65,6 +65,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<../resources/open-webui-2026-realtime-revocation-consistency.md>) — topic: Identity.
 - [Outline: integration authority must end with its owning account](<../resources/outline-2026-webhook-revocation-lifecycle.md>) — topic: Identity.
 - [OWASP Forgot Password](<../resources/owasp-account-recovery-state-integrity.md>) — topic: Identity; diagram: [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>).
+- [OWASP Session Management: privilege-transition integrity](<../resources/owasp-session-privilege-transition-integrity.md>) — topic: Identity.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<../resources/pac4j-2026-token-authenticity-enforcement.md>) — topic: Identity.
 - [Prowler SAML: retain validated tenant authority](<../resources/prowler-2026-saml-tenant-issuance-binding.md>) — topic: Identity.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Identity.

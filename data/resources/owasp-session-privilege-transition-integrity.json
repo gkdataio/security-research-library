@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-session-privilege-transition-integrity",
+  "title": "OWASP Session Management: privilege-transition integrity",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "security-token-design",
+    "authorization-modeling"
+  ],
+  "version": null,
+  "summary": "Distinguishes application-issued session identifiers from client-selected values. Explains renewing identifiers at login and other privilege changes, retiring previous identifiers, and separating anonymous tracking from authenticated session authority. When several cookies represent one session, their relationship also requires validation.",
+  "defensive_use": "Model login and privilege changes as explicit session-state transitions, with server-controlled identity and authority bindings. Document which credentials represent anonymous and authenticated state and how superseded state loses authority.",
+  "prerequisites": [
+    "Basic HTTP cookie and authentication concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public official guidance."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T22:32:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Living guidance; publication and version dates were not established. Review time does not imply a new edition or software release."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html",
+      "title": "Session Management Cheat Sheet",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T22:32:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Renewing a session identifier does not establish authorization for every resource or action; access decisions remain a separate responsibility.",
+    "Official implementation guidance, not a product-specific finding, current-exposure claim or testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}
