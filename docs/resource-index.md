@@ -4,13 +4,15 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-38 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+40 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
+- [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL; Architecture Guide.
 - [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services; Implementation Guide.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers; Implementation Guide.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project; Architecture Guide.
+- [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper.
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI; Research Paper.
 - [Error Handling Cheat Sheet](<resources/owasp-error-response-data-minimization.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation; Technical Standard.

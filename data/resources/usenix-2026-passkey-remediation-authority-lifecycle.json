@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "id": "usenix-2026-passkey-remediation-authority-lifecycle",
+  "title": "Adversarial passkeys: account recovery must close every continuing source of authority",
+  "publisher": "USENIX Association",
+  "authors": [
+    "Alaa Daffalla",
+    "Grace Myers",
+    "Rosanna Bellini",
+    "Thomas Ristenpart",
+    "Nicola Dell"
+  ],
+  "primary_url": "https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "approval-state-integrity",
+    "defensive-evidence-writing"
+  ],
+  "version": "USENIX Security 2026 proceedings",
+  "summary": "A qualitative lab study of 31 participants across three services found that unclear passkey labels, notifications and recovery interfaces obstructed complete account remediation. Conceptual boundary: proof that a recovery action completed does not establish that every independent credential or active session has lost authority.",
+  "defensive_use": "Review an owned application’s recovery completion criteria across registered credentials, sessions and recovery channels. Make security interfaces explain what each revocation changes and what remains authorized; use clear credential provenance and action-specific notifications. Treat these as design-review questions, not evidence of a deployed fix.",
+  "prerequisites": [
+    "Passkey registration and relying-party credential records",
+    "Session invalidation and account-recovery concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publisher page and full paper were publicly readable at review."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publisher proceedings citation gives August 2026; first online publication day is not established."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T06:50:31Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed publisher metadata and paper findings, discussion and limitations. Proceedings edition identified; no separate revision date established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla",
+      "title": "“Maybe there’s only one passkey?”: Challenges Investigating and Remediating Adversarial Passkeys",
+      "publisher": "USENIX Association",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:50:31Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "paper",
+      "url": "https://www.usenix.org/system/files/usenixsecurity26-daffalla.pdf",
+      "title": "Publisher-hosted proceedings paper",
+      "publisher": "USENIX Association",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:50:31Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The simulated scenario presupposes earlier account access sufficient to register a credential; one service additionally required an email challenge. This is not a cryptographic break of passkeys or evidence of unauthenticated access.",
+    "The paper reports that no participant completed all required remediation unaided. This demonstrates usability failures in controlled test accounts, not population-wide compromise rates or current service exposure.",
+    "The small, single-city sample used researcher-provided devices and accounts; researcher assistance limits generalization of success rates.",
+    "The authors explicitly label proposed interface improvements speculative and needing validation. Password reset, credential removal and session termination have distinct effects.",
+    "This is a conference proceedings research paper, not a vendor patch advisory; no fixed-version claim is made."
+  ],
+  "content_scope": "defensive_education"
+}

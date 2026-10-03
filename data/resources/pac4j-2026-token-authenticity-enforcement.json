@@ -87,7 +87,7 @@
     "The demonstrated configuration uses RSA-encrypted JWTs with signature and encryption configuration; exposure cannot be inferred from any pac4j dependency alone.",
     "Application-specific consequences depend on how authenticated claims map to authorization.",
     "The maintainer confirms the issue and research credit but withholds technical details; the detailed mechanism remains researcher evidence.",
-    "Article publication is separate from reporting and patch events. The article describes February 28 disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
+    "Article publication is separate from reporting and patch events. The article describes February 28 private disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
   ],
   "content_scope": "defensive_education"
 }

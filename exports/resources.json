@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 38,
+    "resources": 40,
     "diagrams": 9
   },
   "taxonomy": {
@@ -888,6 +888,107 @@
       ],
       "caveats": [
         "The official source includes technical examples; this catalog retains reporting-quality lessons only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ndss-2026-cross-device-consent-and-session-control",
+      "title": "Cross-device authentication: bind informed consent to session authority",
+      "publisher": "Internet Society / NDSS Symposium",
+      "authors": [
+        "Xin Zhang",
+        "Xiaohan Zhang",
+        "Huijun Zhou",
+        "Bo Zhao"
+      ],
+      "primary_url": "https://www.ndss-symposium.org/ndss-paper/anchors-of-trust-a-usability-study-on-user-awareness-consent-and-control-in-cross-device-authentication/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "approval-state-integrity",
+        "defensive-evidence-writing"
+      ],
+      "version": "NDSS 2026 proceedings; DOI 10.14722/ndss.2026.240656",
+      "summary": "An evaluation of 27 services and a 100-participant user study examines missing context, explicit consent and post-login control in cross-device authentication. Conceptual boundary: an already trusted device may approve access on another device, but possession of that trusted session alone does not establish the user’s informed intent for the new session.",
+      "defensive_use": "For an owned design, connect the approving interface to meaningful target-device and request context, a deliberate consent decision, and accessible session review and revocation. Verify that a revocation decision reaches the actual authorization checks. UI confirmation alone cannot establish backend enforcement.",
+      "prerequisites": [
+        "Cross-device login approval and session lifecycle",
+        "Difference between interface consent and server-side authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publisher page and full paper were publicly readable at review."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-02",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "paper",
+          "note": "Proceedings identifies the February 23–27, 2026 symposium; month describes that edition, not an established first online publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T06:50:31Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed publisher metadata and paper findings, discussion and limitations. Proceedings edition identified; no separate revision date established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.ndss-symposium.org/ndss-paper/anchors-of-trust-a-usability-study-on-user-awareness-consent-and-control-in-cross-device-authentication/",
+          "title": "Anchors of Trust: A Usability Study on User Awareness, Consent, and Control in Cross-Device Authentication",
+          "publisher": "Internet Society / NDSS Symposium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:50:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "paper",
+          "url": "https://www.ndss-symposium.org/wp-content/uploads/2026-f656-paper.pdf",
+          "title": "Publisher-hosted proceedings paper",
+          "publisher": "Internet Society / NDSS Symposium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:50:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The study documents implementation and user-expectation gaps, including six services without revocation controls. These are historical observations, not a present-day exposure inventory.",
+        "The paper reports continued chat-history access in one revoked-session case; broad account-compromise risk is a consequence discussed by the authors, not a measured compromise rate across all 27 services.",
+        "The main user study used videos and screenshots and primarily U.S. participants; a separate ten-person interactive study is supportive but small. Self-report and sampling limitations remain.",
+        "Developer acknowledgments and roadmap commitments do not establish completed remediation. Context-specific interface patterns and broader validation remain future work.",
+        "Published in NDSS 2026 proceedings; the paper acknowledges anonymous reviewers. This is not a protocol-wide proof or a claim that all cross-device authentication is insecure."
       ],
       "content_scope": "defensive_education"
     },
@@ -2347,7 +2448,7 @@
         "The demonstrated configuration uses RSA-encrypted JWTs with signature and encryption configuration; exposure cannot be inferred from any pac4j dependency alone.",
         "Application-specific consequences depend on how authenticated claims map to authorization.",
         "The maintainer confirms the issue and research credit but withholds technical details; the detailed mechanism remains researcher evidence.",
-        "Article publication is separate from reporting and patch events. The article describes February 28 disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
+        "Article publication is separate from reporting and patch events. The article describes February 28 private disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
       ],
       "content_scope": "defensive_education"
     },
@@ -3185,6 +3286,108 @@
         "Measurements and vendor observations are historical, not evidence of present exposure.",
         "The study describes sampling and configuration limits; its findings are not exhaustive.",
         "This record summarizes identity invariants and countermeasures, not the paper’s testing procedures."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "usenix-2026-passkey-remediation-authority-lifecycle",
+      "title": "Adversarial passkeys: account recovery must close every continuing source of authority",
+      "publisher": "USENIX Association",
+      "authors": [
+        "Alaa Daffalla",
+        "Grace Myers",
+        "Rosanna Bellini",
+        "Thomas Ristenpart",
+        "Nicola Dell"
+      ],
+      "primary_url": "https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "approval-state-integrity",
+        "defensive-evidence-writing"
+      ],
+      "version": "USENIX Security 2026 proceedings",
+      "summary": "A qualitative lab study of 31 participants across three services found that unclear passkey labels, notifications and recovery interfaces obstructed complete account remediation. Conceptual boundary: proof that a recovery action completed does not establish that every independent credential or active session has lost authority.",
+      "defensive_use": "Review an owned application’s recovery completion criteria across registered credentials, sessions and recovery channels. Make security interfaces explain what each revocation changes and what remains authorized; use clear credential provenance and action-specific notifications. Treat these as design-review questions, not evidence of a deployed fix.",
+      "prerequisites": [
+        "Passkey registration and relying-party credential records",
+        "Session invalidation and account-recovery concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publisher page and full paper were publicly readable at review."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publisher proceedings citation gives August 2026; first online publication day is not established."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T06:50:31Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed publisher metadata and paper findings, discussion and limitations. Proceedings edition identified; no separate revision date established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla",
+          "title": "“Maybe there’s only one passkey?”: Challenges Investigating and Remediating Adversarial Passkeys",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:50:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "paper",
+          "url": "https://www.usenix.org/system/files/usenixsecurity26-daffalla.pdf",
+          "title": "Publisher-hosted proceedings paper",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:50:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The simulated scenario presupposes earlier account access sufficient to register a credential; one service additionally required an email challenge. This is not a cryptographic break of passkeys or evidence of unauthenticated access.",
+        "The paper reports that no participant completed all required remediation unaided. This demonstrates usability failures in controlled test accounts, not population-wide compromise rates or current service exposure.",
+        "The small, single-city sample used researcher-provided devices and accounts; researcher assistance limits generalization of success rates.",
+        "The authors explicitly label proposed interface improvements speculative and needing validation. Password reset, credential removal and session termination have distinct effects.",
+        "This is a conference proceedings research paper, not a vendor patch advisory; no fixed-version claim is made."
       ],
       "content_scope": "defensive_education"
     },
