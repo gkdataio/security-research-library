@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:57Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $4,500.
+
+**Industry:** Hospitality.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/justeattakeaway/changelog/c404df2a-d924-4789-99c8-3db04a5f4d86.json>)
 
 ## In-scope entries (29)

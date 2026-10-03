@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:52:04Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $200 - $3,000.
+
+**Industry:** Cloud.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/planethosterinc/changelog/135dcfde-cc84-4d0a-a183-c5e4938a8067.json>)
 
 ## In-scope entries (5)

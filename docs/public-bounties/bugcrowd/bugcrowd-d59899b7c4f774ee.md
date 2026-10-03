@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:57Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $2,500.
+
+**Industry:** Utilities.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/originenergy-og1/changelog/0596f021-4ec5-453c-8ab9-08340895d163.json>)
 
 ## In-scope entries (23)

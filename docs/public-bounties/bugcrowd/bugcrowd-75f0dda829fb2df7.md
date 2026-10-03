@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:55Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $1,500.
+
+**Industry:** Cloud.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/JaangaInc-mbb-market/changelog/53e11e27-ca4a-4ffc-9b7b-2cce27dd14e5.json>)
 
 ## In-scope entries (4)

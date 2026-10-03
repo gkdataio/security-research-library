@@ -124,6 +124,7 @@ def catalog_record(listing, capture, verified, classification):
     return {
         "id": listing["id"], "name": listing["name"], "platform": listing["platform"],
         "program_url": listing["program_url"], "bounty_classification": classification,
+        "directory_card": listing.get("directory_card"),
         "policy_review_state": review_state, "verified_policy_id": listing["verified_policy_id"],
         "scope_status": status, "scope_captured_at": captured_at,
         "scope_source_urls": source_urls, "in_scope": in_scope, "out_of_scope": out_of_scope,
@@ -221,6 +222,11 @@ def build(root=ROOT):
                       "**Scope status:** " + STATUS_LABELS[item["scope_status"]] + ".", "",
                       "**Policy review:** " + text(item["policy_review_state"].replace("_", " ")) + ".", "",
                       "**Capture time:** " + text(item["scope_captured_at"] or "Not captured") + ".", ""]
+            if item["directory_card"]:
+                card = item["directory_card"]
+                detail += ["**Directory category:** " + text(card["publisher_category"]) + ".", "",
+                           "**Displayed reward:** " + text(card["reward_summary"] or "Not displayed") + ".", "",
+                           "**Industry:** " + text(card["industry"] or "Not listed") + ".", ""]
             if item["scope_source_urls"]:
                 detail += ["**Scope source:** " + ", ".join(link("Official source " + str(i), url)
                                                         for i, url in enumerate(item["scope_source_urls"], 1)), ""]

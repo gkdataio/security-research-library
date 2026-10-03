@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:49:46Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $2,500.
+
+**Industry:** Education.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/classdojo/changelog/da7d47d3-7377-46c0-bd3a-bb231baa55a9.json>)
 
 ## In-scope entries (16)

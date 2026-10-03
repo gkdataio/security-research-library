@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:37Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $200 - $5,000.
+
+**Industry:** Computer Software.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/glean-technologies-public/changelog/b781e690-8e42-445a-ba6f-afc5496f65de.json>)
 
 ## In-scope entries (5)

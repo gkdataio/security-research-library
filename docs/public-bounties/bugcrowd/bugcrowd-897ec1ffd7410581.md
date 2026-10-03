@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:42Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $300 - $25,000.
+
+**Industry:** Games.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hypixel-studios-mbb-og/changelog/59063ac2-273f-4c96-a0bf-2619aa6494d3.json>)
 
 ## In-scope entries (10)

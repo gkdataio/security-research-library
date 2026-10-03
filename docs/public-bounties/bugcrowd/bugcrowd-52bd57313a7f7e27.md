@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T14:56:13Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $4,000.
+
+**Industry:** Finance.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json>)
 
 ## In-scope entries (9)

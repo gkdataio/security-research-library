@@ -26,6 +26,7 @@ def validate_batch(batch,schema):
     allowed={'HackerOne':{'hackerone.com'},'Bugcrowd':{'bugcrowd.com','eu.bugcrowd.net','gov.bugcrowd.net'},'Intigriti':{'app.intigriti.com','www.intigriti.com'}}
     ids=set();urls=set()
     for entry in batch['entries']:
+        if 'directory_card' in entry and batch['platform']!='Bugcrowd':raise Invalid('Bugcrowd directory card on another platform')
         if not set(entry['source_ids'])<=set(sources):raise Invalid('unknown listing source')
         url=identity_url(entry['program_url']);p=urlsplit(url)
         if p.hostname not in allowed[batch['platform']]:raise Invalid('program URL must use official platform host')
@@ -44,6 +45,9 @@ def build(root=ROOT):
     policy_types={r['id']:r.get('program_type',{}).get('value') for r in policy_records}
     capture_path=root/'data/public-bounty-scopes.json'
     captures={r['listing_id']:r for r in json.loads(capture_path.read_text(encoding='utf-8'))['captures']} if capture_path.is_file() else {}
+    vdp_path=root/'data/bugcrowd-vdp-scopes.json'
+    vdp_captures={r['listing_id']:r for r in json.loads(vdp_path.read_text(encoding='utf-8'))['captures']} if vdp_path.is_file() else {}
+    if set(captures)&set(vdp_captures):raise Invalid('same listing captured in bounty and VDP data')
     for path in (root/'data/programs').glob('*.json'):
         record=json.loads(path.read_text(encoding='utf-8'))
         for alias in record.get('official_program_links',[]):
@@ -63,6 +67,7 @@ def build(root=ROOT):
                 policy_id=policies.get(key)
                 asset_scope=policy_assets.get(policy_id)
                 capture=captures.get(entry['id'])
+                vdp_capture=vdp_captures.get(entry['id'])
                 entries[key]={**entry,'platform':batch['platform'],'review_state':'directory_listing_only',
                               'verified_policy_id':policy_id,
                               'verified_asset_scope':({'verified_at':asset_scope['verified_at'],
@@ -74,12 +79,19 @@ def build(root=ROOT):
                                                         'in_scope_entries':sum(a['scope']=='in' for a in capture.get('assets',[])),
                                                         'out_of_scope_entries':sum(a['scope']=='out' for a in capture.get('assets',[]))}
                                                        if capture else None),
+                              'public_vdp_capture':({'status':vdp_capture['status'], 'captured_at':vdp_capture['captured_at'],
+                                                     'in_scope_entries':sum(a['scope']=='in' for a in vdp_capture.get('assets',[])),
+                                                     'out_of_scope_entries':sum(a['scope']=='out' for a in vdp_capture.get('assets',[]))}
+                                                    if vdp_capture else None),
                               'observations':[]}
             else:
                 # Conflicting observations are retained, never silently overwritten.
                 for field in ('program_type','submission_status'):
                     if entries[key][field]!=entry[field]:entries[key][field]='unknown'
             entries[key]['observations'].append({'batch_id':batch['id'],'source_ids':entry['source_ids'],'observed_at':batch['reviewed_at'],'program_type':entry['program_type'],'submission_status':entry['submission_status']})
+            if 'directory_card' in entry:
+                entries[key]['directory_card']=entry['directory_card']
+                entries[key]['observations'][-1]['directory_card']=entry['directory_card']
             for field in ('name','evidence_note'):
                 if entries[key][field]!=entry[field]:entries[key]['observations'][-1][field]=entry[field]
             names[re.sub(r'[^a-z0-9]','',entry['name'].lower())].add(key)
@@ -87,7 +99,8 @@ def build(root=ROOT):
     groups=[sorted(urls) for urls in names.values() if len(urls)>1]
     counts={'unique_program_page_listings':len(records),'already_has_verified_policy':sum(r['verified_policy_id'] is not None for r in records),
             'verified_with_asset_scope':sum(r['verified_asset_scope'] is not None for r in records),
-            'public_scope_tables_captured':sum(r['public_bounty_capture'] is not None and r['public_bounty_capture']['status']=='captured' for r in records),
+            'public_scope_tables_captured':sum(any(r[field] is not None and r[field]['status']=='captured'
+                                                   for field in ('public_bounty_capture','public_vdp_capture')) for r in records),
             'awaiting_policy_review':sum(r['verified_policy_id'] is None for r in records),'batches':len(batches)}
     counts['by_platform']={platform:sum(r['platform']==platform for r in records) for platform in sorted({r['platform'] for r in records})}
     counts['by_program_type']=dict(sorted(Counter(r['program_type'] for r in records).items()))
@@ -106,7 +119,7 @@ def build(root=ROOT):
         subset=[r for r in records if r['platform']==platform]
         path='docs/program-discovery/'+platform.lower()+'.md'
         lines+=['- '+link(platform+' — '+str(len(subset))+' program-page listings','program-discovery/'+platform.lower()+'.md')]
-        page=['# '+platform+' directory observations','','[Discovery overview](../program-discovery.md) · [Public bounty scopes](../public-bounties.md) · [Verified policies](../programs.md) · [Library home](../../README.md)','',export['notice'],'']
+        page=['# '+platform+' directory observations','','[Discovery overview](../program-discovery.md) · [Public bounty scopes](../public-bounties.md)'+(' · [All Bugcrowd public scopes](../bugcrowd-programs.md)' if platform=='Bugcrowd' else '')+' · [Verified policies](../programs.md) · [Library home](../../README.md)','',export['notice'],'']
         for r in subset:
             policy=(' · '+link('Verified policy and scope','../programs.md#program-'+r['verified_policy_id'])+
                     ' · '+link('JSON','../../data/programs/'+r['verified_policy_id']+'.json')+
@@ -119,7 +132,8 @@ def build(root=ROOT):
                      capture is not None and capture.get('offers_bounties') is True or
                      platform=='Bugcrowd' and capture is not None and r['program_type']=='unknown'))
             bounty_link=(' · '+link('Bounty scope','../public-bounties/'+platform.lower()+'/'+r['id']+'.md')) if bounty else ''
-            page+=['- '+link(r['name'],r['program_url'])+' — '+text(r['program_type'].replace('_',' '))+'; '+text(r['submission_status'].replace('_',' '))+policy+bounty_link+' — '+text(r['evidence_note'])]
+            vdp_link=(' · '+link('VDP scope','../bugcrowd-programs/vdp/'+r['id']+'.md')) if platform=='Bugcrowd' and r['program_type']=='vulnerability_disclosure' else ''
+            page+=['- '+link(r['name'],r['program_url'])+' — '+text(r['program_type'].replace('_',' '))+'; '+text(r['submission_status'].replace('_',' '))+policy+bounty_link+vdp_link+' — '+text(r['evidence_note'])]
         page+=['','[Machine-readable export](../../exports/program-discovery.json) · [License and source rights](../../LICENSE.md)','']
         platform_pages[path]='\n'.join(page)
     lines += ['', '## Identity and provenance', '',export['deduplication'],'','[Machine-readable export](../exports/program-discovery.json) preserves batches, observations and candidate identity groups. Official source material and trademarks retain their own rights; original commentary and arrangement use [CC BY 4.0](../LICENSE.md).','']

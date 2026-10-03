@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "directory_snapshot_date": "2026-10-02",
+  "directory_snapshot_date": "2026-10-03",
   "captures": [
     {
       "listing_id": "bugcrowd-00126820d84bf20e",
@@ -29167,6 +29167,280 @@
       "program_url": "https://bugcrowd.com/engagements/codeclou",
       "directory_program_type": "paid_bounty",
       "captured_at": "2026-10-03T15:49:51Z"
+    },
+    {
+      "status": "captured",
+      "assets": [
+        {
+          "name": "https://api.test.latitudefinancial.com",
+          "asset_type": "api",
+          "location": null,
+          "group": "In Scope Targets - Latitude Financial ",
+          "scope": "in"
+        },
+        {
+          "name": "https://master.servicecentre.digitalservicing-np.lfscnp.com/",
+          "asset_type": "website",
+          "location": "https://master.servicecentre.digitalservicing-np.lfscnp.com/",
+          "group": "In Scope Targets - Latitude Financial ",
+          "scope": "in"
+        },
+        {
+          "name": "https://master.servicecentre-nz.digitalservicing-np.lfscnp.com/",
+          "asset_type": "website",
+          "location": "https://master.servicecentre-nz.digitalservicing-np.lfscnp.com/\t",
+          "group": "In Scope Targets - Latitude Financial ",
+          "scope": "in"
+        },
+        {
+          "name": "*.28degreescard.com.au",
+          "asset_type": "website",
+          "location": "https://28degreescard.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.buyersedge.com.au",
+          "asset_type": "website",
+          "location": "https://buyersedge.co.nz",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.carecredit.com.au",
+          "asset_type": "website",
+          "location": "https://carecredit.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.gemcreditline.co.nz",
+          "asset_type": "website",
+          "location": "https://gemcreditline.co.nz",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.gemfinance.co.nz",
+          "asset_type": "website",
+          "location": "https://gemfinance.co.nz",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.gemvisa.com.au",
+          "asset_type": "website",
+          "location": "https://gemvisa.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.genoapay.co.nz",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.genoapay.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.gomastercard.com.au",
+          "asset_type": "website",
+          "location": "https://gomastercard.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.interestfree.com.au",
+          "asset_type": "website",
+          "location": "https://interestfree.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudefinancial.co.nz",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudefinancial.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudefinancial.com.au",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudeinfinity.com.au",
+          "asset_type": "website",
+          "location": "https://latitudeinfinity.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudepay.com.au",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.latitudepay.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.umiloans.com.au",
+          "asset_type": "website",
+          "location": "https://umiloans.com.au",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "images.latitudepayapps.com",
+          "asset_type": "api",
+          "location": "https://images.latitudepayapps.com/",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "app.latitudepayapps.com",
+          "asset_type": "api",
+          "location": "https://app.latitudepayapps.com/",
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.test.*.lfscnp.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.dev.*.lfscnp.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.sandbox.*.lfscnp.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "*.-np.*.lfscnp.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "In scope - Latitude Financial Brands ",
+          "scope": "in"
+        },
+        {
+          "name": "https://investors.latitudefinancial.com.au",
+          "asset_type": "website",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://auth.latitudefinancial.com",
+          "asset_type": "other",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://auth.*.latitudefinancial.com",
+          "asset_type": "other",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "*.latitudefs.com",
+          "asset_type": "other",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://*.my.latitudepay.com/",
+          "asset_type": "website",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://*.sg.latitudepay.com/",
+          "asset_type": "website",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://my.latitudepay.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://sg.latitudepay.com",
+          "asset_type": "website",
+          "location": null,
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://t.latitudefinancial.com",
+          "asset_type": "website",
+          "location": "https://t.latitudefinancial.com/*",
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "https://p.latitudefinancial.com",
+          "asset_type": "website",
+          "location": "https://p.latitudefinancial.com",
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        },
+        {
+          "name": "Payment APIs",
+          "asset_type": "website",
+          "location": "https://payments.latitudefinancial.com/hosted/*,https://payments.latitudefinancial.com/embed/*,https://payments-api.latitudefinancial.com/*",
+          "group": "Out of Scope Targets",
+          "scope": "out"
+        }
+      ],
+      "source_url": "https://bugcrowd.com/engagements/latitude-financial-service-bugbounty/changelog/9a0cc405-bbed-449a-9f4e-b767c0624e48.json",
+      "source_method": "public_bugcrowd_scope_groups",
+      "scope_groups": 3,
+      "published_at": "2025-03-05T00:20:01.981Z",
+      "listing_id": "bugcrowd-f264c5f391e0a256",
+      "platform": "Bugcrowd",
+      "name": "Latitude Financial Services Bug Bounty",
+      "program_url": "https://bugcrowd.com/engagements/latitude-financial-service-bugbounty",
+      "directory_program_type": "paid_bounty",
+      "captured_at": "2026-10-03T16:44:08Z"
     },
     {
       "listing_id": "bugcrowd-f2a920ecc6c44f7f",

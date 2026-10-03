@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:17Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $2,500.
+
+**Industry:** Retail.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/majidalfuttaim-loyalty/changelog/c1fed137-acc0-4508-9396-ee9ea7a6c625.json>)
 
 ## In-scope entries (27)

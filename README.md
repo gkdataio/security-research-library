@@ -2,7 +2,7 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) · [Verified programs](docs/programs.md) · [Public bounty scopes](docs/public-bounties.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) · [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
@@ -10,8 +10,9 @@ Source-backed public security disclosures, official learning resources, and orig
 
 - **66 qualifying report records:** 55 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
-- **626 observed public bounty candidates** across Bugcrowd, HackerOne and Intigriti; 590 have published asset-scope rows captured, and five Bugcrowd category listings have unconfirmed paid status
-- **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
+- **627 observed public bounty candidates** across Bugcrowd, HackerOne and Intigriti; 591 have published asset-scope rows captured, and five Bugcrowd category listings have unconfirmed paid status
+- **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
+- **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **106 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
@@ -20,7 +21,7 @@ These counts describe the collection at the review date. Award evidence is attri
 
 ## Current research focus
 
-Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. The reviewed program directory includes dated scope-asset snapshots. A separate [public bounty scope catalog](docs/public-bounties.md) now covers bounty candidates from the three official directory snapshots, including source-linked scope rows or an explicit capture gap for every candidate. These table captures do not promote discovery listings to fully reviewed policy records. Each source and scope snapshot carries its own review time.
+Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. The reviewed program directory includes dated scope-asset snapshots. The [public Bugcrowd catalog](docs/bugcrowd-programs.md) covers both public Bug Bounty and Vulnerability Disclosure listings in the October 3 directory snapshot, with per-program in-scope and out-of-scope rows or a specific capture gap. A separate [public bounty scope catalog](docs/public-bounties.md) covers bounty candidates across Bugcrowd, HackerOne and Intigriti. These table captures do not promote discovery listings to fully reviewed policy records. Each source and scope snapshot carries its own review time.
 
 ## Start here
 
@@ -57,6 +58,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 |---|---|---|---|
 | Official directory observations | [data/program-discovery/](data/program-discovery/) | [Discovery schema](schema/program-discovery.schema.json) | [exports/program-discovery.json](exports/program-discovery.json) |
 | Public bounty scope captures | [data/public-bounty-scopes.json](data/public-bounty-scopes.json) | [Capture schema](schema/public-bounty-scopes.schema.json) | [exports/public-bounties.json](exports/public-bounties.json) |
+| Bugcrowd public VDP scope captures | [data/bugcrowd-vdp-scopes.json](data/bugcrowd-vdp-scopes.json) | [VDP capture schema](schema/bugcrowd-vdp-scopes.schema.json) | [exports/bugcrowd-programs.json](exports/bugcrowd-programs.json) |
 | Public program policies | [data/programs/](data/programs/) | [Program schema](schema/program.schema.json) | [exports/programs.json](exports/programs.json) |
 | Award-backed reports | [data/reports/](data/reports/) | [Report schema](schema/report.schema.json) | [exports/vulns-co.json](exports/vulns-co.json) |
 | Educational resources | [data/resources/](data/resources/) | [Resource schema](schema/resource.schema.json) | [exports/resources.json](exports/resources.json) |
@@ -64,7 +66,8 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 
 - **Report export:** includes reports, taxonomy, counts, review dates, and inclusion policy. `reports[]` contains the records. The export uses schema version `1.2.0`; the report schema accepts unchanged record versions `1.0.0`, `1.1.0` and `1.2.0`. Optional `report_identity.kind: source_label` requires record version `1.2.0` and stores an exact primary-source report label in `value`, with `source_id` and `evidence_location`. CVE identities remain supported in `1.1.0` and `1.2.0`. Older strict-schema clients must load the updated schema before consuming source-label records. Exporting never upgrades individual records.
 - **Program export:** schema version `1.5.0` adds `asset_scope` snapshots to the 40 reviewed program records. Each snapshot separates in-scope and out-of-scope entries, carries official source IDs and a review time, and labels whether it came from a published platform table or a policy-defined category. The [readable program directory](docs/programs.md) shows both lists and the [JSON export](exports/programs.json) preserves them. Zero explicit out-of-scope rows never means unrestricted scope; policy prose and product-specific rules still apply. The earlier optional `scope_context` holds high-level summaries, while `program_type` and submission status remain independent. Existing `1.1.0`–`1.4.0` records remain schema-compatible; current official terms control and this library grants no testing authorization.
-- **Public bounty scope export:** covers 626 bounty candidates from the October 2 official Bugcrowd, HackerOne and Intigriti directory observations. It combines the 23 matching reviewed paid-bounty policies with 567 additional published scope-table captures; 36 candidates have preview-only, terms-only, empty structured-scope or failed-fetch states. The [visual catalog](docs/public-bounties.md) has one page per candidate. HackerOne `offers_bounties` flags resolve otherwise unknown directory classifications; excluded nonbounty listings stay in the source capture for auditability. Five Bugcrowd Bug Bounty-tab listings lack displayed monetary rewards and retain unconfirmed paid status. A scope table is not a full policy review or a live authorization decision.
+- **Public bounty scope export:** covers 627 bounty candidates from the official Bugcrowd, HackerOne and Intigriti directory observations. It combines the 23 matching reviewed paid-bounty policies with 568 additional published scope-table captures; 36 candidates have preview-only, terms-only, empty structured-scope or failed-fetch states. The [visual catalog](docs/public-bounties.md) has one page per candidate. HackerOne `offers_bounties` flags resolve otherwise unknown directory classifications; excluded nonbounty listings stay in the source capture for auditability. Five Bugcrowd Bug Bounty-tab listings lack displayed monetary rewards and retain unconfirmed paid status. A scope table is not a full policy review or a live authorization decision.
+- **Public Bugcrowd program export:** the October 3 directory pass found all 293 Bug Bounty and 223 Vulnerability Disclosure entries advertised on the public listing feed. The [combined visual catalog](docs/bugcrowd-programs.md) and [JSON export](exports/bugcrowd-programs.json) cover all 516 current listings; 507 have source-linked published scope rows and nine have explicit missing-row or fetch-failure states. This is a dated public-directory snapshot, not a claim about private or unlisted programs.
 - **Resource export:** includes `resources[]`, `diagrams[]`, resource taxonomy, and skillset definitions. Asset paths are relative to this repository. Read type IDs from the exported taxonomy. Official maintainer security advisories and security-release notices now use `maintainer-advisory`; researcher articles and academic papers remain `research-paper`. Classification follows the primary publication, not corroborating sources. Existing `research-paper` filters intentionally return fewer records; select both IDs to retain the former combined research/disclosure grouping. This taxonomy correction preserves record IDs, evidence, timestamps and schema versions.
 - **Taxonomies:** [Report categories and defensive skills](data/taxonomy.json) · [Resource types and topics](data/resource-taxonomy.json)
 - **Candidate queues:** [Report candidates](data/candidates.json) · [Resource candidates](data/resource-candidates.json). These are research leads and exclusion decisions, not included records.
@@ -97,6 +100,7 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [export_programs.py](scripts/export_programs.py) | Validates program-policy metadata and builds its separate export and directory |
 | [export_program_discovery.py](scripts/export_program_discovery.py) | Validates official directory observations, deduplicates program pages and preserves continuation provenance |
 | [export_public_bounties.py](scripts/export_public_bounties.py) | Validates dated official scope-table captures and generates the per-program public bounty catalog and JSON export |
+| [export_bugcrowd_programs.py](scripts/export_bugcrowd_programs.py) | Joins current public Bugcrowd bounty and VDP listings, validates VDP captures, and generates their combined visual and JSON catalog |
 | [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |
 
 These are offline maintenance utilities. They do not contact research targets, collect credentials, scan systems or run the disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
@@ -115,6 +119,7 @@ python3 scripts/export_resources.py --check
 python3 scripts/export_programs.py --check
 python3 scripts/export_program_discovery.py --check
 python3 scripts/export_public_bounties.py --check
+python3 scripts/export_bugcrowd_programs.py --check
 python3 scripts/build_navigation.py --check
 ```
 
@@ -126,6 +131,7 @@ python3 scripts/export_resources.py
 python3 scripts/export_programs.py
 python3 scripts/export_program_discovery.py
 python3 scripts/export_public_bounties.py
+python3 scripts/export_bugcrowd_programs.py
 python3 scripts/build_navigation.py
 ```
 

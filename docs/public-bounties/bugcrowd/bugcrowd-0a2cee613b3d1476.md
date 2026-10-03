@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:00Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $1,500.
+
+**Industry:** Corporate Services.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/kantega/changelog/f64034e3-a9dd-4c0a-a613-02b3b6c2039d.json>)
 
 ## In-scope entries (11)

@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:46Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $150 - $2,500.
+
+**Industry:** Not listed.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/imperva-mbb/changelog/82c0b7ed-46ed-4de8-8b89-98c6db7d6fce.json>)
 
 ## In-scope entries (5)

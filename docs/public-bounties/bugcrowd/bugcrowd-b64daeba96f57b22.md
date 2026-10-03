@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:41Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $300 - $5,000.
+
+**Industry:** Technology.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hpe-networking-product-public/changelog/044c5c65-a22e-46b1-9b5b-468bd951526b.json>)
 
 ## In-scope entries (20)

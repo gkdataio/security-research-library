@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T16:03:18Z.
 
+**Directory category:** Public Bug Bounty.
+
+**Displayed reward:** Not displayed.
+
+**Industry:** Banking.
+
 **Scope source:** [Official source 1](<https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b/changelog/ad9e1e6c-dbcb-477d-ada7-e108739ebf4e.json>)
 
 ## In-scope entries (0)

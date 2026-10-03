@@ -148,6 +148,26 @@
           "evidence_note": {
             "type": "string",
             "minLength": 1
+          },
+          "directory_card": {
+            "type": "object",
+            "properties": {
+              "publisher_category": {"type": "string", "minLength": 1},
+              "reward_summary": {"type": ["string", "null"]},
+              "reward_min": {"type": ["string", "null"]},
+              "reward_max": {"type": ["string", "null"]},
+              "scope_rank": {"type": ["integer", "null"], "minimum": 0},
+              "access_status": {"type": "string", "minLength": 1},
+              "industry": {"type": ["string", "null"]},
+              "service_level": {"type": ["string", "null"]},
+              "badge": {"type": ["string", "null"]},
+              "ends_at": {"type": ["string", "null"]},
+              "is_external_listing": {"type": "boolean"},
+              "is_demo": {"type": "boolean"},
+              "is_private": {"type": "boolean"}
+            },
+            "required": ["publisher_category", "reward_summary", "reward_min", "reward_max", "scope_rank", "access_status", "industry", "service_level", "badge", "ends_at", "is_external_listing", "is_demo", "is_private"],
+            "additionalProperties": false
           }
         },
         "required": [

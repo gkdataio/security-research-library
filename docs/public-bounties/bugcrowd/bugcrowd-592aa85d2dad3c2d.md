@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:04Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $150 - $3,500.
+
+**Industry:** eCommerce.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/klaviyo-og/changelog/b9a9ae9f-653c-45bd-8624-34935291c360.json>)
 
 ## In-scope entries (51)

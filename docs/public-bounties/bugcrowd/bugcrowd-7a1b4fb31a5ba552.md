@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:52:21Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $1,500.
+
+**Industry:** Electronics.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/redmoon/changelog/b324d66b-aa06-497b-ae39-5ea7c4442c27.json>)
 
 ## In-scope entries (5)

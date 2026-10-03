@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:16Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $250 - $3,000.
+
+**Industry:** Computer Software.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/magiclabs-mbb-og/changelog/ab298bcb-308d-4860-b3fb-cbcee5285d50.json>)
 
 ## In-scope entries (3)

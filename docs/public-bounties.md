@@ -4,11 +4,11 @@
 
 Dated official directory and scope-table snapshots for publicly listed bounties. A listing or asset row alone does not establish current authorization, bounty eligibility, or complete policy scope. Read the live program policy before any activity.
 
-**626 observed bounty candidates** across Bugcrowd, HackerOne, and Intigriti. 590 have captured scope rows; 36 do not. 23 have separately reviewed policy records. 5 Bugcrowd category listings have unconfirmed paid status. Counts reflect the dated directory snapshot, not every bounty that may exist today.
+**627 observed bounty candidates** across Bugcrowd, HackerOne, and Intigriti. 591 have captured scope rows; 36 do not. 23 have separately reviewed policy records. 5 Bugcrowd category listings have unconfirmed paid status. Counts reflect the dated directory snapshot, not every bounty that may exist today.
 
 | Platform | Bounty candidates | Scope captured |
 | --- | ---: | ---: |
-| [Bugcrowd](<public-bounties/bugcrowd.md>) | 292 | 289 |
+| [Bugcrowd](<public-bounties/bugcrowd.md>) | 293 | 290 |
 | [HackerOne](<public-bounties/hackerone.md>) | 222 | 219 |
 | [Intigriti](<public-bounties/intigriti.md>) | 112 | 82 |
 

@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:21Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $4,000.
+
+**Industry:** Retail.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/carrefour/changelog/d7ee1cb5-3958-4a62-93ab-0747552a0aea.json>)
 
 ## In-scope entries (4)

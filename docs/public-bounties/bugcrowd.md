@@ -146,6 +146,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Kohl's](<bugcrowd/bugcrowd-fc2f74cd83c9200e.md>) | Published scope captured | 4 | 29 | 0 | 2026-10-03T15:51:05Z |
 | [KuCoin Managed Bug Bounty Program](<bugcrowd/bugcrowd-ee4b8b7deca259e1.md>) | Published scope captured | 4 | 9 | 0 | 2026-10-03T15:51:06Z |
 | [LastPass](<bugcrowd/bugcrowd-154fcdb83c0de882.md>) | Published scope captured | 14 | 4 | 0 | 2026-10-03T15:51:07Z |
+| [Latitude Financial Services Bug Bounty](<bugcrowd/bugcrowd-f264c5f391e0a256.md>) | Published scope captured | 26 | 11 | 0 | 2026-10-03T16:44:08Z |
 | [LaunchDarkly Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-8c79e5965dcb8c85.md>) | Published scope captured | 6 | 6 | 0 | 2026-10-03T14:56:09Z |
 | [Lightspeed Hospitality](<bugcrowd/bugcrowd-005bf6589fbb8fe1.md>) | Published scope captured | 3 | 2 | 0 | 2026-10-03T15:51:08Z |
 | [Lightspeed Retail](<bugcrowd/bugcrowd-5988a137d047f023.md>) | Published scope captured | 6 | 9 | 0 | 2026-10-03T15:51:09Z |
