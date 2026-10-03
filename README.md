@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 3, 2026**
 
-- **61 qualifying report records:** 50 bug-bounty awards and 11 explicitly labeled competition entries
+- **62 qualifying report records:** 51 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **72 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 8 with unknown original publication dates
+- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 9 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -60,7 +60,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 | Educational resources | [data/resources/](data/resources/) | [Resource schema](schema/resource.schema.json) | [exports/resources.json](exports/resources.json) |
 | Conceptual diagrams | [data/diagrams/](data/diagrams/) | [Diagram schema](schema/diagram.schema.json) | Included in [resources.json](exports/resources.json) |
 
-- **Report export:** includes reports, taxonomy, counts, review dates, and inclusion policy. `reports[]` contains the records. The export uses schema version `1.1.0`; the report schema accepts record versions `1.0.0` and `1.1.0`.
+- **Report export:** includes reports, taxonomy, counts, review dates, and inclusion policy. `reports[]` contains the records. The export uses schema version `1.2.0`; the report schema accepts unchanged record versions `1.0.0`, `1.1.0` and `1.2.0`. Optional `report_identity.kind: source_label` requires record version `1.2.0` and stores an exact primary-source report label in `value`, with `source_id` and `evidence_location`. CVE identities remain supported in `1.1.0` and `1.2.0`. Older strict-schema clients must load the updated schema before consuming source-label records. Exporting never upgrades individual records.
 - **Program export:** schema version `1.4.0` adds optional `scope_context` metadata and retains unchanged `1.1.0`/`1.2.0`/`1.3.0` records. Scope context requires record version `1.4.0`; it contains original high-level included/excluded summaries, reviewed official policy URLs, linked source IDs and a separate verification timestamp. It never contains asset inventories or testing instructions and grants no authorization. Missing context means not separately summarized, not unrestricted scope; export counts show coverage. `program_type` remains optional in versions `1.3.0` and `1.4.0`; evidence-backed closed status is supported in `1.2.0` and later. Type values are `paid_bounty`, `vulnerability_disclosure` (an explicitly no-bounty program), or `unknown`; missing type means unclassified. Type is independent of submission status (`accepting_reports`, `paused`, `closed`, or `unknown`), and neither null reward bounds nor unverified currency imply an unpaid program. Clients using an older strict schema must load the updated schema before consuming optional fields.
 - **Resource export:** includes `resources[]`, `diagrams[]`, resource taxonomy, and skillset definitions. Asset paths are relative to this repository.
 - **Taxonomies:** [Report categories and defensive skills](data/taxonomy.json) · [Resource types and topics](data/resource-taxonomy.json)
@@ -194,6 +194,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [macOS SMBFS error handling left inconsistent kernel parser state](data/reports/apple-smbfs-parser-state-consistency-2026.json) | USD 20,000 | Original unknown; vendor advisory 2026-09-14 | Researcher reports payment |
 | [Meta Conversions API Gateway mixed configuration data with executable output](data/reports/meta-conversions-gateway-generated-script-boundary-2025.json) | USD 250,000 (Bug #2 only) | Original unknown; archive shows 2026-01-13 | Researcher reported |
 | [Meta Accounts Center linking lost credential and identity confinement](data/reports/meta-accounts-center-linking-credential-confinement-2024.json) | USD 30,000 | Original unknown; archive shows 2026-01-15 | Researcher reported |
+| [Meta Conversions API Gateway trusted message origins as script authority](data/reports/meta-conversions-gateway-message-origin-boundary-2024.json) | USD 62,500 (Bug #1 only) | Original unknown; archive shows 2026-01-13 | Researcher reported |
 
 ## Scope, maintenance, and attribution
 

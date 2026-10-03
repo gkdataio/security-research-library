@@ -29,7 +29,7 @@ The researcher reports stored script execution in consuming pages and potential 
 
 **USD 250,000** — bug\_bounty; single\_report; status: awarded.
 
-Evidence level: researcher\_reported. Only Bug \#2 is represented\. The separately awarded Bug \#1 is excluded; no awards are summed\. The source uses $\. USD is inferred from official 2020 program reporting, five years before this award, rather than an individual payment receipt\. No bonus or settlement is established\.
+Evidence level: researcher\_reported. Only Bug \#2 is represented; Bug \#1 has a distinct award and report identity\. No awards are summed\. The source uses $\. USD is inferred from official 2020 program reporting, five years before this award, rather than an individual payment receipt\. No bonus or settlement is established\.
 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-conversions-gateway-generated-script-boundary-2025.json>).
 

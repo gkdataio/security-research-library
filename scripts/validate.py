@@ -26,6 +26,16 @@ def check_schema(value, spec, schema, path='$'):
         spec = schema
         for key in ref[2:].split('/'):
             spec = spec[key]
+    if 'oneOf' in spec:
+        matches = 0
+        for alternative in spec['oneOf']:
+            try:
+                check_schema(value, alternative, schema, path)
+                matches += 1
+            except Invalid:
+                pass
+        if matches != 1:
+            fail(path, 'expected exactly one matching schema alternative')
     if 'const' in spec and value != spec['const']:
         fail(path, f'expected constant {spec["const"]!r}')
     if 'enum' in spec and value not in spec['enum']:
@@ -125,16 +135,28 @@ def validate_record(record, taxonomy, schema):
     refs += [d['source_id'] for d in record['dates'].values() if d['source_id'] is not None]
     if not set(refs) <= set(sources):
         fail(record['id'], 'unknown source reference')
+    if record['schema_version'] != '1.2.0' and any(
+            'report_identity' in s['supports'] for s in sources.values()):
+        fail(record['id'], 'report identity source support requires schema version 1.2.0')
     identity = record.get('report_identity')
     if identity:
-        if record['schema_version'] != '1.1.0':
-            fail(record['id'], 'report identity requires schema version 1.1.0')
-        if identity['value'] not in record['cve_ids']:
-            fail(record['id'], 'report identity must name a CVE belonging to this record')
+        if record['schema_version'] not in ('1.1.0', '1.2.0'):
+            fail(record['id'], 'report identity requires schema version 1.1.0 or 1.2.0')
         if identity['source_id'] != record['primary_source_id']:
             fail(record['id'], 'report identity must be distinguished by the primary source')
-        if not {'cve', 'reward', 'dates'} <= set(sources[identity['source_id']]['supports']):
-            fail(record['id'], 'report identity needs primary CVE, award and date evidence')
+        support = {'reward', 'dates'}
+        if identity['kind'] == 'cve':
+            if identity['value'] not in record['cve_ids']:
+                fail(record['id'], 'report identity must name a CVE belonging to this record')
+            support.add('cve')
+        else:
+            if record['schema_version'] != '1.2.0':
+                fail(record['id'], 'source label identity requires schema version 1.2.0')
+            if not identity['evidence_location'].strip():
+                fail(record['id'], 'source label identity needs a nonblank evidence location')
+            support.add('report_identity')
+        if not support <= set(sources[identity['source_id']]['supports']):
+            fail(record['id'], 'report identity needs primary identity, award and date evidence')
     reward = record['reward']
     src = sources[reward['source_id']]
     required_type = {'vendor_confirmed':'vendor', 'platform_confirmed':'platform', 'organizer_confirmed':'competition_organizer'}
@@ -201,13 +223,22 @@ def validate_library(root=ROOT):
         if len(group) <= 1:
             continue
         # A shared article never creates extra records by itself. Each must identify
-        # a separate source-explicit CVE and a distinct individually awarded report.
+        # a source-explicit identity and a distinct individually awarded report.
         if not all(r.get('report_identity') and r['reward']['scope'] in
                    ('single_report', 'single_vulnerability') and
                    r['reward']['source_id'] == r['primary_source_id'] and
                    r['dates']['reported']['value'] and r['dates']['awarded']['value']
                    for r in group):
             fail(url, 'duplicate primary source URL without evidenced report identities')
+        if len({r['report_identity']['kind'] for r in group}) != 1:
+            fail(url, 'shared-source reports cannot mix CVE and source-label identities')
+        # Normalize only for duplicate detection; preserve exact source labels.
+        identities = {
+            ' '.join(r['report_identity']['value'].split()).casefold()
+            for r in group
+        }
+        if len(identities) != len(group):
+            fail(url, 'shared-source reports need distinct source-backed identities')
         for field in ('evidence_quote', 'evidence_location'):
             if len({r['reward'][field] for r in group}) != len(group):
                 fail(url, 'shared-source reports need distinct award evidence')

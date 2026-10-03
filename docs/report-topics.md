@@ -4,7 +4,7 @@
 
 Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.
 
-61 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
+62 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
 
 Each entry labels its primary or secondary category membership. Categories and reports are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy categories are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -14,10 +14,10 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [Authentication and identity](<#category-authentication>) — 15 distinct reports.
 - [Authorization and tenant boundaries](<#category-authorization>) — 30 distinct reports.
 - [Business logic and concurrency](<#category-business-logic>) — 14 distinct reports.
-- [Client and browser security](<#category-client-security>) — 19 distinct reports.
+- [Client and browser security](<#category-client-security>) — 20 distinct reports.
 - [Cloud permissions and isolation](<#category-cloud-security>) — 13 distinct reports.
 - [Information exposure and response privacy](<#category-information-exposure>) — 3 distinct reports.
-- [Injection and untrusted input](<#category-injection>) — 11 distinct reports.
+- [Injection and untrusted input](<#category-injection>) — 12 distinct reports.
 - [Memory safety and parser contracts](<#category-memory-safety>) — 10 distinct reports.
 - [Server-side request trust](<#category-server-request-trust>) — 1 distinct report.
 - [Software supply-chain security](<#category-supply-chain>) — 6 distinct reports.
@@ -115,7 +115,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-client-security"></a>
 ## Client and browser security
 
-19 distinct reports.
+20 distinct reports.
 
 - [Bard Workspace integration weakened output-data boundaries](<reports/google-bard-workspace-output-boundary-2024.md>) — Google; secondary category.
 - [Chrome graphics input validation weakened an isolation boundary](<reports/google-chrome-angle-input-validation-2026.md>) — Google; primary category.
@@ -130,6 +130,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [macOS SMBFS error handling left inconsistent kernel parser state](<reports/apple-smbfs-parser-state-consistency-2026.md>) — Apple; secondary category.
 - [Meta Accounts Center linking lost credential and identity confinement](<reports/meta-accounts-center-linking-credential-confinement-2024.md>) — Meta; secondary category.
 - [Meta Conversions API Gateway mixed configuration data with executable output](<reports/meta-conversions-gateway-generated-script-boundary-2025.md>) — Meta; secondary category.
+- [Meta Conversions API Gateway trusted message origins as script authority](<reports/meta-conversions-gateway-message-origin-boundary-2024.md>) — Meta; primary category.
 - [Meta Pixel cross-window handling lost message and token authority](<reports/meta-pixel-cross-window-authority-binding-2024.md>) — Meta; secondary category.
 - [Meta Quest login migration lost OAuth credential confinement](<reports/meta-quest-oauth-redirect-confidentiality-2022.md>) — Meta; secondary category.
 - [Pixel lock-screen completion lost security-state binding](<reports/google-pixel-lock-screen-state-binding-2022.md>) — Google; secondary category.
@@ -168,7 +169,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-injection"></a>
 ## Injection and untrusted input
 
-11 distinct reports.
+12 distinct reports.
 
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — Google; secondary category.
 - [Bard Workspace integration weakened output-data boundaries](<reports/google-bard-workspace-output-boundary-2024.md>) — Google; secondary category.
@@ -179,6 +180,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [Google IDX worker messaging crossed browser trust boundaries](<reports/google-idx-worker-message-trust-2025.md>) — Google; secondary category.
 - [Kestrel HTTP framing differed across proxy and application boundaries](<reports/microsoft-kestrel-http-framing-consistency-2025.md>) — Microsoft; primary category.
 - [Meta Conversions API Gateway mixed configuration data with executable output](<reports/meta-conversions-gateway-generated-script-boundary-2025.md>) — Meta; primary category.
+- [Meta Conversions API Gateway trusted message origins as script authority](<reports/meta-conversions-gateway-message-origin-boundary-2024.md>) — Meta; secondary category.
 - [NVIDIA container initialization inherited untrusted execution context](<reports/nvidia-container-runtime-environment-trust-2025.md>) — NVIDIA; secondary category.
 - [PostgreSQL text-encoding invariant failure caused memory corruption](<reports/postgresql-multibyte-validation-cve-2026-2006.md>) — PostgreSQL; secondary category.
 

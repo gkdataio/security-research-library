@@ -7,7 +7,8 @@
     "schema_version": {
       "enum": [
         "1.0.0",
-        "1.1.0"
+        "1.1.0",
+        "1.2.0"
       ]
     },
     "id": {
@@ -328,14 +329,18 @@
     },
     "report_identity": {
       "type": "object",
-      "description": "Required for separate awarded reports documented by one primary article; currently supports only disjoint, source-explicit CVEs.",
+      "description": "Source-explicit identity of an individually awarded report in a shared primary article. source_label (record version 1.2.0) stores the exact source label in value; CVE identities remain supported.",
       "properties": {
         "kind": {
-          "const": "cve"
+          "enum": [
+            "cve",
+            "source_label"
+          ]
         },
         "value": {
           "type": "string",
-          "pattern": "^CVE-\\d{4}-\\d{4,}$"
+          "minLength": 1,
+          "pattern": "\\S"
         },
         "source_id": {
           "type": "string",
@@ -352,7 +357,26 @@
         "source_id",
         "evidence_location"
       ],
-      "additionalProperties": false
+      "additionalProperties": false,
+      "oneOf": [
+        {
+          "properties": {
+            "kind": {
+              "const": "cve"
+            },
+            "value": {
+              "pattern": "^CVE-\\d{4}-\\d{4,}$"
+            }
+          }
+        },
+        {
+          "properties": {
+            "kind": {
+              "const": "source_label"
+            }
+          }
+        }
+      ]
     }
   },
   "required": [
@@ -469,7 +493,8 @@
               "root_cause",
               "impact",
               "remediation",
-              "cve"
+              "cve",
+              "report_identity"
             ]
           },
           "minItems": 1,

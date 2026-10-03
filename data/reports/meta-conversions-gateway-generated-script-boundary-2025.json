@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.2.0",
   "id": "meta-conversions-gateway-generated-script-boundary-2025",
   "title": "Meta Conversions API Gateway mixed configuration data with executable output",
   "organization": "Meta",
@@ -40,7 +40,7 @@
     "evidence_quote": "$250,000 bounty awarded by Meta for Bug #2",
     "evidence_location": "Timeline, January 16, 2025 entry explicitly assigned to Bug #2",
     "usd_equivalent": null,
-    "notes": "Only Bug #2 is represented. The separately awarded Bug #1 is excluded; no awards are summed. The source uses $. USD is inferred from official 2020 program reporting, five years before this award, rather than an individual payment receipt. No bonus or settlement is established."
+    "notes": "Only Bug #2 is represented; Bug #1 has a distinct award and report identity. No awards are summed. The source uses $. USD is inferred from official 2020 program reporting, five years before this award, rather than an individual payment receipt. No bonus or settlement is established."
   },
   "dates": {
     "published": {
@@ -120,7 +120,8 @@
         "dates",
         "root_cause",
         "impact",
-        "remediation"
+        "remediation",
+        "report_identity"
       ]
     },
     {
@@ -149,5 +150,11 @@
       "The narrative places investigation of Bug #2 after reporting Bug #1, while the labeled timeline dates Bug #2 first. Recorded event dates follow the explicit labels; no corrected chronology is inferred."
     ]
   },
-  "content_scope": "historical_defensive_summary"
+  "content_scope": "historical_defensive_summary",
+  "report_identity": {
+    "kind": "source_label",
+    "value": "Bug #2",
+    "source_id": "researcher-writeup",
+    "evidence_location": "Second bug heading; Timeline entries labeled Bug #2 on November 22, 2024, January 3 and January 16, 2025."
+  }
 }

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.2.0",
+  "id": "meta-conversions-gateway-message-origin-boundary-2024",
+  "title": "Meta Conversions API Gateway trusted message origins as script authority",
+  "organization": "Meta",
+  "product": "Conversions API Gateway",
+  "researchers": [
+    "Youssef Sammouda"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "client-security",
+  "secondary_category_ids": [
+    "injection"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "untrusted-input-handling",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "summary": "The researcher assigns a separate $62,500 award to the client-side finding labeled Bug #1.",
+  "root_cause": "A browser message origin became trusted script-host configuration without origin authorization.",
+  "impact": "The researcher reports script execution and describes possible account takeover. The scenario depends on specific embedded-browser, initialization and content-policy conditions plus influence over permitted third-party content. Account impact additionally assumes user interaction and an authenticated session; universal or interaction-free exploitation is not established.",
+  "defensive_takeaways": [
+    "Authorize message origins and senders independently of message content; treat an integration identifier as data rather than proof of authority.",
+    "Keep script-source authority separate from mutable messaging configuration, and review it together with browser isolation and content policy.",
+    "Define regression coverage for initialization state, embedded-browser behavior and third-party trust; distinguish observed execution from modeled account impact."
+  ],
+  "reward": {
+    "amount": 62500,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Meta",
+    "evidence_level": "researcher_reported",
+    "source_id": "researcher-writeup",
+    "evidence_quote": "$62,500 bounty awarded by Meta for Bug #1",
+    "evidence_location": "Timeline, December 24, 2024 entry assigned to Bug #1",
+    "usd_equivalent": null,
+    "notes": "Separate from Bug #2; no aggregation. The dollar sign is interpreted as USD using official 2020 program context, nearly five years earlier. This does not establish individual settlement currency or payment."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Current header: January 13, 2026. Original publication is unestablished; archive dating cannot establish first disclosure."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Earliest public disclosure is not established."
+    },
+    "reported": {
+      "value": "2024-11-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "Explicit Timeline entry labeled Bug #1."
+    },
+    "awarded": {
+      "value": "2024-12-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "Explicit Timeline entry labeled Bug #1."
+    },
+    "fixed": {
+      "value": "2024-12-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": "Explicit Timeline entry labeled Bug #1."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
+    "within_preferred_window": null,
+    "basis": "published",
+    "note": "Original publication is unknown. The January 2026 archive header is not counted as a new disclosure."
+  },
+  "sources": [
+    {
+      "id": "researcher-writeup",
+      "url": "https://ysamm.com/uncategorized/2026/01/13/capig-xss.html",
+      "title": "Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover",
+      "type": "researcher",
+      "author": "Youssef Sammouda",
+      "retrieved_at": "2026-10-03T12:49:20Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "report_identity"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+      "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+      "type": "vendor",
+      "author": "Dan Gurfinkel / Facebook",
+      "retrieved_at": "2026-10-03T12:49:20Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "researcher-writeup",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-03T12:49:20Z",
+    "method": "Freshly read the primary article and official denomination context; compared report boundaries against the existing backend record. No live testing.",
+    "limitations": [
+      "Researcher-reported award, not vendor-confirmed payment; settlement date remains unknown.",
+      "USD is contextual inference with an almost five-year gap, not an individual receipt.",
+      "Original publication and earliest disclosure remain unknown.",
+      "The narrative puts Bug #2 after reporting Bug #1; the labeled timeline orders reports oppositely. Dates follow labels without reconciling the conflict.",
+      "Execution is researcher-reported; completed account takeover, population-wide exposure and exact patch coverage are not independently established.",
+      "The article-wide zero-click framing should not be generalized to this interaction-dependent finding."
+    ]
+  },
+  "content_scope": "historical_defensive_summary",
+  "report_identity": {
+    "kind": "source_label",
+    "value": "Bug #1",
+    "source_id": "researcher-writeup",
+    "evidence_location": "First bug heading; Timeline entries labeled Bug #1 on November 24, December 11 and December 24, 2024."
+  }
+}
