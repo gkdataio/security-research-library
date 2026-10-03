@@ -1,0 +1,18 @@
+{
+  "name": "security-research-library",
+  "title": [
+    "Security research",
+    "library"
+  ],
+  "size": 62,
+  "subtitle": "Public sources. Connected knowledge.",
+  "index": "03",
+  "category": "RESEARCH",
+  "accent": "#D4FC51",
+  "motif": "library",
+  "tags": [
+    "DISCLOSURES",
+    "DIAGRAMS",
+    "STRUCTURED JSON"
+  ]
+}

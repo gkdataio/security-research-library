@@ -1,17 +1,15 @@
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="docs/assets/readme/hero-mobile-static.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/assets/readme/hero-static.png">
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/hero-mobile.gif">
+  <img src="docs/assets/readme/hero.gif" width="1120" alt="GKData Security Research Library: evidence, boundaries, and reusable knowledge">
+</picture>
+
 # Security Research Library
 
-![GKData — Evidence before inference. Public disclosures, clear boundaries, reusable knowledge.](docs/assets/readme/header.svg)
+Source-backed public disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report preserves its evidence, root cause, bounded impact, and security lessons; structured JSON supports retrieval and analysis.
 
-[![Evidence: Source-backed](docs/assets/readme/source-backed.svg)](DATA_POLICY.md)
-[![Original educational content: CC BY 4.0](docs/assets/readme/content-license.svg)](LICENSE.md#educational-content-cc-by-40)
-[![Original software: MIT](docs/assets/readme/code-license.svg)](LICENSE.md#software-mit)
-
-Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
-
-[![Read reports](docs/assets/readme/read-reports.svg)](docs/reports.md)
-[![Program catalogs](docs/assets/readme/program-catalogs.svg)](#browse-the-library)
-[![Learning guide](docs/assets/readme/learning-guide.svg)](docs/learning-guide.md)
-[![Use the JSON](docs/assets/readme/use-json.svg)](#use-the-json)
+**Evidence-led:** [data policy](DATA_POLICY.md) · **Open reuse:** [CC BY 4.0 educational content](LICENSE.md#educational-content-cc-by-40) · [MIT software](LICENSE.md#software-mit)
 
 ### Browse the library
 
