@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 80,
+    "resources": 82,
     "diagrams": 9
   },
   "taxonomy": {
@@ -5078,6 +5078,100 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "paymenter-2026-refund-transition-atomicity",
+      "title": "Paymenter: refund entitlement and ledger changes need one atomic transition",
+      "publisher": "Paymenter",
+      "authors": [
+        "CorwinDev"
+      ],
+      "primary_url": "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "business-logic",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "concurrency-reasoning",
+        "approval-state-integrity",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The maintainer traces duplicate downgrade credits to an eligibility check separated from the later balance change, without transactional isolation. A pending-operation guard did not protect the whole transition. The failed invariant was one legitimate refund per service downgrade.",
+      "defensive_use": "Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement. The advisory identifies 1.5.7 as patched; its release notes explicitly link the fix.",
+      "prerequisites": [
+        "Basic application state machines, authorization and database transaction concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:59:30Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release evidence reviewed; no live testing or independent incident verification."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7",
+          "title": "Credit-refund double-spend race condition in service downgrade (doUpgrade)",
+          "publisher": "Paymenter",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:59:30Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/Paymenter/Paymenter/releases/tag/v1.5.7",
+          "title": "Paymenter v1.5.7 release",
+          "publisher": "Paymenter",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:59:30Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected versions are listed as 1.5.6 and earlier. The reported scenario requires an authenticated customer and an active service eligible for downgrade.",
+        "The maintainer reports excess spendable credit and potential operator loss, but supplies no production incident or independently measured loss. This review does not establish deployment exposure.",
+        "CorwinDev published the advisory and is credited for remediation; Pig-Tail is credited as reporter. The advisory assigns CVE-2026-71537.",
+        "The release page displays July 25 without a year in the reviewed rendering. No full patch-release date is asserted. Resource edition and version-release date remain null."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "portswigger-2025-upstream-http-framing-boundaries",
       "title": "Upstream HTTP framing and parser-consistency boundaries",
       "publisher": "PortSwigger",
@@ -6596,6 +6690,113 @@
         "GHSL records reporting on February 19, 2026 and maintainer-advisory publication on March 9; detailed research was published March 17. Exact product release dates are not established by these sources. Resource edition release remains unknown.",
         "The development snapshot tested by GHSL is distinct from the final 2.2.3 release named as patched by the maintainer. No contradiction or remediation failure is inferred from the similar labels.",
         "The byline is Man Yue Mo. Discovery is credited to GitHub Security Lab Taskflow Agent, with manual verification by Peter Stöckli and Man Yue Mo; the maintainer credits both and the GHSL team. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sylius-2026-payment-action-authority",
+      "title": "Sylius: order ownership does not confer payment-operation authority",
+      "publisher": "Sylius",
+      "authors": [
+        "TheMilek"
+      ],
+      "primary_url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "business-logic",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "approval-state-integrity",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "The advisory distinguishes ownership of an order from authority over its payment operations. Customer-context requests were constrained by ownership but not by operation. A connected payment provider could therefore change financial state while local order status still indicated payment completion.",
+      "defensive_use": "Editorial lesson: define operation permissions independently from object ownership, and reconcile provider outcomes with local fulfillment state. The advisory recommends rejecting disallowed customer-context operations before effects. Maintainer release notes corroborate remediation in 2.1.16 and 2.2.9.",
+      "prerequisites": [
+        "Basic application state machines, authorization and database transaction concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-09-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:59:30Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release evidence reviewed; no live testing or independent incident verification."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
+          "title": "Shop API accepts arbitrary PaymentRequest actions, allowing a customer-triggered refund",
+          "publisher": "Sylius",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:59:30Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-21",
+          "url": "https://github.com/Sylius/Sylius/releases/tag/v2.1.16",
+          "title": "Sylius v2.1.16 security release",
+          "publisher": "Sylius",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:59:30Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-22",
+          "url": "https://github.com/Sylius/Sylius/releases/tag/v2.2.9",
+          "title": "Sylius v2.2.9 security release",
+          "publisher": "Sylius",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:59:30Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected ranges are listed as 2.0.0 through versions before 2.1.16, and 2.2.0 through versions before 2.2.9.",
+        "Impact is conditional on an enabled production API and a gateway exposing the relevant financial operations. The advisory explicitly excludes a plain default installation lacking that gateway.",
+        "The maintainer describes financial-state inconsistency and consequent merchant-loss risk, not a documented production loss. This review does not independently verify those outcomes.",
+        "TheMilek published the advisory; acirtautas is credited as finder. The reviewed advisory displays no known CVE; no identifier is inferred from secondary indexing.",
+        "Both release pages display September 2 without a year in the reviewed rendering. Full patch dates are not asserted; the educational resource edition remains unknown."
       ],
       "content_scope": "defensive_education"
     },

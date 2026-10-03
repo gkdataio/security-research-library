@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 3, 2026**
 
-- **62 qualifying report records:** 51 bug-bounty awards and 11 explicitly labeled competition entries
+- **64 qualifying report records:** 53 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **80 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
+- **82 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 9 with unknown original publication dates
+- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -195,6 +195,8 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [Meta Conversions API Gateway mixed configuration data with executable output](data/reports/meta-conversions-gateway-generated-script-boundary-2025.json) | USD 250,000 (Bug #2 only) | Original unknown; archive shows 2026-01-13 | Researcher reported |
 | [Meta Accounts Center linking lost credential and identity confinement](data/reports/meta-accounts-center-linking-credential-confinement-2024.json) | USD 30,000 | Original unknown; archive shows 2026-01-15 | Researcher reported |
 | [Meta Conversions API Gateway trusted message origins as script authority](data/reports/meta-conversions-gateway-message-origin-boundary-2024.json) | USD 62,500 (Bug #1 only) | Original unknown; archive shows 2026-01-13 | Researcher reported |
+| [Facebook phone linking lacked account-specific authorization](data/reports/facebook-phone-linking-account-authorization-2013.json) | USD 20,000 (contextually inferred currency) | 2013-06-26 | Researcher reported |
+| [HackerOne exports omitted internal-attachment authorization](data/reports/hackerone-export-attachment-authorization-2016.json) | USD 12,500 (contextually inferred currency) | 2016-11-30 | Platform confirmed |
 
 ## Scope, maintenance, and attribution
 

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "id": "hackerone-export-attachment-authorization-2016",
+  "title": "HackerOne exports omitted internal-attachment authorization",
+  "organization": "HackerOne",
+  "product": "HackerOne report archive export",
+  "researchers": [
+    "japz (japzdivino)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "information-exposure"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "defensive-evidence-writing",
+    "secure-parser-review"
+  ],
+  "summary": "HackerOne awarded $12,500 for internal attachments exposed through report export in 2016. Its enduring lesson for 2026 applications is that export and interactive views must enforce the same visibility policy.",
+  "root_cause": "Export authorization diverged from report-view visibility. A file moved into an internal comment remained exportable. The researcher compared redacted display content with archive output; the vendor confirmed this was a distinct newly introduced issue.",
+  "impact": "A user able to export a report could obtain team-only attachments. Vendor review additionally identified potential inline-attachment exposure, but found no evidence of malicious exploitation. This does not establish access to every private report.",
+  "defensive_takeaways": [
+    "Derive export contents from the same object-level policy used for interactive views.",
+    "Treat referenced attachments as independently authorized objects, including after visibility changes."
+  ],
+  "dates": {
+    "published": {
+      "value": "2016-11-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "public-report",
+      "note": "Detailed report became public at the recorded disclosure event; later 2017 retrospective is not original publication."
+    },
+    "public_disclosure": {
+      "value": "2016-11-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "public-report",
+      "note": null
+    },
+    "reported": {
+      "value": "2016-11-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "public-report",
+      "note": null
+    },
+    "awarded": {
+      "value": "2016-11-30",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "public-report",
+      "note": null
+    },
+    "fixed": {
+      "value": "2016-11-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "public-report",
+      "note": "Vendor fix-release comment at 04:36 UTC; researcher confirmation at 05:02 UTC. Summary says November 28 without a timezone; UTC timeline supplies the recorded date."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical disclosure outside the preferred publication window."
+  },
+  "sources": [
+    {
+      "id": "public-report",
+      "url": "https://hackerone.com/reports/186230",
+      "title": "Internal attachments can be exported via \"Export as .zip\" feature",
+      "type": "platform",
+      "author": "HackerOne and japz",
+      "retrieved_at": "2026-10-03T14:00:08Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "vendor-retrospective",
+      "url": "https://www.hackerone.com/blog/celebrating-20m-bounties-recap-our-top-20-voted-reports-hacktivity",
+      "title": "Celebrating $20M in Bounties with a Recap of Our Top 20 Up Voted Reports on Hacktivity",
+      "type": "vendor",
+      "author": "johnk / HackerOne",
+      "retrieved_at": "2026-10-03T14:00:08Z",
+      "supports": [
+        "reward",
+        "impact"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+      "title": "Vulnerability Disclosure Guidelines",
+      "type": "platform",
+      "author": "HackerOne",
+      "retrieved_at": "2026-10-03T14:00:08Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "public-report",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-03T14:00:08Z",
+    "method": "Read the full public report in the cloud browser, including vendor summary, fix confirmation, award and disclosure timeline; corroborated award with the vendor retrospective. Reviewed currency guidance separately.",
+    "limitations": [
+      "No independent confirmation of cash settlement.",
+      "Currency uses later platform-wide guidance, not an explicit currency code in the historical award event.",
+      "Summary uses November 28 without timezone; the report and fix events display November 29 UTC.",
+      "No patch implementation is disclosed."
+    ]
+  },
+  "content_scope": "historical_defensive_summary",
+  "reward": {
+    "amount": 12500,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "HackerOne",
+    "evidence_level": "platform_confirmed",
+    "source_id": "public-report",
+    "evidence_quote": "rewarded japz with a $12,500 bounty",
+    "evidence_location": "November 30, 2016, 9:15am UTC award event; report sidebar",
+    "usd_equivalent": null,
+    "notes": "One report-level award includes the vendor’s expanded inline-attachment impact assessment. USD uses later platform-wide payment guidance reviewed in 2026, about ten years after the award; it does not prove individual settlement. The report explicitly distinguishes earlier report 182358."
+  }
+}

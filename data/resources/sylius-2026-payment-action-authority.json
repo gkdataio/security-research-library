@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sylius-2026-payment-action-authority",
+  "title": "Sylius: order ownership does not confer payment-operation authority",
+  "publisher": "Sylius",
+  "authors": [
+    "TheMilek"
+  ],
+  "primary_url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "business-logic",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "approval-state-integrity",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "The advisory distinguishes ownership of an order from authority over its payment operations. Customer-context requests were constrained by ownership but not by operation. A connected payment provider could therefore change financial state while local order status still indicated payment completion.",
+  "defensive_use": "Editorial lesson: define operation permissions independently from object ownership, and reconcile provider outcomes with local fulfillment state. The advisory recommends rejecting disallowed customer-context operations before effects. Maintainer release notes corroborate remediation in 2.1.16 and 2.2.9.",
+  "prerequisites": [
+    "Basic application state machines, authorization and database transaction concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and release notes."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T13:59:30Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory and release evidence reviewed; no live testing or independent incident verification."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
+      "title": "Shop API accepts arbitrary PaymentRequest actions, allowing a customer-triggered refund",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:59:30Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-21",
+      "url": "https://github.com/Sylius/Sylius/releases/tag/v2.1.16",
+      "title": "Sylius v2.1.16 security release",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:59:30Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-22",
+      "url": "https://github.com/Sylius/Sylius/releases/tag/v2.2.9",
+      "title": "Sylius v2.2.9 security release",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:59:30Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Affected ranges are listed as 2.0.0 through versions before 2.1.16, and 2.2.0 through versions before 2.2.9.",
+    "Impact is conditional on an enabled production API and a gateway exposing the relevant financial operations. The advisory explicitly excludes a plain default installation lacking that gateway.",
+    "The maintainer describes financial-state inconsistency and consequent merchant-loss risk, not a documented production loss. This review does not independently verify those outcomes.",
+    "TheMilek published the advisory; acirtautas is credited as finder. The reviewed advisory displays no known CVE; no identifier is inferred from secondary indexing.",
+    "Both release pages display September 2 without a year in the reviewed rendering. Full patch dates are not asserted; the educational resource edition remains unknown."
+  ],
+  "content_scope": "defensive_education"
+}

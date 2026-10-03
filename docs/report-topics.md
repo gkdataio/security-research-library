@@ -4,19 +4,19 @@
 
 Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.
 
-62 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
+64 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
 
 Each entry labels its primary or secondary category membership. Categories and reports are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy categories are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [AI integration boundaries](<#category-ai-security>) — 7 distinct reports.
-- [Authentication and identity](<#category-authentication>) — 15 distinct reports.
-- [Authorization and tenant boundaries](<#category-authorization>) — 30 distinct reports.
+- [Authentication and identity](<#category-authentication>) — 16 distinct reports.
+- [Authorization and tenant boundaries](<#category-authorization>) — 32 distinct reports.
 - [Business logic and concurrency](<#category-business-logic>) — 14 distinct reports.
 - [Client and browser security](<#category-client-security>) — 20 distinct reports.
 - [Cloud permissions and isolation](<#category-cloud-security>) — 13 distinct reports.
-- [Information exposure and response privacy](<#category-information-exposure>) — 3 distinct reports.
+- [Information exposure and response privacy](<#category-information-exposure>) — 4 distinct reports.
 - [Injection and untrusted input](<#category-injection>) — 12 distinct reports.
 - [Memory safety and parser contracts](<#category-memory-safety>) — 10 distinct reports.
 - [Server-side request trust](<#category-server-request-trust>) — 1 distinct report.
@@ -38,8 +38,9 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-authentication"></a>
 ## Authentication and identity
 
-15 distinct reports.
+16 distinct reports.
 
+- [Facebook phone linking lacked account-specific authorization](<reports/facebook-phone-linking-account-authorization-2013.md>) — Meta \(Facebook\); secondary category.
 - [Facebook SDK message authentication relied on insecure randomness](<reports/facebook-sdk-message-authentication-randomness-2023.md>) — Meta; primary category.
 - [GitHub OAuth consent failed across request-method semantics](<reports/github-oauth-method-semantics-2019.md>) — GitHub; secondary category.
 - [GitLab recovery delivery lacked verified-address binding](<reports/gitlab-recovery-address-binding-cve-2023-7028.md>) — GitLab; primary category.
@@ -59,11 +60,12 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-authorization"></a>
 ## Authorization and tenant boundaries
 
-30 distinct reports.
+32 distinct reports.
 
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — Google; secondary category.
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — Google; secondary category.
 - [Cloud Build approval was not bound to immutable code](<reports/google-cloud-build-approval-toctou-2025.md>) — Google; secondary category.
+- [Facebook phone linking lacked account-specific authorization](<reports/facebook-phone-linking-account-authorization-2013.md>) — Meta \(Facebook\); primary category.
 - [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>) — HackerOne; secondary category.
 - [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](<reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md>) — Google; secondary category.
 - [GitHub Actions trust depended on invalid repository references](<reports/github-actions-reference-validation-2021.md>) — GitHub; secondary category.
@@ -77,6 +79,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>) — Google; secondary category.
 - [Google support API exposed customer and agent data](<reports/google-support-api-authorization-2026.md>) — Google; primary category.
 - [GraphQL object authorization exposed private-program metadata](<reports/hackerone-private-program-graphql-object-authorization-2025.md>) — HackerOne; primary category.
+- [HackerOne exports omitted internal-attachment authorization](<reports/hackerone-export-attachment-authorization-2016.md>) — HackerOne; primary category.
 - [Instagram client configuration exposed an application credential](<reports/instagram-application-credential-client-containment-2022.md>) — Meta; secondary category.
 - [Instagram embedding fallback changed the authorization context](<reports/instagram-embedding-privileged-fallback-2023.md>) — Meta; primary category.
 - [Kestrel HTTP framing differed across proxy and application boundaries](<reports/microsoft-kestrel-http-framing-consistency-2025.md>) — Microsoft; secondary category.
@@ -160,10 +163,11 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-information-exposure"></a>
 ## Information exposure and response privacy
 
-3 distinct reports.
+4 distinct reports.
 
 - [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>) — Meta \(Facebook\); primary category.
 - [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>) — HackerOne; primary category.
+- [HackerOne exports omitted internal-attachment authorization](<reports/hackerone-export-attachment-authorization-2016.md>) — HackerOne; secondary category.
 - [Instagram client configuration exposed an application credential](<reports/instagram-application-credential-client-containment-2022.md>) — Meta; primary category.
 
 <a id="category-injection"></a>

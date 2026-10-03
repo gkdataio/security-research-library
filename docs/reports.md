@@ -37,6 +37,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [YouTube creator metadata exposed private email addresses](<reports/youtube-creator-email-authorization-2025.md>) — USD 20,000; bug\_bounty
 - [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>) — USD 25,000; bug\_bounty
 - [GraphQL object authorization exposed private-program metadata](<reports/hackerone-private-program-graphql-object-authorization-2025.md>) — USD 25,000; bug\_bounty
+- [HackerOne exports omitted internal-attachment authorization](<reports/hackerone-export-attachment-authorization-2016.md>) — USD 12,500; bug\_bounty
 - [Support integration exposed internal Confluence documentation](<reports/hackerone-support-confluence-access-boundary-2025.md>) — USD 12,500; bug\_bounty
 - [LiteSpeed Cache privileged user simulation relied on weak security tokens](<reports/litespeed-cache-user-simulation-authentication-2024.md>) — USD 14,400; bug\_bounty
 - [MariaDB JSON normalization exceeded allocated buffer capacity](<reports/mariadb-json-normalization-buffer-capacity-2026.md>) — USD 30,000; competition\_award
@@ -52,6 +53,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Meta account verification weakened linked SMS authentication state](<reports/meta-account-verification-attempt-state-binding-2022.md>) — USD 27,200; bug\_bounty
 - [Meta service-identity exposure amplified by excessive secret access](<reports/meta-service-identity-secrets-trust-boundary-2026.md>) — USD 150,000; bug\_bounty
 - [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>) — USD 65,000; bug\_bounty
+- [Facebook phone linking lacked account-specific authorization](<reports/facebook-phone-linking-account-authorization-2013.md>) — USD 20,000; bug\_bounty
 - [Kestrel HTTP framing differed across proxy and application boundaries](<reports/microsoft-kestrel-http-framing-consistency-2025.md>) — USD 10,000; bug\_bounty
 - [Microsoft account recovery lacked consistent attempt-limit enforcement](<reports/microsoft-account-recovery-rate-limit-consistency-2021.md>) — USD 50,000; bug\_bounty
 - [NVIDIA container initialization inherited untrusted execution context](<reports/nvidia-container-runtime-environment-trust-2025.md>) — USD 30,000; competition\_award
