@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "id": "dropbox-bug-bounty",
   "name": "Dropbox Bug Bounty",
   "operator": "Dropbox",
@@ -10,7 +10,7 @@
     "https://app.intigriti.com/programs/dropbox/dropbox/updates"
   ],
   "change_log_url": "https://app.intigriti.com/programs/dropbox/dropbox/updates",
-  "last_verified_at": "2026-10-03T02:14:45Z",
+  "last_verified_at": "2026-10-03T03:20:30Z",
   "content_scope": "public_program_policy_summary",
   "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
   "rewards": {
@@ -56,7 +56,7 @@
       "title": "Dropbox Bug Bounty public policy",
       "url": "https://app.intigriti.com/programs/dropbox/dropbox",
       "publisher": "Dropbox / Intigriti",
-      "retrieved_at": "2026-10-03T02:12:34Z",
+      "retrieved_at": "2026-10-03T03:20:30Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -85,5 +85,16 @@
     "source_ids": [
       "policy"
     ]
+  },
+  "scope_context": {
+    "included_summary": "Selected storage, signing, fax, document-sharing and productivity products include specified web, API, desktop and mobile components.",
+    "excluded_summary": "Excluded categories include deprecated products, third-party integrations, password-management and capture products, and Paper mobile clients; web and mobile coverage differs.",
+    "source_ids": [
+      "policy"
+    ],
+    "policy_urls": [
+      "https://app.intigriti.com/programs/dropbox/dropbox"
+    ],
+    "verified_at": "2026-10-03T03:20:30Z"
   }
 }

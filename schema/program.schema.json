@@ -5,7 +5,8 @@
       "enum": [
         "1.1.0",
         "1.2.0",
-        "1.3.0"
+        "1.3.0",
+        "1.4.0"
       ]
     },
     "id": {
@@ -26,7 +27,7 @@
     },
     "program_type": {
       "type": "object",
-      "description": "Optional evidence-backed classification for record version 1.3.0, independent of submission status. Missing means unclassified, not unpaid. Vulnerability disclosure means an explicitly no-bounty program; exceptional discretionary payments are explained in the summary.",
+      "description": "Optional evidence-backed classification for record versions 1.3.0 and 1.4.0, independent of submission status. Missing means unclassified, not unpaid. Vulnerability disclosure means an explicitly no-bounty program; exceptional discretionary payments are explained in the summary.",
       "properties": {
         "value": {
           "enum": [
@@ -304,6 +305,56 @@
         ],
         "additionalProperties": false
       }
+    },
+    "scope_context": {
+      "type": "object",
+      "description": "Optional high-level coverage and exclusion context for version 1.4.0. Original summaries of reviewed official policy only; no asset inventories, target lists, testing instructions or authorization claims. Missing means not separately summarized. Every policy URL must match a cited source, and a section fragment must be recorded on that source URL.",
+      "properties": {
+        "included_summary": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "High-level policy coverage with exceptions and uncertainty; not an asset list or permission to test."
+        },
+        "excluded_summary": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S",
+          "description": "High-level exclusions and limitations. State uncertainty explicitly; never infer no exclusions from missing information."
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "policy_urls": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Reviewed official policy pages or verified section links, supported by the linked source IDs. Do not invent anchors."
+        },
+        "verified_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Scope-context review time: no earlier than each cited source retrieval and no later than the record last_verified_at."
+        }
+      },
+      "required": [
+        "included_summary",
+        "excluded_summary",
+        "source_ids",
+        "policy_urls",
+        "verified_at"
+      ],
+      "additionalProperties": false
     }
   },
   "required": [

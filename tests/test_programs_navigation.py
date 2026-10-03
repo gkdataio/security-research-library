@@ -70,7 +70,7 @@ class ProgramTests(unittest.TestCase):
         self.assertIn('Program type:** unknown.',result['docs/programs.md'])
     def test_program_type_export_retains_evidence(self):
         exported=json.loads(programs()['exports/programs.json'])
-        self.assertEqual(exported['schema_version'],'1.3.0')
+        self.assertEqual(exported['schema_version'],'1.4.0')
         canonical={json.loads(p.read_text())['id']:json.loads(p.read_text()) for p in (ROOT/'data/programs').glob('*.json')}
         for record in exported['programs']:
             with self.subTest(program=record['id']):

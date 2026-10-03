@@ -6,6 +6,8 @@ Advertised rewards are not report awards. This directory grants no authorization
 
 This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.
 
+**Scope-context coverage:** 4 of 28 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
+
 ## 1Password Bug Bounty
 
 [Official program](<https://hackerone.com/1password?type=team>) · [Policy](<https://hackerone.com/1password?type=team>) · [Canonical record](<../data/programs/1password-bug-bounty.json>)
@@ -243,7 +245,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 [Official program](<https://app.intigriti.com/programs/dropbox/dropbox>) · [Policy](<https://app.intigriti.com/programs/dropbox/dropbox>) · [Canonical record](<../data/programs/dropbox-bug-bounty.json>)
 
 **Platform:** Intigriti  
-**Last verified:** 2026-10-03T02:14:45Z
+**Last verified:** 2026-10-03T03:20:30Z
 
 **Program type:** paid bounty. The official policy advertises monetary bounties for eligible reports\.
 
@@ -255,6 +257,22 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Restrictions and exclusions:** Use owned test accounts; do not access other users’ private data\. No disruption, social engineering, physical intrusion or brute force\. Scanner-only reports, unlisted properties and planned-deprecation products are excluded\. Public disclosure requires written permission after report closure\.
 
+**Scope context**
+
+**Included coverage:** Selected storage, signing, fax, document-sharing and productivity products include specified web, API, desktop and mobile components\.
+
+**Excluded coverage:** Excluded categories include deprecated products, third-party integrations, password-management and capture products, and Paper mobile clients; web and mobile coverage differs\.
+
+**Scope verified:** 2026-10-03T03:20:30Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/dropbox/dropbox>)
+
+**Scope evidence:** [Dropbox Bug Bounty public policy](<https://app.intigriti.com/programs/dropbox/dropbox>)
+
 **Verification limits**
 
 - The updates page includes a November 24, 2025 scope-policy clarification\. It is an announcements/changes index, not an exhaustive version history or full-policy revision date\.
@@ -264,7 +282,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Official evidence and updates**
 
-- [Dropbox Bug Bounty public policy](<https://app.intigriti.com/programs/dropbox/dropbox>) — Dropbox / Intigriti; retrieved 2026-10-03T02:12:34Z.
+- [Dropbox Bug Bounty public policy](<https://app.intigriti.com/programs/dropbox/dropbox>) — Dropbox / Intigriti; retrieved 2026-10-03T03:20:30Z.
 - [Dropbox Bug Bounty official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>) — Dropbox / Intigriti; retrieved 2026-10-03T02:14:45Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T02:12:34Z.
 
@@ -275,7 +293,7 @@ Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/
 [Official program](<https://www.fastmail.com/bug-bounty/>) · [Policy](<https://www.fastmail.com/bug-bounty/>) · [Canonical record](<../data/programs/fastmail-bug-bounty.json>)
 
 **Platform:** Direct vendor program  
-**Last verified:** 2026-10-03T02:31:44Z
+**Last verified:** 2026-10-03T03:20:30Z
 
 **Program type:** paid bounty. The official policy explicitly offers monetary bounties for eligible reports\.
 
@@ -287,6 +305,22 @@ Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/
 
 **Restrictions and exclusions:** Protect data integrity, privacy and service availability\. Disruption and social engineering are prohibited\. Intended email behavior, unlikely-interaction findings, third-party services, username enumeration, obsolete clients and low-impact metadata are excluded\.
 
+**Scope context**
+
+**Included coverage:** Fastmail-operated code and infrastructure; qualifying issues must threaten private data or infrastructure access\.
+
+**Excluded coverage:** Third-party browser-extension weaknesses and XSS confined to isolated user-content hosting are excluded\.
+
+**Scope verified:** 2026-10-03T03:20:30Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://www.fastmail.com/bug-bounty/>)
+
+**Scope evidence:** [Fastmail Security Issue Reporting](<https://www.fastmail.com/bug-bounty/>)
+
 **Verification limits**
 
 - The reward sentence explicitly uses US$ for its minimum; the adjoining dollar maximum belongs to that same schedule\.
@@ -294,7 +328,7 @@ Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/
 
 **Official evidence and updates**
 
-- [Fastmail Security Issue Reporting](<https://www.fastmail.com/bug-bounty/>) — Fastmail Pty Ltd; retrieved 2026-10-03T02:31:44Z.
+- [Fastmail Security Issue Reporting](<https://www.fastmail.com/bug-bounty/>) — Fastmail Pty Ltd; retrieved 2026-10-03T03:20:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -750,7 +784,7 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/ann
 [Official program](<https://proton.me/security/bug-bounty>) · [Policy](<https://proton.me/security/bug-bounty>) · [Canonical record](<../data/programs/proton-bug-bounty.json>)
 
 **Platform:** Direct vendor program  
-**Last verified:** 2026-10-03T02:12:34Z
+**Last verified:** 2026-10-03T03:20:30Z
 
 **Program type:** paid bounty. The official policy advertises monetary bounties for eligible reports\.
 
@@ -762,6 +796,22 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/ann
 
 **Restrictions and exclusions:** Only explicitly included services qualify\. No third-party, physical, social-engineering or disruptive activity, malware, data alteration, exfiltration or persistence\. Stop and notify Proton upon finding a vulnerability or nonpublic-data exposure; purge retained nonpublic data when reporting\. Disclosure normally waits 120 days after acknowledgment\. Conditional safe harbor cannot bind third parties\.
 
+**Scope context**
+
+**Included coverage:** Listed account, communications, storage, productivity, password-management, authentication, VPN, wallet, AI, aliasing and notes products; supported client variants differ\.
+
+**Excluded coverage:** Unlisted services, outsourced support and commerce, and sandboxed-content scripting are excluded\. Content injection requires significant risk; mobile-crash eligibility depends on operating-system and device recency\.
+
+**Scope verified:** 2026-10-03T03:20:30Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://proton.me/security/vulnerability-disclosure>)
+
+**Scope evidence:** [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>)
+
 **Verification limits**
 
 - The disclosure policy is dated July 30, 2025; safe harbor September 29, 2022\. The bounty page shows no overall revision date\.
@@ -771,8 +821,8 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/ann
 
 **Official evidence and updates**
 
-- [Proton bug bounty program](<https://proton.me/security/bug-bounty>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
-- [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
+- [Proton bug bounty program](<https://proton.me/security/bug-bounty>) — Proton AG; retrieved 2026-10-03T03:20:30Z.
+- [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T03:20:30Z.
 - [Proton legal safe harbor policy](<https://proton.me/security/safe-harbor>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
@@ -782,7 +832,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 [Official program](<https://core.telegram.org/bug-bounty>) · [Policy](<https://core.telegram.org/bug-bounty>) · [Canonical record](<../data/programs/telegram-bug-bounty.json>)
 
 **Platform:** Direct vendor program  
-**Last verified:** 2026-10-03T02:31:44Z
+**Last verified:** 2026-10-03T03:20:30Z
 
 **Program type:** paid bounty. The official policy explicitly offers monetary bounties for eligible reports\.
 
@@ -794,6 +844,22 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Restrictions and exclusions:** No unlawful activity, privacy harm, disruption, physical access, spam or social engineering\. Premature public or third-party disclosure forfeits eligibility\. Unsupported scanner output and compromised-device scenarios generally do not qualify\. Legal protection depends on following the rules\.
 
+**Scope context**
+
+**Included coverage:** Telegram-operated apps, services and protocols handling private data; third-party clients and bots qualify only for Telegram-side faults\.
+
+**Excluded coverage:** Third-party implementation errors and non-security defects are excluded; lower-impact findings may remain eligible\.
+
+**Scope verified:** 2026-10-03T03:20:30Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://core.telegram.org/bug-bounty>)
+
+**Scope evidence:** [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>)
+
 **Verification limits**
 
 - No revision date, dedicated change log, age or residency criterion was established\. Intake was not tested\.
@@ -801,7 +867,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Official evidence and updates**
 
-- [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T02:31:44Z.
+- [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T03:20:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
