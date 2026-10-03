@@ -20,7 +20,7 @@ These counts describe the collection at the review date. Award evidence is attri
 
 ## Current research focus
 
-Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. The reviewed program directory includes dated scope-asset snapshots. A separate [public bounty scope catalog](docs/public-bounties.md) now covers paid-bounty candidates from the three official directory snapshots, including source-linked scope rows or an explicit capture gap for every candidate. These table captures do not promote discovery listings to fully reviewed policy records. Each source and scope snapshot carries its own review time.
+Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. The reviewed program directory includes dated scope-asset snapshots. A separate [public bounty scope catalog](docs/public-bounties.md) now covers bounty candidates from the three official directory snapshots, including source-linked scope rows or an explicit capture gap for every candidate. These table captures do not promote discovery listings to fully reviewed policy records. Each source and scope snapshot carries its own review time.
 
 ## Start here
 
