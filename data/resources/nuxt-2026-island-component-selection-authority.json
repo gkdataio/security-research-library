@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nuxt-2026-island-component-selection-authority",
+  "title": "Nuxt: island data must not acquire component-selection authority",
+  "publisher": "Nuxt",
+  "authors": [
+    "danielroe"
+  ],
+  "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "untrusted-input-handling",
+    "authorization-modeling"
+  ],
+  "version": null,
+  "summary": "The maintainer describes request-controlled island data reaching dynamic component selection through attribute inheritance. This permits unintended registered-component or native-element rendering. The boundary fails when input intended to configure an approved component instead chooses what component runs. The advisory expressly excludes arbitrary JavaScript execution through this vector.",
+  "defensive_use": "Nuxt identifies 4.5.1 and 3.21.10 as patched for the common implicit-inheritance path. Explicit untrusted component selection remains application responsibility. Editorial lesson: define both accepted data and allowed interpretation at component boundaries; map external choices to a closed set of trusted components rather than treating strings as authority.",
+  "prerequisites": [
+    "Server-rendered applications and framework composition",
+    "Trust-boundary modeling and application authorization"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-07-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No educational-resource edition established; software patch chronology is separate."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:39:32Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory read. No live testing or independent patch execution performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3",
+      "title": "Unauthorized Component Instantiation via Server Island Props in Nuxt",
+      "publisher": "Nuxt",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:39:32Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "CVE-2026-71318. Requires active server islands and a dynamic-component consumer; installing a UI library alone is insufficient. Runtime template compilation is not required.",
+    "Affected ranges: 3.1.0 through below 3.21.10, and 4.0.0 through below 4.5.1. Nuxt 2 is excluded. danielroe published the advisory.",
+    "Patch-release dates were not established. Data exposure beyond unintended rendering depends on reachable components and is not demonstrated here.",
+    "No bounty or production compromise is established. Learning prerequisites and generalized defensive reasoning are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

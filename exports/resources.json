@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 95,
+    "resources": 99,
     "diagrams": 9
   },
   "taxonomy": {
@@ -584,6 +584,88 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "astro-2026-composable-dispatch-origin-enforcement",
+      "title": "Astro: composable dispatch must preserve mandatory origin checks",
+      "publisher": "Astro",
+      "authors": [
+        "matthewp"
+      ],
+      "primary_url": "https://github.com/withastro/astro/security/advisories/GHSA-8mv7-9c27-98vc",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The maintainer describes origin enforcement attached to optional middleware while independently composed dispatchers could invoke application handlers first. The resulting cross-site request forgery can change state using browser credentials but cannot read cross-origin responses. Conceptual failure: a security setting did not guarantee enforcement along every path to a protected operation.",
+      "defensive_use": "The advisory identifies 7.0.5 as patched, moving equivalent checks to dispatch boundaries so composition order cannot remove them. Editorial lesson: review mandatory controls as invariants of each protected operation, not assumptions about wrapper ordering. Local regression coverage should establish that composition changes preserve rejection before side effects.",
+      "prerequisites": [
+        "Server-rendered applications and framework composition",
+        "Trust-boundary modeling and application authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-07-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition established; software patch chronology is separate."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:39:32Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory read. No live testing or independent patch execution performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/withastro/astro/security/advisories/GHSA-8mv7-9c27-98vc",
+          "title": "composable astro/hono pipeline bypasses security.checkOrigin when middleware() is absent or misordered",
+          "publisher": "Astro",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:39:32Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "CVE-2026-73423. Applicability requires the composable astro/hono pipeline with omitted or late middleware; the default pipeline is excluded.",
+        "The affected-version field says at least 7.0.0 without an upper bound, while the patch field names 7.0.5. Preserve that source inconsistency. matthewp published the advisory; jlgore is credited as reporter.",
+        "Exact patch-release date was not established. Actual business consequences depend on application handlers; production exploitation is not established.",
+        "No bounty or production compromise is established. Learning prerequisites and generalized defensive reasoning are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "astro-2026-route-normalization-authorization-consistency",
       "title": "Astro: routing and authorization must agree on resource identity",
       "publisher": "Astro",
@@ -672,6 +754,180 @@
         "CVE-2026-84376. matthewp published the advisory; Ryoga-exe is credited as reporter. The affected range is astro through 7.2.3.",
         "The software release page displays August 19 without a year in retrieved text. A full patch-release date is therefore not asserted; it is distinct from advisory publication and resource-edition chronology.",
         "No production compromise or individual bounty is established. Learning prerequisites and generalized review guidance are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "authentik-2026-source-mapping-mutation-authority",
+      "title": "authentik: source-mapping edits carry identity-rebinding authority",
+      "publisher": "authentik",
+      "authors": [
+        "rissson"
+      ],
+      "primary_url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-49443 concerns writable identity-mapping fields in API serializers. Delegated connection-management authority could alter which local user or group a source identity represented. The maintainer reports victim-account authentication; its example addresses user mappings, while the impact statement also covers groups.",
+      "defensive_use": "Editorial reasoning: permission to maintain an integration object does not establish permission to reassign the identity it authenticates. Treat identity bindings as security-sensitive relationships, restrict writable fields, and separately authorize any supported reassignment. The advisory lists patched versions 2025.12.6, 2026.2.4 and 2026.5.1.",
+      "prerequisites": [
+        "Identity-provider integration and authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-05-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational edition date established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:39:39Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr",
+          "title": "UserSourceConnection.user and GroupSourceConnection.group are changeable through the API",
+          "publisher": "authentik",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:39:39Z",
+          "supports": [
+            "summary",
+            "dates",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "The described user case requires both an account at a configured identity source and delegated permission to add or change source connections. Ordinary authentication alone is insufficient.",
+        "rissson published the maintainer advisory; no separate reporter is identified. Group consequences are described more broadly than the user-focused example; no independent reproduction is claimed.",
+        "Patch release dates are not established by the advisory. Publication and educational edition metadata must not substitute for software chronology. No individual award is established."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "authlib-2026-error-path-redirect-authority",
+      "title": "Authlib: error responses must preserve redirect-destination validation",
+      "publisher": "Authlib",
+      "authors": [
+        "azmeuk"
+      ],
+      "primary_url": "https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-44681 describes an OIDC error path selecting a response destination before client and destination validation. The maintainer reports an unauthorized browser redirect, explicitly excluding direct disclosure of authorization codes or tokens. The failed boundary was untrusted request data becoming trusted error-response routing.",
+      "defensive_use": "Editorial reasoning: an exception can exercise authority even when the main operation fails. Establish destination trust before producing redirect-capable errors, and review rejection paths across grant implementations. The official v1.6.12 release notes corroborate the validation correction.",
+      "prerequisites": [
+        "Identity-provider integration and authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-05-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational edition date established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:39:39Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2",
+          "title": "Open Redirect in Authlib OIDC Implicit/Hybrid Authorization",
+          "publisher": "Authlib",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:39:39Z",
+          "supports": [
+            "summary",
+            "dates",
+            "version"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/authlib/authlib/releases/tag/v1.6.12",
+          "title": "Release v1.6.12",
+          "publisher": "Authlib",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:39:39Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires an affected server supporting implicit or hybrid OIDC grants; the advisory excludes code-only configurations from this variant. Authentication is unnecessary, but browser redirection requires user interaction. Phishing consequences are possible downstream harm, not demonstrated account compromise.",
+        "The advisory identifies 1.6.12 and 1.7.1 as patched. Software versions are not resource editions; exact patch-release dates remain unrecorded.",
+        "azmeuk published the advisory; y011d4 is credited as reporter. No bounty qualification or independent reproduction is established."
       ],
       "content_scope": "defensive_education"
     },
@@ -3853,6 +4109,88 @@
       "caveats": [
         "Historical architectural guidance; use current vendor documentation for versions and configuration details.",
         "The guide itself advises consulting newer material because container technology changes."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nuxt-2026-island-component-selection-authority",
+      "title": "Nuxt: island data must not acquire component-selection authority",
+      "publisher": "Nuxt",
+      "authors": [
+        "danielroe"
+      ],
+      "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "authorization-modeling"
+      ],
+      "version": null,
+      "summary": "The maintainer describes request-controlled island data reaching dynamic component selection through attribute inheritance. This permits unintended registered-component or native-element rendering. The boundary fails when input intended to configure an approved component instead chooses what component runs. The advisory expressly excludes arbitrary JavaScript execution through this vector.",
+      "defensive_use": "Nuxt identifies 4.5.1 and 3.21.10 as patched for the common implicit-inheritance path. Explicit untrusted component selection remains application responsibility. Editorial lesson: define both accepted data and allowed interpretation at component boundaries; map external choices to a closed set of trusted components rather than treating strings as authority.",
+      "prerequisites": [
+        "Server-rendered applications and framework composition",
+        "Trust-boundary modeling and application authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-07-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition established; software patch chronology is separate."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:39:32Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory read. No live testing or independent patch execution performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3",
+          "title": "Unauthorized Component Instantiation via Server Island Props in Nuxt",
+          "publisher": "Nuxt",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:39:32Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "CVE-2026-71318. Requires active server islands and a dynamic-component consumer; installing a UI library alone is insufficient. Runtime template compilation is not required.",
+        "Affected ranges: 3.1.0 through below 3.21.10, and 4.0.0 through below 4.5.1. Nuxt 2 is excluded. danielroe published the advisory.",
+        "Patch-release dates were not established. Data exposure beyond unintended rendering depends on reachable components and is not demonstrated here.",
+        "No bounty or production compromise is established. Learning prerequisites and generalized defensive reasoning are editorial."
       ],
       "content_scope": "defensive_education"
     },
