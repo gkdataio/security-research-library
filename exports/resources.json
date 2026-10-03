@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "dataset": "security-research-library-resources",
-  "as_of": "2026-10-02",
+  "as_of": "2026-10-03",
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 16,
+    "resources": 20,
     "diagrams": 8
   },
   "taxonomy": {
@@ -418,6 +418,106 @@
       ],
       "caveats": [
         "The official source includes technical examples; this catalog retains reporting-quality lessons only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nist-sp-800-162-attribute-authority-modeling",
+      "title": "NIST SP 800-162: attribute authority and policy traceability",
+      "publisher": "National Institute of Standards and Technology",
+      "authors": [
+        "Vincent C. Hu",
+        "David Ferraiolo",
+        "Rick Kuhn",
+        "Adam Schnitzer",
+        "Kenneth Sandlin",
+        "Robert Miller",
+        "Karen Scarfone"
+      ],
+      "primary_url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "authorization",
+        "identity"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "integration-threat-modeling"
+      ],
+      "version": "SP 800-162 (January 2014; updated August 2, 2019)",
+      "summary": "Defines authorization in terms of subject, object, operation and environmental attributes evaluated against policy. Enterprise considerations connect business rules to machine-enforced decisions, attribute authorities and consistent meanings across organizations. Attribute maintenance, provenance and integrity are part of the authorization model rather than incidental metadata.",
+      "defensive_use": "For an owned policy design, identify who may assert each attribute, how it is bound to its subject or object, and how changes reach decision points. Compare resulting permissions with the written policy.",
+      "prerequisites": [
+        "Basic understanding of access-control concepts"
+      ],
+      "prerequisites_basis": "publisher_explicit",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance; no account required to read."
+      },
+      "dates": {
+        "published": {
+          "value": "2014-01",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Original publication month; distinct from later updates."
+        },
+        "version_released": {
+          "value": "2019-08-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "publication",
+          "note": "Errata update adds environment conditions to the ABAC trust-chain figure; not a new original publication."
+        },
+        "source_displayed": {
+          "value": "2019-08-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Catalog identifies updates through this date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T01:41:34Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the catalog and publication scope, audience, errata, attribute management and policy traceability sections; historical edition retained explicitly."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+          "title": "Guide to Attribute Based Access Control (ABAC) Definition and Considerations",
+          "publisher": "National Institute of Standards and Technology",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T01:39:33Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "publication",
+          "url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-162.pdf",
+          "title": "NIST SP 800-162: scope, audience, attribute management and policy traceability",
+          "publisher": "National Institute of Standards and Technology",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T01:39:49Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates",
+            "prerequisites"
+          ]
+        }
+      ],
+      "caveats": [
+        "Assumes subjects are bound to trusted identities; it does not comprehensively cover authentication or identity management.",
+        "Historical conceptual guidance, not a product certification or a complete deployment checklist."
       ],
       "content_scope": "defensive_education"
     },
@@ -985,6 +1085,160 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "owasp-secure-code-review-methodology",
+      "title": "OWASP Secure Code Review: baseline and change-focused review",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "verification",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "authorization-modeling",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Explains how whole-codebase reviews and change-focused reviews answer different assurance questions. Connects architecture, business requirements and existing findings to manual examination of data movement, control placement and workflow state. Review documentation records the inspected version, coverage and remediation decisions.",
+      "defensive_use": "For an owned codebase, document the review boundary and trace a selected security requirement through relevant code and tests. Record unsupported assumptions and unreviewed paths rather than claiming complete coverage.",
+      "prerequisites": [
+        "Ability to read the application language and framework conventions",
+        "Understanding of data flow, trust boundaries and the intended business rules"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance; no account required to read."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T01:41:34Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html",
+          "title": "OWASP Secure Code Review: baseline and change-focused review",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T01:39:33Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Pattern matches alone do not establish a defect; contextual review remains necessary.",
+        "The source includes command examples and testing suggestions; this record retains review methodology only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-security-logging-evidence-quality",
+      "title": "OWASP Logging: trustworthy and minimal application evidence",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "verification",
+        "reporting"
+      ],
+      "skillset_ids": [
+        "defensive-evidence-writing",
+        "secrets-containment",
+        "untrusted-input-handling"
+      ],
+      "version": null,
+      "summary": "Explains how application events support investigation through consistent context, interaction identifiers, outcomes and confidence information. Distinguishes event occurrence from recording time and treats cross-boundary event data as untrusted. Evidence quality also depends on data minimization, access restrictions, integrity protection and reliable logging behavior.",
+      "defensive_use": "Using synthetic events in an owned application, review whether records can explain a decision without exposing credentials or personal data. Document correlation gaps, timestamp uncertainty and what the logs cannot prove.",
+      "prerequisites": [
+        "Basic familiarity with application events and structured logs",
+        "Understanding of sensitive-data handling and access controls"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance; no account required to read."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T01:41:34Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+          "title": "OWASP Logging: trustworthy and minimal application evidence",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T01:39:33Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Logging does not automatically provide independent proof or non-repudiation.",
+        "Collection and retention must match the authorized purpose; more recorded data is not necessarily better evidence."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "owasp-server-request-destination-boundaries",
       "title": "OWASP Server-Side Request Forgery Prevention",
       "publisher": "OWASP Cheat Sheet Series",
@@ -1056,6 +1310,83 @@
       ],
       "caveats": [
         "The destination-policy design depends on business requirements. Metadata protections complement application validation and network isolation."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-threat-modeling-assumptions-and-validation",
+      "title": "OWASP Threat Modeling: system assumptions and mitigation validation",
+      "publisher": "OWASP Cheat Sheet Series",
+      "authors": [],
+      "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "verification",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "authorization-modeling",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Presents an iterative design-review process linking a system model to potential threats, agreed responses and validation. Data-flow diagrams expose trust boundaries and dependencies; structured prompts help identify missing assumptions. Mitigations become measurable requirements, and accepted residual risks remain documented as the system changes.",
+      "defensive_use": "For an owned design, write a bounded hypothesis about a missing security guarantee, identify the assumption behind it, and specify evidence that would support or refute it. Review the model with relevant stakeholders.",
+      "prerequisites": [
+        "Basic application architecture and security concepts",
+        "Access to an accurate, authorized description of the system and business workflow"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance; no account required to read."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T01:41:34Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+          "title": "OWASP Threat Modeling: system assumptions and mitigation validation",
+          "publisher": "OWASP Cheat Sheet Series",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T01:39:33Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "A modeled threat is a hypothesis, not evidence of an implemented vulnerability.",
+        "No single modeling technique covers every concern; the source recommends stating scope and methodological gaps."
       ],
       "content_scope": "defensive_education"
     },

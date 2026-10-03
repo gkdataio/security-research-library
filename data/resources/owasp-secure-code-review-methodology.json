@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-secure-code-review-methodology",
+  "title": "OWASP Secure Code Review: baseline and change-focused review",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "verification",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "authorization-modeling",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "summary": "Explains how whole-codebase reviews and change-focused reviews answer different assurance questions. Connects architecture, business requirements and existing findings to manual examination of data movement, control placement and workflow state. Review documentation records the inspected version, coverage and remediation decisions.",
+  "defensive_use": "For an owned codebase, document the review boundary and trace a selected security requirement through relevant code and tests. Record unsupported assumptions and unreviewed paths rather than claiming complete coverage.",
+  "prerequisites": [
+    "Ability to read the application language and framework conventions",
+    "Understanding of data flow, trust boundaries and the intended business rules"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance; no account required to read."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T01:41:34Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html",
+      "title": "OWASP Secure Code Review: baseline and change-focused review",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T01:39:33Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Pattern matches alone do not establish a defect; contextual review remains necessary.",
+    "The source includes command examples and testing suggestions; this record retains review methodology only."
+  ],
+  "content_scope": "defensive_education"
+}

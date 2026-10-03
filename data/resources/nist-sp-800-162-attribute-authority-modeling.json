@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nist-sp-800-162-attribute-authority-modeling",
+  "title": "NIST SP 800-162: attribute authority and policy traceability",
+  "publisher": "National Institute of Standards and Technology",
+  "authors": [
+    "Vincent C. Hu",
+    "David Ferraiolo",
+    "Rick Kuhn",
+    "Adam Schnitzer",
+    "Kenneth Sandlin",
+    "Robert Miller",
+    "Karen Scarfone"
+  ],
+  "primary_url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "authorization",
+    "identity"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "identity-lifecycle-review",
+    "integration-threat-modeling"
+  ],
+  "version": "SP 800-162 (January 2014; updated August 2, 2019)",
+  "summary": "Defines authorization in terms of subject, object, operation and environmental attributes evaluated against policy. Enterprise considerations connect business rules to machine-enforced decisions, attribute authorities and consistent meanings across organizations. Attribute maintenance, provenance and integrity are part of the authorization model rather than incidental metadata.",
+  "defensive_use": "For an owned policy design, identify who may assert each attribute, how it is bound to its subject or object, and how changes reach decision points. Compare resulting permissions with the written policy.",
+  "prerequisites": [
+    "Basic understanding of access-control concepts"
+  ],
+  "prerequisites_basis": "publisher_explicit",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance; no account required to read."
+  },
+  "dates": {
+    "published": {
+      "value": "2014-01",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Original publication month; distinct from later updates."
+    },
+    "version_released": {
+      "value": "2019-08-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "publication",
+      "note": "Errata update adds environment conditions to the ABAC trust-chain figure; not a new original publication."
+    },
+    "source_displayed": {
+      "value": "2019-08-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Catalog identifies updates through this date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T01:41:34Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the catalog and publication scope, audience, errata, attribute management and policy traceability sections; historical edition retained explicitly."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://csrc.nist.gov/pubs/sp/800/162/upd2/final",
+      "title": "Guide to Attribute Based Access Control (ABAC) Definition and Considerations",
+      "publisher": "National Institute of Standards and Technology",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T01:39:33Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "publication",
+      "url": "https://nvlpubs.nist.gov/nistpubs/specialpublications/NIST.SP.800-162.pdf",
+      "title": "NIST SP 800-162: scope, audience, attribute management and policy traceability",
+      "publisher": "National Institute of Standards and Technology",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T01:39:49Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates",
+        "prerequisites"
+      ]
+    }
+  ],
+  "caveats": [
+    "Assumes subjects are bound to trusted identities; it does not comprehensively cover authentication or identity management.",
+    "Historical conceptual guidance, not a product certification or a complete deployment checklist."
+  ],
+  "content_scope": "defensive_education"
+}

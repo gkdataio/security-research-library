@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from validate import Invalid, validate_library
 from validate_extra import validate_all, validate_resource, validate_diagram
-from export_resources import build_export
+from export_resources import build_export, latest_review_date
 
 class ResourceTests(unittest.TestCase):
     def setUp(self):
@@ -37,6 +37,10 @@ class ResourceTests(unittest.TestCase):
     def test_rendering_provenance_preserved(self):
         self.assertFalse(self.diagram['rendering']['mermaid_engine_executed'])
         self.assertEqual(self.diagram['rendering']['visual_qa'],'passed')
+    def test_export_date_uses_latest_review(self):
+        self.assertEqual(latest_review_date([{'freshness': {'reviewed_at': '2026-10-03T01:00:00Z'}}], [{'reviewed_at': '2026-10-02T20:00:00Z'}]), '2026-10-03')
+    def test_export_date_normalizes_utc(self):
+        self.assertEqual(latest_review_date([{'freshness': {'reviewed_at': '2026-10-03T00:30:00+02:00'}}], [{'reviewed_at': '2026-10-02T23:00:00Z'}]), '2026-10-02')
     def test_resources_export_deterministic(self):
         self.assertEqual(build_export(),build_export())
     def test_resources_are_separate_from_awards(self):

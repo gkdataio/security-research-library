@@ -12,6 +12,8 @@ The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028
 
 Relevant machine-readable skill tags: `identity-lifecycle-review`, `authorization-modeling`, `approval-state-integrity`, `concurrency-reasoning`.
 
+The [OWASP threat-modeling resource](../data/resources/owasp-threat-modeling-assumptions-and-validation.json) links assumptions to mitigation validation. [NIST attribute-based authorization guidance](../data/resources/nist-sp-800-162-attribute-authority-modeling.json) adds a way to document who may assert each decision-relevant attribute.
+
 ## Read code across a trust boundary
 
 In code you are permitted to review, document where untrusted values enter, where identity or ownership is established, and which component enforces the final decision. Compare the stated contract with the consumer's assumptions. Include error paths and feature transitions; a validation function's presence does not establish that all callers use it consistently.
@@ -19,6 +21,8 @@ In code you are permitted to review, document where untrusted values enter, wher
 Prerequisites include understanding the language's data types, the application's identity model and the relevant framework's documented behavior. Keep source-backed descriptions of a real fix distinct from your proposed design improvement.
 
 Relevant tags: `secure-parser-review`, `untrusted-input-handling`, `integration-threat-modeling`, `error-response-design`.
+
+The [OWASP code-review resource](../data/resources/owasp-secure-code-review-methodology.json) distinguishes a whole-codebase baseline from change-focused review; neither should silently imply coverage of the other.
 
 ## Use contained exercises to test an invariant
 
@@ -33,6 +37,8 @@ Separate observation, inference and uncertainty. Document the environment and ve
 Describe demonstrated impact before hypothetical reach. A failed security assumption does not, by itself, prove reliable account takeover or arbitrary execution in every deployment. Preserve attribution when a vendor response is reproduced by a researcher rather than independently published by the vendor.
 
 Relevant tags: `defensive-evidence-writing`, `patch-verification`.
+
+The [OWASP logging resource](../data/resources/owasp-security-logging-evidence-quality.json) connects useful event correlation to timestamp uncertainty, integrity and data minimization.
 
 ## Use the JSON as a research interface
 

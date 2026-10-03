@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-security-logging-evidence-quality",
+  "title": "OWASP Logging: trustworthy and minimal application evidence",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "verification",
+    "reporting"
+  ],
+  "skillset_ids": [
+    "defensive-evidence-writing",
+    "secrets-containment",
+    "untrusted-input-handling"
+  ],
+  "version": null,
+  "summary": "Explains how application events support investigation through consistent context, interaction identifiers, outcomes and confidence information. Distinguishes event occurrence from recording time and treats cross-boundary event data as untrusted. Evidence quality also depends on data minimization, access restrictions, integrity protection and reliable logging behavior.",
+  "defensive_use": "Using synthetic events in an owned application, review whether records can explain a decision without exposing credentials or personal data. Document correlation gaps, timestamp uncertainty and what the logs cannot prove.",
+  "prerequisites": [
+    "Basic familiarity with application events and structured logs",
+    "Understanding of sensitive-data handling and access controls"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance; no account required to read."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T01:41:34Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html",
+      "title": "OWASP Logging: trustworthy and minimal application evidence",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T01:39:33Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Logging does not automatically provide independent proof or non-repudiation.",
+    "Collection and retention must match the authorized purpose; more recorded data is not necessarily better evidence."
+  ],
+  "content_scope": "defensive_education"
+}

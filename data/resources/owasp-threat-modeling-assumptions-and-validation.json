@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-threat-modeling-assumptions-and-validation",
+  "title": "OWASP Threat Modeling: system assumptions and mitigation validation",
+  "publisher": "OWASP Cheat Sheet Series",
+  "authors": [],
+  "primary_url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "verification",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "authorization-modeling",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "summary": "Presents an iterative design-review process linking a system model to potential threats, agreed responses and validation. Data-flow diagrams expose trust boundaries and dependencies; structured prompts help identify missing assumptions. Mitigations become measurable requirements, and accepted residual risks remain documented as the system changes.",
+  "defensive_use": "For an owned design, write a bounded hypothesis about a missing security guarantee, identify the assumption behind it, and specify evidence that would support or refute it. Review the model with relevant stakeholders.",
+  "prerequisites": [
+    "Basic application architecture and security concepts",
+    "Access to an accurate, authorized description of the system and business workflow"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance; no account required to read."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T01:41:34Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the current official guidance. No publication, release or last-update date was established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html",
+      "title": "OWASP Threat Modeling: system assumptions and mitigation validation",
+      "publisher": "OWASP Cheat Sheet Series",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T01:39:33Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "A modeled threat is a hypothesis, not evidence of an implemented vulnerability.",
+    "No single modeling technique covers every concern; the source recommends stating scope and methodological gaps."
+  ],
+  "content_scope": "defensive_education"
+}
