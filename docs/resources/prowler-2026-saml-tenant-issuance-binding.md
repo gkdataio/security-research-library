@@ -13,7 +13,7 @@
 
 ## Original summary
 
-CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration\. Maintainers describe potential cross-tenant account takeover\. Their account-linking demonstration alone does not establish complete token issuance or production compromise\.
+CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration\. Maintainers describe potential cross-tenant account takeover\. Their adapter-level linking-call demonstration does not establish persisted account linkage, complete token issuance or production compromise\.
 
 ## Defensive use
 
@@ -53,6 +53,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Configured domains remain globally unique\. The advisory narrative corrects conflicting older demonstration comments\.
 - Credits: EQSTLab, reporter; AdriiiPRodri, remediation developer; jfagoagas, coordinator/publishing account; josema-xyz, analyst\. Article authorship is not established\.
 - Broader access and persistence are potential consequences\. The fix was not independently audited\.
+- The displayed test mocks the linking method and checks its invocation with an existing user; it is narrower evidence than completed persistent linking\.
 
 ## Sources and attribution
 

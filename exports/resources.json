@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 68,
+    "resources": 70,
     "diagrams": 9
   },
   "taxonomy": {
@@ -4242,6 +4242,127 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "parse-server-2026-upload-metadata-consumer-boundary",
+      "title": "Parse Server: preserve safe file interpretation across storage and browsers",
+      "publisher": "Parse Community",
+      "authors": [
+        "mtrezza"
+      ],
+      "primary_url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "GHSA-r899-h629-j84r describes inconsistent interpretation of uploaded-file metadata across admission, storage and browser consumption. The maintainer reports stored cross-site scripting when unsupported filename types retained invalid media-type metadata. The affected storage configurations preserved that metadata; default GridFS is explicitly unaffected.",
+      "defensive_use": "The maintainer recommends corrected versions, application-specific file allowlists, origin separation for uploads and storage-layer anti-sniffing policy. Editorial lesson: admission checks and delivery behavior form one security contract. A successful upload validation result alone does not establish that later consumers will treat the object as inert data.",
+      "prerequisites": [
+        "Basic web upload handling and server-side validation",
+        "Content-type interpretation and processing lifecycle concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and remediation references."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established. Software fix chronology appears in caveats."
+        },
+        "source_displayed": {
+          "value": "2026-06-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed on the advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T12:10:36Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Read maintainer advisory and corroborating remediation references; no reproduction or independent patch testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
+          "title": "Stored XSS via malformed Content-Type bypassing file upload extension blocklist",
+          "publisher": "Parse Community",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:09:10Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "remediation-v9",
+          "url": "https://github.com/parse-community/parse-server/pull/10521",
+          "title": "Parse Server 9 remediation, pull request 10521",
+          "publisher": "Parse Community",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:09:10Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "remediation-v8",
+          "url": "https://github.com/parse-community/parse-server/pull/10523",
+          "title": "Parse Server 8 remediation, pull request 10523",
+          "publisher": "Parse Community",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:09:10Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-v9",
+          "url": "https://github.com/parse-community/parse-server/releases/tag/9.10.0",
+          "title": "Parse Server 9.10.0 release",
+          "publisher": "Parse Community",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:10:36Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires upload permission, a storage/delivery configuration retaining supplied metadata, and another user opening the uploaded object. Browser-side script execution is maintainer-reported; production exploitation, account takeover and server compromise are not established.",
+        "The advisory lists affected ranges as <= 8.6.83 and >= 9.0.0, < 9.10.0-alpha.2. It identifies 8.6.84 and 9.10.0-alpha.2 as patched.",
+        "The version-8 and version-9 remediation records show June 25, 2026 merges and releases; the version-9 stable release 9.10.0 is dated July 13, 2026. These are software events, not educational-resource editions.",
+        "CyberKareem is credited as finder and mtrezza as coordinator/advisory publisher. No CVE is listed on the reviewed advisory.",
+        "The correction rejects invalid media-type syntax; well-formed custom types remain permitted subject to configured restrictions. This does not establish that all accepted content is harmless.",
+        "Learning prerequisites and the generalized consumer-contract lesson are editorial. No award claim is made."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "portswigger-2025-upstream-http-framing-boundaries",
       "title": "Upstream HTTP framing and parser-consistency boundaries",
       "publisher": "PortSwigger",
@@ -4417,7 +4538,7 @@
         "authorization-modeling"
       ],
       "version": null,
-      "summary": "CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration. Maintainers describe potential cross-tenant account takeover. Their account-linking demonstration alone does not establish complete token issuance or production compromise.",
+      "summary": "CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration. Maintainers describe potential cross-tenant account takeover. Their adapter-level linking-call demonstration does not establish persisted account linkage, complete token issuance or production compromise.",
       "defensive_use": "Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent. The advisory lists Prowler API through 5.30.2 as affected and 5.30.3 as patched; no patch-release date is established here.",
       "prerequisites": [
         "Basic federation and object-level authorization concepts"
@@ -4474,7 +4595,8 @@
         "Requires SAML, authenticated control of a tenant configuration and identity provider, and a target domain mapped to another SAML tenant; no victim interaction.",
         "Configured domains remain globally unique. The advisory narrative corrects conflicting older demonstration comments.",
         "Credits: EQSTLab, reporter; AdriiiPRodri, remediation developer; jfagoagas, coordinator/publishing account; josema-xyz, analyst. Article authorship is not established.",
-        "Broader access and persistence are potential consequences. The fix was not independently audited."
+        "Broader access and persistence are potential consequences. The fix was not independently audited.",
+        "The displayed test mocks the linking method and checks its invocation with an existing user; it is narrower evidence than completed persistent linking."
       ],
       "content_scope": "defensive_education"
     },
@@ -5759,6 +5881,102 @@
         "GHSL records reporting on February 19, 2026 and maintainer-advisory publication on March 9; detailed research was published March 17. Exact product release dates are not established by these sources. Resource edition release remains unknown.",
         "The development snapshot tested by GHSL is distinct from the final 2.2.3 release named as patched by the maintainer. No contradiction or remediation failure is inferred from the similar labels.",
         "The byline is Man Yue Mo. Discovery is credited to GitHub Security Lab Taskflow Agent, with manual verification by Peter Stöckli and Man Yue Mo; the maintainer credits both and the GHSL team. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "typo3-2026-upload-validator-lifecycle-boundary",
+      "title": "TYPO3: configured upload policy must reach the runtime validator",
+      "publisher": "TYPO3",
+      "authors": [
+        "Oliver Hader"
+      ],
+      "primary_url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-15305 concerns a lifecycle mismatch between form configuration and upload enforcement. MIME validation was registered before the concrete form properties were available, so the intended validator never entered the processing pipeline. The maintainer identifies TYPO3 14.2.0–14.3.4 as affected.",
+      "defensive_use": "The official 14.3.5 release notes identify runtime registration of the MIME validator as the correction. Editorial lesson: a declared restriction is not evidence of enforcement. Trace configuration through construction and execution, and make absent policy enforcement a visible failure rather than an implicit success.",
+      "prerequisites": [
+        "Basic web upload handling and server-side validation",
+        "Content-type interpretation and processing lifecycle concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and remediation references."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established. Software fix chronology appears in caveats."
+        },
+        "source_displayed": {
+          "value": "2026-07-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed on the advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T12:09:10Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Read maintainer advisory and corroborating remediation references; no reproduction or independent patch testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
+          "title": "TYPO3-CORE-SA-2026-020: Unrestricted File Upload in Form Framework",
+          "publisher": "TYPO3",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:09:10Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://get.typo3.org/release-notes/14.3.5",
+          "title": "TYPO3 14.3.5 Release Notes",
+          "publisher": "TYPO3",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:09:10Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires forms with file or image upload elements and configured MIME restrictions. The advisory reports acceptance of unintended MIME types, explicitly excluding PHP-file uploads; it does not establish server-side code execution or a production compromise.",
+        "Sébastien Convers is credited as reporter; Josua Vogel and Oliver Hader are credited with fixing the issue.",
+        "The official release notes date software version 14.3.5 to July 14, 2026. This happens to match advisory publication, but is a separate software-release event.",
+        "Editorial remediation limit: correcting validator registration does not establish that every application-specific file policy, downstream processor or storage configuration is safe.",
+        "Learning prerequisites and generalized design guidance are editorial. No award claim is made."
       ],
       "content_scope": "defensive_education"
     },

@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "id": "parse-server-2026-upload-metadata-consumer-boundary",
+  "title": "Parse Server: preserve safe file interpretation across storage and browsers",
+  "publisher": "Parse Community",
+  "authors": [
+    "mtrezza"
+  ],
+  "primary_url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "GHSA-r899-h629-j84r describes inconsistent interpretation of uploaded-file metadata across admission, storage and browser consumption. The maintainer reports stored cross-site scripting when unsupported filename types retained invalid media-type metadata. The affected storage configurations preserved that metadata; default GridFS is explicitly unaffected.",
+  "defensive_use": "The maintainer recommends corrected versions, application-specific file allowlists, origin separation for uploads and storage-layer anti-sniffing policy. Editorial lesson: admission checks and delivery behavior form one security contract. A successful upload validation result alone does not establish that later consumers will treat the object as inert data.",
+  "prerequisites": [
+    "Basic web upload handling and server-side validation",
+    "Content-type interpretation and processing lifecycle concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and remediation references."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-06-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established. Software fix chronology appears in caveats."
+    },
+    "source_displayed": {
+      "value": "2026-06-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed on the advisory."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T12:10:36Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Read maintainer advisory and corroborating remediation references; no reproduction or independent patch testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
+      "title": "Stored XSS via malformed Content-Type bypassing file upload extension blocklist",
+      "publisher": "Parse Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:09:10Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "remediation-v9",
+      "url": "https://github.com/parse-community/parse-server/pull/10521",
+      "title": "Parse Server 9 remediation, pull request 10521",
+      "publisher": "Parse Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:09:10Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "remediation-v8",
+      "url": "https://github.com/parse-community/parse-server/pull/10523",
+      "title": "Parse Server 8 remediation, pull request 10523",
+      "publisher": "Parse Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:09:10Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-v9",
+      "url": "https://github.com/parse-community/parse-server/releases/tag/9.10.0",
+      "title": "Parse Server 9.10.0 release",
+      "publisher": "Parse Community",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:10:36Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires upload permission, a storage/delivery configuration retaining supplied metadata, and another user opening the uploaded object. Browser-side script execution is maintainer-reported; production exploitation, account takeover and server compromise are not established.",
+    "The advisory lists affected ranges as <= 8.6.83 and >= 9.0.0, < 9.10.0-alpha.2. It identifies 8.6.84 and 9.10.0-alpha.2 as patched.",
+    "The version-8 and version-9 remediation records show June 25, 2026 merges and releases; the version-9 stable release 9.10.0 is dated July 13, 2026. These are software events, not educational-resource editions.",
+    "CyberKareem is credited as finder and mtrezza as coordinator/advisory publisher. No CVE is listed on the reviewed advisory.",
+    "The correction rejects invalid media-type syntax; well-formed custom types remain permitted subject to configured restrictions. This does not establish that all accepted content is harmless.",
+    "Learning prerequisites and the generalized consumer-contract lesson are editorial. No award claim is made."
+  ],
+  "content_scope": "defensive_education"
+}

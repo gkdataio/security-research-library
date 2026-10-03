@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "id": "typo3-2026-upload-validator-lifecycle-boundary",
+  "title": "TYPO3: configured upload policy must reach the runtime validator",
+  "publisher": "TYPO3",
+  "authors": [
+    "Oliver Hader"
+  ],
+  "primary_url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-15305 concerns a lifecycle mismatch between form configuration and upload enforcement. MIME validation was registered before the concrete form properties were available, so the intended validator never entered the processing pipeline. The maintainer identifies TYPO3 14.2.0–14.3.4 as affected.",
+  "defensive_use": "The official 14.3.5 release notes identify runtime registration of the MIME validator as the correction. Editorial lesson: a declared restriction is not evidence of enforcement. Trace configuration through construction and execution, and make absent policy enforcement a visible failure rather than an implicit success.",
+  "prerequisites": [
+    "Basic web upload handling and server-side validation",
+    "Content-type interpretation and processing lifecycle concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and remediation references."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established. Software fix chronology appears in caveats."
+    },
+    "source_displayed": {
+      "value": "2026-07-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed on the advisory."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T12:09:10Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Read maintainer advisory and corroborating remediation references; no reproduction or independent patch testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
+      "title": "TYPO3-CORE-SA-2026-020: Unrestricted File Upload in Form Framework",
+      "publisher": "TYPO3",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:09:10Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://get.typo3.org/release-notes/14.3.5",
+      "title": "TYPO3 14.3.5 Release Notes",
+      "publisher": "TYPO3",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T12:09:10Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires forms with file or image upload elements and configured MIME restrictions. The advisory reports acceptance of unintended MIME types, explicitly excluding PHP-file uploads; it does not establish server-side code execution or a production compromise.",
+    "Sébastien Convers is credited as reporter; Josua Vogel and Oliver Hader are credited with fixing the issue.",
+    "The official release notes date software version 14.3.5 to July 14, 2026. This happens to match advisory publication, but is a separate software-release event.",
+    "Editorial remediation limit: correcting validator registration does not establish that every application-specific file policy, downstream processor or storage configuration is safe.",
+    "Learning prerequisites and generalized design guidance are editorial. No award claim is made."
+  ],
+  "content_scope": "defensive_education"
+}
