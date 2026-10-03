@@ -54,6 +54,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Taint APIs are experimental and supplement explicit data minimization; encrypted closures do not replace careful handling of sensitive data\.
 - A navigation version label was not treated as the version of this guidance\.
 
+## Related conceptual diagrams
+
+- [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>)
+
 ## Sources and attribution
 
 - [How to think about data security in Next\.js](<https://nextjs.org/docs/app/guides/data-security>) — Next\.js / Vercel; source ID: primary; provenance: official primary; retrieved 2026-10-03T04:39:54Z; supports: summary, dates.

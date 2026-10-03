@@ -1,0 +1,14 @@
+flowchart TB
+  request["Request; UI visibility grants no authority"]
+  authorize{"Server: caller, resource and operation authorized?"}
+  deny["Deny access; disclose no protected data"]
+  select["Server: select only permitted, needed fields"]
+  visible["Disclosure boundary: serialized data is client-visible"]
+  context["Consumer context: encode or sanitize untrusted content"]
+  display["Display as intended; no new authority"]
+  request --> authorize
+  authorize -->|No| deny
+  authorize -->|Yes| select
+  select -->|Minimal contract| visible
+  visible -->|Including generated text| context
+  context -->|Separate rendering control| display

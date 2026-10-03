@@ -54,6 +54,10 @@ Reviewed: 2026-10-02T23:05:44Z. Reread the vendor case study; checked award, exp
 - Hai assisted triage; the reported defect was serialization\.
 - Currency context comes from the currently reviewed platform standards, updated July 27, 2026, not a preserved 2025 version\.
 
+## Related conceptual diagrams
+
+- [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>)
+
 ## Sources and attribution
 
 - [We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action](<https://www.hackerone.com/blog/hai-insight-agent-case-study>) — Crystal Hazen / HackerOne; retrieved 2026-10-02T23:00:55Z.

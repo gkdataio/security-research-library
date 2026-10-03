@@ -89,6 +89,19 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 
 [Canonical graph and provenance](<../data/diagrams/parsing-safety-action-authority.json>) · [Mermaid source](<../diagrams/parsing-safety-action-authority.mmd>) · [DOT source](<../diagrams/parsing-safety-action-authority.dot>)
 
+<a id="server-client-data-consumer-boundaries"></a>
+## Server disclosure and browser interpretation
+
+![A request enters a server-side caller, resource and operation authorization decision\. Denial returns no protected data\. Approval proceeds to explicit field selection before serialization\. Only permitted, necessary fields cross into client-visible data\. A separate consumer-context handling step keeps content, including generated text, from acquiring executable meaning before display\. Browser rendering never supplies server authorization\.](../diagrams/server-client-data-consumer-boundaries.svg)
+
+Editorial conceptual model: assumes an application with server-side privileged data and a browser consumer\. Next\.js guidance supports server authorization and minimal client-visible contracts; OWASP LLM05 supports treating generated text as untrusted at each consumer\. The linked HackerOne Rails case illustrates why serialization needs an explicit disclosure boundary; it is not evidence of Next\.js or an LLM integration\. The arrows show defensive responsibilities, not a framework execution trace\. Context-aware encoding or sanitization belongs where the output context is known, including server rendering; the lower steps do not imply exclusively client-side execution\. Rendering safety cannot replace permission checks, and authorized disclosure does not make content safe to interpret\.
+
+**Related reports**
+
+- [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>)
+
+[Canonical graph and provenance](<../data/diagrams/server-client-data-consumer-boundaries.json>) · [Mermaid source](<../diagrams/server-client-data-consumer-boundaries.mmd>) · [DOT source](<../diagrams/server-client-data-consumer-boundaries.dot>)
+
 <a id="server-request-destination-policy"></a>
 ## Layer server-request destination controls
 

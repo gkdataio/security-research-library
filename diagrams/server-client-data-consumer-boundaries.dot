@@ -1,0 +1,19 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Server disclosure and browser interpretation"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"request" [label="Request; UI visibility\ngrants no authority", shape="box", fillcolor="#f1f5f9"];
+"authorize" [label="Server: caller, resource\nand operation authorized?", shape="diamond", fillcolor="#e0ecf8"];
+"deny" [label="Deny access; disclose no\nprotected data", shape="box", fillcolor="#fef3c7"];
+"select" [label="Server: select only\npermitted, needed fields", shape="box", fillcolor="#f1f5f9"];
+"visible" [label="Disclosure boundary:\nserialized data is client-\nvisible", shape="box", fillcolor="#f1f5f9"];
+"context" [label="Consumer context: encode or\nsanitize untrusted content", shape="box", fillcolor="#f1f5f9"];
+"display" [label="Display as intended; no new\nauthority", shape="box", fillcolor="#dcfce7"];
+"request" -> "authorize" [label=""];
+"authorize" -> "deny" [label="No"];
+"authorize" -> "select" [label="Yes"];
+"select" -> "visible" [label="Minimal contract"];
+"visible" -> "context" [label="Including generated text"];
+"context" -> "display" [label="Separate rendering control"];
+}

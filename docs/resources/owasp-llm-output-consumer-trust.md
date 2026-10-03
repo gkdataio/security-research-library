@@ -54,6 +54,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - The source contains attack scenarios; this record retains only trust-boundary and remediation concepts\.
 - This category describes possible failure modes rather than current exposure of a particular product\.
 
+## Related conceptual diagrams
+
+- [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>)
+
 ## Sources and attribution
 
 - [LLM05:2025 Improper Output Handling](<https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/>) — OWASP Gen AI Security Project; source ID: primary; provenance: official primary; retrieved 2026-10-03T04:40:03Z; supports: summary, version.

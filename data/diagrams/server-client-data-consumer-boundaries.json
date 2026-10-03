@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "id": "server-client-data-consumer-boundaries",
+  "title": "Server disclosure and browser interpretation",
+  "alt_text": "A request enters a server-side caller, resource and operation authorization decision. Denial returns no protected data. Approval proceeds to explicit field selection before serialization. Only permitted, necessary fields cross into client-visible data. A separate consumer-context handling step keeps content, including generated text, from acquiring executable meaning before display. Browser rendering never supplies server authorization.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model: assumes an application with server-side privileged data and a browser consumer. Next.js guidance supports server authorization and minimal client-visible contracts; OWASP LLM05 supports treating generated text as untrusted at each consumer. The linked HackerOne Rails case illustrates why serialization needs an explicit disclosure boundary; it is not evidence of Next.js or an LLM integration. The arrows show defensive responsibilities, not a framework execution trace. Context-aware encoding or sanitization belongs where the output context is known, including server rendering; the lower steps do not imply exclusively client-side execution. Rendering safety cannot replace permission checks, and authorized disclosure does not make content safe to interpret.",
+  "linked_report_ids": [
+    "hackerone-report-json-serialization-data-exposure-2025"
+  ],
+  "linked_resource_ids": [
+    "nextjs-server-client-data-security",
+    "owasp-llm-output-consumer-trust"
+  ],
+  "evidence_urls": [
+    "https://nextjs.org/docs/app/guides/data-security",
+    "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+    "https://www.hackerone.com/blog/hai-insight-agent-case-study"
+  ],
+  "reviewed_at": "2026-10-03T05:59:11Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "request",
+        "label": "Request; UI visibility grants no authority",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "authorize",
+        "label": "Server: caller, resource and operation authorized?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "deny",
+        "label": "Deny access; disclose no protected data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "select",
+        "label": "Server: select only permitted, needed fields",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "visible",
+        "label": "Disclosure boundary: serialized data is client-visible",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "context",
+        "label": "Consumer context: encode or sanitize untrusted content",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "display",
+        "label": "Display as intended; no new authority",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "request",
+        "to": "authorize",
+        "label": null
+      },
+      {
+        "from": "authorize",
+        "to": "deny",
+        "label": "No"
+      },
+      {
+        "from": "authorize",
+        "to": "select",
+        "label": "Yes"
+      },
+      {
+        "from": "select",
+        "to": "visible",
+        "label": "Minimal contract"
+      },
+      {
+        "from": "visible",
+        "to": "context",
+        "label": "Including generated text"
+      },
+      {
+        "from": "context",
+        "to": "display",
+        "label": "Separate rendering control"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/server-client-data-consumer-boundaries.mmd",
+    "graphviz": "diagrams/server-client-data-consumer-boundaries.dot",
+    "svg": "diagrams/server-client-data-consumer-boundaries.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Mermaid and DOT are generated from this canonical node/edge graph. Graphviz renders the SVG; no Mermaid engine is executed.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}
