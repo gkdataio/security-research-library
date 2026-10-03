@@ -9,20 +9,20 @@
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-The researcher reports a USD 13,337 award for one device-authorization chain\.
+A researcher reports USD 13,337 for a device-grant authorization-boundary failure\.
 
 ### Root cause
 
-Sign-in state and the grant’s client identity and permissions were not consistently bound throughout authorization\.
+The account completing authentication could authorize a different requesting device, while client identity and permissions were not preserved through the grant\. The researcher reasoned about consistency between initial authorization and final token authority\. Cross-device sign-in alone is expected behavior; the reported failure was loss of the intended recipient and permission binding\.
 
 ### Bounded impact
 
-The author reports unauthorized downstream account access and broader data permissions\. Universal-impact claims are not independently verified\.
+The author reports third-party account access, elevated permissions and mailbox access\. Reduced-interaction behavior required a signed-in user opening a link and relevant prior consent\. Universal reach, unrestricted persistence and uniform absence of alerts are not independently established\.
 
 ### Defensive lessons
 
-- Preserve the original client, subject and permission binding throughout a grant’s lifecycle\.
-- Require meaningful device confirmation and accurate authorization audit records\.
+- Editorial lesson: preserve one server-side authorization decision across device identity, client identity, subject and permitted actions; every completion path must respect it\.
+- The researcher recommends server-side grant binding and explicit device confirmation\. These are proposed controls, not verified descriptions of the deployed fix\.
 
 ## Award and evidence
 
@@ -45,15 +45,15 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T17:03:00Z. Read the full primary disclosure and award timeline; checked USD program context and existing-record identity\.
+Reviewed: 2026-10-03T04:49:20Z. Fresh-read the primary narrative and timeline; qualified prerequisites and researcher assertions\. Existing currency-context evidence was retained without advancing its retrieval time\. No testing\.
 
-- No independent vendor-hosted confirmation of the individual award or reported reach was retrieved\.
-- The issue-status date does not establish the deployment date\.
-- No bank settlement or exact public disclosure earlier than the article is verified\.
+- No independently reviewed vendor evidence establishes technical reach, award or settlement\.
+- The March 28, 2026 marked-fixed status does not establish deployment timing or patch contents\.
+- Specific client permissions, existing consent and downstream token acceptance constrain the reported impact; one broad title does not prove every integration was affected\.
 
 ## Sources and attribution
 
-- [Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64; retrieved 2026-10-02T17:03:00Z.
+- [Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64; retrieved 2026-10-03T04:49:20Z.
 - [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Google Security Blog; retrieved 2026-10-02T17:03:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

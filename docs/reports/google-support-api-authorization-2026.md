@@ -9,20 +9,20 @@
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-A support-system authorization flaw received a documented USD 14,337 award\.
+Ordinary authenticated customers could read internal support activity; the researcher reports a USD 14,337 award\.
 
 ### Root cause
 
-An internal support-data operation lacked the necessary restriction on ordinary authenticated accounts\.
+Customer authentication did not enforce the boundary around internal support-wide information\. The researcher contrasted denied resource-specific operations with an accessible aggregate operation\. This supports an authorization gap; middleware behavior and the intended management use remain hypotheses, not confirmed implementation details\.
 
 ### Bounded impact
 
-Customer contact details and agent activity information were exposed\. The total affected record count was not confirmed by Google\.
+Observed disclosures linked customer names or phone numbers with cases and agents, including agent activity\. Phishing and harassment were potential consequences\. Millions of affected records were estimated; conversation contents and call manipulation were not demonstrated\.
 
 ### Defensive lessons
 
-- Apply authorization consistently to every internal-data operation\.
-- Minimize sensitive information returned by support integrations\.
+- Editorial lesson: treat aggregate views as separately privileged resources; successful authentication is not evidence of permission to observe other users\.
+- Editorial lesson: reducing identifiable details limits the harm when a support-data boundary fails\. The source does not document the deployed authorization repair\.
 
 ## Award and evidence
 
@@ -38,19 +38,20 @@ Exact source quotation and location remain in the [canonical record](<../../data
 - **public disclosure:** 2026-03-31; precision: day; basis: explicit
 - **reported:** 2025-06-01; precision: day; basis: explicit
 - **awarded:** 2025-06-10; precision: day; basis: explicit
-- **fixed:** 2025-11-12; precision: day; basis: explicit
+- **fixed:** Unknown; precision: unknown; basis: not\_reported. The source records closure as fixed on November 12, 2025, not a deployment date\.
 - **paid:** Unknown; precision: unknown; basis: not\_reported
 - **award announced:** Unknown; precision: unknown; basis: not\_reported
 - **mitigated:** Unknown; precision: unknown; basis: not\_reported
 
 ## Verification limits
 
-Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and source provenance verified\. No target testing or exploit reproduction performed\.
+Reviewed: 2026-10-03T04:49:20Z. Fresh-read the primary disclosure and timeline; separated observed disclosure from hypothesized reach\. No target testing or reproduction\.
 
-- Award is reported by the cited source; cash settlement is not independently audited\.
+- Researcher-published evidence does not independently establish settlement, total affected population, backend implementation or deployed repair\.
+- The prerequisite was an ordinary signed-in account; describing the exposure as unauthenticated would erase that requirement\.
 
 ## Sources and attribution
 
-- [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) — Michael Dalton; retrieved 2026-10-02T14:39:00Z.
+- [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) — Michael Dalton; retrieved 2026-10-03T04:49:20Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

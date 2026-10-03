@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vercel-react2shell-parser-normalization-defense",
+  "title": "React2Shell response: parser consistency and layered remediation",
+  "publisher": "Vercel",
+  "authors": [
+    "Malte Ubl"
+  ],
+  "primary_url": "https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "web-foundations",
+    "verification",
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "integration-threat-modeling",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "summary": "Vercel\u2019s retrospective describes request-inspection normalization, independent runtime restrictions, regression coverage and customer patching during its React2Shell response. It illustrates why a filter\u2019s interpretation must align with application semantics.",
+  "defensive_use": "In an owned architecture review, document each parser\u2019s contract and residual assumptions. Pair input validation with independently enforced execution limits, maintain regression tests and verify application upgrades.",
+  "prerequisites": [
+    "HTTP request processing and serialization basics",
+    "Application-runtime and defense-in-depth concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public article read without login."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-12-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Article displays 19 Dec 2025."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2025-12-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Displayed article date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:51:20Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Historical vendor retrospective; review does not establish current protection coverage."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell",
+      "title": "Our $1 million hacker challenge for React2Shell",
+      "publisher": "Vercel",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:51:20Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Vendor effectiveness claims are not independently audited.",
+    "Mitigations buy time; they do not replace framework patches.",
+    "This educational record establishes no individual bounty amount or testing authorization.",
+    "The linked article includes operational material omitted here."
+  ],
+  "content_scope": "defensive_education"
+}

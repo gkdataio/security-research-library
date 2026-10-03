@@ -17,7 +17,7 @@
     "secrets-containment"
   ],
   "version": null,
-  "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Returned values and component properties must be treated as client-visible contracts.",
+  "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Server Action return values and properties passed to Client Components must be treated as client-visible contracts.",
   "defensive_use": "For an owned application, document where privileged data becomes renderable or serializable. Keep data access and permission checks together, validate action inputs, and minimize returned fields. Treat framework safeguards as additional protections around explicit authorization.",
   "prerequisites": [
     "React Server Components and Server Actions concepts",

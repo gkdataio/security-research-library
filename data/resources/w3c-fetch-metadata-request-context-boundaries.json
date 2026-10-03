@@ -30,11 +30,11 @@
   },
   "dates": {
     "published": {
-      "value": null,
-      "precision": null,
-      "basis": "not_reported",
-      "source_id": null,
-      "note": "Original publication of the specification series was not established."
+      "value": "2019-06-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "publication-history",
+      "note": "Date of the First Public Working Draft in W3C’s publication history; the reviewed edition was published separately on 2026-09-21."
     },
     "version_released": {
       "value": "2026-09-21",
@@ -52,7 +52,7 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-03T04:40:00Z",
+    "reviewed_at": "2026-10-03T04:49:39Z",
     "living_resource": false,
     "status": "primary_source_reviewed",
     "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
@@ -68,6 +68,17 @@
       "supports": [
         "summary",
         "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "publication-history",
+      "url": "https://www.w3.org/standards/history/fetch-metadata/",
+      "title": "Fetch Metadata Request Headers publication history",
+      "publisher": "World Wide Web Consortium",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:49:18Z",
+      "supports": [
         "dates"
       ]
     }

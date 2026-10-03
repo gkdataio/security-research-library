@@ -135,6 +135,20 @@
       "primary_technical_status": "Primary researcher article read; published November 30, 2025. Timeline records June 16, 2023 reporting, June 29 award and May 22, 2024 fix.",
       "reason_not_counted": "The researcher confirms an award and bonuses but replaces the amount with dollar symbols. No individual USD 10,000 threshold can be established.",
       "reviewed_at": "2026-10-02T20:20:00Z"
+    },
+    {
+      "title": "Vercel React2Shell firewall semantic-normalization research",
+      "primary_technical_url": "https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell",
+      "primary_reward_corroboration_url": "https://sylvie.fyi/posts/react2shell/",
+      "reason_not_counted": "The vendor describes aggregate awards across 20 bypass techniques; the later researcher account describes 23 paid bypasses and an advertised per-bypass offer. No reviewed primary statement directly assigns an exact actual amount to one named report. Do not infer individual awards from offer terms or reconcile these totals by guessing. Included separately as an educational resource.",
+      "reviewed_at": "2026-10-03T04:50:49Z"
+    },
+    {
+      "title": "Apple App Store account takeover claimed by Mohammad Kaif",
+      "primary_technical_url": "https://kaif0x01.github.io/",
+      "reported_reward": "$15,000 in researcher portfolio",
+      "reason_not_counted": "The reviewed portfolio does not establish a matching detailed technical disclosure, precise failed security assumption, dates, prerequisites or supported currency. Separate $5,000 CSRF awards must not be combined.",
+      "reviewed_at": "2026-10-03T04:50:49Z"
     }
   ]
 }

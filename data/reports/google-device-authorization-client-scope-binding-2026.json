@@ -19,12 +19,12 @@
     "authorization-modeling",
     "security-token-design"
   ],
-  "summary": "The researcher reports a USD 13,337 award for one device-authorization chain.",
-  "root_cause": "Sign-in state and the grant’s client identity and permissions were not consistently bound throughout authorization.",
-  "impact": "The author reports unauthorized downstream account access and broader data permissions. Universal-impact claims are not independently verified.",
+  "summary": "A researcher reports USD 13,337 for a device-grant authorization-boundary failure.",
+  "root_cause": "The account completing authentication could authorize a different requesting device, while client identity and permissions were not preserved through the grant. The researcher reasoned about consistency between initial authorization and final token authority. Cross-device sign-in alone is expected behavior; the reported failure was loss of the intended recipient and permission binding.",
+  "impact": "The author reports third-party account access, elevated permissions and mailbox access. Reduced-interaction behavior required a signed-in user opening a link and relevant prior consent. Universal reach, unrestricted persistence and uniform absence of alerts are not independently established.",
   "defensive_takeaways": [
-    "Preserve the original client, subject and permission binding throughout a grant’s lifecycle.",
-    "Require meaningful device confirmation and accurate authorization audit records."
+    "Editorial lesson: preserve one server-side authorization decision across device identity, client identity, subject and permitted actions; every completion path must respect it.",
+    "The researcher recommends server-side grant binding and explicit device confirmation. These are proposed controls, not verified descriptions of the deployed fix."
   ],
   "reward": {
     "amount": 13337,
@@ -112,7 +112,7 @@
       "title": "Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking",
       "type": "researcher",
       "author": "weirdmachine64",
-      "retrieved_at": "2026-10-02T17:03:00Z",
+      "retrieved_at": "2026-10-03T04:49:20Z",
       "supports": [
         "reward",
         "dates",
@@ -136,12 +136,12 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T17:03:00Z",
-    "method": "Read the full primary disclosure and award timeline; checked USD program context and existing-record identity.",
+    "reviewed_at": "2026-10-03T04:49:20Z",
+    "method": "Fresh-read the primary narrative and timeline; qualified prerequisites and researcher assertions. Existing currency-context evidence was retained without advancing its retrieval time. No testing.",
     "limitations": [
-      "No independent vendor-hosted confirmation of the individual award or reported reach was retrieved.",
-      "The issue-status date does not establish the deployment date.",
-      "No bank settlement or exact public disclosure earlier than the article is verified."
+      "No independently reviewed vendor evidence establishes technical reach, award or settlement.",
+      "The March 28, 2026 marked-fixed status does not establish deployment timing or patch contents.",
+      "Specific client permissions, existing consent and downstream token acceptance constrain the reported impact; one broad title does not prove every integration was affected."
     ]
   },
   "content_scope": "historical_defensive_summary"

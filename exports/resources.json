@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 27,
+    "resources": 28,
     "diagrams": 8
   },
   "taxonomy": {
@@ -440,7 +440,7 @@
         "secrets-containment"
       ],
       "version": null,
-      "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Returned values and component properties must be treated as client-visible contracts.",
+      "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Server Action return values and properties passed to Client Components must be treated as client-visible contracts.",
       "defensive_use": "For an owned application, document where privileged data becomes renderable or serializable. Keep data access and permission checks together, validate action inputs, and minimize returned fields. Treat framework safeguards as additional protections around explicit authorization.",
       "prerequisites": [
         "React Server Components and Server Actions concepts",
@@ -2350,6 +2350,91 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "vercel-react2shell-parser-normalization-defense",
+      "title": "React2Shell response: parser consistency and layered remediation",
+      "publisher": "Vercel",
+      "authors": [
+        "Malte Ubl"
+      ],
+      "primary_url": "https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "web-foundations",
+        "verification",
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "integration-threat-modeling",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Vercel’s retrospective describes request-inspection normalization, independent runtime restrictions, regression coverage and customer patching during its React2Shell response. It illustrates why a filter’s interpretation must align with application semantics.",
+      "defensive_use": "In an owned architecture review, document each parser’s contract and residual assumptions. Pair input validation with independently enforced execution limits, maintain regression tests and verify application upgrades.",
+      "prerequisites": [
+        "HTTP request processing and serialization basics",
+        "Application-runtime and defense-in-depth concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public article read without login."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-12-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Article displays 19 Dec 2025."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2025-12-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Displayed article date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:51:20Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Historical vendor retrospective; review does not establish current protection coverage."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell",
+          "title": "Our $1 million hacker challenge for React2Shell",
+          "publisher": "Vercel",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:51:20Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Vendor effectiveness claims are not independently audited.",
+        "Mitigations buy time; they do not replace framework patches.",
+        "This educational record establishes no individual bounty amount or testing authorization.",
+        "The linked article includes operational material omitted here."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "w3c-fetch-metadata-request-context-boundaries",
       "title": "Fetch Metadata Request Headers",
       "publisher": "World Wide Web Consortium",
@@ -2380,11 +2465,11 @@
       },
       "dates": {
         "published": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": "Original publication of the specification series was not established."
+          "value": "2019-06-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "publication-history",
+          "note": "Date of the First Public Working Draft in W3C’s publication history; the reviewed edition was published separately on 2026-09-21."
         },
         "version_released": {
           "value": "2026-09-21",
@@ -2402,7 +2487,7 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T04:40:00Z",
+        "reviewed_at": "2026-10-03T04:49:39Z",
         "living_resource": false,
         "status": "primary_source_reviewed",
         "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
@@ -2418,6 +2503,17 @@
           "supports": [
             "summary",
             "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "publication-history",
+          "url": "https://www.w3.org/standards/history/fetch-metadata/",
+          "title": "Fetch Metadata Request Headers publication history",
+          "publisher": "World Wide Web Consortium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:49:18Z",
+          "supports": [
             "dates"
           ]
         }
