@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T16:00:54Z",
+  "latest_reviewed_at": "2026-10-03T17:39:29Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -1459,7 +1459,7 @@
         "evidence_quote": "Rewarded $13,337",
         "evidence_location": "Disclosure Timeline, April 2, 2026 row",
         "usd_equivalent": null,
-        "notes": "One chain award, counted once. The source uses $; USD follows official program currency context, not a reward-table inference. Cash receipt is unverified."
+        "notes": "One chain award, counted once. The researcher uses $. USD is inferred from Google’s March 2017 program-wide denomination statement, about nine years before the April 2026 award. That context does not independently establish this individual award’s currency or settlement; cash receipt is unverified."
       },
       "dates": {
         "published": {
@@ -1533,7 +1533,7 @@
           "title": "Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking",
           "type": "researcher",
           "author": "weirdmachine64",
-          "retrieved_at": "2026-10-03T04:49:20Z",
+          "retrieved_at": "2026-10-03T17:39:29Z",
           "supports": [
             "reward",
             "dates",
@@ -1548,7 +1548,7 @@
           "title": "VRP news from Nullcon",
           "type": "vendor",
           "author": "Google Security Blog",
-          "retrieved_at": "2026-10-02T17:03:00Z",
+          "retrieved_at": "2026-10-03T17:39:29Z",
           "supports": [
             "reward"
           ]
@@ -1557,8 +1557,8 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-03T04:49:20Z",
-        "method": "Fresh-read the primary narrative and timeline; qualified prerequisites and researcher assertions. Existing currency-context evidence was retained without advancing its retrieval time. No testing.",
+        "reviewed_at": "2026-10-03T17:39:29Z",
+        "method": "Fresh-read the primary narrative and award timeline with the older vendor currency context; explicitly qualified the temporal gap and inference. No testing.",
         "limitations": [
           "No independently reviewed vendor evidence establishes technical reach, award or settlement.",
           "The March 28, 2026 marked-fixed status does not establish deployment timing or patch contents.",

@@ -28,7 +28,7 @@ The author reports third-party account access, elevated permissions and mailbox 
 
 **USD 13,337** — bug\_bounty; single\_report; status: awarded.
 
-Evidence level: researcher\_reported. One chain award, counted once\. The source uses $; USD follows official program currency context, not a reward-table inference\. Cash receipt is unverified\.
+Evidence level: researcher\_reported. One chain award, counted once\. The researcher uses $\. USD is inferred from Google’s March 2017 program-wide denomination statement, about nine years before the April 2026 award\. That context does not independently establish this individual award’s currency or settlement; cash receipt is unverified\.
 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-device-authorization-client-scope-binding-2026.json>).
 
@@ -45,7 +45,7 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-03T04:49:20Z. Fresh-read the primary narrative and timeline; qualified prerequisites and researcher assertions\. Existing currency-context evidence was retained without advancing its retrieval time\. No testing\.
+Reviewed: 2026-10-03T17:39:29Z. Fresh-read the primary narrative and award timeline with the older vendor currency context; explicitly qualified the temporal gap and inference\. No testing\.
 
 - No independently reviewed vendor evidence establishes technical reach, award or settlement\.
 - The March 28, 2026 marked-fixed status does not establish deployment timing or patch contents\.
@@ -53,7 +53,7 @@ Reviewed: 2026-10-03T04:49:20Z. Fresh-read the primary narrative and timeline; q
 
 ## Sources and attribution
 
-- [Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64; retrieved 2026-10-03T04:49:20Z.
-- [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Google Security Blog; retrieved 2026-10-02T17:03:00Z.
+- [Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64; retrieved 2026-10-03T17:39:29Z.
+- [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Google Security Blog; retrieved 2026-10-03T17:39:29Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
