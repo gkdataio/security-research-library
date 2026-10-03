@@ -33,11 +33,11 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public primary-source guidance\.
 
-**Reviewed:** 2026-10-03T15:20:45Z  
+**Reviewed:** 2026-10-03T17:29:30Z  
 **Review status:** primary source reviewed  
 **Living resource:** Yes.
 
-Reviewed the original design guide and Chrome 142/145 release documentation; no live behavior was tested\.
+Original guide and Chrome 142/145 documentation reviewed earlier; Chrome 147 coverage clarification added after fresh release-note review\. No live behavior was tested\.
 
 Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.
 
@@ -51,6 +51,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 - The guide describes an evolving rollout and replaces the earlier Private Network Access preflight approach\. Its initial transport limitations are historical, not a verified inventory of current gaps\.
 - Chrome 142 release notes identify an October 28, 2025 stable release and include local-to-loopback requests, beyond the original guide’s first-milestone scope\. Chrome 145 notes identify February 10, 2026 and separate local and loopback permissions while retaining the older permission name as an alias\.
+- Chrome 147 release notes, last updated April 7, 2026, document permission gating for WebSockets and WebTransport and extend service-worker navigation coverage to subframes\. Those notes expressly exclude main-frame navigations; permission coverage must not be generalized to every browser request\.
 - This is architectural guidance rather than a vulnerability or award report\. Browser-wide implementation parity and current enterprise-policy coverage were not established\.
 
 ## Sources and attribution
@@ -58,5 +59,6 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - [New permission prompt for Local Network Access](<https://developer.chrome.com/blog/local-network-access>) — Google Chrome for Developers; source ID: guide; provenance: official primary; retrieved 2026-10-03T15:20:45Z; supports: summary, dates.
 - [Chrome 142](<https://developer.chrome.com/release-notes/142>) — Google Chrome for Developers; source ID: chrome-142; provenance: official primary; retrieved 2026-10-03T15:20:45Z; supports: summary.
 - [Chrome 145](<https://developer.chrome.com/release-notes/145>) — Google Chrome for Developers; source ID: chrome-145; provenance: official primary; retrieved 2026-10-03T15:20:45Z; supports: summary.
+- [Chrome 147: Local Network Access](<https://developer.chrome.com/release-notes/147>) — Google Chrome for Developers; source ID: chrome-147; provenance: official primary; retrieved 2026-10-03T17:29:30Z; supports: summary.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

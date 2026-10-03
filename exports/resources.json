@@ -1719,10 +1719,10 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T15:20:45Z",
+        "reviewed_at": "2026-10-03T17:29:30Z",
         "living_resource": true,
         "status": "primary_source_reviewed",
-        "note": "Reviewed the original design guide and Chrome 142/145 release documentation; no live behavior was tested."
+        "note": "Original guide and Chrome 142/145 documentation reviewed earlier; Chrome 147 coverage clarification added after fresh release-note review. No live behavior was tested."
       },
       "sources": [
         {
@@ -1758,11 +1758,23 @@
           "supports": [
             "summary"
           ]
+        },
+        {
+          "id": "chrome-147",
+          "url": "https://developer.chrome.com/release-notes/147",
+          "title": "Chrome 147: Local Network Access",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T17:29:30Z",
+          "supports": [
+            "summary"
+          ]
         }
       ],
       "caveats": [
         "The guide describes an evolving rollout and replaces the earlier Private Network Access preflight approach. Its initial transport limitations are historical, not a verified inventory of current gaps.",
         "Chrome 142 release notes identify an October 28, 2025 stable release and include local-to-loopback requests, beyond the original guide’s first-milestone scope. Chrome 145 notes identify February 10, 2026 and separate local and loopback permissions while retaining the older permission name as an alias.",
+        "Chrome 147 release notes, last updated April 7, 2026, document permission gating for WebSockets and WebTransport and extend service-worker navigation coverage to subframes. Those notes expressly exclude main-frame navigations; permission coverage must not be generalized to every browser request.",
         "This is architectural guidance rather than a vulnerability or award report. Browser-wide implementation parity and current enterprise-policy coverage were not established."
       ]
     },
