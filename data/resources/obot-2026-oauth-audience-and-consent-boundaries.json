@@ -7,7 +7,7 @@
     "thedadams"
   ],
   "primary_url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization"

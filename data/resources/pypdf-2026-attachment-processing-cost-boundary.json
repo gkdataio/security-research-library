@@ -7,7 +7,7 @@
     "stefan6419846"
   ],
   "primary_url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "lobehub-2026-knowledge-membership-mutation-authority",
+  "title": "LobeHub: knowledge-base membership changes require ownership authorization",
+  "publisher": "LobeHub",
+  "authors": [
+    "DenizParlak"
+  ],
+  "primary_url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "ai-security",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "ai-authority-boundaries",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary-source disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-01-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Displayed publication date of the primary educational source; not software patch timing."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned educational edition established."
+    },
+    "source_displayed": {
+      "value": "2026-01-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Displayed publication date of the primary educational source; not software patch timing."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T14:59:14Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Public primary sources reviewed; no software execution or deployment testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
+      "title": "IDOR in Knowledge Base File Removal Allows Cross User File Deletion",
+      "publisher": "LobeHub",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:59:14Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "content_scope": "defensive_education",
+  "summary": "The maintainer advisory attributes cross-user knowledge-base file removal to an omitted ownership restriction in a database mutation. Its reported demonstration shows one deletion result. The boundary is between being authenticated and being authorized to change another user’s retrieval corpus.",
+  "defensive_use": "Editorial review principle: enforce ownership at the mutation, including every relationship being removed. Random identifiers reduce accidental discovery but do not prove permission. Review negative cross-owner cases and verify which underlying objects a removal actually changes.",
+  "prerequisites": [
+    "Object ownership and relationship-level authorization",
+    "Retrieval-augmented generation knowledge-base lifecycle"
+  ],
+  "caveats": [
+    "CVE-2026-23522 requires authentication and knowledge of both relevant identifiers according to the narrative; its displayed severity vector instead says no privileges. Preserve that discrepancy.",
+    "The source lists versions through v2.0.0-next.192 as affected and v2.0.0-next.193 as patched; it supplies no patch date or implementation detail.",
+    "Reported removal could disrupt retrieval. Permanent erasure of underlying stored documents, production compromise and an award are not independently established.",
+    "Conceptual defensive summary only; public disclosure grants no testing authorization."
+  ]
+}

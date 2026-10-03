@@ -6,7 +6,7 @@
 
 **Publisher:** Astro  
 **Authors:** matthewp  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization  
 **Defensive skills:** Model access-control invariants; Review parsing and serialization; Verify remediation evidence

@@ -6,7 +6,7 @@
 
 **Publisher:** TYPO3  
 **Authors:** Oliver Hader  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence

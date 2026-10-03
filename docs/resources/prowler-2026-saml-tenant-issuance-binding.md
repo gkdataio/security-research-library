@@ -6,7 +6,7 @@
 
 **Publisher:** Prowler  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Model access-control invariants

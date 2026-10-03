@@ -6,7 +6,7 @@
 
 **Publisher:** n8n  
 **Authors:** Matsuuu  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Identity; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations

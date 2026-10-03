@@ -7,7 +7,7 @@
     "CorwinDev"
   ],
   "primary_url": "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "business-logic",
     "authorization"

@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 89,
+    "resources": 91,
     "diagrams": 9
   },
   "taxonomy": {
@@ -38,6 +38,10 @@
       {
         "id": "research-paper",
         "title": "Research Paper"
+      },
+      {
+        "id": "maintainer-advisory",
+        "title": "Maintainer Advisory"
       }
     ],
     "topics": [
@@ -200,7 +204,7 @@
         "alan-agius4"
       ],
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations"
       ],
@@ -293,7 +297,7 @@
         "alan-agius4"
       ],
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations"
       ],
@@ -587,7 +591,7 @@
         "matthewp"
       ],
       "primary_url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "authorization"
@@ -759,7 +763,7 @@
         "jasonsaayman"
       ],
       "primary_url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -865,7 +869,7 @@
       "publisher": "Better Auth",
       "authors": [],
       "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -961,7 +965,7 @@
         "gustavovalverde"
       ],
       "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -1056,7 +1060,7 @@
         "vanschelven"
       ],
       "primary_url": "https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -1398,7 +1402,7 @@
         "jdomeracki-coder"
       ],
       "primary_url": "https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "business-logic"
@@ -1495,6 +1499,115 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "dify-2026-tracing-configuration-tenant-authority",
+      "title": "Dify: telemetry destination changes carry tenant data-disclosure authority",
+      "publisher": "Zafran Labs",
+      "authors": [
+        "Ido Shani",
+        "Gal Zaban"
+      ],
+      "primary_url": "https://www.zafran.io/resources/difytap-zafran-discovers-how-attackers-can-silently-wiretap-ai-data-across-tenants-on-a-platform-powering-1m-apps",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "ai-security",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "ai-authority-boundaries",
+        "patch-verification",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary-source disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Displayed publication date of the primary educational source; not software patch timing."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        },
+        "source_displayed": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Displayed publication date of the primary educational source; not software patch timing."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:59:14Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Public primary sources reviewed; no software execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://www.zafran.io/resources/difytap-zafran-discovers-how-attackers-can-silently-wiretap-ai-data-across-tenants-on-a-platform-powering-1m-apps",
+          "title": "DifyTap research",
+          "publisher": "Zafran Labs",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:59:14Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "fix",
+          "url": "https://github.com/langgenius/dify/pull/35793",
+          "title": "Tenant-scoping fix for tracing configuration",
+          "publisher": "Dify",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:59:14Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/langgenius/dify/releases/tag/1.14.2",
+          "title": "Dify v1.14.2 release notes",
+          "publisher": "Dify",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:59:14Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "content_scope": "defensive_education",
+      "summary": "Zafran’s tracing case, CVE-2026-41947, explains that console authentication did not bind configuration changes to the application’s tenant. Traces contain prompts and responses, so changing telemetry routing also changes their recipients. The researcher reports cross-tenant configuration control and resulting disclosure; the merged maintainer fix corroborates the missing tenant restriction.",
+      "defensive_use": "The merged fix resolves applications under the authenticated tenant before tracing operations and returns the same denial as an absent application. It covers configuration and tracing handlers and later adds cross-tenant regression coverage. Editorial lesson: treat observability configuration as data-export authority, with authorization independent of ordinary application-client access.",
+      "prerequisites": [
+        "Tenant-scoped object authorization",
+        "AI telemetry flows and external data recipients"
+      ],
+      "caveats": [
+        "The detailed research requires a console account and an application identifier. Its introductory unauthenticated framing must not replace these stated prerequisites. Application-client access is not administration permission.",
+        "The researcher’s article covers four findings; this resource covers only tracing authorization. No production victim, exposure count or individual award is established.",
+        "The fix merged May 14, 2026. Official v1.14.2 notes include it; the researcher dates that software release May 19, 2026 and discusses v1.15.0 as the broader four-finding remediation. These are not educational-edition dates.",
+        "The research timeline also places an April 2025 last-report publication before its December 2025 first report, and lists a June 25 release after its displayed June 22 publication. Those inconsistent dates are not silently repaired.",
+        "No regression tests were executed in this review. Public disclosure grants no testing authorization."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "directus-2026-preauthorization-side-effect-integrity",
       "title": "Directus: denied mutations must leave dependent state unchanged",
       "publisher": "Directus",
@@ -1502,7 +1615,7 @@
         "br41nslug"
       ],
       "primary_url": "https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "business-logic"
@@ -1608,7 +1721,7 @@
         "Jacob Walls"
       ],
       "primary_url": "https://www.djangoproject.com/weblog/2026/feb/03/security-releases/",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -1806,7 +1919,7 @@
         "hacdias"
       ],
       "primary_url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "business-logic"
@@ -2198,7 +2311,7 @@
         "rhukster"
       ],
       "primary_url": "https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -2354,7 +2467,7 @@
         "kohler"
       ],
       "primary_url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -2449,7 +2562,7 @@
         "andifilhohub"
       ],
       "primary_url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "ai-security",
         "authorization",
@@ -2533,7 +2646,7 @@
         "danny-avila"
       ],
       "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "ai-security",
         "authorization",
@@ -2610,6 +2723,88 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "lobehub-2026-knowledge-membership-mutation-authority",
+      "title": "LobeHub: knowledge-base membership changes require ownership authorization",
+      "publisher": "LobeHub",
+      "authors": [
+        "DenizParlak"
+      ],
+      "primary_url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "ai-security",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "ai-authority-boundaries",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary-source disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-01-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Displayed publication date of the primary educational source; not software patch timing."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        },
+        "source_displayed": {
+          "value": "2026-01-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Displayed publication date of the primary educational source; not software patch timing."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:59:14Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Public primary sources reviewed; no software execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
+          "title": "IDOR in Knowledge Base File Removal Allows Cross User File Deletion",
+          "publisher": "LobeHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:59:14Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "content_scope": "defensive_education",
+      "summary": "The maintainer advisory attributes cross-user knowledge-base file removal to an omitted ownership restriction in a database mutation. Its reported demonstration shows one deletion result. The boundary is between being authenticated and being authorized to change another user’s retrieval corpus.",
+      "defensive_use": "Editorial review principle: enforce ownership at the mutation, including every relationship being removed. Random identifiers reduce accidental discovery but do not prove permission. Review negative cross-owner cases and verify which underlying objects a removal actually changes.",
+      "prerequisites": [
+        "Object ownership and relationship-level authorization",
+        "Retrieval-augmented generation knowledge-base lifecycle"
+      ],
+      "caveats": [
+        "CVE-2026-23522 requires authentication and knowledge of both relevant identifiers according to the narrative; its displayed severity vector instead says no privileges. Preserve that discrepancy.",
+        "The source lists versions through v2.0.0-next.192 as affected and v2.0.0-next.193 as patched; it supplies no patch date or implementation detail.",
+        "Reported removal could disrupt retrieval. Permanent erasure of underlying stored documents, production compromise and an award are not independently established.",
+        "Conceptual defensive summary only; public disclosure grants no testing authorization."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "mailcow-2026-persisted-data-query-boundary",
       "title": "mailcow: stored configuration retains its original trust level",
       "publisher": "mailcow",
@@ -2617,7 +2812,7 @@
         "FreddleSpl0it"
       ],
       "primary_url": "https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -2827,7 +3022,7 @@
       "publisher": "n8n",
       "authors": [],
       "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -2909,7 +3104,7 @@
         "Jubke"
       ],
       "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -2991,7 +3186,7 @@
         "Matsuuu"
       ],
       "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "identity",
@@ -3278,7 +3473,7 @@
         "dbarrosop"
       ],
       "primary_url": "https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -3569,7 +3764,7 @@
         "danielroe"
       ],
       "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification",
@@ -3663,7 +3858,7 @@
         "thedadams"
       ],
       "primary_url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -3769,7 +3964,7 @@
         "doge-woof"
       ],
       "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -3850,7 +4045,7 @@
         "doge-woof"
       ],
       "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization",
@@ -3932,7 +4127,7 @@
         "doge-woof"
       ],
       "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -4134,7 +4329,7 @@
         "tommoor"
       ],
       "primary_url": "https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "identity",
@@ -5317,7 +5512,7 @@
         "mtrezza"
       ],
       "primary_url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -5449,7 +5644,7 @@
         "CorwinDev"
       ],
       "primary_url": "https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "business-logic",
         "authorization"
@@ -5700,7 +5895,7 @@
       "publisher": "Prowler",
       "authors": [],
       "primary_url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
         "authorization"
@@ -5782,7 +5977,7 @@
         "anthonyphysgun"
       ],
       "primary_url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "business-logic",
@@ -5889,7 +6084,7 @@
         "stefan6419846"
       ],
       "primary_url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -5998,7 +6193,7 @@
         "Varixo"
       ],
       "primary_url": "https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -6093,7 +6288,7 @@
         "brophdawg11"
       ],
       "primary_url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -6544,7 +6739,7 @@
         "redonkulus"
       ],
       "primary_url": "https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -6870,7 +7065,7 @@
         "TimHess"
       ],
       "primary_url": "https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "authorization"
@@ -7240,7 +7435,7 @@
         "TheMilek"
       ],
       "primary_url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "business-logic",
         "authorization"
@@ -7347,7 +7542,7 @@
         "Oliver Hader"
       ],
       "primary_url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
         "verification"
@@ -7920,7 +8115,7 @@
         "kolaente"
       ],
       "primary_url": "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
         "business-logic"
@@ -8016,7 +8211,7 @@
         "Hamed Kohi"
       ],
       "primary_url": "https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j",
-      "resource_type_id": "research-paper",
+      "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "business-logic",
         "verification"

@@ -7,7 +7,7 @@
     "kohler"
   ],
   "primary_url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization",

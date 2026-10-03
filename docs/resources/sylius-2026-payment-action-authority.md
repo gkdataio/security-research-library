@@ -6,7 +6,7 @@
 
 **Publisher:** Sylius  
 **Authors:** TheMilek  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Model access-control invariants; Review approval-state integrity; Threat-model integrations

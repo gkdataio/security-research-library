@@ -7,7 +7,7 @@
     "doge-woof"
   ],
   "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization"

@@ -6,7 +6,7 @@
 
 **Publisher:** Outline  
 **Authors:** tommoor  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Identity; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Model access-control invariants

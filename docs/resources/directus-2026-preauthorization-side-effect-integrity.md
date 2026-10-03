@@ -6,7 +6,7 @@
 
 **Publisher:** Directus  
 **Authors:** br41nslug  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review approval-state integrity; Verify remediation evidence

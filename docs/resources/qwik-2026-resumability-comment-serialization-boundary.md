@@ -6,7 +6,7 @@
 
 **Publisher:** QwikDev  
 **Authors:** Varixo  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Review client isolation

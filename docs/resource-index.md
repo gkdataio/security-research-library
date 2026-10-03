@@ -4,56 +4,58 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-89 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+91 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
-- [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Research Paper.
-- [Angular SSR: preserve output context through serialization and post-processing](<resources/angular-2026-raw-content-serialization-context.md>) — Angular; Research Paper.
+- [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
+- [Angular SSR: preserve output context through serialization and post-processing](<resources/angular-2026-raw-content-serialization-context.md>) — Angular; Maintainer Advisory.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL; Architecture Guide.
-- [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro; Research Paper.
+- [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro; Maintainer Advisory.
 - [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services; Implementation Guide.
-- [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios; Research Paper.
-- [Better Auth: incoming identity proof does not validate existing credentials](<resources/better-auth-2026-local-account-linking-verification.md>) — Better Auth; Research Paper.
-- [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth; Research Paper.
-- [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink; Research Paper.
+- [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios; Maintainer Advisory.
+- [Better Auth: incoming identity proof does not validate existing credentials](<resources/better-auth-2026-local-account-linking-verification.md>) — Better Auth; Maintainer Advisory.
+- [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth; Maintainer Advisory.
+- [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink; Maintainer Advisory.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers; Implementation Guide.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project; Architecture Guide.
-- [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Research Paper.
+- [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Maintainer Advisory.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper.
-- [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus; Research Paper.
-- [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation; Research Paper.
+- [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs; Research Paper.
+- [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus; Maintainer Advisory.
+- [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation; Maintainer Advisory.
 - [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers; Architecture Guide.
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI; Research Paper.
 - [Error Handling Cheat Sheet](<resources/owasp-error-response-data-minimization.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation; Technical Standard.
 - [Fetch Metadata Request Headers](<resources/w3c-fetch-metadata-request-context-boundaries.md>) — World Wide Web Consortium; Technical Standard.
-- [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser; Research Paper.
+- [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser; Maintainer Advisory.
 - [Frappe: linked data must preserve document and field permissions](<resources/frappe-2026-linked-document-response-authorization.md>) — GitHub Security Lab; Research Paper.
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<resources/github-2026-internal-metadata-authority.md>) — Wiz Research; Research Paper.
 - [GraphQL-Ruby: authorization exceptions must stop execution](<resources/graphql-ruby-2026-authorization-exception-integrity.md>) — GitHub Security Lab; Research Paper.
-- [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav; Research Paper.
-- [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP; Research Paper.
+- [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav; Maintainer Advisory.
+- [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP; Maintainer Advisory.
 - [HTML COOP: opener separation and same-origin authority](<resources/whatwg-coop-opener-and-origin-authority.md>) — WHATWG; Technical Standard.
 - [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>) — OWASP Cheat Sheet Series; Implementation Guide.
-- [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow; Research Paper.
-- [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat; Research Paper.
+- [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow; Maintainer Advisory.
+- [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat; Maintainer Advisory.
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series; Architecture Guide.
-- [mailcow: stored configuration retains its original trust level](<resources/mailcow-2026-persisted-data-query-boundary.md>) — mailcow; Research Paper.
+- [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub; Maintainer Advisory.
+- [mailcow: stored configuration retains its original trust level](<resources/mailcow-2026-persisted-data-query-boundary.md>) — mailcow; Maintainer Advisory.
 - [MLflow: authorization must survive alternate resource interfaces](<resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — Tachyon; Research Paper.
-- [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n; Research Paper.
-- [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n; Research Paper.
-- [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n; Research Paper.
+- [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n; Maintainer Advisory.
+- [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n; Maintainer Advisory.
+- [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n; Maintainer Advisory.
 - [Next\.js data security: server authorization and client-visible data](<resources/nextjs-server-client-data-security.md>) — Next\.js / Vercel; Implementation Guide.
-- [Nhost: provider adapters must preserve identity-claim evidence](<resources/nhost-2026-provider-claim-verification-provenance.md>) — Nhost; Research Paper.
+- [Nhost: provider adapters must preserve identity-claim evidence](<resources/nhost-2026-provider-claim-verification-provenance.md>) — Nhost; Maintainer Advisory.
 - [NIST SP 800-162: attribute authority and policy traceability](<resources/nist-sp-800-162-attribute-authority-modeling.md>) — National Institute of Standards and Technology; Architecture Guide.
 - [NIST SP 800-190: Application Container Security Guide](<resources/nist-sp-800-190-container-isolation-guide.md>) — National Institute of Standards and Technology; Architecture Guide.
-- [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt; Research Paper.
-- [Obot: preserve delegated token audience and consent boundaries](<resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — Obot; Research Paper.
-- [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI; Research Paper.
-- [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI; Research Paper.
-- [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI; Research Paper.
-- [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline; Research Paper.
+- [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt; Maintainer Advisory.
+- [Obot: preserve delegated token audience and consent boundaries](<resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — Obot; Maintainer Advisory.
+- [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI; Maintainer Advisory.
+- [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI; Maintainer Advisory.
+- [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI; Maintainer Advisory.
+- [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline; Maintainer Advisory.
 - [OWASP Application Security Verification Standard \(ASVS\)](<resources/owasp-asvs-5-security-verification-standard.md>) — OWASP Foundation; Security Standard.
 - [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project; Implementation Guide.
@@ -64,34 +66,34 @@ Original defensive summaries of official educational references. These resources
 - [OWASP Threat Modeling: system assumptions and mitigation validation](<resources/owasp-threat-modeling-assumptions-and-validation.md>) — OWASP Cheat Sheet Series; Architecture Guide.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<resources/pac4j-2026-token-authenticity-enforcement.md>) — CodeAnt AI; Research Paper.
-- [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community; Research Paper.
-- [Paymenter: refund entitlement and ledger changes need one atomic transition](<resources/paymenter-2026-refund-transition-atomicity.md>) — Paymenter; Research Paper.
-- [Prowler SAML: retain validated tenant authority](<resources/prowler-2026-saml-tenant-issuance-binding.md>) — Prowler; Research Paper.
-- [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl; Research Paper.
-- [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf; Research Paper.
+- [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community; Maintainer Advisory.
+- [Paymenter: refund entitlement and ledger changes need one atomic transition](<resources/paymenter-2026-refund-transition-atomicity.md>) — Paymenter; Maintainer Advisory.
+- [Prowler SAML: retain validated tenant authority](<resources/prowler-2026-saml-tenant-issuance-binding.md>) — Prowler; Maintainer Advisory.
+- [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl; Maintainer Advisory.
+- [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf; Maintainer Advisory.
 - [Quality Reports](<resources/hackerone-quality-vulnerability-reports.md>) — HackerOne Help Center; Reporting Guide.
-- [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev; Research Paper.
-- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix; Research Paper.
+- [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev; Maintainer Advisory.
+- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix; Maintainer Advisory.
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel; Architecture Guide.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor; Technical Standard.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<resources/rfc-9700-oauth-security-best-current-practice.md>) — Internet Engineering Task Force / RFC Editor; Technical Standard.
 - [Rocket\.Chat: authentication must await a completed verification decision](<resources/rocketchat-2026-asynchronous-identity-verification.md>) — GitHub Security Lab; Research Paper.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab; Research Paper.
-- [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript; Research Paper.
+- [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript; Maintainer Advisory.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community; Security Standard.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab; Research Paper.
-- [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe; Research Paper.
+- [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe; Maintainer Advisory.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association; Research Paper.
 - [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera; Research Paper.
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security; Research Paper.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab; Research Paper.
-- [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius; Research Paper.
-- [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3; Research Paper.
+- [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius; Maintainer Advisory.
+- [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3; Maintainer Advisory.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab; Research Paper.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association; Research Paper.
 - [Upstream HTTP framing and parser-consistency boundaries](<resources/portswigger-2025-upstream-http-framing-boundaries.md>) — PortSwigger; Research Paper.
-- [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja; Research Paper.
-- [Vvveb: numeric input validity does not establish legitimate order state](<resources/vvveb-2026-order-domain-invariant.md>) — Vvveb; Research Paper.
+- [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja; Maintainer Advisory.
+- [Vvveb: numeric input validity does not establish legitimate order state](<resources/vvveb-2026-order-domain-invariant.md>) — Vvveb; Maintainer Advisory.
 - [Web cache key precision and capacity isolation](<resources/arxiv-2026-cache-key-precision-and-capacity.md>) — arXiv; Research Paper.
 - [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger; Training Lab.
 - [Zammad: overridden serialization must preserve group authorization](<resources/zammad-2026-asset-serialization-group-authorization.md>) — GitHub Security Lab; Research Paper.

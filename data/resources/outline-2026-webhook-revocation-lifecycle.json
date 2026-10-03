@@ -7,7 +7,7 @@
     "tommoor"
   ],
   "primary_url": "https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "authorization",
     "identity",

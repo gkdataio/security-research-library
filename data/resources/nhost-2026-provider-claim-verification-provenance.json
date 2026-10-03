@@ -7,7 +7,7 @@
     "dbarrosop"
   ],
   "primary_url": "https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization"

@@ -6,7 +6,7 @@
 
 **Publisher:** Vvveb  
 **Authors:** Basant Kumar; Hamed Kohi  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Verification  
 **Defensive skills:** Review approval-state integrity; Review input trust boundaries; Write bounded security evidence

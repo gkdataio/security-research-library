@@ -6,7 +6,7 @@
 
 **Publisher:** Nuxt  
 **Authors:** danielroe  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Authorization  
 **Defensive skills:** Model access-control invariants; Review artifact isolation; Verify remediation evidence

@@ -7,7 +7,7 @@
     "brophdawg11"
   ],
   "primary_url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

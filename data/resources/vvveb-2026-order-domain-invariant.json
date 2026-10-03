@@ -8,7 +8,7 @@
     "Hamed Kohi"
   ],
   "primary_url": "https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "business-logic",
     "verification"

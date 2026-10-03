@@ -7,7 +7,7 @@
     "andifilhohub"
   ],
   "primary_url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "ai-security",
     "authorization",

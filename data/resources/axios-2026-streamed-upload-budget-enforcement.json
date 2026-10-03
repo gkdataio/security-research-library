@@ -7,7 +7,7 @@
     "jasonsaayman"
   ],
   "primary_url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

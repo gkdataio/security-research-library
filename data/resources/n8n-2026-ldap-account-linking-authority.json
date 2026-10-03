@@ -7,7 +7,7 @@
     "Jubke"
   ],
   "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization",

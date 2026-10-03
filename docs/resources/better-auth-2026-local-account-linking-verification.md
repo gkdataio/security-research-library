@@ -6,7 +6,7 @@
 
 **Publisher:** Better Auth  
 **Authors:** gustavovalverde  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Verify remediation evidence

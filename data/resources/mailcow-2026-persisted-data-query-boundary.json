@@ -7,7 +7,7 @@
     "FreddleSpl0it"
   ],
   "primary_url": "https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

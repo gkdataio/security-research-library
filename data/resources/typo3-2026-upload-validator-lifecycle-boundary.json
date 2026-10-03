@@ -7,7 +7,7 @@
     "Oliver Hader"
   ],
   "primary_url": "https://news.typo3.com/security/advisory/typo3-core-sa-2026-020",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

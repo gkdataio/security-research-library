@@ -7,7 +7,7 @@
     "Varixo"
   ],
   "primary_url": "https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

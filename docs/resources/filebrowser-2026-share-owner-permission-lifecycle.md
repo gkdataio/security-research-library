@@ -6,7 +6,7 @@
 
 **Publisher:** File Browser  
 **Authors:** hacdias  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Review identity lifecycle

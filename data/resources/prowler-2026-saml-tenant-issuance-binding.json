@@ -5,7 +5,7 @@
   "publisher": "Prowler",
   "authors": [],
   "primary_url": "https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization"

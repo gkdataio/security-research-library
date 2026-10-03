@@ -4,14 +4,14 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-89 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+91 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 6 resources.
-- [Authorization](<#topic-authorization>) — 54 resources.
+- [Ai Security](<#topic-ai-security>) — 8 resources.
+- [Authorization](<#topic-authorization>) — 56 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 19 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 33 resources.
@@ -24,11 +24,13 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-6 resources.
+8 resources.
 
+- [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat.
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series.
+- [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub.
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
@@ -36,7 +38,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-54 resources.
+56 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -48,6 +50,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
+- [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
 - [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus.
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI.
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation.
@@ -62,6 +65,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>) — OWASP Cheat Sheet Series.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat.
+- [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub.
 - [MLflow: authorization must survive alternate resource interfaces](<resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — Tachyon.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n.
 - [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n.

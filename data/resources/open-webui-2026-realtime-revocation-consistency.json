@@ -5,7 +5,7 @@
   "publisher": "Open WebUI",
   "authors": ["doge-woof"],
   "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": ["identity", "authorization", "web-foundations"],
   "skillset_ids": ["identity-lifecycle-review", "security-token-design", "integration-threat-modeling", "patch-verification"],
   "version": null,

@@ -7,7 +7,7 @@
     "matthewp"
   ],
   "primary_url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "authorization"

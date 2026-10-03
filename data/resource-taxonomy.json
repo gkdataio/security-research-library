@@ -28,6 +28,10 @@
     {
       "id": "research-paper",
       "title": "Research Paper"
+    },
+    {
+      "id": "maintainer-advisory",
+      "title": "Maintainer Advisory"
     }
   ],
   "topics": [

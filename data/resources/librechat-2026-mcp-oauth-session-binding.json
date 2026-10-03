@@ -7,7 +7,7 @@
     "danny-avila"
   ],
   "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "ai-security",
     "authorization",

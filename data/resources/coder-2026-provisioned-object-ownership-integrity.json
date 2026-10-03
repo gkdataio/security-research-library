@@ -7,7 +7,7 @@
     "jdomeracki-coder"
   ],
   "primary_url": "https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "authorization",
     "business-logic"

@@ -6,7 +6,7 @@
 
 **Publisher:** Open WebUI  
 **Authors:** doge-woof  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review identity lifecycle; Verify remediation evidence

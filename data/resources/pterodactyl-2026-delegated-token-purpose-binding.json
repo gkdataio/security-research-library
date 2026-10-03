@@ -7,7 +7,7 @@
     "anthonyphysgun"
   ],
   "primary_url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "authorization",
     "business-logic",

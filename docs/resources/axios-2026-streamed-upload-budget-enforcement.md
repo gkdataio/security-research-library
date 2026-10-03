@@ -6,7 +6,7 @@
 
 **Publisher:** Axios  
 **Authors:** jasonsaayman  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review input trust boundaries; Verify remediation evidence; Write bounded security evidence

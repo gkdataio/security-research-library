@@ -7,7 +7,7 @@
     "hacdias"
   ],
   "primary_url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "authorization",
     "business-logic"

@@ -6,7 +6,7 @@
 
 **Publisher:** Better Auth  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Reason about concurrent state; Review security-token design; Review approval-state integrity; Verify remediation evidence

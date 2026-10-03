@@ -7,7 +7,7 @@
     "gustavovalverde"
   ],
   "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization"

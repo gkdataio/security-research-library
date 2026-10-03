@@ -7,7 +7,7 @@
     "Matsuuu"
   ],
   "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "authorization",
     "identity",

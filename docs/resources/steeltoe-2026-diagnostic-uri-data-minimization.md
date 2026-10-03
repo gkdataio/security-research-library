@@ -6,7 +6,7 @@
 
 **Publisher:** Steeltoe  
 **Authors:** TimHess  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization  
 **Defensive skills:** Review secrets containment; Review parsing and serialization; Threat-model integrations; Verify remediation evidence

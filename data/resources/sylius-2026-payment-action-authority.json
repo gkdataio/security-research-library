@@ -7,7 +7,7 @@
     "TheMilek"
   ],
   "primary_url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "business-logic",
     "authorization"

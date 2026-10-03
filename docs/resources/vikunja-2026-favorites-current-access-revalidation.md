@@ -6,7 +6,7 @@
 
 **Publisher:** Vikunja  
 **Authors:** kolaente  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Verify remediation evidence

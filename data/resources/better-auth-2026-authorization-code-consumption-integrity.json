@@ -5,7 +5,7 @@
   "publisher": "Better Auth",
   "authors": [],
   "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization",

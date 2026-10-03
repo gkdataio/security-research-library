@@ -6,7 +6,7 @@
 
 **Publisher:** Pterodactyl  
 **Authors:** anthonyphysgun  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity; Identity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Review security-token design; Threat-model integrations

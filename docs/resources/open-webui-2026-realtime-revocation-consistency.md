@@ -6,7 +6,7 @@
 
 **Publisher:** Open WebUI  
 **Authors:** doge-woof  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Web Foundations  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Threat-model integrations; Verify remediation evidence

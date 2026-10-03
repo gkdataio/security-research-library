@@ -6,7 +6,7 @@
 
 **Publisher:** Paymenter  
 **Authors:** CorwinDev  
-**Resource type:** Research Paper  
+**Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Reason about concurrent state; Review approval-state integrity; Verify remediation evidence

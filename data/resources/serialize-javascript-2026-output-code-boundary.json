@@ -7,7 +7,7 @@
     "redonkulus"
   ],
   "primary_url": "https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification"

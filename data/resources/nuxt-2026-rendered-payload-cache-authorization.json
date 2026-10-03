@@ -7,7 +7,7 @@
     "danielroe"
   ],
   "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "verification",

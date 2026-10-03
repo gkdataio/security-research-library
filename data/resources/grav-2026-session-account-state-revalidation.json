@@ -7,7 +7,7 @@
     "rhukster"
   ],
   "primary_url": "https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "identity",
     "authorization",

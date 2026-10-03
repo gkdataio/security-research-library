@@ -7,7 +7,7 @@
     "TimHess"
   ],
   "primary_url": "https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp",
-  "resource_type_id": "research-paper",
+  "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
     "authorization"
