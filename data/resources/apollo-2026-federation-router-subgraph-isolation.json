@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apollo-2026-federation-router-subgraph-isolation",
+  "title": "Apollo Federation: preserving the router-to-subgraph boundary",
+  "publisher": "Apollo GraphQL",
+  "authors": [
+    "David Walter"
+  ],
+  "primary_url": "https://www.apollographql.com/blog/securing-apollo-federation-subgraphs-context-and-best-practices",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "Explains the deployment assumption behind centralized GraphQL federation controls: internal subgraphs accept traffic only through the router. Federation coordination remains available even when ordinary client introspection is disabled. Consequently, hiding schema discovery cannot establish the service boundary on which router-enforced authorization, demand controls and operation restrictions depend.",
+  "defensive_use": "For an owned federated design, document router and subgraph responsibilities. Require network isolation and authenticated router-to-subgraph communication, retain entry-point authorization, and review resource limits and schema-change permissions as separate controls.",
+  "prerequisites": [
+    "GraphQL federation architecture",
+    "Service authentication and network isolation concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public article readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-01-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication date displayed above the article title."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-01-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication date displayed above the article title."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T05:19:50Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the dated vendor article and its explicit author byline; no immutable revision was established."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.apollographql.com/blog/securing-apollo-federation-subgraphs-context-and-best-practices",
+      "title": "Securing Apollo Federation Subgraphs: Context and Best Practices",
+      "publisher": "Apollo GraphQL",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:19:50Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Vendor architecture guidance, not a disclosed product vulnerability or evidence about a particular deployment.",
+    "Disabling ordinary introspection does not replace subgraph isolation.",
+    "Prerequisites and the review exercise are editorial guidance."
+  ],
+  "content_scope": "defensive_education"
+}

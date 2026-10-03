@@ -13,16 +13,17 @@ A browser-IDE trust-boundary report received a USD 22,500 award\.
 
 ### Root cause
 
-Messaging and embedded-content trust assumptions allowed untrusted input to reach a privileged worker context\.
+The messaging boundary treated caller-influenced context as authority for extension-worker operations\. Browser framing permission did not independently establish that embedded content should control the worker\.
 
 ### Bounded impact
 
-The researcher demonstrated worker-context script execution\. The reproduced award notice limits severity because prior access to an affected resource was required\.
+The researcher demonstrated script execution in a worker, without direct DOM access\. Same-origin requests were described as a possible consequence; broader account takeover was not established\. The reproduced award notice limits severity because prior access to an affected resource was required\.
 
 ### Defensive lessons
 
 - Bind messaging trust to a verified origin and context\.
 - Review nested rendering and worker privileges together\.
+- Validate message authority independently of framing permission and keep untrusted rendered content separate from privileged extension operations\.
 
 ## Award and evidence
 
@@ -45,16 +46,17 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T15:14:47Z. Researcher article read; award image visually inspected in the cloud browser\. Google program currency context read separately\. Official 2024 program announcement was read in the cloud browser for USD denomination only; its advertised maximum is not award evidence\.
+Reviewed: 2026-10-03T05:19:42Z. Fresh-read the article; retained previously inspected award-image and currency evidence without advancing their retrieval times\. No testing performed\.
 
 - Award evidence is not an independently audited cash receipt\.
 - The image is researcher-published, not independently retrieved vendor correspondence\.
 - Exact original-report, award, payment, fix and first-disclosure dates are unavailable\. The linked Bug Hunters report returned no readable text\.
 - Article credits Matan Berson for the underlying discovery and Sreeram and Sivanesh for supporting research; recipient split is not stated\.
+- Parts of the explanation use a local Code OSS reconstruction; the author acknowledges incomplete historical IDX notes\. It is not a verified account of current product behavior\.
 
 ## Sources and attribution
 
-- [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) — sudi \(Sudistark\); retrieved 2026-10-02T15:12:00Z.
+- [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) — sudi \(Sudistark\); retrieved 2026-10-03T05:19:42Z.
 - [Researcher-published Google award email for IDX report](<https://sudistark.github.io/tmp/cdn-images/Pasted%20image%2020250729220436.png>) — sudi \(Sudistark\), reproducing a Google award notice; retrieved 2026-10-02T15:12:00Z.
 - [Google and Alphabet VRP reward-denomination announcement, July 11, 2024](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; retrieved 2026-10-02T15:14:47Z.
 

@@ -21,11 +21,12 @@
     "untrusted-input-handling"
   ],
   "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
-  "root_cause": "Different sanitization and rendering assumptions across integrated applications weakened data-output restrictions.",
-  "impact": "The researcher demonstrated potential disclosure of Workspace information through the affected export workflow.",
+  "root_cause": "Content considered inert by Gemini could acquire active rendering behavior in Colab. The integration did not preserve the same sanitization contract across that boundary.",
+  "impact": "The researcher reports confirming Workspace-data disclosure after a user exported content to Colab. The scenario depended on Gemini encountering untrusted content and having access to connected data. Suggested delivery through poisoned training data or embeddings was not separately demonstrated.",
   "defensive_takeaways": [
     "Maintain consistent content-handling contracts across integration boundaries.",
-    "Enforce output destinations independently from generated or retrieved text."
+    "Enforce output destinations independently from generated or retrieved text.",
+    "Treat export as a new interpretation boundary; validate the destination representation rather than assuming upstream sanitization remains effective."
   ],
   "reward": {
     "amount": 20000,
@@ -113,7 +114,7 @@
       "title": "Hacking Gemini: A Multi-Layered Approach",
       "type": "researcher",
       "author": "Valentino Massaro",
-      "retrieved_at": "2026-10-02T14:39:00Z",
+      "retrieved_at": "2026-10-03T05:19:42Z",
       "supports": [
         "reward",
         "dates",
@@ -128,7 +129,7 @@
       "title": "Valentino’s issue tracker",
       "type": "researcher",
       "author": "Valentino Massaro",
-      "retrieved_at": "2026-10-02T14:39:00Z",
+      "retrieved_at": "2026-10-03T05:19:42Z",
       "supports": [
         "dates"
       ]
@@ -137,10 +138,12 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T14:39:00Z",
-    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "reviewed_at": "2026-10-03T05:19:42Z",
+    "method": "Fresh-read the researcher article and publication index; separated prerequisites and observed disclosure from suggested delivery methods. No testing performed.",
     "limitations": [
-      "Award is reported by the cited source; cash settlement is not independently audited."
+      "Award correspondence is researcher-published; settlement is not independently verified.",
+      "The separate Gemini-only finding was a duplicate, not another award.",
+      "No exact publication day, fix date or vendor patch design is established."
     ]
   },
   "content_scope": "historical_defensive_summary"

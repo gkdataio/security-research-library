@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T05:09:57Z",
+  "latest_reviewed_at": "2026-10-03T05:19:42Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -3811,11 +3811,12 @@
         "untrusted-input-handling"
       ],
       "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
-      "root_cause": "Different sanitization and rendering assumptions across integrated applications weakened data-output restrictions.",
-      "impact": "The researcher demonstrated potential disclosure of Workspace information through the affected export workflow.",
+      "root_cause": "Content considered inert by Gemini could acquire active rendering behavior in Colab. The integration did not preserve the same sanitization contract across that boundary.",
+      "impact": "The researcher reports confirming Workspace-data disclosure after a user exported content to Colab. The scenario depended on Gemini encountering untrusted content and having access to connected data. Suggested delivery through poisoned training data or embeddings was not separately demonstrated.",
       "defensive_takeaways": [
         "Maintain consistent content-handling contracts across integration boundaries.",
-        "Enforce output destinations independently from generated or retrieved text."
+        "Enforce output destinations independently from generated or retrieved text.",
+        "Treat export as a new interpretation boundary; validate the destination representation rather than assuming upstream sanitization remains effective."
       ],
       "reward": {
         "amount": 20000,
@@ -3903,7 +3904,7 @@
           "title": "Hacking Gemini: A Multi-Layered Approach",
           "type": "researcher",
           "author": "Valentino Massaro",
-          "retrieved_at": "2026-10-02T14:39:00Z",
+          "retrieved_at": "2026-10-03T05:19:42Z",
           "supports": [
             "reward",
             "dates",
@@ -3918,7 +3919,7 @@
           "title": "Valentino’s issue tracker",
           "type": "researcher",
           "author": "Valentino Massaro",
-          "retrieved_at": "2026-10-02T14:39:00Z",
+          "retrieved_at": "2026-10-03T05:19:42Z",
           "supports": [
             "dates"
           ]
@@ -3927,10 +3928,12 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:39:00Z",
-        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "reviewed_at": "2026-10-03T05:19:42Z",
+        "method": "Fresh-read the researcher article and publication index; separated prerequisites and observed disclosure from suggested delivery methods. No testing performed.",
         "limitations": [
-          "Award is reported by the cited source; cash settlement is not independently audited."
+          "Award correspondence is researcher-published; settlement is not independently verified.",
+          "The separate Gemini-only finding was a duplicate, not another award.",
+          "No exact publication day, fix date or vendor patch design is established."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -4952,11 +4955,12 @@
         "defensive-evidence-writing"
       ],
       "summary": "A browser-IDE trust-boundary report received a USD 22,500 award.",
-      "root_cause": "Messaging and embedded-content trust assumptions allowed untrusted input to reach a privileged worker context.",
-      "impact": "The researcher demonstrated worker-context script execution. The reproduced award notice limits severity because prior access to an affected resource was required.",
+      "root_cause": "The messaging boundary treated caller-influenced context as authority for extension-worker operations. Browser framing permission did not independently establish that embedded content should control the worker.",
+      "impact": "The researcher demonstrated script execution in a worker, without direct DOM access. Same-origin requests were described as a possible consequence; broader account takeover was not established. The reproduced award notice limits severity because prior access to an affected resource was required.",
       "defensive_takeaways": [
         "Bind messaging trust to a verified origin and context.",
-        "Review nested rendering and worker privileges together."
+        "Review nested rendering and worker privileges together.",
+        "Validate message authority independently of framing permission and keep untrusted rendered content separate from privileged extension operations."
       ],
       "reward": {
         "amount": 22500,
@@ -5044,7 +5048,7 @@
           "title": "XSS in Google IDX Workstation",
           "type": "researcher",
           "author": "sudi (Sudistark)",
-          "retrieved_at": "2026-10-02T15:12:00Z",
+          "retrieved_at": "2026-10-03T05:19:42Z",
           "supports": [
             "dates",
             "root_cause",
@@ -5078,13 +5082,14 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T15:14:47Z",
-        "method": "Researcher article read; award image visually inspected in the cloud browser. Google program currency context read separately. Official 2024 program announcement was read in the cloud browser for USD denomination only; its advertised maximum is not award evidence.",
+        "reviewed_at": "2026-10-03T05:19:42Z",
+        "method": "Fresh-read the article; retained previously inspected award-image and currency evidence without advancing their retrieval times. No testing performed.",
         "limitations": [
           "Award evidence is not an independently audited cash receipt.",
           "The image is researcher-published, not independently retrieved vendor correspondence.",
           "Exact original-report, award, payment, fix and first-disclosure dates are unavailable. The linked Bug Hunters report returned no readable text.",
-          "Article credits Matan Berson for the underlying discovery and Sreeram and Sivanesh for supporting research; recipient split is not stated."
+          "Article credits Matan Berson for the underlying discovery and Sreeram and Sivanesh for supporting research; recipient split is not stated.",
+          "Parts of the explanation use a local Code OSS reconstruction; the author acknowledges incomplete historical IDX notes. It is not a verified account of current product behavior."
         ]
       },
       "content_scope": "historical_defensive_summary"

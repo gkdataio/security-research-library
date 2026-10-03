@@ -13,16 +13,17 @@ Google awarded USD 20,000 for the Colab-export finding in a multi-finding resear
 
 ### Root cause
 
-Different sanitization and rendering assumptions across integrated applications weakened data-output restrictions\.
+Content considered inert by Gemini could acquire active rendering behavior in Colab\. The integration did not preserve the same sanitization contract across that boundary\.
 
 ### Bounded impact
 
-The researcher demonstrated potential disclosure of Workspace information through the affected export workflow\.
+The researcher reports confirming Workspace-data disclosure after a user exported content to Colab\. The scenario depended on Gemini encountering untrusted content and having access to connected data\. Suggested delivery through poisoned training data or embeddings was not separately demonstrated\.
 
 ### Defensive lessons
 
 - Maintain consistent content-handling contracts across integration boundaries\.
 - Enforce output destinations independently from generated or retrieved text\.
+- Treat export as a new interpretation boundary; validate the destination representation rather than assuming upstream sanitization remains effective\.
 
 ## Award and evidence
 
@@ -45,9 +46,11 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and source provenance verified\. No target testing or exploit reproduction performed\.
+Reviewed: 2026-10-03T05:19:42Z. Fresh-read the researcher article and publication index; separated prerequisites and observed disclosure from suggested delivery methods\. No testing performed\.
 
-- Award is reported by the cited source; cash settlement is not independently audited\.
+- Award correspondence is researcher-published; settlement is not independently verified\.
+- The separate Gemini-only finding was a duplicate, not another award\.
+- No exact publication day, fix date or vendor patch design is established\.
 
 ## Related conceptual diagrams
 
@@ -55,7 +58,7 @@ Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and
 
 ## Sources and attribution
 
-- [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) — Valentino Massaro; retrieved 2026-10-02T14:39:00Z.
-- [Valentino’s issue tracker](<https://buganizer.cc/>) — Valentino Massaro; retrieved 2026-10-02T14:39:00Z.
+- [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) — Valentino Massaro; retrieved 2026-10-03T05:19:42Z.
+- [Valentino’s issue tracker](<https://buganizer.cc/>) — Valentino Massaro; retrieved 2026-10-03T05:19:42Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
