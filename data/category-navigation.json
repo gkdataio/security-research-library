@@ -39,7 +39,9 @@
     {
       "id": "injection",
       "kind": "vulnerability_family",
-      "resource_topic_ids": []
+      "resource_topic_ids": [
+        "interpreter-boundaries"
+      ]
     },
     {
       "id": "ai-security",

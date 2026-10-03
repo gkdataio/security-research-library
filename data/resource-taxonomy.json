@@ -74,6 +74,10 @@
     {
       "id": "memory-safety",
       "title": "Memory Safety and Process Isolation"
+    },
+    {
+      "id": "interpreter-boundaries",
+      "title": "Interpreter Boundaries"
     }
   ]
 }

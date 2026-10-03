@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "id": "python-subprocess-interpreter-boundaries",
+  "title": "Python subprocess: executable, argument, and interpreter boundaries",
+  "publisher": "Python Software Foundation",
+  "authors": [],
+  "primary_url": "https://docs.python.org/3.14/library/subprocess.html#security-considerations",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "interpreter-boundaries"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "secure-parser-review"
+  ],
+  "version": "Python 3.14 documentation branch",
+  "summary": "Runtime documentation distinguishes the selected executable, its arguments, and shell interpretation. Python does not implicitly select a shell, but Windows may launch batch files through one. The companion shlex reference limits its quoting guarantees to Unix shells; quoting is not a portable substitute for understanding the receiving interpreter.",
+  "defensive_use": "Editorial learning objective: distinguish preserving argument boundaries from authorizing their meaning. Review which executable and interpreter receive data, what actions the receiving program assigns to arguments, and whether those actions fit the intended authority. This resource supports conceptual design review, without execution recipes.",
+  "prerequisites": [
+    "Basic familiarity with processes, arguments, and operating-system differences."
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public runtime documentation; no account was needed for the reviewed sections."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed sections do not establish this educational resource date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed sections do not establish this educational resource date."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed sections do not establish this educational resource date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T23:22:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the versioned Python 3.14 subprocess security considerations and shlex.quote warning. Documentation can change; this is not an implementation or platform compatibility test."
+  },
+  "sources": [
+    {
+      "id": "python-subprocess-security",
+      "url": "https://docs.python.org/3.14/library/subprocess.html#security-considerations",
+      "title": "subprocess: Security Considerations",
+      "publisher": "Python Software Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T23:22:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "python-shlex-quote",
+      "url": "https://docs.python.org/3.14/library/shlex.html#shlex.quote",
+      "title": "shlex.quote: Unix-shell portability warning",
+      "publisher": "Python Software Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T23:22:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Windows batch-file handling can involve shell parsing even when the application has not explicitly selected a shell. The runtime guidance for this case is conditional, not a universal recommendation to enable shell execution.",
+    "shlex quoting is not guaranteed correct for non-POSIX shells or Windows shells.",
+    "The authorization distinction is editorial synthesis, not a claim that these Python APIs enforce application policy.",
+    "No vulnerability finding, award, payload, reproduction sequence, or testing authorization is established."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -73,6 +73,22 @@ class CategoryNavigationTests(unittest.TestCase):
             page = self.pages['docs/categories/'+category['id']+'.md']
             self.assertIn(collection_counts(reports, learning, diagrams), page)
 
+    def test_injection_learning_uses_narrow_interpreter_topic(self):
+        category = next(c for c in self.config['categories'] if c['id'] == 'injection')
+        self.assertIn('interpreter-boundaries', category['resource_topic_ids'])
+        self.assertNotIn('web-foundations', category['resource_topic_ids'])
+        resource = next(r for r in self.resources
+                        if r['id'] == 'python-subprocess-interpreter-boundaries')
+        self.assertEqual(resource['topic_ids'], ['interpreter-boundaries'])
+        broad = {'id': 'broad-foundations', 'title': 'Foundations',
+                 'topic_ids': ['web-foundations']}
+        reports, learning, diagrams = memberships(category, [], [resource, broad], [])
+        self.assertEqual(reports, [])
+        self.assertEqual(diagrams, [])
+        self.assertEqual(learning, [(resource, ['interpreter-boundaries'], [])])
+        self.assertIn(link(resource['title'], '../resources/'+resource['id']+'.md'),
+                      self.pages['docs/categories/injection.md'])
+
     def test_deterministic_order_and_no_mutation(self):
         original = copy.deepcopy((self.reports, self.resources, self.diagrams, self.taxonomy, self.resource_taxonomy))
         expected = category_pages(ROOT, *original, text, link)
