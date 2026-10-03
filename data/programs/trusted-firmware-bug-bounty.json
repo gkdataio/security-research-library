@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "trusted-firmware-bug-bounty",
   "name": "Trusted Firmware Bug Bounty",
   "operator": "Arm",
@@ -81,6 +81,15 @@
       "retrieved_at": "2026-10-03T03:57:17Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Intigriti asset table",
+      "url": "https://app.intigriti.com/programs/arm/trustedfirmware/detail",
+      "publisher": "Arm",
+      "retrieved_at": "2026-10-03T14:56:26Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -97,5 +106,55 @@
       "https://app.intigriti.com/programs/arm/trustedfirmware/updates"
     ],
     "verified_at": "2026-10-03T03:58:15Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:26Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "TrustedFirmware-A (TF-A)",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "TrustedFirmware-M (TF-M)",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "TF-PSA-Crypto",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "OP-TEE",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [],
+    "limitations": [
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "telegram-bug-bounty",
   "name": "Telegram Bug Bounty",
   "operator": "Telegram",
@@ -60,6 +60,15 @@
       "retrieved_at": "2026-10-03T03:20:30Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Telegram Bug Bounty Program",
+      "url": "https://core.telegram.org/bug-bounty",
+      "publisher": "Telegram",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "scope_context": {
@@ -72,5 +81,186 @@
       "https://core.telegram.org/bug-bounty"
     ],
     "verified_at": "2026-10-03T03:20:30Z"
+  },
+  "asset_scope": {
+    "capture_status": "policy_defined",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "telegram.org",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.telegram.org",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "t.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.t.me",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "tg.dev",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.tg.dev",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "telegram.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.telegram.me",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.telesco.pe",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.stel.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "contest.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "quiz.directory",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "telegra.ph",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Official Telegram applications",
+        "asset_type": "application",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Telegram-operated apps that handle or store private user data."
+      },
+      {
+        "name": "MTProto 2.0",
+        "asset_type": "protocol",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Realistic unauthorized user-data access impact is required."
+      },
+      {
+        "name": "Telegram-operated services and servers handling private user data",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "No finite service or server inventory is published."
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "Third-party domains integrating Telegram",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Third-party apps and bots",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Their own implementation faults are excluded; Telegram-side flaws can qualify."
+      }
+    ],
+    "limitations": [
+      "The listed domains are examples of permitted Telegram scope, subject to ownership and private-data impact; the app/service categories are broader than a finite asset list."
+    ]
   }
 }

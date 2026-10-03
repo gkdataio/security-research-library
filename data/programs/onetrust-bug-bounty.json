@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "onetrust-bug-bounty",
   "name": "OneTrust Bug Bounty",
   "operator": "OneTrust",
@@ -99,6 +99,15 @@
       "retrieved_at": "2026-10-03T04:10:21Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json",
+      "publisher": "OneTrust",
+      "retrieved_at": "2026-10-03T14:56:19Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -115,5 +124,263 @@
       "https://bugcrowd.com/engagements/onetrust/announcements"
     ],
     "verified_at": "2026-10-03T04:12:42Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:19Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "https://pentest-app.onetrust.com/",
+        "asset_type": "website",
+        "location": "https://pentest-app.onetrust.com/",
+        "group": "In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "https://*.onetrust.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://store.onetrust.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.convercent.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.dataguidance.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://app.vendorpedia.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.preferencechoice.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.redacted.ai",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.sharedassessments.org",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://developer.onetrust.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://my.onetrust.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.vendorpedia.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrustgrc.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.cookiepro.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://tv.onetrust.com/",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.cookielaw.org",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrustpro.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.privacyconnect.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrust.de",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrust.se",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrust.es",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrust.fr",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.onetrust.it",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.privacytech.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.privacypedia.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.esgiq.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://*.trustweek2021.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out-of-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+    ]
   }
 }

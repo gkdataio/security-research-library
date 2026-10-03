@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "proton-bug-bounty",
   "name": "Proton Bug Bounty",
   "operator": "Proton AG",
@@ -75,6 +75,15 @@
       "retrieved_at": "2026-10-03T02:12:34Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Proton vulnerability disclosure scope",
+      "url": "https://proton.me/security/vulnerability-disclosure",
+      "publisher": "Proton AG",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "program_type": {
@@ -94,5 +103,399 @@
       "https://proton.me/security/vulnerability-disclosure"
     ],
     "verified_at": "2026-10-03T03:20:30Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "proton.me",
+        "asset_type": "website",
+        "location": null,
+        "group": "Proton",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "account.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "calendar.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Calendar",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Calendar apps (Android, iOS/iPad)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Proton Calendar",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "drive.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Drive",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Drive apps (Android, iOS/iPad beta, Windows)",
+        "asset_type": "application",
+        "location": null,
+        "group": "Proton Drive",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "docs.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Docs",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "mail.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Mail",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "api.protonmail.ch",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Mail",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Mail mobile apps (Android, iOS/iPad)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Proton Mail",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Bridge (GNU/Linux, macOS, Windows)",
+        "asset_type": "desktop_app",
+        "location": null,
+        "group": "Proton Mail",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Scribe",
+        "asset_type": "product",
+        "location": null,
+        "group": "Proton Mail",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "pass.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Pass",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Pass mobile apps (Android, iOS/iPad)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Proton Pass",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Pass desktop apps (Linux, macOS, Windows)",
+        "asset_type": "desktop_app",
+        "location": null,
+        "group": "Proton Pass",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Pass extensions (Chrome, Firefox)",
+        "asset_type": "browser_extension",
+        "location": null,
+        "group": "Proton Pass",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Authenticator mobile apps (Android, iOS/iPad)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Proton Authenticator",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Authenticator desktop apps (Linux, macOS, Windows)",
+        "asset_type": "desktop_app",
+        "location": null,
+        "group": "Proton Authenticator",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "protonvpn.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Proton VPN",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "account.protonvpn.com",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton VPN",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "api.protonvpn.ch",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton VPN",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton VPN apps (Android, iOS/iPad, Linux, macOS, Windows)",
+        "asset_type": "application",
+        "location": null,
+        "group": "Proton VPN",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton VPN extensions (Android TV, Apple TV, Chrome, Chromebook, Firefox)",
+        "asset_type": "browser_extension",
+        "location": null,
+        "group": "Proton VPN",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "wallet.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Proton Wallet",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Wallet apps (Android, iOS)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Proton Wallet",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "lumo.proton.me",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Lumo by Proton",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Proton Lumo apps (Android, iOS)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "Lumo by Proton",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "simplelogin.io",
+        "asset_type": "website",
+        "location": null,
+        "group": "SimpleLogin",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "app.simplelogin.io",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "SimpleLogin",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "SimpleLogin mobile apps (Android, iOS)",
+        "asset_type": "mobile_app",
+        "location": null,
+        "group": "SimpleLogin",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "SimpleLogin extensions (Chrome, Edge, Firefox, Safari)",
+        "asset_type": "browser_extension",
+        "location": null,
+        "group": "SimpleLogin",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "standardnotes.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Standard Notes",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "app.standardnotes.com",
+        "asset_type": "web_app",
+        "location": null,
+        "group": "Standard Notes",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Standard Notes apps (Android, iOS/iPad, Linux, macOS, Windows)",
+        "asset_type": "application",
+        "location": null,
+        "group": "Standard Notes",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "shop.proton.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "proton.me/support/contact",
+        "asset_type": "website",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "protonmail.zendesk.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "support.protonmail.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "help.protonmail.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "status.proton.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "partners.proton.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "localize.proton.me",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Only services explicitly named in Proton's disclosure policy are included; the bounty page delegates scope to that policy.",
+      "App/platform variants are grouped as the policy presents them. Third-party and unlisted services remain excluded."
+    ]
   }
 }

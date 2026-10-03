@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "apple-security-bounty",
   "name": "Apple Security Bounty",
   "operator": "Apple",
@@ -95,6 +95,24 @@
       "retrieved_at": "2026-10-02T21:01:00Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Apple Security Bounty guidelines",
+      "url": "https://security.apple.com/bounty/guidelines/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "assets-terms-2026-10-03",
+      "title": "Apple Security Bounty terms",
+      "url": "https://security.apple.com/terms-and-conditions/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -116,5 +134,122 @@
       "https://security.apple.com/terms-and-conditions/"
     ],
     "verified_at": "2026-10-03T03:41:39Z"
+  },
+  "asset_scope": {
+    "capture_status": "policy_defined",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03",
+      "assets-terms-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "iOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "iPadOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "macOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "tvOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "visionOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "watchOS",
+        "asset_type": "operating_system",
+        "location": null,
+        "group": "Current public release, including eligible beta",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Publicly available Apple hardware",
+        "asset_type": "hardware",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Standard configuration and applicable Apple-designed components."
+      },
+      {
+        "name": "Apple-owned public-facing web servers and services",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "No finite hostname inventory is published in these terms."
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "Apple Pay",
+        "asset_type": "product",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-terms-2026-10-03"
+        ]
+      },
+      {
+        "name": "Non-public-facing Apple systems",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-terms-2026-10-03"
+        ]
+      },
+      {
+        "name": "Third-party products and services",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-terms-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Apple defines broad product and service categories rather than a finite host inventory; current release, configuration and reporting criteria apply."
+    ]
   }
 }

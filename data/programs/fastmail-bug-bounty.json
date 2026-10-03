@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "fastmail-bug-bounty",
   "name": "Fastmail Bug Bounty",
   "operator": "Fastmail Pty Ltd",
@@ -60,6 +60,15 @@
       "retrieved_at": "2026-10-03T03:20:30Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Fastmail security issue reporting policy",
+      "url": "https://www.fastmail.com/bug-bounty/",
+      "publisher": "Fastmail Pty Ltd",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "scope_context": {
@@ -72,5 +81,71 @@
       "https://www.fastmail.com/bug-bounty/"
     ],
     "verified_at": "2026-10-03T03:20:30Z"
+  },
+  "asset_scope": {
+    "capture_status": "policy_defined",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Fastmail-operated code and infrastructure",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Qualifying impact must involve private user data or Fastmail infrastructure."
+      },
+      {
+        "name": "app.fastmail.com",
+        "asset_type": "website",
+        "location": "https://app.fastmail.com",
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Named as an example within the XSS-eligible *.fastmail.com domain."
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "user.fm",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "XSS on this isolated user-content host is explicitly excluded; this is not a claim that every vulnerability type is excluded."
+      },
+      {
+        "name": "fastmailusercontent.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "XSS on this isolated user-content host is explicitly excluded; this is not a claim that every vulnerability type is excluded."
+      },
+      {
+        "name": "www.fastmailfbl.com",
+        "asset_type": "website",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Associated site not operated by Fastmail; not bounty eligible."
+      }
+    ],
+    "limitations": [
+      "The policy defines impact and ownership requirements, not a complete list of Fastmail-operated hosts.",
+      "The two user-content domain exclusions are specific to XSS."
+    ]
   }
 }

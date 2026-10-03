@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.5.0",
   "id": "hackerone-security-bounty",
   "name": "HackerOne Security Bounty",
   "operator": "HackerOne",
@@ -52,6 +52,15 @@
       "retrieved_at": "2026-10-02T21:09:00Z",
       "provenance": "official_primary",
       "access_method": "browser"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published HackerOne structured scope",
+      "url": "https://hackerone.com/security/policy_scopes",
+      "publisher": "HackerOne",
+      "retrieved_at": "2026-10-03T14:59:13Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -61,6 +70,361 @@
     "summary": "An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated.",
     "source_ids": [
       "policy"
+    ]
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:59:13Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "hackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "api.hackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "www.hackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "app.pullrequest.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "reviewer.pullrequest.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackerone-us-west-2-production-attachments.s3.us-west-2.amazonaws.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "www.wearehackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "mta-sts.wearehackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "errors.hackerone.net",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "https://*.hackerone-ext-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "a5s.hackerone-ext-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "b5s.hackerone-ext-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackerone-ext-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "https://*.hackerone-user-content.com/",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "ctf.hacker101.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackathon-photos.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "cover-photos.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackathon-photos-us-east-2.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "profile-photos.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "profile-photos-us-east-2.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "cover-photos-us-east-2.hackerone-user-content.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "hackerone.live",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "*.vpn.hackerone.net",
+        "asset_type": "OTHER",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "https://hackerone.com/mcp",
+        "asset_type": "OTHER",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": true
+      },
+      {
+        "name": "https://github.com/Hacker0x01/react-datepicker",
+        "asset_type": "OTHER",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "support.hackerone.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "go.hacker.one",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "info.hacker.one",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "ma.hacker.one",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "h1.community",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "www.h1.community",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "www.hackeronestatus.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      },
+      {
+        "name": "hackerone-swag.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "bounty_eligible": false
+      }
+    ],
+    "limitations": [
+      "Published structured-scope rows were captured. Submission eligibility and bounty eligibility differ; program policy text may add restrictions."
     ]
   }
 }

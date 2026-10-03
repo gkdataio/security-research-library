@@ -1,10 +1,10 @@
 # Official program discovery queue
 
-[Library home](../README.md) · [Verified policies](programs.md)
+[Library home](../README.md) · [Verified policies and asset scope](programs.md)
 
 Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.
 
-**1154 distinct program-page listings**; 33 link to an existing verified policy record and 1121 await policy review. These counts must not be added to verified-policy counts without removing overlap.
+**1154 distinct program-page listings**; 33 link to an existing verified policy record, 33 of those have reviewed asset-scope snapshots, and 1121 await policy review. These counts must not be added to verified-policy counts without removing overlap.
 
 ## Coverage and continuation
 

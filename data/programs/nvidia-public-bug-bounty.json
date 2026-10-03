@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.5.0",
   "id": "nvidia-public-bug-bounty",
   "name": "NVIDIA Public Bug Bounty",
   "operator": "NVIDIA",
@@ -71,6 +71,128 @@
       "retrieved_at": "2026-10-02T23:00:00Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Intigriti asset table",
+      "url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail",
+      "publisher": "NVIDIA",
+      "retrieved_at": "2026-10-03T14:56:15Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
-  ]
+  ],
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:15Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "new CDI-based architecture",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "All Other NVIDIA Container Toolkit Assets",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "libNVVM API",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Nsight Systems",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "NVIDIA Nsight Developer Tools",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "NVRTC library",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "CUDA Libraries",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "NVCC",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "nvJitLink APIs",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "CUDA Runtime APIs",
+        "asset_type": "URL",
+        "location": "http://CUDA Runtime APIs",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "CUDA Driver APIs",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [],
+    "limitations": [
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+    ]
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "dropbox-bug-bounty",
   "name": "Dropbox Bug Bounty",
   "operator": "Dropbox",
@@ -77,6 +77,15 @@
       "retrieved_at": "2026-10-03T02:12:34Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Intigriti asset table",
+      "url": "https://app.intigriti.com/programs/dropbox/dropbox/detail",
+      "publisher": "Dropbox",
+      "retrieved_at": "2026-10-03T14:55:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "program_type": {
@@ -96,5 +105,335 @@
       "https://app.intigriti.com/programs/dropbox/dropbox"
     ],
     "verified_at": "2026-10-03T03:20:30Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:55:58Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Dropbox.com",
+        "asset_type": "URL",
+        "location": "http://Dropbox.com",
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "sign.dropbox.com",
+        "asset_type": "URL",
+        "location": "http://sign.dropbox.com",
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "HelloSign.com",
+        "asset_type": "URL",
+        "location": "http://HelloSign.com",
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "dash.ai",
+        "asset_type": "URL",
+        "location": "http://dash.ai",
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "dash.dropbox.com",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "api.dropbox.com",
+        "asset_type": "URL",
+        "location": "http://api.dropbox.com",
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Dropbox Desktop Application",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "327630330",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/app/327630330",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "6450553960",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/app/6450553960",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "1080074001",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/app/1080074001",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "com.dropbox.dash",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.dropbox.dash",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "com.dropbox.android",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.dropbox.android",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "HelloFax.com",
+        "asset_type": "URL",
+        "location": "http://HelloFax.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "docsend.com",
+        "asset_type": "URL",
+        "location": "http://docsend.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "app.Reclaim.ai",
+        "asset_type": "URL",
+        "location": "http://app.Reclaim.ai",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "dropbox.com/paper",
+        "asset_type": "URL",
+        "location": "http://dropbox.com/paper",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.dropbox.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.dropboxer.net",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.dropboxforum.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.dropboxpartners.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.hellofax.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.docsend.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.reclaim.ai",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.helloworks.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.hellosign.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.dash.ai",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "community.dropbox.com",
+        "asset_type": "URL",
+        "location": "http://community.dropbox.com",
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "replay.dropbox.com",
+        "asset_type": "URL",
+        "location": "http://replay.dropbox.com",
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Boxcryptor",
+        "asset_type": "Other",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Formswift",
+        "asset_type": "Other",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Dropbox Passwords",
+        "asset_type": "Other",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Dropbox Capture Windows Desktop App",
+        "asset_type": "Other",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Dropbox Capture macOS Desktop App",
+        "asset_type": "Other",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "com.dropbox.paper",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.dropbox.paper",
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "1126623662",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/app/1126623662",
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+    ]
   }
 }
