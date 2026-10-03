@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "whatwg-coop-opener-and-origin-authority",
+  "title": "HTML COOP: opener separation and same-origin authority",
+  "publisher": "WHATWG",
+  "authors": [],
+  "primary_url": "https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies",
+  "resource_type_id": "technical-standard",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "integration-threat-modeling"
+  ],
+  "version": "HTML Living Standard (reviewed 2026-10-03)",
+  "prerequisites": [
+    "Browser origin and navigation concepts",
+    "HTTP session and response-cache fundamentals"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official documentation readable without an account at review time."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Defines how opener policies affect browsing-context separation during navigation. The standard expressly distinguishes severing an opener relationship from a robust boundary between same-origin documents: storage, service workers, messaging and server responses can preserve shared authority.",
+  "defensive_use": "Model window references separately from origin-wide data and service authority. For an owned application, document every shared client capability and server data path before relying on opener separation; combine appropriate embedding, cookie and response controls with an explicit trust-domain design.",
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed section does not establish its original publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Living specification without a separately identified release for this section."
+    },
+    "source_displayed": {
+      "value": "2026-10-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Displayed last-updated date for the HTML Living Standard; not proof this section changed on that date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T05:39:10Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the current opener-policy definitions and same-origin limitations. The page remains mutable and is not an immutable versioned edition."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies",
+      "title": "HTML Standard: Cross-origin opener policies",
+      "publisher": "WHATWG",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:39:10Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "A specification defines intended behavior; this review does not establish per-value support in deployed browsers.",
+    "Opener separation alone does not partition origin-wide storage or grant application-level authorization.",
+    "This resource complements message validation and request-context resources by modeling the isolation boundary itself."
+  ]
+}

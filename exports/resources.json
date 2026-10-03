@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 31,
+    "resources": 33,
     "diagrams": 8
   },
   "taxonomy": {
@@ -446,6 +446,97 @@
         "Organization-level guardrails constrain permissions; they do not grant access by themselves."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "chrome-bfcache-restored-session-state",
+      "title": "Chrome bfcache: restored pages and session-state boundaries",
+      "publisher": "Google Chrome for Developers",
+      "authors": [
+        "Barry Pollard"
+      ],
+      "primary_url": "https://developer.chrome.com/docs/web-platform/bfcache-ccns",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "web-foundations",
+        "identity"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "identity-lifecycle-review"
+      ],
+      "version": null,
+      "prerequisites": [
+        "Browser origin and navigation concepts",
+        "HTTP session and response-cache fundamentals"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official documentation readable without an account at review time."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Explains Chrome’s conditional admission of no-store pages to the back/forward cache. A restored page resumes in-memory document state rather than performing a fresh network load. The guide describes eviction safeguards around authentication changes and recommends considering data refresh on restoration.",
+      "defensive_use": "Distinguish HTTP cache policy from suspended-page lifetime in an owned application’s session model. Define how sensitive state is cleared or refreshed after restoration and how logout remains effective across navigation. Preserve server-side authorization independently of restored client state.",
+      "dates": {
+        "published": {
+          "value": "2024-10-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Explicit article publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2025-09-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Explicit last-updated date; not a new publication or browser release date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T05:39:10Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the Chrome guidance and the linked web.dev restoration section. Relevant to 2026 session design, but the article’s dated rollout statement is not fresh rollout telemetry."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://developer.chrome.com/docs/web-platform/bfcache-ccns",
+          "title": "Enabling bfcache for Cache-Control: no-store",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:39:10Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "restoration-guide",
+          "url": "https://web.dev/articles/bfcache",
+          "title": "Back/forward cache",
+          "publisher": "Google web.dev",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:39:10Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Chrome-specific eligibility safeguards must not be generalized to every browser or authentication design.",
+        "The broader web.dev guide still describes the Chrome change as ongoing; the separately dated Chrome article provides more specific implementation context.",
+        "No browser execution or live application assessment was performed; this is lifecycle guidance, not an individual vulnerability report."
+      ]
     },
     {
       "schema_version": "1.0.0",
@@ -2782,6 +2873,85 @@
         "The draft does not establish support in every deployed browser or non-browser client."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "whatwg-coop-opener-and-origin-authority",
+      "title": "HTML COOP: opener separation and same-origin authority",
+      "publisher": "WHATWG",
+      "authors": [],
+      "primary_url": "https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling"
+      ],
+      "version": "HTML Living Standard (reviewed 2026-10-03)",
+      "prerequisites": [
+        "Browser origin and navigation concepts",
+        "HTTP session and response-cache fundamentals"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official documentation readable without an account at review time."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Defines how opener policies affect browsing-context separation during navigation. The standard expressly distinguishes severing an opener relationship from a robust boundary between same-origin documents: storage, service workers, messaging and server responses can preserve shared authority.",
+      "defensive_use": "Model window references separately from origin-wide data and service authority. For an owned application, document every shared client capability and server data path before relying on opener separation; combine appropriate embedding, cookie and response controls with an explicit trust-domain design.",
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The reviewed section does not establish its original publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Living specification without a separately identified release for this section."
+        },
+        "source_displayed": {
+          "value": "2026-10-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Displayed last-updated date for the HTML Living Standard; not proof this section changed on that date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T05:39:10Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the current opener-policy definitions and same-origin limitations. The page remains mutable and is not an immutable versioned edition."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies",
+          "title": "HTML Standard: Cross-origin opener policies",
+          "publisher": "WHATWG",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:39:10Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "A specification defines intended behavior; this review does not establish per-value support in deployed browsers.",
+        "Opener separation alone does not partition origin-wide storage or grant application-level authorization.",
+        "This resource complements message validation and request-context resources by modeling the isolation boundary itself."
+      ]
     }
   ],
   "diagrams": [

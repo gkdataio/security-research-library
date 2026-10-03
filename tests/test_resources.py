@@ -25,6 +25,51 @@ class ResourceTests(unittest.TestCase):
     def test_resource_future_publication_rejected(self):
         self.rec['dates']['published']={'value':'2030-01-01','precision':'day','basis':'explicit','source_id':'primary','note':None}
         with self.assertRaises(Invalid):validate_resource(self.rec,self.rs,self.tax,self.skills)
+    def test_resource_timestamp_formats_rejected(self):
+        for field in ('reviewed_at','retrieved_at'):
+            for value in ('2026-10-03T05:00:00','2026-10-03','not-a-date',
+                          '2026-02-30T05:00:00Z','2026-10-03T25:00:00Z'):
+                with self.subTest(field=field,value=value):
+                    rec=copy.deepcopy(self.rec)
+                    if field=='reviewed_at':rec['freshness'][field]=value
+                    else:rec['sources'][0][field]=value
+                    with self.assertRaisesRegex(Invalid,'invalid date-time'):
+                        validate_resource(rec,self.rs,self.tax,self.skills)
+    def test_resource_retrieval_chronology_accepts_earlier_or_equal_instants(self):
+        for reviewed,retrieved in (
+            ('2026-10-03T05:00:00Z','2026-10-03T04:59:59Z'),
+            ('2026-10-03T05:00:00Z','2026-10-03T05:00:00Z'),
+            ('2026-10-03T05:00:00Z','2026-10-03T07:00:00+02:00'),
+            ('2026-10-03T00:30:00+02:00','2026-10-02T22:00:00Z'),
+            ('2026-10-03T05:00:00Z','2026-10-03T06:00:00+02:00'),
+            ('2026-10-03T05:00:00Z','2026-10-03T00:00:00-05:00'),
+        ):
+            with self.subTest(reviewed=reviewed,retrieved=retrieved):
+                rec=copy.deepcopy(self.rec)
+                rec['freshness']['reviewed_at']=reviewed
+                for source in rec['sources']:source['retrieved_at']=retrieved
+                validate_resource(rec,self.rs,self.tax,self.skills)
+    def test_resource_retrieval_after_review_rejected(self):
+        for reviewed,retrieved in (
+            ('2026-10-03T05:00:00Z','2026-10-03T05:00:01Z'),
+            ('2026-10-03T05:00:00Z','2026-10-03T05:00:00.000001Z'),
+            ('2026-10-03T05:00:00Z','2026-10-03T04:30:00-01:00'),
+            ('2026-10-03T00:30:00+02:00','2026-10-02T23:00:00Z'),
+        ):
+            with self.subTest(reviewed=reviewed,retrieved=retrieved):
+                rec=copy.deepcopy(self.rec)
+                rec['freshness']['reviewed_at']=reviewed
+                for source in rec['sources']:source['retrieved_at']=retrieved
+                with self.assertRaisesRegex(Invalid,'source retrieval is after resource review'):
+                    validate_resource(rec,self.rs,self.tax,self.skills)
+    def test_resource_chronology_checks_every_source(self):
+        self.rec['freshness']['reviewed_at']='2026-10-03T05:00:00Z'
+        for source in self.rec['sources']:source['retrieved_at']='2026-10-03T05:00:00Z'
+        extra=copy.deepcopy(self.rec['sources'][0])
+        extra.update(id='secondary',url='https://example.com/secondary',retrieved_at='2026-10-03T05:00:01Z')
+        self.rec['sources'].append(extra)
+        with self.assertRaisesRegex(Invalid,'source retrieval is after resource review'):
+            validate_resource(self.rec,self.rs,self.tax,self.skills)
     def test_unlinked_diagram_source_rejected(self):
         self.diagram['evidence_urls'].append('https://example.com/unreviewed')
         with self.assertRaises(Invalid):validate_diagram(self.diagram,self.ds,self.reports,self.resources)

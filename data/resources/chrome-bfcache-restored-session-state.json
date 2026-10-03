@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0.0",
+  "id": "chrome-bfcache-restored-session-state",
+  "title": "Chrome bfcache: restored pages and session-state boundaries",
+  "publisher": "Google Chrome for Developers",
+  "authors": [
+    "Barry Pollard"
+  ],
+  "primary_url": "https://developer.chrome.com/docs/web-platform/bfcache-ccns",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "web-foundations",
+    "identity"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "identity-lifecycle-review"
+  ],
+  "version": null,
+  "prerequisites": [
+    "Browser origin and navigation concepts",
+    "HTTP session and response-cache fundamentals"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official documentation readable without an account at review time."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Explains Chrome’s conditional admission of no-store pages to the back/forward cache. A restored page resumes in-memory document state rather than performing a fresh network load. The guide describes eviction safeguards around authentication changes and recommends considering data refresh on restoration.",
+  "defensive_use": "Distinguish HTTP cache policy from suspended-page lifetime in an owned application’s session model. Define how sensitive state is cleared or refreshed after restoration and how logout remains effective across navigation. Preserve server-side authorization independently of restored client state.",
+  "dates": {
+    "published": {
+      "value": "2024-10-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Explicit article publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2025-09-09",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Explicit last-updated date; not a new publication or browser release date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T05:39:10Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the Chrome guidance and the linked web.dev restoration section. Relevant to 2026 session design, but the article’s dated rollout statement is not fresh rollout telemetry."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://developer.chrome.com/docs/web-platform/bfcache-ccns",
+      "title": "Enabling bfcache for Cache-Control: no-store",
+      "publisher": "Google Chrome for Developers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:39:10Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "restoration-guide",
+      "url": "https://web.dev/articles/bfcache",
+      "title": "Back/forward cache",
+      "publisher": "Google web.dev",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:39:10Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Chrome-specific eligibility safeguards must not be generalized to every browser or authentication design.",
+    "The broader web.dev guide still describes the Chrome change as ongoing; the separately dated Chrome article provides more specific implementation context.",
+    "No browser execution or live application assessment was performed; this is lifecycle guidance, not an individual vulnerability report."
+  ]
+}

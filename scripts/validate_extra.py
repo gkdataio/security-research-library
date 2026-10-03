@@ -19,7 +19,11 @@ def validate_resource(rec, schema, taxonomy, skills):
     if len(sources)!=len(rec['sources']):raise Invalid('duplicate resource source ID')
     if normalize_url(rec['primary_url']) not in {normalize_url(s['url']) for s in rec['sources']}:
         raise Invalid('primary resource URL missing from evidence')
-    reviewed=dt.datetime.fromisoformat(rec['freshness']['reviewed_at'].replace('Z','+00:00')).date()
+    reviewed_at=dt.datetime.fromisoformat(rec['freshness']['reviewed_at'].replace('Z','+00:00'))
+    for source in sources.values():
+        if dt.datetime.fromisoformat(source['retrieved_at'].replace('Z','+00:00')) > reviewed_at:
+            raise Invalid('source retrieval is after resource review')
+    reviewed=reviewed_at.date()
     for date in rec['dates'].values():
         bounds=date_bounds(date)
         if bounds:
