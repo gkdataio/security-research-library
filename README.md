@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 2, 2026**
 
-- **55 qualifying report records:** 44 bug-bounty awards and 11 explicitly labeled competition entries
-- **8 public program-policy summaries**, maintained separately from award evidence
+- **57 qualifying report records:** 46 bug-bounty awards and 11 explicitly labeled competition entries
+- **11 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **16 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 28 older; 5 with unknown original publication dates
+- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 29 older; 6 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -163,6 +163,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [GraphQL object authorization exposed private-program metadata](data/reports/hackerone-private-program-graphql-object-authorization-2025.json) | USD 25,000 | 2025-01-21 (historical) | Vendor confirmed |
 | [LiteSpeed Cache privileged user simulation relied on weak security tokens](data/reports/litespeed-cache-user-simulation-authentication-2024.json) | USD 14,400 (Zero Day component) | 2024-08-21 (historical) | Platform confirmed |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
+| [GitHub runner-image builds shared persistent infrastructure with untrusted workflows](data/reports/github-runner-image-build-isolation-2023.json) | USD 20,000 | 2023-12-20 (historical) | Researcher reports payment |
 | [Instagram embedding fallback changed the authorization context](data/reports/instagram-embedding-privileged-fallback-2023.json) | USD 14,500 (including bonuses) | 2023-10-12 (historical) | Researcher reported |
 | [Meta Quest login migration lost OAuth credential confinement](data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) | USD 44,250 (including bonuses) | 2023-01-29 (historical) | Vendor confirmed |
 | [Meta account verification weakened linked SMS authentication state](data/reports/meta-account-verification-attempt-state-binding-2022.json) | USD 27,200 | 2023-01-20 (historical) | Vendor confirmed |
@@ -183,6 +184,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [Meta AI media access lacked object-ownership authorization](data/reports/meta-ai-media-object-authorization-2025.json) | USD 10,000 | Unknown; updated 2025-07-16 (historical) | Researcher reproduces vendor message |
 | [Safari origin confusion undermined stored media permissions](data/reports/apple-safari-media-permission-origin-confusion-2020.json) | USD 75,000 | Unknown in primary source | Researcher reported |
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
+| [macOS SMBFS error handling left inconsistent kernel parser state](data/reports/apple-smbfs-parser-state-consistency-2026.json) | USD 20,000 | Original unknown; vendor advisory 2026-09-14 | Researcher reports payment |
 
 ## Scope, maintenance, and attribution
 

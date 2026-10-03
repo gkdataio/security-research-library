@@ -3,8 +3,8 @@
   "notice": "Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.",
   "counts": {
     "unique_program_page_listings": 1154,
-    "already_has_verified_policy": 6,
-    "awaiting_policy_review": 1148,
+    "already_has_verified_policy": 9,
+    "awaiting_policy_review": 1145,
     "batches": 3,
     "by_platform": {
       "Bugcrowd": 514,
@@ -6197,7 +6197,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "launchdarkly-managed-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
@@ -8024,7 +8024,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "okta-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
@@ -27326,7 +27326,7 @@
       "evidence_note": "Directory page 1 explicitly labels this Bug bounty program; full program policy not reviewed; no active/paused status shown.",
       "platform": "Intigriti",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "nvidia-public-bug-bounty",
       "observations": [
         {
           "batch_id": "intigriti-directory-2026-10-02",

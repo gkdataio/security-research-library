@@ -186,6 +186,36 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## LaunchDarkly Managed Bug Bounty Engagement
+
+[Official program](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) · [Policy](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) · [Canonical record](<../data/programs/launchdarkly-managed-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-02T23:00:00Z
+
+**Submission status:** accepting reports. Official brief displays In progress, an ongoing period and a Submit report link\. Individual eligibility still depends on live terms\.
+
+**Advertised rewards:** Advertised schedule: P4 $150, P3 $1,250, P2 $2,500 and P1 $6,500–$7,500\. Severity uses CVSS with impact/likelihood adjustments and an appeal opportunity\. These are guidelines, not actual individual awards\.
+
+**Eligibility:** The June 3, 2026 announcement makes participation public without invitations\. Accounts must follow researcher identification rules\. Reports require original human analysis and reproducible security impact\. Platform reward eligibility includes first valid reporting and applicable adulthood requirements\.
+
+**Restrictions and exclusions:** Scope includes selected application, API, SDK and supporting services\. Unlisted properties, third-party integrations, support interfaces, non-SDK repositories, scan-only results, low-impact findings, denial-of-service and social engineering are excluded\. Protect other users’ data and service stability\. Public disclosure is prohibited; safe harbor is conditional\.
+
+**Verification limits**
+
+- Brief displays August 13, 2026 as its update date\.
+- The brief permits certain researcher-identifying email alternatives, while the displayed June 24, 2026 announcement requires the platform email alias exclusively\. This inconsistency needs program clarification; no broader permission is inferred\.
+- USD normalization relies on Bugcrowd accounting documentation because the brief uses dollar signs\.
+- The page and its displayed announcements were read in the cloud browser; linked announcement archives and authenticated submission flow were not reviewed\. This summary omits asset inventories and grants no testing permission\.
+
+**Official evidence and updates**
+
+- [LaunchDarkly public program brief](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) — LaunchDarkly / Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Mozilla Web Bug Bounty
 
 [Official program](<https://hackerone.com/mozilla?type=team>) · [Policy](<https://hackerone.com/mozilla?type=team>) · [Canonical record](<../data/programs/mozilla-web-bug-bounty.json>)
@@ -213,6 +243,66 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 - [Mozilla Web Bug Bounty \| Updates \| HackerOne](<https://hackerone.com/mozilla/updates?type=team>) — Mozilla / HackerOne; retrieved 2026-10-02T21:10:00Z.
 
 Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=team>).
+
+## NVIDIA Public Bug Bounty
+
+[Official program](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) · [Policy](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) · [Canonical record](<../data/programs/nvidia-public-bug-bounty.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-02T23:00:00Z
+
+**Submission status:** unknown. The logged-out page invites account-based submissions but provides no explicit current open/paused label\. Acceptance is not inferred from page visibility or activity\.
+
+**Advertised rewards:** Advertised tiers show $150–$5,000, $250–$10,000 and $300–$15,000\. Critical and exceptional bands have equal ceilings\. Dollar denomination is not explicitly established; normalized values remain null\. These are policy figures, not individual awards\.
+
+**Eligibility:** An Intigriti account is required\. Sanctions restrictions apply\. Platform terms require adulthood, or age 16 with guardian permission; rewards require first reporting, company validation, identity checks and compliance\.
+
+**Restrictions and exclusions:** Scope covers selected Container Toolkit and CUDA Toolkit components, emphasizing real privilege-boundary impact\. Unreleased Container Toolkit builds, theoretical findings and defects lacking security impact are excluded\. Denial-of-service, brute force, social engineering and physical intrusion are excluded\. Disclosure requires written consent\.
+
+**Verification limits**
+
+- The reviewed page does not establish the dollar denomination or a policy-wide revision date\.
+- The July 1, 2025 date applies only to a category-tier rule, not the entire policy\.
+- Logged-in submission eligibility and expanded safe-harbor terms were not verified\. Live terms prevail; this summary grants no testing permission\.
+
+**Official evidence and updates**
+
+- [NVIDIA Public Bug Bounty program policy](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) — NVIDIA / Intigriti; retrieved 2026-10-02T23:00:00Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-02T23:00:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Okta Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/okta>) · [Policy](<https://bugcrowd.com/engagements/okta>) · [Canonical record](<../data/programs/okta-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-02T23:00:00Z
+
+**Submission status:** accepting reports. The official brief displays In progress, an ongoing period and a Submit report link\. This does not establish any particular researcher’s eligibility\.
+
+**Advertised rewards:** Ordinary product/severity schedules advertise $100–$75,000, with discretionary awards\. A displayed October 7, 2025 notice advertises a limited-time bonus up to $500,000; its current applicability was not established and is excluded from the ordinary maximum\. No individual award is claimed\.
+
+**Eligibility:** A Bugcrowd account and designated researcher environments are required\. Employees and relatives are excluded\. Platform reward eligibility includes first valid reporting and applicable adulthood requirements\. Supplemental terms impose legal and sanctions eligibility\.
+
+**Restrictions and exclusions:** Selected identity, device and access-management products are covered\. Okta Classic and Okta Personal are marked out of scope\. No automated scanners, denial-of-service, customer-instance access, customer-data effects, social engineering or post-compromise pivoting\. Reports need meaningful human analysis\. Disclosure needs written approval\.
+
+**Verification limits**
+
+- Brief displays May 22, 2026 as its update date\. Older embedded announcements are not proof of current scope or bonus eligibility\.
+- USD normalization uses Bugcrowd accounting documentation; the brief itself displays dollar signs\.
+- The linked primary Vulnerability Disclosure Policy PDF could not be retrieved by the text tool\. Supplemental terms were read and display July 22, 2019\. Review is not a complete legal-terms audit\.
+- No authenticated submission was attempted\. Product-specific setup details and asset inventories are deliberately omitted; live terms prevail\.
+- Linked announcement and change-log archives were not separately read; announcement facts above come from notices displayed within the reviewed brief\.
+
+**Official evidence and updates**
+
+- [Okta public program brief](<https://bugcrowd.com/engagements/okta>) — Okta / Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
+- [Okta Vulnerability Disclosure Policy Supplemental Terms](<https://www.okta.com/sites/default/files/VDP_Supplemental_Terms.pdf>) — Okta; retrieved 2026-10-02T23:00:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
 ## OpenAI Security Bug Bounty
 

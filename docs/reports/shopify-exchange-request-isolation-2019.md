@@ -9,20 +9,21 @@
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
 
-Shopify confirms a USD 25,000 award for a screenshot-service isolation flaw\.
+Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset\.
 
 ### Root cause
 
-Server-initiated requests could reach internal infrastructure and metadata that should have been isolated\.
+Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure\. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process\.
 
 ### Bounded impact
 
-Root access was possible within one infrastructure subset\. Shopify explicitly says its core platform was outside that subset\.
+Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core\. The retrospective does not establish compromise of every container or quantify exposed data\. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions\.
 
 ### Defensive lessons
 
-- Restrict service egress and protect infrastructure metadata\.
-- Preserve strong isolation between infrastructure groups\.
+- Editorial lesson: separately enforce request-destination policy, workload privilege and infrastructure segmentation; each limits a different boundary\.
+- Editorial lesson: treat metadata as privileged infrastructure data and deny unneeded service access\.
+- Editorial lesson: preserve the distinction between a demonstrated access capability and a claim of widespread compromise\.
 
 ## Award and evidence
 
@@ -45,10 +46,10 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and source provenance verified\. No target testing or exploit reproduction performed\.
+Reviewed: 2026-10-02T23:00:55Z. Reread the vendor retrospective, including its impact boundary and remediation account\. No target testing\.
 
-- The 2019 date is the vendor retrospective publication, not the original discovery date\.
-- The cited HackerOne report link did not expose readable report metadata during this review\.
+- The publication date is retrospective, not the original discovery date\.
+- Underlying report details were not independently reread; no additional exploit prerequisites or investigative chronology are asserted\.
 
 ## Related conceptual diagrams
 
@@ -56,6 +57,6 @@ Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and
 
 ## Sources and attribution
 
-- [One Million Dollars in Bug Bounties](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) — Peter Yaworski / Shopify; retrieved 2026-10-02T14:39:00Z.
+- [One Million Dollars in Bug Bounties](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) — Peter Yaworski / Shopify; retrieved 2026-10-02T23:00:55Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

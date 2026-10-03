@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.1.0",
+  "id": "launchdarkly-managed-bug-bounty",
+  "name": "LaunchDarkly Managed Bug Bounty Engagement",
+  "operator": "LaunchDarkly",
+  "platform": "Bugcrowd",
+  "program_url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+  "policy_url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "last_verified_at": "2026-10-02T23:00:00Z",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 150,
+    "maximum": 7500,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised schedule: P4 $150, P3 $1,250, P2 $2,500 and P1 $6,500–$7,500. Severity uses CVSS with impact/likelihood adjustments and an appeal opportunity. These are guidelines, not actual individual awards.",
+    "source_ids": [
+      "policy",
+      "currency"
+    ]
+  },
+  "eligibility": {
+    "summary": "The June 3, 2026 announcement makes participation public without invitations. Accounts must follow researcher identification rules. Reports require original human analysis and reproducible security impact. Platform reward eligibility includes first valid reporting and applicable adulthood requirements.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Scope includes selected application, API, SDK and supporting services. Unlisted properties, third-party integrations, support interfaces, non-SDK repositories, scan-only results, low-impact findings, denial-of-service and social engineering are excluded. Protect other users’ data and service stability. Public disclosure is prohibited; safe harbor is conditional.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "Official brief displays In progress, an ongoing period and a Submit report link. Individual eligibility still depends on live terms.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "limitations": [
+    "Brief displays August 13, 2026 as its update date.",
+    "The brief permits certain researcher-identifying email alternatives, while the displayed June 24, 2026 announcement requires the platform email alias exclusively. This inconsistency needs program clarification; no broader permission is inferred.",
+    "USD normalization relies on Bugcrowd accounting documentation because the brief uses dollar signs.",
+    "The page and its displayed announcements were read in the cloud browser; linked announcement archives and authenticated submission flow were not reviewed. This summary omits asset inventories and grants no testing permission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "LaunchDarkly public program brief",
+      "url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+      "publisher": "LaunchDarkly / Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "currency",
+      "title": "Bugcrowd Organization Accounting",
+      "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ]
+}

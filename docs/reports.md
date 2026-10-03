@@ -8,6 +8,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Safari origin confusion undermined stored media permissions](<reports/apple-safari-media-permission-origin-confusion-2020.md>) — USD 75,000; bug\_bounty
 - [Sign in with Apple failed to bind identity claims to the authenticated user](<reports/apple-sign-in-identity-claim-binding-2020.md>) — USD 100,000; bug\_bounty
 - [iCloud sharing consent and Safari trust boundaries failed together](<reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.md>) — USD 100,500; bug\_bounty
+- [macOS SMBFS error handling left inconsistent kernel parser state](<reports/apple-smbfs-parser-state-consistency-2026.md>) — USD 20,000; bug\_bounty
 - [Instagram mobile account recovery had inconsistent verification limits](<reports/instagram-mobile-recovery-attempt-limits-2019.md>) — USD 30,000; bug\_bounty
 - [Instagram recovery challenges were insufficiently bound to accounts](<reports/instagram-recovery-challenge-account-binding-2019.md>) — USD 10,000; bug\_bounty
 - [GitHub Actions trust depended on invalid repository references](<reports/github-actions-reference-validation-2021.md>) — USD 25,000; bug\_bounty
@@ -16,6 +17,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [GitHub comparison output lacked source-repository authorization](<reports/github-cross-repository-comparison-authorization-2025.md>) — USD 10,000; bug\_bounty
 - [GitHub fork collaboration applied inconsistent authorization](<reports/github-fork-collaboration-authorization-2021.md>) — USD 20,000; bug\_bounty
 - [GitHub package-source trust allowed dependency confusion](<reports/github-ruby-dependency-confusion-2025.md>) — USD 20,000; bug\_bounty
+- [GitHub runner-image builds shared persistent infrastructure with untrusted workflows](<reports/github-runner-image-build-isolation-2023.md>) — USD 20,000; bug\_bounty
 - [GitLab recovery delivery lacked verified-address binding](<reports/gitlab-recovery-address-binding-cve-2023-7028.md>) — USD 35,000; bug\_bounty
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — USD 10,000; bug\_bounty
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — USD 31,337; bug\_bounty

@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 8
+    "programs": 11
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
   "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
@@ -502,6 +502,86 @@
     },
     {
       "schema_version": "1.1.0",
+      "id": "launchdarkly-managed-bug-bounty",
+      "name": "LaunchDarkly Managed Bug Bounty Engagement",
+      "operator": "LaunchDarkly",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+      "policy_url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-02T23:00:00Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 150,
+        "maximum": 7500,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised schedule: P4 $150, P3 $1,250, P2 $2,500 and P1 $6,500–$7,500. Severity uses CVSS with impact/likelihood adjustments and an appeal opportunity. These are guidelines, not actual individual awards.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "The June 3, 2026 announcement makes participation public without invitations. Accounts must follow researcher identification rules. Reports require original human analysis and reproducible security impact. Platform reward eligibility includes first valid reporting and applicable adulthood requirements.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Scope includes selected application, API, SDK and supporting services. Unlisted properties, third-party integrations, support interfaces, non-SDK repositories, scan-only results, low-impact findings, denial-of-service and social engineering are excluded. Protect other users’ data and service stability. Public disclosure is prohibited; safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "Official brief displays In progress, an ongoing period and a Submit report link. Individual eligibility still depends on live terms.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "Brief displays August 13, 2026 as its update date.",
+        "The brief permits certain researcher-identifying email alternatives, while the displayed June 24, 2026 announcement requires the platform email alias exclusively. This inconsistency needs program clarification; no broader permission is inferred.",
+        "USD normalization relies on Bugcrowd accounting documentation because the brief uses dollar signs.",
+        "The page and its displayed announcements were read in the cloud browser; linked announcement archives and authenticated submission flow were not reviewed. This summary omits asset inventories and grants no testing permission."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "LaunchDarkly public program brief",
+          "url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+          "publisher": "LaunchDarkly / Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1.0",
       "id": "mozilla-web-bug-bounty",
       "name": "Mozilla Web Bug Bounty",
       "operator": "Mozilla",
@@ -569,6 +649,167 @@
           "updates"
         ]
       }
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "nvidia-public-bug-bounty",
+      "name": "NVIDIA Public Bug Bounty",
+      "operator": "NVIDIA",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+      "policy_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-02T23:00:00Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised tiers show $150–$5,000, $250–$10,000 and $300–$15,000. Critical and exceptional bands have equal ceilings. Dollar denomination is not explicitly established; normalized values remain null. These are policy figures, not individual awards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "An Intigriti account is required. Sanctions restrictions apply. Platform terms require adulthood, or age 16 with guardian permission; rewards require first reporting, company validation, identity checks and compliance.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Scope covers selected Container Toolkit and CUDA Toolkit components, emphasizing real privilege-boundary impact. Unreleased Container Toolkit builds, theoretical findings and defects lacking security impact are excluded. Denial-of-service, brute force, social engineering and physical intrusion are excluded. Disclosure requires written consent.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "The logged-out page invites account-based submissions but provides no explicit current open/paused label. Acceptance is not inferred from page visibility or activity.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "The reviewed page does not establish the dollar denomination or a policy-wide revision date.",
+        "The July 1, 2025 date applies only to a category-tier rule, not the entire policy.",
+        "Logged-in submission eligibility and expanded safe-harbor terms were not verified. Live terms prevail; this summary grants no testing permission."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "NVIDIA Public Bug Bounty program policy",
+          "url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+          "publisher": "NVIDIA / Intigriti",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.1.0",
+      "id": "okta-bug-bounty",
+      "name": "Okta Bug Bounty",
+      "operator": "Okta",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/okta",
+      "policy_url": "https://bugcrowd.com/engagements/okta",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-02T23:00:00Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 100,
+        "maximum": 75000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Ordinary product/severity schedules advertise $100–$75,000, with discretionary awards. A displayed October 7, 2025 notice advertises a limited-time bonus up to $500,000; its current applicability was not established and is excluded from the ordinary maximum. No individual award is claimed.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "A Bugcrowd account and designated researcher environments are required. Employees and relatives are excluded. Platform reward eligibility includes first valid reporting and applicable adulthood requirements. Supplemental terms impose legal and sanctions eligibility.",
+        "source_ids": [
+          "policy",
+          "platform-terms",
+          "supplemental-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Selected identity, device and access-management products are covered. Okta Classic and Okta Personal are marked out of scope. No automated scanners, denial-of-service, customer-instance access, customer-data effects, social engineering or post-compromise pivoting. Reports need meaningful human analysis. Disclosure needs written approval.",
+        "source_ids": [
+          "policy",
+          "supplemental-terms"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The official brief displays In progress, an ongoing period and a Submit report link. This does not establish any particular researcher’s eligibility.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "Brief displays May 22, 2026 as its update date. Older embedded announcements are not proof of current scope or bonus eligibility.",
+        "USD normalization uses Bugcrowd accounting documentation; the brief itself displays dollar signs.",
+        "The linked primary Vulnerability Disclosure Policy PDF could not be retrieved by the text tool. Supplemental terms were read and display July 22, 2019. Review is not a complete legal-terms audit.",
+        "No authenticated submission was attempted. Product-specific setup details and asset inventories are deliberately omitted; live terms prevail.",
+        "Linked announcement and change-log archives were not separately read; announcement facts above come from notices displayed within the reviewed brief."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Okta public program brief",
+          "url": "https://bugcrowd.com/engagements/okta",
+          "publisher": "Okta / Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "supplemental-terms",
+          "title": "Okta Vulnerability Disclosure Policy Supplemental Terms",
+          "url": "https://www.okta.com/sites/default/files/VDP_Supplemental_Terms.pdf",
+          "publisher": "Okta",
+          "retrieved_at": "2026-10-02T23:00:00Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
     },
     {
       "schema_version": "1.1.0",

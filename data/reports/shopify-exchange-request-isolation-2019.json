@@ -5,7 +5,7 @@
   "organization": "Shopify",
   "product": "Shopify Exchange screenshot service",
   "researchers": [
-    "André Baptista (0xacb)"
+    "0xacb"
   ],
   "cve_ids": [],
   "cwe_mappings": [],
@@ -19,12 +19,13 @@
     "secrets-containment",
     "defensive-evidence-writing"
   ],
-  "summary": "Shopify confirms a USD 25,000 award for a screenshot-service isolation flaw.",
-  "root_cause": "Server-initiated requests could reach internal infrastructure and metadata that should have been isolated.",
-  "impact": "Root access was possible within one infrastructure subset. Shopify explicitly says its core platform was outside that subset.",
+  "summary": "Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset.",
+  "root_cause": "Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process.",
+  "impact": "Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core. The retrospective does not establish compromise of every container or quantify exposed data. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions.",
   "defensive_takeaways": [
-    "Restrict service egress and protect infrastructure metadata.",
-    "Preserve strong isolation between infrastructure groups."
+    "Editorial lesson: separately enforce request-destination policy, workload privilege and infrastructure segmentation; each limits a different boundary.",
+    "Editorial lesson: treat metadata as privileged infrastructure data and deny unneeded service access.",
+    "Editorial lesson: preserve the distinction between a demonstrated access capability and a claim of widespread compromise."
   ],
   "reward": {
     "amount": 25000,
@@ -112,7 +113,7 @@
       "title": "One Million Dollars in Bug Bounties",
       "type": "vendor",
       "author": "Peter Yaworski / Shopify",
-      "retrieved_at": "2026-10-02T14:39:00Z",
+      "retrieved_at": "2026-10-02T23:00:55Z",
       "supports": [
         "reward",
         "dates",
@@ -125,11 +126,11 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T14:39:00Z",
-    "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+    "reviewed_at": "2026-10-02T23:00:55Z",
+    "method": "Reread the vendor retrospective, including its impact boundary and remediation account. No target testing.",
     "limitations": [
-      "The 2019 date is the vendor retrospective publication, not the original discovery date.",
-      "The cited HackerOne report link did not expose readable report metadata during this review."
+      "The publication date is retrospective, not the original discovery date.",
+      "Underlying report details were not independently reread; no additional exploit prerequisites or investigative chronology are asserted."
     ]
   },
   "content_scope": "historical_defensive_summary"

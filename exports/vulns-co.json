@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T21:18:25Z",
+  "latest_reviewed_at": "2026-10-02T23:06:13Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 55,
+    "included": 57,
     "within_preferred_window": 22,
-    "older_or_uncertain": 33,
-    "bug_bounty": 44,
+    "older_or_uncertain": 35,
+    "bug_bounty": 46,
     "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -4944,20 +4944,23 @@
           "note": "The vendor explicitly labels the report Information Disclosure (CWE-200)."
         }
       ],
-      "category_id": "authorization",
-      "secondary_category_ids": [],
+      "category_id": "information-exposure",
+      "secondary_category_ids": [
+        "authorization"
+      ],
       "skillset_ids": [
         "secure-parser-review",
         "untrusted-input-handling",
         "authorization-modeling",
         "patch-verification"
       ],
-      "summary": "The cited vendor documents a USD 25,000 award for this finding.",
-      "root_cause": "A framework upgrade changed JSON serialization behavior, exposing private user attributes in public report data. Explicit response allowlists and privacy-focused contract tests help prevent this class of regression.",
-      "impact": "Sensitive user-data exposure and cross-program linking risk. HackerOne describes the report as Critical and confirms remediation and retesting.",
+      "summary": "A Rails upgrade changed how public report responses serialized private user attributes. HackerOne confirmed the disclosure and a USD 25,000 award.",
+      "root_cause": "The public-output boundary failed when serialization behavior changed. The affected context was a disclosed report containing a reporter or team-member summary; public report visibility did not imply permission to expose its contributor’s private attributes.",
+      "impact": "The vendor confirms sensitive-attribute exposure and describes cross-program linking risk, but gives no affected-user count or evidence of wider exploitation. It reports a deployed fix and successful researcher retest; implementation details are absent.",
       "defensive_takeaways": [
-        "Serialize only explicitly allowed response fields.",
-        "Include privacy-contract regression checks in framework upgrades."
+        "Editorial lesson: define an explicit public-response field allowlist independently of framework defaults.",
+        "Editorial lesson: make dependency-upgrade tests assert that private attributes remain absent across nested serializers.",
+        "Editorial lesson: distinguish confirmation of one corrected response from proof that every historical response path is safe."
       ],
       "reward": {
         "amount": 25000,
@@ -4971,7 +4974,7 @@
         "evidence_quote": "Reward: $25,000",
         "evidence_location": "Primary article award statement",
         "usd_equivalent": null,
-        "notes": "Vendor confirms the individual report’s reward; exact award and payment dates are not supplied."
+        "notes": "Vendor confirms the individual report’s reward; exact award and payment dates are not supplied. The award article uses a dollar sign; current official HackerOne standards supply USD context only. Exhibit C reproduces guideline version 1.2 dated July 29, 2019 and specifies USD on printed page 12, supplying historical platform context rather than individual payment proof."
       },
       "dates": {
         "published": {
@@ -5042,27 +5045,52 @@
         {
           "id": "primary",
           "url": "https://www.hackerone.com/blog/hai-insight-agent-case-study",
-          "title": "Framework serialization change exposed private HackerOne user attributes",
+          "title": "We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action",
           "type": "vendor",
           "author": "Crystal Hazen / HackerOne",
-          "retrieved_at": "2026-10-02T14:43:00Z",
+          "retrieved_at": "2026-10-02T23:00:55Z",
           "supports": [
             "reward",
             "dates",
             "root_cause",
-            "impact"
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T23:03:50Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "historical-currency-context",
+          "url": "https://www.carahsoft.com/buy/gsa-schedule-contracts/approved-csas/docFileDownload/286450/24c3653f-9d13-4944-8f2e-5baa23efa63c",
+          "title": "HackerOne terms and disclosure guidelines in official reseller GSA contract attachment, Exhibit C",
+          "type": "platform",
+          "author": "HackerOne / Carahsoft (contract attachment)",
+          "retrieved_at": "2026-10-02T23:05:44Z",
+          "supports": [
+            "reward"
           ]
         }
       ],
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:43:00Z",
-        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "reviewed_at": "2026-10-02T23:05:44Z",
+        "method": "Reread the vendor case study; checked award, exposure context and remediation statements. No target testing.",
         "limitations": [
-          "June 24 is the vendor case-study date, not an asserted first disclosure or payment date",
-          "Public report requires JavaScript; exact timeline and researcher identity were not recovered",
-          "The security issue was serialization, not a vulnerability in Hai itself"
+          "Publication does not establish discovery, award or settlement dates.",
+          "The article does not describe the researcher’s investigative reasoning or exact access prerequisites beyond the affected report context.",
+          "The linked technical report was not independently reread; researcher identity remains unverified.",
+          "Hai assisted triage; the reported defect was serialization.",
+          "Currency context comes from the currently reviewed platform standards, updated July 27, 2026, not a preserved 2025 version."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -6105,6 +6133,179 @@
         "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
         "limitations": [
           "Award is reported by the cited source; cash settlement is not independently audited."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-runner-image-build-isolation-2023",
+      "title": "GitHub runner-image builds shared persistent infrastructure with untrusted workflows",
+      "organization": "GitHub",
+      "product": "GitHub Actions runner-image build infrastructure",
+      "researchers": [
+        "Adnan Khan"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "supply-chain",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "pipeline-trust-modeling",
+        "secrets-containment",
+        "approval-state-integrity",
+        "defensive-evidence-writing"
+      ],
+      "summary": "An isolation misconfiguration exposed runner-image build infrastructure; the researcher reports a $20,000 payment.",
+      "root_cause": "Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production.",
+      "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown.",
+      "defensive_takeaways": [
+        "Separate untrusted contribution processing from privileged build infrastructure and secrets.",
+        "Bind review to the workflow being executed; prior contribution history is not continuing authorization.",
+        "Use isolated disposable execution environments and independently verify release provenance."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "paid",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "I was awarded a $20,000 bug-bounty",
+        "evidence_location": "Detailed article, GitHub Actions Runners introduction; payment corroborated by earlier post and timeline.",
+        "usd_equivalent": null,
+        "notes": "One report. GitHub’s official January 2017 article (updated June 2021) explicitly denominates standard bounties in USD; current platform guidelines corroborate context, not this individual award. Earlier researcher post explicitly says paid.",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub"
+      },
+      "dates": {
+        "published": {
+          "value": "2023-12-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Detailed article date."
+        },
+        "public_disclosure": {
+          "value": "2023-12-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "announcement",
+          "note": "Earlier public summary; not the detailed article date."
+        },
+        "reported": {
+          "value": "2023-07-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2023-11-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": "2023-11-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "announcement",
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": "2023-07-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Detailed timeline: initial mitigations. Earlier summary says immediate fixes July 26; final technical fix date remains unknown."
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical detailed publication outside the preferred window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/",
+          "title": "One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images",
+          "type": "researcher",
+          "author": "Adnan Khan",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "announcement",
+          "url": "https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/",
+          "title": "Welcome to my blog - there is more to come!",
+          "type": "researcher",
+          "author": "Adnan Khan",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "impact"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Guidelines",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "historical-currency-context",
+          "url": "https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/",
+          "title": "Bug bounty anniversary promotion: Bigger bounties in January and February",
+          "type": "vendor",
+          "author": "Neil Matatall / GitHub",
+          "retrieved_at": "2026-10-02T23:05:17Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T23:05:44Z",
+        "method": "Read primary public disclosures and corroborating sources; checked individual award scope. No target interaction or exploit reproduction.",
+        "limitations": [
+          "Payment is researcher-reported, not independently audited.",
+          "The reviewed HackerOne currency guideline is the current page, not a preserved 2023 policy snapshot.",
+          "Resolution on November 14 does not establish an exact final remediation date."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -8240,7 +8441,7 @@
       "organization": "Shopify",
       "product": "Shopify Exchange screenshot service",
       "researchers": [
-        "André Baptista (0xacb)"
+        "0xacb"
       ],
       "cve_ids": [],
       "cwe_mappings": [],
@@ -8254,12 +8455,13 @@
         "secrets-containment",
         "defensive-evidence-writing"
       ],
-      "summary": "Shopify confirms a USD 25,000 award for a screenshot-service isolation flaw.",
-      "root_cause": "Server-initiated requests could reach internal infrastructure and metadata that should have been isolated.",
-      "impact": "Root access was possible within one infrastructure subset. Shopify explicitly says its core platform was outside that subset.",
+      "summary": "Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset.",
+      "root_cause": "Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process.",
+      "impact": "Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core. The retrospective does not establish compromise of every container or quantify exposed data. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions.",
       "defensive_takeaways": [
-        "Restrict service egress and protect infrastructure metadata.",
-        "Preserve strong isolation between infrastructure groups."
+        "Editorial lesson: separately enforce request-destination policy, workload privilege and infrastructure segmentation; each limits a different boundary.",
+        "Editorial lesson: treat metadata as privileged infrastructure data and deny unneeded service access.",
+        "Editorial lesson: preserve the distinction between a demonstrated access capability and a claim of widespread compromise."
       ],
       "reward": {
         "amount": 25000,
@@ -8347,7 +8549,7 @@
           "title": "One Million Dollars in Bug Bounties",
           "type": "vendor",
           "author": "Peter Yaworski / Shopify",
-          "retrieved_at": "2026-10-02T14:39:00Z",
+          "retrieved_at": "2026-10-02T23:00:55Z",
           "supports": [
             "reward",
             "dates",
@@ -8360,11 +8562,11 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:39:00Z",
-        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "reviewed_at": "2026-10-02T23:00:55Z",
+        "method": "Reread the vendor retrospective, including its impact boundary and remediation account. No target testing.",
         "limitations": [
-          "The 2019 date is the vendor retrospective publication, not the original discovery date.",
-          "The cited HackerOne report link did not expose readable report metadata during this review."
+          "The publication date is retrospective, not the original discovery date.",
+          "Underlying report details were not independently reread; no additional exploit prerequisites or investigative chronology are asserted."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -8805,6 +9007,173 @@
           "Researcher-reported award; no independent vendor confirmation or audited transfer.",
           "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",
           "USD normalization uses earlier official program context rather than an award receipt."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-smbfs-parser-state-consistency-2026",
+      "title": "macOS SMBFS error handling left inconsistent kernel parser state",
+      "organization": "Apple",
+      "product": "macOS SMB filesystem",
+      "researchers": [
+        "Peter Malone"
+      ],
+      "cve_ids": [
+        "CVE-2026-84543"
+      ],
+      "cwe_mappings": [],
+      "category_id": "memory-safety",
+      "secondary_category_ids": [
+        "client-security"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "memory-safety-review",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A rejected network response left inconsistent filesystem state. The researcher reports a $20,000 award and subsequent payment.",
+      "root_cause": "The parser published a count before validating the associated allocation. Error cleanup did not restore the count and pointer together. The researcher compared parsing, cleanup and later consumption to explain why a failed validation still contaminated trusted kernel state.",
+      "impact": "A Mac had to connect to a malicious SMB share; guest access was sufficient. The researcher demonstrated kernel panics on Apple silicon. Apple describes possible system termination or kernel-memory corruption. General-purpose code execution was not demonstrated.",
+      "defensive_takeaways": [
+        "Publish related parser fields atomically only after validation succeeds; reset them consistently on every failure.",
+        "Require consumers to validate compound state, not merely individual fields.",
+        "Apple reports improved bounds checking; the researcher's temporary-state design is a recommendation, not a verified patch description."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "status": "paid",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "Apple notified me of the $20,000 bounty",
+        "evidence_location": "Disclosure Timeline and following paragraph.",
+        "usd_equivalent": null,
+        "notes": "One CVE-specific award, not the researcher's cumulative earnings. Source uses $; Apple's official bounty announcement supplies US-dollar program context only.",
+        "type": "bug_bounty",
+        "awarding_organization": "Apple"
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original detailed README publication date was not established; advisory release is not substituted."
+        },
+        "public_disclosure": {
+          "value": "2026-09-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor",
+          "note": "Vendor security advisory; the researcher README publication date is not established."
+        },
+        "reported": {
+          "value": "2026-05-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": "2026-09-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor",
+          "note": "Golden Gate 27 release and matching SMB advisory."
+        },
+        "paid": {
+          "value": "2026-06-15",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-02",
+        "window_start": "2025-10-02",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Detailed publication date unknown; vendor advisory is dated September 14, 2026."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://github.com/petermalone/CVE-2026-84543",
+          "title": "CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS",
+          "type": "researcher",
+          "author": "Peter Malone",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "vendor",
+          "url": "https://support.apple.com/en-us/149035",
+          "title": "About the security content of macOS Golden Gate 27",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "dates",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/",
+          "title": "Apple expands industry-leading commitment to protect users from highly targeted mercenary spyware",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-02T23:01:00Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-02T23:06:13Z",
+        "method": "Read primary public disclosures and corroborating sources; checked individual award scope. No target interaction or exploit reproduction.",
+        "limitations": [
+          "Payment is researcher-reported, not independently audited.",
+          "Detailed disclosure publication date remains unknown.",
+          "Researcher did not independently verify the production patch.",
+          "USD denomination is inferred from Apple’s 2022 program announcement; the researcher states only $, and no contemporaneous currency-specific payment evidence was reviewed."
         ]
       },
       "content_scope": "historical_defensive_summary"

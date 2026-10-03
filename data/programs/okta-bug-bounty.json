@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.1.0",
+  "id": "okta-bug-bounty",
+  "name": "Okta Bug Bounty",
+  "operator": "Okta",
+  "platform": "Bugcrowd",
+  "program_url": "https://bugcrowd.com/engagements/okta",
+  "policy_url": "https://bugcrowd.com/engagements/okta",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "last_verified_at": "2026-10-02T23:00:00Z",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 100,
+    "maximum": 75000,
+    "basis": "advertised_not_individual_award",
+    "summary": "Ordinary product/severity schedules advertise $100–$75,000, with discretionary awards. A displayed October 7, 2025 notice advertises a limited-time bonus up to $500,000; its current applicability was not established and is excluded from the ordinary maximum. No individual award is claimed.",
+    "source_ids": [
+      "policy",
+      "currency"
+    ]
+  },
+  "eligibility": {
+    "summary": "A Bugcrowd account and designated researcher environments are required. Employees and relatives are excluded. Platform reward eligibility includes first valid reporting and applicable adulthood requirements. Supplemental terms impose legal and sanctions eligibility.",
+    "source_ids": [
+      "policy",
+      "platform-terms",
+      "supplemental-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Selected identity, device and access-management products are covered. Okta Classic and Okta Personal are marked out of scope. No automated scanners, denial-of-service, customer-instance access, customer-data effects, social engineering or post-compromise pivoting. Reports need meaningful human analysis. Disclosure needs written approval.",
+    "source_ids": [
+      "policy",
+      "supplemental-terms"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The official brief displays In progress, an ongoing period and a Submit report link. This does not establish any particular researcher’s eligibility.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "limitations": [
+    "Brief displays May 22, 2026 as its update date. Older embedded announcements are not proof of current scope or bonus eligibility.",
+    "USD normalization uses Bugcrowd accounting documentation; the brief itself displays dollar signs.",
+    "The linked primary Vulnerability Disclosure Policy PDF could not be retrieved by the text tool. Supplemental terms were read and display July 22, 2019. Review is not a complete legal-terms audit.",
+    "No authenticated submission was attempted. Product-specific setup details and asset inventories are deliberately omitted; live terms prevail.",
+    "Linked announcement and change-log archives were not separately read; announcement facts above come from notices displayed within the reviewed brief."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Okta public program brief",
+      "url": "https://bugcrowd.com/engagements/okta",
+      "publisher": "Okta / Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "currency",
+      "title": "Bugcrowd Organization Accounting",
+      "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "supplemental-terms",
+      "title": "Okta Vulnerability Disclosure Policy Supplemental Terms",
+      "url": "https://www.okta.com/sites/default/files/VDP_Supplemental_Terms.pdf",
+      "publisher": "Okta",
+      "retrieved_at": "2026-10-02T23:00:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ]
+}

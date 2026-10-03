@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-smbfs-parser-state-consistency-2026",
+  "title": "macOS SMBFS error handling left inconsistent kernel parser state",
+  "organization": "Apple",
+  "product": "macOS SMB filesystem",
+  "researchers": [
+    "Peter Malone"
+  ],
+  "cve_ids": [
+    "CVE-2026-84543"
+  ],
+  "cwe_mappings": [],
+  "category_id": "memory-safety",
+  "secondary_category_ids": [
+    "client-security"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "memory-safety-review",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A rejected network response left inconsistent filesystem state. The researcher reports a $20,000 award and subsequent payment.",
+  "root_cause": "The parser published a count before validating the associated allocation. Error cleanup did not restore the count and pointer together. The researcher compared parsing, cleanup and later consumption to explain why a failed validation still contaminated trusted kernel state.",
+  "impact": "A Mac had to connect to a malicious SMB share; guest access was sufficient. The researcher demonstrated kernel panics on Apple silicon. Apple describes possible system termination or kernel-memory corruption. General-purpose code execution was not demonstrated.",
+  "defensive_takeaways": [
+    "Publish related parser fields atomically only after validation succeeds; reset them consistently on every failure.",
+    "Require consumers to validate compound state, not merely individual fields.",
+    "Apple reports improved bounds checking; the researcher's temporary-state design is a recommendation, not a verified patch description."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_vulnerability",
+    "status": "paid",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "Apple notified me of the $20,000 bounty",
+    "evidence_location": "Disclosure Timeline and following paragraph.",
+    "usd_equivalent": null,
+    "notes": "One CVE-specific award, not the researcher's cumulative earnings. Source uses $; Apple's official bounty announcement supplies US-dollar program context only.",
+    "type": "bug_bounty",
+    "awarding_organization": "Apple"
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original detailed README publication date was not established; advisory release is not substituted."
+    },
+    "public_disclosure": {
+      "value": "2026-09-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor",
+      "note": "Vendor security advisory; the researcher README publication date is not established."
+    },
+    "reported": {
+      "value": "2026-05-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-05-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": "2026-09-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "vendor",
+      "note": "Golden Gate 27 release and matching SMB advisory."
+    },
+    "paid": {
+      "value": "2026-06-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": null,
+    "basis": "published",
+    "note": "Detailed publication date unknown; vendor advisory is dated September 14, 2026."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://github.com/petermalone/CVE-2026-84543",
+      "title": "CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS",
+      "type": "researcher",
+      "author": "Peter Malone",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "vendor",
+      "url": "https://support.apple.com/en-us/149035",
+      "title": "About the security content of macOS Golden Gate 27",
+      "type": "vendor",
+      "author": "Apple",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "dates",
+        "impact",
+        "remediation",
+        "cve"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/",
+      "title": "Apple expands industry-leading commitment to protect users from highly targeted mercenary spyware",
+      "type": "vendor",
+      "author": "Apple",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T23:06:13Z",
+    "method": "Read primary public disclosures and corroborating sources; checked individual award scope. No target interaction or exploit reproduction.",
+    "limitations": [
+      "Payment is researcher-reported, not independently audited.",
+      "Detailed disclosure publication date remains unknown.",
+      "Researcher did not independently verify the production patch.",
+      "USD denomination is inferred from Apple’s 2022 program announcement; the researcher states only $, and no contemporaneous currency-specific payment evidence was reviewed."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

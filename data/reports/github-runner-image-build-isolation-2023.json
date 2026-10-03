@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-runner-image-build-isolation-2023",
+  "title": "GitHub runner-image builds shared persistent infrastructure with untrusted workflows",
+  "organization": "GitHub",
+  "product": "GitHub Actions runner-image build infrastructure",
+  "researchers": [
+    "Adnan Khan"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "supply-chain",
+  "secondary_category_ids": [
+    "authorization"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "secrets-containment",
+    "approval-state-integrity",
+    "defensive-evidence-writing"
+  ],
+  "summary": "An isolation misconfiguration exposed runner-image build infrastructure; the researcher reports a $20,000 payment.",
+  "root_cause": "Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production.",
+  "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown.",
+  "defensive_takeaways": [
+    "Separate untrusted contribution processing from privileged build infrastructure and secrets.",
+    "Bind review to the workflow being executed; prior contribution history is not continuing authorization.",
+    "Use isolated disposable execution environments and independently verify release provenance."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "paid",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "I was awarded a $20,000 bug-bounty",
+    "evidence_location": "Detailed article, GitHub Actions Runners introduction; payment corroborated by earlier post and timeline.",
+    "usd_equivalent": null,
+    "notes": "One report. GitHub’s official January 2017 article (updated June 2021) explicitly denominates standard bounties in USD; current platform guidelines corroborate context, not this individual award. Earlier researcher post explicitly says paid.",
+    "type": "bug_bounty",
+    "awarding_organization": "GitHub"
+  },
+  "dates": {
+    "published": {
+      "value": "2023-12-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Detailed article date."
+    },
+    "public_disclosure": {
+      "value": "2023-12-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "announcement",
+      "note": "Earlier public summary; not the detailed article date."
+    },
+    "reported": {
+      "value": "2023-07-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2023-11-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": "2023-11-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "announcement",
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": "2023-07-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Detailed timeline: initial mitigations. Earlier summary says immediate fixes July 26; final technical fix date remains unknown."
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-02",
+    "window_start": "2025-10-02",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical detailed publication outside the preferred window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/",
+      "title": "One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images",
+      "type": "researcher",
+      "author": "Adnan Khan",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "announcement",
+      "url": "https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/",
+      "title": "Welcome to my blog - there is more to come!",
+      "type": "researcher",
+      "author": "Adnan Khan",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "reward",
+        "dates",
+        "impact"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+      "title": "Vulnerability Disclosure Guidelines",
+      "type": "platform",
+      "author": "HackerOne",
+      "retrieved_at": "2026-10-02T23:01:00Z",
+      "supports": [
+        "reward"
+      ]
+    },
+    {
+      "id": "historical-currency-context",
+      "url": "https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/",
+      "title": "Bug bounty anniversary promotion: Bigger bounties in January and February",
+      "type": "vendor",
+      "author": "Neil Matatall / GitHub",
+      "retrieved_at": "2026-10-02T23:05:17Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-02T23:05:44Z",
+    "method": "Read primary public disclosures and corroborating sources; checked individual award scope. No target interaction or exploit reproduction.",
+    "limitations": [
+      "Payment is researcher-reported, not independently audited.",
+      "The reviewed HackerOne currency guideline is the current page, not a preserved 2023 policy snapshot.",
+      "Resolution on November 14 does not establish an exact final remediation date."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}
