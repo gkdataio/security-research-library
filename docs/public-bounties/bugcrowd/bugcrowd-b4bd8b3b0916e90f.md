@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T14:56:10Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $200 - $7,000.
+
+**Industry:** Computer Software.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/matlab-online/changelog/6b90f7f3-355b-406d-848e-3dfb0622f02a.json>)
 
 ## In-scope entries (1)

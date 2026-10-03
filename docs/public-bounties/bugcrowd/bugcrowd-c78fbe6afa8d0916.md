@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:52:18Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $4,500.
+
+**Industry:** Real Estate.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/rea-mbb-og/changelog/d9a84c1d-2911-4875-abbb-696accf7c084.json>)
 
 ## In-scope entries (30)

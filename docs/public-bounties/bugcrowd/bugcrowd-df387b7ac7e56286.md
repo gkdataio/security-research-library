@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:12Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $175 - $4,500.
+
+**Industry:** Technology.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/ultramobile-mobile-apps/changelog/549b0737-78c8-470e-82b3-e340512a83ab.json>)
 
 ## In-scope entries (2)

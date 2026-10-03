@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:19Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $3,500.
+
+**Industry:** Retail.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/maffashion/changelog/17e7a8a3-0049-417f-956e-6f7ae42679d0.json>)
 
 ## In-scope entries (13)

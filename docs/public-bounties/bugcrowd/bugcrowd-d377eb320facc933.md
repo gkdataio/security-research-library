@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:05Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $3,500.
+
+**Industry:** Hospitality.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/thefork-mbb-og/changelog/03044428-9524-46e6-8fb4-7b16a7a9032f.json>)
 
 ## In-scope entries (17)

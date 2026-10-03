@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:30Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $5,000.
+
+**Industry:** Transportation.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/vr-group-mbb-og1/changelog/e1932318-5130-4a41-9a7e-35cbd77e5015.json>)
 
 ## In-scope entries (1)

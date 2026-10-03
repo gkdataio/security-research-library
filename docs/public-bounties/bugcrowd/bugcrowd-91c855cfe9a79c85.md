@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:06Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $5,000.
+
+**Industry:** Finance.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/tidal-bugbounty/changelog/93be9e4d-159a-4ea9-a2b9-c77f1efd62f7.json>)
 
 ## In-scope entries (10)

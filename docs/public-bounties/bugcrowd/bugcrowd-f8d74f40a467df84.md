@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:25Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $15,000.
+
+**Industry:** Finance.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/etoro-mbb-og/changelog/9d02978a-c82f-4cbd-9af6-34d75b580305.json>)
 
 ## In-scope entries (8)

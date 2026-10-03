@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:49:10Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $50,000.
+
+**Industry:** Cloud.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/auth0-okta/changelog/3491b799-94fd-4a62-8ce0-1d5eaa0e09c6.json>)
 
 ## In-scope entries (25)

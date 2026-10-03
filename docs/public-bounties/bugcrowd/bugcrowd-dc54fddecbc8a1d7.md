@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T16:03:14Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Not displayed.
+
+**Industry:** Technology.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/barracuda/changelog/960b7330-755a-47de-b374-88877585aa8d.json>)
 
 ## In-scope entries (6)

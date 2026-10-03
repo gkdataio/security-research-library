@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:48:46Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $1,500.
+
+**Industry:** Not listed.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/accxia-gmbh/changelog/b56d3ca7-b60f-4c96-95d1-87313ae569bb.json>)
 
 ## In-scope entries (2)

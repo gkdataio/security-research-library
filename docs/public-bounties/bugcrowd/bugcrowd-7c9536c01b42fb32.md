@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:49:45Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $3,500.
+
+**Industry:** Government.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/68e42953-6e69-443a-b56f-7f1f33a636ed.json>)
 
 ## In-scope entries (25)

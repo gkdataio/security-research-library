@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:58Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $1,500.
+
+**Industry:** Computer Software.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/k15t/changelog/29204ba3-1a5d-40a8-ad4d-dc52c83d9d04.json>)
 
 ## In-scope entries (22)

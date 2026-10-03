@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:15Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $3,500.
+
+**Industry:** Telecommunications.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/ultramobile-retailer-portal/changelog/8b94e17f-eb94-48bb-9fdf-41bad293bc76.json>)
 
 ## In-scope entries (1)

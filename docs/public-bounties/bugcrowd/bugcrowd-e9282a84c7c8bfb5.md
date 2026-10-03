@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:01Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $100,000.
+
+**Industry:** Automotive.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/tesla/changelog/fd49b343-a058-4718-9b7b-dbb3199dc555.json>)
 
 ## In-scope entries (11)

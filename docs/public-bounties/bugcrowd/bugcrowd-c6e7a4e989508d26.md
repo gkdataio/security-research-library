@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:53:38Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $150 - $2,000.
+
+**Industry:** eCommerce.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/zola-mbb-og/changelog/6c840b8d-89e7-4cdb-a809-2c5a7f243164.json>)
 
 ## In-scope entries (2)

@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:26Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $10,000.
+
+**Industry:** eCommerce.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/etsy/changelog/4ab5bb40-ae5d-41de-a87e-56dfc61a7a11.json>)
 
 ## In-scope entries (10)

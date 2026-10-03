@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:40Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $8,000.
+
+**Industry:** Healthcare.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hotdoc/changelog/ca45da66-501a-492a-986f-9e34c130e1c5.json>)
 
 ## In-scope entries (3)

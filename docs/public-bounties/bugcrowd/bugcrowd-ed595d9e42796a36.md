@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:35Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $4,500.
+
+**Industry:** Healthcare.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/myfitnesspal-mbb/changelog/51bde1a9-f3e2-44b2-ba5b-55af984be7f2.json>)
 
 ## In-scope entries (3)

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dated public Bugcrowd vulnerability disclosure scope captures",
+  "type": "object",
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "directory_snapshot_date": {"type": "string", "format": "date"},
+    "captures": {"type": "array", "items": {"$ref": "#/$defs/capture"}}
+  },
+  "required": ["schema_version", "directory_snapshot_date", "captures"],
+  "additionalProperties": false,
+  "$defs": {
+    "capture": {
+      "type": "object",
+      "properties": {
+        "listing_id": {"type": "string", "minLength": 1},
+        "platform": {"const": "Bugcrowd"},
+        "name": {"type": "string", "minLength": 1},
+        "program_url": {"type": "string", "format": "uri"},
+        "directory_program_type": {"const": "vulnerability_disclosure"},
+        "captured_at": {"type": "string", "format": "date-time"},
+        "status": {"enum": ["captured", "no_published_assets", "fetch_failed"]},
+        "source_url": {"type": "string", "format": "uri"},
+        "source_method": {"const": "public_bugcrowd_scope_groups"},
+        "assets": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
+        "scope_groups": {"type": "integer", "minimum": 0},
+        "published_at": {"type": ["string", "null"]},
+        "error": {"type": "string", "minLength": 1}
+      },
+      "required": ["listing_id", "platform", "name", "program_url", "directory_program_type", "captured_at", "status"],
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "asset_type": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "location": {"type": ["string", "null"]},
+        "group": {"type": ["string", "null"]},
+        "scope": {"enum": ["in", "out"]}
+      },
+      "required": ["name", "asset_type", "location", "group", "scope"],
+      "additionalProperties": false
+    }
+  }
+}

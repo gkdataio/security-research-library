@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:33Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $5,000.
+
+**Industry:** Computer Hardware.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/motorolamobility-iot/changelog/a10ee0cf-8f1a-4b6b-8f47-c4a609f20c16.json>)
 
 ## In-scope entries (1)

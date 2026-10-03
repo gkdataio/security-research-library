@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:49:09Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $100 - $4,500.
+
+**Industry:** Games.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/aurory-mbb-og2/changelog/c9e4532a-1ed4-4c92-851d-c840eb872cd5.json>)
 
 ## In-scope entries (3)

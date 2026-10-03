@@ -4,7 +4,7 @@
 
 Directory observations alone are not verified policies or testing authorization. Linked scope-table captures have separate dates and do not establish complete rules, current submission availability or bounty eligibility. Counts identify distinct platform program pages, not deduplicated organizations.
 
-**1154 distinct program-page listings**; 33 link to an existing verified policy record, 33 of those have reviewed asset-scope snapshots, 567 additional listings have published scope tables captured, and 1121 await full policy review. These counts must not be added to verified-policy counts without removing overlap.
+**1156 distinct program-page listings**; 33 link to an existing verified policy record, 33 of those have reviewed asset-scope snapshots, 785 additional listings have published scope tables captured, and 1123 await full policy review. These counts must not be added to verified-policy counts without removing overlap.
 
 ## Coverage and continuation
 
@@ -46,6 +46,67 @@ All 13 bounty pages \(293 rows\) and 10 VDP pages \(223 rows\) visited\. Two rep
 - [Bugcrowd vdp page 8 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagements?category=vdp&sort_by=promoted&sort_direction=desc&page=8>); observed 2026-10-02T21:32:02Z.
 - [Bugcrowd vdp page 9 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagements?category=vdp&sort_by=promoted&sort_direction=desc&page=9>); observed 2026-10-02T21:32:02Z.
 - [Bugcrowd vdp page 10 \(7 rows; advertised 223\)](<https://bugcrowd.com/engagements?category=vdp&sort_by=promoted&sort_direction=desc&page=10>); observed 2026-10-02T21:32:02Z.
+
+### Bugcrowd
+
+Public Bug Bounty and Vulnerability Disclosure categories; Start date descending with a Promoted descending cross-check; no additional filters\. Pen Tests and private programs excluded\.
+
+Start-date sort returned 293 distinct Bug Bounty rows on 13 pages and 223 distinct VDP rows on 10 pages, matching each advertised count\. A second Promoted-sort pass repeated one URL in each category and omitted one corresponding URL; both omitted URLs appear in the start-date pass\. All 46 page responses are retained as sources\.
+
+**Next review:** Revisit both categories for newly published or withdrawn listings\. Review individual program policies and refresh dated asset scope before relying on a listing for research\.
+
+- Complete only for the visible public directory in this observation window; private, hidden and unlisted programs are not represented\.
+- An official directory response is listing evidence, not a reviewed program policy or permission to test an asset\.
+- Seven rows are external Bugcrowd listings on eu\.bugcrowd\.net or gov\.bugcrowd\.net; their policy pages may have different access behavior\.
+- Eight directory names contain demo/test wording; they are retained as candidates, not verified production programs\.
+- Five Bug Bounty-category rows lack a displayed monetary reward and retain unknown paid status\.
+- Directory accessStatus=open indicates public access, not independently verified report submission or payout eligibility\.
+- [Bugcrowd bug\_bounty starts page 1 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=1&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:56Z.
+- [Bugcrowd bug\_bounty starts page 2 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=2&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:56Z.
+- [Bugcrowd bug\_bounty starts page 3 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=3&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:56Z.
+- [Bugcrowd bug\_bounty starts page 4 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=4&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:56Z.
+- [Bugcrowd bug\_bounty starts page 5 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=5&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:57Z.
+- [Bugcrowd bug\_bounty starts page 6 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=6&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:57Z.
+- [Bugcrowd bug\_bounty starts page 7 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=7&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:57Z.
+- [Bugcrowd bug\_bounty starts page 8 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=8&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:57Z.
+- [Bugcrowd bug\_bounty starts page 9 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=9&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:57Z.
+- [Bugcrowd bug\_bounty starts page 10 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=10&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:58Z.
+- [Bugcrowd bug\_bounty starts page 11 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=11&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:58Z.
+- [Bugcrowd bug\_bounty starts page 12 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=12&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:58Z.
+- [Bugcrowd bug\_bounty starts page 13 \(5 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=13&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:40:58Z.
+- [Bugcrowd bug\_bounty promoted page 1 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=1&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:40:59Z.
+- [Bugcrowd bug\_bounty promoted page 2 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=2&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:40:59Z.
+- [Bugcrowd bug\_bounty promoted page 3 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=3&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:00Z.
+- [Bugcrowd bug\_bounty promoted page 4 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=4&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:40:59Z.
+- [Bugcrowd bug\_bounty promoted page 5 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=5&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:00Z.
+- [Bugcrowd bug\_bounty promoted page 6 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=6&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:00Z.
+- [Bugcrowd bug\_bounty promoted page 7 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=7&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:00Z.
+- [Bugcrowd bug\_bounty promoted page 8 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=8&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:00Z.
+- [Bugcrowd bug\_bounty promoted page 9 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=9&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:01Z.
+- [Bugcrowd bug\_bounty promoted page 10 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=10&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:01Z.
+- [Bugcrowd bug\_bounty promoted page 11 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=11&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:01Z.
+- [Bugcrowd bug\_bounty promoted page 12 \(24 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=12&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:02Z.
+- [Bugcrowd bug\_bounty promoted page 13 \(5 rows; advertised 293\)](<https://bugcrowd.com/engagement_listings?category=bug_bounty&page=13&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:01Z.
+- [Bugcrowd vdp starts page 1 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=1&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 2 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=2&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 3 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=3&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 4 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=4&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 5 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=5&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 6 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=6&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:03Z.
+- [Bugcrowd vdp starts page 7 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=7&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:04Z.
+- [Bugcrowd vdp starts page 8 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=8&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:05Z.
+- [Bugcrowd vdp starts page 9 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=9&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:04Z.
+- [Bugcrowd vdp starts page 10 \(7 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=10&sort_by=starts&sort_direction=desc>); observed 2026-10-03T16:41:04Z.
+- [Bugcrowd vdp promoted page 1 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=1&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:06Z.
+- [Bugcrowd vdp promoted page 2 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=2&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:06Z.
+- [Bugcrowd vdp promoted page 3 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=3&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:06Z.
+- [Bugcrowd vdp promoted page 4 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=4&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:06Z.
+- [Bugcrowd vdp promoted page 5 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=5&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
+- [Bugcrowd vdp promoted page 6 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=6&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
+- [Bugcrowd vdp promoted page 7 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=7&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
+- [Bugcrowd vdp promoted page 8 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=8&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
+- [Bugcrowd vdp promoted page 9 \(24 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=9&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
+- [Bugcrowd vdp promoted page 10 \(7 rows; advertised 223\)](<https://bugcrowd.com/engagement_listings?category=vdp&page=10&sort_by=promoted&sort_direction=desc>); observed 2026-10-03T16:41:07Z.
 
 ### HackerOne
 
@@ -110,7 +171,7 @@ Observed all 8 advertised pages: seven pages of 24 cards and final page of 20 \(
 
 Browse the separate platform pages. Type and status reflect only directory evidence; unknown stays explicit.
 
-- [Bugcrowd — 514 program-page listings](<program-discovery/bugcrowd.md>)
+- [Bugcrowd — 516 program-page listings](<program-discovery/bugcrowd.md>)
 - [HackerOne — 452 program-page listings](<program-discovery/hackerone.md>)
 - [Intigriti — 188 program-page listings](<program-discovery/intigriti.md>)
 

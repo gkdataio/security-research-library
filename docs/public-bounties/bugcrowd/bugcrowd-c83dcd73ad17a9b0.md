@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T16:03:19Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Not displayed.
+
+**Industry:** Not listed.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/odesk/changelog/d227fbed-0493-486e-a073-7dd275423337.json>)
 
 ## In-scope entries (1)

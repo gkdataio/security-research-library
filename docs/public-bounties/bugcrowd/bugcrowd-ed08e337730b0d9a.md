@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:31Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $7,500.
+
+**Industry:** Education.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/monash-mbb/changelog/78091ed2-458c-4c85-ba6b-f585fd7c6d72.json>)
 
 ## In-scope entries (48)

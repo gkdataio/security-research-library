@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:04Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $50 - $2,500.
+
+**Industry:** Technology.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/dell-com/changelog/93ea9025-907e-485e-b7a5-91709d64e741.json>)
 
 ## In-scope entries (6)

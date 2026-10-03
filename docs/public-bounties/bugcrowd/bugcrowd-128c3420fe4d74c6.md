@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T16:03:16Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Not displayed.
+
+**Industry:** Agriculture.
+
 ## In-scope entries (0)
 
 No explicit asset rows were captured in this category. The policy may still impose exclusions.

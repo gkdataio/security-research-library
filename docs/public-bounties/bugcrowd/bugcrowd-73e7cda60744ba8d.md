@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:22Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** Points - $6,500.
+
+**Industry:** Entertainment.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/entain-glf-mbb-og/changelog/3405453a-4ce4-4e30-ba62-ffa3af17807c.json>)
 
 ## In-scope entries (6)

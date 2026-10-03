@@ -12,6 +12,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:43Z.
 
+**Directory category:** Bug Bounty.
+
+**Displayed reward:** $200 - $6,000.
+
+**Industry:** Insurance.
+
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/northwestern-mutual-mbb-og/changelog/023b04b9-26c1-48eb-8fe2-142a83ebc901.json>)
 
 ## In-scope entries (8)
