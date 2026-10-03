@@ -20,7 +20,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/seek-com/changelog/c2e4716d-4e31-47ea-8617-5cbe2e818657.json>)
 
-## In-scope entries (18)
+## In-scope entries (9)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,19 +28,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ████████████ | website | — | █████████████████████ | — |
 | ███████████████ | website | — | █████████████████████ | — |
 | ██████████████████ | website | — | █████████████████████ | — |
-| ██████████████████ | website | — | █████████████████████ | — |
 | █████████████████ | website | — | █████████████████████ | — |
 | ██████████████ | website | — | █████████████████████ | — |
 | ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
 | ███████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| ████████████████████████████ | website | — | ██████████████████ | — |
-| █████████████████████ | website | — | ██████████████████ | — |
 | █████████████████████ | website | — | ██████████████████ | — |
 
 ## Out-of-scope entries (0)
@@ -50,4 +41,5 @@ No explicit asset rows were captured in this category. The policy may still impo
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 9 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

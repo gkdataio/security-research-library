@@ -24,5 +24,6 @@ No explicit asset rows were captured in this category. The policy may still impo
 
 **Limits**
 
-- Only the published asset table was captured; program rules and eligibility still require individual review\.
+- Full program policy review remains outstanding\.
 - No complete public scope table is available in this capture; consult the live official program page\.
+- The official program detail redirected to a terms page with a login or application gate\. No public asset rows were visible; terms prose alone was not treated as an asset list\.

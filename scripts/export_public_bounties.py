@@ -8,15 +8,12 @@ from urllib.parse import urlsplit
 
 from build_navigation import link, text
 from export_program_discovery import build as build_discovery
+from scope_integrity import (SOURCE_METHODS, capture_source_kind, source_belongs_to_program,
+                             validate_gap_review, validate_unique_scope_rows)
 from validate import ROOT, Invalid, check_schema
 
 
 PLATFORMS = ("Bugcrowd", "HackerOne", "Intigriti")
-SOURCE_HOSTS = {
-    "Bugcrowd": {"bugcrowd.com", "www.bugcrowd.com", "eu.bugcrowd.net", "gov.bugcrowd.net"},
-    "HackerOne": {"hackerone.com", "www.hackerone.com"},
-    "Intigriti": {"app.intigriti.com"},
-}
 STATUS_LABELS = {
     "captured": "Published scope captured",
     "no_published_assets": "No published asset rows found",
@@ -47,12 +44,22 @@ def load_captures(root, listings):
         if item["platform"] not in PLATFORMS:
             raise Invalid("unsupported scope capture platform")
         source_url = item.get("source_url")
-        if source_url and urlsplit(source_url).hostname not in SOURCE_HOSTS[item["platform"]]:
-            raise Invalid("scope capture source is not on the official platform: " + ident)
         status = item["status"]
+        if source_url:
+            if item.get("source_method") != SOURCE_METHODS[item["platform"]]:
+                raise Invalid("scope capture method disagrees with platform: " + ident)
+            kind = capture_source_kind(item["platform"], status)
+            if not source_belongs_to_program(item["platform"], item["program_url"], source_url, kind):
+                raise Invalid("scope source belongs to a different program: " + ident)
+        elif item.get("source_method"):
+            raise Invalid("scope capture method lacks a source URL: " + ident)
         assets = item.get("assets", [])
+        validate_unique_scope_rows(assets, ident)
+        validate_gap_review(item)
         if status == "captured" and (not assets or not source_url):
             raise Invalid("captured scope requires assets and official source: " + ident)
+        if item.get("duplicate_source_rows") and status != "captured":
+            raise Invalid("duplicate source row count requires a captured table: " + ident)
         if status in ("no_published_assets", "preview_only", "terms_only", "not_paid_bounty") and (assets or not source_url):
             raise Invalid("noncaptured scope must have an official source and no assets: " + ident)
         if status == "preview_only" and "/preview/" not in source_url:
@@ -66,7 +73,8 @@ def load_captures(root, listings):
                 raise Invalid("HackerOne bounty flag disagrees with capture status: " + ident)
         if status == "fetch_failed" and not item.get("error"):
             raise Invalid("failed scope fetch requires an error: " + ident)
-        if item.get("published_asset_count") is not None and len(assets) != item["published_asset_count"]:
+        if (item.get("published_asset_count") is not None
+                and len(assets) + item.get("duplicate_source_rows", 0) != item["published_asset_count"]):
             raise Invalid("published asset count does not match captured rows: " + ident)
         captures[ident] = item
     return data, captures
@@ -98,6 +106,8 @@ def catalog_record(listing, capture, verified, classification):
         captured_at = scope["verified_at"]
         limitations = scope["limitations"]
         review_state = "verified_policy_record"
+        duplicate_rows = 0
+        gap_review = None
     else:
         status = capture["status"] if capture else "not_attempted"
         captured_at = capture["captured_at"] if capture else None
@@ -105,11 +115,18 @@ def catalog_record(listing, capture, verified, classification):
         assets = capture.get("assets", []) if capture and status == "captured" else []
         in_scope = [{k: v for k, v in asset.items() if k != "scope"} for asset in assets if asset["scope"] == "in"]
         out_of_scope = [{k: v for k, v in asset.items() if k != "scope"} for asset in assets if asset["scope"] == "out"]
-        limitations = ["Only the published asset table was captured; program rules and eligibility still require individual review."]
+        limitations = (["Only the published asset table was captured; program rules and eligibility still require individual review."]
+                       if status == "captured" else ["Full program policy review remains outstanding."])
+        duplicate_rows = capture.get("duplicate_source_rows", 0) if capture else 0
+        gap_review = capture.get("gap_review") if capture else None
+        if duplicate_rows:
+            limitations.append(f"{duplicate_rows} repeated rows in the published table were collapsed in this catalog.")
         if any("█" in asset["name"] for asset in assets):
             limitations.append("The platform redacts at least one asset label; that row is not a usable target identifier.")
         if status != "captured":
             limitations.append("No complete public scope table is available in this capture; consult the live official program page.")
+        if gap_review:
+            limitations.append(gap_review["note"])
         review_state = "scope_table_only" if status == "captured" else "directory_listing_only"
     flags = []
     if "demo/test wording" in listing.get("evidence_note", ""):
@@ -125,6 +142,7 @@ def catalog_record(listing, capture, verified, classification):
         "id": listing["id"], "name": listing["name"], "platform": listing["platform"],
         "program_url": listing["program_url"], "bounty_classification": classification,
         "directory_card": listing.get("directory_card"),
+        "scope_source_duplicate_rows": duplicate_rows, "gap_review": gap_review,
         "policy_review_state": review_state, "verified_policy_id": listing["verified_policy_id"],
         "scope_status": status, "scope_captured_at": captured_at,
         "scope_source_urls": source_urls, "in_scope": in_scope, "out_of_scope": out_of_scope,
@@ -174,6 +192,7 @@ def build(root=ROOT):
         "with_review_flags": sum(bool(item["review_flags"]) for item in records),
         "in_scope_entries": sum(len(item["in_scope"]) for item in records),
         "out_of_scope_entries": sum(len(item["out_of_scope"]) for item in records),
+        "duplicate_source_rows_removed": sum(item["scope_source_duplicate_rows"] for item in records),
         "hackerone_nonbounty_flags": sum(item["platform"] == "HackerOne" and item["status"] == "not_paid_bounty" for item in captures.values()),
         "unconfirmed_bugcrowd_bounty_category": sum(item["bounty_classification"] == "official_bounty_category_paid_unverified" for item in records),
         "unclassified_queue_listings": sum(item["program_type"] == "unknown" and item["id"] not in captures

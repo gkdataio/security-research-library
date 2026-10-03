@@ -20,7 +20,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/xfinity-home/changelog/2a28998a-a3f5-4251-a7d6-cf3f735bb705.json>)
 
-## In-scope entries (26)
+## In-scope entries (22)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ████████████████████ | website | — | ███████████████ | — |
 | ███████████████████████████ | website | — | ███████████████ | — |
 | ██████████████████████████ | website | — | ███████████████ | — |
-| ██████████████████ | website | — | ███████████████ | — |
 | ██████████████████ | website | — | ███████████████ | — |
 | ███████████ | website | — | ███████████████ | — |
 | █████████████████ | website | — | ███████████████ | — |
@@ -42,21 +41,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ████████████████████ | iot | — | ███████████████ | — |
 | █████████████████████ | website | — | ███████████████ | — |
 | █████████████████ | api | — | ███████████████ | — |
-| █████████████████████ | website | — | ███████████████ | — |
 | █████████████████████ | api | — | ███████████████ | — |
 | ██████████████████████████████████ | hardware | — | ███████████████ | — |
 | ████████ | hardware | — | ███████████████ | — |
 | █████████████████████████████ | api | — | ███████████████ | — |
 | █████████████████████████ | api | — | ███████████████ | — |
-| █████████████████████ | api | — | ███████████████ | — |
-| █████████████████ | website | — | ███████████████ | — |
 
-## Out-of-scope entries (31)
+## Out-of-scope entries (20)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | ███████████████████████████████████████████████ | iot | — | ████████████ | — |
-| █████████████████ | website | — | ████████████ | — |
 | █████████████████ | website | — | ████████████ | — |
 | ██████████████████ | website | — | ████████████ | — |
 | ████████████████ | website | — | ████████████ | — |
@@ -65,29 +60,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | █████████████████████████ | website | — | ████████████ | — |
 | ████████████████████ | website | — | ████████████ | — |
 | ███████████████████ | website | — | ████████████ | — |
-| █████████████████ | website | — | ████████████ | — |
 | ██████████████ | website | — | ████████████ | — |
 | █████████████ | website | — | ████████████ | — |
 | ████████████ | website | — | ████████████ | — |
 | ███████████ | website | — | ████████████ | — |
-| ████████████ | website | — | ████████████ | — |
 | ████████████████████████ | website | — | ████████████ | — |
 | █████████████████████ | website | — | ████████████ | — |
-| ██████████████ | website | — | ████████████ | — |
-| ███████████ | website | — | ████████████ | — |
-| ███████████ | website | — | ████████████ | — |
 | ██████████ | network | — | ████████████ | — |
 | █████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
 | ███████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
-| ███████████████ | network | — | ████████████ | — |
-| ██████████████ | network | — | ████████████ | — |
 | ██████████████ | network | — | ████████████ | — |
 | ████████████████████████████ | website | — | ████████████ | — |
 
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 15 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

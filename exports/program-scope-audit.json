@@ -1,0 +1,642 @@
+{
+  "schema_version": "1.0.0",
+  "bugcrowd_snapshot_date": "2026-10-03",
+  "notice": "Counts cover dated public directory snapshots and published scope rows. A visible listing or captured table is not a complete policy review or authorization to test. Empty exclusions do not mean unrestricted scope.",
+  "counts": {
+    "verified_policy_records": 40,
+    "verified_with_asset_scope": 40,
+    "verified_in_scope_rows": 470,
+    "verified_out_of_scope_rows": 194,
+    "discovery_listings": 1156,
+    "discovery_verified_policy_overlap": 33,
+    "discovery_scope_tables_captured": 785,
+    "raw_bounty_capture_records": 833,
+    "raw_vdp_capture_records": 223,
+    "bugcrowd_public_listings": 516,
+    "bugcrowd_scope_captured": 507,
+    "bugcrowd_scope_gaps": 9,
+    "bugcrowd_in_scope_rows": 5621,
+    "bugcrowd_out_of_scope_rows": 1394,
+    "cross_platform_bounty_candidates": 627,
+    "bounty_by_platform": {
+      "Bugcrowd": 293,
+      "HackerOne": 222,
+      "Intigriti": 112
+    },
+    "bounty_scope_captured": 591,
+    "bounty_scope_gaps": 36,
+    "bounty_in_scope_rows": 9098,
+    "bounty_out_of_scope_rows": 3112,
+    "catalog_overlap": 293,
+    "distinct_catalog_programs": 850,
+    "distinct_scope_captured": 808,
+    "distinct_scope_gaps": 42,
+    "distinct_in_scope_rows": 11758,
+    "distinct_out_of_scope_rows": 3414,
+    "duplicate_source_rows_collapsed": 77,
+    "by_gap_status": {
+      "fetch_failed": 2,
+      "no_published_assets": 10,
+      "preview_only": 18,
+      "terms_only": 12
+    },
+    "by_gap_result": {
+      "empty_published_table": 7,
+      "http_403": 2,
+      "javascript_required": 3,
+      "preview_login_gate": 18,
+      "terms_login_gate": 12
+    },
+    "gap_pages_reviewed": 42
+  },
+  "unresolved_gaps": [
+    {
+      "id": "bugcrowd-1ee3d56124cf736f",
+      "name": "Arlo Kudos Rewards",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-1ee3d56124cf736f.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/arlokudos",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-eef3c6de790e5363",
+      "name": "Demo-EU-admin-PenTest-Max-4",
+      "platform": "Bugcrowd",
+      "status": "fetch_failed",
+      "visual_page": "docs/public-bounties/bugcrowd/bugcrowd-eef3c6de790e5363.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/demo-eu-admin-pentest-max-4",
+        "http_status": 403,
+        "result": "http_403",
+        "note": "The official public engagement page returned HTTP 403 during this review. Its policy and asset list were unavailable."
+      }
+    },
+    {
+      "id": "bugcrowd-128c3420fe4d74c6",
+      "name": "Demo-EU-admin-Test",
+      "platform": "Bugcrowd",
+      "status": "fetch_failed",
+      "visual_page": "docs/public-bounties/bugcrowd/bugcrowd-128c3420fe4d74c6.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/Demo-EU-admin-Test",
+        "http_status": 403,
+        "result": "http_403",
+        "note": "The official public engagement page returned HTTP 403 during this review. Its policy and asset list were unavailable."
+      }
+    },
+    {
+      "id": "bugcrowd-2ba4f933d6de7ca7",
+      "name": "Dyson Demo VDP Engagement",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-2ba4f933d6de7ca7.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/dyson-demo-vdp-engagement",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-0deaf756ac57137f",
+      "name": "EU-Automation-Test-Regression-Engagement1-B",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/public-bounties/bugcrowd/bugcrowd-0deaf756ac57137f.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-ff6465c6cc35cf62",
+      "name": "Office of Personnel Management - Vulnerability Disclosure Program",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-ff6465c6cc35cf62.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/opm-vdp",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-ee194a4857e12397",
+      "name": "Progress Software – Progress Data Cloud",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-ee194a4857e12397.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/progressdatacloud-vdp-pro",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-3c7ab64d8b64c31f",
+      "name": "Stickman 2",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-3c7ab64d8b64c31f.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/stickman2",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "bugcrowd-6df51f6ee18c7b08",
+      "name": "test engagement",
+      "platform": "Bugcrowd",
+      "status": "no_published_assets",
+      "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-6df51f6ee18c7b08.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/testing-vdp-pro",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
+    },
+    {
+      "id": "hackerone-506fc9236b351984",
+      "name": "CoinMate.io",
+      "platform": "HackerOne",
+      "status": "no_published_assets",
+      "visual_page": "docs/public-bounties/hackerone/hackerone-506fc9236b351984.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/coinmate/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
+    },
+    {
+      "id": "hackerone-be10e8ab9c7750da",
+      "name": "Django",
+      "platform": "HackerOne",
+      "status": "no_published_assets",
+      "visual_page": "docs/public-bounties/hackerone/hackerone-be10e8ab9c7750da.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/django/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
+    },
+    {
+      "id": "hackerone-0402fac19fe5f16c",
+      "name": "Phabricator",
+      "platform": "HackerOne",
+      "status": "no_published_assets",
+      "visual_page": "docs/public-bounties/hackerone/hackerone-0402fac19fe5f16c.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/phabricator/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
+    },
+    {
+      "id": "intigriti-f80b2fe8a24e9060",
+      "name": "12Build Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-f80b2fe8a24e9060.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/onetwobuild/12build/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-0c5bec9f65e46eb9",
+      "name": "Allekabels",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-0c5bec9f65e46eb9.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/rpip/allekabels/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-aa34891c6a4d965a",
+      "name": "Belfius",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-aa34891c6a4d965a.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/belfius/belfius/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-b89f92cb496b8747",
+      "name": "Brazzers Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-b89f92cb496b8747.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/brazzers-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-2310f52431fb92bd",
+      "name": "Capture Our Flag",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-2310f52431fb92bd.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/intigriti/captureourflag/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-a36852fc9ef38048",
+      "name": "Colruyt Group",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-a36852fc9ef38048.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/colruyt/colruytgroupidcheck/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-e01da94530cd8bf0",
+      "name": "Coveo Public Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-e01da94530cd8bf0.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-e4396437b33f824f",
+      "name": "Daytona Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-e4396437b33f824f.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/daytona/daytonabugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-247b5b0bf0908a57",
+      "name": "Doccle Bug Bounty program",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-247b5b0bf0908a57.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/doccle/doccle/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-1c92df8e83902323",
+      "name": "Farfetch Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-1c92df8e83902323.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/farfetch/farfetchbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-e2f3e3ddec74de2c",
+      "name": "Fortnox Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-e2f3e3ddec74de2c.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/fortnox/fortnox/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-b179780cc1d1f514",
+      "name": "Ideals Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-b179780cc1d1f514.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/ideals/ideals/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-c2b0db1b0d386293",
+      "name": "Intertoys",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-c2b0db1b0d386293.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/intertoys/intertoys/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-75e73143438d2023",
+      "name": "Kahoot Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-75e73143438d2023.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/kahoot/kahoot/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-11ea6c34a5fc8e32",
+      "name": "Leapsome",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-11ea6c34a5fc8e32.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/leapsome/leapsome/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-3b4650952b890d2a",
+      "name": "Liveperson Conversational Cloud",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-3b4650952b890d2a.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/liveperson/livepersonconversationalcloud/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-c1e7680283f3b791",
+      "name": "My.sdworx.com",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-c1e7680283f3b791.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/sdworx/myworkandme/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-6c718f89002da960",
+      "name": "MyDirtyHobby Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-6c718f89002da960.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/mydirtyhobby-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-faccd7a67d359b6c",
+      "name": "Newpharma",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-faccd7a67d359b6c.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/colruyt/newpharma/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-ae62addf0fe136d2",
+      "name": "Nutaku Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-ae62addf0fe136d2.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/nutaku-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-fa268c09399b222d",
+      "name": "Pornhub Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-fa268c09399b222d.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/pornhub-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-9b1c87de2b2d754c",
+      "name": "Probiller Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-9b1c87de2b2d754c.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/probiller-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-50368e0e356572c8",
+      "name": "RAMPF Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-50368e0e356572c8.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/rampf/rampfbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-4f3851c94514719c",
+      "name": "Telenet - Base - Wyre - Tadaam",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-4f3851c94514719c.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/telenet/telenetgroup/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-8307183f06cec029",
+      "name": "TrafficJunky Bug Bounty Program",
+      "platform": "Intigriti",
+      "status": "terms_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-8307183f06cec029.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/trafficjunky-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
+    },
+    {
+      "id": "intigriti-e80762bd94c58a62",
+      "name": "Ubisoft Game Security BBP",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-e80762bd94c58a62.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-545a9316e98fac09",
+      "name": "Uitgeverij Deviant Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-545a9316e98fac09.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/uitgeverijdeviant/uitgeverijdeviant/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-069d131a65f4f903",
+      "name": "UpCloud Bug Bounty",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-069d131a65f4f903.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/upcloud/upcloud/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-c2c21827100d7db4",
+      "name": "Webnode",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-c2c21827100d7db4.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/combell/webnode/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    },
+    {
+      "id": "intigriti-43c2b66cd2246ab7",
+      "name": "Wireless Logic",
+      "platform": "Intigriti",
+      "status": "preview_only",
+      "visual_page": "docs/public-bounties/intigriti/intigriti-43c2b66cd2246ab7.md",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/wl/wirelesslogic/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
+    }
+  ]
+}

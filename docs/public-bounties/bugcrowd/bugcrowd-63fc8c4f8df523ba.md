@@ -29,7 +29,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | █████████ | website | — | ███████████████ | — |
 | ███████████████████████████████████████ | website | — | █████████████████ | — |
 
-## Out-of-scope entries (17)
+## Out-of-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -38,12 +38,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | █████████████████████ | website | — | ████████████ | — |
 | ██████████ | network | — | ████████████ | — |
 | █████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
 | ███████████████ | network | — | ████████████ | — |
-| █████████████ | network | — | ████████████ | — |
-| ███████████████ | network | — | ████████████ | — |
-| ██████████████ | network | — | ████████████ | — |
 | ██████████████ | network | — | ████████████ | — |
 | █████████████ | website | — | ████████████ | — |
 | ███ | website | — | ████████████ | — |
@@ -54,4 +49,5 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 5 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

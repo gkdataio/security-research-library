@@ -28,8 +28,9 @@ No explicit asset rows were captured in this category. The policy may still impo
 
 **Limits**
 
-- Only the published asset table was captured; program rules and eligibility still require individual review\.
+- Full program policy review remains outstanding\.
 - No complete public scope table is available in this capture; consult the live official program page\.
+- The official public engagement page returned HTTP 403 during this review\. Its policy and asset list were unavailable\.
 
 **Review flags**
 

@@ -31,9 +31,23 @@
         "scope_groups": {"type": "integer", "minimum": 0},
         "published_at": {"type": ["string", "null"]},
         "html_has_assets_heading": {"type": "boolean"},
-        "error": {"type": "string", "minLength": 1}
+        "error": {"type": "string", "minLength": 1},
+        "duplicate_source_rows": {"type": "integer", "minimum": 1},
+        "gap_review": {"$ref": "#/$defs/gap_review"}
       },
       "required": ["listing_id", "platform", "name", "program_url", "directory_program_type", "captured_at", "status"],
+      "additionalProperties": false
+    },
+    "gap_review": {
+      "type": "object",
+      "properties": {
+        "reviewed_at": {"type": "string", "format": "date-time"},
+        "policy_url": {"type": "string", "format": "uri"},
+        "http_status": {"type": "integer", "minimum": 100},
+        "result": {"enum": ["http_403", "empty_published_table", "javascript_required", "preview_login_gate", "terms_login_gate"]},
+        "note": {"type": "string", "minLength": 1, "pattern": "\\S"}
+      },
+      "required": ["reviewed_at", "policy_url", "http_status", "result", "note"],
       "additionalProperties": false
     },
     "asset": {

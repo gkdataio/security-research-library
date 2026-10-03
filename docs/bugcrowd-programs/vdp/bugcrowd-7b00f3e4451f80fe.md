@@ -20,27 +20,21 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/latitudefinancial-vdp/changelog/b9503a26-7ba3-4be1-bac1-824c4c8d5d0e.json>)
 
-## In-scope entries (19)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | ██████████████████████ | website | — | ████████████████ | — |
 | ███████████████████ | website | — | ████████████████ | — |
-| ███████████████████ | website | — | ████████████████ | — |
 | █████████████████████ | website | — | ████████████████ | — |
 | ██████████████████ | website | — | ████████████████ | — |
 | ████████████████ | website | — | ████████████████ | — |
-| ████████████████ | website | — | ████████████████ | — |
 | ██████████████ | website | — | ████████████████ | — |
-| █████████████████████ | website | — | ████████████████ | — |
-| █████████████████████ | website | — | ████████████████ | — |
 | █████████████████████████ | website | — | ████████████████ | — |
 | ███████████████████████ | website | — | ████████████████ | — |
 | ██████████████████████████ | website | — | ████████████████ | — |
-| █████████████████████████ | website | — | ████████████████ | — |
 | █████████████████ | website | — | ████████████████ | — |
 | ████████████████████ | website | — | ████████████████ | — |
-| █████████████████ | website | — | ████████████████ | — |
 | ██████████████████████████ | api | — | ████████████████ | — |
 | ███████████████████████ | api | — | ████████████████ | — |
 
@@ -51,3 +45,4 @@ No explicit asset rows were captured in this category. The policy may still impo
 **Limits**
 
 - Only the published asset table was captured; program rules and submission eligibility still require individual review\.
+- 6 repeated rows in the published table were collapsed in this catalog\.

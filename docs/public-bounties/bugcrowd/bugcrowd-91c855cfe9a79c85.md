@@ -20,15 +20,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/tidal-bugbounty/changelog/93be9e4d-159a-4ea9-a2b9-c77f1efd62f7.json>)
 
-## In-scope entries (10)
+## In-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | ███████████ | website | — | ████████████████ | — |
 | ███████████████ | website | — | ████████████████ | — |
-| ███████████████ | website | — | ████████████████ | — |
 | █████████████ | api | — | ████████████████ | — |
-| ███████████ | website | — | ████████████████ | — |
 | ████████ | website | — | ████████████████ | — |
 | ████████████████████ | ios | — | ████████████████ | — |
 | ████████████████████████ | android | — | ████████████████ | — |
@@ -45,4 +43,5 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 2 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

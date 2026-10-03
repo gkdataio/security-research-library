@@ -20,7 +20,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/square/changelog/dcb212c3-8370-492c-803f-81a364c230df.json>)
 
-## In-scope entries (8)
+## In-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -29,7 +29,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | █████████████ | website | — | ██████ | — |
 | ███████████████████████████████████████████████████ | android | — | ██████ | — |
 | ███████████████████████████████████████████████ | ios | — | ██████ | — |
-| ███████████████ | hardware | — | ██████ | — |
 | ███████████████ | hardware | — | ██████ | — |
 | ██████████ | website | — | ██████ | — |
 
@@ -50,4 +49,5 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 1 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

@@ -11,7 +11,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Accxia Marketplace Bug Bounty](<bugcrowd/bugcrowd-48ea6e730ccb9ec9.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:48:46Z |
 | [Acorns Grow, Inc\.](<bugcrowd/bugcrowd-cc55fb914f763851.md>) | Published scope captured | 5 | 3 | 0 | 2026-10-03T15:48:53Z |
 | [Aelbox Marketplace Bug Bounty](<bugcrowd/bugcrowd-b06a1a7effe4c3de.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:48:54Z |
-| [Afterpay Bug Bounty Program](<bugcrowd/bugcrowd-bb5a580105b38587.md>) | Published scope captured | 16 | 3 | 0 | 2026-10-03T15:48:55Z |
+| [Afterpay Bug Bounty Program](<bugcrowd/bugcrowd-bb5a580105b38587.md>) | Published scope captured | 11 | 3 | 0 | 2026-10-03T15:48:55Z |
 | [agile doyens](<bugcrowd/bugcrowd-40d63da19d59ab5f.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:48:56Z |
 | [AgilePulse Marketplace Bug Bounty Program](<bugcrowd/bugcrowd-53ab5d6d174f0369.md>) | Published scope captured | 8 | 0 | 0 | 2026-10-03T15:48:57Z |
 | [Agilis LT Bug Bounty](<bugcrowd/bugcrowd-2e14b20f0897659c.md>) | Published scope captured | 10 | 0 | 0 | 2026-10-03T15:48:58Z |
@@ -57,7 +57,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Cash App](<bugcrowd/bugcrowd-4ae01efe77d11193.md>) | Published scope captured | 4 | 0 | 0 | 2026-10-03T15:49:36Z |
 | [Catapult Labs Bug Bounty](<bugcrowd/bugcrowd-b93ed611507ffd78.md>) | Published scope captured | 8 | 0 | 0 | 2026-10-03T15:49:37Z |
 | [celix Solutions GmbH Marketplace Bug Bounty Program](<bugcrowd/bugcrowd-8820163c04c73d60.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:49:38Z |
-| [Centers for Medicare &amp; Medicaid Services - Public Bug Bounty Program 2026](<bugcrowd/bugcrowd-3d5e38383524336c.md>) | Published scope captured | 8 | 2 | 0 | 2026-10-03T15:49:39Z |
+| [Centers for Medicare &amp; Medicaid Services - Public Bug Bounty Program 2026](<bugcrowd/bugcrowd-3d5e38383524336c.md>) | Published scope captured | 6 | 2 | 0 | 2026-10-03T15:49:39Z |
 | [Certinia \(formerly FinancialForce\)](<bugcrowd/bugcrowd-f2ebabd48ecc0d94.md>) | Published scope captured | 2 | 1 | 0 | 2026-10-03T15:49:40Z |
 | [Chime Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-8964c1e6392548d2.md>) | Published scope captured | 19 | 3 | 0 | 2026-10-03T15:49:41Z |
 | [Chipotle Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-3a8e20018e52789b.md>) | Published scope captured | 6 | 0 | 0 | 2026-10-03T15:49:42Z |
@@ -75,7 +75,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [CoinDesk Mobile](<bugcrowd/bugcrowd-97c6b628befd2294.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:49:54Z |
 | [CoinDesk\.com](<bugcrowd/bugcrowd-1073ae037a9090fb.md>) | Published scope captured | 1 | 10 | 0 | 2026-10-03T15:49:55Z |
 | [Colined](<bugcrowd/bugcrowd-bceb812177a6d343.md>) | Published scope captured | 6 | 0 | 0 | 2026-10-03T15:49:56Z |
-| [Comcast Xfinity Bug Bounty](<bugcrowd/bugcrowd-63fc8c4f8df523ba.md>) | Published scope captured | 4 | 17 | 0 | 2026-10-03T15:49:57Z |
+| [Comcast Xfinity Bug Bounty](<bugcrowd/bugcrowd-63fc8c4f8df523ba.md>) | Published scope captured | 4 | 12 | 0 | 2026-10-03T15:49:57Z |
 | [Comcast Xfinity Vulnerability Disclosure Program](<bugcrowd/bugcrowd-1ac62d06fac741a7.md>) | Published scope captured | 6 | 1 | 0 | 2026-10-03T15:49:58Z |
 | [Consensus by CoinDesk](<bugcrowd/bugcrowd-1e4d6d7de511a779.md>) | Published scope captured | 1 | 9 | 0 | 2026-10-03T15:49:59Z |
 | [Council on Foreign Relations](<bugcrowd/bugcrowd-f63d7f44f611c7d9.md>) | Published scope captured | 3 | 4 | 0 | 2026-10-03T15:50:00Z |
@@ -167,7 +167,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Mastercard Public Bug Bounty](<bugcrowd/bugcrowd-9cac9944ac97cc74.md>) | Published scope captured | 22 | 0 | 0 | 2026-10-03T15:51:24Z |
 | [MATLAB Online - Ongoing Bug Bounty Engagement](<bugcrowd/bugcrowd-b4bd8b3b0916e90f.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T14:56:10Z |
 | [Mattermost Public Bug Bounty Engagement](<bugcrowd/bugcrowd-8965552f30be5e0b.md>) | Published scope captured | 16 | 7 | 0 | 2026-10-03T15:51:25Z |
-| [Meetical](<bugcrowd/bugcrowd-e0dfaa34918b0ab2.md>) | Published scope captured | 4 | 0 | 0 | 2026-10-03T15:51:26Z |
+| [Meetical](<bugcrowd/bugcrowd-e0dfaa34918b0ab2.md>) | Published scope captured | 3 | 0 | 0 | 2026-10-03T15:51:26Z |
 | [META-INF](<bugcrowd/bugcrowd-47fd8590e5ec12ce.md>) | Published scope captured | 7 | 0 | 0 | 2026-10-03T15:51:27Z |
 | [MGM China Holdings Limited Managed Bug Bounty Program](<bugcrowd/bugcrowd-26449df1f3798802.md>) | Published scope captured | 12 | 3 | 0 | 2026-10-03T15:51:29Z |
 | [MobilityStream Bug Bounty](<bugcrowd/bugcrowd-41bbf7a8aac7694e.md>) | Published scope captured | 15 | 0 | 0 | 2026-10-03T15:51:30Z |
@@ -211,7 +211,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Pixabay](<bugcrowd/bugcrowd-571e7853e571876f.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:52:03Z |
 | [PlanetHoster Bug Bounty](<bugcrowd/bugcrowd-ffe80e0a39b98503.md>) | Published scope captured | 5 | 0 | 0 | 2026-10-03T15:52:04Z |
 | [Plusgrade Loyalty Public Program](<bugcrowd/bugcrowd-26955c64dcfb76a4.md>) | Published scope captured | 2 | 2 | 0 | 2026-10-03T15:52:05Z |
-| [PNI Media - Bug Bounty](<bugcrowd/bugcrowd-0670535f899adf47.md>) | Published scope captured | 59 | 5 | 0 | 2026-10-03T15:52:06Z |
+| [PNI Media - Bug Bounty](<bugcrowd/bugcrowd-0670535f899adf47.md>) | Published scope captured | 33 | 5 | 0 | 2026-10-03T15:52:06Z |
 | [Presago Marketplace Bug Bounty Program](<bugcrowd/bugcrowd-b7f50402edbce8ef.md>) | Published scope captured | 10 | 0 | 0 | 2026-10-03T15:52:08Z |
 | [Programmer Hat Marketplace Bug Bounty Program](<bugcrowd/bugcrowd-ef2aa16121ee462d.md>) | Published scope captured | 6 | 0 | 0 | 2026-10-03T15:52:09Z |
 | [ProjectBalm](<bugcrowd/bugcrowd-5e0fbed3286fbb2c.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:52:10Z |
@@ -224,7 +224,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Raley Apps](<bugcrowd/bugcrowd-a32ac2750258b402.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:52:17Z |
 | [Rapyd](<bugcrowd/bugcrowd-9977a9c172a632fe.md>) | Published scope captured | 10 | 11 | 0 | 2026-10-03T14:56:21Z |
 | [REA Group \| realestate\.com\.au, realcommercial\.com\.au, property\.com\.au](<bugcrowd/bugcrowd-c78fbe6afa8d0916.md>) | Published scope captured | 30 | 129 | 0 | 2026-10-03T15:52:18Z |
-| [Rec Room Video Games](<bugcrowd/bugcrowd-ac7779f0b4aa65b9.md>) | Published scope captured | 15 | 0 | 0 | 2026-10-03T15:52:19Z |
+| [Rec Room Video Games](<bugcrowd/bugcrowd-ac7779f0b4aa65b9.md>) | Published scope captured | 12 | 0 | 0 | 2026-10-03T15:52:19Z |
 | [Recorded Future Public Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-707dcd792086376b.md>) | Published scope captured | 20 | 0 | 0 | 2026-10-03T15:52:20Z |
 | [Redmoon](<bugcrowd/bugcrowd-7a1b4fb31a5ba552.md>) | Published scope captured | 5 | 0 | 0 | 2026-10-03T15:52:21Z |
 | [Refined](<bugcrowd/bugcrowd-18ad6bd5f24792d6.md>) | Published scope captured | 8 | 0 | 0 | 2026-10-03T15:52:22Z |
@@ -240,7 +240,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [SecureDrop](<bugcrowd/bugcrowd-7440fb39ee67de1a.md>) | Published scope captured | 3 | 0 | 0 | 2026-10-03T15:52:33Z |
 | [SecureFlag Marketplace Bug Bounty](<bugcrowd/bugcrowd-eb13449fb7aa9493.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:52:34Z |
 | [SEEK](<bugcrowd/bugcrowd-fa190530d12ab00d.md>) | Published scope captured | 18 | 0 | 0 | 2026-10-03T15:52:35Z |
-| [Seek\.com](<bugcrowd/bugcrowd-fa369eff5afec47f.md>) | Published scope captured | 18 | 0 | 0 | 2026-10-03T15:52:36Z |
+| [Seek\.com](<bugcrowd/bugcrowd-fa369eff5afec47f.md>) | Published scope captured | 9 | 0 | 0 | 2026-10-03T15:52:36Z |
 | [Shinetech Software Inc Marketplace Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-1c78c73cebd5a0eb.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:52:37Z |
 | [SimpliSafe Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-b453878121ec1606.md>) | Published scope captured | 24 | 7 | 0 | 2026-10-03T15:52:38Z |
 | [Skroutz Public Managed Bug Bounty](<bugcrowd/bugcrowd-ed73386dabe2aacd.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:52:39Z |
@@ -255,7 +255,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [Soteri Marketplace Bug Bounty](<bugcrowd/bugcrowd-6e1a96cd94993d4f.md>) | Published scope captured | 5 | 0 | 0 | 2026-10-03T15:52:49Z |
 | [SoundCloud](<bugcrowd/bugcrowd-9d9f8f6730052dfa.md>) | Published scope captured | 10 | 17 | 0 | 2026-10-03T15:52:50Z |
 | [SpaceX/Starlink](<bugcrowd/bugcrowd-93db9847dd214c6d.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:52:51Z |
-| [Square](<bugcrowd/bugcrowd-5dbe680990001fd6.md>) | Published scope captured | 8 | 9 | 0 | 2026-10-03T15:52:52Z |
+| [Square](<bugcrowd/bugcrowd-5dbe680990001fd6.md>) | Published scope captured | 7 | 9 | 0 | 2026-10-03T15:52:52Z |
 | [STAGIL Marketplace Bug Bounty](<bugcrowd/bugcrowd-88b7710849a7e851.md>) | Published scope captured | 3 | 0 | 0 | 2026-10-03T15:52:53Z |
 | [Statuspage](<bugcrowd/bugcrowd-e84d27dd9e44e18b.md>) | Published scope captured | 2 | 0 | 0 | 2026-10-03T15:52:54Z |
 | [Stiltsoft](<bugcrowd/bugcrowd-d4b607788ef63337.md>) | Published scope captured | 14 | 1 | 0 | 2026-10-03T15:52:55Z |
@@ -268,7 +268,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [The Plugin People](<bugcrowd/bugcrowd-0f5512b619865d49.md>) | Published scope captured | 7 | 0 | 0 | 2026-10-03T15:53:03Z |
 | [The Trade Desk](<bugcrowd/bugcrowd-be6f5e6db3043f04.md>) | Published scope captured | 38 | 15 | 0 | 2026-10-03T15:53:04Z |
 | [TheFork Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-d377eb320facc933.md>) | Published scope captured | 17 | 10 | 0 | 2026-10-03T15:53:05Z |
-| [TIDAL](<bugcrowd/bugcrowd-91c855cfe9a79c85.md>) | Published scope captured | 10 | 2 | 0 | 2026-10-03T15:53:06Z |
+| [TIDAL](<bugcrowd/bugcrowd-91c855cfe9a79c85.md>) | Published scope captured | 8 | 2 | 0 | 2026-10-03T15:53:06Z |
 | [ToolsPlus](<bugcrowd/bugcrowd-2224351fa688572d.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:53:07Z |
 | [Trello](<bugcrowd/bugcrowd-541d2903477c1432.md>) | Published scope captured | 13 | 4 | 0 | 2026-10-03T15:53:08Z |
 | [Tripadvisor](<bugcrowd/bugcrowd-de65e70dca5aed5d.md>) | Published scope captured | 27 | 26 | 0 | 2026-10-03T15:53:09Z |
@@ -295,7 +295,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [weweave UG Marketplace Bug Bounty](<bugcrowd/bugcrowd-443621b4bcaff6c1.md>) | Published scope captured | 24 | 0 | 0 | 2026-10-03T15:53:31Z |
 | [Wise \(ex-TransferWise\)](<bugcrowd/bugcrowd-a85ce135751be9ce.md>) | Published scope captured | 9 | 22 | 0 | 2026-10-03T15:53:32Z |
 | [Wyze Bug Bounty](<bugcrowd/bugcrowd-ef99b236755f5621.md>) | Published scope captured | 5 | 0 | 0 | 2026-10-03T15:53:33Z |
-| [Xfinity Home &amp; xFi](<bugcrowd/bugcrowd-34ee7f01629a6e29.md>) | Published scope captured | 26 | 31 | 0 | 2026-10-03T15:53:34Z |
+| [Xfinity Home &amp; xFi](<bugcrowd/bugcrowd-34ee7f01629a6e29.md>) | Published scope captured | 22 | 20 | 0 | 2026-10-03T15:53:34Z |
 | [Xopero Software S\.A\. Marketplace Managed Bug Bounty Engagement](<bugcrowd/bugcrowd-dd8f6d08a25c77a0.md>) | Published scope captured | 1 | 0 | 0 | 2026-10-03T15:53:35Z |
 | [YNAB](<bugcrowd/bugcrowd-17548c34cd66c465.md>) | Published scope captured | 3 | 5 | 0 | 2026-10-03T15:53:36Z |
 | [Zola Managed Bug Bounty](<bugcrowd/bugcrowd-c6e7a4e989508d26.md>) | Published scope captured | 2 | 5 | 0 | 2026-10-03T15:53:38Z |
