@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T08:59:00Z",
+  "latest_reviewed_at": "2026-10-03T09:50:24Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 59,
+    "included": 60,
     "within_preferred_window": 23,
-    "older_or_uncertain": 36,
-    "bug_bounty": 48,
+    "older_or_uncertain": 37,
+    "bug_bounty": 49,
     "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -9060,6 +9060,158 @@
           "January 2026 page dates may reflect publication or archive migration; original disclosure is not established.",
           "USD normalization uses earlier official program context rather than an award receipt.",
           "A separate grant-binding flaw is alleged and described as disputed; vendor confirmation and its precise fix date are unverified."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "meta-conversions-gateway-generated-script-boundary-2025",
+      "title": "Meta Conversions API Gateway mixed configuration data with executable output",
+      "organization": "Meta",
+      "product": "Conversions API Gateway",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "injection",
+      "secondary_category_ids": [
+        "client-security",
+        "supply-chain"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "summary": "The researcher attributes a USD 250,000 award to the article’s separately identified backend finding, Bug #2.",
+      "root_cause": "Configuration values were concatenated into generated JavaScript without context-safe serialization. Stored data thereby acquired the authority of executable output.",
+      "impact": "The researcher reports stored script execution in consuming pages and potential account compromise. The article does not fully establish configuration-write prerequisites or independently substantiate its broader deployment and employee-system impact claims.",
+      "defensive_takeaways": [
+        "Keep configuration data separate from executable source; use context-appropriate serialization and structured interfaces.",
+        "Treat shared analytics code as part of the consuming application’s trusted computing base.",
+        "Document configuration-write permissions, downstream consumers and remediation coverage independently; do not infer universal compromise from shared distribution."
+      ],
+      "reward": {
+        "amount": 250000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "$250,000 bounty awarded by Meta for Bug #2",
+        "evidence_location": "Timeline, January 16, 2025 entry explicitly assigned to Bug #2",
+        "usd_equivalent": null,
+        "notes": "Only Bug #2 is represented. The separately awarded Bug #1 is excluded; no awards are summed. The source uses $. USD is inferred from official 2020 program reporting, five years before this award, rather than an individual payment receipt. No bonus or settlement is established."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Current page header is January 13, 2026; a separately indexed 2025 URL also exists. Original publication versus archive migration or republication is not established."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Earliest public disclosure is not established."
+        },
+        "reported": {
+          "value": "2024-11-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Timeline entry specifically identified as Bug #2."
+        },
+        "awarded": {
+          "value": "2025-01-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Timeline entry specifically identified as Bug #2."
+        },
+        "fixed": {
+          "value": "2025-01-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Timeline entry specifically identified as Bug #2."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Original publication is unknown. The January 2026 archive header is not counted as a new disclosure."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://ysamm.com/uncategorized/2026/01/13/capig-xss.html",
+          "title": "Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover",
+          "type": "researcher",
+          "author": "Youssef Sammouda",
+          "retrieved_at": "2026-10-03T09:50:24Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Facebook Bug Bounty and BountyCon US-dollar reporting",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-03T09:50:24Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-03T09:50:24Z",
+        "method": "Read the primary article and separately assigned reward timeline; reviewed official currency context and checked the existing report inventory for duplicate identity.",
+        "limitations": [
+          "Researcher-reported award; neither vendor confirmation of this individual award nor payment settlement was established.",
+          "USD denomination uses official program context published five years before the award and is not an individual payment audit.",
+          "Original publication remains unknown; current archive dates must not inflate recency.",
+          "Only the backend configuration-to-script finding, labeled Bug #2, is included. The article also describes a different client-side finding with a separate award.",
+          "Configuration-write prerequisites, remediation implementation and broad deployment or employee-system consequences are not independently verified."
         ]
       },
       "content_scope": "historical_defensive_summary"
