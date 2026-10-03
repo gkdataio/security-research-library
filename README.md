@@ -1,8 +1,30 @@
 # Security Research Library
 
+![GKData — Evidence before inference. Public disclosures, clear boundaries, reusable knowledge.](docs/assets/readme/header.svg)
+
+[![Evidence: Source-backed](docs/assets/readme/source-backed.svg)](DATA_POLICY.md)
+[![Original educational content: CC BY 4.0](docs/assets/readme/content-license.svg)](LICENSE.md#educational-content-cc-by-40)
+[![Original software: MIT](docs/assets/readme/code-license.svg)](LICENSE.md#software-mit)
+
 Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) · [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) · [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[![Read reports](docs/assets/readme/read-reports.svg)](docs/reports.md)
+[![Program catalogs](docs/assets/readme/program-catalogs.svg)](#browse-the-library)
+[![Learning guide](docs/assets/readme/learning-guide.svg)](docs/learning-guide.md)
+[![Use the JSON](docs/assets/readme/use-json.svg)](#use-the-json)
+
+### Browse the library
+
+| Explore | Guides and catalogs |
+|---|---|
+| **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
+| **Programs** | [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) |
+| **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) |
+| **Learn** | [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) |
+| **Visuals** | [Diagram gallery](docs/diagram-gallery.md) · [Visual guide](docs/visual-theory.md) |
+| **Reuse** | [Use the JSON](#use-the-json) · [Licensing](LICENSE.md) |
+
+**On this page:** [At a glance](#at-a-glance) · [Start here](#start-here) · [Report contents](#what-each-report-contains) · [JSON contracts](#use-the-json) · [Validation](#validate-and-regenerate) · [Report index](#report-index) · [Scope and attribution](#scope-maintenance-and-attribution)
 
 ## At a glance
 
@@ -230,4 +252,5 @@ For updates, follow the [maintenance policy](DATA_POLICY.md#release-procedure): 
 ## Licensing
 
 Original maintenance code, tests and schemas use [MIT](LICENSES/MIT.txt). Original educational documentation, summaries and diagrams use [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [license scope and attribution guide](LICENSE.md) for canonical JSON, mixed exports and third-party exclusions. Facts are not claimed as proprietary; source reports and quotations retain their own rights.
+
 

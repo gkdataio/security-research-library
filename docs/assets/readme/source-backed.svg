@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="222" height="28" viewBox="0 0 222 28" role="img" aria-label="Evidence: Source-backed">
+<title>Evidence: Source-backed</title>
+<desc>Evidence: Source-backed. Original static artwork for the Security Research Library.</desc>
+<rect x="1" y="1" width="220" height="26" rx="5" fill="#141818" stroke="#353c38"/>
+<line x1="90" y1="1" x2="90" y2="27" stroke="#353c38"/>
+<text x="12" y="19" fill="#a9afa6" font-family="monospace" font-size="11">EVIDENCE</text>
+<text x="101" y="19" fill="#eeede5" font-family="Arial, sans-serif" font-size="12">Source-backed</text>
+</svg>

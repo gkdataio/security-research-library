@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="122" height="28" viewBox="0 0 122 28" role="img" aria-label="Code: MIT">
+<title>Code: MIT</title>
+<desc>Code: MIT. Original static artwork for the Security Research Library.</desc>
+<rect x="1" y="1" width="120" height="26" rx="5" fill="#141818" stroke="#353c38"/>
+<line x1="66" y1="1" x2="66" y2="27" stroke="#353c38"/>
+<text x="12" y="19" fill="#a9afa6" font-family="monospace" font-size="11">CODE</text>
+<text x="77" y="19" fill="#eeede5" font-family="Arial, sans-serif" font-size="12">MIT</text>
+</svg>
