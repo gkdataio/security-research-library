@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "id": "better-auth-2026-local-account-linking-verification",
+  "title": "Better Auth: incoming identity proof does not validate existing credentials",
+  "publisher": "Better Auth",
+  "authors": [
+    "gustavovalverde"
+  ],
+  "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "integration-threat-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-53516 concerns implicit linking to an unverified local account. Provider-side email verification was allowed to confer legitimacy on previously stored local credentials. The resulting merged identity could retain an unauthorized password-based login even when ordinary email verification was required.",
+  "defensive_use": "Editorial reasoning: linking combines authorities, so prove ownership on both sides before merging credentials. Requiring verification only after the merge cannot establish who created the earlier password. Release 1.6.11 corroborates a verified-local-email gate; the advisory also identifies 1.7.0-beta.4 as patched. Disabling implicit linking is a documented interim control.",
+  "prerequisites": [
+    "OAuth identity-provider claims and local account-linking concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure and release notes."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-05-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource edition date established; software remediation is recorded separately."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T14:39:59.794959Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory and release notes reviewed; no independent reproduction or deployment assessment."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7",
+      "title": "better-auth: OAuth sign-in can link to an account an attacker registered in advance",
+      "publisher": "Better Auth",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:39:59.794959Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/better-auth/better-auth/releases/tag/v1.6.11",
+      "title": "Release v1.6.11",
+      "publisher": "Better Auth",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:39:59.794959Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires email/password sign-in, OAuth or SSO, implicit linking, and an existing unverified local account before the legitimate federated sign-in. Impact is account access, not compromise of the identity provider.",
+    "The advisory lists stable versions below 1.6.11 and 1.7.0-beta.0 through beta.3. Its deprecated compatibility opt-out restores weaker linking behavior.",
+    "gustavovalverde published the advisory; avrmeduard is credited as reporter. Release notes show May 12 without an explicit year in retrieved text; exact patch date is left unestablished.",
+    "Maintainer disclosure, not a peer-reviewed paper, award-backed report, or evidence of production exploitation."
+  ],
+  "content_scope": "defensive_education"
+}
