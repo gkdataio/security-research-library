@@ -141,7 +141,7 @@ The `vulns-co.json` filename identifies a future adaptation target. Compatibilit
 ### Interpret the evidence carefully
 
 - **Award type and scope matter.** Competition entries are labeled separately from bug bounties. A chain or team entry is counted once, not once per CVE or researcher. Program maximums, career earnings, and event totals do not qualify.
-- **Awarded is different from paid.** Use `reward.status`, `reward.evidence_level`, the evidence source, and the record's limitations together. Researcher-published vendor correspondence remains researcher-published evidence.
+- **Awarded is different from paid.** Use `reward.status`, `reward.evidence_level`, the evidence source, and the record's limitations together. Researcher-published vendor correspondence remains researcher-published evidence. Where an individual source uses only $, any contextual USD inference and its temporal gap are stated in the record; program-wide currency context does not confirm an individual payment’s denomination or settlement.
 - **Dates have different meanings.** Publication, reporting, award, mitigation, fix, and payment dates are stored separately with precision and provenance. Unknown values remain `null`.
 - **Recency follows publication.** `recency.as_of` is a review date, not evidence that a vulnerability is still present. An archive timestamp or later page update does not establish the original publication date.
 - **Attribution stays explicit.** An empty researcher array means the reviewed source did not identify a researcher. Editorial CWE mappings are distinguished from source-supplied classifications.

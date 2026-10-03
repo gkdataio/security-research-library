@@ -18,7 +18,7 @@
     "concurrency-reasoning",
     "authorization-modeling"
   ],
-  "summary": "The cited researcher documents a USD 10,000 award for this finding.",
+  "summary": "The researcher reports a $10,000 award for this finding. USD is a contextual currency inference from Facebook’s later official retrospective of its 2019 bounty program, not an explicit denomination in the individual award statement.",
   "root_cause": "Recovery challenge state did not maintain sufficiently strict binding among account, device context, and verification secret. Review challenge ownership and uniqueness throughout the recovery lifecycle.",
   "impact": "Researcher reports a separate, lower-severity account-takeover finding, fixed before publication.",
   "defensive_takeaways": [
@@ -37,7 +37,7 @@
     "evidence_quote": "Facebook and Instagram security team fixed the issue and rewarded me $10000 as a part of their bounty program.",
     "evidence_location": "Primary article award statement",
     "usd_equivalent": null,
-    "notes": "Individual finding, distinct from the researcher’s other Instagram recovery report; exact award/payment dates are unknown."
+    "notes": "Individual finding, distinct from the researcher’s other Instagram recovery report; no additional bonus is counted. The primary article states $10000 without naming the currency. USD is a contextual inference from source-3, Facebook’s official 2019 program retrospective published February 7, 2020, roughly six months after the August 25, 2019 original article publication. The retrospective reports program-wide amounts in USD; it does not independently establish the denomination or settlement of this individual award. Exact award/payment dates remain unknown."
   },
   "dates": {
     "published": {
@@ -111,7 +111,7 @@
       "title": "Instagram recovery challenges were insufficiently bound to accounts",
       "type": "researcher",
       "author": "Laxman Muthiyah",
-      "retrieved_at": "2026-10-02T14:43:00Z",
+      "retrieved_at": "2026-10-03T23:51:11Z",
       "supports": [
         "reward",
         "dates",
@@ -129,18 +129,30 @@
       "supports": [
         "dates"
       ]
+    },
+    {
+      "id": "source-3",
+      "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+      "title": "Facebook 2019 Bug Bounty retrospective — contextual USD denomination only",
+      "type": "vendor",
+      "author": "Dan Gurfinkel / Facebook",
+      "retrieved_at": "2026-10-03T23:50:58Z",
+      "supports": [
+        "reward"
+      ]
     }
   ],
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T14:43:00Z",
-    "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+    "reviewed_at": "2026-10-03T23:53:25Z",
+    "method": "Re-read the primary article award statement and Facebook’s official 2019 program retrospective for contextual currency evidence. Existing publication chronology retained. No target testing performed.",
     "limitations": [
       "The current 2024 article header is not the original disclosure date",
       "Exact report, fix, and award dates are unavailable",
       "No independent vendor-hosted payout confirmation retrieved",
-      "Current article update: 2024-12-06; original publication is stored separately."
+      "Current article update: 2024-12-06; original publication is stored separately.",
+      "USD is inferred from later program-wide context (source-3), not explicitly stated by the individual award source; neither individual denomination nor cash settlement is independently confirmed."
     ]
   },
   "content_scope": "historical_defensive_summary"
