@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "id": "axios-2026-streamed-upload-budget-enforcement",
+  "title": "Axios: enforce upload budgets across transport implementations",
+  "publisher": "Axios",
+  "authors": [
+    "jasonsaayman"
+  ],
+  "primary_url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "summary": "CVE-2026-68948 documents a transport-contract mismatch: an application configured an outbound body limit, but the HTTP/2 stream path delegated to a transport that did not enforce it. The maintainer-published report describes local observation of transmission beyond that budget. Bandwidth, quota and availability consequences are application-dependent; the advisory excludes code execution, credential disclosure and destination control.",
+  "defensive_use": "The maintainer identifies 1.18.0 as patched. Review byte-budget enforcement as an invariant shared by transport adapters. The merged remediation describes consistent upload/content limits and regression coverage. Editorial lesson: enforce limits during consumption of unknown-length input and ensure failure cancels downstream work; configuration metadata alone is not enforcement.",
+  "prerequisites": [
+    "HTTP transport adapters and streamed request bodies",
+    "Resource budgets and failure propagation"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and remediation references readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established; software patch chronology is retained in the caveats."
+    },
+    "source_displayed": {
+      "value": "2026-07-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed beside the advisory publisher."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T07:39:01Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed maintainer advisory, release and merged remediation discussion; no vulnerability reproduction or independent patch testing performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
+      "title": "HTTP/2 streamed uploads bypass maxBodyLength",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/axios/axios/releases/tag/v1.18.0",
+      "title": "Axios v1.18.0 release",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    },
+    {
+      "id": "remediation",
+      "url": "https://github.com/axios/axios/pull/11000",
+      "title": "Merged request hardening and stream-limit changes",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires untrusted stream influence, the Node HTTP adapter using HTTP/2, and a finite configured body limit. Buffered bodies and browser adapters are excluded from this advisory.",
+    "The advisory credits asadeddin as reporter; jasonsaayman is the publishing maintainer, not an inferred discoverer.",
+    "The advisory retains old prose saying no fixed release exists, while its patched-version metadata identifies 1.18.0 and the dated release corroborates stream-limit hardening. These distinct source states are preserved.",
+    "No production incident, measured billing loss or bounty amount was established. Learning prerequisites and generalized design advice are editorial.",
+    "The cited software release is dated 2026-06-13; it is distinct from the advisory publication and is not a claim about the latest available release."
+  ],
+  "content_scope": "defensive_education"
+}

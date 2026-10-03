@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 44,
+    "resources": 46,
     "diagrams": 9
   },
   "taxonomy": {
@@ -449,12 +449,117 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "axios-2026-streamed-upload-budget-enforcement",
+      "title": "Axios: enforce upload budgets across transport implementations",
+      "publisher": "Axios",
+      "authors": [
+        "jasonsaayman"
+      ],
+      "primary_url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "CVE-2026-68948 documents a transport-contract mismatch: an application configured an outbound body limit, but the HTTP/2 stream path delegated to a transport that did not enforce it. The maintainer-published report describes local observation of transmission beyond that budget. Bandwidth, quota and availability consequences are application-dependent; the advisory excludes code execution, credential disclosure and destination control.",
+      "defensive_use": "The maintainer identifies 1.18.0 as patched. Review byte-budget enforcement as an invariant shared by transport adapters. The merged remediation describes consistent upload/content limits and regression coverage. Editorial lesson: enforce limits during consumption of unknown-length input and ensure failure cancels downstream work; configuration metadata alone is not enforcement.",
+      "prerequisites": [
+        "HTTP transport adapters and streamed request bodies",
+        "Resource budgets and failure propagation"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and remediation references readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established; software patch chronology is retained in the caveats."
+        },
+        "source_displayed": {
+          "value": "2026-07-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed beside the advisory publisher."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:39:01Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed maintainer advisory, release and merged remediation discussion; no vulnerability reproduction or independent patch testing performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698",
+          "title": "HTTP/2 streamed uploads bypass maxBodyLength",
+          "publisher": "Axios",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/axios/axios/releases/tag/v1.18.0",
+          "title": "Axios v1.18.0 release",
+          "publisher": "Axios",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary",
+            "dates",
+            "version"
+          ]
+        },
+        {
+          "id": "remediation",
+          "url": "https://github.com/axios/axios/pull/11000",
+          "title": "Merged request hardening and stream-limit changes",
+          "publisher": "Axios",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires untrusted stream influence, the Node HTTP adapter using HTTP/2, and a finite configured body limit. Buffered bodies and browser adapters are excluded from this advisory.",
+        "The advisory credits asadeddin as reporter; jasonsaayman is the publishing maintainer, not an inferred discoverer.",
+        "The advisory retains old prose saying no fixed release exists, while its patched-version metadata identifies 1.18.0 and the dated release corroborates stream-limit hardening. These distinct source states are preserved.",
+        "No production incident, measured billing loss or bounty amount was established. Learning prerequisites and generalized design advice are editorial.",
+        "The cited software release is dated 2026-06-13; it is distinct from the advisory publication and is not a claim about the latest available release."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "better-auth-2026-authorization-code-consumption-integrity",
       "title": "Better Auth: single-use authorization requires atomic state consumption",
       "publisher": "Better Auth",
-      "authors": [
-        "chdanielmueller"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79",
       "resource_type_id": "research-paper",
       "topic_ids": [
@@ -539,7 +644,7 @@
       "caveats": [
         "Requires an affected OAuth/OIDC provider deployment and a redeemable authorization code; the source does not establish bypass of code possession or PKCE.",
         "Maintainer-reported behavior, not evidence of production compromise. The advisory covers @better-auth/oauth-provider 1.6.0 before 1.6.11 and specified legacy plugins; an effective external atomic single-use control changes exposure.",
-        "The source credits chdanielmueller as reporter; the authors field preserves that attribution rather than claiming an advisory byline.",
+        "The source credits chdanielmueller as reporter; no advisory author byline is established.",
         "This is a substantive maintainer disclosure corroborated by release notes, not an independently peer-reviewed paper or an award-backed record."
       ]
     },
@@ -1062,7 +1167,7 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T07:10:00Z",
+        "reviewed_at": "2026-10-03T07:28:33Z",
         "living_resource": false,
         "status": "primary_source_reviewed",
         "note": "Primary research and maintainer evidence reviewed. Article immutability and deployment remediation were not established."
@@ -1095,11 +1200,11 @@
         },
         {
           "id": "maintainer-changelog",
-          "url": "https://raw.githubusercontent.com/rmosolgo/graphql-ruby/refs/tags/v2.6.6/CHANGELOG.md",
+          "url": "https://raw.githubusercontent.com/rmosolgo/graphql-ruby/v2.6.6/CHANGELOG.md",
           "title": "GraphQL-Ruby 2.6.6 changelog",
           "publisher": "GraphQL-Ruby",
           "provenance": "official_primary",
-          "retrieved_at": "2026-10-03T07:10:00Z",
+          "retrieved_at": "2026-10-03T07:28:33Z",
           "supports": [
             "version",
             "dates"
@@ -3012,6 +3117,115 @@
       "caveats": [
         "Some labs have additional software requirements; no software or tool recommendations are included here",
         "Training access is not authorization to test third-party systems"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "pypdf-2026-attachment-processing-cost-boundary",
+      "title": "pypdf: bound repeated work when reading embedded attachments",
+      "publisher": "py-pdf / pypdf",
+      "authors": [
+        "stefan6419846"
+      ],
+      "primary_url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-102999 concerns excessive processing time in the dictionary-based embedded-file interface. The maintainer explains that retrieving each attachment repeatedly parsed the full attachment list. Thus input structure could multiply processing work even when each individual retrieval looked ordinary. The advisory identifies versions before 6.19.0 as affected.",
+      "defensive_use": "The maintainer identifies 6.19.0 as patched. The merged correction records file objects by name so subsequent retrieval mostly accesses the corresponding stream directly. Editorial lesson for document-processing services: review aggregate complexity across convenience APIs, not only individual parsing calls, and maintain independent worker time and resource budgets.",
+      "prerequisites": [
+        "Document-processing pipelines and PDF embedded-file concepts",
+        "Basic algorithmic complexity and resource isolation"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and remediation references readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established; software patch chronology is retained in the caveats."
+        },
+        "source_displayed": {
+          "value": "2026-09-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed beside the advisory publisher."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:39:01Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed maintainer advisory, release and merged remediation discussion; no vulnerability reproduction or independent patch testing performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
+          "title": "Possible long runtimes with large amount of embedded files",
+          "publisher": "py-pdf / pypdf",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/py-pdf/pypdf/releases/tag/6.19.0",
+          "title": "Version 6.19.0, 2026-09-16",
+          "publisher": "py-pdf / pypdf",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "remediation",
+          "url": "https://github.com/py-pdf/pypdf/pull/4081",
+          "title": "Reduce number of full data lookups for attachment mapping API",
+          "publisher": "py-pdf / pypdf",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:39:01Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The advisory requires use of the dictionary-based embedded-file API. Merely receiving a PDF or using unrelated pypdf functionality does not establish exposure.",
+        "The public advisory confirms long-runtime impact but does not provide measured production outage evidence; no execution or confidentiality impact is established.",
+        "jungmingi-lab is credited as reporter; stefan6419846 published the advisory and authored the remediation explanation.",
+        "The correction merged September 14, 2026; release and advisory publication occurred September 16. The release classifies this change as a performance improvement, while the separate advisory identifies its security relevance.",
+        "No bounty claim is made. Learning prerequisites and service-level budget recommendations are editorial.",
+        "The cited software release is dated 2026-09-16; it is distinct from the advisory publication and is not a claim about the latest available release."
       ],
       "content_scope": "defensive_education"
     },

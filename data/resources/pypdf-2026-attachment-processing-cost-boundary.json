@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pypdf-2026-attachment-processing-cost-boundary",
+  "title": "pypdf: bound repeated work when reading embedded attachments",
+  "publisher": "py-pdf / pypdf",
+  "authors": [
+    "stefan6419846"
+  ],
+  "primary_url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-102999 concerns excessive processing time in the dictionary-based embedded-file interface. The maintainer explains that retrieving each attachment repeatedly parsed the full attachment list. Thus input structure could multiply processing work even when each individual retrieval looked ordinary. The advisory identifies versions before 6.19.0 as affected.",
+  "defensive_use": "The maintainer identifies 6.19.0 as patched. The merged correction records file objects by name so subsequent retrieval mostly accesses the corresponding stream directly. Editorial lesson for document-processing services: review aggregate complexity across convenience APIs, not only individual parsing calls, and maintain independent worker time and resource budgets.",
+  "prerequisites": [
+    "Document-processing pipelines and PDF embedded-file concepts",
+    "Basic algorithmic complexity and resource isolation"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and remediation references readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established; software patch chronology is retained in the caveats."
+    },
+    "source_displayed": {
+      "value": "2026-09-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed beside the advisory publisher."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T07:39:01Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed maintainer advisory, release and merged remediation discussion; no vulnerability reproduction or independent patch testing performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj",
+      "title": "Possible long runtimes with large amount of embedded files",
+      "publisher": "py-pdf / pypdf",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/py-pdf/pypdf/releases/tag/6.19.0",
+      "title": "Version 6.19.0, 2026-09-16",
+      "publisher": "py-pdf / pypdf",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "remediation",
+      "url": "https://github.com/py-pdf/pypdf/pull/4081",
+      "title": "Reduce number of full data lookups for attachment mapping API",
+      "publisher": "py-pdf / pypdf",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:39:01Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The advisory requires use of the dictionary-based embedded-file API. Merely receiving a PDF or using unrelated pypdf functionality does not establish exposure.",
+    "The public advisory confirms long-runtime impact but does not provide measured production outage evidence; no execution or confidentiality impact is established.",
+    "jungmingi-lab is credited as reporter; stefan6419846 published the advisory and authored the remediation explanation.",
+    "The correction merged September 14, 2026; release and advisory publication occurred September 16. The release classifies this change as a performance improvement, while the separate advisory identifies its security relevance.",
+    "No bounty claim is made. Learning prerequisites and service-level budget recommendations are editorial.",
+    "The cited software release is dated 2026-09-16; it is distinct from the advisory publication and is not a claim about the latest available release."
+  ],
+  "content_scope": "defensive_education"
+}

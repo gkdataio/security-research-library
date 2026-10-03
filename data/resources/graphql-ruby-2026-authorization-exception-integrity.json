@@ -53,7 +53,7 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-03T07:10:00Z",
+    "reviewed_at": "2026-10-03T07:28:33Z",
     "living_resource": false,
     "status": "primary_source_reviewed",
     "note": "Primary research and maintainer evidence reviewed. Article immutability and deployment remediation were not established."
@@ -86,11 +86,11 @@
     },
     {
       "id": "maintainer-changelog",
-      "url": "https://raw.githubusercontent.com/rmosolgo/graphql-ruby/refs/tags/v2.6.6/CHANGELOG.md",
+      "url": "https://raw.githubusercontent.com/rmosolgo/graphql-ruby/v2.6.6/CHANGELOG.md",
       "title": "GraphQL-Ruby 2.6.6 changelog",
       "publisher": "GraphQL-Ruby",
       "provenance": "official_primary",
-      "retrieved_at": "2026-10-03T07:10:00Z",
+      "retrieved_at": "2026-10-03T07:28:33Z",
       "supports": [
         "version",
         "dates"

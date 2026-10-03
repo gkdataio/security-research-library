@@ -34,7 +34,7 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public sources readable without an account\.
 
-**Reviewed:** 2026-10-03T07:10:00Z  
+**Reviewed:** 2026-10-03T07:28:33Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
@@ -59,6 +59,6 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 - [GHSL-2026-152: Privilege escalation via authorization bypass in graphql-ruby](<https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/>) — GitHub Security Lab; source ID: research; provenance: official primary; retrieved 2026-10-03T07:10:00Z; supports: summary, dates.
 - [Authorization Bypass in Execution::Next](<https://github.com/rmosolgo/graphql-ruby/security/advisories/GHSA-j7xr-4g94-r9h3>) — GraphQL-Ruby; source ID: maintainer-advisory; provenance: official primary; retrieved 2026-10-03T07:10:00Z; supports: summary, version, dates.
-- [GraphQL-Ruby 2\.6\.6 changelog](<https://raw.githubusercontent.com/rmosolgo/graphql-ruby/refs/tags/v2.6.6/CHANGELOG.md>) — GraphQL-Ruby; source ID: maintainer-changelog; provenance: official primary; retrieved 2026-10-03T07:10:00Z; supports: version, dates.
+- [GraphQL-Ruby 2\.6\.6 changelog](<https://raw.githubusercontent.com/rmosolgo/graphql-ruby/v2.6.6/CHANGELOG.md>) — GraphQL-Ruby; source ID: maintainer-changelog; provenance: official primary; retrieved 2026-10-03T07:28:33Z; supports: version, dates.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
