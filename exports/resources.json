@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 70,
+    "resources": 72,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1120,6 +1120,112 @@
         "Chromium-specific exceptions are not blanket guarantees for other projects."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "directus-2026-preauthorization-side-effect-integrity",
+      "title": "Directus: denied mutations must leave dependent state unchanged",
+      "publisher": "Directus",
+      "authors": [
+        "br41nslug"
+      ],
+      "primary_url": "https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "approval-state-integrity",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites": [
+        "Basic server-side authorization and persistent-state concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary disclosure readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T12:29:14Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and maintainer remediation evidence reviewed; no target testing or deployment verification performed."
+      },
+      "content_scope": "defensive_education",
+      "summary": "GHSA-p623-wgx3-wxp8 describes service overrides committing cleanup before their superclass checked permission. Rejected mutations could therefore disconnect automation links, remove attribution metadata or invalidate permission caches. A denial response did not mean that the operation left application state unchanged.",
+      "defensive_use": "Editorial lesson: include cleanup, cache invalidation and relationship changes in the authorization boundary, and assess state preservation on rejected operations. The maintainer says 12.1.0 moves access checks before side effects or defers effects until an authorized mutation succeeds. PR 27800 independently corroborates the ordering correction.",
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8",
+          "title": "Directus pre-authorization side effects advisory",
+          "publisher": "Directus",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:29:14Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "patch",
+          "url": "https://github.com/directus/directus/pull/27800",
+          "title": "Fix side effects in service overrides",
+          "publisher": "Directus",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:29:14Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/directus/directus/releases/tag/v12.1.0",
+          "title": "Directus v12.1.0 release",
+          "publisher": "Directus",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:29:14Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The maintainer lists versions before 12.1.0 as affected. The automation impact requires knowledge of the affected flow identifier; the advisory describes anonymous as well as unauthorized callers.",
+        "The advisory reports state changes, not a production incident. It explicitly excludes content disclosure and privilege elevation; impact is confined to availability, cached state and specified attribution fields.",
+        "Published August 5, 2026 by br41nslug; tr4ce-ju is credited as reporter. PR 27800 merged July 1, 2026. The release page displays July 1 and includes that fix; its rendered timestamp omits the year, so the review does not independently assert a full software release date.",
+        "The advisory identifies 12.1.0 as patched but does not establish restoration of previously lost state. No in-application workaround is supplied. The resource edition date remains unknown; software chronology is recorded separately."
+      ]
     },
     {
       "schema_version": "1.0.0",
@@ -6467,6 +6573,101 @@
         "The linked article includes operational material omitted here."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "vikunja-2026-favorites-current-access-revalidation",
+      "title": "Vikunja: saved favorites must recheck current project access",
+      "publisher": "Vikunja",
+      "authors": [
+        "kolaente"
+      ],
+      "primary_url": "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites": [
+        "Basic server-side authorization and persistent-state concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary disclosure readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T12:29:14Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and maintainer remediation evidence reviewed; no target testing or deployment verification performed."
+      },
+      "content_scope": "defensive_education",
+      "summary": "GHSA-jp29-jrxc-92vf describes a task-search branch that trusted a saved favorite without checking current project access. Favorite records survived share revocation, allowing previously authorized collaborators to keep reading selected tasks through search despite denial by direct task reads.",
+      "defensive_use": "Editorial lesson: saved associations express preference, not continuing authority. Every query branch returning an object should enforce its current authorization policy, including alternate views and aggregates. The advisory lists 2.6.0 as patched; the August 31, 2026 maintainer release article separately confirms this revocation issue was fixed.",
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf",
+          "title": "Favorited tasks remain readable after project access is revoked",
+          "publisher": "Vikunja",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:29:14Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://vikunja.io/changelog/vikunja-2.6.0-was-released/",
+          "title": "Vikunja 2.6.0: Eighteen security fixes, Planka import, and attachment previews",
+          "publisher": "Vikunja",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:29:14Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires prior write-level sharing and a favorite saved while authorized, followed by revocation. The advisory lists versions through 2.5.0 as affected and reports runtime verification on 2.5.0.",
+        "Reported observation: titles and descriptions edited after revocation remained readable. Impact is read-only and limited to previously favorited tasks; it does not establish access to all project tasks or a production incident.",
+        "Published August 31, 2026 by kolaente; JellowBeanz26 is credited as reporter. Software release 2.6.0 was announced the same day in the separate maintainer article; this is not a resource-edition date.",
+        "The advisory proposes current-access filtering and/or favorite cleanup. Neither reviewed source establishes the exact implemented combination, so these proposals are not represented as verified patch internals."
+      ]
     },
     {
       "schema_version": "1.0.0",

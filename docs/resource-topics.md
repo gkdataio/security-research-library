@@ -4,15 +4,15 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-70 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+72 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [Ai Security](<#topic-ai-security>) — 3 resources.
-- [Authorization](<#topic-authorization>) — 38 resources.
-- [Business Logic and State Integrity](<#topic-business-logic>) — 11 resources.
+- [Authorization](<#topic-authorization>) — 40 resources.
+- [Business Logic and State Integrity](<#topic-business-logic>) — 13 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 25 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 1 resources.
@@ -33,7 +33,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-38 resources.
+40 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -42,6 +42,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
+- [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus.
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI.
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation.
 - [Fetch Metadata Request Headers](<resources/w3c-fetch-metadata-request-context-boundaries.md>) — World Wide Web Consortium.
@@ -73,14 +74,16 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association.
+- [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja.
 
 <a id="topic-business-logic"></a>
 ## Business Logic and State Integrity
 
-11 resources.
+13 resources.
 
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
+- [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus.
 - [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser.
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP.
 - [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n.
@@ -90,6 +93,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [OWASP Threat Modeling: system assumptions and mitigation validation](<resources/owasp-threat-modeling-assumptions-and-validation.md>) — OWASP Cheat Sheet Series.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl.
+- [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja.
 
 <a id="topic-cloud-security"></a>
 ## Cloud Security
