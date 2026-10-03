@@ -33,7 +33,7 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public maintainer disclosure\.
 
-**Reviewed:** 2026-10-03T16:19:37Z  
+**Reviewed:** 2026-10-03T16:32:15Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
@@ -49,13 +49,13 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 ## Caveats
 
-- Exposure requires multiple signed-in users, personal providers and disabled ownership enforcement; organization-bound providers use separate checks\. Affected versions are 1\.5\.0 through 1\.7\.0-beta\.3\.
+- Exposure concerns ownerless personal SCIM providers in applications with multiple signed-in users\. Ownership enforcement is disabled by default, but enabling it later does not protect pre-existing ownerless providers; those require separate remediation\. Organization-bound providers use membership and role checks\. Affected versions are 1\.5\.0 through 1\.7\.0-beta\.3\.
 - The advisory identifies fixes in 1\.7\.0-beta\.4 and 1\.7\.0; the 1\.6\.x line requires mitigation\. The June 2, 2026 vendor bulletin independently identifies the SCIM-specific beta fix, rather than treating its general stable-release guidance as sufficient\.
 - gustavovalverde published the notice; Jvr2022 is credited as reporter\. Impact is maintainer-reported; compromise of a deployed instance is not established\. Patch-release dates remain unverified and are not resource-edition dates\.
 
 ## Sources and attribution
 
-- [SCIM personal-provider ownership advisory](<https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4>) — Better Auth; source ID: advisory; provenance: official primary; retrieved 2026-10-03T16:19:37Z; supports: summary, dates, version.
+- [SCIM personal-provider ownership advisory](<https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4>) — Better Auth; source ID: advisory; provenance: official primary; retrieved 2026-10-03T16:31:53Z; supports: summary, dates, version.
 - [Security update: June 2026](<https://better-auth.com/blog/security-update-june-2026>) — Better Auth; source ID: bulletin; provenance: official primary; retrieved 2026-10-03T16:19:37Z; supports: summary, version.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
