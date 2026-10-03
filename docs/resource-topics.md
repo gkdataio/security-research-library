@@ -1,6 +1,6 @@
 # Learning resources by topic
 
-[Alphabetical resource index](resource-index.md) · [Curated resource guide](resources.md) · [Library home](../README.md)
+[Alphabetical resource index](resource-index.md) · [Curated resource guide](resources.md) · [Library home](../README.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 

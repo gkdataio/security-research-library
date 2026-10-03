@@ -1,6 +1,6 @@
 # Diagram gallery
 
-[Library home](../README.md) · [Report index](reports.md) · [Visual learning guide](visual-theory.md)
+[Library home](../README.md) · [Report index](reports.md) · [Visual learning guide](visual-theory.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Original conceptual defensive models. Images are local, inert SVGs; no script, embeds, external dependencies or interactive links. These are not vendor architecture diagrams or operational sequences.
 

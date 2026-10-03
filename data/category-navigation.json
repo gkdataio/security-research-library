@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "categories": [
+    {
+      "id": "authorization",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": [
+        "authorization"
+      ]
+    },
+    {
+      "id": "authentication",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": [
+        "identity"
+      ]
+    },
+    {
+      "id": "business-logic",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": [
+        "business-logic"
+      ]
+    },
+    {
+      "id": "cloud-security",
+      "kind": "security_theme",
+      "resource_topic_ids": [
+        "cloud-security"
+      ]
+    },
+    {
+      "id": "supply-chain",
+      "kind": "security_theme",
+      "resource_topic_ids": [
+        "supply-chain"
+      ]
+    },
+    {
+      "id": "injection",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": []
+    },
+    {
+      "id": "ai-security",
+      "kind": "security_theme",
+      "resource_topic_ids": [
+        "ai-security"
+      ]
+    },
+    {
+      "id": "client-security",
+      "kind": "security_theme",
+      "resource_topic_ids": []
+    },
+    {
+      "id": "server-request-trust",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": []
+    },
+    {
+      "id": "memory-safety",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": [
+        "memory-safety"
+      ]
+    },
+    {
+      "id": "information-exposure",
+      "kind": "vulnerability_family",
+      "resource_topic_ids": []
+    }
+  ]
+}

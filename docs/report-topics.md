@@ -1,6 +1,6 @@
 # Award-backed reports by topic
 
-[Report index](reports.md) · [Library home](../README.md)
+[Report index](reports.md) · [Library home](../README.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.
 

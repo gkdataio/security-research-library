@@ -1,6 +1,6 @@
 # Read the learning resources
 
-[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md)
+[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 

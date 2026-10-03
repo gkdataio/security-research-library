@@ -15,6 +15,8 @@ Source-backed public security disclosures, official learning resources, and orig
 
 ### Browse the library
 
+**[Browse by vulnerability type](docs/vulnerability-types.md)** — reports, related learning and conceptual diagrams together, with broader security themes labeled separately.
+
 | Explore | Guides and catalogs |
 |---|---|
 | **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
