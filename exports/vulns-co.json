@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T04:49:20Z",
+  "latest_reviewed_at": "2026-10-03T05:09:57Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -5425,12 +5425,12 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "A cross-API privacy finding received a USD 20,000 award after a documented adjustment.",
-      "root_cause": "Inconsistent field-level access controls exposed private creator metadata across related APIs.",
-      "impact": "Private email addresses associated with monetized channels could be disclosed.",
+      "summary": "A monetized-channel account could access another monetized creator’s private email through inconsistent cross-API authorization. The researcher reports a USD 20,000 award.",
+      "root_cause": "Ordinary sensitive-field checks appeared effective, but an alternate metadata path exposed a cross-service association. The researcher then questioned whether monetized creator accounts inherited rights intended for specialist rights-management accounts.",
+      "impact": "The demonstrated disclosure concerned the email stored when the target channel became monetized, which may differ from its current email. Broader phishing consequences were potential impact, not demonstrated account compromise.",
       "defensive_takeaways": [
-        "Apply field-level authorization consistently across APIs.",
-        "Treat cross-service identifiers as data, never as proof of entitlement."
+        "Editorial lesson: check privacy guarantees across alternate response paths and linked services.",
+        "Editorial lesson: separate caller eligibility for an API from authority over each returned object."
       ],
       "reward": {
         "amount": 20000,
@@ -5476,11 +5476,11 @@
           "note": null
         },
         "fixed": {
-          "value": "2025-02-21",
-          "precision": "day",
-          "basis": "explicit",
-          "source_id": "primary",
-          "note": null
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor confirmed the issue fixed on February 21, 2025; actual deployment date is not established."
         },
         "paid": {
           "value": null,
@@ -5518,7 +5518,7 @@
           "title": "Disclosing YouTube Creator Emails for a $20k Bounty",
           "type": "researcher",
           "author": "Arvin Shivram (Brutecat)",
-          "retrieved_at": "2026-10-02T14:39:00Z",
+          "retrieved_at": "2026-10-03T05:09:57Z",
           "supports": [
             "reward",
             "dates",
@@ -5531,10 +5531,11 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:39:00Z",
-        "method": "Primary public source read; individual award and source provenance verified. No target testing or exploit reproduction performed.",
+        "reviewed_at": "2026-10-03T05:09:57Z",
+        "method": "Fresh read of the primary researcher article through web text extraction; compared prerequisites, authorization boundary, demonstrated impact and remediation chronology with the existing record. No target testing or exploit reproduction.",
         "limitations": [
-          "Award is reported by the cited source; cash settlement is not independently audited."
+          "Award is reported by the cited source; cash settlement is not independently audited.",
+          "The article does not supply implementation-level patch details or establish actual deployment timing."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -9054,12 +9055,12 @@
         "defensive-evidence-writing",
         "patch-verification"
       ],
-      "summary": "A missing media-ownership check earned a USD 10,000 award, according to the researcher.",
-      "root_cause": "A media-editing API did not bind the requested object to the authenticated owner.",
-      "impact": "Another user’s private prompts and generated media could be disclosed. The reproduced vendor response says no abuse was found.",
+      "summary": "An authenticated media-editing operation exposed another user’s prompts and generated content because object ownership was not enforced. The researcher reports a USD 10,000 award.",
+      "root_cause": "Authentication established a caller but did not bind the requested media object to that caller. The researcher’s two-user comparison exposed this distinction between feature access and content authority.",
+      "impact": "The demonstration disclosed another user’s original prompt and generated media. Broader data harvesting was potential impact; the reproduced vendor response reports no evidence of abuse.",
       "defensive_takeaways": [
-        "Apply object-ownership checks consistently across media access and editing operations.",
-        "Track temporary mitigation separately from confirmation of a complete fix."
+        "Editorial lesson: preserve ownership checks across derived-media and editing operations.",
+        "Editorial lesson: distinguish temporary mitigation, full-fix confirmation and actual deployment timing."
       ],
       "reward": {
         "amount": 10000,
@@ -9147,7 +9148,7 @@
           "title": "Meta AI prompts and generated content: technical analysis",
           "type": "researcher",
           "author": "Sandeep / AppSecure",
-          "retrieved_at": "2026-10-02T16:30:37Z",
+          "retrieved_at": "2026-10-03T05:09:57Z",
           "supports": [
             "reward",
             "dates",
@@ -9160,12 +9161,13 @@
       "primary_source_id": "researcher-writeup",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T16:30:37Z",
-        "method": "Read the researcher article, explicit USD timeline and reproduced vendor response.",
+        "reviewed_at": "2026-10-03T05:09:57Z",
+        "method": "Fresh read of the primary researcher article through web text extraction; compared prerequisites, authorization boundary, demonstrated impact and remediation chronology with the existing record. No target testing or exploit reproduction.",
         "limitations": [
           "Vendor wording is researcher-published, not independent vendor confirmation.",
           "An updated date does not establish original publication. Full-fix confirmation does not establish deployment timing.",
-          "Cash receipt is not established."
+          "Cash receipt is not established.",
+          "The article attributes remediation to ownership checks but does not supply an independently reviewed patch."
         ]
       },
       "content_scope": "historical_defensive_summary"

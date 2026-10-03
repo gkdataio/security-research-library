@@ -9,20 +9,20 @@
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-A missing media-ownership check earned a USD 10,000 award, according to the researcher\.
+An authenticated media-editing operation exposed another user’s prompts and generated content because object ownership was not enforced\. The researcher reports a USD 10,000 award\.
 
 ### Root cause
 
-A media-editing API did not bind the requested object to the authenticated owner\.
+Authentication established a caller but did not bind the requested media object to that caller\. The researcher’s two-user comparison exposed this distinction between feature access and content authority\.
 
 ### Bounded impact
 
-Another user’s private prompts and generated media could be disclosed\. The reproduced vendor response says no abuse was found\.
+The demonstration disclosed another user’s original prompt and generated media\. Broader data harvesting was potential impact; the reproduced vendor response reports no evidence of abuse\.
 
 ### Defensive lessons
 
-- Apply object-ownership checks consistently across media access and editing operations\.
-- Track temporary mitigation separately from confirmation of a complete fix\.
+- Editorial lesson: preserve ownership checks across derived-media and editing operations\.
+- Editorial lesson: distinguish temporary mitigation, full-fix confirmation and actual deployment timing\.
 
 ## Award and evidence
 
@@ -45,14 +45,15 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T16:30:37Z. Read the researcher article, explicit USD timeline and reproduced vendor response\.
+Reviewed: 2026-10-03T05:09:57Z. Fresh read of the primary researcher article through web text extraction; compared prerequisites, authorization boundary, demonstrated impact and remediation chronology with the existing record\. No target testing or exploit reproduction\.
 
 - Vendor wording is researcher-published, not independent vendor confirmation\.
 - An updated date does not establish original publication\. Full-fix confirmation does not establish deployment timing\.
 - Cash receipt is not established\.
+- The article attributes remediation to ownership checks but does not supply an independently reviewed patch\.
 
 ## Sources and attribution
 
-- [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) — Sandeep / AppSecure; retrieved 2026-10-02T16:30:37Z.
+- [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) — Sandeep / AppSecure; retrieved 2026-10-03T05:09:57Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
