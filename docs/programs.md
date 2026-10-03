@@ -1,6 +1,6 @@
 # Public program directory
 
-[Library home](../README.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)
+[Library home](../README.md) · [Public bounty scopes](public-bounties.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)
 
 Advertised rewards are not report awards. Asset scope is a dated summary of official policy, not authorization. Read the live official policy before any activity.
 

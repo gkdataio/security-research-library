@@ -41,6 +41,9 @@ def build(root=ROOT):
     policy_records=[json.loads(p.read_text(encoding='utf-8')) for p in (root/'data/programs').glob('*.json')]
     policies={identity_url(r['program_url']):r['id'] for r in policy_records}
     policy_assets={r['id']:r.get('asset_scope') for r in policy_records}
+    policy_types={r['id']:r.get('program_type',{}).get('value') for r in policy_records}
+    capture_path=root/'data/public-bounty-scopes.json'
+    captures={r['listing_id']:r for r in json.loads(capture_path.read_text(encoding='utf-8'))['captures']} if capture_path.is_file() else {}
     for path in (root/'data/programs').glob('*.json'):
         record=json.loads(path.read_text(encoding='utf-8'))
         for alias in record.get('official_program_links',[]):
@@ -59,6 +62,7 @@ def build(root=ROOT):
             if key not in entries:
                 policy_id=policies.get(key)
                 asset_scope=policy_assets.get(policy_id)
+                capture=captures.get(entry['id'])
                 entries[key]={**entry,'platform':batch['platform'],'review_state':'directory_listing_only',
                               'verified_policy_id':policy_id,
                               'verified_asset_scope':({'verified_at':asset_scope['verified_at'],
@@ -66,6 +70,10 @@ def build(root=ROOT):
                                                        'in_scope_entries':len(asset_scope['in_scope']),
                                                        'out_of_scope_entries':len(asset_scope['out_of_scope'])}
                                                       if asset_scope else None),
+                              'public_bounty_capture':({'status':capture['status'], 'captured_at':capture['captured_at'],
+                                                        'in_scope_entries':sum(a['scope']=='in' for a in capture.get('assets',[])),
+                                                        'out_of_scope_entries':sum(a['scope']=='out' for a in capture.get('assets',[]))}
+                                                       if capture else None),
                               'observations':[]}
             else:
                 # Conflicting observations are retained, never silently overwritten.
@@ -79,13 +87,14 @@ def build(root=ROOT):
     groups=[sorted(urls) for urls in names.values() if len(urls)>1]
     counts={'unique_program_page_listings':len(records),'already_has_verified_policy':sum(r['verified_policy_id'] is not None for r in records),
             'verified_with_asset_scope':sum(r['verified_asset_scope'] is not None for r in records),
+            'public_scope_tables_captured':sum(r['public_bounty_capture'] is not None and r['public_bounty_capture']['status']=='captured' for r in records),
             'awaiting_policy_review':sum(r['verified_policy_id'] is None for r in records),'batches':len(batches)}
     counts['by_platform']={platform:sum(r['platform']==platform for r in records) for platform in sorted({r['platform'] for r in records})}
     counts['by_program_type']=dict(sorted(Counter(r['program_type'] for r in records).items()))
     counts['by_submission_status']=dict(sorted(Counter(r['submission_status'] for r in records).items()))
     counts['possible_identity_review_groups']=len(groups)
-    export={'schema_version':'1.0.0','notice':'Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.', 'counts':counts,'possible_identity_review_groups':groups,'deduplication':'Exact normalized program URLs deduplicate observations; HackerOne type=team is display-only. Similar names are review leads, not evidence that distinct programs should merge.','batches':[{k:v for k,v in b.items() if k!='entries'} for b in batches],'listings':records}
-    lines=['# Official program discovery queue','','[Library home](../README.md) · [Verified policies and asset scope](programs.md)','',export['notice'],'',f'**{counts["unique_program_page_listings"]} distinct program-page listings**; {counts["already_has_verified_policy"]} link to an existing verified policy record, {counts["verified_with_asset_scope"]} of those have reviewed asset-scope snapshots, and {counts["awaiting_policy_review"]} await policy review. These counts must not be added to verified-policy counts without removing overlap.','','## Coverage and continuation','']
+    export={'schema_version':'1.0.0','notice':'Directory observations alone are not verified policies or testing authorization. Linked scope-table captures have separate dates and do not establish complete rules, current submission availability or bounty eligibility. Counts identify distinct platform program pages, not deduplicated organizations.', 'counts':counts,'possible_identity_review_groups':groups,'deduplication':'Exact normalized program URLs deduplicate observations; HackerOne type=team is display-only. Similar names are review leads, not evidence that distinct programs should merge.','batches':[{k:v for k,v in b.items() if k!='entries'} for b in batches],'listings':records}
+    lines=['# Official program discovery queue','','[Library home](../README.md) · [Verified policies and asset scope](programs.md) · [Public bounty scopes](public-bounties.md)','',export['notice'],'',f'**{counts["unique_program_page_listings"]} distinct program-page listings**; {counts["already_has_verified_policy"]} link to an existing verified policy record, {counts["verified_with_asset_scope"]} of those have reviewed asset-scope snapshots, {counts["public_scope_tables_captured"]} additional listings have published scope tables captured, and {counts["awaiting_policy_review"]} await full policy review. These counts must not be added to verified-policy counts without removing overlap.','','## Coverage and continuation','']
     for batch in batches:
         c=batch['coverage'];lines += ['### '+text(batch['platform']), '',text(c['filters']), '',text(c['pagination_note']), '', '**Next review:** '+text(c['continuation_note']), '']
         lines += ['- '+text(x) for x in c['limitations']]
@@ -97,12 +106,20 @@ def build(root=ROOT):
         subset=[r for r in records if r['platform']==platform]
         path='docs/program-discovery/'+platform.lower()+'.md'
         lines+=['- '+link(platform+' — '+str(len(subset))+' program-page listings','program-discovery/'+platform.lower()+'.md')]
-        page=['# '+platform+' directory observations','','[Discovery overview](../program-discovery.md) · [Verified policies](../programs.md) · [Library home](../../README.md)','',export['notice'],'']
+        page=['# '+platform+' directory observations','','[Discovery overview](../program-discovery.md) · [Public bounty scopes](../public-bounties.md) · [Verified policies](../programs.md) · [Library home](../../README.md)','',export['notice'],'']
         for r in subset:
             policy=(' · '+link('Verified policy and scope','../programs.md#program-'+r['verified_policy_id'])+
                     ' · '+link('JSON','../../data/programs/'+r['verified_policy_id']+'.json')+
                     (f' ({r["verified_asset_scope"]["in_scope_entries"]} in / {r["verified_asset_scope"]["out_of_scope_entries"]} out)' if r['verified_asset_scope'] else '')) if r['verified_policy_id'] else ''
-            page+=['- '+link(r['name'],r['program_url'])+' — '+text(r['program_type'].replace('_',' '))+'; '+text(r['submission_status'].replace('_',' '))+policy+' — '+text(r['evidence_note'])]
+            capture=captures.get(r['id'])
+            policy_type=policy_types.get(r['verified_policy_id'])
+            bounty=(policy_type!='vulnerability_disclosure' and
+                    not (capture and capture['status']=='not_paid_bounty') and
+                    (policy_type=='paid_bounty' or r['program_type']=='paid_bounty' or
+                     capture is not None and capture.get('offers_bounties') is True or
+                     platform=='Bugcrowd' and capture is not None and r['program_type']=='unknown'))
+            bounty_link=(' · '+link('Bounty scope','../public-bounties/'+platform.lower()+'/'+r['id']+'.md')) if bounty else ''
+            page+=['- '+link(r['name'],r['program_url'])+' — '+text(r['program_type'].replace('_',' '))+'; '+text(r['submission_status'].replace('_',' '))+policy+bounty_link+' — '+text(r['evidence_note'])]
         page+=['','[Machine-readable export](../../exports/program-discovery.json) · [License and source rights](../../LICENSE.md)','']
         platform_pages[path]='\n'.join(page)
     lines += ['', '## Identity and provenance', '',export['deduplication'],'','[Machine-readable export](../exports/program-discovery.json) preserves batches, observations and candidate identity groups. Official source material and trademarks retain their own rights; original commentary and arrangement use [CC BY 4.0](../LICENSE.md).','']

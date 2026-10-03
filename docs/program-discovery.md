@@ -1,10 +1,10 @@
 # Official program discovery queue
 
-[Library home](../README.md) · [Verified policies and asset scope](programs.md)
+[Library home](../README.md) · [Verified policies and asset scope](programs.md) · [Public bounty scopes](public-bounties.md)
 
-Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.
+Directory observations alone are not verified policies or testing authorization. Linked scope-table captures have separate dates and do not establish complete rules, current submission availability or bounty eligibility. Counts identify distinct platform program pages, not deduplicated organizations.
 
-**1154 distinct program-page listings**; 33 link to an existing verified policy record, 33 of those have reviewed asset-scope snapshots, and 1121 await policy review. These counts must not be added to verified-policy counts without removing overlap.
+**1154 distinct program-page listings**; 33 link to an existing verified policy record, 33 of those have reviewed asset-scope snapshots, 567 additional listings have published scope tables captured, and 1121 await full policy review. These counts must not be added to verified-policy counts without removing overlap.
 
 ## Coverage and continuation
 
