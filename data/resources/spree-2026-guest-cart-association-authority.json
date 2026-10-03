@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spree-2026-guest-cart-association-authority",
+  "title": "Spree: cart association must retain guest-possession checks",
+  "publisher": "Spree",
+  "authors": [
+    "damianlegawiec"
+  ],
+  "primary_url": "https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-94462 concerns a guest-cart ownership transition that required a signed-in customer but omitted the cart-possession check enforced by sibling operations. Account authentication and object lookup were treated as sufficient authority to claim an unowned cart, exposing existing checkout addresses and changing ownership.",
+  "defensive_use": "Editorial lesson: joining guest state to an account is a privileged ownership transition. Verify existing possession before mutation and response serialization; client-supplied proof helps only when the server checks it. The maintainer recommends backend releases 5.4.4 or 5.5.4 and says its storefront already supplied the required cart token.",
+  "prerequisites": [
+    "Basic object-level authorization and policy-composition concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary advisory readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed by the primary maintainer advisory."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-07-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed by the primary maintainer advisory."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:19:23Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary maintainer advisory reviewed. No live testing, independent reproduction or deployment verification performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2",
+      "title": "Spree guest-cart association access-control advisory (GHSA-4825-p4xm-pcf2)",
+      "publisher": "Spree",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:19:23Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires an authenticated store account, guest checkout enabled and an unassociated cart; address disclosure additionally requires stored checkout addresses. The advisory reports limited, recoverable cart reassignment and email changes, not anonymous access or account takeover.",
+    "The primary advisory supplies technical impact analysis; no production incident or independently reproduced outcome is established.",
+    "Published July 20, 2026 by damianlegawiec; reporter laijunyue is credited. The affected-version shorthand starts at 5.4.0 without an upper bound; use the stated patched branches rather than extrapolating. Software patch dates are unestablished and are not resource-edition dates."
+  ],
+  "content_scope": "defensive_education"
+}

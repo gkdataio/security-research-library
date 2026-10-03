@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.2.0",
+  "organization": "Google",
+  "researchers": [
+    "Arvin Shivram (Brutecat)",
+    "Theo"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "cloud-iam-review",
+    "defensive-evidence-writing"
+  ],
+  "dates": {
+    "published": {
+      "value": "2026-09-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2026-07-18",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-07-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher-writeup",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Article states resolution without a date."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "researcher-writeup",
+      "url": "https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k",
+      "title": "Breaking into Google's GFile for $100k",
+      "type": "researcher",
+      "author": "Arvin Shivram (Brutecat), published on Google Bug Hunters",
+      "retrieved_at": "2026-10-03T16:00:54Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation",
+        "report_identity"
+      ]
+    },
+    {
+      "id": "currency-context",
+      "url": "https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515",
+      "title": "Increasing Google & Alphabet VRP rewards up to $151,515",
+      "type": "vendor",
+      "author": "Sam Erb and Krzysztof Kotowicz, Google",
+      "retrieved_at": "2026-10-03T16:00:54Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "researcher-writeup",
+  "content_scope": "historical_defensive_summary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-03T16:00:54Z",
+    "method": "Read both primary pages in the cloud browser after search returned no article body. Matched exact report labels to separate timeline awards. No target testing.",
+    "limitations": [
+      "Researcher narrative is hosted by Google and authored by a researcher who subsequently joined Google; conservatively classified as researcher-reported panel correspondence, without independent payment evidence.",
+      "Resolution is stated, but deployment date and patch implementation are unspecified.",
+      "The dollar denomination is inferred from Google’s July 2024 USD program announcement, approximately two years before the awards; it does not prove individual settlement.",
+      "Mamba is a separately reported and separately awarded finding; its retrieval demonstration depends on Firefly. The combined demonstration is not an additional record or award."
+    ]
+  },
+  "report_identity": {
+    "kind": "source_label",
+    "value": "Mamba",
+    "source_id": "researcher-writeup",
+    "evidence_location": "Timeline, separately labeled report and award entries"
+  },
+  "reward": {
+    "amount": 37604.4,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "type": "bug_bounty",
+    "awarding_organization": "Google Vulnerability Reward Program",
+    "evidence_level": "researcher_reported_with_vendor_quote",
+    "source_id": "researcher-writeup",
+    "evidence_quote": "Panel awards $37,604.40 for Mamba",
+    "evidence_location": "Timeline, July 24, 2026 Mamba entry",
+    "usd_equivalent": null,
+    "notes": "Separate report award; headline total is not used. Payment is unverified. USD follows the linked official denomination context. No component is counted separately."
+  },
+  "id": "google-mamba-temporary-output-isolation-2026",
+  "title": "Google Mamba temporary outputs lacked access isolation",
+  "product": "Mamba frame-metrics pipeline",
+  "summary": "Mamba received a distinct USD 37,604.40 award. The case illustrates why temporary processing output needs explicit access isolation, with retrieval dependencies kept separate from standalone impact.",
+  "root_cause": "Untrusted file selection reached privileged storage copying. Shared temporary outputs relied on obscurity, while diagnostic metadata weakened filename secrecy.",
+  "impact": "Unauthenticated copying was possible, but demonstrated retrieval required the separately reported Firefly capability. The panel explicitly discounted difficult exploitation and additional access requirements.",
+  "defensive_takeaways": [
+    "Editorial lesson: isolate temporary outputs by authenticated principal and enforce access controls independent of filename secrecy.",
+    "Editorial lesson: restrict file-source capabilities and minimize diagnostic disclosure; document dependencies before assigning standalone impact."
+  ]
+}

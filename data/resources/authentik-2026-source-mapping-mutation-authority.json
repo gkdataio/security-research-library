@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "authentik-2026-source-mapping-mutation-authority",
+  "title": "authentik: source-mapping edits carry identity-rebinding authority",
+  "publisher": "authentik",
+  "authors": [
+    "rissson"
+  ],
+  "primary_url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-49443 concerns writable identity-mapping fields in API serializers. Delegated connection-management authority could alter which local user or group a source identity represented. The maintainer reports victim-account authentication; its example addresses user mappings, while the impact statement also covers groups.",
+  "defensive_use": "Editorial reasoning: permission to maintain an integration object does not establish permission to reassign the identity it authenticates. Treat identity bindings as security-sensitive relationships, restrict writable fields, and separately authorize any supported reassignment. The advisory lists patched versions 2025.12.6, 2026.2.4 and 2026.5.1.",
+  "prerequisites": [
+    "Identity-provider integration and authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-05-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational edition date established."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:39:39Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr",
+      "title": "UserSourceConnection.user and GroupSourceConnection.group are changeable through the API",
+      "publisher": "authentik",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:39:39Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "The described user case requires both an account at a configured identity source and delegated permission to add or change source connections. Ordinary authentication alone is insufficient.",
+    "rissson published the maintainer advisory; no separate reporter is identified. Group consequences are described more broadly than the user-focused example; no independent reproduction is claimed.",
+    "Patch release dates are not established by the advisory. Publication and educational edition metadata must not substitute for software chronology. No individual award is established."
+  ],
+  "content_scope": "defensive_education"
+}
