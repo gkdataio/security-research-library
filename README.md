@@ -19,7 +19,7 @@ Source-backed public security disclosures, official learning resources, and orig
 |---|---|
 | **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
 | **Programs** | [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) |
-| **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) |
+| **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) · [Program change checker](#check-program-changes) |
 | **Learn** | [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) |
 | **Visuals** | [Diagram gallery](docs/diagram-gallery.md) · [Visual guide](docs/visual-theory.md) |
 | **Reuse** | [Use the JSON](#use-the-json) · [Licensing](LICENSE.md) |
@@ -128,9 +128,10 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [export_bugcrowd_programs.py](scripts/export_bugcrowd_programs.py) | Joins current public Bugcrowd bounty and VDP listings, validates VDP captures, and generates their combined visual and JSON catalog |
 | [scope_integrity.py](scripts/scope_integrity.py) | Rejects repeated asset rows and scope sources bound to a different program on the same platform |
 | [export_scope_audit.py](scripts/export_scope_audit.py) | Reconciles canonical rows, overlapping catalogs, dated gap reviews and generated pages |
+| [check_program_changes.py](scripts/check_program_changes.py) | Compares every stored program against a Git revision and can check recorded official public pages for change signals |
 | [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |
 
-These are offline maintenance utilities. They do not contact research targets, collect credentials, scan systems or run the disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
+The validators, exporters and navigation tools run offline. The optional live mode of `check_program_changes.py` makes read-only requests only to recorded official program, policy and scope-source URLs; it never requests listed assets, collects credentials, scans systems or runs disclosed vulnerabilities. Export and rendering commands write generated files inside the collection; check commands validate existing files.
 
 ## Validate and regenerate
 
@@ -167,6 +168,18 @@ python3 scripts/build_navigation.py
 Regenerating SVGs also requires an installed **Graphviz `dot`** executable. Run `python3 scripts/render_diagrams.py` and visually inspect the resulting SVGs after graph edits. The renderer's `--check` compares generated source text; it does not rerender SVGs or replace visual review.
 
 The validator implements the schema features used by this project, plus cross-record editorial checks. Extend its tests when adding schema features.
+
+### Check program changes
+
+The change checker covers all distinct directory listings and reviewed policies, including reviewed programs outside the directory queue. Its saved-data mode compares the current canonical records with exports at a Git commit; review timestamps, row order and duplicate-row cleanup alone do not count as program changes. It reports listing type/status, presence in the latest stored directory pass, reward and policy summaries, source status, asset rows, qualifications and bounty eligibility. Absence from one directory pass is a review signal, not proof that a program closed. Run it after updating canonical data, or compare two committed snapshots by choosing the earlier commit with `--base`.
+
+```sh
+python3 scripts/check_program_changes.py --base HEAD~1 --json-out .program-change-report.json
+python3 scripts/check_program_changes.py --live --plan
+python3 scripts/check_program_changes.py --live --max-requests 100 --json-out .program-change-report.json
+```
+
+Live mode checks recorded official program and policy pages plus official scope sources, defaulting to one second between requests. It stores response hashes, status and cache headers in the Git-ignored `.program-change-state.json`; the first successful request establishes a baseline. Repeat the bounded command to continue through the collection: successful checks and unavailable attempts from the previous 12 hours are skipped. Use `--skip-recent-hours 0` for an immediate recheck, `--pages-only` to omit scope-source URLs, or `--platform` / `--program` to narrow a run. Redirects are recorded but never followed, and HTTP 429 stops the batch. A changed response is a lead for manual official-policy review; it does not verify an asset-scope or eligibility change or alter canonical records.
 
 ## Report index
 

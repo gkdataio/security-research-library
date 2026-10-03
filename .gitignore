@@ -1,3 +1,5 @@
 __pycache__/
 *.py[cod]
+.program-change-state.json
+.program-change-report.json
 .DS_Store
