@@ -2,8 +2,8 @@
   "schema_version": "1.4.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 32,
-    "programs_with_scope_context": 17,
+    "programs": 36,
+    "programs_with_scope_context": 21,
     "programs_without_scope_context": 15
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
@@ -1424,6 +1424,124 @@
     },
     {
       "schema_version": "1.4.0",
+      "id": "hostgator-latam-bug-bounty",
+      "name": "HostGator LATAM Bug Bounty",
+      "operator": "Newfold Digital / HostGator LATAM",
+      "platform": "Bugcrowd",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official brief advertises monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+      "policy_url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/hostgator-latam-bb/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 250,
+        "maximum": 2500,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised P3–P1 bands span USD 250–2,500; severity, likelihood and impact affect discretionary awards. Shared causes receive one bounty.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "Newfold group employees, their families, current vendors and vendor employees are excluded; sanctions apply. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Owned/authorized accounts only; no real-customer interaction, multiple accounts, brute force, social engineering, disruption or data damage. Public disclosure is prohibited; safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "Current In progress status and a September 2026 participation invitation supersede the historical March 2022 pause notice.",
+        "source_ids": [
+          "policy",
+          "announcements"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:12:42Z",
+      "limitations": [
+        "Brief revision: September 11, 2026. Change index: page 1 of 2 only; version diffs unreviewed.",
+        "USD uses platform accounting evidence. Browser review recovered text omitted by static retrieval.",
+        "Announcement index and historical pause body reviewed; other notices read within the brief. No authenticated intake or complete legal audit. Inventories/instructions omitted; live terms prevail. No authorization granted."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "HostGator LATAM Bug Bounty public brief",
+          "url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+          "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:04Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "announcements",
+          "title": "HostGator LATAM Bug Bounty announcement archive",
+          "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/announcements",
+          "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:11:40Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "changelog",
+          "title": "HostGator LATAM Bug Bounty change index",
+          "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog",
+          "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:12:14Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:09:31Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Selected first-party hosting and billing services, including qualifying authenticated navigation; recent coverage emphasizes AI-assisted server-management functionality.",
+        "excluded_summary": "Unlisted and customer-controlled services, third-party components, chatboxes, source disclosure, external credential leaks, recent disclosures and specified low-impact classes are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://bugcrowd.com/engagements/hostgator-latam-bb"
+        ],
+        "verified_at": "2026-10-03T04:12:42Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
       "id": "intel-vulnerability-disclosure",
       "name": "Intel Vulnerability Disclosure Program",
       "operator": "Intel",
@@ -2090,6 +2208,123 @@
       }
     },
     {
+      "schema_version": "1.4.0",
+      "id": "nubank-brasil-bug-bounty",
+      "name": "Nubank Brasil Managed Bug Bounty Program",
+      "operator": "Nubank Brasil",
+      "platform": "Bugcrowd",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official brief advertises monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://bugcrowd.com/engagements/nubank",
+      "policy_url": "https://bugcrowd.com/engagements/nubank",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/nubank/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/nubank/changelog",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 50,
+        "maximum": 4000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Ordinary tiers span USD 50–4,000, 50–2,000 and 50–1,000. June 2026 bonuses expired. A September 22–October 16, 2026 campaign offers approximately $100 extra from a dedicated pool, subject to eligibility and excluded from bounds.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "Employees and third-party providers are excluded. Bank-account access requires valid regional tax identification and approval; false identification is prohibited. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Use owned/authorized accounts, protect privacy and availability, and observe monetary limits. Social engineering and disruption are prohibited. Disclosure needs consent; safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The official brief explicitly displays In progress and an ongoing period.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:12:42Z",
+      "limitations": [
+        "Brief revision: June 26, 2026. Change index: page 1 of 3 only; diffs unreviewed.",
+        "September bonus evidence comes from the full notice embedded in the brief; archive index reviewed.",
+        "USD uses platform accounting evidence. Browser-only policy recovery; authenticated eligibility and incorporated terms incompletely reviewed. Inventories/instructions omitted; live terms prevail. No authorization granted."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Nubank Brasil Managed Bug Bounty Program public brief",
+          "url": "https://bugcrowd.com/engagements/nubank",
+          "publisher": "Nubank Brasil / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:28Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "announcements",
+          "title": "Nubank Brasil Managed Bug Bounty Program announcement archive",
+          "url": "https://bugcrowd.com/engagements/nubank/announcements",
+          "publisher": "Nubank Brasil / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:11:40Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "changelog",
+          "title": "Nubank Brasil Managed Bug Bounty Program change index",
+          "url": "https://bugcrowd.com/engagements/nubank/changelog",
+          "publisher": "Nubank Brasil / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:12:14Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:09:31Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Selected digital-banking mobile applications, first-party web services and investment services across distinct reward tiers.",
+        "excluded_summary": "Unlisted properties, temporarily suspended community services, unsupported third-party findings, unrelated credential leaks and specified low-impact classes are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://bugcrowd.com/engagements/nubank"
+        ],
+        "verified_at": "2026-10-03T04:12:42Z"
+      }
+    },
+    {
       "schema_version": "1.3.0",
       "id": "nvidia-public-bug-bounty",
       "name": "NVIDIA Public Bug Bounty",
@@ -2352,6 +2587,125 @@
       ]
     },
     {
+      "schema_version": "1.4.0",
+      "id": "onetrust-bug-bounty",
+      "name": "OneTrust Bug Bounty",
+      "operator": "OneTrust",
+      "platform": "Bugcrowd",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official brief advertises monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://bugcrowd.com/engagements/onetrust",
+      "policy_url": "https://bugcrowd.com/engagements/onetrust",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/onetrust/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/onetrust/changelog",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 300,
+        "maximum": 6500,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised bands span USD 300–6,500; CVSS, likelihood and impact influence rewards. Downgrades allow appeal; duplicate causes do not receive multiple awards.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "Current employees, those employed within 12 months, customers and customer-engaged testing companies are excluded. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Use assigned or self-created accounts in the designated staging environment. Avoid shared-setting changes and disruption. Social engineering is prohibited. Public disclosure is prohibited; safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The official brief explicitly displays In progress and an ongoing period.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:12:42Z",
+      "limitations": [
+        "Brief revision: December 22, 2025; newer announcements exist. Change index: page 1 of 2; diffs unreviewed.",
+        "April 21, 2026 exposure notice opened separately. No broader active-testing permission is inferred.",
+        "USD uses platform accounting evidence. Browser-only recovery; attachment, authenticated credential access and complete legal terms unreviewed. Inventories/instructions omitted; live terms prevail. No authorization granted."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "OneTrust Bug Bounty public brief",
+          "url": "https://bugcrowd.com/engagements/onetrust",
+          "publisher": "OneTrust / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:50Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "announcements",
+          "title": "OneTrust Bug Bounty announcement archive",
+          "url": "https://bugcrowd.com/engagements/onetrust/announcements",
+          "publisher": "OneTrust / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:11:40Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "changelog",
+          "title": "OneTrust Bug Bounty change index",
+          "url": "https://bugcrowd.com/engagements/onetrust/changelog",
+          "publisher": "OneTrust / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:12:14Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:09:31Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Designated staging application, including privacy-management workflows and integrations; an April 2026 notice adds qualifying public credential/confidential-information exposure.",
+        "excluded_summary": "Other environments, authorization findings without full administrator escalation and specified low-impact classes are excluded. Leak-related awards remain discretionary under older brief wording.",
+        "source_ids": [
+          "policy",
+          "announcements"
+        ],
+        "policy_urls": [
+          "https://bugcrowd.com/engagements/onetrust",
+          "https://bugcrowd.com/engagements/onetrust/announcements"
+        ],
+        "verified_at": "2026-10-03T04:12:42Z"
+      }
+    },
+    {
       "schema_version": "1.3.0",
       "id": "openai-security-bug-bounty",
       "name": "OpenAI Security Bug Bounty",
@@ -2538,6 +2892,123 @@
           "https://proton.me/security/vulnerability-disclosure"
         ],
         "verified_at": "2026-10-03T03:20:30Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "id": "rapyd-bug-bounty",
+      "name": "Rapyd Bug Bounty",
+      "operator": "Rapyd",
+      "platform": "Bugcrowd",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official brief advertises monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://bugcrowd.com/engagements/rapyd",
+      "policy_url": "https://bugcrowd.com/engagements/rapyd",
+      "announcement_urls": [
+        "https://bugcrowd.com/engagements/rapyd/announcements"
+      ],
+      "change_log_url": "https://bugcrowd.com/engagements/rapyd/changelog",
+      "rewards": {
+        "currency": "USD",
+        "minimum": 100,
+        "maximum": 7500,
+        "basis": "advertised_not_individual_award",
+        "summary": "Ordinary tiers advertise USD 100–7,500, 100–5,500 and 100–3,000. Impact-based increases and a minimum $500 payment-data bonus are separate; no combined ceiling established. The May–June 2026 SSO promotion expired.",
+        "source_ids": [
+          "policy",
+          "currency"
+        ]
+      },
+      "eligibility": {
+        "summary": "Researcher identification, program-compliant accounts and concrete evidence are required. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Owned accounts only. Stop on nonpublic-data access and delete retained information. No form automation, social engineering, disruption or third-party evidence hosting. Public disclosure is prohibited.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The official brief explicitly displays In progress and an ongoing period.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:15:59Z",
+      "limitations": [
+        "Brief revision: June 17, 2026. Change index: page 1 of 4; diffs unreviewed.",
+        "Announcement index reviewed; recent notices read within the brief. Attachments, linked setup documentation and authenticated eligibility unreviewed.",
+        "USD uses platform accounting evidence. Static text omitted the brief. Inventories/instructions omitted; live terms prevail. No authorization granted."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Rapyd Bug Bounty public brief",
+          "url": "https://bugcrowd.com/engagements/rapyd",
+          "publisher": "Rapyd / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:15:59Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "announcements",
+          "title": "Rapyd Bug Bounty announcement archive",
+          "url": "https://bugcrowd.com/engagements/rapyd/announcements",
+          "publisher": "Rapyd / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:11:40Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "changelog",
+          "title": "Rapyd Bug Bounty change index",
+          "url": "https://bugcrowd.com/engagements/rapyd/changelog",
+          "publisher": "Rapyd / Bugcrowd",
+          "retrieved_at": "2026-10-03T04:12:14Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "currency",
+          "title": "Bugcrowd Organization Accounting",
+          "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:09:31Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Bugcrowd Standard Disclosure Terms",
+          "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+          "publisher": "Bugcrowd",
+          "retrieved_at": "2026-10-03T04:10:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Selected payment APIs, merchant-management, identity-verification and checkout services; API coverage is restricted to sandbox environments.",
+        "excluded_summary": "Unlisted/third-party services, known SSO findings, self-imposed identity-provider weaknesses and specified low-impact classes are excluded. Out-of-scope reports may be accepted without rewards.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://bugcrowd.com/engagements/rapyd"
+        ],
+        "verified_at": "2026-10-03T04:15:59Z"
       }
     },
     {

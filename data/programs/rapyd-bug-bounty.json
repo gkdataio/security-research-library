@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.4.0",
+  "id": "rapyd-bug-bounty",
+  "name": "Rapyd Bug Bounty",
+  "operator": "Rapyd",
+  "platform": "Bugcrowd",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The official brief advertises monetary bounties.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "program_url": "https://bugcrowd.com/engagements/rapyd",
+  "policy_url": "https://bugcrowd.com/engagements/rapyd",
+  "announcement_urls": [
+    "https://bugcrowd.com/engagements/rapyd/announcements"
+  ],
+  "change_log_url": "https://bugcrowd.com/engagements/rapyd/changelog",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 100,
+    "maximum": 7500,
+    "basis": "advertised_not_individual_award",
+    "summary": "Ordinary tiers advertise USD 100–7,500, 100–5,500 and 100–3,000. Impact-based increases and a minimum $500 payment-data bonus are separate; no combined ceiling established. The May–June 2026 SSO promotion expired.",
+    "source_ids": [
+      "policy",
+      "currency"
+    ]
+  },
+  "eligibility": {
+    "summary": "Researcher identification, program-compliant accounts and concrete evidence are required. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Owned accounts only. Stop on nonpublic-data access and delete retained information. No form automation, social engineering, disruption or third-party evidence hosting. Public disclosure is prohibited.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The official brief explicitly displays In progress and an ongoing period.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-03T04:15:59Z",
+  "limitations": [
+    "Brief revision: June 17, 2026. Change index: page 1 of 4; diffs unreviewed.",
+    "Announcement index reviewed; recent notices read within the brief. Attachments, linked setup documentation and authenticated eligibility unreviewed.",
+    "USD uses platform accounting evidence. Static text omitted the brief. Inventories/instructions omitted; live terms prevail. No authorization granted."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Rapyd Bug Bounty public brief",
+      "url": "https://bugcrowd.com/engagements/rapyd",
+      "publisher": "Rapyd / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:15:59Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "announcements",
+      "title": "Rapyd Bug Bounty announcement archive",
+      "url": "https://bugcrowd.com/engagements/rapyd/announcements",
+      "publisher": "Rapyd / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:11:40Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "changelog",
+      "title": "Rapyd Bug Bounty change index",
+      "url": "https://bugcrowd.com/engagements/rapyd/changelog",
+      "publisher": "Rapyd / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:12:14Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "currency",
+      "title": "Bugcrowd Organization Accounting",
+      "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T04:09:31Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T04:10:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "scope_context": {
+    "included_summary": "Selected payment APIs, merchant-management, identity-verification and checkout services; API coverage is restricted to sandbox environments.",
+    "excluded_summary": "Unlisted/third-party services, known SSO findings, self-imposed identity-provider weaknesses and specified low-impact classes are excluded. Out-of-scope reports may be accepted without rewards.",
+    "source_ids": [
+      "policy"
+    ],
+    "policy_urls": [
+      "https://bugcrowd.com/engagements/rapyd"
+    ],
+    "verified_at": "2026-10-03T04:15:59Z"
+  }
+}

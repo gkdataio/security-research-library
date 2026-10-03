@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.4.0",
+  "id": "hostgator-latam-bug-bounty",
+  "name": "HostGator LATAM Bug Bounty",
+  "operator": "Newfold Digital / HostGator LATAM",
+  "platform": "Bugcrowd",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The official brief advertises monetary bounties.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "program_url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+  "policy_url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+  "announcement_urls": [
+    "https://bugcrowd.com/engagements/hostgator-latam-bb/announcements"
+  ],
+  "change_log_url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 250,
+    "maximum": 2500,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised P3–P1 bands span USD 250–2,500; severity, likelihood and impact affect discretionary awards. Shared causes receive one bounty.",
+    "source_ids": [
+      "policy",
+      "currency"
+    ]
+  },
+  "eligibility": {
+    "summary": "Newfold group employees, their families, current vendors and vendor employees are excluded; sanctions apply. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Owned/authorized accounts only; no real-customer interaction, multiple accounts, brute force, social engineering, disruption or data damage. Public disclosure is prohibited; safe harbor is conditional.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "Current In progress status and a September 2026 participation invitation supersede the historical March 2022 pause notice.",
+    "source_ids": [
+      "policy",
+      "announcements"
+    ]
+  },
+  "last_verified_at": "2026-10-03T04:12:42Z",
+  "limitations": [
+    "Brief revision: September 11, 2026. Change index: page 1 of 2 only; version diffs unreviewed.",
+    "USD uses platform accounting evidence. Browser review recovered text omitted by static retrieval.",
+    "Announcement index and historical pause body reviewed; other notices read within the brief. No authenticated intake or complete legal audit. Inventories/instructions omitted; live terms prevail. No authorization granted."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "HostGator LATAM Bug Bounty public brief",
+      "url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+      "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:10:04Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "announcements",
+      "title": "HostGator LATAM Bug Bounty announcement archive",
+      "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/announcements",
+      "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:11:40Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "changelog",
+      "title": "HostGator LATAM Bug Bounty change index",
+      "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog",
+      "publisher": "Newfold Digital / HostGator LATAM / Bugcrowd",
+      "retrieved_at": "2026-10-03T04:12:14Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "currency",
+      "title": "Bugcrowd Organization Accounting",
+      "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T04:09:31Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T04:10:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "scope_context": {
+    "included_summary": "Selected first-party hosting and billing services, including qualifying authenticated navigation; recent coverage emphasizes AI-assisted server-management functionality.",
+    "excluded_summary": "Unlisted and customer-controlled services, third-party components, chatboxes, source disclosure, external credential leaks, recent disclosures and specified low-impact classes are excluded.",
+    "source_ids": [
+      "policy"
+    ],
+    "policy_urls": [
+      "https://bugcrowd.com/engagements/hostgator-latam-bb"
+    ],
+    "verified_at": "2026-10-03T04:12:42Z"
+  }
+}

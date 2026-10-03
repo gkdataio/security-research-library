@@ -6,7 +6,7 @@ Advertised rewards are not report awards. This directory grants no authorization
 
 This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.
 
-**Scope-context coverage:** 17 of 32 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
+**Scope-context coverage:** 21 of 36 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
 
 ## 1Password Bug Bounty
 
@@ -650,6 +650,55 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## HostGator LATAM Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/hostgator-latam-bb>) · [Policy](<https://bugcrowd.com/engagements/hostgator-latam-bb>) · [Canonical record](<../data/programs/hostgator-latam-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T04:12:42Z
+
+**Program type:** paid bounty. The official brief advertises monetary bounties\.
+
+**Submission status:** accepting reports. Current In progress status and a September 2026 participation invitation supersede the historical March 2022 pause notice\.
+
+**Advertised rewards:** Advertised P3–P1 bands span USD 250–2,500; severity, likelihood and impact affect discretionary awards\. Shared causes receive one bounty\.
+
+**Eligibility:** Newfold group employees, their families, current vendors and vendor employees are excluded; sanctions apply\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Owned/authorized accounts only; no real-customer interaction, multiple accounts, brute force, social engineering, disruption or data damage\. Public disclosure is prohibited; safe harbor is conditional\.
+
+**Scope context**
+
+**Included coverage:** Selected first-party hosting and billing services, including qualifying authenticated navigation; recent coverage emphasizes AI-assisted server-management functionality\.
+
+**Excluded coverage:** Unlisted and customer-controlled services, third-party components, chatboxes, source disclosure, external credential leaks, recent disclosures and specified low-impact classes are excluded\.
+
+**Scope verified:** 2026-10-03T04:12:42Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://bugcrowd.com/engagements/hostgator-latam-bb>)
+
+**Scope evidence:** [HostGator LATAM Bug Bounty public brief](<https://bugcrowd.com/engagements/hostgator-latam-bb>)
+
+**Verification limits**
+
+- Brief revision: September 11, 2026\. Change index: page 1 of 2 only; version diffs unreviewed\.
+- USD uses platform accounting evidence\. Browser review recovered text omitted by static retrieval\.
+- Announcement index and historical pause body reviewed; other notices read within the brief\. No authenticated intake or complete legal audit\. Inventories/instructions omitted; live terms prevail\. No authorization granted\.
+
+**Official evidence and updates**
+
+- [HostGator LATAM Bug Bounty public brief](<https://bugcrowd.com/engagements/hostgator-latam-bb>) — Newfold Digital / HostGator LATAM / Bugcrowd; retrieved 2026-10-03T04:10:04Z.
+- [HostGator LATAM Bug Bounty announcement archive](<https://bugcrowd.com/engagements/hostgator-latam-bb/announcements>) — Newfold Digital / HostGator LATAM / Bugcrowd; retrieved 2026-10-03T04:11:40Z.
+- [HostGator LATAM Bug Bounty change index](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog>) — Newfold Digital / HostGator LATAM / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog>).
+
 ## Intel Vulnerability Disclosure Program
 
 [Official program](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/intel-vulnerability-disclosure.json>)
@@ -926,6 +975,55 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=team>).
 
+## Nubank Brasil Managed Bug Bounty Program
+
+[Official program](<https://bugcrowd.com/engagements/nubank>) · [Policy](<https://bugcrowd.com/engagements/nubank>) · [Canonical record](<../data/programs/nubank-brasil-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T04:12:42Z
+
+**Program type:** paid bounty. The official brief advertises monetary bounties\.
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period\.
+
+**Advertised rewards:** Ordinary tiers span USD 50–4,000, 50–2,000 and 50–1,000\. June 2026 bonuses expired\. A September 22–October 16, 2026 campaign offers approximately $100 extra from a dedicated pool, subject to eligibility and excluded from bounds\.
+
+**Eligibility:** Employees and third-party providers are excluded\. Bank-account access requires valid regional tax identification and approval; false identification is prohibited\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Use owned/authorized accounts, protect privacy and availability, and observe monetary limits\. Social engineering and disruption are prohibited\. Disclosure needs consent; safe harbor is conditional\.
+
+**Scope context**
+
+**Included coverage:** Selected digital-banking mobile applications, first-party web services and investment services across distinct reward tiers\.
+
+**Excluded coverage:** Unlisted properties, temporarily suspended community services, unsupported third-party findings, unrelated credential leaks and specified low-impact classes are excluded\.
+
+**Scope verified:** 2026-10-03T04:12:42Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://bugcrowd.com/engagements/nubank>)
+
+**Scope evidence:** [Nubank Brasil Managed Bug Bounty Program public brief](<https://bugcrowd.com/engagements/nubank>)
+
+**Verification limits**
+
+- Brief revision: June 26, 2026\. Change index: page 1 of 3 only; diffs unreviewed\.
+- September bonus evidence comes from the full notice embedded in the brief; archive index reviewed\.
+- USD uses platform accounting evidence\. Browser-only policy recovery; authenticated eligibility and incorporated terms incompletely reviewed\. Inventories/instructions omitted; live terms prevail\. No authorization granted\.
+
+**Official evidence and updates**
+
+- [Nubank Brasil Managed Bug Bounty Program public brief](<https://bugcrowd.com/engagements/nubank>) — Nubank Brasil / Bugcrowd; retrieved 2026-10-03T04:10:28Z.
+- [Nubank Brasil Managed Bug Bounty Program announcement archive](<https://bugcrowd.com/engagements/nubank/announcements>) — Nubank Brasil / Bugcrowd; retrieved 2026-10-03T04:11:40Z.
+- [Nubank Brasil Managed Bug Bounty Program change index](<https://bugcrowd.com/engagements/nubank/changelog>) — Nubank Brasil / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/nubank/changelog>).
+
 ## NVIDIA Public Bug Bounty
 
 [Official program](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) · [Policy](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) · [Canonical record](<../data/programs/nvidia-public-bug-bounty.json>)
@@ -1036,6 +1134,56 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## OneTrust Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/onetrust>) · [Policy](<https://bugcrowd.com/engagements/onetrust>) · [Canonical record](<../data/programs/onetrust-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T04:12:42Z
+
+**Program type:** paid bounty. The official brief advertises monetary bounties\.
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period\.
+
+**Advertised rewards:** Advertised bands span USD 300–6,500; CVSS, likelihood and impact influence rewards\. Downgrades allow appeal; duplicate causes do not receive multiple awards\.
+
+**Eligibility:** Current employees, those employed within 12 months, customers and customer-engaged testing companies are excluded\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Use assigned or self-created accounts in the designated staging environment\. Avoid shared-setting changes and disruption\. Social engineering is prohibited\. Public disclosure is prohibited; safe harbor is conditional\.
+
+**Scope context**
+
+**Included coverage:** Designated staging application, including privacy-management workflows and integrations; an April 2026 notice adds qualifying public credential/confidential-information exposure\.
+
+**Excluded coverage:** Other environments, authorization findings without full administrator escalation and specified low-impact classes are excluded\. Leak-related awards remain discretionary under older brief wording\.
+
+**Scope verified:** 2026-10-03T04:12:42Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://bugcrowd.com/engagements/onetrust>)
+- [Official policy 2](<https://bugcrowd.com/engagements/onetrust/announcements>)
+
+**Scope evidence:** [OneTrust Bug Bounty public brief](<https://bugcrowd.com/engagements/onetrust>), [OneTrust Bug Bounty announcement archive](<https://bugcrowd.com/engagements/onetrust/announcements>)
+
+**Verification limits**
+
+- Brief revision: December 22, 2025; newer announcements exist\. Change index: page 1 of 2; diffs unreviewed\.
+- April 21, 2026 exposure notice opened separately\. No broader active-testing permission is inferred\.
+- USD uses platform accounting evidence\. Browser-only recovery; attachment, authenticated credential access and complete legal terms unreviewed\. Inventories/instructions omitted; live terms prevail\. No authorization granted\.
+
+**Official evidence and updates**
+
+- [OneTrust Bug Bounty public brief](<https://bugcrowd.com/engagements/onetrust>) — OneTrust / Bugcrowd; retrieved 2026-10-03T04:10:50Z.
+- [OneTrust Bug Bounty announcement archive](<https://bugcrowd.com/engagements/onetrust/announcements>) — OneTrust / Bugcrowd; retrieved 2026-10-03T04:11:40Z.
+- [OneTrust Bug Bounty change index](<https://bugcrowd.com/engagements/onetrust/changelog>) — OneTrust / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/onetrust/changelog>).
+
 ## OpenAI Security Bug Bounty
 
 [Official program](<https://bugcrowd.com/engagements/openai>) · [Policy](<https://bugcrowd.com/engagements/openai>) · [Canonical record](<../data/programs/openai-security-bug-bounty.json>)
@@ -1115,6 +1263,55 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 - [Proton legal safe harbor policy](<https://proton.me/security/safe-harbor>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Rapyd Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/rapyd>) · [Policy](<https://bugcrowd.com/engagements/rapyd>) · [Canonical record](<../data/programs/rapyd-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T04:15:59Z
+
+**Program type:** paid bounty. The official brief advertises monetary bounties\.
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period\.
+
+**Advertised rewards:** Ordinary tiers advertise USD 100–7,500, 100–5,500 and 100–3,000\. Impact-based increases and a minimum $500 payment-data bonus are separate; no combined ceiling established\. The May–June 2026 SSO promotion expired\.
+
+**Eligibility:** Researcher identification, program-compliant accounts and concrete evidence are required\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Owned accounts only\. Stop on nonpublic-data access and delete retained information\. No form automation, social engineering, disruption or third-party evidence hosting\. Public disclosure is prohibited\.
+
+**Scope context**
+
+**Included coverage:** Selected payment APIs, merchant-management, identity-verification and checkout services; API coverage is restricted to sandbox environments\.
+
+**Excluded coverage:** Unlisted/third-party services, known SSO findings, self-imposed identity-provider weaknesses and specified low-impact classes are excluded\. Out-of-scope reports may be accepted without rewards\.
+
+**Scope verified:** 2026-10-03T04:15:59Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://bugcrowd.com/engagements/rapyd>)
+
+**Scope evidence:** [Rapyd Bug Bounty public brief](<https://bugcrowd.com/engagements/rapyd>)
+
+**Verification limits**
+
+- Brief revision: June 17, 2026\. Change index: page 1 of 4; diffs unreviewed\.
+- Announcement index reviewed; recent notices read within the brief\. Attachments, linked setup documentation and authenticated eligibility unreviewed\.
+- USD uses platform accounting evidence\. Static text omitted the brief\. Inventories/instructions omitted; live terms prevail\. No authorization granted\.
+
+**Official evidence and updates**
+
+- [Rapyd Bug Bounty public brief](<https://bugcrowd.com/engagements/rapyd>) — Rapyd / Bugcrowd; retrieved 2026-10-03T04:15:59Z.
+- [Rapyd Bug Bounty announcement archive](<https://bugcrowd.com/engagements/rapyd/announcements>) — Rapyd / Bugcrowd; retrieved 2026-10-03T04:11:40Z.
+- [Rapyd Bug Bounty change index](<https://bugcrowd.com/engagements/rapyd/changelog>) — Rapyd / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/rapyd/changelog>).
 
 ## Telegram Bug Bounty
 

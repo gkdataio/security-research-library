@@ -9,7 +9,7 @@ Source-backed public security disclosures, official learning resources, and orig
 **Snapshot: October 3, 2026**
 
 - **59 qualifying report records:** 48 bug-bounty awards and 11 explicitly labeled competition entries
-- **32 public program-policy summaries**, maintained separately from award evidence
+- **36 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **20 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry

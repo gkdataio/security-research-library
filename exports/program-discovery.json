@@ -3,8 +3,8 @@
   "notice": "Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.",
   "counts": {
     "unique_program_page_listings": 1154,
-    "already_has_verified_policy": 25,
-    "awaiting_policy_review": 1129,
+    "already_has_verified_policy": 29,
+    "awaiting_policy_review": 1125,
     "batches": 3,
     "by_platform": {
       "Bugcrowd": 514,
@@ -5172,7 +5172,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "hostgator-latam-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
@@ -7774,7 +7774,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "nubank-brasil-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
@@ -8074,7 +8074,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "onetrust-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
@@ -9676,7 +9676,7 @@
       "evidence_note": "Official directory card labeled Bug Bounty. Monetary reward displayed. Program policy and submission status not reviewed.",
       "platform": "Bugcrowd",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "rapyd-bug-bounty",
       "observations": [
         {
           "batch_id": "bugcrowd-directory-2026-10-02",
