@@ -79,7 +79,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | [PDQ bug bounty program](<intigriti/intigriti-e2cf6e416bbf0ab4.md>) | Published scope captured | 4 | 5 | 0 | 2026-10-03T15:50:50Z |
 | [Personio](<intigriti/intigriti-f67fd7e02341ee40.md>) | Published scope captured | 14 | 6 | 0 | 2026-10-03T15:50:51Z |
 | [Pornhub Bug Bounty Program](<intigriti/intigriti-fa268c09399b222d.md>) | Only public terms were available | 0 | 0 | 0 | 2026-10-03T15:50:53Z |
-| [Port of Antwerp-Bruges](<intigriti/intigriti-a92fe9ae2d52c86d.md>) | Published scope captured | 49 | 9 | 0 | 2026-10-03T15:50:55Z |
+| [Port of Antwerp-Bruges](<intigriti/intigriti-a92fe9ae2d52c86d.md>) | Published scope captured | 48 | 9 | 0 | 2026-10-03T15:50:55Z |
 | [Posti Bug Bounty](<intigriti/intigriti-6880eb71eafb4af7.md>) | Published scope captured | 43 | 2 | 0 | 2026-10-03T15:50:57Z |
 | [Probiller Bug Bounty Program](<intigriti/intigriti-9b1c87de2b2d754c.md>) | Only public terms were available | 0 | 0 | 0 | 2026-10-03T15:50:59Z |
 | [RAMPF Bug Bounty](<intigriti/intigriti-50368e0e356572c8.md>) | Only a preview page was available | 0 | 0 | 0 | 2026-10-03T15:51:01Z |

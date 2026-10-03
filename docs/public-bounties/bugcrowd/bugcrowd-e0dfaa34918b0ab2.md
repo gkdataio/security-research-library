@@ -20,12 +20,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/meetical/changelog/bd4c7c9e-b655-415b-83c4-2c0892bede47.json>)
 
-## In-scope entries (4)
+## In-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | Meetical for Confluence Cloud - https://marketplace\.atlassian\.com/apps/1222405/meetical-for-confluence-cloud?hosting=cloud | website | https://marketplace\.atlassian\.com/apps/1222405/meetical-for-confluence-cloud | In Scope | — |
-| For reporting purposes only\. Use staging environment listed in brief\. | website | — | In Scope | — |
 | For reporting purposes only\. Use staging environment listed in brief\. | website | — | In Scope | — |
 | Easy Calendar for Jira \(Forge App\) - https://marketplace\.atlassian\.com/apps/1229489/easy-calendar-integration-for-jira-sync-issues-ics-export?hosting=cloud | other | https://marketplace\.atlassian\.com/apps/1229489/easy-calendar-integration-for-jira-sync-issues-ics-export?hosting=cloud&amp;tab=overview | In Scope | — |
 
@@ -36,3 +35,4 @@ No explicit asset rows were captured in this category. The policy may still impo
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 1 repeated rows in the published table were collapsed in this catalog\.

@@ -4,7 +4,7 @@
 
 Official public Bugcrowd directory and scope-table snapshots. A listing or asset row does not establish current testing permission, complete policy scope, report submission availability, or reward eligibility. Read the live program policy before research activity.
 
-**516 current visible public listings** in the 2026-10-03 directory snapshot: 293 Bug Bounty and 223 Vulnerability Disclosure. 507 have published scope rows captured; 9 have explicit gaps. The captured tables contain 5681 in-scope and 1410 out-of-scope rows.
+**516 current visible public listings** in the 2026-10-03 directory snapshot: 293 Bug Bounty and 223 Vulnerability Disclosure. 507 have published scope rows captured; 9 have explicit gaps. The captured tables contain 5621 in-scope and 1394 out-of-scope rows.
 
 - [Bug Bounty category](<bugcrowd-programs/bug-bounty.md>) — paid status is unconfirmed where no monetary reward was displayed.
 - [Vulnerability Disclosure category](<bugcrowd-programs/vdp.md>).

@@ -656,13 +656,6 @@
           "scope": "in"
         },
         {
-          "name": "█████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████████████████████",
           "asset_type": "website",
           "location": null,
@@ -698,42 +691,7 @@
           "scope": "in"
         },
         {
-          "name": "███████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████████████",
@@ -754,35 +712,7 @@
           "scope": "in"
         },
         {
-          "name": "█████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████████████",
@@ -803,42 +733,7 @@
           "scope": "in"
         },
         {
-          "name": "████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████████████████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████████████",
@@ -873,13 +768,6 @@
           "scope": "in"
         },
         {
-          "name": "█████████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "███████████████████████████████████████████",
           "asset_type": "website",
           "location": null,
@@ -887,77 +775,7 @@
           "scope": "in"
         },
         {
-          "name": "████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████████████████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████████████",
@@ -1014,7 +832,9 @@
       "name": "PNI Media - Bug Bounty",
       "program_url": "https://bugcrowd.com/engagements/pnimedia-bb",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:52:06Z"
+      "captured_at": "2026-10-03T15:52:06Z",
+      "duplicate_source_rows": 26,
+      "published_asset_count": 64
     },
     {
       "listing_id": "bugcrowd-06a86c85056853bb",
@@ -1361,7 +1181,14 @@
       "name": "EU-Automation-Test-Regression-Engagement1-B",
       "program_url": "https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b",
       "directory_program_type": "unknown",
-      "captured_at": "2026-10-03T16:03:18Z"
+      "captured_at": "2026-10-03T16:03:18Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "listing_id": "bugcrowd-0ecaa506b3c39bf6",
@@ -1776,7 +1603,14 @@
       "name": "Demo-EU-admin-Test",
       "program_url": "https://eu.bugcrowd.net/engagements/Demo-EU-admin-Test",
       "directory_program_type": "unknown",
-      "captured_at": "2026-10-03T16:03:16Z"
+      "captured_at": "2026-10-03T16:03:16Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/Demo-EU-admin-Test",
+        "http_status": 403,
+        "result": "http_403",
+        "note": "The official public engagement page returned HTTP 403 during this review. Its policy and asset list were unavailable."
+      }
     },
     {
       "listing_id": "bugcrowd-154fcdb83c0de882",
@@ -5073,13 +4907,6 @@
           "scope": "in"
         },
         {
-          "name": "██████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "███████████████",
-          "scope": "in"
-        },
-        {
           "name": "███████████",
           "asset_type": "website",
           "location": null,
@@ -5165,13 +4992,6 @@
         },
         {
           "name": "█████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "███████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████",
           "asset_type": "api",
           "location": null,
           "group": "███████████████",
@@ -5206,29 +5026,8 @@
           "scope": "in"
         },
         {
-          "name": "█████████████████████",
-          "asset_type": "api",
-          "location": null,
-          "group": "███████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "███████████████",
-          "scope": "in"
-        },
-        {
           "name": "███████████████████████████████████████████████",
           "asset_type": "iot",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "█████████████████",
-          "asset_type": "website",
           "location": null,
           "group": "████████████",
           "scope": "out"
@@ -5290,13 +5089,6 @@
           "scope": "out"
         },
         {
-          "name": "█████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
           "name": "██████████████",
           "asset_type": "website",
           "location": null,
@@ -5319,13 +5111,6 @@
         },
         {
           "name": "███████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████",
@@ -5346,27 +5131,6 @@
           "scope": "out"
         },
         {
-          "name": "██████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "███████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "███████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
           "name": "██████████",
           "asset_type": "network",
           "location": null,
@@ -5381,42 +5145,7 @@
           "scope": "out"
         },
         {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
           "name": "███████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "███████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "██████████████",
           "asset_type": "network",
           "location": null,
           "group": "████████████",
@@ -5445,7 +5174,9 @@
       "name": "Xfinity Home & xFi",
       "program_url": "https://bugcrowd.com/engagements/xfinity-home",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:53:34Z"
+      "captured_at": "2026-10-03T15:53:34Z",
+      "duplicate_source_rows": 15,
+      "published_asset_count": 57
     },
     {
       "listing_id": "bugcrowd-37f0fa1cdf25bda2",
@@ -5708,20 +5439,6 @@
           "scope": "in"
         },
         {
-          "name": "███████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "███████████████████████████████████████████",
           "asset_type": "website",
           "location": null,
@@ -5772,7 +5489,9 @@
       "name": "Centers for Medicare & Medicaid Services - Public Bug Bounty Program 2026",
       "program_url": "https://bugcrowd.com/engagements/cms-bbpublic",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:39Z"
+      "captured_at": "2026-10-03T15:49:39Z",
+      "duplicate_source_rows": 2,
+      "published_asset_count": 10
     },
     {
       "listing_id": "bugcrowd-3e67db17322cc110",
@@ -9139,13 +8858,6 @@
           "scope": "in"
         },
         {
-          "name": "███████████████",
-          "asset_type": "hardware",
-          "location": null,
-          "group": "██████",
-          "scope": "in"
-        },
-        {
           "name": "██████████",
           "asset_type": "website",
           "location": null,
@@ -9224,7 +8936,9 @@
       "name": "Square",
       "program_url": "https://bugcrowd.com/engagements/square",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:52:52Z"
+      "captured_at": "2026-10-03T15:52:52Z",
+      "duplicate_source_rows": 1,
+      "published_asset_count": 17
     },
     {
       "listing_id": "bugcrowd-5de9dedca7278187",
@@ -9495,42 +9209,7 @@
           "scope": "out"
         },
         {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
           "name": "███████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "█████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "███████████████",
-          "asset_type": "network",
-          "location": null,
-          "group": "████████████",
-          "scope": "out"
-        },
-        {
-          "name": "██████████████",
           "asset_type": "network",
           "location": null,
           "group": "████████████",
@@ -9587,7 +9266,9 @@
       "name": "Comcast Xfinity Bug Bounty",
       "program_url": "https://bugcrowd.com/engagements/comcast-mbb",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:57Z"
+      "captured_at": "2026-10-03T15:49:57Z",
+      "duplicate_source_rows": 5,
+      "published_asset_count": 21
     },
     {
       "listing_id": "bugcrowd-65fd0d2e30008d52",
@@ -16120,22 +15801,8 @@
           "scope": "in"
         },
         {
-          "name": "███████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "█████████████",
           "asset_type": "api",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████",
-          "asset_type": "website",
           "location": null,
           "group": "████████████████",
           "scope": "in"
@@ -16198,7 +15865,9 @@
       "name": "TIDAL",
       "program_url": "https://bugcrowd.com/engagements/tidal-bugbounty",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:53:06Z"
+      "captured_at": "2026-10-03T15:53:06Z",
+      "duplicate_source_rows": 2,
+      "published_asset_count": 12
     },
     {
       "listing_id": "bugcrowd-91d2bcf80709c6d7",
@@ -20648,13 +20317,6 @@
           "scope": "in"
         },
         {
-          "name": "██████████████████████████",
-          "asset_type": "other",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "█████████████████████████████████████████████",
           "asset_type": "other",
           "location": null,
@@ -20697,21 +20359,7 @@
           "scope": "in"
         },
         {
-          "name": "█████████████",
-          "asset_type": "other",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "████",
-          "asset_type": "other",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████████",
           "asset_type": "other",
           "location": null,
           "group": "████████████████",
@@ -20754,7 +20402,9 @@
       "name": "Rec Room Video Games",
       "program_url": "https://bugcrowd.com/engagements/recroom-og",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:52:19Z"
+      "captured_at": "2026-10-03T15:52:19Z",
+      "duplicate_source_rows": 3,
+      "published_asset_count": 15
     },
     {
       "listing_id": "bugcrowd-b06a1a7effe4c3de",
@@ -21972,35 +21622,7 @@
           "scope": "in"
         },
         {
-          "name": "████████████████",
-          "asset_type": "ios",
-          "location": null,
-          "group": "████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████",
-          "asset_type": "android",
-          "location": null,
-          "group": "████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████",
-          "scope": "in"
-        },
-        {
           "name": "████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████",
-          "scope": "in"
-        },
-        {
-          "name": "███████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████",
@@ -22009,13 +21631,6 @@
         {
           "name": "█████████████████████",
           "asset_type": "website",
-          "location": null,
-          "group": "████████",
-          "scope": "in"
-        },
-        {
-          "name": "██████████████████████",
-          "asset_type": "api",
           "location": null,
           "group": "████████",
           "scope": "in"
@@ -22064,7 +21679,9 @@
       "name": "Afterpay Bug Bounty Program",
       "program_url": "https://bugcrowd.com/engagements/afterpay",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:48:55Z"
+      "captured_at": "2026-10-03T15:48:55Z",
+      "duplicate_source_rows": 5,
+      "published_asset_count": 19
     },
     {
       "listing_id": "bugcrowd-bc44de486a361c0f",
@@ -26959,13 +26576,6 @@
           "scope": "in"
         },
         {
-          "name": "For reporting purposes only. Use staging environment listed in brief.",
-          "asset_type": "website",
-          "location": null,
-          "group": "In Scope",
-          "scope": "in"
-        },
-        {
           "name": "Easy Calendar for Jira (Forge App) - https://marketplace.atlassian.com/apps/1229489/easy-calendar-integration-for-jira-sync-issues-ics-export?hosting=cloud",
           "asset_type": "other",
           "location": "https://marketplace.atlassian.com/apps/1229489/easy-calendar-integration-for-jira-sync-issues-ics-export?hosting=cloud&tab=overview",
@@ -26981,7 +26591,9 @@
       "name": "Meetical",
       "program_url": "https://bugcrowd.com/engagements/meetical",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:26Z"
+      "captured_at": "2026-10-03T15:51:26Z",
+      "duplicate_source_rows": 1,
+      "published_asset_count": 4
     },
     {
       "listing_id": "bugcrowd-e1059a33db2c9e9b",
@@ -28866,7 +28478,14 @@
       "name": "Demo-EU-admin-PenTest-Max-4",
       "program_url": "https://eu.bugcrowd.net/engagements/demo-eu-admin-pentest-max-4",
       "directory_program_type": "unknown",
-      "captured_at": "2026-10-03T16:03:15Z"
+      "captured_at": "2026-10-03T16:03:15Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://eu.bugcrowd.net/engagements/demo-eu-admin-pentest-max-4",
+        "http_status": 403,
+        "result": "http_403",
+        "note": "The official public engagement page returned HTTP 403 during this review. Its policy and asset list were unavailable."
+      }
     },
     {
       "listing_id": "bugcrowd-ef2aa16121ee462d",
@@ -30387,13 +30006,6 @@
           "scope": "in"
         },
         {
-          "name": "██████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "█████████████████████",
-          "scope": "in"
-        },
-        {
           "name": "█████████████████",
           "asset_type": "website",
           "location": null,
@@ -30415,63 +30027,7 @@
           "scope": "in"
         },
         {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
           "name": "███████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "██████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "██████████████████",
@@ -30493,7 +30049,9 @@
       "name": "Seek.com",
       "program_url": "https://bugcrowd.com/engagements/seek-com",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:52:36Z"
+      "captured_at": "2026-10-03T15:52:36Z",
+      "duplicate_source_rows": 9,
+      "published_asset_count": 18
     },
     {
       "listing_id": "bugcrowd-fa4a054bd1c67263",
@@ -34220,7 +33778,14 @@
       "name": "Phabricator",
       "program_url": "https://hackerone.com/phabricator?type=team",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:53:42Z"
+      "captured_at": "2026-10-03T15:53:42Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/phabricator/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
     },
     {
       "listing_id": "hackerone-048bc8fbfcdeb0ce",
@@ -55512,7 +55077,14 @@
       "name": "CoinMate.io",
       "program_url": "https://hackerone.com/coinmate?type=team",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:14Z"
+      "captured_at": "2026-10-03T15:50:14Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/coinmate/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
     },
     {
       "listing_id": "hackerone-511dcd018ac31f8b",
@@ -75490,7 +75062,14 @@
       "name": "Django",
       "program_url": "https://hackerone.com/django?type=team",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:37Z"
+      "captured_at": "2026-10-03T15:50:37Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://hackerone.com/django/policy_scopes",
+        "http_status": 200,
+        "result": "javascript_required",
+        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+      }
     },
     {
       "listing_id": "hackerone-bebd81343ae4ef3f",
@@ -89024,7 +88603,14 @@
       "name": "UpCloud Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/upcloud/upcloud",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:37Z"
+      "captured_at": "2026-10-03T15:51:37Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/upcloud/upcloud/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-07fe0cf3635a7152",
@@ -89128,7 +88714,14 @@
       "name": "Allekabels",
       "program_url": "https://app.intigriti.com/programs/rpip/allekabels",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:48:56Z"
+      "captured_at": "2026-10-03T15:48:56Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/rpip/allekabels/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-0ca8029dcf9778cb",
@@ -89225,7 +88818,14 @@
       "name": "Leapsome",
       "program_url": "https://app.intigriti.com/programs/leapsome/leapsome",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:20Z"
+      "captured_at": "2026-10-03T15:50:20Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/leapsome/leapsome/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-12936eec3f8c8c8b",
@@ -89462,7 +89062,14 @@
       "name": "Farfetch Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/farfetch/farfetchbugbounty",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:45Z"
+      "captured_at": "2026-10-03T15:49:45Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/farfetch/farfetchbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-21feb0f6bec3be88",
@@ -89629,7 +89236,14 @@
       "name": "Capture Our Flag",
       "program_url": "https://app.intigriti.com/programs/intigriti/captureourflag",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:15Z"
+      "captured_at": "2026-10-03T15:49:15Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/intigriti/captureourflag/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-247b5b0bf0908a57",
@@ -89642,7 +89256,14 @@
       "name": "Doccle Bug Bounty program",
       "program_url": "https://app.intigriti.com/programs/doccle/doccle",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:36Z"
+      "captured_at": "2026-10-03T15:49:36Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/doccle/doccle/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-27539c66a2b5fa2a",
@@ -91223,7 +90844,14 @@
       "name": "Liveperson Conversational Cloud",
       "program_url": "https://app.intigriti.com/programs/liveperson/livepersonconversationalcloud",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:25Z"
+      "captured_at": "2026-10-03T15:50:25Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/liveperson/livepersonconversationalcloud/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-3f2575fc1f1953c9",
@@ -91621,7 +91249,14 @@
       "name": "Wireless Logic",
       "program_url": "https://app.intigriti.com/programs/wl/wirelesslogic",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:59Z"
+      "captured_at": "2026-10-03T15:51:59Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/wl/wirelesslogic/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-470709229eebc322",
@@ -92537,7 +92172,14 @@
       "name": "Telenet - Base - Wyre - Tadaam",
       "program_url": "https://app.intigriti.com/programs/telenet/telenetgroup",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:19Z"
+      "captured_at": "2026-10-03T15:51:19Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/telenet/telenetgroup/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-50368e0e356572c8",
@@ -92550,7 +92192,14 @@
       "name": "RAMPF Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/rampf/rampfbugbounty",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:01Z"
+      "captured_at": "2026-10-03T15:51:01Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/rampf/rampfbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-53e89133e9571255",
@@ -92668,7 +92317,14 @@
       "name": "Uitgeverij Deviant Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/uitgeverijdeviant/uitgeverijdeviant",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:35Z"
+      "captured_at": "2026-10-03T15:51:35Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/uitgeverijdeviant/uitgeverijdeviant/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-5b8c3132b79487a4",
@@ -93822,7 +93478,14 @@
       "name": "MyDirtyHobby Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/mydirtyhobby-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:35Z"
+      "captured_at": "2026-10-03T15:50:35Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/mydirtyhobby-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-6e7c18751a748f03",
@@ -94101,7 +93764,14 @@
       "name": "Kahoot Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/kahoot/kahoot",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:13Z"
+      "captured_at": "2026-10-03T15:50:13Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/kahoot/kahoot/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-771e6e682c937142",
@@ -94772,7 +94442,14 @@
       "name": "TrafficJunky Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/trafficjunky-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:26Z"
+      "captured_at": "2026-10-03T15:51:26Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/trafficjunky-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-84d7a98b220b8a42",
@@ -95366,7 +95043,14 @@
       "name": "Probiller Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/probiller-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:59Z"
+      "captured_at": "2026-10-03T15:50:59Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/probiller-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-a0e554654771f864",
@@ -96254,7 +95938,14 @@
       "name": "Colruyt Group",
       "program_url": "https://app.intigriti.com/programs/colruyt/colruytgroupidcheck",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:21Z"
+      "captured_at": "2026-10-03T15:49:21Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/colruyt/colruytgroupidcheck/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-a3ffa1f1256a691e",
@@ -96474,13 +96165,6 @@
           "name": "maximo.portofantwerp.com",
           "asset_type": "URL",
           "location": "http://maximo.portofantwerp.com",
-          "group": "Tier 2",
-          "scope": "in"
-        },
-        {
-          "name": "maximo.portofantwerpbruges.com",
-          "asset_type": "URL",
-          "location": "http://maximo.portofantwerpbruges.com",
           "group": "Tier 2",
           "scope": "in"
         },
@@ -96779,7 +96463,9 @@
       "name": "Port of Antwerp-Bruges",
       "program_url": "https://app.intigriti.com/programs/portofantwerp/portofantwerp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:55Z"
+      "captured_at": "2026-10-03T15:50:55Z",
+      "duplicate_source_rows": 1,
+      "published_asset_count": 58
     },
     {
       "listing_id": "intigriti-a9d9849de0a71f23",
@@ -96855,7 +96541,14 @@
       "name": "Belfius",
       "program_url": "https://app.intigriti.com/programs/belfius/belfius",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:05Z"
+      "captured_at": "2026-10-03T15:49:05Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/belfius/belfius/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-aa94c0ecbba29b2b",
@@ -97043,7 +96736,14 @@
       "name": "Nutaku Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/nutaku-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:46Z"
+      "captured_at": "2026-10-03T15:50:46Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/nutaku-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-b179780cc1d1f514",
@@ -97056,7 +96756,14 @@
       "name": "Ideals Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/ideals/ideals",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:03Z"
+      "captured_at": "2026-10-03T15:50:03Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/ideals/ideals/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-b88cdb7491448c6e",
@@ -97209,7 +96916,14 @@
       "name": "Brazzers Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/brazzers-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:12Z"
+      "captured_at": "2026-10-03T15:49:12Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/brazzers-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-bb77675d6cfe285d",
@@ -97726,7 +97440,14 @@
       "name": "My.sdworx.com",
       "program_url": "https://app.intigriti.com/programs/sdworx/myworkandme",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:33Z"
+      "captured_at": "2026-10-03T15:50:33Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/sdworx/myworkandme/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-c2b0db1b0d386293",
@@ -97739,7 +97460,14 @@
       "name": "Intertoys",
       "program_url": "https://app.intigriti.com/programs/intertoys/intertoys",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:09Z"
+      "captured_at": "2026-10-03T15:50:09Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/intertoys/intertoys/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-c2c21827100d7db4",
@@ -97752,7 +97480,14 @@
       "name": "Webnode",
       "program_url": "https://app.intigriti.com/programs/combell/webnode",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:57Z"
+      "captured_at": "2026-10-03T15:51:57Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/combell/webnode/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-c5efdb02e4f8b4e2",
@@ -99319,7 +99054,14 @@
       "name": "Coveo Public Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:23Z"
+      "captured_at": "2026-10-03T15:49:23Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-e2cf6e416bbf0ab4",
@@ -99409,7 +99151,14 @@
       "name": "Fortnox Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/fortnox/fortnox",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:49Z"
+      "captured_at": "2026-10-03T15:49:49Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/fortnox/fortnox/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-e4396437b33f824f",
@@ -99422,7 +99171,14 @@
       "name": "Daytona Bug Bounty",
       "program_url": "https://app.intigriti.com/programs/daytona/daytonabugbounty",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:49:27Z"
+      "captured_at": "2026-10-03T15:49:27Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/daytona/daytonabugbounty/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-e80762bd94c58a62",
@@ -99435,7 +99191,14 @@
       "name": "Ubisoft Game Security BBP",
       "program_url": "https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:51:33Z"
+      "captured_at": "2026-10-03T15:51:33Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-e8a8e25cbf83374c",
@@ -100736,7 +100499,14 @@
       "name": "12Build Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/onetwobuild/12build",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:48:44Z"
+      "captured_at": "2026-10-03T15:48:44Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/onetwobuild/12build/preview/detail",
+        "http_status": 200,
+        "result": "preview_login_gate",
+        "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
+      }
     },
     {
       "listing_id": "intigriti-fa268c09399b222d",
@@ -100749,7 +100519,14 @@
       "name": "Pornhub Bug Bounty Program",
       "program_url": "https://app.intigriti.com/programs/aylo/pornhub-bbp",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:53Z"
+      "captured_at": "2026-10-03T15:50:53Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/aylo/pornhub-bbp/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     },
     {
       "listing_id": "intigriti-faccd7a67d359b6c",
@@ -100762,7 +100539,14 @@
       "name": "Newpharma",
       "program_url": "https://app.intigriti.com/programs/colruyt/newpharma",
       "directory_program_type": "paid_bounty",
-      "captured_at": "2026-10-03T15:50:37Z"
+      "captured_at": "2026-10-03T15:50:37Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://app.intigriti.com/programs/colruyt/newpharma/tac/detail",
+        "http_status": 200,
+        "result": "terms_login_gate",
+        "note": "The official program detail redirected to a terms page with a login or application gate. No public asset rows were visible; terms prose alone was not treated as an asset list."
+      }
     }
   ]
 }

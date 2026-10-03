@@ -4,11 +4,12 @@
 import argparse
 from collections import Counter
 import json
-from urllib.parse import urlsplit
 
 from build_navigation import link, text
 from export_program_discovery import build as build_discovery
 from export_public_bounties import build as build_bounties, render_asset_table
+from scope_integrity import (SOURCE_METHODS, source_belongs_to_program,
+                             validate_gap_review, validate_unique_scope_rows)
 from validate import ROOT, Invalid, check_schema
 
 
@@ -18,9 +19,6 @@ STATUS_LABELS = {
     "fetch_failed": "Scope fetch failed",
     "not_attempted": "Scope not yet fetched",
 }
-OFFICIAL_HOSTS = {"bugcrowd.com", "eu.bugcrowd.net", "gov.bugcrowd.net"}
-
-
 def load_vdp_captures(root, current, snapshot_date):
     path = root / "data/bugcrowd-vdp-scopes.json"
     schema = json.loads((root / "schema/bugcrowd-vdp-scopes.schema.json").read_text(encoding="utf-8"))
@@ -39,14 +37,26 @@ def load_vdp_captures(root, current, snapshot_date):
         if any(item[key] != listing[key] for key in ("name", "program_url")):
             raise Invalid("VDP capture identity differs from directory listing: " + ident)
         source = item.get("source_url")
-        if source and urlsplit(source).hostname not in OFFICIAL_HOSTS:
-            raise Invalid("VDP scope source is not on Bugcrowd: " + ident)
+        if source:
+            if item.get("source_method") != SOURCE_METHODS["Bugcrowd"]:
+                raise Invalid("VDP scope method disagrees with Bugcrowd: " + ident)
+            if not source_belongs_to_program("Bugcrowd", item["program_url"], source, "bugcrowd_scope"):
+                raise Invalid("VDP scope source belongs to a different program: " + ident)
+        elif item.get("source_method"):
+            raise Invalid("VDP scope method lacks a source URL: " + ident)
+        validate_unique_scope_rows(item.get("assets", []), ident)
+        validate_gap_review(item)
         if item["status"] == "captured" and (not item.get("assets") or not source):
             raise Invalid("captured VDP requires published assets and official source: " + ident)
+        if item.get("duplicate_source_rows") and item["status"] != "captured":
+            raise Invalid("duplicate VDP source row count requires captured assets: " + ident)
         if item["status"] == "no_published_assets" and (item.get("assets") or not source):
             raise Invalid("empty VDP scope requires an official source and no assets: " + ident)
         if item["status"] == "fetch_failed" and (item.get("assets") or not item.get("error")):
             raise Invalid("failed VDP scope requires an error and no assets: " + ident)
+        if (item.get("published_asset_count") is not None
+                and len(item.get("assets", [])) + item.get("duplicate_source_rows", 0) != item["published_asset_count"]):
+            raise Invalid("published VDP asset count does not match captured rows: " + ident)
         captures[ident] = item
     return captures
 
@@ -54,9 +64,16 @@ def load_vdp_captures(root, current, snapshot_date):
 def vdp_record(listing, capture):
     status = capture["status"] if capture else "not_attempted"
     assets = capture.get("assets", []) if capture and status == "captured" else []
-    limitations = ["Only the published asset table was captured; program rules and submission eligibility still require individual review."]
+    limitations = (["Only the published asset table was captured; program rules and submission eligibility still require individual review."]
+                   if status == "captured" else ["Full program policy review remains outstanding."])
+    duplicate_rows = capture.get("duplicate_source_rows", 0) if capture else 0
+    gap_review = capture.get("gap_review") if capture else None
+    if duplicate_rows:
+        limitations.append(f"{duplicate_rows} repeated rows in the published table were collapsed in this catalog.")
     if status != "captured":
         limitations.append("No public asset rows were captured; consult the live official program policy for any policy-defined scope.")
+    if gap_review:
+        limitations.append(gap_review["note"])
     return {
         "id": listing["id"], "name": listing["name"], "program_url": listing["program_url"],
         "program_type": "vulnerability_disclosure", "directory_category": "vdp",
@@ -65,6 +82,7 @@ def vdp_record(listing, capture):
         "scope_published_at": capture.get("published_at") if capture else None,
         "scope_group_count": capture.get("scope_groups") if capture else None,
         "capture_error": capture.get("error") if capture else None,
+        "scope_source_duplicate_rows": duplicate_rows, "gap_review": gap_review,
         "scope_source_urls": [capture["source_url"]] if capture and capture.get("source_url") else [],
         "in_scope": [{k: v for k, v in asset.items() if k != "scope"} for asset in assets if asset["scope"] == "in"],
         "out_of_scope": [{k: v for k, v in asset.items() if k != "scope"} for asset in assets if asset["scope"] == "out"],
@@ -84,6 +102,8 @@ def bounty_record(listing, source, capture):
         "scope_published_at": capture.get("published_at") if capture else None,
         "scope_group_count": capture.get("scope_groups") if capture else None,
         "capture_error": capture.get("error") if capture else None,
+        "scope_source_duplicate_rows": source["scope_source_duplicate_rows"],
+        "gap_review": source["gap_review"],
         "scope_source_urls": source["scope_source_urls"],
         "in_scope": source["in_scope"], "out_of_scope": source["out_of_scope"],
         "policy_review_state": source["policy_review_state"],
@@ -131,6 +151,7 @@ def build(root=ROOT):
         "by_scope_status": by_status,
         "in_scope_entries": sum(len(item["in_scope"]) for item in records),
         "out_of_scope_entries": sum(len(item["out_of_scope"]) for item in records),
+        "duplicate_source_rows_removed": sum(item["scope_source_duplicate_rows"] for item in records),
     }
     notice = ("Official public Bugcrowd directory and scope-table snapshots. A listing or asset row does not establish "
               "current testing permission, complete policy scope, report submission availability, or reward eligibility. "

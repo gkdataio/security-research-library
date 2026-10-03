@@ -40,7 +40,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Cisco Responsible Disclosure](<vdp/bugcrowd-78d1fe8fa4d18fe9.md>) | Technology | — | Published scope captured | 1 | 2 | 2026-10-03T16:45:51Z |
 | [Cisco ThousandEyes Vulnerability Disclosure Program \(VDP\)](<vdp/bugcrowd-42e6a84359dc0556.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-10-03T16:44:50Z |
 | [Citi's Responsible Disclosure Program](<vdp/bugcrowd-4b30e6365f6ad86f.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-10-03T16:45:45Z |
-| [Coles Group Limited Vulnerability Disclosure Program](<vdp/bugcrowd-364dac5184d92780.md>) | Retail | — | Published scope captured | 13 | 8 | 2026-10-03T16:45:02Z |
+| [Coles Group Limited Vulnerability Disclosure Program](<vdp/bugcrowd-364dac5184d92780.md>) | Retail | — | Published scope captured | 12 | 8 | 2026-10-03T16:45:02Z |
 | [Connecteam Vulnerability Disclosure Engagement](<vdp/bugcrowd-2eb33abfb0688da6.md>) | Computer Software | — | Published scope captured | 14 | 0 | 2026-10-03T16:44:11Z |
 | [Consumer Financial Protection Bureau - Vulnerability Disclosure Program](<vdp/bugcrowd-fbf9bb6ecda2a16a.md>) | Government | — | Published scope captured | 25 | 0 | 2026-10-03T16:44:42Z |
 | [Consumer Product Safety Commission \(CPSC\) Vulnerability Disclosure Program](<vdp/bugcrowd-74b105b955894436.md>) | — | — | Published scope captured | 18 | 0 | 2026-10-03T16:44:25Z |
@@ -95,7 +95,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Kinaxis Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e6726836cb104fd.md>) | Computer Software | — | Published scope captured | 4 | 1 | 2026-10-03T16:44:12Z |
 | [Kmart Group \(Kmart, Target\) Vulnerability Disclosure Program](<vdp/bugcrowd-77c0d0ae60e884b2.md>) | Retail | — | Published scope captured | 6 | 0 | 2026-10-03T16:45:07Z |
 | [Labcorp's Vulnerability Disclosure Program](<vdp/bugcrowd-4ebefa556cae109d.md>) | — | — | Published scope captured | 3 | 0 | 2026-10-03T16:44:49Z |
-| [Latitude Financial Services Vulnerability Disclosure Program](<vdp/bugcrowd-7b00f3e4451f80fe.md>) | — | — | Published scope captured | 19 | 0 | 2026-10-03T16:45:32Z |
+| [Latitude Financial Services Vulnerability Disclosure Program](<vdp/bugcrowd-7b00f3e4451f80fe.md>) | — | — | Published scope captured | 13 | 0 | 2026-10-03T16:45:32Z |
 | [Ledn Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-7629677d39ad433c.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-10-03T16:44:15Z |
 | [LegalZoom VDP](<vdp/bugcrowd-1094fe4db4d801c3.md>) | Technology | — | Published scope captured | 4 | 0 | 2026-10-03T16:45:22Z |
 | [Lenovo Responsible Disclosure](<vdp/bugcrowd-fe6d5bc8fef13cfb.md>) | — | — | Published scope captured | 6 | 0 | 2026-10-03T16:45:49Z |

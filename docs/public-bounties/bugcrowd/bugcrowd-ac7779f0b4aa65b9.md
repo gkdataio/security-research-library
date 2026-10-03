@@ -20,11 +20,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://bugcrowd.com/engagements/recroom-og/changelog/ea1fbbf5-344d-40a4-8f56-38f1000928c6.json>)
 
-## In-scope entries (15)
+## In-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| ██████████████████████████ | other | — | ████████████████ | — |
 | ██████████████████████████ | other | — | ████████████████ | — |
 | █████████████████████████████████████████████ | other | — | ████████████████ | — |
 | ███████████████████████ | other | — | ████████████████ | — |
@@ -32,9 +31,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ███ | ios | — | ████████████████ | — |
 | ███████ | android | — | ████████████████ | — |
 | █████████████ | other | — | ████████████████ | — |
-| █████████████ | other | — | ████████████████ | — |
 | ████ | other | — | ████████████████ | — |
-| ███████████████ | other | — | ████████████████ | — |
 | ████████████████ | website | — | ████████████████ | — |
 | ███████████████████ | api | — | ████████████████ | — |
 | ████████████████████ | api | — | ████████████████ | — |
@@ -47,4 +44,5 @@ No explicit asset rows were captured in this category. The policy may still impo
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 3 repeated rows in the published table were collapsed in this catalog\.
 - The platform redacts at least one asset label; that row is not a usable target identifier\.

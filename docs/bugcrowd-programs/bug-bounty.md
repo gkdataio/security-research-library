@@ -11,7 +11,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Accxia Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-48ea6e730ccb9ec9.md>) | — | $100 - $1,500 | Published scope captured | 2 | 0 | 2026-10-03T15:48:46Z |
 | [Acorns Grow, Inc\.](<../public-bounties/bugcrowd/bugcrowd-cc55fb914f763851.md>) | Finance | $100 - $4,000 | Published scope captured | 5 | 3 | 2026-10-03T15:48:53Z |
 | [Aelbox Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-b06a1a7effe4c3de.md>) | Computer Software | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:48:54Z |
-| [Afterpay Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-bb5a580105b38587.md>) | eCommerce | $100 - $5,000 | Published scope captured | 16 | 3 | 2026-10-03T15:48:55Z |
+| [Afterpay Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-bb5a580105b38587.md>) | eCommerce | $100 - $5,000 | Published scope captured | 11 | 3 | 2026-10-03T15:48:55Z |
 | [agile doyens](<../public-bounties/bugcrowd/bugcrowd-40d63da19d59ab5f.md>) | Computer Software | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:48:56Z |
 | [AgilePulse Marketplace Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-53ab5d6d174f0369.md>) | Computer Software | $100 - $1,500 | Published scope captured | 8 | 0 | 2026-10-03T15:48:57Z |
 | [Agilis LT Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-2e14b20f0897659c.md>) | Computer Software | $100 - $1,500 | Published scope captured | 10 | 0 | 2026-10-03T15:48:58Z |
@@ -57,7 +57,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Cash App](<../public-bounties/bugcrowd/bugcrowd-4ae01efe77d11193.md>) | Finance | $100 - $18,000 | Published scope captured | 4 | 0 | 2026-10-03T15:49:36Z |
 | [Catapult Labs Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-b93ed611507ffd78.md>) | Computer Software | $100 - $1,500 | Published scope captured | 8 | 0 | 2026-10-03T15:49:37Z |
 | [celix Solutions GmbH Marketplace Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-8820163c04c73d60.md>) | Computer Software | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:49:38Z |
-| [Centers for Medicare &amp; Medicaid Services - Public Bug Bounty Program 2026](<../public-bounties/bugcrowd/bugcrowd-3d5e38383524336c.md>) | — | $250 - $7,000 | Published scope captured | 8 | 2 | 2026-10-03T15:49:39Z |
+| [Centers for Medicare &amp; Medicaid Services - Public Bug Bounty Program 2026](<../public-bounties/bugcrowd/bugcrowd-3d5e38383524336c.md>) | — | $250 - $7,000 | Published scope captured | 6 | 2 | 2026-10-03T15:49:39Z |
 | [Certinia \(formerly FinancialForce\)](<../public-bounties/bugcrowd/bugcrowd-f2ebabd48ecc0d94.md>) | Computer Software | $175 - $4,500 | Published scope captured | 2 | 1 | 2026-10-03T15:49:40Z |
 | [Chime Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-8964c1e6392548d2.md>) | Finance | $50 - $20,000 | Published scope captured | 19 | 3 | 2026-10-03T15:49:41Z |
 | [Chipotle Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-3a8e20018e52789b.md>) | Hospitality | $175 - $4,500 | Published scope captured | 6 | 0 | 2026-10-03T15:49:42Z |
@@ -75,7 +75,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [CoinDesk Mobile](<../public-bounties/bugcrowd/bugcrowd-97c6b628befd2294.md>) | Technology | $250 - $7,500 | Published scope captured | 2 | 0 | 2026-10-03T15:49:54Z |
 | [CoinDesk\.com](<../public-bounties/bugcrowd/bugcrowd-1073ae037a9090fb.md>) | Technology | $250 - $7,500 | Published scope captured | 1 | 10 | 2026-10-03T15:49:55Z |
 | [Colined](<../public-bounties/bugcrowd/bugcrowd-bceb812177a6d343.md>) | — | $100 - $1,500 | Published scope captured | 6 | 0 | 2026-10-03T15:49:56Z |
-| [Comcast Xfinity Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-63fc8c4f8df523ba.md>) | Technology | $50 - $5,500 | Published scope captured | 4 | 17 | 2026-10-03T15:49:57Z |
+| [Comcast Xfinity Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-63fc8c4f8df523ba.md>) | Technology | $50 - $5,500 | Published scope captured | 4 | 12 | 2026-10-03T15:49:57Z |
 | [Comcast Xfinity Vulnerability Disclosure Program](<../public-bounties/bugcrowd/bugcrowd-1ac62d06fac741a7.md>) | Technology | Points - $3,500 | Published scope captured | 6 | 1 | 2026-10-03T15:49:58Z |
 | [Consensus by CoinDesk](<../public-bounties/bugcrowd/bugcrowd-1e4d6d7de511a779.md>) | Technology | $250 - $7,500 | Published scope captured | 1 | 9 | 2026-10-03T15:49:59Z |
 | [Council on Foreign Relations](<../public-bounties/bugcrowd/bugcrowd-f63d7f44f611c7d9.md>) | Civic, Non-Profit and Membership Groups | $100 - $2,100 | Published scope captured | 3 | 4 | 2026-10-03T15:50:00Z |
@@ -167,7 +167,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Mastercard Public Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-9cac9944ac97cc74.md>) | Finance | $50 - $5,000 | Published scope captured | 22 | 0 | 2026-10-03T15:51:24Z |
 | [MATLAB Online - Ongoing Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-b4bd8b3b0916e90f.md>) | Computer Software | $200 - $7,000 | Published scope captured | 1 | 0 | 2026-10-03T14:56:10Z |
 | [Mattermost Public Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-8965552f30be5e0b.md>) | Technology | $150 - $2,000 | Published scope captured | 16 | 7 | 2026-10-03T15:51:25Z |
-| [Meetical](<../public-bounties/bugcrowd/bugcrowd-e0dfaa34918b0ab2.md>) | Computer Software | $100 - $1,500 | Published scope captured | 4 | 0 | 2026-10-03T15:51:26Z |
+| [Meetical](<../public-bounties/bugcrowd/bugcrowd-e0dfaa34918b0ab2.md>) | Computer Software | $100 - $1,500 | Published scope captured | 3 | 0 | 2026-10-03T15:51:26Z |
 | [META-INF](<../public-bounties/bugcrowd/bugcrowd-47fd8590e5ec12ce.md>) | Computer Software | $100 - $1,500 | Published scope captured | 7 | 0 | 2026-10-03T15:51:27Z |
 | [MGM China Holdings Limited Managed Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-26449df1f3798802.md>) | Hospitality | $250 - $7,500 | Published scope captured | 12 | 3 | 2026-10-03T15:51:29Z |
 | [MobilityStream Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-41bbf7a8aac7694e.md>) | — | $100 - $1,500 | Published scope captured | 15 | 0 | 2026-10-03T15:51:30Z |
@@ -211,7 +211,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Pixabay](<../public-bounties/bugcrowd/bugcrowd-571e7853e571876f.md>) | — | $100 - $6,000 | Published scope captured | 1 | 0 | 2026-10-03T15:52:03Z |
 | [PlanetHoster Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-ffe80e0a39b98503.md>) | Cloud | $200 - $3,000 | Published scope captured | 5 | 0 | 2026-10-03T15:52:04Z |
 | [Plusgrade Loyalty Public Program](<../public-bounties/bugcrowd/bugcrowd-26955c64dcfb76a4.md>) | Computer Software | $150 - $5,000 | Published scope captured | 2 | 2 | 2026-10-03T15:52:05Z |
-| [PNI Media - Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-0670535f899adf47.md>) | eCommerce | $150 - $4,500 | Published scope captured | 59 | 5 | 2026-10-03T15:52:06Z |
+| [PNI Media - Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-0670535f899adf47.md>) | eCommerce | $150 - $4,500 | Published scope captured | 33 | 5 | 2026-10-03T15:52:06Z |
 | [Presago Marketplace Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-b7f50402edbce8ef.md>) | Computer Software | $100 - $1,500 | Published scope captured | 10 | 0 | 2026-10-03T15:52:08Z |
 | [Programmer Hat Marketplace Bug Bounty Program](<../public-bounties/bugcrowd/bugcrowd-ef2aa16121ee462d.md>) | Computer Software | $100 - $1,500 | Published scope captured | 6 | 0 | 2026-10-03T15:52:09Z |
 | [ProjectBalm](<../public-bounties/bugcrowd/bugcrowd-5e0fbed3286fbb2c.md>) | — | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:52:10Z |
@@ -224,7 +224,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Raley Apps](<../public-bounties/bugcrowd/bugcrowd-a32ac2750258b402.md>) | Technology | $100 - $1,500 | Published scope captured | 2 | 0 | 2026-10-03T15:52:17Z |
 | [Rapyd](<../public-bounties/bugcrowd/bugcrowd-9977a9c172a632fe.md>) | Finance | $100 - $7,500 | Published scope captured | 10 | 11 | 2026-10-03T14:56:21Z |
 | [REA Group \| realestate\.com\.au, realcommercial\.com\.au, property\.com\.au](<../public-bounties/bugcrowd/bugcrowd-c78fbe6afa8d0916.md>) | Real Estate | $50 - $4,500 | Published scope captured | 30 | 129 | 2026-10-03T15:52:18Z |
-| [Rec Room Video Games](<../public-bounties/bugcrowd/bugcrowd-ac7779f0b4aa65b9.md>) | Games | $150 - $2,500 | Published scope captured | 15 | 0 | 2026-10-03T15:52:19Z |
+| [Rec Room Video Games](<../public-bounties/bugcrowd/bugcrowd-ac7779f0b4aa65b9.md>) | Games | $150 - $2,500 | Published scope captured | 12 | 0 | 2026-10-03T15:52:19Z |
 | [Recorded Future Public Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-707dcd792086376b.md>) | — | $250 - $5,000 | Published scope captured | 20 | 0 | 2026-10-03T15:52:20Z |
 | [Redmoon](<../public-bounties/bugcrowd/bugcrowd-7a1b4fb31a5ba552.md>) | Electronics | $100 - $1,500 | Published scope captured | 5 | 0 | 2026-10-03T15:52:21Z |
 | [Refined](<../public-bounties/bugcrowd/bugcrowd-18ad6bd5f24792d6.md>) | Technology | $100 - $2,500 | Published scope captured | 8 | 0 | 2026-10-03T15:52:22Z |
@@ -240,7 +240,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [SecureDrop](<../public-bounties/bugcrowd/bugcrowd-7440fb39ee67de1a.md>) | Technology | $100 - $2,500 | Published scope captured | 3 | 0 | 2026-10-03T15:52:33Z |
 | [SecureFlag Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-eb13449fb7aa9493.md>) | — | $100 - $1,500 | Published scope captured | 2 | 0 | 2026-10-03T15:52:34Z |
 | [SEEK](<../public-bounties/bugcrowd/bugcrowd-fa190530d12ab00d.md>) | Technology | $50 - $10,000 | Published scope captured | 18 | 0 | 2026-10-03T15:52:35Z |
-| [Seek\.com](<../public-bounties/bugcrowd/bugcrowd-fa369eff5afec47f.md>) | Technology | $25 - $6,000 | Published scope captured | 18 | 0 | 2026-10-03T15:52:36Z |
+| [Seek\.com](<../public-bounties/bugcrowd/bugcrowd-fa369eff5afec47f.md>) | Technology | $25 - $6,000 | Published scope captured | 9 | 0 | 2026-10-03T15:52:36Z |
 | [Shinetech Software Inc Marketplace Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-1c78c73cebd5a0eb.md>) | Computer Software | $100 - $1,500 | Published scope captured | 2 | 0 | 2026-10-03T15:52:37Z |
 | [SimpliSafe Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-b453878121ec1606.md>) | Technology | $175 - $6,000 | Published scope captured | 24 | 7 | 2026-10-03T15:52:38Z |
 | [Skroutz Public Managed Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-ed73386dabe2aacd.md>) | Technology | $100 - $5,000 | Published scope captured | 1 | 0 | 2026-10-03T15:52:39Z |
@@ -255,7 +255,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [Soteri Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-6e1a96cd94993d4f.md>) | Computer Software | $500 - $4,500 | Published scope captured | 5 | 0 | 2026-10-03T15:52:49Z |
 | [SoundCloud](<../public-bounties/bugcrowd/bugcrowd-9d9f8f6730052dfa.md>) | Entertainment | $200 - $4,500 | Published scope captured | 10 | 17 | 2026-10-03T15:52:50Z |
 | [SpaceX/Starlink](<../public-bounties/bugcrowd/bugcrowd-93db9847dd214c6d.md>) | Technology | Points - $100,000 | Published scope captured | 1 | 0 | 2026-10-03T15:52:51Z |
-| [Square](<../public-bounties/bugcrowd/bugcrowd-5dbe680990001fd6.md>) | Finance | Points - $18,000 | Published scope captured | 8 | 9 | 2026-10-03T15:52:52Z |
+| [Square](<../public-bounties/bugcrowd/bugcrowd-5dbe680990001fd6.md>) | Finance | Points - $18,000 | Published scope captured | 7 | 9 | 2026-10-03T15:52:52Z |
 | [STAGIL Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-88b7710849a7e851.md>) | Computer Software | $100 - $1,500 | Published scope captured | 3 | 0 | 2026-10-03T15:52:53Z |
 | [Statuspage](<../public-bounties/bugcrowd/bugcrowd-e84d27dd9e44e18b.md>) | Computer Software | $100 - $4,000 | Published scope captured | 2 | 0 | 2026-10-03T15:52:54Z |
 | [Stiltsoft](<../public-bounties/bugcrowd/bugcrowd-d4b607788ef63337.md>) | Computer Software | $100 - $3,000 | Published scope captured | 14 | 1 | 2026-10-03T15:52:55Z |
@@ -268,7 +268,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [The Plugin People](<../public-bounties/bugcrowd/bugcrowd-0f5512b619865d49.md>) | Computer Software | $100 - $1,500 | Published scope captured | 7 | 0 | 2026-10-03T15:53:03Z |
 | [The Trade Desk](<../public-bounties/bugcrowd/bugcrowd-be6f5e6db3043f04.md>) | Technology | $175 - $5,000 | Published scope captured | 38 | 15 | 2026-10-03T15:53:04Z |
 | [TheFork Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-d377eb320facc933.md>) | Hospitality | $50 - $3,500 | Published scope captured | 17 | 10 | 2026-10-03T15:53:05Z |
-| [TIDAL](<../public-bounties/bugcrowd/bugcrowd-91c855cfe9a79c85.md>) | Finance | $100 - $5,000 | Published scope captured | 10 | 2 | 2026-10-03T15:53:06Z |
+| [TIDAL](<../public-bounties/bugcrowd/bugcrowd-91c855cfe9a79c85.md>) | Finance | $100 - $5,000 | Published scope captured | 8 | 2 | 2026-10-03T15:53:06Z |
 | [ToolsPlus](<../public-bounties/bugcrowd/bugcrowd-2224351fa688572d.md>) | Retail | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:53:07Z |
 | [Trello](<../public-bounties/bugcrowd/bugcrowd-541d2903477c1432.md>) | Technology | $250 - $12,000 | Published scope captured | 13 | 4 | 2026-10-03T15:53:08Z |
 | [Tripadvisor](<../public-bounties/bugcrowd/bugcrowd-de65e70dca5aed5d.md>) | Technology | $50 - $5,000 | Published scope captured | 27 | 26 | 2026-10-03T15:53:09Z |
@@ -295,7 +295,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | [weweave UG Marketplace Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-443621b4bcaff6c1.md>) | — | $100 - $1,500 | Published scope captured | 24 | 0 | 2026-10-03T15:53:31Z |
 | [Wise \(ex-TransferWise\)](<../public-bounties/bugcrowd/bugcrowd-a85ce135751be9ce.md>) | Finance | $100 - $4,000 | Published scope captured | 9 | 22 | 2026-10-03T15:53:32Z |
 | [Wyze Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-ef99b236755f5621.md>) | Electronics | $50 - $5,000 | Published scope captured | 5 | 0 | 2026-10-03T15:53:33Z |
-| [Xfinity Home &amp; xFi](<../public-bounties/bugcrowd/bugcrowd-34ee7f01629a6e29.md>) | Telecommunications | Points - $5,500 | Published scope captured | 26 | 31 | 2026-10-03T15:53:34Z |
+| [Xfinity Home &amp; xFi](<../public-bounties/bugcrowd/bugcrowd-34ee7f01629a6e29.md>) | Telecommunications | Points - $5,500 | Published scope captured | 22 | 20 | 2026-10-03T15:53:34Z |
 | [Xopero Software S\.A\. Marketplace Managed Bug Bounty Engagement](<../public-bounties/bugcrowd/bugcrowd-dd8f6d08a25c77a0.md>) | Computer Software | $100 - $1,500 | Published scope captured | 1 | 0 | 2026-10-03T15:53:35Z |
 | [YNAB](<../public-bounties/bugcrowd/bugcrowd-17548c34cd66c465.md>) | Finance | $150 - $3,000 | Published scope captured | 3 | 5 | 2026-10-03T15:53:36Z |
 | [Zola Managed Bug Bounty](<../public-bounties/bugcrowd/bugcrowd-c6e7a4e989508d26.md>) | eCommerce | $150 - $2,000 | Published scope captured | 2 | 5 | 2026-10-03T15:53:38Z |

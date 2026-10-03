@@ -14,7 +14,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/portofantwerp/portofantwerp/detail>)
 
-## In-scope entries (49)
+## In-scope entries (48)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -34,7 +34,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | maximo-accpt\.portofantwerp\.com | URL | http://maximo-accpt\.portofantwerp\.com | Tier 2 | — |
 | maximo-accpt\.portofantwerpbruges\.com | URL | http://maximo-accpt\.portofantwerpbruges\.com | Tier 2 | — |
 | maximo\.portofantwerp\.com | URL | http://maximo\.portofantwerp\.com | Tier 2 | — |
-| maximo\.portofantwerpbruges\.com | URL | http://maximo\.portofantwerpbruges\.com | Tier 2 | — |
 | maximo\.portofantwerpbruges\.com | URL | http://maximo\.portofantwerpbruges\.com | Tier 2 | — |
 | my-accpt\.portofantwerp\.com | URL | http://my-accpt\.portofantwerp\.com | Tier 2 | — |
 | my-accpt\.portofantwerpbruges\.com | URL | http://my-accpt\.portofantwerpbruges\.com | Tier 2 | — |
@@ -85,3 +84,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
+- 1 repeated rows in the published table were collapsed in this catalog\.

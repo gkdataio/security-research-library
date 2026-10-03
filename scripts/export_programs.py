@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import json
 from urllib.parse import urlsplit
+from scope_integrity import source_belongs_to_program, validate_unique_scope_rows
 from validate import ROOT, Invalid, check_schema, normalize_url
 from build_navigation import text, link
 
@@ -92,16 +93,20 @@ def validate_program(rec, schema):
             retrieved = dt.datetime.fromisoformat(sources[source_id]['retrieved_at'].replace('Z', '+00:00'))
             if retrieved > asset_reviewed:
                 raise Invalid('asset source retrieval is after asset verification')
+        if asset_scope['collection_method'] == 'official_platform_scope_table':
+            kinds = {'Bugcrowd': 'bugcrowd_scope', 'HackerOne': 'hackerone_scope',
+                     'Intigriti': 'intigriti_detail'}
+            kind = kinds.get(rec['platform'])
+            if kind is None:
+                raise Invalid('unsupported platform scope source')
+            for source_id in asset_source_ids:
+                if not source_belongs_to_program(rec['platform'], rec['program_url'], sources[source_id]['url'], kind):
+                    raise Invalid('asset source belongs to a different program')
         for field in ('in_scope', 'out_of_scope'):
-            seen = set()
+            validate_unique_scope_rows(asset_scope[field], rec['id'], field)
             for asset in asset_scope[field]:
                 if not set(asset['source_ids']) <= asset_source_ids:
                     raise Invalid('asset cites unknown or unrelated source')
-                key = (asset['name'].casefold(), asset['asset_type'].casefold(),
-                       (asset['location'] or '').casefold(), (asset['group'] or '').casefold())
-                if key in seen:
-                    raise Invalid('duplicate asset in ' + field)
-                seen.add(key)
     reward = rec['rewards']
     if reward['minimum'] is not None and reward['maximum'] is not None and reward['minimum'] > reward['maximum']:
         raise Invalid('reversed reward bounds')

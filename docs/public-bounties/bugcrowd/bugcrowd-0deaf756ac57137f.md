@@ -30,8 +30,9 @@ No explicit asset rows were captured in this category. The policy may still impo
 
 **Limits**
 
-- Only the published asset table was captured; program rules and eligibility still require individual review\.
+- Full program policy review remains outstanding\.
 - No complete public scope table is available in this capture; consult the live official program page\.
+- The official engagement page was available, but its public brief published zero scope groups and zero target rows\. Policy prose may still define or limit scope; no asset row was inferred\.
 
 **Review flags**
 

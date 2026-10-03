@@ -2308,7 +2308,14 @@
       "name": "Arlo Kudos Rewards",
       "program_url": "https://bugcrowd.com/engagements/arlokudos",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:45:48Z"
+      "captured_at": "2026-10-03T16:45:48Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/arlokudos",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "status": "captured",
@@ -3177,7 +3184,14 @@
       "name": "Dyson Demo VDP Engagement",
       "program_url": "https://bugcrowd.com/engagements/dyson-demo-vdp-engagement",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:44:36Z"
+      "captured_at": "2026-10-03T16:44:36Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/dyson-demo-vdp-engagement",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "status": "captured",
@@ -3892,13 +3906,6 @@
           "scope": "in"
         },
         {
-          "name": "███████████████████████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "█████████",
-          "scope": "in"
-        },
-        {
           "name": "██████████████████████████████████████████",
           "asset_type": "website",
           "location": null,
@@ -4006,7 +4013,9 @@
       "name": "Coles Group Limited Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/coles-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:45:02Z"
+      "captured_at": "2026-10-03T16:45:02Z",
+      "duplicate_source_rows": 1,
+      "published_asset_count": 21
     },
     {
       "status": "captured",
@@ -4135,7 +4144,14 @@
       "name": "Stickman 2",
       "program_url": "https://bugcrowd.com/engagements/stickman2",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:44:37Z"
+      "captured_at": "2026-10-03T16:44:37Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/stickman2",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "status": "captured",
@@ -7873,7 +7889,14 @@
       "name": "test engagement",
       "program_url": "https://bugcrowd.com/engagements/testing-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:44:29Z"
+      "captured_at": "2026-10-03T16:44:29Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/testing-vdp-pro",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "status": "captured",
@@ -8789,13 +8812,6 @@
           "scope": "in"
         },
         {
-          "name": "███████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "█████████████████████",
           "asset_type": "website",
           "location": null,
@@ -8817,28 +8833,7 @@
           "scope": "in"
         },
         {
-          "name": "████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "██████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████",
@@ -8866,13 +8861,6 @@
           "scope": "in"
         },
         {
-          "name": "█████████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
           "name": "█████████████████",
           "asset_type": "website",
           "location": null,
@@ -8881,13 +8869,6 @@
         },
         {
           "name": "████████████████████",
-          "asset_type": "website",
-          "location": null,
-          "group": "████████████████",
-          "scope": "in"
-        },
-        {
-          "name": "█████████████████",
           "asset_type": "website",
           "location": null,
           "group": "████████████████",
@@ -8917,7 +8898,9 @@
       "name": "Latitude Financial Services Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/latitudefinancial-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:45:32Z"
+      "captured_at": "2026-10-03T16:45:32Z",
+      "duplicate_source_rows": 6,
+      "published_asset_count": 19
     },
     {
       "status": "captured",
@@ -22323,7 +22306,14 @@
       "name": "Progress Software – Progress Data Cloud",
       "program_url": "https://bugcrowd.com/engagements/progressdatacloud-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:44:42Z"
+      "captured_at": "2026-10-03T16:44:42Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/progressdatacloud-vdp-pro",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     },
     {
       "status": "captured",
@@ -24122,7 +24112,14 @@
       "name": "Office of Personnel Management - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/opm-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-10-03T16:45:22Z"
+      "captured_at": "2026-10-03T16:45:22Z",
+      "gap_review": {
+        "reviewed_at": "2026-10-03T17:12:14Z",
+        "policy_url": "https://bugcrowd.com/engagements/opm-vdp",
+        "http_status": 200,
+        "result": "empty_published_table",
+        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+      }
     }
   ]
 }

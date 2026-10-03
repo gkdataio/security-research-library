@@ -1410,7 +1410,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:48:55Z",
-        "in_scope_entries": 16,
+        "in_scope_entries": 11,
         "out_of_scope_entries": 3
       },
       "public_vdp_capture": null,
@@ -6446,7 +6446,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:49:39Z",
-        "in_scope_entries": 8,
+        "in_scope_entries": 6,
         "out_of_scope_entries": 2
       },
       "public_vdp_capture": null,
@@ -8272,7 +8272,7 @@
       "public_vdp_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T16:45:02Z",
-        "in_scope_entries": 13,
+        "in_scope_entries": 12,
         "out_of_scope_entries": 8
       },
       "observations": [
@@ -8418,7 +8418,7 @@
         "status": "captured",
         "captured_at": "2026-10-03T15:49:57Z",
         "in_scope_entries": 4,
-        "out_of_scope_entries": 17
+        "out_of_scope_entries": 12
       },
       "public_vdp_capture": null,
       "observations": [
@@ -17602,7 +17602,7 @@
       "public_vdp_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T16:45:32Z",
-        "in_scope_entries": 19,
+        "in_scope_entries": 13,
         "out_of_scope_entries": 0
       },
       "observations": [
@@ -19865,7 +19865,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:51:26Z",
-        "in_scope_entries": 4,
+        "in_scope_entries": 3,
         "out_of_scope_entries": 0
       },
       "public_vdp_capture": null,
@@ -25269,7 +25269,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:52:06Z",
-        "in_scope_entries": 59,
+        "in_scope_entries": 33,
         "out_of_scope_entries": 5
       },
       "public_vdp_capture": null,
@@ -27970,7 +27970,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:52:19Z",
-        "in_scope_entries": 15,
+        "in_scope_entries": 12,
         "out_of_scope_entries": 0
       },
       "public_vdp_capture": null,
@@ -29869,7 +29869,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:52:36Z",
-        "in_scope_entries": 18,
+        "in_scope_entries": 9,
         "out_of_scope_entries": 0
       },
       "public_vdp_capture": null,
@@ -31475,7 +31475,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:52:52Z",
-        "in_scope_entries": 8,
+        "in_scope_entries": 7,
         "out_of_scope_entries": 9
       },
       "public_vdp_capture": null,
@@ -33665,7 +33665,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:53:06Z",
-        "in_scope_entries": 10,
+        "in_scope_entries": 8,
         "out_of_scope_entries": 2
       },
       "public_vdp_capture": null,
@@ -37972,8 +37972,8 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:53:34Z",
-        "in_scope_entries": 26,
-        "out_of_scope_entries": 31
+        "in_scope_entries": 22,
+        "out_of_scope_entries": 20
       },
       "public_vdp_capture": null,
       "observations": [
@@ -57103,7 +57103,7 @@
       "public_bounty_capture": {
         "status": "captured",
         "captured_at": "2026-10-03T15:50:55Z",
-        "in_scope_entries": 49,
+        "in_scope_entries": 48,
         "out_of_scope_entries": 9
       },
       "public_vdp_capture": null,
