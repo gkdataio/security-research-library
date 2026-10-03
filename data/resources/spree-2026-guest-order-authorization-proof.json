@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "spree-2026-guest-order-authorization-proof",
+  "title": "Spree: guest ownership still requires an authorization proof",
+  "publisher": "GitHub Security Lab",
+  "authors": [
+    "Peter Stöckli"
+  ],
+  "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-029_Spree/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-25757 concerns completed guest orders. The access decision treated absence of an account owner as sufficient permission, while lookup did not require the separate order token. GHSL identifies the flaw in tested version 5.2.6; the maintainer corroborates guest-order disclosure.",
+  "defensive_use": "Editorial lesson: a guest object needs an explicit authorization model even when no account owns it. Keep object identification separate from evidence of permission. The maintainer lists patched releases 5.0.8, 5.1.10, 5.2.7 and 5.3.2; this record does not independently verify their implementation.",
+  "prerequisites": [
+    "Basic object-level access-control concepts",
+    "Familiarity with web request and response processing"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-03-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:30:37Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Research and maintainer advisory reviewed; no deployment or independent reproduction was assessed."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://securitylab.github.com/advisories/GHSL-2026-029_Spree/",
+      "title": "GHSL-2026-029: Insecure Direct Object Reference (IDOR) in Spree - CVE-2026-25757",
+      "publisher": "GitHub Security Lab",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:30:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer-advisory",
+      "url": "https://github.com/spree/spree/security/advisories/GHSA-p6pv-q7rc-g4h9",
+      "title": "Unauthenticated users can view completed guest orders by Order ID",
+      "publisher": "Spree",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:30:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires an affected storefront and a completed guest order identifier. Neither a signed-in account nor victim interaction is required; account-owned orders are not established as affected.",
+    "The maintainer describes a controlled demonstration exposing guest-order details. GHSL identifies potential disclosure of names, addresses and phone numbers. No customer incident, measured data loss, write access or account takeover is established.",
+    "GHSL records reporting on January 26, 2026 and publication of fixes and the maintainer advisory on February 5. The detailed research was published March 12. Resource edition release remains unknown and is separate from product patch chronology.",
+    "The maintainer affected-version shorthand is ambiguous; do not interpret it as normalized branch ranges. Patched versions are reproduced as listed.",
+    "The research byline is Peter Stöckli. Discovery is credited to GitHub Security Lab Taskflow Agent, with manual verification by Peter Stöckli and Man Yue Mo. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

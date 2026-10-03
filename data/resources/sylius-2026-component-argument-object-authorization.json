@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sylius-2026-component-argument-object-authorization",
+  "title": "Sylius: component integrity does not authorize referenced objects",
+  "publisher": "GitHub Security Lab",
+  "authors": [
+    "Man Yue Mo"
+  ],
+  "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-055_Sylius/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-31820 concerns client-supplied component action arguments used to load objects without ownership checks. Property checksums did not cover those arguments. GHSL describes cross-customer address disclosure in tested version 2.2.3-dev; the maintainer additionally identifies disclosure of cart and order financial summaries.",
+  "defensive_use": "Editorial lesson: integrity protection on component state does not establish authority over every referenced object. Bind each lookup to the current customer or authorized session context. The maintainer lists fixes in 2.0.16, 2.1.12 and 2.2.3 and supplies a project-level authorization workaround; its correctness for customized deployments is not established here.",
+  "prerequisites": [
+    "Basic object-level access-control concepts",
+    "Familiarity with web request and response processing"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-17",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-03-17",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:30:37Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Research and maintainer advisory reviewed; no deployment or independent reproduction was assessed."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://securitylab.github.com/advisories/GHSL-2026-055_Sylius/",
+      "title": "GHSL-2026-055: Unauthorized access to PII in Sylius - CVE-2026-31820",
+      "publisher": "GitHub Security Lab",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:30:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer-advisory",
+      "url": "https://github.com/Sylius/Sylius/security/advisories/GHSA-2xc6-348p-c2x6",
+      "title": "IDOR in Cart and Checkout LiveComponents",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:30:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires an authenticated customer using affected shop components. The demonstrated research case concerns another customer’s address; the maintainer’s broader scope also covers order summaries because active carts and completed orders share a data model.",
+    "The research describes controlled cross-customer disclosure, not an observed customer breach. The reviewed evidence does not establish write access, payment execution or account takeover.",
+    "GHSL records reporting on February 19, 2026 and maintainer-advisory publication on March 9; detailed research was published March 17. Exact product release dates are not established by these sources. Resource edition release remains unknown.",
+    "The development snapshot tested by GHSL is distinct from the final 2.2.3 release named as patched by the maintainer. No contradiction or remediation failure is inferred from the similar labels.",
+    "The byline is Man Yue Mo. Discovery is credited to GitHub Security Lab Taskflow Agent, with manual verification by Peter Stöckli and Man Yue Mo; the maintainer credits both and the GHSL team. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

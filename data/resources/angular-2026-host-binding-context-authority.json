@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "angular-2026-host-binding-context-authority",
+  "title": "Angular host bindings: bind sanitization to the concrete output element",
+  "publisher": "Angular",
+  "authors": [
+    "alan-agius4"
+  ],
+  "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "encoding-invariant-review",
+    "untrusted-input-handling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-88057 concerns sanitization chosen from a directive's compile-time selector rather than the concrete element receiving its host binding. Composition and reuse could therefore apply an absent or weaker policy to a more sensitive browser sink. The maintainer confirms browser script-execution risk when an attacker controls the affected bound value; reviewed sources do not establish production compromise.",
+  "defensive_use": "Treat element identity and output context as part of a binding's security contract. Re-evaluate that contract when composition, inheritance or dynamic construction changes the receiving element. The maintainer lists 22.1.0, 21.2.20 and 20.3.28 as patched; older end-of-support branches receive no patch. The researcher issue distinguishes ordinary URL, resource-loading and HTML contexts, so a generic URL filter is not evidence that all contexts are secured.",
+  "prerequisites": [
+    "Framework component composition and template binding concepts",
+    "Basic browser output-context and sanitization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and linked primary discussion."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08-18",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": "Publication of the selected maintainer advisory; earlier public discussion is separately noted."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-08-18",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:31:08Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary pages read; publication dates are distinct from software release dates. No immutable resource edition established."
+  },
+  "sources": [
+    {
+      "id": "maintainer",
+      "url": "https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg",
+      "title": "Sanitization bypass via directive host bindings on concrete host elements in @angular/core and @angular/compiler",
+      "publisher": "Angular",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "research",
+      "url": "https://github.com/angular/angular/issues/69550",
+      "title": "ResourceURL sanitizer bypass through host-binding selector mismatch",
+      "publisher": "SkyZeroZx",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure depends on attacker-influenced values reaching affected security-sensitive host bindings and a mismatch between compile-time and concrete-element context. Composition alone does not prove exploitability.",
+    "SkyZeroZx published the linked issue on June 27, 2026; the advisory separately credits that account for remediation. The August 18 date describes the selected maintainer publication, not the earliest public discussion or a product release.",
+    "The maintainer suggests explicit sanitization or safe-scheme restriction as workarounds. Their applicability depends on the actual sink; the reviewed issue identifies stricter resource-loading and HTML contexts. This caveat is editorial defensive guidance, not a claim that the maintainer workaround was independently tested.",
+    "The issue explains a minimal case but links its runnable reproduction elsewhere. No reproduction was run, and observed exploit outcomes are not independently established."
+  ],
+  "content_scope": "defensive_education"
+}

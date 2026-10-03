@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "id": "angular-2026-raw-content-serialization-context",
+  "title": "Angular SSR: preserve output context through serialization and post-processing",
+  "publisher": "Angular",
+  "authors": [
+    "alan-agius4"
+  ],
+  "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "encoding-invariant-review",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Angular's advisory for CVE-2026-69149 describes unsafe serialization of untrusted text in fallback raw-content containers. A server-generated DOM can lose its intended inert meaning when later serialization and parsing interpret that text as structure. The maintainer confirms same-origin script-execution risk; session theft is a possible application-dependent consequence, not a documented production compromise.",
+  "defensive_use": "Model every serialization and reparse boundary, including HTML post-processing. The linked remediation discussion shows that preserving comment semantics matters alongside escaping. The original advisory lists 22.0.7, 21.2.19 and 20.3.27 as fixes. Later advisories identify additional node and fragment cases, so these historical minimums do not establish comprehensive current remediation.",
+  "prerequisites": [
+    "Server-side rendering and browser output-context concepts",
+    "Basic trust-boundary and secure-input review"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and linked primary discussion."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": "Publication of the selected maintainer advisory; earlier public discussion is separately noted."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-07-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "maintainer",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:31:08Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary pages read; publication dates are distinct from software release dates. No immutable resource edition established."
+  },
+  "sources": [
+    {
+      "id": "maintainer",
+      "url": "https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v",
+      "title": "Missing Fallback Raw-Content Serialization Escaping leads to Cross-Site Scripting (XSS) in Angular SSR",
+      "publisher": "Angular",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "remediation",
+      "url": "https://github.com/angular/domino/pull/32",
+      "title": "fix: escape fallback raw-content text nodes",
+      "publisher": "SkyZeroZx / Angular",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "fragment-followup",
+      "url": "https://github.com/angular/angular/security/advisories/GHSA-v3p8-whq6-r5jg",
+      "title": "SSR XSS via Unescaped template Content Across DocumentFragment Boundaries in Fallback Raw-Content Elements",
+      "publisher": "Angular",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "node-followup",
+      "url": "https://github.com/angular/angular/security/advisories/GHSA-j3r3-mxqp-r2p4",
+      "title": "SSR XSS via Unescaped Processing Instruction Nodes in Fallback Raw-Content Elements",
+      "publisher": "Angular",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:31:08Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires SSR and untrusted content in the affected rendering context. Ordinary Angular use alone does not establish exposure. Avoiding those bindings or the implicated post-processing path are scoped workarounds, not universal guarantees.",
+    "SkyZeroZx authored the linked remediation proposal on June 22, 2026; maintainer alan-agius4 merged it July 7. These are public-discussion and merge dates, not resource-edition or product-release dates.",
+    "The August 27 follow-ups describe separate processing-instruction and document-fragment reachability limits; they list 22.1.4, 21.2.22 and 20.3.30 as patched and older unsupported branches as unpatched. These follow-ups limit the original patch claim without asserting that every initial deployment reached every later case.",
+    "The processing-instruction advisory requires programmatic construction, unlike ordinary template syntax; the fragment advisory includes ordinary text-node cases. Both provide minimal demonstrations, but no production victim evidence."
+  ],
+  "content_scope": "defensive_education"
+}
