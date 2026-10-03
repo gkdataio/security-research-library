@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "id": "arxiv-2026-cache-key-precision-and-capacity",
+  "title": "Web cache key precision and capacity isolation",
+  "publisher": "arXiv",
+  "authors": [
+    "Matteo Golinelli",
+    "Kaan Onarlioglu",
+    "Bruno Crispo"
+  ],
+  "primary_url": "https://arxiv.org/abs/2608.04744",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "cache-artifact-isolation",
+    "integration-threat-modeling",
+    "defensive-evidence-writing"
+  ],
+  "version": "arXiv:2608.04744v1",
+  "summary": "This author-submitted study connects unnecessary cache-key variation with redundant object storage, reduced cache effectiveness and increased origin load. It treats cache-key design as an application availability boundary, rather than a performance-only setting.",
+  "defensive_use": "Document which request properties genuinely distinguish representations, and review key definitions against that application contract. Compare precise keying with deduplication overhead and the legitimate-traffic costs of rate limiting or anomaly detection; preserve meaningful response distinctions when simplifying keys.",
+  "prerequisites": [
+    "HTTP request and response semantics",
+    "Reverse-proxy and origin-server architecture"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Primary article readable without login."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "First arXiv submission, not a confirmed peer-reviewed publication date."
+    },
+    "version_released": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Version 1 submission history."
+    },
+    "source_displayed": {
+      "value": "2026-08-05",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Submission date displayed on the abstract page."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:59:12Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the abstract, version history and full-text limitations, mitigations and CDN discussion. No accompanying tools were retrieved or run."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://arxiv.org/abs/2608.04744",
+      "title": "Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond",
+      "publisher": "arXiv",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:59:12Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "paper",
+      "url": "https://arxiv.org/html/2608.04744v1",
+      "title": "Author-submitted version 1 full text",
+      "publisher": "arXiv",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:59:12Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Preprint; the reviewed pages do not establish peer review.",
+    "Experiments concern stand-alone caching proxies. CDN applicability was not experimentally demonstrated and is explicitly limited by the authors.",
+    "Results depend on capacity, object sizes and workload; they do not establish present exposure of any deployment.",
+    "This record omits operational methods and grants no testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}

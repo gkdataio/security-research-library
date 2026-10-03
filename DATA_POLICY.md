@@ -75,7 +75,7 @@ Every referenced source ID must exist in the record and be reviewed official-pri
 
 Each linked source's `retrieved_at` must be no later than `scope_context.verified_at`, which must be no later than the record's `last_verified_at`. These timezone-aware comparisons describe evidence chronology, not a promise of current validity. Do not advance review or retrieval timestamps for formatting, export regeneration or reclassification alone. Readable context sections link both the policy pages and their source evidence and retain a no-authorization warning.
 
-Readable report pages and the diagram gallery are generated offline from canonical records. Regenerate them after content edits and check deterministic output. SVG validation uses an allowlist of static elements and attributes, rejecting executable, interactive and reference-bearing content. No website deployment or repository hosting configuration is performed by these scripts.
+Readable report and resource pages, their indexes, and the diagram gallery are generated offline from canonical records. Generated pages do not count as additional research records. Regenerate them after content edits and check deterministic output. SVG validation uses an allowlist of static elements and attributes, rejecting executable, interactive and reference-bearing content. No website deployment or repository hosting configuration is performed by these scripts.
 
 
 ## Scalable program discovery

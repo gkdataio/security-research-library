@@ -2,7 +2,7 @@
 
 Source-backed public security disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report connects a documented award with its evidence, root cause, bounded impact, and security lessons. Structured JSON also supports research retrieval and analysis by agents and API consumers.
 
-[Read reports](docs/reports.md) · [Verified programs](docs/programs.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
+[Read reports](docs/reports.md) · [Verified programs](docs/programs.md) · [Discovery queue](docs/program-discovery.md) · [Diagram gallery](docs/diagram-gallery.md) · [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Visual guide](docs/visual-theory.md) · [Use the JSON](#use-the-json) · [Licensing](LICENSE.md)
 
 ## At a glance
 
@@ -11,7 +11,7 @@ Source-backed public security disclosures, official learning resources, and orig
 - **59 qualifying report records:** 48 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **28 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
+- **30 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 6 with unknown original publication dates
 
@@ -90,7 +90,7 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [export.py](scripts/export.py) | Generates the portable report JSON from validated records |
 | [export_resources.py](scripts/export_resources.py) | Generates the separate resource and diagram JSON |
 | [render_diagrams.py](scripts/render_diagrams.py) | Generates Mermaid/DOT source and uses local Graphviz to produce SVG diagrams |
-| [build_navigation.py](scripts/build_navigation.py) | Generates readable report pages and the static diagram gallery |
+| [build_navigation.py](scripts/build_navigation.py) | Generates readable report/resource pages, indexes and the static diagram gallery |
 | [export_programs.py](scripts/export_programs.py) | Validates program-policy metadata and builds its separate export and directory |
 | [export_program_discovery.py](scripts/export_program_discovery.py) | Validates official directory observations, deduplicates program pages and preserves continuation provenance |
 | [tests/](tests/) | Exercises the collection's validation and export rules with local fixtures |

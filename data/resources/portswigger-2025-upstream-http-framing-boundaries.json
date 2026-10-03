@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "portswigger-2025-upstream-http-framing-boundaries",
+  "title": "Upstream HTTP framing and parser-consistency boundaries",
+  "publisher": "PortSwigger",
+  "authors": [
+    "James Kettle"
+  ],
+  "primary_url": "https://portswigger.net/research/http1-must-die",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "integration-threat-modeling",
+    "untrusted-input-handling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "The researcher explains how inconsistent message-boundary interpretation across proxies and origins can break request isolation on shared upstream connections. Client-facing HTTP/2 alone does not remove this risk when intermediaries translate requests into HTTP/1.1.",
+  "defensive_use": "Review framing contracts across every intermediary, including protocol translation and connection reuse. Consider upstream HTTP/2, consistent validation and normalization, and isolation tradeoffs where legacy transport remains. Assess remediation against the architecture rather than relying on a front-end protocol label or filtering claim.",
+  "prerequisites": [
+    "HTTP request and response semantics",
+    "Reverse-proxy and origin-server architecture"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Primary article readable without login."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-08-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Original article publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2025-10-17",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Displayed update date; not original publication."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:59:12Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the primary article\u2019s conceptual explanation and defensive sections. Historical research remains relevant to 2026 architecture reviews; vendor capabilities require separate current verification."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://portswigger.net/research/http1-must-die",
+      "title": "HTTP/1.1 must die: the desync endgame",
+      "publisher": "PortSwigger",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:59:12Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Protocol migration is the researcher\u2019s recommendation, not proof that every HTTP/2 implementation is secure.",
+    "Historical cases and vendor support observations do not establish current vulnerabilities or feature availability.",
+    "Linked operational material is omitted. No individual award qualification or testing authorization is implied."
+  ],
+  "content_scope": "defensive_education"
+}

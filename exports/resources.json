@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 28,
+    "resources": 30,
     "diagrams": 8
   },
   "taxonomy": {
@@ -191,6 +191,103 @@
     }
   ],
   "resources": [
+    {
+      "schema_version": "1.0.0",
+      "id": "arxiv-2026-cache-key-precision-and-capacity",
+      "title": "Web cache key precision and capacity isolation",
+      "publisher": "arXiv",
+      "authors": [
+        "Matteo Golinelli",
+        "Kaan Onarlioglu",
+        "Bruno Crispo"
+      ],
+      "primary_url": "https://arxiv.org/abs/2608.04744",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "cache-artifact-isolation",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "version": "arXiv:2608.04744v1",
+      "summary": "This author-submitted study connects unnecessary cache-key variation with redundant object storage, reduced cache effectiveness and increased origin load. It treats cache-key design as an application availability boundary, rather than a performance-only setting.",
+      "defensive_use": "Document which request properties genuinely distinguish representations, and review key definitions against that application contract. Compare precise keying with deduplication overhead and the legitimate-traffic costs of rate limiting or anomaly detection; preserve meaningful response distinctions when simplifying keys.",
+      "prerequisites": [
+        "HTTP request and response semantics",
+        "Reverse-proxy and origin-server architecture"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Primary article readable without login."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "First arXiv submission, not a confirmed peer-reviewed publication date."
+        },
+        "version_released": {
+          "value": "2026-08-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Version 1 submission history."
+        },
+        "source_displayed": {
+          "value": "2026-08-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Submission date displayed on the abstract page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:59:12Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the abstract, version history and full-text limitations, mitigations and CDN discussion. No accompanying tools were retrieved or run."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://arxiv.org/abs/2608.04744",
+          "title": "Web Cache Overflow: Exploiting Imprecise Keys for Cache Degradation and Beyond",
+          "publisher": "arXiv",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:59:12Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "paper",
+          "url": "https://arxiv.org/html/2608.04744v1",
+          "title": "Author-submitted version 1 full text",
+          "publisher": "arXiv",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:59:12Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "Preprint; the reviewed pages do not establish peer review.",
+        "Experiments concern stand-alone caching proxies. CDN applicability was not experimentally demonstrated and is explicitly limited by the authors.",
+        "Results depend on capacity, object sizes and workload; they do not establish present exposure of any deployment.",
+        "This record omits operational methods and grants no testing authorization."
+      ],
+      "content_scope": "defensive_education"
+    },
     {
       "schema_version": "1.0.0",
       "id": "aws-iam-machine-identity-best-practices",
@@ -1785,6 +1882,88 @@
       ],
       "caveats": [
         "Approval controls must match the application’s risk and workflow. This reference does not prescribe financial or legal policy."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "portswigger-2025-upstream-http-framing-boundaries",
+      "title": "Upstream HTTP framing and parser-consistency boundaries",
+      "publisher": "PortSwigger",
+      "authors": [
+        "James Kettle"
+      ],
+      "primary_url": "https://portswigger.net/research/http1-must-die",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The researcher explains how inconsistent message-boundary interpretation across proxies and origins can break request isolation on shared upstream connections. Client-facing HTTP/2 alone does not remove this risk when intermediaries translate requests into HTTP/1.1.",
+      "defensive_use": "Review framing contracts across every intermediary, including protocol translation and connection reuse. Consider upstream HTTP/2, consistent validation and normalization, and isolation tradeoffs where legacy transport remains. Assess remediation against the architecture rather than relying on a front-end protocol label or filtering claim.",
+      "prerequisites": [
+        "HTTP request and response semantics",
+        "Reverse-proxy and origin-server architecture"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Primary article readable without login."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-08-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Original article publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2025-10-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Displayed update date; not original publication."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:59:12Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the primary article’s conceptual explanation and defensive sections. Historical research remains relevant to 2026 architecture reviews; vendor capabilities require separate current verification."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://portswigger.net/research/http1-must-die",
+          "title": "HTTP/1.1 must die: the desync endgame",
+          "publisher": "PortSwigger",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:59:12Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Protocol migration is the researcher’s recommendation, not proof that every HTTP/2 implementation is secure.",
+        "Historical cases and vendor support observations do not establish current vulnerabilities or feature availability.",
+        "Linked operational material is omitted. No individual award qualification or testing authorization is implied."
       ],
       "content_scope": "defensive_education"
     },

@@ -1,5 +1,7 @@
 # Official learning resources
 
+[Browse all readable resource records](resource-index.md)
+
 This collection is separate from paid-award reports. It contains official educational references, with original summaries, source review dates, version information where known, and clearly marked editorial prerequisites.
 
 - [OWASP ASVS 5.0.0](https://owasp.org/projects/asvs): turn security goals into versioned verification requirements
@@ -43,6 +45,9 @@ This collection is separate from paid-award reports. It contains official educat
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/): Defines browser-provided request context covering site relationship, destination, mode, and user activation. Explains how redirect history affects that context and why context-dependent responses need matching cache behavior. This supports reasoning about which browser interactions an application intends to accept. [Structured record](../data/resources/w3c-fetch-metadata-request-context-boundaries.json)
 
 - [React2Shell response: parser consistency and layered remediation](https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell): Vercel’s retrospective describes request-inspection normalization, independent runtime restrictions, regression coverage and customer patching during its React2Shell response. It illustrates why a filter’s interpretation must align with application semantics. [Structured record](../data/resources/vercel-react2shell-parser-normalization-defense.json)
+
+- [Web cache key precision and capacity isolation](https://arxiv.org/abs/2608.04744): This author-submitted study connects unnecessary cache-key variation with redundant object storage, reduced cache effectiveness and increased origin load. It treats cache-key design as an application availability boundary, rather than a performance-only setting. [Structured record](../data/resources/arxiv-2026-cache-key-precision-and-capacity.json)
+- [Upstream HTTP framing and parser-consistency boundaries](https://portswigger.net/research/http1-must-die): The researcher explains how inconsistent message-boundary interpretation across proxies and origins can break request isolation on shared upstream connections. Client-facing HTTP/2 alone does not remove this risk when intermediaries translate requests into HTTP/1.1. [Structured record](../data/resources/portswigger-2025-upstream-http-framing-boundaries.json)
 
 The collection links these resources without copying exercises, payloads, or operational techniques. Training access does not authorize testing unrelated systems. Living documents may change; the JSON records say when they were reviewed. Suggested prerequisites are editorial guidance unless explicitly marked otherwise.
 

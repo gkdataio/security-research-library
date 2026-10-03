@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build deterministic GitHub-readable Markdown pages from canonical records. Offline."""
 import argparse
+import json
 import re
 from pathlib import Path
 from urllib.parse import quote
@@ -19,11 +20,88 @@ def link(label, url):
     return f'[{text(label)}](<{safe_url}>)'
 
 
-def build(root=ROOT):
-    import json
-    resources, diagrams, _ = validate_all(root)
-    reports = [json.loads(p.read_text()) for p in sorted((root/'data/reports').glob('*.json'))]
+
+def resource_pages(resources, diagrams, taxonomy, skills):
+    """Render editorial summaries without fetching or copying linked materials."""
+    types = {item['id']: item['title'] for item in taxonomy['resource_types']}
+    topics = {item['id']: item['title'] for item in taxonomy['topics']}
+    skill_titles = {item['id']: item['title'] for item in skills['skillsets']}
+    ordered = sorted(resources, key=lambda r: (r['title'].casefold(), r['id']))
+    index = ['# Read the learning resources', '',
+             '[Library home](../README.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
+             'Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.', '',
+             f'{len(ordered)} resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.', '']
     pages = {}
+    for rec in ordered:
+        rid = rec['id']
+        canonical = '../../data/resources/'+rid+'.json'
+        index += ['- '+link(rec['title'], 'resources/'+rid+'.md')+' — '+text(rec['publisher'])+'; '+text(types[rec['resource_type_id']])+'.']
+        lines = ['# '+text(rec['title']), '',
+                 '[Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)', '',
+                 link('Canonical JSON', canonical)+' · '+link('Official resource', rec['primary_url']), '',
+                 '**Publisher:** '+text(rec['publisher'])+'  ',
+                 '**Authors:** '+text('; '.join(rec['authors']) or 'Not identified in the reviewed record')+'  ',
+                 '**Resource type:** '+text(types[rec['resource_type_id']])+'  ',
+                 '**Version:** '+text(rec['version'] or 'Not established in the reviewed record')+'  ',
+                 '**Topics:** '+text('; '.join(topics[t] for t in rec['topic_ids']))+'  ',
+                 '**Defensive skills:** '+text('; '.join(skill_titles[t] for t in rec['skillset_ids'])), '',
+                 '## Original summary', '', text(rec['summary']), '',
+                 '## Defensive use', '', text(rec['defensive_use']), '',
+                 'Educational reference only; linked material does not authorize testing unrelated systems.', '',
+                 '## Prerequisites', '',
+                 '**Basis:** '+text(rec['prerequisites_basis'].replace('_', ' '))+'.', '']
+        lines += ['- '+text(v) for v in rec['prerequisites']] or ['No prerequisites recorded; this does not establish that none are needed.']
+        lines += ['', '## Access and freshness', '',
+                  '**Access cost at review:** '+text(rec['access']['cost'])+'.']
+        if rec['access']['note']:
+            lines += ['', text(rec['access']['note'])]
+        freshness = rec['freshness']
+        lines += ['', '**Reviewed:** '+text(freshness['reviewed_at'])+'  ',
+                  '**Review status:** '+text(freshness['status'].replace('_', ' '))+'  ',
+                  '**Living resource:** '+('Yes' if freshness['living_resource'] else 'No')+'.', '',
+                  text(freshness['note']), '',
+                  'Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.', '',
+                  '## Dates and provenance', '']
+        sources = {source['id']: source for source in rec['sources']}
+        for name in ('published', 'version_released', 'source_displayed'):
+            date = rec['dates'][name]
+            source = sources.get(date['source_id'])
+            provenance = (link(source['title'], source['url'])+' (source ID: '+text(source['id'])+')') if source else 'Not recorded'
+            lines += ['- **'+text(name.replace('_', ' '))+':** '+text(date['value'] or 'Unknown')+
+                      '; precision: '+text(date['precision'] or 'unknown')+'; basis: '+text(date['basis'].replace('_', ' '))+
+                      '; source: '+provenance+'.'+(' '+text(date['note']) if date['note'] else '')]
+        lines += ['', '## Caveats', '']
+        lines += ['- '+text(v) for v in rec['caveats']] or ['No additional caveats recorded; this is not a completeness or security guarantee.']
+        related = sorted((d for d in diagrams if rid in d['linked_resource_ids']), key=lambda d: d['id'])
+        if related:
+            lines += ['', '## Related conceptual diagrams', '']
+            lines += ['- '+link(d['title'], '../diagram-gallery.md#'+d['id']) for d in related]
+        lines += ['', '## Sources and attribution', '']
+        for source in rec['sources']:
+            lines += ['- '+link(source['title'], source['url'])+' — '+text(source['publisher'])+
+                      '; source ID: '+text(source['id'])+'; provenance: '+text(source['provenance'].replace('_', ' '))+
+                      '; retrieved '+text(source['retrieved_at'])+'; supports: '+text(', '.join(source['supports']))+'.']
+        lines += ['', 'Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).', '']
+        pages['docs/resources/'+rid+'.md'] = '\n'.join(lines)
+    pages['docs/resource-index.md'] = '\n'.join(index)+'\n'
+    return pages
+
+
+def check_generated_page_sets(root, pages):
+    """Reject obsolete generated pages without deleting potentially edited files."""
+    for collection in ('reports', 'resources'):
+        directory = 'docs/'+collection+'/'
+        actual = {str(p.relative_to(root)) for p in (root/directory).glob('*.md')}
+        expected = {name for name in pages if name.startswith(directory)}
+        if actual != expected:
+            raise SystemExit('Unexpected generated '+collection+' pages; review stale files manually')
+
+
+def build(root=ROOT):
+    resources, diagrams, taxonomy = validate_all(root)
+    reports = [json.loads(p.read_text()) for p in sorted((root/'data/reports').glob('*.json'))]
+    skills = json.loads((root/'data/taxonomy.json').read_text())
+    pages = resource_pages(resources, diagrams, taxonomy, skills)
     index = ['# Read the reports', '', '[Library home](../README.md) · [Programs](programs.md) · [Diagram gallery](diagram-gallery.md)', '',
              'Original defensive summaries with award provenance, distinct event dates and verification limits. These historical disclosures do not authorize testing. Generated from canonical records; edit the JSON, then regenerate.', '']
     for rec in sorted(reports, key=lambda r: (r['organization'], r['title'])):
@@ -70,9 +148,7 @@ def main():
             if not path.is_file() or path.read_text() != content: raise SystemExit('Missing or stale navigation: '+name)
         else:
             path.parent.mkdir(parents=True, exist_ok=True); path.write_text(content)
-    actual = {str(p.relative_to(ROOT)) for p in (ROOT/'docs/reports').glob('*.md')}
-    expected = {name for name in pages if name.startswith('docs/reports/')}
-    if actual != expected: raise SystemExit('Unexpected generated report pages; review stale files manually')
+    check_generated_page_sets(ROOT, pages)
     print(f'{"Checked" if args.check else "Generated"} {len(pages)} static navigation pages (offline).')
 
 if __name__ == '__main__': main()
