@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "id": "n8n-2026-refresh-grant-resource-binding",
+  "title": "n8n: refreshed authority must remain bound to the consented resource",
+  "publisher": "n8n",
+  "authors": [
+    "Matsuuu"
+  ],
+  "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "identity",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "security-token-design",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "The maintainer reports that initial OAuth authorization preserved resource-specific consent, while refresh grants checked registration without preserving that binding. A client could consequently receive authority over another workflow accessible to the consenting user. This is a delegated-consent failure; the source does not establish access beyond that user’s underlying permissions or a production incident.",
+  "defensive_use": "The stated repair retains the granted resource in refresh-token state and rejects conflicting resource choices. The maintainer also calls for renewed authorization after upgrading because older refresh tokens lack this binding; temporary restrictions are incomplete mitigation. Editorial lesson: review authorization invariants throughout a grant’s lifecycle, including migration of pre-fix state.",
+  "prerequisites": [
+    "OAuth grant, refresh, resource, and consent concepts",
+    "Distinguishing a user’s permissions from the smaller authority delegated to a client"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer security advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication, not software patch release."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition release established."
+    },
+    "source_displayed": {
+      "value": "2026-09-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:10:39Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary maintainer evidence reviewed. No exploit reproduction, live testing, or independent patch verification performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73",
+      "title": "Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution",
+      "publisher": "n8n",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:10:39Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-2382",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n@2.38.2",
+      "title": "n8n@2.38.2 release",
+      "publisher": "n8n",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:10:39Z",
+      "supports": [
+        "dates"
+      ]
+    },
+    {
+      "id": "release-2377",
+      "url": "https://github.com/n8n-io/n8n/releases/tag/n8n@2.37.7",
+      "title": "n8n@2.37.7 release",
+      "publisher": "n8n",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:10:39Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "CVE-2026-86073. The advisory credits bariskececi as reporter; Matsuuu is its publishing maintainer.",
+    "Prerequisites include client registration, authenticated user consent for one protected workflow, and another identifiable workflow within that user’s execution permissions.",
+    "The patched-version table lists 2.38.2 and 2.37.7, while prose says 2.38.1 and 2.37.7. No corrected affected interval is inferred.",
+    "Official release pages date both 2.38.2 and 2.37.7 to September 2, 2026, separately from September 3 advisory publication; 2.38.2 is labeled pre-release. Release existence does not resolve the advisory inconsistency.",
+    "No bounty is established. Learning prerequisites and general design guidance are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

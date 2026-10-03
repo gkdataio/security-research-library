@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "id": "qwik-2026-resumability-comment-serialization-boundary",
+  "title": "Qwik: resumability metadata must preserve HTML serialization boundaries",
+  "publisher": "QwikDev",
+  "authors": [
+    "Varixo"
+  ],
+  "primary_url": "https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "browser-isolation-review"
+  ],
+  "version": null,
+  "summary": "The maintainer describes unsafe serialization of virtual-component metadata into server-rendered HTML comments. Application-controlled attributes could cross from serialized state into browser interpretation when user influence reached their names or values. The reported impact is same-origin browser script execution, with possible resumability-state disruption. The advisory does not document a production compromise or independently measured downstream data loss.",
+  "defensive_use": "The maintainer identifies 1.19.0 as patched. Editorial lesson: serialization safety depends on the actual browser context, including structural metadata and comment boundaries, rather than only visible text or conventional attributes. Review all server-to-client state representations and preserve the contract between their encoder and consumer. A patch for this mechanism is not proof that every application output path is safe.",
+  "prerequisites": [
+    "Server-rendered HTML and browser parsing contexts",
+    "Framework resumability and serialized component metadata"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer security advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication, not software patch release."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition release established."
+    },
+    "source_displayed": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T11:10:39Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary maintainer evidence reviewed. No exploit reproduction, live testing, or independent patch verification performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c",
+      "title": "Qwik SSR XSS via Unsafe Virtual Node Serialization",
+      "publisher": "QwikDev",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:10:39Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "changelog",
+      "url": "https://github.com/QwikDev/qwik/blob/main/packages/qwik/CHANGELOG.md",
+      "title": "Qwik core changelog",
+      "publisher": "QwikDev",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T11:10:39Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "CVE-2026-25148. Varixo published the advisory; wodzen is credited as reporter.",
+    "The application prerequisite is user influence over dynamically populated virtual-node attribute names or values. The maintainer excludes hard-coded attributes.",
+    "The package table names qwik, while the prose names qwik-city. Preserve this naming inconsistency rather than inferring package equivalence.",
+    "Advisory publication is February 3, 2026. The exact software patch release date was not established and is not substituted into resource-edition chronology.",
+    "The reviewed official core changelog contains a 1.19.0 section but does not independently explain this security fix. Remediation attribution rests on the maintainer advisory.",
+    "No bounty is established. Learning prerequisites and generalized defensive guidance are editorial."
+  ],
+  "content_scope": "defensive_education"
+}
