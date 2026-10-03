@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T05:19:42Z",
+  "latest_reviewed_at": "2026-10-03T05:30:46Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -4296,12 +4296,13 @@
         "defensive-evidence-writing",
         "patch-verification"
       ],
-      "summary": "A cross-repository access-control report received a vendor-confirmed USD 10,000 award.",
-      "root_cause": "A comparison feature did not consistently authorize access to both source repositories.",
-      "impact": "Limited private code content could cross repository permission boundaries.",
+      "summary": "GitHub awarded USD 10,000 for a GHES comparison feature that exposed limited code across repository permission boundaries (vendor-report).",
+      "root_cause": "GitHub identifies improper access control in cross-repository comparison (vendor-report; vendor-release). Access to one repository did not establish permission to disclose content from another contributing repository. The vendor describes prerequisites of existing repository access and prior knowledge of private-repository references; this was not described as unrestricted anonymous browsing. The conceptual failure is authorizing a derived view without preserving every source repository’s access boundary; implementation-level check placement is not disclosed.",
+      "impact": "The vendor confirms limited code disclosure from an otherwise unauthorized repository (vendor-report; vendor-release). The public summary does not establish complete repository extraction, write access, account takeover, or exploitation in the wild; those outcomes must not be inferred from the broader report title.",
       "defensive_takeaways": [
-        "Authorize every source object before producing a combined or derived view.",
-        "Keep comparison output subject to the access rules of all contributing repositories."
+        "Editorial design lesson: authorize every contributing source under the requesting actor before returning a combined or derived view.",
+        "Editorial review objective: ensure that permission to access one repository never substitutes for permission to read another repository’s content.",
+        "GitHub lists historical fixes in GHES 3.14.17, 3.15.12, 3.16.8 and 3.17.5 (vendor-report). These are historical remediation evidence, not current upgrade recommendations; the 3.17 documentation now marks that release series unsupported (vendor-release)."
       ],
       "reward": {
         "amount": 10000,
@@ -4315,7 +4316,7 @@
         "evidence_quote": "rewarded furbreeze with a $10,000 bounty.",
         "evidence_location": "August 26, 2025 bounty event, activity-36550008.",
         "usd_equivalent": null,
-        "notes": "One report award; HackerOne policy supplies USD context. Payment receipt is unverified."
+        "notes": "One report award; cash receipt is unverified. USD is inferred from HackerOne’s platform-wide payment policy reviewed in October 2026, later than the August 2025 award; that context does not independently establish settlement."
       },
       "dates": {
         "published": {
@@ -4380,7 +4381,7 @@
         "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
-        "note": "Historical detailed disclosure falls nine days before the preferred publication window."
+        "note": "Historical detailed disclosure falls ten days before the preferred publication window."
       },
       "sources": [
         {
@@ -4389,7 +4390,7 @@
           "title": "GitHub HackerOne report 3124517",
           "type": "vendor",
           "author": "GitHub security team and furbreeze",
-          "retrieved_at": "2026-10-02T16:31:00Z",
+          "retrieved_at": "2026-10-03T05:30:46Z",
           "supports": [
             "reward",
             "dates",
@@ -4405,7 +4406,7 @@
           "title": "GitHub Enterprise Server 3.17.5 release notes",
           "type": "vendor",
           "author": "GitHub",
-          "retrieved_at": "2026-10-02T16:32:49Z",
+          "retrieved_at": "2026-10-03T05:30:46Z",
           "supports": [
             "dates",
             "root_cause",
@@ -4420,7 +4421,7 @@
           "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
           "type": "platform",
           "author": "HackerOne",
-          "retrieved_at": "2026-10-02T15:43:47Z",
+          "retrieved_at": "2026-10-03T05:30:46Z",
           "supports": [
             "reward"
           ]
@@ -4429,12 +4430,13 @@
       "primary_source_id": "vendor-report",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T16:32:49Z",
-        "method": "Read rendered public HackerOne vendor summary and award/disclosure events; independently read vendor release notes.",
+        "reviewed_at": "2026-10-03T05:30:46Z",
+        "method": "Freshly read public GitHub summary and award/disclosure events in the cloud browser, plus GitHub release notes and HackerOne currency policy through web retrieval. Added bounded conceptual analysis without reproduction or testing.",
         "limitations": [
-          "The public vendor summary does not supply implementation-level patch detail.",
-          "Cash receipt is unverified. USD notation uses platform policy context.",
-          "Release availability, report resolution and detailed publication have different dates."
+          "Public report content supplies a vendor summary, not implementation-level patch details or a complete demonstration transcript.",
+          "GitHub.com deployment timing and exploitation-in-the-wild status are not established by the reviewed sources.",
+          "Release availability, report resolution and detailed publication have different dates.",
+          "Cash receipt is unverified; later platform-wide USD policy is contextual denomination evidence."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -5879,12 +5881,13 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "HackerOne awarded USD 25,000 for one private-program object-authorization report.",
-      "root_cause": "GraphQL object access did not consistently enforce private-program visibility rules.",
-      "impact": "Private-program metadata and report titles could be disclosed without authorization. HackerOne stated its investigation found no exploitation beyond the researcher’s demonstration.",
+      "summary": "HackerOne awarded USD 25,000 in 2022 for private-program GraphQL metadata exposure; the report became public in January 2025 (primary).",
+      "root_cause": "A GraphQL object lookup failed to preserve private-program visibility for associated metadata (primary). The researcher described an unauthenticated request and triage validated the report. Exposure depended on resolving a valid program-associated object; the public record does not establish equal reachability across every private-program type. Conceptually, resolving an object is distinct from authorizing its disclosure. The exact omitted check and code-level repair are not public.",
+      "impact": "The researcher demonstrated private-program metadata exposure. HackerOne’s internal investigation additionally determined that report titles could be accessed and raised severity to critical; title access was a vendor-assessed consequence, not the researcher’s demonstrated result in the visible evidence. HackerOne said it found no exploitation beyond the demonstration (primary). Full report-body access is not established.",
       "defensive_takeaways": [
-        "Apply authorization to every object and relationship boundary.",
-        "Treat metadata fields as part of the privacy contract."
+        "Editorial design lesson: independently enforce visibility on object lookup, returned fields and related objects, including unauthenticated access paths.",
+        "Editorial privacy lesson: program metadata and report titles can disclose confidential information even when report bodies remain protected.",
+        "HackerOne marked the report Resolved on July 5, 2022 (primary). Treat that as resolution evidence; the deployment date and implementation-level remediation remain unknown."
       ],
       "reward": {
         "amount": 25000,
@@ -5898,7 +5901,7 @@
         "evidence_quote": "rewarded haxta4ok00 with a $25,000 bounty.",
         "evidence_location": "Bounty event July 5, 2022 at 16:15 UTC, activity 17427955.",
         "usd_equivalent": null,
-        "notes": "Dollar notation appears in the report UI; USD denomination is contextual from HackerOne’s disclosure policy. Award events do not establish cash receipt."
+        "notes": "One report award, not verified cash receipt. USD is contextual from HackerOne’s platform-wide payment policy reviewed in October 2026, more than four years after the July 2022 award; it does not independently establish that payment’s denomination or settlement."
       },
       "dates": {
         "published": {
@@ -5906,7 +5909,7 @@
           "precision": "day",
           "basis": "explicit",
           "source_id": "primary",
-          "note": null
+          "note": "Public disclosure event activity-32092519; the underlying report and award are from 2022."
         },
         "public_disclosure": {
           "value": "2025-01-21",
@@ -5972,7 +5975,7 @@
           "title": "GraphQL object authorization exposed private-program metadata (report 1618347)",
           "type": "vendor",
           "author": "HackerOne and the credited researchers",
-          "retrieved_at": "2026-10-02T15:45:00Z",
+          "retrieved_at": "2026-10-03T05:30:46Z",
           "supports": [
             "reward",
             "dates",
@@ -5986,7 +5989,7 @@
           "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
           "type": "platform",
           "author": "HackerOne",
-          "retrieved_at": "2026-10-02T15:43:47Z",
+          "retrieved_at": "2026-10-03T05:30:46Z",
           "supports": [
             "reward"
           ]
@@ -5995,12 +5998,14 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T15:45:00Z",
-        "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+        "reviewed_at": "2026-10-03T05:30:46Z",
+        "method": "Freshly read the rendered public report, researcher demonstration, vendor triage/investigation statements and award/disclosure events in the cloud browser; independently read platform currency policy. Omitted payloads and private-program details.",
         "limitations": [
-          "Award events establish an award, not independently audited settlement.",
-          "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
-          "Implementation-level patch details are not public. Updated comment timestamps are distinct from original event dates."
+          "Award events establish an award, not independently audited settlement; later platform-wide currency policy is contextual evidence.",
+          "Exact fix-deployment date is unavailable; Resolved status is not treated as deployment.",
+          "Code-level patch details are not public. Vendor investigation supports possible report-title access; the visible researcher evidence demonstrates metadata exposure.",
+          "The researcher expressed uncertainty about coverage of fully private programs. The record does not generalize exposure to every private-program category.",
+          "Updated comment timestamps differ from original event dates."
         ]
       },
       "content_scope": "historical_defensive_summary"

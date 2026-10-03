@@ -16,12 +16,13 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "HackerOne awarded USD 25,000 for one private-program object-authorization report.",
-  "root_cause": "GraphQL object access did not consistently enforce private-program visibility rules.",
-  "impact": "Private-program metadata and report titles could be disclosed without authorization. HackerOne stated its investigation found no exploitation beyond the researcher’s demonstration.",
+  "summary": "HackerOne awarded USD 25,000 in 2022 for private-program GraphQL metadata exposure; the report became public in January 2025 (primary).",
+  "root_cause": "A GraphQL object lookup failed to preserve private-program visibility for associated metadata (primary). The researcher described an unauthenticated request and triage validated the report. Exposure depended on resolving a valid program-associated object; the public record does not establish equal reachability across every private-program type. Conceptually, resolving an object is distinct from authorizing its disclosure. The exact omitted check and code-level repair are not public.",
+  "impact": "The researcher demonstrated private-program metadata exposure. HackerOne’s internal investigation additionally determined that report titles could be accessed and raised severity to critical; title access was a vendor-assessed consequence, not the researcher’s demonstrated result in the visible evidence. HackerOne said it found no exploitation beyond the demonstration (primary). Full report-body access is not established.",
   "defensive_takeaways": [
-    "Apply authorization to every object and relationship boundary.",
-    "Treat metadata fields as part of the privacy contract."
+    "Editorial design lesson: independently enforce visibility on object lookup, returned fields and related objects, including unauthenticated access paths.",
+    "Editorial privacy lesson: program metadata and report titles can disclose confidential information even when report bodies remain protected.",
+    "HackerOne marked the report Resolved on July 5, 2022 (primary). Treat that as resolution evidence; the deployment date and implementation-level remediation remain unknown."
   ],
   "reward": {
     "amount": 25000,
@@ -35,7 +36,7 @@
     "evidence_quote": "rewarded haxta4ok00 with a $25,000 bounty.",
     "evidence_location": "Bounty event July 5, 2022 at 16:15 UTC, activity 17427955.",
     "usd_equivalent": null,
-    "notes": "Dollar notation appears in the report UI; USD denomination is contextual from HackerOne’s disclosure policy. Award events do not establish cash receipt."
+    "notes": "One report award, not verified cash receipt. USD is contextual from HackerOne’s platform-wide payment policy reviewed in October 2026, more than four years after the July 2022 award; it does not independently establish that payment’s denomination or settlement."
   },
   "dates": {
     "published": {
@@ -43,7 +44,7 @@
       "precision": "day",
       "basis": "explicit",
       "source_id": "primary",
-      "note": null
+      "note": "Public disclosure event activity-32092519; the underlying report and award are from 2022."
     },
     "public_disclosure": {
       "value": "2025-01-21",
@@ -109,7 +110,7 @@
       "title": "GraphQL object authorization exposed private-program metadata (report 1618347)",
       "type": "vendor",
       "author": "HackerOne and the credited researchers",
-      "retrieved_at": "2026-10-02T15:45:00Z",
+      "retrieved_at": "2026-10-03T05:30:46Z",
       "supports": [
         "reward",
         "dates",
@@ -123,7 +124,7 @@
       "title": "Vulnerability Disclosure Standards: Bug Bounty payment denomination",
       "type": "platform",
       "author": "HackerOne",
-      "retrieved_at": "2026-10-02T15:43:47Z",
+      "retrieved_at": "2026-10-03T05:30:46Z",
       "supports": [
         "reward"
       ]
@@ -132,12 +133,14 @@
   "primary_source_id": "primary",
   "verification": {
     "status": "included",
-    "reviewed_at": "2026-10-02T15:45:00Z",
-    "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+    "reviewed_at": "2026-10-03T05:30:46Z",
+    "method": "Freshly read the rendered public report, researcher demonstration, vendor triage/investigation statements and award/disclosure events in the cloud browser; independently read platform currency policy. Omitted payloads and private-program details.",
     "limitations": [
-      "Award events establish an award, not independently audited settlement.",
-      "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
-      "Implementation-level patch details are not public. Updated comment timestamps are distinct from original event dates."
+      "Award events establish an award, not independently audited settlement; later platform-wide currency policy is contextual evidence.",
+      "Exact fix-deployment date is unavailable; Resolved status is not treated as deployment.",
+      "Code-level patch details are not public. Vendor investigation supports possible report-title access; the visible researcher evidence demonstrates metadata exposure.",
+      "The researcher expressed uncertainty about coverage of fully private programs. The record does not generalize exposure to every private-program category.",
+      "Updated comment timestamps differ from original event dates."
     ]
   },
   "content_scope": "historical_defensive_summary"
