@@ -87,7 +87,7 @@
     "Requires an authenticated backoffice API user with access to the Users section. The vendor notes that this is ordinarily restricted to administrators, making custom delegation important to exposure.",
     "The research reports administrator membership; the vendor describes resulting administrative control. Neither source establishes a customer incident or exploitation prevalence.",
     "Research reported February 25, 2026; acknowledged as a duplicate the next day. The vendor advisory was published March 10; detailed research September 21.",
-    "The vendor affected-range field and listed patched releases do not yield a clean single interval; no normalized range is inferred here.",
+    "The maintainer lists affected versions as >=15.3.1, <17.2.1, while listing 16.5.1 and 17.2.2 as patched. These fields conflict; no corrected affected interval is inferred.",
     "The byline is Jaroslav Lobačevski; discovery is credited to the GitHub Security Lab Taskflow Agent with his manual verification. The maintainer credits odgrso separately. Learning prerequisites are editorial."
   ],
   "content_scope": "defensive_education"

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nuxt-2026-rendered-payload-cache-authorization",
+  "title": "Nuxt: rendered-data caches must preserve request authorization",
+  "publisher": "Nuxt",
+  "authors": [
+    "danielroe"
+  ],
+  "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "cache-artifact-isolation",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-71316 documents an authorization mismatch between server-rendered HTML and extracted data. A shared path-keyed payload cache omitted requester identity and returned data before current-request guards. The maintainer confirms cross-user and unauthenticated disclosure while HTML remained protected. Application-specific secrets are possible contents, not independently observed production losses.",
+  "defensive_use": "The advisory identifies 4.5.1 as fixed by limiting shared payload caching to prerendering and restoring runtime authorization. Official release notes corroborate the fix and recommend clearing upstream caches. Editorial lesson: treat each rendered representation as a separate disclosure boundary; correct HTML protection does not prove data-response protection.",
+  "prerequisites": [
+    "Server-side rendering and client data hydration",
+    "Cache partitioning and request authorization"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and release notes."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication, not software-release chronology."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established."
+    },
+    "source_displayed": {
+      "value": "2026-07-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T08:19:27Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory and official release reviewed. No reproduction or independent patch testing performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
+      "title": "Nuxt runtime payload cache discloses another user's SSR data across users and to unauthenticated clients",
+      "publisher": "Nuxt",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T08:19:27Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/nuxt/nuxt/releases/tag/v4.5.1",
+      "title": "Nuxt v4.5.1 release",
+      "publisher": "Nuxt",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T08:19:27Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires affected Nuxt 4.4.0–4.5.0, cached routes with runtime payload extraction, and user-specific server-rendered data. Nuxt 3.x is excluded by the advisory.",
+    "The advisory credits quantumshiro as finder; danielroe is the publishing maintainer.",
+    "No production incident or bounty amount established. Learning prerequisites and generalized review guidance are editorial.",
+    "The software-release page displays July 27 without a year in the retrieved rendering. No exact software-release date is inferred; advisory publication is independently explicit."
+  ],
+  "content_scope": "defensive_education"
+}

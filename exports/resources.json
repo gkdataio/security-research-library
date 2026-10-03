@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 48,
+    "resources": 50,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1780,6 +1780,100 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "nuxt-2026-rendered-payload-cache-authorization",
+      "title": "Nuxt: rendered-data caches must preserve request authorization",
+      "publisher": "Nuxt",
+      "authors": [
+        "danielroe"
+      ],
+      "primary_url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "cache-artifact-isolation",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-71316 documents an authorization mismatch between server-rendered HTML and extracted data. A shared path-keyed payload cache omitted requester identity and returned data before current-request guards. The maintainer confirms cross-user and unauthenticated disclosure while HTML remained protected. Application-specific secrets are possible contents, not independently observed production losses.",
+      "defensive_use": "The advisory identifies 4.5.1 as fixed by limiting shared payload caching to prerendering and restoring runtime authorization. Official release notes corroborate the fix and recommend clearing upstream caches. Editorial lesson: treat each rendered representation as a separate disclosure boundary; correct HTML protection does not prove data-response protection.",
+      "prerequisites": [
+        "Server-side rendering and client data hydration",
+        "Cache partitioning and request authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication, not software-release chronology."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established."
+        },
+        "source_displayed": {
+          "value": "2026-07-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T08:19:27Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and official release reviewed. No reproduction or independent patch testing performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43",
+          "title": "Nuxt runtime payload cache discloses another user's SSR data across users and to unauthenticated clients",
+          "publisher": "Nuxt",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:19:27Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/nuxt/nuxt/releases/tag/v4.5.1",
+          "title": "Nuxt v4.5.1 release",
+          "publisher": "Nuxt",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:19:27Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires affected Nuxt 4.4.0–4.5.0, cached routes with runtime payload extraction, and user-specific server-rendered data. Nuxt 3.x is excluded by the advisory.",
+        "The advisory credits quantumshiro as finder; danielroe is the publishing maintainer.",
+        "No production incident or bounty amount established. Learning prerequisites and generalized review guidance are editorial.",
+        "The software-release page displays July 27 without a year in the retrieved rendering. No exact software-release date is inferred; advisory publication is independently explicit."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "openid-fapi-2-api-authorization-profile",
       "title": "FAPI 2.0 Security Profile",
       "publisher": "OpenID Foundation",
@@ -3474,6 +3568,111 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "serialize-javascript-2026-output-code-boundary",
+      "title": "Serialize JavaScript: every serialized field must retain data semantics",
+      "publisher": "Yahoo serialize-javascript",
+      "authors": [
+        "redonkulus"
+      ],
+      "primary_url": "https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The maintainer describes inconsistent escaping across structured-object serialization: some object-derived strings entered generated JavaScript without equivalent protection. Code execution requires attacker-influenced objects and subsequent executable interpretation of the output. The advisory demonstrates local execution; universal remote exploitability or production compromise is not established.",
+      "defensive_use": "The maintainer advisory and official release identify 7.0.3 as the repair. Editorial lesson: audit serialization contracts across every supported type and output consumer, including overridable object behavior. Prefer data-only exchange where possible and avoid granting generated text execution authority merely because a serializer produced it.",
+      "prerequisites": [
+        "JavaScript object behavior and serialization contracts",
+        "Data versus executable-output trust boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-02-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication, not software-release chronology."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established."
+        },
+        "source_displayed": {
+          "value": "2026-02-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T08:19:27Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and official release reviewed. No reproduction or independent patch testing performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq",
+          "title": "RCE via RegExp.flags and Date.prototype.toISOString()",
+          "publisher": "Yahoo serialize-javascript",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:19:27Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/yahoo/serialize-javascript/releases/tag/v7.0.3",
+          "title": "Serialize JavaScript v7.0.3 release",
+          "publisher": "Yahoo serialize-javascript",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:19:27Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "reviewed-entry",
+          "url": "https://github.com/advisories/GHSA-5c6j-r48x-rmvq",
+          "title": "Serialize JavaScript is Vulnerable to RCE via RegExp.flags and Date.prototype.toISOString()",
+          "publisher": "GitHub Advisory Database",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:19:27Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The maintainer table says affected versions are below 7.0.2, but its prose includes 7.0.2. The GitHub-reviewed entry includes 7.0.2; all reviewed sources identify 7.0.3 as patched.",
+        "The maintainer labels this an incomplete CVE-2020-7660 fix, while the GitHub-reviewed entry assigns no known CVE. The stable identity here is GHSA-5c6j-r48x-rmvq; its 2026 publication does not make the earlier CVE a 2026 identifier.",
+        "The advisory credits uug4na as reporter; redonkulus is the publishing maintainer. No bounty established.",
+        "The software-release page displays February 27 without a year in the retrieved rendering. No exact software-release date is inferred; advisory publication is independently explicit.",
+        "Learning prerequisites and generalized design guidance are editorial. Control of ordinary JSON alone does not establish the object-control and executable-consumer prerequisites."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "slsa-v1-2-supply-chain-build-provenance",
       "title": "SLSA v1.2: supply-chain security and build provenance",
       "publisher": "SLSA Community",
@@ -3883,7 +4082,7 @@
         "Requires an authenticated backoffice API user with access to the Users section. The vendor notes that this is ordinarily restricted to administrators, making custom delegation important to exposure.",
         "The research reports administrator membership; the vendor describes resulting administrative control. Neither source establishes a customer incident or exploitation prevalence.",
         "Research reported February 25, 2026; acknowledged as a duplicate the next day. The vendor advisory was published March 10; detailed research September 21.",
-        "The vendor affected-range field and listed patched releases do not yield a clean single interval; no normalized range is inferred here.",
+        "The maintainer lists affected versions as >=15.3.1, <17.2.1, while listing 16.5.1 and 17.2.2 as patched. These fields conflict; no corrected affected interval is inferred.",
         "The byline is Jaroslav Lobačevski; discovery is credited to the GitHub Security Lab Taskflow Agent with his manual verification. The maintainer credits odgrso separately. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
