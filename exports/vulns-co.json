@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T17:39:29Z",
+  "latest_reviewed_at": "2026-10-03T19:54:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -3473,7 +3473,7 @@
         "evidence_quote": "decided to issue a reward of $31337.00 for your report",
         "evidence_location": "Success section, quoted Google award email",
         "usd_equivalent": null,
-        "notes": "A Google award email is quoted within the researcher publication. This is researcher-published evidence, not an independently accessed vendor award record.",
+        "notes": "A Google award email is quoted within the researcher publication; it is not an independently accessed vendor award record. The quote uses only $. USD is a contextual currency inference from the official OSS VRP rules (currency-context), whose Reward amounts section explicitly denominates discretionary bonuses in USD. Those living rules were reviewed on October 3, 2026, after the January 28 award; their wording at award time was not established. They are denomination context only, not proof of this individual award or settlement. No bonus is established or added.",
         "type": "bug_bounty",
         "awarding_organization": "Google"
       },
@@ -3511,7 +3511,7 @@
           "precision": "day",
           "basis": "explicit",
           "source_id": "primary",
-          "note": null
+          "note": "Researcher timeline says the report was marked fixed on this date; deployment timing and patch effectiveness were not independently verified."
         },
         "paid": {
           "value": null,
@@ -3528,11 +3528,11 @@
           "note": null
         },
         "mitigated": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
+          "value": "2025-12-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Researcher timeline records disabling the workflow as mitigation."
         }
       },
       "recency": {
@@ -3549,7 +3549,7 @@
           "title": "Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning",
           "type": "researcher",
           "author": "Adnan Khan",
-          "retrieved_at": "2026-10-02T03:49:00Z",
+          "retrieved_at": "2026-10-03T19:52:01Z",
           "supports": [
             "reward",
             "dates",
@@ -3557,15 +3557,27 @@
             "impact",
             "remediation"
           ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://bughunters.google.com/about/rules/open-source/google-open-source-software-vulnerability-reward-program-rules#reward-amounts",
+          "title": "Google Open Source Software Vulnerability Reward Program Rules — Reward amounts",
+          "type": "vendor",
+          "author": "Google",
+          "retrieved_at": "2026-10-03T19:53:20Z",
+          "supports": [
+            "reward"
+          ]
         }
       ],
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T03:49:00Z",
-        "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
+        "reviewed_at": "2026-10-03T19:54:00Z",
+        "method": "Primary researcher award and timeline reread; official OSS VRP rules read for contextual denomination only. Award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
-          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
+          "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited.",
+          "USD is contextually inferred from later program-level denomination wording, not explicitly stated in the quoted individual award. No conflicting denomination was identified in the reviewed sources."
         ]
       },
       "content_scope": "historical_defensive_summary"
