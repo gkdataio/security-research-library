@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "id": "apple-security-bounty",
   "name": "Apple Security Bounty",
   "operator": "Apple",
@@ -43,11 +43,12 @@
       "terms"
     ]
   },
-  "last_verified_at": "2026-10-02T21:01:00Z",
+  "last_verified_at": "2026-10-03T03:41:39Z",
   "limitations": [
     "Reviewed pages display dollar signs without an explicit ISO currency code; numeric currency-normalized bounds remain null.",
     "Bonus-qualified ceilings are not guaranteed awards and must not be treated as ordinary base payouts.",
-    "No dedicated policy change-log URL was verified."
+    "No dedicated policy change-log URL was verified.",
+    "Only guidelines and terms were refreshed for scope context; reward and announcement evidence retains its earlier retrieval date. Scope summaries are non-exhaustive, omit asset inventories and testing instructions, and grant no authorization."
   ],
   "sources": [
     {
@@ -73,7 +74,7 @@
       "title": "Apple bounty guidelines",
       "url": "https://security.apple.com/bounty/guidelines/",
       "publisher": "Apple",
-      "retrieved_at": "2026-10-02T21:01:00Z",
+      "retrieved_at": "2026-10-03T03:38:36Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -82,7 +83,7 @@
       "title": "Apple security terms and conditions",
       "url": "https://security.apple.com/terms-and-conditions/",
       "publisher": "Apple",
-      "retrieved_at": "2026-10-02T21:01:00Z",
+      "retrieved_at": "2026-10-03T03:39:06Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -102,5 +103,18 @@
     "value": "unknown",
     "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
     "source_ids": []
+  },
+  "scope_context": {
+    "included_summary": "Apple hardware, current operating-system releases including eligible betas, and Apple-owned public-facing services, subject to standard-configuration and report-validation requirements.",
+    "excluded_summary": "Apple Pay, non-public-facing systems and third-party products/services are outside coverage. Phishing, social engineering, unauthorized interference with others’ data/property, service disruption affecting others, brute-force qualification attempts, theoretical claims and unvalidated AI reports are excluded. Confidentiality continues through the update and security advisory; repeated ineligible submissions can suspend or end participation.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ],
+    "policy_urls": [
+      "https://security.apple.com/bounty/guidelines/",
+      "https://security.apple.com/terms-and-conditions/"
+    ],
+    "verified_at": "2026-10-03T03:41:39Z"
   }
 }

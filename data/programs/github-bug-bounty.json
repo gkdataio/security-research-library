@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "id": "github-bug-bounty",
   "name": "GitHub Bug Bounty",
   "operator": "GitHub",
@@ -38,13 +38,14 @@
       "exclusions"
     ]
   },
-  "last_verified_at": "2026-10-02T21:43:18Z",
+  "last_verified_at": "2026-10-03T03:41:39Z",
   "limitations": [
     "Official GitHub-hosted rules were retrieved; the HackerOne submission page required JavaScript and was not independently reviewed as policy evidence.",
     "Published reward amounts are discretionary guidelines, not fixed payouts.",
     "Dollar signs are shown without an explicit ISO currency code in reviewed pages; currency-normalized bounds remain null.",
     "No dedicated policy change-log URL was verified.",
-    "Official cross-platform program identity link refreshed at 21:43 UTC; other policy summaries retain the earlier same-day review."
+    "Scope and exclusion pages were freshly reviewed; reward guidelines retain their earlier retrieval date. Product-specific policy subpages and full revision history were not exhaustively reviewed.",
+    "High-level coverage and exclusion context only. Asset inventories and testing instructions are omitted; current official terms prevail and this record grants no authorization."
   ],
   "sources": [
     {
@@ -52,7 +53,7 @@
       "title": "GitHub Bug Bounty",
       "url": "https://bounty.github.com/",
       "publisher": "GitHub",
-      "retrieved_at": "2026-10-02T21:43:18Z",
+      "retrieved_at": "2026-10-03T03:38:24Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -70,7 +71,7 @@
       "title": "GitHub program rules",
       "url": "https://bounty.github.com/rules",
       "publisher": "GitHub",
-      "retrieved_at": "2026-10-02T21:01:00Z",
+      "retrieved_at": "2026-10-03T03:38:24Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -79,7 +80,16 @@
       "title": "GitHub ineligible submissions",
       "url": "https://bounty.github.com/ineligible",
       "publisher": "GitHub",
-      "retrieved_at": "2026-10-02T21:01:00Z",
+      "retrieved_at": "2026-10-03T03:39:41Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "scope",
+      "title": "GitHub high-level program scope policy",
+      "url": "https://bounty.github.com/scope",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-03T03:38:36Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -99,5 +109,18 @@
       ],
       "note": "GitHub’s official program homepage links to this HackerOne submission program. This verifies identity, not the dynamically rendered HackerOne policy."
     }
-  ]
+  ],
+  "scope_context": {
+    "included_summary": "Selected code-hosting, package-registry, developer-client, enterprise and supporting service categories; inclusion depends on the official product and scope policies.",
+    "excluded_summary": "Unlisted products, third-party services and most hosted open-source projects are excluded; specified community, marketing, commerce and email services are also excluded. Local-access-dependent findings, network denial-of-service, intended execution within granted trust boundaries and abuse without security impact are ineligible. Upstream flaws generally belong with maintainers; known-vulnerability reports require demonstrated impact and at least 30 days since public disclosure. Product-specific exceptions remain.",
+    "source_ids": [
+      "scope",
+      "exclusions"
+    ],
+    "policy_urls": [
+      "https://bounty.github.com/scope",
+      "https://bounty.github.com/ineligible"
+    ],
+    "verified_at": "2026-10-03T03:41:39Z"
+  }
 }

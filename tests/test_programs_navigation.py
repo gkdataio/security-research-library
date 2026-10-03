@@ -15,6 +15,8 @@ from validate_extra import validate_inert_svg
 class ProgramTests(unittest.TestCase):
     def setUp(self):
         self.rec=json.loads(next((ROOT/'data/programs').glob('*.json')).read_text())
+        # These legacy/type fixtures deliberately omit the separately tested 1.4 scope extension.
+        self.rec.pop('scope_context', None)
         self.schema=json.loads((ROOT/'schema/program.schema.json').read_text())
     def test_valid(self): validate_program(self.rec,self.schema)
     def test_program_type_is_optional_for_existing_versions(self):

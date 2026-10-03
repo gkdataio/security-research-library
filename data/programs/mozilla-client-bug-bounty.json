@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "id": "mozilla-client-bug-bounty",
   "name": "Mozilla Client Bug Bounty",
   "operator": "Mozilla",
@@ -10,7 +10,7 @@
     "https://hackerone.com/mozilla/updates?type=team"
   ],
   "change_log_url": null,
-  "last_verified_at": "2026-10-03T02:31:44Z",
+  "last_verified_at": "2026-10-03T03:41:39Z",
   "content_scope": "public_program_policy_summary",
   "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
   "program_type": {
@@ -38,11 +38,9 @@
     ]
   },
   "restrictions": {
-    "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. End-of-life products, unbundled third-party code and unsupported configurations generally do not qualify. Safe harbor cannot bind third parties.",
+    "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. Safe harbor cannot bind third parties.",
     "source_ids": [
-      "general",
-      "policy",
-      "faq"
+      "general"
     ]
   },
   "submission_status": {
@@ -56,7 +54,8 @@
     "The FAQ identifies a February 24, 2026 reward-category change: GPU-process findings no longer receive the highest sandbox-escape category solely for that process compromise.",
     "The reviewed July 10, 2026 announcement transfers Mozilla VPN client coverage into this program. No asset inventory is reproduced.",
     "No client-specific change-log URL or overall policy revision date was established. Linked submission terms and Bugzilla etiquette were not exhaustively reviewed.",
-    "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization."
+    "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization.",
+    "Only policy, general eligibility and FAQ sources were refreshed; announcement timestamps remain unchanged."
   ],
   "sources": [
     {
@@ -64,7 +63,7 @@
       "title": "Mozilla Client Bug Bounty Program",
       "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
       "publisher": "Mozilla",
-      "retrieved_at": "2026-10-03T02:31:44Z",
+      "retrieved_at": "2026-10-03T03:38:30Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -73,7 +72,7 @@
       "title": "Mozilla Security Bug Bounty general eligibility and safe harbor",
       "url": "https://www.mozilla.org/en-US/security/bug-bounty/",
       "publisher": "Mozilla",
-      "retrieved_at": "2026-10-03T02:31:44Z",
+      "retrieved_at": "2026-10-03T03:39:31Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -82,7 +81,7 @@
       "title": "Mozilla Bug Bounty Program FAQ",
       "url": "https://www.mozilla.org/en-US/security/bug-bounty/faq/",
       "publisher": "Mozilla",
-      "retrieved_at": "2026-10-03T02:31:44Z",
+      "retrieved_at": "2026-10-03T03:38:30Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -95,5 +94,18 @@
       "provenance": "official_primary",
       "access_method": "browser"
     }
-  ]
+  ],
+  "scope_context": {
+    "included_summary": "Current desktop and mobile browser releases, supported development channels and selected mitigation protections; release-channel and configuration exceptions apply.",
+    "excluded_summary": "Unbundled add-ons, routine dependency patch gaps, end-of-life products, unsupported configurations and standalone developer tools generally do not qualify. Denial-of-service-only and minor spoofing findings are usually unrewarded; administrator-installed trust roots or certificate-pinned connections invalidate mitigation claims.",
+    "source_ids": [
+      "policy",
+      "faq"
+    ],
+    "policy_urls": [
+      "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "https://www.mozilla.org/en-US/security/bug-bounty/faq/"
+    ],
+    "verified_at": "2026-10-03T03:41:39Z"
+  }
 }

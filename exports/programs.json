@@ -3,8 +3,8 @@
   "content_scope": "public_program_policy_summary",
   "counts": {
     "programs": 28,
-    "programs_with_scope_context": 4,
-    "programs_without_scope_context": 24
+    "programs_with_scope_context": 13,
+    "programs_without_scope_context": 15
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
   "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
@@ -107,14 +107,14 @@
       }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "adobe-public-bug-bounty",
       "name": "Adobe Public Bug Bounty",
       "operator": "Adobe",
       "platform": "Intigriti",
       "program_type": {
         "value": "paid_bounty",
-        "summary": "The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports. This classification does not establish current submission acceptance or guarantee an individual award.",
+        "summary": "Monetary bounties are advertised; awards are discretionary.",
         "source_ids": [
           "policy"
         ]
@@ -128,38 +128,38 @@
         "minimum": null,
         "maximum": null,
         "basis": "advertised_not_individual_award",
-        "summary": "Three advertised tiers span $150–$15,000, $100–$10,000 and $75–$5,000. Shared-root-cause findings receive one bounty; repeated patterns have a two-report full-bounty cap. Awards remain discretionary. Dollar denomination is unverified; normalized bounds remain null.",
+        "summary": "Tiers: $150–$15,000, $100–$10,000 and $75–$5,000. Shared-root-cause findings receive one bounty; repeated patterns have a two-report full-bounty cap. Dollar denomination remains unverified, so normalized bounds remain null.",
         "source_ids": [
           "policy"
         ]
       },
       "eligibility": {
-        "summary": "First reproducible, previously unknown, eligible findings qualify. Current/recent employees and immediate family face a 12-month exclusion; specified network-access contractors face six months. Intigriti requires adulthood, or age 16 with guardian permission, and legal/employer eligibility.",
+        "summary": "First reproducible, previously unknown eligible reports qualify. Employee/immediate-family exclusions last 12 months; specified network-access contractors, six. Platform adulthood/guardian-approved age-16 and legal/employer conditions apply.",
         "source_ids": [
           "policy",
           "platform-terms"
         ]
       },
       "restrictions": {
-        "summary": "Product-specific test plans override general guidance and constrain approved environments and accounts. AI-assisted reports need human validation. Privacy violations, disruption, social engineering, unapproved customer environments and premature disclosure are prohibited. Unsupported-impact AI claims, licensing bypasses and compromised-device mobile scenarios are excluded.",
+        "summary": "Product-specific plans override general guidance and constrain environments/accounts. AI-assisted findings need human validation. Privacy violations, disruption, social engineering, unapproved customer environments and premature disclosure are prohibited.",
         "source_ids": [
           "policy"
         ]
       },
       "submission_status": {
         "value": "unknown",
-        "summary": "No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient.",
+        "summary": "Visible policies and login invitations do not verify acceptance.",
         "source_ids": [
           "policy"
         ]
       },
-      "last_verified_at": "2026-10-03T01:50:12Z",
+      "last_verified_at": "2026-10-03T03:41:28Z",
       "limitations": [
-        "The linked Updates page failed text retrieval; no announcement or change-log URL is represented as reviewed.",
-        "Referenced test-plan and CVSS attachments were not reviewed. Product-specific conditions are therefore incomplete.",
-        "Platform terms describe euro settlement by default, which does not establish the denomination of Adobe’s dollar-denominated schedule.",
-        "Logged-out text review only; authenticated submission eligibility was not tested. No current open/paused indicator was established.",
-        "This summary omits asset inventories and operational instructions. Full live terms prevail and this record grants no testing authorization."
+        "Updates text retrieval previously failed; no change-log/announcement reviewed.",
+        "Test-plan/CVSS attachments remain unreviewed; product conditions are incomplete.",
+        "Platform euro settlement does not establish Adobe dollar denomination.",
+        "Logged-out review; authenticated eligibility and open/paused status unverified.",
+        "High-level context omits asset inventories and testing instructions. Live terms prevail; this record grants no authorization."
       ],
       "sources": [
         {
@@ -167,7 +167,7 @@
           "title": "Adobe Public Bug Bounty policy",
           "url": "https://app.intigriti.com/programs/adobe/adobepublic",
           "publisher": "Adobe / Intigriti",
-          "retrieved_at": "2026-10-03T01:50:12Z",
+          "retrieved_at": "2026-10-03T03:38:55Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -182,10 +182,21 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Approved AI, creative/document, commerce, mobile, enterprise, identity and supporting web-service categories, subject to listed products and controlling plans.",
+        "excluded_summary": "Unlisted products, third-party code/extensions, licensing bypasses, compromised-device mobile scenarios, unsupported-impact AI claims and low-impact configuration findings are excluded. Product-specific exclusions remain incompletely reviewed.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/adobe/adobepublic"
+        ],
+        "verified_at": "2026-10-03T03:41:28Z"
+      }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "apple-security-bounty",
       "name": "Apple Security Bounty",
       "operator": "Apple",
@@ -229,11 +240,12 @@
           "terms"
         ]
       },
-      "last_verified_at": "2026-10-02T21:01:00Z",
+      "last_verified_at": "2026-10-03T03:41:39Z",
       "limitations": [
         "Reviewed pages display dollar signs without an explicit ISO currency code; numeric currency-normalized bounds remain null.",
         "Bonus-qualified ceilings are not guaranteed awards and must not be treated as ordinary base payouts.",
-        "No dedicated policy change-log URL was verified."
+        "No dedicated policy change-log URL was verified.",
+        "Only guidelines and terms were refreshed for scope context; reward and announcement evidence retains its earlier retrieval date. Scope summaries are non-exhaustive, omit asset inventories and testing instructions, and grant no authorization."
       ],
       "sources": [
         {
@@ -259,7 +271,7 @@
           "title": "Apple bounty guidelines",
           "url": "https://security.apple.com/bounty/guidelines/",
           "publisher": "Apple",
-          "retrieved_at": "2026-10-02T21:01:00Z",
+          "retrieved_at": "2026-10-03T03:38:36Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -268,7 +280,7 @@
           "title": "Apple security terms and conditions",
           "url": "https://security.apple.com/terms-and-conditions/",
           "publisher": "Apple",
-          "retrieved_at": "2026-10-02T21:01:00Z",
+          "retrieved_at": "2026-10-03T03:39:06Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -288,6 +300,19 @@
         "value": "unknown",
         "summary": "Official policy reviewed, but a live submission-acceptance indicator was not separately established.",
         "source_ids": []
+      },
+      "scope_context": {
+        "included_summary": "Apple hardware, current operating-system releases including eligible betas, and Apple-owned public-facing services, subject to standard-configuration and report-validation requirements.",
+        "excluded_summary": "Apple Pay, non-public-facing systems and third-party products/services are outside coverage. Phishing, social engineering, unauthorized interference with others’ data/property, service disruption affecting others, brute-force qualification attempts, theoretical claims and unvalidated AI reports are excluded. Confidentiality continues through the update and security advisory; repeated ineligible submissions can suspend or end participation.",
+        "source_ids": [
+          "policy",
+          "terms"
+        ],
+        "policy_urls": [
+          "https://security.apple.com/bounty/guidelines/",
+          "https://security.apple.com/terms-and-conditions/"
+        ],
+        "verified_at": "2026-10-03T03:41:39Z"
       }
     },
     {
@@ -469,7 +494,7 @@
       }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "curl-vulnerability-disclosure",
       "name": "curl Vulnerability Disclosure",
       "operator": "curl project",
@@ -481,7 +506,7 @@
         "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/"
       ],
       "change_log_url": "https://hackerone.com/curl/updates",
-      "last_verified_at": "2026-10-03T02:31:44Z",
+      "last_verified_at": "2026-10-03T03:41:39Z",
       "content_scope": "public_program_policy_summary",
       "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
       "program_type": {
@@ -542,7 +567,8 @@
       "limitations": [
         "The HackerOne policy displays May 13, 2026. Its updates page contains no updates; revision archives were not reviewed.",
         "The January 26 announcement directed reports to GitHub or email. The current project policy instead directs them to HackerOne and rejects email reporting; browser review confirmed that discrepancy.",
-        "No age or residency rule was established. No account, submission or target interaction occurred. Full live terms prevail; this summary grants no authorization."
+        "No age or residency rule was established. No account, submission or target interaction occurred. Full live terms prevail; this summary grants no authorization.",
+        "Only the project disclosure policy was refreshed for scope context; platform policy, updates and closure notices retain their earlier retrieval dates. No overall revision date or exhaustive exclusion coverage is asserted."
       ],
       "sources": [
         {
@@ -559,9 +585,9 @@
           "title": "curl vulnerability disclosure policy",
           "url": "https://curl.se/dev/vuln-disclosure.html",
           "publisher": "curl project",
-          "retrieved_at": "2026-10-03T02:31:44Z",
+          "retrieved_at": "2026-10-03T03:39:31Z",
           "provenance": "official_primary",
-          "access_method": "text_and_browser"
+          "access_method": "text"
         },
         {
           "id": "closure-notice",
@@ -599,17 +625,28 @@
           "provenance": "official_primary",
           "access_method": "text"
         }
-      ]
+      ],
+      "scope_context": {
+        "included_summary": "Security defects in released transfer-client and library code, evaluated for practical confidentiality, integrity or availability impact.",
+        "excluded_summary": "Unreleased, off-by-default experimental, debug-only and test-suite code is excluded. Small leaks, ordinary stalled transfers, terminating busy loops, API misuse, expected parser differences and crash-only cases generally are not security issues; material impact can change some assessments. Command-line deception, expected terminal output and legacy-dependency-only cases are also excluded. The official list is explicitly incomplete.",
+        "source_ids": [
+          "disclosure"
+        ],
+        "policy_urls": [
+          "https://curl.se/dev/vuln-disclosure.html"
+        ],
+        "verified_at": "2026-10-03T03:41:39Z"
+      }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "dashlane-vulnerability-disclosure",
       "name": "Dashlane Vulnerability Disclosure Program",
       "operator": "Dashlane",
       "platform": "Intigriti",
       "program_type": {
         "value": "vulnerability_disclosure",
-        "summary": "Explicit no-bounty public disclosure program. A separate private paid program is not part of this classification; possible invitations and generic reward language are not cash promises.",
+        "summary": "Explicit unpaid public VDP; its private paid program is separate.",
         "source_ids": [
           "policy"
         ]
@@ -623,38 +660,38 @@
         "minimum": null,
         "maximum": null,
         "basis": "advertised_not_individual_award",
-        "summary": "Explicit unpaid VDP. Numeric bounds and currency are inapplicable. Generic reward language elsewhere does not override the no-bounty statement. A separate private bounty program may invite researchers following strong VDP reports; this is not a cash promise.",
+        "summary": "Currency/bounds are inapplicable. Generic reward wording and possible private-program invitations do not promise cash.",
         "source_ids": [
           "policy"
         ]
       },
       "eligibility": {
-        "summary": "An Intigriti account and researcher-identifying account requirements apply. Reports need clear evidence, individual findings and exclusive coordinated submission. Platform terms require adulthood, or age 16 with guardian permission, plus legal/employer eligibility.",
+        "summary": "Intigriti accounts and researcher identification are required. Reports need clear evidence, individual findings and exclusive coordinated submission. Platform adulthood/guardian-approved age-16 and legal/employer conditions apply.",
         "source_ids": [
           "policy",
           "platform-terms"
         ]
       },
       "restrictions": {
-        "summary": "Only owned or expressly authorized accounts may be used. Third-party-operated services are not automatically covered. Disruption, high-volume automation, automated account creation, social engineering, user-data interference and public video hosting are prohibited. Known sharing limitations, enumeration and best-practice-only claims are excluded.",
+        "summary": "Only owned/authorized accounts. Prohibited: disruption, high-volume automation, automated account creation, social engineering, user-data interference, physical attacks and public video hosting.",
         "source_ids": [
           "policy"
         ]
       },
       "submission_status": {
         "value": "unknown",
-        "summary": "No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient.",
+        "summary": "Visible policies and login invitations do not verify acceptance.",
         "source_ids": [
           "policy"
         ]
       },
-      "last_verified_at": "2026-10-03T01:53:34Z",
+      "last_verified_at": "2026-10-03T03:41:28Z",
       "limitations": [
-        "Policy requires listed-only active testing, while its FAQ accepts reports concerning other Dashlane-controlled assets. Preserve the stricter testing boundary; broader report acceptance does not establish authorization.",
-        "No dedicated announcement/change-log page or expanded safe-harbor text was verified.",
-        "Logged-out text review only; authenticated submission eligibility was not tested. No current open/paused indicator was established.",
-        "This summary omits asset inventories and operational instructions. Full live terms prevail and this record grants no testing authorization.",
-        "The page also displays historical aggregate payout statistics (average $185; total $925). These do not establish a currently available bounty schedule or an individual award and do not override the explicit no-bounty policy."
+        "FAQ accepts reports on other Dashlane-controlled assets; broader reporting does not expand listed-only testing authorization.",
+        "No dedicated announcement/change-log or expanded safe-harbor text verified.",
+        "Logged-out review; authenticated eligibility and open/paused status unverified.",
+        "High-level context omits asset inventories and testing instructions. Live terms prevail; this record grants no authorization.",
+        "Historical average $185/total $925 payouts neither establish a current schedule nor an individual award; explicit no-bounty terms prevail."
       ],
       "sources": [
         {
@@ -662,7 +699,7 @@
           "title": "Dashlane Vulnerability Disclosure Program policy",
           "url": "https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram",
           "publisher": "Dashlane / Intigriti",
-          "retrieved_at": "2026-10-03T01:50:12Z",
+          "retrieved_at": "2026-10-03T03:38:55Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -677,7 +714,18 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Approved credential-security web services, APIs, browser extensions, autofill/autologin, mobile applications, business/enterprise features, shared-credential workflows and federated authentication, within Dashlane ownership/control and listed testing boundaries.",
+        "excluded_summary": "Unlisted active testing, the company blog and unconfirmed third-party services; known sharing limitations, enumeration, unsupported/compromised-device scenarios and best-practice-only claims lacking security impact.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram"
+        ],
+        "verified_at": "2026-10-03T03:41:28Z"
+      }
     },
     {
       "schema_version": "1.4.0",
@@ -856,7 +904,7 @@
       }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "github-bug-bounty",
       "name": "GitHub Bug Bounty",
       "operator": "GitHub",
@@ -895,13 +943,14 @@
           "exclusions"
         ]
       },
-      "last_verified_at": "2026-10-02T21:43:18Z",
+      "last_verified_at": "2026-10-03T03:41:39Z",
       "limitations": [
         "Official GitHub-hosted rules were retrieved; the HackerOne submission page required JavaScript and was not independently reviewed as policy evidence.",
         "Published reward amounts are discretionary guidelines, not fixed payouts.",
         "Dollar signs are shown without an explicit ISO currency code in reviewed pages; currency-normalized bounds remain null.",
         "No dedicated policy change-log URL was verified.",
-        "Official cross-platform program identity link refreshed at 21:43 UTC; other policy summaries retain the earlier same-day review."
+        "Scope and exclusion pages were freshly reviewed; reward guidelines retain their earlier retrieval date. Product-specific policy subpages and full revision history were not exhaustively reviewed.",
+        "High-level coverage and exclusion context only. Asset inventories and testing instructions are omitted; current official terms prevail and this record grants no authorization."
       ],
       "sources": [
         {
@@ -909,7 +958,7 @@
           "title": "GitHub Bug Bounty",
           "url": "https://bounty.github.com/",
           "publisher": "GitHub",
-          "retrieved_at": "2026-10-02T21:43:18Z",
+          "retrieved_at": "2026-10-03T03:38:24Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -927,7 +976,7 @@
           "title": "GitHub program rules",
           "url": "https://bounty.github.com/rules",
           "publisher": "GitHub",
-          "retrieved_at": "2026-10-02T21:01:00Z",
+          "retrieved_at": "2026-10-03T03:38:24Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -936,7 +985,16 @@
           "title": "GitHub ineligible submissions",
           "url": "https://bounty.github.com/ineligible",
           "publisher": "GitHub",
-          "retrieved_at": "2026-10-02T21:01:00Z",
+          "retrieved_at": "2026-10-03T03:39:41Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "scope",
+          "title": "GitHub high-level program scope policy",
+          "url": "https://bounty.github.com/scope",
+          "publisher": "GitHub",
+          "retrieved_at": "2026-10-03T03:38:36Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -956,7 +1014,20 @@
           ],
           "note": "GitHub’s official program homepage links to this HackerOne submission program. This verifies identity, not the dynamically rendered HackerOne policy."
         }
-      ]
+      ],
+      "scope_context": {
+        "included_summary": "Selected code-hosting, package-registry, developer-client, enterprise and supporting service categories; inclusion depends on the official product and scope policies.",
+        "excluded_summary": "Unlisted products, third-party services and most hosted open-source projects are excluded; specified community, marketing, commerce and email services are also excluded. Local-access-dependent findings, network denial-of-service, intended execution within granted trust boundaries and abuse without security impact are ineligible. Upstream flaws generally belong with maintainers; known-vulnerability reports require demonstrated impact and at least 30 days since public disclosure. Product-specific exceptions remain.",
+        "source_ids": [
+          "scope",
+          "exclusions"
+        ],
+        "policy_urls": [
+          "https://bounty.github.com/scope",
+          "https://bounty.github.com/ineligible"
+        ],
+        "verified_at": "2026-10-03T03:41:39Z"
+      }
     },
     {
       "schema_version": "1.3.0",
@@ -1091,14 +1162,14 @@
       }
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "intel-vulnerability-disclosure",
       "name": "Intel Vulnerability Disclosure Program",
       "operator": "Intel",
       "platform": "Intigriti",
       "program_type": {
         "value": "vulnerability_disclosure",
-        "summary": "Explicit no-bounty disclosure program; the reviewed policy excludes monetary bounties and bonuses. Acknowledgment or reputation credit does not make it a paid bounty.",
+        "summary": "Explicit no-bounty disclosure program; monetary bonuses are also excluded.",
         "source_ids": [
           "policy"
         ]
@@ -1112,36 +1183,36 @@
         "minimum": null,
         "maximum": null,
         "basis": "advertised_not_individual_award",
-        "summary": "Explicit unpaid disclosure program: the policy states no bounties, and its category matrix excludes monetary bounties and bonuses. Currency and numeric bounds remain null as inapplicable, not as unknown reward availability. Some reports can receive acknowledgment or reputation credit.",
+        "summary": "Null currency/bounds are inapplicable. Acknowledgment or reputation credit is not payment.",
         "source_ids": [
           "policy"
         ]
       },
       "eligibility": {
-        "summary": "Participants must be at least 18, with guardian permission where still minors. Written employer approval is required when reporting on its behalf; sanctions restrictions also apply. Employees, contractors, and their family/household members face six-month exclusions. Reports must be original, confidential and evidenced on supported public versions.",
+        "summary": "Age 18 minimum; minors need guardian permission. Employer-representative reporting needs written approval. Sanctions and six-month employee/contractor/family/household exclusions apply. Reports must be original, confidential and evidenced on supported public versions.",
         "source_ids": [
           "policy"
         ]
       },
       "restrictions": {
-        "summary": "Coverage concerns maintained Intel-branded technology. Third-party, licensed, prerelease, divested and internal IT categories are excluded; acquisition and open-source-maintainer conditions apply. Others’ data must not be accessed or retained. Social engineering and specified physical-access cases are excluded. Disclosure needs written consent; safe harbor does not cover third parties.",
+        "summary": "Others’ data cannot be accessed or retained; accidental exposure requires stopping and reporting. Disclosure needs written consent. Safe harbor excludes third parties.",
         "source_ids": [
           "policy"
         ]
       },
       "submission_status": {
         "value": "unknown",
-        "summary": "No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient.",
+        "summary": "Visible policies and login invitations do not verify acceptance.",
         "source_ids": [
           "policy"
         ]
       },
-      "last_verified_at": "2026-10-03T01:53:51Z",
+      "last_verified_at": "2026-10-03T03:41:28Z",
       "limitations": [
-        "End-of-life reporting is encouraged despite reward exclusion; reputation eligibility must not be confused with monetary eligibility.",
-        "No separate announcement archive or dedicated change-log page was verified. Linked external conduct/disclosure policies were not separately reviewed.",
-        "Logged-out text review only; authenticated submission eligibility was not tested. No current open/paused indicator was established.",
-        "This summary omits asset inventories and operational instructions. Full live terms prevail and this record grants no testing authorization."
+        "End-of-life reporting remains encouraged despite reward exclusion; reputation eligibility is distinct.",
+        "No announcement/archive change-log verified; external conduct/disclosure policies remain unreviewed.",
+        "Logged-out review; authenticated eligibility and open/paused status unverified.",
+        "High-level context omits asset inventories and testing instructions. Live terms prevail; this record grants no authorization."
       ],
       "sources": [
         {
@@ -1149,13 +1220,24 @@
           "title": "Intel Vulnerability Disclosure Program policy",
           "url": "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram",
           "publisher": "Intel / Intigriti",
-          "retrieved_at": "2026-10-03T01:50:12Z",
+          "retrieved_at": "2026-10-03T03:39:30Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Maintained Intel-branded hardware, firmware, software and customer-facing services across computing, networking, storage, graphics and cloud categories. Solely Intel-maintained open-source projects qualify; other projects depend on maintainers’ policies.",
+        "excluded_summary": "Third-party, licensed-product-specific, prerelease, divested, prototyping and internal-IT categories; exposed credentials, duplicates, social engineering and specified physical-access findings. Acquisitions need six months and PSIRT support. Intel-rooted issues in third-party products remain reportable.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram"
+        ],
+        "verified_at": "2026-10-03T03:41:28Z"
+      }
     },
     {
       "schema_version": "1.3.0",
@@ -1352,7 +1434,7 @@
       "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "microsoft-edge-bug-bounty",
       "name": "Microsoft Edge Bounty Program",
       "operator": "Microsoft Corporation",
@@ -1361,7 +1443,7 @@
       "policy_url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
       "announcement_urls": [],
       "change_log_url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
-      "last_verified_at": "2026-10-03T02:14:45Z",
+      "last_verified_at": "2026-10-03T03:41:39Z",
       "content_scope": "public_program_policy_summary",
       "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
       "rewards": {
@@ -1375,16 +1457,14 @@
         ]
       },
       "eligibility": {
-        "summary": "Requires new Edge-specific impact in eligible current releases, absent from the equivalent Chrome release, with reproducible evidence. Participants must be at least 14, with guardian permission for minors. Employer permission, sanctions and public-sector ethics rules apply; current/recent Microsoft staff and specified related persons are excluded.",
+        "summary": "Participants must be at least 14; minors need guardian permission. Employer, sanctions and public-sector ethics requirements apply; current/recent Microsoft staff and specified related persons are excluded. New, reproducible findings are required.",
         "source_ids": [
-          "policy",
           "guidelines"
         ]
       },
       "restrictions": {
-        "summary": "Unsupported, experimental, already-public and security-downgraded configurations generally do not qualify. Protect customer data and availability; stop on unauthorized data access and report immediately. Confidentiality lasts through remediation; detailed attack-enabling information must wait 30 days after the fix. Imposed remediation deadlines forfeit bounty eligibility. Safe harbor is conditional.",
+        "summary": "Preserve customer data and availability; stop on unauthorized access, report immediately and delete retained data. No social engineering, disruptive automation, unauthorized credential use or post-compromise activity. Confidentiality continues through remediation; attack-enabling details wait another 30 days. Imposed remediation deadlines forfeit eligibility. Safe harbor is conditional.",
         "source_ids": [
-          "policy",
           "guidelines",
           "rules"
         ]
@@ -1408,7 +1488,7 @@
           "title": "Microsoft Edge Bounty Program and revision history",
           "url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
           "publisher": "Microsoft",
-          "retrieved_at": "2026-10-03T02:12:34Z",
+          "retrieved_at": "2026-10-03T03:38:36Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1417,7 +1497,7 @@
           "title": "Microsoft Bounty Program Guidelines, terms, safe harbor and Standard Award Policy",
           "url": "https://www.microsoft.com/en-us/msrc/bounty-guidelines",
           "publisher": "Microsoft",
-          "retrieved_at": "2026-10-03T02:14:45Z",
+          "retrieved_at": "2026-10-03T03:41:08Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1426,7 +1506,7 @@
           "title": "Microsoft Security Testing Rules of Engagement",
           "url": "https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement",
           "publisher": "Microsoft",
-          "retrieved_at": "2026-10-03T02:12:34Z",
+          "retrieved_at": "2026-10-03T03:41:15Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -1437,6 +1517,17 @@
         "source_ids": [
           "policy"
         ]
+      },
+      "scope_context": {
+        "included_summary": "Current Chromium-based desktop and mobile browser channels and eligible embedded-browser SDKs/runtimes; included third-party components require Edge-specific security impact absent from equivalent Chrome.",
+        "excluded_summary": "Canary-only builds, Internet Explorer, EdgeHTML, experimental features, user-generated content, kiosk escapes, denial-of-service and supporting documentation/community sites are excluded. Already-public findings, outdated libraries alone, unlikely-interaction scenarios and downgraded protections generally do not qualify; AI and identity findings may belong to separate programs.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://www.microsoft.com/en-us/msrc/bounty-new-edge"
+        ],
+        "verified_at": "2026-10-03T03:41:39Z"
       }
     },
     {
@@ -1550,7 +1641,7 @@
       "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "mozilla-client-bug-bounty",
       "name": "Mozilla Client Bug Bounty",
       "operator": "Mozilla",
@@ -1561,7 +1652,7 @@
         "https://hackerone.com/mozilla/updates?type=team"
       ],
       "change_log_url": null,
-      "last_verified_at": "2026-10-03T02:31:44Z",
+      "last_verified_at": "2026-10-03T03:41:39Z",
       "content_scope": "public_program_policy_summary",
       "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
       "program_type": {
@@ -1589,11 +1680,9 @@
         ]
       },
       "restrictions": {
-        "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. End-of-life products, unbundled third-party code and unsupported configurations generally do not qualify. Safe harbor cannot bind third parties.",
+        "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. Safe harbor cannot bind third parties.",
         "source_ids": [
-          "general",
-          "policy",
-          "faq"
+          "general"
         ]
       },
       "submission_status": {
@@ -1607,7 +1696,8 @@
         "The FAQ identifies a February 24, 2026 reward-category change: GPU-process findings no longer receive the highest sandbox-escape category solely for that process compromise.",
         "The reviewed July 10, 2026 announcement transfers Mozilla VPN client coverage into this program. No asset inventory is reproduced.",
         "No client-specific change-log URL or overall policy revision date was established. Linked submission terms and Bugzilla etiquette were not exhaustively reviewed.",
-        "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization."
+        "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization.",
+        "Only policy, general eligibility and FAQ sources were refreshed; announcement timestamps remain unchanged."
       ],
       "sources": [
         {
@@ -1615,7 +1705,7 @@
           "title": "Mozilla Client Bug Bounty Program",
           "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
           "publisher": "Mozilla",
-          "retrieved_at": "2026-10-03T02:31:44Z",
+          "retrieved_at": "2026-10-03T03:38:30Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1624,7 +1714,7 @@
           "title": "Mozilla Security Bug Bounty general eligibility and safe harbor",
           "url": "https://www.mozilla.org/en-US/security/bug-bounty/",
           "publisher": "Mozilla",
-          "retrieved_at": "2026-10-03T02:31:44Z",
+          "retrieved_at": "2026-10-03T03:39:31Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1633,7 +1723,7 @@
           "title": "Mozilla Bug Bounty Program FAQ",
           "url": "https://www.mozilla.org/en-US/security/bug-bounty/faq/",
           "publisher": "Mozilla",
-          "retrieved_at": "2026-10-03T02:31:44Z",
+          "retrieved_at": "2026-10-03T03:38:30Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1646,7 +1736,20 @@
           "provenance": "official_primary",
           "access_method": "browser"
         }
-      ]
+      ],
+      "scope_context": {
+        "included_summary": "Current desktop and mobile browser releases, supported development channels and selected mitigation protections; release-channel and configuration exceptions apply.",
+        "excluded_summary": "Unbundled add-ons, routine dependency patch gaps, end-of-life products, unsupported configurations and standalone developer tools generally do not qualify. Denial-of-service-only and minor spoofing findings are usually unrewarded; administrator-installed trust roots or certificate-pinned connections invalidate mitigation claims.",
+        "source_ids": [
+          "policy",
+          "faq"
+        ],
+        "policy_urls": [
+          "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+          "https://www.mozilla.org/en-US/security/bug-bounty/faq/"
+        ],
+        "verified_at": "2026-10-03T03:41:39Z"
+      }
     },
     {
       "schema_version": "1.3.0",
@@ -1802,14 +1905,14 @@
       ]
     },
     {
-      "schema_version": "1.3.0",
+      "schema_version": "1.4.0",
       "id": "nxtport-vulnerability-disclosure",
       "name": "NxtPort Vulnerability Disclosure Program",
       "operator": "NxtPort",
       "platform": "Intigriti",
       "program_type": {
         "value": "vulnerability_disclosure",
-        "summary": "Explicit no-bounty disclosure program. The policy separately mentions a discretionary EUR 25 delayed-validation bonus, which is an exceptional payment rather than an ordinary bounty schedule.",
+        "summary": "Explicit no-bounty VDP; a discretionary EUR 25 delayed-validation bonus is exceptional.",
         "source_ids": [
           "policy"
         ]
@@ -1823,37 +1926,36 @@
         "minimum": null,
         "maximum": null,
         "basis": "advertised_not_individual_award",
-        "summary": "Explicit no-bounty VDP, separately mentioning a discretionary EUR 25 bonus for delayed validation. This exceptional payment language is not an ordinary bounty schedule. Currency and numeric bounds remain null to avoid conflating the unpaid program with the conditional bonus.",
+        "summary": "The conditional delay bonus is not a bounty schedule; currency/bounds remain null. Generic FAQ rewards are not guaranteed.",
         "source_ids": [
           "policy"
         ]
       },
       "eligibility": {
-        "summary": "An Intigriti account and researcher-identifying account requirements apply. Platform terms require adulthood, or age 16 with guardian permission, plus legal/employer eligibility. Internally known findings can be treated as duplicates.",
+        "summary": "Intigriti accounts and researcher identification are required. Platform adulthood/guardian-approved age-16 and legal/employer conditions apply. Internally known findings may be duplicates.",
         "source_ids": [
           "policy",
           "platform-terms"
         ]
       },
       "restrictions": {
-        "summary": "Scope is limited to the designated port-service environment. User-data access or alteration, operational disruption, harmful automation, social engineering, physical intrusion and denial-of-service are prohibited. Accidental sensitive-data access requires stopping and reporting without retention. Low-impact configuration observations, unsupported-software cases and theoretical claims are excluded. Confidentiality and conditional safe-harbor requirements apply.",
+        "summary": "User-data access/alteration, operational disruption, harmful automation, social engineering, physical intrusion and denial-of-service are prohibited. Accidental sensitive-data exposure requires stopping, reporting and no retention. Confidentiality and conditional safe harbor apply.",
         "source_ids": [
           "policy"
         ]
       },
       "submission_status": {
         "value": "unknown",
-        "summary": "No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient.",
+        "summary": "Visible policies and login invitations do not verify acceptance.",
         "source_ids": [
           "policy"
         ]
       },
-      "last_verified_at": "2026-10-03T01:50:12Z",
+      "last_verified_at": "2026-10-03T03:41:28Z",
       "limitations": [
-        "The no-bounty heading, discretionary delay bonus and non-guaranteed-reward FAQ are retained together rather than harmonized into an invented schedule.",
-        "No dedicated announcement/change-log page or complete historical policy record was verified.",
-        "Logged-out text review only; authenticated submission eligibility was not tested. No current open/paused indicator was established.",
-        "This summary omits asset inventories and operational instructions. Full live terms prevail and this record grants no testing authorization."
+        "No dedicated announcement/change-log or complete policy history verified.",
+        "Logged-out review; authenticated eligibility and open/paused status unverified.",
+        "High-level context omits asset inventories and testing instructions. Live terms prevail; this record grants no authorization."
       ],
       "sources": [
         {
@@ -1861,7 +1963,7 @@
           "title": "NxtPort Vulnerability Disclosure Program policy",
           "url": "https://app.intigriti.com/programs/portofantwerp/nxtportvdp",
           "publisher": "NxtPort / Intigriti",
-          "retrieved_at": "2026-10-03T01:50:12Z",
+          "retrieved_at": "2026-10-03T03:38:48Z",
           "provenance": "official_primary",
           "access_method": "text"
         },
@@ -1876,7 +1978,18 @@
         }
       ],
       "content_scope": "public_program_policy_summary",
-      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Designated digital port-community systems, applications and APIs, addressing service/data confidentiality, integrity and availability, including identity, tenant separation and dependency-security categories within the listed environment.",
+        "excluded_summary": "Unlisted environments; low-impact configuration observations, unsupported software, theoretical claims and cases dependent on compromised accounts, physical access or interception. The policy excludes specified account/session, enumeration and rate-limiting report classes.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/portofantwerp/nxtportvdp"
+        ],
+        "verified_at": "2026-10-03T03:41:28Z"
+      }
     },
     {
       "schema_version": "1.3.0",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "id": "microsoft-edge-bug-bounty",
   "name": "Microsoft Edge Bounty Program",
   "operator": "Microsoft Corporation",
@@ -8,7 +8,7 @@
   "policy_url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
   "announcement_urls": [],
   "change_log_url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
-  "last_verified_at": "2026-10-03T02:14:45Z",
+  "last_verified_at": "2026-10-03T03:41:39Z",
   "content_scope": "public_program_policy_summary",
   "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
   "rewards": {
@@ -22,16 +22,14 @@
     ]
   },
   "eligibility": {
-    "summary": "Requires new Edge-specific impact in eligible current releases, absent from the equivalent Chrome release, with reproducible evidence. Participants must be at least 14, with guardian permission for minors. Employer permission, sanctions and public-sector ethics rules apply; current/recent Microsoft staff and specified related persons are excluded.",
+    "summary": "Participants must be at least 14; minors need guardian permission. Employer, sanctions and public-sector ethics requirements apply; current/recent Microsoft staff and specified related persons are excluded. New, reproducible findings are required.",
     "source_ids": [
-      "policy",
       "guidelines"
     ]
   },
   "restrictions": {
-    "summary": "Unsupported, experimental, already-public and security-downgraded configurations generally do not qualify. Protect customer data and availability; stop on unauthorized data access and report immediately. Confidentiality lasts through remediation; detailed attack-enabling information must wait 30 days after the fix. Imposed remediation deadlines forfeit bounty eligibility. Safe harbor is conditional.",
+    "summary": "Preserve customer data and availability; stop on unauthorized access, report immediately and delete retained data. No social engineering, disruptive automation, unauthorized credential use or post-compromise activity. Confidentiality continues through remediation; attack-enabling details wait another 30 days. Imposed remediation deadlines forfeit eligibility. Safe harbor is conditional.",
     "source_ids": [
-      "policy",
       "guidelines",
       "rules"
     ]
@@ -55,7 +53,7 @@
       "title": "Microsoft Edge Bounty Program and revision history",
       "url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
       "publisher": "Microsoft",
-      "retrieved_at": "2026-10-03T02:12:34Z",
+      "retrieved_at": "2026-10-03T03:38:36Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -64,7 +62,7 @@
       "title": "Microsoft Bounty Program Guidelines, terms, safe harbor and Standard Award Policy",
       "url": "https://www.microsoft.com/en-us/msrc/bounty-guidelines",
       "publisher": "Microsoft",
-      "retrieved_at": "2026-10-03T02:14:45Z",
+      "retrieved_at": "2026-10-03T03:41:08Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
@@ -73,7 +71,7 @@
       "title": "Microsoft Security Testing Rules of Engagement",
       "url": "https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement",
       "publisher": "Microsoft",
-      "retrieved_at": "2026-10-03T02:12:34Z",
+      "retrieved_at": "2026-10-03T03:41:15Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -84,5 +82,16 @@
     "source_ids": [
       "policy"
     ]
+  },
+  "scope_context": {
+    "included_summary": "Current Chromium-based desktop and mobile browser channels and eligible embedded-browser SDKs/runtimes; included third-party components require Edge-specific security impact absent from equivalent Chrome.",
+    "excluded_summary": "Canary-only builds, Internet Explorer, EdgeHTML, experimental features, user-generated content, kiosk escapes, denial-of-service and supporting documentation/community sites are excluded. Already-public findings, outdated libraries alone, unlikely-interaction scenarios and downgraded protections generally do not qualify; AI and identity findings may belong to separate programs.",
+    "source_ids": [
+      "policy"
+    ],
+    "policy_urls": [
+      "https://www.microsoft.com/en-us/msrc/bounty-new-edge"
+    ],
+    "verified_at": "2026-10-03T03:41:39Z"
   }
 }
