@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 27 related resources · 3 diagrams
+**Vulnerability family** · 14 reports · 28 related resources · 3 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -55,6 +55,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Business Logic and State Integrity.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>).
 - [Spree: cart association must retain guest-possession checks](<../resources/spree-2026-guest-cart-association-authority.md>) — topic: Business Logic and State Integrity.
+- [Stripe webhooks: authentic delivery and business-state integrity](<../resources/stripe-webhook-delivery-state-integrity.md>) — topic: Business Logic and State Integrity.
 - [Sylius: order ownership does not confer payment-operation authority](<../resources/sylius-2026-payment-action-authority.md>) — topic: Business Logic and State Integrity.
 - [Sylius: promotion entitlement must be checked and consumed atomically](<../resources/sylius-2026-promotion-limit-atomicity.md>) — topic: Business Logic and State Integrity.
 - [Vendure: payment child objects must inherit order channel authority](<../resources/vendure-2026-payment-child-object-channel-authority.md>) — topic: Business Logic and State Integrity.

@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 108,
+    "resources": 109,
     "diagrams": 11
   },
   "taxonomy": {
@@ -8338,6 +8338,83 @@
         "Affected versions are <=4.2.0. The diagnostic endpoint requires explicit exposure and is not enabled by default; relevant traffic must carry query-string secrets. Log disclosure additionally requires the relevant DEBUG logging.",
         "The source describes disclosure to diagnostic readers, not demonstrated production compromise or universal account takeover. It does not detail the patch implementation or release date.",
         "The advisory credits manus-use as reporter."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "stripe-webhook-delivery-state-integrity",
+      "title": "Stripe webhooks: authentic delivery and business-state integrity",
+      "publisher": "Stripe",
+      "authors": [],
+      "primary_url": "https://docs.stripe.com/webhooks",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "concurrency-reasoning",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "Stripe documents duplicate deliveries, unordered events and renewed signatures and timestamps on retries. Signature verification establishes delivery authenticity; it does not establish that the business effect is new or that the event represents the latest application state.",
+      "defensive_use": "Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants. Review how application state stays consistent across repeated, delayed and concurrent work. A recent authenticated delivery can still describe an already-handled event.",
+      "prerequisites": [
+        "Basic HTTP webhook and asynchronous processing concepts",
+        "Basic application state-transition and concurrency concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public documentation; service use is separate from reading access."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T19:41:18Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official delivery-behavior, duplicate-event and replay-protection sections reviewed. No publication date or document edition was established; example API versions are not document dates."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://docs.stripe.com/webhooks",
+          "title": "Receive Stripe events in your webhook endpoint",
+          "publisher": "Stripe",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T19:41:18Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Provider-specific guidance, not a universal webhook contract, vulnerability disclosure or exactly-once guarantee. Delivery success does not prove completion of downstream business work.",
+        "Stripe distinguishes repeated delivery of one event from separate Event objects representing duplicates. Identity rules must follow the relevant event semantics; timestamps alone do not establish order or uniqueness.",
+        "The signed timestamp concerns a delivery attempt, not the age or ordering of the underlying business event. Provider retries receive new signatures and timestamps.",
+        "Conceptual defensive education only. No incident, customer loss, patch effectiveness or third-party testing authorization is established."
       ],
       "content_scope": "defensive_education"
     },

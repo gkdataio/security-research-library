@@ -185,3 +185,5 @@ The collection links these resources without copying exercises, payloads, or ope
 - [MCP progressive scope authority](resources/mcp-progressive-scope-authority.md): official guidance on permission challenges, accumulated grants and consent breadth.
 
 - [OpenFGA authorization query freshness](resources/openfga-authorization-query-freshness.md): relationship changes, permission caches and explicit consistency requirements.
+
+- [Stripe webhooks: authentic delivery and business-state integrity](https://docs.stripe.com/webhooks): Separate authenticated delivery from event identity, ordering and committed business effects. [Readable record](resources/stripe-webhook-delivery-state-integrity.md)
