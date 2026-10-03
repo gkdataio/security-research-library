@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "mozilla-client-bug-bounty",
   "name": "Mozilla Client Bug Bounty",
   "operator": "Mozilla",
@@ -93,6 +93,15 @@
       "retrieved_at": "2026-10-03T02:31:44Z",
       "provenance": "official_primary",
       "access_method": "browser"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Mozilla Client Bug Bounty Program",
+      "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "scope_context": {
@@ -107,5 +116,67 @@
       "https://www.mozilla.org/en-US/security/bug-bounty/faq/"
     ],
     "verified_at": "2026-10-03T03:41:39Z"
+  },
+  "asset_scope": {
+    "capture_status": "policy_defined",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Firefox desktop",
+        "asset_type": "browser",
+        "location": null,
+        "group": "Current release and supported development channels",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Firefox for Android",
+        "asset_type": "browser",
+        "location": null,
+        "group": "Current release and supported development channels",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Firefox for iOS",
+        "asset_type": "browser",
+        "location": null,
+        "group": "Current release and supported development channels",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "Fennec (older Firefox for Android application)",
+        "asset_type": "browser",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicitly excluded from exploit-mitigation bounty coverage."
+      },
+      {
+        "name": "End-of-life Mozilla client products",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Not eligible for the client security bounty."
+      }
+    ],
+    "limitations": [
+      "The policy includes selected exploit mitigations and configuration exceptions; product labels alone do not capture every condition."
+    ]
   }
 }

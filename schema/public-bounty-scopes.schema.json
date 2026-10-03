@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dated public bounty scope captures from official program pages",
+  "type": "object",
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "directory_snapshot_date": {"type": "string", "format": "date"},
+    "captures": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/capture"}
+    }
+  },
+  "required": ["schema_version", "directory_snapshot_date", "captures"],
+  "additionalProperties": false,
+  "$defs": {
+    "capture": {
+      "type": "object",
+      "properties": {
+        "listing_id": {"type": "string", "minLength": 1},
+        "platform": {"enum": ["Bugcrowd", "HackerOne", "Intigriti"]},
+        "name": {"type": "string", "minLength": 1},
+        "program_url": {"type": "string", "format": "uri"},
+        "directory_program_type": {"enum": ["paid_bounty", "unknown"]},
+        "captured_at": {"type": "string", "format": "date-time"},
+        "status": {"enum": ["captured", "no_published_assets", "preview_only", "terms_only", "not_paid_bounty", "fetch_failed"]},
+        "source_url": {"type": "string", "format": "uri"},
+        "source_method": {"enum": ["public_bugcrowd_scope_groups", "public_hackerone_program_and_structured_scopes", "public_intigriti_asset_table"]},
+        "assets": {"type": "array", "items": {"$ref": "#/$defs/asset"}},
+        "offers_bounties": {"type": "boolean"},
+        "published_asset_count": {"type": "integer", "minimum": 0},
+        "scope_groups": {"type": "integer", "minimum": 0},
+        "published_at": {"type": ["string", "null"]},
+        "html_has_assets_heading": {"type": "boolean"},
+        "error": {"type": "string", "minLength": 1}
+      },
+      "required": ["listing_id", "platform", "name", "program_url", "directory_program_type", "captured_at", "status"],
+      "additionalProperties": false
+    },
+    "asset": {
+      "type": "object",
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "asset_type": {"type": "string", "minLength": 1, "pattern": "\\S"},
+        "location": {"type": ["string", "null"]},
+        "group": {"type": ["string", "null"]},
+        "scope": {"enum": ["in", "out"]},
+        "bounty_eligible": {"type": "boolean"}
+      },
+      "required": ["name", "asset_type", "location", "group", "scope"],
+      "additionalProperties": false
+    }
+  }
+}

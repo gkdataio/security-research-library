@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "microsoft-edge-bug-bounty",
   "name": "Microsoft Edge Bounty Program",
   "operator": "Microsoft Corporation",
@@ -74,6 +74,15 @@
       "retrieved_at": "2026-10-03T03:41:15Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Microsoft Edge Bounty Program",
+      "url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
+      "publisher": "Microsoft Corporation",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "program_type": {
@@ -93,5 +102,89 @@
       "https://www.microsoft.com/en-us/msrc/bounty-new-edge"
     ],
     "verified_at": "2026-10-03T03:41:39Z"
+  },
+  "asset_scope": {
+    "capture_status": "policy_defined",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Microsoft Edge based on Chromium",
+        "asset_type": "product",
+        "location": null,
+        "group": "Dev, Beta and Stable",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Latest supported version; qualifying findings must not reproduce in equivalent Chrome channel."
+      },
+      {
+        "name": "WebView2 SDK",
+        "asset_type": "software",
+        "location": null,
+        "group": "Prerelease and release",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Current SDK on a fully patched supported Windows version."
+      },
+      {
+        "name": "WebView2 runtime",
+        "asset_type": "software",
+        "location": null,
+        "group": "Evergreen, Edge Dev and Beta runtimes",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Current runtime on a fully patched supported Windows version."
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "Internet Explorer",
+        "asset_type": "product",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Microsoft Edge based on EdgeHTML",
+        "asset_type": "product",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Versions through 45."
+      },
+      {
+        "name": "Microsoft Edge Canary-only builds",
+        "asset_type": "software",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Findings that reproduce only in Canary are excluded."
+      },
+      {
+        "name": "Edge training, documentation, sample and community sites",
+        "asset_type": "policy_category",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Excluded from this bounty program's awards."
+      }
+    ],
+    "limitations": [
+      "This product bounty is version- and impact-dependent; the list describes products, not web target domains."
+    ]
   }
 }

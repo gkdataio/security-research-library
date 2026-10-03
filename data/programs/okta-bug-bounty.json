@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.5.0",
   "id": "okta-bug-bounty",
   "name": "Okta Bug Bounty",
   "operator": "Okta",
@@ -94,6 +94,381 @@
       "retrieved_at": "2026-10-02T23:00:00Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/okta/changelog/d4dc2398-db8d-4b89-9f7f-0aae75251307.json",
+      "publisher": "Okta",
+      "retrieved_at": "2026-10-03T14:56:17Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
-  ]
+  ],
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:17Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "bugcrowd-pam-###.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta Privileged Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "bugcrowd-pam-###.pam.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta Privileged Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://bugcrowd-pam-###.workflows.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta Workflows",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Desktop MFA for Windows",
+        "asset_type": "other",
+        "location": null,
+        "group": "Okta Device Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Desktop MFA for macOS",
+        "asset_type": "other",
+        "location": null,
+        "group": "Okta Device Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Password Sync for macOS",
+        "asset_type": "other",
+        "location": null,
+        "group": "Okta Device Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "support.okta.com",
+        "asset_type": "website",
+        "location": "https://support.okta.com",
+        "group": "Okta Support Portal (support.okta.com)",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://bugcrowd-pam-###.at.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "AtSpoke (Okta Access Requests) (New)",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://bugcrowd-pam-###.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta (OIE) In-Scope Targets (New)",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Verify Fastpass",
+        "asset_type": "other",
+        "location": "https://www.okta.com/fastpass/",
+        "group": "Okta (OIE) In-Scope Targets (New)",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://bugcrowd-pam-###-admin.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta (OIE) In-Scope Targets (New)",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Advanced Server Access (ASA) / (ScaleFT)",
+        "asset_type": "website",
+        "location": "https://www.okta.com/products/advanced-server-access/",
+        "group": "Advanced Server Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "http://app.scaleft.com/",
+        "asset_type": "website",
+        "location": null,
+        "group": "Advanced Server Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Advanced Server Access Client / Agents",
+        "asset_type": "other",
+        "location": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/client.htm",
+        "group": "Advanced Server Access",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Verify (iOS)",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/okta-verify/id490179405",
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Verify (Android)",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.okta.android.auth&hl=en_US&gl=US",
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Verify (Mac OS)",
+        "asset_type": "other",
+        "location": "https://apps.apple.com/us/app/okta-verify/id490179405",
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Verify (Windows)",
+        "asset_type": "other",
+        "location": null,
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta On-Prem Agents ( AD, LDAP, RDP, IWA )",
+        "asset_type": "other",
+        "location": null,
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Agent Windows",
+        "asset_type": "other",
+        "location": "https://help.okta.com/en/prod/Content/Topics/Adv_Server_Access/docs/sftd-windows.htm",
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Okta Browser Plugin (IE / Firefox / Chrome)",
+        "asset_type": "other",
+        "location": "https://help.okta.com/en/prod/Content/Topics/Settings/download-browser-plugin.htm",
+        "group": "Other In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "personal.trexcloud.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta Personal",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "bugcrowd-%username%-1.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta (Classic) In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "bugcrowd-%username%-2.oktapreview.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Okta (Classic) In-Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.okta.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.trexcloud.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "login.okta.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "pages.okta.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "developer.okta.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "trust.okta.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "www.okta.com (static site)",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://scaleft.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://app.scaleft.com/p/signup",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://github.com/oktadev",
+        "asset_type": "website",
+        "location": "https://github.com/oktadev",
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Backend Okta non-app infrastructure",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Network layer issues",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "AtSpoke - Okta Workflows actions in access requests",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "AtSpoke - Entitlement bundles as a resource in access requests",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Anything not explicitly called out above as in-scope",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope Targets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+    ]
+  }
 }

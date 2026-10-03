@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "hostgator-latam-bug-bounty",
   "name": "HostGator LATAM Bug Bounty",
   "operator": "Newfold Digital / HostGator LATAM",
@@ -100,6 +100,15 @@
       "retrieved_at": "2026-10-03T04:10:21Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json",
+      "publisher": "Newfold Digital / HostGator LATAM",
+      "retrieved_at": "2026-10-03T14:56:05Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -114,5 +123,74 @@
       "https://bugcrowd.com/engagements/hostgator-latam-bb"
     ],
     "verified_at": "2026-10-03T04:12:42Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:05Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "www.hostgator.com.br/",
+        "asset_type": "website",
+        "location": "https://www.hostgator.com.br/",
+        "group": "In Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://financeiro.hostgator.com.br",
+        "asset_type": "website",
+        "location": "https://financeiro.hostgator.com.br",
+        "group": "In Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "https://carrinho.hostgator.com.br/",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "academy.hostgator.com",
+        "asset_type": "website",
+        "location": "https://www.academy.hostgator.com",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.hostgator.com.br",
+        "asset_type": "website",
+        "location": "https://www.hostgator.com.br",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.hostgator.mx",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+    ]
   }
 }

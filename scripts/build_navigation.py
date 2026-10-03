@@ -143,7 +143,7 @@ def check_generated_page_sets(root, pages):
     """Reject obsolete generated pages without deleting potentially edited files."""
     for collection in ('reports', 'resources'):
         directory = 'docs/'+collection+'/'
-        actual = {str(p.relative_to(root)) for p in (root/directory).glob('*.md')}
+        actual = {p.relative_to(root).as_posix() for p in (root/directory).glob('*.md')}
         expected = {name for name in pages if name.startswith(directory)}
         if actual != expected:
             raise SystemExit('Unexpected generated '+collection+' pages; review stale files manually')

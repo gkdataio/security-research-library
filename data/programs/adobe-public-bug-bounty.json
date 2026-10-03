@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "adobe-public-bug-bounty",
   "name": "Adobe Public Bug Bounty",
   "operator": "Adobe",
@@ -71,6 +71,15 @@
       "retrieved_at": "2026-10-03T01:50:12Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Intigriti asset table",
+      "url": "https://app.intigriti.com/programs/adobe/adobepublic/detail",
+      "publisher": "Adobe",
+      "retrieved_at": "2026-10-03T14:55:54Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -85,5 +94,380 @@
       "https://app.intigriti.com/programs/adobe/adobepublic"
     ],
     "verified_at": "2026-10-03T03:41:28Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:55:54Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Acrobat PDF Spaces",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Acrobat Create Presentations",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Acrobat Create Podcast",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Acrobat AI Assistant",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Express AI Assistant",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Lightroom AI Features",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Firefly AI Features",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Photoshop AI Assistant",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Stock AI Studio",
+        "asset_type": "AI Model",
+        "location": null,
+        "group": "Tier 1",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Frame.io iOS Application",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/gb/app/frame-io/id1056295002",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Fresco (iOS)",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/us/app/adobe-fresco-draw-paint-app/id1458660369",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Photoshop Express Mobile App (iOS)",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/us/app/photoshop-express-photo-editor/id331975235",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Lightroom Video & Photo Editor (IOS)",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/gb/app/lightroom-video-photo-editor/id878783582",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Lightroom Video & Photo Editor (Android)",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.adobe.lrmobile&hl=en_GB",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Scan Mobile App (iOS)",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/us/app/adobe-scan-pdf-ocr-scanner/id1199564834",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Scan Mobile App (Android)",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.adobe.scan.android&hl=en_GB",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Acrobat Reader Mobile App (iOS)",
+        "asset_type": "iOS",
+        "location": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Acrobat Reader Mobile App (Android)",
+        "asset_type": "Android",
+        "location": "https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.acrobat.adobe.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "stock.adobe.com",
+        "asset_type": "URL",
+        "location": "http://stock.adobe.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "firefly.adobe.com",
+        "asset_type": "URL",
+        "location": "http://firefly.adobe.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe ColdFusion without ColdFusion Administrator",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "ColdFusion Administrator",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.lightroom.adobe.com",
+        "asset_type": "Wildcard",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "photoshop.adobe.com",
+        "asset_type": "URL",
+        "location": "http://photoshop.adobe.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Adobe Commerce, Adobe Commerce B2B and Magento Open Source",
+        "asset_type": "Other",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "account.magento.com",
+        "asset_type": "URL",
+        "location": "http://account.magento.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "commercemarketplace.adobe.com",
+        "asset_type": "URL",
+        "location": "http://commercemarketplace.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "repo.magento.com",
+        "asset_type": "URL",
+        "location": "http://repo.magento.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "magento.com",
+        "asset_type": "URL",
+        "location": "http://magento.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "learningmanagerstage4.adobe.com",
+        "asset_type": "URL",
+        "location": "http://learningmanagerstage4.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "net.s2stagehance.com",
+        "asset_type": "URL",
+        "location": "http://net.s2stagehance.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "new.express.adobe.com",
+        "asset_type": "URL",
+        "location": "http://new.express.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "portfolio.ccpsx.com",
+        "asset_type": "URL",
+        "location": "http://portfolio.ccpsx.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "fonts.adobe.com",
+        "asset_type": "URL",
+        "location": "http://fonts.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "account.adobe.com",
+        "asset_type": "URL",
+        "location": "http://account.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "auth.services.adobe.com",
+        "asset_type": "URL",
+        "location": "http://auth.services.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "adobeid-na1.services.adobe.com",
+        "asset_type": "URL",
+        "location": "http://adobeid-na1.services.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "ims-na1.adobelogin.com",
+        "asset_type": "URL",
+        "location": "http://ims-na1.adobelogin.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "federatedid-na1.services.adobe.com",
+        "asset_type": "URL",
+        "location": "http://federatedid-na1.services.adobe.com",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [],
+    "limitations": [
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+      "The published table repeated ColdFusion Administrator in the same tier; this snapshot deduplicates that identical row."
+    ]
   }
 }

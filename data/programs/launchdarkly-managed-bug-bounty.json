@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.5.0",
   "id": "launchdarkly-managed-bug-bounty",
   "name": "LaunchDarkly Managed Bug Bounty Engagement",
   "operator": "LaunchDarkly",
@@ -82,6 +82,138 @@
       "retrieved_at": "2026-10-02T23:00:00Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og/changelog/884450ef-4277-41a9-8394-5f8c49cae2d8.json",
+      "publisher": "LaunchDarkly",
+      "retrieved_at": "2026-10-03T14:56:09Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
-  ]
+  ],
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:09Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "app.launchdarkly.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "events.launchdarkly.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "stream.launchdarkly.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "LaunchDarkly Open Source SDKs",
+        "asset_type": "other",
+        "location": null,
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "docs.launchdarkly.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://launchdarkly.com/docs",
+        "asset_type": "website",
+        "location": "https://launchdarkly.com/docs",
+        "group": "In Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "blog.launchdarkly.com",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "launchdarkly.com",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "sandbox.launchdarkly.com",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "slack.launchdarkly.com",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "status.launchdarkly.com",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "launchdarkly.atlassian.net",
+        "asset_type": "other",
+        "location": "https://launchdarkly.atlassian.net",
+        "group": "Out of Scope ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+    ]
+  }
 }

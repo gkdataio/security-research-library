@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "nubank-brasil-bug-bounty",
   "name": "Nubank Brasil Managed Bug Bounty Program",
   "operator": "Nubank Brasil",
@@ -99,6 +99,15 @@
       "retrieved_at": "2026-10-03T04:10:21Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json",
+      "publisher": "Nubank Brasil",
+      "retrieved_at": "2026-10-03T14:56:13Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -113,5 +122,137 @@
       "https://bugcrowd.com/engagements/nubank"
     ],
     "verified_at": "2026-10-03T04:12:42Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:56:13Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Nubank Android: Play Store",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.nu.production&hl=pt_BR&gl=US&pli=1",
+        "group": "Core Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Nubank iOS App",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/br/app/nubank-conta-e-cart%C3%A3o/id814456780",
+        "group": "Core Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "prod-*.nubank.com.br",
+        "asset_type": "api",
+        "location": null,
+        "group": "Core Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "prod-*.nu.com.mx",
+        "asset_type": "api",
+        "location": null,
+        "group": "Core Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "prod-*.nu.com.co",
+        "asset_type": "api",
+        "location": null,
+        "group": "Core Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.nubank.com.br",
+        "asset_type": "other",
+        "location": "https://nubank.com.br/",
+        "group": "Primary Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.nu.com.mx",
+        "asset_type": "other",
+        "location": "https://nubank.com.mx",
+        "group": "Primary Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.nu.com.co",
+        "asset_type": "other",
+        "location": "https://nubank.com.co",
+        "group": "Primary Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.nuinvest.com.br",
+        "asset_type": "website",
+        "location": "https://www.nuinvest.com.br/",
+        "group": "Supplementary Assets",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "*.nuinternational.com",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.nat-a.nubank.com.br",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "international.nubank.com.br",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "NuCommunity endpoints (BR, MX, CO)",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+    ]
   }
 }

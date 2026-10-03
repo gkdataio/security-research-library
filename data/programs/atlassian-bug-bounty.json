@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.5.0",
   "id": "atlassian-bug-bounty",
   "name": "Atlassian Bug Bounty",
   "operator": "Atlassian",
@@ -85,6 +85,15 @@
       "retrieved_at": "2026-10-02T21:22:00Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "Published Bugcrowd scope groups",
+      "url": "https://bugcrowd.com/engagements/atlassian/changelog/c31ec9fd-9fff-4aa1-9b4e-aa9929f1086a.json",
+      "publisher": "Atlassian",
+      "retrieved_at": "2026-10-03T14:55:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -94,6 +103,588 @@
     "summary": "Official page displayed In progress and an ongoing period; eligibility and current restrictions still apply.",
     "source_ids": [
       "policy"
+    ]
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_platform_scope_table",
+    "verified_at": "2026-10-03T14:55:55Z",
+    "source_ids": [
+      "assets-scope-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "Atlassian Guard Standard and Premium (https://admin.atlassian.com/atlassian-guard)",
+        "asset_type": "website",
+        "location": "https://admin.atlassian.com/atlassian-guard",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Admin (https://admin.atlassian.com/)",
+        "asset_type": "website",
+        "location": "https://admin.atlassian.com/",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Identity (https://id.atlassian.com/login)",
+        "asset_type": "website",
+        "location": "https://id.atlassian.com/login",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Start (https://start.atlassian.com)",
+        "asset_type": "website",
+        "location": "https://start.atlassian.com",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Bitbucket Cloud including Bitbucket Pipelines (https://bitbucket.org)",
+        "asset_type": "website",
+        "location": "https://bitbucket.org",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Cloud (bugbounty-test-<bugcrowd-name>.atlassian.net/wiki)",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/confluence",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Cloud Premium (bugbounty-test-<bugcrowd-name>.atlassian.net/wiki)",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/confluence/premium",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Cloud Mobile App for Android",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.atlassian.android.confluence.core&hl=en_US&gl=US",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Cloud Mobile App for iOS",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/confluence-cloud/id1006971684",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Cloud Mobile App for Android",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.atlassian.android.jira.core&hl=en_US&gl=US",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Cloud Mobile App for iOS",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/jira-cloud-by-atlassian/id1006972087",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Service Management Cloud (bugbounty-test-<bugcrowd-name>.atlassian.net)",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/jira/service-management",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Software Cloud (bugbounty-test-<bugcrowd-name>.atlassian.net)",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/jira",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Work Management Cloud formerly Jira Core (bugbounty-test-<bugcrowd-name>.atlassian.net)",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/jira/work-management",
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Any associated *.atlassian.com or *.atl-paas.net domain that can be exploited DIRECTLY from the *.atlassian.net instance",
+        "asset_type": "other",
+        "location": null,
+        "group": "Tier 1 ",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Rovo",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/rovo",
+        "group": "Rovo, Rovo Dev and other AI Features",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Rovo Dev CLI",
+        "asset_type": "other",
+        "location": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
+        "group": "Rovo, Rovo Dev and other AI Features",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Other Rovo Dev",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/rovo-dev",
+        "group": "Rovo, Rovo Dev and other AI Features",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian MCP Server",
+        "asset_type": "other",
+        "location": "https://mcp.atlassian.com",
+        "group": "Rovo, Rovo Dev and other AI Features",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Marketplace (https://marketplace.atlassian.com)",
+        "asset_type": "website",
+        "location": "https://marketplace.atlassian.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Atlas",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/atlas",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.atlastunnel.com",
+        "asset_type": "website",
+        "location": "https://*.atlastunnel.com",
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Any other *.atlassian.com or *.atl-paas.net domain that cannot be exploited directly from a *.atlassian.net instance",
+        "asset_type": "website",
+        "location": null,
+        "group": "Tier 2",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.loom.com",
+        "asset_type": "website",
+        "location": "https://www.loom.com/",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Loom Desktop App (Windows)",
+        "asset_type": "website",
+        "location": "https://www.loom.com/download",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Loom Desktop App (macOS)",
+        "asset_type": "website",
+        "location": "https://www.loom.com/download",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Loom for Android",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.loom.android&hl=en_US&pli=1",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Loom for iOS",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/loom-screen-recorder/id1474480829",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Loom Chrome Extension",
+        "asset_type": "other",
+        "location": "https://chromewebstore.google.com/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb?hl=en-US&pli=1",
+        "group": "Atlassian Loom",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Atlassian Compass",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/compass",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Bamboo",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/bamboo",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Bitbucket Data Center",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/enterprise/data-center/bitbucket",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Companion App for macOS and Windows",
+        "asset_type": "other",
+        "location": "https://confluence.atlassian.com/doc/install-atlassian-companion-992678880.html",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Data Center Mobile App for Android",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.atlassian.confluence.server",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Data Center Mobile App for iOS",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/confluence-server/id1288365159",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Crucible",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/crucible",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Confluence Data Center",
+        "asset_type": "other",
+        "location": "https://www.atlassian.com/enterprise/data-center/confluence",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Crowd",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/enterprise/data-center/crowd",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "FishEye",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/fisheye",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Core Data Center",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/enterprise/data-center/jira",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Data Center Mobile App for Android",
+        "asset_type": "android",
+        "location": "https://play.google.com/store/apps/details?id=com.atlassian.jira.server&hl=en_US&gl=US",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Data Center Mobile App for iOS",
+        "asset_type": "ios",
+        "location": "https://apps.apple.com/us/app/jira-server/id1405353949",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Product Discovery",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/software/jira/product-discovery",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Service Management Data Center",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/enterprise/data-center/jira/service-management",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Jira Software Data Center",
+        "asset_type": "website",
+        "location": "https://www.atlassian.com/enterprise/data-center/jira",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Sourcetree for macOS and Windows (https://www.sourcetreeapp.com/)",
+        "asset_type": "other",
+        "location": "https://www.sourcetreeapp.com/",
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Other - (all other Atlassian targets)",
+        "asset_type": "other",
+        "location": null,
+        "group": "Tier 3",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Forge Platform",
+        "asset_type": "other",
+        "location": null,
+        "group": "Atlassian Forge",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "GraphQL API (bugbounty-test-<bugcrowd-name>.atlassian.net/gateway/api/graphql)",
+        "asset_type": "api",
+        "location": null,
+        "group": "Atlassian Forge",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://www.npmjs.com/package/@forge/cli",
+        "asset_type": "other",
+        "location": "https://www.npmjs.com/package/@forge/cli\t",
+        "group": "Atlassian Forge",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "Any internal or development services.",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "First and third party apps and plugins from the marketplace are excluded from this bounty but may be in scope for https://bugcrowd.com/atlassianapps",
+        "asset_type": "website",
+        "location": "https://bugcrowd.com/atlassianapps",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "shop.atlassian.com",
+        "asset_type": "website",
+        "location": "https://shop.atlassian.com",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "bytebucket.org",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "*.bitbucket.io",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "https://blog.bitbucket.org",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "HipChat (inc. HipChat Data Center, HipChat Desktop, HipChat Mobile)",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Stride (inc. Stride Video, Stride Desktop, Stride Mobile)",
+        "asset_type": "other",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "support.atlassian.com",
+        "asset_type": "website",
+        "location": "https://support.atlassian.com",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Any customer instance. Do not test customer instances or affect customer data. Customer cloud instances may be in the form of <customer>.atlassian.net or <customer>.jira.com. Test only your own instances.",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "Any repository that you are not an owner of - do not impact Atlassian customers in any way.",
+        "asset_type": "website",
+        "location": null,
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "support.loom.com",
+        "asset_type": "website",
+        "location": "https://support.loom.com",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      },
+      {
+        "name": "info.loom.com",
+        "asset_type": "website",
+        "location": "https://info.loom.com/",
+        "group": "Out of Scope",
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ]
+      }
+    ],
+    "limitations": [
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
     ]
   }
 }

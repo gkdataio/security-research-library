@@ -1,0 +1,29 @@
+# Xopero Software S\.A\. Marketplace Managed Bug Bounty Engagement
+
+[Bugcrowd bounty index](../bugcrowd.md) · [Bounty overview](../../public-bounties.md) · [Discovery queue](../../program-discovery.md)
+
+Dated official directory and scope-table snapshots for publicly listed bounties. A listing or asset row alone does not establish current authorization, bounty eligibility, or complete policy scope. Read the live program policy before any activity.
+
+[Official program](<https://bugcrowd.com/engagements/xopero-software-marketplace>)
+
+**Scope status:** Published scope captured.
+
+**Policy review:** scope table only.
+
+**Capture time:** 2026-10-03T15:53:35Z.
+
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/xopero-software-marketplace/changelog/4ba6bfbf-9aa5-4e67-aa74-1269020d0b30.json>)
+
+## In-scope entries (1)
+
+| Asset | Type | Location | Group | Qualification |
+| --- | --- | --- | --- | --- |
+| https://marketplace\.atlassian\.com/apps/1228719/gitprotect-io-for-jira-backup-restore-dr-data-management?hosting=cloud | website | https://marketplace\.atlassian\.com/apps/1228719/gitprotect-io-for-jira-backup-restore-dr-data-management?hosting=cloud | In Scope Target | — |
+
+## Out-of-scope entries (0)
+
+No explicit asset rows were captured in this category. The policy may still impose exclusions.
+
+**Limits**
+
+- Only the published asset table was captured; program rules and eligibility still require individual review\.

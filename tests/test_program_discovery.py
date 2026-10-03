@@ -39,5 +39,15 @@ class DiscoveryTests(unittest.TestCase):
             root=Path(tmp);(root/'data/program-discovery').mkdir(parents=True);(root/'data/programs').mkdir();(root/'schema').mkdir()
             (root/'schema/program-discovery.schema.json').write_text(json.dumps(self.schema));(root/'data/program-discovery/test-listing.json').write_text(json.dumps(self.batch));(root/'data/programs/example.json').write_text(json.dumps({'id':'existing-policy','program_url':'https://hackerone.com/example'}))
             data=json.loads(build(root)['exports/program-discovery.json']);self.assertEqual(data['counts']['unique_program_page_listings'],1);self.assertEqual(data['counts']['already_has_verified_policy'],1);self.assertEqual(data['counts']['awaiting_policy_review'],0)
+            self.assertEqual(data['counts']['verified_with_asset_scope'],0)
+    def test_verified_scope_links_back_to_readable_directory(self):
+        output=build()
+        data=json.loads(output['exports/program-discovery.json'])
+        linked=[item for item in data['listings'] if item['verified_asset_scope']]
+        self.assertEqual(len(linked),data['counts']['verified_with_asset_scope'])
+        for item in linked:
+            with self.subTest(program=item['verified_policy_id']):
+                self.assertIn('program-'+item['verified_policy_id'],output['docs/program-discovery/'+item['platform'].lower()+'.md'])
+                self.assertGreater(item['verified_asset_scope']['in_scope_entries'],0)
 
 if __name__=='__main__':unittest.main()

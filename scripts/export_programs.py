@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and export public program-policy summaries offline, never target scopes."""
+"""Validate and export public program policies and sourced scope snapshots offline."""
 import argparse
 import datetime as dt
 import json
@@ -31,13 +31,13 @@ def validate_program(rec, schema):
         if not set(rec[field]['source_ids']) <= set(sources): raise Invalid('unknown program claim source')
     program_type = rec.get('program_type')
     if program_type is not None:
-        if rec['schema_version'] not in ('1.3.0', '1.4.0'):
-            raise Invalid('program type requires program record version 1.3.0 or 1.4.0')
+        if rec['schema_version'] not in ('1.3.0', '1.4.0', '1.5.0'):
+            raise Invalid('program type requires program record version 1.3.0 or later')
         if not set(program_type['source_ids']) <= set(sources): raise Invalid('unknown program type source')
         if program_type['value'] != 'unknown' and not program_type['source_ids']:
             raise Invalid('known program type requires evidence')
-    if rec['submission_status']['value'] == 'closed' and rec['schema_version'] not in ('1.2.0','1.3.0','1.4.0'):
-        raise Invalid('closed status requires program record version 1.2.0, 1.3.0 or 1.4.0')
+    if rec['submission_status']['value'] == 'closed' and rec['schema_version'] not in ('1.2.0','1.3.0','1.4.0','1.5.0'):
+        raise Invalid('closed status requires program record version 1.2.0 or later')
     if rec['submission_status']['value'] != 'unknown' and not rec['submission_status']['source_ids']:
         raise Invalid('known submission status requires evidence')
     aliases=set()
@@ -46,18 +46,21 @@ def validate_program(rec, schema):
         normalized=normalize_url(alias['url'])
         if normalized in aliases: raise Invalid('duplicate official program link')
         aliases.add(normalized)
-    urls = {normalize_url(s['url']) for s in sources.values()}
+    reviewed = dt.datetime.fromisoformat(rec['last_verified_at'].replace('Z', '+00:00'))
+    asset_scope = rec.get('asset_scope')
+    asset_source_ids = set(asset_scope['source_ids']) if asset_scope else set()
+    for s in sources.values():
+        if s['id'] not in asset_source_ids and dt.datetime.fromisoformat(s['retrieved_at'].replace('Z', '+00:00')) > reviewed:
+            raise Invalid('source retrieval is after program verification')
+    urls = {normalize_url(s['url']) for s in sources.values()
+            if dt.datetime.fromisoformat(s['retrieved_at'].replace('Z', '+00:00')) <= reviewed}
     required = [rec['program_url'], rec['policy_url'], *rec['announcement_urls']]
     if rec['change_log_url']: required.append(rec['change_log_url'])
     if not {normalize_url(u) for u in required} <= urls: raise Invalid('program link lacks reviewed source')
-    reviewed = dt.datetime.fromisoformat(rec['last_verified_at'].replace('Z', '+00:00'))
-    for s in sources.values():
-        if dt.datetime.fromisoformat(s['retrieved_at'].replace('Z', '+00:00')) > reviewed:
-            raise Invalid('source retrieval is after program verification')
     scope = rec.get('scope_context')
     if scope is not None:
-        if rec['schema_version'] != '1.4.0':
-            raise Invalid('scope context requires program record version 1.4.0')
+        if rec['schema_version'] not in ('1.4.0', '1.5.0'):
+            raise Invalid('scope context requires program record version 1.4.0 or later')
         if not set(scope['source_ids']) <= set(sources):
             raise Invalid('unknown scope context source')
         scope_sources = [sources[source_id] for source_id in scope['source_ids']]
@@ -77,6 +80,28 @@ def validate_program(rec, schema):
             scope_urls.add(identity)
             if not any(scope_url_matches_source(url, source['url']) for source in scope_sources):
                 raise Invalid('scope policy URL lacks a linked reviewed source or recorded fragment')
+    if asset_scope is not None:
+        if rec['schema_version'] != '1.5.0':
+            raise Invalid('asset scope requires program record version 1.5.0')
+        if not asset_source_ids <= set(sources):
+            raise Invalid('unknown asset scope source')
+        if not asset_scope['in_scope'] and not asset_scope['out_of_scope']:
+            raise Invalid('asset scope must contain at least one reviewed entry')
+        asset_reviewed = dt.datetime.fromisoformat(asset_scope['verified_at'].replace('Z', '+00:00'))
+        for source_id in asset_source_ids:
+            retrieved = dt.datetime.fromisoformat(sources[source_id]['retrieved_at'].replace('Z', '+00:00'))
+            if retrieved > asset_reviewed:
+                raise Invalid('asset source retrieval is after asset verification')
+        for field in ('in_scope', 'out_of_scope'):
+            seen = set()
+            for asset in asset_scope[field]:
+                if not set(asset['source_ids']) <= asset_source_ids:
+                    raise Invalid('asset cites unknown or unrelated source')
+                key = (asset['name'].casefold(), asset['asset_type'].casefold(),
+                       (asset['location'] or '').casefold(), (asset['group'] or '').casefold())
+                if key in seen:
+                    raise Invalid('duplicate asset in ' + field)
+                seen.add(key)
     reward = rec['rewards']
     if reward['minimum'] is not None and reward['maximum'] is not None and reward['minimum'] > reward['maximum']:
         raise Invalid('reversed reward bounds')
@@ -85,25 +110,39 @@ def validate_program(rec, schema):
 
 
 def build(root=ROOT):
-    schema = json.loads((root/'schema/program.schema.json').read_text())
+    schema = json.loads((root/'schema/program.schema.json').read_text(encoding='utf-8'))
     programs = []; identities = set(); urls = set()
     for path in sorted((root/'data/programs').glob('*.json')):
-        rec = json.loads(path.read_text()); validate_program(rec, schema)
+        rec = json.loads(path.read_text(encoding='utf-8')); validate_program(rec, schema)
         url = normalize_url(rec['program_url'])
         if path.stem != rec['id'] or rec['id'] in identities or url in urls: raise Invalid('duplicate or mismatched program identity')
         identities.add(rec['id']); urls.add(url); programs.append(rec)
     scope_count = sum('scope_context' in p for p in programs)
-    export = {'schema_version':'1.4.0', 'content_scope':'public_program_policy_summary',
+    asset_count = sum('asset_scope' in p for p in programs)
+    export = {'schema_version':'1.5.0', 'content_scope':'public_program_policy_summary',
               'counts':{'programs':len(programs), 'programs_with_scope_context':scope_count,
-                        'programs_without_scope_context':len(programs)-scope_count},
-              'notice':'Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.',
+                        'programs_without_scope_context':len(programs)-scope_count,
+                        'programs_with_asset_scope':asset_count,
+                        'programs_without_asset_scope':len(programs)-asset_count,
+                        'in_scope_entries':sum(len(p.get('asset_scope',{}).get('in_scope',[])) for p in programs),
+                        'out_of_scope_entries':sum(len(p.get('asset_scope',{}).get('out_of_scope',[])) for p in programs)},
+              'notice':'Advertised rewards are not report awards. Asset scope is a dated summary of official policy, not authorization. Read the live official policy before any activity.',
               'rights':'Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.', 'programs':programs}
-    lines = ['# Public program directory', '', '[Library home](../README.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
+    lines = ['# Public program directory', '', '[Library home](../README.md) · [Public bounty scopes](public-bounties.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
              export['notice'], '', 'This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.', '',
-             f'**Scope-context coverage:** {scope_count} of {len(programs)} records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.', '']
+             f'**Scope-context coverage:** {scope_count} of {len(programs)} records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.', '',
+             f'**Asset-scope coverage:** {asset_count} of {len(programs)} records include dated, sourced in-scope and out-of-scope entries. A zero out-of-scope row count means no explicit row was captured, not that there are no exclusions. Broad policy-defined categories are labeled as such.', '',
+             '| Program | Platform | In-scope entries | Out-of-scope entries | Asset review |',
+             '| --- | --- | ---: | ---: | --- |']
+    for p in programs:
+        assets = p.get('asset_scope', {})
+        lines.append('| '+link(p['name'], '#program-'+p['id'])+' | '+text(p['platform'])+' | '+
+                     str(len(assets.get('in_scope', [])))+' | '+str(len(assets.get('out_of_scope', [])))+' | '+
+                     text(assets.get('verified_at', 'Not separately reviewed'))+' |')
+    lines.append('')
     for p in programs:
         program_type = p.get('program_type', {'value':'unknown', 'summary':'Program type was not separately classified in this record.'})
-        lines += ['## '+text(p['name']), '', link('Official program',p['program_url'])+' · '+link('Policy',p['policy_url'])+' · '+link('Canonical record','../data/programs/'+p['id']+'.json'), '',
+        lines += ['<a id="program-'+p['id']+'"></a>', '## '+text(p['name']), '', link('Official program',p['program_url'])+' · '+link('Policy',p['policy_url'])+' · '+link('Canonical record','../data/programs/'+p['id']+'.json'), '',
                   '**Platform:** '+text(p['platform'])+'  ', '**Last verified:** '+text(p['last_verified_at']), '',
                   '**Program type:** '+text(program_type['value'].replace('_', ' '))+'. '+text(program_type['summary']), '',
                   '**Submission status:** '+text(p['submission_status']['value'].replace('_', ' '))+'. '+text(p['submission_status']['summary']), '',
@@ -119,6 +158,31 @@ def build(root=ROOT):
             lines += ['- '+link('Official policy '+str(index), url) for index, url in enumerate(scope['policy_urls'], 1)]
             by_id = {s['id']: s for s in p['sources']}
             lines += ['', '**Scope evidence:** '+', '.join(link(by_id[source_id]['title'], by_id[source_id]['url']) for source_id in scope['source_ids']), '']
+        assets = p.get('asset_scope')
+        if assets is not None:
+            by_id = {s['id']: s for s in p['sources']}
+            lines += ['### Asset scope', '',
+                      '**Capture:** '+text(assets['capture_status'].replace('_', ' '))+'; '+text(assets['collection_method'].replace('_', ' '))+'.', '',
+                      '**Asset review:** '+text(assets['verified_at'])+'.', '',
+                      'Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.', '']
+            for field, title in (('in_scope', 'In-scope entries'), ('out_of_scope', 'Out-of-scope entries')):
+                lines += ['#### '+title+' ('+str(len(assets[field]))+')', '']
+                if assets[field]:
+                    lines += ['| Asset | Type | Location | Group | Qualification |',
+                              '| --- | --- | --- | --- | --- |']
+                    for asset in assets[field]:
+                        qualification = asset.get('note', '')
+                        if 'bounty_eligible' in asset:
+                            qualification = (qualification+'; ' if qualification else '') + ('bounty eligible' if asset['bounty_eligible'] else 'not bounty eligible')
+                        lines.append('| '+text(asset['name'])+' | '+text(asset['asset_type'])+' | '+
+                                     text(asset['location'] or '—')+' | '+text(asset['group'] or '—')+' | '+
+                                     text(qualification or '—')+' |')
+                else:
+                    lines += ['No explicit asset entry was captured in this category. Policy exclusions may still apply.']
+                lines.append('')
+            lines += ['**Asset-scope limits**', '']
+            lines += ['- '+text(x) for x in assets['limitations']]
+            lines += ['', '**Asset evidence:** '+', '.join(link(by_id[source_id]['title'], by_id[source_id]['url']) for source_id in assets['source_ids']), '']
         lines += ['**Verification limits**', '']
         lines += ['- '+text(x) for x in p['limitations']]
         for alias in p.get('official_program_links',[]):
@@ -135,8 +199,8 @@ def main():
     for name,content in build().items():
         path=ROOT/name
         if args.check:
-            if not path.is_file() or path.read_text()!=content: raise SystemExit('Missing or stale program export: '+name)
-        else: path.write_text(content)
+            if not path.is_file() or path.read_text(encoding='utf-8')!=content: raise SystemExit('Missing or stale program export: '+name)
+        else: path.write_text(content, encoding='utf-8')
     print('Program schema, evidence references and deterministic outputs validated (offline).')
 
 if __name__=='__main__': main()

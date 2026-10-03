@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "id": "github-bug-bounty",
   "name": "GitHub Bug Bounty",
   "operator": "GitHub",
@@ -92,6 +92,24 @@
       "retrieved_at": "2026-10-03T03:38:36Z",
       "provenance": "official_primary",
       "access_method": "text"
+    },
+    {
+      "id": "assets-scope-2026-10-03",
+      "title": "GitHub Bug Bounty scope",
+      "url": "https://bounty.github.com/scope",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "assets-targets-2026-10-03",
+      "title": "GitHub Bug Bounty target directory",
+      "url": "https://bounty.github.com/targets",
+      "publisher": "GitHub",
+      "retrieved_at": "2026-10-03T15:03:35Z",
+      "provenance": "official_primary",
+      "access_method": "text"
     }
   ],
   "content_scope": "public_program_policy_summary",
@@ -122,5 +140,513 @@
       "https://bounty.github.com/ineligible"
     ],
     "verified_at": "2026-10-03T03:41:39Z"
+  },
+  "asset_scope": {
+    "capture_status": "published_list",
+    "collection_method": "official_policy_page",
+    "verified_at": "2026-10-03T15:03:35Z",
+    "source_ids": [
+      "assets-scope-2026-10-03",
+      "assets-targets-2026-10-03"
+    ],
+    "in_scope": [
+      {
+        "name": "github.com and its subdomains",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.githubassets.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.githubusercontent.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.githubapp.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.githubwebhooks.net",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.github.net",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.npmjs.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "*.npmjs.org",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Subject to the explicit exceptions and target-specific policy pages."
+      },
+      {
+        "name": "GitHub.com",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub API",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub CSP",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Actions",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Pages",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Gist",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Enterprise Server",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Enterprise Cloud",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "Dependabot",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Desktop",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Mobile",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub CLI",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Copilot App",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Codespaces",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Copilot",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Education",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "GitHub Credentials",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "npm Registry",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      },
+      {
+        "name": "npm CLI",
+        "asset_type": "product",
+        "location": null,
+        "group": "Target directory",
+        "source_ids": [
+          "assets-targets-2026-10-03"
+        ]
+      }
+    ],
+    "out_of_scope": [
+      {
+        "name": "blog.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "community.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.enterprise.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.finance.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.staging.finance.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.support.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.verify.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "google7650dcf6146f04d8.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "k1._domainkey.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "k1._domainkey.mcmail.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "mcmail.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "resources.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "*.resources.github.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "sgmail.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "*.sgmail.github.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "shop.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "smtp.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "*.smtp.github.com",
+        "asset_type": "domain_pattern",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "livesend.github.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "atom-io.githubapp.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "atom-io-staging.githubapp.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.enterprise-staging.githubapp.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "email.haystack.githubapp.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      },
+      {
+        "name": "reply.githubapp.com",
+        "asset_type": "domain",
+        "location": null,
+        "group": null,
+        "source_ids": [
+          "assets-scope-2026-10-03"
+        ],
+        "note": "Explicit exception to the applicable in-scope wildcard."
+      }
+    ],
+    "limitations": [
+      "The target directory is a high-level product index; individual target pages may narrow eligibility.",
+      "Unlisted products and GitHub-owned domains are excluded by the official policy; the enumerated exceptions are not the only possible exclusions."
+    ]
   }
 }

@@ -61,7 +61,7 @@ class ScopeContextTests(unittest.TestCase):
 
     def test_context_is_optional_in_all_versions(self):
         self.rec.pop('scope_context')
-        for version in ('1.1.0', '1.2.0', '1.3.0', '1.4.0'):
+        for version in ('1.1.0', '1.2.0', '1.3.0', '1.4.0', '1.5.0'):
             with self.subTest(version=version):
                 self.rec['schema_version'] = version
                 validate_program(self.rec, self.schema)
@@ -76,7 +76,7 @@ class ScopeContextTests(unittest.TestCase):
     def test_program_type_supported_in_1_3_and_1_4(self):
         self.rec.pop('scope_context')
         self.rec['program_type'] = {'value': 'paid_bounty', 'summary': 'Synthetic classification.', 'source_ids': ['policy']}
-        for version in ('1.3.0', '1.4.0'):
+        for version in ('1.3.0', '1.4.0', '1.5.0'):
             with self.subTest(version=version):
                 self.rec['schema_version'] = version
                 validate_program(self.rec, self.schema)
@@ -84,7 +84,7 @@ class ScopeContextTests(unittest.TestCase):
     def test_closed_supported_in_1_2_and_later(self):
         self.rec.pop('scope_context')
         self.rec['submission_status'].update(value='closed', source_ids=['policy'])
-        for version in ('1.2.0', '1.3.0', '1.4.0'):
+        for version in ('1.2.0', '1.3.0', '1.4.0', '1.5.0'):
             with self.subTest(version=version):
                 self.rec['schema_version'] = version
                 validate_program(self.rec, self.schema)
@@ -225,9 +225,12 @@ class ScopeContextTests(unittest.TestCase):
             records.append(rec)
         outputs = self.outputs(records)
         exported = json.loads(outputs['exports/programs.json'])
-        self.assertEqual(exported['schema_version'], '1.4.0')
+        self.assertEqual(exported['schema_version'], '1.5.0')
         self.assertEqual(exported['programs'], records)
-        self.assertEqual(exported['counts'], {'programs': 3, 'programs_with_scope_context': 0, 'programs_without_scope_context': 3})
+        self.assertEqual(exported['counts'], {'programs': 3, 'programs_with_scope_context': 0,
+                                               'programs_without_scope_context': 3,
+                                               'programs_with_asset_scope': 0, 'programs_without_asset_scope': 3,
+                                               'in_scope_entries': 0, 'out_of_scope_entries': 0})
         self.assertIn('0 of 3 records', outputs['docs/programs.md'])
         self.assertEqual(outputs['docs/programs.md'].count('Missing context means'), 1)
         self.assertNotIn('**Scope context**', outputs['docs/programs.md'])
@@ -236,7 +239,10 @@ class ScopeContextTests(unittest.TestCase):
         outputs = self.outputs([self.rec])
         exported = json.loads(outputs['exports/programs.json'])
         self.assertEqual(exported['programs'], [self.rec])
-        self.assertEqual(exported['counts'], {'programs': 1, 'programs_with_scope_context': 1, 'programs_without_scope_context': 0})
+        self.assertEqual(exported['counts'], {'programs': 1, 'programs_with_scope_context': 1,
+                                               'programs_without_scope_context': 0,
+                                               'programs_with_asset_scope': 0, 'programs_without_asset_scope': 1,
+                                               'in_scope_entries': 0, 'out_of_scope_entries': 0})
         page = outputs['docs/programs.md']
         for heading in ('**Scope context**', '**Included coverage:**', '**Excluded coverage:**',
                         '**Scope verified:**', '**Reviewed policy links**', '**Scope evidence:**'):

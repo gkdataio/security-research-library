@@ -15,8 +15,10 @@ from validate_extra import validate_inert_svg
 class ProgramTests(unittest.TestCase):
     def setUp(self):
         self.rec=json.loads(next((ROOT/'data/programs').glob('*.json')).read_text())
-        # These legacy/type fixtures deliberately omit the separately tested 1.4 scope extension.
+        # Legacy/type fixtures deliberately omit the separately tested scope extensions.
         self.rec.pop('scope_context', None)
+        self.rec.pop('asset_scope', None)
+        self.rec['sources']=[s for s in self.rec['sources'] if not s['id'].startswith('assets-')]
         self.schema=json.loads((ROOT/'schema/program.schema.json').read_text())
     def test_valid(self): validate_program(self.rec,self.schema)
     def test_program_type_is_optional_for_existing_versions(self):
@@ -72,7 +74,7 @@ class ProgramTests(unittest.TestCase):
         self.assertIn('Program type:** unknown.',result['docs/programs.md'])
     def test_program_type_export_retains_evidence(self):
         exported=json.loads(programs()['exports/programs.json'])
-        self.assertEqual(exported['schema_version'],'1.4.0')
+        self.assertEqual(exported['schema_version'],'1.5.0')
         canonical={json.loads(p.read_text())['id']:json.loads(p.read_text()) for p in (ROOT/'data/programs').glob('*.json')}
         for record in exported['programs']:
             with self.subTest(program=record['id']):
