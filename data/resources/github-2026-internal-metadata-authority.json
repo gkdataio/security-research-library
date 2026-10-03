@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-2026-internal-metadata-authority",
+  "title": "GitHub internal metadata: preserve the boundary between user data and service authority",
+  "publisher": "Wiz Research",
+  "authors": [
+    "Sagi Tzadik"
+  ],
+  "primary_url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations",
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "defensive-evidence-writing",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Wiz's CVE-2026-3854 research examines a data-to-authority boundary in GitHub's backend. User-controlled operation metadata reached downstream services as trusted configuration. Code execution was demonstrated on Enterprise Server and hosted infrastructure. Wiz bounded cross-tenant content validation to its own accounts; broader repository exposure was a capability inference, not demonstrated theft of customer content.",
+  "defensive_use": "Editorial lessons: preserve provenance when internal services exchange mixed-trust data, keep policy decisions independent of user-controlled metadata, and remove environment-inappropriate execution paths. GitHub confirms input sanitization and removal of unnecessary code paths as remediation. Review the vendor's maintained release guidance rather than treating a researcher version table as definitive.",
+  "prerequisites": [
+    "Familiarity with service-to-service trust boundaries",
+    "Basic authorization and serialization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public researcher and vendor articles readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-04-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Researcher article publication and public disclosure."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No immutable article revision is identified; this field is not a product patch date."
+    },
+    "source_displayed": {
+      "value": "2026-04-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T06:29:29Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Researcher and vendor accounts reviewed. This is historical educational evidence, not a finding that a current deployment is vulnerable."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
+      "title": "Securing GitHub: Wiz Research uncovers Remote Code Execution in GitHub.com and GitHub Enterprise Server (CVE-2026-3854)",
+      "publisher": "Wiz Research",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:28:56Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "vendor",
+      "url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "title": "Securing the git push pipeline: Responding to a critical remote code execution vulnerability",
+      "publisher": "GitHub",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:29:29Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Technical precondition: an authenticated user needed repository push permission (vendor). Learning prerequisites above are editorial.",
+    "Wiz reports controlled cross-tenant validation with its own accounts and says it did not access other tenants' repository contents. GitHub's investigation attributes observed activity to the researchers and reports no customer-data access, modification or exfiltration.",
+    "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
+    "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
+    "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+  ],
+  "content_scope": "defensive_education"
+}
