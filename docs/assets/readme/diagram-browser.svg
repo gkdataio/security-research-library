@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="350" viewBox="0 0 520 350" role="img" aria-labelledby="title desc"><title id="title">Browser boundaries</title><desc id="desc">A sender is not an authorization.</desc>
+<rect x="0.5" y="0.5" width="519" height="349" fill="#090F12" stroke="#32464B"/>
+<rect x="0" y="0" width="72" height="4" fill="#75D9D0" stroke="none"/>
+<text x="25" y="32" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#75D9D0">VISUAL THEORY / BROWSER</text>
+<text x="25" y="79" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#F0F3E8">Browser boundaries</text>
+<rect x="31" y="127" width="173" height="130" fill="#111C20" stroke="#4D6969"/>
+<polyline points="31,151 204,151" fill="none" stroke="#23353A" stroke-width="1"/>
+<circle cx="43" cy="139" r="2" fill="#75D9D0" stroke="none"/>
+<text x="46" y="222" font-family="Consolas, monospace" font-size="14" font-weight="400" fill="#9EB2AF">SENDER</text>
+<rect x="310" y="127" width="173" height="130" fill="#111C20" stroke="#4D6969"/>
+<polyline points="310,151 483,151" fill="none" stroke="#23353A" stroke-width="1"/>
+<circle cx="322" cy="139" r="2" fill="#75D9D0" stroke="none"/>
+<text x="325" y="222" font-family="Consolas, monospace" font-size="14" font-weight="400" fill="#9EB2AF">RECIPIENT</text>
+<polyline points="258,113 258,119" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,125 258,131" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,137 258,143" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,149 258,155" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,161 258,167" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,173 258,179" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,185 258,191" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,197 258,203" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,209 258,215" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,221 258,227" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,233 258,239" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,245 258,251" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="258,257 258,263" fill="none" stroke="#75D9D0" stroke-width="1"/>
+<polyline points="137,181 371,181" fill="none" stroke="#577F78" stroke-width="1"/>
+<circle cx="258" cy="181" r="11" fill="#090F12" stroke="#75D9D0"/>
+<text x="222" y="281" font-family="Consolas, monospace" font-size="10" font-weight="400" fill="#75D9D0">BOUNDARY</text>
+<polyline points="25,302 495,302" fill="none" stroke="#23353A" stroke-width="1"/>
+<text x="25" y="331" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#9EB2AF">A sender is not an authorization.</text>
+</svg>

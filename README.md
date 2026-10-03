@@ -15,6 +15,18 @@ Source-backed public disclosures, official learning resources, and original diag
 
 **[Browse by vulnerability type](docs/vulnerability-types.md)** — reports, related learning and conceptual diagrams together, with broader security themes labeled separately.
 
+<p align="center">
+  <a href="docs/reports.md"><img src="docs/assets/readme/collection-reports.svg" width="390" alt="Disclosures — read the report collection"></a>
+  <a href="docs/programs.md"><img src="docs/assets/readme/collection-programs.svg" width="390" alt="Program atlas — explore policies and scope catalogs"></a>
+  <a href="docs/resources.md"><img src="docs/assets/readme/collection-learning.svg" width="390" alt="Reading room — guides, references, and methods"></a>
+  <a href="docs/diagram-gallery.md"><img src="docs/assets/readme/collection-diagrams.svg" width="390" alt="Visual theory — open the diagram gallery"></a>
+  <a href="#use-the-json"><img src="docs/assets/readme/collection-data.svg" width="390" alt="Data workbench — canonical records, schemas, and JSON exports"></a>
+  <a href="#why-the-python-scripts-are-included"><img src="docs/assets/readme/collection-maintenance.svg" width="390" alt="Collection tools — validation, rendering, and change checks"></a>
+</p>
+
+<details>
+<summary><strong>Full catalog and reference index</strong></summary>
+
 | Explore | Guides and catalogs |
 |---|---|
 | **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
@@ -24,7 +36,9 @@ Source-backed public disclosures, official learning resources, and original diag
 | **Visuals** | [Diagram gallery](docs/diagram-gallery.md) · [Visual guide](docs/visual-theory.md) |
 | **Reuse** | [Use the JSON](#use-the-json) · [Licensing](LICENSE.md) |
 
-**On this page:** [At a glance](#at-a-glance) · [Start here](#start-here) · [Report contents](#what-each-report-contains) · [JSON contracts](#use-the-json) · [Validation](#validate-and-regenerate) · [Report index](#report-index) · [Scope and attribution](#scope-maintenance-and-attribution)
+</details>
+
+**On this page:** [Snapshot](#at-a-glance) · [Start here](#start-here) · [Visual theory](#see-the-boundaries) · [Report anatomy](#what-each-report-contains) · [JSON contracts](#use-the-json) · [Collection tools](#why-the-python-scripts-are-included) · [Report index](#report-index) · [Scope and attribution](#scope-maintenance-and-attribution)
 
 ## At a glance
 
@@ -69,11 +83,35 @@ Curation currently prioritizes web-application security relevant to 2026: author
 - [Approval and concurrency integrity](docs/learning-guide.md#1-approval-and-concurrency-integrity)
 - [Browser permission and consent lifecycle](docs/learning-guide.md#8-browser-permission-and-consent-lifecycle)
 
+## See the boundaries
+
+Explore the library's conceptual models of identity, authority, and data flow. Each cover opens the complete diagram.
+
+<p align="center">
+  <a href="diagrams/ai-content-authority-separation.svg"><img src="docs/assets/readme/diagram-ai.svg" width="260" alt="AI authority — open the content and action authority diagram"></a>
+  <a href="diagrams/browser-message-authority-boundaries.svg"><img src="docs/assets/readme/diagram-browser.svg" width="260" alt="Browser boundaries — open the message authority diagram"></a>
+  <a href="diagrams/build-artifact-provenance-boundary.svg"><img src="docs/assets/readme/diagram-build.svg" width="260" alt="Build provenance — open the artifact provenance diagram"></a>
+</p>
+
+[**All diagrams →**](docs/diagram-gallery.md) · [Visual theory and evidence](docs/visual-theory.md) · [Mermaid, DOT, and SVG sources](diagrams/)
+
 ## What each report contains
+
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="docs/assets/readme/evidence-mobile-static.png">
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/assets/readme/evidence-static.png">
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/evidence-mobile.gif">
+  <img src="docs/assets/readme/evidence.gif" width="1120" alt="A primary source stays connected to evidence and limits, the canonical record, and readable pages and exports.">
+</picture>
 
 Records contain original explanations, not just source links: `root_cause` describes the failed security assumption, `impact` qualifies what the evidence establishes, and `defensive_takeaways` captures review and remediation principles. Award evidence, distinct event dates, classifications and verification limits remain machine-readable. Where the source supports it, the explanation includes the researcher’s conceptual reasoning. Specific discovery methods or patch implementations stay unknown when the source does not establish them.
 
 ## Use the JSON
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/workbench-mobile.png">
+  <img src="docs/assets/readme/workbench.png" width="1120" alt="Data workbench: data holds canonical records, schema holds contracts, and exports holds portable collections.">
+</picture>
 
 Canonical records live in `data/`; files in `exports/` are deterministic, generated snapshots. A record's filename matches its stable `id`.
 
@@ -111,6 +149,11 @@ The `vulns-co.json` filename identifies a future adaptation target. Compatibilit
 See [DATA_POLICY.md](DATA_POLICY.md) for the complete rules.
 
 ## Why the Python scripts are included
+
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/maintenance-mobile.png">
+  <img src="docs/assets/readme/maintenance.png" width="1120" alt="Collection maintenance: validate fields and references, render diagrams and pages, export JSON, and compare recorded changes.">
+</picture>
 
 The scripts keep the collection consistent and reusable. Reading the reports or viewing diagrams does not require running Python.
 

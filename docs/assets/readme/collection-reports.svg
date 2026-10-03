@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="224" viewBox="0 0 520 224" role="img" aria-labelledby="title desc"><title id="title">Disclosures</title><desc id="desc">Evidence, impact, and the source.</desc>
+<rect x="0.5" y="0.5" width="519" height="223" fill="#090F12" stroke="#32464B"/>
+<rect x="0" y="0" width="72" height="4" fill="#D4FC51" stroke="none"/>
+<text x="25" y="34" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#D4FC51">01 / COLLECTION</text>
+<text x="24" y="88" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#F0F3E8">Disclosures</text>
+<text x="26" y="119" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#9EB2AF">Evidence, impact, and the source.</text>
+<polyline points="25,168 495,168" fill="none" stroke="#23353A" stroke-width="1"/>
+<text x="25" y="200" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#D4FC51">Read the report collection</text>
+<polyline points="474,203 486,191 474,191 486,191 486,203" fill="none" stroke="#D4FC51" stroke-width="1"/>
+<rect x="390" y="43" width="64" height="82" fill="#111C20" stroke="#496462"/>
+<polyline points="402,67 440,67" fill="none" stroke="#516E6B" stroke-width="1"/>
+<polyline points="402,80 430,80" fill="none" stroke="#516E6B" stroke-width="1"/>
+<polyline points="402,93 440,93" fill="none" stroke="#516E6B" stroke-width="1"/>
+<rect x="405" y="53" width="64" height="82" fill="#111C20" stroke="#496462"/>
+<polyline points="417,77 455,77" fill="none" stroke="#516E6B" stroke-width="1"/>
+<polyline points="417,90 445,90" fill="none" stroke="#516E6B" stroke-width="1"/>
+<polyline points="417,103 455,103" fill="none" stroke="#516E6B" stroke-width="1"/>
+<rect x="420" y="63" width="64" height="82" fill="#111C20" stroke="#496462"/>
+<polyline points="432,87 470,87" fill="none" stroke="#D4FC51" stroke-width="1"/>
+<polyline points="432,100 460,100" fill="none" stroke="#516E6B" stroke-width="1"/>
+<polyline points="432,113 470,113" fill="none" stroke="#516E6B" stroke-width="1"/>
+</svg>

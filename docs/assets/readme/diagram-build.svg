@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="350" viewBox="0 0 520 350" role="img" aria-labelledby="title desc"><title id="title">Build provenance</title><desc id="desc">Keep origin attached to artifacts.</desc>
+<rect x="0.5" y="0.5" width="519" height="349" fill="#090F12" stroke="#32464B"/>
+<rect x="0" y="0" width="72" height="4" fill="#EAC87A" stroke="none"/>
+<text x="25" y="32" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#EAC87A">VISUAL THEORY / BUILD</text>
+<text x="25" y="79" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#F0F3E8">Build provenance</text>
+<rect x="34" y="149" width="114" height="99" fill="#111C20" stroke="#4D6969"/>
+<rect x="50" y="166" width="29" height="29" fill="#090F12" stroke="#EAC87A"/>
+<text x="46" y="228" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#9EB2AF">SOURCE</text>
+<polyline points="148,194 202,194" fill="none" stroke="#577F78" stroke-width="1"/>
+<rect x="202" y="149" width="114" height="99" fill="#111C20" stroke="#4D6969"/>
+<rect x="218" y="166" width="29" height="29" fill="#090F12" stroke="#EAC87A"/>
+<text x="214" y="228" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#9EB2AF">BUILD</text>
+<polyline points="316,194 370,194" fill="none" stroke="#577F78" stroke-width="1"/>
+<rect x="370" y="149" width="114" height="99" fill="#111C20" stroke="#4D6969"/>
+<rect x="386" y="166" width="29" height="29" fill="#090F12" stroke="#EAC87A"/>
+<text x="382" y="228" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#9EB2AF">ARTIFACT</text>
+<polyline points="90,132 90,119 425,119 425,132" fill="none" stroke="#EAC87A" stroke-width="1"/>
+<polyline points="25,302 495,302" fill="none" stroke="#23353A" stroke-width="1"/>
+<text x="25" y="331" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#9EB2AF">Keep origin attached to artifacts.</text>
+</svg>

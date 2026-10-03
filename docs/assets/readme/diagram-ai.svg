@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="350" viewBox="0 0 520 350" role="img" aria-labelledby="title desc"><title id="title">AI authority</title><desc id="desc">Content informs. Policy decides.</desc>
+<rect x="0.5" y="0.5" width="519" height="349" fill="#090F12" stroke="#32464B"/>
+<rect x="0" y="0" width="72" height="4" fill="#D4FC51" stroke="none"/>
+<text x="25" y="32" font-family="Consolas, monospace" font-size="12" font-weight="400" fill="#D4FC51">VISUAL THEORY / AI</text>
+<text x="25" y="79" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#F0F3E8">AI authority</text>
+<rect x="31" y="124" width="128" height="56" fill="#111C20" stroke="#4D6969"/>
+<rect x="31" y="205" width="128" height="56" fill="#111C20" stroke="#4D6969"/>
+<text x="46" y="157" font-family="Consolas, monospace" font-size="14" font-weight="400" fill="#9EB2AF">INTENT</text>
+<text x="46" y="238" font-family="Consolas, monospace" font-size="14" font-weight="400" fill="#9EB2AF">CONTENT</text>
+<polyline points="159,152 223,152 223,191 274,191" fill="none" stroke="#577F78" stroke-width="1"/>
+<polyline points="159,233 223,233 223,191" fill="none" stroke="#577F78" stroke-width="1"/>
+<rect x="273" y="164" width="92" height="55" fill="#111C20" stroke="#D4FC51"/>
+<text x="289" y="196" font-family="Consolas, monospace" font-size="13" font-weight="400" fill="#D4FC51">POLICY</text>
+<polyline points="365,191 428,191" fill="none" stroke="#D4FC51" stroke-width="1"/>
+<circle cx="446" cy="191" r="18" fill="#090F12" stroke="#D4FC51"/>
+<polyline points="25,302 495,302" fill="none" stroke="#23353A" stroke-width="1"/>
+<text x="25" y="331" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#9EB2AF">Content informs. Policy decides.</text>
+</svg>
