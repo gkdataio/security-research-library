@@ -4,7 +4,7 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-91 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+95 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
@@ -18,6 +18,7 @@ Original defensive summaries of official educational references. These resources
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth; Maintainer Advisory.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink; Maintainer Advisory.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers; Implementation Guide.
+- [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers; Architecture Guide.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project; Architecture Guide.
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Maintainer Advisory.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper.
@@ -55,6 +56,7 @@ Original defensive summaries of official educational references. These resources
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI; Maintainer Advisory.
 - [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI; Maintainer Advisory.
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI; Maintainer Advisory.
+- [OpenFGA: policy intersections must preserve explicit exclusions](<resources/openfga-2026-composed-policy-exclusion-integrity.md>) — OpenFGA; Maintainer Advisory.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline; Maintainer Advisory.
 - [OWASP Application Security Verification Standard \(ASVS\)](<resources/owasp-asvs-5-security-verification-standard.md>) — OWASP Foundation; Security Standard.
 - [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
@@ -81,6 +83,7 @@ Original defensive summaries of official educational references. These resources
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab; Research Paper.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript; Maintainer Advisory.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community; Security Standard.
+- [Spree: cart association must retain guest-possession checks](<resources/spree-2026-guest-cart-association-authority.md>) — Spree; Maintainer Advisory.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab; Research Paper.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe; Maintainer Advisory.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association; Research Paper.
@@ -88,6 +91,7 @@ Original defensive summaries of official educational references. These resources
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security; Research Paper.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab; Research Paper.
 - [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius; Maintainer Advisory.
+- [Trusted Types: typed sinks depend on trustworthy policy creation](<resources/w3c-2026-trusted-types-policy-authority.md>) — World Wide Web Consortium; Technical Standard.
 - [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3; Maintainer Advisory.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab; Research Paper.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association; Research Paper.

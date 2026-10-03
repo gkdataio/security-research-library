@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "id": "chrome-local-network-permission-boundaries",
+  "title": "Chrome Local Network Access: separate browser reachability from site authority",
+  "publisher": "Google Chrome for Developers",
+  "authors": [
+    "Chris Thompson"
+  ],
+  "primary_url": "https://developer.chrome.com/blog/local-network-access",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "integration-threat-modeling",
+    "authorization-modeling"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary-source guidance."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Chrome's design addresses websites using the browser's network position to reach local devices without a separate user decision. A secure-context permission gate reduces local-device CSRF and network fingerprinting. The 2026 Chrome 145 release refines the boundary by separating local-network permission from loopback permission.",
+  "defensive_use": "Editorial lesson: distinguish a website's origin, the browser's network reachability and the user's intended destination class. Document which local integration actually needs permission and preserve a usable denial path. Treat the grant as permission to connect, not proof of application-level authorization. Review local-device authentication separately.",
+  "prerequisites": [
+    "Browser origins, secure contexts and network address spaces"
+  ],
+  "dates": {
+    "published": {
+      "value": "2025-06-09",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "guide",
+      "note": "Historical guide with a separately dated September 2025 launch update."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Browser milestones are implementation chronology, not resource editions."
+    },
+    "source_displayed": {
+      "value": "2025-09-29",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "guide",
+      "note": "Explicit inline update; the footer still displays 2025-06-09."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:20:45Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the original design guide and Chrome 142/145 release documentation; no live behavior was tested."
+  },
+  "sources": [
+    {
+      "id": "guide",
+      "url": "https://developer.chrome.com/blog/local-network-access",
+      "title": "New permission prompt for Local Network Access",
+      "publisher": "Google Chrome for Developers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:20:45Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "chrome-142",
+      "url": "https://developer.chrome.com/release-notes/142",
+      "title": "Chrome 142",
+      "publisher": "Google Chrome for Developers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:20:45Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "chrome-145",
+      "url": "https://developer.chrome.com/release-notes/145",
+      "title": "Chrome 145",
+      "publisher": "Google Chrome for Developers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:20:45Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The guide describes an evolving rollout and replaces the earlier Private Network Access preflight approach. Its initial transport limitations are historical, not a verified inventory of current gaps.",
+    "Chrome 142 release notes identify an October 28, 2025 stable release and include local-to-loopback requests, beyond the original guide’s first-milestone scope. Chrome 145 notes identify February 10, 2026 and separate local and loopback permissions while retaining the older permission name as an alias.",
+    "This is architectural guidance rather than a vulnerability or award report. Browser-wide implementation parity and current enterprise-policy coverage were not established."
+  ]
+}

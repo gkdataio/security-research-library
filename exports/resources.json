@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 91,
+    "resources": 95,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1315,6 +1315,107 @@
         "Isolated and non-isolated same-origin frames lose synchronous DOM access but retain asynchronous communication and storage sharing. This is not general tenant isolation."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "chrome-local-network-permission-boundaries",
+      "title": "Chrome Local Network Access: separate browser reachability from site authority",
+      "publisher": "Google Chrome for Developers",
+      "authors": [
+        "Chris Thompson"
+      ],
+      "primary_url": "https://developer.chrome.com/blog/local-network-access",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling",
+        "authorization-modeling"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary-source guidance."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Chrome's design addresses websites using the browser's network position to reach local devices without a separate user decision. A secure-context permission gate reduces local-device CSRF and network fingerprinting. The 2026 Chrome 145 release refines the boundary by separating local-network permission from loopback permission.",
+      "defensive_use": "Editorial lesson: distinguish a website's origin, the browser's network reachability and the user's intended destination class. Document which local integration actually needs permission and preserve a usable denial path. Treat the grant as permission to connect, not proof of application-level authorization. Review local-device authentication separately.",
+      "prerequisites": [
+        "Browser origins, secure contexts and network address spaces"
+      ],
+      "dates": {
+        "published": {
+          "value": "2025-06-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "guide",
+          "note": "Historical guide with a separately dated September 2025 launch update."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Browser milestones are implementation chronology, not resource editions."
+        },
+        "source_displayed": {
+          "value": "2025-09-29",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "guide",
+          "note": "Explicit inline update; the footer still displays 2025-06-09."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:20:45Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the original design guide and Chrome 142/145 release documentation; no live behavior was tested."
+      },
+      "sources": [
+        {
+          "id": "guide",
+          "url": "https://developer.chrome.com/blog/local-network-access",
+          "title": "New permission prompt for Local Network Access",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "chrome-142",
+          "url": "https://developer.chrome.com/release-notes/142",
+          "title": "Chrome 142",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "chrome-145",
+          "url": "https://developer.chrome.com/release-notes/145",
+          "title": "Chrome 145",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The guide describes an evolving rollout and replaces the earlier Private Network Access preflight approach. Its initial transport limitations are historical, not a verified inventory of current gaps.",
+        "Chrome 142 release notes identify an October 28, 2025 stable release and include local-to-loopback requests, beyond the original guide’s first-milestone scope. Chrome 145 notes identify February 10, 2026 and separate local and loopback permissions while retaining the older permission name as an alias.",
+        "This is architectural guidance rather than a vulnerability or award report. Browser-wide implementation parity and current enterprise-policy coverage were not established."
+      ]
     },
     {
       "schema_version": "1.0.0",
@@ -4239,6 +4340,86 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "openfga-2026-composed-policy-exclusion-integrity",
+      "title": "OpenFGA: policy intersections must preserve explicit exclusions",
+      "publisher": "OpenFGA",
+      "authors": [
+        "justincoh"
+      ],
+      "primary_url": "https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-61709 describes incorrect authorization-policy evaluation in user enumeration. Under a particular composition of wildcard membership, exclusion and intersection, a user denied by one policy component could reappear in the result through another component. The failed boundary is preservation of explicit denial when combining permission sets.",
+      "defensive_use": "Editorial lesson: reason about policy results as complete sets, including exclusions, rather than merging positive membership alone. Design contained regression cases that compare composed policy outcomes with their intended semantics. The maintainer recommends OpenFGA 1.18.1 or later and lists Helm chart 0.3.10 as patched.",
+      "prerequisites": [
+        "Basic object-level authorization and policy-composition concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary advisory readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the primary maintainer advisory."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-07-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the primary maintainer advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:19:23Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary maintainer advisory reviewed. No live testing, independent reproduction or deployment verification performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m",
+          "title": "OpenFGA Improper Policy Enforcement",
+          "publisher": "OpenFGA",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:19:23Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Applies when an application relies on ListUsers and its model combines a wildcard-based exclusion with an intersected relation that explicitly grants the excluded user. This does not establish that all models or authorization APIs are affected.",
+        "The advisory establishes an incorrect result; downstream unauthorized disclosure depends on application use. No production incident or independently verified impact is reported.",
+        "Published July 16, 2026 by justincoh; reporter 5ud0er is credited. Affected OpenFGA versions are listed through 1.18.0, Helm charts through 0.3.9. Patch release dates and resource-edition dates are not established."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "openid-fapi-2-api-authorization-profile",
       "title": "FAPI 2.0 Security Profile",
       "publisher": "OpenID Foundation",
@@ -6964,6 +7145,86 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "spree-2026-guest-cart-association-authority",
+      "title": "Spree: cart association must retain guest-possession checks",
+      "publisher": "Spree",
+      "authors": [
+        "damianlegawiec"
+      ],
+      "primary_url": "https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-94462 concerns a guest-cart ownership transition that required a signed-in customer but omitted the cart-possession check enforced by sibling operations. Account authentication and object lookup were treated as sufficient authority to claim an unowned cart, exposing existing checkout addresses and changing ownership.",
+      "defensive_use": "Editorial lesson: joining guest state to an account is a privileged ownership transition. Verify existing possession before mutation and response serialization; client-supplied proof helps only when the server checks it. The maintainer recommends backend releases 5.4.4 or 5.5.4 and says its storefront already supplied the required cart token.",
+      "prerequisites": [
+        "Basic object-level authorization and policy-composition concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary advisory readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the primary maintainer advisory."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-07-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the primary maintainer advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:19:23Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary maintainer advisory reviewed. No live testing, independent reproduction or deployment verification performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2",
+          "title": "Spree guest-cart association access-control advisory (GHSA-4825-p4xm-pcf2)",
+          "publisher": "Spree",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:19:23Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an authenticated store account, guest checkout enabled and an unassociated cart; address disclosure additionally requires stored checkout addresses. The advisory reports limited, recoverable cart reassignment and email changes, not anonymous access or account takeover.",
+        "The primary advisory supplies technical impact analysis; no production incident or independently reproduced outcome is established.",
+        "Published July 20, 2026 by damianlegawiec; reporter laijunyue is credited. The affected-version shorthand starts at 5.4.0 without an upper bound; use the stated patched branches rather than extrapolating. Software patch dates are unestablished and are not resource-edition dates."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "spree-2026-guest-order-authorization-proof",
       "title": "Spree: guest ownership still requires an authorization proof",
       "publisher": "GitHub Security Lab",
@@ -8295,6 +8556,108 @@
         "The advisory is published by givanz and credits Basant Kumar and Hamed Kohi. Original analysis here is limited to defensive design lessons."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "w3c-2026-trusted-types-policy-authority",
+      "title": "Trusted Types: typed sinks depend on trustworthy policy creation",
+      "publisher": "World Wide Web Consortium",
+      "authors": [
+        "Krzysztof Kotowicz"
+      ],
+      "primary_url": "https://www.w3.org/TR/2026/WD-trusted-types-20260623/",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "untrusted-input-handling",
+        "secure-parser-review"
+      ],
+      "version": "Working Draft, 23 June 2026",
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary-source guidance."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Defines a browser-enforced boundary between ordinary strings and typed values accepted by injection-sensitive APIs. The underlying failure is allowing untrusted text to acquire executable interpretation. Policies centralize creation of accepted values; matching types preserve intended use, but do not independently establish that a policy's transformation is safe.",
+      "defensive_use": "Editorial reasoning: review two invariants separately: sensitive consumers accept only policy-produced values, and each producer enforces an adequate trust contract. Minimize policy creation authority, keep policy dependencies reviewable and avoid global state silently changing decisions. The maintainer FAQ explains why sanitization must be consistently applied, rather than merely available in a library.",
+      "prerequisites": [
+        "JavaScript DOM data flow and Content Security Policy"
+      ],
+      "dates": {
+        "published": {
+          "value": "2022-09-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "history",
+          "note": "First Public Working Draft of the specification series."
+        },
+        "version_released": {
+          "value": "2026-06-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "standard",
+          "note": "Date of the reviewed educational specification edition."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T15:20:45Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the dated draft, publication history and explanatory FAQ; no conformance tests were run."
+      },
+      "sources": [
+        {
+          "id": "standard",
+          "url": "https://www.w3.org/TR/2026/WD-trusted-types-20260623/",
+          "title": "Trusted Types",
+          "publisher": "World Wide Web Consortium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "history",
+          "url": "https://www.w3.org/standards/history/trusted-types/",
+          "title": "Trusted Types publication history",
+          "publisher": "World Wide Web Consortium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "dates"
+          ]
+        },
+        {
+          "id": "faq",
+          "url": "https://github.com/w3c/trusted-types/wiki/FAQ",
+          "title": "Trusted Types FAQ",
+          "publisher": "W3C Trusted Types project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T15:20:45Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The reviewed edition is a Working Draft, not a final W3C Recommendation. Krzysztof Kotowicz is its listed editor; Mike West is listed as former editor.",
+        "Unsafe policies can preserve DOM injection risk. The design does not isolate actively malicious first-party code or guard every DOM operation.",
+        "The FAQ distinguishes client-side sink controls from server-generated injection and complementary CSP defenses. Its 2021 browser-support discussion is historical and is not used as current compatibility evidence."
+      ]
     },
     {
       "schema_version": "1.0.0",

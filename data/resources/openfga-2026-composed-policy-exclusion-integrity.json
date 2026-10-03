@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "openfga-2026-composed-policy-exclusion-integrity",
+  "title": "OpenFGA: policy intersections must preserve explicit exclusions",
+  "publisher": "OpenFGA",
+  "authors": [
+    "justincoh"
+  ],
+  "primary_url": "https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-61709 describes incorrect authorization-policy evaluation in user enumeration. Under a particular composition of wildcard membership, exclusion and intersection, a user denied by one policy component could reappear in the result through another component. The failed boundary is preservation of explicit denial when combining permission sets.",
+  "defensive_use": "Editorial lesson: reason about policy results as complete sets, including exclusions, rather than merging positive membership alone. Design contained regression cases that compare composed policy outcomes with their intended semantics. The maintainer recommends OpenFGA 1.18.1 or later and lists Helm chart 0.3.10 as patched.",
+  "prerequisites": [
+    "Basic object-level authorization and policy-composition concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary advisory readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed by the primary maintainer advisory."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-07-16",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date displayed by the primary maintainer advisory."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:19:23Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary maintainer advisory reviewed. No live testing, independent reproduction or deployment verification performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m",
+      "title": "OpenFGA Improper Policy Enforcement",
+      "publisher": "OpenFGA",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:19:23Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Applies when an application relies on ListUsers and its model combines a wildcard-based exclusion with an intersected relation that explicitly grants the excluded user. This does not establish that all models or authorization APIs are affected.",
+    "The advisory establishes an incorrect result; downstream unauthorized disclosure depends on application use. No production incident or independently verified impact is reported.",
+    "Published July 16, 2026 by justincoh; reporter 5ud0er is credited. Affected OpenFGA versions are listed through 1.18.0, Helm charts through 0.3.9. Patch release dates and resource-edition dates are not established."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -4,22 +4,22 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-91 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+95 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [Ai Security](<#topic-ai-security>) — 8 resources.
-- [Authorization](<#topic-authorization>) — 56 resources.
-- [Business Logic and State Integrity](<#topic-business-logic>) — 19 resources.
+- [Authorization](<#topic-authorization>) — 58 resources.
+- [Business Logic and State Integrity](<#topic-business-logic>) — 21 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 33 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
 - [Verification](<#topic-verification>) — 21 resources.
-- [Web Foundations](<#topic-web-foundations>) — 44 resources.
+- [Web Foundations](<#topic-web-foundations>) — 46 resources.
 
 <a id="topic-ai-security"></a>
 ## Ai Security
@@ -38,7 +38,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-56 resources.
+58 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -78,6 +78,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI.
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
+- [OpenFGA: policy intersections must preserve explicit exclusions](<resources/openfga-2026-composed-policy-exclusion-integrity.md>) — OpenFGA.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series.
@@ -87,6 +88,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab.
+- [Spree: cart association must retain guest-possession checks](<resources/spree-2026-guest-cart-association-authority.md>) — Spree.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
@@ -100,7 +102,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-business-logic"></a>
 ## Business Logic and State Integrity
 
-19 resources.
+21 resources.
 
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
@@ -111,6 +113,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP.
 - [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n.
 - [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n.
+- [OpenFGA: policy intersections must preserve explicit exclusions](<resources/openfga-2026-composed-policy-exclusion-integrity.md>) — OpenFGA.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
 - [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>) — OWASP Cheat Sheet Series.
 - [OWASP Secure Code Review: baseline and change-focused review](<resources/owasp-secure-code-review-methodology.md>) — OWASP Cheat Sheet Series.
@@ -118,6 +121,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series.
 - [Paymenter: refund entitlement and ledger changes need one atomic transition](<resources/paymenter-2026-refund-transition-atomicity.md>) — Paymenter.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl.
+- [Spree: cart association must retain guest-possession checks](<resources/spree-2026-guest-cart-association-authority.md>) — Spree.
 - [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius.
 - [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja.
 - [Vvveb: numeric input validity does not establish legitimate order state](<resources/vvveb-2026-order-domain-invariant.md>) — Vvveb.
@@ -227,7 +231,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-web-foundations"></a>
 ## Web Foundations
 
-44 resources.
+46 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
@@ -236,6 +240,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro.
 - [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers.
+- [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
 - [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers.
@@ -267,6 +272,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera.
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
+- [Trusted Types: typed sinks depend on trustworthy policy creation](<resources/w3c-2026-trusted-types-policy-authority.md>) — World Wide Web Consortium.
 - [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab.
 - [Upstream HTTP framing and parser-consistency boundaries](<resources/portswigger-2025-upstream-http-framing-boundaries.md>) — PortSwigger.
