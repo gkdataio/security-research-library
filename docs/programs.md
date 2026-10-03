@@ -6,7 +6,7 @@ Advertised rewards are not report awards. This directory grants no authorization
 
 This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.
 
-**Scope-context coverage:** 21 of 36 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
+**Scope-context coverage:** 25 of 40 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
 
 ## 1Password Bug Bounty
 
@@ -401,6 +401,52 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>).
 
+## Dutch Lottery Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>) · [Policy](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>) · [Canonical record](<../data/programs/dutch-lottery-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T04:29:23Z
+
+**Program type:** vulnerability disclosure. The policy explicitly describes a disclosure program without monetary bounties\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently establish current intake status\.
+
+**Advertised rewards:** No monetary bounty schedule; currency and numeric bounds remain null\.
+
+**Eligibility:** Platform membership and researcher-identified registration are required\. Application self-registration is limited to Dutch residents and citizens\. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization\.
+
+**Restrictions and exclusions:** Disclosure requires written consent\. Disruption, social engineering, physical intrusion and brute force are prohibited; internally known findings count as duplicates\.
+
+**Scope context**
+
+**Included coverage:** Designated lottery-related digital services, emphasizing draw and prize integrity, player accounts, customer confidentiality and financial-abuse prevention\.
+
+**Excluded coverage:** Low-impact configuration findings, unsupported-impact claims, unsupported software and scenarios requiring compromised devices, physical access or interception are excluded\.
+
+**Scope verified:** 2026-10-03T04:29:23Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>)
+
+**Scope evidence:** [Dutch Lottery Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>)
+
+**Verification limits**
+
+- The linked scope attachment was deliberately not collected; coverage is therefore incomplete\.
+- No announcement archive or complete revision history was established\. Expanded safe-harbor terms and other incorporated documents remain unreviewed\.
+- Logged-out review; summaries omit inventories and procedures\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Dutch Lottery Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>) — Nederlandse Loterij / Intigriti; retrieved 2026-10-03T04:28:45Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Exoscale Bug Bounty
 
 [Official program](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) · [Policy](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) · [Canonical record](<../data/programs/exoscale-bug-bounty.json>)
@@ -742,6 +788,52 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 **Official evidence and updates**
 
 - [Intel Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) — Intel / Intigriti; retrieved 2026-10-03T03:39:30Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Ivo AI Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/ivo-ai-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T04:29:23Z
+
+**Program type:** vulnerability disclosure. The policy explicitly describes a disclosure program without monetary bounties\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently establish current intake status\.
+
+**Advertised rewards:** No monetary bounty schedule; currency and numeric bounds remain null\.
+
+**Eligibility:** Platform membership and researcher identification are required\. The program currently supplies no credentials; internally known findings count as duplicates\. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization\.
+
+**Restrictions and exclusions:** Activity must cease upon unintended sensitive-data or cross-account access\. Disclosure needs written consent; disruption, social engineering, physical intrusion and brute force are prohibited\.
+
+**Scope context**
+
+**Included coverage:** Approved legal-document application, public API and document-editor integration categories, including identity controls, confidentiality and tenant separation\.
+
+**Excluded coverage:** Unlisted systems, uncontrolled third-party integrations, corporate/internal services, low-impact configuration findings, unsupported software and compromised-device scenarios are excluded\.
+
+**Scope verified:** 2026-10-03T04:29:23Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>)
+
+**Scope evidence:** [Ivo AI Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>)
+
+**Verification limits**
+
+- The no-bounty policy allows an exception only if Ivo expressly confirms it; no such commitment was established\.
+- No announcement archive or complete revision history was established\. Expanded safe-harbor terms and other incorporated documents remain unreviewed\.
+- Logged-out review; summaries omit inventories and procedures\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Ivo AI Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>) — Ivo AI / Intigriti; retrieved 2026-10-03T04:28:36Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1313,6 +1405,52 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/rapyd/changelog>).
 
+## Spacelift Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>) · [Policy](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>) · [Canonical record](<../data/programs/spacelift-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T04:29:23Z
+
+**Program type:** vulnerability disclosure. The policy explicitly describes a disclosure program without monetary bounties\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently establish current intake status\.
+
+**Advertised rewards:** No monetary bounty schedule; currency and numeric bounds remain null\.
+
+**Eligibility:** Platform membership and researcher-identified accounts are required; findings must be original and validated\. Internally known findings count as duplicates\. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization\.
+
+**Restrictions and exclusions:** Disclosure needs written consent\. Automation is bounded; disruption, social engineering, physical intrusion and brute force are prohibited\.
+
+**Scope context**
+
+**Included coverage:** Designated pre-production infrastructure-orchestration services, emphasizing tenant separation, execution isolation and delegated cloud-access boundaries\.
+
+**Excluded coverage:** Production services, intended in-job code execution, same-account visibility, specified account-limit/session behavior, externally sourced credentials and unsupported-impact findings are excluded\.
+
+**Scope verified:** 2026-10-03T04:29:23Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>)
+
+**Scope evidence:** [Spacelift Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>)
+
+**Verification limits**
+
+- Policy acceptance language and recent activity do not verify the authenticated intake state\.
+- No announcement archive or complete revision history was established\. Expanded safe-harbor terms and other incorporated documents remain unreviewed\.
+- Logged-out review; summaries omit inventories and procedures\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Spacelift Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>) — Spacelift / Intigriti; retrieved 2026-10-03T04:28:45Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Telegram Bug Bounty
 
 [Official program](<https://core.telegram.org/bug-bounty>) · [Policy](<https://core.telegram.org/bug-bounty>) · [Canonical record](<../data/programs/telegram-bug-bounty.json>)
@@ -1354,6 +1492,53 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 **Official evidence and updates**
 
 - [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T03:20:30Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## TrueLayer Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/truelayer/truelayervdp>) · [Policy](<https://app.intigriti.com/programs/truelayer/truelayervdp>) · [Canonical record](<../data/programs/truelayer-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T04:29:23Z
+
+**Program type:** vulnerability disclosure. The policy explicitly describes a disclosure program without monetary bounties\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently establish current intake status\.
+
+**Advertised rewards:** No monetary bounty schedule; currency and numeric bounds remain null\.
+
+**Eligibility:** Researcher-identified platform accounts are required\. Certain production access requires customer identity checks; credentials for the associated payment-service portfolio are unavailable\. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization\.
+
+**Restrictions and exclusions:** Disclosure needs written consent\. Automation is bounded; disruption, social engineering, physical intrusion and brute force are prohibited\.
+
+**Scope context**
+
+**Included coverage:** Designated open-banking, payment and associated digital services, with sandbox use encouraged and customer-data separation emphasized\.
+
+**Excluded coverage:** Third-party services and contact forms are excluded, except operator-controlled misconfigurations subject to third-party terms\. Low-impact application/mobile claims and unsupported scenarios are excluded\.
+
+**Scope verified:** 2026-10-03T04:29:23Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/truelayer/truelayervdp>)
+
+**Scope evidence:** [TrueLayer Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/truelayer/truelayervdp>)
+
+**Verification limits**
+
+- The separate paid program does not change this VDP’s explicit no-reward policy\.
+- Anonymous-reporting language coexists with platform-account requirements; anonymous intake was not verified\.
+- No revision archive, expanded safe-harbor text or complete incorporated-document review was established\.
+- Logged-out review; summaries omit inventories and procedures\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [TrueLayer Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/truelayer/truelayervdp>) — TrueLayer / Intigriti; retrieved 2026-10-03T04:29:06Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 

@@ -2,8 +2,8 @@
   "schema_version": "1.4.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 36,
-    "programs_with_scope_context": 21,
+    "programs": 40,
+    "programs_with_scope_context": 25,
     "programs_without_scope_context": 15
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
@@ -916,6 +916,93 @@
     },
     {
       "schema_version": "1.4.0",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The policy explicitly describes a disclosure program without monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounty schedule; currency and numeric bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently establish current intake status.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:29:23Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "id": "dutch-lottery-vulnerability-disclosure",
+      "name": "Dutch Lottery Vulnerability Disclosure Program",
+      "operator": "Nederlandse Loterij",
+      "program_url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp",
+      "policy_url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp",
+      "eligibility": {
+        "summary": "Platform membership and researcher-identified registration are required. Application self-registration is limited to Dutch residents and citizens. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Disclosure requires written consent. Disruption, social engineering, physical intrusion and brute force are prohibited; internally known findings count as duplicates.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "The linked scope attachment was deliberately not collected; coverage is therefore incomplete.",
+        "No announcement archive or complete revision history was established. Expanded safe-harbor terms and other incorporated documents remain unreviewed.",
+        "Logged-out review; summaries omit inventories and procedures. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Dutch Lottery Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp",
+          "publisher": "Nederlandse Loterij / Intigriti",
+          "retrieved_at": "2026-10-03T04:28:45Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T04:29:02Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "scope_context": {
+        "included_summary": "Designated lottery-related digital services, emphasizing draw and prize integrity, player accounts, customer confidentiality and financial-abuse prevention.",
+        "excluded_summary": "Low-impact configuration findings, unsupported-impact claims, unsupported software and scenarios requiring compromised devices, physical access or interception are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp"
+        ],
+        "verified_at": "2026-10-03T04:29:23Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
       "id": "exoscale-bug-bounty",
       "name": "Exoscale Bug Bounty",
       "operator": "Exoscale / Akenes SA",
@@ -1616,6 +1703,93 @@
           "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram"
         ],
         "verified_at": "2026-10-03T03:41:28Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The policy explicitly describes a disclosure program without monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounty schedule; currency and numeric bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently establish current intake status.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:29:23Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "id": "ivo-ai-vulnerability-disclosure",
+      "name": "Ivo AI Vulnerability Disclosure Program",
+      "operator": "Ivo AI",
+      "program_url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram",
+      "policy_url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram",
+      "eligibility": {
+        "summary": "Platform membership and researcher identification are required. The program currently supplies no credentials; internally known findings count as duplicates. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Activity must cease upon unintended sensitive-data or cross-account access. Disclosure needs written consent; disruption, social engineering, physical intrusion and brute force are prohibited.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "The no-bounty policy allows an exception only if Ivo expressly confirms it; no such commitment was established.",
+        "No announcement archive or complete revision history was established. Expanded safe-harbor terms and other incorporated documents remain unreviewed.",
+        "Logged-out review; summaries omit inventories and procedures. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Ivo AI Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram",
+          "publisher": "Ivo AI / Intigriti",
+          "retrieved_at": "2026-10-03T04:28:36Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T04:29:02Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "scope_context": {
+        "included_summary": "Approved legal-document application, public API and document-editor integration categories, including identity controls, confidentiality and tenant separation.",
+        "excluded_summary": "Unlisted systems, uncontrolled third-party integrations, corporate/internal services, low-impact configuration findings, unsupported software and compromised-device scenarios are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram"
+        ],
+        "verified_at": "2026-10-03T04:29:23Z"
       }
     },
     {
@@ -3013,6 +3187,93 @@
     },
     {
       "schema_version": "1.4.0",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The policy explicitly describes a disclosure program without monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounty schedule; currency and numeric bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently establish current intake status.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:29:23Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "id": "spacelift-vulnerability-disclosure",
+      "name": "Spacelift Vulnerability Disclosure Program",
+      "operator": "Spacelift",
+      "program_url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp",
+      "policy_url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp",
+      "eligibility": {
+        "summary": "Platform membership and researcher-identified accounts are required; findings must be original and validated. Internally known findings count as duplicates. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Disclosure needs written consent. Automation is bounded; disruption, social engineering, physical intrusion and brute force are prohibited.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "Policy acceptance language and recent activity do not verify the authenticated intake state.",
+        "No announcement archive or complete revision history was established. Expanded safe-harbor terms and other incorporated documents remain unreviewed.",
+        "Logged-out review; summaries omit inventories and procedures. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Spacelift Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp",
+          "publisher": "Spacelift / Intigriti",
+          "retrieved_at": "2026-10-03T04:28:45Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T04:29:02Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "scope_context": {
+        "included_summary": "Designated pre-production infrastructure-orchestration services, emphasizing tenant separation, execution isolation and delegated cloud-access boundaries.",
+        "excluded_summary": "Production services, intended in-job code execution, same-account visibility, specified account-limit/session behavior, externally sourced credentials and unsupported-impact findings are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/spacelift/spaceliftvdp"
+        ],
+        "verified_at": "2026-10-03T04:29:23Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
       "id": "telegram-bug-bounty",
       "name": "Telegram Bug Bounty",
       "operator": "Telegram",
@@ -3085,6 +3346,94 @@
           "https://core.telegram.org/bug-bounty"
         ],
         "verified_at": "2026-10-03T03:20:30Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The policy explicitly describes a disclosure program without monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounty schedule; currency and numeric bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently establish current intake status.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T04:29:23Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "id": "truelayer-vulnerability-disclosure",
+      "name": "TrueLayer Vulnerability Disclosure Program",
+      "operator": "TrueLayer",
+      "program_url": "https://app.intigriti.com/programs/truelayer/truelayervdp",
+      "policy_url": "https://app.intigriti.com/programs/truelayer/truelayervdp",
+      "eligibility": {
+        "summary": "Researcher-identified platform accounts are required. Certain production access requires customer identity checks; credentials for the associated payment-service portfolio are unavailable. Platform eligibility requires age 18, or 16 with guardian permission, plus legal and employer authorization.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Disclosure needs written consent. Automation is bounded; disruption, social engineering, physical intrusion and brute force are prohibited.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "The separate paid program does not change this VDP’s explicit no-reward policy.",
+        "Anonymous-reporting language coexists with platform-account requirements; anonymous intake was not verified.",
+        "No revision archive, expanded safe-harbor text or complete incorporated-document review was established.",
+        "Logged-out review; summaries omit inventories and procedures. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "TrueLayer Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/truelayer/truelayervdp",
+          "publisher": "TrueLayer / Intigriti",
+          "retrieved_at": "2026-10-03T04:29:06Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T04:29:02Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "scope_context": {
+        "included_summary": "Designated open-banking, payment and associated digital services, with sandbox use encouraged and customer-data separation emphasized.",
+        "excluded_summary": "Third-party services and contact forms are excluded, except operator-controlled misconfigurations subject to third-party terms. Low-impact application/mobile claims and unsupported scenarios are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/truelayer/truelayervdp"
+        ],
+        "verified_at": "2026-10-03T04:29:23Z"
       }
     },
     {
