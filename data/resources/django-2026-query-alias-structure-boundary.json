@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "django-2026-query-alias-structure-boundary",
+  "title": "Django: ORM alias metadata must not acquire query authority",
+  "publisher": "Django Software Foundation",
+  "authors": [
+    "Jacob Walls"
+  ],
+  "primary_url": "https://www.djangoproject.com/weblog/2026/feb/03/security-releases/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and official release documentation."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication, separate from software remediation chronology."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established; software patch releases are described in defensive_use."
+    },
+    "source_displayed": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit primary advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T09:09:13Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory and release documentation reviewed. No reproduction, live-target access, or independent patch testing."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Django confirms CVE-2026-1312: application-controlled column aliases could cross from metadata into SQL structure when used across relation filtering and ordering. Exploitability requires an application to admit untrusted alias definitions into that ORM workflow; using Django alone does not establish exposure. The advisory establishes potential SQL injection, not observed production compromise.",
+  "defensive_use": "The official announcement identifies repaired releases 6.0.2, 5.2.11 and 4.2.28, issued February 3, 2026; release notes independently corroborate the 6.0.2 fix. Editorial lesson: distinguish query values from identifiers and structural metadata, constrain each according to its role, and preserve that contract when composing ORM features.",
+  "prerequisites": [
+    "ORM query composition and the distinction between bound values and SQL identifiers",
+    "Tracing application-controlled metadata across library interfaces"
+  ],
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://www.djangoproject.com/weblog/2026/feb/03/security-releases/",
+      "title": "Django security releases issued: 6.0.2, 5.2.11, and 4.2.28",
+      "publisher": "Django Software Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T09:09:13Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://docs.djangoproject.com/en/dev/releases/6.0.2/",
+      "title": "Django 6.0.2 release notes",
+      "publisher": "Django Software Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T09:09:13Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Solomon Kebede is the credited reporter; Jacob Walls authored the announcement. No bounty amount is established.",
+    "This resource covers CVE-2026-1312 only. Other issues in the same multi-issue announcement are not merged into its impact.",
+    "The reviewed announcement lists supported branches; it does not establish the status of every unsupported release.",
+    "No specific application data loss or universal remote exposure is demonstrated by the reviewed sources. Learning prerequisites and generalized design guidance are editorial."
+  ]
+}

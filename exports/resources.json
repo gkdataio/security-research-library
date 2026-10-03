@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 52,
+    "resources": 54,
     "diagrams": 9
   },
   "taxonomy": {
@@ -819,6 +819,100 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "django-2026-query-alias-structure-boundary",
+      "title": "Django: ORM alias metadata must not acquire query authority",
+      "publisher": "Django Software Foundation",
+      "authors": [
+        "Jacob Walls"
+      ],
+      "primary_url": "https://www.djangoproject.com/weblog/2026/feb/03/security-releases/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and official release documentation."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-02-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication, separate from software remediation chronology."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established; software patch releases are described in defensive_use."
+        },
+        "source_displayed": {
+          "value": "2026-02-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit primary advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T09:09:13Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and release documentation reviewed. No reproduction, live-target access, or independent patch testing."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Django confirms CVE-2026-1312: application-controlled column aliases could cross from metadata into SQL structure when used across relation filtering and ordering. Exploitability requires an application to admit untrusted alias definitions into that ORM workflow; using Django alone does not establish exposure. The advisory establishes potential SQL injection, not observed production compromise.",
+      "defensive_use": "The official announcement identifies repaired releases 6.0.2, 5.2.11 and 4.2.28, issued February 3, 2026; release notes independently corroborate the 6.0.2 fix. Editorial lesson: distinguish query values from identifiers and structural metadata, constrain each according to its role, and preserve that contract when composing ORM features.",
+      "prerequisites": [
+        "ORM query composition and the distinction between bound values and SQL identifiers",
+        "Tracing application-controlled metadata across library interfaces"
+      ],
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://www.djangoproject.com/weblog/2026/feb/03/security-releases/",
+          "title": "Django security releases issued: 6.0.2, 5.2.11, and 4.2.28",
+          "publisher": "Django Software Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T09:09:13Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://docs.djangoproject.com/en/dev/releases/6.0.2/",
+          "title": "Django 6.0.2 release notes",
+          "publisher": "Django Software Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T09:09:13Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Solomon Kebede is the credited reporter; Jacob Walls authored the announcement. No bounty amount is established.",
+        "This resource covers CVE-2026-1312 only. Other issues in the same multi-issue announcement are not merged into its impact.",
+        "The reviewed announcement lists supported branches; it does not establish the status of every unsupported release.",
+        "No specific application data loss or universal remote exposure is demonstrated by the reviewed sources. Learning prerequisites and generalized design guidance are editorial."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "dolibarr-2026-portal-object-authorization",
       "title": "Dolibarr portal accounts: credential writes need object authorization",
       "publisher": "CodeAnt AI",
@@ -1293,6 +1387,111 @@
         "The official source includes technical examples; this catalog retains reporting-quality lessons only."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "mailcow-2026-persisted-data-query-boundary",
+      "title": "mailcow: stored configuration retains its original trust level",
+      "publisher": "mailcow",
+      "authors": [
+        "FreddleSpl0it"
+      ],
+      "primary_url": "https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and official release documentation."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-04-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication, separate from software remediation chronology."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established; software patch releases are described in defensive_use."
+        },
+        "source_displayed": {
+          "value": "2026-04-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit primary advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T09:09:13Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and release documentation reviewed. No reproduction, live-target access, or independent patch testing."
+      },
+      "content_scope": "defensive_education",
+      "summary": "The maintainer advisory for CVE-2026-40871 describes stored configuration being reused unsafely in later database-query construction. Persistence did not make the originally supplied value trustworthy. The source reports disclosure of an administrator password hash through downstream notification processing. High-privilege API access and execution of the affected background processing are prerequisites; unauthenticated access is not established.",
+      "defensive_use": "The advisory identifies 2026-03b as the repair boundary; the official blog dates that software release to March 31, 2026 and describes input-validation and escaping improvements. Editorial lesson: preserve data-only semantics at every consumer, parameterize database values, validate structured configuration, and apply least privilege to background database access.",
+      "prerequisites": [
+        "Stored-data trust provenance and asynchronous background processing",
+        "Parameterized database queries and service-account least privilege"
+      ],
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q",
+          "title": "Second Order SQL Injection in quarantine category via API",
+          "publisher": "mailcow",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T09:09:13Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-blog",
+          "url": "https://mailcow.email/posts/2026/release-2026-03/",
+          "title": "March 2026 release announcement, revision B",
+          "publisher": "The Infrastructure Company GmbH",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T09:09:13Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/mailcow/mailcow-dockerized/releases/tag/2026-03b",
+          "title": "mailcow 2026-03b release",
+          "publisher": "mailcow",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T09:09:13Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "lukehebe is the credited reporter; FreddleSpl0it published the advisory. No bounty amount is established.",
+        "The source asserts broader compromise possibilities; those are not established by the reported hash-disclosure demonstration. No independent reproduction was performed.",
+        "Release notes broadly describe validation and escaping changes. This review does not establish every patch implementation detail or claim parameterization was the exact shipped repair.",
+        "The software release predates advisory publication. The blog update date is not the patch date. Learning prerequisites and generalized design guidance are editorial."
+      ]
     },
     {
       "schema_version": "1.0.0",
