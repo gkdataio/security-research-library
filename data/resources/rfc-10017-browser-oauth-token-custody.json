@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rfc-10017-browser-oauth-token-custody",
+  "title": "RFC 10017: OAuth 2.0 for Browser-Based Applications",
+  "publisher": "Internet Engineering Task Force / RFC Editor",
+  "authors": [
+    "Aaron Parecki",
+    "Philippe De Ryck",
+    "David Waite"
+  ],
+  "primary_url": "https://www.rfc-editor.org/rfc/rfc10017.html",
+  "resource_type_id": "technical-standard",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "integration-threat-modeling",
+    "browser-isolation-review"
+  ],
+  "version": "RFC 10017 / BCP 212",
+  "summary": "Compares browser-only OAuth clients, token-mediating backends, and backend-for-frontend architectures through their different token-custody and session boundaries. Separates protection of token material from the residual authority of compromised same-origin application code.",
+  "defensive_use": "Document which component holds each credential, binds the user session, and enforces request destinations. Compare those responsibilities and residual risks against an owned application’s architecture.",
+  "prerequisites": [
+    "OAuth client and resource-server roles",
+    "Browser origins, cookies, and HTTP redirects"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official specification readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication date of this RFC or final specification."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:40:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.rfc-editor.org/rfc/rfc10017.html",
+      "title": "RFC 10017: OAuth 2.0 for Browser-Based Applications",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:40:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Backend token custody does not make compromised application code harmless.",
+    "Browser-specific guidance complements RFC 9700; it does not establish security of a particular deployment."
+  ],
+  "content_scope": "defensive_education"
+}

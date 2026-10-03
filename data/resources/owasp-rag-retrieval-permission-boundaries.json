@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-rag-retrieval-permission-boundaries",
+  "title": "OWASP LLM08:2025: retrieval permissions and knowledge provenance",
+  "publisher": "OWASP Gen AI Security Project",
+  "authors": [],
+  "primary_url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "ai-security",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "ai-authority-boundaries",
+    "integration-threat-modeling"
+  ],
+  "version": "LLM08:2025",
+  "summary": "Examines security assumptions around retrieval-augmented generation, including access to embeddings, cross-context disclosure and integrity of imported knowledge. Shared retrieval infrastructure must preserve the distinctions between users and data classifications. Source validation and retrieval records help explain which knowledge entered a response and whether access was appropriate.",
+  "defensive_use": "For an owned RAG design, document dataset partitions and permission-aware retrieval, preserve source classifications when combining knowledge, and review ingestion integrity. Record retrieval events so confidentiality and provenance decisions remain reviewable.",
+  "prerequisites": [
+    "Basic concepts of embeddings, vector stores and retrieval-augmented generation",
+    "User, group and tenant access-control models"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance was readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:41:24Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+      "title": "LLM08:2025 Vector and Embedding Weaknesses",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:40:03Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "The 2025 designation is an edition identifier; publication and latest-update dates were not established.",
+    "This record focuses on permissions and provenance; it does not reproduce the source’s attack scenarios or quantify embedding reconstruction risk.",
+    "RAG grounding can improve relevance without establishing that retrieved content is authorized or trustworthy."
+  ],
+  "content_scope": "defensive_education"
+}

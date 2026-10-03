@@ -11,11 +11,15 @@ Source-backed public security disclosures, official learning resources, and orig
 - **59 qualifying report records:** 48 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **20 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
+- **27 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 6 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
+
+## Current research focus
+
+Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. New program discovery and profile enrichment are paused. Existing program entries retain their last-verification timestamps; their presence does not imply a fresh policy review.
 
 ## Start here
 

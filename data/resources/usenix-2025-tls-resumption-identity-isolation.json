@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "id": "usenix-2025-tls-resumption-identity-isolation",
+  "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+  "publisher": "USENIX Association",
+  "authors": [
+    "Sven Hebrok",
+    "Tim Leonhard Storm",
+    "Felix Matthias Cramer",
+    "Maximilian Radoy",
+    "Juraj Somorovsky"
+  ],
+  "primary_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "integration-threat-modeling",
+    "security-token-design"
+  ],
+  "version": "USENIX Security 2025",
+  "summary": "Studies a cross-layer authentication failure: shared TLS session-ticket infrastructure can preserve cryptographic session state without preserving the intended virtual-host identity and client-authentication policy. The authors connect that mismatch to inconsistent isolation during session resumption.",
+  "defensive_use": "Document which authenticated identities and policy decisions must survive connection resumption in an owned hosting design. Review library contracts and remediation evidence for preserved identity context rather than assuming that an accepted session ticket establishes all application authority.",
+  "prerequisites": [
+    "TLS certificates and session resumption",
+    "Virtual hosting and application routing"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official publication record and publisher-hosted paper were readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-08",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Month in the publisher’s proceedings citation; not an inferred first online date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:41:45Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the official publication record and publisher-hosted paper’s discussion, countermeasures, limitations, and conclusion. No research tooling was retrieved or run."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok",
+      "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+      "publisher": "USENIX Association",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:41:45Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "paper",
+      "url": "https://www.usenix.org/system/files/usenixsecurity25-hebrok.pdf",
+      "title": "Publisher-hosted proceedings paper",
+      "publisher": "USENIX Association",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:41:45Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Measurements and vendor observations are historical, not evidence of present exposure.",
+    "The study describes sampling and configuration limits; its findings are not exhaustive.",
+    "This record summarizes identity invariants and countermeasures, not the paper’s testing procedures."
+  ],
+  "content_scope": "defensive_education"
+}

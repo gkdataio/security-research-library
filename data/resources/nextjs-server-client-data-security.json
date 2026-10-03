@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nextjs-server-client-data-security",
+  "title": "Next.js data security: server authorization and client-visible data",
+  "publisher": "Next.js / Vercel",
+  "authors": [],
+  "primary_url": "https://nextjs.org/docs/app/guides/data-security",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "untrusted-input-handling",
+    "secure-parser-review",
+    "secrets-containment"
+  ],
+  "version": null,
+  "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Returned values and component properties must be treated as client-visible contracts.",
+  "defensive_use": "For an owned application, document where privileged data becomes renderable or serializable. Keep data access and permission checks together, validate action inputs, and minimize returned fields. Treat framework safeguards as additional protections around explicit authorization.",
+  "prerequisites": [
+    "React Server Components and Server Actions concepts",
+    "Authentication, object authorization and serialization basics"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance was readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-08-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "The page explicitly labels this as its last-updated date; original publication was not established."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:41:24Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://nextjs.org/docs/app/guides/data-security",
+      "title": "How to think about data security in Next.js",
+      "publisher": "Next.js / Vercel",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:39:54Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The page is living framework guidance, not evidence that any deployed application is vulnerable.",
+    "Taint APIs are experimental and supplement explicit data minimization; encrypted closures do not replace careful handling of sensitive data.",
+    "A navigation version label was not treated as the version of this guidance."
+  ],
+  "content_scope": "defensive_education"
+}

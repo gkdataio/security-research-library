@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-llm-output-consumer-trust",
+  "title": "OWASP LLM05:2025: generated-output consumer trust",
+  "publisher": "OWASP Gen AI Security Project",
+  "authors": [],
+  "primary_url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "ai-security",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "untrusted-input-handling",
+    "integration-threat-modeling"
+  ],
+  "version": "LLM05:2025",
+  "summary": "Explains why model-generated content remains untrusted when passed to browsers, databases or backend functions. The relevant boundary is the consuming component: plausible model text must not acquire executable meaning or greater authority merely because an application generated it. Distinguishes unsafe downstream handling from general reliance on answer accuracy.",
+  "defensive_use": "Map each output consumer in an owned AI application to its validation and encoding contract. Prefer parameterized database operations and context-aware encoding, with monitoring and browser policy controls as supplementary layers.",
+  "prerequisites": [
+    "Basic LLM application data flow",
+    "Context-sensitive encoding and separation of data from executable interpretation"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public guidance was readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:41:24Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+      "title": "LLM05:2025 Improper Output Handling",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:40:03Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "The 2025 designation is an edition identifier, not a verified publication date.",
+    "The source contains attack scenarios; this record retains only trust-boundary and remediation concepts.",
+    "This category describes possible failure modes rather than current exposure of a particular product."
+  ],
+  "content_scope": "defensive_education"
+}

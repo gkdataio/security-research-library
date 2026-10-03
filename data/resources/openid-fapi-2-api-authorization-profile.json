@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "id": "openid-fapi-2-api-authorization-profile",
+  "title": "FAPI 2.0 Security Profile",
+  "publisher": "OpenID Foundation",
+  "authors": [
+    "Daniel Fett",
+    "Dave Tonge",
+    "Joseph Heenan"
+  ],
+  "primary_url": "https://openid.net/specs/fapi-security-profile-2_0-final.html",
+  "resource_type_id": "technical-standard",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "security-token-design",
+    "integration-threat-modeling"
+  ],
+  "version": "2.0 Final",
+  "summary": "Defines a high-security OAuth profile with coordinated requirements for confidential clients, authorization servers, and resource servers. Connects sender-constrained tokens and authorization-request integrity with the separate requirement to evaluate whether a token’s authority is sufficient for each protected resource.",
+  "defensive_use": "Map the ownership of token validation, issuer trust, client authentication, and resource-access decisions across an owned API integration. Keep protocol conformance distinct from application-specific authorization.",
+  "prerequisites": [
+    "OAuth roles and authorization-code flows",
+    "Public-key client authentication and token validation"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official specification readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-02-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication date of this RFC or final specification."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:40:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://openid.net/specs/fapi-security-profile-2_0-final.html",
+      "title": "FAPI 2.0 Security Profile",
+      "publisher": "OpenID Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:40:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Public clients are outside this profile’s scope.",
+    "Security claims depend on the stated model and complete implementation; this record is not certification."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "id": "w3c-fetch-metadata-request-context-boundaries",
+  "title": "Fetch Metadata Request Headers",
+  "publisher": "World Wide Web Consortium",
+  "authors": [
+    "Mike West"
+  ],
+  "primary_url": "https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/",
+  "resource_type_id": "technical-standard",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "browser-isolation-review",
+    "integration-threat-modeling"
+  ],
+  "version": "Working Draft, 21 September 2026",
+  "summary": "Defines browser-provided request context covering site relationship, destination, mode, and user activation. Explains how redirect history affects that context and why context-dependent responses need matching cache behavior. This supports reasoning about which browser interactions an application intends to accept.",
+  "defensive_use": "Review an owned service’s documented request-context policy, including redirects, legitimate cross-origin use, and caching. Treat browser context as an additional policy input rather than proof of a user’s resource permissions.",
+  "prerequisites": [
+    "HTTP requests and response caching",
+    "Same-origin and same-site distinctions"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official specification readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication of the specification series was not established."
+    },
+    "version_released": {
+      "value": "2026-09-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Publication date of the reviewed Working Draft; not the origin date of the specification series."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T04:40:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/",
+      "title": "Fetch Metadata Request Headers",
+      "publisher": "World Wide Web Consortium",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T04:40:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The reviewed edition is a Working Draft, not a final W3C Recommendation.",
+    "The draft does not establish support in every deployed browser or non-browser client."
+  ],
+  "content_scope": "defensive_education"
+}

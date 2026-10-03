@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 20,
+    "resources": 27,
     "diagrams": 8
   },
   "taxonomy": {
@@ -423,6 +423,86 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "nextjs-server-client-data-security",
+      "title": "Next.js data security: server authorization and client-visible data",
+      "publisher": "Next.js / Vercel",
+      "authors": [],
+      "primary_url": "https://nextjs.org/docs/app/guides/data-security",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "secrets-containment"
+      ],
+      "version": null,
+      "summary": "Explains how server rendering changes data-access assumptions. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface. Server Actions need their own caller and resource checks; page visibility does not provide that protection. Returned values and component properties must be treated as client-visible contracts.",
+      "defensive_use": "For an owned application, document where privileged data becomes renderable or serializable. Keep data access and permission checks together, validate action inputs, and minimize returned fields. Treat framework safeguards as additional protections around explicit authorization.",
+      "prerequisites": [
+        "React Server Components and Server Actions concepts",
+        "Authentication, object authorization and serialization basics"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance was readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "The page explicitly labels this as its last-updated date; original publication was not established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:41:24Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://nextjs.org/docs/app/guides/data-security",
+          "title": "How to think about data security in Next.js",
+          "publisher": "Next.js / Vercel",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:39:54Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The page is living framework guidance, not evidence that any deployed application is vulnerable.",
+        "Taint APIs are experimental and supplement explicit data minimization; encrypted closures do not replace careful handling of sensitive data.",
+        "A navigation version label was not treated as the version of this guidance."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "nist-sp-800-162-attribute-authority-modeling",
       "title": "NIST SP 800-162: attribute authority and policy traceability",
       "publisher": "National Institute of Standards and Technology",
@@ -614,6 +694,89 @@
       "caveats": [
         "Historical architectural guidance; use current vendor documentation for versions and configuration details.",
         "The guide itself advises consulting newer material because container technology changes."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "openid-fapi-2-api-authorization-profile",
+      "title": "FAPI 2.0 Security Profile",
+      "publisher": "OpenID Foundation",
+      "authors": [
+        "Daniel Fett",
+        "Dave Tonge",
+        "Joseph Heenan"
+      ],
+      "primary_url": "https://openid.net/specs/fapi-security-profile-2_0-final.html",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "security-token-design",
+        "integration-threat-modeling"
+      ],
+      "version": "2.0 Final",
+      "summary": "Defines a high-security OAuth profile with coordinated requirements for confidential clients, authorization servers, and resource servers. Connects sender-constrained tokens and authorization-request integrity with the separate requirement to evaluate whether a token’s authority is sufficient for each protected resource.",
+      "defensive_use": "Map the ownership of token validation, issuer trust, client authentication, and resource-access decisions across an owned API integration. Keep protocol conformance distinct from application-specific authorization.",
+      "prerequisites": [
+        "OAuth roles and authorization-code flows",
+        "Public-key client authentication and token validation"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official specification readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-02-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publication date of this RFC or final specification."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:40:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://openid.net/specs/fapi-security-profile-2_0-final.html",
+          "title": "FAPI 2.0 Security Profile",
+          "publisher": "OpenID Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:40:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Public clients are outside this profile’s scope.",
+        "Security claims depend on the stated model and complete implementation; this record is not certification."
       ],
       "content_scope": "defensive_education"
     },
@@ -1008,6 +1171,85 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "owasp-llm-output-consumer-trust",
+      "title": "OWASP LLM05:2025: generated-output consumer trust",
+      "publisher": "OWASP Gen AI Security Project",
+      "authors": [],
+      "primary_url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "ai-security",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "ai-authority-boundaries",
+        "untrusted-input-handling",
+        "integration-threat-modeling"
+      ],
+      "version": "LLM05:2025",
+      "summary": "Explains why model-generated content remains untrusted when passed to browsers, databases or backend functions. The relevant boundary is the consuming component: plausible model text must not acquire executable meaning or greater authority merely because an application generated it. Distinguishes unsafe downstream handling from general reliance on answer accuracy.",
+      "defensive_use": "Map each output consumer in an owned AI application to its validation and encoding contract. Prefer parameterized database operations and context-aware encoding, with monitoring and browser policy controls as supplementary layers.",
+      "prerequisites": [
+        "Basic LLM application data flow",
+        "Context-sensitive encoding and separation of data from executable interpretation"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance was readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:41:24Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+          "title": "LLM05:2025 Improper Output Handling",
+          "publisher": "OWASP Gen AI Security Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:40:03Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "The 2025 designation is an edition identifier, not a verified publication date.",
+        "The source contains attack scenarios; this record retains only trust-boundary and remediation concepts.",
+        "This category describes possible failure modes rather than current exposure of a particular product."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "owasp-llm-prompt-injection-prevention",
       "title": "LLM Prompt Injection Prevention Cheat Sheet",
       "publisher": "OWASP Cheat Sheet Series",
@@ -1080,6 +1322,85 @@
       "caveats": [
         "Includes attack examples; this collection uses it as a defensive-design reference",
         "Guidance evolves and individual examples require contextual evaluation"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "owasp-rag-retrieval-permission-boundaries",
+      "title": "OWASP LLM08:2025: retrieval permissions and knowledge provenance",
+      "publisher": "OWASP Gen AI Security Project",
+      "authors": [],
+      "primary_url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "ai-security",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "ai-authority-boundaries",
+        "integration-threat-modeling"
+      ],
+      "version": "LLM08:2025",
+      "summary": "Examines security assumptions around retrieval-augmented generation, including access to embeddings, cross-context disclosure and integrity of imported knowledge. Shared retrieval infrastructure must preserve the distinctions between users and data classifications. Source validation and retrieval records help explain which knowledge entered a response and whether access was appropriate.",
+      "defensive_use": "For an owned RAG design, document dataset partitions and permission-aware retrieval, preserve source classifications when combining knowledge, and review ingestion integrity. Record retrieval events so confidentiality and provenance decisions remain reviewable.",
+      "prerequisites": [
+        "Basic concepts of embeddings, vector stores and retrieval-augmented generation",
+        "User, group and tenant access-control models"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official public guidance was readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:41:24Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/",
+          "title": "LLM08:2025 Vector and Embedding Weaknesses",
+          "publisher": "OWASP Gen AI Security Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:40:03Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "The 2025 designation is an edition identifier; publication and latest-update dates were not established.",
+        "This record focuses on permissions and provenance; it does not reproduce the source’s attack scenarios or quantify embedding reconstruction risk.",
+        "RAG grounding can improve relevance without establishing that retrieved content is authorized or trustworthy."
       ],
       "content_scope": "defensive_education"
     },
@@ -1546,6 +1867,90 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "rfc-10017-browser-oauth-token-custody",
+      "title": "RFC 10017: OAuth 2.0 for Browser-Based Applications",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "authors": [
+        "Aaron Parecki",
+        "Philippe De Ryck",
+        "David Waite"
+      ],
+      "primary_url": "https://www.rfc-editor.org/rfc/rfc10017.html",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "browser-isolation-review"
+      ],
+      "version": "RFC 10017 / BCP 212",
+      "summary": "Compares browser-only OAuth clients, token-mediating backends, and backend-for-frontend architectures through their different token-custody and session boundaries. Separates protection of token material from the residual authority of compromised same-origin application code.",
+      "defensive_use": "Document which component holds each credential, binds the user session, and enforces request destinations. Compare those responsibilities and residual risks against an owned application’s architecture.",
+      "prerequisites": [
+        "OAuth client and resource-server roles",
+        "Browser origins, cookies, and HTTP redirects"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official specification readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publication date of this RFC or final specification."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:40:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.rfc-editor.org/rfc/rfc10017.html",
+          "title": "RFC 10017: OAuth 2.0 for Browser-Based Applications",
+          "publisher": "Internet Engineering Task Force / RFC Editor",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:40:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Backend token custody does not make compromised application code harmless.",
+        "Browser-specific guidance complements RFC 9700; it does not establish security of a particular deployment."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "rfc-9700-oauth-security-best-current-practice",
       "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
       "publisher": "Internet Engineering Task Force / RFC Editor",
@@ -1842,6 +2247,184 @@
         "Research measurements are historical, not a statement of current vendor exposure.",
         "The paper reports $35K across multiple vendors; no individual qualifying award is inferred.",
         "The final PDF exceeded retrieval limits. The official abstract, bibliography and prepublication defense/disclosure sections were reviewed."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "usenix-2025-tls-resumption-identity-isolation",
+      "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+      "publisher": "USENIX Association",
+      "authors": [
+        "Sven Hebrok",
+        "Tim Leonhard Storm",
+        "Felix Matthias Cramer",
+        "Maximilian Radoy",
+        "Juraj Somorovsky"
+      ],
+      "primary_url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "security-token-design"
+      ],
+      "version": "USENIX Security 2025",
+      "summary": "Studies a cross-layer authentication failure: shared TLS session-ticket infrastructure can preserve cryptographic session state without preserving the intended virtual-host identity and client-authentication policy. The authors connect that mismatch to inconsistent isolation during session resumption.",
+      "defensive_use": "Document which authenticated identities and policy decisions must survive connection resumption in an owned hosting design. Review library contracts and remediation evidence for preserved identity context rather than assuming that an accepted session ticket establishes all application authority.",
+      "prerequisites": [
+        "TLS certificates and session resumption",
+        "Virtual hosting and application routing"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official publication record and publisher-hosted paper were readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-08",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Month in the publisher’s proceedings citation; not an inferred first online date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:41:45Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official publication record and publisher-hosted paper’s discussion, countermeasures, limitations, and conclusion. No research tooling was retrieved or run."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok",
+          "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:41:45Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "paper",
+          "url": "https://www.usenix.org/system/files/usenixsecurity25-hebrok.pdf",
+          "title": "Publisher-hosted proceedings paper",
+          "publisher": "USENIX Association",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:41:45Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Measurements and vendor observations are historical, not evidence of present exposure.",
+        "The study describes sampling and configuration limits; its findings are not exhaustive.",
+        "This record summarizes identity invariants and countermeasures, not the paper’s testing procedures."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "w3c-fetch-metadata-request-context-boundaries",
+      "title": "Fetch Metadata Request Headers",
+      "publisher": "World Wide Web Consortium",
+      "authors": [
+        "Mike West"
+      ],
+      "primary_url": "https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling"
+      ],
+      "version": "Working Draft, 21 September 2026",
+      "summary": "Defines browser-provided request context covering site relationship, destination, mode, and user activation. Explains how redirect history affects that context and why context-dependent responses need matching cache behavior. This supports reasoning about which browser interactions an application intends to accept.",
+      "defensive_use": "Review an owned service’s documented request-context policy, including redirects, legitimate cross-origin use, and caching. Treat browser context as an additional policy input rather than proof of a user’s resource permissions.",
+      "prerequisites": [
+        "HTTP requests and response caching",
+        "Same-origin and same-site distinctions"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Official specification readable without an account at review time."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication of the specification series was not established."
+        },
+        "version_released": {
+          "value": "2026-09-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Publication date of the reviewed Working Draft; not the origin date of the specification series."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T04:40:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed this identified edition and its relevant design and security sections. Retrieval date is separate from publication; later revisions or errata may exist."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/",
+          "title": "Fetch Metadata Request Headers",
+          "publisher": "World Wide Web Consortium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T04:40:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The reviewed edition is a Working Draft, not a final W3C Recommendation.",
+        "The draft does not establish support in every deployed browser or non-browser client."
       ],
       "content_scope": "defensive_education"
     }
