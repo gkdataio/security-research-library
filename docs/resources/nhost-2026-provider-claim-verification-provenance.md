@@ -33,7 +33,7 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public maintainer disclosure and release notes\.
 
-**Reviewed:** 2026-10-03T14:39:59\.794959Z  
+**Reviewed:** 2026-10-03T14:48:42Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
@@ -50,13 +50,13 @@ Review and retrieval timestamps are distinct from publication and version dates.
 ## Caveats
 
 - The advisory lists auth service versions before 0\.49\.1 as affected\. Exposure depends on an affected provider adapter being enabled and an existing matching local identity\. Provider-specific prerequisites differ; no universal OAuth-provider compromise is established\.
-- dbarrosop published the advisory; no separate researcher attribution is established here\. Technical claims are maintainer-reported, not independently reproduced\.
+- dbarrosop published the advisory; skoveit is credited as reporter\. Technical claims are maintainer-reported, not independently reproduced\.
 - The advisory makes provider-specific assertions about Microsoft claims that were not independently corroborated; this record relies on the broader adapter-evidence boundary, not those assertions\.
 - Maintainer disclosure, not a peer-reviewed paper or an award-backed report\. Software patch chronology is separate from resource edition metadata\.
 
 ## Sources and attribution
 
-- [Account Takeover via OAuth Email Verification Bypass](<https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr>) — Nhost; source ID: advisory; provenance: official primary; retrieved 2026-10-03T14:39:59\.794959Z; supports: summary, dates, version.
+- [Account Takeover via OAuth Email Verification Bypass](<https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr>) — Nhost; source ID: advisory; provenance: official primary; retrieved 2026-10-03T14:48:42Z; supports: summary, dates, version.
 - [Release auth@0\.49\.1](<https://github.com/nhost/nhost/releases/tag/auth@0.49.1>) — Nhost; source ID: release; provenance: official primary; retrieved 2026-10-03T14:39:59\.794959Z; supports: summary, dates, version.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -52,7 +52,7 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-03T14:39:59.794959Z",
+    "reviewed_at": "2026-10-03T14:48:42Z",
     "living_resource": false,
     "status": "primary_source_reviewed",
     "note": "Primary advisory and release notes reviewed; no independent reproduction or deployment assessment."
@@ -64,7 +64,7 @@
       "title": "Account Takeover via OAuth Email Verification Bypass",
       "publisher": "Nhost",
       "provenance": "official_primary",
-      "retrieved_at": "2026-10-03T14:39:59.794959Z",
+      "retrieved_at": "2026-10-03T14:48:42Z",
       "supports": [
         "summary",
         "dates",
@@ -87,7 +87,7 @@
   ],
   "caveats": [
     "The advisory lists auth service versions before 0.49.1 as affected. Exposure depends on an affected provider adapter being enabled and an existing matching local identity. Provider-specific prerequisites differ; no universal OAuth-provider compromise is established.",
-    "dbarrosop published the advisory; no separate researcher attribution is established here. Technical claims are maintainer-reported, not independently reproduced.",
+    "dbarrosop published the advisory; skoveit is credited as reporter. Technical claims are maintainer-reported, not independently reproduced.",
     "The advisory makes provider-specific assertions about Microsoft claims that were not independently corroborated; this record relies on the broader adapter-evidence boundary, not those assertions.",
     "Maintainer disclosure, not a peer-reviewed paper or an award-backed report. Software patch chronology is separate from resource edition metadata."
   ],
