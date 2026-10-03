@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.4.0",
+  "id": "exoscale-bug-bounty",
+  "name": "Exoscale Bug Bounty",
+  "operator": "Exoscale / Akenes SA",
+  "platform": "Intigriti",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The policy advertises monetary bounties in two coverage tiers.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "program_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+  "policy_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "rewards": {
+    "currency": "EUR",
+    "minimum": 50,
+    "maximum": 5000,
+    "basis": "advertised_not_individual_award",
+    "summary": "Tier 2: EUR 50–5,000; Tier 3: EUR 50–2,000. Shared causes yield one bounty. A discretionary EUR 25 delayed-validation bonus is excluded from these bounds.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Reproducible findings and researcher-identified accounts are required. Platform first-valid-report, identity-check, adulthood or guardian-approved age-16, and legal/employer eligibility requirements apply.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Protect customer privacy, integrity and availability. Social engineering and disruption are prohibited; automation and researcher identification are constrained. Disclosure requires written consent.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "unknown",
+    "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-03T03:58:15Z",
+  "limitations": [
+    "No dedicated program announcement archive or complete revision history was established.",
+    "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+    "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Exoscale Bug Bounty policy",
+      "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+      "publisher": "Exoscale / Akenes SA / Intigriti",
+      "retrieved_at": "2026-10-03T03:57:30Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Intigriti Researcher Terms & Conditions",
+      "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+      "publisher": "Intigriti",
+      "retrieved_at": "2026-10-03T03:57:30Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "scope_context": {
+    "included_summary": "Designated cloud compute, storage, networking, identity and database services, plus supporting web properties. Partner-side database faults have no guaranteed bounty.",
+    "excluded_summary": "Customer infrastructure, unlisted properties, content-delivery/private-connectivity and marketplace services, known quota issues, issues causing only inconsequential losses below USD 500 and specified low-impact categories are excluded.",
+    "source_ids": [
+      "policy"
+    ],
+    "policy_urls": [
+      "https://app.intigriti.com/programs/exoscale/excoscalebugbounty"
+    ],
+    "verified_at": "2026-10-03T03:58:15Z"
+  }
+}

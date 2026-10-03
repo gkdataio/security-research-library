@@ -6,7 +6,7 @@ Advertised rewards are not report awards. This directory grants no authorization
 
 This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.
 
-**Scope-context coverage:** 13 of 28 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
+**Scope-context coverage:** 17 of 32 records have separately reviewed high-level coverage and exclusion summaries. Missing context means not separately summarized, not unrestricted scope or an absence of exclusions. Even reviewed summaries can be incomplete or become outdated; the live official policy controls.
 
 ## 1Password Bug Bounty
 
@@ -38,6 +38,52 @@ This is a small, manually reviewed starting directory, not a complete or continu
 - [1Password program restrictions](<https://hackerone.com/1password/policy_scopes>) — 1Password / HackerOne; retrieved 2026-10-02T21:22:00Z.
 - [1Password security assessments](<https://support.1password.com/security-assessments/>) — 1Password; retrieved 2026-10-02T21:22:00Z.
 - [HackerOne vulnerability disclosure guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T21:22:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## ADAC Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/adac-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T03:58:15Z
+
+**Program type:** vulnerability disclosure. The policy expressly identifies a disclosure program without monetary bounties\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently verify current acceptance\.
+
+**Advertised rewards:** No monetary bounty schedule; currency and numeric bounds are inapplicable and remain null\.
+
+**Eligibility:** Individual researcher-identified accounts and platform membership are required\. Platform participation requires adulthood or guardian-approved age 16, and legal/employer eligibility\. Internally known findings are duplicates\.
+
+**Restrictions and exclusions:** Disclosure requires written consent\. Social engineering, physical intrusion, denial-of-service and brute force are prohibited\. Activity must stop at payment-entry requirements; automation is constrained\.
+
+**Scope context**
+
+**Included coverage:** Designated group digital services and hybrid infrastructure, emphasizing confidentiality and integrity of customer, insurance and service-delivery systems\.
+
+**Excluded coverage:** Availability-only issues, generic scanner output, nonconfidential disclosures, unsupported software and specified low-impact application/mobile findings are excluded; compromised-device and physical-access scenarios also face exclusions\.
+
+**Scope verified:** 2026-10-03T03:58:15Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>)
+
+**Scope evidence:** [ADAC Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>)
+
+**Verification limits**
+
+- No dedicated announcement archive or complete revision history was established\.
+- Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked\.
+- High-level summaries omit inventories and testing instructions\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [ADAC Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>) — ADAC Group / Intigriti; retrieved 2026-10-03T03:56:43Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -355,6 +401,52 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>).
 
+## Exoscale Bug Bounty
+
+[Official program](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) · [Policy](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) · [Canonical record](<../data/programs/exoscale-bug-bounty.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T03:58:15Z
+
+**Program type:** paid bounty. The policy advertises monetary bounties in two coverage tiers\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently verify current acceptance\.
+
+**Advertised rewards:** Tier 2: EUR 50–5,000; Tier 3: EUR 50–2,000\. Shared causes yield one bounty\. A discretionary EUR 25 delayed-validation bonus is excluded from these bounds\.
+
+**Eligibility:** Reproducible findings and researcher-identified accounts are required\. Platform first-valid-report, identity-check, adulthood or guardian-approved age-16, and legal/employer eligibility requirements apply\.
+
+**Restrictions and exclusions:** Protect customer privacy, integrity and availability\. Social engineering and disruption are prohibited; automation and researcher identification are constrained\. Disclosure requires written consent\.
+
+**Scope context**
+
+**Included coverage:** Designated cloud compute, storage, networking, identity and database services, plus supporting web properties\. Partner-side database faults have no guaranteed bounty\.
+
+**Excluded coverage:** Customer infrastructure, unlisted properties, content-delivery/private-connectivity and marketplace services, known quota issues, issues causing only inconsequential losses below USD 500 and specified low-impact categories are excluded\.
+
+**Scope verified:** 2026-10-03T03:58:15Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>)
+
+**Scope evidence:** [Exoscale Bug Bounty policy](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>)
+
+**Verification limits**
+
+- No dedicated program announcement archive or complete revision history was established\.
+- Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked\.
+- High-level summaries omit inventories and testing instructions\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Exoscale Bug Bounty policy](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) — Exoscale / Akenes SA / Intigriti; retrieved 2026-10-03T03:57:30Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Fastmail Bug Bounty
 
 [Official program](<https://www.fastmail.com/bug-bounty/>) · [Policy](<https://www.fastmail.com/bug-bounty/>) · [Canonical record](<../data/programs/fastmail-bug-bounty.json>)
@@ -480,6 +572,52 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Official evidence and updates**
 
 - [GitLab Bug Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/gitlab?type=team>) — GitLab / HackerOne; retrieved 2026-10-02T21:10:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Grafana Labs Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>) · [Policy](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>) · [Canonical record](<../data/programs/grafana-labs-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T03:58:15Z
+
+**Program type:** vulnerability disclosure. Explicitly unpaid public disclosure program; the separately described invite-only paid program is not this identity\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently verify current acceptance\.
+
+**Advertised rewards:** No monetary bounties\. Valid original findings may receive public recognition and associated CVEs where applicable\.
+
+**Eligibility:** Human-validated reproducible reports with concrete impact are required; sanctions restrictions apply\. Platform participation requires adulthood or guardian-approved age 16, and legal/employer eligibility\.
+
+**Restrictions and exclusions:** Disclosure requires written consent\. Spam, social engineering and physical intrusion are prohibited\. Generic rules exclude automated scanning/reporting, while human-validated AI assistance is permitted\.
+
+**Scope context**
+
+**Included coverage:** Designated open-source observability code and first-party plugins, limited to latest releases or the main branch when unreleased\.
+
+**Excluded coverage:** Enterprise-dependent findings, community plugins, expected privileged behaviors, development-only functionality and specified low-impact classes are excluded\. Database and denial-of-service exclusions vary by component\.
+
+**Scope verified:** 2026-10-03T03:58:15Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>)
+
+**Scope evidence:** [Grafana Labs Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>)
+
+**Verification limits**
+
+- No dedicated announcement archive or policy revision date was established\.
+- Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked\.
+- High-level summaries omit inventories and testing instructions\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Grafana Labs Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>) — Grafana Labs / Intigriti; retrieved 2026-10-03T03:56:33Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1021,6 +1159,55 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 - [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T03:20:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Trusted Firmware Bug Bounty
+
+[Official program](<https://app.intigriti.com/programs/arm/trustedfirmware>) · [Policy](<https://app.intigriti.com/programs/arm/trustedfirmware>) · [Canonical record](<../data/programs/trusted-firmware-bug-bounty.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T03:58:15Z
+
+**Program type:** paid bounty. The policy advertises discretionary monetary bounties for eligible firmware reports\.
+
+**Submission status:** unknown. Logged-out policy and login invitation do not independently verify current acceptance\.
+
+**Advertised rewards:** Advertised severity amounts: $1,000, $3,000, $10,000 and $20,000\. Certain privileged-component findings are capped at Low\. Dollar denomination is unverified; normalized currency and bounds remain null\.
+
+**Eligibility:** Participants must be 18 or older and legally reward-eligible\. Sanctions restrictions and 12-month employment/immediate-family exclusions involving Trusted Firmware member companies apply\. Platform first-valid-report and identity-check requirements apply\.
+
+**Restrictions and exclusions:** Reports need human-validated, realistic security impact\. Social engineering, physical intrusion and DDoS are prohibited; disclosure requires written consent\. Conditional protections cannot authorize third-party systems\.
+
+**Scope context**
+
+**Included coverage:** Selected production trusted-firmware, trusted-execution and cryptographic code on main or supported LTS branches, within project threat models\.
+
+**Excluded coverage:** Unlisted projects, web infrastructure, nonproduction code, non-Arm platform code, kernel-driver findings and unofficial modifications are excluded\. The July 28, 2026 update narrowed cryptographic coverage to a designated submodule\.
+
+**Scope verified:** 2026-10-03T03:58:15Z
+
+High-level context only; not an asset inventory, a completeness guarantee or authorization to test.
+
+**Reviewed policy links**
+
+- [Official policy 1](<https://app.intigriti.com/programs/arm/trustedfirmware>)
+- [Official policy 2](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>)
+
+**Scope evidence:** [Trusted Firmware Bug Bounty policy](<https://app.intigriti.com/programs/arm/trustedfirmware>), [Trusted Firmware program updates: July 17 and July 28, 2026](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>)
+
+**Verification limits**
+
+- Two July 2026 notices were reviewed; complete historical coverage was not established\.
+- Platform euro settlement does not establish the advertised dollar denomination\.
+- Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked\.
+- High-level summaries omit inventories and testing instructions\. Live terms prevail; this record grants no authorization\.
+
+**Official evidence and updates**
+
+- [Trusted Firmware Bug Bounty policy](<https://app.intigriti.com/programs/arm/trustedfirmware>) — Arm / Intigriti; retrieved 2026-10-03T03:56:43Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
+- [Trusted Firmware program updates: July 17 and July 28, 2026](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>) — Arm / Intigriti; retrieved 2026-10-03T03:57:17Z.
+
+Change-log link: [Official updates](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>).
 
 ## Vercel Bug Bounty
 

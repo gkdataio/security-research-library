@@ -2,8 +2,8 @@
   "schema_version": "1.4.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 28,
-    "programs_with_scope_context": 13,
+    "programs": 32,
+    "programs_with_scope_context": 17,
     "programs_without_scope_context": 15
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
@@ -104,6 +104,93 @@
         "source_ids": [
           "migration"
         ]
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "id": "adac-vulnerability-disclosure",
+      "name": "ADAC Vulnerability Disclosure Program",
+      "operator": "ADAC Group",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The policy expressly identifies a disclosure program without monetary bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram",
+      "policy_url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounty schedule; currency and numeric bounds are inapplicable and remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Individual researcher-identified accounts and platform membership are required. Platform participation requires adulthood or guardian-approved age 16, and legal/employer eligibility. Internally known findings are duplicates.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Disclosure requires written consent. Social engineering, physical intrusion, denial-of-service and brute force are prohibited. Activity must stop at payment-entry requirements; automation is constrained.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T03:58:15Z",
+      "limitations": [
+        "No dedicated announcement archive or complete revision history was established.",
+        "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+        "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "ADAC Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram",
+          "publisher": "ADAC Group / Intigriti",
+          "retrieved_at": "2026-10-03T03:56:43Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T03:57:30Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Designated group digital services and hybrid infrastructure, emphasizing confidentiality and integrity of customer, insurance and service-delivery systems.",
+        "excluded_summary": "Availability-only issues, generic scanner output, nonconfidential disclosures, unsupported software and specified low-impact application/mobile findings are excluded; compromised-device and physical-access scenarios also face exclusions.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram"
+        ],
+        "verified_at": "2026-10-03T03:58:15Z"
       }
     },
     {
@@ -829,6 +916,93 @@
     },
     {
       "schema_version": "1.4.0",
+      "id": "exoscale-bug-bounty",
+      "name": "Exoscale Bug Bounty",
+      "operator": "Exoscale / Akenes SA",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The policy advertises monetary bounties in two coverage tiers.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+      "policy_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": "EUR",
+        "minimum": 50,
+        "maximum": 5000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Tier 2: EUR 50–5,000; Tier 3: EUR 50–2,000. Shared causes yield one bounty. A discretionary EUR 25 delayed-validation bonus is excluded from these bounds.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Reproducible findings and researcher-identified accounts are required. Platform first-valid-report, identity-check, adulthood or guardian-approved age-16, and legal/employer eligibility requirements apply.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Protect customer privacy, integrity and availability. Social engineering and disruption are prohibited; automation and researcher identification are constrained. Disclosure requires written consent.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T03:58:15Z",
+      "limitations": [
+        "No dedicated program announcement archive or complete revision history was established.",
+        "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+        "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Exoscale Bug Bounty policy",
+          "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+          "publisher": "Exoscale / Akenes SA / Intigriti",
+          "retrieved_at": "2026-10-03T03:57:30Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T03:57:30Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Designated cloud compute, storage, networking, identity and database services, plus supporting web properties. Partner-side database faults have no guaranteed bounty.",
+        "excluded_summary": "Customer infrastructure, unlisted properties, content-delivery/private-connectivity and marketplace services, known quota issues, issues causing only inconsequential losses below USD 500 and specified low-impact categories are excluded.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/exoscale/excoscalebugbounty"
+        ],
+        "verified_at": "2026-10-03T03:58:15Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
       "id": "fastmail-bug-bounty",
       "name": "Fastmail Bug Bounty",
       "operator": "Fastmail Pty Ltd",
@@ -1093,6 +1267,93 @@
         "source_ids": [
           "policy"
         ]
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "id": "grafana-labs-vulnerability-disclosure",
+      "name": "Grafana Labs Vulnerability Disclosure Program",
+      "operator": "Grafana Labs",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "Explicitly unpaid public disclosure program; the separately described invite-only paid program is not this identity.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp",
+      "policy_url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "No monetary bounties. Valid original findings may receive public recognition and associated CVEs where applicable.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Human-validated reproducible reports with concrete impact are required; sanctions restrictions apply. Platform participation requires adulthood or guardian-approved age 16, and legal/employer eligibility.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Disclosure requires written consent. Spam, social engineering and physical intrusion are prohibited. Generic rules exclude automated scanning/reporting, while human-validated AI assistance is permitted.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T03:58:15Z",
+      "limitations": [
+        "No dedicated announcement archive or policy revision date was established.",
+        "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+        "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Grafana Labs Vulnerability Disclosure Program policy",
+          "url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp",
+          "publisher": "Grafana Labs / Intigriti",
+          "retrieved_at": "2026-10-03T03:56:33Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T03:57:30Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Designated open-source observability code and first-party plugins, limited to latest releases or the main branch when unreleased.",
+        "excluded_summary": "Enterprise-dependent findings, community plugins, expected privileged behaviors, development-only functionality and specified low-impact classes are excluded. Database and denial-of-service exclusions vary by component.",
+        "source_ids": [
+          "policy"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp"
+        ],
+        "verified_at": "2026-10-03T03:58:15Z"
       }
     },
     {
@@ -2353,6 +2614,107 @@
           "https://core.telegram.org/bug-bounty"
         ],
         "verified_at": "2026-10-03T03:20:30Z"
+      }
+    },
+    {
+      "schema_version": "1.4.0",
+      "id": "trusted-firmware-bug-bounty",
+      "name": "Trusted Firmware Bug Bounty",
+      "operator": "Arm",
+      "platform": "Intigriti",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The policy advertises discretionary monetary bounties for eligible firmware reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "program_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+      "policy_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+      "announcement_urls": [
+        "https://app.intigriti.com/programs/arm/trustedfirmware/updates"
+      ],
+      "change_log_url": "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised severity amounts: $1,000, $3,000, $10,000 and $20,000. Certain privileged-component findings are capped at Low. Dollar denomination is unverified; normalized currency and bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Participants must be 18 or older and legally reward-eligible. Sanctions restrictions and 12-month employment/immediate-family exclusions involving Trusted Firmware member companies apply. Platform first-valid-report and identity-check requirements apply.",
+        "source_ids": [
+          "policy",
+          "platform-terms"
+        ]
+      },
+      "restrictions": {
+        "summary": "Reports need human-validated, realistic security impact. Social engineering, physical intrusion and DDoS are prohibited; disclosure requires written consent. Conditional protections cannot authorize third-party systems.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "last_verified_at": "2026-10-03T03:58:15Z",
+      "limitations": [
+        "Two July 2026 notices were reviewed; complete historical coverage was not established.",
+        "Platform euro settlement does not establish the advertised dollar denomination.",
+        "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+        "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Trusted Firmware Bug Bounty policy",
+          "url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+          "publisher": "Arm / Intigriti",
+          "retrieved_at": "2026-10-03T03:56:43Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "platform-terms",
+          "title": "Intigriti Researcher Terms & Conditions",
+          "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+          "publisher": "Intigriti",
+          "retrieved_at": "2026-10-03T03:57:30Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "updates",
+          "title": "Trusted Firmware program updates: July 17 and July 28, 2026",
+          "url": "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
+          "publisher": "Arm / Intigriti",
+          "retrieved_at": "2026-10-03T03:57:17Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "scope_context": {
+        "included_summary": "Selected production trusted-firmware, trusted-execution and cryptographic code on main or supported LTS branches, within project threat models.",
+        "excluded_summary": "Unlisted projects, web infrastructure, nonproduction code, non-Arm platform code, kernel-driver findings and unofficial modifications are excluded. The July 28, 2026 update narrowed cryptographic coverage to a designated submodule.",
+        "source_ids": [
+          "policy",
+          "updates"
+        ],
+        "policy_urls": [
+          "https://app.intigriti.com/programs/arm/trustedfirmware",
+          "https://app.intigriti.com/programs/arm/trustedfirmware/updates"
+        ],
+        "verified_at": "2026-10-03T03:58:15Z"
       }
     },
     {

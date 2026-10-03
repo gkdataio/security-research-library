@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.4.0",
+  "id": "trusted-firmware-bug-bounty",
+  "name": "Trusted Firmware Bug Bounty",
+  "operator": "Arm",
+  "platform": "Intigriti",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The policy advertises discretionary monetary bounties for eligible firmware reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "program_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+  "policy_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+  "announcement_urls": [
+    "https://app.intigriti.com/programs/arm/trustedfirmware/updates"
+  ],
+  "change_log_url": "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Advertised severity amounts: $1,000, $3,000, $10,000 and $20,000. Certain privileged-component findings are capped at Low. Dollar denomination is unverified; normalized currency and bounds remain null.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Participants must be 18 or older and legally reward-eligible. Sanctions restrictions and 12-month employment/immediate-family exclusions involving Trusted Firmware member companies apply. Platform first-valid-report and identity-check requirements apply.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Reports need human-validated, realistic security impact. Social engineering, physical intrusion and DDoS are prohibited; disclosure requires written consent. Conditional protections cannot authorize third-party systems.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "unknown",
+    "summary": "Logged-out policy and login invitation do not independently verify current acceptance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-03T03:58:15Z",
+  "limitations": [
+    "Two July 2026 notices were reviewed; complete historical coverage was not established.",
+    "Platform euro settlement does not establish the advertised dollar denomination.",
+    "Logged-out text review; authenticated eligibility and incorporated documents were not exhaustively checked.",
+    "High-level summaries omit inventories and testing instructions. Live terms prevail; this record grants no authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Trusted Firmware Bug Bounty policy",
+      "url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+      "publisher": "Arm / Intigriti",
+      "retrieved_at": "2026-10-03T03:56:43Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Intigriti Researcher Terms & Conditions",
+      "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+      "publisher": "Intigriti",
+      "retrieved_at": "2026-10-03T03:57:30Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "updates",
+      "title": "Trusted Firmware program updates: July 17 and July 28, 2026",
+      "url": "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
+      "publisher": "Arm / Intigriti",
+      "retrieved_at": "2026-10-03T03:57:17Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "scope_context": {
+    "included_summary": "Selected production trusted-firmware, trusted-execution and cryptographic code on main or supported LTS branches, within project threat models.",
+    "excluded_summary": "Unlisted projects, web infrastructure, nonproduction code, non-Arm platform code, kernel-driver findings and unofficial modifications are excluded. The July 28, 2026 update narrowed cryptographic coverage to a designated submodule.",
+    "source_ids": [
+      "policy",
+      "updates"
+    ],
+    "policy_urls": [
+      "https://app.intigriti.com/programs/arm/trustedfirmware",
+      "https://app.intigriti.com/programs/arm/trustedfirmware/updates"
+    ],
+    "verified_at": "2026-10-03T03:58:15Z"
+  }
+}
