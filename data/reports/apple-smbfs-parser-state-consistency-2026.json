@@ -102,8 +102,8 @@
     }
   },
   "recency": {
-    "as_of": "2026-10-02",
-    "window_start": "2025-10-02",
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
     "within_preferred_window": null,
     "basis": "published",
     "note": "Detailed publication date unknown; vendor advisory is dated September 14, 2026."

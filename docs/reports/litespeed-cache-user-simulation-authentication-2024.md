@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 Patchstack confirmed a USD 14,400 Zero Day award for an authentication-boundary flaw\.
 

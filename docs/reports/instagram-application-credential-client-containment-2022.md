@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 Meta confirmed a $30,000 base award for an Instagram application-token exposure; additional researcher-listed bonuses are excluded from the recorded amount\.
 

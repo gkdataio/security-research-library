@@ -2,7 +2,7 @@
   "schema_version": "1.3.0",
   "content_scope": "public_program_policy_summary",
   "counts": {
-    "programs": 24
+    "programs": 28
   },
   "notice": "Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.",
   "rights": "Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.",
@@ -468,6 +468,139 @@
     },
     {
       "schema_version": "1.3.0",
+      "id": "curl-vulnerability-disclosure",
+      "name": "curl Vulnerability Disclosure",
+      "operator": "curl project",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/curl?type=team",
+      "policy_url": "https://hackerone.com/curl?type=team",
+      "announcement_urls": [
+        "https://curl.se/mail/lib-2026-01/0030.html",
+        "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/"
+      ],
+      "change_log_url": "https://hackerone.com/curl/updates",
+      "last_verified_at": "2026-10-03T02:31:44Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "program_type": {
+        "value": "vulnerability_disclosure",
+        "summary": "The current official policy explicitly excludes monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Current reports receive recognition rather than money. The former paid bounty ended January 31, 2026; that historical closure does not establish closure of disclosure intake.",
+        "source_ids": [
+          "policy",
+          "closure"
+        ]
+      },
+      "eligibility": {
+        "summary": "Previously unreported, unpublished security issues in the latest released version qualify for review. AI assistance must be disclosed and its claims independently checked. Experimental features and most infrastructure issues are excluded.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Preserve privacy, data integrity and availability; no disruption, spam or social engineering. Allow remediation before disclosure. Reports may become public after handling and sensitive-content review. Safe harbor is conditional.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "unknown",
+        "summary": "A submission link is visible, but current acceptance was not independently established. Sources disagree on the reporting channel; no current migration or complete intake closure is asserted.",
+        "source_ids": [
+          "policy",
+          "disclosure",
+          "closure"
+        ]
+      },
+      "official_program_links": [
+        {
+          "url": "https://curl.se/dev/vuln-disclosure.html",
+          "source_ids": [
+            "disclosure"
+          ],
+          "note": "Project disclosure policy linked to the same HackerOne program."
+        },
+        {
+          "url": "https://curl.se/docs/bugbounty.html",
+          "source_ids": [
+            "redirect"
+          ],
+          "note": "Former bounty URL redirected to the project disclosure policy during this review."
+        }
+      ],
+      "limitations": [
+        "The HackerOne policy displays May 13, 2026. Its updates page contains no updates; revision archives were not reviewed.",
+        "The January 26 announcement directed reports to GitHub or email. The current project policy instead directs them to HackerOne and rejects email reporting; browser review confirmed that discrepancy.",
+        "No age or residency rule was established. No account, submission or target interaction occurred. Full live terms prevail; this summary grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "curl public vulnerability-disclosure policy",
+          "url": "https://hackerone.com/curl?type=team",
+          "publisher": "curl project / HackerOne",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "disclosure",
+          "title": "curl vulnerability disclosure policy",
+          "url": "https://curl.se/dev/vuln-disclosure.html",
+          "publisher": "curl project",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text_and_browser"
+        },
+        {
+          "id": "closure-notice",
+          "title": "The curl bug-bounty ends on January 31, 2026",
+          "url": "https://curl.se/mail/lib-2026-01/0030.html",
+          "publisher": "curl project / Daniel Stenberg",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "closure",
+          "title": "The end of the curl bug-bounty",
+          "url": "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/",
+          "publisher": "Daniel Stenberg, curl maintainer",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "updates",
+          "title": "curl program updates",
+          "url": "https://hackerone.com/curl/updates",
+          "publisher": "curl project / HackerOne",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        },
+        {
+          "id": "redirect",
+          "title": "Former curl bug bounty page, redirected to disclosure policy",
+          "url": "https://curl.se/docs/bugbounty.html",
+          "publisher": "curl project",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.3.0",
       "id": "dashlane-vulnerability-disclosure",
       "name": "Dashlane Vulnerability Disclosure Program",
       "operator": "Dashlane",
@@ -632,6 +765,71 @@
           "policy"
         ]
       }
+    },
+    {
+      "schema_version": "1.3.0",
+      "id": "fastmail-bug-bounty",
+      "name": "Fastmail Bug Bounty",
+      "operator": "Fastmail Pty Ltd",
+      "platform": "Direct vendor program",
+      "program_url": "https://www.fastmail.com/bug-bounty/",
+      "policy_url": "https://www.fastmail.com/bug-bounty/",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-03T02:31:44Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official policy explicitly offers monetary bounties for eligible reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "currency": "USD",
+        "minimum": 100,
+        "maximum": 5000,
+        "basis": "advertised_not_individual_award",
+        "summary": "Qualifying reports advertise USD 100–5,000, determined by severity and affected users at Fastmail’s discretion. Payments are processed monthly through PayPal; recipients bear taxes and fees. These are guidelines, not individual awards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "First reports must demonstrate a qualifying threat to private user data or infrastructure. Use controlled test accounts; interacting with another account requires its owner’s consent. Responsible disclosure and reasonable remediation time are required.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "Protect data integrity, privacy and service availability. Disruption and social engineering are prohibited. Intended email behavior, unlikely-interaction findings, third-party services, username enumeration, obsolete clients and low-impact metadata are excluded.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The policy expressly invites immediate email reports and commits to investigating all legitimate submissions. This is published intake evidence, not a delivery test.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "The reward sentence explicitly uses US$ for its minimum; the adjoining dollar maximum belongs to that same schedule.",
+        "No revision date, change log, age or residency criterion was established. No submission was made. Live terms prevail; no testing authorization is granted."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Fastmail Security Issue Reporting",
+          "url": "https://www.fastmail.com/bug-bounty/",
+          "publisher": "Fastmail Pty Ltd",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
     },
     {
       "schema_version": "1.3.0",
@@ -1329,6 +1527,105 @@
     },
     {
       "schema_version": "1.3.0",
+      "id": "mozilla-client-bug-bounty",
+      "name": "Mozilla Client Bug Bounty",
+      "operator": "Mozilla",
+      "platform": "Bugzilla",
+      "program_url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "policy_url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "announcement_urls": [
+        "https://hackerone.com/mozilla/updates?type=team"
+      ],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-03T02:31:44Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official policy explicitly offers monetary bounties for eligible reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "currency": "USD",
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Published base ceilings are USD 3,000, 10,000 and 20,000 by impact. Certain mitigation findings receive a 50% bonus; exceptional moderate-impact reports remain discretionary. Bounds are null because no payout floor or single bonus-inclusive ceiling is stated.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "Original actionable reports in supported configurations qualify; a 48-hour duplicate window may split awards. Internal discoveries and a seven-day internal-detection window can preclude payment, with exceptions. Contributors of the buggy code, employees, contractors and other business relationships are excluded. Local payment-age and US sanctions requirements apply.",
+        "source_ids": [
+          "policy",
+          "general"
+        ]
+      },
+      "restrictions": {
+        "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. End-of-life products, unbundled third-party code and unsupported configurations generally do not qualify. Safe harbor cannot bind third parties.",
+        "source_ids": [
+          "general",
+          "policy",
+          "faq"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The September 11, 2026 announcement expressly says the Firefox client program continues normally through Bugzilla despite the separate Web program’s pause.",
+        "source_ids": [
+          "updates"
+        ]
+      },
+      "limitations": [
+        "The FAQ identifies a February 24, 2026 reward-category change: GPU-process findings no longer receive the highest sandbox-escape category solely for that process compromise.",
+        "The reviewed July 10, 2026 announcement transfers Mozilla VPN client coverage into this program. No asset inventory is reproduced.",
+        "No client-specific change-log URL or overall policy revision date was established. Linked submission terms and Bugzilla etiquette were not exhaustively reviewed.",
+        "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Mozilla Client Bug Bounty Program",
+          "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "general",
+          "title": "Mozilla Security Bug Bounty general eligibility and safe harbor",
+          "url": "https://www.mozilla.org/en-US/security/bug-bounty/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "faq",
+          "title": "Mozilla Bug Bounty Program FAQ",
+          "url": "https://www.mozilla.org/en-US/security/bug-bounty/faq/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "updates",
+          "title": "Mozilla public program updates: client continuity and policy changes",
+          "url": "https://hackerone.com/mozilla/updates?type=team",
+          "publisher": "Mozilla / HackerOne",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "browser"
+        }
+      ]
+    },
+    {
+      "schema_version": "1.3.0",
       "id": "mozilla-web-bug-bounty",
       "name": "Mozilla Web Bug Bounty",
       "operator": "Mozilla",
@@ -1833,6 +2130,71 @@
           "policy"
         ]
       }
+    },
+    {
+      "schema_version": "1.3.0",
+      "id": "telegram-bug-bounty",
+      "name": "Telegram Bug Bounty",
+      "operator": "Telegram",
+      "platform": "Direct vendor program",
+      "program_url": "https://core.telegram.org/bug-bounty",
+      "policy_url": "https://core.telegram.org/bug-bounty",
+      "announcement_urls": [],
+      "change_log_url": null,
+      "last_verified_at": "2026-10-03T02:31:44Z",
+      "content_scope": "public_program_policy_summary",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+      "program_type": {
+        "value": "paid_bounty",
+        "summary": "The official policy explicitly offers monetary bounties for eligible reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "currency": null,
+        "minimum": null,
+        "maximum": null,
+        "basis": "advertised_not_individual_award",
+        "summary": "Advertised awards range from $100 to $100,000 or more: application-level guidance reaches $10,000, while protocol-level awards may exceed $100,000. Validity and amounts remain discretionary. Dollar denomination is unverified, so normalized bounds remain null.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "eligibility": {
+        "summary": "First reports take precedence; duplicates do not qualify. Reports must be in English and produce a code or configuration change. Recipients bear taxes and fees. Unrelated third-party implementation faults are excluded.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "restrictions": {
+        "summary": "No unlawful activity, privacy harm, disruption, physical access, spam or social engineering. Premature public or third-party disclosure forfeits eligibility. Unsupported scanner output and compromised-device scenarios generally do not qualify. Legal protection depends on following the rules.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "submission_status": {
+        "value": "accepting_reports",
+        "summary": "The policy explicitly describes continuous operation since 2014 and direct email submissions. It expressly disclaims third-party bounty-platform participation.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "limitations": [
+        "No revision date, dedicated change log, age or residency criterion was established. Intake was not tested.",
+        "Advertised figures are not individual awards. Scope inventories and testing instructions are omitted; full live terms prevail."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Telegram Bug Bounty Program",
+          "url": "https://core.telegram.org/bug-bounty",
+          "publisher": "Telegram",
+          "retrieved_at": "2026-10-03T02:31:44Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ]
     },
     {
       "schema_version": "1.3.0",

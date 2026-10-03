@@ -3,8 +3,8 @@
   "notice": "Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.",
   "counts": {
     "unique_program_page_listings": 1154,
-    "already_has_verified_policy": 20,
-    "awaiting_policy_review": 1134,
+    "already_has_verified_policy": 21,
+    "awaiting_policy_review": 1133,
     "batches": 3,
     "by_platform": {
       "Bugcrowd": 514,
@@ -15826,7 +15826,7 @@
       "evidence_note": "Directory row 368; Active program checkbox checked; Bounties minimum displayed -. Program type unknown: no positive displayed minimum; absence or zero does not establish VDP. Policy and live submission availability unverified.",
       "platform": "HackerOne",
       "review_state": "directory_listing_only",
-      "verified_policy_id": null,
+      "verified_policy_id": "curl-vulnerability-disclosure",
       "observations": [
         {
           "batch_id": "hackerone-directory-2026-10-02",

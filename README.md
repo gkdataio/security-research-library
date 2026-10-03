@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 3, 2026**
 
-- **57 qualifying report records:** 46 bug-bounty awards and 11 explicitly labeled competition entries
-- **24 public program-policy summaries**, maintained separately from award evidence
+- **59 qualifying report records:** 48 bug-bounty awards and 11 explicitly labeled competition entries
+- **28 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **20 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 22 within October 2, 2025–October 2, 2026; 29 older; 6 with unknown original publication dates
+- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 6 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -137,6 +137,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [Google device grants lost client and permission binding](data/reports/google-device-authorization-client-scope-binding-2026.json) | USD 13,337 | 2026-07-15 | Researcher reported |
 | [Redis replication state changes invalidated an active interpreter](data/reports/redis-replication-interpreter-lifetime-2026.json) | USD 30,000 (competition entry) | 2026-06-02 (year inferred) | Competition organizer confirmed |
 | [Redis deserialization cleanup violated object-ownership invariants](data/reports/redis-deserialization-object-ownership-2026.json) | USD 30,000 (competition entry) | 2026-06-02 (year inferred) | Competition organizer confirmed |
+| [Google Application Integration mixed resource and service authority](data/reports/google-application-integration-authorization-boundaries-2026.json) | USD 75,000 (base award) | 2026-05-22 | Researcher reported |
 | [Meta service-identity exposure amplified by excessive secret access](data/reports/meta-service-identity-secrets-trust-boundary-2026.json) | USD 150,000 | 2026-05-28 | Researcher reproduces vendor message |
 | [PostgreSQL cryptographic parsing omitted a buffer-capacity check](data/reports/postgresql-pgcrypto-buffer-capacity-validation-2026.json) | USD 30,000 (competition entry) | 2026-05-04 (year inferred) | Competition organizer confirmed |
 | [MariaDB JSON normalization exceeded allocated buffer capacity](data/reports/mariadb-json-normalization-buffer-capacity-2026.json) | USD 30,000 (competition entry) | 2026-05-04 (year inferred) | Competition organizer confirmed |
@@ -180,6 +181,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [Instagram recovery challenges were insufficiently bound to accounts](data/reports/instagram-recovery-challenge-account-binding-2019.json) | USD 10,000 | 2019-08-25 (historical) | Researcher reported |
 | [Instagram mobile account recovery had inconsistent verification limits](data/reports/instagram-mobile-recovery-attempt-limits-2019.json) | USD 30,000 | 2019-07-14 (historical) | Researcher reported |
 | [Shopify Exchange screenshot service crossed internal boundaries](data/reports/shopify-exchange-request-isolation-2019.json) | USD 25,000 | 2019-04-03 (historical) | Vendor confirmed |
+| [Shopify automatic account conversion lost merchant-consent binding](data/reports/shopify-collaborator-conversion-consent-2017.json) | USD 20,000 | 2018-02-22 (historical) | Vendor confirmed |
 | [Facebook SDK message authentication relied on insecure randomness](data/reports/facebook-sdk-message-authentication-randomness-2023.json) | USD 66,000 | Original unknown; archive shows 2026-01-17 | Researcher reported |
 | [Meta Pixel cross-window handling lost message and token authority](data/reports/meta-pixel-cross-window-authority-binding-2024.json) | USD 32,500 | Original unknown; archive shows 2026-01-16 | Researcher reported |
 | [Meta AI media access lacked object-ownership authorization](data/reports/meta-ai-media-object-authorization-2025.json) | USD 10,000 | Unknown; updated 2025-07-16 (historical) | Researcher reproduces vendor message |

@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 A Rails upgrade changed how public report responses serialized private user attributes\. HackerOne confirmed the disclosure and a USD 25,000 award\.
 

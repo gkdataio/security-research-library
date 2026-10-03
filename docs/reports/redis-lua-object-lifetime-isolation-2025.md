@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry\.
 

@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry\.
 

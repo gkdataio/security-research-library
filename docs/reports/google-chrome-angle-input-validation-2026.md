@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 One Chrome graphics report earned USD 250,000 across two award decisions\.
 

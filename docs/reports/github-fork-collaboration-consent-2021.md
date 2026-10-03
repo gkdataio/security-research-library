@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 The second fork-collaboration report received its own USD 10,000 award\.
 

@@ -97,8 +97,8 @@
     }
   },
   "recency": {
-    "as_of": "2026-10-02",
-    "window_start": "2025-10-02",
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
     "within_preferred_window": true,
     "basis": "published",
     "note": null

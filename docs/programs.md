@@ -168,6 +168,44 @@ Change-log link: [Official updates](<https://hackerone.com/arc-bbp/updates>).
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/announcements>).
 
+## curl Vulnerability Disclosure
+
+[Official program](<https://hackerone.com/curl?type=team>) · [Policy](<https://hackerone.com/curl?type=team>) · [Canonical record](<../data/programs/curl-vulnerability-disclosure.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-03T02:31:44Z
+
+**Program type:** vulnerability disclosure. The current official policy explicitly excludes monetary rewards\.
+
+**Submission status:** unknown. A submission link is visible, but current acceptance was not independently established\. Sources disagree on the reporting channel; no current migration or complete intake closure is asserted\.
+
+**Advertised rewards:** Current reports receive recognition rather than money\. The former paid bounty ended January 31, 2026; that historical closure does not establish closure of disclosure intake\.
+
+**Eligibility:** Previously unreported, unpublished security issues in the latest released version qualify for review\. AI assistance must be disclosed and its claims independently checked\. Experimental features and most infrastructure issues are excluded\.
+
+**Restrictions and exclusions:** Preserve privacy, data integrity and availability; no disruption, spam or social engineering\. Allow remediation before disclosure\. Reports may become public after handling and sensitive-content review\. Safe harbor is conditional\.
+
+**Verification limits**
+
+- The HackerOne policy displays May 13, 2026\. Its updates page contains no updates; revision archives were not reviewed\.
+- The January 26 announcement directed reports to GitHub or email\. The current project policy instead directs them to HackerOne and rejects email reporting; browser review confirmed that discrepancy\.
+- No age or residency rule was established\. No account, submission or target interaction occurred\. Full live terms prevail; this summary grants no authorization\.
+
+[Official linked program](<https://curl.se/dev/vuln-disclosure.html>) — Project disclosure policy linked to the same HackerOne program\.
+
+[Official linked program](<https://curl.se/docs/bugbounty.html>) — Former bounty URL redirected to the project disclosure policy during this review\.
+
+**Official evidence and updates**
+
+- [curl public vulnerability-disclosure policy](<https://hackerone.com/curl?type=team>) — curl project / HackerOne; retrieved 2026-10-03T02:31:44Z.
+- [curl vulnerability disclosure policy](<https://curl.se/dev/vuln-disclosure.html>) — curl project; retrieved 2026-10-03T02:31:44Z.
+- [The curl bug-bounty ends on January 31, 2026](<https://curl.se/mail/lib-2026-01/0030.html>) — curl project / Daniel Stenberg; retrieved 2026-10-03T02:31:44Z.
+- [The end of the curl bug-bounty](<https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/>) — Daniel Stenberg, curl maintainer; retrieved 2026-10-03T02:31:44Z.
+- [curl program updates](<https://hackerone.com/curl/updates>) — curl project / HackerOne; retrieved 2026-10-03T02:31:44Z.
+- [Former curl bug bounty page, redirected to disclosure policy](<https://curl.se/docs/bugbounty.html>) — curl project; retrieved 2026-10-03T02:31:44Z.
+
+Change-log link: [Official updates](<https://hackerone.com/curl/updates>).
+
 ## Dashlane Vulnerability Disclosure Program
 
 [Official program](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/dashlane-vulnerability-disclosure.json>)
@@ -231,6 +269,34 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T02:12:34Z.
 
 Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>).
+
+## Fastmail Bug Bounty
+
+[Official program](<https://www.fastmail.com/bug-bounty/>) · [Policy](<https://www.fastmail.com/bug-bounty/>) · [Canonical record](<../data/programs/fastmail-bug-bounty.json>)
+
+**Platform:** Direct vendor program  
+**Last verified:** 2026-10-03T02:31:44Z
+
+**Program type:** paid bounty. The official policy explicitly offers monetary bounties for eligible reports\.
+
+**Submission status:** accepting reports. The policy expressly invites immediate email reports and commits to investigating all legitimate submissions\. This is published intake evidence, not a delivery test\.
+
+**Advertised rewards:** Qualifying reports advertise USD 100–5,000, determined by severity and affected users at Fastmail’s discretion\. Payments are processed monthly through PayPal; recipients bear taxes and fees\. These are guidelines, not individual awards\.
+
+**Eligibility:** First reports must demonstrate a qualifying threat to private user data or infrastructure\. Use controlled test accounts; interacting with another account requires its owner’s consent\. Responsible disclosure and reasonable remediation time are required\.
+
+**Restrictions and exclusions:** Protect data integrity, privacy and service availability\. Disruption and social engineering are prohibited\. Intended email behavior, unlikely-interaction findings, third-party services, username enumeration, obsolete clients and low-impact metadata are excluded\.
+
+**Verification limits**
+
+- The reward sentence explicitly uses US$ for its minimum; the adjoining dollar maximum belongs to that same schedule\.
+- No revision date, change log, age or residency criterion was established\. No submission was made\. Live terms prevail; no testing authorization is granted\.
+
+**Official evidence and updates**
+
+- [Fastmail Security Issue Reporting](<https://www.fastmail.com/bug-bounty/>) — Fastmail Pty Ltd; retrieved 2026-10-03T02:31:44Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
 ## GitHub Bug Bounty
 
@@ -489,6 +555,39 @@ Change-log link: [Official updates](<https://www.microsoft.com/en-us/msrc/bounty
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog>).
 
+## Mozilla Client Bug Bounty
+
+[Official program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) · [Policy](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) · [Canonical record](<../data/programs/mozilla-client-bug-bounty.json>)
+
+**Platform:** Bugzilla  
+**Last verified:** 2026-10-03T02:31:44Z
+
+**Program type:** paid bounty. The official policy explicitly offers monetary bounties for eligible reports\.
+
+**Submission status:** accepting reports. The September 11, 2026 announcement expressly says the Firefox client program continues normally through Bugzilla despite the separate Web program’s pause\.
+
+**Advertised rewards:** Published base ceilings are USD 3,000, 10,000 and 20,000 by impact\. Certain mitigation findings receive a 50% bonus; exceptional moderate-impact reports remain discretionary\. Bounds are null because no payout floor or single bonus-inclusive ceiling is stated\.
+
+**Eligibility:** Original actionable reports in supported configurations qualify; a 48-hour duplicate window may split awards\. Internal discoveries and a seven-day internal-detection window can preclude payment, with exceptions\. Contributors of the buggy code, employees, contractors and other business relationships are excluded\. Local payment-age and US sanctions requirements apply\.
+
+**Restrictions and exclusions:** Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification\. Allow reasonable remediation time; no extortion or personal exploitation\. End-of-life products, unbundled third-party code and unsupported configurations generally do not qualify\. Safe harbor cannot bind third parties\.
+
+**Verification limits**
+
+- The FAQ identifies a February 24, 2026 reward-category change: GPU-process findings no longer receive the highest sandbox-escape category solely for that process compromise\.
+- The reviewed July 10, 2026 announcement transfers Mozilla VPN client coverage into this program\. No asset inventory is reproduced\.
+- No client-specific change-log URL or overall policy revision date was established\. Linked submission terms and Bugzilla etiquette were not exhaustively reviewed\.
+- No authenticated intake or payment test occurred\. This policy summary is distinct from the Web program and grants no authorization\.
+
+**Official evidence and updates**
+
+- [Mozilla Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) — Mozilla; retrieved 2026-10-03T02:31:44Z.
+- [Mozilla Security Bug Bounty general eligibility and safe harbor](<https://www.mozilla.org/en-US/security/bug-bounty/>) — Mozilla; retrieved 2026-10-03T02:31:44Z.
+- [Mozilla Bug Bounty Program FAQ](<https://www.mozilla.org/en-US/security/bug-bounty/faq/>) — Mozilla; retrieved 2026-10-03T02:31:44Z.
+- [Mozilla public program updates: client continuity and policy changes](<https://hackerone.com/mozilla/updates?type=team>) — Mozilla / HackerOne; retrieved 2026-10-03T02:31:44Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Mozilla Web Bug Bounty
 
 [Official program](<https://hackerone.com/mozilla?type=team>) · [Policy](<https://hackerone.com/mozilla?type=team>) · [Canonical record](<../data/programs/mozilla-web-bug-bounty.json>)
@@ -675,6 +774,34 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/ann
 - [Proton bug bounty program](<https://proton.me/security/bug-bounty>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
 - [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
 - [Proton legal safe harbor policy](<https://proton.me/security/safe-harbor>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## Telegram Bug Bounty
+
+[Official program](<https://core.telegram.org/bug-bounty>) · [Policy](<https://core.telegram.org/bug-bounty>) · [Canonical record](<../data/programs/telegram-bug-bounty.json>)
+
+**Platform:** Direct vendor program  
+**Last verified:** 2026-10-03T02:31:44Z
+
+**Program type:** paid bounty. The official policy explicitly offers monetary bounties for eligible reports\.
+
+**Submission status:** accepting reports. The policy explicitly describes continuous operation since 2014 and direct email submissions\. It expressly disclaims third-party bounty-platform participation\.
+
+**Advertised rewards:** Advertised awards range from $100 to $100,000 or more: application-level guidance reaches $10,000, while protocol-level awards may exceed $100,000\. Validity and amounts remain discretionary\. Dollar denomination is unverified, so normalized bounds remain null\.
+
+**Eligibility:** First reports take precedence; duplicates do not qualify\. Reports must be in English and produce a code or configuration change\. Recipients bear taxes and fees\. Unrelated third-party implementation faults are excluded\.
+
+**Restrictions and exclusions:** No unlawful activity, privacy harm, disruption, physical access, spam or social engineering\. Premature public or third-party disclosure forfeits eligibility\. Unsupported scanner output and compromised-device scenarios generally do not qualify\. Legal protection depends on following the rules\.
+
+**Verification limits**
+
+- No revision date, dedicated change log, age or residency criterion was established\. Intake was not tested\.
+- Advertised figures are not individual awards\. Scope inventories and testing instructions are omitted; full live terms prevail\.
+
+**Official evidence and updates**
+
+- [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T02:31:44Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 

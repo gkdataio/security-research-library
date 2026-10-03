@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: uncertain original publication date; reviewed as of 2026-10-02.
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 The USD 32,500 researcher-reported award illustrates the distinction between message origin and disclosure authority\.
 

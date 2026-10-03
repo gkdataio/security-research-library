@@ -1,8 +1,8 @@
 {
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
-  "as_of": "2026-10-02",
-  "latest_reviewed_at": "2026-10-02T23:06:13Z",
+  "as_of": "2026-10-03",
+  "latest_reviewed_at": "2026-10-03T02:35:33Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 57,
-    "within_preferred_window": 22,
-    "older_or_uncertain": 35,
-    "bug_bounty": 46,
+    "included": 59,
+    "within_preferred_window": 23,
+    "older_or_uncertain": 36,
+    "bug_bounty": 48,
     "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -289,8 +289,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -460,8 +460,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -646,8 +646,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -835,8 +835,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1021,8 +1021,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1207,8 +1207,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1366,8 +1366,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1607,8 +1607,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1828,8 +1828,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -1870,6 +1870,166 @@
           "Headline states $157K, while $150,000 plus 5% arithmetically equals $157,500; use the undisputed $150,000 base and preserve this discrepancy",
           "Vendor response is reproduced by the researcher organization, not independently hosted by Meta",
           "The exposed Grafana dashboard was a discovery signal, not established as the underlying rewarded vulnerability"
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-application-integration-authorization-boundaries-2026",
+      "title": "Google Application Integration mixed resource and service authority",
+      "organization": "Google",
+      "product": "Google Cloud Application Integration",
+      "researchers": [
+        "Arvin Shivram (Brutecat)"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "cloud-security"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "cloud-iam-review",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A researcher reports a $75,000 base award for a distinct Application Integration report.",
+      "root_cause": "Resource-ownership checks and task-authority checks were inconsistent. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations.",
+      "impact": "The authenticated-user research reports cross-project access and test execution. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated. Wider impact remains unverified.",
+      "defensive_takeaways": [
+        "Editorial lesson: authorize the actual resource owner at every service boundary rather than relying on an enclosing project context.",
+        "Editorial lesson: independently constrain service-task authority even when the initiating user may legitimately configure an integration.",
+        "Editorial lesson: use cross-tenant negative tests and track observed effects separately from vendor-assessed potential."
+      ],
+      "reward": {
+        "amount": 75000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "primary",
+        "evidence_quote": "2026-04-28 - Panel awards $75,000.",
+        "evidence_location": "Timeline (2nd RCE)",
+        "usd_equivalent": null,
+        "notes": "Only the second report’s base award; excludes the later $13,337 and first report. USD remains contextual: Google’s July 2024 USD-denominated VRP announcement and October 2024 Cloud-program continuity statement, not settlement evidence.",
+        "type": "bug_bounty",
+        "awarding_organization": "Google"
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Visible article header supplies May 22, 2026 and author Arvin Shivram."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": "2026-03-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "awarded": {
+          "value": "2026-04-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": true,
+        "basis": "published",
+        "note": null
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://brutecat.com/articles/google-cloud-rce/",
+          "title": "StubZero: $148,337 RCE in Google Cloud Production",
+          "type": "researcher",
+          "author": "Arvin Shivram (Brutecat)",
+          "retrieved_at": "2026-10-03T02:35:33Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact"
+          ]
+        },
+        {
+          "id": "google-currency",
+          "url": "https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515",
+          "title": "Increasing Google & Alphabet VRP rewards up to $151,515",
+          "type": "vendor",
+          "author": "Sam Erb and Krzysztof Kotowicz / Google",
+          "retrieved_at": "2026-10-03T02:35:33Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "cloud-program-continuity",
+          "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program",
+          "title": "Introducing Google Cloud’s new Vulnerability Reward Program",
+          "type": "vendor",
+          "author": "Michael Cote and Sri Tulasiram / Google Cloud",
+          "retrieved_at": "2026-10-03T02:35:33Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-03T02:35:33Z",
+        "method": "Read primary article text, including the dated byline, and official Google sources. The July 2024 USD announcement was read in rendered browser text. No target testing.",
+        "limitations": [
+          "Award and vendor impact assessment are researcher-published claims, not independently reviewed vendor correspondence.",
+          "The article-level CVE is not assigned here because its scope across the separate reports is ambiguous.",
+          "No precise fix date, payment occurrence or settlement date is established.",
+          "Currency inference uses 2024 program context, about two years before the award. The current Cloud policy uses a dollar symbol without an explicit USD statement; no independent settlement evidence is claimed."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -1985,8 +2145,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -2194,8 +2354,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -2380,8 +2540,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -2593,8 +2753,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -2730,8 +2890,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -2910,8 +3070,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3062,8 +3222,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3207,8 +3367,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3396,8 +3556,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3564,8 +3724,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3729,8 +3889,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -3875,8 +4035,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -4022,8 +4182,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": true,
         "basis": "published",
         "note": null
@@ -4212,8 +4372,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical detailed disclosure falls nine days before the preferred publication window."
@@ -4374,8 +4534,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -4532,8 +4692,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Older reference, outside the preferred last-12-month publication window."
@@ -4678,8 +4838,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference: published before October 2, 2025."
@@ -4870,8 +5030,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -5035,8 +5195,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -5200,8 +5360,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -5344,8 +5504,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -5484,8 +5644,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -5646,8 +5806,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -5792,8 +5952,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -5941,8 +6101,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred publication window."
@@ -6103,8 +6263,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -6239,8 +6399,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical detailed publication outside the preferred window."
@@ -6412,8 +6572,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical research published October 2023, describing a 2022 report."
@@ -6562,8 +6722,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical January 2023 technical article describing a 2022 report and award."
@@ -6726,8 +6886,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical technical publication in January 2023, describing a 2022 report."
@@ -6892,8 +7052,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication outside the preferred last-12-month window."
@@ -7088,8 +7248,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical vendor publication; no recency claim is based on the researcher page’s later date."
@@ -7254,8 +7414,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -7390,8 +7550,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -7548,8 +7708,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -7689,8 +7849,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -7833,8 +7993,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -7966,8 +8126,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical 2019 finding, described by the vendor in February 2020."
@@ -8105,8 +8265,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -8240,8 +8400,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -8387,8 +8547,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical primary publication, outside the preferred last-12-month window."
@@ -8536,8 +8696,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": false,
         "basis": "published",
         "note": "Historical reference outside the preferred last-12-month publication window."
@@ -8567,6 +8727,155 @@
         "limitations": [
           "The publication date is retrospective, not the original discovery date.",
           "Underlying report details were not independently reread; no additional exploit prerequisites or investigative chronology are asserted."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "shopify-collaborator-conversion-consent-2017",
+      "title": "Shopify automatic account conversion lost merchant-consent binding",
+      "organization": "Shopify",
+      "product": "Shopify partner collaborator accounts",
+      "researchers": [
+        "uzsunny"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authorization",
+      "secondary_category_ids": [
+        "authentication",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "defensive-evidence-writing"
+      ],
+      "summary": "Shopify confirms a $20,000 award for unauthorized collaborator access caused by automatic account conversion.",
+      "root_cause": "Account-conversion logic did not preserve the distinction between identity linkage and authorization to collaborate on a merchant’s store. The vendor attributes the issue to automatic conversion of ordinary accounts into collaborator accounts.",
+      "impact": "The vendor confirms unintended store access without merchant interaction in a partner-account context, and says it fixed the issue within hours. Its retrospective does not establish data extraction, the exact permissions obtained or the researcher’s discovery process.",
+      "defensive_takeaways": [
+        "Editorial lesson: require an independently verified entitlement for each role transition; matching identity attributes do not prove resource access rights.",
+        "Editorial lesson: preserve merchant approval when accounts are linked, merged or automatically converted.",
+        "Editorial lesson: model authorization before and after lifecycle transitions, including repeated or conflicting identities, using approved test accounts."
+      ],
+      "reward": {
+        "amount": 20000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "our highest payout to date awarded, $20,000 to uzsunny",
+        "evidence_location": "Our Highest Payout to Date",
+        "usd_equivalent": null,
+        "notes": "One report, separate from event totals. USD is a contextual inference from HackerOne’s 2026 platform policy, nine years after the 2017 award; that policy does not prove settlement.",
+        "type": "bug_bounty",
+        "awarding_organization": "Shopify"
+      },
+      "dates": {
+        "published": {
+          "value": "2018-02-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": null
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "reported": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "awarded": {
+          "value": "2017",
+          "precision": "year",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "The vendor identifies the award as occurring during 2017; no precise day is supplied."
+        },
+        "fixed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Vendor reports a fix within hours but supplies no calendar date in the reviewed retrospective."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical reference outside the preferred last-12-month publication window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://shopify.engineering/bug-bounty-year-in-review",
+          "title": "2017 Bug Bounty Year in Review",
+          "type": "vendor",
+          "author": "Peter Yaworski / Shopify",
+          "retrieved_at": "2026-10-03T02:32:41Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "platform-currency",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-03T02:32:41Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-03T02:32:41Z",
+        "method": "Read public primary-source text and checked award scope, provenance and dates. No target testing.",
+        "limitations": [
+          "The underlying linked HackerOne report was JavaScript-only in text retrieval and was not independently reviewed.",
+          "Currency context is platform-wide and later than the award; no independent payment audit is claimed.",
+          "No exact reporting, fix or payment date was established."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -8675,8 +8984,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Original publication is unknown; the January 2026 archive header is not counted as recent research. Report and award timelines remain separately dated."
@@ -8824,8 +9133,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Historical source updated July 16, 2025; original publication remains unknown and is not counted as recent."
@@ -8964,8 +9273,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Original publication is unknown; the January 2026 archive header is not counted as recent research. Report and award timelines remain separately dated."
@@ -9115,8 +9424,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Detailed publication date unknown; vendor advisory is dated September 14, 2026."
@@ -9281,8 +9590,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."
@@ -9434,8 +9743,8 @@
         }
       },
       "recency": {
-        "as_of": "2026-10-02",
-        "window_start": "2025-10-02",
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
         "within_preferred_window": null,
         "basis": "published",
         "note": "Historical chain with an undated primary write-up; exact publication recency is not asserted."

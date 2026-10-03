@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: uncertain original publication date; reviewed as of 2026-10-02.
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 A rejected network response left inconsistent filesystem state\. The researcher reports a $20,000 award and subsequent payment\.
 

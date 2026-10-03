@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 A researcher organization reports a $150,000 base award for an exposed service identity with excessive downstream integration authority\.
 

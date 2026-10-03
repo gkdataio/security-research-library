@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 The first fork-collaboration finding in this article earned USD 20,000\.
 

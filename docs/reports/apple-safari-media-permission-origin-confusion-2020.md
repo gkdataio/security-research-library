@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: uncertain original publication date; reviewed as of 2026-10-02.
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 The cited researcher documents a USD 75,000 award for this reported chain\.
 

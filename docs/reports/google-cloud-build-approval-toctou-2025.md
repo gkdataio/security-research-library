@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 A researcher-reported USD 30,000 award illustrates a gap between approval of a contribution and selection of the code executed\.
 

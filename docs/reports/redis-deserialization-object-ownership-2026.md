@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 Wiz confirms USD 30,000 for Emil Lerner’s Redis competition entry\. Two related disclosed defects remain one awarded entry\.
 

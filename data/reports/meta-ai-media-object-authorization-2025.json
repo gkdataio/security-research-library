@@ -99,8 +99,8 @@
     }
   },
   "recency": {
-    "as_of": "2026-10-02",
-    "window_start": "2025-10-02",
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
     "within_preferred_window": null,
     "basis": "published",
     "note": "Historical source updated July 16, 2025; original publication remains unknown and is not counted as recent."

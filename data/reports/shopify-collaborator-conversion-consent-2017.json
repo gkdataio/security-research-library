@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "id": "shopify-collaborator-conversion-consent-2017",
+  "title": "Shopify automatic account conversion lost merchant-consent binding",
+  "organization": "Shopify",
+  "product": "Shopify partner collaborator accounts",
+  "researchers": [
+    "uzsunny"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "authentication",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "identity-lifecycle-review",
+    "defensive-evidence-writing"
+  ],
+  "summary": "Shopify confirms a $20,000 award for unauthorized collaborator access caused by automatic account conversion.",
+  "root_cause": "Account-conversion logic did not preserve the distinction between identity linkage and authorization to collaborate on a merchant’s store. The vendor attributes the issue to automatic conversion of ordinary accounts into collaborator accounts.",
+  "impact": "The vendor confirms unintended store access without merchant interaction in a partner-account context, and says it fixed the issue within hours. Its retrospective does not establish data extraction, the exact permissions obtained or the researcher’s discovery process.",
+  "defensive_takeaways": [
+    "Editorial lesson: require an independently verified entitlement for each role transition; matching identity attributes do not prove resource access rights.",
+    "Editorial lesson: preserve merchant approval when accounts are linked, merged or automatically converted.",
+    "Editorial lesson: model authorization before and after lifecycle transitions, including repeated or conflicting identities, using approved test accounts."
+  ],
+  "reward": {
+    "amount": 20000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "evidence_level": "vendor_confirmed",
+    "source_id": "primary",
+    "evidence_quote": "our highest payout to date awarded, $20,000 to uzsunny",
+    "evidence_location": "Our Highest Payout to Date",
+    "usd_equivalent": null,
+    "notes": "One report, separate from event totals. USD is a contextual inference from HackerOne’s 2026 platform policy, nine years after the 2017 award; that policy does not prove settlement.",
+    "type": "bug_bounty",
+    "awarding_organization": "Shopify"
+  },
+  "dates": {
+    "published": {
+      "value": "2018-02-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "awarded": {
+      "value": "2017",
+      "precision": "year",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "The vendor identifies the award as occurring during 2017; no precise day is supplied."
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Vendor reports a fix within hours but supplies no calendar date in the reviewed retrospective."
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
+    "within_preferred_window": false,
+    "basis": "published",
+    "note": "Historical reference outside the preferred last-12-month publication window."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://shopify.engineering/bug-bounty-year-in-review",
+      "title": "2017 Bug Bounty Year in Review",
+      "type": "vendor",
+      "author": "Peter Yaworski / Shopify",
+      "retrieved_at": "2026-10-03T02:32:41Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact",
+        "remediation"
+      ]
+    },
+    {
+      "id": "platform-currency",
+      "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+      "title": "Vulnerability Disclosure Standards",
+      "type": "platform",
+      "author": "HackerOne",
+      "retrieved_at": "2026-10-03T02:32:41Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-03T02:32:41Z",
+    "method": "Read public primary-source text and checked award scope, provenance and dates. No target testing.",
+    "limitations": [
+      "The underlying linked HackerOne report was JavaScript-only in text retrieval and was not independently reviewed.",
+      "Currency context is platform-wide and later than the award; no independent payment audit is claimed.",
+      "No exact reporting, fix or payment date was established."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

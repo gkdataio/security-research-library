@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: uncertain original publication date; reviewed as of 2026-10-02.
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 A missing media-ownership check earned a USD 10,000 award, according to the researcher\.
 

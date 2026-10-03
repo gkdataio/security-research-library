@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset\.
 

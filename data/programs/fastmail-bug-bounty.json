@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.3.0",
+  "id": "fastmail-bug-bounty",
+  "name": "Fastmail Bug Bounty",
+  "operator": "Fastmail Pty Ltd",
+  "platform": "Direct vendor program",
+  "program_url": "https://www.fastmail.com/bug-bounty/",
+  "policy_url": "https://www.fastmail.com/bug-bounty/",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "last_verified_at": "2026-10-03T02:31:44Z",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The official policy explicitly offers monetary bounties for eligible reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "currency": "USD",
+    "minimum": 100,
+    "maximum": 5000,
+    "basis": "advertised_not_individual_award",
+    "summary": "Qualifying reports advertise USD 100–5,000, determined by severity and affected users at Fastmail’s discretion. Payments are processed monthly through PayPal; recipients bear taxes and fees. These are guidelines, not individual awards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "First reports must demonstrate a qualifying threat to private user data or infrastructure. Use controlled test accounts; interacting with another account requires its owner’s consent. Responsible disclosure and reasonable remediation time are required.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Protect data integrity, privacy and service availability. Disruption and social engineering are prohibited. Intended email behavior, unlikely-interaction findings, third-party services, username enumeration, obsolete clients and low-impact metadata are excluded.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The policy expressly invites immediate email reports and commits to investigating all legitimate submissions. This is published intake evidence, not a delivery test.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "limitations": [
+    "The reward sentence explicitly uses US$ for its minimum; the adjoining dollar maximum belongs to that same schedule.",
+    "No revision date, change log, age or residency criterion was established. No submission was made. Live terms prevail; no testing authorization is granted."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Fastmail Security Issue Reporting",
+      "url": "https://www.fastmail.com/bug-bounty/",
+      "publisher": "Fastmail Pty Ltd",
+      "retrieved_at": "2026-10-03T02:31:44Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ]
+}

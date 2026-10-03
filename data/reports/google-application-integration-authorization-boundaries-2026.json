@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0.0",
+  "id": "google-application-integration-authorization-boundaries-2026",
+  "title": "Google Application Integration mixed resource and service authority",
+  "organization": "Google",
+  "product": "Google Cloud Application Integration",
+  "researchers": [
+    "Arvin Shivram (Brutecat)"
+  ],
+  "cve_ids": [],
+  "cwe_mappings": [],
+  "category_id": "authorization",
+  "secondary_category_ids": [
+    "cloud-security"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "cloud-iam-review",
+    "defensive-evidence-writing"
+  ],
+  "summary": "A researcher reports a $75,000 base award for a distinct Application Integration report.",
+  "root_cause": "Resource-ownership checks and task-authority checks were inconsistent. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations.",
+  "impact": "The authenticated-user research reports cross-project access and test execution. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated. Wider impact remains unverified.",
+  "defensive_takeaways": [
+    "Editorial lesson: authorize the actual resource owner at every service boundary rather than relying on an enclosing project context.",
+    "Editorial lesson: independently constrain service-task authority even when the initiating user may legitimately configure an integration.",
+    "Editorial lesson: use cross-tenant negative tests and track observed effects separately from vendor-assessed potential."
+  ],
+  "reward": {
+    "amount": 75000,
+    "currency": "USD",
+    "scope": "single_report",
+    "status": "awarded",
+    "evidence_level": "researcher_reported",
+    "source_id": "primary",
+    "evidence_quote": "2026-04-28 - Panel awards $75,000.",
+    "evidence_location": "Timeline (2nd RCE)",
+    "usd_equivalent": null,
+    "notes": "Only the second report’s base award; excludes the later $13,337 and first report. USD remains contextual: Google’s July 2024 USD-denominated VRP announcement and October 2024 Cloud-program continuity statement, not settlement evidence.",
+    "type": "bug_bounty",
+    "awarding_organization": "Google"
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Visible article header supplies May 22, 2026 and author Arvin Shivram."
+    },
+    "public_disclosure": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "reported": {
+      "value": "2026-03-21",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "awarded": {
+      "value": "2026-04-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": null
+    },
+    "fixed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "paid": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "award_announced": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "mitigated": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    }
+  },
+  "recency": {
+    "as_of": "2026-10-03",
+    "window_start": "2025-10-03",
+    "within_preferred_window": true,
+    "basis": "published",
+    "note": null
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://brutecat.com/articles/google-cloud-rce/",
+      "title": "StubZero: $148,337 RCE in Google Cloud Production",
+      "type": "researcher",
+      "author": "Arvin Shivram (Brutecat)",
+      "retrieved_at": "2026-10-03T02:35:33Z",
+      "supports": [
+        "reward",
+        "dates",
+        "root_cause",
+        "impact"
+      ]
+    },
+    {
+      "id": "google-currency",
+      "url": "https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515",
+      "title": "Increasing Google & Alphabet VRP rewards up to $151,515",
+      "type": "vendor",
+      "author": "Sam Erb and Krzysztof Kotowicz / Google",
+      "retrieved_at": "2026-10-03T02:35:33Z",
+      "supports": [
+        "reward"
+      ]
+    },
+    {
+      "id": "cloud-program-continuity",
+      "url": "https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program",
+      "title": "Introducing Google Cloud’s new Vulnerability Reward Program",
+      "type": "vendor",
+      "author": "Michael Cote and Sri Tulasiram / Google Cloud",
+      "retrieved_at": "2026-10-03T02:35:33Z",
+      "supports": [
+        "reward"
+      ]
+    }
+  ],
+  "primary_source_id": "primary",
+  "verification": {
+    "status": "included",
+    "reviewed_at": "2026-10-03T02:35:33Z",
+    "method": "Read primary article text, including the dated byline, and official Google sources. The July 2024 USD announcement was read in rendered browser text. No target testing.",
+    "limitations": [
+      "Award and vendor impact assessment are researcher-published claims, not independently reviewed vendor correspondence.",
+      "The article-level CVE is not assigned here because its scope across the separate reports is ambiguous.",
+      "No precise fix date, payment occurrence or settlement date is established.",
+      "Currency inference uses 2024 program context, about two years before the award. The current Cloud policy uses a dollar symbol without an explicit USD statement; no independent settlement evidence is claimed."
+    ]
+  },
+  "content_scope": "historical_defensive_summary"
+}

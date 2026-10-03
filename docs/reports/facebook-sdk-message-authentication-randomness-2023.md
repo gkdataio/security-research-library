@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: uncertain original publication date; reviewed as of 2026-10-02.
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 A USD 66,000 researcher-reported award illustrates how weak message authentication and unsafe rendering can invalidate an SDK trust boundary\.
 

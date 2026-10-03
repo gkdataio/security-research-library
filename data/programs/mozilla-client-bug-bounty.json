@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.3.0",
+  "id": "mozilla-client-bug-bounty",
+  "name": "Mozilla Client Bug Bounty",
+  "operator": "Mozilla",
+  "platform": "Bugzilla",
+  "program_url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+  "policy_url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+  "announcement_urls": [
+    "https://hackerone.com/mozilla/updates?type=team"
+  ],
+  "change_log_url": null,
+  "last_verified_at": "2026-10-03T02:31:44Z",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The official policy explicitly offers monetary bounties for eligible reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "currency": "USD",
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Published base ceilings are USD 3,000, 10,000 and 20,000 by impact. Certain mitigation findings receive a 50% bonus; exceptional moderate-impact reports remain discretionary. Bounds are null because no payout floor or single bonus-inclusive ceiling is stated.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Original actionable reports in supported configurations qualify; a 48-hour duplicate window may split awards. Internal discoveries and a seven-day internal-detection window can preclude payment, with exceptions. Contributors of the buggy code, employees, contractors and other business relationships are excluded. Local payment-age and US sanctions requirements apply.",
+    "source_ids": [
+      "policy",
+      "general"
+    ]
+  },
+  "restrictions": {
+    "summary": "Protect privacy and availability, use controlled accounts, report accidental data exposure and delete retained data after notification. Allow reasonable remediation time; no extortion or personal exploitation. End-of-life products, unbundled third-party code and unsupported configurations generally do not qualify. Safe harbor cannot bind third parties.",
+    "source_ids": [
+      "general",
+      "policy",
+      "faq"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The September 11, 2026 announcement expressly says the Firefox client program continues normally through Bugzilla despite the separate Web program’s pause.",
+    "source_ids": [
+      "updates"
+    ]
+  },
+  "limitations": [
+    "The FAQ identifies a February 24, 2026 reward-category change: GPU-process findings no longer receive the highest sandbox-escape category solely for that process compromise.",
+    "The reviewed July 10, 2026 announcement transfers Mozilla VPN client coverage into this program. No asset inventory is reproduced.",
+    "No client-specific change-log URL or overall policy revision date was established. Linked submission terms and Bugzilla etiquette were not exhaustively reviewed.",
+    "No authenticated intake or payment test occurred. This policy summary is distinct from the Web program and grants no authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Mozilla Client Bug Bounty Program",
+      "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-03T02:31:44Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "general",
+      "title": "Mozilla Security Bug Bounty general eligibility and safe harbor",
+      "url": "https://www.mozilla.org/en-US/security/bug-bounty/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-03T02:31:44Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "faq",
+      "title": "Mozilla Bug Bounty Program FAQ",
+      "url": "https://www.mozilla.org/en-US/security/bug-bounty/faq/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-03T02:31:44Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "updates",
+      "title": "Mozilla public program updates: client continuity and policy changes",
+      "url": "https://hackerone.com/mozilla/updates?type=team",
+      "publisher": "Mozilla / HackerOne",
+      "retrieved_at": "2026-10-03T02:31:44Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ]
+}

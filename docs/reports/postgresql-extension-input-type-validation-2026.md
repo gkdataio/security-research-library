@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-02.
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 Wiz confirms a USD 30,000 competition award for Daniel Firer’s PostgreSQL entry, uniquely mapped by the organizer to CVE-2026-2004\.
 

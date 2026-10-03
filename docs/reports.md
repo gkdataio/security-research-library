@@ -26,6 +26,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Cloud Build approval was not bound to immutable code](<reports/google-cloud-build-approval-toctou-2025.md>) — USD 30,000; bug\_bounty
 - [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](<reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md>) — USD 15,000; bug\_bounty
 - [Gemini-to-Colab rendering boundary exposed Workspace data](<reports/google-gemini-colab-rendering-boundary-2025.md>) — USD 20,000; bug\_bounty
+- [Google Application Integration mixed resource and service authority](<reports/google-application-integration-authorization-boundaries-2026.md>) — USD 75,000; bug\_bounty
 - [Google IDX worker messaging crossed browser trust boundaries](<reports/google-idx-worker-message-trust-2025.md>) — USD 22,500; bug\_bounty
 - [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>) — USD 13,337; bug\_bounty
 - [Google support API exposed customer and agent data](<reports/google-support-api-authorization-2026.md>) — USD 14,337; bug\_bounty
@@ -61,3 +62,4 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Redis deserialization cleanup violated object-ownership invariants](<reports/redis-deserialization-object-ownership-2026.md>) — USD 30,000; competition\_award
 - [Redis replication state changes invalidated an active interpreter](<reports/redis-replication-interpreter-lifetime-2026.md>) — USD 30,000; competition\_award
 - [Shopify Exchange screenshot service crossed internal boundaries](<reports/shopify-exchange-request-isolation-2019.md>) — USD 25,000; bug\_bounty
+- [Shopify automatic account conversion lost merchant-consent binding](<reports/shopify-collaborator-conversion-consent-2017.md>) — USD 20,000; bug\_bounty

@@ -7,7 +7,7 @@
 
 ## What the evidence establishes
 
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-02.
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 One cross-product privacy report received USD 3,133 and a USD 7,500 adjustment, totaling USD 10,633\.
 
