@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bugsink-2026-token-expiry-unit-integrity",
+  "title": "Bugsink: time-unit consistency in account-access token expiry",
+  "publisher": "Bugsink",
+  "authors": [
+    "vanschelven"
+  ],
+  "primary_url": "https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "security-token-design",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "GHSA-4f45-qmjf-82cv describes account-access links whose configured seconds were interpreted as days. The maintainer reports unused email-verification, password-reset and new-user setup tokens surviving their intended lifetime.",
+  "defensive_use": "Editorial lesson: represent security durations with explicit units and verify expiration independently of single-use behavior. The maintainer lists versions before 2.5.1 as affected and identifies 2.5.1 as correcting the unit conversion and removing over-age tokens before acceptance.",
+  "prerequisites": [
+    "Basic server-side identity and authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established. Software patch-release date 2026-08-31 is distinct from resource publication."
+    },
+    "source_displayed": {
+      "value": "2026-08-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T10:29:18Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory and release notes reviewed. Deployment state and source immutability are not established."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv",
+      "title": "Email verification, password-reset, and new-user setup links remain valid beyond their configured lifetime",
+      "publisher": "Bugsink",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:29:18Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-notes",
+      "url": "https://github.com/bugsink/bugsink/blob/main/CHANGELOG.md",
+      "title": "Bugsink changelog: 2.5.1",
+      "publisher": "Bugsink",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:29:18Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires possession of an unused token; the advisory says random tokens are not practically guessable. Access remains within the associated account’s permissions, without adding team or project memberships. Successful use deletes the token.",
+    "The source describes possible unauthorized login after expiry, not a documented production compromise or observed theft. The fix is maintainer-reported; this review did not independently assess deployments or session cleanup.",
+    "vanschelven published the advisory; no separate reporter is named. The original report date is unknown. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

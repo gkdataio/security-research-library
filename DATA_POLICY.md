@@ -51,7 +51,7 @@ Do not push over an unexpected remote change. Read the current branch and existi
 
 ## General resources and diagrams
 
-Educational resources use a separate schema, taxonomy, and export. They do not claim bounty qualification. Prefer official documentation, standards, first-party research, and controlled training environments. Preserve known publication/version dates, leave unknown dates null, and label prerequisites as editorial unless explicitly documented. Review freshness without claiming a living document is immutable.
+Educational resources use a separate schema, taxonomy, and export. They do not claim bounty qualification. Prefer official documentation, standards, first-party research, and controlled training environments. Preserve known publication/version dates, leave unknown dates null, and label prerequisites as editorial unless explicitly documented. Review freshness without claiming a living document is immutable. In resource records, `dates.version_released` describes the educational resource edition, not a software patch release. Preserve software patch chronology with its source in caveats or defensive-use text.
 
 Diagrams are original conceptual defensive models with linked report/resource evidence and alternate text. Do not include operational attack sequences or exploit details. Keep Mermaid source and SVG rendering provenance explicit. Both source formats must match the canonical graph; rendered SVGs need visual inspection after edits.
 

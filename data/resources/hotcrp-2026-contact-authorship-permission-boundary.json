@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "id": "hotcrp-2026-contact-authorship-permission-boundary",
+  "title": "HotCRP: separate submission visibility from authorship authority",
+  "publisher": "HotCRP",
+  "authors": [
+    "kohler"
+  ],
+  "primary_url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "GHSA-v8jx-vq6p-jq52 describes an API permission gap between viewing a submission and changing contact authorship. The maintainer reports that reviewers and program-committee members could obtain author-level access to submissions they could already view, affecting anonymity and integrity.",
+  "defensive_use": "Editorial lesson: authority-changing metadata needs its own permission check; visibility alone must not authorize membership changes. The advisory identifies versions 3.0.0–3.3.1 as affected and 3.4 as fixed. Release notes date 3.4 to August 5, before disclosure on August 11.",
+  "prerequisites": [
+    "Basic server-side identity and authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource-edition release established. Software patch-release date 2026-08-05 is distinct from resource publication."
+    },
+    "source_displayed": {
+      "value": "2026-08-11",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T10:29:18Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory and release notes reviewed. Deployment state and source immutability are not established."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
+      "title": "Escalation to author access by reviewers",
+      "publisher": "HotCRP",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:29:18Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-notes",
+      "url": "https://github.com/kohler/hotcrp/blob/master/NEWS.md",
+      "title": "HotCRP release notes: version 3.4",
+      "publisher": "HotCRP",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:29:18Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires an authenticated reviewer or program-committee member and existing submission visibility; this is not an unauthenticated access claim.",
+    "The maintainer reports an action-log review finding no exploitation on its hosted service. That statement does not establish absence of incidents in other deployments. The advisory reports capability and consequences, without a separate production-incident narrative.",
+    "kohler published the advisory; discovery is credited to an internal audit without a named individual reporter. The original report date is unknown.",
+    "This review did not independently verify the patch implementation or deployed state. Upgrade evidence does not establish reversal of any prior unauthorized authorship changes. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -113,7 +113,8 @@
           "$ref": "#/$defs/date"
         },
         "version_released": {
-          "$ref": "#/$defs/date"
+          "$ref": "#/$defs/date",
+          "description": "Release date of the educational resource edition, not the version of software discussed. Record software patch dates with their source in caveats or defensive_use."
         },
         "source_displayed": {
           "$ref": "#/$defs/date"

@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 56,
+    "resources": 58,
     "diagrams": 9
   },
   "taxonomy": {
@@ -648,6 +648,100 @@
         "The source credits chdanielmueller as reporter; no advisory author byline is established.",
         "This is a substantive maintainer disclosure corroborated by release notes, not an independently peer-reviewed paper or an award-backed record."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "bugsink-2026-token-expiry-unit-integrity",
+      "title": "Bugsink: time-unit consistency in account-access token expiry",
+      "publisher": "Bugsink",
+      "authors": [
+        "vanschelven"
+      ],
+      "primary_url": "https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "security-token-design",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "GHSA-4f45-qmjf-82cv describes account-access links whose configured seconds were interpreted as days. The maintainer reports unused email-verification, password-reset and new-user setup tokens surviving their intended lifetime.",
+      "defensive_use": "Editorial lesson: represent security durations with explicit units and verify expiration independently of single-use behavior. The maintainer lists versions before 2.5.1 as affected and identifies 2.5.1 as correcting the unit conversion and removing over-age tokens before acceptance.",
+      "prerequisites": [
+        "Basic server-side identity and authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established. Software patch-release date 2026-08-31 is distinct from resource publication."
+        },
+        "source_displayed": {
+          "value": "2026-08-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T10:29:18Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release notes reviewed. Deployment state and source immutability are not established."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv",
+          "title": "Email verification, password-reset, and new-user setup links remain valid beyond their configured lifetime",
+          "publisher": "Bugsink",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:29:18Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-notes",
+          "url": "https://github.com/bugsink/bugsink/blob/main/CHANGELOG.md",
+          "title": "Bugsink changelog: 2.5.1",
+          "publisher": "Bugsink",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:29:18Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires possession of an unused token; the advisory says random tokens are not practically guessable. Access remains within the associated account’s permissions, without adding team or project memberships. Successful use deletes the token.",
+        "The source describes possible unauthorized login after expiry, not a documented production compromise or observed theft. The fix is maintainer-reported; this review did not independently assess deployments or session cleanup.",
+        "vanschelven published the advisory; no separate reporter is named. The original report date is unknown. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
@@ -1385,6 +1479,101 @@
       ],
       "caveats": [
         "The official source includes technical examples; this catalog retains reporting-quality lessons only."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "hotcrp-2026-contact-authorship-permission-boundary",
+      "title": "HotCRP: separate submission visibility from authorship authority",
+      "publisher": "HotCRP",
+      "authors": [
+        "kohler"
+      ],
+      "primary_url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "GHSA-v8jx-vq6p-jq52 describes an API permission gap between viewing a submission and changing contact authorship. The maintainer reports that reviewers and program-committee members could obtain author-level access to submissions they could already view, affecting anonymity and integrity.",
+      "defensive_use": "Editorial lesson: authority-changing metadata needs its own permission check; visibility alone must not authorize membership changes. The advisory identifies versions 3.0.0–3.3.1 as affected and 3.4 as fixed. Release notes date 3.4 to August 5, before disclosure on August 11.",
+      "prerequisites": [
+        "Basic server-side identity and authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource-edition release established. Software patch-release date 2026-08-05 is distinct from resource publication."
+        },
+        "source_displayed": {
+          "value": "2026-08-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T10:29:18Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release notes reviewed. Deployment state and source immutability are not established."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52",
+          "title": "Escalation to author access by reviewers",
+          "publisher": "HotCRP",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:29:18Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-notes",
+          "url": "https://github.com/kohler/hotcrp/blob/master/NEWS.md",
+          "title": "HotCRP release notes: version 3.4",
+          "publisher": "HotCRP",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:29:18Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an authenticated reviewer or program-committee member and existing submission visibility; this is not an unauthenticated access claim.",
+        "The maintainer reports an action-log review finding no exploitation on its hosted service. That statement does not establish absence of incidents in other deployments. The advisory reports capability and consequences, without a separate production-incident narrative.",
+        "kohler published the advisory; discovery is credited to an internal audit without a named individual reporter. The original report date is unknown.",
+        "This review did not independently verify the patch implementation or deployed state. Upgrade evidence does not establish reversal of any prior unauthorized authorship changes. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
     },
