@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 50,
+    "resources": 52,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1871,6 +1871,231 @@
         "The software-release page displays July 27 without a year in the retrieved rendering. No exact software-release date is inferred; advisory publication is independently explicit."
       ],
       "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "obot-2026-oauth-audience-and-consent-boundaries",
+      "title": "Obot: preserve delegated token audience and consent boundaries",
+      "publisher": "Obot",
+      "authors": [
+        "thedadams"
+      ],
+      "primary_url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication; not software release date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned resource edition established; product fix versions are recorded below."
+        },
+        "source_displayed": {
+          "value": "2026-06-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date beside the advisory publisher."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T08:39:25Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed maintainer advisory and corroborating project sources. No software executed or deployment tested."
+      },
+      "content_scope": "defensive_education",
+      "summary": "GHSA-xwmw-prc4-v3cr describes MCP-delegated tokens accepted by broader application APIs because issuer validation did not establish audience authority. Client authorization also lacked explicit consent. The maintainer describes possible access to resources already available to the victim; this is bounded worst-case impact, not evidence of observed production compromise.",
+      "defensive_use": "The maintainer identifies v0.23.0 as patched. Its release notes corroborate consent, narrower token routing and audience checks. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance.",
+      "prerequisites": [
+        "OAuth client registration, consent and token audience concepts",
+        "Delegated authorization across application and MCP boundaries"
+      ],
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
+          "title": "OAuth Dynamic Client Registration Enables API Token Theft via Audience Confusion",
+          "publisher": "Obot",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/obot-platform/obot/releases/tag/v0.23.0",
+          "title": "Obot v0.23.0 release notes",
+          "publisher": "Obot",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "database-history",
+          "url": "https://github.com/advisories/GHSA-xwmw-prc4-v3cr",
+          "title": "GHSA-xwmw-prc4-v3cr publication history",
+          "publisher": "GitHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Publisher prerequisites: affected versions through v0.22.1, application authentication enabled, and interaction by an already signed-in victim. No preexisting attacker account is required.",
+        "The maintainer credits EQSTLab as reporter. No award claim is made.",
+        "GitHub records September 18, 2026 database publication and review separately from June 22 maintainer publication. The release page displays June 17 without a year in the retrieved text; no full software-release date is inferred.",
+        "The reviewed sources do not establish automatic revocation of previously issued tokens after upgrade; historical exposure and remediation validation remain deployment-specific.",
+        "Conceptual defensive summary only; public disclosure grants no testing authorization."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "open-webui-2026-role-claim-provenance-and-revocation",
+      "title": "Open WebUI: preserve role-policy meaning across identity flows",
+      "publisher": "Open WebUI",
+      "authors": [
+        "doge-woof"
+      ],
+      "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication; not software release date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned resource edition established; product fix versions are recorded below."
+        },
+        "source_displayed": {
+          "value": "2026-09-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date beside the advisory publisher."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T08:39:25Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed maintainer advisory and corroborating project sources. No software executed or deployment tested."
+      },
+      "content_scope": "defensive_education",
+      "summary": "GHSA-2rr4-q6pg-m5g3 documents a shared-policy input mismatch: browser sign-in supplied identity-token claims, while token exchange supplied only provider user information. Missing role evidence preserved an old role. The maintainer reports local verification of continued access on 0.11.3 and rejection on 0.11.4; consequences beyond the prior role are not demonstrated.",
+      "defensive_use": "Version 0.11.4 is identified as patched. The linked change and release notes corroborate expanded claim handling and rejection when role evidence cannot be read. Editorial lesson: sharing policy code is insufficient when callers provide different evidence; document claim provenance and make missing-evidence behavior explicit.",
+      "prerequisites": [
+        "OIDC claims and application-role mapping",
+        "Account linking, role revocation and fail-closed policy behavior"
+      ],
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3",
+          "title": "Revoked users keep signing in via token exchange when roles are only in the ID token",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "earlier-advisory",
+          "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-wvm9-9g5j-623f",
+          "title": "Users denied by the OAuth role policy can still sign in via token exchange",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "patch",
+          "url": "https://github.com/open-webui/open-webui/commit/10d1cfe6375f207acaa531e857edb575ded2cfc3",
+          "title": "Role-claim handling remediation commit",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/open-webui/open-webui/releases/tag/v0.11.4",
+          "title": "Open WebUI v0.11.4 release notes",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T08:39:25Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Publisher prerequisites: non-default token exchange and role management enabled, a non-wildcard allowed-role policy, roles absent from provider user information, and a previously linked account still able to receive valid provider tokens.",
+        "The advisory covers 0.11.1 through 0.11.3. Prior access persists; no new account or privilege elevation is established. Browser sign-in remains policy-enforcing.",
+        "The September 9 advisory identified 0.11.1 as fixing omitted role evaluation. The September 27 disclosure establishes that claim-source differences required further remediation; the earlier fix must not be presented as sufficient for this case.",
+        "The primary advisory credits manus-pi as reporter and Classic298 for remediation. Its local-provider experiment does not independently verify every identity-provider configuration or deployed installation.",
+        "The remedy addresses newly issued sessions; immediate invalidation of all previously issued sessions is not established by these sources. Resource publication and product patch release are distinct.",
+        "Conceptual defensive summary only; public disclosure grants no testing authorization."
+      ]
     },
     {
       "schema_version": "1.0.0",

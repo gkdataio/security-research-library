@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0.0",
+  "id": "obot-2026-oauth-audience-and-consent-boundaries",
+  "title": "Obot: preserve delegated token audience and consent boundaries",
+  "publisher": "Obot",
+  "authors": [
+    "thedadams"
+  ],
+  "primary_url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "identity-lifecycle-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-06-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication; not software release date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned resource edition established; product fix versions are recorded below."
+    },
+    "source_displayed": {
+      "value": "2026-06-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date beside the advisory publisher."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T08:39:25Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed maintainer advisory and corroborating project sources. No software executed or deployment tested."
+  },
+  "content_scope": "defensive_education",
+  "summary": "GHSA-xwmw-prc4-v3cr describes MCP-delegated tokens accepted by broader application APIs because issuer validation did not establish audience authority. Client authorization also lacked explicit consent. The maintainer describes possible access to resources already available to the victim; this is bounded worst-case impact, not evidence of observed production compromise.",
+  "defensive_use": "The maintainer identifies v0.23.0 as patched. Its release notes corroborate consent, narrower token routing and audience checks. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance.",
+  "prerequisites": [
+    "OAuth client registration, consent and token audience concepts",
+    "Delegated authorization across application and MCP boundaries"
+  ],
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr",
+      "title": "OAuth Dynamic Client Registration Enables API Token Theft via Audience Confusion",
+      "publisher": "Obot",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T08:39:25Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/obot-platform/obot/releases/tag/v0.23.0",
+      "title": "Obot v0.23.0 release notes",
+      "publisher": "Obot",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T08:39:25Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "database-history",
+      "url": "https://github.com/advisories/GHSA-xwmw-prc4-v3cr",
+      "title": "GHSA-xwmw-prc4-v3cr publication history",
+      "publisher": "GitHub",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T08:39:25Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Publisher prerequisites: affected versions through v0.22.1, application authentication enabled, and interaction by an already signed-in victim. No preexisting attacker account is required.",
+    "The maintainer credits EQSTLab as reporter. No award claim is made.",
+    "GitHub records September 18, 2026 database publication and review separately from June 22 maintainer publication. The release page displays June 17 without a year in the retrieved text; no full software-release date is inferred.",
+    "The reviewed sources do not establish automatic revocation of previously issued tokens after upgrade; historical exposure and remediation validation remain deployment-specific.",
+    "Conceptual defensive summary only; public disclosure grants no testing authorization."
+  ]
+}
