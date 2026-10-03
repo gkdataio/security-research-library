@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rocketchat-2026-asynchronous-identity-verification",
+  "title": "Rocket.Chat: authentication must await a completed verification decision",
+  "publisher": "GitHub Security Lab",
+  "authors": [
+    "Peter Stöckli"
+  ],
+  "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-004_GHSL-2026-005_Rocket_Chat/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "concurrency-reasoning",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites": [
+    "Basic server-side authentication and authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Resource has no stated release version; software fixes are described separately."
+    },
+    "source_displayed": {
+      "value": "2026-03-12",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T09:29:37Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Research and maintainer evidence reviewed; no live deployment or remediation testing performed."
+  },
+  "content_scope": "defensive_education",
+  "summary": "CVE-2026-28514 concerned asynchronous password verification in the enterprise account service. The authentication decision treated an unfinished validation object as success instead of using its eventual result. The researcher tested Rocket.Chat 7.13.2; the maintainer corroborates unauthorized access to available service methods, with possible account takeover depending on subsequent application behavior.",
+  "defensive_use": "Editorial lesson: model authentication as a completed, explicit decision; pending, rejected, and failed validation must not imply success. Maintain regression coverage for asynchronous rejection and service-specific authentication equivalence. The maintainer remediation requires waiting for verification and recommends tooling to detect unhandled asynchronous results.",
+  "caveats": [
+    "Requires the affected enterprise streaming/account-service deployment and an account with password authentication configured; the reported identity must be known or guessable. Do not generalize this to every Rocket.Chat installation or authentication mode.",
+    "The researcher describes broad takeover potential. The maintainer impact statement is narrower: access to available service methods, with takeover dependent on the application path. Neither source supplies a customer incident count.",
+    "Reported January 9, 2026; the researcher dates the initial 8.0.0 fix to January 12 and supported-version fixes to March 5. The maintainer advisory was published March 5; detailed research March 12. These are not resource version-release dates.",
+    "Maintainer-listed patched releases: 8.0.0, 7.13.3, 7.12.4, 7.11.4, 7.10.7, 7.9.8 and 7.8.6. No deployment remediation was verified.",
+    "The research page also covers CVE-2026-30833; this resource is confined to asynchronous authentication verification and does not summarize a combined attack.",
+    "Byline: Peter Stöckli. Discovery used GitHub Security Lab Taskflow Agent, manually verified by Peter Stöckli and Man Yue Mo. Learning prerequisites are editorial."
+  ],
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://securitylab.github.com/advisories/GHSL-2026-004_GHSL-2026-005_Rocket_Chat/",
+      "title": "GHSL-2026-004_GHSL-2026-005: Authentication bypass in Rocket.Chat",
+      "publisher": "GitHub Security Lab",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T09:29:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer-advisory",
+      "url": "https://github.com/RocketChat/Rocket.Chat/security/advisories/GHSA-w6vw-mrgv-69vf",
+      "title": "Users can login with any password via the EE ddp-streamer-service",
+      "publisher": "Rocket.Chat",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T09:29:37Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ]
+}
