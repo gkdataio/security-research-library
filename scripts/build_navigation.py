@@ -21,6 +21,30 @@ def link(label, url):
 
 
 
+def resource_topic_page(resources, taxonomy):
+    """Group canonical memberships, retaining one distinct record count."""
+    ordered = sorted(resources, key=lambda r: (r['title'].casefold(), r['id']))
+    topics = sorted(taxonomy['topics'], key=lambda t: (t['title'].casefold(), t['id']))
+    groups = [(topic, [rec for rec in ordered if topic['id'] in rec['topic_ids']])
+              for topic in topics]
+    lines = ['# Learning resources by topic', '',
+             '[Alphabetical resource index](resource-index.md) · [Curated resource guide](resources.md) · [Library home](../README.md)', '',
+             'Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.', '',
+             f'{len(ordered)} distinct resources across {len(topics)} taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.', '',
+             'Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.', '',
+             '## Browse topics', '']
+    for topic, records in groups:
+        anchor = 'topic-'+quote(topic['id'], safe='')
+        lines.append('- '+link(topic['title'], '#'+anchor)+f' — {len(records)} resources.')
+    for topic, records in groups:
+        anchor = 'topic-'+quote(topic['id'], safe='')
+        lines += ['', f'<a id="{anchor}"></a>', '## '+text(topic['title']), '',
+                  f'{len(records)} resources.', '']
+        lines += ['- '+link(rec['title'], 'resources/'+rec['id']+'.md')+' — '+text(rec['publisher'])+'.'
+                  for rec in records] or ['No resources currently assigned to this topic.']
+    return '\n'.join(lines)+'\n'
+
+
 def resource_pages(resources, diagrams, taxonomy, skills):
     """Render editorial summaries without fetching or copying linked materials."""
     types = {item['id']: item['title'] for item in taxonomy['resource_types']}
@@ -28,7 +52,7 @@ def resource_pages(resources, diagrams, taxonomy, skills):
     skill_titles = {item['id']: item['title'] for item in skills['skillsets']}
     ordered = sorted(resources, key=lambda r: (r['title'].casefold(), r['id']))
     index = ['# Read the learning resources', '',
-             '[Library home](../README.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
+             '[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
              'Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.', '',
              f'{len(ordered)} resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.', '']
     pages = {}
@@ -84,6 +108,7 @@ def resource_pages(resources, diagrams, taxonomy, skills):
         lines += ['', 'Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).', '']
         pages['docs/resources/'+rid+'.md'] = '\n'.join(lines)
     pages['docs/resource-index.md'] = '\n'.join(index)+'\n'
+    pages['docs/resource-topics.md'] = resource_topic_page(resources, taxonomy)
     return pages
 
 

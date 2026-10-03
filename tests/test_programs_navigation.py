@@ -136,7 +136,7 @@ class NavigationTests(unittest.TestCase):
             for target in re.findall(r'\]\(<?([^)>]+)>?\)',content):
                 url=urlsplit(target)
                 if url.scheme:continue
-                path=(ROOT/name).parent/unquote(url.path)
+                path=(ROOT/name).parent/unquote(url.path) if url.path else ROOT/name
                 self.assertTrue(path.is_file(),f'{name}: {target}')
                 if url.fragment:
                     self.assertIn(f'id="{url.fragment}"',path.read_text())

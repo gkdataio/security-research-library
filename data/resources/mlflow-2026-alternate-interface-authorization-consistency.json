@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "id": "mlflow-2026-alternate-interface-authorization-consistency",
+  "title": "MLflow: authorization must survive alternate resource interfaces",
+  "publisher": "Tachyon",
+  "authors": [
+    "Aakash Japi"
+  ],
+  "primary_url": "https://tachyon.so/blog/cve-2025-14297-mlflow-authorization-bypass",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "patch-verification",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary sources readable without an account."
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T07:19:04Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed primary disclosure and maintainer corroboration; no independent vulnerability reproduction performed."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Tachyon\u2019s 2026 account of CVE-2025-14297 describes resource permissions depending on incomplete interface registration. Authentication could succeed while a missing authorization mapping permitted resource access. The researcher demonstrates restricted artifact reads and describes unauthorized writes and metadata access; the maintainer\u2019s artifact-interface change corroborates a concrete enforcement gap.",
+  "defensive_use": "Document one actor/action/resource policy shared by all interfaces. Treat new helper interfaces as additions to the authorization model, and make missing enforcement fail closed. Compare remediation claims with the actual maintainer change: the reviewed artifact patch aligns alternate interface recognition with permission enforcement.",
+  "prerequisites": [
+    "Authentication versus object-level authorization",
+    "Applications with multiple interfaces to shared resources"
+  ],
+  "dates": {
+    "published": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Publication of the detailed researcher article, not initial vulnerability reporting or first public disclosure."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Artifact enforcement patch merged January 19, 2026; the first containing release was not established."
+    },
+    "source_displayed": {
+      "value": "2026-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Article publication date."
+    }
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://tachyon.so/blog/cve-2025-14297-mlflow-authorization-bypass",
+      "title": "CVE-2025-14297: MLflow Authorization Bypass",
+      "publisher": "Tachyon",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:19:04Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "artifact-fix",
+      "url": "https://github.com/mlflow/mlflow/pull/20035",
+      "title": "Enforce authorization on AJAX proxy artifact APIs",
+      "publisher": "MLflow",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:19:04Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "graphql-change",
+      "url": "https://github.com/mlflow/mlflow/commit/87dc3fcab10bb79980b33d5485bb60fc1ef76f6d",
+      "title": "Add an env var for controlling whether to enable GraphQL routes authorization",
+      "publisher": "MLflow",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:19:04Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The researcher limits exposure to self-hosted OSS basic-auth deployments with authenticated non-admin users; Databricks-managed MLflow is excluded.",
+    "Downstream code execution is a conditional modeled consequence in the article, not demonstrated production compromise or an automatic result of data access.",
+    "The article links a GraphQL commit that adds an authorization configuration switch; that commit alone does not establish the original GraphQL enforcement implementation or its complete patch chronology.",
+    "The maintainer artifact patch merged January 19, 2026, separately from February 3 publication. Exact affected-version and first-fixed-release bounds were not established from reviewed primary sources.",
+    "The underlying finding predates this article; 2026 labels the detailed educational publication. No bounty amount or independent exploit verification is claimed."
+  ]
+}
