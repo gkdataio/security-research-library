@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 101,
+    "resources": 105,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1304,6 +1304,99 @@
         "The advisory lists stable versions below 1.6.11 and 1.7.0-beta.0 through beta.3. Its deprecated compatibility opt-out restores weaker linking behavior.",
         "gustavovalverde published the advisory; avrmeduard is credited as reporter. Release notes show May 12 without an explicit year in retrieved text; exact patch date is left unestablished.",
         "Maintainer disclosure, not a peer-reviewed paper, award-backed report, or evidence of production exploitation."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "better-auth-2026-scim-ownerless-provider-authority",
+      "title": "Better Auth SCIM: absent ownership must not grant shared authority",
+      "publisher": "Better Auth",
+      "authors": [
+        "gustavovalverde"
+      ],
+      "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Personal SCIM providers could lack an owner, while management checks rejected mismatched ownership only when an owner existed. Missing identity binding therefore admitted unrelated authenticated users. The maintainer reports provider disclosure, deletion and token replacement, with provisioning authority limited to enabled SCIM features.",
+      "defensive_use": "Editorial reasoning: an unknown owner is a separate authorization state, not an implicit shared resource. Review creation, migration and subsequent management together. The fix mandates owner binding and makes legacy ownerless records fail closed; administrators must resolve those records rather than assuming a package upgrade assigns legitimate ownership.",
+      "prerequisites": [
+        "SCIM provisioning, bearer-token authority and object ownership concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-05-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T16:19:37Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4",
+          "title": "SCIM personal-provider ownership advisory",
+          "publisher": "Better Auth",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:37Z",
+          "supports": [
+            "summary",
+            "dates",
+            "version"
+          ]
+        },
+        {
+          "id": "bulletin",
+          "url": "https://better-auth.com/blog/security-update-june-2026",
+          "title": "Security update: June 2026",
+          "publisher": "Better Auth",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:37Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires multiple signed-in users, personal providers and disabled ownership enforcement; organization-bound providers use separate checks. Affected versions are 1.5.0 through 1.7.0-beta.3.",
+        "The advisory identifies fixes in 1.7.0-beta.4 and 1.7.0; the 1.6.x line requires mitigation. The June 2, 2026 vendor bulletin independently identifies the SCIM-specific beta fix, rather than treating its general stable-release guidance as sufficient.",
+        "gustavovalverde published the notice; Jvr2022 is credited as reporter. Impact is maintainer-reported; compromise of a deployed instance is not established. Patch-release dates remain unverified and are not resource-edition dates."
       ],
       "content_scope": "defensive_education"
     },
@@ -2996,6 +3089,87 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "librechat-2026-agent-context-mutation-authority",
+      "title": "LibreChat: agent edit authority must cover attached context",
+      "publisher": "LibreChat",
+      "authors": [
+        "Lisa Gnedt",
+        "Michael Koppmann"
+      ],
+      "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "ai-security",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "ai-authority-boundaries",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The advisory contrasts denied access to a private agent with accepted changes to its attached files. Upload handling omitted the agent permissions enforced elsewhere, allowing unauthorized context and search-file additions. The documented demonstration changed the owner-visible agent response. This is an application authorization failure before model interpretation.",
+      "defensive_use": "The source recommends checking agent-edit permission for uploads. Editorial review principle: enumerate every mutation of an agent’s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations.",
+      "prerequisites": [
+        "Object-level authorization and agent context composition"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-01-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-01-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T16:19:05Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59",
+          "title": "LibreChat Insufficient Access Control on Agent Files",
+          "publisher": "LibreChat",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:05Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an authenticated account and knowledge of another agent’s identifier; private agents were not ordinarily visible.",
+        "CVE-2025-69220: the advisory identifies 0.8.1-rc2 as affected and records the 0.8.2-rc2 fix release on January 7, 2026.",
+        "No production compromise, data theft, or award is established. Broader model behavior depends on application context; this review did not run the demonstration."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "librechat-2026-mcp-oauth-session-binding",
       "title": "LibreChat: delegated credentials must remain bound to the initiating session",
       "publisher": "LibreChat",
@@ -3077,6 +3251,87 @@
         "No independent production-compromise evidence, patch-release date, historical-token revocation behavior, or award amount is established.",
         "Conceptual defensive summary; public disclosure grants no testing authorization."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "librechat-2026-mcp-view-secret-projection",
+      "title": "LibreChat: viewing an integration must not reveal its service secrets",
+      "publisher": "LibreChat",
+      "authors": [
+        "LoGGGG2402"
+      ],
+      "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-6vqg-rgpm-qvf9",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "ai-security",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "secrets-containment",
+        "ai-authority-boundaries",
+        "secure-parser-review"
+      ],
+      "version": null,
+      "summary": "The MCP registry prepared decrypted configuration for internal use, and response handlers returned that representation to viewers without removing secrets. Object visibility consequently became credential disclosure authority. The advisory documents a local demonstration exposing administrator-managed provider credentials to a view-only account.",
+      "defensive_use": "The source recommends secret-free responses and presence indicators. Editorial review principle: define separate execution and presentation representations, then verify that list and detail responses preserve the same field-level disclosure policy.",
+      "prerequisites": [
+        "Integration credentials, response serialization, and object versus field authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-06-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T16:19:05Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-6vqg-rgpm-qvf9",
+          "title": "Shared MCP Server View Leaks Decrypted Admin Secrets",
+          "publisher": "LibreChat",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:05Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires MCP enabled, stored administrator-managed secrets, and viewer access to the shared integration.",
+        "CVE-2026-44653: affected v0.8.3 and patched v0.8.4 are listed; patch release date is not established by the advisory. March 13 is the reported test date, not publication.",
+        "Credential reuse and indirect exposure through shared agents are possible extensions discussed by the source, not demonstrated outcomes. No production compromise or award is established."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
@@ -7145,6 +7400,99 @@
           ]
         }
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "samlify-2026-assertion-generation-claim-integrity",
+      "title": "samlify: signing does not establish claim provenance",
+      "publisher": "samlify",
+      "authors": [
+        "tngan"
+      ],
+      "primary_url": "https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The maintainer describes inconsistent escaping between XML attribute and element-text contexts during SAML assertion generation. User-controlled profile values could change assertion structure before the identity provider signed it. The service provider subsequently accepted extra attributes as authenticated claims; privilege escalation depends on using those attributes for authorization.",
+      "defensive_use": "Editorial reasoning: signatures protect the generated representation, not the authority of each input used to construct it. Keep profile text separate from authorization-claim structure, use context-correct serialization before signing, and review which upstream actors may supply claims consumed as roles. A signature check alone cannot repair a compromised issuance boundary.",
+      "prerequisites": [
+        "SAML issuer/relying-party roles, XML contexts and claim-based authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2026-05-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T16:19:37Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m",
+          "title": "SAML attribute-generation integrity advisory",
+          "publisher": "samlify",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:37Z",
+          "supports": [
+            "summary",
+            "dates",
+            "version"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/tngan/samlify/releases/tag/v2.13.0",
+          "title": "Release v2.13.0",
+          "publisher": "samlify",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:19:37Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "The advisory identifies master/v2.10.2 as affected and 2.13.0 as patched; it does not establish a complete affected-version interval. Exposure requires user-controlled values reaching assertion generation and a relying party trusting the resulting attributes.",
+        "The published example supports added attributes being parsed; downstream privileged application actions are conditional consequences, not evidence of a breached deployment.",
+        "tngan published the advisory; RootUp is credited as reporter in both advisory and release notes. The 2.13.0 release explicitly references this advisory. Its displayed May 14 timestamp omits the year in retrieved text, so no full patch date is asserted. Resource edition remains null."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",

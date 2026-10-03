@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "id": "librechat-2026-agent-context-mutation-authority",
+  "title": "LibreChat: agent edit authority must cover attached context",
+  "publisher": "LibreChat",
+  "authors": [
+    "Lisa Gnedt",
+    "Michael Koppmann"
+  ],
+  "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "ai-security",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "ai-authority-boundaries",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "The advisory contrasts denied access to a private agent with accepted changes to its attached files. Upload handling omitted the agent permissions enforced elsewhere, allowing unauthorized context and search-file additions. The documented demonstration changed the owner-visible agent response. This is an application authorization failure before model interpretation.",
+  "defensive_use": "The source recommends checking agent-edit permission for uploads. Editorial review principle: enumerate every mutation of an agent\u2019s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations.",
+  "prerequisites": [
+    "Object-level authorization and agent context composition"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-01-07",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-01-07",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned educational edition established."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T16:19:05Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59",
+      "title": "LibreChat Insufficient Access Control on Agent Files",
+      "publisher": "LibreChat",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T16:19:05Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires an authenticated account and knowledge of another agent\u2019s identifier; private agents were not ordinarily visible.",
+    "CVE-2025-69220: the advisory identifies 0.8.1-rc2 as affected and records the 0.8.2-rc2 fix release on January 7, 2026.",
+    "No production compromise, data theft, or award is established. Broader model behavior depends on application context; this review did not run the demonstration."
+  ],
+  "content_scope": "defensive_education"
+}

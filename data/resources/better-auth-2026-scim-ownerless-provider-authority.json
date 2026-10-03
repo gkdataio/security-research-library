@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "better-auth-2026-scim-ownerless-provider-authority",
+  "title": "Better Auth SCIM: absent ownership must not grant shared authority",
+  "publisher": "Better Auth",
+  "authors": [
+    "gustavovalverde"
+  ],
+  "primary_url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Personal SCIM providers could lack an owner, while management checks rejected mismatched ownership only when an owner existed. Missing identity binding therefore admitted unrelated authenticated users. The maintainer reports provider disclosure, deletion and token replacement, with provisioning authority limited to enabled SCIM features.",
+  "defensive_use": "Editorial reasoning: an unknown owner is a separate authorization state, not an implicit shared resource. Review creation, migration and subsequent management together. The fix mandates owner binding and makes legacy ownerless records fail closed; administrators must resolve those records rather than assuming a package upgrade assigns legitimate ownership.",
+  "prerequisites": [
+    "SCIM provisioning, bearer-token authority and object ownership concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-05-31",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T16:19:37Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4",
+      "title": "SCIM personal-provider ownership advisory",
+      "publisher": "Better Auth",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T16:19:37Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    },
+    {
+      "id": "bulletin",
+      "url": "https://better-auth.com/blog/security-update-june-2026",
+      "title": "Security update: June 2026",
+      "publisher": "Better Auth",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T16:19:37Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Exposure requires multiple signed-in users, personal providers and disabled ownership enforcement; organization-bound providers use separate checks. Affected versions are 1.5.0 through 1.7.0-beta.3.",
+    "The advisory identifies fixes in 1.7.0-beta.4 and 1.7.0; the 1.6.x line requires mitigation. The June 2, 2026 vendor bulletin independently identifies the SCIM-specific beta fix, rather than treating its general stable-release guidance as sufficient.",
+    "gustavovalverde published the notice; Jvr2022 is credited as reporter. Impact is maintainer-reported; compromise of a deployed instance is not established. Patch-release dates remain unverified and are not resource-edition dates."
+  ],
+  "content_scope": "defensive_education"
+}
