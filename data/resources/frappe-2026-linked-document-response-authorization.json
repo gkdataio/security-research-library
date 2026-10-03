@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "id": "frappe-2026-linked-document-response-authorization",
+  "title": "Frappe: linked data must preserve document and field permissions",
+  "publisher": "GitHub Security Lab",
+  "authors": [
+    "Man Yue Mo"
+  ],
+  "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-39351 concerns related-document expansion in a REST response. Frappe loaded linked records without checking the caller’s permission and serialized them without field filtering. The research identifies disclosure of otherwise inaccessible documents in tested version 15.96.0.",
+  "defensive_use": "Editorial lesson: authorization on a parent object cannot authorize every object reachable from it. Define response contracts that preserve both per-document access and field visibility during expansion. The maintainer advisory identifies patched releases 15.104.0 and 16.14.0; it does not describe the patch implementation.",
+  "prerequisites": [
+    "Basic API access-control concepts",
+    "Familiarity with server-side data processing"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-04-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-04-24",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T07:10:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary research and maintainer evidence reviewed. Article immutability and deployment remediation were not established."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/",
+      "title": "GHSL-2026-012: Unauthorized Data Exposure via REST API Link Expansion in Frappe - CVE-2026-39351",
+      "publisher": "GitHub Security Lab",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:10:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer-advisory",
+      "url": "https://github.com/frappe/frappe/security/advisories/GHSA-8ggw-hfr6-rw3x",
+      "title": "Unrestricted Doctype access via API exploit",
+      "publisher": "Frappe",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T07:10:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires a readable parent document whose expanded links reach records the caller cannot otherwise access; it does not establish unrestricted access to every document.",
+    "The publication explains the code-level disclosure mechanism but supplies no customer incident or measured data-loss evidence. Do not infer write access or account takeover.",
+    "Reported January 19, 2026; maintainer advisory published April 7; detailed research published April 24. Fix-release dates were not established by the reviewed sources.",
+    "The byline is Man Yue Mo. Discovery is credited to GitHub Security Lab Taskflow Agent, with human review by Peter Stöckli and Man Yue Mo. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

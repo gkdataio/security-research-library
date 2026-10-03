@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 40,
+    "resources": 42,
     "diagrams": 9
   },
   "taxonomy": {
@@ -721,6 +721,100 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "frappe-2026-linked-document-response-authorization",
+      "title": "Frappe: linked data must preserve document and field permissions",
+      "publisher": "GitHub Security Lab",
+      "authors": [
+        "Man Yue Mo"
+      ],
+      "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-39351 concerns related-document expansion in a REST response. Frappe loaded linked records without checking the caller’s permission and serialized them without field filtering. The research identifies disclosure of otherwise inaccessible documents in tested version 15.96.0.",
+      "defensive_use": "Editorial lesson: authorization on a parent object cannot authorize every object reachable from it. Define response contracts that preserve both per-document access and field visibility during expansion. The maintainer advisory identifies patched releases 15.104.0 and 16.14.0; it does not describe the patch implementation.",
+      "prerequisites": [
+        "Basic API access-control concepts",
+        "Familiarity with server-side data processing"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-04-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-04-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:10:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary research and maintainer evidence reviewed. Article immutability and deployment remediation were not established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/",
+          "title": "GHSL-2026-012: Unauthorized Data Exposure via REST API Link Expansion in Frappe - CVE-2026-39351",
+          "publisher": "GitHub Security Lab",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer-advisory",
+          "url": "https://github.com/frappe/frappe/security/advisories/GHSA-8ggw-hfr6-rw3x",
+          "title": "Unrestricted Doctype access via API exploit",
+          "publisher": "Frappe",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires a readable parent document whose expanded links reach records the caller cannot otherwise access; it does not establish unrestricted access to every document.",
+        "The publication explains the code-level disclosure mechanism but supplies no customer incident or measured data-loss evidence. Do not infer write access or account takeover.",
+        "Reported January 19, 2026; maintainer advisory published April 7; detailed research published April 24. Fix-release dates were not established by the reviewed sources.",
+        "The byline is Man Yue Mo. Discovery is credited to GitHub Security Lab Taskflow Agent, with human review by Peter Stöckli and Man Yue Mo. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "github-2026-internal-metadata-authority",
       "title": "GitHub internal metadata: preserve the boundary between user data and service authority",
       "publisher": "Wiz Research",
@@ -814,6 +908,113 @@
         "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
         "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
         "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "graphql-ruby-2026-authorization-exception-integrity",
+      "title": "GraphQL-Ruby: authorization exceptions must stop execution",
+      "publisher": "GitHub Security Lab",
+      "authors": [
+        "Bas Alberts"
+      ],
+      "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "error-response-design",
+        "patch-verification"
+      ],
+      "version": "GHSL-2026-152 / GHSA-j7xr-4g94-r9h3",
+      "summary": "A GraphQL-Ruby execution-engine path converted a resolver authorization exception into permission to continue. Research demonstrates a denied resolver running and returning a fixture value, while the legacy engine stopped it. This illustrates why error handling must preserve the security meaning of a denial.",
+      "defensive_use": "The maintainer identifies versions 2.5.23 through 2.6.5 as affected and 2.6.6 as patched. Only the newer Execution::Next mode and resolver-thrown authorization errors are implicated; other authorization forms worked correctly. Editorial lesson: preserve denial semantics across execution engines and keep error formatting separate from authority to execute.",
+      "prerequisites": [
+        "Basic API access-control concepts",
+        "Familiarity with server-side data processing"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-08",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "A separate resource-version release is not established. Software patch-release chronology is preserved in the caveats."
+        },
+        "source_displayed": {
+          "value": "2026-08-08",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T07:10:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary research and maintainer evidence reviewed. Article immutability and deployment remediation were not established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/",
+          "title": "GHSL-2026-152: Privilege escalation via authorization bypass in graphql-ruby",
+          "publisher": "GitHub Security Lab",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer-advisory",
+          "url": "https://github.com/rmosolgo/graphql-ruby/security/advisories/GHSA-j7xr-4g94-r9h3",
+          "title": "Authorization Bypass in Execution::Next",
+          "publisher": "GraphQL-Ruby",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:10:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer-changelog",
+          "url": "https://raw.githubusercontent.com/rmosolgo/graphql-ruby/refs/tags/v2.6.6/CHANGELOG.md",
+          "title": "GraphQL-Ruby 2.6.6 changelog",
+          "publisher": "GraphQL-Ruby",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T07:10:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The research reports testing 2.6.5 and reproducing the behavior on 2.6.1. Its fixture demonstrates resolver execution and returned data; database deletion, external calls and broader privilege escalation are possible application-dependent consequences, not demonstrated production incidents.",
+        "The application must use the affected execution mode and deny access by raising the relevant authorization exception. This is not a claim that all GraphQL-Ruby deployments bypassed authorization.",
+        "Research timeline: reported July 16, acknowledged and fixed July 17, 2026. Maintainer advisory and patched release date are July 21; detailed research publication is August 8.",
+        "No CVE is identified in the maintainer advisory. Discovery is credited to GitHub Security Lab Taskflow Agent with manual verification; Bas Alberts is the research byline. No patch reproduction was performed."
       ],
       "content_scope": "defensive_education"
     },
