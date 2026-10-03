@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pac4j-2026-token-authenticity-enforcement",
+  "title": "pac4j JWT validation: confidentiality does not establish authenticity",
+  "publisher": "CodeAnt AI",
+  "authors": [
+    "Amartya Jha"
+  ],
+  "primary_url": "https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "security-token-design",
+    "identity-lifecycle-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Research on CVE-2026-29000 describes an authentication boundary failure: successful decryption could allow claims to become an authenticated profile without mandatory signature validation. The researcher reports arbitrary identity and role acceptance in a library-level demonstration on 6.0.3; production compromise is not established.",
+  "defensive_use": "Treat authenticity checks as mandatory, fail-closed prerequisites for profile creation. Review all accepted token representations. The maintainer confirms remediation and directs upgrades to 4.5.9, 5.7.9 or 6.3.3 and newer within those release lines.",
+  "prerequisites": [
+    "Basic authentication and access-control concepts",
+    "Familiarity with application trust boundaries"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-03-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T06:19:33Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary sources reviewed; no immutable article revision established."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key",
+      "title": "CVE-2026-29000: pac4j-jwt Auth Bypass PoC With a Public Key",
+      "publisher": "CodeAnt AI",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:19:33Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer",
+      "url": "https://www.pac4j.org/blog/security-advisory-pac4j-jwt-jwtauthenticator.html",
+      "title": "Security advisory for pac4j-jwt (JwtAuthenticator)",
+      "publisher": "pac4j",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T06:19:33Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The demonstrated configuration uses RSA-encrypted JWTs with signature and encryption configuration; exposure cannot be inferred from any pac4j dependency alone.",
+    "Application-specific consequences depend on how authenticated claims map to authorization.",
+    "The maintainer confirms the issue and research credit but withholds technical details; the detailed mechanism remains researcher evidence.",
+    "Article publication is separate from reporting and patch events. The article describes February 28 disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 35,
+    "resources": 37,
     "diagrams": 9
   },
   "taxonomy": {
@@ -612,6 +612,110 @@
       "caveats": [
         "Memory safety does not establish data trust or permission to perform an operation.",
         "Chromium-specific exceptions are not blanket guarantees for other projects."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "dolibarr-2026-portal-object-authorization",
+      "title": "Dolibarr portal accounts: credential writes need object authorization",
+      "publisher": "CodeAnt AI",
+      "authors": [
+        "Amartya Jha"
+      ],
+      "primary_url": "https://codeant.ai/security-research/cve-2026-71505-dolibarr-bola-enables-portal-account-takeover",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Research on CVE-2026-71505 describes inconsistent authorization between reading and modifying company portal accounts. A role-level check did not establish authority over the particular company. In researcher-owned fixtures, the omission enabled account takeover, invoice access and disclosure of stored password verifiers.",
+      "defensive_use": "Apply actor-to-object checks consistently to every credential mutation. The linked maintainer patch adds resource checks to account creation, update and deletion; the CNA identifies versions before 24.0.0 as affected. Editorially, keep credential changes explicitly permissioned and sensitive verifiers out of responses.",
+      "prerequisites": [
+        "Basic authentication and access-control concepts",
+        "Familiarity with application trust boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T06:19:33Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary sources reviewed; no immutable article revision established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://codeant.ai/security-research/cve-2026-71505-dolibarr-bola-enables-portal-account-takeover",
+          "title": "CVE-2026-71505: Dolibarr BOLA Enables Portal Account Takeover",
+          "publisher": "CodeAnt AI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:19:33Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "cna",
+          "url": "https://www.vulncheck.com/advisories/dolibarr-rest-api-broken-object-level-authorization-via-third-party-write-route",
+          "title": "Dolibarr < 24.0.0 REST API Broken Object-Level Authorization via Third-Party Write Route",
+          "publisher": "VulnCheck",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:19:33Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "maintainer-patch",
+          "url": "https://github.com/Dolibarr/dolibarr/commit/4cf305ebb958eeffa921aad7c94de179b764f7e7",
+          "title": "Fix prevent edit by external users - reported by VulnCheck",
+          "publisher": "Dolibarr",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:19:33Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "An authenticated principal with third-party creation rights is required. The researcher's demonstrated fixture also held read-companies rights, although the article identifies creation rights as sufficient for the vulnerable write.",
+        "Observed evidence comes from a local development build with fixture companies, not customer accounts. Disclosed password hashes were not shown cracked.",
+        "The researcher lists CVSS 8.1; the CNA gives CVSS v4 7.1. Scores are preserved as different source claims, not reconciled.",
+        "Article publication (August 23) and CNA publication (August 24, 2026) are distinct. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
     },
@@ -2053,6 +2157,99 @@
       ],
       "caveats": [
         "Approval controls must match the application’s risk and workflow. This reference does not prescribe financial or legal policy."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "pac4j-2026-token-authenticity-enforcement",
+      "title": "pac4j JWT validation: confidentiality does not establish authenticity",
+      "publisher": "CodeAnt AI",
+      "authors": [
+        "Amartya Jha"
+      ],
+      "primary_url": "https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "security-token-design",
+        "identity-lifecycle-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Research on CVE-2026-29000 describes an authentication boundary failure: successful decryption could allow claims to become an authenticated profile without mandatory signature validation. The researcher reports arbitrary identity and role acceptance in a library-level demonstration on 6.0.3; production compromise is not established.",
+      "defensive_use": "Treat authenticity checks as mandatory, fail-closed prerequisites for profile creation. Review all accepted token representations. The maintainer confirms remediation and directs upgrades to 4.5.9, 5.7.9 or 6.3.3 and newer within those release lines.",
+      "prerequisites": [
+        "Basic authentication and access-control concepts",
+        "Familiarity with application trust boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-03-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T06:19:33Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary sources reviewed; no immutable article revision established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key",
+          "title": "CVE-2026-29000: pac4j-jwt Auth Bypass PoC With a Public Key",
+          "publisher": "CodeAnt AI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:19:33Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer",
+          "url": "https://www.pac4j.org/blog/security-advisory-pac4j-jwt-jwtauthenticator.html",
+          "title": "Security advisory for pac4j-jwt (JwtAuthenticator)",
+          "publisher": "pac4j",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T06:19:33Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The demonstrated configuration uses RSA-encrypted JWTs with signature and encryption configuration; exposure cannot be inferred from any pac4j dependency alone.",
+        "Application-specific consequences depend on how authenticated claims map to authorization.",
+        "The maintainer confirms the issue and research credit but withholds technical details; the detailed mechanism remains researcher evidence.",
+        "Article publication is separate from reporting and patch events. The article describes February 28 disclosure and patches by March 2, 2026; exact version-release dates are not recorded here."
       ],
       "content_scope": "defensive_education"
     },
