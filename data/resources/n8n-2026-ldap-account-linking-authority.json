@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "id": "n8n-2026-ldap-account-linking-authority",
+  "title": "n8n: directory-attribute authority in durable account linking",
+  "publisher": "n8n",
+  "authors": [
+    "Jubke"
+  ],
+  "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "identity",
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-33665 describes local-account linkage that trusted a matching LDAP email attribute. The maintainer reports persistent access to the linked account, including administrator authority, even after the directory attribute changed back.",
+  "defensive_use": "Editorial lesson: an identity association is a security grant with its own approval and revocation requirements. Attribute equality alone should not establish account ownership. Review claim provenance, linking consent and existing association cleanup independently. The maintainer identifies software versions 1.121.0 and 2.4.0 as fixes for their respective release lines.",
+  "prerequisites": [
+    "Basic understanding of authentication, account state and authorization"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition date established; software fix versions are discussed separately."
+    },
+    "source_displayed": {
+      "value": "2026-03-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T13:09:31Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory reviewed; no deployment assessment or independent reproduction performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
+      "title": "LDAP Email-Based Account Linking Allows Privilege Escalation and Account Takeover",
+      "publisher": "n8n",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:09:31Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires enabled LDAP authentication, which is non-default, and an authenticated directory user able to alter their own email attribute. This is a maintainer-described impact, not evidence of a production compromise.",
+    "The advisory recommends temporary LDAP restriction or disabling and account-association review, but calls those measures incomplete. It does not establish automatic removal of previously incorrect links or a patch-release date.",
+    "Jubke published the advisory. Credited reporters are weblover12, 34selen, B0RI, bde574786 and jh-hack. Original report date is not established. Learning prerequisites and design lessons are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

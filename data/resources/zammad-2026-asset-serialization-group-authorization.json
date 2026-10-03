@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "id": "zammad-2026-asset-serialization-group-authorization",
+  "title": "Zammad: overridden serialization must preserve group authorization",
+  "publisher": "GitHub Security Lab",
+  "authors": [
+    "Man Yue Mo"
+  ],
+  "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites": [
+    "Basic understanding of server-side object authorization and resource ownership"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public sources readable without an account."
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T13:10:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary disclosure and maintainer evidence reviewed; no deployment inspection or vulnerability testing performed."
+  },
+  "content_scope": "defensive_education",
+  "dates": {
+    "published": {
+      "value": "2026-03-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-03-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate resource edition is stated; software fix chronology is recorded in caveats."
+    }
+  },
+  "summary": "GHSL-2026-049 describes a ticket asset serializer that overrode a permission-aware base implementation without preserving its group-access check. GitHub Security Lab reports confidential ticket and associated-user disclosure in tested Zammad 6.5.2; the vendor corroborates unauthorized asset access.",
+  "defensive_use": "Editorial lesson: a model override must retain the security contract of its base implementation. Bind serialization to the requesting actor and the resource group before response construction; review inherited and specialized serializers together.",
+  "caveats": [
+    "The case requires an authenticated agent-role user. Documented impact is reading tickets and associated information outside permitted groups. The research summary mentions possible manipulation, but its impact section and vendor notice substantiate disclosure; this record makes no demonstrated-write claim.",
+    "GitHub Security Lab reported February 17, 2026; the maintainer identified it as a duplicate February 18. GHSL credits Taskflow Agent discovery with manual verification by Peter Stöckli and Man Yue Mo. Vendor ZAA-2026-05 credits Sho Odagiri of GMO Cybersecurity; preserve both attributions.",
+    "Vendor ZAA-2026-05 displays March 4, 2026 above a February 25 advisory-detail date. It lists fixes in 7.0.0 and 6.5.3 and says SaaS remediation was handled. GHSL dates the 7.0.0 patch release March 4. A release-specific date for 6.5.3 is not established here.",
+    "The reviewed notice still says CVE assignment pending. No bounty amount, customer incident count, or independent deployment verification is supplied. Learning prerequisites and design lessons are editorial."
+  ],
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/",
+      "title": "GHSL-2026-049: An Insecure Direct Object Reference (IDOR) in Zammad Leads to Access Control Violations",
+      "publisher": "GitHub Security Lab",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:10:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "vendor",
+      "url": "https://zammad.com/en/advisories/zaa-2026-05",
+      "title": "Security Advisory ZAA-2026-05",
+      "publisher": "Zammad",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:10:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ]
+}

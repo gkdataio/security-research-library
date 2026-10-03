@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 72,
+    "resources": 76,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1123,6 +1123,110 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "coder-2026-provisioned-object-ownership-integrity",
+      "title": "Coder: privileged provisioning must preserve existing object ownership",
+      "publisher": "Coder",
+      "authors": [
+        "jdomeracki-coder"
+      ],
+      "primary_url": "https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites": [
+        "Basic understanding of server-side object authorization and resource ownership"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:10:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary disclosure and maintainer evidence reviewed; no deployment inspection or vulnerability testing performed."
+      },
+      "content_scope": "defensive_education",
+      "dates": {
+        "published": {
+          "value": "2026-06-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-06-12",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource edition is stated; software fix chronology is recorded in caveats."
+        }
+      },
+      "summary": "CVE-2026-55429 concerns a provisioning update-or-insert operation that could change an existing workspace application’s ownership relationship without checking the existing workspace. The maintainer describes potential redirection of subsequent application traffic across workspace boundaries under elevated provisioning authority.",
+      "defensive_use": "Editorial lesson: privileged service execution is not evidence that every referenced object belongs to the initiating workspace. Enforce ownership invariants at the mutation boundary, including collision/update behavior. The maintainer patch rejects cross-workspace reassignment while preserving legitimate same-workspace rebuilds and initial claims of unowned objects.",
+      "caveats": [
+        "The maintainer requires elevated access as a template author or external provisioner operator. The stated consequence is application-traffic redirection, including IDE or terminal sessions; no customer incident, measured data loss, or independent reproduction is established here.",
+        "The advisory credits Anthropic’s Security Team for independent disclosure (ANT-2026-22441); the listed author is the advisory publisher account.",
+        "The advisory lists patched software versions 2.34.2, 2.33.8, 2.32.7, and 2.29.17 and no workaround. Release v2.34.2 independently links this fix. Pull request 26103 merged June 11, 2026; this merge date is not a resource edition date or a deployment date.",
+        "The maintainer pull request describes regression coverage for ownership transitions, including same-workspace rebuilds and unowned object claims. This review did not execute those tests or establish that any installation is upgraded. No award evidence is supplied."
+      ],
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v",
+          "title": "Workspace app upsert allows cross-workspace agent rebinding via user-controlled app ID",
+          "publisher": "Coder",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer-patch",
+          "url": "https://github.com/coder/coder/pull/26103",
+          "title": "Prevent cross-tenant workspace app rebinding",
+          "publisher": "Coder",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/coder/coder/releases/tag/v2.34.2",
+          "title": "v2.34.2 security release",
+          "publisher": "Coder",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "directus-2026-preauthorization-side-effect-integrity",
       "title": "Directus: denied mutations must leave dependent state unchanged",
       "publisher": "Directus",
@@ -1819,6 +1923,88 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "grav-2026-session-account-state-revalidation",
+      "title": "Grav API: account-disable enforcement across session authenticators",
+      "publisher": "Grav",
+      "authors": [
+        "rhukster"
+      ],
+      "primary_url": "https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "GHSA-7qfj-82q8-frw6 describes inconsistent account-disable enforcement across authentication methods. Existing browser or remembered sessions could retain API authority because refreshed permissions did not also establish current account validity.",
+      "defensive_use": "Editorial lesson: authentication state is a revocable claim. Every authentication method should enforce the same account-lifecycle invariants, and failed account refresh must remove authority rather than preserve cached permission. The advisory proposes requiring a freshly loaded, enabled account and failing closed on refresh errors.",
+      "prerequisites": [
+        "Basic understanding of authentication, account state and authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition date established; software fix versions are discussed separately."
+        },
+        "source_displayed": {
+          "value": "2026-09-23",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:09:31Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory reviewed; no deployment assessment or independent reproduction performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6",
+          "title": "Disabled grav-plugin-api accounts retain access through existing sessions",
+          "publisher": "Grav",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:09:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an already authorized session belonging to the subsequently disabled account. The maintainer describes static-review findings, not a demonstrated production compromise. Retained access is bounded by prior permissions and session lifetime; no additional privilege is claimed.",
+        "Remediation evidence conflicts: advisory metadata names 1.0.36 as patched, while its body says a fix is not yet released. It lists affected versions through 1.0.35. Release availability and fix date are not independently established here.",
+        "rhukster published the advisory and credits AlpetGexha as reporter. Original report date is unknown. Learning prerequisites and the invariant formulation are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "hackerone-quality-vulnerability-reports",
       "title": "Quality Reports",
       "publisher": "HackerOne Help Center",
@@ -2275,6 +2461,88 @@
         "Impact statements lack separate observed-versus-modeled demonstrations. Exfiltration and persistence remain maintainer-described consequences.",
         "Fixed versions apply within respective release lines; software release dates are not established.",
         "Distinct from the existing refresh-grant audience-binding resource."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "n8n-2026-ldap-account-linking-authority",
+      "title": "n8n: directory-attribute authority in durable account linking",
+      "publisher": "n8n",
+      "authors": [
+        "Jubke"
+      ],
+      "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-33665 describes local-account linkage that trusted a matching LDAP email attribute. The maintainer reports persistent access to the linked account, including administrator authority, even after the directory attribute changed back.",
+      "defensive_use": "Editorial lesson: an identity association is a security grant with its own approval and revocation requirements. Attribute equality alone should not establish account ownership. Review claim provenance, linking consent and existing association cleanup independently. The maintainer identifies software versions 1.121.0 and 2.4.0 as fixes for their respective release lines.",
+      "prerequisites": [
+        "Basic understanding of authentication, account state and authorization"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer disclosure."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition date established; software fix versions are discussed separately."
+        },
+        "source_displayed": {
+          "value": "2026-03-25",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:09:31Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory reviewed; no deployment assessment or independent reproduction performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc",
+          "title": "LDAP Email-Based Account Linking Allows Privilege Escalation and Account Takeover",
+          "publisher": "n8n",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:09:31Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires enabled LDAP authentication, which is non-default, and an authenticated directory user able to alter their own email attribute. This is a maintainer-described impact, not evidence of a production compromise.",
+        "The advisory recommends temporary LDAP restriction or disabling and account-association review, but calls those measures incomplete. It does not establish automatic removal of previously incorrect links or a patch-release date.",
+        "Jubke published the advisory. Credited reporters are weblover12, 34selen, B0RI, bde574786 and jh-hack. Original report date is not established. Learning prerequisites and design lessons are editorial."
       ],
       "content_scope": "defensive_education"
     },
@@ -6837,6 +7105,98 @@
         "A specification defines intended behavior; this review does not establish per-value support in deployed browsers.",
         "Opener separation alone does not partition origin-wide storage or grant application-level authorization.",
         "This resource complements message validation and request-context resources by modeling the isolation boundary itself."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "zammad-2026-asset-serialization-group-authorization",
+      "title": "Zammad: overridden serialization must preserve group authorization",
+      "publisher": "GitHub Security Lab",
+      "authors": [
+        "Man Yue Mo"
+      ],
+      "primary_url": "https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites": [
+        "Basic understanding of server-side object authorization and resource ownership"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public sources readable without an account."
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:10:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary disclosure and maintainer evidence reviewed; no deployment inspection or vulnerability testing performed."
+      },
+      "content_scope": "defensive_education",
+      "dates": {
+        "published": {
+          "value": "2026-03-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-03-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate resource edition is stated; software fix chronology is recorded in caveats."
+        }
+      },
+      "summary": "GHSL-2026-049 describes a ticket asset serializer that overrode a permission-aware base implementation without preserving its group-access check. GitHub Security Lab reports confidential ticket and associated-user disclosure in tested Zammad 6.5.2; the vendor corroborates unauthorized asset access.",
+      "defensive_use": "Editorial lesson: a model override must retain the security contract of its base implementation. Bind serialization to the requesting actor and the resource group before response construction; review inherited and specialized serializers together.",
+      "caveats": [
+        "The case requires an authenticated agent-role user. Documented impact is reading tickets and associated information outside permitted groups. The research summary mentions possible manipulation, but its impact section and vendor notice substantiate disclosure; this record makes no demonstrated-write claim.",
+        "GitHub Security Lab reported February 17, 2026; the maintainer identified it as a duplicate February 18. GHSL credits Taskflow Agent discovery with manual verification by Peter Stöckli and Man Yue Mo. Vendor ZAA-2026-05 credits Sho Odagiri of GMO Cybersecurity; preserve both attributions.",
+        "Vendor ZAA-2026-05 displays March 4, 2026 above a February 25 advisory-detail date. It lists fixes in 7.0.0 and 6.5.3 and says SaaS remediation was handled. GHSL dates the 7.0.0 patch release March 4. A release-specific date for 6.5.3 is not established here.",
+        "The reviewed notice still says CVE assignment pending. No bounty amount, customer incident count, or independent deployment verification is supplied. Learning prerequisites and design lessons are editorial."
+      ],
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/",
+          "title": "GHSL-2026-049: An Insecure Direct Object Reference (IDOR) in Zammad Leads to Access Control Violations",
+          "publisher": "GitHub Security Lab",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "vendor",
+          "url": "https://zammad.com/en/advisories/zaa-2026-05",
+          "title": "Security Advisory ZAA-2026-05",
+          "publisher": "Zammad",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:10:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
       ]
     }
   ],
