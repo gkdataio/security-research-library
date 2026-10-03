@@ -13,6 +13,8 @@ This is a small, manually reviewed starting directory, not a complete or continu
 **Platform:** HackerOne  
 **Last verified:** 2026-10-02T21:22:00Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** accepting reports. Official support describes a public ongoing program and confirms the December 2024 migration from Bugcrowd to HackerOne\.
 
 **Advertised rewards:** Standard advertised tiers span $50–$30,000\. The exceptional USD 1,000,000 ceiling applies only to the designated cryptographic challenge’s complete required proof; partial/theoretical claims do not qualify\. That challenge now belongs to this same program, without separate invitation\.
@@ -44,6 +46,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** Intigriti  
 **Last verified:** 2026-10-03T01:50:12Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
 
 **Advertised rewards:** Three advertised tiers span $150–$15,000, $100–$10,000 and $75–$5,000\. Shared-root-cause findings receive one bounty; repeated patterns have a two-report full-bounty cap\. Awards remain discretionary\. Dollar denomination is unverified; normalized bounds remain null\.
@@ -73,6 +77,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Platform:** Independent  
 **Last verified:** 2026-10-02T21:01:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** unknown. Official policy reviewed, but a live submission-acceptance indicator was not separately established\.
 
@@ -105,6 +111,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** HackerOne  
 **Last verified:** 2026-10-03T01:51:44Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** unknown. A public bounty policy and submission link were visible without a pause notice\. Neither current acceptance nor individual eligibility was explicitly established or tested; activity statistics alone are not treated as confirmation\.
 
 **Advertised rewards:** Paid bounty\. Chain/protocol Tier A: Low up to $5,000 \(table starts at $50\), Medium $5,000–$10,000, High $10,000–$20,000, Critical $20,000–$200,000\. A separate extreme-impact category advertises up to $1,000,000\. Product/web Tier B: Low $50–$400, Medium $400–$800, High $800–$3,000, Critical $3,000–$10,000\. All payment decisions remain discretionary; neither ceiling is an actual award\.
@@ -134,6 +142,8 @@ Change-log link: [Official updates](<https://hackerone.com/arc-bbp/updates>).
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-02T21:22:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. Official page displayed In progress and an ongoing period; eligibility and current restrictions still apply\.
 
@@ -165,6 +175,8 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/
 **Platform:** Intigriti  
 **Last verified:** 2026-10-03T01:53:34Z
 
+**Program type:** vulnerability disclosure. Explicit no-bounty public disclosure program\. A separate private paid program is not part of this classification; possible invitations and generic reward language are not cash promises\.
+
 **Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
 
 **Advertised rewards:** Explicit unpaid VDP\. Numeric bounds and currency are inapplicable\. Generic reward language elsewhere does not override the no-bounty statement\. A separate private bounty program may invite researchers following strong VDP reports; this is not a cash promise\.
@@ -188,12 +200,46 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## Dropbox Bug Bounty
+
+[Official program](<https://app.intigriti.com/programs/dropbox/dropbox>) · [Policy](<https://app.intigriti.com/programs/dropbox/dropbox>) · [Canonical record](<../data/programs/dropbox-bug-bounty.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T02:14:45Z
+
+**Program type:** paid bounty. The official policy advertises monetary bounties for eligible reports\.
+
+**Submission status:** unknown. The public page describes account-based submission but has no explicit current open/paused label\. Availability is not inferred from recent activity\.
+
+**Advertised rewards:** Displayed tiers span $100–$15,000, $100–$10,000 and $100–$7,500\. Dollar denomination is unverified; normalized amounts remain null\. A discretionary $25 delayed-validation bonus is advertised\. Business-only issues may receive a low-severity reward if fixed\. These are guidelines, not awards\.
+
+**Eligibility:** An Intigriti account, first reporting, demonstrable impact and privacy compliance are required\. Duplicate root causes generally receive one reward; alpha/beta findings may pay less\. Sanctions apply\. Platform terms require adulthood or age 16 with guardian permission, company validation and identity checks\.
+
+**Restrictions and exclusions:** Use owned test accounts; do not access other users’ private data\. No disruption, social engineering, physical intrusion or brute force\. Scanner-only reports, unlisted properties and planned-deprecation products are excluded\. Public disclosure requires written permission after report closure\.
+
+**Verification limits**
+
+- The updates page includes a November 24, 2025 scope-policy clarification\. It is an announcements/changes index, not an exhaustive version history or full-policy revision date\.
+- Platform terms default payments to euros unless otherwise agreed; that does not establish the denomination of the displayed dollar amounts\.
+- The page labels safe harbor as applied, but expanded program-specific terms and authenticated eligibility were not inspected\.
+- Public policy review only\. Asset inventories and operational instructions are omitted\. Live terms prevail; this summary grants no authorization\.
+
+**Official evidence and updates**
+
+- [Dropbox Bug Bounty public policy](<https://app.intigriti.com/programs/dropbox/dropbox>) — Dropbox / Intigriti; retrieved 2026-10-03T02:12:34Z.
+- [Dropbox Bug Bounty official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>) — Dropbox / Intigriti; retrieved 2026-10-03T02:14:45Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T02:12:34Z.
+
+Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>).
+
 ## GitHub Bug Bounty
 
 [Official program](<https://bounty.github.com/>) · [Policy](<https://bounty.github.com/rules>) · [Canonical record](<../data/programs/github-bug-bounty.json>)
 
 **Platform:** HackerOne submission channel  
 **Last verified:** 2026-10-02T21:43:18Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** unknown. Official policy reviewed, but a live submission-acceptance indicator was not separately established\.
 
@@ -229,6 +275,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** HackerOne  
 **Last verified:** 2026-10-02T21:10:00Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** unknown. An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated\.
 
 **Advertised rewards:** Advertised ranges: Low $100–$750; Medium $1,000–$2,500; High $5,000–$15,000; Critical $20,000–$35,000\. Business impact and reduced category schedules affect awards\.
@@ -255,6 +303,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Platform:** HackerOne  
 **Last verified:** 2026-10-02T21:09:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** unknown. An enabled submission link and no pause notice were observed, but submission acceptance was not tested or explicitly stated\.
 
@@ -283,6 +333,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** Intigriti  
 **Last verified:** 2026-10-03T01:53:51Z
 
+**Program type:** vulnerability disclosure. Explicit no-bounty disclosure program; the reviewed policy excludes monetary bounties and bonuses\. Acknowledgment or reputation credit does not make it a paid bounty\.
+
 **Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
 
 **Advertised rewards:** Explicit unpaid disclosure program: the policy states no bounties, and its category matrix excludes monetary bounties and bonuses\. Currency and numeric bounds remain null as inapplicable, not as unknown reward availability\. Some reports can receive acknowledgment or reputation credit\.
@@ -310,6 +362,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-02T23:00:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. Official brief displays In progress, an ongoing period and a Submit report link\. Individual eligibility still depends on live terms\.
 
@@ -341,6 +395,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-03T01:52:33Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
 
 **Advertised rewards:** Advertised bands: P4 $200–$250, P3 $550–$750, P2 $1,200–$3,000 and P1 $3,000–$7,000\. Priority may change with impact; some stored-script findings default to P3 unless broader impact is established\. No individual award is asserted\.
@@ -366,12 +422,46 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/matlab-online/changelog>).
 
+## Microsoft Edge Bounty Program
+
+[Official program](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) · [Policy](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) · [Canonical record](<../data/programs/microsoft-edge-bug-bounty.json>)
+
+**Platform:** MSRC  
+**Last verified:** 2026-10-03T02:14:45Z
+
+**Program type:** paid bounty. The official policy advertises monetary bounties for eligible reports\.
+
+**Submission status:** unknown. The policy invites portal submissions but supplies no explicit open/paused status\. A visible policy and program listing do not independently establish availability\.
+
+**Advertised rewards:** The introduction and table advertise USD 250–30,000, while award prose starts at USD 500\. The lower table value is retained with that discrepancy\. Higher discretionary awards are possible; one submission receives its highest qualifying award, not cumulative program payouts\.
+
+**Eligibility:** Requires new Edge-specific impact in eligible current releases, absent from the equivalent Chrome release, with reproducible evidence\. Participants must be at least 14, with guardian permission for minors\. Employer permission, sanctions and public-sector ethics rules apply; current/recent Microsoft staff and specified related persons are excluded\.
+
+**Restrictions and exclusions:** Unsupported, experimental, already-public and security-downgraded configurations generally do not qualify\. Protect customer data and availability; stop on unauthorized data access and report immediately\. Confidentiality lasts through remediation; detailed attack-enabling information must wait 30 days after the fix\. Imposed remediation deadlines forfeit bounty eligibility\. Safe harbor is conditional\.
+
+**Verification limits**
+
+- The program revision history ends April 7, 2026; overarching terms are dated September 3, 2026\.
+- The Edge page suggests a Standard Award Policy fallback, but that section of the linked Bounty Program Guidelines excludes endpoint/on-premises programs\. Fallback eligibility is not assumed\.
+- Advertised amounts are not individual award evidence\. Authenticated submission availability and payment enrollment were not tested\.
+- Public policy review only\. Asset inventories and operational instructions are omitted\. Live terms prevail; this summary grants no authorization or legal protection\.
+
+**Official evidence and updates**
+
+- [Microsoft Edge Bounty Program and revision history](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) — Microsoft; retrieved 2026-10-03T02:12:34Z.
+- [Microsoft Bounty Program Guidelines, terms, safe harbor and Standard Award Policy](<https://www.microsoft.com/en-us/msrc/bounty-guidelines>) — Microsoft; retrieved 2026-10-03T02:14:45Z.
+- [Microsoft Security Testing Rules of Engagement](<https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement>) — Microsoft; retrieved 2026-10-03T02:12:34Z.
+
+Change-log link: [Official updates](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>).
+
 ## Moovit Managed Bug Bounty Program
 
 [Official program](<https://bugcrowd.com/engagements/moovit-mbb-og>) · [Policy](<https://bugcrowd.com/engagements/moovit-mbb-og>) · [Canonical record](<../data/programs/moovit-managed-bug-bounty.json>)
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-03T01:52:33Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
 
@@ -406,6 +496,8 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/moovit-mbb
 **Platform:** HackerOne  
 **Last verified:** 2026-10-02T21:10:00Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** paused. Web submissions paused September 11, 2026; reopening expected Q1 2027\. Existing reports retain current-rate handling\. Critical or actively exploited web issues retain a Bugzilla route\. Firefox client bounty is unaffected\.
 
 **Advertised rewards:** Displayed critical-site ranges: High $3,000–$6,000 and Critical $6,000–$15,000\. Core-category ranges: High $1,000–$3,000 and Critical $3,000–$5,000; special exceptions apply\.
@@ -433,6 +525,8 @@ Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=
 
 **Platform:** Intigriti  
 **Last verified:** 2026-10-02T23:00:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** unknown. The logged-out page invites account-based submissions but provides no explicit current open/paused label\. Acceptance is not inferred from page visibility or activity\.
 
@@ -462,6 +556,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** Intigriti  
 **Last verified:** 2026-10-03T01:50:12Z
 
+**Program type:** vulnerability disclosure. Explicit no-bounty disclosure program\. The policy separately mentions a discretionary EUR 25 delayed-validation bonus, which is an exceptional payment rather than an ordinary bounty schedule\.
+
 **Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
 
 **Advertised rewards:** Explicit no-bounty VDP, separately mentioning a discretionary EUR 25 bonus for delayed validation\. This exceptional payment language is not an ordinary bounty schedule\. Currency and numeric bounds remain null to avoid conflating the unpaid program with the conditional bonus\.
@@ -490,6 +586,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-02T23:00:00Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. The official brief displays In progress, an ongoing period and a Submit report link\. This does not establish any particular researcher’s eligibility\.
 
@@ -523,6 +621,8 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-02T21:01:00Z
 
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
+
 **Submission status:** accepting reports. Program displayed active status at review; live terms and eligibility still apply\.
 
 **Advertised rewards:** Advertised maximum $100,000 for exceptional critical findings; category-dependent schedules include amounts from $50\. The historical $20,000 ceiling is outdated\.
@@ -546,12 +646,46 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/announcements>).
 
+## Proton Bug Bounty
+
+[Official program](<https://proton.me/security/bug-bounty>) · [Policy](<https://proton.me/security/bug-bounty>) · [Canonical record](<../data/programs/proton-bug-bounty.json>)
+
+**Platform:** Direct vendor program  
+**Last verified:** 2026-10-03T02:12:34Z
+
+**Program type:** paid bounty. The official policy advertises monetary bounties for eligible reports\.
+
+**Submission status:** accepting reports. The disclosure policy explicitly states that reports are accepted by email\. This is policy evidence, not a delivery or response test\.
+
+**Advertised rewards:** Published paid bands start at USD 1,000; the ordinary critical band ends at USD 50,000, with an exceptional ceiling of USD 100,000\. Low-severity rewards are discretionary and normally nonmonetary\. These are advertised guidelines, not individual awards\.
+
+**Eligibility:** First valid reports with concrete, reproducible security impact qualify after confirmation and deployment of a fix\. Intended behavior and unsupported theoretical recommendations are excluded\. Anonymous reporting is allowed; submissions must respect third-party intellectual property and grant Proton a broad report-use license\.
+
+**Restrictions and exclusions:** Only explicitly included services qualify\. No third-party, physical, social-engineering or disruptive activity, malware, data alteration, exfiltration or persistence\. Stop and notify Proton upon finding a vulnerability or nonpublic-data exposure; purge retained nonpublic data when reporting\. Disclosure normally waits 120 days after acknowledgment\. Conditional safe harbor cannot bind third parties\.
+
+**Verification limits**
+
+- The disclosure policy is dated July 30, 2025; safe harbor September 29, 2022\. The bounty page shows no overall revision date\.
+- The numeric minimum is the lowest published paid tier, not a guaranteed payout floor; low-severity cases have no fixed monetary schedule\.
+- No program-specific age, residency or employee eligibility rule was established from these pages\. No submission was made\.
+- Public policy review only\. Asset inventories and operational instructions are omitted\. Live terms prevail; this summary grants no authorization or legal protection\.
+
+**Official evidence and updates**
+
+- [Proton bug bounty program](<https://proton.me/security/bug-bounty>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
+- [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
+- [Proton legal safe harbor policy](<https://proton.me/security/safe-harbor>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Vercel Bug Bounty
 
 [Official program](<https://hackerone.com/vercel?type=team>) · [Policy](<https://hackerone.com/vercel?type=team>) · [Canonical record](<../data/programs/vercel-bug-bounty.json>)
 
 **Platform:** HackerOne  
 **Last verified:** 2026-10-03T01:50:37Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. The September 21, 2026 announcement explicitly opens this consolidated program to the security community\. It says the separate Vercel Open Source program closed to new submissions and moved its coverage here; that predecessor is not treated as this identity\.
 
@@ -582,6 +716,8 @@ Change-log link: [Official updates](<https://hackerone.com/vercel/updates>).
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-03T01:52:33Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
 
@@ -614,6 +750,8 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/vinted-uab
 
 **Platform:** Bugcrowd  
 **Last verified:** 2026-10-03T01:52:33Z
+
+**Program type:** paid bounty. The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports\. This classification does not establish current submission acceptance or guarantee an individual award\.
 
 **Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
 

@@ -1,9 +1,17 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.3.0",
   "id": "apple-security-bounty",
   "name": "Apple Security Bounty",
   "operator": "Apple",
   "platform": "Independent",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports. This classification does not establish current submission acceptance or guarantee an individual award.",
+    "source_ids": [
+      "rewards",
+      "announcement"
+    ]
+  },
   "program_url": "https://security.apple.com/bounty/",
   "policy_url": "https://security.apple.com/bounty/guidelines/",
   "announcement_urls": [

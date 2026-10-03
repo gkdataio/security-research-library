@@ -1,9 +1,17 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.3.0",
   "id": "atlassian-bug-bounty",
   "name": "Atlassian Bug Bounty",
   "operator": "Atlassian",
   "platform": "Bugcrowd",
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The reviewed official policy or reward guidelines advertise monetary bounties for eligible reports. This classification does not establish current submission acceptance or guarantee an individual award.",
+    "source_ids": [
+      "policy",
+      "updates"
+    ]
+  },
   "program_url": "https://bugcrowd.com/engagements/atlassian",
   "policy_url": "https://bugcrowd.com/engagements/atlassian",
   "announcement_urls": [

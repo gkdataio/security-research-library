@@ -13,8 +13,15 @@ def validate_program(rec, schema):
     if len(sources) != len(rec['sources']): raise Invalid('duplicate program source ID')
     for field in ('rewards', 'eligibility', 'restrictions', 'submission_status'):
         if not set(rec[field]['source_ids']) <= set(sources): raise Invalid('unknown program claim source')
-    if rec['submission_status']['value'] == 'closed' and rec['schema_version'] != '1.2.0':
-        raise Invalid('closed status requires program record version 1.2.0')
+    program_type = rec.get('program_type')
+    if program_type is not None:
+        if rec['schema_version'] != '1.3.0':
+            raise Invalid('program type requires program record version 1.3.0')
+        if not set(program_type['source_ids']) <= set(sources): raise Invalid('unknown program type source')
+        if program_type['value'] != 'unknown' and not program_type['source_ids']:
+            raise Invalid('known program type requires evidence')
+    if rec['submission_status']['value'] == 'closed' and rec['schema_version'] not in ('1.2.0','1.3.0'):
+        raise Invalid('closed status requires program record version 1.2.0 or 1.3.0')
     if rec['submission_status']['value'] != 'unknown' and not rec['submission_status']['source_ids']:
         raise Invalid('known submission status requires evidence')
     aliases=set()
@@ -46,14 +53,16 @@ def build(root=ROOT):
         url = normalize_url(rec['program_url'])
         if path.stem != rec['id'] or rec['id'] in identities or url in urls: raise Invalid('duplicate or mismatched program identity')
         identities.add(rec['id']); urls.add(url); programs.append(rec)
-    export = {'schema_version':'1.2.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
+    export = {'schema_version':'1.3.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
               'notice':'Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.',
               'rights':'Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.', 'programs':programs}
     lines = ['# Public program directory', '', '[Library home](../README.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
              export['notice'], '', 'This is a small, manually reviewed starting directory, not a complete or continuously verified listing. Program metadata is separate from the USD 10,000 report inclusion threshold. Null values mean unverified or not established, not zero. Summaries are not legal advice or a substitute for the full terms.', '']
     for p in programs:
+        program_type = p.get('program_type', {'value':'unknown', 'summary':'Program type was not separately classified in this record.'})
         lines += ['## '+text(p['name']), '', link('Official program',p['program_url'])+' · '+link('Policy',p['policy_url'])+' · '+link('Canonical record','../data/programs/'+p['id']+'.json'), '',
                   '**Platform:** '+text(p['platform'])+'  ', '**Last verified:** '+text(p['last_verified_at']), '',
+                  '**Program type:** '+text(program_type['value'].replace('_', ' '))+'. '+text(program_type['summary']), '',
                   '**Submission status:** '+text(p['submission_status']['value'].replace('_', ' '))+'. '+text(p['submission_status']['summary']), '',
                   '**Advertised rewards:** '+text(p['rewards']['summary']), '', '**Eligibility:** '+text(p['eligibility']['summary']), '',
                   '**Restrictions and exclusions:** '+text(p['restrictions']['summary']), '', '**Verification limits**', '']

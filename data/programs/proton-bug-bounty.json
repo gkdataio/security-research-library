@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.3.0",
+  "id": "proton-bug-bounty",
+  "name": "Proton Bug Bounty",
+  "operator": "Proton AG",
+  "platform": "Direct vendor program",
+  "program_url": "https://proton.me/security/bug-bounty",
+  "policy_url": "https://proton.me/security/bug-bounty",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "last_verified_at": "2026-10-03T02:12:34Z",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 1000,
+    "maximum": 100000,
+    "basis": "advertised_not_individual_award",
+    "summary": "Published paid bands start at USD 1,000; the ordinary critical band ends at USD 50,000, with an exceptional ceiling of USD 100,000. Low-severity rewards are discretionary and normally nonmonetary. These are advertised guidelines, not individual awards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "First valid reports with concrete, reproducible security impact qualify after confirmation and deployment of a fix. Intended behavior and unsupported theoretical recommendations are excluded. Anonymous reporting is allowed; submissions must respect third-party intellectual property and grant Proton a broad report-use license.",
+    "source_ids": [
+      "policy",
+      "disclosure"
+    ]
+  },
+  "restrictions": {
+    "summary": "Only explicitly included services qualify. No third-party, physical, social-engineering or disruptive activity, malware, data alteration, exfiltration or persistence. Stop and notify Proton upon finding a vulnerability or nonpublic-data exposure; purge retained nonpublic data when reporting. Disclosure normally waits 120 days after acknowledgment. Conditional safe harbor cannot bind third parties.",
+    "source_ids": [
+      "disclosure",
+      "safe-harbor"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The disclosure policy explicitly states that reports are accepted by email. This is policy evidence, not a delivery or response test.",
+    "source_ids": [
+      "disclosure"
+    ]
+  },
+  "limitations": [
+    "The disclosure policy is dated July 30, 2025; safe harbor September 29, 2022. The bounty page shows no overall revision date.",
+    "The numeric minimum is the lowest published paid tier, not a guaranteed payout floor; low-severity cases have no fixed monetary schedule.",
+    "No program-specific age, residency or employee eligibility rule was established from these pages. No submission was made.",
+    "Public policy review only. Asset inventories and operational instructions are omitted. Live terms prevail; this summary grants no authorization or legal protection."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Proton bug bounty program",
+      "url": "https://proton.me/security/bug-bounty",
+      "publisher": "Proton AG",
+      "retrieved_at": "2026-10-03T02:12:34Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "disclosure",
+      "title": "Proton vulnerability disclosure policy",
+      "url": "https://proton.me/security/vulnerability-disclosure",
+      "publisher": "Proton AG",
+      "retrieved_at": "2026-10-03T02:12:34Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "safe-harbor",
+      "title": "Proton legal safe harbor policy",
+      "url": "https://proton.me/security/safe-harbor",
+      "publisher": "Proton AG",
+      "retrieved_at": "2026-10-03T02:12:34Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "program_type": {
+    "value": "paid_bounty",
+    "summary": "The official policy advertises monetary bounties for eligible reports.",
+    "source_ids": [
+      "policy"
+    ]
+  }
+}

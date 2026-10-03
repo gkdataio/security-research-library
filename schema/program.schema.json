@@ -4,7 +4,8 @@
     "schema_version": {
       "enum": [
         "1.1.0",
-        "1.2.0"
+        "1.2.0",
+        "1.3.0"
       ]
     },
     "id": {
@@ -22,6 +23,37 @@
     "platform": {
       "type": "string",
       "minLength": 1
+    },
+    "program_type": {
+      "type": "object",
+      "description": "Optional evidence-backed classification for record version 1.3.0, independent of submission status. Missing means unclassified, not unpaid. Vulnerability disclosure means an explicitly no-bounty program; exceptional discretionary payments are explained in the summary.",
+      "properties": {
+        "value": {
+          "enum": [
+            "paid_bounty",
+            "vulnerability_disclosure",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "value",
+        "summary",
+        "source_ids"
+      ],
+      "additionalProperties": false
     },
     "program_url": {
       "type": "string",
