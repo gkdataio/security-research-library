@@ -13,6 +13,8 @@ def validate_program(rec, schema):
     if len(sources) != len(rec['sources']): raise Invalid('duplicate program source ID')
     for field in ('rewards', 'eligibility', 'restrictions', 'submission_status'):
         if not set(rec[field]['source_ids']) <= set(sources): raise Invalid('unknown program claim source')
+    if rec['submission_status']['value'] == 'closed' and rec['schema_version'] != '1.2.0':
+        raise Invalid('closed status requires program record version 1.2.0')
     if rec['submission_status']['value'] != 'unknown' and not rec['submission_status']['source_ids']:
         raise Invalid('known submission status requires evidence')
     aliases=set()
@@ -44,7 +46,7 @@ def build(root=ROOT):
         url = normalize_url(rec['program_url'])
         if path.stem != rec['id'] or rec['id'] in identities or url in urls: raise Invalid('duplicate or mismatched program identity')
         identities.add(rec['id']); urls.add(url); programs.append(rec)
-    export = {'schema_version':'1.1.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
+    export = {'schema_version':'1.2.0', 'content_scope':'public_program_policy_summary', 'counts':{'programs':len(programs)},
               'notice':'Advertised rewards are not report awards. This directory grants no authorization and omits asset inventories. Read the live official policy before any activity.',
               'rights':'Original summaries CC BY 4.0; linked sources and trademarks retain their own rights.', 'programs':programs}
     lines = ['# Public program directory', '', '[Library home](../README.md) · [Read reports](reports.md) · [Diagram gallery](diagram-gallery.md)', '',

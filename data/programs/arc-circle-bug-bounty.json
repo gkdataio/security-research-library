@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.1.0",
+  "id": "arc-circle-bug-bounty",
+  "name": "Arc Bug Bounty",
+  "operator": "Circle Internet Contract Services, LLC",
+  "platform": "HackerOne",
+  "program_url": "https://hackerone.com/arc-bbp?type=team",
+  "policy_url": "https://hackerone.com/arc-bbp?type=team",
+  "announcement_urls": [
+    "https://hackerone.com/arc-bbp/updates"
+  ],
+  "change_log_url": "https://hackerone.com/arc-bbp/updates",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "last_verified_at": "2026-10-03T01:51:44Z",
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Paid bounty. Chain/protocol Tier A: Low up to $5,000 (table starts at $50), Medium $5,000–$10,000, High $10,000–$20,000, Critical $20,000–$200,000. A separate extreme-impact category advertises up to $1,000,000. Product/web Tier B: Low $50–$400, Medium $400–$800, High $800–$3,000, Critical $3,000–$10,000. All payment decisions remain discretionary; neither ceiling is an actual award.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "Participants must be at least 18, comply with applicable law and sanctions restrictions, and submit in English. Employees of Circle or affiliates and their immediate families are excluded. The first reproducible duplicate report takes precedence; one root cause receives one award. Reporting licenses the submission to Circle and permits compliance-related sharing of tax-form personal information.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Mainnet testing is prohibited; permitted research is confined to designated test or local environments. Use owned or explicitly authorized accounts/wallets, avoid other users’ data and financial loss, and do not disrupt services or use social engineering. Source-manipulation, unit-test, low-impact best-practice and unsupported library findings are excluded. Disclosure, including resolved findings, requires written consent. Safe harbor is conditional and terms may change without notice.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "unknown",
+    "summary": "A public bounty policy and submission link were visible without a pause notice. Neither current acceptance nor individual eligibility was explicitly established or tested; activity statistics alone are not treated as confirmation.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "limitations": [
+    "This Arc is Circle’s financial-platform program, not a browser product. Policy displays September 16, 2026; reward table displays September 14, 2026.",
+    "Only dollar notation was established, so ISO currency and normalized numerical bounds remain null. The exceptional $1,000,000 category is separate from the ordinary $200,000 critical ceiling.",
+    "The reviewed updates page explicitly displayed no updates. Linked policy and reward revision archives and authenticated submission flow were not reviewed.",
+    "The policy both lists examples of low-tier rewards and excludes similar low-impact categories elsewhere. Eligibility depends on concrete impact and the full live terms; this summary does not resolve that tension.",
+    "Asset inventories and operational instructions are intentionally omitted. No account was created, report submitted or target tested; this record grants no testing permission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Arc | Bounty Policy | HackerOne",
+      "url": "https://hackerone.com/arc-bbp?type=team",
+      "publisher": "Circle / HackerOne",
+      "retrieved_at": "2026-10-03T01:51:06Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "updates",
+      "title": "Arc public program updates",
+      "url": "https://hackerone.com/arc-bbp/updates",
+      "publisher": "Circle / HackerOne",
+      "retrieved_at": "2026-10-03T01:51:44Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ]
+}

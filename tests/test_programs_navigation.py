@@ -42,6 +42,18 @@ class ProgramTests(unittest.TestCase):
     def test_status_needs_evidence(self):
         self.rec['submission_status'].update(value='paused',source_ids=[])
         with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
+    def test_closed_status_supported(self):
+        self.rec['schema_version']='1.2.0'
+        self.rec['submission_status'].update(value='closed',source_ids=[self.rec['sources'][0]['id']])
+        validate_program(self.rec,self.schema)
+    def test_closed_status_requires_new_version(self):
+        self.rec['schema_version']='1.1.0'
+        self.rec['submission_status'].update(value='closed',source_ids=[self.rec['sources'][0]['id']])
+        with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
+    def test_closed_status_needs_evidence(self):
+        self.rec['schema_version']='1.2.0'
+        self.rec['submission_status'].update(value='closed',source_ids=[])
+        with self.assertRaises(Invalid): validate_program(self.rec,self.schema)
     def test_deterministic(self): self.assertEqual(programs(),programs())
 
 class NavigationTests(unittest.TestCase):

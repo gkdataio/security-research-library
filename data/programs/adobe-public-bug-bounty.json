@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1.0",
+  "id": "adobe-public-bug-bounty",
+  "name": "Adobe Public Bug Bounty",
+  "operator": "Adobe",
+  "platform": "Intigriti",
+  "program_url": "https://app.intigriti.com/programs/adobe/adobepublic",
+  "policy_url": "https://app.intigriti.com/programs/adobe/adobepublic",
+  "announcement_urls": [],
+  "change_log_url": null,
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Three advertised tiers span $150–$15,000, $100–$10,000 and $75–$5,000. Shared-root-cause findings receive one bounty; repeated patterns have a two-report full-bounty cap. Awards remain discretionary. Dollar denomination is unverified; normalized bounds remain null.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "eligibility": {
+    "summary": "First reproducible, previously unknown, eligible findings qualify. Current/recent employees and immediate family face a 12-month exclusion; specified network-access contractors face six months. Intigriti requires adulthood, or age 16 with guardian permission, and legal/employer eligibility.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Product-specific test plans override general guidance and constrain approved environments and accounts. AI-assisted reports need human validation. Privacy violations, disruption, social engineering, unapproved customer environments and premature disclosure are prohibited. Unsupported-impact AI claims, licensing bypasses and compromised-device mobile scenarios are excluded.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "unknown",
+    "summary": "No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-03T01:50:12Z",
+  "limitations": [
+    "The linked Updates page failed text retrieval; no announcement or change-log URL is represented as reviewed.",
+    "Referenced test-plan and CVSS attachments were not reviewed. Product-specific conditions are therefore incomplete.",
+    "Platform terms describe euro settlement by default, which does not establish the denomination of Adobe’s dollar-denominated schedule.",
+    "Logged-out text review only; authenticated submission eligibility was not tested. No current open/paused indicator was established.",
+    "This summary omits asset inventories and operational instructions. Full live terms prevail and this record grants no testing authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Adobe Public Bug Bounty policy",
+      "url": "https://app.intigriti.com/programs/adobe/adobepublic",
+      "publisher": "Adobe / Intigriti",
+      "retrieved_at": "2026-10-03T01:50:12Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Intigriti Researcher Terms & Conditions",
+      "url": "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+      "publisher": "Intigriti",
+      "retrieved_at": "2026-10-03T01:50:12Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

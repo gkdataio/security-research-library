@@ -9,7 +9,7 @@ Source-backed public security disclosures, official learning resources, and orig
 **Snapshot: October 3, 2026**
 
 - **57 qualifying report records:** 46 bug-bounty awards and 11 explicitly labeled competition entries
-- **11 public program-policy summaries**, maintained separately from award evidence
+- **21 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **20 educational resources** and **8 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
@@ -57,6 +57,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 | Conceptual diagrams | [data/diagrams/](data/diagrams/) | [Diagram schema](schema/diagram.schema.json) | Included in [resources.json](exports/resources.json) |
 
 - **Report export:** includes reports, taxonomy, counts, review dates, and inclusion policy. `reports[]` contains the records. The export uses schema version `1.1.0`; the report schema accepts record versions `1.0.0` and `1.1.0`.
+- **Program export:** schema version `1.2.0` supports evidence-backed closed status while retaining existing `1.1.0` records. Availability remains separate from a program page being listed.
 - **Resource export:** includes `resources[]`, `diagrams[]`, resource taxonomy, and skillset definitions. Asset paths are relative to this repository.
 - **Taxonomies:** [Report categories and defensive skills](data/taxonomy.json) · [Resource types and topics](data/resource-taxonomy.json)
 - **Candidate queues:** [Report candidates](data/candidates.json) · [Resource candidates](data/resource-candidates.json). These are research leads and exclusion decisions, not included records.

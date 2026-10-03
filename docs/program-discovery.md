@@ -4,7 +4,7 @@
 
 Directory observations only. Listings are not verified policies, current submission guarantees, scope inventories or testing authorization. Counts identify distinct platform program pages, not deduplicated organizations.
 
-**1154 distinct program-page listings**; 9 link to an existing verified policy record and 1145 await policy review. These counts must not be added to verified-policy counts without removing overlap.
+**1154 distinct program-page listings**; 19 link to an existing verified policy record and 1135 await policy review. These counts must not be added to verified-policy counts without removing overlap.
 
 ## Coverage and continuation
 

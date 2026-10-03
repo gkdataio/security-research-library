@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "id": "vercel-bug-bounty",
+  "name": "Vercel Bug Bounty",
+  "operator": "Vercel",
+  "platform": "HackerOne",
+  "program_url": "https://hackerone.com/vercel?type=team",
+  "policy_url": "https://hackerone.com/vercel?type=team",
+  "announcement_urls": [
+    "https://hackerone.com/vercel/updates"
+  ],
+  "change_log_url": "https://hackerone.com/vercel/updates",
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights.",
+  "last_verified_at": "2026-10-03T01:50:37Z",
+  "rewards": {
+    "currency": null,
+    "minimum": null,
+    "maximum": null,
+    "basis": "advertised_not_individual_award",
+    "summary": "Paid bounty. Platform bands: Low $50–$500, Medium $750–$1,750, High $2,000–$3,000, Critical $3,500–$5,500. Open-source Tier 1: $200–$500, $550–$1,000, $1,250–$5,000, $5,250–$10,000; Tier 2: $50–$200, $250–$500, $750–$2,500, $2,750–$5,000. Severity and category determine the band; bonuses and awards remain discretionary. Figures are advertisements, not individual awards.",
+    "source_ids": [
+      "policy",
+      "rewards"
+    ]
+  },
+  "eligibility": {
+    "summary": "First reproducible qualifying report receives precedence; shared root causes receive one award. Human-validated evidence and designated researcher identification are required. Past or present employees, contractors, sponsored-project maintainers/contributors, immediate employee relatives, relevant paid-engagement participants and assigned HackerOne staff are excluded.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "restrictions": {
+    "summary": "Limit activity to owned or expressly authorized accounts and data. Open-source findings must be reproduced locally, with no active production testing. No social engineering, disruption, persistence or retention of others’ sensitive data. Customer applications, unrelated third parties, examples, deprecated products and unsupported-impact reports are excluded. Publication requires written consent; confidentiality duties continue two years after disclosure.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The September 21, 2026 announcement explicitly opens this consolidated program to the security community. It says the separate Vercel Open Source program closed to new submissions and moved its coverage here; that predecessor is not treated as this identity.",
+    "source_ids": [
+      "updates"
+    ]
+  },
+  "limitations": [
+    "Policy displays September 22, 2026; reward page displays September 21, 2026. These are visible update dates, not a complete revision audit.",
+    "Reviewed pages show dollar signs without an explicit ISO denomination; normalized currency and bounds remain null.",
+    "Policy-version and reward-version archives, linked attachments, repository-specific policies and authenticated submission flow were not reviewed. The predecessor program URL was not independently verified.",
+    "Summaries deliberately omit asset inventories and procedural testing instructions. They grant no authorization; full live terms and category-specific exclusions prevail."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vercel | Bounty Policy | HackerOne",
+      "url": "https://hackerone.com/vercel?type=team",
+      "publisher": "Vercel / HackerOne",
+      "retrieved_at": "2026-10-03T01:49:43Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "rewards",
+      "title": "Vercel scope and advertised rewards",
+      "url": "https://hackerone.com/vercel/policy_scopes",
+      "publisher": "Vercel / HackerOne",
+      "retrieved_at": "2026-10-03T01:50:37Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "updates",
+      "title": "Vercel public program updates",
+      "url": "https://hackerone.com/vercel/updates",
+      "publisher": "Vercel / HackerOne",
+      "retrieved_at": "2026-10-03T01:50:10Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    }
+  ]
+}

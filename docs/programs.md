@@ -37,6 +37,36 @@ This is a small, manually reviewed starting directory, not a complete or continu
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## Adobe Public Bug Bounty
+
+[Official program](<https://app.intigriti.com/programs/adobe/adobepublic>) · [Policy](<https://app.intigriti.com/programs/adobe/adobepublic>) · [Canonical record](<../data/programs/adobe-public-bug-bounty.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T01:50:12Z
+
+**Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
+
+**Advertised rewards:** Three advertised tiers span $150–$15,000, $100–$10,000 and $75–$5,000\. Shared-root-cause findings receive one bounty; repeated patterns have a two-report full-bounty cap\. Awards remain discretionary\. Dollar denomination is unverified; normalized bounds remain null\.
+
+**Eligibility:** First reproducible, previously unknown, eligible findings qualify\. Current/recent employees and immediate family face a 12-month exclusion; specified network-access contractors face six months\. Intigriti requires adulthood, or age 16 with guardian permission, and legal/employer eligibility\.
+
+**Restrictions and exclusions:** Product-specific test plans override general guidance and constrain approved environments and accounts\. AI-assisted reports need human validation\. Privacy violations, disruption, social engineering, unapproved customer environments and premature disclosure are prohibited\. Unsupported-impact AI claims, licensing bypasses and compromised-device mobile scenarios are excluded\.
+
+**Verification limits**
+
+- The linked Updates page failed text retrieval; no announcement or change-log URL is represented as reviewed\.
+- Referenced test-plan and CVSS attachments were not reviewed\. Product-specific conditions are therefore incomplete\.
+- Platform terms describe euro settlement by default, which does not establish the denomination of Adobe’s dollar-denominated schedule\.
+- Logged-out text review only; authenticated submission eligibility was not tested\. No current open/paused indicator was established\.
+- This summary omits asset inventories and operational instructions\. Full live terms prevail and this record grants no testing authorization\.
+
+**Official evidence and updates**
+
+- [Adobe Public Bug Bounty policy](<https://app.intigriti.com/programs/adobe/adobepublic>) — Adobe / Intigriti; retrieved 2026-10-03T01:50:12Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T01:50:12Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## Apple Security Bounty
 
 [Official program](<https://security.apple.com/bounty/>) · [Policy](<https://security.apple.com/bounty/guidelines/>) · [Canonical record](<../data/programs/apple-security-bounty.json>)
@@ -68,6 +98,36 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## Arc Bug Bounty
+
+[Official program](<https://hackerone.com/arc-bbp?type=team>) · [Policy](<https://hackerone.com/arc-bbp?type=team>) · [Canonical record](<../data/programs/arc-circle-bug-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-03T01:51:44Z
+
+**Submission status:** unknown. A public bounty policy and submission link were visible without a pause notice\. Neither current acceptance nor individual eligibility was explicitly established or tested; activity statistics alone are not treated as confirmation\.
+
+**Advertised rewards:** Paid bounty\. Chain/protocol Tier A: Low up to $5,000 \(table starts at $50\), Medium $5,000–$10,000, High $10,000–$20,000, Critical $20,000–$200,000\. A separate extreme-impact category advertises up to $1,000,000\. Product/web Tier B: Low $50–$400, Medium $400–$800, High $800–$3,000, Critical $3,000–$10,000\. All payment decisions remain discretionary; neither ceiling is an actual award\.
+
+**Eligibility:** Participants must be at least 18, comply with applicable law and sanctions restrictions, and submit in English\. Employees of Circle or affiliates and their immediate families are excluded\. The first reproducible duplicate report takes precedence; one root cause receives one award\. Reporting licenses the submission to Circle and permits compliance-related sharing of tax-form personal information\.
+
+**Restrictions and exclusions:** Mainnet testing is prohibited; permitted research is confined to designated test or local environments\. Use owned or explicitly authorized accounts/wallets, avoid other users’ data and financial loss, and do not disrupt services or use social engineering\. Source-manipulation, unit-test, low-impact best-practice and unsupported library findings are excluded\. Disclosure, including resolved findings, requires written consent\. Safe harbor is conditional and terms may change without notice\.
+
+**Verification limits**
+
+- This Arc is Circle’s financial-platform program, not a browser product\. Policy displays September 16, 2026; reward table displays September 14, 2026\.
+- Only dollar notation was established, so ISO currency and normalized numerical bounds remain null\. The exceptional $1,000,000 category is separate from the ordinary $200,000 critical ceiling\.
+- The reviewed updates page explicitly displayed no updates\. Linked policy and reward revision archives and authenticated submission flow were not reviewed\.
+- The policy both lists examples of low-tier rewards and excludes similar low-impact categories elsewhere\. Eligibility depends on concrete impact and the full live terms; this summary does not resolve that tension\.
+- Asset inventories and operational instructions are intentionally omitted\. No account was created, report submitted or target tested; this record grants no testing permission\.
+
+**Official evidence and updates**
+
+- [Arc \| Bounty Policy \| HackerOne](<https://hackerone.com/arc-bbp?type=team>) — Circle / HackerOne; retrieved 2026-10-03T01:51:06Z.
+- [Arc public program updates](<https://hackerone.com/arc-bbp/updates>) — Circle / HackerOne; retrieved 2026-10-03T01:51:44Z.
+
+Change-log link: [Official updates](<https://hackerone.com/arc-bbp/updates>).
+
 ## Atlassian Bug Bounty
 
 [Official program](<https://bugcrowd.com/engagements/atlassian>) · [Policy](<https://bugcrowd.com/engagements/atlassian>) · [Canonical record](<../data/programs/atlassian-bug-bounty.json>)
@@ -97,6 +157,36 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 - [Getting rewarded](<https://docs.bugcrowd.com/researchers/receiving-rewards/getting-rewarded/>) — Bugcrowd; retrieved 2026-10-02T21:22:00Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/announcements>).
+
+## Dashlane Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/dashlane-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T01:53:34Z
+
+**Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
+
+**Advertised rewards:** Explicit unpaid VDP\. Numeric bounds and currency are inapplicable\. Generic reward language elsewhere does not override the no-bounty statement\. A separate private bounty program may invite researchers following strong VDP reports; this is not a cash promise\.
+
+**Eligibility:** An Intigriti account and researcher-identifying account requirements apply\. Reports need clear evidence, individual findings and exclusive coordinated submission\. Platform terms require adulthood, or age 16 with guardian permission, plus legal/employer eligibility\.
+
+**Restrictions and exclusions:** Only owned or expressly authorized accounts may be used\. Third-party-operated services are not automatically covered\. Disruption, high-volume automation, automated account creation, social engineering, user-data interference and public video hosting are prohibited\. Known sharing limitations, enumeration and best-practice-only claims are excluded\.
+
+**Verification limits**
+
+- Policy requires listed-only active testing, while its FAQ accepts reports concerning other Dashlane-controlled assets\. Preserve the stricter testing boundary; broader report acceptance does not establish authorization\.
+- No dedicated announcement/change-log page or expanded safe-harbor text was verified\.
+- Logged-out text review only; authenticated submission eligibility was not tested\. No current open/paused indicator was established\.
+- This summary omits asset inventories and operational instructions\. Full live terms prevail and this record grants no testing authorization\.
+- The page also displays historical aggregate payout statistics \(average $185; total $925\)\. These do not establish a currently available bounty schedule or an individual award and do not override the explicit no-bounty policy\.
+
+**Official evidence and updates**
+
+- [Dashlane Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) — Dashlane / Intigriti; retrieved 2026-10-03T01:50:12Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T01:50:12Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
 ## GitHub Bug Bounty
 
@@ -186,6 +276,34 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
+## Intel Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) · [Policy](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) · [Canonical record](<../data/programs/intel-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T01:53:51Z
+
+**Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
+
+**Advertised rewards:** Explicit unpaid disclosure program: the policy states no bounties, and its category matrix excludes monetary bounties and bonuses\. Currency and numeric bounds remain null as inapplicable, not as unknown reward availability\. Some reports can receive acknowledgment or reputation credit\.
+
+**Eligibility:** Participants must be at least 18, with guardian permission where still minors\. Written employer approval is required when reporting on its behalf; sanctions restrictions also apply\. Employees, contractors, and their family/household members face six-month exclusions\. Reports must be original, confidential and evidenced on supported public versions\.
+
+**Restrictions and exclusions:** Coverage concerns maintained Intel-branded technology\. Third-party, licensed, prerelease, divested and internal IT categories are excluded; acquisition and open-source-maintainer conditions apply\. Others’ data must not be accessed or retained\. Social engineering and specified physical-access cases are excluded\. Disclosure needs written consent; safe harbor does not cover third parties\.
+
+**Verification limits**
+
+- End-of-life reporting is encouraged despite reward exclusion; reputation eligibility must not be confused with monetary eligibility\.
+- No separate announcement archive or dedicated change-log page was verified\. Linked external conduct/disclosure policies were not separately reviewed\.
+- Logged-out text review only; authenticated submission eligibility was not tested\. No current open/paused indicator was established\.
+- This summary omits asset inventories and operational instructions\. Full live terms prevail and this record grants no testing authorization\.
+
+**Official evidence and updates**
+
+- [Intel Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) — Intel / Intigriti; retrieved 2026-10-03T01:50:12Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
 ## LaunchDarkly Managed Bug Bounty Engagement
 
 [Official program](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) · [Policy](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) · [Canonical record](<../data/programs/launchdarkly-managed-bug-bounty.json>)
@@ -215,6 +333,71 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## MATLAB Online - Ongoing Bug Bounty Engagement
+
+[Official program](<https://bugcrowd.com/engagements/matlab-online>) · [Policy](<https://bugcrowd.com/engagements/matlab-online>) · [Canonical record](<../data/programs/matlab-online-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T01:52:33Z
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
+
+**Advertised rewards:** Advertised bands: P4 $200–$250, P3 $550–$750, P2 $1,200–$3,000 and P1 $3,000–$7,000\. Priority may change with impact; some stored-script findings default to P3 unless broader impact is established\. No individual award is asserted\.
+
+**Eligibility:** Designated researcher accounts and trial-license association are required, with activity limited to content they created\. Reports need original analysis and reproducible impact; related instances generally share one report\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Intended execution of user-supplied code is not itself a security finding\. Unlisted properties and third-party services are excluded\. No staff contact through product features, service disruption or persistent public content\. Low-impact configuration findings are generally excluded\. Public disclosure is prohibited; safe harbor is conditional\.
+
+**Verification limits**
+
+- Brief and reviewed change index show September 3, 2026 as the latest revision; individual diffs were not opened\.
+- The separately opened announcement archive explicitly contains no announcements\. The separate unpaid disclosure route and license enrollment flow were not reviewed\.
+- USD normalization uses platform accounting documentation; the brief itself uses dollar signs\. No individual award or payment is established\.
+- Public policy pages only; authenticated submission and incorporated legal documents were not exhaustively reviewed\. Asset inventories and testing instructions are omitted\. Live terms prevail; this summary grants no authorization\.
+
+**Official evidence and updates**
+
+- [MATLAB Online - Ongoing Bug Bounty Engagement public brief](<https://bugcrowd.com/engagements/matlab-online>) — MathWorks / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [MATLAB Online - Ongoing Bug Bounty Engagement announcements](<https://bugcrowd.com/engagements/matlab-online/announcements>) — MathWorks / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [MATLAB Online - Ongoing Bug Bounty Engagement change index](<https://bugcrowd.com/engagements/matlab-online/changelog>) — MathWorks / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/matlab-online/changelog>).
+
+## Moovit Managed Bug Bounty Program
+
+[Official program](<https://bugcrowd.com/engagements/moovit-mbb-og>) · [Policy](<https://bugcrowd.com/engagements/moovit-mbb-og>) · [Canonical record](<../data/programs/moovit-managed-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T01:52:33Z
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
+
+**Advertised rewards:** Ordinary advertised bands are P4 $100–$250, P3 $250–$750, P2 $1,000–$2,000 and P1 $2,000–$3,500\. A still-visible doubled schedule reaches $7,000, but the reviewed notice dates that campaign to July 7–22, 2025; it is excluded from normalized bounds\. Awards remain discretionary\.
+
+**Eligibility:** The public brief requires reproducible, consequential findings, researcher-identified accounts and a signed NDA as a participation condition\. Only owned or expressly authorized accounts may be involved\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Scope is limited to selected mobile functionality; web applications and embedded web content are excluded\. Automated scanners, bulk account creation, disruptive requests, social engineering and third-party application activity are prohibited\. Minimize personal-data access\. Written permission is required before disclosure\.
+
+**Verification limits**
+
+- Brief and reviewed change index show February 12, 2026 as the latest revision; individual diffs were not opened\.
+- The announcement archive and July 7, 2025 promotion notice were opened\. Its end date and stated duration are not perfectly aligned; no current bonus entitlement is inferred\.
+- NDA signing mechanics were not available in the reviewed brief and were not tested\. Other archived announcement bodies were not separately opened\.
+- USD normalization uses platform accounting documentation; the brief itself uses dollar signs\. No individual award or payment is established\.
+- Public policy pages only; authenticated submission and incorporated legal documents were not exhaustively reviewed\. Asset inventories and testing instructions are omitted\. Live terms prevail; this summary grants no authorization\.
+
+**Official evidence and updates**
+
+- [Moovit Managed Bug Bounty Program public brief](<https://bugcrowd.com/engagements/moovit-mbb-og>) — Moovit / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Moovit Managed Bug Bounty Program announcements](<https://bugcrowd.com/engagements/moovit-mbb-og/announcements>) — Moovit / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Moovit Managed Bug Bounty Program change index](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog>) — Moovit / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog>).
 
 ## Mozilla Web Bug Bounty
 
@@ -269,6 +452,35 @@ Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=
 
 - [NVIDIA Public Bug Bounty program policy](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) — NVIDIA / Intigriti; retrieved 2026-10-02T23:00:00Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-02T23:00:00Z.
+
+Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
+
+## NxtPort Vulnerability Disclosure Program
+
+[Official program](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp>) · [Policy](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp>) · [Canonical record](<../data/programs/nxtport-vulnerability-disclosure.json>)
+
+**Platform:** Intigriti  
+**Last verified:** 2026-10-03T01:50:12Z
+
+**Submission status:** unknown. No explicit current acceptance indicator was verified; a visible policy and account-based submission invitation are insufficient\.
+
+**Advertised rewards:** Explicit no-bounty VDP, separately mentioning a discretionary EUR 25 bonus for delayed validation\. This exceptional payment language is not an ordinary bounty schedule\. Currency and numeric bounds remain null to avoid conflating the unpaid program with the conditional bonus\.
+
+**Eligibility:** An Intigriti account and researcher-identifying account requirements apply\. Platform terms require adulthood, or age 16 with guardian permission, plus legal/employer eligibility\. Internally known findings can be treated as duplicates\.
+
+**Restrictions and exclusions:** Scope is limited to the designated port-service environment\. User-data access or alteration, operational disruption, harmful automation, social engineering, physical intrusion and denial-of-service are prohibited\. Accidental sensitive-data access requires stopping and reporting without retention\. Low-impact configuration observations, unsupported-software cases and theoretical claims are excluded\. Confidentiality and conditional safe-harbor requirements apply\.
+
+**Verification limits**
+
+- The no-bounty heading, discretionary delay bonus and non-guaranteed-reward FAQ are retained together rather than harmonized into an invented schedule\.
+- No dedicated announcement/change-log page or complete historical policy record was verified\.
+- Logged-out text review only; authenticated submission eligibility was not tested\. No current open/paused indicator was established\.
+- This summary omits asset inventories and operational instructions\. Full live terms prevail and this record grants no testing authorization\.
+
+**Official evidence and updates**
+
+- [NxtPort Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp>) — NxtPort / Intigriti; retrieved 2026-10-03T01:50:12Z.
+- [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T01:50:12Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -333,5 +545,100 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T21:01:00Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/announcements>).
+
+## Vercel Bug Bounty
+
+[Official program](<https://hackerone.com/vercel?type=team>) · [Policy](<https://hackerone.com/vercel?type=team>) · [Canonical record](<../data/programs/vercel-bug-bounty.json>)
+
+**Platform:** HackerOne  
+**Last verified:** 2026-10-03T01:50:37Z
+
+**Submission status:** accepting reports. The September 21, 2026 announcement explicitly opens this consolidated program to the security community\. It says the separate Vercel Open Source program closed to new submissions and moved its coverage here; that predecessor is not treated as this identity\.
+
+**Advertised rewards:** Paid bounty\. Platform bands: Low $50–$500, Medium $750–$1,750, High $2,000–$3,000, Critical $3,500–$5,500\. Open-source Tier 1: $200–$500, $550–$1,000, $1,250–$5,000, $5,250–$10,000; Tier 2: $50–$200, $250–$500, $750–$2,500, $2,750–$5,000\. Severity and category determine the band; bonuses and awards remain discretionary\. Figures are advertisements, not individual awards\.
+
+**Eligibility:** First reproducible qualifying report receives precedence; shared root causes receive one award\. Human-validated evidence and designated researcher identification are required\. Past or present employees, contractors, sponsored-project maintainers/contributors, immediate employee relatives, relevant paid-engagement participants and assigned HackerOne staff are excluded\.
+
+**Restrictions and exclusions:** Limit activity to owned or expressly authorized accounts and data\. Open-source findings must be reproduced locally, with no active production testing\. No social engineering, disruption, persistence or retention of others’ sensitive data\. Customer applications, unrelated third parties, examples, deprecated products and unsupported-impact reports are excluded\. Publication requires written consent; confidentiality duties continue two years after disclosure\.
+
+**Verification limits**
+
+- Policy displays September 22, 2026; reward page displays September 21, 2026\. These are visible update dates, not a complete revision audit\.
+- Reviewed pages show dollar signs without an explicit ISO denomination; normalized currency and bounds remain null\.
+- Policy-version and reward-version archives, linked attachments, repository-specific policies and authenticated submission flow were not reviewed\. The predecessor program URL was not independently verified\.
+- Summaries deliberately omit asset inventories and procedural testing instructions\. They grant no authorization; full live terms and category-specific exclusions prevail\.
+
+**Official evidence and updates**
+
+- [Vercel \| Bounty Policy \| HackerOne](<https://hackerone.com/vercel?type=team>) — Vercel / HackerOne; retrieved 2026-10-03T01:49:43Z.
+- [Vercel scope and advertised rewards](<https://hackerone.com/vercel/policy_scopes>) — Vercel / HackerOne; retrieved 2026-10-03T01:50:37Z.
+- [Vercel public program updates](<https://hackerone.com/vercel/updates>) — Vercel / HackerOne; retrieved 2026-10-03T01:50:10Z.
+
+Change-log link: [Official updates](<https://hackerone.com/vercel/updates>).
+
+## Vinted Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/vinted-uab-mbb>) · [Policy](<https://bugcrowd.com/engagements/vinted-uab-mbb>) · [Canonical record](<../data/programs/vinted-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T01:52:33Z
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
+
+**Advertised rewards:** Primary-category guidelines advertise $75–$4,000; secondary-category guidelines $100–$800\. Business impact can change priority or payout, with an appeal route\. These are advertised schedules, not awards\.
+
+**Eligibility:** Public participation without invitation began September 30, 2026\. Researcher-identified accounts, original human analysis and reproducible impact are required\. Confirmed deletion of acquired member data is a reward condition\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Only expressly listed properties qualify\. Protect production stability and use owned accounts and transactions; interaction with real members is prohibited\. No high-volume scanning, disruption, social engineering or data enumeration\. Low-impact and scanner-only findings are excluded\. Disclosure requires permission; safe harbor is conditional\.
+
+**Verification limits**
+
+- Brief and change index show September 30, 2026 as the latest revision\. The sole announcement was opened and confirms public participation\.
+- Change-index entries were reviewed, not individual version diffs\. The brief welcomes newly disclosed issues case by case but normally excludes bounties within 14 days of a public patch\.
+- USD normalization uses platform accounting documentation; the brief itself uses dollar signs\. No individual award or payment is established\.
+- Public policy pages only; authenticated submission and incorporated legal documents were not exhaustively reviewed\. Asset inventories and testing instructions are omitted\. Live terms prevail; this summary grants no authorization\.
+
+**Official evidence and updates**
+
+- [Vinted Bug Bounty public brief](<https://bugcrowd.com/engagements/vinted-uab-mbb>) — Vinted / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Vinted Bug Bounty announcements](<https://bugcrowd.com/engagements/vinted-uab-mbb/announcements>) — Vinted / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Vinted Bug Bounty change index](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog>) — Vinted / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog>).
+
+## Web\.com Bug Bounty
+
+[Official program](<https://bugcrowd.com/engagements/webdotcom>) · [Policy](<https://bugcrowd.com/engagements/webdotcom>) · [Canonical record](<../data/programs/web-com-bug-bounty.json>)
+
+**Platform:** Bugcrowd  
+**Last verified:** 2026-10-03T01:52:33Z
+
+**Submission status:** accepting reports. The official brief explicitly displays In progress and an ongoing period, with a submission link\. Individual eligibility remains subject to live terms\.
+
+**Advertised rewards:** The current chart advertises a $5,000 maximum separately from bands of P1 $2,000–$3,000, P2 $1,000–$1,500 and P3 $250–$600\. The opened February 22, 2024 notice confirms these reduced rates\. Ratings remain discretionary; no actual award is asserted\.
+
+**Eligibility:** Newfold Digital and subsidiary employees, their family members, current vendors and vendor employees are excluded; sanctions and export-control restrictions apply\. Reports require reproducible security impact\. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority\.
+
+**Restrictions and exclusions:** Only explicitly covered services qualify\. Real-customer interaction and disruption are prohibited; researcher identification is required and expenses are not reimbursed\. Shared root causes receive one bounty\. Intended own-page scripting, low-impact findings, third-party components and recently disclosed issues are excluded\. Public disclosure is prohibited\.
+
+**Verification limits**
+
+- Brief and reviewed change index show September 11, 2026 as the latest revision\. Only page 1 of 2 of the change index was reviewed; individual diffs were not opened\.
+- The announcement archive and February 22, 2024 reward notice were opened\. The September 11, 2026 AI-builder notice was read within the brief; other archive bodies were not exhaustively reviewed\.
+- The chart does not explain when an award could exceed the ordinary P1 band to reach the separate $5,000 maximum\.
+- USD normalization uses platform accounting documentation; the brief itself uses dollar signs\. No individual award or payment is established\.
+- Public policy pages only; authenticated submission and incorporated legal documents were not exhaustively reviewed\. Asset inventories and testing instructions are omitted\. Live terms prevail; this summary grants no authorization\.
+
+**Official evidence and updates**
+
+- [Web\.com Bug Bounty public brief](<https://bugcrowd.com/engagements/webdotcom>) — Newfold Digital / Web\.com / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Web\.com Bug Bounty announcements](<https://bugcrowd.com/engagements/webdotcom/announcements>) — Newfold Digital / Web\.com / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Web\.com Bug Bounty change index](<https://bugcrowd.com/engagements/webdotcom/changelog>) — Newfold Digital / Web\.com / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+- [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
+
+Change-log link: [Official updates](<https://bugcrowd.com/engagements/webdotcom/changelog>).
 
 Original summaries: Security Research Library contributors, CC BY 4.0. Linked policies retain their own rights. [License scope](../LICENSE.md).

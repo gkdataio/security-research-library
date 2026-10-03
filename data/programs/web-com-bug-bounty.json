@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.1.0",
+  "id": "web-com-bug-bounty",
+  "name": "Web.com Bug Bounty",
+  "operator": "Newfold Digital / Web.com",
+  "platform": "Bugcrowd",
+  "program_url": "https://bugcrowd.com/engagements/webdotcom",
+  "policy_url": "https://bugcrowd.com/engagements/webdotcom",
+  "announcement_urls": [
+    "https://bugcrowd.com/engagements/webdotcom/announcements"
+  ],
+  "change_log_url": "https://bugcrowd.com/engagements/webdotcom/changelog",
+  "rewards": {
+    "currency": "USD",
+    "minimum": 250,
+    "maximum": 5000,
+    "basis": "advertised_not_individual_award",
+    "summary": "The current chart advertises a $5,000 maximum separately from bands of P1 $2,000–$3,000, P2 $1,000–$1,500 and P3 $250–$600. The opened February 22, 2024 notice confirms these reduced rates. Ratings remain discretionary; no actual award is asserted.",
+    "source_ids": [
+      "policy",
+      "announcements",
+      "currency"
+    ]
+  },
+  "eligibility": {
+    "summary": "Newfold Digital and subsidiary employees, their family members, current vendors and vendor employees are excluded; sanctions and export-control restrictions apply. Reports require reproducible security impact. Platform first-valid-report rules apply; monetary compensation requires age 18 or the applicable age of majority.",
+    "source_ids": [
+      "policy",
+      "platform-terms"
+    ]
+  },
+  "restrictions": {
+    "summary": "Only explicitly covered services qualify. Real-customer interaction and disruption are prohibited; researcher identification is required and expenses are not reimbursed. Shared root causes receive one bounty. Intended own-page scripting, low-impact findings, third-party components and recently disclosed issues are excluded. Public disclosure is prohibited.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "submission_status": {
+    "value": "accepting_reports",
+    "summary": "The official brief explicitly displays In progress and an ongoing period, with a submission link. Individual eligibility remains subject to live terms.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "last_verified_at": "2026-10-03T01:52:33Z",
+  "limitations": [
+    "Brief and reviewed change index show September 11, 2026 as the latest revision. Only page 1 of 2 of the change index was reviewed; individual diffs were not opened.",
+    "The announcement archive and February 22, 2024 reward notice were opened. The September 11, 2026 AI-builder notice was read within the brief; other archive bodies were not exhaustively reviewed.",
+    "The chart does not explain when an award could exceed the ordinary P1 band to reach the separate $5,000 maximum.",
+    "USD normalization uses platform accounting documentation; the brief itself uses dollar signs. No individual award or payment is established.",
+    "Public policy pages only; authenticated submission and incorporated legal documents were not exhaustively reviewed. Asset inventories and testing instructions are omitted. Live terms prevail; this summary grants no authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Web.com Bug Bounty public brief",
+      "url": "https://bugcrowd.com/engagements/webdotcom",
+      "publisher": "Newfold Digital / Web.com / Bugcrowd",
+      "retrieved_at": "2026-10-03T01:52:33Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "announcements",
+      "title": "Web.com Bug Bounty announcements",
+      "url": "https://bugcrowd.com/engagements/webdotcom/announcements",
+      "publisher": "Newfold Digital / Web.com / Bugcrowd",
+      "retrieved_at": "2026-10-03T01:52:33Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "changelog",
+      "title": "Web.com Bug Bounty change index",
+      "url": "https://bugcrowd.com/engagements/webdotcom/changelog",
+      "publisher": "Newfold Digital / Web.com / Bugcrowd",
+      "retrieved_at": "2026-10-03T01:52:33Z",
+      "provenance": "official_primary",
+      "access_method": "browser"
+    },
+    {
+      "id": "currency",
+      "title": "Bugcrowd Organization Accounting",
+      "url": "https://docs.bugcrowd.com/customers/fund-management/overview/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T01:52:33Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "platform-terms",
+      "title": "Bugcrowd Standard Disclosure Terms",
+      "url": "https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-10-03T01:52:33Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "public_program_policy_summary",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
