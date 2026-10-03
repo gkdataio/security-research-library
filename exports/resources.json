@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 33,
+    "resources": 35,
     "diagrams": 8
   },
   "taxonomy": {
@@ -2499,6 +2499,201 @@
         "Build L1 provenance alone does not provide tamper protection.",
         "The specification version is 1.2, while the build-provenance predicate identifier remains https://slsa.dev/provenance/v1; the page explains this major-version convention.",
         "A recorded attestation is useful only within an explicit trust and verification model."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "svelte-2026-hydration-output-context-boundary",
+      "title": "Svelte hydration: serialization must preserve the enclosing output context",
+      "publisher": "Camilo Vera",
+      "authors": [
+        "Camilo Vera"
+      ],
+      "primary_url": "https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Research on CVE-2025-15265 explains a data-to-code boundary failure: hydration keys received JavaScript-string serialization without the HTML-context protection already used for values. The researcher demonstrates browser script execution in a minimal application. Account compromise is an application-dependent consequence, not evidence of a compromised production account.",
+      "defensive_use": "Compare all fields crossing rendering contexts, including metadata keys. The researcher describes replacement with an HTML-safe serializer and regression coverage. The maintainer identifies Svelte 5.46.4 as patched. Preserve one encoding contract across keys and values, rather than treating valid JSON as sufficient for every output context.",
+      "prerequisites": [
+        "Server-side rendering and framework integration concepts",
+        "Basic trust-boundary and secure-input review"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public researcher article and maintainer advisory readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Article displays this publication date; advisory disclosure is a separate event."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-03-17",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Article displays this publication date; advisory disclosure is a separate event."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T05:49:32Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Researcher article and maintainer advisory reviewed; no immutable article revision established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/",
+          "title": "CVE-2025-15265: Svelte Hydratable Key SSR XSS - Lydian",
+          "publisher": "Camilo Vera",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:49:32Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer",
+          "url": "https://github.com/sveltejs/svelte/security/advisories/GHSA-6738-r8g5-qwp3",
+          "title": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') in svelte",
+          "publisher": "Svelte",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:49:32Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "research-advisory",
+          "url": "https://fluidattacks.com/advisories/lydian",
+          "title": "Svelte 5.46.0 - Hydratable Key Script-Breakout XSS (SSR)",
+          "publisher": "Fluid Attacks",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:49:32Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected behavior requires experimental async rendering and hydration keys influenced by untrusted input; ordinary Svelte use alone does not establish exposure.",
+        "The advisory version table lists 5.46.0 through 5.46.3, while its summary says 5.46.0-2; the researcher and Fluid Attacks advisory support the broader table range.",
+        "March 17 is the article publication; the researcher dates the separate fix and disclosure to January 15, 2026. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "sveltekit-2026-origin-routing-trust-boundary",
+      "title": "SvelteKit: origin construction and routing must preserve server request authority",
+      "publisher": "zhero_web_security",
+      "authors": [
+        "Rachid Allam",
+        "Allam Yasser"
+      ],
+      "primary_url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "untrusted-input-handling",
+        "error-response-design",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Research on CVE-2025-67647 describes framework-internal routing consuming an origin derived from insufficiently trusted request metadata. The researcher demonstrates server-side response retrieval and process termination from unhandled network errors. The maintainer limits internal-service exposure to services reachable without authentication from the runtime; downstream cache effects depend on deployment behavior.",
+      "defensive_use": "Trace which component authoritatively establishes the application origin, and contain failures in internal network operations. The maintainer lists SvelteKit 2.49.5 and adapter-node 5.5.1 as patched. Fixed-origin configuration and reverse-proxy host validation address origin trust, but do not substitute for patching the broader availability issue.",
+      "prerequisites": [
+        "Server-side rendering and framework integration concepts",
+        "Basic trust-boundary and secure-input review"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public researcher article and maintainer advisory readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-01",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Article displays this publication date; advisory disclosure is a separate event."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-01",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "Article displays this publication date; advisory disclosure is a separate event."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T05:49:32Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Researcher article and maintainer advisory reviewed; no immutable article revision established."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
+          "title": "Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit",
+          "publisher": "zhero_web_security",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:49:32Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "maintainer",
+          "url": "https://github.com/sveltejs/kit/security/advisories/GHSA-j62c-4x62-9r35",
+          "title": "Denial of service and possible SSRF when using prerendering",
+          "publisher": "Svelte",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T05:49:32Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The maintainer requires a prerendered route. SSRF additionally requires adapter-node without a configured origin and without reverse-proxy host validation. The advisory distinguishes the broader DoS case starting at SvelteKit 2.44.0 from the origin-dependent case starting at 2.19.0.",
+        "The article provides demonstrations, not evidence of an actual third-party production compromise. Cache-related browser impact is conditional, not universal.",
+        "The article displays January 2026 without a day; January 15 is its separately stated patch/advisory date. Learning prerequisites are editorial."
       ],
       "content_scope": "defensive_education"
     },

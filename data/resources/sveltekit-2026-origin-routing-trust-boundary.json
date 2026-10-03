@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sveltekit-2026-origin-routing-trust-boundary",
+  "title": "SvelteKit: origin construction and routing must preserve server request authority",
+  "publisher": "zhero_web_security",
+  "authors": [
+    "Rachid Allam",
+    "Allam Yasser"
+  ],
+  "primary_url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "integration-threat-modeling",
+    "untrusted-input-handling",
+    "error-response-design",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Research on CVE-2025-67647 describes framework-internal routing consuming an origin derived from insufficiently trusted request metadata. The researcher demonstrates server-side response retrieval and process termination from unhandled network errors. The maintainer limits internal-service exposure to services reachable without authentication from the runtime; downstream cache effects depend on deployment behavior.",
+  "defensive_use": "Trace which component authoritatively establishes the application origin, and contain failures in internal network operations. The maintainer lists SvelteKit 2.49.5 and adapter-node 5.5.1 as patched. Fixed-origin configuration and reverse-proxy host validation address origin trust, but do not substitute for patching the broader availability issue.",
+  "prerequisites": [
+    "Server-side rendering and framework integration concepts",
+    "Basic trust-boundary and secure-input review"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public researcher article and maintainer advisory readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-01",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Article displays this publication date; advisory disclosure is a separate event."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-01",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Article displays this publication date; advisory disclosure is a separate event."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T05:49:32Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Researcher article and maintainer advisory reviewed; no immutable article revision established."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
+      "title": "Avoiding the paradox: A native full-read SSRF and one-shot DoS in SvelteKit",
+      "publisher": "zhero_web_security",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:49:32Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "maintainer",
+      "url": "https://github.com/sveltejs/kit/security/advisories/GHSA-j62c-4x62-9r35",
+      "title": "Denial of service and possible SSRF when using prerendering",
+      "publisher": "Svelte",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T05:49:32Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The maintainer requires a prerendered route. SSRF additionally requires adapter-node without a configured origin and without reverse-proxy host validation. The advisory distinguishes the broader DoS case starting at SvelteKit 2.44.0 from the origin-dependent case starting at 2.19.0.",
+    "The article provides demonstrations, not evidence of an actual third-party production compromise. Cache-related browser impact is conditional, not universal.",
+    "The article displays January 2026 without a day; January 15 is its separately stated patch/advisory date. Learning prerequisites are editorial."
+  ],
+  "content_scope": "defensive_education"
+}
