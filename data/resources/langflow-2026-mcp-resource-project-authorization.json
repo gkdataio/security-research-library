@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "langflow-2026-mcp-resource-project-authorization",
+  "title": "Langflow: project transport authorization must reach each resource read",
+  "publisher": "Langflow",
+  "authors": [
+    "andifilhohub"
+  ],
+  "primary_url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "ai-security",
+    "authorization",
+    "identity"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "ai-authority-boundaries",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication; not software release."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned educational edition established."
+    },
+    "source_displayed": {
+      "value": "2026-09-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication; not software release."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T13:39:19Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
+      "title": "Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
+      "publisher": "Langflow",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:39:19Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "content_scope": "defensive_education",
+  "summary": "The maintainer confirms that project-level MCP authentication did not authorize later file reads. Resource handlers reached storage without retaining user and project restrictions. A local two-user demonstration showed cross-user file disclosure, contrasting with denial by the ordinary download interface.",
+  "defensive_use": "The documented fix carries authenticated context into object resolution, constrains project membership, and scopes discovery results. Editorial lesson: connection admission and storage containment cannot replace per-resource authorization; compare policy across every interface to the same object.",
+  "prerequisites": [
+    "Object ownership and project membership models",
+    "MCP resource handling and application storage separation"
+  ],
+  "caveats": [
+    "Source prerequisites include authentication-enabled deployments, an accessible owned project, and another user’s uploaded flow-backed file.",
+    "The maintainer corrects affected versions to 1.6.8–1.9.0 and identifies 1.9.1, released April 24, 2026, as fixed. September publication is not patch timing.",
+    "The September 22 triage update reports regression coverage; this review did not independently run it. No observed production compromise or award is established.",
+    "Conceptual defensive summary; public disclosure grants no testing authorization."
+  ]
+}

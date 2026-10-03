@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "chrome-document-isolation-policy-boundaries",
+  "title": "Document Isolation Policy: process separation and residual authority",
+  "publisher": "Google Chrome for Developers",
+  "authors": ["Camille Lamy"],
+  "primary_url": "https://developer.chrome.com/blog/document-isolation-policy",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": ["web-foundations", "memory-safety"],
+  "skillset_ids": ["browser-isolation-review", "integration-threat-modeling", "secrets-containment"],
+  "version": null,
+  "summary": "Explains per-document cross-origin isolation as a response to process-level information exposure that logical origin checks alone cannot prevent. Document Isolation Policy allows independently isolated frames while preserving popup communication. Subresource policy either requires explicit sharing permission or removes credentials from relevant cross-origin requests.",
+  "defensive_use": "Editorial lesson: separate process confidentiality, resource delivery and application authority in architecture reviews. Isolation does not remove same-origin storage access or asynchronous messaging, so these channels retain their own authorization requirements. Evaluate isolation choices against required embedded-resource and sign-in behavior.",
+  "prerequisites": ["Browser origins, frames, HTTP resource policies and process isolation"],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {"cost": "free", "note": "Public first-party guidance."},
+  "dates": {
+    "published": {"value": "2025-05-01", "precision": "day", "basis": "explicit", "source_id": "guide", "note": "Historical publication relevant to 2026 architecture review."},
+    "version_released": {"value": null, "precision": null, "basis": "not_reported", "source_id": null, "note": "Chrome 137 is a software version, not an educational edition."},
+    "source_displayed": {"value": "2025-05-01", "precision": "day", "basis": "explicit", "source_id": "guide", "note": "Displayed last-updated date."}
+  },
+  "freshness": {"reviewed_at": "2026-10-03T13:38:43Z", "living_resource": true, "status": "primary_source_reviewed", "note": "Dated first-party guide reviewed; current browser coverage was not independently established."},
+  "sources": [{"id": "guide", "url": "https://developer.chrome.com/blog/document-isolation-policy", "title": "Document Isolation Policy: Enable powerful web features with ease", "publisher": "Google Chrome for Developers", "provenance": "official_primary", "retrieved_at": "2026-10-03T13:38:43Z", "supports": ["summary", "dates"]}],
+  "caveats": [
+    "Architectural guidance, not an individual vulnerability disclosure or evidence of deployed compromise. Security benefits are the publisher's design claims.",
+    "The article establishes desktop availability from Chrome 137; its Android rollout intention is not confirmation of present support. Verify relevant browser support separately.",
+    "Isolated and non-isolated same-origin frames lose synchronous DOM access but retain asynchronous communication and storage sharing. This is not general tenant isolation."
+  ],
+  "content_scope": "defensive_education"
+}

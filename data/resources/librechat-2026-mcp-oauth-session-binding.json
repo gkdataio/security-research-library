@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "id": "librechat-2026-mcp-oauth-session-binding",
+  "title": "LibreChat: delegated credentials must remain bound to the initiating session",
+  "publisher": "LibreChat",
+  "authors": [
+    "danny-avila"
+  ],
+  "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "ai-security",
+    "authorization",
+    "identity"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "ai-authority-boundaries",
+    "patch-verification"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-03-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication; not software release."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned educational edition established."
+    },
+    "source_displayed": {
+      "value": "2026-03-13",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication; not software release."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T13:39:19Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
+      "title": "MCP OAuth callback does not validate browser session, allows token theft via redirect link",
+      "publisher": "LibreChat",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T13:39:19Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "content_scope": "defensive_education",
+  "summary": "CVE-2026-31944 describes an MCP OAuth callback that trusted cached initiator identity without authenticating the returning browser or checking identity continuity. The advisory describes third-party credentials being associated with the wrong local account. Consequences are bounded by delegated integration scopes, not takeover of the affected person’s LibreChat account.",
+  "defensive_use": "Editorial lesson: bind OAuth initiation, callback session, and credential-storage owner before accepting a grant. Treat transaction state as correlation, not sufficient proof of browser identity. The advisory names 0.8.3-rc1 as patched but does not explain its implementation.",
+  "prerequisites": [
+    "OAuth authorization-code callbacks and transaction state",
+    "Local session identity versus external delegated authority"
+  ],
+  "caveats": [
+    "Prerequisites include an authenticated initiator, enabled MCP OAuth, and another person’s interaction with the authorization flow; existing provider consent can change the interaction required.",
+    "The source lists affected versions as >= v0.8.2, <= 0.8.2-rc3. Preserve this unusual stable/prerelease range without silently normalizing it.",
+    "No independent production-compromise evidence, patch-release date, historical-token revocation behavior, or award amount is established.",
+    "Conceptual defensive summary; public disclosure grants no testing authorization."
+  ]
+}

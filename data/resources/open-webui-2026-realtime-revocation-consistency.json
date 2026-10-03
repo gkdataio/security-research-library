@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "id": "open-webui-2026-realtime-revocation-consistency",
+  "title": "Open WebUI: revocation must cross HTTP and realtime boundaries",
+  "publisher": "Open WebUI",
+  "authors": ["doge-woof"],
+  "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
+  "resource_type_id": "research-paper",
+  "topic_ids": ["identity", "authorization", "web-foundations"],
+  "skillset_ids": ["identity-lifecycle-review", "security-token-design", "integration-threat-modeling", "patch-verification"],
+  "version": null,
+  "summary": "CVE-2026-59219 documents inconsistent session invalidation: HTTP authentication consulted revocation state, while realtime authentication checked only token signature and expiry. The reported local comparison shows revoked credentials rejected by HTTP but accepted for new realtime authentication. Cryptographic validity had been mistaken for continuing session authority.",
+  "defensive_use": "Editorial lesson: model revocation as a shared invariant across every transport. The advisory identifies 0.10.0 as patched through shared revocation checks. Distinguish denial of new connections from termination of existing ones when reviewing remediation guarantees.",
+  "prerequisites": ["JWT validity, session revocation and asynchronous transports"],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {"cost": "free", "note": "Public maintainer advisory."},
+  "dates": {
+    "published": {"value": "2026-07-02", "precision": "day", "basis": "explicit", "source_id": "advisory", "note": "Maintainer publication, not advisory-database ingestion or software release."},
+    "version_released": {"value": null, "precision": null, "basis": "not_reported", "source_id": null, "note": "No separate educational edition established."},
+    "source_displayed": {"value": "2026-07-02", "precision": "day", "basis": "explicit", "source_id": "advisory", "note": "Publication beside the publishing account."}
+  },
+  "freshness": {"reviewed_at": "2026-10-03T13:38:43Z", "living_resource": false, "status": "primary_source_reviewed", "note": "Maintainer source reviewed; no software executed or deployment tested."},
+  "sources": [{"id": "advisory", "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw", "title": "Realtime endpoints accept Redis-revoked JWTs after signout/backchannel logout", "publisher": "Open WebUI", "provenance": "official_primary", "retrieved_at": "2026-10-03T13:38:43Z", "supports": ["summary", "dates"]}],
+  "caveats": [
+    "Applies to Redis-backed versions 0.9.0 through versions before 0.10.0 and requires possession of an otherwise valid revoked token. Without Redis, per-token invalidation is unsupported by design.",
+    "Realtime disclosure and impersonation are maintainer-described consequences; broader production exploitation is not established. Terminal access additionally depends on terminal configuration; HTTP remains protected.",
+    "Existing-connection termination is not established. The source credits huslayer826 as reporter and Classic298 as coordinator. Separate from the catalog's role-claim provenance advisory."
+  ],
+  "content_scope": "defensive_education"
+}

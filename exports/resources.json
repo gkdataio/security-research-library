@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 76,
+    "resources": 80,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1043,6 +1043,86 @@
         "The broader web.dev guide still describes the Chrome change as ongoing; the separately dated Chrome article provides more specific implementation context.",
         "No browser execution or live application assessment was performed; this is lifecycle guidance, not an individual vulnerability report."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "chrome-document-isolation-policy-boundaries",
+      "title": "Document Isolation Policy: process separation and residual authority",
+      "publisher": "Google Chrome for Developers",
+      "authors": [
+        "Camille Lamy"
+      ],
+      "primary_url": "https://developer.chrome.com/blog/document-isolation-policy",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "web-foundations",
+        "memory-safety"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling",
+        "secrets-containment"
+      ],
+      "version": null,
+      "summary": "Explains per-document cross-origin isolation as a response to process-level information exposure that logical origin checks alone cannot prevent. Document Isolation Policy allows independently isolated frames while preserving popup communication. Subresource policy either requires explicit sharing permission or removes credentials from relevant cross-origin requests.",
+      "defensive_use": "Editorial lesson: separate process confidentiality, resource delivery and application authority in architecture reviews. Isolation does not remove same-origin storage access or asynchronous messaging, so these channels retain their own authorization requirements. Evaluate isolation choices against required embedded-resource and sign-in behavior.",
+      "prerequisites": [
+        "Browser origins, frames, HTTP resource policies and process isolation"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public first-party guidance."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-05-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "guide",
+          "note": "Historical publication relevant to 2026 architecture review."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Chrome 137 is a software version, not an educational edition."
+        },
+        "source_displayed": {
+          "value": "2025-05-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "guide",
+          "note": "Displayed last-updated date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:38:43Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Dated first-party guide reviewed; current browser coverage was not independently established."
+      },
+      "sources": [
+        {
+          "id": "guide",
+          "url": "https://developer.chrome.com/blog/document-isolation-policy",
+          "title": "Document Isolation Policy: Enable powerful web features with ease",
+          "publisher": "Google Chrome for Developers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:38:43Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Architectural guidance, not an individual vulnerability disclosure or evidence of deployed compromise. Security benefits are the publisher's design claims.",
+        "The article establishes desktop availability from Chrome 137; its Android rollout intention is not confirmation of present support. Verify relevant browser support separately.",
+        "Isolated and non-isolated same-origin frames lose synchronous DOM access but retain asynchronous communication and storage sharing. This is not general tenant isolation."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
@@ -2174,6 +2254,174 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "langflow-2026-mcp-resource-project-authorization",
+      "title": "Langflow: project transport authorization must reach each resource read",
+      "publisher": "Langflow",
+      "authors": [
+        "andifilhohub"
+      ],
+      "primary_url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "ai-security",
+        "authorization",
+        "identity"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "ai-authority-boundaries",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication; not software release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        },
+        "source_displayed": {
+          "value": "2026-09-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication; not software release."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:39:19Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c",
+          "title": "Authenticated Cross-Project File Disclosure via Unscoped MCP Resource Handlers",
+          "publisher": "Langflow",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:39:19Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "content_scope": "defensive_education",
+      "summary": "The maintainer confirms that project-level MCP authentication did not authorize later file reads. Resource handlers reached storage without retaining user and project restrictions. A local two-user demonstration showed cross-user file disclosure, contrasting with denial by the ordinary download interface.",
+      "defensive_use": "The documented fix carries authenticated context into object resolution, constrains project membership, and scopes discovery results. Editorial lesson: connection admission and storage containment cannot replace per-resource authorization; compare policy across every interface to the same object.",
+      "prerequisites": [
+        "Object ownership and project membership models",
+        "MCP resource handling and application storage separation"
+      ],
+      "caveats": [
+        "Source prerequisites include authentication-enabled deployments, an accessible owned project, and another user’s uploaded flow-backed file.",
+        "The maintainer corrects affected versions to 1.6.8–1.9.0 and identifies 1.9.1, released April 24, 2026, as fixed. September publication is not patch timing.",
+        "The September 22 triage update reports regression coverage; this review did not independently run it. No observed production compromise or award is established.",
+        "Conceptual defensive summary; public disclosure grants no testing authorization."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "librechat-2026-mcp-oauth-session-binding",
+      "title": "LibreChat: delegated credentials must remain bound to the initiating session",
+      "publisher": "LibreChat",
+      "authors": [
+        "danny-avila"
+      ],
+      "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "ai-security",
+        "authorization",
+        "identity"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "ai-authority-boundaries",
+        "patch-verification"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication; not software release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately versioned educational edition established."
+        },
+        "source_displayed": {
+          "value": "2026-03-13",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication; not software release."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:39:19Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no vulnerability execution or deployment testing."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g",
+          "title": "MCP OAuth callback does not validate browser session, allows token theft via redirect link",
+          "publisher": "LibreChat",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:39:19Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "content_scope": "defensive_education",
+      "summary": "CVE-2026-31944 describes an MCP OAuth callback that trusted cached initiator identity without authenticating the returning browser or checking identity continuity. The advisory describes third-party credentials being associated with the wrong local account. Consequences are bounded by delegated integration scopes, not takeover of the affected person’s LibreChat account.",
+      "defensive_use": "Editorial lesson: bind OAuth initiation, callback session, and credential-storage owner before accepting a grant. Treat transaction state as correlation, not sufficient proof of browser identity. The advisory names 0.8.3-rc1 as patched but does not explain its implementation.",
+      "prerequisites": [
+        "OAuth authorization-code callbacks and transaction state",
+        "Local session identity versus external delegated authority"
+      ],
+      "caveats": [
+        "Prerequisites include an authenticated initiator, enabled MCP OAuth, and another person’s interaction with the authorization flow; existing provider consent can change the interaction required.",
+        "The source lists affected versions as >= v0.8.2, <= 0.8.2-rc3. Preserve this unusual stable/prerelease range without silently normalizing it.",
+        "No independent production-compromise evidence, patch-release date, historical-token revocation behavior, or award amount is established.",
+        "Conceptual defensive summary; public disclosure grants no testing authorization."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "mailcow-2026-persisted-data-query-boundary",
       "title": "mailcow: stored configuration retains its original trust level",
       "publisher": "mailcow",
@@ -3228,6 +3476,88 @@
         "The reviewed sources do not establish automatic revocation of previously issued tokens after upgrade; historical exposure and remediation validation remain deployment-specific.",
         "Conceptual defensive summary only; public disclosure grants no testing authorization."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "open-webui-2026-realtime-revocation-consistency",
+      "title": "Open WebUI: revocation must cross HTTP and realtime boundaries",
+      "publisher": "Open WebUI",
+      "authors": [
+        "doge-woof"
+      ],
+      "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "security-token-design",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-59219 documents inconsistent session invalidation: HTTP authentication consulted revocation state, while realtime authentication checked only token signature and expiry. The reported local comparison shows revoked credentials rejected by HTTP but accepted for new realtime authentication. Cryptographic validity had been mistaken for continuing session authority.",
+      "defensive_use": "Editorial lesson: model revocation as a shared invariant across every transport. The advisory identifies 0.10.0 as patched through shared revocation checks. Distinguish denial of new connections from termination of existing ones when reviewing remediation guarantees.",
+      "prerequisites": [
+        "JWT validity, session revocation and asynchronous transports"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication, not advisory-database ingestion or software release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational edition established."
+        },
+        "source_displayed": {
+          "value": "2026-07-02",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication beside the publishing account."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T13:38:43Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer source reviewed; no software executed or deployment tested."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
+          "title": "Realtime endpoints accept Redis-revoked JWTs after signout/backchannel logout",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T13:38:43Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Applies to Redis-backed versions 0.9.0 through versions before 0.10.0 and requires possession of an otherwise valid revoked token. Without Redis, per-token invalidation is unsupported by design.",
+        "Realtime disclosure and impersonation are maintainer-described consequences; broader production exploitation is not established. Terminal access additionally depends on terminal configuration; HTTP remains protected.",
+        "Existing-connection termination is not established. The source credits huslayer826 as reporter and Classic298 as coordinator. Separate from the catalog's role-claim provenance advisory."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
