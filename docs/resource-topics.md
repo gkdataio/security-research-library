@@ -4,41 +4,43 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-82 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+86 distinct resources across 10 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 5 resources.
-- [Authorization](<#topic-authorization>) — 49 resources.
+- [Ai Security](<#topic-ai-security>) — 6 resources.
+- [Authorization](<#topic-authorization>) — 52 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 18 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
-- [Identity](<#topic-identity>) — 30 resources.
+- [Identity](<#topic-identity>) — 31 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
-- [Verification](<#topic-verification>) — 19 resources.
-- [Web Foundations](<#topic-web-foundations>) — 41 resources.
+- [Verification](<#topic-verification>) — 20 resources.
+- [Web Foundations](<#topic-web-foundations>) — 44 resources.
 
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-5 resources.
+6 resources.
 
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat.
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series.
+- [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
 
 <a id="topic-authorization"></a>
 ## Authorization
 
-49 resources.
+52 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
+- [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro.
 - [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>) — OWASP Cheat Sheet Series.
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services.
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
@@ -67,6 +69,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [NIST SP 800-162: attribute authority and policy traceability](<resources/nist-sp-800-162-attribute-authority-modeling.md>) — National Institute of Standards and Technology.
 - [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt.
 - [Obot: preserve delegated token audience and consent boundaries](<resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — Obot.
+- [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI.
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
@@ -79,6 +82,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
+- [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
 - [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius.
@@ -126,7 +130,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-identity"></a>
 ## Identity
 
-30 resources.
+31 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services.
@@ -145,6 +149,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n.
 - [NIST SP 800-162: attribute authority and policy traceability](<resources/nist-sp-800-162-attribute-authority-modeling.md>) — National Institute of Standards and Technology.
 - [Obot: preserve delegated token audience and consent boundaries](<resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — Obot.
+- [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [Open WebUI: preserve role-policy meaning across identity flows](<resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — Open WebUI.
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
@@ -186,7 +191,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-verification"></a>
 ## Verification
 
-19 resources.
+20 resources.
 
 - [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project.
@@ -201,6 +206,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community.
 - [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf.
 - [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev.
+- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix.
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community.
@@ -211,12 +217,13 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-web-foundations"></a>
 ## Web Foundations
 
-41 resources.
+44 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
 - [Angular SSR: preserve output context through serialization and post-processing](<resources/angular-2026-raw-content-serialization-context.md>) — Angular.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
+- [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro.
 - [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
@@ -239,11 +246,13 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community.
 - [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf.
 - [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev.
+- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix.
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor.
 - [Rocket\.Chat: authentication must await a completed verification decision](<resources/rocketchat-2026-asynchronous-identity-verification.md>) — GitHub Security Lab.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
+- [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
 - [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera.
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security.

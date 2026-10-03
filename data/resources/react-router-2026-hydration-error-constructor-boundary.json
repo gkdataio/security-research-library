@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "react-router-2026-hydration-error-constructor-boundary",
+  "title": "React Router: hydrated error metadata must not select client behavior",
+  "publisher": "React Router / Remix",
+  "authors": [
+    "brophdawg11"
+  ],
+  "primary_url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "verification"
+  ],
+  "skillset_ids": [
+    "secure-parser-review",
+    "untrusted-input-handling",
+    "error-response-design"
+  ],
+  "version": null,
+  "summary": "The maintainer describes an SSR-to-hydration trust failure: application code that lets untrusted input alter aspects of caught server errors could cause unexpected client constructor execution and outbound network activity. The prerequisite is unusually specific application behavior. The case distinguishes transporting error data from granting that data authority over client reconstruction.",
+  "defensive_use": "The advisory identifies 7.18.0 as patched. Editorial lesson: preserve a narrow, inert contract for errors crossing the server/client boundary, including metadata used to reconstruct them. Review error transport separately from visible error text, and constrain client interpretation to explicitly supported representations. The reviewed advisory does not establish the exact patch implementation.",
+  "prerequisites": [
+    "Server-side rendering and client hydration",
+    "Error serialization and data-versus-behavior boundaries"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and release page."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-07-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established."
+    },
+    "source_displayed": {
+      "value": "2026-07-22",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T14:19:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory and release page read. No live testing or independent patch execution."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
+      "title": "Arbitrary client-side constructor injection via React Router SSR Hydration",
+      "publisher": "React Router / Remix",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:18:30Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/remix-run/react-router/releases/tag/react-router@7.18.0",
+      "title": "React Router v7.18.0 release",
+      "publisher": "React Router / Remix",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:18:52Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "CVE-2026-53666. brophdawg11 published the advisory; yoyomiski is credited as reporter. The affected range is at least 6.4.0 and below 7.18.0.",
+    "The maintainer limits applicability to Framework Mode and Data Mode with manual SSR/hydration, excluding Declarative Mode. Do not infer general client code execution, server compromise, or demonstrated data theft from the bounded description.",
+    "The software release page displays June 16 without a year in retrieved text. A full patch-release date is not asserted or substituted for educational-resource chronology.",
+    "No individual bounty is established. Learning prerequisites and generalized review guidance are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

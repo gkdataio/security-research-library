@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "astro-2026-route-normalization-authorization-consistency",
+  "title": "Astro: routing and authorization must agree on resource identity",
+  "publisher": "Astro",
+  "authors": [
+    "matthewp"
+  ],
+  "primary_url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Astro's base-path removal accepted a textual prefix without establishing a complete path segment. Routing and authorization middleware could consequently disagree about the requested resource. The maintainer bounds the authorization bypass to applications with a non-root base and pathname-based middleware protection; it is not a claim that every Astro application lacks authorization.",
+  "defensive_use": "The maintainer identifies 7.2.4 as patched, and its release notes confirm segment-aware base handling. Editorial lesson: a permission decision must bind to the same canonical resource that execution resolves. Review normalization contracts between middleware and routing, and preserve resource-level checks when public path representations change.",
+  "prerequisites": [
+    "URL path normalization and framework routing",
+    "Middleware authorization and canonical resource identity"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory and release notes."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-08-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established."
+    },
+    "source_displayed": {
+      "value": "2026-08-27",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Explicit advisory publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T14:19:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Maintainer advisory and release notes read. No live testing or independent patch execution."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
+      "title": "Authorization bypass from missing path-segment boundary check when stripping the configured base",
+      "publisher": "Astro",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:18:30Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/withastro/astro/releases/tag/astro@7.2.4",
+      "title": "astro@7.2.4 release",
+      "publisher": "Astro",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T14:18:52Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "CVE-2026-84376. matthewp published the advisory; Ryoga-exe is credited as reporter. The affected range is astro through 7.2.3.",
+    "The software release page displays August 19 without a year in retrieved text. A full patch-release date is therefore not asserted; it is distinct from advisory publication and resource-edition chronology.",
+    "No production compromise or individual bounty is established. Learning prerequisites and generalized review guidance are editorial."
+  ],
+  "content_scope": "defensive_education"
+}

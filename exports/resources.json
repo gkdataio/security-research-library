@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 82,
+    "resources": 86,
     "diagrams": 9
   },
   "taxonomy": {
@@ -575,6 +575,99 @@
         "Experiments concern stand-alone caching proxies. CDN applicability was not experimentally demonstrated and is explicitly limited by the authors.",
         "Results depend on capacity, object sizes and workload; they do not establish present exposure of any deployment.",
         "This record omits operational methods and grants no testing authorization."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "astro-2026-route-normalization-authorization-consistency",
+      "title": "Astro: routing and authorization must agree on resource identity",
+      "publisher": "Astro",
+      "authors": [
+        "matthewp"
+      ],
+      "primary_url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Astro's base-path removal accepted a textual prefix without establishing a complete path segment. Routing and authorization middleware could consequently disagree about the requested resource. The maintainer bounds the authorization bypass to applications with a non-root base and pathname-based middleware protection; it is not a claim that every Astro application lacks authorization.",
+      "defensive_use": "The maintainer identifies 7.2.4 as patched, and its release notes confirm segment-aware base handling. Editorial lesson: a permission decision must bind to the same canonical resource that execution resolves. Review normalization contracts between middleware and routing, and preserve resource-level checks when public path representations change.",
+      "prerequisites": [
+        "URL path normalization and framework routing",
+        "Middleware authorization and canonical resource identity"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established."
+        },
+        "source_displayed": {
+          "value": "2026-08-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:19:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release notes read. No live testing or independent patch execution."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f",
+          "title": "Authorization bypass from missing path-segment boundary check when stripping the configured base",
+          "publisher": "Astro",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:18:30Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/withastro/astro/releases/tag/astro@7.2.4",
+          "title": "astro@7.2.4 release",
+          "publisher": "Astro",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:18:52Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "CVE-2026-84376. matthewp published the advisory; Ryoga-exe is credited as reporter. The affected range is astro through 7.2.3.",
+        "The software release page displays August 19 without a year in retrieved text. A full patch-release date is therefore not asserted; it is distinct from advisory publication and resource-edition chronology.",
+        "No production compromise or individual bounty is established. Learning prerequisites and generalized review guidance are editorial."
       ],
       "content_scope": "defensive_education"
     },
@@ -3479,6 +3572,87 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "open-webui-2026-connection-credential-capture",
+      "title": "Open WebUI: credentials must bind to their destination connection",
+      "publisher": "Open WebUI",
+      "authors": [
+        "doge-woof"
+      ],
+      "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "ai-security"
+      ],
+      "skillset_ids": [
+        "integration-threat-modeling",
+        "secrets-containment",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-87015 concerns late-bound connection state: tool callables retained their own headers but read a shared cookie variable after connection processing finished. A maintainer-described controlled observation confirmed unintended session-cookie forwarding. Connection-specific authentication choice therefore failed to constrain the credentials crossing an integration boundary.",
+      "defensive_use": "Editorial lesson: treat destination, headers and cookies as one immutable request-authority context. Review capture semantics independently of configuration correctness. The advisory identifies 0.11.1 as fixed by binding cookies per connection. Credential isolation should survive changes in connection order.",
+      "prerequisites": [
+        "HTTP credentials, integration boundaries and secure data handling"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication date; distinct from database ingestion or patch release."
+        },
+        "source_displayed": {
+          "value": "2026-09-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication date; distinct from database ingestion or patch release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:19:06Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no software executed or deployment tested."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7",
+          "title": "A user's session cookies are sent to tool servers configured for bearer authentication",
+          "publisher": "Open WebUI",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:19:06Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected versions are >=0.6.27 and <0.11.1. Requires multiple attached tool servers, including a session/system-OAuth connection; exposure depends on shared-state capture during connection processing. Tool servers are not configured by default.",
+        "The recipient is an administrator-registered, partially trusted server. Impersonation, including administrator access, is a stated consequence of session-token disclosure; production compromise is not established.",
+        "Classic298 is credited as reporter. Patch-release date is not established here."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "open-webui-2026-realtime-revocation-consistency",
       "title": "Open WebUI: revocation must cross HTTP and realtime boundaries",
       "publisher": "Open WebUI",
@@ -5722,6 +5896,99 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "react-router-2026-hydration-error-constructor-boundary",
+      "title": "React Router: hydrated error metadata must not select client behavior",
+      "publisher": "React Router / Remix",
+      "authors": [
+        "brophdawg11"
+      ],
+      "primary_url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "verification"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "error-response-design"
+      ],
+      "version": null,
+      "summary": "The maintainer describes an SSR-to-hydration trust failure: application code that lets untrusted input alter aspects of caught server errors could cause unexpected client constructor execution and outbound network activity. The prerequisite is unusually specific application behavior. The case distinguishes transporting error data from granting that data authority over client reconstruction.",
+      "defensive_use": "The advisory identifies 7.18.0 as patched. Editorial lesson: preserve a narrow, inert contract for errors crossing the server/client boundary, including metadata used to reconstruct them. Review error transport separately from visible error text, and constrain client interpretation to explicitly supported representations. The reviewed advisory does not establish the exact patch implementation.",
+      "prerequisites": [
+        "Server-side rendering and client hydration",
+        "Error serialization and data-versus-behavior boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and release page."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition established."
+        },
+        "source_displayed": {
+          "value": "2026-07-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:19:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory and release page read. No live testing or independent patch execution."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg",
+          "title": "Arbitrary client-side constructor injection via React Router SSR Hydration",
+          "publisher": "React Router / Remix",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:18:30Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/remix-run/react-router/releases/tag/react-router@7.18.0",
+          "title": "React Router v7.18.0 release",
+          "publisher": "React Router / Remix",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:18:52Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "CVE-2026-53666. brophdawg11 published the advisory; yoyomiski is credited as reporter. The affected range is at least 6.4.0 and below 7.18.0.",
+        "The maintainer limits applicability to Framework Mode and Data Mode with manual SSR/hydration, excluding Declarative Mode. Do not infer general client code execution, server compromise, or demonstrated data theft from the bounded description.",
+        "The software release page displays June 16 without a year in retrieved text. A full patch-release date is not asserted or substituted for educational-resource chronology.",
+        "No individual bounty is established. Learning prerequisites and generalized review guidance are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "rfc-10017-browser-oauth-token-custody",
       "title": "RFC 10017: OAuth 2.0 for Browser-Based Applications",
       "publisher": "Internet Engineering Task Force / RFC Editor",
@@ -6401,6 +6668,87 @@
         "GHSL records reporting on January 26, 2026 and publication of fixes and the maintainer advisory on February 5. The detailed research was published March 12. Resource edition release remains unknown and is separate from product patch chronology.",
         "The maintainer affected-version shorthand is ambiguous; do not interpret it as normalized branch ranges. Patched versions are reproduced as listed.",
         "The research byline is Peter Stöckli. Discovery is credited to GitHub Security Lab Taskflow Agent, with manual verification by Peter Stöckli and Man Yue Mo. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "steeltoe-2026-diagnostic-uri-data-minimization",
+      "title": "Steeltoe: diagnostic URI masking must cover the complete data contract",
+      "publisher": "Steeltoe",
+      "authors": [
+        "TimHess"
+      ],
+      "primary_url": "https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "secrets-containment",
+        "secure-parser-review",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-75523 describes diagnostic URI masking that removed inline credentials but preserved query contents. The failed assumption was that sanitizing one URI component made the whole representation safe for secondary consumers. Request secrets could consequently cross into diagnostic responses and DEBUG logs.",
+      "defensive_use": "Editorial lesson: define an explicit retention contract for each diagnostic field, then minimize before storage and fan-out. Check response and logging consumers separately. The advisory identifies 4.3.0 as patched; temporary mitigations include omitting query strings and disabling or authenticating diagnostic exposure.",
+      "prerequisites": [
+        "HTTP credentials, integration boundaries and secure data handling"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication date; distinct from database ingestion or patch release."
+        },
+        "source_displayed": {
+          "value": "2026-09-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication date; distinct from database ingestion or patch release."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational edition established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T14:19:06Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory reviewed; no software executed or deployment tested."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp",
+          "title": "Steeltoe.Management.Endpoint: HttpExchanges URI masking leaks query-string secrets",
+          "publisher": "Steeltoe",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T14:19:06Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected versions are <=4.2.0. The diagnostic endpoint requires explicit exposure and is not enabled by default; relevant traffic must carry query-string secrets. Log disclosure additionally requires the relevant DEBUG logging.",
+        "The source describes disclosure to diagnostic readers, not demonstrated production compromise or universal account takeover. It does not detail the patch implementation or release date.",
+        "The advisory credits manus-use as reporter."
       ],
       "content_scope": "defensive_education"
     },
