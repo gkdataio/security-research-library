@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 3, 2026**
 
-- **64 qualifying report records:** 53 bug-bounty awards and 11 explicitly labeled competition entries
+- **66 qualifying report records:** 55 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **99 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
+- **101 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
+- **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -133,6 +133,8 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 
 | Disclosure | Recorded award | Publication | Evidence |
 |---|---:|---|---|
+| [Google Firefly worker and storage authority](data/reports/google-firefly-worker-authority-storage-boundary-2026.json) | USD 60,000 (Firefly report) | 2026-09-11 | Researcher reproduces panel award |
+| [Google Mamba temporary-output isolation](data/reports/google-mamba-temporary-output-isolation-2026.json) | USD 37,604.40 (Mamba report) | 2026-09-11 | Researcher reproduces panel award |
 | [Chrome graphics input validation weakened an isolation boundary](data/reports/google-chrome-angle-input-validation-2026.json) | USD 250,000 | 2026-09-03 | Vendor confirmed |
 | [Codex command approval relied on inconsistent parser semantics](data/reports/openai-codex-command-parser-approval-consistency-2026.json) | USD 40,000 (competition entry) | 2026-09-01 | Competition organizer confirmed |
 | [Codex automated Git operations trusted repository hook settings](data/reports/openai-codex-repository-hook-execution-trust-2026.json) | USD 20,000 (competition entry) | 2026-09-01 | Competition organizer confirmed |

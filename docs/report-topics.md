@@ -4,7 +4,7 @@
 
 Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.
 
-64 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
+66 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
 
 Each entry labels its primary or secondary category membership. Categories and reports are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy categories are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -12,10 +12,10 @@ Each entry labels its primary or secondary category membership. Categories and r
 
 - [AI integration boundaries](<#category-ai-security>) — 7 distinct reports.
 - [Authentication and identity](<#category-authentication>) — 16 distinct reports.
-- [Authorization and tenant boundaries](<#category-authorization>) — 32 distinct reports.
+- [Authorization and tenant boundaries](<#category-authorization>) — 34 distinct reports.
 - [Business logic and concurrency](<#category-business-logic>) — 14 distinct reports.
 - [Client and browser security](<#category-client-security>) — 20 distinct reports.
-- [Cloud permissions and isolation](<#category-cloud-security>) — 13 distinct reports.
+- [Cloud permissions and isolation](<#category-cloud-security>) — 15 distinct reports.
 - [Information exposure and response privacy](<#category-information-exposure>) — 4 distinct reports.
 - [Injection and untrusted input](<#category-injection>) — 12 distinct reports.
 - [Memory safety and parser contracts](<#category-memory-safety>) — 10 distinct reports.
@@ -60,7 +60,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-authorization"></a>
 ## Authorization and tenant boundaries
 
-32 distinct reports.
+34 distinct reports.
 
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — Google; secondary category.
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — Google; secondary category.
@@ -77,6 +77,8 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [GitLab recovery delivery lacked verified-address binding](<reports/gitlab-recovery-address-binding-cve-2023-7028.md>) — GitLab; secondary category.
 - [Google Application Integration mixed resource and service authority](<reports/google-application-integration-authorization-boundaries-2026.md>) — Google; primary category.
 - [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>) — Google; secondary category.
+- [Google Firefly confused worker authority and storage boundaries](<reports/google-firefly-worker-authority-storage-boundary-2026.md>) — Google; primary category.
+- [Google Mamba temporary outputs lacked access isolation](<reports/google-mamba-temporary-output-isolation-2026.md>) — Google; primary category.
 - [Google support API exposed customer and agent data](<reports/google-support-api-authorization-2026.md>) — Google; primary category.
 - [GraphQL object authorization exposed private-program metadata](<reports/hackerone-private-program-graphql-object-authorization-2025.md>) — HackerOne; primary category.
 - [HackerOne exports omitted internal-attachment authorization](<reports/hackerone-export-attachment-authorization-2016.md>) — HackerOne; primary category.
@@ -144,12 +146,14 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-cloud-security"></a>
 ## Cloud permissions and isolation
 
-13 distinct reports.
+15 distinct reports.
 
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — Google; primary category.
 - [Apple PCC startup archive processing lacked path confinement](<reports/apple-pcc-boot-archive-path-validation-2026.md>) — Apple; primary category.
 - [Cloud Build approval was not bound to immutable code](<reports/google-cloud-build-approval-toctou-2025.md>) — Google; secondary category.
 - [Google Application Integration mixed resource and service authority](<reports/google-application-integration-authorization-boundaries-2026.md>) — Google; secondary category.
+- [Google Firefly confused worker authority and storage boundaries](<reports/google-firefly-worker-authority-storage-boundary-2026.md>) — Google; secondary category.
+- [Google Mamba temporary outputs lacked access isolation](<reports/google-mamba-temporary-output-isolation-2026.md>) — Google; secondary category.
 - [MariaDB JSON normalization exceeded allocated buffer capacity](<reports/mariadb-json-normalization-buffer-capacity-2026.md>) — MariaDB; secondary category.
 - [Meta service-identity exposure amplified by excessive secret access](<reports/meta-service-identity-secrets-trust-boundary-2026.md>) — Meta; primary category.
 - [NVIDIA container initialization inherited untrusted execution context](<reports/nvidia-container-runtime-environment-trust-2025.md>) — NVIDIA; primary category.

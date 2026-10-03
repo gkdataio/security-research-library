@@ -27,7 +27,9 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](<reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md>) — USD 15,000; bug\_bounty
 - [Gemini-to-Colab rendering boundary exposed Workspace data](<reports/google-gemini-colab-rendering-boundary-2025.md>) — USD 20,000; bug\_bounty
 - [Google Application Integration mixed resource and service authority](<reports/google-application-integration-authorization-boundaries-2026.md>) — USD 75,000; bug\_bounty
+- [Google Firefly confused worker authority and storage boundaries](<reports/google-firefly-worker-authority-storage-boundary-2026.md>) — USD 60,000; bug\_bounty
 - [Google IDX worker messaging crossed browser trust boundaries](<reports/google-idx-worker-message-trust-2025.md>) — USD 22,500; bug\_bounty
+- [Google Mamba temporary outputs lacked access isolation](<reports/google-mamba-temporary-output-isolation-2026.md>) — USD 37,604.4; bug\_bounty
 - [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>) — USD 13,337; bug\_bounty
 - [Google support API exposed customer and agent data](<reports/google-support-api-authorization-2026.md>) — USD 14,337; bug\_bounty
 - [Pixel lock-screen completion lost security-state binding](<reports/google-pixel-lock-screen-state-binding-2022.md>) — USD 70,000; bug\_bounty

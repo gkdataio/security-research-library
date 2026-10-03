@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vendure-2026-payment-child-object-channel-authority",
+  "title": "Vendure: payment child objects must inherit order channel authority",
+  "publisher": "Vendure",
+  "authors": [
+    "michaelbromley"
+  ],
+  "primary_url": "https://github.com/vendurehq/vendure/security/advisories/GHSA-7qvr-c5vf-xxfh",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "integration-threat-modeling",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "Order-level scoping did not carry into globally loaded payment, refund and fulfillment objects. A channel-limited administrator could affect another channel through child-object operations. The advisory contrasts scoped order reads with successful unauthorized refund processing, locating the failure at object-resolution and side-effect boundaries.",
+  "defensive_use": "Editorial lesson: derive child-object authority from the parent order and current channel before any external effect. A later database rejection cannot reliably undo an earlier gateway action. Review alternate entry points against the same invariant, rather than assuming protected parent reads cover mutations.",
+  "prerequisites": [
+    "Basic authorization, application state machines and database transaction concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer evidence."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-09-02",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T15:59:29Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Public primary evidence reviewed; no live testing or independent deployment verification."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/vendurehq/vendure/security/advisories/GHSA-7qvr-c5vf-xxfh",
+      "title": "Cross-channel payment/refund IDOR — money movement across tenants (payment-side sibling of GHSA-frwg)",
+      "publisher": "Vendure",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:59:29Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/vendurehq/vendure/releases/tag/v3.7.3",
+      "title": "Vendure v3.7.3 release",
+      "publisher": "Vendure",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T15:59:29Z",
+      "supports": [
+        "version",
+        "dates",
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The reported setting is multi-channel commerce with channel-scoped order-update permission and suitable payment configuration. The advisory reports controlled refund evidence and potential financial disruption; production losses are not established.",
+    "The advisory lists versions below 3.7.3 as affected and 3.7.3 as patched. Release notes confirm channel enforcement and advise upgrading related packages together.",
+    "michaelbromley published the advisory; squinard1478 and raysabee are credited reporters. No CVE is assigned on the reviewed page.",
+    "The release rendering displays September 2 without a year; no complete patch-release date is asserted. Resource edition and its release date remain null."
+  ],
+  "content_scope": "defensive_education"
+}
