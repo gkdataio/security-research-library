@@ -4295,10 +4295,10 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T12:10:36Z",
+        "reviewed_at": "2026-10-03T12:19:32Z",
         "living_resource": false,
         "status": "primary_source_reviewed",
-        "note": "Read maintainer advisory and corroborating remediation references; no reproduction or independent patch testing."
+        "note": "Reviewed maintainer sources and the merged version-9 patch to qualify configuration-dependent validation. The version-8 diff was not independently inspected. No reproduction or patch testing."
       },
       "sources": [
         {
@@ -4349,6 +4349,17 @@
             "version",
             "dates"
           ]
+        },
+        {
+          "id": "v9-merged-patch",
+          "url": "https://github.com/parse-community/parse-server/commit/cce91e554818492d1b153c46dc3b91fa6e0309bc",
+          "title": "Version-9 merged metadata-validation patch and configuration scope",
+          "publisher": "Parse Community",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T12:19:32Z",
+          "supports": [
+            "summary"
+          ]
         }
       ],
       "caveats": [
@@ -4356,7 +4367,7 @@
         "The advisory lists affected ranges as <= 8.6.83 and >= 9.0.0, < 9.10.0-alpha.2. It identifies 8.6.84 and 9.10.0-alpha.2 as patched.",
         "The version-8 and version-9 remediation records show June 25, 2026 merges and releases; the version-9 stable release 9.10.0 is dated July 13, 2026. These are software events, not educational-resource editions.",
         "CyberKareem is credited as finder and mtrezza as coordinator/advisory publisher. No CVE is listed on the reviewed advisory.",
-        "The correction rejects invalid media-type syntax; well-formed custom types remain permitted subject to configured restrictions. This does not establish that all accepted content is harmless.",
+        "The version-9 correction validates supplied media types for unrecognized filename extensions when extension filtering is enabled; disabling that filtering also disables this validation. Well-formed custom types remain subject to configured restrictions. This does not establish that all accepted content is harmless.",
         "Learning prerequisites and the generalized consumer-contract lesson are editorial. No award claim is made."
       ],
       "content_scope": "defensive_education"
