@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 105,
+    "resources": 106,
     "diagrams": 9
   },
   "taxonomy": {
@@ -3519,6 +3519,84 @@
         "Release notes broadly describe validation and escaping changes. This review does not establish every patch implementation detail or claim parameterization was the exact shipped repair.",
         "The software release predates advisory publication. The blog update date is not the patch date. Learning prerequisites and generalized design guidance are editorial."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "mcp-progressive-scope-authority",
+      "title": "MCP scope selection: progressive consent and accumulated authority",
+      "publisher": "Model Context Protocol",
+      "authors": [],
+      "primary_url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "ai-security",
+        "authorization",
+        "identity"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "ai-authority-boundaries"
+      ],
+      "version": "2026-07-28 documentation URL",
+      "summary": "Server permission challenges shape what a general-purpose MCP client requests. Broad discovery metadata and accumulated scopes can enlarge delegated authority. Token scopes still require application-side authorization.",
+      "defensive_use": "Map operations to permissions, issue focused challenges, support reduced grants and record elevations. Review initial discovery and subsequent consent together; do not assume every authorization request represents only the current operation.",
+      "prerequisites": [
+        "OAuth scope and consent concepts; client/server authorization responsibilities"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public official documentation."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The versioned URL does not establish a publication or release date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The versioned URL does not establish a publication or release date."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The versioned URL does not establish a publication or release date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T16:49:11Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed scope-minimization guidance; no deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices",
+          "title": "Security Best Practices: Scope Minimization",
+          "publisher": "Model Context Protocol",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T16:49:11Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "The guide permits several challenge-breadth strategies. When an initial challenge omits scope, it documents requesting all advertised scopes; it does not universally require the narrowest request.",
+        "Maintained guidance, not evidence of a specific deployment’s exposure or a verified patch. Publication and edition dates remain unknown; the URL version is preserved separately."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
