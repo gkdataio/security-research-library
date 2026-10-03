@@ -53,6 +53,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Logging does not automatically provide independent proof or non-repudiation\.
 - Collection and retention must match the authorized purpose; more recorded data is not necessarily better evidence\.
 
+## Related conceptual diagrams
+
+- [Failures need separate public and diagnostic contracts](<../diagram-gallery.md#error-diagnostic-disclosure-boundary>)
+
 ## Sources and attribution
 
 - [OWASP Logging: trustworthy and minimal application evidence](<https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html>) — OWASP Cheat Sheet Series; source ID: primary; provenance: official primary; retrieved 2026-10-03T01:39:33Z; supports: summary.

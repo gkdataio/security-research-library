@@ -6,7 +6,7 @@
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
     "resources": 107,
-    "diagrams": 9
+    "diagrams": 11
   },
   "taxonomy": {
     "schema_version": "1.0.0",
@@ -10346,6 +10346,207 @@
         "mermaid": "diagrams/browser-message-authority-boundaries.mmd",
         "graphviz": "diagrams/browser-message-authority-boundaries.dot",
         "svg": "diagrams/browser-message-authority-boundaries.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "build-artifact-provenance-boundary",
+      "title": "Build evidence must match the artifact and trusted builder",
+      "alt_text": "Untrusted contributions remain separated from trusted build state. An artifact and its provenance reach a consumer policy gate. Only authenticated evidence matching the artifact and expected builder and inputs makes it eligible for release review; missing or mismatched evidence prevents promotion.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model combining the Angular case with SLSA build guidance. The case supports separating automation trust and shared build state; the consumer verification gate is a general design synthesis, not a reconstruction of Angular remediation. Assumes a defined trust policy for builders and provenance. Provenance presence alone does not establish authenticity, and passing these checks does not prove the software is free of vulnerabilities.",
+      "linked_report_ids": [
+        "angular-ci-cache-trust-2026"
+      ],
+      "linked_resource_ids": [
+        "slsa-v1-2-supply-chain-build-provenance"
+      ],
+      "evidence_urls": [
+        "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/",
+        "https://slsa.dev/spec/v1.2/build-track-basics",
+        "https://slsa.dev/spec/v1.2/build-provenance"
+      ],
+      "reviewed_at": "2026-10-03T18:32:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "inputs",
+            "label": "Contributions carry explicit trust level",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "builder",
+            "label": "Separate trusted build state from untrusted input",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "artifact",
+            "label": "Artifact plus build provenance",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "verify",
+            "label": "Authenticated evidence matches artifact and expected build?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "deny",
+            "label": "Hold artifact if evidence is missing or mismatched",
+            "shape": "box",
+            "kind": "denied"
+          },
+          {
+            "id": "review",
+            "label": "Eligible for remaining release review",
+            "shape": "box",
+            "kind": "allowed"
+          }
+        ],
+        "edges": [
+          {
+            "from": "inputs",
+            "to": "builder",
+            "label": null
+          },
+          {
+            "from": "builder",
+            "to": "artifact",
+            "label": null
+          },
+          {
+            "from": "artifact",
+            "to": "verify",
+            "label": null
+          },
+          {
+            "from": "verify",
+            "to": "deny",
+            "label": "No"
+          },
+          {
+            "from": "verify",
+            "to": "review",
+            "label": "Yes"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/build-artifact-provenance-boundary.mmd",
+        "graphviz": "diagrams/build-artifact-provenance-boundary.dot",
+        "svg": "diagrams/build-artifact-provenance-boundary.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "error-diagnostic-disclosure-boundary",
+      "title": "Failures need separate public and diagnostic contracts",
+      "alt_text": "A failure reaches a shared error handler. The public response contains minimal generic information. A separate diagnostic path selects useful context, removes secrets and unnecessary personal data, and stores it under access and retention controls. Raw exception details do not flow directly to the client.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Editorial conceptual model derived from the Facebook error-response case and OWASP error-handling and logging guidance. The case establishes unintended response disclosure and broader framework remediation; diagnostic minimization and retention are general guidance, not claims about the vendor patch. Assumes an application-defined public error contract and an authorized diagnostic purpose. This model does not establish preserved authorization in fallback behavior or independent proof from logs.",
+      "linked_report_ids": [
+        "facebook-error-response-data-isolation-2019"
+      ],
+      "linked_resource_ids": [
+        "owasp-error-response-data-minimization",
+        "owasp-security-logging-evidence-quality"
+      ],
+      "evidence_urls": [
+        "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html",
+        "https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html"
+      ],
+      "reviewed_at": "2026-10-03T18:32:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "failure",
+            "label": "Unexpected application failure",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "handler",
+            "label": "Apply shared error handling contract",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "public",
+            "label": "Return minimal generic client response",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "context",
+            "label": "Select useful diagnostic context",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "minimize",
+            "label": "Exclude secrets and unnecessary personal data",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "protect",
+            "label": "Restrict access and apply retention policy",
+            "shape": "box",
+            "kind": "allowed"
+          }
+        ],
+        "edges": [
+          {
+            "from": "failure",
+            "to": "handler",
+            "label": null
+          },
+          {
+            "from": "handler",
+            "to": "public",
+            "label": "Public response"
+          },
+          {
+            "from": "handler",
+            "to": "context",
+            "label": "Internal evidence"
+          },
+          {
+            "from": "context",
+            "to": "minimize",
+            "label": null
+          },
+          {
+            "from": "minimize",
+            "to": "protect",
+            "label": null
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/error-diagnostic-disclosure-boundary.mmd",
+        "graphviz": "diagrams/error-diagnostic-disclosure-boundary.dot",
+        "svg": "diagrams/error-diagnostic-disclosure-boundary.svg"
       },
       "rendering": {
         "renderer": "Graphviz dot 2.42.4",

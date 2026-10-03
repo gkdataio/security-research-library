@@ -50,6 +50,10 @@ Reviewed: 2026-10-02T03:49:00Z. Primary public source read; award distinguished 
 
 - The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited\.
 
+## Related conceptual diagrams
+
+- [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>)
+
 ## Sources and attribution
 
 - [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) — Adnan Khan; retrieved 2026-10-02T03:49:00Z.

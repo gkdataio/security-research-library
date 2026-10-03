@@ -50,6 +50,10 @@ Reviewed: 2026-10-02T18:24:00Z. Read the official vendor retrospective and its e
 - Historical case; exact award, settlement and deployment dates are unknown\.
 - The source gives a high-level finding, not a complete technical advisory\.
 
+## Related conceptual diagrams
+
+- [Failures need separate public and diagnostic contracts](<../diagram-gallery.md#error-diagnostic-disclosure-boundary>)
+
 ## Sources and attribution
 
 - [2019 Bug Bounty highlights, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.

@@ -1,0 +1,12 @@
+flowchart TB
+  inputs["Contributions carry explicit trust level"]
+  builder["Separate trusted build state from untrusted input"]
+  artifact["Artifact plus build provenance"]
+  verify{"Authenticated evidence matches artifact and expected build?"}
+  deny["Hold artifact if evidence is missing or mismatched"]
+  review["Eligible for remaining release review"]
+  inputs --> builder
+  builder --> artifact
+  artifact --> verify
+  verify -->|No| deny
+  verify -->|Yes| review

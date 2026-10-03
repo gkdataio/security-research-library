@@ -61,6 +61,32 @@ Original defensive model combining OWASP messaging and authorization guidance wi
 
 [Canonical graph and provenance](<../data/diagrams/browser-message-authority-boundaries.json>) · [Mermaid source](<../diagrams/browser-message-authority-boundaries.mmd>) · [DOT source](<../diagrams/browser-message-authority-boundaries.dot>)
 
+<a id="build-artifact-provenance-boundary"></a>
+## Build evidence must match the artifact and trusted builder
+
+![Untrusted contributions remain separated from trusted build state\. An artifact and its provenance reach a consumer policy gate\. Only authenticated evidence matching the artifact and expected builder and inputs makes it eligible for release review; missing or mismatched evidence prevents promotion\.](../diagrams/build-artifact-provenance-boundary.svg)
+
+Editorial conceptual model combining the Angular case with SLSA build guidance\. The case supports separating automation trust and shared build state; the consumer verification gate is a general design synthesis, not a reconstruction of Angular remediation\. Assumes a defined trust policy for builders and provenance\. Provenance presence alone does not establish authenticity, and passing these checks does not prove the software is free of vulnerabilities\.
+
+**Related reports**
+
+- [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>)
+
+[Canonical graph and provenance](<../data/diagrams/build-artifact-provenance-boundary.json>) · [Mermaid source](<../diagrams/build-artifact-provenance-boundary.mmd>) · [DOT source](<../diagrams/build-artifact-provenance-boundary.dot>)
+
+<a id="error-diagnostic-disclosure-boundary"></a>
+## Failures need separate public and diagnostic contracts
+
+![A failure reaches a shared error handler\. The public response contains minimal generic information\. A separate diagnostic path selects useful context, removes secrets and unnecessary personal data, and stores it under access and retention controls\. Raw exception details do not flow directly to the client\.](../diagrams/error-diagnostic-disclosure-boundary.svg)
+
+Editorial conceptual model derived from the Facebook error-response case and OWASP error-handling and logging guidance\. The case establishes unintended response disclosure and broader framework remediation; diagnostic minimization and retention are general guidance, not claims about the vendor patch\. Assumes an application-defined public error contract and an authorized diagnostic purpose\. This model does not establish preserved authorization in fallback behavior or independent proof from logs\.
+
+**Related reports**
+
+- [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>)
+
+[Canonical graph and provenance](<../data/diagrams/error-diagnostic-disclosure-boundary.json>) · [Mermaid source](<../diagrams/error-diagnostic-disclosure-boundary.mmd>) · [DOT source](<../diagrams/error-diagnostic-disclosure-boundary.dot>)
+
 <a id="identity-claim-binding"></a>
 ## An identity claim must belong to the user
 

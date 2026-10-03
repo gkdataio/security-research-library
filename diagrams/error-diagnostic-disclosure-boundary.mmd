@@ -1,0 +1,12 @@
+flowchart TB
+  failure["Unexpected application failure"]
+  handler["Apply shared error handling contract"]
+  public["Return minimal generic client response"]
+  context["Select useful diagnostic context"]
+  minimize["Exclude secrets and unnecessary personal data"]
+  protect["Restrict access and apply retention policy"]
+  failure --> handler
+  handler -->|Public response| public
+  handler -->|Internal evidence| context
+  context --> minimize
+  minimize --> protect

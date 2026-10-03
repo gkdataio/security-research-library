@@ -53,6 +53,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Living guidance; framework examples should be checked against the application’s supported runtime version\.
 - This resource concerns response disclosure; it does not by itself prove that authorization is preserved in privileged fallback paths\.
 
+## Related conceptual diagrams
+
+- [Failures need separate public and diagnostic contracts](<../diagram-gallery.md#error-diagnostic-disclosure-boundary>)
+
 ## Sources and attribution
 
 - [Error Handling Cheat Sheet](<https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html>) — OWASP Cheat Sheet Series; source ID: primary; provenance: official primary; retrieved 2026-10-02T18:24:00Z; supports: summary.

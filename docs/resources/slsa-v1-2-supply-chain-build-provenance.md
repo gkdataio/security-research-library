@@ -54,6 +54,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - The specification version is 1\.2, while the build-provenance predicate identifier remains https://slsa\.dev/provenance/v1; the page explains this major-version convention\.
 - A recorded attestation is useful only within an explicit trust and verification model\.
 
+## Related conceptual diagrams
+
+- [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>)
+
 ## Sources and attribution
 
 - [Official stable entry point redirects to v1\.2](<https://slsa.dev/spec/>) — SLSA Community; source ID: stable-entry; provenance: official primary; retrieved 2026-10-02T15:32:00Z; supports: version.

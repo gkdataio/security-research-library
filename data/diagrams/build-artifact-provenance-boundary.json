@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "id": "build-artifact-provenance-boundary",
+  "title": "Build evidence must match the artifact and trusted builder",
+  "alt_text": "Untrusted contributions remain separated from trusted build state. An artifact and its provenance reach a consumer policy gate. Only authenticated evidence matching the artifact and expected builder and inputs makes it eligible for release review; missing or mismatched evidence prevents promotion.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Editorial conceptual model combining the Angular case with SLSA build guidance. The case supports separating automation trust and shared build state; the consumer verification gate is a general design synthesis, not a reconstruction of Angular remediation. Assumes a defined trust policy for builders and provenance. Provenance presence alone does not establish authenticity, and passing these checks does not prove the software is free of vulnerabilities.",
+  "linked_report_ids": [
+    "angular-ci-cache-trust-2026"
+  ],
+  "linked_resource_ids": [
+    "slsa-v1-2-supply-chain-build-provenance"
+  ],
+  "evidence_urls": [
+    "https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/",
+    "https://slsa.dev/spec/v1.2/build-track-basics",
+    "https://slsa.dev/spec/v1.2/build-provenance"
+  ],
+  "reviewed_at": "2026-10-03T18:32:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "inputs",
+        "label": "Contributions carry explicit trust level",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "builder",
+        "label": "Separate trusted build state from untrusted input",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "artifact",
+        "label": "Artifact plus build provenance",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "verify",
+        "label": "Authenticated evidence matches artifact and expected build?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "deny",
+        "label": "Hold artifact if evidence is missing or mismatched",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "review",
+        "label": "Eligible for remaining release review",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "inputs",
+        "to": "builder",
+        "label": null
+      },
+      {
+        "from": "builder",
+        "to": "artifact",
+        "label": null
+      },
+      {
+        "from": "artifact",
+        "to": "verify",
+        "label": null
+      },
+      {
+        "from": "verify",
+        "to": "deny",
+        "label": "No"
+      },
+      {
+        "from": "verify",
+        "to": "review",
+        "label": "Yes"
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/build-artifact-provenance-boundary.mmd",
+    "graphviz": "diagrams/build-artifact-provenance-boundary.dot",
+    "svg": "diagrams/build-artifact-provenance-boundary.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

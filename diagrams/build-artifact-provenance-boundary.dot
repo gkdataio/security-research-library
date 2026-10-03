@@ -1,0 +1,17 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Build evidence must match the artifact and trusted builder"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"inputs" [label="Contributions carry\nexplicit trust level", shape="box", fillcolor="#f1f5f9"];
+"builder" [label="Separate trusted build\nstate from untrusted input", shape="box", fillcolor="#f1f5f9"];
+"artifact" [label="Artifact plus build\nprovenance", shape="box", fillcolor="#f1f5f9"];
+"verify" [label="Authenticated evidence\nmatches artifact and\nexpected build?", shape="diamond", fillcolor="#e0ecf8"];
+"deny" [label="Hold artifact if evidence\nis missing or mismatched", shape="box", fillcolor="#fef3c7"];
+"review" [label="Eligible for remaining\nrelease review", shape="box", fillcolor="#dcfce7"];
+"inputs" -> "builder" [label=""];
+"builder" -> "artifact" [label=""];
+"artifact" -> "verify" [label=""];
+"verify" -> "deny" [label="No"];
+"verify" -> "review" [label="Yes"];
+}

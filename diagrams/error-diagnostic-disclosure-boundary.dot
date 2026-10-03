@@ -1,0 +1,17 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Failures need separate public and diagnostic contracts"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"failure" [label="Unexpected application\nfailure", shape="box", fillcolor="#f1f5f9"];
+"handler" [label="Apply shared error handling\ncontract", shape="box", fillcolor="#f1f5f9"];
+"public" [label="Return minimal generic\nclient response", shape="box", fillcolor="#dcfce7"];
+"context" [label="Select useful diagnostic\ncontext", shape="box", fillcolor="#f1f5f9"];
+"minimize" [label="Exclude secrets and\nunnecessary personal data", shape="box", fillcolor="#f1f5f9"];
+"protect" [label="Restrict access and apply\nretention policy", shape="box", fillcolor="#dcfce7"];
+"failure" -> "handler" [label=""];
+"handler" -> "public" [label="Public response"];
+"handler" -> "context" [label="Internal evidence"];
+"context" -> "minimize" [label=""];
+"minimize" -> "protect" [label=""];
+}

@@ -66,6 +66,30 @@ Knowing where a message came from does not settle what it may request or which d
 
 [Evidence and metadata](../data/diagrams/browser-message-authority-boundaries.json) · [Mermaid source](../diagrams/browser-message-authority-boundaries.mmd)
 
+## Respect the server-to-client disclosure boundary
+
+![A request enters a server-side caller, resource and operation authorization decision. Denial returns no protected data. Approval proceeds to explicit field selection before serialization. Only permitted, necessary fields cross into client-visible data. A separate consumer-context handling step keeps content, including generated text, from acquiring executable meaning before display. Browser rendering never supplies server authorization.](../diagrams/server-client-data-consumer-boundaries.svg)
+
+A server-side origin does not make every field suitable for the browser. Project only the data the current consumer may receive, then treat returned content according to its output context.
+
+[Evidence and metadata](../data/diagrams/server-client-data-consumer-boundaries.json) · [Mermaid source](../diagrams/server-client-data-consumer-boundaries.mmd)
+
+## Check build evidence at the artifact consumer
+
+![Untrusted contributions remain separated from trusted build state. An artifact and its provenance reach a consumer policy gate. Only authenticated evidence matching the artifact and expected builder and inputs makes it eligible for release review; missing or mismatched evidence prevents promotion.](../diagrams/build-artifact-provenance-boundary.svg)
+
+Build isolation and consumer verification address different decisions. Separate untrusted contributions from trusted build state, then check whether authenticated provenance matches the artifact and expected build. Passing the gate only makes the artifact eligible for remaining release review; provenance is not a guarantee of vulnerability-free software.
+
+[Evidence and metadata](../data/diagrams/build-artifact-provenance-boundary.json) · [Mermaid source](../diagrams/build-artifact-provenance-boundary.mmd)
+
+## Separate public errors from internal diagnostics
+
+![A failure reaches a shared error handler. The public response contains minimal generic information. A separate diagnostic path selects useful context, removes secrets and unnecessary personal data, and stores it under access and retention controls. Raw exception details do not flow directly to the client.](../diagrams/error-diagnostic-disclosure-boundary.svg)
+
+Failure paths need explicit disclosure rules too. Give clients a minimal response, while selecting, minimizing and protecting diagnostic context independently. Internal logs still need a legitimate purpose, restricted access and a retention policy.
+
+[Evidence and metadata](../data/diagrams/error-diagnostic-disclosure-boundary.json) · [Mermaid source](../diagrams/error-diagnostic-disclosure-boundary.mmd)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:
