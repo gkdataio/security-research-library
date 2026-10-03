@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "id": "samlify-2026-assertion-generation-claim-integrity",
+  "title": "samlify: signing does not establish claim provenance",
+  "publisher": "samlify",
+  "authors": [
+    "tngan"
+  ],
+  "primary_url": "https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "identity",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "identity-lifecycle-review",
+    "secure-parser-review",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "The maintainer describes inconsistent escaping between XML attribute and element-text contexts during SAML assertion generation. User-controlled profile values could change assertion structure before the identity provider signed it. The service provider subsequently accepted extra attributes as authenticated claims; privilege escalation depends on using those attributes for authorization.",
+  "defensive_use": "Editorial reasoning: signatures protect the generated representation, not the authority of each input used to construct it. Keep profile text separate from authorization-claim structure, use context-correct serialization before signing, and review which upstream actors may supply claims consumed as roles. A signature check alone cannot repair a compromised issuance boundary.",
+  "prerequisites": [
+    "SAML issuer/relying-party roles, XML contexts and claim-based authorization"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer disclosure."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "source_displayed": {
+      "value": "2026-05-14",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Maintainer advisory publication date."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition established."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T16:19:37Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary source reviewed; no independent reproduction or deployment assessment."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m",
+      "title": "SAML attribute-generation integrity advisory",
+      "publisher": "samlify",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T16:19:37Z",
+      "supports": [
+        "summary",
+        "dates",
+        "version"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/tngan/samlify/releases/tag/v2.13.0",
+      "title": "Release v2.13.0",
+      "publisher": "samlify",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T16:19:37Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "The advisory identifies master/v2.10.2 as affected and 2.13.0 as patched; it does not establish a complete affected-version interval. Exposure requires user-controlled values reaching assertion generation and a relying party trusting the resulting attributes.",
+    "The published example supports added attributes being parsed; downstream privileged application actions are conditional consequences, not evidence of a breached deployment.",
+    "tngan published the advisory; RootUp is credited as reporter in both advisory and release notes. The 2.13.0 release explicitly references this advisory. Its displayed May 14 timestamp omits the year in retrieved text, so no full patch date is asserted. Resource edition remains null."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -13,7 +13,7 @@ Source-backed public security disclosures, official learning resources, and orig
 - **627 observed public bounty candidates** across Bugcrowd, HackerOne and Intigriti; 591 have published asset-scope rows captured, and five Bugcrowd category listings have unconfirmed paid status
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **101 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
+- **106 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
 
