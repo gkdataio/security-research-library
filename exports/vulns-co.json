@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T05:30:46Z",
+  "latest_reviewed_at": "2026-10-03T08:59:00Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -4460,12 +4460,13 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "One support-integration report received USD 12,500 split between two researchers.",
-      "root_cause": "Support-system configuration extended external identities’ access into internal documentation.",
-      "impact": "The vendor summary describes external access to internal Confluence material and limited modification.",
+      "summary": "A support-system misconfiguration allowed external access to internal Confluence documentation, including limited content modification. One report received USD 12,500 split between two researchers.",
+      "root_cause": "The vendor attributes the issue to a support-system misconfiguration that allowed support workflows to cross the boundary into internal documentation. The public summary does not reveal the precise configuration, authentication prerequisites or permission-propagation mechanism; an identity-entitlement failure is a defensive interpretation, not a documented implementation detail.",
+      "impact": "The vendor confirms access to nonpublic internal documentation and the ability to view and modify limited Confluence content. It does not establish unrestricted administrative control, the volume of material exposed, or broader compromise. The timeline records accepted retesting and Resolved status on June 3, 2025; redacted comment bodies do not reveal the corrective configuration or exact deployment date.",
       "defensive_takeaways": [
-        "Separate customer-support identity from employee-documentation entitlement.",
-        "Review transitive permissions across third-party integrations."
+        "Editorial lesson: assess whether external support workflows can confer access to employee-only documentation.",
+        "Editorial lesson: review integration permissions separately for read and write access; limited modification is distinct from unrestricted control.",
+        "Editorial lesson: verify the corrected access boundary after configuration changes without treating a resolution status as evidence of the precise fix."
       ],
       "reward": {
         "amount": 12500,
@@ -4553,12 +4554,13 @@
           "title": "Support integration exposed internal Confluence documentation (report 3113398)",
           "type": "vendor",
           "author": "HackerOne and the credited researchers",
-          "retrieved_at": "2026-10-02T15:45:00Z",
+          "retrieved_at": "2026-10-03T08:59:00Z",
           "supports": [
             "reward",
             "dates",
             "root_cause",
-            "impact"
+            "impact",
+            "remediation"
           ]
         },
         {
@@ -4576,12 +4578,13 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T15:45:00Z",
-        "method": "Original public HackerOne report, vendor statements and expanded award timeline read in the cloud browser. Currency policy read separately.",
+        "reviewed_at": "2026-10-03T08:59:00Z",
+        "method": "Freshly read the public vendor summary, expanded award events, accepted-retest and resolution events in the cloud browser. Technical and comment bodies remain redacted. Existing currency evidence retained without a fresh review; no target testing.",
         "limitations": [
           "Award events establish an award, not independently audited settlement.",
           "Exact fix-deployment date is unavailable; a Resolved status date is not treated as deployment.",
-          "Technical report and comment bodies are redacted; interpretation is limited to the vendor’s public summary and event metadata."
+          "Technical report and comment bodies are redacted; interpretation is limited to the vendor’s public summary and event metadata.",
+          "Exact access prerequisites and the corrective configuration are not disclosed; no specific identity provisioning or entitlement mechanism is established by the public summary."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -5097,173 +5100,6 @@
       "content_scope": "historical_defensive_summary"
     },
     {
-      "schema_version": "1.0.0",
-      "id": "hackerone-report-json-serialization-data-exposure-2025",
-      "title": "Framework serialization change exposed private HackerOne user attributes",
-      "organization": "HackerOne",
-      "product": "HackerOne report serialization",
-      "researchers": [],
-      "cve_ids": [],
-      "cwe_mappings": [
-        {
-          "id": "CWE-200",
-          "basis": "source_explicit",
-          "source_id": "primary",
-          "note": "The vendor explicitly labels the report Information Disclosure (CWE-200)."
-        }
-      ],
-      "category_id": "information-exposure",
-      "secondary_category_ids": [
-        "authorization"
-      ],
-      "skillset_ids": [
-        "secure-parser-review",
-        "untrusted-input-handling",
-        "authorization-modeling",
-        "patch-verification"
-      ],
-      "summary": "A Rails upgrade changed how public report responses serialized private user attributes. HackerOne confirmed the disclosure and a USD 25,000 award.",
-      "root_cause": "The public-output boundary failed when serialization behavior changed. The affected context was a disclosed report containing a reporter or team-member summary; public report visibility did not imply permission to expose its contributor’s private attributes.",
-      "impact": "The vendor confirms sensitive-attribute exposure and describes cross-program linking risk, but gives no affected-user count or evidence of wider exploitation. It reports a deployed fix and successful researcher retest; implementation details are absent.",
-      "defensive_takeaways": [
-        "Editorial lesson: define an explicit public-response field allowlist independently of framework defaults.",
-        "Editorial lesson: make dependency-upgrade tests assert that private attributes remain absent across nested serializers.",
-        "Editorial lesson: distinguish confirmation of one corrected response from proof that every historical response path is safe."
-      ],
-      "reward": {
-        "amount": 25000,
-        "currency": "USD",
-        "scope": "single_report",
-        "type": "bug_bounty",
-        "awarding_organization": "HackerOne",
-        "status": "awarded",
-        "evidence_level": "vendor_confirmed",
-        "source_id": "primary",
-        "evidence_quote": "Reward: $25,000",
-        "evidence_location": "Primary article award statement",
-        "usd_equivalent": null,
-        "notes": "Vendor confirms the individual report’s reward; exact award and payment dates are not supplied. The award article uses a dollar sign; current official HackerOne standards supply USD context only. Exhibit C reproduces guideline version 1.2 dated July 29, 2019 and specifies USD on printed page 12, supplying historical platform context rather than individual payment proof."
-      },
-      "dates": {
-        "published": {
-          "value": "2025-06-24",
-          "precision": "day",
-          "basis": "explicit",
-          "source_id": "primary",
-          "note": null
-        },
-        "public_disclosure": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "reported": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "awarded": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "fixed": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "paid": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "award_announced": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        },
-        "mitigated": {
-          "value": null,
-          "precision": null,
-          "basis": "not_reported",
-          "source_id": null,
-          "note": null
-        }
-      },
-      "recency": {
-        "as_of": "2026-10-03",
-        "window_start": "2025-10-03",
-        "within_preferred_window": false,
-        "basis": "published",
-        "note": "Historical primary publication, outside the preferred last-12-month window."
-      },
-      "sources": [
-        {
-          "id": "primary",
-          "url": "https://www.hackerone.com/blog/hai-insight-agent-case-study",
-          "title": "We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action",
-          "type": "vendor",
-          "author": "Crystal Hazen / HackerOne",
-          "retrieved_at": "2026-10-02T23:00:55Z",
-          "supports": [
-            "reward",
-            "dates",
-            "root_cause",
-            "impact",
-            "remediation"
-          ]
-        },
-        {
-          "id": "currency-context",
-          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
-          "title": "Vulnerability Disclosure Standards",
-          "type": "platform",
-          "author": "HackerOne",
-          "retrieved_at": "2026-10-02T23:03:50Z",
-          "supports": [
-            "reward"
-          ]
-        },
-        {
-          "id": "historical-currency-context",
-          "url": "https://www.carahsoft.com/buy/gsa-schedule-contracts/approved-csas/docFileDownload/286450/24c3653f-9d13-4944-8f2e-5baa23efa63c",
-          "title": "HackerOne terms and disclosure guidelines in official reseller GSA contract attachment, Exhibit C",
-          "type": "platform",
-          "author": "HackerOne / Carahsoft (contract attachment)",
-          "retrieved_at": "2026-10-02T23:05:44Z",
-          "supports": [
-            "reward"
-          ]
-        }
-      ],
-      "primary_source_id": "primary",
-      "verification": {
-        "status": "included",
-        "reviewed_at": "2026-10-02T23:05:44Z",
-        "method": "Reread the vendor case study; checked award, exposure context and remediation statements. No target testing.",
-        "limitations": [
-          "Publication does not establish discovery, award or settlement dates.",
-          "The article does not describe the researcher’s investigative reasoning or exact access prerequisites beyond the affected report context.",
-          "The linked technical report was not independently reread; researcher identity remains unverified.",
-          "Hai assisted triage; the reported defect was serialization.",
-          "Currency context comes from the currently reviewed platform standards, updated July 27, 2026, not a preserved 2025 version."
-        ]
-      },
-      "content_scope": "historical_defensive_summary"
-    },
-    {
       "schema_version": "1.1.0",
       "id": "google-actifio-driver-service-identity-isolation-2025",
       "title": "Actifio driver execution exposed excessive shared-service authority",
@@ -5410,6 +5246,190 @@
           "Award is researcher-reported; no cash receipt or per-contributor split is supplied.",
           "Exact original-report, award, payment, fix and first-disclosure dates are unavailable.",
           "Broad cross-customer impact is the researcher’s assessment, not evidence of customer-data extraction."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "hackerone-report-json-serialization-data-exposure-2025",
+      "title": "Framework serialization change exposed private HackerOne user attributes",
+      "organization": "HackerOne",
+      "product": "HackerOne report serialization",
+      "researchers": [
+        "avinash_"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [
+        {
+          "id": "CWE-200",
+          "basis": "source_explicit",
+          "source_id": "primary",
+          "note": "The vendor explicitly labels the report Information Disclosure (CWE-200)."
+        }
+      ],
+      "category_id": "information-exposure",
+      "secondary_category_ids": [
+        "authorization"
+      ],
+      "skillset_ids": [
+        "secure-parser-review",
+        "untrusted-input-handling",
+        "authorization-modeling",
+        "patch-verification"
+      ],
+      "summary": "A framework upgrade exposed private contributor attributes in public report responses. The vendor confirmed a USD 25,000 award; the public report supplies the underlying serialization and test-normalization explanation.",
+      "root_cause": "The vendor explains that an internal user object and a sanitized public representation shared a field name under different Ruby key types. Earlier serialization retained only the sanitized representation; the upgrade emitted both. Snapshot tests reparsed the response and discarded the earlier duplicate field, concealing sensitive data present in the raw response. The affected context was a disclosed report with a reporter or team-member summary. This was an application output-boundary failure exposed by a framework behavior change, not an AI-agent defect.",
+      "impact": "The vendor reproduced private-attribute exposure. The public report describes personal and security-sensitive account attributes, but does not demonstrate account takeover or establish an affected-user count or wider exploitation. The vendor announced a deployed fix on February 21, 2025; the researcher retested and observed only intended public attributes for team and reporter summaries. The exact code change is not disclosed.",
+      "defensive_takeaways": [
+        "Editorial lesson: construct public responses from explicit safe fields rather than relying on later serialization to overwrite an internal object.",
+        "Editorial lesson: test both raw serialized output and parsed structure; normalization can hide duplicate fields and sensitive data.",
+        "Editorial lesson: treat framework upgrades as changes to security-relevant output semantics, and exercise nested representations with private-field exclusion assertions."
+      ],
+      "reward": {
+        "amount": 25000,
+        "currency": "USD",
+        "scope": "single_report",
+        "type": "bug_bounty",
+        "awarding_organization": "HackerOne",
+        "status": "awarded",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "primary",
+        "evidence_quote": "Reward: $25,000",
+        "evidence_location": "Primary article award statement",
+        "usd_equivalent": null,
+        "notes": "Vendor confirms the individual report’s reward; the public report records the award event on February 21, 2025, while settlement remains unreported. The award article uses a dollar sign; current official HackerOne standards supply USD context only. Exhibit C reproduces guideline version 1.2 dated July 29, 2019 and specifies USD on printed page 12, supplying historical platform context rather than individual payment proof."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-04-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "technical-report",
+          "note": "Public technical report disclosure date; the later vendor case study was published June 24, 2025."
+        },
+        "public_disclosure": {
+          "value": "2025-04-01",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "technical-report",
+          "note": null
+        },
+        "reported": {
+          "value": "2025-02-19",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "technical-report",
+          "note": null
+        },
+        "awarded": {
+          "value": "2025-02-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "technical-report",
+          "note": "Public timeline records the bounty event; the vendor case study establishes its USD 25,000 amount. Separate retest compensation is not included."
+        },
+        "fixed": {
+          "value": "2025-02-21",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "technical-report",
+          "note": "Vendor deployment confirmation and successful researcher retest appear on this day; exact deployment time is not established."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical primary publication, outside the preferred last-12-month window."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://www.hackerone.com/blog/hai-insight-agent-case-study",
+          "title": "We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action",
+          "type": "vendor",
+          "author": "Crystal Hazen / HackerOne",
+          "retrieved_at": "2026-10-03T08:59:00Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Standards",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-02T23:03:50Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "historical-currency-context",
+          "url": "https://www.carahsoft.com/buy/gsa-schedule-contracts/approved-csas/docFileDownload/286450/24c3653f-9d13-4944-8f2e-5baa23efa63c",
+          "title": "HackerOne terms and disclosure guidelines in official reseller GSA contract attachment, Exhibit C",
+          "type": "platform",
+          "author": "HackerOne / Carahsoft (contract attachment)",
+          "retrieved_at": "2026-10-02T23:05:44Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "technical-report",
+          "url": "https://hackerone.com/reports/3000510",
+          "title": "Public report 3000510: private user attributes exposed in report serialization",
+          "type": "vendor",
+          "author": "HackerOne and avinash_",
+          "retrieved_at": "2026-10-03T08:59:00Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "primary",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-03T08:59:00Z",
+        "method": "Freshly read the vendor case study and the public technical report in the cloud browser, including vendor root-cause explanation and timeline. No target testing. Existing denomination sources retained without a fresh review.",
+        "limitations": [
+          "Award evidence does not establish settlement; the USD 25,000 amount comes from the case study, while the report hides the bounty amount.",
+          "The technical report names the earlier Rails version as 6.1.7.9; the later case study says 6.1.7.10. Both identify the upgrade to 7.1.5.1; the discrepancy is unresolved.",
+          "The case study describes retest validation within an hour, but visible retest-request and completion timestamps are about 72 minutes apart. Edited timeline timestamps and deployment timing limit precise duration comparisons.",
+          "The public sources do not establish exact authentication prerequisites, affected-user count, a code-level patch, or successful account compromise.",
+          "Currency context includes currently reviewed standards dated July 27, 2026 and historical platform guidelines; neither independently proves individual settlement."
         ]
       },
       "content_scope": "historical_defensive_summary"
