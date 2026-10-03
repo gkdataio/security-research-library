@@ -187,3 +187,5 @@ The collection links these resources without copying exercises, payloads, or ope
 - [OpenFGA authorization query freshness](resources/openfga-authorization-query-freshness.md): relationship changes, permission caches and explicit consistency requirements.
 
 - [Stripe webhooks: authentic delivery and business-state integrity](https://docs.stripe.com/webhooks): Separate authenticated delivery from event identity, ordering and committed business effects. [Readable record](resources/stripe-webhook-delivery-state-integrity.md)
+
+- [Permissions Policy: embedded feature authority](resources/w3c-permissions-policy-embedded-feature-authority.md): study inherited capability restrictions and the limits of frame-policy observation using a clearly labeled W3C editor's draft.

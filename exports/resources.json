@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 109,
+    "resources": 110,
     "diagrams": 11
   },
   "taxonomy": {
@@ -9942,6 +9942,87 @@
       "caveats": [
         "The reviewed edition is a Working Draft, not a final W3C Recommendation.",
         "The draft does not establish support in every deployed browser or non-browser client."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "w3c-permissions-policy-embedded-feature-authority",
+      "title": "Permissions Policy: inherited browser-feature authority across embedded documents",
+      "publisher": "World Wide Web Consortium",
+      "authors": [
+        "Ian Clelland",
+        "Ari Chivukula"
+      ],
+      "primary_url": "https://w3c.github.io/webappsec-permissions-policy/",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling"
+      ],
+      "version": "Editor's Draft, 22 September 2026",
+      "summary": "Defines browser-feature availability through inherited restrictions, document declarations and frame delegation. Feature defaults govern undeclared cases; a child cannot restore authority disabled by its parent.",
+      "defensive_use": "Editorial guidance: document which component owns each capability decision and distinguish intended delegation from effective restrictions. Keep browser-feature controls separate from application authorization and user consent in integration reviews.",
+      "prerequisites": [
+        "Browser origins, embedded documents and HTTP response headers"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public specification draft."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date not established in this review."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Living editor's draft; no released edition established."
+        },
+        "source_displayed": {
+          "value": "2026-09-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "standard",
+          "note": "Displayed draft date, not original publication or a released edition."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T21:42:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Read the official draft's status, framework, delivery and introspection sections; no browser conformance testing."
+      },
+      "sources": [
+        {
+          "id": "standard",
+          "url": "https://w3c.github.io/webappsec-permissions-policy/",
+          "title": "Permissions Policy",
+          "publisher": "World Wide Web Consortium",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T21:41:20Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Work in progress, not a final Recommendation or deployed-compatibility guarantee. Listed authors are the draft's editors.",
+        "User agents need not support every feature. Frame-level observable policy omits child response policy and later navigation, so it does not establish the loaded document's effective access.",
+        "Complements iframe sandboxing; it is not a complete isolation model."
       ],
       "content_scope": "defensive_education"
     },
