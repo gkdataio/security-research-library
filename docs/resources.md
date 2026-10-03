@@ -183,3 +183,5 @@ The collection links these resources without copying exercises, payloads, or ope
 - [LibreChat: viewing an integration must not reveal its service secrets](resources/librechat-2026-mcp-view-secret-projection.md): The MCP registry prepared decrypted configuration for internal use, and response handlers returned that representation to viewers without removing secrets. Object visibility consequently became credential disclosure authority. The advisory documents a local demonstration exposing administrator-managed provider credentials to a view-only account. [Structured record](../data/resources/librechat-2026-mcp-view-secret-projection.json)
 
 - [MCP progressive scope authority](resources/mcp-progressive-scope-authority.md): official guidance on permission challenges, accumulated grants and consent breadth.
+
+- [OpenFGA authorization query freshness](resources/openfga-authorization-query-freshness.md): relationship changes, permission caches and explicit consistency requirements.

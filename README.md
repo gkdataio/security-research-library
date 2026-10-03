@@ -14,7 +14,7 @@ Source-backed public security disclosures, official learning resources, and orig
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
 - **850 distinct program pages** across the overlapping Bugcrowd and cross-platform catalogs; 808 have captured scope rows and 42 retain precise limitations in the [coverage audit](docs/program-scope-audit.md)
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **106 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
+- **107 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
 
@@ -230,3 +230,4 @@ For updates, follow the [maintenance policy](DATA_POLICY.md#release-procedure): 
 ## Licensing
 
 Original maintenance code, tests and schemas use [MIT](LICENSES/MIT.txt). Original educational documentation, summaries and diagrams use [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [license scope and attribution guide](LICENSE.md) for canonical JSON, mixed exports and third-party exclusions. Facts are not claimed as proprietary; source reports and quotations retain their own rights.
+

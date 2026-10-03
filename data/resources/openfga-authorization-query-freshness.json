@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "openfga-authorization-query-freshness",
+  "title": "OpenFGA query consistency: authorization decisions need sufficiently fresh state",
+  "publisher": "OpenFGA",
+  "authors": [],
+  "primary_url": "https://openfga.dev/docs/interacting/consistency",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "authorization",
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "concurrency-reasoning"
+  ],
+  "version": null,
+  "summary": "Authorization correctness includes the age of relationship state used for a decision. OpenFGA documents a latency-oriented mode that can reuse cached results and a higher-consistency mode that bypasses the cache. With caching enabled, an immediate permission check may miss a relationship update.",
+  "defensive_use": "Editorial lesson: specify when permission changes must become observable and align decision freshness with that requirement. Review cache invalidation and performance assumptions together; a newly issued request does not necessarily use newly changed authorization state.",
+  "prerequisites": [
+    "Relationship-based authorization and cache consistency concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public official implementation guidance."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication and edition release are not established."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication and edition release are not established."
+    },
+    "source_displayed": {
+      "value": "2026-09-28",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Displayed last-modified date, not original publication."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T17:59:50Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official documentation reviewed; no deployment or performance testing."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://openfga.dev/docs/interacting/consistency",
+      "title": "Query Consistency Modes",
+      "publisher": "OpenFGA",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T17:59:50Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The documentation says caching is disabled by default. Do not assume every deployment returns cached authorization decisions.",
+    "Its illustrative timestamp branch appears inconsistent with the prose; this record does not reproduce or endorse that example.",
+    "Consistency tokens are described as future work. This guidance establishes neither a deployment-specific freshness guarantee nor evidence of an incident."
+  ],
+  "content_scope": "defensive_education"
+}
