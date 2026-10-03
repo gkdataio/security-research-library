@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 58,
+    "resources": 60,
     "diagrams": 9
   },
   "taxonomy": {
@@ -1106,6 +1106,99 @@
         "Observed evidence comes from a local development build with fixture companies, not customer accounts. Disclosed password hashes were not shown cracked.",
         "The researcher lists CVSS 8.1; the CNA gives CVSS v4 7.1. Scores are preserved as different source claims, not reconciled.",
         "Article publication (August 23) and CNA publication (August 24, 2026) are distinct. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "filebrowser-2026-share-owner-permission-lifecycle",
+      "title": "File Browser: existing shares must follow current owner permissions",
+      "publisher": "File Browser",
+      "authors": [
+        "hacdias"
+      ],
+      "primary_url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "business-logic"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification",
+        "identity-lifecycle-review"
+      ],
+      "version": null,
+      "summary": "GHSA-v9w4-gm2x-6rvf describes public file-sharing authority outliving its owner's permissions. Creating a share required sharing and download rights, but subsequent public access did not revalidate those rights. The maintainer-published report describes continued file retrieval after revocation in version 2.62.2.",
+      "defensive_use": "Editorial lesson: permission changes must constrain previously issued capabilities, not only new capability creation. The merged remediation checks the owner's current sharing and download permissions during public access. Its pull-request description records separate regression cases for revoking either permission. Model issuance and later use as distinct authorization decisions.",
+      "prerequisites": [
+        "Basic server-side authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-04-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-04-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T10:50:10Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and linked remediation evidence reviewed; deployment status was not assessed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf",
+          "title": "Share links remain accessible after Share/Download permissions are revoked",
+          "publisher": "File Browser",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:50:10Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "fix",
+          "url": "https://github.com/filebrowser/filebrowser/pull/5888",
+          "title": "Pull request 5888: share-owner permission revalidation",
+          "publisher": "File Browser",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:50:10Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires an existing share and access to its link, followed by revocation of the owner's relevant permissions. This is a source-reported demonstration, not independently reproduced here; no production exposure is established.",
+        "CVE-2026-35604. The advisory lists versions through 2.62.2 as affected and 2.63.1 as patched; it does not resolve the intervening-version gap. Pull request 5888 was merged April 4, 2026; that merge date is not a verified package-release date.",
+        "Published by hacdias; Koda Reef (kodareef5) is credited as reporter and authored the remediation pull request. Resource edition is unspecified. The repository displayed an August 31, 2026 archive notice at review."
       ],
       "content_scope": "defensive_education"
     },
@@ -3907,6 +4000,113 @@
       "caveats": [
         "Some labs have additional software requirements; no software or tool recommendations are included here",
         "Training access is not authorization to test third-party systems"
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "pterodactyl-2026-delegated-token-purpose-binding",
+      "title": "Pterodactyl: delegated tokens must preserve action-specific authority",
+      "publisher": "Pterodactyl",
+      "authors": [
+        "anthonyphysgun"
+      ],
+      "primary_url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "authorization",
+        "business-logic",
+        "identity"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "patch-verification",
+        "security-token-design",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "GHSA-8r6w-3qq5-4p4r describes an authorization mismatch between the Panel and Wings. Tokens established an authenticated user and server context without adequately separating operation purpose. The maintainer-published report describes an authenticated subuser gaining file-upload authority on an already accessible server despite lacking the required creation permission.",
+      "defensive_use": "Editorial lesson: trusted issuer and valid signature establish token provenance, not authorization for every consumer. Require explicit purpose at issuance and matching operation scope at consumption. Panel 1.12.3 release notes require a scope when generating tokens; Wings 1.12.2 release notes describe verifying subsystem-required scopes. Review the producer and consumer together.",
+      "prerequisites": [
+        "Basic server-side authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public primary sources readable without an account."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-06-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-03T10:50:10Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and linked remediation evidence reviewed; deployment status was not assessed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
+          "title": "Improper JWT scoping permits uploads without file-creation permission",
+          "publisher": "Pterodactyl",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:50:10Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "panel-release",
+          "url": "https://github.com/pterodactyl/panel/releases/tag/v1.12.3",
+          "title": "Panel v1.12.3 release notes",
+          "publisher": "Pterodactyl",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:50:10Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        },
+        {
+          "id": "wings-release",
+          "url": "https://github.com/pterodactyl/wings/releases/tag/v1.12.2",
+          "title": "Wings v1.12.2 release notes",
+          "publisher": "Pterodactyl",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-03T10:50:10Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        }
+      ],
+      "caveats": [
+        "Requires existing subuser access with a lower-privilege capability such as console connection or downloads. The advisory explicitly excludes users without subuser access to the server. Unauthorized upload is supported; cross-server takeover or command execution is not established here.",
+        "CVE-2026-54593. The advisory lists Panel before 1.12.3 and Wings before 1.12.2 as affected, with those versions patched. Release notes support the stated remediation design; exact patch implementation and deployed coverage were not independently verified.",
+        "Published June 6, 2026 by anthonyphysgun; TrixterTheTux is credited as reporter. Product version numbers are not educational-resource editions. No award evidence is claimed."
       ],
       "content_scope": "defensive_education"
     },

@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0.0",
+  "id": "pterodactyl-2026-delegated-token-purpose-binding",
+  "title": "Pterodactyl: delegated tokens must preserve action-specific authority",
+  "publisher": "Pterodactyl",
+  "authors": [
+    "anthonyphysgun"
+  ],
+  "primary_url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "authorization",
+    "business-logic",
+    "identity"
+  ],
+  "skillset_ids": [
+    "authorization-modeling",
+    "patch-verification",
+    "security-token-design",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "GHSA-8r6w-3qq5-4p4r describes an authorization mismatch between the Panel and Wings. Tokens established an authenticated user and server context without adequately separating operation purpose. The maintainer-published report describes an authenticated subuser gaining file-upload authority on an already accessible server despite lacking the required creation permission.",
+  "defensive_use": "Editorial lesson: trusted issuer and valid signature establish token provenance, not authorization for every consumer. Require explicit purpose at issuance and matching operation scope at consumption. Panel 1.12.3 release notes require a scope when generating tokens; Wings 1.12.2 release notes describe verifying subsystem-required scopes. Review the producer and consumer together.",
+  "prerequisites": [
+    "Basic server-side authorization concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public primary sources readable without an account."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-06-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": "2026-06-06",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": null
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-03T10:50:10Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Primary advisory and linked remediation evidence reviewed; deployment status was not assessed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r",
+      "title": "Improper JWT scoping permits uploads without file-creation permission",
+      "publisher": "Pterodactyl",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:50:10Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "panel-release",
+      "url": "https://github.com/pterodactyl/panel/releases/tag/v1.12.3",
+      "title": "Panel v1.12.3 release notes",
+      "publisher": "Pterodactyl",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:50:10Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "wings-release",
+      "url": "https://github.com/pterodactyl/wings/releases/tag/v1.12.2",
+      "title": "Wings v1.12.2 release notes",
+      "publisher": "Pterodactyl",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-03T10:50:10Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    }
+  ],
+  "caveats": [
+    "Requires existing subuser access with a lower-privilege capability such as console connection or downloads. The advisory explicitly excludes users without subuser access to the server. Unauthorized upload is supported; cross-server takeover or command execution is not established here.",
+    "CVE-2026-54593. The advisory lists Panel before 1.12.3 and Wings before 1.12.2 as affected, with those versions patched. Release notes support the stated remediation design; exact patch implementation and deployed coverage were not independently verified.",
+    "Published June 6, 2026 by anthonyphysgun; TrixterTheTux is credited as reporter. Product version numbers are not educational-resource editions. No award evidence is claimed."
+  ],
+  "content_scope": "defensive_education"
+}
