@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T09:50:24Z",
+  "latest_reviewed_at": "2026-10-03T10:10:05.389636Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 60,
+    "included": 61,
     "within_preferred_window": 23,
-    "older_or_uncertain": 37,
-    "bug_bounty": 49,
+    "older_or_uncertain": 38,
+    "bug_bounty": 50,
     "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -9211,7 +9211,8 @@
           "USD denomination uses official program context published five years before the award and is not an individual payment audit.",
           "Original publication remains unknown; current archive dates must not inflate recency.",
           "Only the backend configuration-to-script finding, labeled Bug #2, is included. The article also describes a different client-side finding with a separate award.",
-          "Configuration-write prerequisites, remediation implementation and broad deployment or employee-system consequences are not independently verified."
+          "Configuration-write prerequisites, remediation implementation and broad deployment or employee-system consequences are not independently verified.",
+          "The narrative places investigation of Bug #2 after reporting Bug #1, while the labeled timeline dates Bug #2 first. Recorded event dates follow the explicit labels; no corrected chronology is inferred."
         ]
       },
       "content_scope": "historical_defensive_summary"
@@ -9350,6 +9351,159 @@
           "An updated date does not establish original publication. Full-fix confirmation does not establish deployment timing.",
           "Cash receipt is not established.",
           "The article attributes remediation to ownership checks but does not supply an independently reviewed patch."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "meta-accounts-center-linking-credential-confinement-2024",
+      "title": "Meta Accounts Center linking lost credential and identity confinement",
+      "organization": "Meta",
+      "product": "Accounts Center Facebook–Instagram account linking",
+      "researchers": [
+        "Youssef Sammouda"
+      ],
+      "cve_ids": [],
+      "cwe_mappings": [],
+      "category_id": "authentication",
+      "secondary_category_ids": [
+        "authorization",
+        "client-security"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "integration-threat-modeling",
+        "security-token-design",
+        "browser-isolation-review"
+      ],
+      "summary": "A researcher-reported USD 30,000 award documents a cross-product account-linking trust failure.",
+      "root_cause": "SSO destination validation and browser-message confidentiality did not preserve account-linking credential confinement. Session identity could also differ from the person authorizing the connection, allowing linking authority to cross account boundaries.",
+      "impact": "The researcher reports unauthorized Facebook linking and persistent account control. Prerequisites included an attacker-controlled Instagram account, account-specific authorization material, an authenticated Facebook user visiting attacker-controlled content, and user confirmation. Mobile sign-in is described as potential; no widespread exploitation is established.",
+      "defensive_takeaways": [
+        "Bind linking approval to both intended account identities, the initiating session, and the exact operation.",
+        "Constrain credential delivery end to end, including browser-message recipients and final redirect destinations.",
+        "Make identity changes visible and require fresh authorization when a sensitive linking flow changes account context.",
+        "Treat these as defensive design recommendations rather than a reconstruction of the undisclosed vendor patch."
+      ],
+      "reward": {
+        "amount": 30000,
+        "currency": "USD",
+        "scope": "single_report",
+        "status": "awarded",
+        "evidence_level": "researcher_reported",
+        "source_id": "researcher-writeup",
+        "evidence_quote": "$30,000 bounty awarded by Meta",
+        "evidence_location": "Timeline, November 27, 2024 entry",
+        "usd_equivalent": null,
+        "notes": "The article assigns one award to the reported finding. It uses $; USD is inferred from official February 2020 program-wide reporting, roughly five years before this award. That contextual source does not verify the individual denomination or settlement. No conflicting currency was identified.",
+        "type": "bug_bounty",
+        "awarding_organization": "Meta"
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Current article and archive index display January 15, 2026; original publication versus migration/republication is unverified. This header is not used to assert recent research."
+        },
+        "public_disclosure": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Earliest public disclosure was not established."
+        },
+        "reported": {
+          "value": "2024-10-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "awarded": {
+          "value": "2024-11-27",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": null
+        },
+        "fixed": {
+          "value": "2024-11-05",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher-writeup",
+          "note": "Overall researcher timeline label; component-level remediation and patch details are not independently verified."
+        },
+        "paid": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "award_announced": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "mitigated": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": null,
+        "basis": "published",
+        "note": "Original publication remains unknown; the 2026 archive header does not establish recency."
+      },
+      "sources": [
+        {
+          "id": "researcher-writeup",
+          "url": "https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html",
+          "title": "Two-click Facebook account takeover via FXAuth token and blob theft",
+          "type": "researcher",
+          "author": "Youssef Sammouda",
+          "retrieved_at": "2026-10-03T10:10:05.389636Z",
+          "supports": [
+            "reward",
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/",
+          "title": "Una mirada retrospectiva a los aspectos más destacados de Bug Bounty 2019",
+          "type": "vendor",
+          "author": "Dan Gurfinkel / Facebook",
+          "retrieved_at": "2026-10-03T10:10:05.389636Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher-writeup",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-03T10:10:05.389636Z",
+        "method": "Read the primary article and dated individual award, checked the researcher archive and official denomination context, and compared report identities with existing Meta records. Retained only conceptual defensive content.",
+        "limitations": [
+          "The award and overall fix are researcher-reported; vendor confirmation and cash settlement are unverified.",
+          "Original publication is unknown, so no preferred-window inclusion is claimed.",
+          "USD relies on earlier program-wide context rather than report-specific currency evidence.",
+          "The source inconsistently names the final return host; no exact route or operational sequence is inferred.",
+          "This account-linking report is counted once, not as separate records for its constituent weaknesses."
         ]
       },
       "content_scope": "historical_defensive_summary"

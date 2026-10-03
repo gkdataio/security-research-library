@@ -53,6 +53,7 @@ Reviewed: 2026-10-03T09:50:24Z. Read the primary article and separately assigned
 - Original publication remains unknown; current archive dates must not inflate recency\.
 - Only the backend configuration-to-script finding, labeled Bug \#2, is included\. The article also describes a different client-side finding with a separate award\.
 - Configuration-write prerequisites, remediation implementation and broad deployment or employee-system consequences are not independently verified\.
+- The narrative places investigation of Bug \#2 after reporting Bug \#1, while the labeled timeline dates Bug \#2 first\. Recorded event dates follow the explicit labels; no corrected chronology is inferred\.
 
 ## Sources and attribution
 

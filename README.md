@@ -8,12 +8,12 @@ Source-backed public security disclosures, official learning resources, and orig
 
 **Snapshot: October 3, 2026**
 
-- **60 qualifying report records:** 49 bug-bounty awards and 11 explicitly labeled competition entries
+- **61 qualifying report records:** 50 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **1,154 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **56 educational resources** and **9 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 7 with unknown original publication dates
+- **Publication coverage:** 23 within October 3, 2025–October 3, 2026; 30 older; 8 with unknown original publication dates
 
 These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -193,6 +193,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [iCloud sharing consent and Safari trust boundaries failed together](data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json) | USD 100,500 | Unknown in primary source | Researcher reported |
 | [macOS SMBFS error handling left inconsistent kernel parser state](data/reports/apple-smbfs-parser-state-consistency-2026.json) | USD 20,000 | Original unknown; vendor advisory 2026-09-14 | Researcher reports payment |
 | [Meta Conversions API Gateway mixed configuration data with executable output](data/reports/meta-conversions-gateway-generated-script-boundary-2025.json) | USD 250,000 (Bug #2 only) | Original unknown; archive shows 2026-01-13 | Researcher reported |
+| [Meta Accounts Center linking lost credential and identity confinement](data/reports/meta-accounts-center-linking-credential-confinement-2024.json) | USD 30,000 | Original unknown; archive shows 2026-01-15 | Researcher reported |
 
 ## Scope, maintenance, and attribution
 

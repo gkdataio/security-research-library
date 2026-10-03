@@ -44,6 +44,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [Instagram client configuration exposed an application credential](<reports/instagram-application-credential-client-containment-2022.md>) — USD 30,000; bug\_bounty
 - [Instagram embedding fallback changed the authorization context](<reports/instagram-embedding-privileged-fallback-2023.md>) — USD 14,500; bug\_bounty
 - [Meta AI media access lacked object-ownership authorization](<reports/meta-ai-media-object-authorization-2025.md>) — USD 10,000; bug\_bounty
+- [Meta Accounts Center linking lost credential and identity confinement](<reports/meta-accounts-center-linking-credential-confinement-2024.md>) — USD 30,000; bug\_bounty
 - [Meta Conversions API Gateway mixed configuration data with executable output](<reports/meta-conversions-gateway-generated-script-boundary-2025.md>) — USD 250,000; bug\_bounty
 - [Meta Pixel cross-window handling lost message and token authority](<reports/meta-pixel-cross-window-authority-binding-2024.md>) — USD 32,500; bug\_bounty
 - [Meta Quest login migration lost OAuth credential confinement](<reports/meta-quest-oauth-redirect-confidentiality-2022.md>) — USD 44,250; bug\_bounty
