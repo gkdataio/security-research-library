@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 28 related resources · 3 diagrams
+**Vulnerability family** · 14 reports · 29 related resources · 3 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -41,6 +41,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [File Browser: existing shares must follow current owner permissions](<../resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — topic: Business Logic and State Integrity.
 - [Grav API: account-disable enforcement across session authenticators](<../resources/grav-2026-session-account-state-revalidation.md>) — topic: Business Logic and State Integrity.
 - [HotCRP: separate submission visibility from authorship authority](<../resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — topic: Business Logic and State Integrity.
+- [Microsoft compensating transactions: recovery must preserve valid concurrent state](<../resources/microsoft-compensating-transaction-state-integrity.md>) — topic: Business Logic and State Integrity.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Business Logic and State Integrity.
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Business Logic and State Integrity.
 - [OpenFGA query consistency: authorization decisions need sufficiently fresh state](<../resources/openfga-authorization-query-freshness.md>) — topic: Business Logic and State Integrity.

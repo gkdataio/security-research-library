@@ -4,7 +4,7 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-113 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+114 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -12,7 +12,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 
 - [Ai Security](<#topic-ai-security>) — 11 resources.
 - [Authorization](<#topic-authorization>) — 70 resources.
-- [Business Logic and State Integrity](<#topic-business-logic>) — 26 resources.
+- [Business Logic and State Integrity](<#topic-business-logic>) — 27 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 39 resources.
 - [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 3 resources.
@@ -118,7 +118,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-business-logic"></a>
 ## Business Logic and State Integrity
 
-26 resources.
+27 resources.
 
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
@@ -127,6 +127,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser.
 - [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav.
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP.
+- [Microsoft compensating transactions: recovery must preserve valid concurrent state](<resources/microsoft-compensating-transaction-state-integrity.md>) — Microsoft Azure Architecture Center.
 - [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n.
 - [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>) — n8n.
 - [OpenFGA query consistency: authorization decisions need sufficiently fresh state](<resources/openfga-authorization-query-freshness.md>) — OpenFGA.

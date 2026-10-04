@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0.0",
+  "id": "microsoft-compensating-transaction-state-integrity",
+  "title": "Microsoft compensating transactions: recovery must preserve valid concurrent state",
+  "publisher": "Microsoft Azure Architecture Center",
+  "authors": [],
+  "primary_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "business-logic"
+  ],
+  "skillset_ids": [
+    "concurrency-reasoning",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "Explains recovery after partial completion across services or data stores. Compensation applies domain-specific corrective effects; restoring an earlier snapshot can overwrite valid concurrent changes. Recovery can itself fail, and some committed effects cannot be meaningfully reversed.",
+  "defensive_use": "Editorial lesson: distinguish an atomic transaction boundary from a process spanning independently committed operations. Model completion evidence, compensable effects and irreversible commitments. Preserve recovery progress and repeat-safe corrective actions while respecting concurrent work and business entitlements.",
+  "prerequisites": [
+    "Basic distributed operations, eventual consistency and application state invariants"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "The official architecture article and its public source were readable without sign-in."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication was not established."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No dated resource edition is identified."
+    },
+    "source_displayed": {
+      "value": "2026-04-20",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "primary",
+      "note": "Rendered page’s Last updated date; not original publication or latest repository modification."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-04T05:52:30Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official page, pinned first-party source and two later file changes reviewed. Maintained living guidance without a numbered edition."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction",
+      "title": "Compensating Transaction pattern",
+      "publisher": "Microsoft",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T05:50:04Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "source-metadata",
+      "url": "https://github.com/MicrosoftDocs/architecture-center/blob/498e83a207cfd512b396489e95ed3f791b372364/docs/patterns/compensating-transaction.md",
+      "title": "Compensating Transaction pattern source at reviewed revision",
+      "publisher": "MicrosoftDocs",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T05:52:09Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "august-link-maintenance",
+      "url": "https://github.com/MicrosoftDocs/architecture-center/commit/d73cd1632ffa489eff78a16bba4d101c510a1810",
+      "title": "August 2026 idempotent-command link maintenance",
+      "publisher": "MicrosoftDocs",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T05:51:29Z",
+      "supports": [
+        "dates"
+      ]
+    },
+    {
+      "id": "september-link-maintenance",
+      "url": "https://github.com/MicrosoftDocs/architecture-center/commit/498e83a207cfd512b396489e95ed3f791b372364",
+      "title": "September 2026 related-document link maintenance",
+      "publisher": "MicrosoftDocs",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T05:51:29Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Compensation does not guarantee restoration of the original state. It is unsuitable where temporary inconsistency is unacceptable or valid recovery cannot be assured.",
+    "Recovery remains domain-specific and may require human intervention. Repeat-safe recovery steps do not make irreversible commitments undoable or guarantee eventual completion.",
+    "The rendered page displays 2026-04-20; the pinned source metadata says 2026-04-16. The reviewed August 14 and September 28, 2026 changes only update links in this file. These are distinct maintenance signals, not publication or edition-release dates.",
+    "Architecture guidance, not an incident, vulnerability disclosure, implementation audit, bounty claim or testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}
