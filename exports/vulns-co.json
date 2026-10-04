@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-04T11:43:25Z",
+  "latest_reviewed_at": "2026-10-04T14:44:04Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -8270,7 +8270,7 @@
         "authorization-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "The cited researcher documents a USD 100,000 award for this finding.",
+      "summary": "Bhavuk Jain reports being paid $100,000 for this finding. The recorded USD denomination is a contextual inference from Apple's May 2019 program documentation, published about one year before the May 2020 disclosure.",
       "root_cause": "Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications. Cryptographic validity alone did not establish correct claim ownership.",
       "impact": "Potential takeover of third-party application accounts using the integration without additional safeguards. Named third-party applications were not tested by the researcher.",
       "defensive_takeaways": [
@@ -8289,7 +8289,7 @@
         "evidence_quote": "For this vulnerability, I was paid $100,000 by Apple under their Apple Security Bounty program.",
         "evidence_location": "Primary article award statement",
         "usd_equivalent": null,
-        "notes": "Researcher explicitly says they were paid; exact settlement date is not supplied."
+        "notes": "The researcher explicitly reports being paid $100,000 but supplies no currency code or exact settlement date. USD is contextually inferred from Apple's May 2019 iOS Security guide (currency-context), whose Apple Security Bounty table on printed page 87 labels maximum payments in USD. This source describes the then-existing iOS program and predates the May 2020 disclosure by about one year. It supplies denomination context only and does not independently establish this individual payment's currency, amount, category or settlement."
       },
       "dates": {
         "published": {
@@ -8363,23 +8363,35 @@
           "title": "Sign in with Apple failed to bind identity claims to the authenticated user",
           "type": "researcher",
           "author": "Bhavuk Jain",
-          "retrieved_at": "2026-10-02T14:43:00Z",
+          "retrieved_at": "2026-10-04T14:42:20Z",
           "supports": [
             "reward",
             "dates",
             "root_cause",
             "impact"
           ]
+        },
+        {
+          "id": "currency-context",
+          "url": "https://www.apple.com/jp/business/site/docs/site/iOS_Security_Guide.pdf",
+          "title": "iOS Security, iOS 12.3, May 2019, printed page 87: denomination context only",
+          "type": "vendor",
+          "author": "Apple",
+          "retrieved_at": "2026-10-04T14:42:30Z",
+          "supports": [
+            "reward"
+          ]
         }
       ],
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T14:43:00Z",
-        "method": "Primary public sources read; individual reward, dates, and attribution reviewed. No target testing performed.",
+        "reviewed_at": "2026-10-04T14:44:04Z",
+        "method": "Primary researcher payment statement reread; Apple's May 2019 iOS Security guide reviewed for earlier program-level denomination context only. Individual payment attribution remains researcher-reported. No target testing performed.",
         "limitations": [
           "No exact report, fix, or payment date stated",
-          "Researcher says Apple's investigation found no misuse; independent vendor payout confirmation was not retrieved"
+          "Researcher says Apple's investigation found no misuse; independent vendor payout confirmation was not retrieved",
+          "USD is inferred from earlier program-level context, not explicitly stated in the individual payment report. The May 2019 guide does not establish the payment's category or the program wording at payment time. No conflicting denomination was identified in the reviewed sources."
         ]
       },
       "content_scope": "historical_defensive_summary"
