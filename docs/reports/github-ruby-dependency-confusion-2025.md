@@ -26,7 +26,7 @@ The researcher observed code execution across multiple service contexts\. The di
 
 ## Award and evidence
 
-**USD 20,000** — bug\_bounty; single\_report; status: awarded.
+**USD 20,000** — bug\_bounty; single\_report; status: paid.
 
 Evidence level: researcher\_reported. The researcher states this was a critical report and that the bounty was paid; no separate payment date or public HackerOne report is supplied\.
 
@@ -45,12 +45,12 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T03:49:00Z. Primary public source read; award distinguished from program maximums and aggregate earnings\. No vulnerability testing performed\.
+Reviewed: 2026-10-04T11:43:25Z. Primary public source read; award distinguished from program maximums and aggregate earnings\. No vulnerability testing performed\.
 
 - The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited\.
 
 ## Sources and attribution
 
-- [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) — Furbreeze; retrieved 2026-10-02T03:49:00Z.
+- [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) — Furbreeze; retrieved 2026-10-04T11:40:43Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

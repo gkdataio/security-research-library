@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-03T23:53:25Z",
+  "latest_reviewed_at": "2026-10-04T11:43:25Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -4295,11 +4295,11 @@
         "amount": 20000,
         "currency": "USD",
         "scope": "single_report",
-        "status": "awarded",
+        "status": "paid",
         "evidence_level": "researcher_reported",
         "source_id": "primary",
-        "evidence_quote": "Issue closed, bounty of $20k rewarded.",
-        "evidence_location": "Timeline, October 21 entry",
+        "evidence_quote": "Issue closed, bounty of $20k rewarded. […] The bounty they paid me",
+        "evidence_location": "Timeline, October 21 entry (award); numbered facts list, item 3 (payment)",
         "usd_equivalent": null,
         "notes": "The researcher states this was a critical report and that the bounty was paid; no separate payment date or public HackerOne report is supplied.",
         "type": "bug_bounty",
@@ -4377,7 +4377,7 @@
           "title": "Vibecoding my way to a crit on Github",
           "type": "researcher",
           "author": "Furbreeze",
-          "retrieved_at": "2026-10-02T03:49:00Z",
+          "retrieved_at": "2026-10-04T11:40:43Z",
           "supports": [
             "reward",
             "dates",
@@ -4390,7 +4390,7 @@
       "primary_source_id": "primary",
       "verification": {
         "status": "included",
-        "reviewed_at": "2026-10-02T03:49:00Z",
+        "reviewed_at": "2026-10-04T11:43:25Z",
         "method": "Primary public source read; award distinguished from program maximums and aggregate earnings. No vulnerability testing performed.",
         "limitations": [
           "The reward is an actual award reported in a primary researcher account; payment settlement was not independently audited."
