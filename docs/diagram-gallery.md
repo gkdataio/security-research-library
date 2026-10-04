@@ -100,6 +100,19 @@ Editorial conceptual model derived from the Facebook error-response case and OWA
 
 [Canonical graph and provenance](<../data/diagrams/error-diagnostic-disclosure-boundary.json>) · [Mermaid source](<../diagrams/error-diagnostic-disclosure-boundary.mmd>) · [DOT source](<../diagrams/error-diagnostic-disclosure-boundary.dot>)
 
+<a id="fallback-requester-authorization"></a>
+## Fallbacks must preserve the original caller's authority
+
+![A failure retains the original caller, action and resource\. An explicit access denial stops without protected data\. A known recoverable operational failure can propose a fallback, but switching execution identity grants no extra caller entitlement\. A separate application-policy decision evaluates that fallback for the original caller\. Denied or indeterminate decisions stop without protected data\. A permitted, scoped fallback returns only caller-permitted data\.](../diagrams/fallback-requester-authorization.svg)
+
+Original editorial defensive synthesis of the Instagram embedding disclosure and OWASP authorization guidance\. The researcher attributes the disclosure to error handling that retrieved protected content under an elevated service identity, relaying vendor clarification rather than independently published vendor evidence\. OWASP supports consistent per-request permissions and safe handling of failed authorization checks\. The graph models a safe recovery decision, not Instagram's architecture or a documented patch\. An explicit access denial terminates this logical operation; only a known recoverable operational failure may reach fallback review\. The original caller, action and resource remain the policy context, even if execution identity changes\. Denied or indeterminate fallback authorization stops without protected data\. Assumes the same caller and logical operation with an application-defined recovery policy; separately authorized service or background work is excluded\. Permission freshness, revocation, distributed consistency and diagnostic minimization are outside this model\.
+
+**Related reports**
+
+- [Instagram embedding fallback changed the authorization context](<reports/instagram-embedding-privileged-fallback-2023.md>)
+
+[Canonical graph and provenance](<../data/diagrams/fallback-requester-authorization.json>) · [Mermaid source](<../diagrams/fallback-requester-authorization.mmd>) · [DOT source](<../diagrams/fallback-requester-authorization.dot>)
+
 <a id="identity-claim-binding"></a>
 ## An identity claim must belong to the user
 

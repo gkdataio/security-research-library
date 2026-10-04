@@ -1,0 +1,22 @@
+flowchart TB
+  failure["Failure: retain caller, action and resource"]
+  access-denial{"Explicit access denial?"}
+  stop-denial["Stop; no protected data"]
+  recoverable{"Known recoverable operational failure?"}
+  stop-failure["Stop safely; no protected data"]
+  propose["Propose fallback for the same operation"]
+  authority["Execution identity grants no extra caller entitlement"]
+  authorize{"Fallback permitted for original caller under policy?"}
+  stop-fallback["Stop; no protected data"]
+  execute["Execute only permitted scoped fallback"]
+  response["Return only caller-permitted data"]
+  failure --> access-denial
+  access-denial -->|Yes| stop-denial
+  access-denial -->|No| recoverable
+  recoverable -->|No or unknown| stop-failure
+  recoverable -->|Yes| propose
+  propose --> authority
+  authority --> authorize
+  authorize -->|Denied or indeterminate| stop-fallback
+  authorize -->|Permitted| execute
+  execute --> response

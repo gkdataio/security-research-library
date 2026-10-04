@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0.0",
+  "id": "fallback-requester-authorization",
+  "title": "Fallbacks must preserve the original caller's authority",
+  "alt_text": "A failure retains the original caller, action and resource. An explicit access denial stops without protected data. A known recoverable operational failure can propose a fallback, but switching execution identity grants no extra caller entitlement. A separate application-policy decision evaluates that fallback for the original caller. Denied or indeterminate decisions stop without protected data. A permitted, scoped fallback returns only caller-permitted data.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Original editorial defensive synthesis of the Instagram embedding disclosure and OWASP authorization guidance. The researcher attributes the disclosure to error handling that retrieved protected content under an elevated service identity, relaying vendor clarification rather than independently published vendor evidence. OWASP supports consistent per-request permissions and safe handling of failed authorization checks. The graph models a safe recovery decision, not Instagram's architecture or a documented patch. An explicit access denial terminates this logical operation; only a known recoverable operational failure may reach fallback review. The original caller, action and resource remain the policy context, even if execution identity changes. Denied or indeterminate fallback authorization stops without protected data. Assumes the same caller and logical operation with an application-defined recovery policy; separately authorized service or background work is excluded. Permission freshness, revocation, distributed consistency and diagnostic minimization are outside this model.",
+  "linked_report_ids": [
+    "instagram-embedding-privileged-fallback-2023"
+  ],
+  "linked_resource_ids": [
+    "owasp-authorization-cheat-sheet"
+  ],
+  "evidence_urls": [
+    "https://003random.com/posts/meta-bountycon-instagram-writeup/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-04T16:02:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "failure",
+        "label": "Failure: retain caller, action and resource",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "access-denial",
+        "label": "Explicit access denial?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "stop-denial",
+        "label": "Stop; no protected data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "recoverable",
+        "label": "Known recoverable operational failure?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "stop-failure",
+        "label": "Stop safely; no protected data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "propose",
+        "label": "Propose fallback for the same operation",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "authority",
+        "label": "Execution identity grants no extra caller entitlement",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "authorize",
+        "label": "Fallback permitted for original caller under policy?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "stop-fallback",
+        "label": "Stop; no protected data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "execute",
+        "label": "Execute only permitted scoped fallback",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "response",
+        "label": "Return only caller-permitted data",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "failure",
+        "to": "access-denial",
+        "label": null
+      },
+      {
+        "from": "access-denial",
+        "to": "stop-denial",
+        "label": "Yes"
+      },
+      {
+        "from": "access-denial",
+        "to": "recoverable",
+        "label": "No"
+      },
+      {
+        "from": "recoverable",
+        "to": "stop-failure",
+        "label": "No or unknown"
+      },
+      {
+        "from": "recoverable",
+        "to": "propose",
+        "label": "Yes"
+      },
+      {
+        "from": "propose",
+        "to": "authority",
+        "label": null
+      },
+      {
+        "from": "authority",
+        "to": "authorize",
+        "label": null
+      },
+      {
+        "from": "authorize",
+        "to": "stop-fallback",
+        "label": "Denied or indeterminate"
+      },
+      {
+        "from": "authorize",
+        "to": "execute",
+        "label": "Permitted"
+      },
+      {
+        "from": "execute",
+        "to": "response",
+        "label": null
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/fallback-requester-authorization.mmd",
+    "graphviz": "diagrams/fallback-requester-authorization.dot",
+    "svg": "diagrams/fallback-requester-authorization.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

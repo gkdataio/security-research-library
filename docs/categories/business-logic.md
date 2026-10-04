@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 33 related resources · 3 diagrams
+**Vulnerability family** · 14 reports · 33 related resources · 4 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -33,7 +33,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 
 Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
-- [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>).
+- [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>), [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>).
 - [Better Auth: single-use authorization requires atomic state consumption](<../resources/better-auth-2026-authorization-code-consumption-integrity.md>) — topic: Business Logic and State Integrity.
 - [Bugsink: time-unit consistency in account-access token expiry](<../resources/bugsink-2026-token-expiry-unit-integrity.md>) — topic: Business Logic and State Integrity.
 - [Coder: privileged provisioning must preserve existing object ownership](<../resources/coder-2026-provisioned-object-ownership-integrity.md>) — topic: Business Logic and State Integrity.
@@ -74,6 +74,7 @@ Included only when the canonical diagram links at least one report in this categ
 
 - [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>)
 - [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>)
+- [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>)
 - [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>)
 
 ---

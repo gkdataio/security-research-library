@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 79 related resources · 9 diagrams
+**Vulnerability family** · 34 reports · 79 related resources · 10 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -58,7 +58,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Astro: routing and authorization must agree on resource identity](<../resources/astro-2026-route-normalization-authorization-consistency.md>) — topic: Authorization.
 - [authentik: source-mapping edits carry identity-rebinding authority](<../resources/authentik-2026-source-mapping-mutation-authority.md>) — topic: Authorization.
 - [Authlib: error responses must preserve redirect-destination validation](<../resources/authlib-2026-error-path-redirect-authority.md>) — topic: Authorization.
-- [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — topic: Authorization; diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>), [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>), [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>).
+- [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — topic: Authorization; diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>), [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>), [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>), [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>).
 - [AWS IAM security best practices for workload identities](<../resources/aws-iam-machine-identity-best-practices.md>) — topic: Authorization; diagram: [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>).
 - [Better Auth SCIM: absent ownership must not grant shared authority](<../resources/better-auth-2026-scim-ownerless-provider-authority.md>) — topic: Authorization.
 - [Better Auth: incoming identity proof does not validate existing credentials](<../resources/better-auth-2026-local-account-linking-verification.md>) — topic: Authorization.
@@ -143,6 +143,7 @@ Included only when the canonical diagram links at least one report in this categ
 - [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>)
 - [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>)
 - [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>)
+- [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>)
 - [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>)
 - [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>)
 - [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>)

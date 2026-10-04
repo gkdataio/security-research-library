@@ -52,6 +52,10 @@ Reviewed: 2026-10-02T18:24:00Z. Read researcher timeline, bounded impact and att
 - Currency context comes from an earlier official program retrospective, not a reproduced award receipt\.
 - The account-restriction root cause is the researcher’s account of vendor clarification\.
 
+## Related conceptual diagrams
+
+- [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>)
+
 ## Sources and attribution
 
 - [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) — 003random; retrieved 2026-10-02T18:24:00Z.

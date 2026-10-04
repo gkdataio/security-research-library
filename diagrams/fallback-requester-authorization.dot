@@ -1,0 +1,27 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Fallbacks must preserve the original caller's authority"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"failure" [label="Failure: retain caller,\naction and resource", shape="box", fillcolor="#f1f5f9"];
+"access-denial" [label="Explicit access denial?", shape="diamond", fillcolor="#e0ecf8"];
+"stop-denial" [label="Stop; no protected data", shape="box", fillcolor="#fef3c7"];
+"recoverable" [label="Known recoverable\noperational failure?", shape="diamond", fillcolor="#e0ecf8"];
+"stop-failure" [label="Stop safely; no protected\ndata", shape="box", fillcolor="#fef3c7"];
+"propose" [label="Propose fallback for the\nsame operation", shape="box", fillcolor="#f1f5f9"];
+"authority" [label="Execution identity grants\nno extra caller entitlement", shape="box", fillcolor="#f1f5f9"];
+"authorize" [label="Fallback permitted for\noriginal caller under\npolicy?", shape="diamond", fillcolor="#e0ecf8"];
+"stop-fallback" [label="Stop; no protected data", shape="box", fillcolor="#fef3c7"];
+"execute" [label="Execute only permitted\nscoped fallback", shape="box", fillcolor="#f1f5f9"];
+"response" [label="Return only caller-\npermitted data", shape="box", fillcolor="#dcfce7"];
+"failure" -> "access-denial" [label=""];
+"access-denial" -> "stop-denial" [label="Yes"];
+"access-denial" -> "recoverable" [label="No"];
+"recoverable" -> "stop-failure" [label="No or unknown"];
+"recoverable" -> "propose" [label="Yes"];
+"propose" -> "authority" [label=""];
+"authority" -> "authorize" [label=""];
+"authorize" -> "stop-fallback" [label="Denied or indeterminate"];
+"authorize" -> "execute" [label="Permitted"];
+"execute" -> "response" [label=""];
+}

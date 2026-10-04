@@ -98,6 +98,14 @@ Access to one contributing source never supplies permission for another. Require
 
 [Evidence and metadata](../data/diagrams/combined-view-source-authorization.json) · [Mermaid source](../diagrams/combined-view-source-authorization.mmd) · [DOT source](../diagrams/combined-view-source-authorization.dot)
 
+## Preserve the original caller's authority through fallbacks
+
+![A failure retains the caller, action and resource. Explicit access denial stops without protected data. A known recoverable operational failure may propose a fallback, but execution identity adds no caller entitlement. Application policy must permit the fallback for the original caller before a scoped execution returns only caller-permitted data. Denied or indeterminate decisions stop.](../diagrams/fallback-requester-authorization.svg)
+
+Recovery must stay within the original caller's permissions. An access denial is a terminal result for this logical operation; a recoverable operational failure only permits consideration of a fallback. Evaluate that fallback under the caller's authority and application policy, regardless of the identity used to execute it. This editorial model connects the researcher's account of Instagram's privileged error handling with OWASP authorization guidance. It does not depict Instagram's architecture or documented patch. Separately authorized background work, permission freshness, revocation and distributed consistency are outside the model.
+
+[Evidence and metadata](../data/diagrams/fallback-requester-authorization.json) · [Mermaid source](../diagrams/fallback-requester-authorization.mmd) · [DOT source](../diagrams/fallback-requester-authorization.dot)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:
