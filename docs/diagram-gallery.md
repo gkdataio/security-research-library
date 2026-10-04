@@ -74,6 +74,19 @@ Editorial conceptual model combining the Angular case with SLSA build guidance\.
 
 [Canonical graph and provenance](<../data/diagrams/build-artifact-provenance-boundary.json>) · [Mermaid source](<../diagrams/build-artifact-provenance-boundary.mmd>) · [DOT source](<../diagrams/build-artifact-provenance-boundary.dot>)
 
+<a id="combined-view-source-authorization"></a>
+## Combined views preserve every source's access boundary
+
+![A caller requests a combined view using required source A and required source B\. Each source has its own authorization decision for that caller\. Either No denies the combined view without protected source data\. Both Yes decisions are required at an explicit AND gate before composition\. Field selection preserves each source’s field permissions, and only permitted data is returned\.](../diagrams/combined-view-source-authorization.svg)
+
+Original conceptual model for a view that requires multiple independently protected sources\. Permission to use one source cannot authorize another source\. The convergence is an AND requirement: both source decisions must permit the requesting actor before composition\. GitHub’s comparison disclosure supports the cross-repository boundary; Frappe’s linked-document disclosure supports independent document permissions and field selection\. OWASP provides the general per-request and deny-by-default guidance\. The graph assumes an all-or-nothing response contract\. Applications supporting partial results need a separately specified non-disclosing omission policy\. Field selection remains a distinct requirement even when every source check permits access\. This is not either vendor’s architecture or patch implementation\. Snapshot consistency, permission-change races and inference from combined values are outside this model\.
+
+**Related reports**
+
+- [GitHub comparison output lacked source-repository authorization](<reports/github-cross-repository-comparison-authorization-2025.md>)
+
+[Canonical graph and provenance](<../data/diagrams/combined-view-source-authorization.json>) · [Mermaid source](<../diagrams/combined-view-source-authorization.mmd>) · [DOT source](<../diagrams/combined-view-source-authorization.dot>)
+
 <a id="error-diagnostic-disclosure-boundary"></a>
 ## Failures need separate public and diagnostic contracts
 

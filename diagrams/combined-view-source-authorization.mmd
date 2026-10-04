@@ -1,0 +1,21 @@
+flowchart TB
+  source-a["Required source A and its access policy"]
+  caller["Caller requests a combined view"]
+  source-b["Required source B and its access policy"]
+  authorize-a{"Caller permitted to use source A?"}
+  authorize-b{"Caller permitted to use source B?"}
+  deny-a["Deny combined view; no protected source data"]
+  compose["AND: both checks permit; compose view"]
+  deny-b["Deny combined view; no protected source data"]
+  project["Select fields permitted from each source"]
+  response["Return only permitted data"]
+  source-a --> authorize-a
+  caller --> authorize-a
+  caller --> authorize-b
+  source-b --> authorize-b
+  authorize-a -->|No| deny-a
+  authorize-b -->|No| deny-b
+  authorize-a -->|Yes| compose
+  authorize-b -->|Yes| compose
+  compose --> project
+  project --> response

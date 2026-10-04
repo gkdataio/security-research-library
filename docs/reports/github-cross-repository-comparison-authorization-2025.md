@@ -53,6 +53,10 @@ Reviewed: 2026-10-03T05:30:46Z. Freshly read public GitHub summary and award/dis
 - Release availability, report resolution and detailed publication have different dates\.
 - Cash receipt is unverified; later platform-wide USD policy is contextual denomination evidence\.
 
+## Related conceptual diagrams
+
+- [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>)
+
 ## Sources and attribution
 
 - [GitHub HackerOne report 3124517](<https://hackerone.com/reports/3124517>) — GitHub security team and furbreeze; retrieved 2026-10-03T05:30:46Z.

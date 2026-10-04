@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "id": "combined-view-source-authorization",
+  "title": "Combined views preserve every source's access boundary",
+  "alt_text": "A caller requests a combined view using required source A and required source B. Each source has its own authorization decision for that caller. Either No denies the combined view without protected source data. Both Yes decisions are required at an explicit AND gate before composition. Field selection preserves each source’s field permissions, and only permitted data is returned.",
+  "diagram_type": "defensive_data_flow",
+  "interpretation": "Original conceptual model for a view that requires multiple independently protected sources. Permission to use one source cannot authorize another source. The convergence is an AND requirement: both source decisions must permit the requesting actor before composition. GitHub’s comparison disclosure supports the cross-repository boundary; Frappe’s linked-document disclosure supports independent document permissions and field selection. OWASP provides the general per-request and deny-by-default guidance. The graph assumes an all-or-nothing response contract. Applications supporting partial results need a separately specified non-disclosing omission policy. Field selection remains a distinct requirement even when every source check permits access. This is not either vendor’s architecture or patch implementation. Snapshot consistency, permission-change races and inference from combined values are outside this model.",
+  "linked_report_ids": [
+    "github-cross-repository-comparison-authorization-2025"
+  ],
+  "linked_resource_ids": [
+    "frappe-2026-linked-document-response-authorization",
+    "owasp-authorization-cheat-sheet"
+  ],
+  "evidence_urls": [
+    "https://docs.github.com/en/enterprise-server@3.17/admin/release-notes#3.17.5",
+    "https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/",
+    "https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html"
+  ],
+  "reviewed_at": "2026-10-04T07:15:00Z",
+  "source_graph": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "source-a",
+        "label": "Required source A and its access policy",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "caller",
+        "label": "Caller requests a combined view",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "source-b",
+        "label": "Required source B and its access policy",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "authorize-a",
+        "label": "Caller permitted to use source A?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "authorize-b",
+        "label": "Caller permitted to use source B?",
+        "shape": "diamond",
+        "kind": "decision"
+      },
+      {
+        "id": "deny-a",
+        "label": "Deny combined view; no protected source data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "compose",
+        "label": "AND: both checks permit; compose view",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "deny-b",
+        "label": "Deny combined view; no protected source data",
+        "shape": "box",
+        "kind": "denied"
+      },
+      {
+        "id": "project",
+        "label": "Select fields permitted from each source",
+        "shape": "box",
+        "kind": "data"
+      },
+      {
+        "id": "response",
+        "label": "Return only permitted data",
+        "shape": "box",
+        "kind": "allowed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "source-a",
+        "to": "authorize-a",
+        "label": null
+      },
+      {
+        "from": "caller",
+        "to": "authorize-a",
+        "label": null
+      },
+      {
+        "from": "caller",
+        "to": "authorize-b",
+        "label": null
+      },
+      {
+        "from": "source-b",
+        "to": "authorize-b",
+        "label": null
+      },
+      {
+        "from": "authorize-a",
+        "to": "deny-a",
+        "label": "No"
+      },
+      {
+        "from": "authorize-b",
+        "to": "deny-b",
+        "label": "No"
+      },
+      {
+        "from": "authorize-a",
+        "to": "compose",
+        "label": "Yes"
+      },
+      {
+        "from": "authorize-b",
+        "to": "compose",
+        "label": "Yes"
+      },
+      {
+        "from": "compose",
+        "to": "project",
+        "label": null
+      },
+      {
+        "from": "project",
+        "to": "response",
+        "label": null
+      }
+    ]
+  },
+  "files": {
+    "mermaid": "diagrams/combined-view-source-authorization.mmd",
+    "graphviz": "diagrams/combined-view-source-authorization.dot",
+    "svg": "diagrams/combined-view-source-authorization.svg"
+  },
+  "rendering": {
+    "renderer": "Graphviz dot 2.42.4",
+    "mermaid_engine_executed": false,
+    "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+    "visual_qa": "passed"
+  },
+  "content_scope": "conceptual_defensive_model"
+}

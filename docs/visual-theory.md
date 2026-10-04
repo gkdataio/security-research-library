@@ -90,6 +90,14 @@ Failure paths need explicit disclosure rules too. Give clients a minimal respons
 
 [Evidence and metadata](../data/diagrams/error-diagnostic-disclosure-boundary.json) · [Mermaid source](../diagrams/error-diagnostic-disclosure-boundary.mmd)
 
+## Preserve every source’s access boundary in a combined view
+
+![A caller requests a combined view. Source A and source B each have an independent authorization decision. Either denial stops the combined view. An explicit AND gate requires both permissions before composition; field selection preserves each source’s field permissions before only permitted data is returned.](../diagrams/combined-view-source-authorization.svg)
+
+Access to one contributing source never supplies permission for another. Require both source decisions to permit the caller, then preserve each source’s field restrictions in the response. This all-or-nothing model connects GitHub’s cross-repository comparison disclosure with Frappe’s linked-document response disclosure and OWASP authorization guidance. Partial results require a separately specified non-disclosing omission policy. Snapshot consistency, permission-change races and inference from combined values are outside this model.
+
+[Evidence and metadata](../data/diagrams/combined-view-source-authorization.json) · [Mermaid source](../diagrams/combined-view-source-authorization.mmd) · [DOT source](../diagrams/combined-view-source-authorization.dot)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:

@@ -57,6 +57,7 @@ No additional caveats recorded; this is not a completeness or security guarantee
 
 - [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>)
 - [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>)
+- [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>)
 
 ## Sources and attribution
 

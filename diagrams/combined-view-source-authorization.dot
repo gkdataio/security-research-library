@@ -1,0 +1,26 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Combined views preserve every source's access boundary"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"source-a" [label="Required source A and its\naccess policy", shape="box", fillcolor="#f1f5f9"];
+"caller" [label="Caller requests a combined\nview", shape="box", fillcolor="#f1f5f9"];
+"source-b" [label="Required source B and its\naccess policy", shape="box", fillcolor="#f1f5f9"];
+"authorize-a" [label="Caller permitted to use\nsource A?", shape="diamond", fillcolor="#e0ecf8"];
+"authorize-b" [label="Caller permitted to use\nsource B?", shape="diamond", fillcolor="#e0ecf8"];
+"deny-a" [label="Deny combined view; no\nprotected source data", shape="box", fillcolor="#fef3c7"];
+"compose" [label="AND: both checks permit;\ncompose view", shape="box", fillcolor="#f1f5f9"];
+"deny-b" [label="Deny combined view; no\nprotected source data", shape="box", fillcolor="#fef3c7"];
+"project" [label="Select fields permitted\nfrom each source", shape="box", fillcolor="#f1f5f9"];
+"response" [label="Return only permitted data", shape="box", fillcolor="#dcfce7"];
+"source-a" -> "authorize-a" [label=""];
+"caller" -> "authorize-a" [label=""];
+"caller" -> "authorize-b" [label=""];
+"source-b" -> "authorize-b" [label=""];
+"authorize-a" -> "deny-a" [label="No"];
+"authorize-b" -> "deny-b" [label="No"];
+"authorize-a" -> "compose" [label="Yes"];
+"authorize-b" -> "compose" [label="Yes"];
+"compose" -> "project" [label=""];
+"project" -> "response" [label=""];
+}

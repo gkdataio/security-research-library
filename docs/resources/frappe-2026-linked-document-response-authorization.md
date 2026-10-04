@@ -55,6 +55,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Reported January 19, 2026; maintainer advisory published April 7; detailed research published April 24\. Fix-release dates were not established by the reviewed sources\.
 - The byline is Man Yue Mo\. Discovery is credited to GitHub Security Lab Taskflow Agent, with human review by Peter Stöckli and Man Yue Mo\. Learning prerequisites are editorial\.
 
+## Related conceptual diagrams
+
+- [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>)
+
 ## Sources and attribution
 
 - [GHSL-2026-012: Unauthorized Data Exposure via REST API Link Expansion in Frappe - CVE-2026-39351](<https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/>) — GitHub Security Lab; source ID: research; provenance: official primary; retrieved 2026-10-03T07:10:00Z; supports: summary, dates.
