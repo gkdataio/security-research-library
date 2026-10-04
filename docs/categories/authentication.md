@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 42 related resources · 4 diagrams
+**Vulnerability family** · 16 reports · 43 related resources · 4 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -77,6 +77,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Identity.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<../resources/usenix-2025-tls-resumption-identity-isolation.md>) — topic: Identity.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<../resources/usenix-2025-integration-platform-oauth-bindings.md>) — topic: Identity.
+- [Vercel React Router: session identity must not select unrestricted storage authority](<../resources/vercel-react-router-2026-session-storage-key-authority.md>) — topic: Identity.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

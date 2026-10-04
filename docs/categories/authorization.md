@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 79 related resources · 10 diagrams
+**Vulnerability family** · 34 reports · 80 related resources · 10 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -130,6 +130,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Umbraco: editing an account does not authorize assigning every role](<../resources/umbraco-2026-group-assignment-authority.md>) — topic: Authorization.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<../resources/usenix-2025-integration-platform-oauth-bindings.md>) — topic: Authorization.
 - [Vendure: payment child objects must inherit order channel authority](<../resources/vendure-2026-payment-child-object-channel-authority.md>) — topic: Authorization.
+- [Vercel React Router: session identity must not select unrestricted storage authority](<../resources/vercel-react-router-2026-session-storage-key-authority.md>) — topic: Authorization.
 - [Vikunja: saved favorites must recheck current project access](<../resources/vikunja-2026-favorites-current-access-revalidation.md>) — topic: Authorization.
 - [Zammad: overridden serialization must preserve group authorization](<../resources/zammad-2026-asset-serialization-group-authorization.md>) — topic: Authorization.
 

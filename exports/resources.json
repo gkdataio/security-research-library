@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 120,
+    "resources": 122,
     "diagrams": 13
   },
   "taxonomy": {
@@ -4847,6 +4847,99 @@
         "The main user study used videos and screenshots and primarily U.S. participants; a separate ten-person interactive study is supportive but small. Self-report and sampling limitations remain.",
         "Developer acknowledgments and roadmap commitments do not establish completed remediation. Context-specific interface patterns and broader validation remain future work.",
         "Published in NDSS 2026 proceedings; the paper acknowledges anonymous reviewers. This is not a protocol-wide proof or a claim that all cross-device authentication is insecure."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nextjs-2026-response-metadata-representation-boundary",
+      "title": "Next.js: response metadata must preserve representation boundaries",
+      "publisher": "zhero_web_security",
+      "authors": [
+        "Rachid Allam (zhero;)",
+        "inzo_"
+      ],
+      "primary_url": "https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs",
+      "resource_type_id": "research-paper",
+      "topic_ids": [
+        "web-foundations",
+        "interpreter-boundaries"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "cache-artifact-isolation"
+      ],
+      "version": null,
+      "summary": "Researchers describe client-supplied metadata becoming authoritative response metadata through unusual middleware header copying. This changed how a dynamic App Router representation was interpreted; an external shared cache preserved the mismatch for later visitors. They report stored browser script execution in an anonymized production application. The core failure is a representation contract losing its integrity when request data controls response meaning.",
+      "defensive_use": "Keep ownership of response interpretation with the component that creates the body. Next.js documentation warns that copying incoming headers into responses can override framework expectations and recommends selective forwarding. Editorial lesson: review body format, response metadata and cache variation as one contract. Data safe for one consumer may be unsafe for another; persistence does not repair that mismatch. An application review should distinguish intended upstream request metadata from browser-facing response metadata and document which layer owns each decision.",
+      "prerequisites": [
+        "HTTP request and response metadata, content negotiation and shared-cache concepts",
+        "Basic server-rendered framework and browser interpretation concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public researcher article and supporting framework documentation."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "The article displays June 2026; no publication day is established."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-06",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "research",
+          "note": "The article displays June 2026; no publication day is established."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T16:19:24Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Researcher publication and framework guidance read. The documentation supports the general boundary warning, not independent confirmation of the reported production outcomes."
+      },
+      "sources": [
+        {
+          "id": "research",
+          "url": "https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs",
+          "title": "Re:CACHE: Next.js response-reflection research",
+          "publisher": "zhero_web_security",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T16:19:24Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "framework",
+          "url": "https://nextjs.org/docs/app/api-reference/functions/next-response#next",
+          "title": "NextResponse documentation: request forwarding and response headers",
+          "publisher": "Next.js",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T16:19:24Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires the described header-copying behavior, a dynamic representation and external caching. This is configuration-specific; the article does not establish a universal Next.js flaw.",
+        "The reported effect still requires a visitor to load affected content. The publication supplies no independently corroborated vendor incident account, verified fixed version or remediation date.",
+        "The unspecified five-figure award establishes neither an exact amount nor a currency. This resource does not qualify as an award-backed report."
       ],
       "content_scope": "defensive_education"
     },
@@ -10494,6 +10587,87 @@
         "The advisory lists versions below 3.7.3 as affected and 3.7.3 as patched. Release notes confirm channel enforcement and advise upgrading related packages together.",
         "michaelbromley published the advisory; squinard1478 and raysabee are credited reporters. No CVE is assigned on the reviewed page.",
         "The release rendering displays September 2 without a year; no complete patch-release date is asserted. Resource edition and its release date remain null."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "vercel-react-router-2026-session-storage-key-authority",
+      "title": "Vercel React Router: session identity must not select unrestricted storage authority",
+      "publisher": "Vercel",
+      "authors": [],
+      "primary_url": "https://github.com/vercel/vercel/security/advisories/GHSA-7wjf-49rm-77gx",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "security-token-design",
+        "authorization-modeling",
+        "untrusted-input-handling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "GHSA-7wjf-49rm-77gx describes incoming session identifiers being used as storage keys without validation. Constrained generation did not constrain values returning from the client. The maintainer reports read, overwrite and delete authority within the application's Vercel KV namespace when @vercel/react-router 1.0.1 through 1.3.3 uses the optional KV session adapter with unsigned session cookies.",
+      "defensive_use": "The maintainer lists 1.3.4 as fixed. Editorial lesson: distinguish identifier unpredictability, integrity of client-returned state, storage selection and authorization for each storage operation. A securely generated identifier does not prove that a later input was generated by the server. Keep session storage isolated from unrelated application state, validate the accepted identifier contract and require integrity protection appropriate to the session design. These are defensive principles, not a verified description of the patch implementation.",
+      "prerequisites": [
+        "Server-side session stores and cookie integrity concepts",
+        "Key-value namespaces and operation-specific authorization concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer security advisory."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-08-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication date; not an established software release or remediation date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-08-28",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Advisory publication date; not an established software release or remediation date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T16:19:24Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Maintainer advisory read. Affected and patched software versions are distinct from the unknown edition of this educational publication."
+      },
+      "sources": [
+        {
+          "id": "maintainer",
+          "url": "https://github.com/vercel/vercel/security/advisories/GHSA-7wjf-49rm-77gx",
+          "title": "Vercel React Router KV session-storage advisory GHSA-7wjf-49rm-77gx",
+          "publisher": "Vercel",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T16:19:24Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The optional KV adapter and unsigned-cookie configuration are both required. The advisory does not establish exposure in every React Router application, platform-wide access or cross-customer access.",
+        "No production incident, reward, finder, verified patch implementation or 1.3.4 release date is established by the reviewed advisory. It lists no known CVE. The publishing account is not treated as an author or finder.",
+        "The linked filesystem-session advisory concerns a separate storage implementation; its mechanics and impact are not imported into this record."
       ],
       "content_scope": "defensive_education"
     },

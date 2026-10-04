@@ -194,3 +194,7 @@ The collection links these resources without copying exercises, payloads, or ope
 - [Stripe webhooks: authentic delivery and business-state integrity](https://docs.stripe.com/webhooks): Separate authenticated delivery from event identity, ordering and committed business effects. [Readable record](resources/stripe-webhook-delivery-state-integrity.md)
 
 - [Permissions Policy: embedded feature authority](resources/w3c-permissions-policy-embedded-feature-authority.md): study inherited capability restrictions and the limits of frame-policy observation using a clearly labeled W3C editor's draft.
+
+- [Next.js: response metadata must preserve representation boundaries](resources/nextjs-2026-response-metadata-representation-boundary.md): Study how client metadata, response interpretation and shared caching cross distinct trust boundaries. The record separates a configuration-specific researcher account from supporting framework guidance. [Structured record](../data/resources/nextjs-2026-response-metadata-representation-boundary.json)
+
+- [Vercel React Router: session identity must not select unrestricted storage authority](resources/vercel-react-router-2026-session-storage-key-authority.md): Study why unpredictable identifier generation does not establish integrity when that identifier returns from a client, and why identity, storage selection and operation authority need separate controls. [Structured record](../data/resources/vercel-react-router-2026-session-storage-key-authority.json)
