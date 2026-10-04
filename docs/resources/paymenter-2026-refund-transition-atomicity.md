@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/paymenter-2026-refund-transition-atomicity.json>) · [Official resource](<https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7>)
 
 **Publisher:** Paymenter  
-**Authors:** CorwinDev  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
@@ -51,7 +51,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 - Affected versions are listed as 1\.5\.6 and earlier\. The reported scenario requires an authenticated customer and an active service eligible for downgrade\.
 - The maintainer reports excess spendable credit and potential operator loss, but supplies no production incident or independently measured loss\. This review does not establish deployment exposure\.
-- CorwinDev published the advisory and is credited for remediation; Pig-Tail is credited as reporter\. The advisory assigns CVE-2026-71537\.
+- The advisory header identifies CorwinDev as the publishing account, and Credits lists Pig-Tail as Reporter and CorwinDev as Remediation developer\. The reviewed advisory provides no explicit article byline; these publication and credit roles do not establish article authorship\. The advisory assigns CVE-2026-71537\.
 - The release page displays July 25 without a year in the reviewed rendering\. No full patch-release date is asserted\. Resource edition and version-release date remain null\.
 
 ## Sources and attribution
