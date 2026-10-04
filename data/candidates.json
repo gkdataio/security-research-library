@@ -4,13 +4,14 @@
   "excluded_candidates": [
     {
       "title": "Meta customer-support authorization issue",
-      "reported_reward": "$78,000",
+      "reported_reward": "XX,XXX USD (masked in reviewed primary article); $78,000 remains an unverified reported figure",
       "researcher": "Rony K Roy",
       "primary_technical_url": "https://whiteauth.com/2026/07/17/broken-access-control-in-meta-com-support-infrastructure/",
-      "primary_technical_status": "403 Forbidden in retrieval; no indexed text found",
+      "primary_technical_status": "Primary researcher article reviewed in browser after redirect to ?i=1; published July 17, 2026. The researcher reports initial discovery/reporting in January 2026 and completed remediation in April 2026. Text retrieval still returned 403.",
       "primary_reward_corroboration_url": "https://in.linkedin.com/in/ronykroy",
       "secondary_locator_url": "https://www.securityweek.com/meta-pays-78000-bounty-for-vulnerability-exposing-customer-support-data/",
-      "reason_not_counted": "Researcher's LinkedIn confirms a $78,000 bounty but technical source unavailable. SecurityWeek explicitly says Meta had not confirmed the claims. Leave out of strictly primary technical dataset until researcher source can be reviewed."
+      "reason_not_counted": "The reviewed primary article confirms an award but masks it as XX,XXX USD. The $78,000 LinkedIn claim remains search-index-only: direct profile retrieval failed and the browser reached an authentication wall. No exact individual award amount is established by reviewed primary evidence, so this candidate remains excluded. Report and remediation dates are researcher-reported, not independently vendor-confirmed.",
+      "reviewed_at": "2026-10-04T06:44:41Z"
     },
     {
       "title": "GitHub Copilot approval race and AI integration issue",
