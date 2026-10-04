@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 43 related resources · 4 diagrams
+**Vulnerability family** · 16 reports · 44 related resources · 4 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -60,6 +60,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Identity.
 - [Nhost: provider adapters must preserve identity-claim evidence](<../resources/nhost-2026-provider-claim-verification-provenance.md>) — topic: Identity.
 - [NIST SP 800-162: attribute authority and policy traceability](<../resources/nist-sp-800-162-attribute-authority-modeling.md>) — topic: Identity.
+- [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<../resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — topic: Identity.
 - [Obot: preserve delegated token audience and consent boundaries](<../resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — topic: Identity.
 - [Open WebUI: credentials must bind to their destination connection](<../resources/open-webui-2026-connection-credential-capture.md>) — topic: Identity.
 - [Open WebUI: preserve role-policy meaning across identity flows](<../resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — topic: Identity.

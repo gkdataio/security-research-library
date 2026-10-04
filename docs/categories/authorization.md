@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 80 related resources · 10 diagrams
+**Vulnerability family** · 34 reports · 81 related resources · 10 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -98,6 +98,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Nhost: provider adapters must preserve identity-claim evidence](<../resources/nhost-2026-provider-claim-verification-provenance.md>) — topic: Authorization.
 - [NIST SP 800-162: attribute authority and policy traceability](<../resources/nist-sp-800-162-attribute-authority-modeling.md>) — topic: Authorization.
 - [Nuxt: rendered-data caches must preserve request authorization](<../resources/nuxt-2026-rendered-payload-cache-authorization.md>) — topic: Authorization.
+- [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<../resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — topic: Authorization.
 - [Obot: preserve delegated token audience and consent boundaries](<../resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — topic: Authorization.
 - [Open WebUI: credentials must bind to their destination connection](<../resources/open-webui-2026-connection-credential-capture.md>) — topic: Authorization.
 - [Open WebUI: preserve role-policy meaning across identity flows](<../resources/open-webui-2026-role-claim-provenance-and-revocation.md>) — topic: Authorization.
