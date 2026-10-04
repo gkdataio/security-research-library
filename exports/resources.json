@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 117,
+    "resources": 118,
     "diagrams": 12
   },
   "taxonomy": {
@@ -2659,6 +2659,109 @@
         "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
         "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
         "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-aip-151-operation-completion-integrity",
+      "title": "Google long-running operations: cancellation requests and completion evidence",
+      "publisher": "Google",
+      "authors": [],
+      "primary_url": "https://google.aip.dev/151",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "business-logic",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "concurrency-reasoning",
+        "integration-threat-modeling",
+        "error-response-design"
+      ],
+      "version": null,
+      "summary": "Google's approved long-running-operation guidance separates failures before work starts from failures during execution. Its linked Operation contract distinguishes best-effort cancellation, terminal outcomes and deletion of the tracking resource. Work may finish despite a cancellation request; a returned wait response can still describe pending work.",
+      "defensive_use": "Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects.",
+      "prerequisites": [
+        "Basic asynchronous API and application state-machine concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "The official AIP and linked first-party operation contract were readable without sign-in."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication was not established. The Created header does not establish publication of the current text."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately dated educational edition was established."
+        },
+        "source_displayed": {
+          "value": "2025-02-04",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Newest displayed changelog entry, not publication or latest repository modification. The page's Created and Updated headers both show 2019-07-25."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T12:14:17Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official AIP, pinned operation contract and first-party error-guidance change reviewed. Maintained guidance without a numbered edition; the review date does not make it newly published guidance."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://google.aip.dev/151",
+          "title": "AIP-151: Long-running operations",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T12:11:47Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "operation-contract",
+          "url": "https://github.com/googleapis/googleapis/blob/1b141494162fee2993345d056cf709ebf1d0402c/google/longrunning/operations.proto",
+          "title": "Google long-running operation contract at reviewed revision",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T12:12:35Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "error-guidance-change",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/5209e64b26c564e020690273a1b9fd09e6598e9d",
+          "title": "AIP-151 error-propagation clarification commit",
+          "publisher": "Google AIP project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T12:14:09Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The linked contract says successful cancellation retains the operation with a CANCELLED error. Deleting the operation expresses disinterest in its result and does not cancel execution.",
+        "The done field marks completion, not success; the outcome can be failure or cancellation. Some services may omit result data, so missing results must not be treated as proof of success.",
+        "Neither reviewed source guarantees rollback of prior effects or specifies a universal authorization policy for reading, cancelling or deleting operations. Authorization is therefore not assigned as a topic.",
+        "The 2025-02-04 changelog entry was committed on 2025-02-07. These maintenance signals and the 2019-07-25 page headers are distinct from publication or edition-release dates.",
+        "These are Google API contracts and design guidance, not universal asynchronous-API guarantees, an implementation audit, vulnerability claim, bounty evidence or testing authorization."
       ],
       "content_scope": "defensive_education"
     },
