@@ -7,7 +7,8 @@
   "primary_url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-hpcv-96wg-7vj8",
   "resource_type_id": "maintainer-advisory",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "interpreter-boundaries"
   ],
   "skillset_ids": [
     "untrusted-input-handling",

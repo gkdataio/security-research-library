@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Interpreter Boundaries  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
 
 ## Original summary
