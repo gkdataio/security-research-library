@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 118,
+    "resources": 119,
     "diagrams": 12
   },
   "taxonomy": {
@@ -7659,6 +7659,101 @@
         "The documented serializable protection does not extend to hot standby or logical replicas; deployment boundaries matter.",
         "Unique-key and exclusion-constraint errors can be persistent rather than transient; they do not justify blanket retries. Retrying does not guarantee eventual completion.",
         "This is conceptual defensive education, not a vulnerability finding, testing authorization or executable concurrency recipe."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "privacycg-storage-access-permission-activation-boundary",
+      "title": "Storage Access API: permission, document activation and cookie eligibility",
+      "publisher": "Privacy Community Group",
+      "authors": [
+        "Benjamin VanderSloot",
+        "Johann Hofmann",
+        "Anne van Kesteren"
+      ],
+      "primary_url": "https://privacycg.github.io/storage-access/",
+      "resource_type_id": "technical-standard",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling"
+      ],
+      "version": "Draft Community Group Report, 22 May 2026",
+      "summary": "The API draft distinguishes permission for the top-level and embedded site pair from activated access in a document and cookie eligibility on each request. Secure context, origin, embedding-policy and sandbox conditions still apply. Navigation and redirects constrain continuity; a document's access does not authorize arbitrary cross-origin cookie attachment. The companion Headers draft adds resource-controlled activation of an existing permission, independently of permission to read cross-origin responses.",
+      "defensive_use": "Editorial guidance: model permission, document access and request eligibility separately. Review denial, revocation and navigation paths, minimize resource opt-in, and retain independent server authorization and CSRF defenses. Cookie availability does not establish authority for a business action.",
+      "prerequisites": [
+        "Same-site versus same-origin relationships, embedded documents and HTTP cookies"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly readable drafts."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date not established."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separately released edition established."
+        },
+        "source_displayed": {
+          "value": "2026-05-22",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "api-draft",
+          "note": "Displayed API draft date, not original publication or final-standard release."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T15:06:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed both evolving drafts and their relevant permission, request and security sections. No browser behavior testing."
+      },
+      "sources": [
+        {
+          "id": "api-draft",
+          "url": "https://privacycg.github.io/storage-access/",
+          "title": "The Storage Access API",
+          "publisher": "Privacy Community Group",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T15:04:39Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "headers-draft",
+          "url": "https://privacycg.github.io/storage-access-headers/",
+          "title": "Storage Access Headers",
+          "publisher": "Privacy Community Group",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T15:04:34Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Both publications are Draft Community Group Reports. The API draft is outside W3C's standards track and is not a WHATWG Living Standard. The technical-standard taxonomy includes drafts; listed authors are the API's current editors.",
+        "The companion Headers draft displays 17 December 2025. Its opt-in uses an existing grant; it does not create initial permission. Cookie attachment and CORS response readability remain separate decisions.",
+        "Document activation here means enabled storage access, distinct from a user gesture. A stored permission alone does not establish current document access; the API considers revocation and masks denied permission-query state.",
+        "This record focuses on HTTP cookies. Non-cookie extensions, browser parity and deployed conformance are not established by this review."
       ],
       "content_scope": "defensive_education"
     },

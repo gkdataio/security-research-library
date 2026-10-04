@@ -4,14 +4,14 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-118 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+119 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [Ai Security](<#topic-ai-security>) — 11 resources.
-- [Authorization](<#topic-authorization>) — 72 resources.
+- [Authorization](<#topic-authorization>) — 73 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 31 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 39 resources.
@@ -20,7 +20,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
 - [Verification](<#topic-verification>) — 23 resources.
-- [Web Foundations](<#topic-web-foundations>) — 54 resources.
+- [Web Foundations](<#topic-web-foundations>) — 55 resources.
 
 <a id="topic-ai-security"></a>
 ## Ai Security
@@ -42,7 +42,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-72 resources.
+73 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -109,6 +109,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
+- [Storage Access API: permission, document activation and cookie eligibility](<resources/privacycg-storage-access-permission-activation-boundary.md>) — Privacy Community Group.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
 - [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab.
@@ -276,7 +277,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-web-foundations"></a>
 ## Web Foundations
 
-54 resources.
+55 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
@@ -322,6 +323,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
+- [Storage Access API: permission, document activation and cookie eligibility](<resources/privacycg-storage-access-permission-activation-boundary.md>) — Privacy Community Group.
 - [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera.
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.

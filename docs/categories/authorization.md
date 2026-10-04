@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 77 related resources · 9 diagrams
+**Vulnerability family** · 34 reports · 78 related resources · 9 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -123,6 +123,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Spree: guest ownership still requires an authorization proof](<../resources/spree-2026-guest-order-authorization-proof.md>) — topic: Authorization.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<../resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — topic: Authorization.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<../resources/usenix-2025-tls-resumption-identity-isolation.md>) — topic: Authorization.
+- [Storage Access API: permission, document activation and cookie eligibility](<../resources/privacycg-storage-access-permission-activation-boundary.md>) — topic: Authorization.
 - [Sylius: component integrity does not authorize referenced objects](<../resources/sylius-2026-component-argument-object-authorization.md>) — topic: Authorization.
 - [Sylius: order ownership does not confer payment-operation authority](<../resources/sylius-2026-payment-action-authority.md>) — topic: Authorization.
 - [Umbraco: editing an account does not authorize assigning every role](<../resources/umbraco-2026-group-assignment-authority.md>) — topic: Authorization.
