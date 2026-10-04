@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 76 related resources · 9 diagrams
+**Vulnerability family** · 34 reports · 77 related resources · 9 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -88,6 +88,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [LobeHub: knowledge-base membership changes require ownership authorization](<../resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — topic: Authorization.
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Authorization.
+- [Microsoft Graph batching: preserve each member authorization outcome](<../resources/microsoft-graph-batch-member-authorization-outcomes.md>) — topic: Authorization.
 - [MLflow: authorization must survive alternate resource interfaces](<../resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — topic: Authorization.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Authorization.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Authorization.
