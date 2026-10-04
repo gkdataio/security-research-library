@@ -4,14 +4,14 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-125 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+126 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [Ai Security](<#topic-ai-security>) — 12 resources.
-- [Authorization](<#topic-authorization>) — 77 resources.
+- [Authorization](<#topic-authorization>) — 78 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 32 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 42 resources.
@@ -43,7 +43,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-77 resources.
+78 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -102,6 +102,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<resources/pac4j-2026-token-authenticity-enforcement.md>) — CodeAnt AI.
+- [Payload: request adapters must retain caller-level authorization](<resources/payload-2026-local-api-caller-authority.md>) — jhb-software / Payload plugins.
 - [Paymenter: refund entitlement and ledger changes need one atomic transition](<resources/paymenter-2026-refund-transition-atomicity.md>) — Paymenter.
 - [Permissions Policy: inherited browser-feature authority across embedded documents](<resources/w3c-permissions-policy-embedded-feature-authority.md>) — World Wide Web Consortium.
 - [Prowler SAML: retain validated tenant authority](<resources/prowler-2026-saml-tenant-issuance-binding.md>) — Prowler.

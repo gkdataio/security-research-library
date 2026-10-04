@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 82 related resources · 10 diagrams
+**Vulnerability family** · 34 reports · 83 related resources · 10 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -113,6 +113,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [OWASP Session Management: privilege-transition integrity](<../resources/owasp-session-privilege-transition-integrity.md>) — topic: Authorization.
 - [OWASP Transaction Authorization](<../resources/owasp-transaction-authorization-state-integrity.md>) — topic: Authorization; diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>).
 - [pac4j JWT validation: confidentiality does not establish authenticity](<../resources/pac4j-2026-token-authenticity-enforcement.md>) — topic: Authorization.
+- [Payload: request adapters must retain caller-level authorization](<../resources/payload-2026-local-api-caller-authority.md>) — topic: Authorization.
 - [Paymenter: refund entitlement and ledger changes need one atomic transition](<../resources/paymenter-2026-refund-transition-atomicity.md>) — topic: Authorization.
 - [Permissions Policy: inherited browser-feature authority across embedded documents](<../resources/w3c-permissions-policy-embedded-feature-authority.md>) — topic: Authorization.
 - [Prowler SAML: retain validated tenant authority](<../resources/prowler-2026-saml-tenant-issuance-binding.md>) — topic: Authorization.
