@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0.0",
+  "id": "microsoft-copilot-2026-streaming-output-activation-boundary",
+  "title": "SearchLeak: streamed output needs policy enforcement before browser activation",
+  "publisher": "Varonis Threat Labs",
+  "authors": [
+    "Dolev Taler"
+  ],
+  "primary_url": "https://www.varonis.com/blog/searchleak",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "ai-security",
+    "web-foundations",
+    "interpreter-boundaries"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "untrusted-input-handling",
+    "concurrency-reasoning"
+  ],
+  "version": null,
+  "summary": "SearchLeak (CVE-2026-42824) illustrates a timing gap between streamed AI output becoming active in a browser and final-response sanitization. Varonis reports email-subject disclosure in a larger chain containing this failure. Cleaning the completed response cannot reverse effects that already occurred.",
+  "defensive_use": "Define output-safety invariants for every observable intermediate state, not just the completed answer. Keep generated content inert until applicable policy checks have passed. Review rendering and data-disclosure boundaries together; a clean final display is insufficient evidence that no earlier side effect occurred.",
+  "prerequisites": [
+    "Browser rendering, sanitization and content-security-policy concepts",
+    "AI output trust boundaries and ordering of security checks"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public researcher article and Microsoft-authored CNA record."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The catalog lists June 15, 2026, but does not distinguish original publication from later updating."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition is established."
+    },
+    "source_displayed": {
+      "value": "2026-06-15",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher",
+      "note": "The article labels this date as last updated."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-04T19:43:06Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Researcher article, publisher catalog and Microsoft CNA record read. Microsoft's direct advisory returned a JavaScript shell; vendor corroboration here comes from the CNA record. No behavior was independently reproduced."
+  },
+  "sources": [
+    {
+      "id": "researcher",
+      "url": "https://www.varonis.com/blog/searchleak",
+      "title": "SearchLeak: How We Turned M365 Copilot Into a One-Click Data Exfiltration Weapon",
+      "publisher": "Varonis Threat Labs",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T19:41:28Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "publisher-catalog",
+      "url": "https://www.varonis.com/blog/all",
+      "title": "Varonis Blog catalog: SearchLeak entry",
+      "publisher": "Varonis",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T19:41:39Z",
+      "supports": [
+        "dates"
+      ]
+    },
+    {
+      "id": "microsoft-cna",
+      "url": "https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/42xxx/CVE-2026-42824.json",
+      "title": "Microsoft CNA record for CVE-2026-42824",
+      "publisher": "Microsoft via CVE Program",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-04T19:42:30Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The reported conditions require affected enterprise search, relevant content accessible to the victim and the victim opening a supplied link. This resource isolates the timing boundary; disclosure also depended on additional weaknesses.",
+    "Wider indexed-content exposure depends on the victim's access. Account takeover is a proposed consequence, not a demonstrated result in this record.",
+    "Varonis says Microsoft patched the issue. The exact fix date and implementation are not established by the reviewed evidence.",
+    "The Microsoft CNA record corroborates network information disclosure requiring user interaction and identifies an exclusively hosted service. It supplies no usable affected-version range. Its CWE-77 classification does not establish operating-system command execution.",
+    "The CNA's June 4, 2026 public-disclosure date and September 24 update date describe the vulnerability record, not this article's publication or remediation chronology.",
+    "No individual award amount or affected-victim count is established. This educational record grants no testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}

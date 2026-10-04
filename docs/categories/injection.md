@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 12 reports · 9 related resources · 3 diagrams
+**Vulnerability family** · 12 reports · 10 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -38,6 +38,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [Next\.js: response metadata must preserve representation boundaries](<../resources/nextjs-2026-response-metadata-representation-boundary.md>) — topic: Interpreter Boundaries.
 - [Python subprocess: executable, argument, and interpreter boundaries](<../resources/python-subprocess-interpreter-boundaries.md>) — topic: Interpreter Boundaries.
+- [SearchLeak: streamed output needs policy enforcement before browser activation](<../resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — topic: Interpreter Boundaries.
 - [Serialize JavaScript: every serialized field must retain data semantics](<../resources/serialize-javascript-2026-output-code-boundary.md>) — topic: Interpreter Boundaries.
 - [SLSA v1\.2: supply-chain security and build provenance](<../resources/slsa-v1-2-supply-chain-build-provenance.md>) — diagram: [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>).
 
