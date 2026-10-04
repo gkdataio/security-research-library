@@ -5497,9 +5497,7 @@
       "id": "open-webui-2026-realtime-revocation-consistency",
       "title": "Open WebUI: revocation must cross HTTP and realtime boundaries",
       "publisher": "Open WebUI",
-      "authors": [
-        "doge-woof"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -5570,7 +5568,7 @@
       "caveats": [
         "Applies to Redis-backed versions 0.9.0 through versions before 0.10.0 and requires possession of an otherwise valid revoked token. Without Redis, per-token invalidation is unsupported by design.",
         "Realtime disclosure and impersonation are maintainer-described consequences; broader production exploitation is not established. Terminal access additionally depends on terminal configuration; HTTP remains protected.",
-        "Existing-connection termination is not established. The source credits huslayer826 as reporter and Classic298 as coordinator. Separate from the catalog's role-claim provenance advisory."
+        "Existing-connection termination is not established. The advisory identifies doge-woof as the publishing account and credits huslayer826 as Reporter and Classic298 as Coordinator. The reviewed advisory provides no explicit article byline; these publication and credit roles do not establish article authorship. Separate from the catalog's role-claim provenance advisory."
       ],
       "content_scope": "defensive_education"
     },
