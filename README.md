@@ -44,7 +44,7 @@ Source-backed public disclosures, official learning resources, and original diag
 
 **Collection counts: October 4, 2026; program snapshots and report recency: October 3, 2026**
 
-- **66 qualifying report records:** 55 bug-bounty awards and 11 explicitly labeled competition entries
+- **67 qualifying report records:** 56 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
 - **627 observed public bounty candidates** across Bugcrowd, HackerOne and Intigriti; 591 have published asset-scope rows captured, and five Bugcrowd category listings have unconfirmed paid status
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
@@ -52,7 +52,7 @@ Source-backed public disclosures, official learning resources, and original diag
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
 - **129 educational resources** and **14 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
-- **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
+- **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 33 older; 9 with unknown original publication dates
 
 These counts describe the collection at the dates above. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
@@ -267,6 +267,7 @@ For prose pages with evidence and related diagrams, use the [readable report ind
 | [YouTube and Pixel Recorder exposed cross-product identity links](data/reports/youtube-pixel-recorder-identity-privacy-2025.json) | USD 10,633 | 2025-02-12 (historical) | Researcher reported |
 | [GraphQL object authorization exposed private-program metadata](data/reports/hackerone-private-program-graphql-object-authorization-2025.json) | USD 25,000 | 2025-01-21 (historical) | Vendor confirmed |
 | [LiteSpeed Cache privileged user simulation relied on weak security tokens](data/reports/litespeed-cache-user-simulation-authentication-2024.json) | USD 14,400 (Zero Day component) | 2024-08-21 (historical) | Platform confirmed |
+| [GitHub unsafe reflection crossed method and credential boundaries](data/reports/github-reflection-method-authority-cve-2024-0200.json) | USD 75,000 (contextually inferred currency) | 2024-05-06 (historical) | Vendor confirms payment |
 | [Bard Workspace integration weakened output-data boundaries](data/reports/google-bard-workspace-output-boundary-2024.json) | USD 20,000 | 2024-03-04 (historical) | Researcher reported |
 | [GitHub runner-image builds shared persistent infrastructure with untrusted workflows](data/reports/github-runner-image-build-isolation-2023.json) | USD 20,000 | 2023-12-20 (historical) | Researcher reports payment |
 | [Instagram embedding fallback changed the authorization context](data/reports/instagram-embedding-privileged-fallback-2023.json) | USD 14,500 (including bonuses) | 2023-10-12 (historical) | Researcher reported |

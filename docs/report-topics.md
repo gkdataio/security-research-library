@@ -4,7 +4,7 @@
 
 Generated offline from canonical primary and secondary category IDs and the report taxonomy. These historical disclosures are separate from educational resources and grant no testing authorization.
 
-66 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
+67 distinct award-backed reports across 11 taxonomy categories. A report can appear under several categories; overlapping memberships do not increase the distinct report count. Category counts must not be added to count reports.
 
 Each entry labels its primary or secondary category membership. Categories and reports are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy categories are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -16,8 +16,8 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [Business logic and concurrency](<#category-business-logic>) — 14 distinct reports.
 - [Client and browser security](<#category-client-security>) — 20 distinct reports.
 - [Cloud permissions and isolation](<#category-cloud-security>) — 15 distinct reports.
-- [Information exposure and response privacy](<#category-information-exposure>) — 4 distinct reports.
-- [Injection and untrusted input](<#category-injection>) — 12 distinct reports.
+- [Information exposure and response privacy](<#category-information-exposure>) — 5 distinct reports.
+- [Injection and untrusted input](<#category-injection>) — 13 distinct reports.
 - [Memory safety and parser contracts](<#category-memory-safety>) — 10 distinct reports.
 - [Server-side request trust](<#category-server-request-trust>) — 1 distinct report.
 - [Software supply-chain security](<#category-supply-chain>) — 6 distinct reports.
@@ -167,17 +167,18 @@ Each entry labels its primary or secondary category membership. Categories and r
 <a id="category-information-exposure"></a>
 ## Information exposure and response privacy
 
-4 distinct reports.
+5 distinct reports.
 
 - [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>) — Meta \(Facebook\); primary category.
 - [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>) — HackerOne; primary category.
+- [GitHub unsafe reflection crossed method and credential boundaries](<reports/github-reflection-method-authority-cve-2024-0200.md>) — GitHub; secondary category.
 - [HackerOne exports omitted internal-attachment authorization](<reports/hackerone-export-attachment-authorization-2016.md>) — HackerOne; secondary category.
 - [Instagram client configuration exposed an application credential](<reports/instagram-application-credential-client-containment-2022.md>) — Meta; primary category.
 
 <a id="category-injection"></a>
 ## Injection and untrusted input
 
-12 distinct reports.
+13 distinct reports.
 
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — Google; secondary category.
 - [Bard Workspace integration weakened output-data boundaries](<reports/google-bard-workspace-output-boundary-2024.md>) — Google; secondary category.
@@ -185,6 +186,7 @@ Each entry labels its primary or secondary category membership. Categories and r
 - [Facebook SDK message authentication relied on insecure randomness](<reports/facebook-sdk-message-authentication-randomness-2023.md>) — Meta; secondary category.
 - [Gemini-to-Colab rendering boundary exposed Workspace data](<reports/google-gemini-colab-rendering-boundary-2025.md>) — Google; secondary category.
 - [GitHub package-source trust allowed dependency confusion](<reports/github-ruby-dependency-confusion-2025.md>) — GitHub; secondary category.
+- [GitHub unsafe reflection crossed method and credential boundaries](<reports/github-reflection-method-authority-cve-2024-0200.md>) — GitHub; primary category.
 - [Google IDX worker messaging crossed browser trust boundaries](<reports/google-idx-worker-message-trust-2025.md>) — Google; secondary category.
 - [Kestrel HTTP framing differed across proxy and application boundaries](<reports/microsoft-kestrel-http-framing-consistency-2025.md>) — Microsoft; primary category.
 - [Meta Conversions API Gateway mixed configuration data with executable output](<reports/meta-conversions-gateway-generated-script-boundary-2025.md>) — Meta; primary category.

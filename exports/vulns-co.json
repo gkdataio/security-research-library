@@ -2,7 +2,7 @@
   "schema_version": "1.2.0",
   "dataset": "security-research-library",
   "as_of": "2026-10-03",
-  "latest_reviewed_at": "2026-10-04T14:44:04Z",
+  "latest_reviewed_at": "2026-10-04T23:34:10Z",
   "purpose": "Historical public-disclosure research and defensive skill development for authorized reviews",
   "inclusion_policy": {
     "minimum_individual_award": 10000,
@@ -15,10 +15,10 @@
     "payloads_and_reproduction_steps_excluded": true
   },
   "counts": {
-    "included": 66,
+    "included": 67,
     "within_preferred_window": 25,
-    "older_or_uncertain": 41,
-    "bug_bounty": 55,
+    "older_or_uncertain": 42,
+    "bug_bounty": 56,
     "competition_award": 11
   },
   "downstream_compatibility": "Portable research export only. A vulns.co ingestion contract has not been supplied or validated; no ingestion or deployment is performed.",
@@ -6514,6 +6514,211 @@
           "Exact award and payment dates are absent. The recorded component is not the later reported total.",
           "The advisory describes Windows-specific limitations.",
           "The disclosed patch added token checks and lifetime controls; the researcher’s recommended random-generator improvement was deferred for compatibility."
+        ]
+      },
+      "content_scope": "historical_defensive_summary"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "github-reflection-method-authority-cve-2024-0200",
+      "title": "GitHub unsafe reflection crossed method and credential boundaries",
+      "organization": "GitHub",
+      "product": "GitHub.com and GitHub Enterprise Server",
+      "researchers": [
+        "Ngo Wei Lin (Creastery), STAR Labs"
+      ],
+      "cve_ids": [
+        "CVE-2024-0200"
+      ],
+      "cwe_mappings": [],
+      "category_id": "injection",
+      "secondary_category_ids": [
+        "information-exposure"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secrets-containment",
+        "patch-verification",
+        "defensive-evidence-writing"
+      ],
+      "summary": "A historical unsafe-reflection finding exposed production-container credentials on GitHub.com. GitHub's award retrospective links its highest single paid reward of 2023 to the incident notice. The researcher later published technical analysis and separately described GHES execution impact. This 2024 disclosure remains useful in 2026 for reviewing input-to-operation authority, runtime secret containment and deployment-specific evidence.",
+      "root_cause": "Externally controlled method selection was insufficiently restricted to intended operations. The researcher traces this unsafe reflection to a boundary where selection data acquired internal application authority; the GHES advisory corroborates the weakness class. Authentication and organization ownership limited reachability but did not make unrestricted operation selection safe.",
+      "impact": "GitHub confirms production-container credential exposure and assessed with high confidence that the issue had not been previously exploited and impact was isolated to the researcher. The researcher separately reports GHES code-execution potential; GitHub's GHES advisory corroborates that impact class and requires an authenticated organization-owner account. These sources do not establish code execution on GitHub.com. No secret values or private victim data are retained.",
+      "defensive_takeaways": [
+        "Constrain dynamic operation selection to an explicit permitted set, with authorization for the selected operation rather than relying only on the caller's authenticated role.",
+        "Minimize secrets available to each process and define narrow response-data contracts so an unexpected internal result cannot disclose ambient credentials.",
+        "Treat credential exposure as requiring coordinated rotation and dependency review; design recovery procedures that limit disruption.",
+        "For 2026 framework reviews, assess input-to-operation authority separately from input format and keep hosted-service observations distinct from self-managed deployment impact."
+      ],
+      "reward": {
+        "amount": 75000,
+        "currency": "USD",
+        "scope": "single_vulnerability",
+        "status": "paid",
+        "evidence_level": "vendor_confirmed",
+        "source_id": "award-retrospective",
+        "evidence_quote": "We paid out our highest single reward to date in 2023—at $75,000!",
+        "evidence_location": "Decade milestones, item 9. The words 'our highest single reward' link directly to the January 16, 2024 incident notice.",
+        "usd_equivalent": null,
+        "notes": "One vendor-reported paid reward linked to this incident, not a program ceiling or total. USD is a contextual inference: the award source uses $ only. GitHub's January 9, 2017 program article, updated June 25, 2021, explicitly uses USD; HackerOne's guidelines version 1.3, updated July 27, 2026, also specify USD. These earlier program-wide and later platform-wide statements are not contemporaneous 2023 payment evidence and do not independently prove this award's currency or settlement. No conflicting denomination was found in the reviewed sources. The retrospective establishes the amount and payment year; no separate award is inferred for the follow-up GHES impact.",
+        "type": "bug_bounty",
+        "awarding_organization": "GitHub"
+      },
+      "dates": {
+        "published": {
+          "value": "2024-05-06",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "researcher",
+          "note": "Detailed researcher publication and coordinated technical disclosure."
+        },
+        "public_disclosure": {
+          "value": "2024-01-16",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-incident",
+          "note": "Vendor incident notice; distinct from the later detailed researcher publication."
+        },
+        "reported": {
+          "value": "2023-12-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-incident",
+          "note": "Initial report. The researcher timeline separately dates the GHES execution-impact follow-up to December 28, 2023."
+        },
+        "awarded": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The distinct award-decision date is not established; it is not substituted with the report or payment year."
+        },
+        "fixed": {
+          "value": "2023-12-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-incident",
+          "note": "GitHub.com fix only. The vendor incident notice and GHES release notes date GHES patches to January 16, 2024."
+        },
+        "paid": {
+          "value": "2023",
+          "precision": "year",
+          "basis": "explicit",
+          "source_id": "award-retrospective",
+          "note": "Vendor explicitly says the single reward was paid in 2023; exact payment day and independent settlement evidence are unavailable."
+        },
+        "award_announced": {
+          "value": "2024-06-11",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "award-retrospective",
+          "note": "Publication date of the reviewed award retrospective, updated July 23, 2024; the earliest announcement date is not established."
+        },
+        "mitigated": {
+          "value": "2023-12-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "vendor-incident",
+          "note": "Credential rotation began after the GitHub.com fix; this is not a rotation-completion date."
+        }
+      },
+      "recency": {
+        "as_of": "2026-10-03",
+        "window_start": "2025-10-03",
+        "within_preferred_window": false,
+        "basis": "published",
+        "note": "Historical 2024 detailed publication outside the preferred window. Classified against the existing October 3, 2026 inventory anchor; this addition is not a new vulnerability disclosure."
+      },
+      "sources": [
+        {
+          "id": "researcher",
+          "url": "https://www.creastery.com/blog/sending-myself-github-com-environment-variables-and-ghes-shell/",
+          "title": "GitHub.com's Environment Variables & GHES Shell",
+          "type": "researcher",
+          "author": "Ngo Wei Lin (Creastery)",
+          "retrieved_at": "2026-10-04T23:31:13Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "award-retrospective",
+          "url": "https://github.blog/security/vulnerability-research/10-years-of-the-github-security-bug-bounty-program/",
+          "title": "10 years of the GitHub Security Bug Bounty Program",
+          "type": "vendor",
+          "author": "Jill Moné-Corallo / GitHub",
+          "retrieved_at": "2026-10-04T23:30:54Z",
+          "supports": [
+            "reward",
+            "dates"
+          ]
+        },
+        {
+          "id": "vendor-incident",
+          "url": "https://github.blog/news-insights/company-news/rotating-credentials-for-github-com-and-new-ghes-patches/",
+          "title": "Rotating credentials for GitHub.com and new GHES patches",
+          "type": "vendor",
+          "author": "Jacob DePriest / GitHub",
+          "retrieved_at": "2026-10-04T23:31:32Z",
+          "supports": [
+            "dates",
+            "impact",
+            "remediation"
+          ]
+        },
+        {
+          "id": "ghes-release",
+          "url": "https://docs.github.com/en/enterprise-server@3.11/admin/release-notes#3.11.3",
+          "title": "GitHub Enterprise Server 3.11.3 release notes",
+          "type": "vendor",
+          "author": "GitHub",
+          "retrieved_at": "2026-10-04T23:32:32Z",
+          "supports": [
+            "dates",
+            "root_cause",
+            "impact",
+            "remediation",
+            "cve"
+          ]
+        },
+        {
+          "id": "historical-currency-context",
+          "url": "https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/",
+          "title": "Bug Bounty anniversary promotion: bigger bounties in January and February",
+          "type": "vendor",
+          "author": "Neil Matatall / GitHub",
+          "retrieved_at": "2026-10-04T23:32:32Z",
+          "supports": [
+            "reward"
+          ]
+        },
+        {
+          "id": "platform-currency-context",
+          "url": "https://www.hackerone.com/terms/disclosure-guidelines",
+          "title": "Vulnerability Disclosure Guidelines (Vulnerability Disclosure Standards)",
+          "type": "platform",
+          "author": "HackerOne",
+          "retrieved_at": "2026-10-04T23:32:47Z",
+          "supports": [
+            "reward"
+          ]
+        }
+      ],
+      "primary_source_id": "researcher",
+      "verification": {
+        "status": "included",
+        "reviewed_at": "2026-10-04T23:34:10Z",
+        "method": "Read six public primary sources. Followed the vendor retrospective's single-reward link to the incident notice, reconciled its researcher credit with the linked researcher account and GHES advisory, and separately checked contextual denomination evidence. Promoted the prior 'GitHub highest single award in 2023' candidate after resolving technical attribution and contextual-currency gaps. No target interaction or exploit reproduction.",
+        "limitations": [
+          "Payment is vendor-reported, not an independently audited bank transfer. Exact award-decision and payment days are unknown.",
+          "USD denomination is contextual inference from non-contemporaneous official evidence; neither currency-context source establishes the individual amount or settlement.",
+          "The researcher describes the GHES execution-impact extension separately from the GitHub.com credential-exposure observation. The precise GHES demonstration and implementation details are not independently verified here.",
+          "GitHub's assessment of no earlier exploitation is the vendor's investigation conclusion, not an independent guarantee.",
+          "The record summarizes a patched historical case; review in 2026 does not imply current exposure or grant testing authorization."
         ]
       },
       "content_scope": "historical_defensive_summary"

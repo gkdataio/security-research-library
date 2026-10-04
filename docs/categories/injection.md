@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 12 reports · 11 related resources · 3 diagrams
+**Vulnerability family** · 13 reports · 11 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -19,6 +19,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 - [Facebook SDK message authentication relied on insecure randomness](<../reports/facebook-sdk-message-authentication-randomness-2023.md>) — Meta; secondary category.
 - [Gemini-to-Colab rendering boundary exposed Workspace data](<../reports/google-gemini-colab-rendering-boundary-2025.md>) — Google; secondary category.
 - [GitHub package-source trust allowed dependency confusion](<../reports/github-ruby-dependency-confusion-2025.md>) — GitHub; secondary category.
+- [GitHub unsafe reflection crossed method and credential boundaries](<../reports/github-reflection-method-authority-cve-2024-0200.md>) — GitHub; primary category.
 - [Google IDX worker messaging crossed browser trust boundaries](<../reports/google-idx-worker-message-trust-2025.md>) — Google; secondary category.
 - [Kestrel HTTP framing differed across proxy and application boundaries](<../reports/microsoft-kestrel-http-framing-consistency-2025.md>) — Microsoft; primary category.
 - [Meta Conversions API Gateway mixed configuration data with executable output](<../reports/meta-conversions-gateway-generated-script-boundary-2025.md>) — Meta; primary category.

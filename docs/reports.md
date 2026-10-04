@@ -18,6 +18,7 @@ Original defensive summaries with award provenance, distinct event dates and ver
 - [GitHub fork collaboration applied inconsistent authorization](<reports/github-fork-collaboration-authorization-2021.md>) — USD 20,000; bug\_bounty
 - [GitHub package-source trust allowed dependency confusion](<reports/github-ruby-dependency-confusion-2025.md>) — USD 20,000; bug\_bounty
 - [GitHub runner-image builds shared persistent infrastructure with untrusted workflows](<reports/github-runner-image-build-isolation-2023.md>) — USD 20,000; bug\_bounty
+- [GitHub unsafe reflection crossed method and credential boundaries](<reports/github-reflection-method-authority-cve-2024-0200.md>) — USD 75,000; bug\_bounty
 - [GitLab recovery delivery lacked verified-address binding](<reports/gitlab-recovery-address-binding-cve-2023-7028.md>) — USD 35,000; bug\_bounty
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>) — USD 10,000; bug\_bounty
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>) — USD 31,337; bug\_bounty

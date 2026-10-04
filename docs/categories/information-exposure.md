@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 4 reports · 4 related resources · 2 diagrams
+**Vulnerability family** · 5 reports · 4 related resources · 2 diagrams
 
 Unintended disclosure through error responses, diagnostics and output contracts.
 
@@ -15,6 +15,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 
 - [Facebook error responses exposed unintended application data](<../reports/facebook-error-response-data-isolation-2019.md>) — Meta \(Facebook\); primary category.
 - [Framework serialization change exposed private HackerOne user attributes](<../reports/hackerone-report-json-serialization-data-exposure-2025.md>) — HackerOne; primary category.
+- [GitHub unsafe reflection crossed method and credential boundaries](<../reports/github-reflection-method-authority-cve-2024-0200.md>) — GitHub; secondary category.
 - [HackerOne exports omitted internal-attachment authorization](<../reports/hackerone-export-attachment-authorization-2016.md>) — HackerOne; secondary category.
 - [Instagram client configuration exposed an application credential](<../reports/instagram-application-credential-client-containment-2022.md>) — Meta; primary category.
 
