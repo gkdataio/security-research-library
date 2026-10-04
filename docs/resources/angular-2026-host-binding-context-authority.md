@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/angular-2026-host-binding-context-authority.json>) · [Official resource](<https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg>)
 
 **Publisher:** Angular  
-**Authors:** alan-agius4  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations  
@@ -51,7 +51,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 ## Caveats
 
 - Exposure depends on attacker-influenced values reaching affected security-sensitive host bindings and a mismatch between compile-time and concrete-element context\. Composition alone does not prove exploitability\.
-- SkyZeroZx published the linked issue on June 27, 2026; the advisory separately credits that account for remediation\. The August 18 date describes the selected maintainer publication, not the earliest public discussion or a product release\.
+- SkyZeroZx published the linked issue on June 27, 2026; the advisory credits SkyZeroZx as Remediation developer, and alan-agius4, josephperrott and JeanMeche as Remediation reviewers\. GitHub identifies alan-agius4 as the publishing account\. The reviewed advisory has no explicit narrative byline, so authors is empty; publication and remediation credits do not by themselves establish who wrote the narrative\. The August 18 date describes the selected maintainer publication, not the earliest public discussion or a product release\.
 - The maintainer suggests explicit sanitization or safe-scheme restriction as workarounds\. Their applicability depends on the actual sink; the reviewed issue identifies stricter resource-loading and HTML contexts\. This caveat is editorial defensive guidance, not a claim that the maintainer workaround was independently tested\.
 - The issue explains a minimal case but links its runnable reproduction elsewhere\. No reproduction was run, and observed exploit outcomes are not independently established\.
 

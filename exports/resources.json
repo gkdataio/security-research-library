@@ -204,9 +204,7 @@
       "id": "angular-2026-host-binding-context-authority",
       "title": "Angular host bindings: bind sanitization to the concrete output element",
       "publisher": "Angular",
-      "authors": [
-        "alan-agius4"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -286,7 +284,7 @@
       ],
       "caveats": [
         "Exposure depends on attacker-influenced values reaching affected security-sensitive host bindings and a mismatch between compile-time and concrete-element context. Composition alone does not prove exploitability.",
-        "SkyZeroZx published the linked issue on June 27, 2026; the advisory separately credits that account for remediation. The August 18 date describes the selected maintainer publication, not the earliest public discussion or a product release.",
+        "SkyZeroZx published the linked issue on June 27, 2026; the advisory credits SkyZeroZx as Remediation developer, and alan-agius4, josephperrott and JeanMeche as Remediation reviewers. GitHub identifies alan-agius4 as the publishing account. The reviewed advisory has no explicit narrative byline, so authors is empty; publication and remediation credits do not by themselves establish who wrote the narrative. The August 18 date describes the selected maintainer publication, not the earliest public discussion or a product release.",
         "The maintainer suggests explicit sanitization or safe-scheme restriction as workarounds. Their applicability depends on the actual sink; the reviewed issue identifies stricter resource-loading and HTML contexts. This caveat is editorial defensive guidance, not a claim that the maintainer workaround was independently tested.",
         "The issue explains a minimal case but links its runnable reproduction elsewhere. No reproduction was run, and observed exploit outcomes are not independently established."
       ],
@@ -847,9 +845,7 @@
       "id": "authlib-2026-error-path-redirect-authority",
       "title": "Authlib: error responses must preserve redirect-destination validation",
       "publisher": "Authlib",
-      "authors": [
-        "azmeuk"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -931,7 +927,7 @@
       "caveats": [
         "Exposure requires an affected server supporting implicit or hybrid OIDC grants; the advisory excludes code-only configurations from this variant. Authentication is unnecessary, but browser redirection requires user interaction. Phishing consequences are possible downstream harm, not demonstrated account compromise.",
         "The advisory identifies 1.6.12 and 1.7.1 as patched. Software versions are not resource editions; exact patch-release dates remain unrecorded.",
-        "azmeuk published the advisory; y011d4 is credited as reporter. No bounty qualification or independent reproduction is established."
+        "azmeuk published the advisory; y011d4 is credited as Reporter. The reviewed advisory has no explicit narrative byline, so authors is empty; publication and reporting credits do not by themselves establish who wrote the narrative. No bounty qualification or independent reproduction is established."
       ],
       "content_scope": "defensive_education"
     },

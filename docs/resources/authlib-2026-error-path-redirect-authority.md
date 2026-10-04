@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/authlib-2026-error-path-redirect-authority.json>) · [Official resource](<https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2>)
 
 **Publisher:** Authlib  
-**Authors:** azmeuk  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
@@ -51,7 +51,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 - Exposure requires an affected server supporting implicit or hybrid OIDC grants; the advisory excludes code-only configurations from this variant\. Authentication is unnecessary, but browser redirection requires user interaction\. Phishing consequences are possible downstream harm, not demonstrated account compromise\.
 - The advisory identifies 1\.6\.12 and 1\.7\.1 as patched\. Software versions are not resource editions; exact patch-release dates remain unrecorded\.
-- azmeuk published the advisory; y011d4 is credited as reporter\. No bounty qualification or independent reproduction is established\.
+- azmeuk published the advisory; y011d4 is credited as Reporter\. The reviewed advisory has no explicit narrative byline, so authors is empty; publication and reporting credits do not by themselves establish who wrote the narrative\. No bounty qualification or independent reproduction is established\.
 
 ## Sources and attribution
 
