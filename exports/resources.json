@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 114,
+    "resources": 115,
     "diagrams": 12
   },
   "taxonomy": {
@@ -2747,6 +2747,144 @@
         "The page's Created and Updated fields both display 2019-02-18, although its changelog includes 2025-07-08. The linked first-party commit corroborates that later edit; the header is not treated as the current text's last revision date.",
         "Query-argument consistency excludes page size: the guidance requires honoring a changed page size and recommends rejecting changes to other arguments. This contract does not establish snapshot isolation or a fixed collection across pages.",
         "Opaque token format does not establish permission. This guide supplies no incident, affected-product, bounty, or deployment-specific security claim."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-aip-161-update-field-authority",
+      "title": "Google API field masks: preserve server-owned and immutable state",
+      "publisher": "Google",
+      "authors": [],
+      "primary_url": "https://google.aip.dev/161",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "authorization",
+        "business-logic",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "untrusted-input-handling"
+      ],
+      "version": null,
+      "summary": "Google's Approved field-mask guidance defines which resource fields participate in an update. Services must ignore output-only input whether selected directly or through a containing field. Supporting field-behavior guidance says unchanged immutable values should be ignored, while requested changes should return INVALID_ARGUMENT. Its annotations describe behavior but add no validation themselves.",
+      "defensive_use": "Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts. Valid field selection does not establish permission to change it. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations.",
+      "prerequisites": [
+        "Basic familiarity with resource-oriented APIs, partial updates and access-control modeling"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public official Google API design and implementation guidance."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The pages' Created fields do not establish original publication of their current text."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No dated educational-resource edition is established for this living guidance."
+        },
+        "source_displayed": {
+          "value": "2023-10-18",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Newest displayed AIP-161 Changelog entry, concerning output-only fields in update masks. It is not original publication, an edition release or the current text's last revision date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T08:05:38Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed AIP-161 and supporting AIP-203/AIP-134, each shown as Approved, plus first-party commits distinguishing displayed changelog dates from later source maintenance. Documentation review only; no implementation was assessed."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://google.aip.dev/161",
+          "title": "AIP-161: Field masks",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:02:47Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "field-behavior",
+          "url": "https://google.aip.dev/203",
+          "title": "AIP-203: Field behavior documentation",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:02:58Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "standard-update",
+          "url": "https://google.aip.dev/134",
+          "title": "AIP-134: Standard methods: Update",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:02:58Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "output-only-change",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/9d73091cb8519085c695a0d1388f7e35ea9e0686",
+          "title": "AIP-161/AIP-203: converge output-only update-mask guidance",
+          "publisher": "Google AIP maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:04:34Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "field-mask-link-maintenance",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/ea79190087e673482c2579e6f38c9dbe5a287db2",
+          "title": "AIP-161: link to AIP-157",
+          "publisher": "Google AIP maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:04:34Z",
+          "supports": [
+            "dates"
+          ]
+        },
+        {
+          "id": "field-behavior-maintenance",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/1f058efe4558aabe605daaff13b0d18d4563707d",
+          "title": "AIP-203: clarify optional field presence and field behavior",
+          "publisher": "Google AIP maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T08:05:28Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "AIP-161's Created and Updated headers both show 2021-03-01. Its displayed output-only changelog date is 2023-10-18, while the corresponding first-party commit is timestamped 2023-10-19T15:57:39Z. A later 2025-03-28 commit added an AIP-157 link; neither header nor newest displayed changelog establishes the last source revision.",
+        "AIP-203's headers show 2018-07-17 and its newest displayed changelog entry is 2023-09-14, although a reviewed 2026-06-25 commit adds an optional-field clarification. AIP-134's headers show 2019-01-24 while its newest displayed changelog entry is 2025-10-03. These dates are not interchangeable publication or edition dates.",
+        "AIP-203 forbids an error merely because output-only input is present and requires it to be cleared or ignored. This differs from immutable input, for which unchanged values should be ignored and changes should cause a validation error. Nested field behavior is independent of its parent's annotation.",
+        "AIP-134 says generic updates should avoid side effects and state fields must not be directly writable through them. The separation of field selection from caller authorization is editorial synthesis; these AIPs' explicit rules concern field behavior and update semantics.",
+        "These are Google API design requirements, not universal protocol guarantees or proof that a particular service enforces them. This resource establishes no incident, affected deployment, bounty, exploitability or testing authorization."
       ],
       "content_scope": "defensive_education"
     },

@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 75 related resources · 9 diagrams
+**Vulnerability family** · 34 reports · 76 related resources · 9 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -75,6 +75,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Frappe: linked data must preserve document and field permissions](<../resources/frappe-2026-linked-document-response-authorization.md>) — topic: Authorization; diagram: [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>).
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<../resources/github-2026-internal-metadata-authority.md>) — topic: Authorization.
 - [Google AIP-158: pagination continuation does not grant resource authority](<../resources/google-aip-158-pagination-authorization-boundary.md>) — topic: Authorization.
+- [Google API field masks: preserve server-owned and immutable state](<../resources/google-aip-161-update-field-authority.md>) — topic: Authorization.
 - [GraphQL-Ruby: authorization exceptions must stop execution](<../resources/graphql-ruby-2026-authorization-exception-integrity.md>) — topic: Authorization.
 - [Grav API: account-disable enforcement across session authenticators](<../resources/grav-2026-session-account-state-revalidation.md>) — topic: Authorization.
 - [HotCRP: separate submission visibility from authorship authority](<../resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — topic: Authorization.
