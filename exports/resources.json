@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 115,
+    "resources": 116,
     "diagrams": 12
   },
   "taxonomy": {
@@ -2659,6 +2659,107 @@
         "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
         "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
         "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-aip-155-request-identity-contract",
+      "title": "Google API request identity: bind retry semantics to the logical operation",
+      "publisher": "Google",
+      "authors": [],
+      "primary_url": "https://google.aip.dev/155",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "business-logic",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "concurrency-reasoning",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "Google's Approved request-identification guidance makes supplied IDs an idempotency contract with service-defined retention. Duplicates should receive the prior success response; a documented exception permits current resource state. AWS's supporting article discusses caller-scoped identity, consistent response meaning, coordinated identity/effect recording and rejection of changed intent.",
+      "defensive_use": "Editorial synthesis: distinguish who may act, which logical operation is being repeated and what state was committed. Document identity scope, retention assumptions and response meaning. A request ID does not confer authority. Preventing duplicate effects does not guarantee eventual success or establish end-to-end exactly-once delivery. Keep each integration's completion and authorization responsibilities explicit.",
+      "prerequisites": [
+        "Basic familiarity with API requests, distributed failures and application state transitions"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public official API guidance and supporting architecture article."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The page's Created field does not establish publication of its current text."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No dated educational-resource edition is established for this living guidance."
+        },
+        "source_displayed": {
+          "value": "2024-01-08",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Newest displayed AIP-155 Changelog entry; not publication, an edition release or the corresponding commit date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T09:43:28Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the Approved AIP, its first-party changelog commit and the official AWS supporting article. Documentation review only; no implementation was assessed."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://google.aip.dev/155",
+          "title": "AIP-155: Request identification",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T09:41:55Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "retry-contract-guidance",
+          "url": "https://aws.amazon.com/builders-library/making-retries-safe-with-idempotent-APIs/",
+          "title": "Making retries safe with idempotent APIs",
+          "publisher": "Amazon Web Services",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T09:42:43Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "changelog-change",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/71f6491a997370b572d003536a1f7ad0e8c1c511",
+          "title": "AIP-155: correct the request message and add a changelog entry",
+          "publisher": "Google AIP maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T09:42:06Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "AIP-155 permits APIs to add request IDs and says they should be optional. The ID belongs to the request, not the resource. Its guarantees apply to the service's documented contract, not every API.",
+        "The current-state response exception applies when reproducing the historical success response is infeasible. Idempotent effects do not require byte-identical response data.",
+        "Caller scoping, changed-parameter rejection and coordinated identity/effect recording are AWS guidance, not explicit AIP-155 requirements. AWS describes service-dependent retention; it does not prescribe a universal lifetime.",
+        "AIP-155's Created and Updated headers both display 2019-05-06. The corresponding first-party commit is timestamped 2024-01-26T17:45:54Z but adds a 2024-01-08 changelog entry. These are distinct maintenance signals, not new 2026 guidance.",
+        "Authorization separation and completion limits are editorial synthesis. This resource establishes no incident, affected deployment, bounty, implementation correctness, current exposure or testing authorization."
       ],
       "content_scope": "defensive_education"
     },

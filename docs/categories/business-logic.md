@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 30 related resources · 3 diagrams
+**Vulnerability family** · 14 reports · 31 related resources · 3 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -40,6 +40,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Directus: denied mutations must leave dependent state unchanged](<../resources/directus-2026-preauthorization-side-effect-integrity.md>) — topic: Business Logic and State Integrity.
 - [File Browser: existing shares must follow current owner permissions](<../resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — topic: Business Logic and State Integrity.
 - [Google API field masks: preserve server-owned and immutable state](<../resources/google-aip-161-update-field-authority.md>) — topic: Business Logic and State Integrity.
+- [Google API request identity: bind retry semantics to the logical operation](<../resources/google-aip-155-request-identity-contract.md>) — topic: Business Logic and State Integrity.
 - [Grav API: account-disable enforcement across session authenticators](<../resources/grav-2026-session-account-state-revalidation.md>) — topic: Business Logic and State Integrity.
 - [HotCRP: separate submission visibility from authorship authority](<../resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — topic: Business Logic and State Integrity.
 - [Microsoft compensating transactions: recovery must preserve valid concurrent state](<../resources/microsoft-compensating-transaction-state-integrity.md>) — topic: Business Logic and State Integrity.
