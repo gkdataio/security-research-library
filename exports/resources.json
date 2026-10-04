@@ -6990,9 +6990,7 @@
       "id": "parse-server-2026-upload-metadata-consumer-boundary",
       "title": "Parse Server: preserve safe file interpretation across storage and browsers",
       "publisher": "Parse Community",
-      "authors": [
-        "mtrezza"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -7111,7 +7109,7 @@
         "Requires upload permission, a storage/delivery configuration retaining supplied metadata, and another user opening the uploaded object. Browser-side script execution is maintainer-reported; production exploitation, account takeover and server compromise are not established.",
         "The advisory lists affected ranges as <= 8.6.83 and >= 9.0.0, < 9.10.0-alpha.2. It identifies 8.6.84 and 9.10.0-alpha.2 as patched.",
         "The version-8 and version-9 remediation records show June 25, 2026 merges and releases; the version-9 stable release 9.10.0 is dated July 13, 2026. These are software events, not educational-resource editions.",
-        "CyberKareem is credited as finder and mtrezza as coordinator/advisory publisher. No CVE is listed on the reviewed advisory.",
+        "The advisory header identifies mtrezza as the publisher, and Credits lists CyberKareem as Finder and mtrezza as Coordinator. The reviewed advisory provides no explicit article-author byline, so the author field is left empty. No CVE is listed on the reviewed advisory.",
         "The version-9 correction validates supplied media types for unrecognized filename extensions when extension filtering is enabled; disabling that filtering also disables this validation. Well-formed custom types remain subject to configured restrictions. This does not establish that all accepted content is harmless.",
         "Learning prerequisites and the generalized consumer-contract lesson are editorial. No award claim is made."
       ],
