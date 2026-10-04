@@ -48,10 +48,15 @@
     },
     {
       "title": "GitHub highest single award in 2023",
-      "reported_reward": "USD 75,000; vendor confirms highest single payment",
+      "reported_reward": "$75,000; vendor confirms one paid award in 2023; USD denomination not verified",
+      "researcher": "Ngo Wei Lin (Creastery), STAR Labs",
       "primary_reward_corroboration_url": "https://github.blog/security/vulnerability-research/10-years-of-the-github-security-bug-bounty-program/",
-      "reason_not_counted": "The official retrospective confirms one paid award but does not identify its finding or provide enough technical context for a source-backed root-cause record. Do not associate secondary technical claims without a matching primary report.",
-      "reviewed_at": "2026-10-02T15:41:00Z"
+      "primary_technical_url": "https://www.creastery.com/blog/sending-myself-github-com-environment-variables-and-ghes-shell/",
+      "primary_vendor_corroboration_url": "https://github.blog/news-insights/company-news/rotating-credentials-for-github-com-and-new-ghes-patches/",
+      "primary_advisory_url": "https://docs.github.com/en/enterprise-server@3.11/admin/release-notes#3.11.3",
+      "primary_technical_status": "Reviewed primary-source chain resolves the technical attribution: the retrospective's highest-single-reward link points to the January 16, 2024 vendor incident notice, which credits Ngo Wei Lin of STAR Labs. Creastery's May 6, 2024 article links back to the same notice and identifies CVE-2024-0200. High-level root cause: externally controlled method selection was insufficiently restricted. GitHub.com production-container credential exposure is distinct from the GHES code-execution impact; the GHES 3.11.3 advisory confirms unsafe reflection and an authenticated organization-owner prerequisite. The vendor confirms reporting and the GitHub.com fix on December 26, 2023, followed by GHES patches on January 16, 2024. Exact award and payment days remain unknown. This is historical 2024 disclosure material, not a new vulnerability disclosure.",
+      "reason_not_counted": "The remaining inclusion gap is USD denomination: the reviewed award source uses only $ notation, and no additional authoritative denomination evidence has been verified for this candidate. Keep excluded until currency is supported under the data policy, labeling any contextual inference and temporal gap. The finding, researcher and paid individual-award attribution are now supported by the primary-source link chain; unknown exact award/payment days should remain unknown rather than be inferred from report, fix or publication dates.",
+      "reviewed_at": "2026-10-04T23:05:42Z"
     },
     {
       "title": "GitHub Enterprise repository migration authorization",
