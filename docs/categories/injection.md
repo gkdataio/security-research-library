@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 12 reports · 5 related resources · 3 diagrams
+**Vulnerability family** · 12 reports · 6 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -32,6 +32,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
+- [Django: ORM alias metadata must not acquire query authority](<../resources/django-2026-query-alias-structure-boundary.md>) — topic: Interpreter Boundaries.
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [Python subprocess: executable, argument, and interpreter boundaries](<../resources/python-subprocess-interpreter-boundaries.md>) — topic: Interpreter Boundaries.

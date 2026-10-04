@@ -2190,7 +2190,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "interpreter-boundaries"
       ],
       "skillset_ids": [
         "untrusted-input-handling",

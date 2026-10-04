@@ -8,7 +8,7 @@
 **Authors:** Jacob Walls  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
+**Topics:** Web Foundations; Verification; Interpreter Boundaries  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
 
 ## Original summary

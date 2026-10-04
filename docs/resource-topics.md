@@ -15,7 +15,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Business Logic and State Integrity](<#topic-business-logic>) — 26 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
 - [Identity](<#topic-identity>) — 39 resources.
-- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 1 resources.
+- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 2 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
@@ -206,8 +206,9 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-interpreter-boundaries"></a>
 ## Interpreter Boundaries
 
-1 resources.
+2 resources.
 
+- [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
 - [Python subprocess: executable, argument, and interpreter boundaries](<resources/python-subprocess-interpreter-boundaries.md>) — Python Software Foundation.
 
 <a id="topic-memory-safety"></a>
