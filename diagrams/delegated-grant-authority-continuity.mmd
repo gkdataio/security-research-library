@@ -1,0 +1,14 @@
+flowchart TB
+  approved-grant["Approved grant: subject, client, resources and actions"]
+  request["First issuance or renewal request"]
+  resolve["Resolve trusted grant context"]
+  check{"Correct grant/client AND requested authority within approval?"}
+  issue["Issue authority bounded by the approved grant"]
+  stop["Do not issue authority from this request"]
+  separate-decision["Changing approved authority needs a separate authorization decision"]
+  approved-grant -->|Required input| resolve
+  request -->|Required input| resolve
+  resolve --> check
+  check -->|Yes| issue
+  check -->|No or incomplete binding| stop
+  stop -->|If a different grant is needed| separate-decision

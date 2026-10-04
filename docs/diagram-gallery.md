@@ -87,6 +87,19 @@ Original conceptual model for a view that requires multiple independently protec
 
 [Canonical graph and provenance](<../data/diagrams/combined-view-source-authorization.json>) · [Mermaid source](<../diagrams/combined-view-source-authorization.mmd>) · [DOT source](<../diagrams/combined-view-source-authorization.dot>)
 
+<a id="delegated-grant-authority-continuity"></a>
+## Delegated authority stays within the approved grant
+
+![Approved grant context, including subject, client, permitted resources and actions, and a first-issuance or renewal request are both required inputs\. Resolve trusted grant context and check that the grant and client are correct and requested authority remains within approval\. Issue only bounded authority when all checks pass\. Do not issue on mismatch or incomplete binding\. Changing the approved authority requires a separate authorization decision; no automatic-consent loop is shown\.](../diagrams/delegated-grant-authority-continuity.svg)
+
+Original editorial defensive synthesis, not a vendor architecture, protocol sequence or independently verified patch\. The Google researcher describes lost client and permission binding through a device grant; proposed binding controls are not evidence of the deployed repair\. The n8n maintainer describes constrained first issuance but missing resource binding during refresh, with a stated repair that retains the binding and rejects mismatches\. It also calls for renewed authorization of older unbound grants\. RFC 9700 sections 2\.3 and 4\.14\.2 support restricted token authority and refresh grants bound to the consented scope and resource servers\. The graph abstracts one invariant shared by distinct first-issuance and refresh paths; it does not equate their protocol steps\. Both input arrows are required together, not alternative authorization paths\. Trusted context means authenticated, integrity-protected grant information and applicable client verification; no storage design is prescribed\. The subject's wider access and a client's registration are not extra authority delegated by this grant\. Within approval permits narrower issuance and authority added through a separately approved incremental decision; it does not require exact equality with every original permission\. Resources, audiences and actions have deployment-specific meanings\. Mismatched or incomplete binding cannot establish approval\. A separate authorization decision is needed to change approved authority, with no automatic consent or retry loop implied\. Revocation, concurrency, replay protection and consent usability are outside this model\.
+
+**Related reports**
+
+- [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>)
+
+[Canonical graph and provenance](<../data/diagrams/delegated-grant-authority-continuity.json>) · [Mermaid source](<../diagrams/delegated-grant-authority-continuity.mmd>) · [DOT source](<../diagrams/delegated-grant-authority-continuity.dot>)
+
 <a id="error-diagnostic-disclosure-boundary"></a>
 ## Failures need separate public and diagnostic contracts
 

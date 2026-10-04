@@ -1,0 +1,19 @@
+digraph diagram {
+rankdir=TB;
+graph [bgcolor="white", pad="0.35", ranksep="0.65", nodesep="0.5", fontname="DejaVu Sans", fontsize=20, labelloc=t, label="Delegated authority stays within the approved grant"];
+node [fontname="DejaVu Sans", fontsize=13, style="rounded,filled", color="#64748b", fillcolor="#f1f5f9", fontcolor="#172033", margin="0.20,0.16"];
+edge [fontname="DejaVu Sans", fontsize=11, color="#64748b", fontcolor="#334155"];
+"approved-grant" [label="Approved grant: subject,\nclient, resources and\nactions", shape="box", fillcolor="#f1f5f9"];
+"request" [label="First issuance or renewal\nrequest", shape="box", fillcolor="#f1f5f9"];
+"resolve" [label="Resolve trusted grant\ncontext", shape="box", fillcolor="#f1f5f9"];
+"check" [label="Correct grant/client AND\nrequested authority within\napproval?", shape="diamond", fillcolor="#e0ecf8"];
+"issue" [label="Issue authority bounded by\nthe approved grant", shape="box", fillcolor="#dcfce7"];
+"stop" [label="Do not issue authority from\nthis request", shape="box", fillcolor="#fef3c7"];
+"separate-decision" [label="Changing approved authority\nneeds a separate\nauthorization decision", shape="box", fillcolor="#f1f5f9"];
+"approved-grant" -> "resolve" [label="Required input"];
+"request" -> "resolve" [label="Required input"];
+"resolve" -> "check" [label=""];
+"check" -> "issue" [label="Yes"];
+"check" -> "stop" [label="No or incomplete binding"];
+"stop" -> "separate-decision" [label="If a different grant is needed"];
+}

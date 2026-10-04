@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 83 related resources · 10 diagrams
+**Vulnerability family** · 34 reports · 83 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -94,7 +94,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [MythicalDash: payment evidence must establish credit entitlement](<../resources/mythicaldash-2026-payment-evidence-entitlement.md>) — topic: Authorization.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Authorization.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Authorization.
-- [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Authorization.
+- [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Authorization; diagram: [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Next\.js data security: server authorization and client-visible data](<../resources/nextjs-server-client-data-security.md>) — topic: Authorization; diagram: [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>).
 - [Nhost: provider adapters must preserve identity-claim evidence](<../resources/nhost-2026-provider-claim-verification-provenance.md>) — topic: Authorization.
 - [NIST SP 800-162: attribute authority and policy traceability](<../resources/nist-sp-800-162-attribute-authority-modeling.md>) — topic: Authorization.
@@ -119,7 +119,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Prowler SAML: retain validated tenant authority](<../resources/prowler-2026-saml-tenant-issuance-binding.md>) — topic: Authorization.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Authorization.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<../resources/rfc-10017-browser-oauth-token-custody.md>) — topic: Authorization.
-- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>).
+- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>), [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Authorization.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Authorization.
 - [SLSA v1\.2: supply-chain security and build provenance](<../resources/slsa-v1-2-supply-chain-build-provenance.md>) — diagram: [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>).
@@ -147,6 +147,7 @@ Included only when the canonical diagram links at least one report in this categ
 - [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>)
 - [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>)
 - [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>)
+- [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>)
 - [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>)
 - [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>)
 - [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>)

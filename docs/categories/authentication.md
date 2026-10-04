@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 44 related resources · 4 diagrams
+**Vulnerability family** · 16 reports · 44 related resources · 5 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -57,7 +57,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Identity.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Identity.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Identity.
-- [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Identity.
+- [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Identity; diagram: [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Nhost: provider adapters must preserve identity-claim evidence](<../resources/nhost-2026-provider-claim-verification-provenance.md>) — topic: Identity.
 - [NIST SP 800-162: attribute authority and policy traceability](<../resources/nist-sp-800-162-attribute-authority-modeling.md>) — topic: Identity.
 - [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<../resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — topic: Identity.
@@ -72,7 +72,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Prowler SAML: retain validated tenant authority](<../resources/prowler-2026-saml-tenant-issuance-binding.md>) — topic: Identity.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Identity.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<../resources/rfc-10017-browser-oauth-token-custody.md>) — topic: Identity.
-- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — topic: Identity; diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>).
+- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — topic: Identity; diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>), [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Rocket\.Chat: authentication must await a completed verification decision](<../resources/rocketchat-2026-asynchronous-identity-verification.md>) — topic: Identity.
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Identity.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Identity.
@@ -87,6 +87,7 @@ Included only when the canonical diagram links at least one report in this categ
 
 - [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>)
 - [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>)
+- [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>)
 - [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>)
 - [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>)
 

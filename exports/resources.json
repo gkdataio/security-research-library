@@ -6,7 +6,7 @@
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
     "resources": 128,
-    "diagrams": 13
+    "diagrams": 14
   },
   "taxonomy": {
     "schema_version": "1.0.0",
@@ -12652,6 +12652,118 @@
         "mermaid": "diagrams/combined-view-source-authorization.mmd",
         "graphviz": "diagrams/combined-view-source-authorization.dot",
         "svg": "diagrams/combined-view-source-authorization.svg"
+      },
+      "rendering": {
+        "renderer": "Graphviz dot 2.42.4",
+        "mermaid_engine_executed": false,
+        "equivalence_basis": "Both source formats are generated from the same node/edge graph; SVG is rendered from Graphviz, not through a Mermaid engine.",
+        "visual_qa": "passed"
+      },
+      "content_scope": "conceptual_defensive_model"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "delegated-grant-authority-continuity",
+      "title": "Delegated authority stays within the approved grant",
+      "alt_text": "Approved grant context, including subject, client, permitted resources and actions, and a first-issuance or renewal request are both required inputs. Resolve trusted grant context and check that the grant and client are correct and requested authority remains within approval. Issue only bounded authority when all checks pass. Do not issue on mismatch or incomplete binding. Changing the approved authority requires a separate authorization decision; no automatic-consent loop is shown.",
+      "diagram_type": "defensive_data_flow",
+      "interpretation": "Original editorial defensive synthesis, not a vendor architecture, protocol sequence or independently verified patch. The Google researcher describes lost client and permission binding through a device grant; proposed binding controls are not evidence of the deployed repair. The n8n maintainer describes constrained first issuance but missing resource binding during refresh, with a stated repair that retains the binding and rejects mismatches. It also calls for renewed authorization of older unbound grants. RFC 9700 sections 2.3 and 4.14.2 support restricted token authority and refresh grants bound to the consented scope and resource servers. The graph abstracts one invariant shared by distinct first-issuance and refresh paths; it does not equate their protocol steps. Both input arrows are required together, not alternative authorization paths. Trusted context means authenticated, integrity-protected grant information and applicable client verification; no storage design is prescribed. The subject's wider access and a client's registration are not extra authority delegated by this grant. Within approval permits narrower issuance and authority added through a separately approved incremental decision; it does not require exact equality with every original permission. Resources, audiences and actions have deployment-specific meanings. Mismatched or incomplete binding cannot establish approval. A separate authorization decision is needed to change approved authority, with no automatic consent or retry loop implied. Revocation, concurrency, replay protection and consent usability are outside this model.",
+      "linked_report_ids": [
+        "google-device-authorization-client-scope-binding-2026"
+      ],
+      "linked_resource_ids": [
+        "n8n-2026-refresh-grant-resource-binding",
+        "rfc-9700-oauth-security-best-current-practice"
+      ],
+      "evidence_urls": [
+        "https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html",
+        "https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73",
+        "https://www.rfc-editor.org/rfc/rfc9700.html"
+      ],
+      "reviewed_at": "2026-10-04T20:44:00Z",
+      "source_graph": {
+        "direction": "TB",
+        "nodes": [
+          {
+            "id": "approved-grant",
+            "label": "Approved grant: subject, client, resources and actions",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "request",
+            "label": "First issuance or renewal request",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "resolve",
+            "label": "Resolve trusted grant context",
+            "shape": "box",
+            "kind": "data"
+          },
+          {
+            "id": "check",
+            "label": "Correct grant/client AND requested authority within approval?",
+            "shape": "diamond",
+            "kind": "decision"
+          },
+          {
+            "id": "issue",
+            "label": "Issue authority bounded by the approved grant",
+            "shape": "box",
+            "kind": "allowed"
+          },
+          {
+            "id": "stop",
+            "label": "Do not issue authority from this request",
+            "shape": "box",
+            "kind": "denied"
+          },
+          {
+            "id": "separate-decision",
+            "label": "Changing approved authority needs a separate authorization decision",
+            "shape": "box",
+            "kind": "data"
+          }
+        ],
+        "edges": [
+          {
+            "from": "approved-grant",
+            "to": "resolve",
+            "label": "Required input"
+          },
+          {
+            "from": "request",
+            "to": "resolve",
+            "label": "Required input"
+          },
+          {
+            "from": "resolve",
+            "to": "check",
+            "label": null
+          },
+          {
+            "from": "check",
+            "to": "issue",
+            "label": "Yes"
+          },
+          {
+            "from": "check",
+            "to": "stop",
+            "label": "No or incomplete binding"
+          },
+          {
+            "from": "stop",
+            "to": "separate-decision",
+            "label": "If a different grant is needed"
+          }
+        ]
+      },
+      "files": {
+        "mermaid": "diagrams/delegated-grant-authority-continuity.mmd",
+        "graphviz": "diagrams/delegated-grant-authority-continuity.dot",
+        "svg": "diagrams/delegated-grant-authority-continuity.svg"
       },
       "rendering": {
         "renderer": "Graphviz dot 2.42.4",

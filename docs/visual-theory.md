@@ -106,6 +106,14 @@ Recovery must stay within the original caller's permissions. An access denial is
 
 [Evidence and metadata](../data/diagrams/fallback-requester-authorization.json) · [Mermaid source](../diagrams/fallback-requester-authorization.mmd) · [DOT source](../diagrams/fallback-requester-authorization.dot)
 
+## Keep delegated authority within the approved grant
+
+![Approved grant context and a first-issuance or renewal request are both required. Resolve trusted context, then check the correct grant and client and whether requested authority stays within approval. Issue only bounded authority; mismatch or incomplete binding prevents issuance. Changing approved authority needs a separate authorization decision.](../diagrams/delegated-grant-authority-continuity.svg)
+
+A user's wider access and a client's registration do not enlarge the authority delegated by a particular grant. Preserve its subject, client and permission boundaries across first issuance and renewal, even when those paths have different protocol steps. This editorial synthesis connects the Google device-grant disclosure, n8n's refresh-resource advisory and RFC 9700 sections 2.3 and 4.14.2. Narrower issuance and separately approved incremental authority are compatible with the model. The graph assumes integrity-protected grant context and applicable client verification; it does not prescribe storage, depict vendor architecture or verify a deployed repair. Revocation, concurrency, replay protection and consent usability remain outside its scope.
+
+[Evidence and metadata](../data/diagrams/delegated-grant-authority-continuity.json) · [Mermaid source](../diagrams/delegated-grant-authority-continuity.mmd) · [DOT source](../diagrams/delegated-grant-authority-continuity.dot)
+
 ## Rendering and maintenance
 
 The Mermaid and Graphviz sources are generated from the same canonical node/edge graph. The SVG companions were rendered offline with Graphviz and visually inspected. A Mermaid engine was not executed. To regenerate with an installed Graphviz version:

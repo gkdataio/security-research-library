@@ -56,6 +56,10 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Official release pages date both 2\.38\.2 and 2\.37\.7 to September 2, 2026, separately from September 3 advisory publication; 2\.38\.2 is labeled pre-release\. Release existence does not resolve the advisory inconsistency\.
 - No bounty is established\. Learning prerequisites and general design guidance are editorial\.
 
+## Related conceptual diagrams
+
+- [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>)
+
 ## Sources and attribution
 
 - [Per-Resource OAuth Consent Bypass via Unbound Refresh Token Resource Substitution](<https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73>) — n8n; source ID: advisory; provenance: official primary; retrieved 2026-10-03T11:10:39Z; supports: summary, dates.

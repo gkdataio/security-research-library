@@ -55,6 +55,7 @@ No additional caveats recorded; this is not a completeness or security guarantee
 
 ## Related conceptual diagrams
 
+- [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>)
 - [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>)
 
 ## Sources and attribution

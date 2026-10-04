@@ -51,6 +51,10 @@ Reviewed: 2026-10-03T17:39:29Z. Fresh-read the primary narrative and award timel
 - The March 28, 2026 marked-fixed status does not establish deployment timing or patch contents\.
 - Specific client permissions, existing consent and downstream token acceptance constrain the reported impact; one broad title does not prove every integration was affected\.
 
+## Related conceptual diagrams
+
+- [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>)
+
 ## Sources and attribution
 
 - [Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64; retrieved 2026-10-03T17:39:29Z.
