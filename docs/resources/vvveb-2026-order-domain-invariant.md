@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/vvveb-2026-order-domain-invariant.json>) · [Official resource](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>)
 
 **Publisher:** Vvveb  
-**Authors:** Basant Kumar; Hamed Kohi  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Verification  
@@ -33,7 +33,7 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public maintainer advisory and release notes\.
 
-**Reviewed:** 2026-10-03T14:39:55Z  
+**Reviewed:** 2026-10-04T02:37:10Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
@@ -52,11 +52,11 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - The advisory lists versions through 1\.0\.8 as affected and 1\.0\.8\.2 as patched; it does not explicitly classify intervening 1\.0\.8\.1\.
 - The reported setting permits guest checkout without special extensions\. External accounting, inventory or payment consequences depend on integration behavior; actual payouts or production losses are not demonstrated\.
 - The release page displays May 4 without a year in the retrieved rendering\. No full software-release date is asserted, and patch version is not an educational edition\.
-- The advisory is published by givanz and credits Basant Kumar and Hamed Kohi\. Original analysis here is limited to defensive design lessons\.
+- The advisory is published by the givanz account\. Its Discoverer Credit section names Basant Kumar as primary discoverer and Hamed Kohi as co-discoverer; these roles do not establish advisory authorship, so named authors remain unestablished\. Original analysis here is limited to defensive design lessons\.
 
 ## Sources and attribution
 
-- [Vvveb CMS — Negative-quantity cart manipulation allows creation of orders with negative grand totals](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>) — Vvveb; source ID: advisory; provenance: official primary; retrieved 2026-10-03T14:38:34Z; supports: summary, version, dates.
-- [Vvveb 1\.0\.8\.2](<https://github.com/givanz/Vvveb/releases/tag/1.0.8.2>) — Vvveb; source ID: release; provenance: official primary; retrieved 2026-10-03T14:39:55Z; supports: version, dates.
+- [Vvveb CMS — Negative-quantity cart manipulation allows creation of orders with negative grand totals](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>) — Vvveb; source ID: advisory; provenance: official primary; retrieved 2026-10-04T02:32:36Z; supports: summary, version, dates.
+- [Vvveb 1\.0\.8\.2](<https://github.com/givanz/Vvveb/releases/tag/1.0.8.2>) — Vvveb; source ID: release; provenance: official primary; retrieved 2026-10-04T02:36:20Z; supports: version, dates.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

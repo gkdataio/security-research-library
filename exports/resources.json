@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "security-research-library-resources",
-  "as_of": "2026-10-03",
+  "as_of": "2026-10-04",
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
@@ -9834,10 +9834,7 @@
       "id": "vvveb-2026-order-domain-invariant",
       "title": "Vvveb: numeric input validity does not establish legitimate order state",
       "publisher": "Vvveb",
-      "authors": [
-        "Basant Kumar",
-        "Hamed Kohi"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -9884,7 +9881,7 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T14:39:55Z",
+        "reviewed_at": "2026-10-04T02:37:10Z",
         "living_resource": false,
         "status": "primary_source_reviewed",
         "note": "Advisory and release notes reviewed; no vulnerability reproduction or live testing."
@@ -9896,7 +9893,7 @@
           "title": "Vvveb CMS — Negative-quantity cart manipulation allows creation of orders with negative grand totals",
           "publisher": "Vvveb",
           "provenance": "official_primary",
-          "retrieved_at": "2026-10-03T14:38:34Z",
+          "retrieved_at": "2026-10-04T02:32:36Z",
           "supports": [
             "summary",
             "version",
@@ -9909,7 +9906,7 @@
           "title": "Vvveb 1.0.8.2",
           "publisher": "Vvveb",
           "provenance": "official_primary",
-          "retrieved_at": "2026-10-03T14:39:55Z",
+          "retrieved_at": "2026-10-04T02:36:20Z",
           "supports": [
             "version",
             "dates"
@@ -9920,7 +9917,7 @@
         "The advisory lists versions through 1.0.8 as affected and 1.0.8.2 as patched; it does not explicitly classify intervening 1.0.8.1.",
         "The reported setting permits guest checkout without special extensions. External accounting, inventory or payment consequences depend on integration behavior; actual payouts or production losses are not demonstrated.",
         "The release page displays May 4 without a year in the retrieved rendering. No full software-release date is asserted, and patch version is not an educational edition.",
-        "The advisory is published by givanz and credits Basant Kumar and Hamed Kohi. Original analysis here is limited to defensive design lessons."
+        "The advisory is published by the givanz account. Its Discoverer Credit section names Basant Kumar as primary discoverer and Hamed Kohi as co-discoverer; these roles do not establish advisory authorship, so named authors remain unestablished. Original analysis here is limited to defensive design lessons."
       ],
       "content_scope": "defensive_education"
     },
