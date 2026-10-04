@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/librechat-2026-agent-context-mutation-authority.json>) · [Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59>)
 
 **Publisher:** LibreChat  
-**Authors:** Lisa Gnedt; Michael Koppmann  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
@@ -49,6 +49,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 ## Caveats
 
+- The advisory credits Lisa Gnedt and Michael Koppmann of SBA Research, with GitHub Reporter credits for lxp and mkoppmann\. It does not display an explicit author byline; these credits alone do not establish advisory authorship, so named authors remain unestablished\.
 - Requires an authenticated account and knowledge of another agent’s identifier; private agents were not ordinarily visible\.
 - CVE-2025-69220: the advisory identifies 0\.8\.1-rc2 as affected and records the 0\.8\.2-rc2 fix release on January 7, 2026\.
 - No production compromise, data theft, or award is established\. Broader model behavior depends on application context; this review did not run the demonstration\.

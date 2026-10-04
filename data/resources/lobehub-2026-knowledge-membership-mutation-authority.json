@@ -3,9 +3,7 @@
   "id": "lobehub-2026-knowledge-membership-mutation-authority",
   "title": "LobeHub: knowledge-base membership changes require ownership authorization",
   "publisher": "LobeHub",
-  "authors": [
-    "DenizParlak"
-  ],
+  "authors": [],
   "primary_url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
   "resource_type_id": "maintainer-advisory",
   "topic_ids": [
@@ -74,6 +72,7 @@
     "Retrieval-augmented generation knowledge-base lifecycle"
   ],
   "caveats": [
+    "The advisory credits DenizParlak as Reporter but does not display an explicit author byline. Reporter credit alone does not establish advisory authorship, so named authors remain unestablished.",
     "CVE-2026-23522 requires authentication and knowledge of both relevant identifiers according to the narrative; its displayed severity vector instead says no privileges. Preserve that discrepancy.",
     "The source lists versions through v2.0.0-next.192 as affected and v2.0.0-next.193 as patched; it supplies no patch date or implementation detail.",
     "Reported removal could disrupt retrieval. Permanent erasure of underlying stored documents, production compromise and an award are not independently established.",

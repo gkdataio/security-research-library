@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/lobehub-2026-knowledge-membership-mutation-authority.json>) · [Official resource](<https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r>)
 
 **Publisher:** LobeHub  
-**Authors:** DenizParlak  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
@@ -50,6 +50,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 ## Caveats
 
+- The advisory credits DenizParlak as Reporter but does not display an explicit author byline\. Reporter credit alone does not establish advisory authorship, so named authors remain unestablished\.
 - CVE-2026-23522 requires authentication and knowledge of both relevant identifiers according to the narrative; its displayed severity vector instead says no privileges\. Preserve that discrepancy\.
 - The source lists versions through v2\.0\.0-next\.192 as affected and v2\.0\.0-next\.193 as patched; it supplies no patch date or implementation detail\.
 - Reported removal could disrupt retrieval\. Permanent erasure of underlying stored documents, production compromise and an award are not independently established\.

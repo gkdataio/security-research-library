@@ -3222,10 +3222,7 @@
       "id": "librechat-2026-agent-context-mutation-authority",
       "title": "LibreChat: agent edit authority must cover attached context",
       "publisher": "LibreChat",
-      "authors": [
-        "Lisa Gnedt",
-        "Michael Koppmann"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -3292,6 +3289,7 @@
         }
       ],
       "caveats": [
+        "The advisory credits Lisa Gnedt and Michael Koppmann of SBA Research, with GitHub Reporter credits for lxp and mkoppmann. It does not display an explicit author byline; these credits alone do not establish advisory authorship, so named authors remain unestablished.",
         "Requires an authenticated account and knowledge of another agent’s identifier; private agents were not ordinarily visible.",
         "CVE-2025-69220: the advisory identifies 0.8.1-rc2 as affected and records the 0.8.2-rc2 fix release on January 7, 2026.",
         "No production compromise, data theft, or award is established. Broader model behavior depends on application context; this review did not run the demonstration."
@@ -3468,9 +3466,7 @@
       "id": "lobehub-2026-knowledge-membership-mutation-authority",
       "title": "LobeHub: knowledge-base membership changes require ownership authorization",
       "publisher": "LobeHub",
-      "authors": [
-        "DenizParlak"
-      ],
+      "authors": [],
       "primary_url": "https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
@@ -3539,6 +3535,7 @@
         "Retrieval-augmented generation knowledge-base lifecycle"
       ],
       "caveats": [
+        "The advisory credits DenizParlak as Reporter but does not display an explicit author byline. Reporter credit alone does not establish advisory authorship, so named authors remain unestablished.",
         "CVE-2026-23522 requires authentication and knowledge of both relevant identifiers according to the narrative; its displayed severity vector instead says no privileges. Preserve that discrepancy.",
         "The source lists versions through v2.0.0-next.192 as affected and v2.0.0-next.193 as patched; it supplies no patch date or implementation detail.",
         "Reported removal could disrupt retrieval. Permanent erasure of underlying stored documents, production compromise and an award are not independently established.",
