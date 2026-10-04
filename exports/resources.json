@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 124,
+    "resources": 125,
     "diagrams": 13
   },
   "taxonomy": {
@@ -2374,6 +2374,109 @@
         "Observed evidence comes from a local development build with fixture companies, not customer accounts. Disclosed password hashes were not shown cracked.",
         "The researcher lists CVSS 8.1; the CNA gives CVSS v4 7.1. Scores are preserved as different source claims, not reconciled.",
         "Article publication (August 23) and CNA publication (August 24, 2026) are distinct. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "dompurify-2026-cross-realm-sanitization-consistency",
+      "title": "DOMPurify: accepted DOM realms must retain complete sanitization",
+      "publisher": "DOMPurify / Cure53",
+      "authors": [],
+      "primary_url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-hpcv-96wg-7vj8",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secure-parser-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-49458 describes a mismatch between accepting DOM objects from another realm and recognizing them during later sanitization. Checks tied to local constructor identity could omit protective decisions and subtree traversal. The general lesson is that admitting an input representation also commits the implementation to enforcing every required security check for that representation.",
+      "defensive_use": "Compare the set of accepted representations with the set covered by every protective decision, including nested content. Treat an unrecognized representation as an explicit policy decision rather than silently skipping validation. Review remediation and regression coverage together. These are conceptual review objectives, not a claim that any specific proposed implementation was shipped or independently tested.",
+      "prerequisites": [
+        "JavaScript realm and DOM object concepts",
+        "Sanitization, nested content and browser activation boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and official release evidence."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-05-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": "Publication of the selected advisory."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition is established."
+        },
+        "source_displayed": {
+          "value": "2026-05-26",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "maintainer",
+          "note": null
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T17:55:25Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory and official release sources read. Review does not establish current exposure or independently reproduce the behavior."
+      },
+      "sources": [
+        {
+          "id": "maintainer",
+          "url": "https://github.com/cure53/DOMPurify/security/advisories/GHSA-hpcv-96wg-7vj8",
+          "title": "Cross-realm IN_PLACE sanitization leaves executable markup intact via realm-bound instanceof checks",
+          "publisher": "DOMPurify / Cure53",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:52:49Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/cure53/DOMPurify/releases/tag/3.4.6",
+          "title": "DOMPurify 3.4.6",
+          "publisher": "DOMPurify / Cure53",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:52:49Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-metadata",
+          "url": "https://api.github.com/repos/cure53/DOMPurify/releases/tags/3.4.6",
+          "title": "Official DOMPurify 3.4.6 release metadata",
+          "publisher": "DOMPurify / Cure53 via GitHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:54:37Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The advisory requires attacker-influenced DOM from another same-origin realm, in-place sanitization and subsequent consumer activation. It excludes ordinary string input and same-realm in-place use from this issue.",
+        "It reports script execution with Chromium 148 and DOMPurify 3.4.5. Production compromise, account takeover and independent reproduction are not established here.",
+        "The advisory lists versions through 3.4.5 as affected and 3.4.6 as patched. This historical minimum is not a comprehensive current security guarantee.",
+        "The official 3.4.6 release describes stronger cross-realm and shadow-DOM checks plus expanded regression coverage. Its metadata records May 26, 2026 at 13:04:11 UTC; that software-release time is separate from the unknown resource-edition date. Advisory suggestions are not evidence of exact shipped implementation.",
+        "The advisory credits offset as Reporter. cure53 is the publishing account, not an explicit article byline, so authors remains empty. Release-wide thanks to offset and Bankde do not establish both as reporters of this particular advisory."
       ],
       "content_scope": "defensive_education"
     },
