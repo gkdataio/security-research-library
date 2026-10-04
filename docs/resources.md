@@ -7,6 +7,7 @@ This collection is separate from paid-award reports. It contains official educat
 - [OWASP ASVS 5.0.0](https://owasp.org/projects/asvs): turn security goals into versioned verification requirements
 - [OAuth security best practice, RFC 9700](https://www.rfc-editor.org/rfc/rfc9700.html): review identity integration assumptions and token protections
 - [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html): make authorization consistent, explicit, and testable
+- [Google AIP-158: pagination continuation and resource authority](resources/google-aip-158-pagination-authorization-boundary.md): distinguish an opaque continuation token from per-request authorization, and preserve query consistency with the documented page-size exception. [Structured record](../data/resources/google-aip-158-pagination-authorization-boundary.json)
 - [OWASP LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html): reason about untrusted content, tool permissions, and defense in depth
 - [HackerOne Quality Reports](https://docs.hackerone.com/en/articles/8475116-quality-reports): communicate evidence-backed impact, scope, and remediation clearly
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security): study fundamentals in provider-controlled training environments

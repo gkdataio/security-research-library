@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 112,
+    "resources": 113,
     "diagrams": 11
   },
   "taxonomy": {
@@ -2659,6 +2659,94 @@
         "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
         "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
         "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-aip-158-pagination-authorization-boundary",
+      "title": "Google AIP-158: pagination continuation does not grant resource authority",
+      "publisher": "Google",
+      "authors": [],
+      "primary_url": "https://google.aip.dev/158",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling"
+      ],
+      "version": null,
+      "summary": "Google's Approved pagination guidance separates a continuation position from permission to read the collection. Page tokens must be opaque and convey no authorization; each request still requires authorization. Subsequent requests retain the other query arguments, while page size may change. Opacity protects interface abstraction rather than establishing access rights.",
+      "defensive_use": "Editorial lesson: document continuation state and actor/resource policy as separate design contracts. An integration following a stored cursor must still rely on the service's per-request authorization decision. Treat query continuity as a request-consistency requirement, not evidence of entitlement.",
+      "prerequisites": [
+        "Basic familiarity with paginated collection APIs and access-control modeling"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public official API implementation guidance."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication of the current text is not established by the page's Created field."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No dated educational-resource edition is established for this living guidance."
+        },
+        "source_displayed": {
+          "value": "2025-07-08",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "primary",
+          "note": "Date of the newest displayed Changelog entry, concerning degraded-skip guidance; not original publication, an edition release, or the date of the authorization rule."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T04:05:09Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the official AIP page, shown as Approved, and the first-party commit corroborating its later changelog entry. This is a documentation review, not an implementation assessment."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://google.aip.dev/158",
+          "title": "AIP-158: Pagination",
+          "publisher": "Google",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T04:02:03Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "changelog-change",
+          "url": "https://github.com/aip-dev/google.aip.dev/commit/1b7bc19ccd0fb19d8c24642eb2907d0246328c41",
+          "title": "fix(AIP-158): clarify degraded skip response guidance (#1510)",
+          "publisher": "Google AIP maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T04:04:42Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The page's Created and Updated fields both display 2019-02-18, although its changelog includes 2025-07-08. The linked first-party commit corroborates that later edit; the header is not treated as the current text's last revision date.",
+        "Query-argument consistency excludes page size: the guidance requires honoring a changed page size and recommends rejecting changes to other arguments. This contract does not establish snapshot isolation or a fixed collection across pages.",
+        "Opaque token format does not establish permission. This guide supplies no incident, affected-product, bounty, or deployment-specific security claim."
       ],
       "content_scope": "defensive_education"
     },
