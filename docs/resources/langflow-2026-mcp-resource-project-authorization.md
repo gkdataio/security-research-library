@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/langflow-2026-mcp-resource-project-authorization.json>) · [Official resource](<https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c>)
 
 **Publisher:** Langflow  
-**Authors:** andifilhohub  
+**Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization; Identity  
@@ -54,6 +54,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - The maintainer corrects affected versions to 1\.6\.8–1\.9\.0 and identifies 1\.9\.1, released April 24, 2026, as fixed\. September publication is not patch timing\.
 - The September 22 triage update reports regression coverage; this review did not independently run it\. No observed production compromise or award is established\.
 - Conceptual defensive summary; public disclosure grants no testing authorization\.
+- The advisory credits R1ZZG0D as Reporter, andifilhohub as Analyst, and erichare as Remediation developer\. Its header identifies andifilhohub as the publishing account\. No explicit author byline is shown, so named authors remain unestablished rather than inferred from those roles\.
 
 ## Sources and attribution
 
