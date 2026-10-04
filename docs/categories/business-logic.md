@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 33 related resources · 4 diagrams
+**Vulnerability family** · 14 reports · 34 related resources · 4 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -46,6 +46,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [HotCRP: separate submission visibility from authorship authority](<../resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — topic: Business Logic and State Integrity.
 - [Microsoft compensating transactions: recovery must preserve valid concurrent state](<../resources/microsoft-compensating-transaction-state-integrity.md>) — topic: Business Logic and State Integrity.
 - [Microsoft Graph batching: preserve each member authorization outcome](<../resources/microsoft-graph-batch-member-authorization-outcomes.md>) — topic: Business Logic and State Integrity.
+- [MythicalDash: payment evidence must establish credit entitlement](<../resources/mythicaldash-2026-payment-evidence-entitlement.md>) — topic: Business Logic and State Integrity.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Business Logic and State Integrity.
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Business Logic and State Integrity.
 - [OpenFGA query consistency: authorization decisions need sufficiently fresh state](<../resources/openfga-authorization-query-freshness.md>) — topic: Business Logic and State Integrity.

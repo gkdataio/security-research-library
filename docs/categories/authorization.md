@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 81 related resources · 10 diagrams
+**Vulnerability family** · 34 reports · 82 related resources · 10 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -91,6 +91,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Authorization.
 - [Microsoft Graph batching: preserve each member authorization outcome](<../resources/microsoft-graph-batch-member-authorization-outcomes.md>) — topic: Authorization.
 - [MLflow: authorization must survive alternate resource interfaces](<../resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — topic: Authorization.
+- [MythicalDash: payment evidence must establish credit entitlement](<../resources/mythicaldash-2026-payment-evidence-entitlement.md>) — topic: Authorization.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Authorization.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Authorization.
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Authorization.

@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 123,
+    "resources": 124,
     "diagrams": 13
   },
   "taxonomy": {
@@ -4480,6 +4480,111 @@
         "The maintainer artifact patch merged January 19, 2026, separately from February 3 publication. Exact affected-version and first-fixed-release bounds were not established from reviewed primary sources.",
         "The underlying finding predates this article; 2026 labels the detailed educational publication. No bounty amount or independent exploit verification is claimed."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "mythicaldash-2026-payment-evidence-entitlement",
+      "title": "MythicalDash: payment evidence must establish credit entitlement",
+      "publisher": "MythicalDash",
+      "authors": [],
+      "primary_url": "https://github.com/MythicalLTD/MythicalDash/security/advisories/GHSA-qmh4-5v7g-42jq",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "business-logic",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "approval-state-integrity",
+        "integration-threat-modeling",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "GHSA-qmh4-5v7g-42jq concerns pending payment state being accepted as authority to grant account credit before provider-confirmed settlement. The account update was atomic, but that concurrency property did not establish entitlement. The advisory reports unpaid credit creation in a controlled deployment. The failed boundary is provisional application state becoming spendable value without trustworthy completion evidence.",
+      "defensive_use": "Editorial lesson: separate a request to purchase, trustworthy settlement evidence, the authorized beneficiary and the committed entitlement. Atomic arithmetic protects a balance update; it cannot supply a missing business precondition. Make the evidence required for each state transition explicit, and retain uncertainty when a provider outcome is unavailable. The public June 3 commit adds authentication, ownership binding, a persisted provider reference, and fail-closed checks of paid status and expected amount before crediting. These are observed code changes, not independently verified deployment behavior. When assessing remediation, distinguish source changes, controlled negative results, packaged releases and adoption. Evidence writing should preserve what an experiment actually exercised rather than presenting setup privileges as ordinary customer capabilities.",
+      "prerequisites": [
+        "Payment lifecycle and application state-machine concepts",
+        "Account authorization, database atomicity and cross-service evidence concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory, repository commit and release metadata."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": "2026-06-07",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication, not remediation or software-release date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T17:22:43Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Advisory, public commit and current latest-release metadata reviewed read-only. No target testing, independent reproduction or production-loss verification."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/MythicalLTD/MythicalDash/security/advisories/GHSA-qmh4-5v7g-42jq",
+          "title": "MythicalDash GHSA-qmh4-5v7g-42jq security advisory",
+          "publisher": "MythicalDash",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:22:43Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "fix-commit",
+          "url": "https://github.com/MythicalLTD/MythicalDash/commit/188d4c4ed80b8d364b0c4605a9e38ceaab746e39",
+          "title": "MythicalDash payment-verification code change, commit 188d4c4",
+          "publisher": "MythicalDash",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:22:43Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "latest-release-api",
+          "url": "https://api.github.com/repos/MythicalLTD/MythicalDash/releases/latest",
+          "title": "MythicalDash latest-release metadata at review",
+          "publisher": "MythicalDash via GitHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T17:22:43Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The advisory lists versions through 3.5.4-aurora as affected and no patched version. It assigns CVE-2026-54608.",
+        "The controlled demonstration used a seeded account, no working payment-provider credentials and a payment reference obtained from the database. It reports unpaid credits and a processed payment record, but does not independently complete the ordinary buyer checkout path. Actual hosting-resource consumption or production financial loss is not established.",
+        "The June 3, 2026 commit is public code-change evidence. At review, the latest-release API still identifies 3.5.4-aurora, published February 16, 2026 at 20:53:17 UTC. Neither source establishes a released fix. Resource edition and edition-release date remain unknown.",
+        "The advisory credits tonghuaroot as Reporter. NaysKutzu is the publishing account; no explicit article byline was identified, so authors remains empty. These roles are preserved separately from authorship."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
