@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 127,
+    "resources": 128,
     "diagrams": 13
   },
   "taxonomy": {
@@ -10528,6 +10528,99 @@
         "The maintainer reports limit overruns without required authentication; a limited promotion or coupon and overlapping order processing are prerequisites. Financial loss is a potential consequence, not a measured production incident.",
         "The advisory lists fixes in 1.9.12, 1.10.16, 1.11.17, 1.12.23, 1.13.15, 1.14.18, 2.0.16, 2.1.12 and 2.2.3. Consult its branch-specific affected ranges. Patch dates are not asserted; resource edition remains null.",
         "NoResponseMate published the advisory. Reporters are Djibril Mounkoro (whiteov3rflow) and Bartłomiej Nowiński (bnBart); CVE-2026-31824."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "tanstack-2026-server-function-response-authority",
+      "title": "TanStack Start: preserve server-owned response authority through errors",
+      "publisher": "TanStack",
+      "authors": [],
+      "primary_url": "https://github.com/TanStack/router/security/advisories/GHSA-qx66-fv34-fjm8",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "interpreter-boundaries"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "error-response-design",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "TanStack's CVE-2026-102989 advisory describes client request data entering internal middleware state. Failure handling could retain an untrusted result that response processing then accepted as an HTTP response. The maintainer confirms reflected same-origin XSS and classifies it as CWE-79. The boundary failure is client data acquiring server response authority, including on an error path.",
+      "defensive_use": "The announced fix narrows accepted client input and checks server responses. Update dependencies and the lockfile, verify resolved @tanstack/start-server-core is at least 1.169.39, then rebuild and redeploy; local upgrades alone leave deployed code unchanged. Editorial lesson: keep internal state separate from public input, and preserve response provenance through exceptions. Supplementary edge controls do not replace the package fix.",
+      "prerequisites": [
+        "HTTP response handling, browser same-origin authority and reflected XSS concepts",
+        "Middleware error handling and dependency-resolution basics"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and supporting security announcement."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-09-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "GitHub explicitly labels this as the advisory publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition date is established."
+        },
+        "source_displayed": {
+          "value": "2026-09-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "announcement",
+          "note": "The supporting announcement is dated September 30, 2026."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T20:23:24Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Both maintainer publications read. This is source review, not independent reproduction or verification of deployed fixes."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/TanStack/router/security/advisories/GHSA-qx66-fv34-fjm8",
+          "title": "Unauthenticated reflected XSS in TanStack Start server-function responses",
+          "publisher": "TanStack",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T20:22:22Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "announcement",
+          "url": "https://tanstack.com/blog/tanstack-start-security-update-cve-2026-102989",
+          "title": "TanStack Start security update: CVE-2026-102989",
+          "publisher": "TanStack",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T20:22:22Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Exposure requires an affected deployed server function and a visitor opening the supplied link. The described script authority is limited to that visitor's same-origin access; neither source provides a public demonstration transcript or evidence of production compromise or actual theft.",
+        "Both sources give affected ranges beginning at 1.143.12, inclusive, and ending before each package's first patched version: @tanstack/react-start 1.168.60; @tanstack/solid-start 1.168.57; @tanstack/vue-start 1.168.56; @tanstack/start-server-core 1.169.39.",
+        "The September 30 announcement states that patched packages were available by then; it does not establish a separate resource edition or each package's exact release date.",
+        "GitHub identifies tannerlinsley as advisory publisher, not an explicit author byline; authors therefore remains empty. The supporting blog names Tanner Linsley. The advisory credits Lovable for helping discover and report the issue.",
+        "This concerns reflected response authority, distinct from the library's Next.js Re:CACHE metadata and shared-cache case. No individual bounty amount is established. This educational record grants no testing authorization."
       ],
       "content_scope": "defensive_education"
     },

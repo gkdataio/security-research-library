@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 12 reports · 10 related resources · 3 diagrams
+**Vulnerability family** · 12 reports · 11 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -41,6 +41,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<../resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — topic: Interpreter Boundaries.
 - [Serialize JavaScript: every serialized field must retain data semantics](<../resources/serialize-javascript-2026-output-code-boundary.md>) — topic: Interpreter Boundaries.
 - [SLSA v1\.2: supply-chain security and build provenance](<../resources/slsa-v1-2-supply-chain-build-provenance.md>) — diagram: [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>).
+- [TanStack Start: preserve server-owned response authority through errors](<../resources/tanstack-2026-server-function-response-authority.md>) — topic: Interpreter Boundaries.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams
