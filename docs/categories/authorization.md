@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 83 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 84 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -72,6 +72,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [FAPI 2\.0 Security Profile](<../resources/openid-fapi-2-api-authorization-profile.md>) — topic: Authorization.
 - [Fetch Metadata Request Headers](<../resources/w3c-fetch-metadata-request-context-boundaries.md>) — topic: Authorization.
 - [File Browser: existing shares must follow current owner permissions](<../resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — topic: Authorization.
+- [Formie: integration settings need operation and attribute authority](<../resources/formie-2026-integration-settings-credential-authority.md>) — topic: Authorization.
 - [Frappe: linked data must preserve document and field permissions](<../resources/frappe-2026-linked-document-response-authorization.md>) — topic: Authorization; diagram: [Combined views preserve every source's access boundary](<../diagram-gallery.md#combined-view-source-authorization>).
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<../resources/github-2026-internal-metadata-authority.md>) — topic: Authorization.
 - [Google AIP-158: pagination continuation does not grant resource authority](<../resources/google-aip-158-pagination-authorization-boundary.md>) — topic: Authorization.

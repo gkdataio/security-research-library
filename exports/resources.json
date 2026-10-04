@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 128,
+    "resources": 129,
     "diagrams": 14
   },
   "taxonomy": {
@@ -2567,6 +2567,147 @@
         "Requires an existing share and access to its link, followed by revocation of the owner's relevant permissions. This is a source-reported demonstration, not independently reproduced here; no production exposure is established.",
         "CVE-2026-35604. The advisory lists versions through 2.62.2 as affected and 2.63.1 as patched; it does not resolve the intervening-version gap. Pull request 5888 was merged April 4, 2026; that merge date is not a verified package-release date.",
         "Published by hacdias; Koda Reef (kodareef5) is credited as reporter and authored the remediation pull request. Resource edition is unspecified. The repository displayed an August 31, 2026 archive notice at review."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "formie-2026-integration-settings-credential-authority",
+      "title": "Formie: integration settings need operation and attribute authority",
+      "publisher": "Verbb / Formie",
+      "authors": [],
+      "primary_url": "https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "authorization",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "authorization-modeling",
+        "integration-threat-modeling",
+        "secrets-containment",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "Formie's advisory describes two coupled authority failures: an integration-settings operation lacked sufficient permission checks, and broad settings mutation could change the destination used with stored credentials. The maintainer reports credential disclosure and server-side requests whose responses were returned to the caller. The distinct lesson is to constrain both who may invoke an operation and which security-sensitive attributes it may change.",
+      "defensive_use": "The two branch-specific patches require control-panel request context, a valid form and integration permission, then limit mutable settings while excluding destination and credential properties. Editorial lesson: operation authorization and attribute authority are complementary controls; possessing an authenticated session does not establish either. Review alternate entry points after a shared permission repair. The official releases identify 2.2.23 for Craft 4 and 3.1.31 for Craft 5 as patched.",
+      "prerequisites": [
+        "Distinguishing authentication from operation-specific authorization",
+        "Understanding settings mutation and credential-bearing integration requests"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "The advisory, patches and release evidence are publicly readable."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-07-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Maintainer publication; separate from the later database entry."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition date established."
+        },
+        "source_displayed": {
+          "value": "2026-07-09",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the maintainer advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-04T22:13:40Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Primary advisory, both patches, database chronology and official release metadata reviewed. This was source review, not reproduction or a deployment assessment."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9",
+          "title": "Formie integration-settings security advisory",
+          "publisher": "Verbb / Formie",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:53Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "advisory-database",
+          "url": "https://github.com/advisories/GHSA-v3f3-cmj4-cvj9",
+          "title": "GitHub Advisory Database entry for CVE-2026-76086",
+          "publisher": "GitHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:14Z",
+          "supports": [
+            "dates",
+            "version"
+          ]
+        },
+        {
+          "id": "craft4-patch",
+          "url": "https://github.com/verbb/formie/commit/6735fe4ae8f6a2a76930716ad7876b236f7c530d",
+          "title": "Formie Craft 4 integration authorization and settings restriction patch",
+          "publisher": "Verbb / Formie",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:43Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "craft5-patch",
+          "url": "https://github.com/verbb/formie/commit/dde7799dfa7e4d0a11e28754ad8544dba62d5def",
+          "title": "Formie Craft 5 integration authorization and settings restriction patch",
+          "publisher": "Verbb / Formie",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:43Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "craft4-release",
+          "url": "https://api.github.com/repos/verbb/formie/releases/tags/2.2.23",
+          "title": "Official Formie 2.2.23 release metadata",
+          "publisher": "Verbb / Formie",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:43Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "craft5-release",
+          "url": "https://api.github.com/repos/verbb/formie/releases/tags/3.1.31",
+          "title": "Official Formie 3.1.31 release metadata",
+          "publisher": "Verbb / Formie",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-04T22:12:43Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The described case requires an affected installation and an authenticated caller, including a front-end member; credential impact additionally depends on a configured integration holding credentials.",
+        "The advisory identifies incomplete earlier authorization remediation. Temporary restrictions on registration and control-panel access are not a complete configuration-only fix.",
+        "The reviewed sources provide no controlled test transcript, production incident, victim count or independent reproduction. Downstream account takeover or cloud compromise is not established. No individual award is established.",
+        "The advisory body credits Jorge González as reporter; its formal credit lists Pig-Tail as Finder. Their identity relationship is not established here. engram-design is the publishing account, not an explicit narrative byline, so authors remains empty.",
+        "The GitHub database records its own publication and review on September 23, 2026. The official release APIs give July 9, 2026 at 12:21:35 UTC for 2.2.23 and 12:26:02 UTC for 3.1.31. Software release, advisory publication, database entry, educational edition and installation-specific deployment are separate events; deployment dates remain unknown."
       ],
       "content_scope": "defensive_education"
     },
