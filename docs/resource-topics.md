@@ -4,17 +4,17 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-119 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+120 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 11 resources.
-- [Authorization](<#topic-authorization>) — 73 resources.
+- [Ai Security](<#topic-ai-security>) — 12 resources.
+- [Authorization](<#topic-authorization>) — 74 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 31 resources.
 - [Cloud Security](<#topic-cloud-security>) — 6 resources.
-- [Identity](<#topic-identity>) — 39 resources.
+- [Identity](<#topic-identity>) — 40 resources.
 - [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 3 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
@@ -25,7 +25,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-11 resources.
+12 resources.
 
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
@@ -34,6 +34,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [LibreChat: viewing an integration must not reveal its service secrets](<resources/librechat-2026-mcp-view-secret-projection.md>) — LibreChat.
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series.
 - [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub.
+- [MCP elicitation: consent, credential custody and completion](<resources/mcp-elicitation-consent-credential-custody.md>) — Model Context Protocol.
 - [MCP scope selection: progressive consent and accumulated authority](<resources/mcp-progressive-scope-authority.md>) — Model Context Protocol.
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
@@ -42,7 +43,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-73 resources.
+74 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -77,6 +78,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat.
 - [LibreChat: viewing an integration must not reveal its service secrets](<resources/librechat-2026-mcp-view-secret-projection.md>) — LibreChat.
 - [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub.
+- [MCP elicitation: consent, credential custody and completion](<resources/mcp-elicitation-consent-credential-custody.md>) — Model Context Protocol.
 - [MCP scope selection: progressive consent and accumulated authority](<resources/mcp-progressive-scope-authority.md>) — Model Context Protocol.
 - [Microsoft Graph batching: preserve each member authorization outcome](<resources/microsoft-graph-batch-member-authorization-outcomes.md>) — Microsoft.
 - [MLflow: authorization must survive alternate resource interfaces](<resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — Tachyon.
@@ -170,7 +172,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-identity"></a>
 ## Identity
 
-39 resources.
+40 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [authentik: source-mapping edits carry identity-rebinding authority](<resources/authentik-2026-source-mapping-mutation-authority.md>) — authentik.
@@ -188,6 +190,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat.
+- [MCP elicitation: consent, credential custody and completion](<resources/mcp-elicitation-consent-credential-custody.md>) — Model Context Protocol.
 - [MCP scope selection: progressive consent and accumulated authority](<resources/mcp-progressive-scope-authority.md>) — Model Context Protocol.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n.
 - [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n.

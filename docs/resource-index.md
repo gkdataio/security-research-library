@@ -4,7 +4,7 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-119 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+120 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
@@ -53,6 +53,7 @@ Original defensive summaries of official educational references. These resources
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series; Architecture Guide.
 - [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub; Maintainer Advisory.
 - [mailcow: stored configuration retains its original trust level](<resources/mailcow-2026-persisted-data-query-boundary.md>) — mailcow; Maintainer Advisory.
+- [MCP elicitation: consent, credential custody and completion](<resources/mcp-elicitation-consent-credential-custody.md>) — Model Context Protocol; Technical Standard.
 - [MCP scope selection: progressive consent and accumulated authority](<resources/mcp-progressive-scope-authority.md>) — Model Context Protocol; Architecture Guide.
 - [Microsoft compensating transactions: recovery must preserve valid concurrent state](<resources/microsoft-compensating-transaction-state-integrity.md>) — Microsoft Azure Architecture Center; Architecture Guide.
 - [Microsoft Graph batching: preserve each member authorization outcome](<resources/microsoft-graph-batch-member-authorization-outcomes.md>) — Microsoft; Implementation Guide.

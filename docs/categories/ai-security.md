@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Security theme / environment** · 7 reports · 11 related resources · 1 diagram
+**Security theme / environment** · 7 reports · 12 related resources · 1 diagram
 
 Authority boundaries around model input, tools, and downstream actions.
 
@@ -33,6 +33,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [LibreChat: viewing an integration must not reveal its service secrets](<../resources/librechat-2026-mcp-view-secret-projection.md>) — topic: Ai Security.
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — topic: Ai Security; diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [LobeHub: knowledge-base membership changes require ownership authorization](<../resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — topic: Ai Security.
+- [MCP elicitation: consent, credential custody and completion](<../resources/mcp-elicitation-consent-credential-custody.md>) — topic: Ai Security.
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Ai Security.
 - [Open WebUI: credentials must bind to their destination connection](<../resources/open-webui-2026-connection-credential-capture.md>) — topic: Ai Security.
 - [OWASP LLM05:2025: generated-output consumer trust](<../resources/owasp-llm-output-consumer-trust.md>) — topic: Ai Security.

@@ -42,7 +42,7 @@ Source-backed public disclosures, official learning resources, and original diag
 
 ## At a glance
 
-**Snapshot: October 3, 2026**
+**Collection counts: October 4, 2026; program snapshots and report recency: October 3, 2026**
 
 - **66 qualifying report records:** 55 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
@@ -50,11 +50,11 @@ Source-backed public disclosures, official learning resources, and original diag
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
 - **850 distinct program pages** across the overlapping Bugcrowd and cross-platform catalogs; 808 have captured scope rows and 42 retain precise limitations in the [coverage audit](docs/program-scope-audit.md)
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **119 educational resources** and **12 conceptual diagrams**, maintained separately from award reports
+- **120 educational resources** and **12 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 32 older; 9 with unknown original publication dates
 
-These counts describe the collection at the review date. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
+These counts describe the collection at the dates above. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
 ## Current research focus
 

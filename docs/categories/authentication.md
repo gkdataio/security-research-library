@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 41 related resources · 4 diagrams
+**Vulnerability family** · 16 reports · 42 related resources · 4 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -53,6 +53,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
 - [Langflow: project transport authorization must reach each resource read](<../resources/langflow-2026-mcp-resource-project-authorization.md>) — topic: Identity.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<../resources/librechat-2026-mcp-oauth-session-binding.md>) — topic: Identity.
+- [MCP elicitation: consent, credential custody and completion](<../resources/mcp-elicitation-consent-credential-custody.md>) — topic: Identity.
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Identity.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Identity.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Identity.
