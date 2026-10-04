@@ -8,7 +8,7 @@
 **Authors:** redonkulus  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
+**Topics:** Web Foundations; Verification; Interpreter Boundaries  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
 
 ## Original summary

@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 12 reports · 6 related resources · 3 diagrams
+**Vulnerability family** · 12 reports · 7 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -36,6 +36,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [Python subprocess: executable, argument, and interpreter boundaries](<../resources/python-subprocess-interpreter-boundaries.md>) — topic: Interpreter Boundaries.
+- [Serialize JavaScript: every serialized field must retain data semantics](<../resources/serialize-javascript-2026-output-code-boundary.md>) — topic: Interpreter Boundaries.
 - [SLSA v1\.2: supply-chain security and build provenance](<../resources/slsa-v1-2-supply-chain-build-provenance.md>) — diagram: [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>).
 
 <a id="conceptual-diagrams"></a>
