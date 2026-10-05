@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**0 award-backed reports · 2 educational case studies · 0 learning references**
+**0 award-backed reports · 3 educational case studies · 0 learning references**
 
 Cross-site scripting explicitly tied to untrusted request input in the resulting response\. The presence of a reflected value alone does not establish this subtype\.
 
@@ -44,7 +44,13 @@ Maintainer advisories and researcher publications remain educational resources; 
 
 ### 2025 publications
 
-No mapped records with an established publication date in this year.
+- **[Laravel: preserve output encoding in debug diagnostics](<../resources/laravel-2025-debug-diagnostic-output-encoding.md>)**
+  Research Paper; publication: 2025-03-10; precision: day; basis: explicit.
+  Publication evidence: [SBA Research advisory SBA-ADV-20241209-02](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>).
+  Date qualification: Public disclosure in the researcher timeline, corroborated by the dated mailing-list message\.
+  Classification: Reflected XSS \(RXSS\) (source explicit). The researcher explicitly identifies reflected XSS from request-derived route data in a debug error response\.
+  Evidence: [SBA Research advisory SBA-ADV-20241209-02](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>); location: Advisory title, Vulnerability Overview and Impact.
+  2025–2026 learning relevance (editorial): Apply output-context protection to diagnostic views and preserve the debug-mode, error-path and interaction requirements\. Publication and software-fix dates remain separate\.
 
 <a id="learning"></a>
 ## Related learning references

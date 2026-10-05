@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "id": "laravel-2025-debug-diagnostic-output-encoding",
+  "title": "Laravel: preserve output encoding in debug diagnostics",
+  "publisher": "SBA Research",
+  "authors": [],
+  "primary_url": "https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "web-foundations",
+    "interpreter-boundaries"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "error-response-design",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "SBA Research’s CVE-2024-13919 advisory describes request-derived route values entering Laravel’s debug error page without HTML encoding. Its minimal-application demonstration shows browser script execution. The conceptual boundary is diagnostic presentation: collecting data for troubleshooting does not give that data authority to become active page content.",
+  "defensive_use": "Editorial lesson: preserve context-appropriate output encoding in failure paths as well as normal responses. Debug interfaces deserve the same data/code separation as application pages. The maintainer patch replaces raw rendering with escaped output for route context and request-body diagnostics; this supports the encoding change, not a new finding about every changed field. The advisory recommends disabling debug mode as a workaround. Verify the deployed remediation and configuration rather than treating the historical fixed version as a current safety recommendation.",
+  "prerequisites": [
+    "Browser output contexts and the distinction between data and executable interpretation",
+    "Framework error handling and debug-mode configuration"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public researcher advisory, mailing-list disclosure, maintainer patch and release notes."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-03-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "research",
+      "note": "Public disclosure in the researcher timeline, corroborated by the dated mailing-list message."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No educational-resource edition date established; software release dates are separate."
+    },
+    "source_displayed": {
+      "value": "2025-03-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "disclosure",
+      "note": "Mailing-list message date; distinct from the earlier software patch and release."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-05T16:41:30Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Read the researcher advisory, matching disclosure, maintainer diff and release metadata. No reproduction, target testing or independent patch verification performed."
+  },
+  "sources": [
+    {
+      "id": "research",
+      "url": "https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page",
+      "title": "SBA Research advisory SBA-ADV-20241209-02",
+      "publisher": "SBA Research",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T16:41:30Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "disclosure",
+      "url": "https://www.openwall.com/lists/oss-security/2025/03/10/4",
+      "title": "SBA Research public disclosure of CVE-2024-13919",
+      "publisher": "SBA Research via oss-security",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T16:41:30Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "patch",
+      "url": "https://github.com/laravel/framework/pull/53869/files",
+      "title": "Laravel maintainer patch review, pull request 53869",
+      "publisher": "Laravel",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T16:41:30Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/laravel/framework/releases/tag/v11.36.0",
+      "title": "Laravel v11.36.0 release notes",
+      "publisher": "Laravel",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T16:41:30Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Applicability requires Laravel 11.9.0–11.35.1, debug mode, an error-producing route and visitor interaction. An arbitrary Laravel deployment is not thereby shown to be affected.",
+    "The demonstration establishes browser execution in a minimal application; production exploitation, data theft and account takeover are not established.",
+    "SBA Research credits Fabian Funder and Philipp Adelsberger. Its timeline separately identifies Jeremy Angele as an independent discoverer and patch submitter. No explicit author byline is established, so authors remains empty.",
+    "The advisory identifies 11.36.0 as fixed. The maintainer merged pull request 53869 on December 13, 2024; the December 17, 2024 release notes include it. These software events do not replace the March 10, 2025 publication.",
+    "No qualifying individual award is established. Learning prerequisites and generalized defensive guidance are editorial; this educational case grants no testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}

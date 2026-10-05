@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 13 reports · 14 related resources · 3 diagrams
+**Vulnerability family** · 13 reports · 15 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -38,6 +38,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [DOMPurify: accepted DOM realms must retain complete sanitization](<../resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — topic: Interpreter Boundaries.
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
 - [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<../resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — topic: Interpreter Boundaries.
+- [Laravel: preserve output encoding in debug diagnostics](<../resources/laravel-2025-debug-diagnostic-output-encoding.md>) — topic: Interpreter Boundaries.
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
 - [Next\.js: response metadata must preserve representation boundaries](<../resources/nextjs-2026-response-metadata-representation-boundary.md>) — topic: Interpreter Boundaries.
 - [Python subprocess: executable, argument, and interpreter boundaries](<../resources/python-subprocess-interpreter-boundaries.md>) — topic: Interpreter Boundaries.
