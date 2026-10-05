@@ -12,7 +12,7 @@ Report membership uses the existing primary or secondary category server-request
 
 These narrower pages use separate source-backed memberships and publication-year groups. Their placement here is navigation, not an additional classification of every record in this family.
 
-- [Server-side request forgery \(SSRF\)](<../vulnerabilities/ssrf.md>) — 1 award-backed report · 3 educational case studies · 1 learning reference
+- [Server-side request forgery \(SSRF\)](<../vulnerabilities/ssrf.md>) — 1 award-backed report · 4 educational case studies · 1 learning reference
 
 On this page: [Reports](#reports) · [Related learning](#related-learning) · [Conceptual diagrams](#conceptual-diagrams)
 

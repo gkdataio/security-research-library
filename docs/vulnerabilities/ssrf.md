@@ -2,7 +2,7 @@
 
 [Browse by vulnerability type](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**1 award-backed report · 3 educational case studies · 1 learning reference**
+**1 award-backed report · 4 educational case studies · 1 learning reference**
 
 Source-established failures of server request-destination authority\. Keep affected configurations, runtime reachability and bounded impact in the linked evidence\.
 
@@ -46,6 +46,14 @@ Maintainer advisories and researcher publications remain educational resources; 
   Classification: Server-side request forgery \(SSRF\) (source explicit). The maintainer explicitly identifies SSRF with responses returned to an authenticated caller; the classification is not inferred from destination settings alone\.
   Evidence: [Formie integration-settings security advisory](<https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9>); location: Advisory title; Description / Impact; Weaknesses CWE-918.
   2025–2026 learning relevance (editorial): Integration permission checks and restrictions on security-sensitive settings must preserve destination authority and credential confinement; retain the affected-configuration requirement and avoid inferring a production incident\.
+
+- **[MLflow: destination validation must remain bound to the actual connection](<../resources/mlflow-2026-webhook-connection-destination-integrity.md>)**
+  Maintainer Advisory; publication: 2026-08-02; precision: day; basis: explicit.
+  Publication evidence: [MLflow webhook security advisory GHSA-7gwp-5pfp-969j](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>).
+  Date qualification: Original repository-advisory publication; software releases and database events remain separate\.
+  Classification: Server-side request forgery \(SSRF\) (source explicit). The maintainer explicitly identifies SSRF involving webhook delivery; the repair locates destination enforcement at the actual connection\.
+  Evidence: [MLflow webhook security advisory GHSA-7gwp-5pfp-969j](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>); location: Advisory title, Summary and Weaknesses CWE-918.
+  2025–2026 learning relevance (editorial): Preserve destination authority from validation through connection and keep address classification consistent\. Retain the deployment limits, conflicting affected-version lower bounds and later hardening evidence\.
 
 - **[SvelteKit: origin construction and routing must preserve server request authority](<../resources/sveltekit-2026-origin-routing-trust-boundary.md>)**
   Research Paper; publication: 2026-01; precision: month; basis: explicit.
