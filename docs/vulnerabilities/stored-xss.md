@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**1 award-backed report · 2 educational case studies · 0 learning references**
+**1 award-backed report · 3 educational case studies · 0 learning references**
 
 Cross-site scripting where a source establishes that persisted content or state later reaches a browser execution context\. Persistence alone is insufficient evidence of XSS\.
 
@@ -40,6 +40,14 @@ No mapped records with an established publication date in this year.
 Maintainer advisories and researcher publications remain educational resources; they do not establish a qualifying individual award.
 
 ### 2026 publications
+
+- **[CI4MS: keep stored diagnostic content inert in administrative log views](<../resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>)**
+  Maintainer Advisory; publication: 2026-03-31; precision: day; basis: explicit.
+  Publication evidence: [CI4MS log-viewer security advisory GHSA-r4v5-rwr2-q7r4](<https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4>).
+  Date qualification: Original maintainer-advisory publication; later database events are separate\.
+  Classification: Stored XSS (source explicit). The maintainer explicitly identifies stored DOM XSS; the database describes retained log content later becoming active in the browser\. Persistence is supported independently of the blind observation context\.
+  Evidence: [CI4MS log-viewer security advisory GHSA-r4v5-rwr2-q7r4](<https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4>), [GitHub Advisory Database entry for CVE-2026-34560](<https://github.com/advisories/GHSA-r4v5-rwr2-q7r4>); location: Maintainer title and Description; Advisory Database Summary and Description.
+  2025–2026 learning relevance (editorial): Keep persisted diagnostic values inert when read and rendered\. Storing a value does not confer trust, and the advisory publication remains separate from later database dates and software-release events\.
 
 - **[Next\.js: response metadata must preserve representation boundaries](<../resources/nextjs-2026-response-metadata-representation-boundary.md>)**
   Research Paper; publication: 2026-06; precision: month; basis: explicit.

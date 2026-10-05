@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 130,
+    "resources": 131,
     "diagrams": 14
   },
   "taxonomy": {
@@ -1852,6 +1852,112 @@
       "caveats": [
         "Memory safety does not establish data trust or permission to perform an operation.",
         "Chromium-specific exceptions are not blanket guarantees for other projects."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ci4ms-2026-log-viewer-stored-blind-xss-boundary",
+      "title": "CI4MS: keep stored diagnostic content inert in administrative log views",
+      "publisher": "CI4MS maintainers",
+      "authors": [],
+      "primary_url": "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "interpreter-boundaries"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "browser-isolation-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2026-34560 concerns user-influenced error content retained in CI4MS logs and later interpreted as active browser content in the administrative viewer. The maintainer explicitly identifies stored DOM blind XSS and CWE-79. The supporting GitHub Advisory Database narrative describes delayed execution when an administrator opens the logs. Conceptual boundary: diagnostic storage does not make external data trustworthy for browser interpretation; persistence and a separate observation context explain the two supported subtype labels.",
+      "defensive_use": "Editorial lesson: keep logged values inert throughout storage, retrieval and display. Use text-only rendering or encoding appropriate to the actual output context, including diagnostic interfaces used by privileged staff. Review all log-viewing paths for the same data/code separation. Access restrictions and browser policy are defense in depth, not substitutes for safe rendering. Verify remediation against the deployed version and its migration requirements; the historical patched-version designation alone is not a current deployment recommendation.",
+      "prerequisites": [
+        "Browser rendering contexts and the distinction between stored data and executable interpretation",
+        "Logging lifecycles and administrative-interface trust boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory, supporting GitHub Advisory Database entry and release notes."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-03-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Original maintainer-advisory publication; later database events are separate."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition date established; a software release is a different event."
+        },
+        "source_displayed": {
+          "value": "2026-03-31",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed on the selected primary advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-05T01:03:50Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Read the advisory, database narrative and release notes. The written demonstration describes browser execution; the external demonstration was not opened. No reproduction, target testing or independent patch verification performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4",
+          "title": "CI4MS log-viewer security advisory GHSA-r4v5-rwr2-q7r4",
+          "publisher": "CI4MS maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T01:01:37Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "advisory-database",
+          "url": "https://github.com/advisories/GHSA-r4v5-rwr2-q7r4",
+          "title": "GitHub Advisory Database entry for CVE-2026-34560",
+          "publisher": "GitHub Advisory Database",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T01:01:20Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/ci4-cms-erp/ci4ms/releases/tag/0.31.0.0",
+          "title": "CI4MS 0.31.0.0 security and framework release notes",
+          "publisher": "CI4MS maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T01:01:37Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Applicability requires affected CI4MS software, influence over logged content and a later administrator view. The severity metadata specifies low privileges but no exact application role; its no-user-interaction value conflicts with the narrative's viewing requirement. Neither point is silently resolved.",
+        "The sources claim privilege escalation, administrator account takeover and full application compromise. These broader outcomes are not independently established by this review or the written browser-execution demonstration; production exploitation is not established.",
+        "The advisory lists affected versions through 0.28.6.0 and patched version 0.31.0.0. The intervening version range is not classified by this record.",
+        "bertugfahriozer published the advisory; bugmithlegend is credited as Reporter. No separate author byline was established, so authors remains empty.",
+        "The linked 0.31.0.0 release is marked prerelease and includes a replacement log viewer, a framework upgrade and an authentication migration. These broad release notes do not independently prove the specific patch's effectiveness.",
+        "The database records publication there on April 1, 2026 and an April 6 update. Neither replaces the March 31 original advisory publication.",
+        "No qualifying individual award is established. Learning prerequisites and generalized defensive guidance are editorial; this educational case grants no testing authorization."
       ],
       "content_scope": "defensive_education"
     },

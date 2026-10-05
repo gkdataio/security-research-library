@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 13 reports · 12 related resources · 3 diagrams
+**Vulnerability family** · 13 reports · 13 related resources · 3 diagrams
 
 Separation between untrusted data and executable interpretation.
 
@@ -33,6 +33,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
+- [CI4MS: keep stored diagnostic content inert in administrative log views](<../resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>) — topic: Interpreter Boundaries.
 - [Django: ORM alias metadata must not acquire query authority](<../resources/django-2026-query-alias-structure-boundary.md>) — topic: Interpreter Boundaries.
 - [DOMPurify: accepted DOM realms must retain complete sanitization](<../resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — topic: Interpreter Boundaries.
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
