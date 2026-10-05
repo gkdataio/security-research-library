@@ -9,7 +9,7 @@
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-A researcher-reported USD 30,000 award illustrates a gap between approval of a contribution and selection of the code executed\.
+A researcher-published Google award notice for $30,000 \(USD contextually inferred\) illustrates a gap between approval of a contribution and selection of the code executed\.
 
 ### Root cause
 
@@ -29,7 +29,7 @@ The controlled demonstration executed a newer, unreviewed revision\. Access to s
 
 **USD 30,000** — bug\_bounty; single\_report; status: awarded.
 
-Evidence level: researcher\_reported. Older reference: public write-up predates the preferred 12-month window; original report was in 2024\.
+Evidence level: researcher\_reported\_with\_vendor\_quote. The researcher-published Google notice states $30000\.00 without an explicit currency code\. USD is inferred from Google’s March 2017 program-wide USD statement, almost eight years before the January 2025 award, with October 2024 official context linking Cloud rewards to the broader Google VRP\. This is denomination context, not independent proof of the individual award’s currency or cash settlement\. Older reference; original report was in 2024\.
 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-cloud-build-approval-toctou-2025.json>).
 
@@ -46,11 +46,12 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 ## Verification limits
 
-Reviewed: 2026-10-02T20:00:00Z. Re-read the approval model, observed build result, fix analysis and timeline; separated demonstrated behavior, conditional consequences and vendor fix-status confirmation\.
+Reviewed: 2026-10-05T21:13:58Z. Reviewed the researcher-published award image and official currency and Cloud-program continuity context\. Bound the amount and reproduced vendor wording to award-image; used the official sources only for qualified USD inference\. Preserved prior technical and event-date evidence\. No target interaction or exploit reproduction\. The award-image retrieval timestamp records the immediate post-review clock observation, not an exact image-capture time\.
 
-- Researcher-reported award; cash settlement was not independently audited\.
+- The award notice is vendor correspondence reproduced by the researcher, not independently retrieved vendor evidence or proof of cash settlement\.
 - The June 18, 2025 status change confirms the issue was marked fixed, not the exact deployment date\.
 - The public account’s broader security consequences depend on pipeline permissions; no universal secret exposure is established\.
+- The notice uses $ without spelling out USD\. Currency is inferred from March 2017 Google VRP context, almost eight years before the award, and October 2024 Cloud-program continuity, about three months before it; neither independently proves this individual award’s denomination or settlement\.
 
 ## Related conceptual diagrams
 
@@ -59,5 +60,8 @@ Reviewed: 2026-10-02T20:00:00Z. Re-read the approval model, observed build resul
 ## Sources and attribution
 
 - [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) — Adnan Khan; retrieved 2026-10-02T20:00:00Z.
+- [Researcher-published Google award notice for the Cloud Build report](<https://adnanthekhan.com/_astro/images/google-bounty-payment.BiMCzkaR_287nKC.webp>) — Adnan Khan, reproducing a Google award notice; retrieved 2026-10-05T21:08:43Z.
+- [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Josh Armour / Google; retrieved 2026-10-05T21:11:25Z.
+- [Introducing Google Cloud’s new Vulnerability Reward Program](<https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program>) — Michael Cote and Sri Tulasiram / Google Cloud; retrieved 2026-10-05T21:11:25Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
