@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "id": "axios-2025-base-url-destination-authority",
+  "title": "Axios: URL construction does not establish destination authority",
+  "publisher": "Axios",
+  "authors": [],
+  "primary_url": "https://github.com/axios/axios/security/advisories/GHSA-jr5f-v2jv-69x6",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "authorization",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "integration-threat-modeling",
+    "secrets-containment",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2025-27152 explicitly identifies possible SSRF when an application assumes baseURL confines destinations but accepts unvalidated caller-controlled URL input. An absolute URL can select another destination; configured sensitive headers may then reach an unintended recipient. The contained demonstration returns content from a different destination; it does not establish production compromise. Conceptual boundary: constructing a URL and authorizing its destination are separate responsibilities.",
+  "defensive_use": "Current official Axios documentation treats baseURL as a convenience rather than an access-control boundary. Absolute destinations can override it by default; disabling that behavior does not constrain relative-path normalization. Editorial lesson: validate the resolved destination against application policy, scope credentials to their intended recipients, and apply least-privilege egress controls. Review the selected transport and deployed version together. A software upgrade or configuration toggle alone does not make arbitrary caller input safe.",
+  "prerequisites": [
+    "URL resolution and the distinction between construction and destination authorization",
+    "Server-side HTTP clients and credential-bearing request configuration"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory, official releases and documentation, and GitHub Advisory Database metadata."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-03-07",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Original maintainer-advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No educational-resource edition date established; software release events remain separate."
+    },
+    "source_displayed": {
+      "value": "2025-03-07",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Publication date shown on the selected primary advisory."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-05T01:43:39Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Read the maintainer advisory, database entry, tagged changelog, release notes and current documentation. The Axios repository links axios.rest as its official documentation. No reproduction, target testing or independent patch execution performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/axios/axios/security/advisories/GHSA-jr5f-v2jv-69x6",
+      "title": "Axios absolute-URL security advisory GHSA-jr5f-v2jv-69x6",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:41:40Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "advisory-database",
+      "url": "https://github.com/advisories/GHSA-jr5f-v2jv-69x6",
+      "title": "GitHub Advisory Database entry for CVE-2025-27152",
+      "publisher": "GitHub Advisory Database",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:42:13Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-1-8-2",
+      "url": "https://github.com/axios/axios/releases/tag/v1.8.2",
+      "title": "Axios v1.8.2 release notes",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:41:40Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "changelog-1-8-2",
+      "url": "https://github.com/axios/axios/blob/v1.8.2/CHANGELOG.md",
+      "title": "Axios tagged changelog for v1.8.2",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:42:31Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "release-0-30-0",
+      "url": "https://github.com/axios/axios/releases/tag/v0.30.0",
+      "title": "Axios v0.30.0 backport release notes",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:43:17Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "request-config",
+      "url": "https://axios.rest/pages/advanced/request-config",
+      "title": "Axios request configuration: destination and base-URL semantics",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:42:13Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "project",
+      "url": "https://github.com/axios/axios",
+      "title": "Axios official repository and documentation links",
+      "publisher": "Axios",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-05T01:42:02Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "SSRF requires server-side execution and unvalidated caller influence over the requested URL. Credential exposure additionally requires sensitive request configuration and delivery to an unintended recipient. The advisory also covers client-side use, which alone is not SSRF.",
+    "The maintainer lists affected versions <=1.7.9 and <=0.29.0, while the database lists >=1.0.0, <1.8.2 and <0.30.0. Both identify 1.8.2 and 0.30.0 as patched. The range disagreement is preserved; intervening versions are not silently classified.",
+    "The v1.8.2 release and tagged changelog describe HTTP-adapter support for the absolute-URL option on March 7, 2025. The v0.30.0 release, dated March 26, 2025, identifies the backport. These are software events, not educational-resource edition dates or claims about the latest safe release.",
+    "jasonsaayman published the advisory; lambdasawa is credited as Reporter. No separate author byline was established, so authors remains empty.",
+    "The database shows a November 27, 2025 update; it does not change the original March 7 publication. Current request-configuration guidance is living documentation, not proof of what the March release documented.",
+    "No production incident, account takeover or qualifying individual award is established. The reported demonstration and conditional credential risk remain separate. Learning prerequisites and generalized design guidance are editorial; this educational case grants no testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}

@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**1 award-backed report · 2 educational case studies · 1 learning reference**
+**1 award-backed report · 3 educational case studies · 1 learning reference**
 
 Source-established failures of server request-destination authority\. Keep affected configurations, runtime reachability and bounded impact in the linked evidence\.
 
@@ -57,7 +57,13 @@ Maintainer advisories and researcher publications remain educational resources; 
 
 ### 2025 publications
 
-No mapped records with an established publication date in this year.
+- **[Axios: URL construction does not establish destination authority](<../resources/axios-2025-base-url-destination-authority.md>)**
+  Maintainer Advisory; publication: 2025-03-07; precision: day; basis: explicit.
+  Publication evidence: [Axios absolute-URL security advisory GHSA-jr5f-v2jv-69x6](<https://github.com/axios/axios/security/advisories/GHSA-jr5f-v2jv-69x6>).
+  Date qualification: Original maintainer-advisory publication\.
+  Classification: Server-side request forgery \(SSRF\) (source explicit). The maintainer explicitly identifies SSRF when caller-controlled URL input defeats an application assumption about destination confinement\.
+  Evidence: [Axios absolute-URL security advisory GHSA-jr5f-v2jv-69x6](<https://github.com/axios/axios/security/advisories/GHSA-jr5f-v2jv-69x6>); location: Advisory title, Summary and Impact.
+  2025–2026 learning relevance (editorial): Treat destination policy and credential scope as explicit application invariants; preserve runtime prerequisites and distinguish historical patch evidence from current safe-input requirements\.
 
 <a id="learning"></a>
 ## Related learning references
