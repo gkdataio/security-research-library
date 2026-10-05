@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**5 award-backed reports · 10 educational case studies · 2 learning references**
+**5 award-backed reports · 11 educational case studies · 2 learning references**
 
 Source-established cross-site scripting, including evidence-backed subtypes below and broader browser-origin or worker cases whose narrower subtype is not established\.
 
@@ -152,6 +152,14 @@ Maintainer advisories and researcher publications remain educational resources; 
   Classification: Reflected XSS \(RXSS\) (source explicit). The researcher explicitly identifies reflected XSS from request-derived route data in a debug error response\.
   Evidence: [SBA Research advisory SBA-ADV-20241209-02](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>); location: Advisory title, Vulnerability Overview and Impact.
   2025–2026 learning relevance (editorial): Apply output-context protection to diagnostic views and preserve the debug-mode, error-path and interaction requirements\. Publication and software-fix dates remain separate\.
+
+- **[Trix: validate stored attachment data before link interpretation](<../resources/trix-2025-attachment-link-interpretation-boundary.md>)**
+  Maintainer Advisory; publication: 2025-12-30; precision: day; basis: explicit.
+  Publication evidence: [Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>).
+  Date qualification: Original maintainer-advisory publication; later database events are separate\.
+  Classification: Stored XSS (source explicit). The maintainer explicitly identifies stored XSS involving attachment metadata later rendered as browser content and clicked by a user\.
+  Evidence: [Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>); location: Advisory title and Impact.
+  2025–2026 learning relevance (editorial): Preserve semantic validation when stored metadata becomes link authority\. Keep the affected integration and interaction prerequisites explicit; the 2025 publication is separate from later database events\.
 
 <a id="learning"></a>
 ## Related learning references

@@ -4,7 +4,7 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-134 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+135 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -15,12 +15,12 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Business Logic and State Integrity](<#topic-business-logic>) — 32 resources.
 - [Cloud Security](<#topic-cloud-security>) — 7 resources.
 - [Identity](<#topic-identity>) — 42 resources.
-- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 11 resources.
+- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 12 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
 - [Verification](<#topic-verification>) — 23 resources.
-- [Web Foundations](<#topic-web-foundations>) — 66 resources.
+- [Web Foundations](<#topic-web-foundations>) — 67 resources.
 
 <a id="topic-ai-security"></a>
 ## Ai Security
@@ -229,7 +229,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-interpreter-boundaries"></a>
 ## Interpreter Boundaries
 
-11 resources.
+12 resources.
 
 - [CI4MS: keep stored diagnostic content inert in administrative log views](<resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>) — CI4MS maintainers.
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
@@ -241,6 +241,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript.
 - [TanStack Start: preserve server-owned response authority through errors](<resources/tanstack-2026-server-function-response-authority.md>) — TanStack.
+- [Trix: validate stored attachment data before link interpretation](<resources/trix-2025-attachment-link-interpretation-boundary.md>) — Trix maintainers.
 - [Uptime Kuma: separate notification-template authority from server files](<resources/uptime-kuma-2025-notification-template-file-boundary.md>) — Uptime Kuma maintainers.
 
 <a id="topic-memory-safety"></a>
@@ -299,7 +300,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-web-foundations"></a>
 ## Web Foundations
 
-66 resources.
+67 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
@@ -358,6 +359,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security.
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
 - [TanStack Start: preserve server-owned response authority through errors](<resources/tanstack-2026-server-function-response-authority.md>) — TanStack.
+- [Trix: validate stored attachment data before link interpretation](<resources/trix-2025-attachment-link-interpretation-boundary.md>) — Trix maintainers.
 - [Trusted Types: typed sinks depend on trustworthy policy creation](<resources/w3c-2026-trusted-types-policy-authority.md>) — World Wide Web Consortium.
 - [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3.
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab.

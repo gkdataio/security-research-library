@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 134,
+    "resources": 135,
     "diagrams": 14
   },
   "taxonomy": {
@@ -11236,6 +11236,122 @@
         "The September 30 announcement states that patched packages were available by then; it does not establish a separate resource edition or each package's exact release date.",
         "GitHub identifies tannerlinsley as advisory publisher, not an explicit author byline; authors therefore remains empty. The supporting blog names Tanner Linsley. The advisory credits Lovable for helping discover and report the issue.",
         "This concerns reflected response authority, distinct from the library's Next.js Re:CACHE metadata and shared-cache case. No individual bounty amount is established. This educational record grants no testing authorization."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "trix-2025-attachment-link-interpretation-boundary",
+      "title": "Trix: validate stored attachment data before link interpretation",
+      "publisher": "Trix maintainers",
+      "authors": [],
+      "primary_url": "https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "interpreter-boundaries"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "browser-isolation-review",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The Trix maintainer advisory explicitly identifies stored XSS involving attachment metadata, later HTML rendering and a user click. It describes JavaScript running in the user’s session, with possible unauthorized actions or information disclosure. Conceptual root cause: stored attachment data was reused as link authority without validating its meaning in that browser context; storage does not confer trust.",
+      "defensive_use": "Editorial lesson: validate the meaning of untrusted values whenever data becomes an active browser attribute, including after storage and transformation. The maintainer patch and release notes add DOMPurify attribute validation before attachment links become anchors. The patch includes regression assertions; reading them does not establish that tests ran or that every integration is protected. Review the deployed rendering path and dependency state. The historical patched version is not a current safety recommendation.",
+      "prerequisites": [
+        "Browser attribute contexts and the distinction between stored data and active interpretation",
+        "Rich-text attachment metadata and rendering lifecycles"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory, patch, release notes and supporting GitHub Advisory Database entry."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-12-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Original maintainer-advisory publication; later database events are separate."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition date established; software releases are separate events."
+        },
+        "source_displayed": {
+          "value": "2025-12-30",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date displayed by the selected primary advisory."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-05T18:32:37Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Read the maintainer advisory, patch, release notes and database entry. No reproduction, target testing or independent patch verification performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v",
+          "title": "Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v",
+          "publisher": "Trix maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T18:31:19Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "patch",
+          "url": "https://github.com/basecamp/trix/commit/73c20cf03ab2b56c0ef9c9b1aaf63f2de44f4010",
+          "title": "Trix attachment-link validation patch",
+          "publisher": "Trix maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T18:31:19Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/basecamp/trix/releases/tag/v2.1.16",
+          "title": "Trix v2.1.16 release notes",
+          "publisher": "Trix maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T18:31:19Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "advisory-database",
+          "url": "https://github.com/advisories/GHSA-g9jg-w8vm-g96v",
+          "title": "GitHub Advisory Database entry for GHSA-g9jg-w8vm-g96v",
+          "publisher": "GitHub Advisory Database",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T18:32:37Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Applicability requires an affected editor integration, influence over attachment metadata, later rendering and a user click. The low-privileges severity metric does not identify a specific application role or storage workflow.",
+        "The advisory lists npm trix and RubyGems action_text-trix below 2.1.16 as affected and 2.1.16 as patched. These are historical software-version statements, not an educational-resource edition.",
+        "The described impact is a maintainer claim; production exploitation, account takeover and independently reproduced execution are not established by this review.",
+        "flavorjones published the advisory; michaelcheers is credited as the reporting researcher. No explicit author byline is established, so authors remains empty.",
+        "The database records publication there on December 31, 2025 and an update on January 8, 2026. Neither replaces the December 30, 2025 primary publication.",
+        "The advisory lists no known CVE. No qualifying individual award is established. Learning prerequisites and generalized defensive guidance are editorial; this educational case grants no testing authorization."
       ],
       "content_scope": "defensive_education"
     },

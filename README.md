@@ -54,7 +54,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) · [Store
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
 - **850 distinct program pages** across the overlapping Bugcrowd and cross-platform catalogs; 808 have captured scope rows and 42 retain precise limitations in the [coverage audit](docs/program-scope-audit.md)
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **134 educational resources** and **14 conceptual diagrams**, maintained separately from award reports
+- **135 educational resources** and **14 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 33 older; 9 with unknown original publication dates
 

@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**1 award-backed report · 3 educational case studies · 0 learning references**
+**1 award-backed report · 4 educational case studies · 0 learning references**
 
 Cross-site scripting where a source establishes that persisted content or state later reaches a browser execution context\. Persistence alone is insufficient evidence of XSS\.
 
@@ -67,7 +67,13 @@ Maintainer advisories and researcher publications remain educational resources; 
 
 ### 2025 publications
 
-No mapped records with an established publication date in this year.
+- **[Trix: validate stored attachment data before link interpretation](<../resources/trix-2025-attachment-link-interpretation-boundary.md>)**
+  Maintainer Advisory; publication: 2025-12-30; precision: day; basis: explicit.
+  Publication evidence: [Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>).
+  Date qualification: Original maintainer-advisory publication; later database events are separate\.
+  Classification: Stored XSS (source explicit). The maintainer explicitly identifies stored XSS involving attachment metadata later rendered as browser content and clicked by a user\.
+  Evidence: [Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>); location: Advisory title and Impact.
+  2025–2026 learning relevance (editorial): Preserve semantic validation when stored metadata becomes link authority\. Keep the affected integration and interaction prerequisites explicit; the 2025 publication is separate from later database events\.
 
 <a id="learning"></a>
 ## Related learning references
