@@ -1,6 +1,6 @@
 # Server-side template injection \(SSTI\)
 
-[2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
+[Browse by vulnerability type](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
 **0 award-backed reports · 2 educational case studies · 0 learning references**
 

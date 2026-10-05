@@ -13,11 +13,9 @@ Source-backed bug bounty writeups, vulnerability disclosures, official learning 
 
 ### Browse the library
 
-**[Browse by vulnerability type](docs/vulnerability-types.md)** — reports, related learning and conceptual diagrams together, with broader security themes labeled separately.
+**[Browse by vulnerability type](docs/vulnerability-types.md)** — one starting point for broad families, XSS and its subtypes, SSRF and SSTI. Individual type pages separate award-backed reports, educational case studies and learning references into 2025–2026 publication groups, with historical and unknown-date examples clearly labeled. Broader security themes, related learning and conceptual diagrams remain available from the same hub.
 
-[**2025–2026 XSS, SSRF and SSTI reports and case studies**](docs/vulnerability-reports-2025-2026.md) — publication-year groups, clearly labeled historical and unknown-date examples, and explicit coverage gaps.
-
-Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) · [Stored XSS](docs/vulnerabilities/stored-xss.md) · [Reflected XSS (RXSS)](docs/vulnerabilities/reflected-xss.md) · [Blind XSS](docs/vulnerabilities/blind-xss.md) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
+Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored](docs/vulnerabilities/stored-xss.md) · [Reflected / RXSS](docs/vulnerabilities/reflected-xss.md) · [Blind](docs/vulnerabilities/blind-xss.md)) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
 
 <p align="center">
   <a href="docs/reports.md"><img src="docs/assets/readme/collection-reports.svg" width="390" alt="Disclosures — read the report collection"></a>
@@ -68,6 +66,7 @@ Curation currently prioritizes web-application security relevant to 2026: author
 
 | If you want to… | Start with… |
 |---|---|
+| Browse a vulnerability family or a source-backed subtype | [Vulnerability types](docs/vulnerability-types.md), then a linked type page for publication-year groups and coverage gaps |
 | Find a disclosure and inspect its evidence | [Complete report index](#report-index), then the linked JSON record |
 | Study hypotheses, code review, contained exercises and evidence | [Research methodology](docs/research-methodology.md) |
 | Study defensive design principles by topic | [Defensive learning guide](docs/learning-guide.md) |

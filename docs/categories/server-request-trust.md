@@ -8,6 +8,12 @@ Destination validation and boundaries in server-initiated requests.
 
 Report membership uses the existing primary or secondary category server-request-trust. Learning resources and diagrams are related context, not additional findings. Cross-links do not create duplicate records or testing authorization.
 
+## Specific vulnerability types
+
+These narrower pages use separate source-backed memberships and publication-year groups. Their placement here is navigation, not an additional classification of every record in this family.
+
+- [Server-side request forgery \(SSRF\)](<../vulnerabilities/ssrf.md>) — 1 award-backed report · 3 educational case studies · 1 learning reference
+
 On this page: [Reports](#reports) · [Related learning](#related-learning) · [Conceptual diagrams](#conceptual-diagrams)
 
 <a id="reports"></a>

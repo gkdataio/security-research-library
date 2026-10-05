@@ -1,6 +1,6 @@
 # Server-side request forgery \(SSRF\)
 
-[2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
+[Browse by vulnerability type](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
 **1 award-backed report · 3 educational case studies · 1 learning reference**
 

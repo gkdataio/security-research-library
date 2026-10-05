@@ -1,6 +1,7 @@
 """Pure, offline category navigation. No new research classifications or records."""
 import json
 from validate import Invalid, check_schema
+from vulnerability_navigation import family_navigation, load_config, publication_guidance
 
 
 def validate_config(config, schema, taxonomy, resource_taxonomy):
@@ -53,19 +54,21 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
     config = json.loads((root/'data/category-navigation.json').read_text())
     schema = json.loads((root/'schema/category-navigation.schema.json').read_text())
     validate_config(config, schema, taxonomy, resource_taxonomy)
+    vulnerability_config = load_config(root, reports, resources)
     titles = {c['id']: c for c in taxonomy['categories']}
     topics = {t['id']: t['title'] for t in resource_taxonomy['topics']}
     diagram_titles = {d['id']: d['title'] for d in diagrams}
     categories = sorted(config['categories'], key=lambda c: (titles[c['id']]['title'].casefold(), c['id']))
     hub = ['# Browse by vulnerability type', '',
            '[Library home](../README.md) · [All reports](reports.md) · [All learning resources](resource-index.md) · [Diagram gallery](diagram-gallery.md)', '',
-           'Choose a vulnerability family to find reports, related learning and conceptual diagrams together. Broader security themes are listed separately below.', '',
-           '**[2025–2026: XSS, stored XSS, reflected XSS (RXSS), blind XSS, SSRF and SSTI](vulnerability-reports-2025-2026.md)** — evidence-backed narrower categories with separate publication-year groups, historical relevance and explicit gaps.', '',
+           'Choose a vulnerability family or a specific type below. XSS and its stored, reflected and blind subtypes, SSRF and SSTI are nested directly under their navigation families. Broader security themes are listed separately.', '',
            f'**{len(reports)} distinct reports · {len(resources)} learning resources · {len(diagrams)} conceptual diagrams** in the library.', '',
-           'Reports follow their existing primary and secondary categories. Related learning is educational context, not a vulnerability classification or award evidence. Categories overlap: do not add their counts together. Public disclosures grant no testing authorization.', '']
+           'Family pages bring together reports, related learning and conceptual diagrams. Specific-type pages keep award-backed reports, educational case studies and learning references separate, with publication-year groups and explicit gaps.', '',
+           'On this page: [Vulnerability families and specific types](#vulnerability-families) · [Security themes](#security-themes) · [Publication groups and coverage](#publication-and-coverage) · [General foundations](#general-foundations)', '']
     pages = {}
     for kind, heading in [('vulnerability_family', 'Vulnerability families'), ('security_theme', 'Security themes and environments')]:
-        hub += ['', '## '+heading, '']
+        anchor = 'vulnerability-families' if kind == 'vulnerability_family' else 'security-themes'
+        hub += ['', '<a id="'+anchor+'"></a>', '## '+heading, '']
         if kind == 'security_theme':
             hub += ['These describe environments or trust boundaries, rather than specific vulnerability types.', '']
         for category in (c for c in categories if c['kind'] == kind):
@@ -75,12 +78,19 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
             counts = collection_counts(matched, learning, related)
             hub += ['- **'+link(title, 'categories/'+cid+'.md')+'** — '+counts,
                     '  '+text(titles[cid]['description'])+'.']
+            hub += family_navigation(vulnerability_config, cid, reports, resources, link, indent=2)
             lines = ['# '+text(title), '',
                      '[Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)', '',
                      '**'+('Security theme / environment' if kind == 'security_theme' else 'Vulnerability family')+'** · '+counts, '',
                      text(titles[cid]['description'])+'.', '',
-                     'Report membership uses the existing primary or secondary category '+text(cid)+'. Learning resources and diagrams are related context, not additional findings. Cross-links do not create duplicate records or testing authorization.', '',
-                     'On this page: [Reports](#reports) · [Related learning](#related-learning) · [Conceptual diagrams](#conceptual-diagrams)', '',
+                     'Report membership uses the existing primary or secondary category '+text(cid)+'. Learning resources and diagrams are related context, not additional findings. Cross-links do not create duplicate records or testing authorization.', '']
+            specific_types = family_navigation(vulnerability_config, cid, reports, resources, link,
+                                               prefix='../vulnerabilities/')
+            if specific_types:
+                lines += ['## Specific vulnerability types', '',
+                          'These narrower pages use separate source-backed memberships and publication-year groups. Their placement here is navigation, not an additional classification of every record in this family.', '',
+                          *specific_types, '']
+            lines += ['On this page: [Reports](#reports) · [Related learning](#related-learning) · [Conceptual diagrams](#conceptual-diagrams)', '',
                      '<a id="reports"></a>', '## Reports', '']
             for report in matched:
                 role = 'primary' if report['category_id'] == cid else 'secondary'
@@ -107,12 +117,13 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
             lines += ['', '---', '',
                       'Generated offline from [canonical categories](../../data/taxonomy.json), the [navigation crosswalk](../../data/category-navigation.json) and existing report/resource/diagram records. Sources, classifications and review timestamps are unchanged. [Navigation maintenance](../category-navigation.md).', '']
             pages['docs/categories/'+cid+'.md'] = '\n'.join(lines)
-    hub += ['', '## General foundations and research practice', '',
+    hub += ['', *publication_guidance(vulnerability_config)]
+    hub += ['', '<a id="general-foundations"></a>', '## General foundations and research practice', '',
             'These learning topics span multiple vulnerability families:', '',
             '- [Web foundations](resource-topics.md#topic-web-foundations)',
             '- [Verification](resource-topics.md#topic-verification)',
             '- [Reporting](resource-topics.md#topic-reporting)', '',
             '[All resource topics](resource-topics.md) · [Original report topic index](report-topics.md)', '',
-            'Generated offline; rebuilding does not reverify sources or change canonical records. [How relationships are chosen](category-navigation.md).', '']
+            'Generated offline; rebuilding does not reverify sources or change canonical records. [Family relationships](category-navigation.md) · [Specific-type evidence and dates](vulnerability-navigation.md).', '']
     pages['docs/vulnerability-types.md'] = '\n'.join(hub)
     return pages
