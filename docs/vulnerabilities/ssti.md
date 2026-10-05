@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**0 award-backed reports · 1 educational case study · 0 learning references**
+**0 award-backed reports · 2 educational case studies · 0 learning references**
 
 Source-established untrusted input being interpreted as server-side template syntax\. Broad injection labels, unsafe reflection, template use and server rendering alone do not establish SSTI\.
 
@@ -34,7 +34,13 @@ Maintainer advisories and researcher publications remain educational resources; 
 
 ### 2025 publications
 
-No mapped records with an established publication date in this year.
+- **[Uptime Kuma: separate notification-template authority from server files](<../resources/uptime-kuma-2025-notification-template-file-boundary.md>)**
+  Maintainer Advisory; publication: 2025-10-20; precision: day; basis: explicit.
+  Publication evidence: [Server-side Template Injection \(SSTI\) in Notification Templates Allows Arbitrary File Read](<https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh>).
+  Date qualification: Explicit original advisory publication date\.
+  Classification: Server-side template injection \(SSTI\) (source explicit). The maintainer explicitly identifies SSTI: user-editable notification templates acquire server-side file capabilities through Liquid evaluation\. This is not inferred merely from template use or file disclosure\.
+  Evidence: [Server-side Template Injection \(SSTI\) in Notification Templates Allows Arbitrary File Read](<https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh>); location: Original advisory title, Summary, Details and Impact; Weaknesses CWE-1336.
+  2025–2026 learning relevance (editorial): Separate template-editing permission from host-file authority and apply containment to every resolution path\. Preserve the authenticated prerequisite and the later evidence that qualifies the original patch\.
 
 <a id="learning"></a>
 ## Related learning references

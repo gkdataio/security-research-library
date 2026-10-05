@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 132,
+    "resources": 133,
     "diagrams": 14
   },
   "taxonomy": {
@@ -11311,6 +11311,124 @@
         "Research reported February 25, 2026; acknowledged as a duplicate the next day. The vendor advisory was published March 10; detailed research September 21.",
         "The maintainer lists affected versions as >=15.3.1, <17.2.1, while listing 16.5.1 and 17.2.2 as patched. These fields conflict; no corrected affected interval is inferred.",
         "The byline is Jaroslav Lobačevski; discovery is credited to the GitHub Security Lab Taskflow Agent with his manual verification. The maintainer credits odgrso separately. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "uptime-kuma-2025-notification-template-file-boundary",
+      "title": "Uptime Kuma: separate notification-template authority from server files",
+      "publisher": "Uptime Kuma maintainers",
+      "authors": [],
+      "primary_url": "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "interpreter-boundaries",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "untrusted-input-handling",
+        "secrets-containment",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "The October 2025 advisory identifies post-authentication SSTI (CWE-1336): editable notification templates were evaluated by Liquid with insufficiently restricted file capabilities. Template-editing authority thereby reached server-side filesystem access. The reported outcome is server file disclosure. A 2026 follow-up says the initial restrictions left a file-resolution fallback outside the intended boundary.",
+      "defensive_use": "Editorial lesson: define a minimal capability set for user-editable templates and keep notification formatting separate from host-file authority. Apply containment consistently across every resolution path, including fallbacks; process-level least privilege limits exposure but does not repair template isolation. Review later maintainer advisories before treating an earlier patch as complete. The 2.2.1 release credits upstream LiquidJS remediation. Capability removal is suggested in the follow-up advisory, but this review does not establish that suggestion as the shipped implementation.",
+      "prerequisites": [
+        "Server-side template evaluation and capability boundaries",
+        "Application-process file permissions and remediation evidence"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisories and release history."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-10-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Explicit original advisory publication date."
+        },
+        "source_displayed": {
+          "value": "2025-10-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "The original advisory header displays its publication date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition date established; software release and follow-up disclosure dates remain separate."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-05T02:15:14Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Original advisory, incomplete-fix follow-up and both release notices reviewed. No target testing, vulnerability reproduction or independent patch execution performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh",
+          "title": "Server-side Template Injection (SSTI) in Notification Templates Allows Arbitrary File Read",
+          "publisher": "Uptime Kuma maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T02:13:50Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "original-release",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.0.0",
+          "title": "Uptime Kuma 2.0.0 release",
+          "publisher": "Uptime Kuma maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T02:14:15Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "follow-up-advisory",
+          "url": "https://github.com/louislam/uptime-kuma/security/advisories/GHSA-v832-4r73-wx5j",
+          "title": "Another Server-side Template Injection (SSTI) in Notification Templates Allows Arbitrary File Read",
+          "publisher": "Uptime Kuma maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T02:12:18Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "follow-up-release",
+          "url": "https://github.com/louislam/uptime-kuma/releases/tag/2.2.1",
+          "title": "Uptime Kuma 2.2.1 release",
+          "publisher": "Uptime Kuma maintainers",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T02:14:15Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Applicability requires an authenticated user able to edit notification templates in an affected configuration. File disclosure is bounded by application-process read permissions; operating-system execution and production compromise are not established by these sources.",
+        "The original advisory lists >=1.23.0 through 1.23.16 and <=2.0.0-beta.4 as affected, with 1.23.17 and 2.0.0 initially marked patched. The October 20, 2025 release of 2.0.0 references that advisory; these historical patch claims are qualified by the later incomplete-fix evidence.",
+        "GHSA-v832-4r73-wx5j, published March 16, 2026, reports continued file disclosure on 2.1.3 and lists 2.2.1 as patched. Its affected field says >=1.23.0 without an upper bound. The March 10, 2026 release of 2.2.1 attributes the correction to upstream LiquidJS. These are software and follow-up disclosure events, not this resource's original publication or edition date.",
+        "louislam published the original advisory; TriangleSnake is credited as Reporter. No separate author byline was established, so authors remains empty. The follow-up separately credits peaktwilight as Reporter.",
+        "The original advisory states no known CVE. CVE-2026-33130 belongs to the follow-up advisory and is not assigned to the 2025 finding here. The follow-up supplies remediation context for this single educational record, not a second 2026 case.",
+        "Historical fixed-version labels are source claims, not a current safety recommendation or independent proof of patch effectiveness. No qualifying individual award is established. Learning prerequisites and generalized defensive guidance are editorial."
       ],
       "content_scope": "defensive_education"
     },
