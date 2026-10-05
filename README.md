@@ -15,6 +15,8 @@ Source-backed public disclosures, official learning resources, and original diag
 
 **[Browse by vulnerability type](docs/vulnerability-types.md)** — reports, related learning and conceptual diagrams together, with broader security themes labeled separately.
 
+[**2025–2026: XSS subtypes, SSRF and SSTI**](docs/vulnerability-reports-2025-2026.md) — publication-year groups, related educational cases and explicit coverage gaps.
+
 <p align="center">
   <a href="docs/reports.md"><img src="docs/assets/readme/collection-reports.svg" width="390" alt="Disclosures — read the report collection"></a>
   <a href="docs/programs.md"><img src="docs/assets/readme/collection-programs.svg" width="390" alt="Program atlas — explore policies and scope catalogs"></a>
@@ -309,5 +311,4 @@ For updates, follow the [maintenance policy](DATA_POLICY.md#release-procedure): 
 ## Licensing
 
 Original maintenance code, tests and schemas use [MIT](LICENSES/MIT.txt). Original educational documentation, summaries and diagrams use [CC BY 4.0](LICENSES/CC-BY-4.0.txt). See the [license scope and attribution guide](LICENSE.md) for canonical JSON, mixed exports and third-party exclusions. Facts are not claimed as proprietary; source reports and quotations retain their own rights.
-
 

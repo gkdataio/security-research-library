@@ -60,6 +60,7 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
     hub = ['# Browse by vulnerability type', '',
            '[Library home](../README.md) · [All reports](reports.md) · [All learning resources](resource-index.md) · [Diagram gallery](diagram-gallery.md)', '',
            'Choose a vulnerability family to find reports, related learning and conceptual diagrams together. Broader security themes are listed separately below.', '',
+           '**[2025–2026: XSS, stored XSS, reflected XSS (RXSS), blind XSS, SSRF and SSTI](vulnerability-reports-2025-2026.md)** — evidence-backed narrower categories with separate publication-year groups, historical relevance and explicit gaps.', '',
            f'**{len(reports)} distinct reports · {len(resources)} learning resources · {len(diagrams)} conceptual diagrams** in the library.', '',
            'Reports follow their existing primary and secondary categories. Related learning is educational context, not a vulnerability classification or award evidence. Categories overlap: do not add their counts together. Public disclosures grant no testing authorization.', '']
     pages = {}

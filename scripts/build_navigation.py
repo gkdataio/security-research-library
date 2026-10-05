@@ -141,7 +141,7 @@ def resource_pages(resources, diagrams, taxonomy, skills):
 
 def check_generated_page_sets(root, pages):
     """Reject obsolete generated pages without deleting potentially edited files."""
-    for collection in ('reports', 'resources', 'categories'):
+    for collection in ('reports', 'resources', 'categories', 'vulnerabilities'):
         directory = 'docs/'+collection+'/'
         actual = {p.relative_to(root).as_posix() for p in (root/directory).glob('*.md')}
         expected = {name for name in pages if name.startswith(directory)}
@@ -191,6 +191,8 @@ def build(root=ROOT):
     pages['docs/diagram-gallery.md'] = '\n'.join(gallery)
     from category_navigation import category_pages
     pages.update(category_pages(root, reports, resources, diagrams, skills, taxonomy, text, link))
+    from vulnerability_navigation import vulnerability_pages
+    pages.update(vulnerability_pages(root, reports, resources, taxonomy, text, link))
     for name in ('docs/reports.md', 'docs/report-topics.md', 'docs/resource-index.md',
                  'docs/resource-topics.md', 'docs/diagram-gallery.md'):
         lines = pages[name].splitlines()
