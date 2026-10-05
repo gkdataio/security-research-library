@@ -7,7 +7,7 @@
 
 # Security Research Library
 
-Source-backed public disclosures, official learning resources, and original diagrams for security researchers, bug hunters, and authorized offensive-security teams. Each report preserves its evidence, root cause, bounded impact, and security lessons; structured JSON supports retrieval and analysis.
+Source-backed bug bounty writeups, vulnerability disclosures, official learning resources, and original diagrams for security researchers, bug bounty hunters, application-security engineers, and authorized assessment teams. Study root causes, bounded impact, and defensive lessons with linked evidence, or reuse the structured JSON for local catalogs and analysis.
 
 **Evidence-led:** [data policy](DATA_POLICY.md) · **Open reuse:** [CC BY 4.0 educational content](LICENSE.md#educational-content-cc-by-40) · [MIT software](LICENSE.md#software-mit)
 
@@ -15,7 +15,9 @@ Source-backed public disclosures, official learning resources, and original diag
 
 **[Browse by vulnerability type](docs/vulnerability-types.md)** — reports, related learning and conceptual diagrams together, with broader security themes labeled separately.
 
-[**2025–2026: XSS subtypes, SSRF and SSTI**](docs/vulnerability-reports-2025-2026.md) — publication-year groups, related educational cases and explicit coverage gaps.
+[**2025–2026 XSS, SSRF and SSTI reports and case studies**](docs/vulnerability-reports-2025-2026.md) — publication-year groups, clearly labeled historical and unknown-date examples, and explicit coverage gaps.
+
+Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) · [Stored XSS](docs/vulnerabilities/stored-xss.md) · [Reflected XSS (RXSS)](docs/vulnerabilities/reflected-xss.md) · [Blind XSS](docs/vulnerabilities/blind-xss.md) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
 
 <p align="center">
   <a href="docs/reports.md"><img src="docs/assets/readme/collection-reports.svg" width="390" alt="Disclosures — read the report collection"></a>
@@ -40,7 +42,7 @@ Source-backed public disclosures, official learning resources, and original diag
 
 </details>
 
-**On this page:** [Snapshot](#at-a-glance) · [Start here](#start-here) · [Visual theory](#see-the-boundaries) · [Report anatomy](#what-each-report-contains) · [JSON contracts](#use-the-json) · [Collection tools](#why-the-python-scripts-are-included) · [Report index](#report-index) · [Scope and attribution](#scope-maintenance-and-attribution)
+**On this page:** [Snapshot](#at-a-glance) · [Start here](#start-here) · [Visual theory](#see-the-boundaries) · [Report anatomy](#what-each-report-contains) · [JSON contracts](#use-the-json) · [Collection tools](#why-the-python-scripts-are-included) · [Report index](#report-index) · [Scope and attribution](#scope-maintenance-and-attribution) · [Contribute](#contribute)
 
 ## At a glance
 
@@ -307,6 +309,12 @@ The collection uses public primary sources, minimal attributed quotations, and o
 The diagrams are conceptual learning models, not claims about a vendor's exact architecture. The scripts validate, render, and export repository data; they do not discover vulnerabilities or test targets.
 
 For updates, follow the [maintenance policy](DATA_POLICY.md#release-procedure): verify primary sources, preserve stable identities and uncertainty, refresh recency, validate, and regenerate the affected outputs. A review that finds no qualifying new source needs no filler record.
+
+## Contribute
+
+Help improve the library with source corrections, clearer explanations, broken-link fixes, or public research that meets the [evidence policy](DATA_POLICY.md). [Open an issue](https://github.com/gkdataio/security-research-library/issues) with the affected record and a public primary source, or submit a focused pull request using the [maintenance procedure](DATA_POLICY.md#release-procedure). Keep award-backed reports and educational resources distinct; never submit private findings, credentials, payloads, or reproduction instructions.
+
+If this library is useful to your research, star the repository to find it again.
 
 ## Licensing
 
