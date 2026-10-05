@@ -2,7 +2,7 @@
 
 [2025–2026 category index](../vulnerability-reports-2025-2026.md) · [Broad vulnerability families](../vulnerability-types.md) · [Library home](../../README.md)
 
-**0 award-backed reports · 0 educational case studies · 0 learning references**
+**0 award-backed reports · 1 educational case study · 0 learning references**
 
 Source-established untrusted input being interpreted as server-side template syntax\. Broad injection labels, unsafe reflection, template use and server rendering alone do not establish SSTI\.
 
@@ -22,7 +22,19 @@ No award-backed reports currently mapped from reviewed evidence. This is a colle
 
 Maintainer advisories and researcher publications remain educational resources; they do not establish a qualifying individual award.
 
-No related educational case studies currently mapped from reviewed evidence. This is a collection gap, not evidence that this vulnerability type does not occur.
+### 2026 publications
+
+- **[Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<../resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>)**
+  Maintainer Advisory; publication: 2026-06-03; precision: day; basis: explicit.
+  Publication evidence: [Jinja2 Template Server Side Template Injection resulting in Remote Code Execution](<https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w>).
+  Date qualification: Explicit advisory publication date\.
+  Classification: Server-side template injection \(SSTI\) (source explicit). The maintainer explicitly identifies SSTI: untrusted configuration becomes server-side template source, rather than merely supplying data to a trusted template\.
+  Evidence: [Jinja2 Template Server Side Template Injection resulting in Remote Code Execution](<https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w>); location: Advisory Summary and Details; Weaknesses CWE-1336.
+  2025–2026 learning relevance (editorial): For 2025–2026 review, separate configuration data from interpreter authority and distinguish fixing that boundary from limiting workload privileges\. The publication date and earlier remediation history answer different questions\.
+
+### 2025 publications
+
+No mapped records with an established publication date in this year.
 
 <a id="learning"></a>
 ## Related learning references

@@ -4,7 +4,7 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-129 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+130 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
@@ -48,6 +48,7 @@ Original defensive summaries of official educational references. These resources
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP; Maintainer Advisory.
 - [HTML COOP: opener separation and same-origin authority](<resources/whatwg-coop-opener-and-origin-authority.md>) — WHATWG; Technical Standard.
 - [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>) — OWASP Cheat Sheet Series; Implementation Guide.
+- [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — Jupyter Enterprise Gateway maintainers; Maintainer Advisory.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow; Maintainer Advisory.
 - [LibreChat: agent edit authority must cover attached context](<resources/librechat-2026-agent-context-mutation-authority.md>) — LibreChat; Maintainer Advisory.
 - [LibreChat: delegated credentials must remain bound to the initiating session](<resources/librechat-2026-mcp-oauth-session-binding.md>) — LibreChat; Maintainer Advisory.

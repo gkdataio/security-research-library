@@ -4,7 +4,7 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-129 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+130 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -13,9 +13,9 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Ai Security](<#topic-ai-security>) — 13 resources.
 - [Authorization](<#topic-authorization>) — 79 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 32 resources.
-- [Cloud Security](<#topic-cloud-security>) — 6 resources.
+- [Cloud Security](<#topic-cloud-security>) — 7 resources.
 - [Identity](<#topic-identity>) — 42 resources.
-- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 7 resources.
+- [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 8 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
 - [Reporting](<#topic-reporting>) — 2 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
@@ -167,10 +167,11 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-cloud-security"></a>
 ## Cloud Security
 
-6 resources.
+7 resources.
 
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services.
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<resources/github-2026-internal-metadata-authority.md>) — Wiz Research.
+- [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — Jupyter Enterprise Gateway maintainers.
 - [NIST SP 800-190: Application Container Security Guide](<resources/nist-sp-800-190-container-isolation-guide.md>) — National Institute of Standards and Technology.
 - [OWASP Server-Side Request Forgery Prevention](<resources/owasp-server-request-destination-boundaries.md>) — OWASP Cheat Sheet Series.
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
@@ -227,10 +228,11 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-interpreter-boundaries"></a>
 ## Interpreter Boundaries
 
-7 resources.
+8 resources.
 
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
 - [DOMPurify: accepted DOM realms must retain complete sanitization](<resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — DOMPurify / Cure53.
+- [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — Jupyter Enterprise Gateway maintainers.
 - [Next\.js: response metadata must preserve representation boundaries](<resources/nextjs-2026-response-metadata-representation-boundary.md>) — zhero\_web\_security.
 - [Python subprocess: executable, argument, and interpreter boundaries](<resources/python-subprocess-interpreter-boundaries.md>) — Python Software Foundation.
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.

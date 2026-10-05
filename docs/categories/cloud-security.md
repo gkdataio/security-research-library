@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Security theme / environment** · 15 reports · 9 related resources · 4 diagrams
+**Security theme / environment** · 15 reports · 10 related resources · 4 diagrams
 
 Service identities, IAM boundaries, tenant isolation, and delegated authority.
 
@@ -38,6 +38,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [AWS IAM security best practices for workload identities](<../resources/aws-iam-machine-identity-best-practices.md>) — topic: Cloud Security; diagram: [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>).
 - [Chromium Rule of Two: input trust, memory safety and privilege](<../resources/chromium-rule-of-two-input-isolation.md>) — diagram: [Parsing safety and action authority](<../diagram-gallery.md#parsing-safety-action-authority>).
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<../resources/github-2026-internal-metadata-authority.md>) — topic: Cloud Security.
+- [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<../resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — topic: Cloud Security.
 - [NIST SP 800-190: Application Container Security Guide](<../resources/nist-sp-800-190-container-isolation-guide.md>) — topic: Cloud Security.
 - [OWASP Server-Side Request Forgery Prevention](<../resources/owasp-server-request-destination-boundaries.md>) — topic: Cloud Security; diagram: [Layer server-request destination controls](<../diagram-gallery.md#server-request-destination-policy>).
 - [OWASP Transaction Authorization](<../resources/owasp-transaction-authorization-state-integrity.md>) — diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>).
