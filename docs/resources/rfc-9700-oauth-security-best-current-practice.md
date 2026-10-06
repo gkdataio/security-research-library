@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/rfc-9700-oauth-security-best-current-practice.json>) · [Official resource](<https://www.rfc-editor.org/rfc/rfc9700.html>)
 
 **Publisher:** Internet Engineering Task Force / RFC Editor  
-**Authors:** Not identified in the reviewed record  
+**Authors:** Torsten Lodderstedt; John Bradley; Andrey Labunets; Daniel Fett  
 **Resource type:** Technical Standard  
 **Version:** RFC 9700 / BCP 240  
 **Topics:** Identity  
@@ -35,11 +35,11 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Verified as free at review time; optional accounts or provider features may have separate terms\.
 
-**Reviewed:** 2026-10-02T14:50:00Z  
+**Reviewed:** 2026-10-06T02:50:27Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
-Review records accessible official guidance as of this date; living content and current versions may change\.
+Attribution-only review of the RFC Editor info page \(source rfc-info\), whose Authors' Addresses section names the four authors and whose publication metadata confirms January 2025\. The technical narrative and the primary HTML source's earlier retrieval timestamp are unchanged\.
 
 Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.
 
@@ -61,5 +61,6 @@ No additional caveats recorded; this is not a completeness or security guarantee
 ## Sources and attribution
 
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<https://www.rfc-editor.org/rfc/rfc9700.html>) — Internet Engineering Task Force / RFC Editor; source ID: primary; provenance: official primary; retrieved 2026-10-02T14:50:00Z; supports: summary, version, dates.
+- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<https://www.rfc-editor.org/info/rfc9700/>) — Internet Engineering Task Force / RFC Editor; source ID: rfc-info; provenance: official primary; retrieved 2026-10-06T02:48:51Z; supports: dates.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

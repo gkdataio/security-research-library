@@ -117,4 +117,28 @@ class ResourceTests(unittest.TestCase):
             self.assertIn(qualifier,caveats)
         self.assertIn('No behavior was independently reproduced',rec['freshness']['note'])
 
+    def test_rfc9700_author_attribution_is_explicit_and_sourced(self):
+        rec=self.resources['rfc-9700-oauth-security-best-current-practice']
+        self.assertEqual(rec['authors'],['Torsten Lodderstedt','John Bradley',
+                                         'Andrey Labunets','Daniel Fett'])
+        sources={s['id']:s for s in rec['sources']}
+        self.assertEqual(sources['rfc-info']['url'],'https://www.rfc-editor.org/info/rfc9700/')
+        self.assertEqual(sources['rfc-info']['provenance'],'official_primary')
+        self.assertIn('Attribution-only review',rec['freshness']['note'])
+        self.assertIn('source rfc-info',rec['freshness']['note'])
+        self.assertIn("Authors' Addresses",rec['freshness']['note'])
+    def test_rfc9700_attribution_review_preserves_publication_and_primary_source(self):
+        rec=self.resources['rfc-9700-oauth-security-best-current-practice']
+        self.assertEqual(rec['primary_url'],'https://www.rfc-editor.org/rfc/rfc9700.html')
+        self.assertEqual(rec['resource_type_id'],'technical-standard')
+        self.assertEqual(rec['version'],'RFC 9700 / BCP 240')
+        self.assertEqual(rec['dates']['published'],{'value':'2025-01','precision':'month',
+                         'basis':'explicit','source_id':'primary','note':None})
+        for key in ('version_released','source_displayed'):
+            self.assertEqual(rec['dates'][key],{'value':None,'precision':None,
+                             'basis':'not_reported','source_id':None,'note':None})
+        primary=next(s for s in rec['sources'] if s['id']=='primary')
+        self.assertEqual(primary['url'],rec['primary_url'])
+        self.assertEqual(primary['retrieved_at'],'2026-10-02T14:50:00Z')
+
 if __name__=='__main__':unittest.main()

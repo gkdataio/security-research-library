@@ -3,7 +3,12 @@
   "id": "rfc-9700-oauth-security-best-current-practice",
   "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
   "publisher": "Internet Engineering Task Force / RFC Editor",
-  "authors": [],
+  "authors": [
+    "Torsten Lodderstedt",
+    "John Bradley",
+    "Andrey Labunets",
+    "Daniel Fett"
+  ],
   "primary_url": "https://www.rfc-editor.org/rfc/rfc9700.html",
   "resource_type_id": "technical-standard",
   "topic_ids": [
@@ -51,10 +56,10 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-02T14:50:00Z",
+    "reviewed_at": "2026-10-06T02:50:27Z",
     "living_resource": false,
     "status": "primary_source_reviewed",
-    "note": "Review records accessible official guidance as of this date; living content and current versions may change."
+    "note": "Attribution-only review of the RFC Editor info page (source rfc-info), whose Authors' Addresses section names the four authors and whose publication metadata confirms January 2025. The technical narrative and the primary HTML source's earlier retrieval timestamp are unchanged."
   },
   "sources": [
     {
@@ -67,6 +72,17 @@
       "supports": [
         "summary",
         "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "rfc-info",
+      "url": "https://www.rfc-editor.org/info/rfc9700/",
+      "title": "RFC 9700: Best Current Practice for OAuth 2.0 Security",
+      "publisher": "Internet Engineering Task Force / RFC Editor",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T02:48:51Z",
+      "supports": [
         "dates"
       ]
     }
