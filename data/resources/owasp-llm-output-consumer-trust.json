@@ -36,11 +36,11 @@
       "note": null
     },
     "version_released": {
-      "value": null,
-      "precision": null,
-      "basis": "not_reported",
-      "source_id": null,
-      "note": null
+      "value": "2024-11-18",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "edition-2025-pdf",
+      "note": "The official 2025 PDF gives November 18, 2024 on its cover and in its revision history. This is the edition release, not the individual web entry publication or latest update."
     },
     "source_displayed": {
       "value": null,
@@ -51,10 +51,10 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-03T04:41:24Z",
+    "reviewed_at": "2026-10-06T22:50:21Z",
     "living_resource": true,
     "status": "primary_source_reviewed",
-    "note": "Reviewed the official page content. The review date does not establish publication or an immutable revision."
+    "note": "Scoped review of edition-release and archive metadata; the original primary-page retrieval remains recorded separately. The 2025 web entry may change. This review does not establish its original publication or latest-update date, or substantively review the 2026 guidance."
   },
   "sources": [
     {
@@ -68,10 +68,57 @@
         "summary",
         "version"
       ]
+    },
+    {
+      "id": "edition-2025-pdf",
+      "url": "https://genai.owasp.org/download/43299/?tmstv=1731900559",
+      "title": "OWASP Top 10 for LLM Applications 2025: official edition PDF",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T22:49:00Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "edition-2025-landing",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+      "title": "OWASP Top 10 for LLM Applications 2025: resource landing page",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T22:49:06Z",
+      "supports": [
+        "dates"
+      ]
+    },
+    {
+      "id": "release-index",
+      "url": "https://github.com/OWASP/www-project-top-10-for-large-language-model-applications/blob/main/README.md",
+      "title": "OWASP LLM Top 10 legacy repository: current and archived releases",
+      "publisher": "OWASP",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T22:49:06Z",
+      "supports": [
+        "version"
+      ]
+    },
+    {
+      "id": "edition-2026-status",
+      "url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/main/2026/README.md",
+      "title": "OWASP LLM Top 10 2026: published release overview",
+      "publisher": "OWASP GenAI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T22:49:40Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
     }
   ],
   "caveats": [
-    "The 2025 designation is an edition identifier, not a verified publication date.",
+    "The 2025 designation is an edition identifier. The edition-2025-pdf source dates its release to November 18, 2024, while edition-2025-landing displays November 17, 2024 for that landing page. Neither date establishes the individual web entry publication or latest update; those remain unknown.",
+    "As of October 6, 2026, release-index labels the 2025 edition archived and the 2026 edition current; edition-2026-status confirms the newer release is published. This record preserves its 2025 URL, identifier and educational summary. Technical equivalence with the 2026 edition has not been assessed.",
     "The source contains attack scenarios; this record retains only trust-boundary and remediation concepts.",
     "This category describes possible failure modes rather than current exposure of a particular product."
   ],
