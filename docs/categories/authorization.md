@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 87 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 88 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -123,6 +123,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Authorization.
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<../resources/rfc-10017-browser-oauth-token-custody.md>) — topic: Authorization.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>), [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
+- [Saleor email changes: bind confirmation to account and state](<../resources/saleor-2026-email-change-confirmation-binding.md>) — topic: Authorization.
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Authorization.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Authorization.
 - [ServiceNow: agent discovery expands the delegated authority boundary](<../resources/servicenow-2025-agent-discovery-delegation-authority.md>) — topic: Authorization.

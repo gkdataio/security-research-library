@@ -2,7 +2,7 @@
 
 [Browse by vulnerability type](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**5 award-backed reports · 11 educational case studies · 2 learning references**
+**5 award-backed reports · 12 educational case studies · 2 learning references**
 
 Source-established cross-site scripting, including evidence-backed subtypes below and broader browser-origin or worker cases whose narrower subtype is not established\.
 
@@ -75,6 +75,14 @@ Maintainer advisories and researcher publications remain educational resources; 
   Classification: Cross-site scripting \(XSS\) (source explicit). The maintainer identifies XSS where concrete host context loses the expected sanitization protection\.
   Evidence: [Sanitization bypass via directive host bindings on concrete host elements in @angular/core and @angular/compiler](<https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg>); location: Advisory impact and CWE-79 classification.
   2025–2026 learning relevance (editorial): Resolve security policy against the actual output context rather than a context assumed before composition\.
+
+- **[Angular hydration: verify the source of restored state](<../resources/angular-2026-hydration-state-source-authenticity.md>)**
+  Maintainer Advisory; publication: 2026-06-10; precision: day; basis: explicit.
+  Publication evidence: [Angular Client Hydration DOM Clobbering &amp; Response-Cache Poisoning](<https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg>).
+  Date qualification: Original maintainer-advisory publication\.
+  Classification: Cross-site scripting \(XSS\) (source explicit). The maintainer explicitly identifies XSS conditional on unsafe downstream rendering; document-source confusion does not establish stored, reflected or blind classification\.
+  Evidence: [Angular Client Hydration DOM Clobbering &amp; Response-Cache Poisoning](<https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg>); location: Advisory Impact and CWE-79 classification.
+  2025–2026 learning relevance (editorial): Check restored-state source authenticity separately from parseability and later rendering, retaining the SSR/hydration and untrusted-identifier prerequisites\.
 
 - **[Angular SSR: preserve output context through serialization and post-processing](<../resources/angular-2026-raw-content-serialization-context.md>)**
   Maintainer Advisory; publication: 2026-07-29; precision: day; basis: explicit.

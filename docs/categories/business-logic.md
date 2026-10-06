@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 34 related resources · 4 diagrams
+**Vulnerability family** · 14 reports · 35 related resources · 4 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -60,6 +60,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [PostgreSQL 18: Transaction Isolation and Business Invariants](<../resources/postgresql-transaction-isolation-business-invariants.md>) — topic: Business Logic and State Integrity.
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<../resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — topic: Business Logic and State Integrity.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>).
+- [Saleor email changes: bind confirmation to account and state](<../resources/saleor-2026-email-change-confirmation-binding.md>) — topic: Business Logic and State Integrity.
 - [Spree: cart association must retain guest-possession checks](<../resources/spree-2026-guest-cart-association-authority.md>) — topic: Business Logic and State Integrity.
 - [Stripe webhooks: authentic delivery and business-state integrity](<../resources/stripe-webhook-delivery-state-integrity.md>) — topic: Business Logic and State Integrity.
 - [Sylius: order ownership does not confer payment-operation authority](<../resources/sylius-2026-payment-action-authority.md>) — topic: Business Logic and State Integrity.

@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 45 related resources · 5 diagrams
+**Vulnerability family** · 16 reports · 46 related resources · 5 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -75,6 +75,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<../resources/rfc-10017-browser-oauth-token-custody.md>) — topic: Identity.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — topic: Identity; diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>), [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Rocket\.Chat: authentication must await a completed verification decision](<../resources/rocketchat-2026-asynchronous-identity-verification.md>) — topic: Identity.
+- [Saleor email changes: bind confirmation to account and state](<../resources/saleor-2026-email-change-confirmation-binding.md>) — topic: Identity.
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Identity.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Identity.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<../resources/usenix-2025-tls-resumption-identity-isolation.md>) — topic: Identity.

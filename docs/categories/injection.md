@@ -12,7 +12,7 @@ Report membership uses the existing primary or secondary category injection. Lea
 
 These narrower pages use separate source-backed memberships and publication-year groups. Their placement here is navigation, not an additional classification of every record in this family.
 
-- [Cross-site scripting \(XSS\)](<../vulnerabilities/xss.md>) — 5 award-backed reports · 11 educational case studies · 2 learning references
+- [Cross-site scripting \(XSS\)](<../vulnerabilities/xss.md>) — 5 award-backed reports · 12 educational case studies · 2 learning references
   - [Blind XSS](<../vulnerabilities/blind-xss.md>) — 0 award-backed reports · 1 educational case study · 0 learning references
   - [Reflected XSS \(RXSS\)](<../vulnerabilities/reflected-xss.md>) — 0 award-backed reports · 3 educational case studies · 0 learning references
   - [Stored XSS](<../vulnerabilities/stored-xss.md>) — 1 award-backed report · 4 educational case studies · 0 learning references

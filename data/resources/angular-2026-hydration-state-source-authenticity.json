@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0.0",
+  "id": "angular-2026-hydration-state-source-authenticity",
+  "title": "Angular hydration: verify the source of restored state",
+  "publisher": "Angular maintainers",
+  "authors": [],
+  "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg",
+  "resource_type_id": "maintainer-advisory",
+  "topic_ids": [
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "untrusted-input-handling",
+    "cache-artifact-isolation",
+    "patch-verification"
+  ],
+  "version": null,
+  "summary": "CVE-2026-54267 concerns hydrated server state accepting an unintended document source. Applicability requires SSR with hydration and untrusted influence over document identifiers. Maintainers describe response-cache integrity loss; XSS depends on unsafe downstream rendering. Editorial root cause: parseable data was treated as authoritative without sufficiently constraining its source.",
+  "defensive_use": "Editorial lesson: source authenticity and data validity are separate requirements when restoring state across a server/browser boundary. Cached content should retain its trust classification through later consumers. The linked patch restricts restoration to the expected container type. Review that source-selection invariant separately from safe rendering, and distinguish reading a patch from verifying its effectiveness in a deployment.",
+  "prerequisites": [
+    "Server rendering, client hydration and response-cache concepts",
+    "The distinction between data parsing, source trust and browser rendering"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public maintainer advisory, patch discussion and advisory-database chronology."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-06-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Original maintainer-advisory publication."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational-resource edition date established."
+    },
+    "source_displayed": {
+      "value": "2026-06-10",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "advisory",
+      "note": "Displayed primary publication date; database events remain separate."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-06T03:41:33Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Read the advisory, linked pull request and database chronology. No reproduction, target testing or independent patch verification performed."
+  },
+  "sources": [
+    {
+      "id": "advisory",
+      "url": "https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg",
+      "title": "Angular Client Hydration DOM Clobbering & Response-Cache Poisoning",
+      "publisher": "Angular maintainers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T03:40:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "patch",
+      "url": "https://github.com/angular/angular/pull/69064",
+      "title": "Angular transfer-state restoration hardening, pull request 69064",
+      "publisher": "Angular maintainers",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T03:40:46Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "advisory-database",
+      "url": "https://github.com/advisories/GHSA-rgjc-h3x7-9mwg",
+      "title": "GitHub Advisory Database chronology for GHSA-rgjc-h3x7-9mwg",
+      "publisher": "GitHub Advisory Database",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T03:41:02Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "For @angular/core, the advisory lists affected ranges >= 22.0.0-next.0 < 22.0.1, >= 21.0.0-next.0 < 21.2.17, >= 20.0.0-next.0 < 20.3.25, and <= 19.2.25. Listed fixes are 22.0.1, 21.2.17 and 20.3.25; the older range has no listed patch.",
+    "Potential consequences are maintainer claims; reviewed evidence does not establish production compromise, account takeover or data theft.",
+    "SkyZeroZx is credited as Reporter; alan-agius4 published the advisory and is a Remediation reviewer, alongside AndrewKushnir and JeanMeche. josephperrott is credited as Other. No narrative byline or individual award is established.",
+    "The patch pull request opened June 1 and merged June 3, 2026. These are development events, not software-release dates or the selected advisory's publication date.",
+    "The database records publication there on June 15 and an update on July 15, 2026. Neither replaces the June 10 primary publication. Software-release dates were not established in this review.",
+    "The source explicitly identifies XSS; stored, reflected and blind subtypes are not established. This source-selection lesson is distinct from the library's output-serialization and host-binding context cases. Learning prerequisites and generalized guidance are editorial."
+  ],
+  "content_scope": "defensive_education"
+}
