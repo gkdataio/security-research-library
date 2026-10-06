@@ -41,6 +41,7 @@ This collection is separate from paid-award reports. It contains official educat
 
 ## Modern webapp research and guidance
 
+- [Vite: local reachability and browser-origin authority](resources/vite-2025-development-server-origin-authority.md): historical 2025 case separating HTTP response access, WebSocket admission and hostname policy. [Structured record](../data/resources/vite-2025-development-server-origin-authority.json)
 - [Angular hydration: verify the source of restored state](resources/angular-2026-hydration-state-source-authenticity.md): distinguish parseable state from an authoritative server source, and keep conditional rendering impact separate from cache integrity. [Structured record](../data/resources/angular-2026-hydration-state-source-authenticity.json)
 - [Saleor email changes: bind confirmation to account and state](resources/saleor-2026-email-change-confirmation-binding.md): preserve the subject, operation and current-state contract of identity changes, including the existing-authentication prerequisite. [Structured record](../data/resources/saleor-2026-email-change-confirmation-binding.json)
 

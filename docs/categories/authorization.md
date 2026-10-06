@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 88 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 89 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -140,6 +140,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Vendure: payment child objects must inherit order channel authority](<../resources/vendure-2026-payment-child-object-channel-authority.md>) — topic: Authorization.
 - [Vercel React Router: session identity must not select unrestricted storage authority](<../resources/vercel-react-router-2026-session-storage-key-authority.md>) — topic: Authorization.
 - [Vikunja: saved favorites must recheck current project access](<../resources/vikunja-2026-favorites-current-access-revalidation.md>) — topic: Authorization.
+- [Vite: local reachability does not establish browser-origin authority](<../resources/vite-2025-development-server-origin-authority.md>) — topic: Authorization.
 - [Zammad: overridden serialization must preserve group authorization](<../resources/zammad-2026-asset-serialization-group-authorization.md>) — topic: Authorization.
 
 <a id="conceptual-diagrams"></a>

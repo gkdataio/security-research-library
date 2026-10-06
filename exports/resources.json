@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 140,
+    "resources": 141,
     "diagrams": 14
   },
   "taxonomy": {
@@ -12930,6 +12930,99 @@
         "Published August 31, 2026 by kolaente; JellowBeanz26 is credited as reporter. Software release 2.6.0 was announced the same day in the separate maintainer article; this is not a resource-edition date.",
         "The advisory proposes current-access filtering and/or favorite cleanup. Neither reviewed source establishes the exact implemented combination, so these proposals are not represented as verified patch internals."
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "vite-2025-development-server-origin-authority",
+      "title": "Vite: local reachability does not establish browser-origin authority",
+      "publisher": "Vite",
+      "authors": [],
+      "primary_url": "https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "web-foundations",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "browser-isolation-review",
+        "integration-threat-modeling",
+        "patch-verification"
+      ],
+      "version": null,
+      "summary": "CVE-2025-24010 describes three development-server trust gaps: permissive HTTP response sharing, missing WebSocket origin validation and missing HTTP hostname validation. Editorial boundary: local reachability does not establish the connecting website's authority.",
+      "defensive_use": "Current Vite guidance recommends explicit trusted-origin and controlled-host lists, and warns against all-origin CORS and all-host acceptance. Editorial lesson: document three separate decisions: who may read HTTP responses, who may join a realtime channel and which hostname a service answers to. HTTP configuration does not substitute for WebSocket admission protection. Keep those policies narrow while reviewing reverse proxies and framework/plugin integrations. Select a currently supported patched release; inspect the actual deployment rather than treating a historical fix number as present-day upgrade advice.",
+      "prerequisites": [
+        "Browser origins, HTTP response-sharing policy and WebSocket admission",
+        "Development-server configuration and integration trust boundaries"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and current official configuration documentation."
+      },
+      "dates": {
+        "published": {
+          "value": "2025-01-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Original maintainer-advisory publication."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No educational-resource edition date established; software fix versions remain separate."
+        },
+        "source_displayed": {
+          "value": "2025-01-20",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Publication date shown beside the publishing account."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-06T15:23:17Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Read the maintainer advisory and current server-option documentation. No software execution, target testing or independent reproduction performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6",
+          "title": "Vite development-server security advisory GHSA-vg6x-rcgg-rjx6",
+          "publisher": "Vite",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-06T15:21:12Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "server-options",
+          "url": "https://vite.dev/config/server-options",
+          "title": "Vite Server Options",
+          "publisher": "Vite",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-06T15:21:12Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Affected versions listed by the advisory are <=4.5.5, 5.0.0–5.4.11 and 6.0.0–6.0.8; initial fixes are 4.5.6, 5.4.12 and 6.0.9.",
+        "Applicability requires a running affected development server and user interaction with an untrusted page, even with loopback-only listening. Browser-specific qualifications describe 2025, not verified 2026 behavior.",
+        "The source describes a demonstration of HMR-message and source-snippet disclosure. Broader source exposure is advisory-described; additional plugin/proxy consequences are conditional. The advisory says Vite core has no request-triggered functionality that changes other state.",
+        "sapphi-red published the advisory; ivantsepp is credited as Reporter. Neither role establishes an article byline, so authors remains empty.",
+        "Historical publication outside the preferred trailing-year window. Included for its server-side origin/hostname checks, complementing Chrome Local Network Access's browser connection-permission model and Open WebUI's session-revocation consistency case.",
+        "Current server-option documentation is living guidance, not proof of January 2025 defaults or present browser-wide protection. No production compromise, individual award or independent reproduction is established. This educational case grants no testing authorization."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
