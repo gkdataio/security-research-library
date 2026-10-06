@@ -4,14 +4,14 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-137 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+138 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 13 resources.
-- [Authorization](<#topic-authorization>) — 81 resources.
+- [Ai Security](<#topic-ai-security>) — 14 resources.
+- [Authorization](<#topic-authorization>) — 82 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 32 resources.
 - [Cloud Security](<#topic-cloud-security>) — 7 resources.
 - [Identity](<#topic-identity>) — 43 resources.
@@ -25,7 +25,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-13 resources.
+14 resources.
 
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
@@ -40,11 +40,12 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.
+- [ServiceNow: agent discovery expands the delegated authority boundary](<resources/servicenow-2025-agent-discovery-delegation-authority.md>) — AppOmni AO Labs.
 
 <a id="topic-authorization"></a>
 ## Authorization
 
-81 resources.
+82 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -114,6 +115,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor.
 - [samlify: signing does not establish claim provenance](<resources/samlify-2026-assertion-generation-claim-integrity.md>) — samlify.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab.
+- [ServiceNow: agent discovery expands the delegated authority boundary](<resources/servicenow-2025-agent-discovery-delegation-authority.md>) — AppOmni AO Labs.
 - [Spree: cart association must retain guest-possession checks](<resources/spree-2026-guest-cart-association-authority.md>) — Spree.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab.
 - [Steeltoe: diagnostic URI masking must cover the complete data contract](<resources/steeltoe-2026-diagnostic-uri-data-minimization.md>) — Steeltoe.

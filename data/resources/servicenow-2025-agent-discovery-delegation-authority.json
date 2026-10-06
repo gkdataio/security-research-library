@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "id": "servicenow-2025-agent-discovery-delegation-authority",
+  "title": "ServiceNow: agent discovery expands the delegated authority boundary",
+  "publisher": "AppOmni AO Labs",
+  "authors": [
+    "Aaron Costello"
+  ],
+  "primary_url": "https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "ai-security",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "authorization-modeling"
+  ],
+  "version": null,
+  "summary": "AppOmni's configuration research illustrates why an agent's effective authority includes capabilities reachable through collaborating agents. Restricting its own tools may leave a wider delegation boundary when lower-trust content is treated as task authority. Aaron Costello reports controlled record-access, record-change and external-disclosure effects in Now Assist despite prompt-level protections.",
+  "defensive_use": "Review permitted collaborators, execution identities and sensitive-action approvals together. Restrict team composition and delegated capabilities to the task, apply least privilege, and require approval for sensitive actions. ServiceNow's current documentation distinguishes discovery/invocation access from the agent's data-access identity and describes supervised execution. Editorial lesson: evaluate reachable authority across the collaboration, rather than only the first agent's tool list.",
+  "prerequisites": [
+    "AI content-versus-instruction trust boundaries",
+    "Role-based access, execution identities and delegated permissions"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public researcher article and supporting ServiceNow documentation."
+  },
+  "dates": {
+    "published": {
+      "value": "2025-11-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher",
+      "note": "Article publication date displayed with the author byline."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separately versioned educational-resource edition is established."
+    },
+    "source_displayed": {
+      "value": "2025-11-19",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "researcher",
+      "note": "The primary article displays November 19, 2025."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-06T02:22:08Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Researcher article and two supporting vendor documentation pages read. No behavior was independently reproduced; later vendor guidance is not historical demonstration verification."
+  },
+  "sources": [
+    {
+      "id": "researcher",
+      "url": "https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/",
+      "title": "When AI Turns on Its Team: Exploiting Agent-to-Agent Discovery via Prompt Injection",
+      "publisher": "AppOmni AO Labs",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T02:20:53Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    },
+    {
+      "id": "vendor-security-controls",
+      "url": "https://www.servicenow.com/docs/r/intelligent-experiences/define-sec-controls-aia.html",
+      "title": "Define security controls for an AI agent",
+      "publisher": "ServiceNow",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T02:20:53Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "vendor-execution-controls",
+      "url": "https://www.servicenow.com/docs/r/build-workflows/workflow-studio/use-an-ai-agent-action.html",
+      "title": "Use an AI agent action",
+      "publisher": "ServiceNow",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T02:20:53Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The reported setup processed lower-trust record content under a privileged agent context with discoverable collaborators and relevant autonomous capabilities; this is configuration-dependent.",
+    "AppOmni says ServiceNow treated the behavior as intended and clarified on-platform documentation. The reviewed evidence establishes no vulnerability patch, CVE or individual award for this case.",
+    "Reported effects are researcher demonstrations, not evidence of production exploitation or a prevalence estimate.",
+    "The supporting ServiceNow pages display Brazil release and September 10, 2026 updates. They document the current configuration model, not the November 2025 demonstration, its defaults or a historical fix.",
+    "The research-paper taxonomy includes first-party research articles and does not imply academic peer review. This educational record grants no testing authorization."
+  ],
+  "content_scope": "defensive_education"
+}

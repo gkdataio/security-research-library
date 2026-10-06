@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 86 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 87 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -125,6 +125,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<../resources/rfc-9700-oauth-security-best-current-practice.md>) — diagram: [An identity claim must belong to the user](<../diagram-gallery.md#identity-claim-binding>), [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Authorization.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Authorization.
+- [ServiceNow: agent discovery expands the delegated authority boundary](<../resources/servicenow-2025-agent-discovery-delegation-authority.md>) — topic: Authorization.
 - [SLSA v1\.2: supply-chain security and build provenance](<../resources/slsa-v1-2-supply-chain-build-provenance.md>) — diagram: [Build evidence must match the artifact and trusted builder](<../diagram-gallery.md#build-artifact-provenance-boundary>).
 - [Spree: cart association must retain guest-possession checks](<../resources/spree-2026-guest-cart-association-authority.md>) — topic: Authorization.
 - [Spree: guest ownership still requires an authorization proof](<../resources/spree-2026-guest-order-authorization-proof.md>) — topic: Authorization.

@@ -90,5 +90,31 @@ class ResourceTests(unittest.TestCase):
         self.assertEqual(build_export(),build_export())
     def test_resources_are_separate_from_awards(self):
         data=build_export();self.assertNotIn('reports',data);self.assertNotIn('reward',data['resources'][0])
+    def test_servicenow_configuration_research_retains_publication_identity(self):
+        rid='servicenow-2025-agent-discovery-delegation-authority'
+        rec=self.resources[rid]
+        self.assertEqual(rec['resource_type_id'],'research-paper')
+        self.assertEqual(rec['authors'],['Aaron Costello'])
+        self.assertEqual(set(rec['topic_ids']),{'ai-security','authorization'})
+        self.assertEqual(set(rec['skillset_ids']),{'ai-authority-boundaries','integration-threat-modeling','authorization-modeling'})
+        for key in ('published','source_displayed'):
+            self.assertEqual(rec['dates'][key]['value'],'2025-11-19')
+            self.assertEqual(rec['dates'][key]['source_id'],'researcher')
+        self.assertIsNone(rec['version'])
+        self.assertIsNone(rec['dates']['version_released']['value'])
+        self.assertNotIn(rid,self.reports)
+        self.assertNotIn('reward',rec)
+    def test_servicenow_case_keeps_configuration_and_evidence_limits(self):
+        rec=self.resources['servicenow-2025-agent-discovery-delegation-authority']
+        sources={s['id']:s for s in rec['sources']}
+        self.assertEqual(sources['researcher']['url'],rec['primary_url'])
+        self.assertEqual(set(sources),{'researcher','vendor-security-controls','vendor-execution-controls'})
+        caveats=' '.join(rec['caveats'])
+        for qualifier in ('configuration-dependent','AppOmni says ServiceNow','intended',
+                          'no vulnerability patch, CVE or individual award',
+                          'not evidence of production exploitation','Brazil release',
+                          'September 10, 2026','not the November 2025 demonstration'):
+            self.assertIn(qualifier,caveats)
+        self.assertIn('No behavior was independently reproduced',rec['freshness']['note'])
 
 if __name__=='__main__':unittest.main()
