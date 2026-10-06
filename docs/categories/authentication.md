@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 44 related resources · 5 diagrams
+**Vulnerability family** · 16 reports · 45 related resources · 5 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -56,6 +56,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [MCP elicitation: consent, credential custody and completion](<../resources/mcp-elicitation-consent-credential-custody.md>) — topic: Identity.
 - [MCP scope selection: progressive consent and accumulated authority](<../resources/mcp-progressive-scope-authority.md>) — topic: Identity.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Identity.
+- [n8n token exchange: preserve the issuer namespace](<../resources/n8n-2026-external-identity-issuer-binding.md>) — topic: Identity.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Identity.
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Identity; diagram: [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Nhost: provider adapters must preserve identity-claim evidence](<../resources/nhost-2026-provider-claim-verification-provenance.md>) — topic: Identity.

@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 85 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 86 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -95,6 +95,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [MLflow: authorization must survive alternate resource interfaces](<../resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — topic: Authorization.
 - [MythicalDash: payment evidence must establish credit entitlement](<../resources/mythicaldash-2026-payment-evidence-entitlement.md>) — topic: Authorization.
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<../resources/n8n-2026-dynamic-credential-object-authority.md>) — topic: Authorization.
+- [n8n token exchange: preserve the issuer namespace](<../resources/n8n-2026-external-identity-issuer-binding.md>) — topic: Authorization.
 - [n8n: directory-attribute authority in durable account linking](<../resources/n8n-2026-ldap-account-linking-authority.md>) — topic: Authorization.
 - [n8n: refreshed authority must remain bound to the consented resource](<../resources/n8n-2026-refresh-grant-resource-binding.md>) — topic: Authorization; diagram: [Delegated authority stays within the approved grant](<../diagram-gallery.md#delegated-grant-authority-continuity>).
 - [Next\.js data security: server authorization and client-visible data](<../resources/nextjs-server-client-data-security.md>) — topic: Authorization; diagram: [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>).

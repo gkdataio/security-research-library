@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 136,
+    "resources": 137,
     "diagrams": 14
   },
   "taxonomy": {
@@ -5645,6 +5645,119 @@
         "Impact statements lack separate observed-versus-modeled demonstrations. Exfiltration and persistence remain maintainer-described consequences.",
         "Fixed versions apply within respective release lines; software release dates are not established.",
         "Distinct from the existing refresh-grant audience-binding resource."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "n8n-2026-external-identity-issuer-binding",
+      "title": "n8n token exchange: preserve the issuer namespace",
+      "publisher": "n8n",
+      "authors": [],
+      "primary_url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mq3m-f8x3-579w",
+      "resource_type_id": "maintainer-advisory",
+      "topic_ids": [
+        "identity",
+        "authorization"
+      ],
+      "skillset_ids": [
+        "identity-lifecycle-review",
+        "security-token-design",
+        "authorization-modeling"
+      ],
+      "version": null,
+      "summary": "CVE-2026-59208 concerns token exchange resolving external identities by subject alone, dropping the issuer namespace. With the feature enabled and multiple trusted issuers, a valid token whose subject matches an identity from another issuer can resolve to the wrong local account. Maintainers report impersonation; the reviewed advisory does not provide a controlled demonstration or establish production compromise.",
+      "defensive_use": "Editorial lesson: retain issuer and subject together throughout external-identity lookup and account binding; successful token validation alone does not establish which local account it represents. OpenID Connect Core section 5.7 supplies conceptual support for issuer-scoped identity. Follow the maintainer's upgrade guidance; reducing trusted issuers or disabling unused exchange is explicitly incomplete temporary mitigation.",
+      "prerequisites": [
+        "Basic federation, token claims and local-account binding concepts"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public maintainer advisory and supporting references."
+      },
+      "dates": {
+        "published": {
+          "value": "2026-06-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Advisory publication, not software release or original report date."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No separate educational-resource edition date established."
+        },
+        "source_displayed": {
+          "value": "2026-06-24",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "advisory",
+          "note": "Displayed advisory publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-05T22:31:42Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "Advisory, release pages and conceptual standard reviewed. No live testing, reproduction or independent patch audit performed."
+      },
+      "sources": [
+        {
+          "id": "advisory",
+          "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mq3m-f8x3-579w",
+          "title": "Cross-Issuer Token Exchange Account Binding via Subject-Only Identity Resolution",
+          "publisher": "n8n",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T22:31:42Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        },
+        {
+          "id": "release-2274",
+          "url": "https://github.com/n8n-io/n8n/releases/tag/n8n@2.27.4",
+          "title": "n8n@2.27.4 release",
+          "publisher": "n8n",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T22:31:42Z",
+          "supports": [
+            "dates"
+          ]
+        },
+        {
+          "id": "release-2281",
+          "url": "https://github.com/n8n-io/n8n/releases/tag/n8n@2.28.1",
+          "title": "n8n@2.28.1 release",
+          "publisher": "n8n",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T22:31:42Z",
+          "supports": [
+            "dates"
+          ]
+        },
+        {
+          "id": "oidc-claim-stability",
+          "url": "https://openid.net/specs/openid-connect-core-1_0.html#ClaimStability",
+          "title": "OpenID Connect Core 1.0 incorporating errata set 2, section 5.7",
+          "publisher": "OpenID Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-05T22:31:42Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Patched metadata lists >= 2.27.4 and >= 2.28.1, while remediation prose names 2.28.1. The overlapping affected entries < 2.27.4 and < 2.28.1 are preserved as published; no normalized affected interval is inferred.",
+        "Release pages date both versions to June 24, 2026; 2.28.1 is labeled pre-release. They do not identify this fix and support chronology only, not independent patch verification.",
+        "Jubke published the advisory; bearsyankees is credited as Reporter. No narrative byline or individual award is established.",
+        "OpenID Connect Core's displayed December 15, 2023 edition is a conceptual reference, not this advisory's publication date or a claim that n8n violates an OIDC conformance requirement.",
+        "This issuer-namespace case differs from the library's LDAP attribute linking, refresh-grant resource binding, Dynamic Credentials ownership, Prowler tenant selection and multi-app OAuth binding examples."
       ],
       "content_scope": "defensive_education"
     },
