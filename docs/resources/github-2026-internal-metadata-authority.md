@@ -34,11 +34,11 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public researcher and vendor articles readable without an account\.
 
-**Reviewed:** 2026-10-03T06:29:29Z  
+**Reviewed:** 2026-10-06T01:21:22Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
-Researcher and vendor accounts reviewed\. This is historical educational evidence, not a finding that a current deployment is vulnerable\.
+Technical researcher and vendor accounts were reviewed October 3, 2026; the October 6 review is limited to the later researcher payment statement\. This is historical educational evidence, not a finding that a current deployment is vulnerable\.
 
 Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.
 
@@ -54,11 +54,12 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Wiz reports controlled cross-tenant validation with its own accounts and says it did not access other tenants' repository contents\. GitHub's investigation attributes observed activity to the researchers and reports no customer-data access, modification or exfiltration\.
 - Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28\. GitHub corroborates hosted remediation on March 4; its article was updated April 29\.
 - Remediation-version disagreement: Wiz lists 3\.19\.3 among fixed versions, while GitHub's updated guidance recommends 3\.19\.4 or later and newer patch levels across other branches\. The difference is preserved rather than resolved by inference; no independent patch verification was performed\.
-- The exact award amount and payment settlement are undisclosed in the reviewed articles\. This educational resource does not qualify or promote the existing award-report candidate\.
+- Wiz's July 27, 2026 Atlas article \(source: atlas-payment\) identifies CVE-2026-3854 in its Results paragraph and reports that the bounty was paid out\. This is researcher-reported payment, without independent vendor confirmation of settlement\. The exact amount, currency and settlement date remain unknown; the superlative supplies no numerical amount or threshold\. The award-report candidate remains excluded, and the April 28, 2026 technical publication date is unchanged\.
 
 ## Sources and attribution
 
 - [Securing GitHub: Wiz Research uncovers Remote Code Execution in GitHub\.com and GitHub Enterprise Server \(CVE-2026-3854\)](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>) — Wiz Research; source ID: research; provenance: official primary; retrieved 2026-10-03T06:28:56Z; supports: summary, dates.
 - [Securing the git push pipeline: Responding to a critical remote code execution vulnerability](<https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/>) — GitHub; source ID: vendor; provenance: official primary; retrieved 2026-10-03T06:29:29Z; supports: summary, dates.
+- [Atlas: Wiz's autonomous AI Agent for vulnerability research, ranked \#1 on CyberGym](<https://www.wiz.io/blog/atlas-ai-vulnerability-researcher>) — Wiz Research; source ID: atlas-payment; provenance: official primary; retrieved 2026-10-06T01:19:12Z; supports: summary, dates.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

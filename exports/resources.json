@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "security-research-library-resources",
-  "as_of": "2026-10-05",
+  "as_of": "2026-10-06",
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
@@ -3121,10 +3121,10 @@
         }
       },
       "freshness": {
-        "reviewed_at": "2026-10-03T06:29:29Z",
+        "reviewed_at": "2026-10-06T01:21:22Z",
         "living_resource": false,
         "status": "primary_source_reviewed",
-        "note": "Researcher and vendor accounts reviewed. This is historical educational evidence, not a finding that a current deployment is vulnerable."
+        "note": "Technical researcher and vendor accounts were reviewed October 3, 2026; the October 6 review is limited to the later researcher payment statement. This is historical educational evidence, not a finding that a current deployment is vulnerable."
       },
       "sources": [
         {
@@ -3150,6 +3150,18 @@
             "summary",
             "dates"
           ]
+        },
+        {
+          "id": "atlas-payment",
+          "url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher",
+          "title": "Atlas: Wiz's autonomous AI Agent for vulnerability research, ranked #1 on CyberGym",
+          "publisher": "Wiz Research",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-06T01:19:12Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
         }
       ],
       "caveats": [
@@ -3157,7 +3169,7 @@
         "Wiz reports controlled cross-tenant validation with its own accounts and says it did not access other tenants' repository contents. GitHub's investigation attributes observed activity to the researchers and reports no customer-data access, modification or exfiltration.",
         "Wiz dates reporting and hosted remediation to March 4, 2026, Enterprise Server patch release to March 10, and disclosure to April 28. GitHub corroborates hosted remediation on March 4; its article was updated April 29.",
         "Remediation-version disagreement: Wiz lists 3.19.3 among fixed versions, while GitHub's updated guidance recommends 3.19.4 or later and newer patch levels across other branches. The difference is preserved rather than resolved by inference; no independent patch verification was performed.",
-        "The exact award amount and payment settlement are undisclosed in the reviewed articles. This educational resource does not qualify or promote the existing award-report candidate."
+        "Wiz's July 27, 2026 Atlas article (source: atlas-payment) identifies CVE-2026-3854 in its Results paragraph and reports that the bounty was paid out. This is researcher-reported payment, without independent vendor confirmation of settlement. The exact amount, currency and settlement date remain unknown; the superlative supplies no numerical amount or threshold. The award-report candidate remains excluded, and the April 28, 2026 technical publication date is unchanged."
       ],
       "content_scope": "defensive_education"
     },

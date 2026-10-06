@@ -101,9 +101,10 @@
       "title": "GitHub internal protocol handling CVE-2026-3854",
       "primary_technical_url": "https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854",
       "primary_reward_corroboration_url": "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/",
+      "primary_payment_evidence_url": "https://www.wiz.io/blog/atlas-ai-vulnerability-researcher",
       "primary_technical_status": "Researcher and vendor articles read; primary researcher publication April 28, 2026.",
-      "reason_not_counted": "Vendor describes one of its highest awards, but neither reviewed primary article supplies an exact amount. Superlatives do not establish a numerical award. A separate educational resource now summarizes the trust-boundary lesson without implying award qualification.",
-      "reviewed_at": "2026-10-02T17:39:00Z"
+      "reason_not_counted": "GitHub's April article described a prospective high award. Wiz's July 27, 2026 Atlas article identifies CVE-2026-3854 in its Results paragraph and reports that the bounty was paid out. This is researcher-reported payment; the exact amount, currency and settlement date remain unknown. The superlative does not establish a numerical award or the collection's USD threshold, so this candidate remains excluded. The separate educational resource does not imply award qualification.",
+      "reviewed_at": "2026-10-06T01:21:22Z"
     },
     {
       "title": "Grafana ZeroDay.cloud 2025 competition entry",
