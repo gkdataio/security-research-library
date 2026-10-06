@@ -4998,7 +4998,9 @@
       "id": "microsoft-compensating-transaction-state-integrity",
       "title": "Microsoft compensating transactions: recovery must preserve valid concurrent state",
       "publisher": "Microsoft Azure Architecture Center",
-      "authors": [],
+      "authors": [
+        "claytonsiemens77"
+      ],
       "primary_url": "https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction",
       "resource_type_id": "architecture-guide",
       "topic_ids": [
@@ -5097,6 +5099,7 @@
         }
       ],
       "caveats": [
+        "The pinned source-metadata front matter, line 5, explicitly identifies claytonsiemens77 in the author field; ms.author separately contains pnp. This records source metadata, not a rendered-page byline or proof of sole original authorship across revisions.",
         "Compensation does not guarantee restoration of the original state. It is unsuitable where temporary inconsistency is unacceptable or valid recovery cannot be assured.",
         "Recovery remains domain-specific and may require human intervention. Repeat-safe recovery steps do not make irreversible commitments undoable or guarantee eventual completion.",
         "The rendered page displays 2026-04-20; the pinned source metadata says 2026-04-16. The reviewed August 14 and September 28, 2026 changes only update links in this file. These are distinct maintenance signals, not publication or edition-release dates.",

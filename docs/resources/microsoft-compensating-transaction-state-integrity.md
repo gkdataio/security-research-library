@@ -5,7 +5,7 @@
 [Canonical JSON](<../../data/resources/microsoft-compensating-transaction-state-integrity.json>) · [Official resource](<https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction>)
 
 **Publisher:** Microsoft Azure Architecture Center  
-**Authors:** Not identified in the reviewed record  
+**Authors:** claytonsiemens77  
 **Resource type:** Architecture Guide  
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity  
@@ -49,6 +49,7 @@ Review and retrieval timestamps are distinct from publication and version dates.
 
 ## Caveats
 
+- The pinned source-metadata front matter, line 5, explicitly identifies claytonsiemens77 in the author field; ms\.author separately contains pnp\. This records source metadata, not a rendered-page byline or proof of sole original authorship across revisions\.
 - Compensation does not guarantee restoration of the original state\. It is unsuitable where temporary inconsistency is unacceptable or valid recovery cannot be assured\.
 - Recovery remains domain-specific and may require human intervention\. Repeat-safe recovery steps do not make irreversible commitments undoable or guarantee eventual completion\.
 - The rendered page displays 2026-04-20; the pinned source metadata says 2026-04-16\. The reviewed August 14 and September 28, 2026 changes only update links in this file\. These are distinct maintenance signals, not publication or edition-release dates\.
