@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "id": "anthropic-2026-egress-capability-identity-binding",
+  "title": "Claude Cowork: approved destinations need account and operation binding",
+  "publisher": "Anthropic",
+  "authors": [
+    "Max McGuinness",
+    "Mikaela Grace",
+    "Jiri De Jonghe",
+    "Jake Eaton",
+    "Abel Ribbink"
+  ],
+  "primary_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+  "resource_type_id": "research-paper",
+  "topic_ids": [
+    "ai-security",
+    "authorization"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "authorization-modeling",
+    "integration-threat-modeling"
+  ],
+  "version": null,
+  "summary": "Anthropic describes Cowork workspace data reaching an unintended account through an allowed service while VM isolation held. The failed assumption was that an approved API hostname established sufficient authority for disclosure. Readable workspace content and permitted service access were prerequisites; no hypervisor escape is established.",
+  "defensive_use": "Editorial lesson: evaluate egress as an authorization decision over session identity, receiving account, permitted operation and data purpose. A host allowlist is only one input. Keep enforcement independent of model instructions, minimize readable data, and retain provenance at the boundary that knows the session.",
+  "prerequisites": [
+    "Basic access-control and service-identity concepts",
+    "Distinguishing execution isolation from data-disclosure authority"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Public engineering article."
+  },
+  "dates": {
+    "published": {
+      "value": "2026-05-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "engineering",
+      "note": null
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No separate educational edition displayed."
+    },
+    "source_displayed": {
+      "value": "2026-05-25",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "engineering",
+      "note": "Publication date; no separate update displayed."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-06T21:13:14Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Cowork egress section reviewed; remediation is vendor-reported, not independently verified."
+  },
+  "sources": [
+    {
+      "id": "engineering",
+      "url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+      "title": "How we contain Claude across products",
+      "publisher": "Anthropic",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T21:10:15Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Anthropic reports limiting API proxy acceptance to provisioned-session credentials and adding egress restrictions; exact fix release/date and independent effectiveness verification are absent.",
+    "No victim count, production-incident prevalence or individual award is established.",
+    "Scope is only the Cowork approved-domain case, not other incidents or products discussed in the article.",
+    "First-party engineering research; research-paper does not imply academic peer review."
+  ],
+  "content_scope": "defensive_education"
+}

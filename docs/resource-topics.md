@@ -4,14 +4,14 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-141 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+142 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 14 resources.
-- [Authorization](<#topic-authorization>) — 84 resources.
+- [Ai Security](<#topic-ai-security>) — 15 resources.
+- [Authorization](<#topic-authorization>) — 85 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 33 resources.
 - [Cloud Security](<#topic-cloud-security>) — 7 resources.
 - [Identity](<#topic-identity>) — 44 resources.
@@ -25,8 +25,9 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-14 resources.
+15 resources.
 
+- [Claude Cowork: approved destinations need account and operation binding](<resources/anthropic-2026-egress-capability-identity-binding.md>) — Anthropic.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
 - [LibreChat: agent edit authority must cover attached context](<resources/librechat-2026-agent-context-mutation-authority.md>) — LibreChat.
@@ -45,7 +46,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-authorization"></a>
 ## Authorization
 
-84 resources.
+85 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -59,6 +60,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Better Auth: incoming identity proof does not validate existing credentials](<resources/better-auth-2026-local-account-linking-verification.md>) — Better Auth.
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
+- [Claude Cowork: approved destinations need account and operation binding](<resources/anthropic-2026-egress-capability-identity-binding.md>) — Anthropic.
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.

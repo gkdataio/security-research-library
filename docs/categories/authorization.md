@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 89 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 90 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -65,6 +65,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Better Auth: incoming identity proof does not validate existing credentials](<../resources/better-auth-2026-local-account-linking-verification.md>) — topic: Authorization.
 - [Better Auth: single-use authorization requires atomic state consumption](<../resources/better-auth-2026-authorization-code-consumption-integrity.md>) — topic: Authorization.
 - [Bugsink: time-unit consistency in account-access token expiry](<../resources/bugsink-2026-token-expiry-unit-integrity.md>) — topic: Authorization.
+- [Claude Cowork: approved destinations need account and operation binding](<../resources/anthropic-2026-egress-capability-identity-binding.md>) — topic: Authorization.
 - [Coder: privileged provisioning must preserve existing object ownership](<../resources/coder-2026-provisioned-object-ownership-integrity.md>) — topic: Authorization.
 - [Cross-device authentication: bind informed consent to session authority](<../resources/ndss-2026-cross-device-consent-and-session-control.md>) — topic: Authorization.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<../resources/dify-2026-tracing-configuration-tenant-authority.md>) — topic: Authorization.

@@ -4,7 +4,7 @@
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-141 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+142 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
@@ -27,6 +27,7 @@ Original defensive summaries of official educational references. These resources
 - [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers; Architecture Guide.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project; Architecture Guide.
 - [CI4MS: keep stored diagnostic content inert in administrative log views](<resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>) — CI4MS maintainers; Maintainer Advisory.
+- [Claude Cowork: approved destinations need account and operation binding](<resources/anthropic-2026-egress-capability-identity-binding.md>) — Anthropic; Research Paper.
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Maintainer Advisory.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs; Research Paper.

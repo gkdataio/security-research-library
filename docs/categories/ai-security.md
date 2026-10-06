@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Security theme / environment** · 7 reports · 14 related resources · 1 diagram
+**Security theme / environment** · 7 reports · 15 related resources · 1 diagram
 
 Authority boundaries around model input, tools, and downstream actions.
 
@@ -26,6 +26,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 
 Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
+- [Claude Cowork: approved destinations need account and operation binding](<../resources/anthropic-2026-egress-capability-identity-binding.md>) — topic: Ai Security.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<../resources/dify-2026-tracing-configuration-tenant-authority.md>) — topic: Ai Security.
 - [Langflow: project transport authorization must reach each resource read](<../resources/langflow-2026-mcp-resource-project-authorization.md>) — topic: Ai Security.
 - [LibreChat: agent edit authority must cover attached context](<../resources/librechat-2026-agent-context-mutation-authority.md>) — topic: Ai Security.

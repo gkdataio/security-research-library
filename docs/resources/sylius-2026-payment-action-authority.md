@@ -33,11 +33,11 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public maintainer advisory and release notes\.
 
-**Reviewed:** 2026-10-03T13:59:30Z  
+**Reviewed:** 2026-10-06T21:13:14Z  
 **Review status:** primary source reviewed  
 **Living resource:** No.
 
-Maintainer advisory and release evidence reviewed; no live testing or independent incident verification\.
+Release chronology refreshed from official GitHub metadata; earlier advisory and release-page reviews are retained\. No live testing or independent incident verification\.
 
 Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.
 
@@ -53,12 +53,14 @@ Review and retrieval timestamps are distinct from publication and version dates.
 - Impact is conditional on an enabled production API and a gateway exposing the relevant financial operations\. The advisory explicitly excludes a plain default installation lacking that gateway\.
 - The maintainer describes financial-state inconsistency and consequent merchant-loss risk, not a documented production loss\. This review does not independently verify those outcomes\.
 - TheMilek published the advisory; acirtautas is credited as finder\. The reviewed advisory displays no known CVE; no identifier is inferred from secondary indexing\.
-- Both release pages display September 2 without a year in the reviewed rendering\. Full patch dates are not asserted; the educational resource edition remains unknown\.
+- Official GitHub release metadata \(release-21-metadata and release-22-metadata\) records v2\.1\.16 published September 2, 2026 at 14:03:30 UTC and v2\.2\.9 at 14:03:48 UTC; both release bodies link GHSA-2rv4-pjmm-7fxf\. These are software patch-release dates, not an educational-resource edition date; dates\.version\_released remains null\.
 
 ## Sources and attribution
 
 - [Shop API accepts arbitrary PaymentRequest actions, allowing a customer-triggered refund](<https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf>) — Sylius; source ID: advisory; provenance: official primary; retrieved 2026-10-03T13:59:30Z; supports: summary, version, dates.
 - [Sylius v2\.1\.16 security release](<https://github.com/Sylius/Sylius/releases/tag/v2.1.16>) — Sylius; source ID: release-21; provenance: official primary; retrieved 2026-10-03T13:59:30Z; supports: version, dates.
 - [Sylius v2\.2\.9 security release](<https://github.com/Sylius/Sylius/releases/tag/v2.2.9>) — Sylius; source ID: release-22; provenance: official primary; retrieved 2026-10-03T13:59:30Z; supports: version, dates.
+- [Sylius v2\.1\.16 official GitHub release metadata](<https://api.github.com/repos/Sylius/Sylius/releases/tags/v2.1.16>) — Sylius; source ID: release-21-metadata; provenance: official primary; retrieved 2026-10-06T21:10:33Z; supports: dates.
+- [Sylius v2\.2\.9 official GitHub release metadata](<https://api.github.com/repos/Sylius/Sylius/releases/tags/v2.2.9>) — Sylius; source ID: release-22-metadata; provenance: official primary; retrieved 2026-10-06T21:10:33Z; supports: dates.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

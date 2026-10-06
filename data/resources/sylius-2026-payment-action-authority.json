@@ -52,10 +52,10 @@
     }
   },
   "freshness": {
-    "reviewed_at": "2026-10-03T13:59:30Z",
+    "reviewed_at": "2026-10-06T21:13:14Z",
     "living_resource": false,
     "status": "primary_source_reviewed",
-    "note": "Maintainer advisory and release evidence reviewed; no live testing or independent incident verification."
+    "note": "Release chronology refreshed from official GitHub metadata; earlier advisory and release-page reviews are retained. No live testing or independent incident verification."
   },
   "sources": [
     {
@@ -94,6 +94,28 @@
         "version",
         "dates"
       ]
+    },
+    {
+      "id": "release-21-metadata",
+      "url": "https://api.github.com/repos/Sylius/Sylius/releases/tags/v2.1.16",
+      "title": "Sylius v2.1.16 official GitHub release metadata",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T21:10:33Z",
+      "supports": [
+        "dates"
+      ]
+    },
+    {
+      "id": "release-22-metadata",
+      "url": "https://api.github.com/repos/Sylius/Sylius/releases/tags/v2.2.9",
+      "title": "Sylius v2.2.9 official GitHub release metadata",
+      "publisher": "Sylius",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T21:10:33Z",
+      "supports": [
+        "dates"
+      ]
     }
   ],
   "caveats": [
@@ -101,7 +123,7 @@
     "Impact is conditional on an enabled production API and a gateway exposing the relevant financial operations. The advisory explicitly excludes a plain default installation lacking that gateway.",
     "The maintainer describes financial-state inconsistency and consequent merchant-loss risk, not a documented production loss. This review does not independently verify those outcomes.",
     "TheMilek published the advisory; acirtautas is credited as finder. The reviewed advisory displays no known CVE; no identifier is inferred from secondary indexing.",
-    "Both release pages display September 2 without a year in the reviewed rendering. Full patch dates are not asserted; the educational resource edition remains unknown."
+    "Official GitHub release metadata (release-21-metadata and release-22-metadata) records v2.1.16 published September 2, 2026 at 14:03:30 UTC and v2.2.9 at 14:03:48 UTC; both release bodies link GHSA-2rv4-pjmm-7fxf. These are software patch-release dates, not an educational-resource edition date; dates.version_released remains null."
   ],
   "content_scope": "defensive_education"
 }
