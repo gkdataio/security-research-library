@@ -33,11 +33,11 @@ Educational reference only; linked material does not authorize testing unrelated
 
 Public official guidance\.
 
-**Reviewed:** 2026-10-02T16:29:00Z  
+**Reviewed:** 2026-10-07T01:00:44Z  
 **Review status:** primary source reviewed  
 **Living resource:** Yes.
 
-Living guidance; publication and update dates were not established\.
+Scoped completeness review of the Domain name section in the current official page and OWASP Markdown, recorded as source connection-time-destination-guidance\. The added caveats complement the existing summary; this review does not establish publication, version-release or latest-update dates for the living resource\.
 
 Review and retrieval timestamps are distinct from publication and version dates. Regeneration does not reverify sources.
 
@@ -50,6 +50,8 @@ Review and retrieval timestamps are distinct from publication and version dates.
 ## Caveats
 
 - The destination-policy design depends on business requirements\. Metadata protections complement application validation and network isolation\.
+- A permitted domain name or a separate DNS review does not by itself establish an authorized connection destination\. The client's actual connection must remain restricted to addresses validated against the application's destination policy\.
+- Keep that destination policy effective for retry and fallback connections\. DNS configuration and monitoring add detection but do not replace enforcement when a connection is made\.
 
 ## Related conceptual diagrams
 
@@ -58,5 +60,6 @@ Review and retrieval timestamps are distinct from publication and version dates.
 ## Sources and attribution
 
 - [Server-Side Request Forgery Prevention Cheat Sheet](<https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html>) — OWASP; source ID: primary; provenance: official primary; retrieved 2026-10-02T16:29:00Z; supports: summary.
+- [Server-Side Request Forgery Prevention Cheat Sheet: Domain name](<https://github.com/OWASP/CheatSheetSeries/blob/29994dd8a2e6f50fa3d5607b046b54d7c6945afd/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.md#domain-name>) — OWASP Cheat Sheet Series; source ID: connection-time-destination-guidance; provenance: official primary; retrieved 2026-10-07T01:00:23Z; supports: summary.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
