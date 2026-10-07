@@ -14,6 +14,7 @@ This collection is separate from paid-award reports. It contains official educat
 - [Google API field masks: server-owned and immutable state](resources/google-aip-161-update-field-authority.md): distinguish selected fields from authorization and mutability. Output-only input is ignored; immutable changes should fail validation. [Structured record](../data/resources/google-aip-161-update-field-authority.json)
 - [OWASP LLM Prompt Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html): reason about untrusted content, tool permissions, and defense in depth
 - [HackerOne Quality Reports](https://docs.hackerone.com/en/articles/8475116-quality-reports): communicate evidence-backed impact, scope, and remediation clearly
+- [Google: What is a security vulnerability?](resources/google-understanding-security-vulnerability-reports.md): explain application-specific harm and distinguish prerequisites from supported consequences
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security): study fundamentals in provider-controlled training environments
 
 - [SLSA v1.2](https://slsa.dev/spec/v1.2/): review build provenance, artifact integrity, and distinct assurance levels

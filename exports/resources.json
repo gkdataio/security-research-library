@@ -5,7 +5,7 @@
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 143,
+    "resources": 144,
     "diagrams": 14
   },
   "taxonomy": {
@@ -3790,6 +3790,80 @@
         "AIP-203 forbids an error merely because output-only input is present and requires it to be cleared or ignored. This differs from immutable input, for which unchanged values should be ignored and changes should cause a validation error. Nested field behavior is independent of its parent's annotation.",
         "AIP-134 says generic updates should avoid side effects and state fields must not be directly writable through them. The separation of field selection from caller authorization is editorial synthesis; these AIPs' explicit rules concern field behavior and update semantics.",
         "These are Google API design requirements, not universal protocol guarantees or proof that a particular service enforces them. This resource establishes no incident, affected deployment, bounty, exploitability or testing authorization."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "google-understanding-security-vulnerability-reports",
+      "title": "What is a security vulnerability?",
+      "publisher": "Google Bug Hunters",
+      "authors": [],
+      "primary_url": "https://bughunters.google.com/learn/improving-your-reports/getting-started/what-is-a-security-vulnerability",
+      "resource_type_id": "reporting-guide",
+      "topic_ids": [
+        "reporting"
+      ],
+      "skillset_ids": [
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Google's reporting guidance asks for an explanation of why observed behavior is harmful in the particular application. A familiar vulnerability label or behavior that is unsafe elsewhere does not establish impact here. The guide also distinguishes conditions that must already hold from consequences attributable to the reported behavior.",
+      "defensive_use": "Review evidence from authorized work against intended application behavior. State the relevant context, prerequisites and supported consequences separately, and qualify impact rather than inheriting claims from a generic vulnerability description.",
+      "prerequisites": [
+        "Understanding of the application's intended behavior and authorized review scope"
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Public article read without sign-in; availability observed at review time."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No article publication date was established."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No article publication or update date was displayed in the reviewed page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-07T01:41:37Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Previously held as a candidate because only indexed text had been available, with HackerOne Quality Reports used instead. Full browser-rendered primary text, including the common-pitfalls section, was read on this review and resolved that retrieval blocker. The same candidate ID is retained; the page may change."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://bughunters.google.com/learn/improving-your-reports/getting-started/what-is-a-security-vulnerability",
+          "title": "What is a security vulnerability?",
+          "publisher": "Google Bug Hunters",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-07T01:40:04Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "This general reporting guide establishes no individual incident, remediation result or award.",
+        "The embedded video's date does not establish the article's publication or update date.",
+        "The catalog retains reporting principles only; technical examples and operational scenarios are omitted."
       ],
       "content_scope": "defensive_education"
     },

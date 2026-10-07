@@ -4,7 +4,7 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-143 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+144 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
@@ -17,7 +17,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Identity](<#topic-identity>) — 44 resources.
 - [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 12 resources.
 - [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
-- [Reporting](<#topic-reporting>) — 2 resources.
+- [Reporting](<#topic-reporting>) — 3 resources.
 - [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
 - [Verification](<#topic-verification>) — 23 resources.
 - [Web Foundations](<#topic-web-foundations>) — 70 resources.
@@ -266,10 +266,11 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-reporting"></a>
 ## Reporting
 
-2 resources.
+3 resources.
 
 - [OWASP Logging: trustworthy and minimal application evidence](<resources/owasp-security-logging-evidence-quality.md>) — OWASP Cheat Sheet Series.
 - [Quality Reports](<resources/hackerone-quality-vulnerability-reports.md>) — HackerOne Help Center.
+- [What is a security vulnerability?](<resources/google-understanding-security-vulnerability-reports.md>) — Google Bug Hunters.
 
 <a id="topic-supply-chain"></a>
 ## Software Supply Chain
