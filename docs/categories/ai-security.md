@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Security theme / environment** · 7 reports · 15 related resources · 1 diagram
+**Security theme / environment** · 7 reports · 16 related resources · 1 diagram
 
 Authority boundaries around model input, tools, and downstream actions.
 
@@ -39,6 +39,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Open WebUI: credentials must bind to their destination connection](<../resources/open-webui-2026-connection-credential-capture.md>) — topic: Ai Security.
 - [OWASP LLM05:2025: generated-output consumer trust](<../resources/owasp-llm-output-consumer-trust.md>) — topic: Ai Security.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<../resources/owasp-rag-retrieval-permission-boundaries.md>) — topic: Ai Security.
+- [OWASP LLM09:2026: embedding confidentiality and storage lifecycle](<../resources/owasp-2026-embedding-confidentiality-lifecycle.md>) — topic: Ai Security.
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<../resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — topic: Ai Security.
 - [ServiceNow: agent discovery expands the delegated authority boundary](<../resources/servicenow-2025-agent-discovery-delegation-authority.md>) — topic: Ai Security.
 

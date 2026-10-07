@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-2026-embedding-confidentiality-lifecycle",
+  "title": "OWASP LLM09:2026: embedding confidentiality and storage lifecycle",
+  "publisher": "OWASP Gen AI Security Project",
+  "authors": [],
+  "primary_url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/9253e38ade58e959b531c0c5c9a4842272c9cd0e/2026/final/LLM09_VectorAndEmbeddingWeaknesses.md#L59-L61",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "ai-security"
+  ],
+  "skillset_ids": [
+    "ai-authority-boundaries",
+    "integration-threat-modeling",
+    "secrets-containment"
+  ],
+  "version": "LLM09:2026",
+  "summary": "Embeddings remain sensitive derived data after ingestion. Treating them as harmless output can leave retained vectors and backups outside the protections applied to source documents. OWASP's storage-lifecycle guidance connects source deletion to bounded removal of embeddings and reconciliation, keeps backups at source-data sensitivity, and separates encryption-key management from application access. Retrieval authorization alone does not establish retention or deletion.",
+  "defensive_use": "Editorial review guidance: map source-to-embedding relationships, assign deletion deadlines and reconciliation evidence, and document backup sensitivity and encryption-key boundaries. Assess these storage obligations separately from permission-aware retrieval in an owned design.",
+  "prerequisites": [
+    "Basic concepts of embeddings, vector stores and retrieval-augmented generation",
+    "Data retention, backup classification and encryption-key management concepts"
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Official public repository source and edition landing page were readable without an account at review time."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The reviewed canonical entry does not establish its individual original publication date."
+    },
+    "version_released": {
+      "value": "2026-08-04",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "edition-2026-readme",
+      "note": "The pinned release README explicitly gives August 4, 2026 as the edition release date and identifies final/ as the canonical published source. This is not the individual entry's publication or update date."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No individual entry publication or update date was established. The separate edition landing page displays August 3, 2026; that date is retained in caveats rather than assigned to this entry."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-06T23:53:01Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "Reviewed the canonical 2026 entry at pinned commit 9253e38ade58e959b531c0c5c9a4842272c9cd0e, the edition README and the official landing page. The selected text is immutable at this commit; later revisions may differ. Review was read-only and limited to the storage-lifecycle learning objective."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/9253e38ade58e959b531c0c5c9a4842272c9cd0e/2026/final/LLM09_VectorAndEmbeddingWeaknesses.md#L59-L61",
+      "title": "LLM09:2026 Vector and Embedding Weaknesses: Storage Lifecycle Controls",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T23:53:01Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "edition-2026-readme",
+      "url": "https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/9253e38ade58e959b531c0c5c9a4842272c9cd0e/2026/README.md",
+      "title": "OWASP Top 10 for LLM Applications 2026: published release overview",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T23:50:14Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "edition-2026-landing",
+      "url": "https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/",
+      "title": "OWASP GenAI LLM Top 10 2026: edition landing page",
+      "publisher": "OWASP Gen AI Security Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-06T23:51:54Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The edition README gives August 4, 2026 for release, while the official edition landing page displays August 3. Neither establishes the individual entry's original publication or latest update.",
+    "This scoped resource addresses retained derived data and backups; the existing 2025 retrieval-permission resource remains a separate historical learning reference.",
+    "No individual entry byline was established; project attribution does not identify every contributor as an author.",
+    "This is architectural guidance, not evidence of a product incident, a universal reconstruction result, a legal requirement or an individual award. Embedding inversion is not presented as a new discovery."
+  ],
+  "content_scope": "defensive_education"
+}

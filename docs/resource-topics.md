@@ -4,13 +4,13 @@
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-142 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+143 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
-- [Ai Security](<#topic-ai-security>) — 15 resources.
+- [Ai Security](<#topic-ai-security>) — 16 resources.
 - [Authorization](<#topic-authorization>) — 85 resources.
 - [Business Logic and State Integrity](<#topic-business-logic>) — 33 resources.
 - [Cloud Security](<#topic-cloud-security>) — 7 resources.
@@ -25,7 +25,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-ai-security"></a>
 ## Ai Security
 
-15 resources.
+16 resources.
 
 - [Claude Cowork: approved destinations need account and operation binding](<resources/anthropic-2026-egress-capability-identity-binding.md>) — Anthropic.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs.
@@ -40,6 +40,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
+- [OWASP LLM09:2026: embedding confidentiality and storage lifecycle](<resources/owasp-2026-embedding-confidentiality-lifecycle.md>) — OWASP Gen AI Security Project.
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.
 - [ServiceNow: agent discovery expands the delegated authority boundary](<resources/servicenow-2025-agent-discovery-delegation-authority.md>) — AppOmni AO Labs.
 
