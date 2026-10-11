@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "apple-web-security-recognition",
+  "organization": "Apple",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://support.apple.com/en-us/102774",
+    "summary": "Apple publishes web-server security credits after reported issues have been identified and addressed.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_portal",
+    "url": "https://support.apple.com/en-us/102549",
+    "summary": "Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account.",
+    "source_ids": [
+      "reporting",
+      "guidelines"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Apple Security Bounty has separate eligibility rules. Appearance on the acknowledgment page does not establish a paid award.",
+    "source_ids": [
+      "guidelines"
+    ]
+  },
+  "reviewed_at": "2026-10-11T04:00:42Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The acknowledgment page concerns web-server reports; it is not a complete list of Apple security credits.",
+    "The authenticated submission flow was not opened or tested."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Apple web server security acknowledgements",
+      "url": "https://support.apple.com/en-us/102774",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-11T04:00:42Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Report a security or privacy vulnerability",
+      "url": "https://support.apple.com/en-us/102549",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-11T04:00:42Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "guidelines",
+      "title": "Apple Security Bounty Guidelines",
+      "url": "https://security.apple.com/bounty/guidelines/",
+      "publisher": "Apple",
+      "retrieved_at": "2026-10-11T04:00:42Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

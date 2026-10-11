@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-nebraska-security-recognition",
+  "organization": "University of Nebraska",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame",
+    "summary": "The university publishes a dated hall of fame for responsible disclosures.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
+    "summary": "The policy provides direct email reporting to ITS Security.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly offers no monetary rewards; recognition includes hall-of-fame credits and digital badges.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-11T04:01:53Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Medical-data and medical-service research is prohibited; other policy restrictions still apply.",
+    "This record does not reproduce or independently verify the complete policy scope."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "VDP Hall of Fame",
+      "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame",
+      "publisher": "University of Nebraska",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Vulnerability Disclosure Program",
+      "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
+      "publisher": "University of Nebraska",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -32,7 +32,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 | Explore | Guides and catalogs |
 |---|---|
 | **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
-| **Programs** | [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) |
+| **Programs** | [First-party recognition and direct disclosure](docs/direct-disclosure.md) · [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) |
 | **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) · [Program change checker](#check-program-changes) |
 | **Learn** | [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) |
 | **Visuals** | [Diagram gallery](docs/diagram-gallery.md) · [Visual guide](docs/visual-theory.md) |
@@ -58,6 +58,10 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 
 These counts describe the collection at the dates above. Award evidence is attributed to its source; it is not an independent audit of payment. Historical records and uncertain dates remain explicitly labeled.
 
+## First-party recognition and direct disclosure
+
+Browse the new [direct-disclosure directory](docs/direct-disclosure.md) for five prominent organizations with their own recognition pages and first-party reporting guidance, reviewed October 11, 2026. Each entry distinguishes recognition from payment and records source and access limitations. This small editorial selection is not a measured traffic ranking; current official terms control. It is maintained separately from program-policy and award-backed report counts.
+
 ## Current research focus
 
 Curation currently prioritizes web-application security relevant to 2026: authorization and business logic, API and OAuth boundaries, browser policy, modern server/client frameworks, and AI-connected applications. The reviewed program directory includes dated scope-asset snapshots. The [public Bugcrowd catalog](docs/bugcrowd-programs.md) covers both public Bug Bounty and Vulnerability Disclosure listings in the October 3 directory snapshot, with per-program in-scope and out-of-scope rows or a specific capture gap. A separate [public bounty scope catalog](docs/public-bounties.md) covers bounty candidates across Bugcrowd, HackerOne and Intigriti. The [scope coverage audit](docs/program-scope-audit.md) reconciles their 293 overlapping Bugcrowd bounty pages and lists every unresolved gap. These table captures do not promote discovery listings to fully reviewed policy records. Each source and scope snapshot carries its own review time.
@@ -67,6 +71,7 @@ Curation currently prioritizes web-application security relevant to 2026: author
 | If you want to… | Start with… |
 |---|---|
 | Browse a vulnerability family or a source-backed subtype | [Vulnerability types](docs/vulnerability-types.md), then a linked type page for publication-year groups and coverage gaps |
+| Find an organization’s own recognition page and direct reporting guidance | [First-party recognition and direct disclosure](docs/direct-disclosure.md) |
 | Find a disclosure and inspect its evidence | [Complete report index](#report-index), then the linked JSON record |
 | Study hypotheses, code review, contained exercises and evidence | [Research methodology](docs/research-methodology.md) |
 | Study defensive design principles by topic | [Defensive learning guide](docs/learning-guide.md) |
@@ -120,6 +125,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 
 | Collection | Canonical records | Schema | Portable export |
 |---|---|---|---|
+| First-party recognition and reporting | [data/recognition/](data/recognition/) | [Recognition schema](schema/recognition.schema.json) | [exports/recognition.json](exports/recognition.json) |
 | Official directory observations | [data/program-discovery/](data/program-discovery/) | [Discovery schema](schema/program-discovery.schema.json) | [exports/program-discovery.json](exports/program-discovery.json) |
 | Public bounty scope captures | [data/public-bounty-scopes.json](data/public-bounty-scopes.json) | [Capture schema](schema/public-bounty-scopes.schema.json) | [exports/public-bounties.json](exports/public-bounties.json) |
 | Bugcrowd public VDP scope captures | [data/bugcrowd-vdp-scopes.json](data/bugcrowd-vdp-scopes.json) | [VDP capture schema](schema/bugcrowd-vdp-scopes.schema.json) | [exports/bugcrowd-programs.json](exports/bugcrowd-programs.json) |
@@ -130,6 +136,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 | Conceptual diagrams | [data/diagrams/](data/diagrams/) | [Diagram schema](schema/diagram.schema.json) | Included in [resources.json](exports/resources.json) |
 
 - **Report export:** includes reports, taxonomy, counts, review dates, and inclusion policy. `reports[]` contains the records. The export uses schema version `1.2.0`; the report schema accepts unchanged record versions `1.0.0`, `1.1.0` and `1.2.0`. Optional `report_identity.kind: source_label` requires record version `1.2.0` and stores an exact primary-source report label in `value`, with `source_id` and `evidence_location`. CVE identities remain supported in `1.1.0` and `1.2.0`. Older strict-schema clients must load the updated schema before consuming source-label records. Exporting never upgrades individual records.
+- **Recognition export:** a separate `1.0.0` collection of official recognition pages and direct reporting guidance. Records bind recognition, reporting and reward distinctions to primary sources, retain review times and label submission availability as untested. It contains no target-asset inventory and does not establish payment eligibility or authorization. Regeneration never changes source-review timestamps.
 - **Program export:** schema version `1.5.0` adds `asset_scope` snapshots to the 40 reviewed program records. Each snapshot separates in-scope and out-of-scope entries, carries official source IDs and a review time, and labels whether it came from a published platform table or a policy-defined category. The [readable program directory](docs/programs.md) shows both lists and the [JSON export](exports/programs.json) preserves them. Zero explicit out-of-scope rows never means unrestricted scope; policy prose and product-specific rules still apply. The earlier optional `scope_context` holds high-level summaries, while `program_type` and submission status remain independent. Existing `1.1.0`–`1.4.0` records remain schema-compatible; current official terms control and this library grants no testing authorization.
 - **Public bounty scope export:** covers 627 bounty candidates from the official Bugcrowd, HackerOne and Intigriti directory observations. It combines the 23 matching reviewed paid-bounty policies with 568 additional published scope-table captures; 36 candidates have preview-only, terms-only, empty structured-scope or failed-fetch states. The [visual catalog](docs/public-bounties.md) has one page per candidate. HackerOne `offers_bounties` flags resolve otherwise unknown directory classifications; excluded nonbounty listings stay in the source capture for auditability. Five Bugcrowd Bug Bounty-tab listings lack displayed monetary rewards and retain unconfirmed paid status. A scope table is not a full policy review or a live authorization decision.
 - **Public Bugcrowd program export:** the October 3 directory pass found all 293 Bug Bounty and 223 Vulnerability Disclosure entries advertised on the public listing feed. The [combined visual catalog](docs/bugcrowd-programs.md) and [JSON export](exports/bugcrowd-programs.json) cover all 516 current listings; 507 have source-linked published scope rows and nine have explicit missing-row or fetch-failure states. This is a dated public-directory snapshot, not a claim about private or unlisted programs.
@@ -186,6 +193,7 @@ Validation, tests, and export checks use **Python 3.10+**, the standard library,
 ```sh
 python3 scripts/validate.py
 python3 scripts/validate_extra.py
+python3 scripts/export_recognition.py --check
 python3 -m unittest discover -s tests -v
 python3 scripts/render_diagrams.py --check
 python3 scripts/export.py --check
@@ -198,9 +206,10 @@ python3 scripts/export_scope_audit.py --check
 python3 scripts/build_navigation.py --check
 ```
 
-After editing canonical records, regenerate the exports:
+After editing canonical records, regenerate the affected exports. The recognition exporter also generates its readable directory:
 
 ```sh
+python3 scripts/export_recognition.py
 python3 scripts/export.py
 python3 scripts/export_resources.py
 python3 scripts/export_programs.py

@@ -1,0 +1,290 @@
+{
+  "schema_version": "1.0.0",
+  "dataset": "security-research-library-recognition",
+  "as_of": "2026-10-11",
+  "repository_url": "https://github.com/gkdataio/security-research-library",
+  "scope": "First-party recognition pages and direct reporting guidance; separate from program-policy and award records.",
+  "limitations": [
+    "A small editorial selection, not a traffic ranking or exhaustive directory.",
+    "Recognition does not imply a monetary bounty or testing authorization.",
+    "Submission flows were not exercised; current official terms control."
+  ],
+  "counts": {
+    "organizations": 5
+  },
+  "records": [
+    {
+      "schema_version": "1.0.0",
+      "id": "apple-web-security-recognition",
+      "organization": "Apple",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://support.apple.com/en-us/102774",
+        "summary": "Apple publishes web-server security credits after reported issues have been identified and addressed.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_portal",
+        "url": "https://support.apple.com/en-us/102549",
+        "summary": "Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account.",
+        "source_ids": [
+          "reporting",
+          "guidelines"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Apple Security Bounty has separate eligibility rules. Appearance on the acknowledgment page does not establish a paid award.",
+        "source_ids": [
+          "guidelines"
+        ]
+      },
+      "reviewed_at": "2026-10-11T04:00:42Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The acknowledgment page concerns web-server reports; it is not a complete list of Apple security credits.",
+        "The authenticated submission flow was not opened or tested."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Apple web server security acknowledgements",
+          "url": "https://support.apple.com/en-us/102774",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-11T04:00:42Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Report a security or privacy vulnerability",
+          "url": "https://support.apple.com/en-us/102549",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-11T04:00:42Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "guidelines",
+          "title": "Apple Security Bounty Guidelines",
+          "url": "https://security.apple.com/bounty/guidelines/",
+          "publisher": "Apple",
+          "retrieved_at": "2026-10-11T04:00:42Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "motorola-solutions-security-recognition",
+      "organization": "Motorola Solutions",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html",
+        "summary": "Motorola Solutions publishes annual security hall-of-fame acknowledgments.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html",
+        "summary": "The guidelines provide direct security-team email reporting for independent researchers.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "Recognition is discretionary; the guidelines disclaim any obligation to pay a bounty.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-11T04:01:53Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Customers and employees use separate reporting channels.",
+        "Recognition requires the first valid report and policy compliance; automated scanning is prohibited."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Security Hall of Fame",
+          "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html",
+          "publisher": "Motorola Solutions",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible Vulnerability Disclosure Program Guidelines",
+          "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html",
+          "publisher": "Motorola Solutions",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ut-austin-security-recognition",
+      "organization": "The University of Texas at Austin",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://security.utexas.edu/hall-of-fame",
+        "summary": "UT Austin maintains annual public credits for external security reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://security.utexas.edu/hall-of-fame",
+        "summary": "The page supplies the university security office’s direct reporting email.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed page establishes recognition, not a monetary reward.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-11T04:01:53Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This acknowledgment page is not a complete policy or a grant of testing permission."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Hall of Fame",
+          "url": "https://security.utexas.edu/hall-of-fame",
+          "publisher": "The University of Texas at Austin",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "university-of-groningen-security-recognition",
+      "organization": "University of Groningen",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+        "summary": "Recognition is discretionary; the hall-of-fame section names first valid reports of unknown issues.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+        "summary": "Direct CERT email reporting is documented; encryption is requested.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed policy does not establish a monetary award.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-11T04:01:53Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The policy expressly does not invite active scanning.",
+        "Recognition remains case-specific; submission availability was not exercised."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Coordinated Vulnerability Disclosure",
+          "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+          "publisher": "University of Groningen",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "university-of-nebraska-security-recognition",
+      "organization": "University of Nebraska",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame",
+        "summary": "The university publishes a dated hall of fame for responsible disclosures.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
+        "summary": "The policy provides direct email reporting to ITS Security.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly offers no monetary rewards; recognition includes hall-of-fame credits and digital badges.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-11T04:01:53Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Medical-data and medical-service research is prohibited; other policy restrictions still apply.",
+        "This record does not reproduce or independently verify the complete policy scope."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "VDP Hall of Fame",
+          "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame",
+          "publisher": "University of Nebraska",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Vulnerability Disclosure Program",
+          "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
+          "publisher": "University of Nebraska",
+          "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    }
+  ]
+}

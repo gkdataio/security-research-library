@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ut-austin-security-recognition",
+  "organization": "The University of Texas at Austin",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://security.utexas.edu/hall-of-fame",
+    "summary": "UT Austin maintains annual public credits for external security reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://security.utexas.edu/hall-of-fame",
+    "summary": "The page supplies the university security office’s direct reporting email.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed page establishes recognition, not a monetary reward.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-11T04:01:53Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This acknowledgment page is not a complete policy or a grant of testing permission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Hall of Fame",
+      "url": "https://security.utexas.edu/hall-of-fame",
+      "publisher": "The University of Texas at Austin",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

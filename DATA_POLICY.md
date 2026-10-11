@@ -57,6 +57,16 @@ Resource types classify the publication at `primary_url`, not every supporting s
 
 Diagrams are original conceptual defensive models with linked report/resource evidence and alternate text. Do not include operational attack sequences or exploit details. Keep Mermaid source and SVG rendering provenance explicit. Both source formats must match the canonical graph; rendered SVGs need visual inspection after edits.
 
+## First-party recognition and direct disclosure
+
+`data/recognition/` is a separate reference collection for organizations with an official public recognition page and reviewed first-party reporting guidance. A hall of fame, acknowledgment page or researcher-recognition program establishes only the recognition described by its source. It does not establish traffic rank, payment eligibility, report acceptance, testing authorization or completeness of policy review. Do not promote these records into reviewed program-policy or award-backed report counts.
+
+Include only official primary evidence for both recognition and the direct reporting route. Link the policy/instructions page for a published email route; do not infer an endpoint or exercise submission flows. A portal may require login, and a direct option does not establish that every other option avoids external services. Record access limitations and leave submission availability as `not_tested`. Retain source retrieval and review timestamps separately; formatting and export regeneration do not advance them.
+
+Distinguish explicit no-bounty language from a separate monetary program and from unknown payment status. Missing reward language is not proof that a program is unpaid. Preserve recognition conditions and qualifications in concise original summaries without copying credited researchers' names. Do not add target domains, asset-scope inventories, testing procedures or speculative popularity ranks. The schema intentionally has no fields for these inventories or for claims of an individual award.
+
+The offline `scripts/export_recognition.py` reuses the common schema validator and checks stable identities, unique organizations, evidence references, exact reviewed recognition/reporting URLs and source chronology. It generates `exports/recognition.json` and `docs/direct-disclosure.md` deterministically. Automated checks cannot establish source ownership or factual policy currency; a curator must read the official pages. Existing taxonomies, program IDs, record versions and licenses remain unchanged.
+
 ## Public program directory
 
 Program policies are a separate reference collection under `data/programs/`, with their own schema, export and readable directory. They do not qualify as award-backed reports. Advertised ceilings, category guidelines and bonuses must never be treated as individual awarded or paid amounts. Keep currency-normalized numbers null when the reviewed source does not establish a denomination; preserve displayed notation and explain the limitation.

@@ -1,0 +1,204 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "First-party recognition and direct-disclosure reference",
+  "description": "A dated recognition-page and reporting-route reference. Does not establish testing authorization, live submission availability or payment eligibility. No target asset inventory is represented.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "organization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "recognition": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "hall_of_fame",
+            "acknowledgments",
+            "researcher_recognition"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "kind",
+        "url",
+        "summary",
+        "source_ids"
+      ],
+      "additionalProperties": false
+    },
+    "reporting": {
+      "type": "object",
+      "properties": {
+        "route": {
+          "enum": [
+            "first_party_portal",
+            "direct_email",
+            "first_party_form"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "route",
+        "url",
+        "summary",
+        "source_ids"
+      ],
+      "additionalProperties": false
+    },
+    "rewards": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "separate_bounty_policy",
+            "no_bounty",
+            "unknown"
+          ]
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "status",
+        "summary",
+        "source_ids"
+      ],
+      "additionalProperties": false
+    },
+    "reviewed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "submission_availability": {
+      "const": "not_tested"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "publisher": {
+            "type": "string",
+            "minLength": 1
+          },
+          "retrieved_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "provenance": {
+            "const": "official_primary"
+          },
+          "access_method": {
+            "const": "text"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "url",
+          "publisher",
+          "retrieved_at",
+          "provenance",
+          "access_method"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "content_scope": {
+      "const": "first_party_recognition_and_reporting_reference"
+    },
+    "rights": {
+      "const": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "organization",
+    "recognition",
+    "reporting",
+    "rewards",
+    "reviewed_at",
+    "submission_availability",
+    "limitations",
+    "sources",
+    "content_scope",
+    "rights"
+  ],
+  "additionalProperties": false
+}

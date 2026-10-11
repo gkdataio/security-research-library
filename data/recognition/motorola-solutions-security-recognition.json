@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "motorola-solutions-security-recognition",
+  "organization": "Motorola Solutions",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html",
+    "summary": "Motorola Solutions publishes annual security hall-of-fame acknowledgments.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html",
+    "summary": "The guidelines provide direct security-team email reporting for independent researchers.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Recognition is discretionary; the guidelines disclaim any obligation to pay a bounty.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-11T04:01:53Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Customers and employees use separate reporting channels.",
+    "Recognition requires the first valid report and policy compliance; automated scanning is prohibited."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Security Hall of Fame",
+      "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html",
+      "publisher": "Motorola Solutions",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Vulnerability Disclosure Program Guidelines",
+      "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html",
+      "publisher": "Motorola Solutions",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

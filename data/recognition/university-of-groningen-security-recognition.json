@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-groningen-security-recognition",
+  "organization": "University of Groningen",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+    "summary": "Recognition is discretionary; the hall-of-fame section names first valid reports of unknown issues.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+    "summary": "Direct CERT email reporting is documented; encryption is requested.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not establish a monetary award.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-11T04:01:53Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy expressly does not invite active scanning.",
+    "Recognition remains case-specific; submission availability was not exercised."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Coordinated Vulnerability Disclosure",
+      "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
+      "publisher": "University of Groningen",
+      "retrieved_at": "2026-10-11T04:01:53Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
