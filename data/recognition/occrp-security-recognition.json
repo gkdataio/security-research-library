@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "occrp-security-recognition",
+  "organization": "Organized Crime and Corruption Reporting Project",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.occrp.org/en/responsible-disclosure",
+    "summary": "Responsible security disclosures can receive public credit in OCCRP's own Hall of Fame.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.occrp.org/en/responsible-disclosure",
+    "summary": "The current policy provides direct email links; historical YesWeHack credits do not make that platform mandatory.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The nonprofit explicitly says it cannot provide compensation.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:58Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The email address is protected in text extraction; use the link on the official policy page.",
+    "Protect sensitive information and coordinate publication with OCCRP."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure and Hall of Fame",
+      "url": "https://www.occrp.org/en/responsible-disclosure",
+      "publisher": "Organized Crime and Corruption Reporting Project",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

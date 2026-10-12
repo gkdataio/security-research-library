@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ncsc-netherlands-security-recognition",
+  "organization": "National Cyber Security Centre (Netherlands)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.ncsc.nl/producten-en-diensten/wall-of-fame",
+    "summary": "The annual Wall selects impactful, well-documented reports; public naming requires permission.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.ncsc.nl/en/cvd-report-form",
+    "summary": "NCSC operates its own disclosure form for Dutch central-government coordination.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Non-cash appreciation can include clothing or gift certificates; no fixed cash bounty is established.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:39Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Recognition is selective and considers overall report quality; low-impact reports are ineligible.",
+    "For other organizations, the policy asks reporters to contact the owner first."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Wall of Fame",
+      "url": "https://www.ncsc.nl/producten-en-diensten/wall-of-fame",
+      "publisher": "National Cyber Security Centre (Netherlands)",
+      "retrieved_at": "2026-10-12T17:54:39Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Report a vulnerability",
+      "url": "https://www.ncsc.nl/en/services/report-a-vulnerability",
+      "publisher": "National Cyber Security Centre (Netherlands)",
+      "retrieved_at": "2026-10-12T17:54:39Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "CVD Report Form",
+      "url": "https://www.ncsc.nl/en/cvd-report-form",
+      "publisher": "National Cyber Security Centre (Netherlands)",
+      "retrieved_at": "2026-10-12T17:54:39Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

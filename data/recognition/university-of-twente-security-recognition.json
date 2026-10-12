@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-twente-security-recognition",
+  "organization": "University of Twente",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.utwente.nl/en/cyber-safety/responsible/hall-of-fame/",
+    "summary": "First responsible reporters of qualifying findings may opt into public credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.utwente.nl/en/cyber-safety/responsible/",
+    "summary": "The university publishes a direct email route; report details must be in the message body.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes monetary bounties.",
+    "source_ids": [
+      "terms"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:51:56Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Attachment-only reports are discarded.",
+    "Third-party sites on the university network do not qualify for university credit; coordinate publication after remediation."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.utwente.nl/en/cyber-safety/responsible/hall-of-fame/",
+      "publisher": "University of Twente",
+      "retrieved_at": "2026-10-12T17:51:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible disclosure",
+      "url": "https://www.utwente.nl/en/cyber-safety/responsible/",
+      "publisher": "University of Twente",
+      "retrieved_at": "2026-10-12T17:51:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "terms",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://www.utwente.nl/en/cyber-safety/cybersafety/legislation/responsible-disclosure.pdf",
+      "publisher": "University of Twente",
+      "retrieved_at": "2026-10-12T17:51:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

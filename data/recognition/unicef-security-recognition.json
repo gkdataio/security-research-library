@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "id": "unicef-security-recognition",
+  "organization": "UNICEF",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.unicef.org/digitalimpact/unicef-information-security-hall-fame",
+    "summary": "Verified, policy-compliant reports may receive requested public credit with coordinated timing and details.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.unicef.org/digitalimpact/unicef-information-security-hall-fame",
+    "summary": "The official reporting section provides a direct email link.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not establish a monetary reward commitment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:58Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This is UNICEF's distinct program, not the UN Secretariat program.",
+    "The email address is protected in text extraction; use the official page's link.",
+    "Acceptance remains discretionary and subject to the linked responsible-disclosure policy."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "UNICEF Information Security Hall of Fame and disclosure policy",
+      "url": "https://www.unicef.org/digitalimpact/unicef-information-security-hall-fame",
+      "publisher": "UNICEF",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

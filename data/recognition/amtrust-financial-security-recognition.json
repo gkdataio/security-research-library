@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "amtrust-financial-security-recognition",
+  "organization": "AmTrust Financial Services",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://amtrustfinancial.com/AmtrustFinancial/files/95/959245bc-4b85-4e7b-8403-79f6468ec672.pdf",
+    "summary": "First confirmed reports leading to a code or configuration change may receive optional public credit.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://amtrustfinancial.com/AmtrustFinancial/files/95/959245bc-4b85-4e7b-8403-79f6468ec672.pdf",
+    "summary": "The official policy PDF provides direct security-team email reporting.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:52:55Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy covers the group collectively and includes the public recognition list.",
+    "Keep findings confidential for the policy's remediation period; public credit requires compliance."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability Disclosure Policy and Hall of Fame",
+      "url": "https://amtrustfinancial.com/AmtrustFinancial/files/95/959245bc-4b85-4e7b-8403-79f6468ec672.pdf",
+      "publisher": "AmTrust Financial Services",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nvidia-security-recognition",
+  "organization": "NVIDIA",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.nvidia.com/en-us/product-security/acknowledgements/",
+    "summary": "Resolved, responsibly disclosed issues receive consent-based credit in bulletins or the central recognition page.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.nvidia.com/en-us/product-security/report-vulnerability/",
+    "summary": "Direct PSIRT email remains available alongside Intigriti; encrypted reporting is requested.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "NVIDIA links a separate Intigriti bounty program; direct email does not establish payment eligibility.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:52:15Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Central-page credit for cloud issues is discretionary; product findings may be credited in bulletins.",
+    "Coordinate publication with remediation; the policy warns against production-system scanning."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Product Security Acknowledgements",
+      "url": "https://www.nvidia.com/en-us/product-security/acknowledgements/",
+      "publisher": "NVIDIA",
+      "retrieved_at": "2026-10-12T17:52:15Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Report Security Vulnerability",
+      "url": "https://www.nvidia.com/en-us/product-security/report-vulnerability/",
+      "publisher": "NVIDIA",
+      "retrieved_at": "2026-10-12T17:52:15Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "NVIDIA PSIRT Policies",
+      "url": "https://www.nvidia.com/en-us/security/psirt-policies/",
+      "publisher": "NVIDIA",
+      "retrieved_at": "2026-10-12T17:52:15Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

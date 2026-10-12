@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vu-amsterdam-security-recognition",
+  "organization": "Vrije Universiteit Amsterdam",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://vu.nl/en/about-vu/more-about/security-and-operations-control-center",
+    "summary": "Responsible reporters may opt into the public Hall of Fame; trivial findings do not qualify.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://vu.nl/en/about-vu/more-about/security-and-operations-control-center",
+    "summary": "The disclosure section gives a dedicated security-reporting mailbox and encourages encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not establish monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:53:23Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy expressly does not invite active scanning.",
+    "Keep findings confidential until resolved; anonymous reporting limits follow-up."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security and Operations Control Center",
+      "url": "https://vu.nl/en/about-vu/more-about/security-and-operations-control-center",
+      "publisher": "Vrije Universiteit Amsterdam",
+      "retrieved_at": "2026-10-12T17:53:23Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

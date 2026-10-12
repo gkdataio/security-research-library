@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "id": "inholland-security-recognition",
+  "organization": "Inholland University of Applied Sciences",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.inholland.nl/responsible-disclosure/",
+    "summary": "Responsible nontrivial findings can receive public credit with the reporter's consent.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.inholland.nl/responsible-disclosure/melden-kwetsbaarheid/",
+    "summary": "The university's reporting form includes an explicit Wall of Fame choice.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Rewards may be offered case by case; neither a payment nor a fixed reward form is promised.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:19Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The form requests contact details and includes an anti-robot check; submission was not exercised.",
+    "Keep findings confidential until resolved."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and Wall of Fame",
+      "url": "https://www.inholland.nl/responsible-disclosure/",
+      "publisher": "Inholland University of Applied Sciences",
+      "retrieved_at": "2026-10-12T17:54:19Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Melden kwetsbaarheid",
+      "url": "https://www.inholland.nl/responsible-disclosure/melden-kwetsbaarheid/",
+      "publisher": "Inholland University of Applied Sciences",
+      "retrieved_at": "2026-10-12T17:54:19Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

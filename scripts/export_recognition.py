@@ -71,7 +71,7 @@ def build_export(records):
         'repository_url': 'https://github.com/gkdataio/security-research-library',
         'scope': 'First-party recognition pages and direct reporting guidance; separate from program-policy and award records.',
         'limitations': [
-            'A small editorial selection, not a traffic ranking or exhaustive directory.',
+            'An editorial selection, not a traffic ranking or exhaustive directory.',
             'Recognition does not imply a monetary bounty or testing authorization.',
             'Submission flows were not exercised; current official terms control.'
         ],
@@ -87,7 +87,7 @@ def build_page(records):
         '[Library home](../README.md) · [Canonical records](../data/recognition/) · '
         '[JSON export](../exports/recognition.json) · [Evidence policy](../DATA_POLICY.md#first-party-recognition-and-direct-disclosure)', '',
         f"{len(records)} organizations; latest source review: {export['as_of']}.", '',
-        'A small selection of prominent organizations with their own public recognition pages and official direct reporting guidance. '
+        'An editorial selection of organizations with their own public recognition pages and official direct reporting guidance. '
         'This is not a measured traffic ranking, an exhaustive directory or a claim that every reporting option avoids external services. '
         'The linked route is the first-party route documented by the organization.', '',
         '**Recognition does not imply payment or permission to test.** '

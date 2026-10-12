@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "id": "govcert-lu-security-recognition",
+  "organization": "GOVCERT.LU",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://govcert.lu/fr/signaler/",
+    "summary": "Previously unknown, sufficiently serious findings may receive opt-in credit under the disclosure policy.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://govcert.lu/fr/telechargements/assets/responsible-disclosure-policy.pdf",
+    "summary": "The official policy provides direct email reporting with PGP encryption; an institutional Report Assistant is also available.",
+    "source_ids": [
+      "policy",
+      "recognition"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:39Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This is a government coordination service; current constituency and disclosure rules control.",
+    "The Report Assistant displayed an encryption-unavailable notice in text review; submission was not tested.",
+    "Premature public disclosure can lead to removal of credit."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Signaler and Hall of fame",
+      "url": "https://govcert.lu/fr/signaler/",
+      "publisher": "GOVCERT.LU",
+      "retrieved_at": "2026-10-12T17:54:39Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://govcert.lu/fr/telechargements/assets/responsible-disclosure-policy.pdf",
+      "publisher": "GOVCERT.LU",
+      "retrieved_at": "2026-10-12T17:54:39Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

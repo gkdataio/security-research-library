@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bitdefender-security-recognition",
+  "organization": "Bitdefender",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.bitdefender.com/en-us/site/view/bug-bounty-hall-of-fame",
+    "summary": "The Hall lists participants with validated findings who agreed to be named.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.bitdefender.com/media/materials/bug_bounty/Bitdefender_Bug_Bounty_Terms_and_Conditions.pdf",
+    "summary": "The program terms publish a direct reporting mailbox; encrypted submissions are encouraged.",
+    "source_ids": [
+      "terms",
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Bounties depend on eligibility and discretionary assessment; current product-specific rules control.",
+    "source_ids": [
+      "policy",
+      "terms"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:53:45Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "First responsible reporting and confidentiality are required.",
+    "The main page masks its email in text extraction; the linked official terms explicitly provide it."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Bug Bounty Hall of Fame",
+      "url": "https://www.bitdefender.com/en-us/site/view/bug-bounty-hall-of-fame",
+      "publisher": "Bitdefender",
+      "retrieved_at": "2026-10-12T17:53:45Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Bug Bounty Program",
+      "url": "https://www.bitdefender.com/en-us/site/view/bug-bounty",
+      "publisher": "Bitdefender",
+      "retrieved_at": "2026-10-12T17:53:45Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "terms",
+      "title": "Bug Bounty Program Terms",
+      "url": "https://www.bitdefender.com/media/materials/bug_bounty/Bitdefender_Bug_Bounty_Terms_and_Conditions.pdf",
+      "publisher": "Bitdefender",
+      "retrieved_at": "2026-10-12T17:53:45Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "adyen-security-recognition",
+  "organization": "Adyen",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.adyen.com/policies-and-disclaimer/responsible-disclosure-hall-of-fame",
+    "summary": "Policy-compliant reporters can request public name credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.adyen.com/policies-and-disclaimer/responsible-disclosure",
+    "summary": "The policy provides direct email reporting with PGP encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The policy offers appreciation but does not specify a guaranteed cash payment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:52:55Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Report promptly and keep findings confidential until remediation.",
+    "Recognition is distinct from acceptance of a particular finding or reward eligibility."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Responsible Disclosure Hall of Fame",
+      "url": "https://www.adyen.com/policies-and-disclaimer/responsible-disclosure-hall-of-fame",
+      "publisher": "Adyen",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible disclosure policy",
+      "url": "https://www.adyen.com/policies-and-disclaimer/responsible-disclosure",
+      "publisher": "Adyen",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

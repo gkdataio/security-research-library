@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bournemouth-university-security-recognition",
+  "organization": "Bournemouth University",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://cert.bournemouth.ac.uk/hall-of-fame/",
+    "summary": "New, privately reported findings may receive discretionary Hall of Fame credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://cert.bournemouth.ac.uk/hall-of-fame/bu-cert-responsible-disclosure-policy/",
+    "summary": "BU-CERT publishes direct email instructions and requests PGP encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:51:56Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "A social profile must accompany the report for public credit; anonymous reports receive no Hall entry.",
+    "Automated scanning is prohibited; early public disclosure can result in removal of recognition."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "BU-CERT Hall of fame",
+      "url": "https://cert.bournemouth.ac.uk/hall-of-fame/",
+      "publisher": "Bournemouth University",
+      "retrieved_at": "2026-10-12T17:51:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "BU-CERT Responsible disclosure policy",
+      "url": "https://cert.bournemouth.ac.uk/hall-of-fame/bu-cert-responsible-disclosure-policy/",
+      "publisher": "Bournemouth University",
+      "retrieved_at": "2026-10-12T17:51:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

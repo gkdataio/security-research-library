@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bt-group-security-recognition",
+  "organization": "BT Group",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.bt.com/about/contact-bt/responsible-disclosure/hall-of-fame",
+    "summary": "Confirmed, original qualifying reports receive consent-based public credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.bt.com/about/contact-bt/responsible-disclosure/responsible-disclosure-form",
+    "summary": "BT supplies a first-party vulnerability reporting form.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly says a paid bounty program is unavailable.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:52:55Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "BT, EE, Plusnet and Openreach share this policy and count as one entry.",
+    "Coordinate public disclosure; the policy grants BT rights to distribute report information."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.bt.com/about/contact-bt/responsible-disclosure/hall-of-fame",
+      "publisher": "BT Group",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://www.bt.com/about/contact-bt/responsible-disclosure",
+      "publisher": "BT Group",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Raise a security vulnerability",
+      "url": "https://www.bt.com/about/contact-bt/responsible-disclosure/responsible-disclosure-form",
+      "publisher": "BT Group",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

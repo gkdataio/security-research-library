@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nbim-security-recognition",
+  "organization": "Norges Bank Investment Management",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.nbim.no/en/responsible-disclosure-policy/",
+    "summary": "First discoverers of validated vulnerabilities receive recognition under the policy.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.nbim.no/en/responsible-disclosure-policy/",
+    "summary": "The combined policy and public Hall of Fame page supplies a direct email address.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes bug bounties and monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:52:55Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This is NBIM's own program, not all Norges Bank entities.",
+    "Await approval before public disclosure."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure policy and Security hall of fame",
+      "url": "https://www.nbim.no/en/responsible-disclosure-policy/",
+      "publisher": "Norges Bank Investment Management",
+      "retrieved_at": "2026-10-12T17:52:55Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

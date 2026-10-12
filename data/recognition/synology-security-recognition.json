@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "id": "synology-security-recognition",
+  "organization": "Synology",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.synology.com/en-global/security/bounty_program",
+    "summary": "The program publishes acknowledgments; reporters may decline public credit.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://synoform.synology.com/en-us/form/bounty?from_url=https://www.synology.com/security/bounty_program",
+    "summary": "Synology provides its own reporting form, accepting English and Traditional or Simplified Chinese.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Rewards are assessed individually; some low-severity contributions receive acknowledgment only.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:58Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "First valid, previously unknown reports and coordinated disclosure are required for reward consideration.",
+    "Published reward limits are maxima rather than guaranteed payouts."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security Bug Bounty Program and Acknowledgement",
+      "url": "https://www.synology.com/en-global/security/bounty_program",
+      "publisher": "Synology",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Submit a Vulnerability Report",
+      "url": "https://synoform.synology.com/en-us/form/bounty?from_url=https://www.synology.com/security/bounty_program",
+      "publisher": "Synology",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

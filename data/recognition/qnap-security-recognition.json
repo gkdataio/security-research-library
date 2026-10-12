@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "qnap-security-recognition",
+  "organization": "QNAP",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.qnap.com/en/security-bounty-program",
+    "summary": "The program publishes acknowledgments, including some accepted suggestions that receive no payment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.qnap.com/en/security-bounty-program",
+    "summary": "The program documents direct PSIRT email reporting with encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Monetary awards depend on the program's assessment; published maxima are not guaranteed.",
+    "source_ids": [
+      "policy",
+      "disclosure"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:19Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Report handling and reward eligibility are separate decisions.",
+    "Recognition does not establish payment; coordinated disclosure and current conduct rules apply."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security Bounty Program and Acknowledgments",
+      "url": "https://www.qnap.com/en/security-bounty-program",
+      "publisher": "QNAP",
+      "retrieved_at": "2026-10-12T17:54:19Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "disclosure",
+      "title": "Coordinated Vulnerability Disclosure Policy",
+      "url": "https://www.qnap.com/en-us/governance/coordinated-vulnerability-disclosure-policy",
+      "publisher": "QNAP",
+      "retrieved_at": "2026-10-12T17:54:19Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-muenster-security-recognition",
+  "organization": "University of Münster",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.uni-muenster.de/CERT/incidents/acknowledgments.html",
+    "summary": "Prior responsible reporters may contact CERT to request inclusion in the public acknowledgments.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.uni-muenster.de/CERT/incidents/index.html",
+    "summary": "The university publishes a direct CERT email and encryption guidance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly says rewards for reported vulnerabilities are unavailable.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:54:58Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "No automatic listing or eligibility threshold is promised.",
+    "Avoid harmful exploitation and keep findings private until fixed."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Danksagungen",
+      "url": "https://www.uni-muenster.de/CERT/incidents/acknowledgments.html",
+      "publisher": "University of Münster",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Sicherheitsvorfall melden",
+      "url": "https://www.uni-muenster.de/CERT/incidents/index.html",
+      "publisher": "University of Münster",
+      "retrieved_at": "2026-10-12T17:54:58Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

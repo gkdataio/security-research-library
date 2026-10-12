@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "embl-ebi-security-recognition",
+  "organization": "EMBL-EBI",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.ebi.ac.uk/security/hall-of-fame/",
+    "summary": "With permission, verified and fixed findings receive Hall of Fame credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.ebi.ac.uk/security/",
+    "summary": "Direct CSIRT email is available; OpenBugBounty is an optional alternative.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly says financial rewards are unavailable.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T17:53:23Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This entry concerns the European Bioinformatics Institute, not every EMBL operation.",
+    "Protect privacy, avoid disruption, and coordinate disclosure under the linked policy."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Security hall of fame",
+      "url": "https://www.ebi.ac.uk/security/hall-of-fame/",
+      "publisher": "EMBL-EBI",
+      "retrieved_at": "2026-10-12T17:53:23Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Security vulnerability disclosure policy",
+      "url": "https://www.ebi.ac.uk/security/",
+      "publisher": "EMBL-EBI",
+      "retrieved_at": "2026-10-12T17:53:23Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
