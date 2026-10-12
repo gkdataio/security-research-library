@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "aldi-south-security-recognition",
+  "organization": "ALDI SOUTH",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://security.aldi-sued.com/hall-of-fame",
+    "summary": "First qualifying reporters may opt into public credit after resolution.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://security.aldi-sued.com/",
+    "summary": "The first-party policy page includes the reporting form and a public-credit consent option.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly offers neither a bounty program nor financial rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:48:49Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This is ALDI SOUTH; participation is limited by the linked policy.",
+    "The JavaScript-dependent form was read but not submitted."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "ALDI IT Security Hall of Fame",
+      "url": "https://security.aldi-sued.com/hall-of-fame",
+      "publisher": "ALDI SOUTH",
+      "retrieved_at": "2026-10-12T16:48:49Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Vulnerability Disclosure Policy",
+      "url": "https://security.aldi-sued.com/",
+      "publisher": "ALDI SOUTH",
+      "retrieved_at": "2026-10-12T16:48:49Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

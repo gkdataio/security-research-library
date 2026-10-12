@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "utrecht-university-security-recognition",
+  "organization": "Utrecht University",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure",
+    "summary": "The first valid responsible reporter may choose public recognition.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure",
+    "summary": "The policy gives a direct email address; encryption is optional and pseudonyms are allowed.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes financial rewards and bug bounties.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:48:18Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Third-party sites hosted on the university network do not qualify for university recognition.",
+    "Large-scale automated testing is prohibited; the complete policy applies."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of fame (responsible disclosure)",
+      "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure",
+      "publisher": "Utrecht University",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible disclosure",
+      "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure",
+      "publisher": "Utrecht University",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "id": "siemens-security-recognition",
+  "organization": "Siemens",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://productcert.siemens.com/hall-of-thanks/",
+    "summary": "The Hall of Thanks credits private reporting and cooperation on mitigation.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://productcert.siemens.com/",
+    "summary": "Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed disclosure policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:47:22Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Coordinated disclosure and safeguards for customer safety and privacy remain required.",
+    "The contact page accepts English or German email and prefers encryption."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Siemens ProductCERT and CERT Hall of Thanks",
+      "url": "https://productcert.siemens.com/hall-of-thanks/",
+      "publisher": "Siemens",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Siemens ProductCERT and CERT contact information",
+      "url": "https://productcert.siemens.com/",
+      "publisher": "Siemens",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Vulnerability Handling and Disclosure Process",
+      "url": "https://productcert.siemens.com/vulnerability-handling-and-disclosure-process/",
+      "publisher": "Siemens",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

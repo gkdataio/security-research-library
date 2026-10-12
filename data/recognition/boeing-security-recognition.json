@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "id": "boeing-security-recognition",
+  "organization": "Boeing",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.boeing.com/vulnerabilitydisclosure",
+    "summary": "First qualifying reporters may receive public credit with consent; recognition and timing remain discretionary.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.boeing.com/vulnerabilitydisclosure",
+    "summary": "Boeing documents direct encrypted email reporting.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The disclosure program currently offers no monetary reward.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:48:18Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Avoid harm or disruption; allow remediation before disclosure."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability Handling and Disclosure",
+      "url": "https://www.boeing.com/vulnerabilitydisclosure",
+      "publisher": "Boeing",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

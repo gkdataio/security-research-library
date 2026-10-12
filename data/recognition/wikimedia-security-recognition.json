@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "id": "wikimedia-security-recognition",
+  "organization": "Wikimedia Foundation",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://security.wikimedia.org/hall-of-fame/",
+    "summary": "The Hall of Fame recognizes valid reports acknowledged and fixed by Wikimedia.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.mediawiki.org/wiki/Reporting_security_bugs",
+    "summary": "Direct email and Wikimedia’s private Phabricator form are available; HackerOne is an optional route.",
+    "source_ids": [
+      "reporting",
+      "contact"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The Foundation explicitly does not pay bug bounties.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:49:21Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Tickets and emailed reports may become public after a fix, including signatures and email addresses; request privacy explicitly.",
+    "The reporting guidance applies to Wikimedia-maintained software and services; current policy controls."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Wikimedia Security Hall of Fame",
+      "url": "https://security.wikimedia.org/hall-of-fame/",
+      "publisher": "Wikimedia Foundation",
+      "retrieved_at": "2026-10-12T16:49:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Reporting security bugs",
+      "url": "https://www.mediawiki.org/wiki/Reporting_security_bugs",
+      "publisher": "Wikimedia Foundation / MediaWiki",
+      "retrieved_at": "2026-10-12T16:49:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Bug Bounties",
+      "url": "https://security.wikimedia.org/bug-bounty/",
+      "publisher": "Wikimedia Foundation",
+      "retrieved_at": "2026-10-12T16:49:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "contact",
+      "title": "Contact the Wikimedia Security Team",
+      "url": "https://security.wikimedia.org/contact/",
+      "publisher": "Wikimedia Foundation",
+      "retrieved_at": "2026-10-12T16:49:21Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

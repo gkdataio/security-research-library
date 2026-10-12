@@ -10,9 +10,66 @@
     "Submission flows were not exercised; current official terms control."
   ],
   "counts": {
-    "organizations": 9
+    "organizations": 16
   },
   "records": [
+    {
+      "schema_version": "1.0.0",
+      "id": "aldi-south-security-recognition",
+      "organization": "ALDI SOUTH",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://security.aldi-sued.com/hall-of-fame",
+        "summary": "First qualifying reporters may opt into public credit after resolution.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_form",
+        "url": "https://security.aldi-sued.com/",
+        "summary": "The first-party policy page includes the reporting form and a public-credit consent option.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly offers neither a bounty program nor financial rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:48:49Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This is ALDI SOUTH; participation is limited by the linked policy.",
+        "The JavaScript-dependent form was read but not submitted."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "ALDI IT Security Hall of Fame",
+          "url": "https://security.aldi-sued.com/hall-of-fame",
+          "publisher": "ALDI SOUTH",
+          "retrieved_at": "2026-10-12T16:48:49Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Vulnerability Disclosure Policy",
+          "url": "https://security.aldi-sued.com/",
+          "publisher": "ALDI SOUTH",
+          "retrieved_at": "2026-10-12T16:48:49Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
     {
       "schema_version": "1.0.0",
       "id": "apple-web-security-recognition",
@@ -72,6 +129,52 @@
           "url": "https://security.apple.com/bounty/guidelines/",
           "publisher": "Apple",
           "retrieved_at": "2026-10-11T04:00:42Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "boeing-security-recognition",
+      "organization": "Boeing",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.boeing.com/vulnerabilitydisclosure",
+        "summary": "First qualifying reporters may receive public credit with consent; recognition and timing remain discretionary.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.boeing.com/vulnerabilitydisclosure",
+        "summary": "Boeing documents direct encrypted email reporting.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The disclosure program currently offers no monetary reward.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:48:18Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Avoid harm or disruption; allow remediation before disclosure."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Vulnerability Handling and Disclosure",
+          "url": "https://www.boeing.com/vulnerabilitydisclosure",
+          "publisher": "Boeing",
+          "retrieved_at": "2026-10-12T16:48:18Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -209,6 +312,73 @@
           "url": "https://pages.ebay.com/securitycenter/security_researchers.html",
           "publisher": "eBay",
           "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "microsoft-researcher-recognition",
+      "organization": "Microsoft",
+      "recognition": {
+        "kind": "researcher_recognition",
+        "url": "https://www.microsoft.com/en-us/msrc/researcher-recognition-program/",
+        "summary": "Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_portal",
+        "url": "https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft",
+        "summary": "Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti.",
+        "source_ids": [
+          "reporting",
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Special Mentions do not require a bounty. Monetary awards have separate eligibility rules.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:47:22Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Since July 2026, ranked leaderboards are bounty-based; Special Mentions replace older Online Services and AI Safety pages.",
+        "The portal returned a JavaScript shell. Authenticated submission and individual credit listings were not inspected."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Microsoft Researcher Recognition Program",
+          "url": "https://www.microsoft.com/en-us/msrc/researcher-recognition-program/",
+          "publisher": "Microsoft",
+          "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "What to expect when reporting vulnerabilities to Microsoft",
+          "url": "https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft",
+          "publisher": "Microsoft",
+          "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Microsoft Bounty Program FAQs",
+          "url": "https://www.microsoft.com/en-us/msrc/faqs-bounty",
+          "publisher": "Microsoft",
+          "retrieved_at": "2026-10-12T16:47:22Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -389,6 +559,136 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "samsung-tv-audio-displays-security-recognition",
+      "organization": "Samsung Smart TV, Audio and Displays",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://security.samsungtv.com/hallOfFame",
+        "summary": "The Hall of Fame includes a separate Honorable Mention list for contributions that did not qualify for rewards.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://security.samsungtv.com/reportVulnerability",
+        "summary": "The reporting page provides direct email instructions and requires an encrypted report attachment.",
+        "source_ids": [
+          "reporting"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Qualifying monetary awards are discretionary under separate reward rules; recognition alone proves no payout.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:48:18Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This entry concerns the Smart TV, Audio and Displays program, not all Samsung products.",
+        "Use the current reporting requirements and keep findings confidential until remediation."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame and Honorable Mention",
+          "url": "https://security.samsungtv.com/hallOfFame",
+          "publisher": "Samsung Electronics",
+          "retrieved_at": "2026-10-12T16:48:18Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Security Reporting",
+          "url": "https://security.samsungtv.com/reportVulnerability",
+          "publisher": "Samsung Electronics",
+          "retrieved_at": "2026-10-12T16:48:18Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Rewards Program",
+          "url": "https://security.samsungtv.com/bugbountyProgram",
+          "publisher": "Samsung Electronics",
+          "retrieved_at": "2026-10-12T16:48:18Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "siemens-security-recognition",
+      "organization": "Siemens",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://productcert.siemens.com/hall-of-thanks/",
+        "summary": "The Hall of Thanks credits private reporting and cooperation on mitigation.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://productcert.siemens.com/",
+        "summary": "Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT.",
+        "source_ids": [
+          "reporting"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed disclosure policy does not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:47:22Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Coordinated disclosure and safeguards for customer safety and privacy remain required.",
+        "The contact page accepts English or German email and prefers encryption."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Siemens ProductCERT and CERT Hall of Thanks",
+          "url": "https://productcert.siemens.com/hall-of-thanks/",
+          "publisher": "Siemens",
+          "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Siemens ProductCERT and CERT contact information",
+          "url": "https://productcert.siemens.com/",
+          "publisher": "Siemens",
+          "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Vulnerability Handling and Disclosure Process",
+          "url": "https://productcert.siemens.com/vulnerability-handling-and-disclosure-process/",
+          "publisher": "Siemens",
+          "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "ut-austin-security-recognition",
       "organization": "The University of Texas at Austin",
       "recognition": {
@@ -530,6 +830,138 @@
           "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
           "publisher": "University of Nebraska",
           "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "utrecht-university-security-recognition",
+      "organization": "Utrecht University",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure",
+        "summary": "The first valid responsible reporter may choose public recognition.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure",
+        "summary": "The policy gives a direct email address; encryption is optional and pseudonyms are allowed.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly excludes financial rewards and bug bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:48:18Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Third-party sites hosted on the university network do not qualify for university recognition.",
+        "Large-scale automated testing is prohibited; the complete policy applies."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of fame (responsible disclosure)",
+          "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure",
+          "publisher": "Utrecht University",
+          "retrieved_at": "2026-10-12T16:48:18Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible disclosure",
+          "url": "https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure",
+          "publisher": "Utrecht University",
+          "retrieved_at": "2026-10-12T16:48:18Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "wikimedia-security-recognition",
+      "organization": "Wikimedia Foundation",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://security.wikimedia.org/hall-of-fame/",
+        "summary": "The Hall of Fame recognizes valid reports acknowledged and fixed by Wikimedia.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.mediawiki.org/wiki/Reporting_security_bugs",
+        "summary": "Direct email and Wikimedia’s private Phabricator form are available; HackerOne is an optional route.",
+        "source_ids": [
+          "reporting",
+          "contact"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The Foundation explicitly does not pay bug bounties.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:49:21Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Tickets and emailed reports may become public after a fix, including signatures and email addresses; request privacy explicitly.",
+        "The reporting guidance applies to Wikimedia-maintained software and services; current policy controls."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Wikimedia Security Hall of Fame",
+          "url": "https://security.wikimedia.org/hall-of-fame/",
+          "publisher": "Wikimedia Foundation",
+          "retrieved_at": "2026-10-12T16:49:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Reporting security bugs",
+          "url": "https://www.mediawiki.org/wiki/Reporting_security_bugs",
+          "publisher": "Wikimedia Foundation / MediaWiki",
+          "retrieved_at": "2026-10-12T16:49:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Bug Bounties",
+          "url": "https://security.wikimedia.org/bug-bounty/",
+          "publisher": "Wikimedia Foundation",
+          "retrieved_at": "2026-10-12T16:49:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "contact",
+          "title": "Contact the Wikimedia Security Team",
+          "url": "https://security.wikimedia.org/contact/",
+          "publisher": "Wikimedia Foundation",
+          "retrieved_at": "2026-10-12T16:49:21Z",
           "provenance": "official_primary",
           "access_method": "text"
         }

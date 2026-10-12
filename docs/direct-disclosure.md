@@ -2,7 +2,7 @@
 
 [Library home](../README.md) · [Canonical records](../data/recognition/) · [JSON export](../exports/recognition.json) · [Evidence policy](../DATA_POLICY.md#first-party-recognition-and-direct-disclosure)
 
-9 organizations; latest source review: 2026-10-12.
+16 organizations; latest source review: 2026-10-12.
 
 A small selection of prominent organizations with their own public recognition pages and official direct reporting guidance. This is not a measured traffic ranking, an exhaustive directory or a claim that every reporting option avoids external services. The linked route is the first-party route documented by the organization.
 
@@ -12,15 +12,45 @@ A small selection of prominent organizations with their own public recognition p
 
 | Organization | Recognition | Reporting guidance | Reward distinction |
 |---|---|---|---|
+| [ALDI SOUTH](<#aldi-south-security-recognition>) | [Official recognition page](<https://security.aldi-sued.com/hall-of-fame>) | [First party form](<https://security.aldi-sued.com/>)<br>The first-party policy page includes the reporting form and a public-credit consent option\. | No-bounty policy |
 | [Apple](<#apple-web-security-recognition>) | [Official recognition page](<https://support.apple.com/en-us/102774>) | [First party portal](<https://support.apple.com/en-us/102549>)<br>Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account\. | Separate bounty policy |
+| [Boeing](<#boeing-security-recognition>) | [Official recognition page](<https://www.boeing.com/vulnerabilitydisclosure>) | [Direct email](<https://www.boeing.com/vulnerabilitydisclosure>)<br>Boeing documents direct encrypted email reporting\. | No-bounty policy |
 | [Bosch](<#bosch-security-recognition>) | [Official recognition page](<https://psirt.bosch.com/hall-of-fame/>) | [Direct email](<https://psirt.bosch.com/report-a-vulnerability/>)<br>Direct email accepts product and website reports; Bugcrowd is preferred for websites\. | Payment not established |
 | [eBay](<#ebay-security-recognition>) | [Official recognition page](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) | [First party form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>)<br>The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting\. | Payment not established |
+| [Microsoft](<#microsoft-researcher-recognition>) | [Official recognition page](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) | [First party portal](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>)<br>Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti\. | Separate bounty policy |
 | [Motorola Solutions](<#motorola-solutions-security-recognition>) | [Official recognition page](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) | [Direct email](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>)<br>The guidelines provide direct security-team email reporting for independent researchers\. | Payment not established |
 | [Nokia](<#nokia-security-recognition>) | [Official recognition page](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) | [Direct email](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)<br>Nokia accepts direct email and anonymous reports\. | No-bounty policy |
 | [Philips](<#philips-security-recognition>) | [Official recognition page](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) | [Direct email](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)<br>The disclosure policy documents direct email reporting and requests PGP encryption\. | Payment not established |
+| [Samsung Smart TV, Audio and Displays](<#samsung-tv-audio-displays-security-recognition>) | [Official recognition page](<https://security.samsungtv.com/hallOfFame>) | [Direct email](<https://security.samsungtv.com/reportVulnerability>)<br>The reporting page provides direct email instructions and requires an encrypted report attachment\. | Separate bounty policy |
+| [Siemens](<#siemens-security-recognition>) | [Official recognition page](<https://productcert.siemens.com/hall-of-thanks/>) | [Direct email](<https://productcert.siemens.com/>)<br>Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT\. | Payment not established |
 | [The University of Texas at Austin](<#ut-austin-security-recognition>) | [Official recognition page](<https://security.utexas.edu/hall-of-fame>) | [Direct email](<https://security.utexas.edu/hall-of-fame>)<br>The page supplies the university security office’s direct reporting email\. | Payment not established |
 | [University of Groningen](<#university-of-groningen-security-recognition>) | [Official recognition page](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>) | [Direct email](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>)<br>Direct CERT email reporting is documented; encryption is requested\. | Payment not established |
 | [University of Nebraska](<#university-of-nebraska-security-recognition>) | [Official recognition page](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame>) | [Direct email](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/>)<br>The policy provides direct email reporting to ITS Security\. | No-bounty policy |
+| [Utrecht University](<#utrecht-university-security-recognition>) | [Official recognition page](<https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure>) | [Direct email](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)<br>The policy gives a direct email address; encryption is optional and pseudonyms are allowed\. | No-bounty policy |
+| [Wikimedia Foundation](<#wikimedia-security-recognition>) | [Official recognition page](<https://security.wikimedia.org/hall-of-fame/>) | [Direct email](<https://www.mediawiki.org/wiki/Reporting_security_bugs>)<br>Direct email and Wikimedia’s private Phabricator form are available; HackerOne is an optional route\. | No-bounty policy |
+
+<a id="aldi-south-security-recognition"></a>
+## ALDI SOUTH
+
+[Canonical record](<../data/recognition/aldi-south-security-recognition.json>)
+
+**Recognition:** First qualifying reporters may opt into public credit after resolution\. [ALDI IT Security Hall of Fame](<https://security.aldi-sued.com/hall-of-fame>) · [Vulnerability Disclosure Policy](<https://security.aldi-sued.com/>)
+
+**Reporting:** The first-party policy page includes the reporting form and a public-credit consent option\. [Vulnerability Disclosure Policy](<https://security.aldi-sued.com/>)
+
+**Rewards:** The policy explicitly offers neither a bounty program nor financial rewards\. [Vulnerability Disclosure Policy](<https://security.aldi-sued.com/>)
+
+**Limits:**
+- This is ALDI SOUTH; participation is limited by the linked policy\.
+- The JavaScript-dependent form was read but not submitted\.
+
+**Reviewed:** 2026-10-12T16:48:49Z. Submission availability: not tested.
+
+**Source provenance:**
+- [ALDI IT Security Hall of Fame](<https://security.aldi-sued.com/hall-of-fame>) — ALDI SOUTH; official primary source, text reviewed 2026-10-12T16:48:49Z.
+- [Vulnerability Disclosure Policy](<https://security.aldi-sued.com/>) — ALDI SOUTH; official primary source, text reviewed 2026-10-12T16:48:49Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
 <a id="apple-web-security-recognition"></a>
 ## Apple
@@ -43,6 +73,27 @@ A small selection of prominent organizations with their own public recognition p
 - [Apple web server security acknowledgements](<https://support.apple.com/en-us/102774>) — Apple; official primary source, text reviewed 2026-10-11T04:00:42Z.
 - [Report a security or privacy vulnerability](<https://support.apple.com/en-us/102549>) — Apple; official primary source, text reviewed 2026-10-11T04:00:42Z.
 - [Apple Security Bounty Guidelines](<https://security.apple.com/bounty/guidelines/>) — Apple; official primary source, text reviewed 2026-10-11T04:00:42Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="boeing-security-recognition"></a>
+## Boeing
+
+[Canonical record](<../data/recognition/boeing-security-recognition.json>)
+
+**Recognition:** First qualifying reporters may receive public credit with consent; recognition and timing remain discretionary\. [Vulnerability Handling and Disclosure](<https://www.boeing.com/vulnerabilitydisclosure>)
+
+**Reporting:** Boeing documents direct encrypted email reporting\. [Vulnerability Handling and Disclosure](<https://www.boeing.com/vulnerabilitydisclosure>)
+
+**Rewards:** The disclosure program currently offers no monetary reward\. [Vulnerability Handling and Disclosure](<https://www.boeing.com/vulnerabilitydisclosure>)
+
+**Limits:**
+- Avoid harm or disruption; allow remediation before disclosure\.
+
+**Reviewed:** 2026-10-12T16:48:18Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Vulnerability Handling and Disclosure](<https://www.boeing.com/vulnerabilitydisclosure>) — Boeing; official primary source, text reviewed 2026-10-12T16:48:18Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -92,6 +143,30 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 - [Researcher acknowledgements](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
 - [Security-researcher report form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
 - [Responsible disclosure](<https://pages.ebay.com/securitycenter/security_researchers.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="microsoft-researcher-recognition"></a>
+## Microsoft
+
+[Canonical record](<../data/recognition/microsoft-researcher-recognition.json>)
+
+**Recognition:** Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name\. [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>)
+
+**Reporting:** Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti\. [What to expect when reporting vulnerabilities to Microsoft](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>) · [Microsoft Bounty Program FAQs](<https://www.microsoft.com/en-us/msrc/faqs-bounty>)
+
+**Rewards:** Special Mentions do not require a bounty\. Monetary awards have separate eligibility rules\. [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) · [Microsoft Bounty Program FAQs](<https://www.microsoft.com/en-us/msrc/faqs-bounty>)
+
+**Limits:**
+- Since July 2026, ranked leaderboards are bounty-based; Special Mentions replace older Online Services and AI Safety pages\.
+- The portal returned a JavaScript shell\. Authenticated submission and individual credit listings were not inspected\.
+
+**Reviewed:** 2026-10-12T16:47:22Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
+- [What to expect when reporting vulnerabilities to Microsoft](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
+- [Microsoft Bounty Program FAQs](<https://www.microsoft.com/en-us/msrc/faqs-bounty>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -164,6 +239,54 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="samsung-tv-audio-displays-security-recognition"></a>
+## Samsung Smart TV, Audio and Displays
+
+[Canonical record](<../data/recognition/samsung-tv-audio-displays-security-recognition.json>)
+
+**Recognition:** The Hall of Fame includes a separate Honorable Mention list for contributions that did not qualify for rewards\. [Hall of Fame and Honorable Mention](<https://security.samsungtv.com/hallOfFame>)
+
+**Reporting:** The reporting page provides direct email instructions and requires an encrypted report attachment\. [Security Reporting](<https://security.samsungtv.com/reportVulnerability>)
+
+**Rewards:** Qualifying monetary awards are discretionary under separate reward rules; recognition alone proves no payout\. [Rewards Program](<https://security.samsungtv.com/bugbountyProgram>)
+
+**Limits:**
+- This entry concerns the Smart TV, Audio and Displays program, not all Samsung products\.
+- Use the current reporting requirements and keep findings confidential until remediation\.
+
+**Reviewed:** 2026-10-12T16:48:18Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Hall of Fame and Honorable Mention](<https://security.samsungtv.com/hallOfFame>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
+- [Security Reporting](<https://security.samsungtv.com/reportVulnerability>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
+- [Rewards Program](<https://security.samsungtv.com/bugbountyProgram>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="siemens-security-recognition"></a>
+## Siemens
+
+[Canonical record](<../data/recognition/siemens-security-recognition.json>)
+
+**Recognition:** The Hall of Thanks credits private reporting and cooperation on mitigation\. [Siemens ProductCERT and CERT Hall of Thanks](<https://productcert.siemens.com/hall-of-thanks/>)
+
+**Reporting:** Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT\. [Siemens ProductCERT and CERT contact information](<https://productcert.siemens.com/>)
+
+**Rewards:** The reviewed disclosure policy does not promise monetary rewards\. [Vulnerability Handling and Disclosure Process](<https://productcert.siemens.com/vulnerability-handling-and-disclosure-process/>)
+
+**Limits:**
+- Coordinated disclosure and safeguards for customer safety and privacy remain required\.
+- The contact page accepts English or German email and prefers encryption\.
+
+**Reviewed:** 2026-10-12T16:47:22Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Siemens ProductCERT and CERT Hall of Thanks](<https://productcert.siemens.com/hall-of-thanks/>) — Siemens; official primary source, text reviewed 2026-10-12T16:47:22Z.
+- [Siemens ProductCERT and CERT contact information](<https://productcert.siemens.com/>) — Siemens; official primary source, text reviewed 2026-10-12T16:47:22Z.
+- [Vulnerability Handling and Disclosure Process](<https://productcert.siemens.com/vulnerability-handling-and-disclosure-process/>) — Siemens; official primary source, text reviewed 2026-10-12T16:47:22Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="ut-austin-security-recognition"></a>
 ## The University of Texas at Austin
 
@@ -227,5 +350,53 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 **Source provenance:**
 - [VDP Hall of Fame](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame>) — University of Nebraska; official primary source, text reviewed 2026-10-11T04:01:53Z.
 - [Vulnerability Disclosure Program](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/>) — University of Nebraska; official primary source, text reviewed 2026-10-11T04:01:53Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="utrecht-university-security-recognition"></a>
+## Utrecht University
+
+[Canonical record](<../data/recognition/utrecht-university-security-recognition.json>)
+
+**Recognition:** The first valid responsible reporter may choose public recognition\. [Hall of fame \(responsible disclosure\)](<https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure>) · [Responsible disclosure](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)
+
+**Reporting:** The policy gives a direct email address; encryption is optional and pseudonyms are allowed\. [Responsible disclosure](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)
+
+**Rewards:** The policy explicitly excludes financial rewards and bug bounties\. [Responsible disclosure](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)
+
+**Limits:**
+- Third-party sites hosted on the university network do not qualify for university recognition\.
+- Large-scale automated testing is prohibited; the complete policy applies\.
+
+**Reviewed:** 2026-10-12T16:48:18Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Hall of fame \(responsible disclosure\)](<https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure>) — Utrecht University; official primary source, text reviewed 2026-10-12T16:48:18Z.
+- [Responsible disclosure](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>) — Utrecht University; official primary source, text reviewed 2026-10-12T16:48:18Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="wikimedia-security-recognition"></a>
+## Wikimedia Foundation
+
+[Canonical record](<../data/recognition/wikimedia-security-recognition.json>)
+
+**Recognition:** The Hall of Fame recognizes valid reports acknowledged and fixed by Wikimedia\. [Wikimedia Security Hall of Fame](<https://security.wikimedia.org/hall-of-fame/>)
+
+**Reporting:** Direct email and Wikimedia’s private Phabricator form are available; HackerOne is an optional route\. [Reporting security bugs](<https://www.mediawiki.org/wiki/Reporting_security_bugs>) · [Contact the Wikimedia Security Team](<https://security.wikimedia.org/contact/>)
+
+**Rewards:** The Foundation explicitly does not pay bug bounties\. [Bug Bounties](<https://security.wikimedia.org/bug-bounty/>)
+
+**Limits:**
+- Tickets and emailed reports may become public after a fix, including signatures and email addresses; request privacy explicitly\.
+- The reporting guidance applies to Wikimedia-maintained software and services; current policy controls\.
+
+**Reviewed:** 2026-10-12T16:49:21Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Wikimedia Security Hall of Fame](<https://security.wikimedia.org/hall-of-fame/>) — Wikimedia Foundation; official primary source, text reviewed 2026-10-12T16:49:21Z.
+- [Reporting security bugs](<https://www.mediawiki.org/wiki/Reporting_security_bugs>) — Wikimedia Foundation / MediaWiki; official primary source, text reviewed 2026-10-12T16:49:21Z.
+- [Bug Bounties](<https://security.wikimedia.org/bug-bounty/>) — Wikimedia Foundation; official primary source, text reviewed 2026-10-12T16:49:21Z.
+- [Contact the Wikimedia Security Team](<https://security.wikimedia.org/contact/>) — Wikimedia Foundation; official primary source, text reviewed 2026-10-12T16:49:21Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.

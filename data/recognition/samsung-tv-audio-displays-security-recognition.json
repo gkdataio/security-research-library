@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0.0",
+  "id": "samsung-tv-audio-displays-security-recognition",
+  "organization": "Samsung Smart TV, Audio and Displays",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://security.samsungtv.com/hallOfFame",
+    "summary": "The Hall of Fame includes a separate Honorable Mention list for contributions that did not qualify for rewards.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://security.samsungtv.com/reportVulnerability",
+    "summary": "The reporting page provides direct email instructions and requires an encrypted report attachment.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Qualifying monetary awards are discretionary under separate reward rules; recognition alone proves no payout.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:48:18Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This entry concerns the Smart TV, Audio and Displays program, not all Samsung products.",
+    "Use the current reporting requirements and keep findings confidential until remediation."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame and Honorable Mention",
+      "url": "https://security.samsungtv.com/hallOfFame",
+      "publisher": "Samsung Electronics",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Security Reporting",
+      "url": "https://security.samsungtv.com/reportVulnerability",
+      "publisher": "Samsung Electronics",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Rewards Program",
+      "url": "https://security.samsungtv.com/bugbountyProgram",
+      "publisher": "Samsung Electronics",
+      "retrieved_at": "2026-10-12T16:48:18Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

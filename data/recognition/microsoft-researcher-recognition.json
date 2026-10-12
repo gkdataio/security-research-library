@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "microsoft-researcher-recognition",
+  "organization": "Microsoft",
+  "recognition": {
+    "kind": "researcher_recognition",
+    "url": "https://www.microsoft.com/en-us/msrc/researcher-recognition-program/",
+    "summary": "Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_portal",
+    "url": "https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft",
+    "summary": "Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti.",
+    "source_ids": [
+      "reporting",
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Special Mentions do not require a bounty. Monetary awards have separate eligibility rules.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:47:22Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Since July 2026, ranked leaderboards are bounty-based; Special Mentions replace older Online Services and AI Safety pages.",
+    "The portal returned a JavaScript shell. Authenticated submission and individual credit listings were not inspected."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Microsoft Researcher Recognition Program",
+      "url": "https://www.microsoft.com/en-us/msrc/researcher-recognition-program/",
+      "publisher": "Microsoft",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "What to expect when reporting vulnerabilities to Microsoft",
+      "url": "https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft",
+      "publisher": "Microsoft",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Microsoft Bounty Program FAQs",
+      "url": "https://www.microsoft.com/en-us/msrc/faqs-bounty",
+      "publisher": "Microsoft",
+      "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
