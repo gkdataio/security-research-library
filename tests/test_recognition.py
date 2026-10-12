@@ -112,6 +112,21 @@ class RecognitionTests(unittest.TestCase):
             for source in record['sources']:
                 self.assertIn(source['url'], page)
 
+    def test_no_bounty_label_preserves_policy_distinction(self):
+        record = self.record()
+        record['rewards']['status'] = 'no_bounty'
+        record['rewards']['summary'] = 'No bug bounty program is currently offered.'
+        page = build_page([record])
+        self.assertIn('No-bounty policy', page)
+        self.assertIn('No bug bounty program is currently offered', page)
+        self.assertNotIn('Policy says no monetary rewards', page)
+
+    def test_mixed_route_note_is_preserved(self):
+        record = next(record for record in self.records if record['id'] == 'bosch-security-recognition')
+        self.assertEqual(record['reporting']['route'], 'direct_email')
+        self.assertIn('Bugcrowd is preferred for websites', record['reporting']['summary'])
+        self.assertIn('Bugcrowd is preferred for websites', build_page([record]))
+
     def test_page_preserves_boundaries_and_escapes_content(self):
         record = self.record()
         record['organization'] = '<script>alert(1)</script> | [name]'

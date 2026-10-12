@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "id": "ebay-security-recognition",
+  "organization": "eBay",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html",
+    "summary": "Public acknowledgment is discretionary. Credit requires first reporting, complete information, validation and time for remediation.",
+    "source_ids": [
+      "recognition",
+      "policy",
+      "reporting"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://pages.ebay.com/securitycenter/security_researchers_report_form.html",
+    "summary": "The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting.",
+    "source_ids": [
+      "reporting",
+      "recognition"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed recognition and disclosure pages do not promise payment.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:40:57Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The form was read but not submitted; live processing was not verified.",
+    "Reports must remain private until eBay confirms resolution; customer account issues use a separate support route."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Researcher acknowledgements",
+      "url": "https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html",
+      "publisher": "eBay",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Security-researcher report form",
+      "url": "https://pages.ebay.com/securitycenter/security_researchers_report_form.html",
+      "publisher": "eBay",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible disclosure",
+      "url": "https://pages.ebay.com/securitycenter/security_researchers.html",
+      "publisher": "eBay",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

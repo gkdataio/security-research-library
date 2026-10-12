@@ -97,11 +97,12 @@ def build_page(records):
         '| Organization | Recognition | Reporting guidance | Reward distinction |',
         '|---|---|---|---|',
     ]
-    labels = {'separate_bounty_policy': 'Separate bounty policy', 'no_bounty': 'Policy says no monetary rewards', 'unknown': 'Payment not established'}
+    labels = {'separate_bounty_policy': 'Separate bounty policy', 'no_bounty': 'No-bounty policy', 'unknown': 'Payment not established'}
     for rec in records:
         lines.append('| ' + link(rec['organization'], '#' + rec['id']) + ' | ' +
                      link('Official recognition page', rec['recognition']['url']) + ' | ' +
-                     link(rec['reporting']['route'].replace('_', ' ').capitalize(), rec['reporting']['url']) + ' | ' +
+                     link(rec['reporting']['route'].replace('_', ' ').capitalize(), rec['reporting']['url']) + '<br>' +
+                     text(rec['reporting']['summary']) + ' | ' +
                      labels[rec['rewards']['status']] + ' |')
     for rec in records:
         lines += ['', f'<a id="{rec["id"]}"></a>', '## ' + text(rec['organization']), '',

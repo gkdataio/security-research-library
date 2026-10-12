@@ -2,7 +2,7 @@
 
 [Library home](../README.md) · [Canonical records](../data/recognition/) · [JSON export](../exports/recognition.json) · [Evidence policy](../DATA_POLICY.md#first-party-recognition-and-direct-disclosure)
 
-5 organizations; latest source review: 2026-10-11.
+9 organizations; latest source review: 2026-10-12.
 
 A small selection of prominent organizations with their own public recognition pages and official direct reporting guidance. This is not a measured traffic ranking, an exhaustive directory or a claim that every reporting option avoids external services. The linked route is the first-party route documented by the organization.
 
@@ -12,11 +12,15 @@ A small selection of prominent organizations with their own public recognition p
 
 | Organization | Recognition | Reporting guidance | Reward distinction |
 |---|---|---|---|
-| [Apple](<#apple-web-security-recognition>) | [Official recognition page](<https://support.apple.com/en-us/102774>) | [First party portal](<https://support.apple.com/en-us/102549>) | Separate bounty policy |
-| [Motorola Solutions](<#motorola-solutions-security-recognition>) | [Official recognition page](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) | [Direct email](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>) | Payment not established |
-| [The University of Texas at Austin](<#ut-austin-security-recognition>) | [Official recognition page](<https://security.utexas.edu/hall-of-fame>) | [Direct email](<https://security.utexas.edu/hall-of-fame>) | Payment not established |
-| [University of Groningen](<#university-of-groningen-security-recognition>) | [Official recognition page](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>) | [Direct email](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>) | Payment not established |
-| [University of Nebraska](<#university-of-nebraska-security-recognition>) | [Official recognition page](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame>) | [Direct email](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/>) | Policy says no monetary rewards |
+| [Apple](<#apple-web-security-recognition>) | [Official recognition page](<https://support.apple.com/en-us/102774>) | [First party portal](<https://support.apple.com/en-us/102549>)<br>Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account\. | Separate bounty policy |
+| [Bosch](<#bosch-security-recognition>) | [Official recognition page](<https://psirt.bosch.com/hall-of-fame/>) | [Direct email](<https://psirt.bosch.com/report-a-vulnerability/>)<br>Direct email accepts product and website reports; Bugcrowd is preferred for websites\. | Payment not established |
+| [eBay](<#ebay-security-recognition>) | [Official recognition page](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) | [First party form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>)<br>The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting\. | Payment not established |
+| [Motorola Solutions](<#motorola-solutions-security-recognition>) | [Official recognition page](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) | [Direct email](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>)<br>The guidelines provide direct security-team email reporting for independent researchers\. | Payment not established |
+| [Nokia](<#nokia-security-recognition>) | [Official recognition page](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) | [Direct email](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)<br>Nokia accepts direct email and anonymous reports\. | No-bounty policy |
+| [Philips](<#philips-security-recognition>) | [Official recognition page](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) | [Direct email](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)<br>The disclosure policy documents direct email reporting and requests PGP encryption\. | Payment not established |
+| [The University of Texas at Austin](<#ut-austin-security-recognition>) | [Official recognition page](<https://security.utexas.edu/hall-of-fame>) | [Direct email](<https://security.utexas.edu/hall-of-fame>)<br>The page supplies the university security office’s direct reporting email\. | Payment not established |
+| [University of Groningen](<#university-of-groningen-security-recognition>) | [Official recognition page](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>) | [Direct email](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>)<br>Direct CERT email reporting is documented; encryption is requested\. | Payment not established |
+| [University of Nebraska](<#university-of-nebraska-security-recognition>) | [Official recognition page](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame>) | [Direct email](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/>)<br>The policy provides direct email reporting to ITS Security\. | No-bounty policy |
 
 <a id="apple-web-security-recognition"></a>
 ## Apple
@@ -42,6 +46,55 @@ A small selection of prominent organizations with their own public recognition p
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="bosch-security-recognition"></a>
+## Bosch
+
+[Canonical record](<../data/recognition/bosch-security-recognition.json>)
+
+**Recognition:** Researchers may opt into Bosch’s hall of fame after validation\. [Bosch PSIRT Hall of Fame](<https://psirt.bosch.com/hall-of-fame/>) · [Report a security vulnerability](<https://psirt.bosch.com/report-a-vulnerability/>)
+
+**Reporting:** Direct email accepts product and website reports; Bugcrowd is preferred for websites\. [Report a security vulnerability](<https://psirt.bosch.com/report-a-vulnerability/>)
+
+**Rewards:** The reviewed direct-reporting pages do not promise monetary rewards\. [Report a security vulnerability](<https://psirt.bosch.com/report-a-vulnerability/>) · [Bosch Responsible Disclosure Policy](<https://psirt.bosch.com/bosch-responsible-disclosure-policy/>)
+
+**Limits:**
+- This is an email alternative, not a platform-free website-reporting default\.
+- Previously published website findings and informational findings do not qualify for credit\.
+- Only English or German emails are considered; disclosure must wait for confirmed remediation\.
+
+**Reviewed:** 2026-10-12T16:40:57Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Bosch PSIRT Hall of Fame](<https://psirt.bosch.com/hall-of-fame/>) — Bosch; official primary source, text reviewed 2026-10-12T16:40:57Z.
+- [Report a security vulnerability](<https://psirt.bosch.com/report-a-vulnerability/>) — Bosch; official primary source, text reviewed 2026-10-12T16:40:57Z.
+- [Bosch Responsible Disclosure Policy](<https://psirt.bosch.com/bosch-responsible-disclosure-policy/>) — Bosch; official primary source, text reviewed 2026-10-12T16:40:57Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="ebay-security-recognition"></a>
+## eBay
+
+[Canonical record](<../data/recognition/ebay-security-recognition.json>)
+
+**Recognition:** Public acknowledgment is discretionary\. Credit requires first reporting, complete information, validation and time for remediation\. [Researcher acknowledgements](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) · [Responsible disclosure](<https://pages.ebay.com/securitycenter/security_researchers.html>) · [Security-researcher report form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>)
+
+**Reporting:** The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting\. [Security-researcher report form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>) · [Researcher acknowledgements](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>)
+
+**Rewards:** The reviewed recognition and disclosure pages do not promise payment\. [Researcher acknowledgements](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) · [Responsible disclosure](<https://pages.ebay.com/securitycenter/security_researchers.html>)
+
+**Limits:**
+- The form was read but not submitted; live processing was not verified\.
+- Reports must remain private until eBay confirms resolution; customer account issues use a separate support route\.
+
+**Reviewed:** 2026-10-12T16:40:57Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Researcher acknowledgements](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
+- [Security-researcher report form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
+- [Responsible disclosure](<https://pages.ebay.com/securitycenter/security_researchers.html>) — eBay; official primary source, text reviewed 2026-10-12T16:40:57Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="motorola-solutions-security-recognition"></a>
 ## Motorola Solutions
 
@@ -62,6 +115,52 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 **Source provenance:**
 - [Security Hall of Fame](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) — Motorola Solutions; official primary source, text reviewed 2026-10-11T04:01:53Z.
 - [Responsible Vulnerability Disclosure Program Guidelines](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>) — Motorola Solutions; official primary source, text reviewed 2026-10-11T04:01:53Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="nokia-security-recognition"></a>
+## Nokia
+
+[Canonical record](<../data/recognition/nokia-security-recognition.json>)
+
+**Recognition:** Validated contributions may receive public credit with reporter consent\. [Hall of fame](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) · [Coordinated Vulnerability Disclosure Program](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)
+
+**Reporting:** Nokia accepts direct email and anonymous reports\. [Coordinated Vulnerability Disclosure Program](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)
+
+**Rewards:** Nokia currently offers no bug bounty program\. [Coordinated Vulnerability Disclosure Program](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)
+
+**Limits:**
+- Customer-affiliated reporters should use their customer teams\.
+- Recognition is discretionary and does not establish payment eligibility\.
+
+**Reviewed:** 2026-10-12T16:39:56Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Hall of fame](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) — Nokia; official primary source, text reviewed 2026-10-12T16:39:56Z.
+- [Coordinated Vulnerability Disclosure Program](<https://www.nokia.com/we-are-nokia/security/products/cvd/>) — Nokia; official primary source, text reviewed 2026-10-12T16:39:56Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="philips-security-recognition"></a>
+## Philips
+
+[Canonical record](<../data/recognition/philips-security-recognition.json>)
+
+**Recognition:** Hall of Honors recognition covers the first reporter of a new acknowledged vulnerability who cooperates and chooses public credit\. [Coordinated vulnerability disclosure Hall of Honors](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) · [Coordinated vulnerability disclosure statement](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)
+
+**Reporting:** The disclosure policy documents direct email reporting and requests PGP encryption\. [Coordinated vulnerability disclosure statement](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)
+
+**Rewards:** The reviewed policy establishes recognition without promising a monetary award\. [Coordinated vulnerability disclosure statement](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)
+
+**Limits:**
+- Testing products in active use, including patient-care equipment, is prohibited\.
+- Philips and Signify have separate disclosure routes; this entry concerns Philips\.
+
+**Reviewed:** 2026-10-12T16:39:56Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Coordinated vulnerability disclosure Hall of Honors](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) — Philips; official primary source, text reviewed 2026-10-12T16:39:56Z.
+- [Coordinated vulnerability disclosure statement](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>) — Philips; official primary source, text reviewed 2026-10-12T16:39:56Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 

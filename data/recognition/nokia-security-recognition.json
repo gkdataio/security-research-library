@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nokia-security-recognition",
+  "organization": "Nokia",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/",
+    "summary": "Validated contributions may receive public credit with reporter consent.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/",
+    "summary": "Nokia accepts direct email and anonymous reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Nokia currently offers no bug bounty program.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:39:56Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Customer-affiliated reporters should use their customer teams.",
+    "Recognition is discretionary and does not establish payment eligibility."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of fame",
+      "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/",
+      "publisher": "Nokia",
+      "retrieved_at": "2026-10-12T16:39:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Coordinated Vulnerability Disclosure Program",
+      "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/",
+      "publisher": "Nokia",
+      "retrieved_at": "2026-10-12T16:39:56Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

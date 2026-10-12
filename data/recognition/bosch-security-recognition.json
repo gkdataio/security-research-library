@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bosch-security-recognition",
+  "organization": "Bosch",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://psirt.bosch.com/hall-of-fame/",
+    "summary": "Researchers may opt into Bosch’s hall of fame after validation.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://psirt.bosch.com/report-a-vulnerability/",
+    "summary": "Direct email accepts product and website reports; Bugcrowd is preferred for websites.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed direct-reporting pages do not promise monetary rewards.",
+    "source_ids": [
+      "policy",
+      "disclosure"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:40:57Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This is an email alternative, not a platform-free website-reporting default.",
+    "Previously published website findings and informational findings do not qualify for credit.",
+    "Only English or German emails are considered; disclosure must wait for confirmed remediation."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Bosch PSIRT Hall of Fame",
+      "url": "https://psirt.bosch.com/hall-of-fame/",
+      "publisher": "Bosch",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Report a security vulnerability",
+      "url": "https://psirt.bosch.com/report-a-vulnerability/",
+      "publisher": "Bosch",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "disclosure",
+      "title": "Bosch Responsible Disclosure Policy",
+      "url": "https://psirt.bosch.com/bosch-responsible-disclosure-policy/",
+      "publisher": "Bosch",
+      "retrieved_at": "2026-10-12T16:40:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

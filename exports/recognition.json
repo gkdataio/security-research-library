@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "dataset": "security-research-library-recognition",
-  "as_of": "2026-10-11",
+  "as_of": "2026-10-12",
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "First-party recognition pages and direct reporting guidance; separate from program-policy and award records.",
   "limitations": [
@@ -10,7 +10,7 @@
     "Submission flows were not exercised; current official terms control."
   ],
   "counts": {
-    "organizations": 5
+    "organizations": 9
   },
   "records": [
     {
@@ -81,6 +81,143 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "bosch-security-recognition",
+      "organization": "Bosch",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://psirt.bosch.com/hall-of-fame/",
+        "summary": "Researchers may opt into Bosch’s hall of fame after validation.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://psirt.bosch.com/report-a-vulnerability/",
+        "summary": "Direct email accepts product and website reports; Bugcrowd is preferred for websites.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed direct-reporting pages do not promise monetary rewards.",
+        "source_ids": [
+          "policy",
+          "disclosure"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:40:57Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This is an email alternative, not a platform-free website-reporting default.",
+        "Previously published website findings and informational findings do not qualify for credit.",
+        "Only English or German emails are considered; disclosure must wait for confirmed remediation."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Bosch PSIRT Hall of Fame",
+          "url": "https://psirt.bosch.com/hall-of-fame/",
+          "publisher": "Bosch",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Report a security vulnerability",
+          "url": "https://psirt.bosch.com/report-a-vulnerability/",
+          "publisher": "Bosch",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "disclosure",
+          "title": "Bosch Responsible Disclosure Policy",
+          "url": "https://psirt.bosch.com/bosch-responsible-disclosure-policy/",
+          "publisher": "Bosch",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "ebay-security-recognition",
+      "organization": "eBay",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html",
+        "summary": "Public acknowledgment is discretionary. Credit requires first reporting, complete information, validation and time for remediation.",
+        "source_ids": [
+          "recognition",
+          "policy",
+          "reporting"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_form",
+        "url": "https://pages.ebay.com/securitycenter/security_researchers_report_form.html",
+        "summary": "The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting.",
+        "source_ids": [
+          "reporting",
+          "recognition"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed recognition and disclosure pages do not promise payment.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:40:57Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The form was read but not submitted; live processing was not verified.",
+        "Reports must remain private until eBay confirms resolution; customer account issues use a separate support route."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Researcher acknowledgements",
+          "url": "https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html",
+          "publisher": "eBay",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Security-researcher report form",
+          "url": "https://pages.ebay.com/securitycenter/security_researchers_report_form.html",
+          "publisher": "eBay",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible disclosure",
+          "url": "https://pages.ebay.com/securitycenter/security_researchers.html",
+          "publisher": "eBay",
+          "retrieved_at": "2026-10-12T16:40:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "motorola-solutions-security-recognition",
       "organization": "Motorola Solutions",
       "recognition": {
@@ -129,6 +266,120 @@
           "url": "https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html",
           "publisher": "Motorola Solutions",
           "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "nokia-security-recognition",
+      "organization": "Nokia",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/",
+        "summary": "Validated contributions may receive public credit with reporter consent.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/",
+        "summary": "Nokia accepts direct email and anonymous reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "Nokia currently offers no bug bounty program.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:39:56Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Customer-affiliated reporters should use their customer teams.",
+        "Recognition is discretionary and does not establish payment eligibility."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of fame",
+          "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/",
+          "publisher": "Nokia",
+          "retrieved_at": "2026-10-12T16:39:56Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Coordinated Vulnerability Disclosure Program",
+          "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/",
+          "publisher": "Nokia",
+          "retrieved_at": "2026-10-12T16:39:56Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "philips-security-recognition",
+      "organization": "Philips",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html",
+        "summary": "Hall of Honors recognition covers the first reporter of a new acknowledged vulnerability who cooperates and chooses public credit.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html",
+        "summary": "The disclosure policy documents direct email reporting and requests PGP encryption.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed policy establishes recognition without promising a monetary award.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:39:56Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Testing products in active use, including patient-care equipment, is prohibited.",
+        "Philips and Signify have separate disclosure routes; this entry concerns Philips."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Coordinated vulnerability disclosure Hall of Honors",
+          "url": "https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html",
+          "publisher": "Philips",
+          "retrieved_at": "2026-10-12T16:39:56Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Coordinated vulnerability disclosure statement",
+          "url": "https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html",
+          "publisher": "Philips",
+          "retrieved_at": "2026-10-12T16:39:56Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
