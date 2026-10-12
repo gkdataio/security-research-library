@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "mozilla-client-security-recognition",
+  "organization": "Mozilla Firefox / client software",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/",
+    "summary": "The Firefox Bug Bounty Rewards page publishes public contributor recognition by quarter.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_portal",
+    "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+    "summary": "Client reports use Mozilla-hosted Bugzilla with an account; the separate web/services program uses HackerOne.",
+    "source_ids": [
+      "policy",
+      "web-program"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Client monetary awards depend on eligibility and the Mozilla Bounty Committee's discretion.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:55:08Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This entry covers the client-software program, not Mozilla web properties.",
+    "The client policy directs reporters to Bugzilla and says not to email vulnerability details.",
+    "The linked Bugzilla form failed this text-access check; the reporting instructions were reviewed, but authenticated submission was not inspected."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Firefox Bug Bounty Rewards",
+      "url": "https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-12T16:55:08Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Client Bug Bounty Program",
+      "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-12T16:55:08Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "web-program",
+      "title": "Web and Services Bug Bounty Program",
+      "url": "https://www.mozilla.org/en-US/security/web-bug-bounty/",
+      "publisher": "Mozilla",
+      "retrieved_at": "2026-10-12T16:55:08Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

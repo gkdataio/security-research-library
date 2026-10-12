@@ -2,7 +2,7 @@
 
 [Library home](../README.md) · [Canonical records](../data/recognition/) · [JSON export](../exports/recognition.json) · [Evidence policy](../DATA_POLICY.md#first-party-recognition-and-direct-disclosure)
 
-16 organizations; latest source review: 2026-10-12.
+20 organizations; latest source review: 2026-10-12.
 
 A small selection of prominent organizations with their own public recognition pages and official direct reporting guidance. This is not a measured traffic ranking, an exhaustive directory or a claim that every reporting option avoids external services. The linked route is the first-party route documented by the organization.
 
@@ -16,14 +16,18 @@ A small selection of prominent organizations with their own public recognition p
 | [Apple](<#apple-web-security-recognition>) | [Official recognition page](<https://support.apple.com/en-us/102774>) | [First party portal](<https://support.apple.com/en-us/102549>)<br>Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account\. | Separate bounty policy |
 | [Boeing](<#boeing-security-recognition>) | [Official recognition page](<https://www.boeing.com/vulnerabilitydisclosure>) | [Direct email](<https://www.boeing.com/vulnerabilitydisclosure>)<br>Boeing documents direct encrypted email reporting\. | No-bounty policy |
 | [Bosch](<#bosch-security-recognition>) | [Official recognition page](<https://psirt.bosch.com/hall-of-fame/>) | [Direct email](<https://psirt.bosch.com/report-a-vulnerability/>)<br>Direct email accepts product and website reports; Bugcrowd is preferred for websites\. | Payment not established |
+| [Deutsche Telekom AG](<#deutsche-telekom-security-recognition>) | [Official recognition page](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments>) | [Direct email](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty>)<br>Deutsche Telekom publishes a direct email route; T-Mobile US has a separate Bugcrowd program\. | Separate bounty policy |
 | [eBay](<#ebay-security-recognition>) | [Official recognition page](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) | [First party form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>)<br>The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting\. | Payment not established |
 | [Microsoft](<#microsoft-researcher-recognition>) | [Official recognition page](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) | [First party portal](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>)<br>Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti\. | Separate bounty policy |
 | [Motorola Solutions](<#motorola-solutions-security-recognition>) | [Official recognition page](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) | [Direct email](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>)<br>The guidelines provide direct security-team email reporting for independent researchers\. | Payment not established |
+| [Mozilla Firefox / client software](<#mozilla-client-security-recognition>) | [Official recognition page](<https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/>) | [First party portal](<https://www.mozilla.org/en-US/security/client-bug-bounty/>)<br>Client reports use Mozilla-hosted Bugzilla with an account; the separate web/services program uses HackerOne\. | Separate bounty policy |
 | [Nokia](<#nokia-security-recognition>) | [Official recognition page](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) | [Direct email](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)<br>Nokia accepts direct email and anonymous reports\. | No-bounty policy |
+| [Palo Alto Networks products](<#palo-alto-networks-product-security-recognition>) | [Official recognition page](<https://www.paloaltonetworks.com/security-researcher-acknowledgement>) | [Direct email](<https://www.paloaltonetworks.com/product-security-assurance>)<br>Product reports use direct email or a first-party form; bounty opt-in asks for a Bugcrowd email\. | Separate bounty policy |
 | [Philips](<#philips-security-recognition>) | [Official recognition page](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) | [Direct email](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)<br>The disclosure policy documents direct email reporting and requests PGP encryption\. | Payment not established |
 | [Samsung Smart TV, Audio and Displays](<#samsung-tv-audio-displays-security-recognition>) | [Official recognition page](<https://security.samsungtv.com/hallOfFame>) | [Direct email](<https://security.samsungtv.com/reportVulnerability>)<br>The reporting page provides direct email instructions and requires an encrypted report attachment\. | Separate bounty policy |
 | [Siemens](<#siemens-security-recognition>) | [Official recognition page](<https://productcert.siemens.com/hall-of-thanks/>) | [Direct email](<https://productcert.siemens.com/>)<br>Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT\. | Payment not established |
 | [The University of Texas at Austin](<#ut-austin-security-recognition>) | [Official recognition page](<https://security.utexas.edu/hall-of-fame>) | [Direct email](<https://security.utexas.edu/hall-of-fame>)<br>The page supplies the university security office’s direct reporting email\. | Payment not established |
+| [TU Delft](<#tu-delft-security-recognition>) | [Official recognition page](<https://www.tudelft.nl/hall-of-fame>) | [Direct email](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>)<br>The policy publishes a direct email route; it expressly does not invite active network scanning\. | Payment not established |
 | [University of Groningen](<#university-of-groningen-security-recognition>) | [Official recognition page](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>) | [Direct email](<https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en>)<br>Direct CERT email reporting is documented; encryption is requested\. | Payment not established |
 | [University of Nebraska](<#university-of-nebraska-security-recognition>) | [Official recognition page](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/vdp-hall-of-fame>) | [Direct email](<https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/>)<br>The policy provides direct email reporting to ITS Security\. | No-bounty policy |
 | [Utrecht University](<#utrecht-university-security-recognition>) | [Official recognition page](<https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure>) | [Direct email](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)<br>The policy gives a direct email address; encryption is optional and pseudonyms are allowed\. | No-bounty policy |
@@ -122,6 +126,31 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="deutsche-telekom-security-recognition"></a>
+## Deutsche Telekom AG
+
+[Canonical record](<../data/recognition/deutsche-telekom-security-recognition.json>)
+
+**Recognition:** The official acknowledgments page publicly credits contributors who helped improve security\. [Acknowledgments](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments>)
+
+**Reporting:** Deutsche Telekom publishes a direct email route; T-Mobile US has a separate Bugcrowd program\. [Bug Bounty](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty>) · [Responsible Disclosure](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/responsible-disclosure>)
+
+**Rewards:** Monetary rewards are assessed individually under the bounty policy and are not automatic\. [Bug Bounty](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty>)
+
+**Limits:**
+- The reviewed pages do not guarantee that every accepted report receives public credit\.
+- Reports must remain confidential; publication requires the program's explicit approval\.
+- The policy's use of Bugcrowd's rating taxonomy does not replace its direct email reporting route\.
+
+**Reviewed:** 2026-10-12T16:55:20Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Acknowledgments](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments>) — Deutsche Telekom AG; official primary source, text reviewed 2026-10-12T16:55:20Z.
+- [Bug Bounty](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty>) — Deutsche Telekom AG; official primary source, text reviewed 2026-10-12T16:55:20Z.
+- [Responsible Disclosure](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/responsible-disclosure>) — Deutsche Telekom AG; official primary source, text reviewed 2026-10-12T16:55:20Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="ebay-security-recognition"></a>
 ## eBay
 
@@ -193,6 +222,31 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="mozilla-client-security-recognition"></a>
+## Mozilla Firefox / client software
+
+[Canonical record](<../data/recognition/mozilla-client-security-recognition.json>)
+
+**Recognition:** The Firefox Bug Bounty Rewards page publishes public contributor recognition by quarter\. [Firefox Bug Bounty Rewards](<https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/>)
+
+**Reporting:** Client reports use Mozilla-hosted Bugzilla with an account; the separate web/services program uses HackerOne\. [Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) · [Web and Services Bug Bounty Program](<https://www.mozilla.org/en-US/security/web-bug-bounty/>)
+
+**Rewards:** Client monetary awards depend on eligibility and the Mozilla Bounty Committee's discretion\. [Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>)
+
+**Limits:**
+- This entry covers the client-software program, not Mozilla web properties\.
+- The client policy directs reporters to Bugzilla and says not to email vulnerability details\.
+- The linked Bugzilla form failed this text-access check; the reporting instructions were reviewed, but authenticated submission was not inspected\.
+
+**Reviewed:** 2026-10-12T16:55:08Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Firefox Bug Bounty Rewards](<https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/>) — Mozilla; official primary source, text reviewed 2026-10-12T16:55:08Z.
+- [Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) — Mozilla; official primary source, text reviewed 2026-10-12T16:55:08Z.
+- [Web and Services Bug Bounty Program](<https://www.mozilla.org/en-US/security/web-bug-bounty/>) — Mozilla; official primary source, text reviewed 2026-10-12T16:55:08Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="nokia-security-recognition"></a>
 ## Nokia
 
@@ -213,6 +267,32 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 **Source provenance:**
 - [Hall of fame](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) — Nokia; official primary source, text reviewed 2026-10-12T16:39:56Z.
 - [Coordinated Vulnerability Disclosure Program](<https://www.nokia.com/we-are-nokia/security/products/cvd/>) — Nokia; official primary source, text reviewed 2026-10-12T16:39:56Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="palo-alto-networks-product-security-recognition"></a>
+## Palo Alto Networks products
+
+[Canonical record](<../data/recognition/palo-alto-networks-product-security-recognition.json>)
+
+**Recognition:** With permission, product reporters are credited in advisories or the recognition page when no advisory is published\. [Security Researcher Acknowledgments](<https://www.paloaltonetworks.com/security-researcher-acknowledgement>) · [Product Security Assurance and Vulnerability Disclosure Policy](<https://www.paloaltonetworks.com/product-security-assurance>)
+
+**Reporting:** Product reports use direct email or a first-party form; bounty opt-in asks for a Bugcrowd email\. [Product Security Assurance and Vulnerability Disclosure Policy](<https://www.paloaltonetworks.com/product-security-assurance>) · [Report a vulnerability in products or services](<https://security.paloaltonetworks.com/report>)
+
+**Rewards:** Eligible monetary awards are discretionary; the bounty payment process can involve an external platform\. [Palo Alto Networks Bug Bounty Program](<https://security.paloaltonetworks.com/bugbounty>) · [Report a vulnerability in products or services](<https://security.paloaltonetworks.com/report>)
+
+**Limits:**
+- This direct route concerns products; non-product corporate website reports use a separate external disclosure service\.
+- The shared recognition page also includes corporate-infrastructure credits; that does not expand this entry's direct route\.
+- Acknowledgment may be withheld in some circumstances\. Coordinate disclosure and wait for remediation\.
+
+**Reviewed:** 2026-10-12T16:55:24Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Security Researcher Acknowledgments](<https://www.paloaltonetworks.com/security-researcher-acknowledgement>) — Palo Alto Networks; official primary source, text reviewed 2026-10-12T16:55:24Z.
+- [Product Security Assurance and Vulnerability Disclosure Policy](<https://www.paloaltonetworks.com/product-security-assurance>) — Palo Alto Networks; official primary source, text reviewed 2026-10-12T16:55:24Z.
+- [Report a vulnerability in products or services](<https://security.paloaltonetworks.com/report>) — Palo Alto Networks; official primary source, text reviewed 2026-10-12T16:55:24Z.
+- [Palo Alto Networks Bug Bounty Program](<https://security.paloaltonetworks.com/bugbounty>) — Palo Alto Networks; official primary source, text reviewed 2026-10-12T16:55:24Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -305,6 +385,29 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 **Source provenance:**
 - [Hall of Fame](<https://security.utexas.edu/hall-of-fame>) — The University of Texas at Austin; official primary source, text reviewed 2026-10-11T04:01:53Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="tu-delft-security-recognition"></a>
+## TU Delft
+
+[Canonical record](<../data/recognition/tu-delft-security-recognition.json>)
+
+**Recognition:** Policy-compliant reporters of valid, serious vulnerabilities may receive a public name listing\. [Hall of Fame](<https://www.tudelft.nl/hall-of-fame>) · [Responsible disclosure van kwetsbaarheden](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>)
+
+**Reporting:** The policy publishes a direct email route; it expressly does not invite active network scanning\. [Responsible disclosure van kwetsbaarheden](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>)
+
+**Rewards:** Public recognition is offered; the reviewed policy does not establish a monetary reward commitment\. [Responsible disclosure van kwetsbaarheden](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>)
+
+**Limits:**
+- Keep findings confidential until the university confirms resolution and permits disclosure\.
+- Anonymous and pseudonymous reports are allowed, but the policy notes follow-up and reward-contact limitations\.
+
+**Reviewed:** 2026-10-12T16:54:57Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Hall of Fame](<https://www.tudelft.nl/hall-of-fame>) — TU Delft; official primary source, text reviewed 2026-10-12T16:54:57Z.
+- [Responsible disclosure van kwetsbaarheden](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>) — TU Delft; official primary source, text reviewed 2026-10-12T16:54:57Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 

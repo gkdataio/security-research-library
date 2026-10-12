@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "deutsche-telekom-security-recognition",
+  "organization": "Deutsche Telekom AG",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments",
+    "summary": "The official acknowledgments page publicly credits contributors who helped improve security.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty",
+    "summary": "Deutsche Telekom publishes a direct email route; T-Mobile US has a separate Bugcrowd program.",
+    "source_ids": [
+      "policy",
+      "disclosure"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Monetary rewards are assessed individually under the bounty policy and are not automatic.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:55:20Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The reviewed pages do not guarantee that every accepted report receives public credit.",
+    "Reports must remain confidential; publication requires the program's explicit approval.",
+    "The policy's use of Bugcrowd's rating taxonomy does not replace its direct email reporting route."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Acknowledgments",
+      "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments",
+      "publisher": "Deutsche Telekom AG",
+      "retrieved_at": "2026-10-12T16:55:20Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Bug Bounty",
+      "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty",
+      "publisher": "Deutsche Telekom AG",
+      "retrieved_at": "2026-10-12T16:55:20Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "disclosure",
+      "title": "Responsible Disclosure",
+      "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/responsible-disclosure",
+      "publisher": "Deutsche Telekom AG",
+      "retrieved_at": "2026-10-12T16:55:20Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

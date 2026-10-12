@@ -10,7 +10,7 @@
     "Submission flows were not exercised; current official terms control."
   ],
   "counts": {
-    "organizations": 16
+    "organizations": 20
   },
   "records": [
     {
@@ -252,6 +252,73 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "deutsche-telekom-security-recognition",
+      "organization": "Deutsche Telekom AG",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments",
+        "summary": "The official acknowledgments page publicly credits contributors who helped improve security.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty",
+        "summary": "Deutsche Telekom publishes a direct email route; T-Mobile US has a separate Bugcrowd program.",
+        "source_ids": [
+          "policy",
+          "disclosure"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Monetary rewards are assessed individually under the bounty policy and are not automatic.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:55:20Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The reviewed pages do not guarantee that every accepted report receives public credit.",
+        "Reports must remain confidential; publication requires the program's explicit approval.",
+        "The policy's use of Bugcrowd's rating taxonomy does not replace its direct email reporting route."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Acknowledgments",
+          "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments",
+          "publisher": "Deutsche Telekom AG",
+          "retrieved_at": "2026-10-12T16:55:20Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Bug Bounty",
+          "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty",
+          "publisher": "Deutsche Telekom AG",
+          "retrieved_at": "2026-10-12T16:55:20Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "disclosure",
+          "title": "Responsible Disclosure",
+          "url": "https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/responsible-disclosure",
+          "publisher": "Deutsche Telekom AG",
+          "retrieved_at": "2026-10-12T16:55:20Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "ebay-security-recognition",
       "organization": "eBay",
       "recognition": {
@@ -445,6 +512,73 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "mozilla-client-security-recognition",
+      "organization": "Mozilla Firefox / client software",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/",
+        "summary": "The Firefox Bug Bounty Rewards page publishes public contributor recognition by quarter.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_portal",
+        "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+        "summary": "Client reports use Mozilla-hosted Bugzilla with an account; the separate web/services program uses HackerOne.",
+        "source_ids": [
+          "policy",
+          "web-program"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Client monetary awards depend on eligibility and the Mozilla Bounty Committee's discretion.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:55:08Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This entry covers the client-software program, not Mozilla web properties.",
+        "The client policy directs reporters to Bugzilla and says not to email vulnerability details.",
+        "The linked Bugzilla form failed this text-access check; the reporting instructions were reviewed, but authenticated submission was not inspected."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Firefox Bug Bounty Rewards",
+          "url": "https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-12T16:55:08Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Client Bug Bounty Program",
+          "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-12T16:55:08Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "web-program",
+          "title": "Web and Services Bug Bounty Program",
+          "url": "https://www.mozilla.org/en-US/security/web-bug-bounty/",
+          "publisher": "Mozilla",
+          "retrieved_at": "2026-10-12T16:55:08Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "nokia-security-recognition",
       "organization": "Nokia",
       "recognition": {
@@ -493,6 +627,84 @@
           "url": "https://www.nokia.com/we-are-nokia/security/products/cvd/",
           "publisher": "Nokia",
           "retrieved_at": "2026-10-12T16:39:56Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "palo-alto-networks-product-security-recognition",
+      "organization": "Palo Alto Networks products",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://www.paloaltonetworks.com/security-researcher-acknowledgement",
+        "summary": "With permission, product reporters are credited in advisories or the recognition page when no advisory is published.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.paloaltonetworks.com/product-security-assurance",
+        "summary": "Product reports use direct email or a first-party form; bounty opt-in asks for a Bugcrowd email.",
+        "source_ids": [
+          "policy",
+          "reporting"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Eligible monetary awards are discretionary; the bounty payment process can involve an external platform.",
+        "source_ids": [
+          "bounty",
+          "reporting"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:55:24Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This direct route concerns products; non-product corporate website reports use a separate external disclosure service.",
+        "The shared recognition page also includes corporate-infrastructure credits; that does not expand this entry's direct route.",
+        "Acknowledgment may be withheld in some circumstances. Coordinate disclosure and wait for remediation."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Security Researcher Acknowledgments",
+          "url": "https://www.paloaltonetworks.com/security-researcher-acknowledgement",
+          "publisher": "Palo Alto Networks",
+          "retrieved_at": "2026-10-12T16:55:24Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Product Security Assurance and Vulnerability Disclosure Policy",
+          "url": "https://www.paloaltonetworks.com/product-security-assurance",
+          "publisher": "Palo Alto Networks",
+          "retrieved_at": "2026-10-12T16:55:24Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Report a vulnerability in products or services",
+          "url": "https://security.paloaltonetworks.com/report",
+          "publisher": "Palo Alto Networks",
+          "retrieved_at": "2026-10-12T16:55:24Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "bounty",
+          "title": "Palo Alto Networks Bug Bounty Program",
+          "url": "https://security.paloaltonetworks.com/bugbounty",
+          "publisher": "Palo Alto Networks",
+          "retrieved_at": "2026-10-12T16:55:24Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -726,6 +938,63 @@
           "url": "https://security.utexas.edu/hall-of-fame",
           "publisher": "The University of Texas at Austin",
           "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "tu-delft-security-recognition",
+      "organization": "TU Delft",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.tudelft.nl/hall-of-fame",
+        "summary": "Policy-compliant reporters of valid, serious vulnerabilities may receive a public name listing.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden",
+        "summary": "The policy publishes a direct email route; it expressly does not invite active network scanning.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "Public recognition is offered; the reviewed policy does not establish a monetary reward commitment.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T16:54:57Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Keep findings confidential until the university confirms resolution and permits disclosure.",
+        "Anonymous and pseudonymous reports are allowed, but the policy notes follow-up and reward-contact limitations."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.tudelft.nl/hall-of-fame",
+          "publisher": "TU Delft",
+          "retrieved_at": "2026-10-12T16:54:57Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible disclosure van kwetsbaarheden",
+          "url": "https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden",
+          "publisher": "TU Delft",
+          "retrieved_at": "2026-10-12T16:54:57Z",
           "provenance": "official_primary",
           "access_method": "text"
         }

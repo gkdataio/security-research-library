@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0.0",
+  "id": "palo-alto-networks-product-security-recognition",
+  "organization": "Palo Alto Networks products",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.paloaltonetworks.com/security-researcher-acknowledgement",
+    "summary": "With permission, product reporters are credited in advisories or the recognition page when no advisory is published.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.paloaltonetworks.com/product-security-assurance",
+    "summary": "Product reports use direct email or a first-party form; bounty opt-in asks for a Bugcrowd email.",
+    "source_ids": [
+      "policy",
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Eligible monetary awards are discretionary; the bounty payment process can involve an external platform.",
+    "source_ids": [
+      "bounty",
+      "reporting"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:55:24Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This direct route concerns products; non-product corporate website reports use a separate external disclosure service.",
+    "The shared recognition page also includes corporate-infrastructure credits; that does not expand this entry's direct route.",
+    "Acknowledgment may be withheld in some circumstances. Coordinate disclosure and wait for remediation."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Security Researcher Acknowledgments",
+      "url": "https://www.paloaltonetworks.com/security-researcher-acknowledgement",
+      "publisher": "Palo Alto Networks",
+      "retrieved_at": "2026-10-12T16:55:24Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Product Security Assurance and Vulnerability Disclosure Policy",
+      "url": "https://www.paloaltonetworks.com/product-security-assurance",
+      "publisher": "Palo Alto Networks",
+      "retrieved_at": "2026-10-12T16:55:24Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Report a vulnerability in products or services",
+      "url": "https://security.paloaltonetworks.com/report",
+      "publisher": "Palo Alto Networks",
+      "retrieved_at": "2026-10-12T16:55:24Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "bounty",
+      "title": "Palo Alto Networks Bug Bounty Program",
+      "url": "https://security.paloaltonetworks.com/bugbounty",
+      "publisher": "Palo Alto Networks",
+      "retrieved_at": "2026-10-12T16:55:24Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

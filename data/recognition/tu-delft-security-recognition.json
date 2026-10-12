@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "tu-delft-security-recognition",
+  "organization": "TU Delft",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.tudelft.nl/hall-of-fame",
+    "summary": "Policy-compliant reporters of valid, serious vulnerabilities may receive a public name listing.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden",
+    "summary": "The policy publishes a direct email route; it expressly does not invite active network scanning.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Public recognition is offered; the reviewed policy does not establish a monetary reward commitment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T16:54:57Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Keep findings confidential until the university confirms resolution and permits disclosure.",
+    "Anonymous and pseudonymous reports are allowed, but the policy notes follow-up and reward-contact limitations."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.tudelft.nl/hall-of-fame",
+      "publisher": "TU Delft",
+      "retrieved_at": "2026-10-12T16:54:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible disclosure van kwetsbaarheden",
+      "url": "https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden",
+      "publisher": "TU Delft",
+      "retrieved_at": "2026-10-12T16:54:57Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
