@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "xapo-bank-security-recognition",
+  "organization": "Xapo Bank",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://legal.xapobank.com/misc/responsible-disclosure-policy",
+    "summary": "Proven, sufficiently severe responsible reports may receive chosen-name and profile credit.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://legal.xapobank.com/misc/responsible-disclosure-policy",
+    "summary": "The policy offers direct email; current official security.txt confirms the contact address.",
+    "source_ids": [
+      "policy",
+      "contacts"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "No current bounty program is offered; any compensation requires separate written agreement.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Credit is discretionary. The policy does not override applicable law or authorize harmful activity."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://legal.xapobank.com/misc/responsible-disclosure-policy",
+      "publisher": "Xapo Bank",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "contacts",
+      "title": "Official security contacts",
+      "url": "https://www.xapobank.com/.well-known/security.txt",
+      "publisher": "Xapo Bank",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

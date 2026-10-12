@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nfon-security-recognition",
+  "organization": "NFON",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.nfon.com/en/security/hall-of-fame/",
+    "summary": "Accepted reports describing concrete security risks receive public Hall recognition.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.nfon.com/en/security/responsible-disclosure-policy/",
+    "summary": "The official policy publishes direct security-team email.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Gift-card rewards are discretionary; no guaranteed cash award is promised.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Policy compliance and confidentiality are required; adult participation or guardian permission is specified."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.nfon.com/en/security/responsible-disclosure-policy/",
+      "publisher": "NFON",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.nfon.com/en/security/hall-of-fame/",
+      "publisher": "NFON",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

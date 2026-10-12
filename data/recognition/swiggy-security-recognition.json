@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "swiggy-security-recognition",
+  "organization": "Swiggy",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.swiggy.com/bug-bounty/",
+    "summary": "Hall eligibility covers accepted High/Critical reports or more than five new valid Medium/Low reports within 90 days; listing is discretionary.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.swiggy.com/bug-bounty/",
+    "summary": "Reports go directly to the in-house security email from the reporter's registered address.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Monetary awards follow separate review; payment for a lower-severity report does not itself confer Hall recognition.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Participation includes five-year confidentiality terms and other restrictions; publication and recognition should not be assumed from submission alone."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.swiggy.com/bug-bounty/",
+      "publisher": "Swiggy",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

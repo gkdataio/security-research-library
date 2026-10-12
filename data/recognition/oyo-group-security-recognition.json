@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "oyo-group-security-recognition",
+  "organization": "OYO Group",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.oyorooms.com/hall-of-fame",
+    "summary": "Recognition covers accepted High/Critical reports or more than five new valid Medium/Low reports within 90 days.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.oyorooms.com/responsible-disclosure",
+    "summary": "Current policy expressly accepts direct email; a Bugcrowd submission link is an additional option.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary promise is established by the reviewed pages; historical platform points are not cash.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Count the group once. The Hall still mentions HackerOne points while current policy links Bugcrowd; their current availability is not verified. Public disclosure requires express consent even after resolution."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.oyorooms.com/responsible-disclosure",
+      "publisher": "OYO Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.oyorooms.com/hall-of-fame",
+      "publisher": "OYO Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

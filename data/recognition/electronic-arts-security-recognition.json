@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "electronic-arts-security-recognition",
+  "organization": "Electronic Arts",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.ea.com/en-gb/security/hall-of-fame",
+    "summary": "EA's populated Hall recognizes responsible coordinated disclosures.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.ea.com/security/disclosure",
+    "summary": "The official reporting page directs researchers to EA's own submission form.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No compensation promise is made; the policy permits report use without compensation or attribution.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The JavaScript form was not fully inspected and no submission was made. Coordinate public disclosure; the Hall does not establish automatic credit entitlement."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.ea.com/security/disclosure",
+      "publisher": "Electronic Arts",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.ea.com/en-gb/security/hall-of-fame",
+      "publisher": "Electronic Arts",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

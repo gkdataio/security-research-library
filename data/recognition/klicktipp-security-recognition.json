@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "klicktipp-security-recognition",
+  "organization": "KlickTipp",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.klicktipp.com/hall-of-fame/",
+    "summary": "Consenting reporters may receive voluntary public credit; informational recognition is available on request.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.klicktipp.com/responsible-disclosure-policy/",
+    "summary": "The policy provides a direct reporting email link.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "First qualifying reports may receive discretionary paid awards; no legal entitlement is created.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The email address is protected in text extraction; follow the policy link. The policy expressly offers neither legal immunity nor a promise to refrain from legal action."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.klicktipp.com/responsible-disclosure-policy/",
+      "publisher": "KlickTipp",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.klicktipp.com/hall-of-fame/",
+      "publisher": "KlickTipp",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

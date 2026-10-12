@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "honeywell-security-recognition",
+  "organization": "Honeywell",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.honeywell.com/us/en/legal/product-security",
+    "summary": "Central public acknowledgment is reserved for validated security vulnerabilities with demonstrable impact.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.honeywell.com/us/en/legal/product-security",
+    "summary": "Honeywell publishes direct PSIRT and other security-reporting email channels.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Honeywell explicitly offers neither a bug bounty nor monetary incentives.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Count the group once. Internally known or otherwise excluded reports may not qualify; unauthorized production scanning is expressly not authorized."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.honeywell.com/us/en/legal/product-security",
+      "publisher": "Honeywell",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

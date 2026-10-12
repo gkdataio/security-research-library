@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cloud-software-group-security-recognition",
+  "organization": "Cloud Software Group",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.cloud.com/trust-center/product-security/hall-of-fame",
+    "summary": "The group maintains a central Hall recognizing product-security contributors.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.cloud.com/trust-center/product-security/vulnerability-response",
+    "summary": "Direct PSIRT email is available alongside an optional HackerOne bounty program.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "The separate HackerOne program offers rewards; direct email does not establish payout eligibility.",
+    "source_ids": [
+      "bounty",
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Count the group once, including its brands. Much of the public list is historical; the reviewed sources do not guarantee future listing for every accepted report."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.cloud.com/trust-center/product-security/vulnerability-response",
+      "publisher": "Cloud Software Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.cloud.com/trust-center/product-security/hall-of-fame",
+      "publisher": "Cloud Software Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "handling-policy",
+      "title": "Product Security Incident Response policy",
+      "url": "https://www.cloud.com/content/dam/cloud/documents/psirt-policy-2-0.pdf",
+      "publisher": "Cloud Software Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "bounty",
+      "title": "Separate bounty program",
+      "url": "https://www.cloud.com/trust-center/product-security/bug-bounty-program",
+      "publisher": "Cloud Software Group",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

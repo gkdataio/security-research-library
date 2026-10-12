@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "vipps-security-recognition",
+  "organization": "Vipps (Vipps MobilePay)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://vipps.no/hall-of-fame",
+    "summary": "Responsible reporters are publicly credited; special appreciation has additional eligibility conditions.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://vipps.no/responsible-disclosure-policy",
+    "summary": "The currently accessible Vipps policy publishes direct encrypted-email reporting.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Vipps explicitly has no public paid bounty program; tokens of appreciation may be offered.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Count Vipps MobilePay once. Public historical credits do not promise a reward or acceptance for every new report."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://vipps.no/responsible-disclosure-policy",
+      "publisher": "Vipps (Vipps MobilePay)",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://vipps.no/hall-of-fame",
+      "publisher": "Vipps (Vipps MobilePay)",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "tresorit-security-recognition",
+  "organization": "Tresorit",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://support.tresorit.com/hc/en-us/articles/360018726039-Security-hall-of-fame",
+    "summary": "The populated central Hall thanks researchers for security contributions.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://tresorit.com/contact",
+    "summary": "Both the Hall and official contact page publish direct security email with an encryption option.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed reporting or recognition pages.",
+    "source_ids": [
+      "policy",
+      "recognition"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Detailed credit eligibility is unspecified. The acceptable-use policy prohibits probing or testing absent an applicable exception; the listing is not blanket testing permission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Official security contact",
+      "url": "https://tresorit.com/contact",
+      "publisher": "Tresorit",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://support.tresorit.com/hc/en-us/articles/360018726039-Security-hall-of-fame",
+      "publisher": "Tresorit",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "acceptable-use",
+      "title": "Acceptable Use Policy",
+      "url": "https://tresorit.com/acceptable-use-policy",
+      "publisher": "Tresorit",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

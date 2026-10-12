@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "zeta-security-recognition",
+  "organization": "Zeta",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.zeta.tech/in/hall-of-fame",
+    "summary": "Accepted qualifying reports receive an entry in the populated security Hall.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.zeta.tech/in/security-and-responsible-disclosure",
+    "summary": "The policy explicitly links direct security-team email and requests encrypted reporting.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed policy.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The email address is protected in text extraction; use the official reporting link. Automated scanning and premature disclosure are prohibited."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.zeta.tech/in/security-and-responsible-disclosure",
+      "publisher": "Zeta",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.zeta.tech/in/hall-of-fame",
+      "publisher": "Zeta",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

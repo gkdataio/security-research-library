@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "element-security-recognition",
+  "organization": "Element",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://element.io/en/security/security-hall-of-fame",
+    "summary": "Requested Hall credit follows validated responsible reporting and coordinated disclosure.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://element.io/en/security/security-disclosure-policy",
+    "summary": "The policy offers a direct email link with optional encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Element explicitly has no current bug bounty program.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The email address is protected in text extraction. This current program is distinct from the Matrix.org Foundation's; overlapping historical credits do not expand either program."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://element.io/en/security/security-disclosure-policy",
+      "publisher": "Element",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://element.io/en/security/security-hall-of-fame",
+      "publisher": "Element",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "ownership",
+      "title": "Element and Matrix relationship",
+      "url": "https://element.io/en/matrix-relationship",
+      "publisher": "Element",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "adobe-online-services-security-recognition",
+  "organization": "Adobe online services and websites",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://helpx.adobe.com/security/acknowledgements.html",
+    "summary": "First responsible reports concerning online services or websites can receive central acknowledgment after remediation time.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://helpx.adobe.com/security/alertus.html",
+    "summary": "Direct PSIRT email is accepted; the separate public bounty program routes through Intigriti.",
+    "source_ids": [
+      "policy",
+      "bounty"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Monetary rewards and leaderboard points have separate platform rules; direct email does not promise either.",
+    "source_ids": [
+      "bounty"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This acknowledgment collection concerns online services and websites, not all Adobe products. Legacy HackerOne wording remains on the current bounty page; do not infer current points eligibility from it."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://helpx.adobe.com/security/alertus.html",
+      "publisher": "Adobe online services and websites",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://helpx.adobe.com/security/acknowledgements.html",
+      "publisher": "Adobe online services and websites",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "bounty",
+      "title": "Bounty program and email submissions",
+      "url": "https://www.adobe.com/trust/security/bug-bounty.html",
+      "publisher": "Adobe online services and websites",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

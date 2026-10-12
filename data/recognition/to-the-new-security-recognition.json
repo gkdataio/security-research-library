@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "to-the-new-security-recognition",
+  "organization": "TO THE NEW",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.tothenew.com/hall-of-fame",
+    "summary": "Valid reports may receive Hall recognition based on quality, impact and policy compliance.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.tothenew.com/responsible-disclosure",
+    "summary": "The official disclosure policy publishes a direct security-reporting email.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy expressly offers no monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Coordinate privately and do not disclose findings before remediation; informational reports may not qualify for credit."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.tothenew.com/responsible-disclosure",
+      "publisher": "TO THE NEW",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.tothenew.com/hall-of-fame",
+      "publisher": "TO THE NEW",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

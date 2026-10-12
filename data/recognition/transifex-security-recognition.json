@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "transifex-security-recognition",
+  "organization": "Transifex",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.transifex.com/legal/security/",
+    "summary": "A centralized acknowledgment section thanks researchers who helped identify and resolve security issues.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.transifex.com/legal/security/",
+    "summary": "The security policy publishes direct reporting email and an optional encryption key.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed policy.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Reporting guidance is brief; it does not specify detailed Hall eligibility or comprehensive testing authorization."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://www.transifex.com/legal/security/",
+      "publisher": "Transifex",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

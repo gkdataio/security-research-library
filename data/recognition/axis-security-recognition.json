@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "axis-security-recognition",
+  "organization": "Axis Communications",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.axis.com/support/cybersecurity/vulnerability-management/hall-of-fame",
+    "summary": "Valuable, validated responsible findings may receive Hall or advisory credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.axis.com/report-vulnerability",
+    "summary": "Axis accepts reports through its own form; separate restricted-product bounty programs use Bugcrowd.",
+    "source_ids": [
+      "reporting",
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Bugcrowd bounty eligibility is separate; no monetary award is promised for the direct route.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:18:04Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Coordinated disclosure and lawful, nonharmful conduct are required. The separately governed 2N program is excluded."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability reporting and disclosure policy",
+      "url": "https://help.axis.com/en-us/axis-vulnerability-management-policy",
+      "publisher": "Axis Communications",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.axis.com/support/cybersecurity/vulnerability-management/hall-of-fame",
+      "publisher": "Axis Communications",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "First-party vulnerability form",
+      "url": "https://www.axis.com/report-vulnerability",
+      "publisher": "Axis Communications",
+      "retrieved_at": "2026-10-12T18:18:04Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+
