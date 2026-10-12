@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cigna-security-recognition",
+  "organization": "Cigna Healthcare",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+    "summary": "Compliant disclosures may receive public credit at Cigna's discretion; reporters can opt out.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+    "summary": "The official policy provides direct security-team email reporting and encryption guidance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy offers no compensation beyond possible public recognition.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Anonymous reports are accepted but receive no public acknowledgment.",
+    "Protected personal and health information must remain confidential even after remediation."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible Vulnerability Disclosure and Researcher Hall of Fame",
+      "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+      "publisher": "Cigna Healthcare",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

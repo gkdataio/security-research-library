@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "illinois-urbana-champaign-security-recognition",
+  "organization": "University of Illinois Urbana-Champaign",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+    "summary": "Valid, reproducible reports leading to meaningful security improvements qualify for public recognition.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+    "summary": "The official policy provides direct security-team reporting email.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The university explicitly offers no monetary or material rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy requires stopping at the first finding and requesting permission before continuing.",
+    "Automated scanners are prohibited; public disclosure requires explicit written permission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Cybersecurity Vulnerability Disclosure and acknowledgments",
+      "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+      "publisher": "University of Illinois Urbana-Champaign",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

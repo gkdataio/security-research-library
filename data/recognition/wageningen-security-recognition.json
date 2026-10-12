@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "wageningen-security-recognition",
+  "organization": "Wageningen University & Research",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security/hall-fame-responsible-disclosure",
+    "summary": "Responsible nontrivial reports may receive requested credit in communications or the Hall of Fame.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security",
+    "summary": "WUR publishes direct CERT email reporting and encryption guidance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Keep findings confidential until resolved and follow the policy's data-handling rules.",
+    "Trivial or non-actionable findings do not qualify for recognition."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame - Responsible disclosure",
+      "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security/hall-fame-responsible-disclosure",
+      "publisher": "Wageningen University & Research",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Information security and responsible disclosure",
+      "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security",
+      "publisher": "Wageningen University & Research",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

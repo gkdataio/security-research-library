@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "duisburg-essen-security-recognition",
+  "organization": "University of Duisburg-Essen",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.uni-due.de/ciso/hall-of-fame.php",
+    "summary": "Public acknowledgment is decided individually by the university.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.uni-due.de/ciso/vulnerability_reporting_form.php",
+    "summary": "The university provides its own reporting form and accepts anonymous reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly says no bug bounty program is operated.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The form includes a CAPTCHA; submission was not exercised.",
+    "Confidentiality is subject to legal obligations, and recognition is discretionary."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.uni-due.de/ciso/hall-of-fame.php",
+      "publisher": "University of Duisburg-Essen",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure: Vulnerability Reporting Form",
+      "url": "https://www.uni-due.de/ciso/vulnerability_reporting_form.php",
+      "publisher": "University of Duisburg-Essen",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "swisscom-security-recognition",
+  "organization": "Swisscom",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://github.com/swisscom/bugbounty/tree/main/hall-of-fame",
+    "summary": "Substantial reports awarded a bounty may receive discretionary public recognition unless the reporter opts out.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_portal",
+    "url": "https://www.swisscom.ch/en/about/security/bug-bounty.html",
+    "summary": "Swisscom runs its own registered-user portal; outside-program email does not establish recognition or bounty eligibility.",
+    "source_ids": [
+      "reporting",
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Monetary awards are discretionary under program and payment requirements.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The corporate page links the official GitHub-hosted policy and recognition collection.",
+    "Registration and authenticated submission were not exercised; outside-program email is a distinct route."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Official program Hall of Fame",
+      "url": "https://github.com/swisscom/bugbounty/tree/main/hall-of-fame",
+      "publisher": "Swisscom",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Vulnerability Disclosure Policy and Bug Bounty Programme",
+      "url": "https://github.com/swisscom/bugbounty",
+      "publisher": "Swisscom",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "Official Bug Bounty Programme",
+      "url": "https://www.swisscom.ch/en/about/security/bug-bounty.html",
+      "publisher": "Swisscom",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

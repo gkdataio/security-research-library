@@ -60,7 +60,7 @@ These counts describe the collection at the dates above. Award evidence is attri
 
 ## First-party recognition and direct disclosure
 
-Browse the [direct-disclosure directory](docs/direct-disclosure.md) for 40 organizations with their own recognition pages and first-party reporting guidance. The latest additions were reviewed October 12, 2026; earlier entries retain their original review dates. Bosch accepts direct email for website reports but prefers Bugcrowd. Each entry distinguishes recognition from payment and records source and access limitations. This editorial selection is not a measured traffic ranking; current official terms control. It is maintained separately from program-policy and award-backed report counts.
+Browse the [direct-disclosure directory](docs/direct-disclosure.md) for 60 organizations with their own recognition pages and first-party reporting guidance. The latest additions were reviewed October 12, 2026; earlier entries retain their original review dates. Bosch accepts direct email for website reports but prefers Bugcrowd. Each entry distinguishes recognition from payment and records source and access limitations. This editorial selection is not a measured traffic ranking; current official terms control. It is maintained separately from program-policy and award-backed report counts.
 
 ## Current research focus
 

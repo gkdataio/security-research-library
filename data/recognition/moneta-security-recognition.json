@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "moneta-security-recognition",
+  "organization": "MONETA Money Bank",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.moneta.cz/hall-of-fame",
+    "summary": "Policy-compliant reports can receive public credit, including some findings eligible only for recognition.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.moneta.cz/bug-bounty",
+    "summary": "The policy supplies direct email for vulnerability reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Cash rewards are assessed individually; Hall-only recognition is a separate category.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Recognition does not imply a payment.",
+    "Do not publicly disclose findings without the bank's prior consent."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.moneta.cz/hall-of-fame",
+      "publisher": "MONETA Money Bank",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Bug Bounty",
+      "url": "https://www.moneta.cz/bug-bounty",
+      "publisher": "MONETA Money Bank",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

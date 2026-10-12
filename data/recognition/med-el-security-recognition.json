@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "med-el-security-recognition",
+  "organization": "MED-EL",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+    "summary": "Validated and fixed product vulnerabilities may receive public credit if desired.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+    "summary": "The policy publishes direct product-security email reporting and requests PGP encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes bug bounties and monetary compensation.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Never test products in clinical environments or while used by patients.",
+    "This is the product-security policy; non-product reports follow a separate route."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability Handling and Disclosure Policy and Hall of Fame",
+      "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+      "publisher": "MED-EL",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

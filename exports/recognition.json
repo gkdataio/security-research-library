@@ -10,7 +10,7 @@
     "Submission flows were not exercised; current official terms control."
   ],
   "counts": {
-    "organizations": 40
+    "organizations": 60
   },
   "records": [
     {
@@ -290,6 +290,53 @@
           "url": "https://security.apple.com/bounty/guidelines/",
           "publisher": "Apple",
           "retrieved_at": "2026-10-11T04:00:42Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "asus-security-recognition",
+      "organization": "ASUS",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.asus.com/security-advisory",
+        "summary": "ASUS publishes a central Hall of Fame for security contributors.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_form",
+        "url": "https://www.asus.com/security-advisory",
+        "summary": "The full policy links ASUS's own vulnerability-reporting form.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy says requests for vulnerability-related compensation will not be considered.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The form itself could not be read; its first-party route is documented by the reviewed policy.",
+        "Reports must remain confidential; the policy prohibits unauthorized access or modification."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Security Advisory, disclosure policy and Hall of Fame",
+          "url": "https://www.asus.com/security-advisory",
+          "publisher": "ASUS",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -661,6 +708,110 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "check-point-website-security-recognition",
+      "organization": "Check Point website disclosures",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://www.checkpoint.com/white-hat/",
+        "summary": "The central acknowledgment list specifically credits responsible website-related disclosures.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.checkpoint.com/security-issue/",
+        "summary": "The Security Response Team accepts direct email; a first-party form is also available.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed pages do not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This entry describes website-related recognition, not all product-advisory credits.",
+        "No detailed public-credit entitlement is stated."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Responsible website-disclosure acknowledgments",
+          "url": "https://www.checkpoint.com/white-hat/",
+          "publisher": "Check Point website disclosures",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Report a Security Issue",
+          "url": "https://www.checkpoint.com/security-issue/",
+          "publisher": "Check Point website disclosures",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "cigna-security-recognition",
+      "organization": "Cigna Healthcare",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+        "summary": "Compliant disclosures may receive public credit at Cigna's discretion; reporters can opt out.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+        "summary": "The official policy provides direct security-team email reporting and encryption guidance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy offers no compensation beyond possible public recognition.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Anonymous reports are accepted but receive no public acknowledgment.",
+        "Protected personal and health information must remain confidential even after remediation."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Responsible Vulnerability Disclosure and Researcher Hall of Fame",
+          "url": "https://www.cigna.com/legal/members/responsible-vulnerability-disclosure",
+          "publisher": "Cigna Healthcare",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "deutsche-telekom-security-recognition",
       "organization": "Deutsche Telekom AG",
       "recognition": {
@@ -797,6 +948,63 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "efficy-security-recognition",
+      "organization": "Efficy Group",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.efficy.com/group/hall-of-fame/",
+        "summary": "Validated, responsibly handled reports may receive public credit with explicit consent.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.efficy.com/sites/default/files/2025-08/ISEC-14-Responsible-Disclosure-Policy.pdf",
+        "summary": "The official policy gives a direct security-team reporting address.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The Hall page says the group does not operate a paid bounty program.",
+        "source_ids": [
+          "recognition"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The group is counted once, including its covered acquired brands.",
+        "Coordinate disclosure and follow the linked policy's confidentiality conditions."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.efficy.com/group/hall-of-fame/",
+          "publisher": "Efficy Group",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible Disclosure Policy",
+          "url": "https://www.efficy.com/sites/default/files/2025-08/ISEC-14-Responsible-Disclosure-Policy.pdf",
+          "publisher": "Efficy Group",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "embl-ebi-security-recognition",
       "organization": "EMBL-EBI",
       "recognition": {
@@ -845,6 +1053,72 @@
           "url": "https://www.ebi.ac.uk/security/",
           "publisher": "EMBL-EBI",
           "retrieved_at": "2026-10-12T17:53:23Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "enbw-security-recognition",
+      "organization": "EnBW",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.enbw.com/cert/hall-of-fame-1.html",
+        "summary": "Confirmed qualifying reports may receive public Hall of Fame credit with consent.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.enbw.com/cert/contact.html",
+        "summary": "EnBW-CERT publishes direct email reporting and prefers encryption.",
+        "source_ids": [
+          "reporting"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed disclosure policy does not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The web PDF reader failed; the complete official PDF was downloaded and its text reviewed.",
+        "Coordinate publication with EnBW and keep details confidential until remediation."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.enbw.com/cert/hall-of-fame-1.html",
+          "publisher": "EnBW",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Coordinated Vulnerability Disclosure Policy",
+          "url": "https://www.enbw.com/media/enbw-cert/cvd-policy-de-en.pdf",
+          "publisher": "EnBW",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "EnBW-CERT Contact",
+          "url": "https://www.enbw.com/cert/contact.html",
+          "publisher": "EnBW",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -969,6 +1243,53 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "med-el-security-recognition",
+      "organization": "MED-EL",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+        "summary": "Validated and fixed product vulnerabilities may receive public credit if desired.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+        "summary": "The policy publishes direct product-security email reporting and requests PGP encryption.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly excludes bug bounties and monetary compensation.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Never test products in clinical environments or while used by patients.",
+        "This is the product-security policy; non-product reports follow a separate route."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Vulnerability Handling and Disclosure Policy and Hall of Fame",
+          "url": "https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy",
+          "publisher": "MED-EL",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "microsoft-researcher-recognition",
       "organization": "Microsoft",
       "recognition": {
@@ -1027,6 +1348,63 @@
           "url": "https://www.microsoft.com/en-us/msrc/faqs-bounty",
           "publisher": "Microsoft",
           "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "moneta-security-recognition",
+      "organization": "MONETA Money Bank",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.moneta.cz/hall-of-fame",
+        "summary": "Policy-compliant reports can receive public credit, including some findings eligible only for recognition.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.moneta.cz/bug-bounty",
+        "summary": "The policy supplies direct email for vulnerability reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Cash rewards are assessed individually; Hall-only recognition is a separate category.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Recognition does not imply a payment.",
+        "Do not publicly disclose findings without the bank's prior consent."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.moneta.cz/hall-of-fame",
+          "publisher": "MONETA Money Bank",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Bug Bounty",
+          "url": "https://www.moneta.cz/bug-bounty",
+          "publisher": "MONETA Money Bank",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -1396,6 +1774,110 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "onidel-security-recognition",
+      "organization": "Onidel Cloud",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.onidel.com/hall-of-fame",
+        "summary": "Accepted responsible disclosures receive public credit under the program's rules.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_portal",
+        "url": "https://kb.onidel.com/hc/kb/articles/1775831946-bug-bounty-program",
+        "summary": "The policy links a first-party support-ticket route and offers email as an alternative.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Rewards are discretionary and may be cash or account credits.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The ticket page rendered only a JavaScript shell; account requirements and submission were not tested.",
+        "Keep reports confidential through remediation; current eligibility rules control."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.onidel.com/hall-of-fame",
+          "publisher": "Onidel Cloud",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Bug Bounty Program",
+          "url": "https://kb.onidel.com/hc/kb/articles/1775831946-bug-bounty-program",
+          "publisher": "Onidel Cloud",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "opentext-security-recognition",
+      "organization": "OpenText",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+        "summary": "OpenText publishes annual public credits for reports helping improve security.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+        "summary": "The acknowledgment page provides direct email for website, product and service reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed guidance does not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The short guidance does not establish detailed credit eligibility or guaranteed recognition.",
+        "Encryption is offered for critical issues; customers also have a support route."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Security Acknowledgements and reporting guidance",
+          "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+          "publisher": "OpenText",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "occrp-security-recognition",
       "organization": "Organized Crime and Corruption Reporting Project",
       "recognition": {
@@ -1635,6 +2117,166 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "radboud-security-recognition",
+      "organization": "Radboud University",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+        "summary": "First responsible reporters of valid important findings may enter the public Hall of Fame.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+        "summary": "The policy supplies direct CERT email reporting.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The linked policy permits discretionary rewards for unknown problems but specifies no fixed amount or form.",
+        "source_ids": [
+          "terms"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Active scans require prior permission.",
+        "Keep findings confidential until resolved; the PDF's upload path does not establish its issue date."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Report vulnerability and Hall of Fame",
+          "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+          "publisher": "Radboud University",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "terms",
+          "title": "Responsible Disclosure Policy",
+          "url": "https://www.ru.nl/sites/default/files/2023-10/Responsible-disclosure.pdf",
+          "publisher": "Radboud University",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "razorpay-security-recognition",
+      "organization": "Razorpay",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://razorpay.com/hall-of-fame/",
+        "summary": "Verified and fixed reports may receive public credit with the reporter's consent.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://razorpay.com/responsible-disclosure/",
+        "summary": "The policy provides direct email reporting with specific subject and formatting requirements.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "Monetary compensation is expressly unavailable; discretionary branded gifts may be offered.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Automated tools and unapproved public disclosure are prohibited by the policy.",
+        "Recognition requires following the current reporting instructions."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://razorpay.com/hall-of-fame/",
+          "publisher": "Razorpay",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible Disclosure Policy",
+          "url": "https://razorpay.com/responsible-disclosure/",
+          "publisher": "Razorpay",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "red-hat-online-services-security-recognition",
+      "organization": "Red Hat online services",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://access.redhat.com/articles/66234",
+        "summary": "Responsible privately reported security issues may receive consent-based public credit at Red Hat's discretion.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://access.redhat.com/articles/66234",
+        "summary": "The online-services policy provides a dedicated direct email route and encryption guidance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed policy does not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "This entry concerns online services, not separate product-advisory credits.",
+        "Third-party-operated branded services may receive credit under the other provider's rules."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Vulnerability Acknowledgements for Red Hat online services",
+          "url": "https://access.redhat.com/articles/66234",
+          "publisher": "Red Hat online services",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "samsung-tv-audio-displays-security-recognition",
       "organization": "Samsung Smart TV, Audio and Displays",
       "recognition": {
@@ -1756,6 +2398,130 @@
           "url": "https://productcert.siemens.com/vulnerability-handling-and-disclosure-process/",
           "publisher": "Siemens",
           "retrieved_at": "2026-10-12T16:47:22Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "surf-security-recognition",
+      "organization": "SURF",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.surf.nl/en/hall-of-fame-0",
+        "summary": "First valid reporters of previously unknown qualifying vulnerabilities receive public credit.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.surf.nl/en/coordinated-vulnerability-disclosure",
+        "summary": "SURF publishes a direct reporting mailbox and requests encryption.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "Rewards may be offered case by case; neither compensation nor its form is guaranteed.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The policy expressly does not invite active scanning.",
+        "Keep findings confidential until resolved; trivial findings are excluded."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.surf.nl/en/hall-of-fame-0",
+          "publisher": "SURF",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Coordinated Vulnerability Disclosure",
+          "url": "https://www.surf.nl/en/coordinated-vulnerability-disclosure",
+          "publisher": "SURF",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "swisscom-security-recognition",
+      "organization": "Swisscom",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://github.com/swisscom/bugbounty/tree/main/hall-of-fame",
+        "summary": "Substantial reports awarded a bounty may receive discretionary public recognition unless the reporter opts out.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_portal",
+        "url": "https://www.swisscom.ch/en/about/security/bug-bounty.html",
+        "summary": "Swisscom runs its own registered-user portal; outside-program email does not establish recognition or bounty eligibility.",
+        "source_ids": [
+          "reporting",
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "separate_bounty_policy",
+        "summary": "Monetary awards are discretionary under program and payment requirements.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The corporate page links the official GitHub-hosted policy and recognition collection.",
+        "Registration and authenticated submission were not exercised; outside-program email is a distinct route."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Official program Hall of Fame",
+          "url": "https://github.com/swisscom/bugbounty/tree/main/hall-of-fame",
+          "publisher": "Swisscom",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Vulnerability Disclosure Policy and Bug Bounty Programme",
+          "url": "https://github.com/swisscom/bugbounty",
+          "publisher": "Swisscom",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "reporting",
+          "title": "Official Bug Bounty Programme",
+          "url": "https://www.swisscom.ch/en/about/security/bug-bounty.html",
+          "publisher": "Swisscom",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -1972,6 +2738,63 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "duisburg-essen-security-recognition",
+      "organization": "University of Duisburg-Essen",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.uni-due.de/ciso/hall-of-fame.php",
+        "summary": "Public acknowledgment is decided individually by the university.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "first_party_form",
+        "url": "https://www.uni-due.de/ciso/vulnerability_reporting_form.php",
+        "summary": "The university provides its own reporting form and accepts anonymous reports.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly says no bug bounty program is operated.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The form includes a CAPTCHA; submission was not exercised.",
+        "Confidentiality is subject to legal obligations, and recognition is discretionary."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame",
+          "url": "https://www.uni-due.de/ciso/hall-of-fame.php",
+          "publisher": "University of Duisburg-Essen",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Responsible Disclosure: Vulnerability Reporting Form",
+          "url": "https://www.uni-due.de/ciso/vulnerability_reporting_form.php",
+          "publisher": "University of Duisburg-Essen",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "university-of-groningen-security-recognition",
       "organization": "University of Groningen",
       "recognition": {
@@ -2010,6 +2833,53 @@
           "url": "https://www.rug.nl/about-ug/policy-and-strategy/privacy-and-security-at-the-ug/responsible-disclosure?lang=en",
           "publisher": "University of Groningen",
           "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "illinois-urbana-champaign-security-recognition",
+      "organization": "University of Illinois Urbana-Champaign",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+        "summary": "Valid, reproducible reports leading to meaningful security improvements qualify for public recognition.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+        "summary": "The official policy provides direct security-team reporting email.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The university explicitly offers no monetary or material rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The policy requires stopping at the first finding and requesting permission before continuing.",
+        "Automated scanners are prohibited; public disclosure requires explicit written permission."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Cybersecurity Vulnerability Disclosure and acknowledgments",
+          "url": "https://www.techservices.illinois.edu/cybersecurity/cybersecurity-vulnerability-disclosure/",
+          "publisher": "University of Illinois Urbana-Champaign",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2124,6 +2994,111 @@
           "url": "https://nebraska.edu/offices/information-technology-services/vulnerability-disclosure-program/",
           "publisher": "University of Nebraska",
           "retrieved_at": "2026-10-11T04:01:53Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "university-of-sheffield-security-recognition",
+      "organization": "University of Sheffield",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+        "summary": "The university publishes public credit where appropriate under its disclosure guidance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+        "summary": "The vulnerability-disclosure section provides a direct Information Security email route.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The policy explicitly excludes bounty and financial rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Stop after the first finding and request permission to continue; automated scanning and fuzzing are prohibited.",
+        "The public vulnerability policy was reviewed; linked internal policies require login and were not accessed.",
+        "Incident reporting has separate live-contact instructions, distinct from vulnerability email reports."
+      ],
+      "sources": [
+        {
+          "id": "policy",
+          "title": "Security and vulnerability disclosure",
+          "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+          "publisher": "University of Sheffield",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "university-of-turku-security-recognition",
+      "organization": "University of Turku",
+      "recognition": {
+        "kind": "acknowledgments",
+        "url": "https://security.utu.fi/acknowledgements.html",
+        "summary": "The university publishes public credits for responsible vulnerability disclosures.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://security.utu.fi/",
+        "summary": "The official contact page explicitly accepts vulnerability reports by email.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed pages do not state reward terms.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "The reporting guidance is brief and provides no detailed eligibility or safe-harbor policy.",
+        "Public credit is not guaranteed."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Responsible vulnerability disclosure acknowledgements",
+          "url": "https://security.utu.fi/acknowledgements.html",
+          "publisher": "University of Turku",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Cybersecurity contacts",
+          "url": "https://security.utu.fi/",
+          "publisher": "University of Turku",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2303,6 +3278,63 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "wageningen-security-recognition",
+      "organization": "Wageningen University & Research",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security/hall-fame-responsible-disclosure",
+        "summary": "Responsible nontrivial reports may receive requested credit in communications or the Hall of Fame.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security",
+        "summary": "WUR publishes direct CERT email reporting and encryption guidance.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "unknown",
+        "summary": "The reviewed policy does not promise monetary rewards.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Keep findings confidential until resolved and follow the policy's data-handling rules.",
+        "Trivial or non-actionable findings do not qualify for recognition."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Hall of Fame - Responsible disclosure",
+          "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security/hall-fame-responsible-disclosure",
+          "publisher": "Wageningen University & Research",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Information security and responsible disclosure",
+          "url": "https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security",
+          "publisher": "Wageningen University & Research",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "wikimedia-security-recognition",
       "organization": "Wikimedia Foundation",
       "recognition": {
@@ -2369,6 +3401,72 @@
           "url": "https://security.wikimedia.org/contact/",
           "publisher": "Wikimedia Foundation",
           "retrieved_at": "2026-10-12T16:49:21Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        }
+      ],
+      "content_scope": "first_party_recognition_and_reporting_reference",
+      "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "zyxel-security-recognition",
+      "organization": "Zyxel Networks",
+      "recognition": {
+        "kind": "hall_of_fame",
+        "url": "https://www.zyxel.com/global/en/support/security-hall-of-fame",
+        "summary": "Zyxel publishes centralized contributor acknowledgments linked to security advisories.",
+        "source_ids": [
+          "recognition",
+          "policy"
+        ]
+      },
+      "reporting": {
+        "route": "direct_email",
+        "url": "https://www.zyxel.com/global/en/support/security-vulnerability",
+        "summary": "The reporting page gives direct security-team email and an optional encryption key.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "rewards": {
+        "status": "no_bounty",
+        "summary": "The reporting policy explicitly excludes bug bounty and reward programs.",
+        "source_ids": [
+          "policy"
+        ]
+      },
+      "reviewed_at": "2026-10-12T18:02:10Z",
+      "submission_availability": "not_tested",
+      "limitations": [
+        "Reports must be complete and written in English under current eligibility requirements.",
+        "Public credit does not guarantee acceptance of a future report."
+      ],
+      "sources": [
+        {
+          "id": "recognition",
+          "title": "Security Hall of Fame",
+          "url": "https://www.zyxel.com/global/en/support/security-hall-of-fame",
+          "publisher": "Zyxel Networks",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "policy",
+          "title": "Report a Security Vulnerability",
+          "url": "https://www.zyxel.com/global/en/support/security-vulnerability",
+          "publisher": "Zyxel Networks",
+          "retrieved_at": "2026-10-12T18:02:10Z",
+          "provenance": "official_primary",
+          "access_method": "text"
+        },
+        {
+          "id": "disclosure",
+          "title": "PSIRT Policy",
+          "url": "https://www.zyxel.com/global/en/support/security-psirt-policy",
+          "publisher": "Zyxel Networks",
+          "retrieved_at": "2026-10-12T18:02:10Z",
           "provenance": "official_primary",
           "access_method": "text"
         }

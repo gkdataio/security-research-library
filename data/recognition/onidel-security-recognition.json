@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "onidel-security-recognition",
+  "organization": "Onidel Cloud",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.onidel.com/hall-of-fame",
+    "summary": "Accepted responsible disclosures receive public credit under the program's rules.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_portal",
+    "url": "https://kb.onidel.com/hc/kb/articles/1775831946-bug-bounty-program",
+    "summary": "The policy links a first-party support-ticket route and offers email as an alternative.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Rewards are discretionary and may be cash or account credits.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The ticket page rendered only a JavaScript shell; account requirements and submission were not tested.",
+    "Keep reports confidential through remediation; current eligibility rules control."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.onidel.com/hall-of-fame",
+      "publisher": "Onidel Cloud",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Bug Bounty Program",
+      "url": "https://kb.onidel.com/hc/kb/articles/1775831946-bug-bounty-program",
+      "publisher": "Onidel Cloud",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

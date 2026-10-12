@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-turku-security-recognition",
+  "organization": "University of Turku",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://security.utu.fi/acknowledgements.html",
+    "summary": "The university publishes public credits for responsible vulnerability disclosures.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://security.utu.fi/",
+    "summary": "The official contact page explicitly accepts vulnerability reports by email.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed pages do not state reward terms.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The reporting guidance is brief and provides no detailed eligibility or safe-harbor policy.",
+    "Public credit is not guaranteed."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Responsible vulnerability disclosure acknowledgements",
+      "url": "https://security.utu.fi/acknowledgements.html",
+      "publisher": "University of Turku",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Cybersecurity contacts",
+      "url": "https://security.utu.fi/",
+      "publisher": "University of Turku",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

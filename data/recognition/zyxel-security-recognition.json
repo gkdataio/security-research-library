@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "zyxel-security-recognition",
+  "organization": "Zyxel Networks",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.zyxel.com/global/en/support/security-hall-of-fame",
+    "summary": "Zyxel publishes centralized contributor acknowledgments linked to security advisories.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.zyxel.com/global/en/support/security-vulnerability",
+    "summary": "The reporting page gives direct security-team email and an optional encryption key.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The reporting policy explicitly excludes bug bounty and reward programs.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Reports must be complete and written in English under current eligibility requirements.",
+    "Public credit does not guarantee acceptance of a future report."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Security Hall of Fame",
+      "url": "https://www.zyxel.com/global/en/support/security-hall-of-fame",
+      "publisher": "Zyxel Networks",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Report a Security Vulnerability",
+      "url": "https://www.zyxel.com/global/en/support/security-vulnerability",
+      "publisher": "Zyxel Networks",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "disclosure",
+      "title": "PSIRT Policy",
+      "url": "https://www.zyxel.com/global/en/support/security-psirt-policy",
+      "publisher": "Zyxel Networks",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

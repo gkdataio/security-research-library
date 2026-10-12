@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "surf-security-recognition",
+  "organization": "SURF",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.surf.nl/en/hall-of-fame-0",
+    "summary": "First valid reporters of previously unknown qualifying vulnerabilities receive public credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.surf.nl/en/coordinated-vulnerability-disclosure",
+    "summary": "SURF publishes a direct reporting mailbox and requests encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Rewards may be offered case by case; neither compensation nor its form is guaranteed.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy expressly does not invite active scanning.",
+    "Keep findings confidential until resolved; trivial findings are excluded."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.surf.nl/en/hall-of-fame-0",
+      "publisher": "SURF",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Coordinated Vulnerability Disclosure",
+      "url": "https://www.surf.nl/en/coordinated-vulnerability-disclosure",
+      "publisher": "SURF",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

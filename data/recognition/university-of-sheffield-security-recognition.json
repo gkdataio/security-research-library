@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "id": "university-of-sheffield-security-recognition",
+  "organization": "University of Sheffield",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+    "summary": "The university publishes public credit where appropriate under its disclosure guidance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+    "summary": "The vulnerability-disclosure section provides a direct Information Security email route.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes bounty and financial rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Stop after the first finding and request permission to continue; automated scanning and fuzzing are prohibited.",
+    "The public vulnerability policy was reviewed; linked internal policies require login and were not accessed.",
+    "Incident reporting has separate live-contact instructions, distinct from vulnerability email reports."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security and vulnerability disclosure",
+      "url": "https://sheffield.ac.uk/it-services/security-vulnerability-disclosure",
+      "publisher": "University of Sheffield",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

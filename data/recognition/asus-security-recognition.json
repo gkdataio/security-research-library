@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "asus-security-recognition",
+  "organization": "ASUS",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.asus.com/security-advisory",
+    "summary": "ASUS publishes a central Hall of Fame for security contributors.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.asus.com/security-advisory",
+    "summary": "The full policy links ASUS's own vulnerability-reporting form.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy says requests for vulnerability-related compensation will not be considered.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The form itself could not be read; its first-party route is documented by the reviewed policy.",
+    "Reports must remain confidential; the policy prohibits unauthorized access or modification."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security Advisory, disclosure policy and Hall of Fame",
+      "url": "https://www.asus.com/security-advisory",
+      "publisher": "ASUS",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

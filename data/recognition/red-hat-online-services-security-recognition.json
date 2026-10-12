@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "red-hat-online-services-security-recognition",
+  "organization": "Red Hat online services",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://access.redhat.com/articles/66234",
+    "summary": "Responsible privately reported security issues may receive consent-based public credit at Red Hat's discretion.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://access.redhat.com/articles/66234",
+    "summary": "The online-services policy provides a dedicated direct email route and encryption guidance.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This entry concerns online services, not separate product-advisory credits.",
+    "Third-party-operated branded services may receive credit under the other provider's rules."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Vulnerability Acknowledgements for Red Hat online services",
+      "url": "https://access.redhat.com/articles/66234",
+      "publisher": "Red Hat online services",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

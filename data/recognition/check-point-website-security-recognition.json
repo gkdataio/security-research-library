@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "check-point-website-security-recognition",
+  "organization": "Check Point website disclosures",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.checkpoint.com/white-hat/",
+    "summary": "The central acknowledgment list specifically credits responsible website-related disclosures.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.checkpoint.com/security-issue/",
+    "summary": "The Security Response Team accepts direct email; a first-party form is also available.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed pages do not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "This entry describes website-related recognition, not all product-advisory credits.",
+    "No detailed public-credit entitlement is stated."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Responsible website-disclosure acknowledgments",
+      "url": "https://www.checkpoint.com/white-hat/",
+      "publisher": "Check Point website disclosures",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Report a Security Issue",
+      "url": "https://www.checkpoint.com/security-issue/",
+      "publisher": "Check Point website disclosures",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

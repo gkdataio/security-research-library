@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "opentext-security-recognition",
+  "organization": "OpenText",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+    "summary": "OpenText publishes annual public credits for reports helping improve security.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+    "summary": "The acknowledgment page provides direct email for website, product and service reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed guidance does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The short guidance does not establish detailed credit eligibility or guaranteed recognition.",
+    "Encryption is offered for critical issues; customers also have a support route."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Security Acknowledgements and reporting guidance",
+      "url": "https://www.opentext.com/ca/about/security-acknowledgements",
+      "publisher": "OpenText",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

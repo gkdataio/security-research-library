@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "razorpay-security-recognition",
+  "organization": "Razorpay",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://razorpay.com/hall-of-fame/",
+    "summary": "Verified and fixed reports may receive public credit with the reporter's consent.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://razorpay.com/responsible-disclosure/",
+    "summary": "The policy provides direct email reporting with specific subject and formatting requirements.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Monetary compensation is expressly unavailable; discretionary branded gifts may be offered.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Automated tools and unapproved public disclosure are prohibited by the policy.",
+    "Recognition requires following the current reporting instructions."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://razorpay.com/hall-of-fame/",
+      "publisher": "Razorpay",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://razorpay.com/responsible-disclosure/",
+      "publisher": "Razorpay",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

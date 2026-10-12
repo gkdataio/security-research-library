@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "efficy-security-recognition",
+  "organization": "Efficy Group",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.efficy.com/group/hall-of-fame/",
+    "summary": "Validated, responsibly handled reports may receive public credit with explicit consent.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.efficy.com/sites/default/files/2025-08/ISEC-14-Responsible-Disclosure-Policy.pdf",
+    "summary": "The official policy gives a direct security-team reporting address.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The Hall page says the group does not operate a paid bounty program.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The group is counted once, including its covered acquired brands.",
+    "Coordinate disclosure and follow the linked policy's confidentiality conditions."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.efficy.com/group/hall-of-fame/",
+      "publisher": "Efficy Group",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://www.efficy.com/sites/default/files/2025-08/ISEC-14-Responsible-Disclosure-Policy.pdf",
+      "publisher": "Efficy Group",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

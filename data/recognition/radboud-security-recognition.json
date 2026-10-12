@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "id": "radboud-security-recognition",
+  "organization": "Radboud University",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+    "summary": "First responsible reporters of valid important findings may enter the public Hall of Fame.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+    "summary": "The policy supplies direct CERT email reporting.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The linked policy permits discretionary rewards for unknown problems but specifies no fixed amount or form.",
+    "source_ids": [
+      "terms"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Active scans require prior permission.",
+    "Keep findings confidential until resolved; the PDF's upload path does not establish its issue date."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Report vulnerability and Hall of Fame",
+      "url": "https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability",
+      "publisher": "Radboud University",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "terms",
+      "title": "Responsible Disclosure Policy",
+      "url": "https://www.ru.nl/sites/default/files/2023-10/Responsible-disclosure.pdf",
+      "publisher": "Radboud University",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}

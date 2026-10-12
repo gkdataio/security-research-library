@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "enbw-security-recognition",
+  "organization": "EnBW",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.enbw.com/cert/hall-of-fame-1.html",
+    "summary": "Confirmed qualifying reports may receive public Hall of Fame credit with consent.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.enbw.com/cert/contact.html",
+    "summary": "EnBW-CERT publishes direct email reporting and prefers encryption.",
+    "source_ids": [
+      "reporting"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "The reviewed disclosure policy does not promise monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:02:10Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The web PDF reader failed; the complete official PDF was downloaded and its text reviewed.",
+    "Coordinate publication with EnBW and keep details confidential until remediation."
+  ],
+  "sources": [
+    {
+      "id": "recognition",
+      "title": "Hall of Fame",
+      "url": "https://www.enbw.com/cert/hall-of-fame-1.html",
+      "publisher": "EnBW",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "policy",
+      "title": "Coordinated Vulnerability Disclosure Policy",
+      "url": "https://www.enbw.com/media/enbw-cert/cvd-policy-de-en.pdf",
+      "publisher": "EnBW",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "reporting",
+      "title": "EnBW-CERT Contact",
+      "url": "https://www.enbw.com/cert/contact.html",
+      "publisher": "EnBW",
+      "retrieved_at": "2026-10-12T18:02:10Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
