@@ -8,7 +8,7 @@
 **Authors:** Barry Pollard  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Identity  
+**Topics:** Web Foundations; Identity; Browser Security  
 **Defensive skills:** Review client isolation; Review identity lifecycle
 
 ## Original summary

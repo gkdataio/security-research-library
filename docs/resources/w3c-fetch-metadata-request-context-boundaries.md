@@ -8,7 +8,7 @@
 **Authors:** Mike West  
 **Resource type:** Technical Standard  
 **Version:** Working Draft, 21 September 2026  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
 
 ## Original summary

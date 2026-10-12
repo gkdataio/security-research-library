@@ -8,7 +8,7 @@
 **Authors:** Benjamin VanderSloot; Johann Hofmann; Anne van Kesteren  
 **Resource type:** Technical Standard  
 **Version:** Draft Community Group Report, 22 May 2026  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
 
 ## Original summary

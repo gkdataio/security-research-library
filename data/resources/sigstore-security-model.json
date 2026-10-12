@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0.0",
+  "id": "sigstore-security-model",
+  "title": "Sigstore Security Model",
+  "publisher": "Sigstore",
+  "authors": [],
+  "primary_url": "https://docs.sigstore.dev/about/security/",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "supply-chain",
+    "identity",
+    "verification"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "machine-identity-governance"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publicly accessible official documentation; no account required for reading."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:31:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Explains how identity-based artifact signing combines an OIDC issuer and subject, Fulcio’s short-lived certificates, a managed trust root, and Rekor’s auditable signature history. Identity certification, artifact integrity, and transparency are separate guarantees with different dependencies.",
+  "defensive_use": "Identify the expected publisher or workload and its issuer, document which certificate authority and log are trusted, and assign responsibility for detecting unexpected signing events. Trace the trust boundary from identity issuer through certificate and artifact to the consumer’s acceptance policy.",
+  "prerequisites": [
+    "Basic hashes and digital signatures",
+    "Familiarity with CI and workload identity"
+  ],
+  "sources": [
+    {
+      "id": "sigstore-security",
+      "url": "https://docs.sigstore.dev/about/security/",
+      "title": "Security Model",
+      "publisher": "Sigstore",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "A compromised identity issuer or certificate authority can issue unauthorized certificates. Transparency makes misuse detectable only when someone monitors the logs.",
+    "Signing is not a code-quality assessment; consumers still need an acceptance policy."
+  ]
+}

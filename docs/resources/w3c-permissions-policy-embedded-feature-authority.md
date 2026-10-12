@@ -8,7 +8,7 @@
 **Authors:** Ian Clelland; Ari Chivukula  
 **Resource type:** Technical Standard  
 **Version:** Editor's Draft, 22 September 2026  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
 
 ## Original summary

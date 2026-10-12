@@ -78,6 +78,22 @@
     {
       "id": "interpreter-boundaries",
       "title": "Interpreter Boundaries"
+    },
+    {
+      "id": "ctf-and-practice",
+      "title": "CTF and Controlled Practice"
+    },
+    {
+      "id": "api-security",
+      "title": "API Security"
+    },
+    {
+      "id": "browser-security",
+      "title": "Browser Security"
+    },
+    {
+      "id": "server-client-frameworks",
+      "title": "Server/Client Framework Security"
     }
   ]
 }

@@ -8,7 +8,7 @@
 **Authors:** danielroe  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Authorization  
+**Topics:** Web Foundations; Verification; Authorization; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review artifact isolation; Verify remediation evidence
 
 ## Original summary

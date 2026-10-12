@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; API Security; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review input trust boundaries; Review parsing and serialization; Review secrets containment
 
 ## Original summary

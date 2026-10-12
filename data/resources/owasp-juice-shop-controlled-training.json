@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-juice-shop-controlled-training",
+  "title": "OWASP Juice Shop: Controlled Web-Security Training",
+  "publisher": "OWASP Foundation",
+  "authors": [],
+  "primary_url": "https://owasp.org/projects/juice-shop",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "ctf-and-practice",
+    "web-foundations",
+    "authorization",
+    "identity"
+  ],
+  "skillset_ids": [
+    "controlled-practice",
+    "untrusted-input-handling",
+    "authorization-modeling",
+    "identity-lifecycle-review"
+  ],
+  "version": "v20.2.0",
+  "summary": "An intentionally insecure web training application with varied-difficulty challenges, optional guided tutorials, and coding exercises that connect a flaw to a suitable fix. Its learning materials link relevant mitigation guidance.",
+  "defensive_use": "Use an isolated, explicitly authorized training copy to study application trust boundaries and remediation choices. Pair conceptual findings with the linked defensive guidance rather than treating challenge success as evidence about a real service.",
+  "prerequisites": [
+    "A browser and basic HTTP/application concepts.",
+    "A suitable local training environment; the provider documents several installation options. No installation was performed."
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "The official overview identifies the application as free and open source under the MIT license. Self-hosting or third-party infrastructure can have separate costs; none were priced or provisioned."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication date is not stated on the reviewed resource pages."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Packaged training-application release dates are retained in the maintenance note, not treated as a dated document edition."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:30:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official project, overview, learning, and release-news pages reviewed. The news page lists training application v20.2.0 released August 10, 2026; no runtime verification was performed."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://owasp.org/projects/juice-shop",
+      "title": "OWASP Juice Shop",
+      "publisher": "OWASP Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "overview",
+      "url": "https://juice-shop.github.io/tab_overview.html",
+      "title": "Overview: OWASP Juice Shop",
+      "publisher": "OWASP Juice Shop",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "learning",
+      "url": "https://juice-shop.github.io/tab_learning.html",
+      "title": "Learning: OWASP Juice Shop",
+      "publisher": "OWASP Juice Shop",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "releases",
+      "url": "https://juice-shop.github.io/tab_news.html",
+      "title": "News: OWASP Juice Shop",
+      "publisher": "OWASP Juice Shop",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "This application is deliberately vulnerable. Keep exercises within an isolated training deployment you own or are explicitly authorized to use.",
+    "Tutorial availability and challenge counts vary by version. No public demo or local lab was tested.",
+    "Project leaders are identified on the official page; no individual authorship of the complete application is asserted here.",
+    "The release date belongs to the educational training application, not the original project-page publication.",
+    "Training application release v20.2.0 is dated 2026-08-10 in the official release source. It is retained as maintenance evidence; no dated document edition is asserted."
+  ],
+  "content_scope": "defensive_education"
+}

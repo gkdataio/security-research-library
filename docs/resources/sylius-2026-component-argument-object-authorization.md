@@ -8,7 +8,7 @@
 **Authors:** Man Yue Mo  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Web Foundations  
+**Topics:** Authorization; Web Foundations; API Security; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
 
 ## Original summary

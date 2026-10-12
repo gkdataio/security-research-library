@@ -6,7 +6,7 @@
   "authors": ["Camille Lamy"],
   "primary_url": "https://developer.chrome.com/blog/document-isolation-policy",
   "resource_type_id": "architecture-guide",
-  "topic_ids": ["web-foundations", "memory-safety"],
+  "topic_ids": ["web-foundations", "memory-safety", "browser-security"],
   "skillset_ids": ["browser-isolation-review", "integration-threat-modeling", "secrets-containment"],
   "version": null,
   "summary": "Explains per-document cross-origin isolation as a response to process-level information exposure that logical origin checks alone cannot prevent. Document Isolation Policy allows independently isolated frames while preserving popup communication. Subresource policy either requires explicit sharing permission or removes credentials from relevant cross-origin requests.",

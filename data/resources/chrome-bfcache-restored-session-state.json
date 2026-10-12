@@ -10,7 +10,8 @@
   "resource_type_id": "implementation-guide",
   "topic_ids": [
     "web-foundations",
-    "identity"
+    "identity",
+    "browser-security"
   ],
   "skillset_ids": [
     "browser-isolation-review",

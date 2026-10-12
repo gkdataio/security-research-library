@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; Web Foundations  
+**Topics:** Identity; Authorization; Web Foundations; Server/Client Framework Security  
 **Defensive skills:** Review security-token design; Model access-control invariants; Review input trust boundaries; Verify remediation evidence
 
 ## Original summary

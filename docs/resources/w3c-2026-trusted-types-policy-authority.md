@@ -8,7 +8,7 @@
 **Authors:** Krzysztof Kotowicz  
 **Resource type:** Technical Standard  
 **Version:** Working Draft, 23 June 2026  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security  
 **Defensive skills:** Review client isolation; Review input trust boundaries; Review parsing and serialization
 
 ## Original summary

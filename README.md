@@ -13,6 +13,10 @@ Source-backed bug bounty writeups, vulnerability disclosures, official learning 
 
 ### Browse the library
 
+Learning lanes: [CTF and controlled practice](docs/ctf-and-practice.md) · [API security](docs/resource-topics.md#topic-api-security) · [Browser security](docs/resource-topics.md#topic-browser-security) · [Server/client frameworks](docs/resource-topics.md#topic-server-client-frameworks)
+
+Browse across collections: [Resource type](docs/resource-types.md) · [Defensive skill](docs/skillsets.md) · [Publication year, including unknown dates](docs/publication-years.md)
+
 **[Browse by vulnerability type](docs/vulnerability-types.md)** — one starting point for broad families, XSS and its subtypes, SSRF and SSTI. Individual type pages separate award-backed reports, educational case studies and learning references into 2025–2026 publication groups, with historical and unknown-date examples clearly labeled. Broader security themes, related learning and conceptual diagrams remain available from the same hub.
 
 Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored](docs/vulnerabilities/stored-xss.md) · [Reflected / RXSS](docs/vulnerabilities/reflected-xss.md) · [Blind](docs/vulnerabilities/blind-xss.md)) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
@@ -44,7 +48,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 
 ## At a glance
 
-**Collection counts: October 7, 2026; program snapshots and report recency: October 3, 2026**
+**Learning counts: October 12, 2026; report counts: October 7, 2026; program snapshots and report recency: October 3, 2026**
 
 - **67 qualifying report records:** 56 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence
@@ -52,7 +56,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 - **516 currently visible public Bugcrowd programs** across Bug Bounty and Vulnerability Disclosure; 507 have published scope rows captured and nine have explicit gaps in the [Bugcrowd catalog](docs/bugcrowd-programs.md)
 - **850 distinct program pages** across the overlapping Bugcrowd and cross-platform catalogs; 808 have captured scope rows and 42 retain precise limitations in the [coverage audit](docs/program-scope-audit.md)
 - **1,156 distinct official directory program-page listings** in a separate [discovery queue](docs/program-discovery.md); listing metadata is not a full policy review
-- **144 educational resources** and **14 conceptual diagrams**, maintained separately from award reports
+- **155 educational resources** and **14 conceptual diagrams**, maintained separately from award reports
 - **USD 10,000 minimum reported award** per qualifying report or competition entry
 - **Publication coverage:** 25 within October 3, 2025–October 3, 2026; 33 older; 9 with unknown original publication dates
 
@@ -75,6 +79,8 @@ Curation currently prioritizes web-application security relevant to 2026: author
 | Find a disclosure and inspect its evidence | [Complete report index](#report-index), then the linked JSON record |
 | Study hypotheses, code review, contained exercises and evidence | [Research methodology](docs/research-methodology.md) |
 | Study defensive design principles by topic | [Defensive learning guide](docs/learning-guide.md) |
+| Choose a controlled learning exercise | [CTF and practice](docs/ctf-and-practice.md), with prerequisites and provider boundaries |
+| Browse by format, skill or original publication year | [Resource types](docs/resource-types.md) · [Defensive skills](docs/skillsets.md) · [Publication years](docs/publication-years.md) |
 | Find standards, documentation, and controlled training | [Official learning resources](docs/resources.md) |
 | Understand a security boundary visually | [Visual guide](docs/visual-theory.md), with SVGs, source graphs, and evidence links |
 | Build a local catalog or analysis | [JSON exports and schemas](#use-the-json) |
@@ -90,6 +96,11 @@ Curation currently prioritizes web-application security relevant to 2026: author
 - [Parser contracts and memory safety](docs/learning-guide.md#5-parser-contracts-and-memory-safety)
 - [Approval and concurrency integrity](docs/learning-guide.md#1-approval-and-concurrency-integrity)
 - [Browser permission and consent lifecycle](docs/learning-guide.md#8-browser-permission-and-consent-lifecycle)
+- [HTTP message-boundary consistency](docs/learning-guide.md#9-http-message-boundary-consistency)
+- [Multi-app authorization context](docs/learning-guide.md#10-multi-app-authorization-context)
+- [Coding-tool execution boundaries](docs/learning-guide.md#11-coding-tool-execution-boundaries)
+- [Workload-to-host trust boundaries](docs/learning-guide.md#12-workload-to-host-trust-boundaries)
+- [Failure-path privacy and authorization](docs/learning-guide.md#13-failure-path-privacy-and-authorization)
 
 ## See the boundaries
 
@@ -142,6 +153,7 @@ Canonical records live in `data/`; files in `exports/` are deterministic, genera
 - **Public Bugcrowd program export:** the October 3 directory pass found all 293 Bug Bounty and 223 Vulnerability Disclosure entries advertised on the public listing feed. The [combined visual catalog](docs/bugcrowd-programs.md) and [JSON export](exports/bugcrowd-programs.json) cover all 516 current listings; 507 have source-linked published scope rows and nine have explicit missing-row or fetch-failure states. This is a dated public-directory snapshot, not a claim about private or unlisted programs.
 - **Scope coverage audit:** reconciles 627 bounty candidates and 516 Bugcrowd listings with 293 overlapping pages. The [visual audit](docs/program-scope-audit.md) and [JSON audit](exports/program-scope-audit.json) cover 850 distinct pages: 808 with captured scope rows and 42 unresolved gaps. Repeated source rows were collapsed while preserving their counts; 77 such rows appeared across the two canonical capture files. The audit checks generated page row counts and retains official-page gap reviews. These counts describe dated public snapshots and do not establish full policy verification or current authorization.
 - **Resource export:** includes `resources[]`, `diagrams[]`, resource taxonomy, and skillset definitions. Asset paths are relative to this repository. Read type IDs from the exported taxonomy. Official maintainer security advisories and security-release notices now use `maintainer-advisory`; researcher articles and academic papers remain `research-paper`. Classification follows the primary publication, not corroborating sources. Existing `research-paper` filters intentionally return fewer records; select both IDs to retain the former combined research/disclosure grouping. This taxonomy correction preserves record IDs, evidence, timestamps and schema versions.
+- **Learning navigation:** [Topic boundaries and generated browse rules](docs/learning-navigation.md). Resource types retain their existing IDs; new learning topics do not change report categories. The general year index uses original publication dates only and preserves unknowns. Category crosswalk version `1.1.0` adds optional explicit `resource_ids`; the updated schema still accepts `1.0.0` crosswalks without these selections.
 - **Taxonomies:** [Report categories and defensive skills](data/taxonomy.json) · [Resource types and topics](data/resource-taxonomy.json)
 - **Candidate queues:** [Report candidates](data/candidates.json) · [Resource candidates](data/resource-candidates.json). These are research leads and exclusion decisions, not included records.
 - **Diagram assets:** [diagrams/](diagrams/) contains SVG, Mermaid (`.mmd`), and Graphviz (`.dot`) companions. Both text formats come from the canonical graph; the SVGs are rendered with Graphviz, not a Mermaid engine.

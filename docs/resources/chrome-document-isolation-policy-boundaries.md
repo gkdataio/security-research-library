@@ -8,7 +8,7 @@
 **Authors:** Camille Lamy  
 **Resource type:** Architecture Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Memory Safety and Process Isolation  
+**Topics:** Web Foundations; Memory Safety and Process Isolation; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Review secrets containment
 
 ## Original summary

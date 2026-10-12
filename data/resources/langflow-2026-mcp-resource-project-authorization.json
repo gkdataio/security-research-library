@@ -9,7 +9,8 @@
   "topic_ids": [
     "ai-security",
     "authorization",
-    "identity"
+    "identity",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

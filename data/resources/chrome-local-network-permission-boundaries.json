@@ -9,7 +9,8 @@
   "primary_url": "https://developer.chrome.com/blog/local-network-access",
   "resource_type_id": "architecture-guide",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "browser-security"
   ],
   "skillset_ids": [
     "browser-isolation-review",

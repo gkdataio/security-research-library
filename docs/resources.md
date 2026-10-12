@@ -1,6 +1,10 @@
 # Official learning resources
 
-[Browse all readable resource records](resource-index.md)
+[Browse all readable resource records](resource-index.md) · [By type](resource-types.md) · [By skill](skillsets.md) · [By publication year](publication-years.md)
+
+Learning lanes: [CTF and controlled practice](ctf-and-practice.md) · [API security](resource-topics.md#topic-api-security) · [Browser security](resource-topics.md#topic-browser-security) · [Server/client frameworks](resource-topics.md#topic-server-client-frameworks)
+
+Foundations: [Software supply chain](resource-topics.md#topic-supply-chain) · [Memory safety and process isolation](resource-topics.md#topic-memory-safety)
 
 This collection is separate from paid-award reports. It contains official educational references, with original summaries, source review dates, version information where known, and clearly marked editorial prerequisites.
 

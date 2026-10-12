@@ -8,7 +8,7 @@
 **Authors:** gustavovalverde  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization  
+**Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
 
 ## Original summary

@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Business Logic and State Integrity; Web Foundations  
+**Topics:** Authorization; Business Logic and State Integrity; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Review input trust boundaries
 
 ## Original summary

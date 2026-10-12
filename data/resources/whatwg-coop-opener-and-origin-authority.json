@@ -8,7 +8,8 @@
   "resource_type_id": "technical-standard",
   "topic_ids": [
     "web-foundations",
-    "authorization"
+    "authorization",
+    "browser-security"
   ],
   "skillset_ids": [
     "browser-isolation-review",

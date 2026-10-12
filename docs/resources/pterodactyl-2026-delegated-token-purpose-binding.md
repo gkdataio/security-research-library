@@ -8,7 +8,7 @@
 **Authors:** anthonyphysgun  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Business Logic and State Integrity; Identity  
+**Topics:** Authorization; Business Logic and State Integrity; Identity; API Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Review security-token design; Threat-model integrations
 
 ## Original summary

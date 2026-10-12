@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0.0",
+  "id": "overthewire-natas-web-security-practice",
+  "title": "OverTheWire Natas: Server-Side Web Security Practice",
+  "publisher": "OverTheWire",
+  "authors": [],
+  "primary_url": "https://overthewire.org/wargames/natas/",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "ctf-and-practice",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "controlled-practice"
+  ],
+  "version": null,
+  "summary": "A level-based OverTheWire exercise series introducing server-side web-security concepts through intentionally constructed training websites. The official progression suggests Unix/Linux foundations before choosing this web-security branch.",
+  "defensive_use": "Study how a training application's trust and access boundaries should work. Keep notes about the expected control and defensive principle, without reproducing challenge credentials or publishing solutions.",
+  "prerequisites": [
+    "A web browser and basic familiarity with web requests.",
+    "Unix/Linux foundations are helpful; the provider's overall sequence places Bandit before Natas."
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "OverTheWire's rules state that its community-hosted educational resources are free. Actual level access and service availability were not tested."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication date is not stated on the reviewed resource pages."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:32:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official overview, recommended order, and usage rules reviewed. The provider-linked website repository has a June 4, 2026 maintenance commit; this does not date every lesson. No level was accessed or tested."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://overthewire.org/wargames/natas/",
+      "title": "OverTheWire: Natas",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "learning-order",
+      "url": "https://overthewire.org/wargames/",
+      "title": "OverTheWire: Wargames",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "rules",
+      "url": "https://overthewire.org/rules/",
+      "title": "OverTheWire: Rules",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "website-provenance",
+      "url": "https://overthewire.org/information/website.html",
+      "title": "OverTheWire: Editing this website",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "url": "https://github.com/OverTheWireOrg/OverTheWire-website/commit/e8abb922f24a9acccd142486b91c2e710909fd41",
+      "title": "OverTheWire website maintenance, June 4, 2026",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Use only the published game environments under the current rules; access to a training game is not general testing authorization.",
+    "The provider prohibits publishing game credentials and restricts redistribution of its materials. This record contains an original description only.",
+    "No dated release or page-update history is displayed. The official wargame index listed Natas online at review; this is not an uptime or maintenance guarantee."
+  ],
+  "content_scope": "defensive_education"
+}

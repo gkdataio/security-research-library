@@ -7,12 +7,19 @@
   "primary_url": "https://portswigger.net/web-security",
   "resource_type_id": "training-lab",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "api-security",
+    "ctf-and-practice",
+    "identity",
+    "authorization",
+    "business-logic",
+    "browser-security"
   ],
   "skillset_ids": [
     "authorization-modeling",
     "identity-lifecycle-review",
-    "concurrency-reasoning"
+    "concurrency-reasoning",
+    "controlled-practice"
   ],
   "version": null,
   "summary": "Free web-security lessons and deliberately designed interactive training environments. Covers authentication, access control, business logic, API security, and other application-security fundamentals.",

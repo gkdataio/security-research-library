@@ -11,7 +11,8 @@
   "topic_ids": [
     "web-foundations",
     "verification",
-    "cloud-security"
+    "cloud-security",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "secure-parser-review",

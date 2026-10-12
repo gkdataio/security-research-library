@@ -10,7 +10,8 @@
   "resource_type_id": "implementation-guide",
   "topic_ids": [
     "authorization",
-    "business-logic"
+    "business-logic",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

@@ -8,7 +8,7 @@
 **Authors:** Bas Alberts  
 **Resource type:** Research Paper  
 **Version:** GHSL-2026-152 / GHSA-j7xr-4g94-r9h3  
-**Topics:** Authorization; Web Foundations  
+**Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Review secure error behavior; Verify remediation evidence
 
 ## Original summary

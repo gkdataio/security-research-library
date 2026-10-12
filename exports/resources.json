@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "dataset": "security-research-library-resources",
-  "as_of": "2026-10-07",
+  "as_of": "2026-10-12",
   "repository_url": "https://github.com/gkdataio/security-research-library",
   "scope": "Official defensive education and conceptual models; separate from qualifying award reports",
   "counts": {
-    "resources": 144,
+    "resources": 155,
     "diagrams": 14
   },
   "taxonomy": {
@@ -88,6 +88,22 @@
       {
         "id": "interpreter-boundaries",
         "title": "Interpreter Boundaries"
+      },
+      {
+        "id": "ctf-and-practice",
+        "title": "CTF and Controlled Practice"
+      },
+      {
+        "id": "api-security",
+        "title": "API Security"
+      },
+      {
+        "id": "browser-security",
+        "title": "Browser Security"
+      },
+      {
+        "id": "server-client-frameworks",
+        "title": "Server/Client Framework Security"
       }
     ]
   },
@@ -196,6 +212,11 @@
       "id": "error-response-design",
       "title": "Review secure error behavior",
       "defensive_objective": "Verify that failure responses minimize disclosure and that fallback paths preserve the original authorization context"
+    },
+    {
+      "id": "controlled-practice",
+      "title": "Learn through controlled practice",
+      "defensive_objective": "Plan and document exercises in provider-designated or isolated learning environments, then explain the security boundary and defensive lesson without extending activity to unrelated systems"
     }
   ],
   "resources": [
@@ -208,7 +229,9 @@
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "encoding-invariant-review",
@@ -299,7 +322,9 @@
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -405,7 +430,9 @@
       "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "encoding-invariant-review",
@@ -609,7 +636,8 @@
       "resource_type_id": "architecture-guide",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -786,7 +814,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "integration-threat-modeling",
@@ -868,7 +898,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -961,7 +992,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -1040,7 +1072,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -1661,7 +1694,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -1848,7 +1882,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "web-foundations",
-        "identity"
+        "identity",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -1939,7 +1974,8 @@
       "resource_type_id": "architecture-guide",
       "topic_ids": [
         "web-foundations",
-        "memory-safety"
+        "memory-safety",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -2018,7 +2054,8 @@
       "primary_url": "https://developer.chrome.com/blog/local-network-access",
       "resource_type_id": "architecture-guide",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -2207,7 +2244,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -2406,6 +2444,187 @@
           ]
         }
       ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "cpp-core-guidelines-bounds-lifetime",
+      "title": "C++ Core Guidelines: Bounds and Lifetime Safety",
+      "publisher": "C++ Core Guidelines project",
+      "authors": [
+        "Bjarne Stroustrup",
+        "Herb Sutter"
+      ],
+      "primary_url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "memory-safety"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "secure-parser-review"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The original publication date was not established from the reviewed living document."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No dated educational-resource edition release was established."
+        },
+        "source_displayed": {
+          "value": "2026-06-14",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "cpp-guidelines",
+          "note": "Date displayed at the head of the living document; not asserted to be original publication or an edition release."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Reviewed the living document displaying 2026-06-14, especially Pro.bounds, Pro.lifetime, and GSL.view. No original publication date was established."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Separates three mutually supporting properties: objects must be used with valid types, accesses must stay inside their allocated bounds, and references must not outlive the objects they designate. The bounds and lifetime profiles translate these ideas into interface and ownership guidance, including range-carrying views and avoiding potentially invalid pointers.",
+      "defensive_use": "During parser design review, document extent, ownership, and validity duration together. Identify where array-to-pointer conversion discards bounds and where views may outlive storage. Use the Pro.bounds, Pro.lifetime, and GSL.view sections to reason about these component-boundary contracts.",
+      "prerequisites": [
+        "C++ pointers and references",
+        "Containers and RAII"
+      ],
+      "sources": [
+        {
+          "id": "cpp-guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines",
+          "title": "C++ Core Guidelines",
+          "publisher": "C++ Core Guidelines project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Bjarne Stroustrup and Herb Sutter are credited by the source as editors.",
+        "These evolving project guidelines are not the normative ISO language standard or an automatic safety guarantee. Their guarantees depend on enforcement and surrounding code.",
+        "The document distinguishes bounds-checked GSL span from std::span; do not infer that every span implementation checks bounds."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "cylab-security-academy-ctf-practice",
+      "title": "CyLab Security Academy: Self-Paced CTF Learning",
+      "publisher": "Carnegie Mellon University",
+      "authors": [],
+      "primary_url": "https://cylabacademy.org/",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "ctf-and-practice",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "controlled-practice",
+        "untrusted-input-handling",
+        "defensive-evidence-writing"
+      ],
+      "version": null,
+      "summary": "Carnegie Mellon University's free CTF learning platform, continuing the former picoCTF learning service. Topic- and difficulty-organized challenges and curated learning paths introduce computing and security concepts, including web security.",
+      "defensive_use": "Use the provider's deliberately constructed exercises to learn security concepts and explain the assumptions behind a result. Treat challenge completion as practice, then connect observations to secure design and bounded evidence.",
+      "prerequisites": [
+        "The publisher states that no experience is needed."
+      ],
+      "prerequisites_basis": "publisher_explicit",
+      "access": {
+        "cost": "free",
+        "note": "The official site states that the learning platform is free. Login and sign-up links are provided; account creation, eligibility, and signed-in challenge access were not tested."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date is not stated on the reviewed resource pages."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:30:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Current official learning pages and the dated platform-transition notice were reviewed. The notice records May 8, 2026 and an August 23, 2026 update; neither dates the original curriculum. No exercises were run."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://cylabacademy.org/",
+          "title": "CyLab Security Academy",
+          "publisher": "Carnegie Mellon University",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "about",
+          "url": "https://cylabacademy.org/about.html",
+          "title": "About CyLab Security Academy",
+          "publisher": "Carnegie Mellon University",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "transition",
+          "url": "https://status.cylabacademy.org/issues/2026-05-08-academy/",
+          "title": "picoctf.org is now CyLab Security Academy",
+          "publisher": "CyLab Security Academy",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Practice stays within the provider's assigned exercises and current rules; this listing grants no authorization for other systems.",
+        "The May 8, 2026 platform-transition announcement is not the original publication date of the learning material.",
+        "The public learners subpage failed to load during this review; the current homepage, About page, and official transition notice were reviewed."
+      ],
+      "content_scope": "defensive_education"
     },
     {
       "schema_version": "1.0.0",
@@ -2831,7 +3050,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -3028,7 +3248,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -3171,7 +3392,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -3365,6 +3587,85 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "github-artifact-attestations",
+      "title": "GitHub Artifact Attestations: Provenance and Consumer Policy",
+      "publisher": "GitHub",
+      "authors": [],
+      "primary_url": "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "supply-chain",
+        "identity",
+        "verification"
+      ],
+      "skillset_ids": [
+        "pipeline-trust-modeling",
+        "dependency-provenance"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Shows the build context carried by signed artifact claims: workflow, repository, organization, environment, commit, triggering event, and OIDC information. It connects those claims to consumer-defined acceptance policy and explains how an SBOM can accompany provenance.",
+      "defensive_use": "Separate the question of where an artifact came from from whether its source and build process meet release requirements. Compare the expected build identity with recorded provenance before accepting a release. Treat claims from build infrastructure as evidence that still needs an explicit consumer policy.",
+      "prerequisites": [
+        "Git commits and repositories",
+        "Basic CI workflows",
+        "Provenance and digital-signature concepts"
+      ],
+      "sources": [
+        {
+          "id": "github-attestations",
+          "url": "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
+          "title": "Artifact attestations",
+          "publisher": "GitHub",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "Generating attestations alone provides no benefit without verification, and attestations do not establish that code is secure.",
+        "Public repository attestations use public transparency infrastructure; GitHub’s private instance has no transparency log and only federates with GitHub Actions.",
+        "The page’s SLSA discussion explicitly refers to v1.0. Its claims should not be silently recast as v1.2 certification."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "google-aip-151-operation-completion-integrity",
       "title": "Google long-running operations: cancellation requests and completion evidence",
       "publisher": "Google",
@@ -3373,7 +3674,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "business-logic",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "concurrency-reasoning",
@@ -3476,7 +3778,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "business-logic",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "concurrency-reasoning",
@@ -3577,7 +3880,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -3666,7 +3970,8 @@
       "topic_ids": [
         "authorization",
         "business-logic",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -3879,7 +4184,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -3987,7 +4293,8 @@
       "topic_ids": [
         "identity",
         "authorization",
-        "business-logic"
+        "business-logic",
+        "api-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -4366,7 +4673,8 @@
       "topic_ids": [
         "ai-security",
         "authorization",
-        "identity"
+        "identity",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -4448,7 +4756,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -4728,7 +5037,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "ai-security",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -5280,7 +5590,8 @@
       "topic_ids": [
         "ai-security",
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security"
       ],
       "skillset_ids": [
         "ai-authority-boundaries",
@@ -5387,7 +5698,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "authorization",
-        "business-logic"
+        "business-logic",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -5492,7 +5804,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -5857,7 +6170,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "identity",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -6342,7 +6656,9 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -6432,7 +6748,9 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "api-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -6795,6 +7113,124 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "nist-ssdf-1-1-dependency-governance",
+      "title": "NIST SSDF 1.1: Component Governance and Release Provenance",
+      "publisher": "NIST",
+      "authors": [
+        "Murugiah Souppaya",
+        "Karen Scarfone",
+        "Donna Dodson"
+      ],
+      "primary_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "supply-chain",
+        "verification"
+      ],
+      "skillset_ids": [
+        "dependency-provenance",
+        "pipeline-trust-modeling"
+      ],
+      "version": "SSDF 1.1 (NIST SP 800-218)",
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": "2022-02-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "nist-ssdf-index",
+          "note": "NIST’s project publication index explicitly lists the release date of the final SP 800-218."
+        },
+        "version_released": {
+          "value": "2022-02-03",
+          "precision": "day",
+          "basis": "explicit",
+          "source_id": "nist-ssdf-index",
+          "note": "Release date of this SSDF 1.1 resource edition, not a software patch date."
+        },
+        "source_displayed": {
+          "value": "2022-02",
+          "precision": "month",
+          "basis": "explicit",
+          "source_id": "nist-ssdf-landing",
+          "note": "The resource landing page displays Date Published: February 2022."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": false,
+        "status": "primary_source_reviewed",
+        "note": "The final SSDF 1.1 resource and current NIST publication index were reviewed. The index separately lists SSDF 1.2 as an Initial Public Draft."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Provides lifecycle practices for acquiring, maintaining, and assessing software components. PW.4.1 and PW.4.4 cover component selection, organizational requirements, ongoing vulnerability and maintenance status, and integrity. PS.3.2 connects release records to component provenance.",
+      "defensive_use": "Give each dependency an owner, acceptance requirements, provenance records, and a plan for maintenance or replacement. Revisit these decisions throughout the component’s lifetime. Make the boundary between external supplier evidence and the organization’s own release decision explicit.",
+      "prerequisites": [
+        "Basic dependency management",
+        "Software development lifecycle and release familiarity"
+      ],
+      "sources": [
+        {
+          "id": "nist-ssdf-landing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+          "title": "Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary",
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "nist-ssdf-pdf",
+          "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+          "title": "Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        },
+        {
+          "id": "nist-ssdf-index",
+          "url": "https://csrc.nist.gov/projects/ssdf/publications",
+          "title": "Secure Software Development Framework: Publications",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        },
+        {
+          "id": "nist-ssdf-draft",
+          "url": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
+          "title": "Secure Software Development Framework (SSDF) Version 1.2: Initial Public Draft",
+          "publisher": "NIST",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "This is a risk-based high-level framework, not a product certification or an exhaustive technical recipe.",
+        "At review, NIST lists SSDF 1.1 as Final and SSDF 1.2 as an Initial Public Draft dated 2025-12-17. The draft’s status and dates must not be merged into this edition’s record."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "nuxt-2026-island-component-selection-authority",
       "title": "Nuxt: island data must not acquire component-selection authority",
       "publisher": "Nuxt",
@@ -6805,7 +7241,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "integration-threat-modeling",
@@ -6888,7 +7326,8 @@
       "topic_ids": [
         "web-foundations",
         "verification",
-        "authorization"
+        "authorization",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -7271,7 +7710,8 @@
       "topic_ids": [
         "identity",
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -7630,7 +8070,8 @@
       "resource_type_id": "technical-standard",
       "topic_ids": [
         "identity",
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -7778,6 +8219,248 @@
         "Requires a webhook previously configured by an administrator, followed by account deletion and a matching document event. The demonstrated deployment used 0.86.0; the maintainer lists versions through 1.7.1 as affected.",
         "Continued delivery was demonstrated locally; no production incident, measured duration or customer exposure is established. Persistent exposure is the report’s inference from absent expiry and revalidation.",
         "Published June 6, 2026 by tommoor, with dizconnectz credited as reporter. Publication does not establish the release date of 1.8.0. Learning prerequisites are editorial."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "overthewire-bandit-unix-foundations",
+      "title": "OverTheWire Bandit: Unix/Linux Foundations",
+      "publisher": "OverTheWire",
+      "authors": [],
+      "primary_url": "https://overthewire.org/wargames/bandit/",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "ctf-and-practice"
+      ],
+      "skillset_ids": [
+        "controlled-practice"
+      ],
+      "version": null,
+      "summary": "An OverTheWire wargame for absolute beginners, introducing Unix/Linux basics through a sequence of contained exercises. The official overview encourages reading documentation and learning command-line concepts before progressing to other wargames.",
+      "defensive_use": "Build foundational command-line literacy in the designated training game. Record what each exercise teaches and the limits of the environment before relating those concepts to defensive administration or later web-security study.",
+      "prerequisites": [
+        "The publisher describes Bandit as suitable for absolute beginners."
+      ],
+      "prerequisites_basis": "publisher_explicit",
+      "access": {
+        "cost": "free",
+        "note": "OverTheWire rules identify its hosted educational resources as free. Shell connections and game access were not tested."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication is not stated on the reviewed page."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "The website maintenance date is not a publication or revision date for this course."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:32:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official overview and rules reviewed. The provider-linked website repository has a June 4, 2026 maintenance commit. This establishes website maintenance, not the last modification of every lesson. No exercises were run."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://overthewire.org/wargames/bandit/",
+          "title": "OverTheWire: Bandit",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "learning-order",
+          "url": "https://overthewire.org/wargames/",
+          "title": "OverTheWire: Wargames",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "rules",
+          "url": "https://overthewire.org/rules/",
+          "title": "OverTheWire: Rules",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "website-provenance",
+          "url": "https://overthewire.org/information/website.html",
+          "title": "OverTheWire: Editing this website",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "maintenance",
+          "url": "https://github.com/OverTheWireOrg/OverTheWire-website/commit/e8abb922f24a9acccd142486b91c2e710909fd41",
+          "title": "OverTheWire website maintenance, June 4, 2026",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Use only the designated game environment within current provider rules; the listing grants no authorization for other systems.",
+        "Provider rules prohibit publishing game credentials and restrict redistribution of training materials. This record contains an original description only.",
+        "The official index lists Bandit online, but live service availability was not tested. No original publication or course revision date is reported."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "overthewire-natas-web-security-practice",
+      "title": "OverTheWire Natas: Server-Side Web Security Practice",
+      "publisher": "OverTheWire",
+      "authors": [],
+      "primary_url": "https://overthewire.org/wargames/natas/",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "ctf-and-practice",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "controlled-practice"
+      ],
+      "version": null,
+      "summary": "A level-based OverTheWire exercise series introducing server-side web-security concepts through intentionally constructed training websites. The official progression suggests Unix/Linux foundations before choosing this web-security branch.",
+      "defensive_use": "Study how a training application's trust and access boundaries should work. Keep notes about the expected control and defensive principle, without reproducing challenge credentials or publishing solutions.",
+      "prerequisites": [
+        "A web browser and basic familiarity with web requests.",
+        "Unix/Linux foundations are helpful; the provider's overall sequence places Bandit before Natas."
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "OverTheWire's rules state that its community-hosted educational resources are free. Actual level access and service availability were not tested."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date is not stated on the reviewed resource pages."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": null
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:32:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official overview, recommended order, and usage rules reviewed. The provider-linked website repository has a June 4, 2026 maintenance commit; this does not date every lesson. No level was accessed or tested."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://overthewire.org/wargames/natas/",
+          "title": "OverTheWire: Natas",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "learning-order",
+          "url": "https://overthewire.org/wargames/",
+          "title": "OverTheWire: Wargames",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "rules",
+          "url": "https://overthewire.org/rules/",
+          "title": "OverTheWire: Rules",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "website-provenance",
+          "url": "https://overthewire.org/information/website.html",
+          "title": "OverTheWire: Editing this website",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "maintenance",
+          "url": "https://github.com/OverTheWireOrg/OverTheWire-website/commit/e8abb922f24a9acccd142486b91c2e710909fd41",
+          "title": "OverTheWire website maintenance, June 4, 2026",
+          "publisher": "OverTheWire",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:32:00Z",
+          "supports": [
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "Use only the published game environments under the current rules; access to a training game is not general testing authorization.",
+        "The provider prohibits publishing game credentials and restricts redistribution of its materials. This record contains an original description only.",
+        "No dated release or page-update history is displayed. The official wargame index listed Natas online at review; this is not an uptime or maintenance guarantee."
       ],
       "content_scope": "defensive_education"
     },
@@ -8143,7 +8826,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -8289,6 +8973,125 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "owasp-juice-shop-controlled-training",
+      "title": "OWASP Juice Shop: Controlled Web-Security Training",
+      "publisher": "OWASP Foundation",
+      "authors": [],
+      "primary_url": "https://owasp.org/projects/juice-shop",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "ctf-and-practice",
+        "web-foundations",
+        "authorization",
+        "identity"
+      ],
+      "skillset_ids": [
+        "controlled-practice",
+        "untrusted-input-handling",
+        "authorization-modeling",
+        "identity-lifecycle-review"
+      ],
+      "version": "v20.2.0",
+      "summary": "An intentionally insecure web training application with varied-difficulty challenges, optional guided tutorials, and coding exercises that connect a flaw to a suitable fix. Its learning materials link relevant mitigation guidance.",
+      "defensive_use": "Use an isolated, explicitly authorized training copy to study application trust boundaries and remediation choices. Pair conceptual findings with the linked defensive guidance rather than treating challenge success as evidence about a real service.",
+      "prerequisites": [
+        "A browser and basic HTTP/application concepts.",
+        "A suitable local training environment; the provider documents several installation options. No installation was performed."
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "The official overview identifies the application as free and open source under the MIT license. Self-hosting or third-party infrastructure can have separate costs; none were priced or provisioned."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date is not stated on the reviewed resource pages."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Packaged training-application release dates are retained in the maintenance note, not treated as a dated document edition."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:30:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official project, overview, learning, and release-news pages reviewed. The news page lists training application v20.2.0 released August 10, 2026; no runtime verification was performed."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://owasp.org/projects/juice-shop",
+          "title": "OWASP Juice Shop",
+          "publisher": "OWASP Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "version"
+          ]
+        },
+        {
+          "id": "overview",
+          "url": "https://juice-shop.github.io/tab_overview.html",
+          "title": "Overview: OWASP Juice Shop",
+          "publisher": "OWASP Juice Shop",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "learning",
+          "url": "https://juice-shop.github.io/tab_learning.html",
+          "title": "Learning: OWASP Juice Shop",
+          "publisher": "OWASP Juice Shop",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "releases",
+          "url": "https://juice-shop.github.io/tab_news.html",
+          "title": "News: OWASP Juice Shop",
+          "publisher": "OWASP Juice Shop",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "This application is deliberately vulnerable. Keep exercises within an isolated training deployment you own or are explicitly authorized to use.",
+        "Tutorial availability and challenge counts vary by version. No public demo or local lab was tested.",
+        "Project leaders are identified on the official page; no individual authorship of the complete application is asserted here.",
+        "The release date belongs to the educational training application, not the original project-page publication.",
+        "Training application release v20.2.0 is dated 2026-08-10 in the official release source. It is retained as maintenance evidence; no dated document edition is asserted."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "owasp-llm-output-consumer-trust",
       "title": "OWASP LLM05:2025: generated-output consumer trust",
       "publisher": "OWASP Gen AI Security Project",
@@ -8297,7 +9100,8 @@
       "resource_type_id": "implementation-guide",
       "topic_ids": [
         "ai-security",
-        "web-foundations"
+        "web-foundations",
+        "browser-security"
       ],
       "skillset_ids": [
         "ai-authority-boundaries",
@@ -8870,7 +9674,8 @@
       "topic_ids": [
         "identity",
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "browser-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -9092,6 +9897,109 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "owasp-webgoat-controlled-training",
+      "title": "OWASP WebGoat: Web-Application Security Lessons",
+      "publisher": "OWASP Foundation",
+      "authors": [],
+      "primary_url": "https://owasp.org/projects/webgoat",
+      "resource_type_id": "training-lab",
+      "topic_ids": [
+        "ctf-and-practice",
+        "web-foundations"
+      ],
+      "skillset_ids": [
+        "controlled-practice",
+        "untrusted-input-handling"
+      ],
+      "version": "v2026.5",
+      "summary": "A deliberately insecure teaching application for learning common server-side web-application flaws. Its interactive lessons provide a controlled context for understanding security failures and the need for defensive controls.",
+      "defensive_use": "Study lesson concepts in an isolated local training setup, recording the relevant trust assumption and prevention principle. Use the material to improve secure-design reasoning without extending exercise activity to third-party systems.",
+      "prerequisites": [
+        "A web browser and the ability to run a local teaching application using a supported deployment option.",
+        "Basic HTTP and web-application concepts are helpful."
+      ],
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "OWASP identifies its educational resources as free. Local computing or optional hosting may involve separate costs; no environment was provisioned."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Original publication date is not stated on the reviewed resource pages."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "Packaged training-application release dates are retained in the maintenance note, not treated as a dated document edition."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:30:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official project guidance, README, and release metadata reviewed. The GitHub release API records v2026.5 published October 12, 2026 at 06:56:08 UTC. No runtime verification was performed."
+      },
+      "sources": [
+        {
+          "id": "primary",
+          "url": "https://owasp.org/projects/webgoat",
+          "title": "OWASP WebGoat",
+          "publisher": "OWASP Foundation",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "documentation",
+          "url": "https://github.com/WebGoat/WebGoat",
+          "title": "WebGoat: A deliberately insecure Web Application",
+          "publisher": "OWASP WebGoat",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "summary",
+            "prerequisites"
+          ]
+        },
+        {
+          "id": "release",
+          "url": "https://github.com/WebGoat/WebGoat/releases/tag/v2026.5",
+          "title": "WebGoat v2026.5",
+          "publisher": "OWASP WebGoat",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:30:00Z",
+          "supports": [
+            "version",
+            "dates"
+          ]
+        }
+      ],
+      "caveats": [
+        "The publisher warns that running WebGoat makes the host vulnerable, recommends disconnecting from the Internet, and notes that its default configuration binds to localhost.",
+        "Use only an isolated, explicitly authorized training environment. No application was installed, started, or tested.",
+        "The release date belongs to the educational training application, not the original project-page publication.",
+        "Prerequisites vary with the selected release and deployment method; consult current official documentation before setup.",
+        "Training application release v2026.5 is dated 2026-10-12 in the official release source. It is retained as maintenance evidence; no dated document edition is asserted."
+      ],
+      "content_scope": "defensive_education"
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "pac4j-2026-token-authenticity-enforcement",
       "title": "pac4j JWT validation: confidentiality does not establish authenticity",
       "publisher": "CodeAnt AI",
@@ -9193,7 +10101,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "browser-security"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -9322,7 +10231,8 @@
       "primary_url": "https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx",
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
-        "authorization"
+        "authorization",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -9599,12 +10509,19 @@
       "primary_url": "https://portswigger.net/web-security",
       "resource_type_id": "training-lab",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "api-security",
+        "ctf-and-practice",
+        "identity",
+        "authorization",
+        "business-logic",
+        "browser-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
         "identity-lifecycle-review",
-        "concurrency-reasoning"
+        "concurrency-reasoning",
+        "controlled-practice"
       ],
       "version": null,
       "summary": "Free web-security lessons and deliberately designed interactive training environments. Covers authentication, access control, business logic, API security, and other application-security fundamentals.",
@@ -9771,7 +10688,8 @@
       "resource_type_id": "technical-standard",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -9945,7 +10863,8 @@
       "topic_ids": [
         "authorization",
         "business-logic",
-        "identity"
+        "identity",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -10249,7 +11168,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "secure-parser-review",
@@ -10344,7 +11265,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "verification"
+        "verification",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "secure-parser-review",
@@ -10440,7 +11363,8 @@
       "topic_ids": [
         "identity",
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "browser-security"
       ],
       "skillset_ids": [
         "identity-lifecycle-review",
@@ -10694,6 +11618,213 @@
             "dates"
           ]
         }
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "rust-ownership-borrowing",
+      "title": "Rust Ownership and Borrowing: Lifetime Contracts",
+      "publisher": "The Rust Project",
+      "authors": [],
+      "primary_url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "memory-safety"
+      ],
+      "skillset_ids": [
+        "memory-safety-review"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Introduces ownership as a lifetime discipline: a value has one owner, moving ownership changes who controls it, and leaving the owner’s scope drops the value. The borrowing chapter explains how references permit access without taking ownership while restricting conflicting mutation and requiring references to remain valid.",
+      "defensive_use": "Describe which component owns each input buffer, which components borrow it, and when those borrows end. Prefer interfaces that express those relationships rather than relying on informal caller assumptions. Review ownership transfer and shared or exclusive borrowing as contracts between functions.",
+      "prerequisites": [
+        "Variables, functions, and scope",
+        "Basic stack and heap concepts"
+      ],
+      "sources": [
+        {
+          "id": "rust-ownership",
+          "url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
+          "title": "What is Ownership?",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "rust-borrowing",
+          "url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+          "title": "References and Borrowing",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "rust-unsafe-boundary",
+          "url": "https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html",
+          "title": "Unsafe Rust",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "This is an introductory language model, not complete parser validation.",
+        "Unsafe operations and foreign-language interfaces add contracts requiring separate scrutiny. Wrapping an implementation in a safe interface does not replace proving its invariants.",
+        "The Unsafe Rust chapter is cited for its conceptual safety boundary and safe-abstraction guidance; no operational examples are reproduced."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
+      "id": "rust-slices-parser-boundaries",
+      "title": "Rust Slices: Bounds, Borrowing, and Text Boundaries",
+      "publisher": "The Rust Project",
+      "authors": [],
+      "primary_url": "https://doc.rust-lang.org/book/ch04-03-slices.html",
+      "resource_type_id": "implementation-guide",
+      "topic_ids": [
+        "memory-safety"
+      ],
+      "skillset_ids": [
+        "memory-safety-review",
+        "secure-parser-review",
+        "encoding-invariant-review"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official book, reference, and API pages reviewed. Page publication and revision dates are not displayed; individual API stabilization versions are not resource edition dates."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Uses a small text-processing example to contrast an integer position, which can become detached from the underlying data, with a borrowed slice tied to the source buffer. The reference specifies that safe slice access is bounds-checked; the strings chapter explains why byte positions and UTF-8 character boundaries are different contracts.",
+      "defensive_use": "Keep a parser’s view connected to its backing storage and represent absence or invalid boundaries explicitly. Distinguish memory safety, valid encoding, and acceptance of a meaningful message. Prefer checked, fallible access where input may be incomplete, and document the transition from raw input to borrowed byte or text views.",
+      "prerequisites": [
+        "Rust ownership and borrowing",
+        "Bytes versus Unicode text"
+      ],
+      "sources": [
+        {
+          "id": "rust-slices",
+          "url": "https://doc.rust-lang.org/book/ch04-03-slices.html",
+          "title": "The Slice Type",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "rust-slice-reference",
+          "url": "https://doc.rust-lang.org/reference/types/slice.html",
+          "title": "Slice types",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "rust-strings",
+          "url": "https://doc.rust-lang.org/book/ch08-02-strings.html",
+          "title": "Storing UTF-8 Encoded Text with Strings",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        },
+        {
+          "id": "rust-slice-api",
+          "url": "https://doc.rust-lang.org/std/primitive.slice.html",
+          "title": "Primitive Type slice",
+          "publisher": "The Rust Project",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "The introductory text-processing example assumes ASCII.",
+        "Bounds-checked indexing may panic. Memory safety does not itself establish graceful error handling or valid application semantics.",
+        "Method stabilization versions in the API reference describe individual software APIs, not the publication or revision date of this educational resource."
       ]
     },
     {
@@ -11211,6 +12342,83 @@
     },
     {
       "schema_version": "1.0.0",
+      "id": "sigstore-security-model",
+      "title": "Sigstore Security Model",
+      "publisher": "Sigstore",
+      "authors": [],
+      "primary_url": "https://docs.sigstore.dev/about/security/",
+      "resource_type_id": "architecture-guide",
+      "topic_ids": [
+        "supply-chain",
+        "identity",
+        "verification"
+      ],
+      "skillset_ids": [
+        "pipeline-trust-modeling",
+        "machine-identity-governance"
+      ],
+      "version": null,
+      "prerequisites_basis": "editorial_guidance",
+      "access": {
+        "cost": "free",
+        "note": "Publicly accessible official documentation; no account required for reading."
+      },
+      "dates": {
+        "published": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "version_released": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        },
+        "source_displayed": {
+          "value": null,
+          "precision": null,
+          "basis": "not_reported",
+          "source_id": null,
+          "note": "No publication or revision date is displayed on the reviewed page."
+        }
+      },
+      "freshness": {
+        "reviewed_at": "2026-10-12T18:31:00Z",
+        "living_resource": true,
+        "status": "primary_source_reviewed",
+        "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+      },
+      "content_scope": "defensive_education",
+      "summary": "Explains how identity-based artifact signing combines an OIDC issuer and subject, Fulcio’s short-lived certificates, a managed trust root, and Rekor’s auditable signature history. Identity certification, artifact integrity, and transparency are separate guarantees with different dependencies.",
+      "defensive_use": "Identify the expected publisher or workload and its issuer, document which certificate authority and log are trusted, and assign responsibility for detecting unexpected signing events. Trace the trust boundary from identity issuer through certificate and artifact to the consumer’s acceptance policy.",
+      "prerequisites": [
+        "Basic hashes and digital signatures",
+        "Familiarity with CI and workload identity"
+      ],
+      "sources": [
+        {
+          "id": "sigstore-security",
+          "url": "https://docs.sigstore.dev/about/security/",
+          "title": "Security Model",
+          "publisher": "Sigstore",
+          "provenance": "official_primary",
+          "retrieved_at": "2026-10-12T18:31:00Z",
+          "supports": [
+            "summary"
+          ]
+        }
+      ],
+      "caveats": [
+        "A compromised identity issuer or certificate authority can issue unauthorized certificates. Transparency makes misuse detectable only when someone monitors the logs.",
+        "Signing is not a code-quality assessment; consumers still need an acceptance policy."
+      ]
+    },
+    {
+      "schema_version": "1.0.0",
       "id": "slsa-v1-2-supply-chain-build-provenance",
       "title": "SLSA v1.2: supply-chain security and build provenance",
       "publisher": "SLSA Community",
@@ -11600,7 +12808,8 @@
       "primary_url": "https://docs.stripe.com/webhooks",
       "resource_type_id": "implementation-guide",
       "topic_ids": [
-        "business-logic"
+        "business-logic",
+        "api-security"
       ],
       "skillset_ids": [
         "concurrency-reasoning",
@@ -11679,7 +12888,9 @@
       "primary_url": "https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/",
       "resource_type_id": "research-paper",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "secure-parser-review",
@@ -11782,7 +12993,8 @@
       "primary_url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
       "resource_type_id": "research-paper",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "integration-threat-modeling",
@@ -11875,7 +13087,9 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -12176,7 +13390,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -12269,7 +13485,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "interpreter-boundaries"
+        "interpreter-boundaries",
+        "browser-security"
       ],
       "skillset_ids": [
         "untrusted-input-handling",
@@ -12483,7 +13700,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -12993,7 +14211,8 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "authorization",
-        "business-logic"
+        "business-logic",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",
@@ -13087,7 +14306,8 @@
       "topic_ids": [
         "identity",
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "security-token-design",
@@ -13170,7 +14390,8 @@
       "topic_ids": [
         "web-foundations",
         "verification",
-        "cloud-security"
+        "cloud-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "secure-parser-review",
@@ -13347,7 +14568,9 @@
       "resource_type_id": "maintainer-advisory",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security",
+        "server-client-frameworks"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -13533,7 +14756,8 @@
       "primary_url": "https://www.w3.org/TR/2026/WD-trusted-types-20260623/",
       "resource_type_id": "technical-standard",
       "topic_ids": [
-        "web-foundations"
+        "web-foundations",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -13636,7 +14860,8 @@
       "resource_type_id": "technical-standard",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -13728,7 +14953,8 @@
       "resource_type_id": "technical-standard",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -13806,7 +15032,8 @@
       "resource_type_id": "technical-standard",
       "topic_ids": [
         "web-foundations",
-        "authorization"
+        "authorization",
+        "browser-security"
       ],
       "skillset_ids": [
         "browser-isolation-review",
@@ -13887,7 +15114,8 @@
       "resource_type_id": "research-paper",
       "topic_ids": [
         "authorization",
-        "web-foundations"
+        "web-foundations",
+        "api-security"
       ],
       "skillset_ids": [
         "authorization-modeling",

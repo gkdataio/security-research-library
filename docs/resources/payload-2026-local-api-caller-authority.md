@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization  
+**Topics:** Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence
 
 ## Original summary

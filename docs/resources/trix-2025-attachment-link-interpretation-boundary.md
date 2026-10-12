@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Interpreter Boundaries  
+**Topics:** Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review input trust boundaries; Review client isolation; Verify remediation evidence
 
 ## Original summary

@@ -1,26 +1,30 @@
 # Learning resources by topic
 
-[Alphabetical resource index](resource-index.md) · [Curated resource guide](resources.md) · [Library home](../README.md) · [Browse by vulnerability type](vulnerability-types.md)
+[Alphabetical resource index](resource-index.md) · [Curated resource guide](resources.md) · [Library home](../README.md) · [Resource types](resource-types.md) · [Defensive skills](skillsets.md) · [Publication years](publication-years.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Generated offline from canonical resource topic IDs and the resource taxonomy. These educational references are separate from award-backed reports and grant no testing authorization.
 
-144 distinct resources across 11 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
+155 distinct resources across 15 taxonomy topics. A resource can appear under several topics; overlapping memberships do not increase the distinct resource count. Topic counts must not be added to count resources.
 
 Topics and resources are ordered alphabetically by title, with stable IDs breaking ties. Empty taxonomy topics are shown explicitly. Regeneration does not reverify sources or advance review timestamps.
 
 ## Browse topics
 
 - [Ai Security](<#topic-ai-security>) — 16 resources.
-- [Authorization](<#topic-authorization>) — 85 resources.
-- [Business Logic and State Integrity](<#topic-business-logic>) — 33 resources.
+- [API Security](<#topic-api-security>) — 27 resources.
+- [Authorization](<#topic-authorization>) — 87 resources.
+- [Browser Security](<#topic-browser-security>) — 31 resources.
+- [Business Logic and State Integrity](<#topic-business-logic>) — 34 resources.
 - [Cloud Security](<#topic-cloud-security>) — 7 resources.
-- [Identity](<#topic-identity>) — 44 resources.
+- [CTF and Controlled Practice](<#topic-ctf-and-practice>) — 6 resources.
+- [Identity](<#topic-identity>) — 48 resources.
 - [Interpreter Boundaries](<#topic-interpreter-boundaries>) — 12 resources.
-- [Memory Safety and Process Isolation](<#topic-memory-safety>) — 2 resources.
+- [Memory Safety and Process Isolation](<#topic-memory-safety>) — 5 resources.
 - [Reporting](<#topic-reporting>) — 3 resources.
-- [Software Supply Chain](<#topic-supply-chain>) — 2 resources.
-- [Verification](<#topic-verification>) — 23 resources.
-- [Web Foundations](<#topic-web-foundations>) — 70 resources.
+- [Server/Client Framework Security](<#topic-server-client-frameworks>) — 18 resources.
+- [Software Supply Chain](<#topic-supply-chain>) — 5 resources.
+- [Verification](<#topic-verification>) — 26 resources.
+- [Web Foundations](<#topic-web-foundations>) — 74 resources.
 
 <a id="topic-ai-security"></a>
 ## Ai Security
@@ -44,10 +48,43 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.
 - [ServiceNow: agent discovery expands the delegated authority boundary](<resources/servicenow-2025-agent-discovery-delegation-authority.md>) — AppOmni AO Labs.
 
+<a id="topic-api-security"></a>
+## API Security
+
+27 resources.
+
+- [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
+- [authentik: source-mapping edits carry identity-rebinding authority](<resources/authentik-2026-source-mapping-mutation-authority.md>) — authentik.
+- [Better Auth SCIM: absent ownership must not grant shared authority](<resources/better-auth-2026-scim-ownerless-provider-authority.md>) — Better Auth.
+- [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation.
+- [Formie: integration settings need operation and attribute authority](<resources/formie-2026-integration-settings-credential-authority.md>) — Verbb / Formie.
+- [Frappe: linked data must preserve document and field permissions](<resources/frappe-2026-linked-document-response-authorization.md>) — GitHub Security Lab.
+- [Google AIP-158: pagination continuation does not grant resource authority](<resources/google-aip-158-pagination-authorization-boundary.md>) — Google.
+- [Google API field masks: preserve server-owned and immutable state](<resources/google-aip-161-update-field-authority.md>) — Google.
+- [Google API request identity: bind retry semantics to the logical operation](<resources/google-aip-155-request-identity-contract.md>) — Google.
+- [Google long-running operations: cancellation requests and completion evidence](<resources/google-aip-151-operation-completion-integrity.md>) — Google.
+- [GraphQL-Ruby: authorization exceptions must stop execution](<resources/graphql-ruby-2026-authorization-exception-integrity.md>) — GitHub Security Lab.
+- [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav.
+- [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
+- [LibreChat: viewing an integration must not reveal its service secrets](<resources/librechat-2026-mcp-view-secret-projection.md>) — LibreChat.
+- [Microsoft Graph batching: preserve each member authorization outcome](<resources/microsoft-graph-batch-member-authorization-outcomes.md>) — Microsoft.
+- [MLflow: authorization must survive alternate resource interfaces](<resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — Tachyon.
+- [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n.
+- [Next\.js data security: server authorization and client-visible data](<resources/nextjs-server-client-data-security.md>) — Next\.js / Vercel.
+- [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
+- [Payload: request adapters must retain caller-level authorization](<resources/payload-2026-local-api-caller-authority.md>) — jhb-software / Payload plugins.
+- [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl.
+- [Stripe webhooks: authentic delivery and business-state integrity](<resources/stripe-webhook-delivery-state-integrity.md>) — Stripe.
+- [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
+- [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab.
+- [Vendure: payment child objects must inherit order channel authority](<resources/vendure-2026-payment-child-object-channel-authority.md>) — Vendure.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
+- [Zammad: overridden serialization must preserve group authorization](<resources/zammad-2026-asset-serialization-group-authorization.md>) — GitHub Security Lab.
+
 <a id="topic-authorization"></a>
 ## Authorization
 
-85 resources.
+87 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<resources/apollo-2026-federation-router-subgraph-isolation.md>) — Apollo GraphQL.
@@ -106,6 +143,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [OpenFGA query consistency: authorization decisions need sufficiently fresh state](<resources/openfga-authorization-query-freshness.md>) — OpenFGA.
 - [OpenFGA: policy intersections must preserve explicit exclusions](<resources/openfga-2026-composed-policy-exclusion-integrity.md>) — OpenFGA.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
+- [OWASP Juice Shop: Controlled Web-Security Training](<resources/owasp-juice-shop-controlled-training.md>) — OWASP Foundation.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project.
 - [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series.
@@ -133,12 +171,50 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Vercel React Router: session identity must not select unrestricted storage authority](<resources/vercel-react-router-2026-session-storage-key-authority.md>) — Vercel.
 - [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja.
 - [Vite: local reachability does not establish browser-origin authority](<resources/vite-2025-development-server-origin-authority.md>) — Vite.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
 - [Zammad: overridden serialization must preserve group authorization](<resources/zammad-2026-asset-serialization-group-authorization.md>) — GitHub Security Lab.
+
+<a id="topic-browser-security"></a>
+## Browser Security
+
+31 resources.
+
+- [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
+- [Angular hydration: verify the source of restored state](<resources/angular-2026-hydration-state-source-authenticity.md>) — Angular maintainers.
+- [Angular SSR: preserve output context through serialization and post-processing](<resources/angular-2026-raw-content-serialization-context.md>) — Angular.
+- [Astro: composable dispatch must preserve mandatory origin checks](<resources/astro-2026-composable-dispatch-origin-enforcement.md>) — Astro.
+- [Authlib: error responses must preserve redirect-destination validation](<resources/authlib-2026-error-path-redirect-authority.md>) — Authlib.
+- [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers.
+- [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers.
+- [CI4MS: keep stored diagnostic content inert in administrative log views](<resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>) — CI4MS maintainers.
+- [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers.
+- [DOMPurify: accepted DOM realms must retain complete sanitization](<resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — DOMPurify / Cure53.
+- [Fetch Metadata Request Headers](<resources/w3c-fetch-metadata-request-context-boundaries.md>) — World Wide Web Consortium.
+- [HTML COOP: opener separation and same-origin authority](<resources/whatwg-coop-opener-and-origin-authority.md>) — WHATWG.
+- [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>) — OWASP Cheat Sheet Series.
+- [Laravel: preserve output encoding in debug diagnostics](<resources/laravel-2025-debug-diagnostic-output-encoding.md>) — SBA Research.
+- [Next\.js: response metadata must preserve representation boundaries](<resources/nextjs-2026-response-metadata-representation-boundary.md>) — zhero\_web\_security.
+- [Nuxt: island data must not acquire component-selection authority](<resources/nuxt-2026-island-component-selection-authority.md>) — Nuxt.
+- [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
+- [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series.
+- [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community.
+- [Permissions Policy: inherited browser-feature authority across embedded documents](<resources/w3c-permissions-policy-embedded-feature-authority.md>) — World Wide Web Consortium.
+- [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev.
+- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix.
+- [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor.
+- [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs.
+- [Storage Access API: permission, document activation and cookie eligibility](<resources/privacycg-storage-access-permission-activation-boundary.md>) — Privacy Community Group.
+- [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera.
+- [TanStack Start: preserve server-owned response authority through errors](<resources/tanstack-2026-server-function-response-authority.md>) — TanStack.
+- [Trix: validate stored attachment data before link interpretation](<resources/trix-2025-attachment-link-interpretation-boundary.md>) — Trix maintainers.
+- [Trusted Types: typed sinks depend on trustworthy policy creation](<resources/w3c-2026-trusted-types-policy-authority.md>) — World Wide Web Consortium.
+- [Vite: local reachability does not establish browser-origin authority](<resources/vite-2025-development-server-origin-authority.md>) — Vite.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
 
 <a id="topic-business-logic"></a>
 ## Business Logic and State Integrity
 
-33 resources.
+34 resources.
 
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink.
@@ -173,6 +249,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Vendure: payment child objects must inherit order channel authority](<resources/vendure-2026-payment-child-object-channel-authority.md>) — Vendure.
 - [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja.
 - [Vvveb: numeric input validity does not establish legitimate order state](<resources/vvveb-2026-order-domain-invariant.md>) — Vvveb.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
 
 <a id="topic-cloud-security"></a>
 ## Cloud Security
@@ -187,10 +264,22 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association.
 
+<a id="topic-ctf-and-practice"></a>
+## CTF and Controlled Practice
+
+6 resources.
+
+- [CyLab Security Academy: Self-Paced CTF Learning](<resources/cylab-security-academy-ctf-practice.md>) — Carnegie Mellon University.
+- [OverTheWire Bandit: Unix/Linux Foundations](<resources/overthewire-bandit-unix-foundations.md>) — OverTheWire.
+- [OverTheWire Natas: Server-Side Web Security Practice](<resources/overthewire-natas-web-security-practice.md>) — OverTheWire.
+- [OWASP Juice Shop: Controlled Web-Security Training](<resources/owasp-juice-shop-controlled-training.md>) — OWASP Foundation.
+- [OWASP WebGoat: Web-Application Security Lessons](<resources/owasp-webgoat-controlled-training.md>) — OWASP Foundation.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
+
 <a id="topic-identity"></a>
 ## Identity
 
-44 resources.
+48 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [authentik: source-mapping edits carry identity-rebinding authority](<resources/authentik-2026-source-mapping-mutation-authority.md>) — authentik.
@@ -204,6 +293,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI.
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation.
+- [GitHub Artifact Attestations: Provenance and Consumer Policy](<resources/github-artifact-attestations.md>) — GitHub.
 - [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav.
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP.
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow.
@@ -223,6 +313,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline.
 - [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>) — OWASP Cheat Sheet Series.
+- [OWASP Juice Shop: Controlled Web-Security Training](<resources/owasp-juice-shop-controlled-training.md>) — OWASP Foundation.
 - [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<resources/pac4j-2026-token-authenticity-enforcement.md>) — CodeAnt AI.
 - [Prowler SAML: retain validated tenant authority](<resources/prowler-2026-saml-tenant-issuance-binding.md>) — Prowler.
@@ -233,9 +324,11 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Saleor email changes: bind confirmation to account and state](<resources/saleor-2026-email-change-confirmation-binding.md>) — Saleor maintainers.
 - [samlify: signing does not establish claim provenance](<resources/samlify-2026-assertion-generation-claim-integrity.md>) — samlify.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab.
+- [Sigstore Security Model](<resources/sigstore-security-model.md>) — Sigstore.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<resources/usenix-2025-tls-resumption-identity-isolation.md>) — USENIX Association.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association.
 - [Vercel React Router: session identity must not select unrestricted storage authority](<resources/vercel-react-router-2026-session-storage-key-authority.md>) — Vercel.
+- [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger.
 
 <a id="topic-interpreter-boundaries"></a>
 ## Interpreter Boundaries
@@ -258,10 +351,13 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-memory-safety"></a>
 ## Memory Safety and Process Isolation
 
-2 resources.
+5 resources.
 
+- [C\+\+ Core Guidelines: Bounds and Lifetime Safety](<resources/cpp-core-guidelines-bounds-lifetime.md>) — C\+\+ Core Guidelines project.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project.
 - [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers.
+- [Rust Ownership and Borrowing: Lifetime Contracts](<resources/rust-ownership-borrowing.md>) — The Rust Project.
+- [Rust Slices: Bounds, Borrowing, and Text Boundaries](<resources/rust-slices-parser-boundaries.md>) — The Rust Project.
 
 <a id="topic-reporting"></a>
 ## Reporting
@@ -272,25 +368,54 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Quality Reports](<resources/hackerone-quality-vulnerability-reports.md>) — HackerOne Help Center.
 - [What is a security vulnerability?](<resources/google-understanding-security-vulnerability-reports.md>) — Google Bug Hunters.
 
+<a id="topic-server-client-frameworks"></a>
+## Server/Client Framework Security
+
+18 resources.
+
+- [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
+- [Angular hydration: verify the source of restored state](<resources/angular-2026-hydration-state-source-authenticity.md>) — Angular maintainers.
+- [Angular SSR: preserve output context through serialization and post-processing](<resources/angular-2026-raw-content-serialization-context.md>) — Angular.
+- [Astro: composable dispatch must preserve mandatory origin checks](<resources/astro-2026-composable-dispatch-origin-enforcement.md>) — Astro.
+- [Astro: routing and authorization must agree on resource identity](<resources/astro-2026-route-normalization-authorization-consistency.md>) — Astro.
+- [Next\.js data security: server authorization and client-visible data](<resources/nextjs-server-client-data-security.md>) — Next\.js / Vercel.
+- [Next\.js: response metadata must preserve representation boundaries](<resources/nextjs-2026-response-metadata-representation-boundary.md>) — zhero\_web\_security.
+- [Nuxt: island data must not acquire component-selection authority](<resources/nuxt-2026-island-component-selection-authority.md>) — Nuxt.
+- [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt.
+- [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev.
+- [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix.
+- [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
+- [Svelte hydration: serialization must preserve the enclosing output context](<resources/svelte-2026-hydration-output-context-boundary.md>) — Camilo Vera.
+- [SvelteKit: origin construction and routing must preserve server request authority](<resources/sveltekit-2026-origin-routing-trust-boundary.md>) — zhero\_web\_security.
+- [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab.
+- [TanStack Start: preserve server-owned response authority through errors](<resources/tanstack-2026-server-function-response-authority.md>) — TanStack.
+- [Vercel React Router: session identity must not select unrestricted storage authority](<resources/vercel-react-router-2026-session-storage-key-authority.md>) — Vercel.
+- [Vite: local reachability does not establish browser-origin authority](<resources/vite-2025-development-server-origin-authority.md>) — Vite.
+
 <a id="topic-supply-chain"></a>
 ## Software Supply Chain
 
-2 resources.
+5 resources.
 
+- [GitHub Artifact Attestations: Provenance and Consumer Policy](<resources/github-artifact-attestations.md>) — GitHub.
 - [NIST SP 800-190: Application Container Security Guide](<resources/nist-sp-800-190-container-isolation-guide.md>) — National Institute of Standards and Technology.
+- [NIST SSDF 1\.1: Component Governance and Release Provenance](<resources/nist-ssdf-1-1-dependency-governance.md>) — NIST.
+- [Sigstore Security Model](<resources/sigstore-security-model.md>) — Sigstore.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community.
 
 <a id="topic-verification"></a>
 ## Verification
 
-23 resources.
+26 resources.
 
 - [Astro: composable dispatch must preserve mandatory origin checks](<resources/astro-2026-composable-dispatch-origin-enforcement.md>) — Astro.
 - [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project.
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
 - [Error Handling Cheat Sheet](<resources/owasp-error-response-data-minimization.md>) — OWASP Cheat Sheet Series.
+- [GitHub Artifact Attestations: Provenance and Consumer Policy](<resources/github-artifact-attestations.md>) — GitHub.
 - [mailcow: stored configuration retains its original trust level](<resources/mailcow-2026-persisted-data-query-boundary.md>) — mailcow.
+- [NIST SSDF 1\.1: Component Governance and Release Provenance](<resources/nist-ssdf-1-1-dependency-governance.md>) — NIST.
 - [Nuxt: island data must not acquire component-selection authority](<resources/nuxt-2026-island-component-selection-authority.md>) — Nuxt.
 - [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt.
 - [OWASP Application Security Verification Standard \(ASVS\)](<resources/owasp-asvs-5-security-verification-standard.md>) — OWASP Foundation.
@@ -303,6 +428,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix.
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript.
+- [Sigstore Security Model](<resources/sigstore-security-model.md>) — Sigstore.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community.
 - [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3.
 - [Upstream HTTP framing and parser-consistency boundaries](<resources/portswigger-2025-upstream-http-framing-boundaries.md>) — PortSwigger.
@@ -312,7 +438,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 <a id="topic-web-foundations"></a>
 ## Web Foundations
 
-70 resources.
+74 resources.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular.
@@ -327,6 +453,7 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers.
 - [CI4MS: keep stored diagnostic content inert in administrative log views](<resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.md>) — CI4MS maintainers.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium.
+- [CyLab Security Academy: Self-Paced CTF Learning](<resources/cylab-security-academy-ctf-practice.md>) — Carnegie Mellon University.
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation.
 - [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers.
 - [DOMPurify: accepted DOM realms must retain complete sanitization](<resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — DOMPurify / Cure53.
@@ -352,9 +479,12 @@ Topics and resources are ordered alphabetically by title, with stable IDs breaki
 - [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt.
 - [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — OAuth2 Proxy.
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<resources/open-webui-2026-realtime-revocation-consistency.md>) — Open WebUI.
+- [OverTheWire Natas: Server-Side Web Security Practice](<resources/overthewire-natas-web-security-practice.md>) — OverTheWire.
+- [OWASP Juice Shop: Controlled Web-Security Training](<resources/owasp-juice-shop-controlled-training.md>) — OWASP Foundation.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project.
 - [OWASP Server-Side Request Forgery Prevention](<resources/owasp-server-request-destination-boundaries.md>) — OWASP Cheat Sheet Series.
 - [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series.
+- [OWASP WebGoat: Web-Application Security Lessons](<resources/owasp-webgoat-controlled-training.md>) — OWASP Foundation.
 - [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community.
 - [Permissions Policy: inherited browser-feature authority across embedded documents](<resources/w3c-permissions-policy-embedded-feature-authority.md>) — World Wide Web Consortium.
 - [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf.

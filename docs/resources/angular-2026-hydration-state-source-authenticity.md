@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review input trust boundaries; Review artifact isolation; Verify remediation evidence
 
 ## Original summary

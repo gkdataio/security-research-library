@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; Web Foundations  
+**Topics:** Identity; Authorization; Web Foundations; API Security  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Threat-model integrations; Verify remediation evidence
 
 ## Original summary

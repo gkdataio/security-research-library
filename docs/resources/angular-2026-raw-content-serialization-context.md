@@ -8,7 +8,7 @@
 **Authors:** alan-agius4  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review text-encoding invariants; Review parsing and serialization; Verify remediation evidence
 
 ## Original summary

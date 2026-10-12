@@ -1,10 +1,10 @@
 # Read the learning resources
 
-[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md) · [Browse by vulnerability type](vulnerability-types.md)
+[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md) · [Resource types](resource-types.md) · [Defensive skills](skillsets.md) · [Publication years](publication-years.md) · [Browse by vulnerability type](vulnerability-types.md)
 
 Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.
 
-144 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
+155 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper.
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory.
@@ -23,6 +23,7 @@ Original defensive summaries of official educational references. These resources
 - [Better Auth: incoming identity proof does not validate existing credentials](<resources/better-auth-2026-local-account-linking-verification.md>) — Better Auth; Maintainer Advisory.
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth; Maintainer Advisory.
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink; Maintainer Advisory.
+- [C\+\+ Core Guidelines: Bounds and Lifetime Safety](<resources/cpp-core-guidelines-bounds-lifetime.md>) — C\+\+ Core Guidelines project; Implementation Guide.
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers; Implementation Guide.
 - [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers; Architecture Guide.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>) — Chromium Project; Architecture Guide.
@@ -30,6 +31,7 @@ Original defensive summaries of official educational references. These resources
 - [Claude Cowork: approved destinations need account and operation binding](<resources/anthropic-2026-egress-capability-identity-binding.md>) — Anthropic; Research Paper.
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Maintainer Advisory.
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper.
+- [CyLab Security Academy: Self-Paced CTF Learning](<resources/cylab-security-academy-ctf-practice.md>) — Carnegie Mellon University; Training Lab.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs; Research Paper.
 - [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus; Maintainer Advisory.
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation; Maintainer Advisory.
@@ -42,6 +44,7 @@ Original defensive summaries of official educational references. These resources
 - [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser; Maintainer Advisory.
 - [Formie: integration settings need operation and attribute authority](<resources/formie-2026-integration-settings-credential-authority.md>) — Verbb / Formie; Maintainer Advisory.
 - [Frappe: linked data must preserve document and field permissions](<resources/frappe-2026-linked-document-response-authorization.md>) — GitHub Security Lab; Research Paper.
+- [GitHub Artifact Attestations: Provenance and Consumer Policy](<resources/github-artifact-attestations.md>) — GitHub; Architecture Guide.
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<resources/github-2026-internal-metadata-authority.md>) — Wiz Research; Research Paper.
 - [Google AIP-158: pagination continuation does not grant resource authority](<resources/google-aip-158-pagination-authorization-boundary.md>) — Google; Implementation Guide.
 - [Google API field masks: preserve server-owned and immutable state](<resources/google-aip-161-update-field-authority.md>) — Google; Implementation Guide.
@@ -77,6 +80,7 @@ Original defensive summaries of official educational references. These resources
 - [Nhost: provider adapters must preserve identity-claim evidence](<resources/nhost-2026-provider-claim-verification-provenance.md>) — Nhost; Maintainer Advisory.
 - [NIST SP 800-162: attribute authority and policy traceability](<resources/nist-sp-800-162-attribute-authority-modeling.md>) — National Institute of Standards and Technology; Architecture Guide.
 - [NIST SP 800-190: Application Container Security Guide](<resources/nist-sp-800-190-container-isolation-guide.md>) — National Institute of Standards and Technology; Architecture Guide.
+- [NIST SSDF 1\.1: Component Governance and Release Provenance](<resources/nist-ssdf-1-1-dependency-governance.md>) — NIST; Implementation Guide.
 - [Nuxt: island data must not acquire component-selection authority](<resources/nuxt-2026-island-component-selection-authority.md>) — Nuxt; Maintainer Advisory.
 - [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt; Maintainer Advisory.
 - [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — OAuth2 Proxy; Maintainer Advisory.
@@ -87,8 +91,11 @@ Original defensive summaries of official educational references. These resources
 - [OpenFGA query consistency: authorization decisions need sufficiently fresh state](<resources/openfga-authorization-query-freshness.md>) — OpenFGA; Implementation Guide.
 - [OpenFGA: policy intersections must preserve explicit exclusions](<resources/openfga-2026-composed-policy-exclusion-integrity.md>) — OpenFGA; Maintainer Advisory.
 - [Outline: integration authority must end with its owning account](<resources/outline-2026-webhook-revocation-lifecycle.md>) — Outline; Maintainer Advisory.
+- [OverTheWire Bandit: Unix/Linux Foundations](<resources/overthewire-bandit-unix-foundations.md>) — OverTheWire; Training Lab.
+- [OverTheWire Natas: Server-Side Web Security Practice](<resources/overthewire-natas-web-security-practice.md>) — OverTheWire; Training Lab.
 - [OWASP Application Security Verification Standard \(ASVS\)](<resources/owasp-asvs-5-security-verification-standard.md>) — OWASP Foundation; Security Standard.
 - [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
+- [OWASP Juice Shop: Controlled Web-Security Training](<resources/owasp-juice-shop-controlled-training.md>) — OWASP Foundation; Training Lab.
 - [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>) — OWASP Gen AI Security Project; Implementation Guide.
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<resources/owasp-rag-retrieval-permission-boundaries.md>) — OWASP Gen AI Security Project; Architecture Guide.
 - [OWASP LLM09:2026: embedding confidentiality and storage lifecycle](<resources/owasp-2026-embedding-confidentiality-lifecycle.md>) — OWASP Gen AI Security Project; Architecture Guide.
@@ -98,6 +105,7 @@ Original defensive summaries of official educational references. These resources
 - [OWASP Session Management: privilege-transition integrity](<resources/owasp-session-privilege-transition-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
 - [OWASP Threat Modeling: system assumptions and mitigation validation](<resources/owasp-threat-modeling-assumptions-and-validation.md>) — OWASP Cheat Sheet Series; Architecture Guide.
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide.
+- [OWASP WebGoat: Web-Application Security Lessons](<resources/owasp-webgoat-controlled-training.md>) — OWASP Foundation; Training Lab.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<resources/pac4j-2026-token-authenticity-enforcement.md>) — CodeAnt AI; Research Paper.
 - [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community; Maintainer Advisory.
 - [Payload: request adapters must retain caller-level authorization](<resources/payload-2026-local-api-caller-authority.md>) — jhb-software / Payload plugins; Maintainer Advisory.
@@ -115,12 +123,15 @@ Original defensive summaries of official educational references. These resources
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor; Technical Standard.
 - [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<resources/rfc-9700-oauth-security-best-current-practice.md>) — Internet Engineering Task Force / RFC Editor; Technical Standard.
 - [Rocket\.Chat: authentication must await a completed verification decision](<resources/rocketchat-2026-asynchronous-identity-verification.md>) — GitHub Security Lab; Research Paper.
+- [Rust Ownership and Borrowing: Lifetime Contracts](<resources/rust-ownership-borrowing.md>) — The Rust Project; Implementation Guide.
+- [Rust Slices: Bounds, Borrowing, and Text Boundaries](<resources/rust-slices-parser-boundaries.md>) — The Rust Project; Implementation Guide.
 - [Saleor email changes: bind confirmation to account and state](<resources/saleor-2026-email-change-confirmation-binding.md>) — Saleor maintainers; Maintainer Advisory.
 - [samlify: signing does not establish claim provenance](<resources/samlify-2026-assertion-generation-claim-integrity.md>) — samlify; Maintainer Advisory.
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs; Research Paper.
 - [Sentry: resource ownership must match the authorized organization](<resources/sentry-2026-organization-object-authorization.md>) — GitHub Security Lab; Research Paper.
 - [Serialize JavaScript: every serialized field must retain data semantics](<resources/serialize-javascript-2026-output-code-boundary.md>) — Yahoo serialize-javascript; Maintainer Advisory.
 - [ServiceNow: agent discovery expands the delegated authority boundary](<resources/servicenow-2025-agent-discovery-delegation-authority.md>) — AppOmni AO Labs; Research Paper.
+- [Sigstore Security Model](<resources/sigstore-security-model.md>) — Sigstore; Architecture Guide.
 - [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>) — SLSA Community; Security Standard.
 - [Spree: cart association must retain guest-possession checks](<resources/spree-2026-guest-cart-association-authority.md>) — Spree; Maintainer Advisory.
 - [Spree: guest ownership still requires an authorization proof](<resources/spree-2026-guest-order-authorization-proof.md>) — GitHub Security Lab; Research Paper.

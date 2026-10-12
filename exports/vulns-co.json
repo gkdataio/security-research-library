@@ -186,6 +186,11 @@
         "id": "error-response-design",
         "title": "Review secure error behavior",
         "defensive_objective": "Verify that failure responses minimize disclosure and that fallback paths preserve the original authorization context"
+      },
+      {
+        "id": "controlled-practice",
+        "title": "Learn through controlled practice",
+        "defensive_objective": "Plan and document exercises in provider-designated or isolated learning environments, then explain the security boundary and defensive lesson without extending activity to unrelated systems"
       }
     ]
   },

@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rust-ownership-borrowing",
+  "title": "Rust Ownership and Borrowing: Lifetime Contracts",
+  "publisher": "The Rust Project",
+  "authors": [],
+  "primary_url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "memory-safety"
+  ],
+  "skillset_ids": [
+    "memory-safety-review"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publicly accessible official documentation; no account required for reading."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:31:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Introduces ownership as a lifetime discipline: a value has one owner, moving ownership changes who controls it, and leaving the owner’s scope drops the value. The borrowing chapter explains how references permit access without taking ownership while restricting conflicting mutation and requiring references to remain valid.",
+  "defensive_use": "Describe which component owns each input buffer, which components borrow it, and when those borrows end. Prefer interfaces that express those relationships rather than relying on informal caller assumptions. Review ownership transfer and shared or exclusive borrowing as contracts between functions.",
+  "prerequisites": [
+    "Variables, functions, and scope",
+    "Basic stack and heap concepts"
+  ],
+  "sources": [
+    {
+      "id": "rust-ownership",
+      "url": "https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html",
+      "title": "What is Ownership?",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "rust-borrowing",
+      "url": "https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html",
+      "title": "References and Borrowing",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "rust-unsafe-boundary",
+      "url": "https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html",
+      "title": "Unsafe Rust",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "This is an introductory language model, not complete parser validation.",
+    "Unsafe operations and foreign-language interfaces add contracts requiring separate scrutiny. Wrapping an implementation in a safe interface does not replace proving its invariants.",
+    "The Unsafe Rust chapter is cited for its conceptual safety boundary and safe-abstraction guidance; no operational examples are reproduced."
+  ]
+}

@@ -8,7 +8,7 @@
 **Authors:** Rachid Allam; Allam Yasser  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Server/Client Framework Security  
 **Defensive skills:** Threat-model integrations; Review input trust boundaries; Review secure error behavior; Verify remediation evidence
 
 ## Original summary

@@ -28,6 +28,8 @@ The [Instagram application-credential case](../data/reports/instagram-applicatio
 
 ## 3. Build systems and dependency provenance
 
+Foundational reading: [Sigstore trust assumptions](resources/sigstore-security-model.md), [GitHub artifact attestation claims and consumer policy](resources/github-artifact-attestations.md), and [NIST SSDF component governance](resources/nist-ssdf-1-1-dependency-governance.md). Read provenance as evidence with explicit trust assumptions; a signature does not establish code quality.
+
 **Cases:** GitHub dependency-source trust; Angular build-cache and automation trust
 
 Learn registry provenance, namespace governance, artifact integrity, cache separation, and bot authorization. Produce a trust-boundary diagram identifying who can create each input and which execution context consumes it. Review both direct privileges and shared state without assuming a read-only job is isolated.
@@ -47,6 +49,8 @@ The [Gemini memory record](../data/reports/google-gemini-enterprise-connected-co
 **Taxonomy:** `ai-authority-boundaries`, `authorization-modeling`, `untrusted-input-handling`
 
 ## 5. Parser contracts and memory safety
+
+Foundational reading: [Rust ownership and borrowing](resources/rust-ownership-borrowing.md), [Rust slices and text boundaries](resources/rust-slices-parser-boundaries.md), and [C++ bounds and lifetime guidance](resources/cpp-core-guidelines-bounds-lifetime.md). Keep ownership, extent, lifetime, encoding and graceful error handling as distinct review questions.
 
 **Cases:** PostgreSQL CVE-2026-2006 encoding contracts, CVE-2026-2005 buffer capacity and CVE-2026-2004 input-type validation (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity, deserialization ownership and replication-state lifetime
 

@@ -8,7 +8,7 @@
 **Authors:** FaithOmbongi  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Business Logic and State Integrity  
+**Topics:** Authorization; Business Logic and State Integrity; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review secure error behavior
 
 ## Original summary

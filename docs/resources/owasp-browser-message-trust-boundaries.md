@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Review input trust boundaries; Model access-control invariants; Threat-model integrations
 
 ## Original summary

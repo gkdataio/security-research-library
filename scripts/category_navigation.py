@@ -4,7 +4,7 @@ from validate import Invalid, check_schema
 from vulnerability_navigation import family_navigation, load_config, publication_guidance
 
 
-def validate_config(config, schema, taxonomy, resource_taxonomy):
+def validate_config(config, schema, taxonomy, resource_taxonomy, resources):
     check_schema(config, schema, schema)
     ids = [c['id'] for c in config['categories']]
     if len(set(ids)) != len(ids):
@@ -12,9 +12,14 @@ def validate_config(config, schema, taxonomy, resource_taxonomy):
     if set(ids) != {c['id'] for c in taxonomy['categories']}:
         raise Invalid('navigation must cover exactly the report taxonomy')
     topics = {t['id'] for t in resource_taxonomy['topics']}
+    resource_ids = {resource['id'] for resource in resources}
     for category in config['categories']:
         if not set(category['resource_topic_ids']) <= topics:
             raise Invalid('unknown navigation resource topic')
+        if not set(category.get('resource_ids', [])) <= resource_ids:
+            raise Invalid('unknown navigation resource ID')
+        if category.get('resource_ids') and config['schema_version'] != '1.1.0':
+            raise Invalid('explicit resource IDs require navigation version 1.1.0')
 
 
 def count_label(count, singular):
@@ -44,7 +49,7 @@ def memberships(category, reports, resources, diagrams):
         topics = sorted(set(resource['topic_ids']) & set(category['resource_topic_ids']))
         diagram_ids = [d['id'] for d in related_diagrams
                        if resource['id'] in d['linked_resource_ids']]
-        if topics or diagram_ids:
+        if topics or diagram_ids or resource['id'] in category.get('resource_ids', []):
             learning.append((resource, topics, diagram_ids))
     return matched, learning, related_diagrams
 
@@ -53,7 +58,7 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
                    text, link):
     config = json.loads((root/'data/category-navigation.json').read_text())
     schema = json.loads((root/'schema/category-navigation.schema.json').read_text())
-    validate_config(config, schema, taxonomy, resource_taxonomy)
+    validate_config(config, schema, taxonomy, resource_taxonomy, resources)
     vulnerability_config = load_config(root, reports, resources)
     titles = {c['id']: c for c in taxonomy['categories']}
     topics = {t['id']: t['title'] for t in resource_taxonomy['topics']}
@@ -98,9 +103,11 @@ def category_pages(root, reports, resources, diagrams, taxonomy, resource_taxono
             if not matched:
                 lines += ['No reports currently assigned to this category.']
             lines += ['', '<a id="related-learning"></a>', '## Related learning', '',
-                      'Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.', '']
+                      'Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.', '']
             for resource, topic_ids, diagram_ids in learning:
                 basis = []
+                if resource['id'] in category.get('resource_ids', []):
+                    basis.append('explicit related-learning selection')
                 if topic_ids:
                     basis += ['topic: '+', '.join(text(topics[t]) for t in topic_ids)]
                 if diagram_ids:

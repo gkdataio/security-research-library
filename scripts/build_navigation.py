@@ -189,6 +189,8 @@ def build(root=ROOT):
         gallery += ['', link('Canonical graph and provenance', '../data/diagrams/'+d['id']+'.json')+' · '+link('Mermaid source', '../'+d['files']['mermaid'])+' · '+link('DOT source', '../'+d['files']['graphviz']), '']
     gallery += ['Original diagrams: Security Research Library contributors, CC BY 4.0. [License scope](../LICENSE.md).', '']
     pages['docs/diagram-gallery.md'] = '\n'.join(gallery)
+    from learning_navigation import learning_pages
+    pages.update(learning_pages(reports, resources, skills, taxonomy, text, link))
     from category_navigation import category_pages
     pages.update(category_pages(root, reports, resources, diagrams, skills, taxonomy, text, link))
     from vulnerability_navigation import vulnerability_pages
@@ -196,7 +198,7 @@ def build(root=ROOT):
     for name in ('docs/reports.md', 'docs/report-topics.md', 'docs/resource-index.md',
                  'docs/resource-topics.md', 'docs/diagram-gallery.md'):
         lines = pages[name].splitlines()
-        lines[2] += ' · [Browse by vulnerability type](vulnerability-types.md)'
+        lines[2] += ' · [Resource types](resource-types.md) · [Defensive skills](skillsets.md) · [Publication years](publication-years.md) · [Browse by vulnerability type](vulnerability-types.md)'
         pages[name] = '\n'.join(lines) + '\n'
     return pages
 

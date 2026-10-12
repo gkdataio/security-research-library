@@ -9,7 +9,8 @@
   "topic_ids": [
     "identity",
     "authorization",
-    "web-foundations"
+    "web-foundations",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "security-token-design",

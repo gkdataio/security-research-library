@@ -8,7 +8,7 @@
 **Authors:** Aakash Japi  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Web Foundations  
+**Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
 
 ## Original summary

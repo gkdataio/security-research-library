@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 16 reports · 46 related resources · 5 diagrams
+**Vulnerability family** · 16 reports · 50 related resources · 5 diagrams
 
 Account lifecycle, session integrity, identity-provider trust.
 
@@ -33,7 +33,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<../resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — topic: Identity.
 - [authentik: source-mapping edits carry identity-rebinding authority](<../resources/authentik-2026-source-mapping-mutation-authority.md>) — topic: Identity.
@@ -48,6 +48,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Cross-device authentication: bind informed consent to session authority](<../resources/ndss-2026-cross-device-consent-and-session-control.md>) — topic: Identity.
 - [Dolibarr portal accounts: credential writes need object authorization](<../resources/dolibarr-2026-portal-object-authorization.md>) — topic: Identity.
 - [FAPI 2\.0 Security Profile](<../resources/openid-fapi-2-api-authorization-profile.md>) — topic: Identity.
+- [GitHub Artifact Attestations: Provenance and Consumer Policy](<../resources/github-artifact-attestations.md>) — topic: Identity.
 - [Grav API: account-disable enforcement across session authenticators](<../resources/grav-2026-session-account-state-revalidation.md>) — topic: Identity.
 - [HotCRP: separate submission visibility from authorship authority](<../resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — topic: Identity.
 - [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
@@ -68,6 +69,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Open WebUI: revocation must cross HTTP and realtime boundaries](<../resources/open-webui-2026-realtime-revocation-consistency.md>) — topic: Identity.
 - [Outline: integration authority must end with its owning account](<../resources/outline-2026-webhook-revocation-lifecycle.md>) — topic: Identity.
 - [OWASP Forgot Password](<../resources/owasp-account-recovery-state-integrity.md>) — topic: Identity; diagram: [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>).
+- [OWASP Juice Shop: Controlled Web-Security Training](<../resources/owasp-juice-shop-controlled-training.md>) — topic: Identity.
 - [OWASP Session Management: privilege-transition integrity](<../resources/owasp-session-privilege-transition-integrity.md>) — topic: Identity.
 - [pac4j JWT validation: confidentiality does not establish authenticity](<../resources/pac4j-2026-token-authenticity-enforcement.md>) — topic: Identity.
 - [Prowler SAML: retain validated tenant authority](<../resources/prowler-2026-saml-tenant-issuance-binding.md>) — topic: Identity.
@@ -78,9 +80,11 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Saleor email changes: bind confirmation to account and state](<../resources/saleor-2026-email-change-confirmation-binding.md>) — topic: Identity.
 - [samlify: signing does not establish claim provenance](<../resources/samlify-2026-assertion-generation-claim-integrity.md>) — topic: Identity.
 - [Sentry: resource ownership must match the authorized organization](<../resources/sentry-2026-organization-object-authorization.md>) — topic: Identity.
+- [Sigstore Security Model](<../resources/sigstore-security-model.md>) — topic: Identity.
 - [STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets](<../resources/usenix-2025-tls-resumption-identity-isolation.md>) — topic: Identity.
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<../resources/usenix-2025-integration-platform-oauth-bindings.md>) — topic: Identity.
 - [Vercel React Router: session identity must not select unrestricted storage authority](<../resources/vercel-react-router-2026-session-storage-key-authority.md>) — topic: Identity.
+- [Web Security Academy: Free Online Training from PortSwigger](<../resources/portswigger-web-security-academy-controlled-training.md>) — topic: Identity.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

@@ -12,7 +12,8 @@
   "resource_type_id": "technical-standard",
   "topic_ids": [
     "identity",
-    "authorization"
+    "authorization",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "categories": [
     {
       "id": "authorization",
@@ -53,12 +53,32 @@
     {
       "id": "client-security",
       "kind": "security_theme",
-      "resource_topic_ids": []
+      "resource_topic_ids": [],
+      "resource_ids": [
+        "chrome-bfcache-restored-session-state",
+        "chrome-document-isolation-policy-boundaries",
+        "chrome-local-network-permission-boundaries",
+        "chromium-rule-of-two-input-isolation",
+        "owasp-browser-message-trust-boundaries",
+        "privacycg-storage-access-permission-activation-boundary",
+        "rfc-10017-browser-oauth-token-custody",
+        "w3c-2026-trusted-types-policy-authority",
+        "w3c-fetch-metadata-request-context-boundaries",
+        "w3c-permissions-policy-embedded-feature-authority",
+        "whatwg-coop-opener-and-origin-authority"
+      ]
     },
     {
       "id": "server-request-trust",
       "kind": "vulnerability_family",
-      "resource_topic_ids": []
+      "resource_topic_ids": [],
+      "resource_ids": [
+        "axios-2025-base-url-destination-authority",
+        "formie-2026-integration-settings-credential-authority",
+        "mlflow-2026-webhook-connection-destination-integrity",
+        "owasp-server-request-destination-boundaries",
+        "sveltekit-2026-origin-routing-trust-boundary"
+      ]
     },
     {
       "id": "memory-safety",
@@ -70,7 +90,18 @@
     {
       "id": "information-exposure",
       "kind": "vulnerability_family",
-      "resource_topic_ids": []
+      "resource_topic_ids": [],
+      "resource_ids": [
+        "owasp-error-response-data-minimization",
+        "owasp-security-logging-evidence-quality",
+        "steeltoe-2026-diagnostic-uri-data-minimization",
+        "nextjs-server-client-data-security",
+        "nuxt-2026-rendered-payload-cache-authorization",
+        "librechat-2026-mcp-view-secret-projection",
+        "frappe-2026-linked-document-response-authorization",
+        "zammad-2026-asset-serialization-group-authorization",
+        "owasp-2026-embedding-confidentiality-lifecycle"
+      ]
     }
   ]
 }

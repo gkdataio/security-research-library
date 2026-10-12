@@ -8,7 +8,8 @@
   "resource_type_id": "implementation-guide",
   "topic_ids": [
     "business-logic",
-    "web-foundations"
+    "web-foundations",
+    "api-security"
   ],
   "skillset_ids": [
     "concurrency-reasoning",

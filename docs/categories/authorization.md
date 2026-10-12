@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 34 reports · 90 related resources · 11 diagrams
+**Vulnerability family** · 34 reports · 92 related resources · 11 diagrams
 
 Object, role, account, and tenant access-control design.
 
@@ -51,7 +51,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<../resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — topic: Authorization.
 - [Apollo Federation: preserving the router-to-subgraph boundary](<../resources/apollo-2026-federation-router-subgraph-isolation.md>) — topic: Authorization.
@@ -112,6 +112,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [OpenFGA: policy intersections must preserve explicit exclusions](<../resources/openfga-2026-composed-policy-exclusion-integrity.md>) — topic: Authorization.
 - [Outline: integration authority must end with its owning account](<../resources/outline-2026-webhook-revocation-lifecycle.md>) — topic: Authorization.
 - [OWASP Forgot Password](<../resources/owasp-account-recovery-state-integrity.md>) — diagram: [Recovery must preserve account ownership](<../diagram-gallery.md#account-recovery-challenge-lifecycle>).
+- [OWASP Juice Shop: Controlled Web-Security Training](<../resources/owasp-juice-shop-controlled-training.md>) — topic: Authorization.
 - [OWASP LLM05:2025: generated-output consumer trust](<../resources/owasp-llm-output-consumer-trust.md>) — diagram: [Server disclosure and browser interpretation](<../diagram-gallery.md#server-client-data-consumer-boundaries>).
 - [OWASP LLM08:2025: retrieval permissions and knowledge provenance](<../resources/owasp-rag-retrieval-permission-boundaries.md>) — topic: Authorization.
 - [OWASP Session Management: privilege-transition integrity](<../resources/owasp-session-privilege-transition-integrity.md>) — topic: Authorization.
@@ -142,6 +143,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Vercel React Router: session identity must not select unrestricted storage authority](<../resources/vercel-react-router-2026-session-storage-key-authority.md>) — topic: Authorization.
 - [Vikunja: saved favorites must recheck current project access](<../resources/vikunja-2026-favorites-current-access-revalidation.md>) — topic: Authorization.
 - [Vite: local reachability does not establish browser-origin authority](<../resources/vite-2025-development-server-origin-authority.md>) — topic: Authorization.
+- [Web Security Academy: Free Online Training from PortSwigger](<../resources/portswigger-web-security-academy-controlled-training.md>) — topic: Authorization.
 - [Zammad: overridden serialization must preserve group authorization](<../resources/zammad-2026-asset-serialization-group-authorization.md>) — topic: Authorization.
 
 <a id="conceptual-diagrams"></a>

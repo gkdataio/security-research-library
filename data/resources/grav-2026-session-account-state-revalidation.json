@@ -11,7 +11,8 @@
   "topic_ids": [
     "identity",
     "authorization",
-    "business-logic"
+    "business-logic",
+    "api-security"
   ],
   "skillset_ids": [
     "identity-lifecycle-review",

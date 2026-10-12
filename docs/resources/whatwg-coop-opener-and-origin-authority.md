@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Technical Standard  
 **Version:** HTML Living Standard \(reviewed 2026-10-03\)  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
 
 ## Original summary

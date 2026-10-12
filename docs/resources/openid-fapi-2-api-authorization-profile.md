@@ -8,7 +8,7 @@
 **Authors:** Daniel Fett; Dave Tonge; Joseph Heenan  
 **Resource type:** Technical Standard  
 **Version:** 2\.0 Final  
-**Topics:** Identity; Authorization  
+**Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations
 
 ## Original summary

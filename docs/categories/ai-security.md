@@ -24,7 +24,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Claude Cowork: approved destinations need account and operation binding](<../resources/anthropic-2026-egress-capability-identity-binding.md>) — topic: Ai Security.
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<../resources/dify-2026-tracing-configuration-tenant-authority.md>) — topic: Ai Security.

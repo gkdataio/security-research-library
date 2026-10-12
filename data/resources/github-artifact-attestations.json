@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "id": "github-artifact-attestations",
+  "title": "GitHub Artifact Attestations: Provenance and Consumer Policy",
+  "publisher": "GitHub",
+  "authors": [],
+  "primary_url": "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
+  "resource_type_id": "architecture-guide",
+  "topic_ids": [
+    "supply-chain",
+    "identity",
+    "verification"
+  ],
+  "skillset_ids": [
+    "pipeline-trust-modeling",
+    "dependency-provenance"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publicly accessible official documentation; no account required for reading."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:31:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Shows the build context carried by signed artifact claims: workflow, repository, organization, environment, commit, triggering event, and OIDC information. It connects those claims to consumer-defined acceptance policy and explains how an SBOM can accompany provenance.",
+  "defensive_use": "Separate the question of where an artifact came from from whether its source and build process meet release requirements. Compare the expected build identity with recorded provenance before accepting a release. Treat claims from build infrastructure as evidence that still needs an explicit consumer policy.",
+  "prerequisites": [
+    "Git commits and repositories",
+    "Basic CI workflows",
+    "Provenance and digital-signature concepts"
+  ],
+  "sources": [
+    {
+      "id": "github-attestations",
+      "url": "https://docs.github.com/en/actions/concepts/security/artifact-attestations",
+      "title": "Artifact attestations",
+      "publisher": "GitHub",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "Generating attestations alone provides no benefit without verification, and attestations do not establish that code is secure.",
+    "Public repository attestations use public transparency infrastructure; GitHub’s private instance has no transparency log and only federates with GitHub Actions.",
+    "The page’s SLSA discussion explicitly refers to v1.0. Its claims should not be silently recast as v1.2 certification."
+  ]
+}

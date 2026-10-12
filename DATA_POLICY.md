@@ -57,6 +57,8 @@ Resource types classify the publication at `primary_url`, not every supporting s
 
 Diagrams are original conceptual defensive models with linked report/resource evidence and alternate text. Do not include operational attack sequences or exploit details. Keep Mermaid source and SVG rendering provenance explicit. Both source formats must match the canonical graph; rendered SVGs need visual inspection after edits.
 
+Learning-topic changes are editorial navigation, not fresh source verification. CTF and controlled practice remain educational resources rather than vulnerability families or monetary competition reports. Preserve existing publication types and metadata when adding supported topic tags. The general resource-type, defensive-skill and publication-year views use canonical fields; unknown publication dates must never be filled with review, revision or software-release dates. See [learning navigation maintenance](docs/learning-navigation.md).
+
 ## First-party recognition and direct disclosure
 
 `data/recognition/` is a separate reference collection for organizations with an official public recognition page and reviewed first-party reporting guidance. A hall of fame, acknowledgment page or researcher-recognition program establishes only the recognition described by its source. It does not establish traffic rank, payment eligibility, report acceptance, testing authorization or completeness of policy review. Do not promote these records into reviewed program-policy or award-backed report counts.

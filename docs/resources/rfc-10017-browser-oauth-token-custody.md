@@ -8,7 +8,7 @@
 **Authors:** Aaron Parecki; Philippe De Ryck; David Waite  
 **Resource type:** Technical Standard  
 **Version:** RFC 10017 / BCP 212  
-**Topics:** Identity; Authorization; Web Foundations  
+**Topics:** Identity; Authorization; Web Foundations; Browser Security  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Review client isolation
 
 ## Original summary

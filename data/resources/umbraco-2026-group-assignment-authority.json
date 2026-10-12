@@ -10,7 +10,8 @@
   "resource_type_id": "research-paper",
   "topic_ids": [
     "authorization",
-    "web-foundations"
+    "web-foundations",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

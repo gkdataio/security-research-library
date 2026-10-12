@@ -10,7 +10,8 @@
   "resource_type_id": "architecture-guide",
   "topic_ids": [
     "web-foundations",
-    "authorization"
+    "authorization",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

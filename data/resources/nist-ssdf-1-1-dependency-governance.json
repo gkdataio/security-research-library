@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0.0",
+  "id": "nist-ssdf-1-1-dependency-governance",
+  "title": "NIST SSDF 1.1: Component Governance and Release Provenance",
+  "publisher": "NIST",
+  "authors": [
+    "Murugiah Souppaya",
+    "Karen Scarfone",
+    "Donna Dodson"
+  ],
+  "primary_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "supply-chain",
+    "verification"
+  ],
+  "skillset_ids": [
+    "dependency-provenance",
+    "pipeline-trust-modeling"
+  ],
+  "version": "SSDF 1.1 (NIST SP 800-218)",
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publicly accessible official documentation; no account required for reading."
+  },
+  "dates": {
+    "published": {
+      "value": "2022-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "nist-ssdf-index",
+      "note": "NIST’s project publication index explicitly lists the release date of the final SP 800-218."
+    },
+    "version_released": {
+      "value": "2022-02-03",
+      "precision": "day",
+      "basis": "explicit",
+      "source_id": "nist-ssdf-index",
+      "note": "Release date of this SSDF 1.1 resource edition, not a software patch date."
+    },
+    "source_displayed": {
+      "value": "2022-02",
+      "precision": "month",
+      "basis": "explicit",
+      "source_id": "nist-ssdf-landing",
+      "note": "The resource landing page displays Date Published: February 2022."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:31:00Z",
+    "living_resource": false,
+    "status": "primary_source_reviewed",
+    "note": "The final SSDF 1.1 resource and current NIST publication index were reviewed. The index separately lists SSDF 1.2 as an Initial Public Draft."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Provides lifecycle practices for acquiring, maintaining, and assessing software components. PW.4.1 and PW.4.4 cover component selection, organizational requirements, ongoing vulnerability and maintenance status, and integrity. PS.3.2 connects release records to component provenance.",
+  "defensive_use": "Give each dependency an owner, acceptance requirements, provenance records, and a plan for maintenance or replacement. Revisit these decisions throughout the component’s lifetime. Make the boundary between external supplier evidence and the organization’s own release decision explicit.",
+  "prerequisites": [
+    "Basic dependency management",
+    "Software development lifecycle and release familiarity"
+  ],
+  "sources": [
+    {
+      "id": "nist-ssdf-landing",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "title": "Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "nist-ssdf-pdf",
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf",
+      "title": "Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary",
+        "version"
+      ]
+    },
+    {
+      "id": "nist-ssdf-index",
+      "url": "https://csrc.nist.gov/projects/ssdf/publications",
+      "title": "Secure Software Development Framework: Publications",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "id": "nist-ssdf-draft",
+      "url": "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
+      "title": "Secure Software Development Framework (SSDF) Version 1.2: Initial Public Draft",
+      "publisher": "NIST",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "This is a risk-based high-level framework, not a product certification or an exhaustive technical recipe.",
+    "At review, NIST lists SSDF 1.1 as Final and SSDF 1.2 as an Initial Public Draft dated 2025-12-17. The draft’s status and dates must not be merged into this edition’s record."
+  ]
+}

@@ -8,7 +8,7 @@
 **Authors:** Rachid Allam \(zhero;\); inzo\_  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Interpreter Boundaries  
+**Topics:** Web Foundations; Interpreter Boundaries; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Review artifact isolation
 
 ## Original summary

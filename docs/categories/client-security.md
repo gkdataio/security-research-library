@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Security theme / environment** · 20 reports · 4 related resources · 3 diagrams
+**Security theme / environment** · 20 reports · 13 related resources · 3 diagrams
 
 Client-side isolation, memory safety, and security-sensitive state.
 
@@ -37,12 +37,21 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
-- [Chromium Rule of Two: input trust, memory safety and privilege](<../resources/chromium-rule-of-two-input-isolation.md>) — diagram: [Parsing safety and action authority](<../diagram-gallery.md#parsing-safety-action-authority>).
-- [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
+- [Chrome bfcache: restored pages and session-state boundaries](<../resources/chrome-bfcache-restored-session-state.md>) — explicit related-learning selection.
+- [Chrome Local Network Access: separate browser reachability from site authority](<../resources/chrome-local-network-permission-boundaries.md>) — explicit related-learning selection.
+- [Chromium Rule of Two: input trust, memory safety and privilege](<../resources/chromium-rule-of-two-input-isolation.md>) — explicit related-learning selection; diagram: [Parsing safety and action authority](<../diagram-gallery.md#parsing-safety-action-authority>).
+- [Document Isolation Policy: process separation and residual authority](<../resources/chrome-document-isolation-policy-boundaries.md>) — explicit related-learning selection.
+- [Fetch Metadata Request Headers](<../resources/w3c-fetch-metadata-request-context-boundaries.md>) — explicit related-learning selection.
+- [HTML COOP: opener separation and same-origin authority](<../resources/whatwg-coop-opener-and-origin-authority.md>) — explicit related-learning selection.
+- [HTML5 Security Cheat Sheet: Web Messaging](<../resources/owasp-browser-message-trust-boundaries.md>) — explicit related-learning selection; diagram: [Browser messages need separate trust checks](<../diagram-gallery.md#browser-message-authority-boundaries>).
 - [LLM Prompt Injection Prevention Cheat Sheet](<../resources/owasp-llm-prompt-injection-prevention.md>) — diagram: [Retrieved content is data, not authority](<../diagram-gallery.md#ai-content-authority-separation>).
+- [Permissions Policy: inherited browser-feature authority across embedded documents](<../resources/w3c-permissions-policy-embedded-feature-authority.md>) — explicit related-learning selection.
+- [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<../resources/rfc-10017-browser-oauth-token-custody.md>) — explicit related-learning selection.
+- [Storage Access API: permission, document activation and cookie eligibility](<../resources/privacycg-storage-access-permission-activation-boundary.md>) — explicit related-learning selection.
+- [Trusted Types: typed sinks depend on trustworthy policy creation](<../resources/w3c-2026-trusted-types-policy-authority.md>) — explicit related-learning selection.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

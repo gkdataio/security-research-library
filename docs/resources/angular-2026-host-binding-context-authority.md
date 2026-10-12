@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review text-encoding invariants; Review input trust boundaries; Verify remediation evidence
 
 ## Original summary

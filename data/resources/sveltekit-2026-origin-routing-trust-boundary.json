@@ -10,7 +10,8 @@
   "primary_url": "https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit",
   "resource_type_id": "research-paper",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "integration-threat-modeling",

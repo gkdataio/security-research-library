@@ -52,7 +52,7 @@ class StateAuthorityResourceTests(unittest.TestCase):
         for phrase in ('22.0.1', '21.2.17', '20.3.25', '<= 19.2.25',
                        'no listed patch', 'does not establish production compromise'):
             self.assertIn(phrase, caveats)
-        self.assertEqual(record['topic_ids'], ['web-foundations'])
+        self.assertEqual(record['topic_ids'], ['web-foundations', 'browser-security', 'server-client-frameworks'])
         self.assertEqual(set(record['skillset_ids']), {
             'untrusted-input-handling', 'cache-artifact-isolation', 'patch-verification'})
 

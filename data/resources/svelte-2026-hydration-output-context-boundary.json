@@ -9,7 +9,9 @@
   "primary_url": "https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/",
   "resource_type_id": "research-paper",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "browser-security",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "secure-parser-review",

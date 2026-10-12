@@ -8,8 +8,8 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Training Lab  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
-**Defensive skills:** Model access-control invariants; Review identity lifecycle; Reason about concurrent state
+**Topics:** Web Foundations; API Security; CTF and Controlled Practice; Identity; Authorization; Business Logic and State Integrity; Browser Security  
+**Defensive skills:** Model access-control invariants; Review identity lifecycle; Reason about concurrent state; Learn through controlled practice
 
 ## Original summary
 

@@ -7,7 +7,10 @@
   ],
   "properties": {
     "schema_version": {
-      "const": "1.0.0"
+      "enum": [
+        "1.0.0",
+        "1.1.0"
+      ]
     },
     "categories": {
       "type": "array",
@@ -37,9 +40,43 @@
             "items": {
               "type": "string"
             }
+          },
+          "resource_ids": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+            },
+            "description": "Explicit related-learning records; does not reclassify resources or reports."
           }
         }
       }
     }
-  }
+  },
+  "oneOf": [
+    {
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "categories": {
+          "items": {
+            "properties": {
+              "resource_ids": {
+                "const": []
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "properties": {
+        "schema_version": {
+          "const": "1.1.0"
+        }
+      }
+    }
+  ]
 }

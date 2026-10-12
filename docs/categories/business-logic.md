@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 14 reports · 35 related resources · 4 diagrams
+**Vulnerability family** · 14 reports · 36 related resources · 4 diagrams
 
 State transitions, approval integrity, and transactional invariants.
 
@@ -31,7 +31,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>), [Fallbacks must preserve the original caller's authority](<../diagram-gallery.md#fallback-requester-authorization>).
 - [Better Auth: single-use authorization requires atomic state consumption](<../resources/better-auth-2026-authorization-code-consumption-integrity.md>) — topic: Business Logic and State Integrity.
@@ -68,6 +68,7 @@ Included by the topic crosswalk or an explicit resource link in a conceptual dia
 - [Vendure: payment child objects must inherit order channel authority](<../resources/vendure-2026-payment-child-object-channel-authority.md>) — topic: Business Logic and State Integrity.
 - [Vikunja: saved favorites must recheck current project access](<../resources/vikunja-2026-favorites-current-access-revalidation.md>) — topic: Business Logic and State Integrity.
 - [Vvveb: numeric input validity does not establish legitimate order state](<../resources/vvveb-2026-order-domain-invariant.md>) — topic: Business Logic and State Integrity.
+- [Web Security Academy: Free Online Training from PortSwigger](<../resources/portswigger-web-security-academy-controlled-training.md>) — topic: Business Logic and State Integrity.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

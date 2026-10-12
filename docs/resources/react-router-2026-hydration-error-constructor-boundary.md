@@ -8,7 +8,7 @@
 **Authors:** brophdawg11  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
+**Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Review secure error behavior
 
 ## Original summary

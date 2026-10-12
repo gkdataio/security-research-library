@@ -7,7 +7,9 @@
   "primary_url": "https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg",
   "resource_type_id": "maintainer-advisory",
   "topic_ids": [
-    "web-foundations"
+    "web-foundations",
+    "browser-security",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "untrusted-input-handling",

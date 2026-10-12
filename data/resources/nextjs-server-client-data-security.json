@@ -8,7 +8,9 @@
   "resource_type_id": "implementation-guide",
   "topic_ids": [
     "web-foundations",
-    "authorization"
+    "authorization",
+    "api-security",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "authorization-modeling",

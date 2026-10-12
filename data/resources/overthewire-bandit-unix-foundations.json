@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "id": "overthewire-bandit-unix-foundations",
+  "title": "OverTheWire Bandit: Unix/Linux Foundations",
+  "publisher": "OverTheWire",
+  "authors": [],
+  "primary_url": "https://overthewire.org/wargames/bandit/",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "ctf-and-practice"
+  ],
+  "skillset_ids": [
+    "controlled-practice"
+  ],
+  "version": null,
+  "summary": "An OverTheWire wargame for absolute beginners, introducing Unix/Linux basics through a sequence of contained exercises. The official overview encourages reading documentation and learning command-line concepts before progressing to other wargames.",
+  "defensive_use": "Build foundational command-line literacy in the designated training game. Record what each exercise teaches and the limits of the environment before relating those concepts to defensive administration or later web-security study.",
+  "prerequisites": [
+    "The publisher describes Bandit as suitable for absolute beginners."
+  ],
+  "prerequisites_basis": "publisher_explicit",
+  "access": {
+    "cost": "free",
+    "note": "OverTheWire rules identify its hosted educational resources as free. Shell connections and game access were not tested."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication is not stated on the reviewed page."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "The website maintenance date is not a publication or revision date for this course."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:32:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official overview and rules reviewed. The provider-linked website repository has a June 4, 2026 maintenance commit. This establishes website maintenance, not the last modification of every lesson. No exercises were run."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://overthewire.org/wargames/bandit/",
+      "title": "OverTheWire: Bandit",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "learning-order",
+      "url": "https://overthewire.org/wargames/",
+      "title": "OverTheWire: Wargames",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "rules",
+      "url": "https://overthewire.org/rules/",
+      "title": "OverTheWire: Rules",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "website-provenance",
+      "url": "https://overthewire.org/information/website.html",
+      "title": "OverTheWire: Editing this website",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "maintenance",
+      "url": "https://github.com/OverTheWireOrg/OverTheWire-website/commit/e8abb922f24a9acccd142486b91c2e710909fd41",
+      "title": "OverTheWire website maintenance, June 4, 2026",
+      "publisher": "OverTheWire",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:32:00Z",
+      "supports": [
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Use only the designated game environment within current provider rules; the listing grants no authorization for other systems.",
+    "Provider rules prohibit publishing game credentials and restrict redistribution of training materials. This record contains an original description only.",
+    "The official index lists Bandit online, but live service availability was not tested. No original publication or course revision date is reported."
+  ],
+  "content_scope": "defensive_education"
+}

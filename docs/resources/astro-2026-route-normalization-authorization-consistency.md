@@ -8,7 +8,7 @@
 **Authors:** matthewp  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review parsing and serialization; Verify remediation evidence
 
 ## Original summary

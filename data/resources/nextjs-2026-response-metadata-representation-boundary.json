@@ -11,7 +11,9 @@
   "resource_type_id": "research-paper",
   "topic_ids": [
     "web-foundations",
-    "interpreter-boundaries"
+    "interpreter-boundaries",
+    "browser-security",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "untrusted-input-handling",

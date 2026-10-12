@@ -10,7 +10,8 @@
   "resource_type_id": "maintainer-advisory",
   "topic_ids": [
     "web-foundations",
-    "authorization"
+    "authorization",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "authorization-modeling",

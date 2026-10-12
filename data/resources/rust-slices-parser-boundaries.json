@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0.0",
+  "id": "rust-slices-parser-boundaries",
+  "title": "Rust Slices: Bounds, Borrowing, and Text Boundaries",
+  "publisher": "The Rust Project",
+  "authors": [],
+  "primary_url": "https://doc.rust-lang.org/book/ch04-03-slices.html",
+  "resource_type_id": "implementation-guide",
+  "topic_ids": [
+    "memory-safety"
+  ],
+  "skillset_ids": [
+    "memory-safety-review",
+    "secure-parser-review",
+    "encoding-invariant-review"
+  ],
+  "version": null,
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "Publicly accessible official documentation; no account required for reading."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No publication or revision date is displayed on the reviewed page."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:31:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official book, reference, and API pages reviewed. Page publication and revision dates are not displayed; individual API stabilization versions are not resource edition dates."
+  },
+  "content_scope": "defensive_education",
+  "summary": "Uses a small text-processing example to contrast an integer position, which can become detached from the underlying data, with a borrowed slice tied to the source buffer. The reference specifies that safe slice access is bounds-checked; the strings chapter explains why byte positions and UTF-8 character boundaries are different contracts.",
+  "defensive_use": "Keep a parser’s view connected to its backing storage and represent absence or invalid boundaries explicitly. Distinguish memory safety, valid encoding, and acceptance of a meaningful message. Prefer checked, fallible access where input may be incomplete, and document the transition from raw input to borrowed byte or text views.",
+  "prerequisites": [
+    "Rust ownership and borrowing",
+    "Bytes versus Unicode text"
+  ],
+  "sources": [
+    {
+      "id": "rust-slices",
+      "url": "https://doc.rust-lang.org/book/ch04-03-slices.html",
+      "title": "The Slice Type",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "rust-slice-reference",
+      "url": "https://doc.rust-lang.org/reference/types/slice.html",
+      "title": "Slice types",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "rust-strings",
+      "url": "https://doc.rust-lang.org/book/ch08-02-strings.html",
+      "title": "Storing UTF-8 Encoded Text with Strings",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "rust-slice-api",
+      "url": "https://doc.rust-lang.org/std/primitive.slice.html",
+      "title": "Primitive Type slice",
+      "publisher": "The Rust Project",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:31:00Z",
+      "supports": [
+        "summary"
+      ]
+    }
+  ],
+  "caveats": [
+    "The introductory text-processing example assumes ASCII.",
+    "Bounds-checked indexing may panic. Memory safety does not itself establish graceful error handling or valid application semantics.",
+    "Method stabilization versions in the API reference describe individual software APIs, not the publication or revision date of this educational resource."
+  ]
+}

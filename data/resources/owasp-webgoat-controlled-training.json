@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0.0",
+  "id": "owasp-webgoat-controlled-training",
+  "title": "OWASP WebGoat: Web-Application Security Lessons",
+  "publisher": "OWASP Foundation",
+  "authors": [],
+  "primary_url": "https://owasp.org/projects/webgoat",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "ctf-and-practice",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "controlled-practice",
+    "untrusted-input-handling"
+  ],
+  "version": "v2026.5",
+  "summary": "A deliberately insecure teaching application for learning common server-side web-application flaws. Its interactive lessons provide a controlled context for understanding security failures and the need for defensive controls.",
+  "defensive_use": "Study lesson concepts in an isolated local training setup, recording the relevant trust assumption and prevention principle. Use the material to improve secure-design reasoning without extending exercise activity to third-party systems.",
+  "prerequisites": [
+    "A web browser and the ability to run a local teaching application using a supported deployment option.",
+    "Basic HTTP and web-application concepts are helpful."
+  ],
+  "prerequisites_basis": "editorial_guidance",
+  "access": {
+    "cost": "free",
+    "note": "OWASP identifies its educational resources as free. Local computing or optional hosting may involve separate costs; no environment was provisioned."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication date is not stated on the reviewed resource pages."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Packaged training-application release dates are retained in the maintenance note, not treated as a dated document edition."
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:30:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Official project guidance, README, and release metadata reviewed. The GitHub release API records v2026.5 published October 12, 2026 at 06:56:08 UTC. No runtime verification was performed."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://owasp.org/projects/webgoat",
+      "title": "OWASP WebGoat",
+      "publisher": "OWASP Foundation",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "documentation",
+      "url": "https://github.com/WebGoat/WebGoat",
+      "title": "WebGoat: A deliberately insecure Web Application",
+      "publisher": "OWASP WebGoat",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "release",
+      "url": "https://github.com/WebGoat/WebGoat/releases/tag/v2026.5",
+      "title": "WebGoat v2026.5",
+      "publisher": "OWASP WebGoat",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "version",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "The publisher warns that running WebGoat makes the host vulnerable, recommends disconnecting from the Internet, and notes that its default configuration binds to localhost.",
+    "Use only an isolated, explicitly authorized training environment. No application was installed, started, or tested.",
+    "The release date belongs to the educational training application, not the original project-page publication.",
+    "Prerequisites vary with the selected release and deployment method; consult current official documentation before setup.",
+    "Training application release v2026.5 is dated 2026-10-12 in the official release source. It is retained as maintenance evidence; no dated document edition is asserted."
+  ],
+  "content_scope": "defensive_education"
+}

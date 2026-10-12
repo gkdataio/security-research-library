@@ -9,7 +9,8 @@
   "topic_ids": [
     "identity",
     "authorization",
-    "web-foundations"
+    "web-foundations",
+    "browser-security"
   ],
   "skillset_ids": [
     "identity-lifecycle-review",

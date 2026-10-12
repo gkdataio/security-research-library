@@ -8,7 +8,7 @@
 **Authors:** danielroe  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
+**Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Threat-model integrations; Review input trust boundaries; Model access-control invariants
 
 ## Original summary

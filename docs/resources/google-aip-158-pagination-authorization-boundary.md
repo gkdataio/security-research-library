@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Web Foundations  
+**Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations
 
 ## Original summary

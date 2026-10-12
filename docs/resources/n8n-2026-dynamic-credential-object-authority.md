@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization  
+**Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Threat-model integrations
 
 ## Original summary

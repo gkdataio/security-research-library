@@ -8,7 +8,7 @@
 **Authors:** Malte Ubl  
 **Resource type:** Architecture Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Cloud Security  
+**Topics:** Web Foundations; Verification; Cloud Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
 
 ## Original summary

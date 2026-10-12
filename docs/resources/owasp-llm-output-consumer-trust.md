@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** LLM05:2025  
-**Topics:** Ai Security; Web Foundations  
+**Topics:** Ai Security; Web Foundations; Browser Security  
 **Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Threat-model integrations
 
 ## Original summary

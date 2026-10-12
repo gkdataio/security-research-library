@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 1 report · 1 related resource · 1 diagram
+**Vulnerability family** · 1 report · 5 related resources · 1 diagram
 
 Destination validation and boundaries in server-initiated requests.
 
@@ -24,9 +24,13 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
-- [OWASP Server-Side Request Forgery Prevention](<../resources/owasp-server-request-destination-boundaries.md>) — diagram: [Layer server-request destination controls](<../diagram-gallery.md#server-request-destination-policy>).
+- [Axios: URL construction does not establish destination authority](<../resources/axios-2025-base-url-destination-authority.md>) — explicit related-learning selection.
+- [Formie: integration settings need operation and attribute authority](<../resources/formie-2026-integration-settings-credential-authority.md>) — explicit related-learning selection.
+- [MLflow: destination validation must remain bound to the actual connection](<../resources/mlflow-2026-webhook-connection-destination-integrity.md>) — explicit related-learning selection.
+- [OWASP Server-Side Request Forgery Prevention](<../resources/owasp-server-request-destination-boundaries.md>) — explicit related-learning selection; diagram: [Layer server-request destination controls](<../diagram-gallery.md#server-request-destination-policy>).
+- [SvelteKit: origin construction and routing must preserve server request authority](<../resources/sveltekit-2026-origin-routing-trust-boundary.md>) — explicit related-learning selection.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

@@ -2,7 +2,7 @@
 
 [Browse all categories](../vulnerability-types.md) · [All reports](../reports.md) · [All resources](../resource-index.md) · [Library home](../../README.md)
 
-**Vulnerability family** · 10 reports · 2 related resources · 1 diagram
+**Vulnerability family** · 10 reports · 5 related resources · 1 diagram
 
 Safe length, lifetime, encoding, and component-boundary assumptions.
 
@@ -27,10 +27,13 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
+- [C\+\+ Core Guidelines: Bounds and Lifetime Safety](<../resources/cpp-core-guidelines-bounds-lifetime.md>) — topic: Memory Safety and Process Isolation.
 - [Chromium Rule of Two: input trust, memory safety and privilege](<../resources/chromium-rule-of-two-input-isolation.md>) — topic: Memory Safety and Process Isolation; diagram: [Parsing safety and action authority](<../diagram-gallery.md#parsing-safety-action-authority>).
 - [Document Isolation Policy: process separation and residual authority](<../resources/chrome-document-isolation-policy-boundaries.md>) — topic: Memory Safety and Process Isolation.
+- [Rust Ownership and Borrowing: Lifetime Contracts](<../resources/rust-ownership-borrowing.md>) — topic: Memory Safety and Process Isolation.
+- [Rust Slices: Bounds, Borrowing, and Text Boundaries](<../resources/rust-slices-parser-boundaries.md>) — topic: Memory Safety and Process Isolation.
 
 <a id="conceptual-diagrams"></a>
 ## Conceptual diagrams

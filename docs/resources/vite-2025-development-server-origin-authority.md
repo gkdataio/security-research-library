@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization  
+**Topics:** Web Foundations; Authorization; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Verify remediation evidence
 
 ## Original summary

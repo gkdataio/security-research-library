@@ -8,7 +8,7 @@
 **Authors:** Chris Thompson  
 **Resource type:** Architecture Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Model access-control invariants
 
 ## Original summary

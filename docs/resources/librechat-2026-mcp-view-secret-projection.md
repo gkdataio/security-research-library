@@ -8,7 +8,7 @@
 **Authors:** LoGGGG2402  
 **Resource type:** Maintainer Advisory  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security; Authorization  
+**Topics:** Ai Security; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review secrets containment; Review AI authority boundaries; Review parsing and serialization
 
 ## Original summary

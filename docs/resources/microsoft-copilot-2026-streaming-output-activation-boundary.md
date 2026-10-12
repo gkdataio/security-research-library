@@ -8,7 +8,7 @@
 **Authors:** Dolev Taler  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security; Web Foundations; Interpreter Boundaries  
+**Topics:** Ai Security; Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Reason about concurrent state
 
 ## Original summary

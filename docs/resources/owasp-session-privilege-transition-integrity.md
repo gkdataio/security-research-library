@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; Web Foundations  
+**Topics:** Identity; Authorization; Web Foundations; Browser Security  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Model access-control invariants
 
 ## Original summary

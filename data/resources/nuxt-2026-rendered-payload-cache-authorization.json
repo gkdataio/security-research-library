@@ -11,7 +11,8 @@
   "topic_ids": [
     "web-foundations",
     "verification",
-    "authorization"
+    "authorization",
+    "server-client-frameworks"
   ],
   "skillset_ids": [
     "authorization-modeling",

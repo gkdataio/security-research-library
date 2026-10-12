@@ -32,7 +32,7 @@ On this page: [Reports](#reports) · [Related learning](#related-learning) · [C
 <a id="related-learning"></a>
 ## Related learning
 
-Included by the topic crosswalk or an explicit resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
+Included by the topic crosswalk, an explicit related-learning selection, or a resource link in a conceptual diagram below. Each entry states its relationship; this does not reclassify the resource.
 
 - [Authorization Cheat Sheet](<../resources/owasp-authorization-cheat-sheet.md>) — diagram: [Approval stays attached to the reviewed version](<../diagram-gallery.md#approval-version-integrity>).
 - [AWS IAM security best practices for workload identities](<../resources/aws-iam-machine-identity-best-practices.md>) — topic: Cloud Security; diagram: [Keep workload authority tenant-scoped](<../diagram-gallery.md#workload-identity-tenant-scope>).

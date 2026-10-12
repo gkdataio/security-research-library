@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cylab-security-academy-ctf-practice",
+  "title": "CyLab Security Academy: Self-Paced CTF Learning",
+  "publisher": "Carnegie Mellon University",
+  "authors": [],
+  "primary_url": "https://cylabacademy.org/",
+  "resource_type_id": "training-lab",
+  "topic_ids": [
+    "ctf-and-practice",
+    "web-foundations"
+  ],
+  "skillset_ids": [
+    "controlled-practice",
+    "untrusted-input-handling",
+    "defensive-evidence-writing"
+  ],
+  "version": null,
+  "summary": "Carnegie Mellon University's free CTF learning platform, continuing the former picoCTF learning service. Topic- and difficulty-organized challenges and curated learning paths introduce computing and security concepts, including web security.",
+  "defensive_use": "Use the provider's deliberately constructed exercises to learn security concepts and explain the assumptions behind a result. Treat challenge completion as practice, then connect observations to secure design and bounded evidence.",
+  "prerequisites": [
+    "The publisher states that no experience is needed."
+  ],
+  "prerequisites_basis": "publisher_explicit",
+  "access": {
+    "cost": "free",
+    "note": "The official site states that the learning platform is free. Login and sign-up links are provided; account creation, eligibility, and signed-in challenge access were not tested."
+  },
+  "dates": {
+    "published": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "Original publication date is not stated on the reviewed resource pages."
+    },
+    "version_released": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": null
+    },
+    "source_displayed": {
+      "value": null,
+      "precision": null,
+      "basis": "not_reported",
+      "source_id": null,
+      "note": "No resource-page publication or revision date is displayed; review time is not a publication date."
+    }
+  },
+  "freshness": {
+    "reviewed_at": "2026-10-12T18:30:00Z",
+    "living_resource": true,
+    "status": "primary_source_reviewed",
+    "note": "Current official learning pages and the dated platform-transition notice were reviewed. The notice records May 8, 2026 and an August 23, 2026 update; neither dates the original curriculum. No exercises were run."
+  },
+  "sources": [
+    {
+      "id": "primary",
+      "url": "https://cylabacademy.org/",
+      "title": "CyLab Security Academy",
+      "publisher": "Carnegie Mellon University",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "prerequisites"
+      ]
+    },
+    {
+      "id": "about",
+      "url": "https://cylabacademy.org/about.html",
+      "title": "About CyLab Security Academy",
+      "publisher": "Carnegie Mellon University",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary"
+      ]
+    },
+    {
+      "id": "transition",
+      "url": "https://status.cylabacademy.org/issues/2026-05-08-academy/",
+      "title": "picoctf.org is now CyLab Security Academy",
+      "publisher": "CyLab Security Academy",
+      "provenance": "official_primary",
+      "retrieved_at": "2026-10-12T18:30:00Z",
+      "supports": [
+        "summary",
+        "dates"
+      ]
+    }
+  ],
+  "caveats": [
+    "Practice stays within the provider's assigned exercises and current rules; this listing grants no authorization for other systems.",
+    "The May 8, 2026 platform-transition announcement is not the original publication date of the learning material.",
+    "The public learners subpage failed to load during this review; the current homepage, About page, and official transition notice were reviewed."
+  ],
+  "content_scope": "defensive_education"
+}

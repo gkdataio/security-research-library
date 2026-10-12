@@ -26,7 +26,7 @@ class CategoryNavigationTests(unittest.TestCase):
         cls.pages = build()
 
     def test_config_rejects_unknown_missing_duplicate_and_unsafe_values(self):
-        validate_config(self.config, self.schema, self.taxonomy, self.resource_taxonomy)
+        validate_config(self.config, self.schema, self.taxonomy, self.resource_taxonomy, self.resources)
         for change in ('missing', 'duplicate', 'unknown', 'topic', 'kind', 'path', 'extra'):
             config = copy.deepcopy(self.config)
             if change == 'missing': config['categories'].pop()
@@ -37,7 +37,7 @@ class CategoryNavigationTests(unittest.TestCase):
             if change == 'path': config['categories'][0]['id'] = '../escape'
             if change == 'extra': config['categories'][0]['new_field'] = True
             with self.subTest(change=change), self.assertRaises(Invalid):
-                validate_config(config, self.schema, self.taxonomy, self.resource_taxonomy)
+                validate_config(config, self.schema, self.taxonomy, self.resource_taxonomy, self.resources)
 
     def test_exact_report_membership_roles_and_complete_coverage(self):
         seen = set()
@@ -64,6 +64,7 @@ class CategoryNavigationTests(unittest.TestCase):
             self.assertEqual({d['id'] for d in diagrams}, expected_diagrams)
             expected_resources = {r['id'] for r in self.resources
                                   if set(r['topic_ids']).intersection(category['resource_topic_ids'])
+                                  or r['id'] in category.get('resource_ids', [])
                                   or any(r['id'] in d['linked_resource_ids'] for d in diagrams)}
             self.assertEqual({r['id'] for r, _, _ in learning}, expected_resources)
             self.assertEqual(len(learning), len(expected_resources))

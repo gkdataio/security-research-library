@@ -8,7 +8,7 @@
 **Authors:** Not identified in the reviewed record  
 **Resource type:** Implementation Guide  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity  
+**Topics:** Business Logic and State Integrity; API Security  
 **Defensive skills:** Reason about concurrent state; Threat-model integrations
 
 ## Original summary

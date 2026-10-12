@@ -11,7 +11,8 @@
   "topic_ids": [
     "authorization",
     "business-logic",
-    "identity"
+    "identity",
+    "api-security"
   ],
   "skillset_ids": [
     "authorization-modeling",

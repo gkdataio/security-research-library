@@ -8,7 +8,7 @@
 **Authors:** Camilo Vera  
 **Resource type:** Research Paper  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations  
+**Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
 
 ## Original summary
