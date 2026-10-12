@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "z-cert-security-recognition",
+  "organization": "Z-CERT",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://z-cert.nl/kwetsbaarheid-melden/hall-of-fame",
+    "summary": "The healthcare Hall recognizes qualifying responsible reports; duplicate credit follows first-report rules.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://z-cert.nl/en/resources/cvd",
+    "summary": "The policy offers direct encrypted email as an alternative to Zivver secure messaging.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "A thank-you reward may vary with severity and report quality; amount and form are unspecified.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "One coordinator program, not separate entries for each constituent. The direct email link is protected in text extraction; use the policy template. Suspected medical-data access must be assessed by Z-CERT."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://z-cert.nl/en/resources/cvd",
+      "publisher": "Z-CERT",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://z-cert.nl/kwetsbaarheid-melden/hall-of-fame",
+      "publisher": "Z-CERT",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

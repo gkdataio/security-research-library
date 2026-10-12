@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "null-community-security-recognition",
+  "organization": "null — The Open Security Community",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://null.community/pages/1-null-hall-of-fame",
+    "summary": "Valid, impactful responsible reports can receive credit at the core team's discretion.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://null.community/pages/5-security",
+    "summary": "Email reporting is accepted; the policy also recommends its organization-managed Google Form.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes monetary rewards.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The Hall also credits non-security community contributions; historical entries do not override current recognition exclusions."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://null.community/pages/5-security",
+      "publisher": "null — The Open Security Community",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://null.community/pages/1-null-hall-of-fame",
+      "publisher": "null — The Open Security Community",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

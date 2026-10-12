@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "matrix-foundation-security-recognition",
+  "organization": "Matrix.org Foundation",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://matrix.org/security-hall-of-fame/",
+    "summary": "Responsible reporters may receive requested Hall credit after coordinated disclosure.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://matrix.org/security-disclosure-policy/",
+    "summary": "The policy provides a direct email link and optional encryption key.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The Foundation says it does not ordinarily provide bounties; this is not an absolute promise about every future case.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The email address is protected in text extraction; use the policy's link. Historical Element credits do not define the Foundation's current program."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://matrix.org/security-disclosure-policy/",
+      "publisher": "Matrix.org Foundation",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://matrix.org/security-hall-of-fame/",
+      "publisher": "Matrix.org Foundation",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "ownership",
+      "title": "Official project-ownership clarification",
+      "url": "https://matrix.org/blog/2024/10/security-disclosure-matrix-js-sdk-and-matrix-react-sdk/",
+      "publisher": "Matrix.org Foundation",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

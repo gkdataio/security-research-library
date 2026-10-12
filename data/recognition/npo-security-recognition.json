@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "npo-security-recognition",
+  "organization": "NPO (Dutch Public Broadcasting)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://npo.nl/overnpo/privacy-en-security/responsible-disclosure",
+    "summary": "Policy-compliant reporters may request inclusion in the populated Wall of Fame.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://npo.nl/overnpo/privacy-en-security/responsible-disclosure",
+    "summary": "The official page publishes direct email; the linked manual requests encryption and written policy agreement.",
+    "source_ids": [
+      "recognition"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "Discretionary appreciation may include gift vouchers; no guaranteed cash award is stated.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The linked English manual is dated June 2019; current reporting page still links it. Automated scanning is prohibited."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://media.prod.cc.bijnpo.nl/rd_manual_english_6688b641fb.pdf",
+      "publisher": "NPO (Dutch Public Broadcasting)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://npo.nl/overnpo/privacy-en-security/responsible-disclosure",
+      "publisher": "NPO (Dutch Public Broadcasting)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

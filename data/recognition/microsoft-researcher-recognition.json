@@ -7,7 +7,8 @@
     "url": "https://www.microsoft.com/en-us/msrc/researcher-recognition-program/",
     "summary": "Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name.",
     "source_ids": [
-      "recognition"
+      "recognition",
+      "special-mentions"
     ]
   },
   "reporting": {
@@ -27,11 +28,11 @@
       "policy"
     ]
   },
-  "reviewed_at": "2026-10-12T16:47:22Z",
+  "reviewed_at": "2026-10-12T18:12:52Z",
   "submission_availability": "not_tested",
   "limitations": [
     "Since July 2026, ranked leaderboards are bounty-based; Special Mentions replace older Online Services and AI Safety pages.",
-    "The portal returned a JavaScript shell. Authenticated submission and individual credit listings were not inspected."
+    "The populated Special Mentions list was verified in rendered public browser text. Authenticated report submission was not exercised."
   ],
   "sources": [
     {
@@ -58,6 +59,15 @@
       "url": "https://www.microsoft.com/en-us/msrc/faqs-bounty",
       "publisher": "Microsoft",
       "retrieved_at": "2026-10-12T16:47:22Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "special-mentions",
+      "title": "MSRC Special Mentions public recognition list",
+      "url": "https://msrc.microsoft.com/special-mention",
+      "publisher": "Microsoft",
+      "retrieved_at": "2026-10-12T18:12:52Z",
       "provenance": "official_primary",
       "access_method": "text"
     }

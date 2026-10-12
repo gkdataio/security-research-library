@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "who-security-recognition",
+  "organization": "World Health Organization (WHO)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame/ethical-hacker-list",
+    "summary": "First qualifying reports may receive consent-based acknowledgment after remediation.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame",
+    "summary": "The policy publishes a direct vulnerability-reporting email and encryption instructions.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Reports are explicitly pro bono, with no expectation of financial or other compensation.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "WHO retains acceptance discretion, including internal duplicate decisions; confidentiality and privacy conditions apply. This is separate from the UN Secretariat program."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame",
+      "publisher": "World Health Organization (WHO)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame/ethical-hacker-list",
+      "publisher": "World Health Organization (WHO)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

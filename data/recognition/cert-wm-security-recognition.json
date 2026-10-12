@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cert-wm-security-recognition",
+  "organization": "CERT-WM / Het Waterschapshuis",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.cert-wm.nl/coordinated-vulnerability-disclosure-cvd-hall-of-fame",
+    "summary": "Valid reports may receive requested Hall credit, ranked by assessed impact.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "first_party_form",
+    "url": "https://www.cert-wm.nl/rd",
+    "summary": "The policy links CERT-WM's own secure reporting form in English and Dutch.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "separate_bounty_policy",
+    "summary": "Rewards are discretionary; monetary consideration is limited to major, high-risk findings with broad impact.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "One coordinating program for constituents that adopt its policy. The form itself was not fully inspected; the reporting route is verified from official instructions."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.cert-wm.nl/rd",
+      "publisher": "CERT-WM / Het Waterschapshuis",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.cert-wm.nl/coordinated-vulnerability-disclosure-cvd-hall-of-fame",
+      "publisher": "CERT-WM / Het Waterschapshuis",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

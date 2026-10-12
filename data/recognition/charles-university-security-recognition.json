@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "charles-university-security-recognition",
+  "organization": "Charles University (CSIRT-CUNI)",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://csirt.cuni.cz/en/acknowledgements/",
+    "summary": "CSIRT-CUNI maintains centralized public acknowledgment of reported vulnerabilities.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://csirt.cuni.cz/en/vulnerability_reporting/",
+    "summary": "Its official vulnerability-reporting instructions publish direct email with optional encryption.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed instructions.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Reporting guidance is brief and does not promise automatic credit or comprehensive safe harbor. Credited third-party profile links do not require platform submission."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://csirt.cuni.cz/en/vulnerability_reporting/",
+      "publisher": "Charles University (CSIRT-CUNI)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://csirt.cuni.cz/en/acknowledgements/",
+      "publisher": "Charles University (CSIRT-CUNI)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

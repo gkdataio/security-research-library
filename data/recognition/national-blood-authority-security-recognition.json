@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "national-blood-authority-security-recognition",
+  "organization": "National Blood Authority (Australia)",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.blood.gov.au/vulnerability-disclosure-program",
+    "summary": "Contributors may opt into public name or alias acknowledgment.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.blood.gov.au/vulnerability-disclosure-program",
+    "summary": "The program publishes a direct security email for vulnerability reports.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The policy explicitly excludes financial compensation.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Lawful access and policy restrictions apply; public credit requires the reporter's preference."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.blood.gov.au/vulnerability-disclosure-program",
+      "publisher": "National Blood Authority (Australia)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

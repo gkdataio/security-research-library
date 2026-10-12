@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "id": "netherlands-tax-administration-security-recognition",
+  "organization": "Netherlands Tax Administration (Belastingdienst)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/hall-of-fame-cvd",
+    "summary": "Previously unknown, impactful responsible reports qualify for requested public credit.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure",
+    "summary": "The policy supplies direct CVD email contacts for the participating tax and benefits authorities.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "The reward policy explicitly excludes money; letters and a trophy are possible.",
+    "source_ids": [
+      "rewards"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "One shared program, not separate entries for constituent authorities. Historical Hall wording does not expand the current policy's coverage."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure",
+      "publisher": "Netherlands Tax Administration (Belastingdienst)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/hall-of-fame-cvd",
+      "publisher": "Netherlands Tax Administration (Belastingdienst)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "rewards",
+      "title": "CVD reward policy",
+      "url": "https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure-cvd-rewards",
+      "publisher": "Netherlands Tax Administration (Belastingdienst)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

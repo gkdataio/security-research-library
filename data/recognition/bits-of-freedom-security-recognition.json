@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "id": "bits-of-freedom-security-recognition",
+  "organization": "Bits of Freedom",
+  "recognition": {
+    "kind": "acknowledgments",
+    "url": "https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/",
+    "summary": "The policy maintains a centralized list of resolved reports and credits consenting researchers.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/",
+    "summary": "Direct security email and an optional public encryption key are published.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed policy.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Public recognition is consent-based; coordinate disclosure and protect personal data."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/",
+      "publisher": "Bits of Freedom",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

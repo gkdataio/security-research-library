@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0.0",
+  "id": "saxion-security-recognition",
+  "organization": "Saxion University of Applied Sciences",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.saxion.edu/about-saxion/our-organisation/hall-of-fame",
+    "summary": "First valid reports of previously unknown, nontrivial vulnerabilities receive Hall recognition.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure",
+    "summary": "The policy offers direct email; current official security.txt separately confirms its institutional contacts.",
+    "source_ids": [
+      "policy",
+      "contacts"
+    ]
+  },
+  "rewards": {
+    "status": "unknown",
+    "summary": "No monetary reward promise appears in the reviewed policy.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "The policy is explicitly not an invitation to active scanning; confidentiality and encryption guidance apply."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure",
+      "publisher": "Saxion University of Applied Sciences",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.saxion.edu/about-saxion/our-organisation/hall-of-fame",
+      "publisher": "Saxion University of Applied Sciences",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "contacts",
+      "title": "Official security contacts",
+      "url": "https://www.saxion.nl/.well-known/security.txt",
+      "publisher": "Saxion University of Applied Sciences",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+

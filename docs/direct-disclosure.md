@@ -2,7 +2,7 @@
 
 [Library home](../README.md) · [Canonical records](../data/recognition/) · [JSON export](../exports/recognition.json) · [Evidence policy](../DATA_POLICY.md#first-party-recognition-and-direct-disclosure)
 
-60 organizations; latest source review: 2026-10-12.
+80 organizations; latest source review: 2026-10-12.
 
 An editorial selection of organizations with their own public recognition pages and official direct reporting guidance. This is not a measured traffic ranking, an exhaustive directory or a claim that every reporting option avoids external services. The linked route is the first-party route documented by the organization.
 
@@ -18,29 +18,43 @@ An editorial selection of organizations with their own public recognition pages 
 | [AmTrust Financial Services](<#amtrust-financial-security-recognition>) | [Official recognition page](<https://amtrustfinancial.com/AmtrustFinancial/files/95/959245bc-4b85-4e7b-8403-79f6468ec672.pdf>) | [Direct email](<https://amtrustfinancial.com/AmtrustFinancial/files/95/959245bc-4b85-4e7b-8403-79f6468ec672.pdf>)<br>The official policy PDF provides direct security-team email reporting\. | Payment not established |
 | [Apple](<#apple-web-security-recognition>) | [Official recognition page](<https://support.apple.com/en-us/102774>) | [First party portal](<https://support.apple.com/en-us/102549>)<br>Apple directs vulnerability reports to its own Apple Security Research portal, using an Apple Account\. | Separate bounty policy |
 | [ASUS](<#asus-security-recognition>) | [Official recognition page](<https://www.asus.com/security-advisory>) | [First party form](<https://www.asus.com/security-advisory>)<br>The full policy links ASUS's own vulnerability-reporting form\. | No-bounty policy |
+| [Australian Financial Security Authority \(AFSA\)](<#afsa-security-recognition>) | [Official recognition page](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>) | [Direct email](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>)<br>Direct email is published\. The policy expressly does not authorize security testing; AFSA verifies reported concerns\. | No-bounty policy |
 | [Bitdefender](<#bitdefender-security-recognition>) | [Official recognition page](<https://www.bitdefender.com/en-us/site/view/bug-bounty-hall-of-fame>) | [Direct email](<https://www.bitdefender.com/media/materials/bug_bounty/Bitdefender_Bug_Bounty_Terms_and_Conditions.pdf>)<br>The program terms publish a direct reporting mailbox; encrypted submissions are encouraged\. | Separate bounty policy |
+| [Bits of Freedom](<#bits-of-freedom-security-recognition>) | [Official recognition page](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>) | [Direct email](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>)<br>Direct security email and an optional public encryption key are published\. | Payment not established |
 | [Boeing](<#boeing-security-recognition>) | [Official recognition page](<https://www.boeing.com/vulnerabilitydisclosure>) | [Direct email](<https://www.boeing.com/vulnerabilitydisclosure>)<br>Boeing documents direct encrypted email reporting\. | No-bounty policy |
 | [Bosch](<#bosch-security-recognition>) | [Official recognition page](<https://psirt.bosch.com/hall-of-fame/>) | [Direct email](<https://psirt.bosch.com/report-a-vulnerability/>)<br>Direct email accepts product and website reports; Bugcrowd is preferred for websites\. | Payment not established |
 | [Bournemouth University](<#bournemouth-university-security-recognition>) | [Official recognition page](<https://cert.bournemouth.ac.uk/hall-of-fame/>) | [Direct email](<https://cert.bournemouth.ac.uk/hall-of-fame/bu-cert-responsible-disclosure-policy/>)<br>BU-CERT publishes direct email instructions and requests PGP encryption\. | Payment not established |
 | [BT Group](<#bt-group-security-recognition>) | [Official recognition page](<https://www.bt.com/about/contact-bt/responsible-disclosure/hall-of-fame>) | [First party form](<https://www.bt.com/about/contact-bt/responsible-disclosure/responsible-disclosure-form>)<br>BT supplies a first-party vulnerability reporting form\. | No-bounty policy |
+| [CALI / A2J Author](<#cali-a2j-author-security-recognition>) | [Official recognition page](<https://www.a2jauthor.org/content/security-researcher-hall-fame>) | [Direct email](<https://www.a2jauthor.org/content/responsible-vulnerability-disclosure-policy>)<br>The disclosure policy publishes a direct security email and optional encryption key\. | No-bounty policy |
 | [CERT-EU](<#cert-eu-security-recognition>) | [Official recognition page](<https://cert.europa.eu/hall-of-fame/>) | [Direct email](<https://cert.europa.eu/hall-of-fame/>)<br>The Hall page explicitly provides a direct email address for findings\. | Payment not established |
+| [CERT-WM / Het Waterschapshuis](<#cert-wm-security-recognition>) | [Official recognition page](<https://www.cert-wm.nl/coordinated-vulnerability-disclosure-cvd-hall-of-fame>) | [First party form](<https://www.cert-wm.nl/rd>)<br>The policy links CERT-WM's own secure reporting form in English and Dutch\. | Separate bounty policy |
+| [Charles University \(CSIRT-CUNI\)](<#charles-university-security-recognition>) | [Official recognition page](<https://csirt.cuni.cz/en/acknowledgements/>) | [Direct email](<https://csirt.cuni.cz/en/vulnerability_reporting/>)<br>Its official vulnerability-reporting instructions publish direct email with optional encryption\. | Payment not established |
 | [Check Point website disclosures](<#check-point-website-security-recognition>) | [Official recognition page](<https://www.checkpoint.com/white-hat/>) | [Direct email](<https://www.checkpoint.com/security-issue/>)<br>The Security Response Team accepts direct email; a first-party form is also available\. | Payment not established |
 | [Cigna Healthcare](<#cigna-security-recognition>) | [Official recognition page](<https://www.cigna.com/legal/members/responsible-vulnerability-disclosure>) | [Direct email](<https://www.cigna.com/legal/members/responsible-vulnerability-disclosure>)<br>The official policy provides direct security-team email reporting and encryption guidance\. | No-bounty policy |
 | [Deutsche Telekom AG](<#deutsche-telekom-security-recognition>) | [Official recognition page](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/acknowledgments>) | [Direct email](<https://www.telekom.com/en/about-us/data-privacy-and-security/hacking-and-testing/bug-bounty>)<br>Deutsche Telekom publishes a direct email route; T-Mobile US has a separate Bugcrowd program\. | Separate bounty policy |
 | [eBay](<#ebay-security-recognition>) | [Official recognition page](<https://pages.ebay.com/securitycenter/security_researchers_acknowledgements.html>) | [First party form](<https://pages.ebay.com/securitycenter/security_researchers_report_form.html>)<br>The first-party security-researcher form accepts vulnerability reports; request consideration for public acknowledgment when reporting\. | Payment not established |
+| [Eclipse Foundation / Open VSX](<#eclipse-open-vsx-security-recognition>) | [Official recognition page](<https://researcher-recognition.open-vsx.org/hall-of-fame/>) | [Direct email](<https://researcher-recognition.open-vsx.org/report-a-vulnerability/>)<br>Direct program email or its own form is available; the policy distinguishes service and codebase reporting channels\. | No-bounty policy |
 | [Efficy Group](<#efficy-security-recognition>) | [Official recognition page](<https://www.efficy.com/group/hall-of-fame/>) | [Direct email](<https://www.efficy.com/sites/default/files/2025-08/ISEC-14-Responsible-Disclosure-Policy.pdf>)<br>The official policy gives a direct security-team reporting address\. | No-bounty policy |
 | [EMBL-EBI](<#embl-ebi-security-recognition>) | [Official recognition page](<https://www.ebi.ac.uk/security/hall-of-fame/>) | [Direct email](<https://www.ebi.ac.uk/security/>)<br>Direct CSIRT email is available; OpenBugBounty is an optional alternative\. | No-bounty policy |
 | [EnBW](<#enbw-security-recognition>) | [Official recognition page](<https://www.enbw.com/cert/hall-of-fame-1.html>) | [Direct email](<https://www.enbw.com/cert/contact.html>)<br>EnBW-CERT publishes direct email reporting and prefers encryption\. | Payment not established |
+| [Erasmus University Rotterdam](<#erasmus-university-security-recognition>) | [Official recognition page](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/hall-fame>) | [Direct email](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/responsible-disclosure>)<br>The policy publishes direct CERT email and an optional university form\. | Payment not established |
+| [Gemeente Meierijstad](<#meierijstad-security-recognition>) | [Official recognition page](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>) | [Direct email](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>)<br>Direct CERT email is published; the policy expressly is not an invitation to active network scanning\. | Payment not established |
 | [GOVCERT\.LU](<#govcert-lu-security-recognition>) | [Official recognition page](<https://govcert.lu/fr/signaler/>) | [Direct email](<https://govcert.lu/fr/telechargements/assets/responsible-disclosure-policy.pdf>)<br>The official policy provides direct email reporting with PGP encryption; an institutional Report Assistant is also available\. | Payment not established |
 | [Inholland University of Applied Sciences](<#inholland-security-recognition>) | [Official recognition page](<https://www.inholland.nl/responsible-disclosure/>) | [First party form](<https://www.inholland.nl/responsible-disclosure/melden-kwetsbaarheid/>)<br>The university's reporting form includes an explicit Wall of Fame choice\. | Payment not established |
+| [Jan Yperman Hospital](<#jan-yperman-hospital-security-recognition>) | [Official recognition page](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>) | [Direct email](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>)<br>The policy publishes direct security email and asks for reports in Dutch with secure communication\. | Payment not established |
+| [Matrix\.org Foundation](<#matrix-foundation-security-recognition>) | [Official recognition page](<https://matrix.org/security-hall-of-fame/>) | [Direct email](<https://matrix.org/security-disclosure-policy/>)<br>The policy provides a direct email link and optional encryption key\. | No-bounty policy |
 | [MED-EL](<#med-el-security-recognition>) | [Official recognition page](<https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy>) | [Direct email](<https://www.medel.com/terms/medel-vulnerability-handling-and-disclosure-policy>)<br>The policy publishes direct product-security email reporting and requests PGP encryption\. | No-bounty policy |
 | [Microsoft](<#microsoft-researcher-recognition>) | [Official recognition page](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) | [First party portal](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>)<br>Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti\. | Separate bounty policy |
 | [MONETA Money Bank](<#moneta-security-recognition>) | [Official recognition page](<https://www.moneta.cz/hall-of-fame>) | [Direct email](<https://www.moneta.cz/bug-bounty>)<br>The policy supplies direct email for vulnerability reports\. | Separate bounty policy |
 | [Motorola Solutions](<#motorola-solutions-security-recognition>) | [Official recognition page](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/hall-of-fame.html>) | [Direct email](<https://www.motorolasolutions.com/en_us/about/security-vulnerability/guidelines.html>)<br>The guidelines provide direct security-team email reporting for independent researchers\. | Payment not established |
 | [Mozilla Firefox / client software](<#mozilla-client-security-recognition>) | [Official recognition page](<https://www.mozilla.org/en-US/security/bug-bounty/hall-of-fame/>) | [First party portal](<https://www.mozilla.org/en-US/security/client-bug-bounty/>)<br>Client reports use Mozilla-hosted Bugzilla with an account; the separate web/services program uses HackerOne\. | Separate bounty policy |
+| [National Blood Authority \(Australia\)](<#national-blood-authority-security-recognition>) | [Official recognition page](<https://www.blood.gov.au/vulnerability-disclosure-program>) | [Direct email](<https://www.blood.gov.au/vulnerability-disclosure-program>)<br>The program publishes a direct security email for vulnerability reports\. | No-bounty policy |
 | [National Cyber Security Centre \(Netherlands\)](<#ncsc-netherlands-security-recognition>) | [Official recognition page](<https://www.ncsc.nl/producten-en-diensten/wall-of-fame>) | [First party form](<https://www.ncsc.nl/en/cvd-report-form>)<br>NCSC operates its own disclosure form for Dutch central-government coordination\. | Payment not established |
+| [Netherlands Tax Administration \(Belastingdienst\)](<#netherlands-tax-administration-security-recognition>) | [Official recognition page](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/hall-of-fame-cvd>) | [Direct email](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure>)<br>The policy supplies direct CVD email contacts for the participating tax and benefits authorities\. | No-bounty policy |
 | [Nokia](<#nokia-security-recognition>) | [Official recognition page](<https://www.nokia.com/we-are-nokia/security/products/cvd/hall-of-fame/>) | [Direct email](<https://www.nokia.com/we-are-nokia/security/products/cvd/>)<br>Nokia accepts direct email and anonymous reports\. | No-bounty policy |
 | [Norges Bank Investment Management](<#nbim-security-recognition>) | [Official recognition page](<https://www.nbim.no/en/responsible-disclosure-policy/>) | [Direct email](<https://www.nbim.no/en/responsible-disclosure-policy/>)<br>The combined policy and public Hall of Fame page supplies a direct email address\. | No-bounty policy |
+| [NPO \(Dutch Public Broadcasting\)](<#npo-security-recognition>) | [Official recognition page](<https://npo.nl/overnpo/privacy-en-security/responsible-disclosure>) | [Direct email](<https://npo.nl/overnpo/privacy-en-security/responsible-disclosure>)<br>The official page publishes direct email; the linked manual requests encryption and written policy agreement\. | Payment not established |
+| [null — The Open Security Community](<#null-community-security-recognition>) | [Official recognition page](<https://null.community/pages/1-null-hall-of-fame>) | [Direct email](<https://null.community/pages/5-security>)<br>Email reporting is accepted; the policy also recommends its organization-managed Google Form\. | No-bounty policy |
 | [NVIDIA](<#nvidia-security-recognition>) | [Official recognition page](<https://www.nvidia.com/en-us/product-security/acknowledgements/>) | [Direct email](<https://www.nvidia.com/en-us/product-security/report-vulnerability/>)<br>Direct PSIRT email remains available alongside Intigriti; encrypted reporting is requested\. | Separate bounty policy |
 | [Onidel Cloud](<#onidel-security-recognition>) | [Official recognition page](<https://www.onidel.com/hall-of-fame>) | [First party portal](<https://kb.onidel.com/hc/kb/articles/1775831946-bug-bounty-program>)<br>The policy links a first-party support-ticket route and offers email as an alternative\. | Separate bounty policy |
 | [OpenText](<#opentext-security-recognition>) | [Official recognition page](<https://www.opentext.com/ca/about/security-acknowledgements>) | [Direct email](<https://www.opentext.com/ca/about/security-acknowledgements>)<br>The acknowledgment page provides direct email for website, product and service reports\. | Payment not established |
@@ -48,15 +62,18 @@ An editorial selection of organizations with their own public recognition pages 
 | [Palo Alto Networks products](<#palo-alto-networks-product-security-recognition>) | [Official recognition page](<https://www.paloaltonetworks.com/security-researcher-acknowledgement>) | [Direct email](<https://www.paloaltonetworks.com/product-security-assurance>)<br>Product reports use direct email or a first-party form; bounty opt-in asks for a Bugcrowd email\. | Separate bounty policy |
 | [Philips](<#philips-security-recognition>) | [Official recognition page](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure/hall-of-honors.html>) | [Direct email](<https://www.philips.com/a-w/security/coordinated-vulnerability-disclosure.html>)<br>The disclosure policy documents direct email reporting and requests PGP encryption\. | Payment not established |
 | [QNAP](<#qnap-security-recognition>) | [Official recognition page](<https://www.qnap.com/en/security-bounty-program>) | [Direct email](<https://www.qnap.com/en/security-bounty-program>)<br>The program documents direct PSIRT email reporting with encryption\. | Separate bounty policy |
+| [QRL Foundation](<#qrl-foundation-security-recognition>) | [Official recognition page](<https://www.theqrl.org/bug-bounty/>) | [Direct email](<https://www.theqrl.org/security-report/>)<br>The security-reporting page publishes a direct encrypted-email route\. | Separate bounty policy |
 | [Radboud University](<#radboud-security-recognition>) | [Official recognition page](<https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability>) | [Direct email](<https://www.ru.nl/en/about-us/policies-and-regulations/privacy-and-security/report-vulnerability>)<br>The policy supplies direct CERT email reporting\. | Payment not established |
 | [Razorpay](<#razorpay-security-recognition>) | [Official recognition page](<https://razorpay.com/hall-of-fame/>) | [Direct email](<https://razorpay.com/responsible-disclosure/>)<br>The policy provides direct email reporting with specific subject and formatting requirements\. | No-bounty policy |
 | [Red Hat online services](<#red-hat-online-services-security-recognition>) | [Official recognition page](<https://access.redhat.com/articles/66234>) | [Direct email](<https://access.redhat.com/articles/66234>)<br>The online-services policy provides a dedicated direct email route and encryption guidance\. | Payment not established |
 | [Samsung Smart TV, Audio and Displays](<#samsung-tv-audio-displays-security-recognition>) | [Official recognition page](<https://security.samsungtv.com/hallOfFame>) | [Direct email](<https://security.samsungtv.com/reportVulnerability>)<br>The reporting page provides direct email instructions and requires an encrypted report attachment\. | Separate bounty policy |
+| [Saxion University of Applied Sciences](<#saxion-security-recognition>) | [Official recognition page](<https://www.saxion.edu/about-saxion/our-organisation/hall-of-fame>) | [Direct email](<https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure>)<br>The policy offers direct email; current official security\.txt separately confirms its institutional contacts\. | Payment not established |
 | [Siemens](<#siemens-security-recognition>) | [Official recognition page](<https://productcert.siemens.com/hall-of-thanks/>) | [Direct email](<https://productcert.siemens.com/>)<br>Siemens publishes separate direct email contacts for ProductCERT and infrastructure CERT\. | Payment not established |
 | [SURF](<#surf-security-recognition>) | [Official recognition page](<https://www.surf.nl/en/hall-of-fame-0>) | [Direct email](<https://www.surf.nl/en/coordinated-vulnerability-disclosure>)<br>SURF publishes a direct reporting mailbox and requests encryption\. | Payment not established |
 | [Swisscom](<#swisscom-security-recognition>) | [Official recognition page](<https://github.com/swisscom/bugbounty/tree/main/hall-of-fame>) | [First party portal](<https://www.swisscom.ch/en/about/security/bug-bounty.html>)<br>Swisscom runs its own registered-user portal; outside-program email does not establish recognition or bounty eligibility\. | Separate bounty policy |
 | [Synology](<#synology-security-recognition>) | [Official recognition page](<https://www.synology.com/en-global/security/bounty_program>) | [First party form](<https://synoform.synology.com/en-us/form/bounty?from_url=https://www.synology.com/security/bounty_program>)<br>Synology provides its own reporting form, accepting English and Traditional or Simplified Chinese\. | Separate bounty policy |
 | [The University of Texas at Austin](<#ut-austin-security-recognition>) | [Official recognition page](<https://security.utexas.edu/hall-of-fame>) | [Direct email](<https://security.utexas.edu/hall-of-fame>)<br>The page supplies the university security office’s direct reporting email\. | Payment not established |
+| [TIM Group](<#tim-group-security-recognition>) | [Official recognition page](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>) | [Direct email](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>)<br>The group policy publishes direct responsible-disclosure email and optional encryption\. | No-bounty policy |
 | [TU Delft](<#tu-delft-security-recognition>) | [Official recognition page](<https://www.tudelft.nl/hall-of-fame>) | [Direct email](<https://www.tudelft.nl/responsible-disclosure-van-kwetsbaarheden>)<br>The policy publishes a direct email route; it expressly does not invite active network scanning\. | Payment not established |
 | [UNICEF](<#unicef-security-recognition>) | [Official recognition page](<https://www.unicef.org/digitalimpact/unicef-information-security-hall-fame>) | [Direct email](<https://www.unicef.org/digitalimpact/unicef-information-security-hall-fame>)<br>The official reporting section provides a direct email link\. | Payment not established |
 | [University of Duisburg-Essen](<#duisburg-essen-security-recognition>) | [Official recognition page](<https://www.uni-due.de/ciso/hall-of-fame.php>) | [First party form](<https://www.uni-due.de/ciso/vulnerability_reporting_form.php>)<br>The university provides its own reporting form and accepts anonymous reports\. | No-bounty policy |
@@ -68,9 +85,12 @@ An editorial selection of organizations with their own public recognition pages 
 | [University of Turku](<#university-of-turku-security-recognition>) | [Official recognition page](<https://security.utu.fi/acknowledgements.html>) | [Direct email](<https://security.utu.fi/>)<br>The official contact page explicitly accepts vulnerability reports by email\. | Payment not established |
 | [University of Twente](<#university-of-twente-security-recognition>) | [Official recognition page](<https://www.utwente.nl/en/cyber-safety/responsible/hall-of-fame/>) | [Direct email](<https://www.utwente.nl/en/cyber-safety/responsible/>)<br>The university publishes a direct email route; report details must be in the message body\. | No-bounty policy |
 | [Utrecht University](<#utrecht-university-security-recognition>) | [Official recognition page](<https://www.uu.nl/en/organisation/information-and-technology-services-its/hall-of-fame-responsible-disclosure>) | [Direct email](<https://www.uu.nl/en/organisation/information-and-technology-services-its/responsible-disclosure>)<br>The policy gives a direct email address; encryption is optional and pseudonyms are allowed\. | No-bounty policy |
+| [UWV \(Netherlands Employee Insurance Agency\)](<#uwv-security-recognition>) | [Official recognition page](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy/hall-of-fame>) | [Direct email](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy>)<br>Direct CVD email and optional PGP encryption are published\. | No-bounty policy |
 | [Vrije Universiteit Amsterdam](<#vu-amsterdam-security-recognition>) | [Official recognition page](<https://vu.nl/en/about-vu/more-about/security-and-operations-control-center>) | [Direct email](<https://vu.nl/en/about-vu/more-about/security-and-operations-control-center>)<br>The disclosure section gives a dedicated security-reporting mailbox and encourages encryption\. | Payment not established |
 | [Wageningen University &amp; Research](<#wageningen-security-recognition>) | [Official recognition page](<https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security/hall-fame-responsible-disclosure>) | [Direct email](<https://www.wur.nl/en/about-wur/organisation-profile/good-governance/information-security>)<br>WUR publishes direct CERT email reporting and encryption guidance\. | Payment not established |
 | [Wikimedia Foundation](<#wikimedia-security-recognition>) | [Official recognition page](<https://security.wikimedia.org/hall-of-fame/>) | [Direct email](<https://www.mediawiki.org/wiki/Reporting_security_bugs>)<br>Direct email and Wikimedia’s private Phabricator form are available; HackerOne is an optional route\. | No-bounty policy |
+| [World Health Organization \(WHO\)](<#who-security-recognition>) | [Official recognition page](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame/ethical-hacker-list>) | [Direct email](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame>)<br>The policy publishes a direct vulnerability-reporting email and encryption instructions\. | No-bounty policy |
+| [Z-CERT](<#z-cert-security-recognition>) | [Official recognition page](<https://z-cert.nl/kwetsbaarheid-melden/hall-of-fame>) | [Direct email](<https://z-cert.nl/en/resources/cvd>)<br>The policy offers direct encrypted email as an alternative to Zivver secure messaging\. | Payment not established |
 | [Zyxel Networks](<#zyxel-security-recognition>) | [Official recognition page](<https://www.zyxel.com/global/en/support/security-hall-of-fame>) | [Direct email](<https://www.zyxel.com/global/en/support/security-vulnerability>)<br>The reporting page gives direct security-team email and an optional encryption key\. | No-bounty policy |
 
 <a id="achmea-security-recognition"></a>
@@ -210,6 +230,27 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="afsa-security-recognition"></a>
+## Australian Financial Security Authority \(AFSA\)
+
+[Canonical record](<../data/recognition/afsa-security-recognition.json>)
+
+**Recognition:** The populated Hall credits responsible reporters with permission\. [Responsible disclosure and reporting policy](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>)
+
+**Reporting:** Direct email is published\. The policy expressly does not authorize security testing; AFSA verifies reported concerns\. [Responsible disclosure and reporting policy](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>)
+
+**Rewards:** AFSA explicitly offers no compensation of any kind\. [Responsible disclosure and reporting policy](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>)
+
+**Limits:**
+- Reporting guidance is not testing permission; public disclosure requires written agreement\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.afsa.gov.au/about-us/about-our-site/online-security/afsas-security-vulnerability-disclosure-policy>) — Australian Financial Security Authority \(AFSA\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="bitdefender-security-recognition"></a>
 ## Bitdefender
 
@@ -231,6 +272,27 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 - [Bug Bounty Hall of Fame](<https://www.bitdefender.com/en-us/site/view/bug-bounty-hall-of-fame>) — Bitdefender; official primary source, text reviewed 2026-10-12T17:53:45Z.
 - [Bug Bounty Program](<https://www.bitdefender.com/en-us/site/view/bug-bounty>) — Bitdefender; official primary source, text reviewed 2026-10-12T17:53:45Z.
 - [Bug Bounty Program Terms](<https://www.bitdefender.com/media/materials/bug_bounty/Bitdefender_Bug_Bounty_Terms_and_Conditions.pdf>) — Bitdefender; official primary source, text reviewed 2026-10-12T17:53:45Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="bits-of-freedom-security-recognition"></a>
+## Bits of Freedom
+
+[Canonical record](<../data/recognition/bits-of-freedom-security-recognition.json>)
+
+**Recognition:** The policy maintains a centralized list of resolved reports and credits consenting researchers\. [Responsible disclosure and reporting policy](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>)
+
+**Reporting:** Direct security email and an optional public encryption key are published\. [Responsible disclosure and reporting policy](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>)
+
+**Rewards:** No monetary reward promise appears in the reviewed policy\. [Responsible disclosure and reporting policy](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>)
+
+**Limits:**
+- Public recognition is consent-based; coordinate disclosure and protect personal data\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.bitsoffreedom.nl/coordinated-vulnerability-disclosure/>) — Bits of Freedom; official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -327,6 +389,28 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="cali-a2j-author-security-recognition"></a>
+## CALI / A2J Author
+
+[Canonical record](<../data/recognition/cali-a2j-author-security-recognition.json>)
+
+**Recognition:** First responsible reports leading to a code or configuration change can receive Hall credit\. [Public researcher recognition](<https://www.a2jauthor.org/content/security-researcher-hall-fame>) · [Responsible disclosure and reporting policy](<https://www.a2jauthor.org/content/responsible-vulnerability-disclosure-policy>)
+
+**Reporting:** The disclosure policy publishes a direct security email and optional encryption key\. [Responsible disclosure and reporting policy](<https://www.a2jauthor.org/content/responsible-vulnerability-disclosure-policy>)
+
+**Rewards:** CALI explicitly has no active bounty or reward program\. [Responsible disclosure and reporting policy](<https://www.a2jauthor.org/content/responsible-vulnerability-disclosure-policy>)
+
+**Limits:**
+- The policy requires a 180-day confidential remediation window and excludes independently operated third-party services\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.a2jauthor.org/content/responsible-vulnerability-disclosure-policy>) — CALI / A2J Author; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.a2jauthor.org/content/security-researcher-hall-fame>) — CALI / A2J Author; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="cert-eu-security-recognition"></a>
 ## CERT-EU
 
@@ -347,6 +431,50 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 **Source provenance:**
 - [Hall of fame](<https://cert.europa.eu/hall-of-fame/>) — CERT-EU; official primary source, text reviewed 2026-10-12T17:54:58Z.
 - [Coordinated vulnerability disclosure policy](<https://cert.europa.eu/coordinated-vulnerability-disclosure-policy>) — CERT-EU; official primary source, text reviewed 2026-10-12T17:54:58Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="cert-wm-security-recognition"></a>
+## CERT-WM / Het Waterschapshuis
+
+[Canonical record](<../data/recognition/cert-wm-security-recognition.json>)
+
+**Recognition:** Valid reports may receive requested Hall credit, ranked by assessed impact\. [Public researcher recognition](<https://www.cert-wm.nl/coordinated-vulnerability-disclosure-cvd-hall-of-fame>) · [Responsible disclosure and reporting policy](<https://www.cert-wm.nl/rd>)
+
+**Reporting:** The policy links CERT-WM's own secure reporting form in English and Dutch\. [Responsible disclosure and reporting policy](<https://www.cert-wm.nl/rd>)
+
+**Rewards:** Rewards are discretionary; monetary consideration is limited to major, high-risk findings with broad impact\. [Responsible disclosure and reporting policy](<https://www.cert-wm.nl/rd>)
+
+**Limits:**
+- One coordinating program for constituents that adopt its policy\. The form itself was not fully inspected; the reporting route is verified from official instructions\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.cert-wm.nl/rd>) — CERT-WM / Het Waterschapshuis; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.cert-wm.nl/coordinated-vulnerability-disclosure-cvd-hall-of-fame>) — CERT-WM / Het Waterschapshuis; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="charles-university-security-recognition"></a>
+## Charles University \(CSIRT-CUNI\)
+
+[Canonical record](<../data/recognition/charles-university-security-recognition.json>)
+
+**Recognition:** CSIRT-CUNI maintains centralized public acknowledgment of reported vulnerabilities\. [Public researcher recognition](<https://csirt.cuni.cz/en/acknowledgements/>) · [Responsible disclosure and reporting policy](<https://csirt.cuni.cz/en/vulnerability_reporting/>)
+
+**Reporting:** Its official vulnerability-reporting instructions publish direct email with optional encryption\. [Responsible disclosure and reporting policy](<https://csirt.cuni.cz/en/vulnerability_reporting/>)
+
+**Rewards:** No monetary reward promise appears in the reviewed instructions\. [Responsible disclosure and reporting policy](<https://csirt.cuni.cz/en/vulnerability_reporting/>)
+
+**Limits:**
+- Reporting guidance is brief and does not promise automatic credit or comprehensive safe harbor\. Credited third-party profile links do not require platform submission\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://csirt.cuni.cz/en/vulnerability_reporting/>) — Charles University \(CSIRT-CUNI\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://csirt.cuni.cz/en/acknowledgements/>) — Charles University \(CSIRT-CUNI\); official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -444,6 +572,30 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="eclipse-open-vsx-security-recognition"></a>
+## Eclipse Foundation / Open VSX
+
+[Canonical record](<../data/recognition/eclipse-open-vsx-security-recognition.json>)
+
+**Recognition:** Verified responsible contributions may receive tiered, opt-in recognition after resolution\. [Public researcher recognition](<https://researcher-recognition.open-vsx.org/hall-of-fame/>) · [Responsible disclosure and reporting policy](<https://researcher-recognition.open-vsx.org/open-vsx-security-policy/>)
+
+**Reporting:** Direct program email or its own form is available; the policy distinguishes service and codebase reporting channels\. [Direct reporting instructions](<https://researcher-recognition.open-vsx.org/report-a-vulnerability/>) · [Responsible disclosure and reporting policy](<https://researcher-recognition.open-vsx.org/open-vsx-security-policy/>)
+
+**Rewards:** The program is explicitly not a bug bounty; higher recognition tiers may include merchandise vouchers\. [Responsible disclosure and reporting policy](<https://researcher-recognition.open-vsx.org/open-vsx-security-policy/>) · [Recognition levels](<https://researcher-recognition.open-vsx.org/how-it-works/>)
+
+**Limits:**
+- This entry covers the Open VSX recognition program, not every Eclipse project; private coordinated reporting is required\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://researcher-recognition.open-vsx.org/open-vsx-security-policy/>) — Eclipse Foundation / Open VSX; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://researcher-recognition.open-vsx.org/hall-of-fame/>) — Eclipse Foundation / Open VSX; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Direct reporting instructions](<https://researcher-recognition.open-vsx.org/report-a-vulnerability/>) — Eclipse Foundation / Open VSX; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Recognition levels](<https://researcher-recognition.open-vsx.org/how-it-works/>) — Eclipse Foundation / Open VSX; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="efficy-security-recognition"></a>
 ## Efficy Group
 
@@ -514,6 +666,49 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="erasmus-university-security-recognition"></a>
+## Erasmus University Rotterdam
+
+[Canonical record](<../data/recognition/erasmus-university-security-recognition.json>)
+
+**Recognition:** Responsible reporters can receive requested credit; the university maintains a populated Hall\. [Public researcher recognition](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/hall-fame>) · [Responsible disclosure and reporting policy](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/responsible-disclosure>)
+
+**Reporting:** The policy publishes direct CERT email and an optional university form\. [Responsible disclosure and reporting policy](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/responsible-disclosure>)
+
+**Rewards:** First previously unknown valid reports may receive appreciation ranging from honorable mention to a gift, not a guaranteed cash payout\. [Responsible disclosure and reporting policy](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/responsible-disclosure>)
+
+**Limits:**
+- The policy is not an invitation to extensive active scanning\. Independently controlled affiliated or hosted sites do not qualify for Hall credit under this policy\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/responsible-disclosure>) — Erasmus University Rotterdam; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.eur.nl/campus/locaties/campus-woudestein/beveiliging-veiligheid/informatiebeveiliging/hall-fame>) — Erasmus University Rotterdam; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="meierijstad-security-recognition"></a>
+## Gemeente Meierijstad
+
+[Canonical record](<../data/recognition/meierijstad-security-recognition.json>)
+
+**Recognition:** The municipal policy includes a populated Hall and offers requested public credit for verified reports\. [Responsible disclosure and reporting policy](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>)
+
+**Reporting:** Direct CERT email is published; the policy expressly is not an invitation to active network scanning\. [Responsible disclosure and reporting policy](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>)
+
+**Rewards:** No monetary reward promise appears in the reviewed policy\. [Responsible disclosure and reporting policy](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>)
+
+**Limits:**
+- This municipal social-services policy limits investigation to offline, non-production contexts and does not grant blanket legal immunity\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://socialewegwijzer.meierijstad.nl/privacy-policy/>) — Gemeente Meierijstad; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="govcert-lu-security-recognition"></a>
 ## GOVCERT\.LU
 
@@ -561,6 +756,50 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="jan-yperman-hospital-security-recognition"></a>
+## Jan Yperman Hospital
+
+[Canonical record](<../data/recognition/jan-yperman-hospital-security-recognition.json>)
+
+**Recognition:** Previously unknown responsible reports may receive a place in the populated Hall\. [Responsible disclosure and reporting policy](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>)
+
+**Reporting:** The policy publishes direct security email and asks for reports in Dutch with secure communication\. [Responsible disclosure and reporting policy](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>)
+
+**Rewards:** No monetary reward promise appears in the reviewed policy\. [Responsible disclosure and reporting policy](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>)
+
+**Limits:**
+- Strict confidentiality and personal-data obligations apply\. Obtain written clarification before acting when terms are unclear; naming the hospital in publication requires consent\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://yperman.net/en/beleid-voor-de-gecoordineerde-bekendmaking-van-kwetsbaarheden>) — Jan Yperman Hospital; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="matrix-foundation-security-recognition"></a>
+## Matrix\.org Foundation
+
+[Canonical record](<../data/recognition/matrix-foundation-security-recognition.json>)
+
+**Recognition:** Responsible reporters may receive requested Hall credit after coordinated disclosure\. [Public researcher recognition](<https://matrix.org/security-hall-of-fame/>) · [Responsible disclosure and reporting policy](<https://matrix.org/security-disclosure-policy/>)
+
+**Reporting:** The policy provides a direct email link and optional encryption key\. [Responsible disclosure and reporting policy](<https://matrix.org/security-disclosure-policy/>)
+
+**Rewards:** The Foundation says it does not ordinarily provide bounties; this is not an absolute promise about every future case\. [Responsible disclosure and reporting policy](<https://matrix.org/security-disclosure-policy/>)
+
+**Limits:**
+- The email address is protected in text extraction; use the policy's link\. Historical Element credits do not define the Foundation's current program\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://matrix.org/security-disclosure-policy/>) — Matrix\.org Foundation; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://matrix.org/security-hall-of-fame/>) — Matrix\.org Foundation; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Official project-ownership clarification](<https://matrix.org/blog/2024/10/security-disclosure-matrix-js-sdk-and-matrix-react-sdk/>) — Matrix\.org Foundation; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="med-el-security-recognition"></a>
 ## MED-EL
 
@@ -588,7 +827,7 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 [Canonical record](<../data/recognition/microsoft-researcher-recognition.json>)
 
-**Recognition:** Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name\. [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>)
+**Recognition:** Special Mentions recognize valid Low-or-higher reports with public-recognition opt-in and a preferred name\. [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) · [MSRC Special Mentions public recognition list](<https://msrc.microsoft.com/special-mention>)
 
 **Reporting:** Reports go directly to the MSRC portal; bounty payment arrangements can involve Intigriti\. [What to expect when reporting vulnerabilities to Microsoft](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>) · [Microsoft Bounty Program FAQs](<https://www.microsoft.com/en-us/msrc/faqs-bounty>)
 
@@ -596,14 +835,15 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 **Limits:**
 - Since July 2026, ranked leaderboards are bounty-based; Special Mentions replace older Online Services and AI Safety pages\.
-- The portal returned a JavaScript shell\. Authenticated submission and individual credit listings were not inspected\.
+- The populated Special Mentions list was verified in rendered public browser text\. Authenticated report submission was not exercised\.
 
-**Reviewed:** 2026-10-12T16:47:22Z. Submission availability: not tested.
+**Reviewed:** 2026-10-12T18:12:52Z. Submission availability: not tested.
 
 **Source provenance:**
 - [Microsoft Researcher Recognition Program](<https://www.microsoft.com/en-us/msrc/researcher-recognition-program/>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
 - [What to expect when reporting vulnerabilities to Microsoft](<https://www.microsoft.com/en-us/msrc/what-to-expect-when-reporting-vulnerabilities-to-microsoft>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
 - [Microsoft Bounty Program FAQs](<https://www.microsoft.com/en-us/msrc/faqs-bounty>) — Microsoft; official primary source, text reviewed 2026-10-12T16:47:22Z.
+- [MSRC Special Mentions public recognition list](<https://msrc.microsoft.com/special-mention>) — Microsoft; official primary source, text reviewed 2026-10-12T18:12:52Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -678,6 +918,27 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="national-blood-authority-security-recognition"></a>
+## National Blood Authority \(Australia\)
+
+[Canonical record](<../data/recognition/national-blood-authority-security-recognition.json>)
+
+**Recognition:** Contributors may opt into public name or alias acknowledgment\. [Responsible disclosure and reporting policy](<https://www.blood.gov.au/vulnerability-disclosure-program>)
+
+**Reporting:** The program publishes a direct security email for vulnerability reports\. [Responsible disclosure and reporting policy](<https://www.blood.gov.au/vulnerability-disclosure-program>)
+
+**Rewards:** The policy explicitly excludes financial compensation\. [Responsible disclosure and reporting policy](<https://www.blood.gov.au/vulnerability-disclosure-program>)
+
+**Limits:**
+- Lawful access and policy restrictions apply; public credit requires the reporter's preference\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.blood.gov.au/vulnerability-disclosure-program>) — National Blood Authority \(Australia\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="ncsc-netherlands-security-recognition"></a>
 ## National Cyber Security Centre \(Netherlands\)
 
@@ -699,6 +960,29 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 - [Wall of Fame](<https://www.ncsc.nl/producten-en-diensten/wall-of-fame>) — National Cyber Security Centre \(Netherlands\); official primary source, text reviewed 2026-10-12T17:54:39Z.
 - [Report a vulnerability](<https://www.ncsc.nl/en/services/report-a-vulnerability>) — National Cyber Security Centre \(Netherlands\); official primary source, text reviewed 2026-10-12T17:54:39Z.
 - [CVD Report Form](<https://www.ncsc.nl/en/cvd-report-form>) — National Cyber Security Centre \(Netherlands\); official primary source, text reviewed 2026-10-12T17:54:39Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="netherlands-tax-administration-security-recognition"></a>
+## Netherlands Tax Administration \(Belastingdienst\)
+
+[Canonical record](<../data/recognition/netherlands-tax-administration-security-recognition.json>)
+
+**Recognition:** Previously unknown, impactful responsible reports qualify for requested public credit\. [Public researcher recognition](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/hall-of-fame-cvd>) · [Responsible disclosure and reporting policy](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure>)
+
+**Reporting:** The policy supplies direct CVD email contacts for the participating tax and benefits authorities\. [Responsible disclosure and reporting policy](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure>)
+
+**Rewards:** The reward policy explicitly excludes money; letters and a trophy are possible\. [CVD reward policy](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure-cvd-rewards>)
+
+**Limits:**
+- One shared program, not separate entries for constituent authorities\. Historical Hall wording does not expand the current policy's coverage\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure>) — Netherlands Tax Administration \(Belastingdienst\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/hall-of-fame-cvd>) — Netherlands Tax Administration \(Belastingdienst\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [CVD reward policy](<https://www.belastingdienst.nl/wps/wcm/connect/bldcontenten/standaard_functies/individuals/contact/data-leak-vulnerability-abuse-computer-systems/coordinated-vulnerability-disclosure/coordinated-vulnerability-disclosure-cvd-rewards>) — Netherlands Tax Administration \(Belastingdienst\); official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -744,6 +1028,50 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 **Source provenance:**
 - [Responsible disclosure policy and Security hall of fame](<https://www.nbim.no/en/responsible-disclosure-policy/>) — Norges Bank Investment Management; official primary source, text reviewed 2026-10-12T17:52:55Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="npo-security-recognition"></a>
+## NPO \(Dutch Public Broadcasting\)
+
+[Canonical record](<../data/recognition/npo-security-recognition.json>)
+
+**Recognition:** Policy-compliant reporters may request inclusion in the populated Wall of Fame\. [Public researcher recognition](<https://npo.nl/overnpo/privacy-en-security/responsible-disclosure>) · [Responsible disclosure and reporting policy](<https://media.prod.cc.bijnpo.nl/rd_manual_english_6688b641fb.pdf>)
+
+**Reporting:** The official page publishes direct email; the linked manual requests encryption and written policy agreement\. [Public researcher recognition](<https://npo.nl/overnpo/privacy-en-security/responsible-disclosure>)
+
+**Rewards:** Discretionary appreciation may include gift vouchers; no guaranteed cash award is stated\. [Responsible disclosure and reporting policy](<https://media.prod.cc.bijnpo.nl/rd_manual_english_6688b641fb.pdf>)
+
+**Limits:**
+- The linked English manual is dated June 2019; current reporting page still links it\. Automated scanning is prohibited\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://media.prod.cc.bijnpo.nl/rd_manual_english_6688b641fb.pdf>) — NPO \(Dutch Public Broadcasting\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://npo.nl/overnpo/privacy-en-security/responsible-disclosure>) — NPO \(Dutch Public Broadcasting\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="null-community-security-recognition"></a>
+## null — The Open Security Community
+
+[Canonical record](<../data/recognition/null-community-security-recognition.json>)
+
+**Recognition:** Valid, impactful responsible reports can receive credit at the core team's discretion\. [Public researcher recognition](<https://null.community/pages/1-null-hall-of-fame>) · [Responsible disclosure and reporting policy](<https://null.community/pages/5-security>)
+
+**Reporting:** Email reporting is accepted; the policy also recommends its organization-managed Google Form\. [Responsible disclosure and reporting policy](<https://null.community/pages/5-security>)
+
+**Rewards:** The policy explicitly excludes monetary rewards\. [Responsible disclosure and reporting policy](<https://null.community/pages/5-security>)
+
+**Limits:**
+- The Hall also credits non-security community contributions; historical entries do not override current recognition exclusions\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://null.community/pages/5-security>) — null — The Open Security Community; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://null.community/pages/1-null-hall-of-fame>) — null — The Open Security Community; official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -910,6 +1238,28 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="qrl-foundation-security-recognition"></a>
+## QRL Foundation
+
+[Canonical record](<../data/recognition/qrl-foundation-security-recognition.json>)
+
+**Recognition:** Validated findings can receive Hall points even when ineligible for a monetary bounty\. [Responsible disclosure and reporting policy](<https://www.theqrl.org/bug-bounty/>)
+
+**Reporting:** The security-reporting page publishes a direct encrypted-email route\. [Direct security reporting](<https://www.theqrl.org/security-report/>)
+
+**Rewards:** Eligible reports may receive discretionary cash awards; Hall points are not themselves money\. [Responsible disclosure and reporting policy](<https://www.theqrl.org/bug-bounty/>)
+
+**Limits:**
+- The policy restricts investigation to locally running testnets and requires confidentiality\. Eligibility wording is not fully consistent, so no award or acceptance is guaranteed\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.theqrl.org/bug-bounty/>) — QRL Foundation; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Direct security reporting](<https://www.theqrl.org/security-report/>) — QRL Foundation; official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="radboud-security-recognition"></a>
 ## Radboud University
 
@@ -999,6 +1349,29 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 - [Hall of Fame and Honorable Mention](<https://security.samsungtv.com/hallOfFame>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
 - [Security Reporting](<https://security.samsungtv.com/reportVulnerability>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
 - [Rewards Program](<https://security.samsungtv.com/bugbountyProgram>) — Samsung Electronics; official primary source, text reviewed 2026-10-12T16:48:18Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="saxion-security-recognition"></a>
+## Saxion University of Applied Sciences
+
+[Canonical record](<../data/recognition/saxion-security-recognition.json>)
+
+**Recognition:** First valid reports of previously unknown, nontrivial vulnerabilities receive Hall recognition\. [Public researcher recognition](<https://www.saxion.edu/about-saxion/our-organisation/hall-of-fame>) · [Responsible disclosure and reporting policy](<https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure>)
+
+**Reporting:** The policy offers direct email; current official security\.txt separately confirms its institutional contacts\. [Responsible disclosure and reporting policy](<https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure>) · [Official security contacts](<https://www.saxion.nl/.well-known/security.txt>)
+
+**Rewards:** No monetary reward promise appears in the reviewed policy\. [Responsible disclosure and reporting policy](<https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure>)
+
+**Limits:**
+- The policy is explicitly not an invitation to active scanning; confidentiality and encryption guidance apply\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.saxion.edu/about-saxion/our-organisation/coordinated-vulnerability-disclosure>) — Saxion University of Applied Sciences; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.saxion.edu/about-saxion/our-organisation/hall-of-fame>) — Saxion University of Applied Sciences; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Official security contacts](<https://www.saxion.nl/.well-known/security.txt>) — Saxion University of Applied Sciences; official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -1114,6 +1487,27 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 **Source provenance:**
 - [Hall of Fame](<https://security.utexas.edu/hall-of-fame>) — The University of Texas at Austin; official primary source, text reviewed 2026-10-11T04:01:53Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="tim-group-security-recognition"></a>
+## TIM Group
+
+[Canonical record](<../data/recognition/tim-group-security-recognition.json>)
+
+**Recognition:** Eligible original reports may receive requested Hall credit when not already being handled\. [Responsible disclosure and reporting policy](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>)
+
+**Reporting:** The group policy publishes direct responsible-disclosure email and optional encryption\. [Responsible disclosure and reporting policy](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>)
+
+**Rewards:** TIM expressly offers no economic rewards\. [Responsible disclosure and reporting policy](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>)
+
+**Limits:**
+- Count the group once\. At least 90 days of confidentiality and coordinated disclosure apply; intensive or invasive scanning is prohibited\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.gruppotim.it/en/footer/responsible-disclosure.html>) — TIM Group; official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
@@ -1369,6 +1763,28 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 
+<a id="uwv-security-recognition"></a>
+## UWV \(Netherlands Employee Insurance Agency\)
+
+[Canonical record](<../data/recognition/uwv-security-recognition.json>)
+
+**Recognition:** Assessed responsible reports may qualify for consent-based Hall recognition\. [Public researcher recognition](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy/hall-of-fame>) · [Responsible disclosure and reporting policy](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy>)
+
+**Reporting:** Direct CVD email and optional PGP encryption are published\. [Responsible disclosure and reporting policy](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy>)
+
+**Rewards:** Small nonmonetary rewards are discretionary; the policy expressly never offers money\. [Responsible disclosure and reporting policy](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy>)
+
+**Limits:**
+- Credit depends on assessment, not submission alone; findings remain confidential until UWV's disclosure\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy>) — UWV \(Netherlands Employee Insurance Agency\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy/hall-of-fame>) — UWV \(Netherlands Employee Insurance Agency\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
 <a id="vu-amsterdam-security-recognition"></a>
 ## Vrije Universiteit Amsterdam
 
@@ -1436,6 +1852,50 @@ Original summary CC BY 4\.0; linked sources and trademarks retain their own righ
 - [Reporting security bugs](<https://www.mediawiki.org/wiki/Reporting_security_bugs>) — Wikimedia Foundation / MediaWiki; official primary source, text reviewed 2026-10-12T16:49:21Z.
 - [Bug Bounties](<https://security.wikimedia.org/bug-bounty/>) — Wikimedia Foundation; official primary source, text reviewed 2026-10-12T16:49:21Z.
 - [Contact the Wikimedia Security Team](<https://security.wikimedia.org/contact/>) — Wikimedia Foundation; official primary source, text reviewed 2026-10-12T16:49:21Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="who-security-recognition"></a>
+## World Health Organization \(WHO\)
+
+[Canonical record](<../data/recognition/who-security-recognition.json>)
+
+**Recognition:** First qualifying reports may receive consent-based acknowledgment after remediation\. [Public researcher recognition](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame/ethical-hacker-list>) · [Responsible disclosure and reporting policy](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame>)
+
+**Reporting:** The policy publishes a direct vulnerability-reporting email and encryption instructions\. [Responsible disclosure and reporting policy](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame>)
+
+**Rewards:** Reports are explicitly pro bono, with no expectation of financial or other compensation\. [Responsible disclosure and reporting policy](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame>)
+
+**Limits:**
+- WHO retains acceptance discretion, including internal duplicate decisions; confidentiality and privacy conditions apply\. This is separate from the UN Secretariat program\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame>) — World Health Organization \(WHO\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://www.who.int/about/cybersecurity/vulnerability-hall-of-fame/ethical-hacker-list>) — World Health Organization \(WHO\); official primary source, text reviewed 2026-10-12T18:13:00Z.
+
+Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
+
+<a id="z-cert-security-recognition"></a>
+## Z-CERT
+
+[Canonical record](<../data/recognition/z-cert-security-recognition.json>)
+
+**Recognition:** The healthcare Hall recognizes qualifying responsible reports; duplicate credit follows first-report rules\. [Public researcher recognition](<https://z-cert.nl/kwetsbaarheid-melden/hall-of-fame>) · [Responsible disclosure and reporting policy](<https://z-cert.nl/en/resources/cvd>)
+
+**Reporting:** The policy offers direct encrypted email as an alternative to Zivver secure messaging\. [Responsible disclosure and reporting policy](<https://z-cert.nl/en/resources/cvd>)
+
+**Rewards:** A thank-you reward may vary with severity and report quality; amount and form are unspecified\. [Responsible disclosure and reporting policy](<https://z-cert.nl/en/resources/cvd>)
+
+**Limits:**
+- One coordinator program, not separate entries for each constituent\. The direct email link is protected in text extraction; use the policy template\. Suspected medical-data access must be assessed by Z-CERT\.
+
+**Reviewed:** 2026-10-12T18:13:00Z. Submission availability: not tested.
+
+**Source provenance:**
+- [Responsible disclosure and reporting policy](<https://z-cert.nl/en/resources/cvd>) — Z-CERT; official primary source, text reviewed 2026-10-12T18:13:00Z.
+- [Public researcher recognition](<https://z-cert.nl/kwetsbaarheid-melden/hall-of-fame>) — Z-CERT; official primary source, text reviewed 2026-10-12T18:13:00Z.
 
 Original summary CC BY 4\.0; linked sources and trademarks retain their own rights\.
 

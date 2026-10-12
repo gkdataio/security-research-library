@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "id": "uwv-security-recognition",
+  "organization": "UWV (Netherlands Employee Insurance Agency)",
+  "recognition": {
+    "kind": "hall_of_fame",
+    "url": "https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy/hall-of-fame",
+    "summary": "Assessed responsible reports may qualify for consent-based Hall recognition.",
+    "source_ids": [
+      "recognition",
+      "policy"
+    ]
+  },
+  "reporting": {
+    "route": "direct_email",
+    "url": "https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy",
+    "summary": "Direct CVD email and optional PGP encryption are published.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "rewards": {
+    "status": "no_bounty",
+    "summary": "Small nonmonetary rewards are discretionary; the policy expressly never offers money.",
+    "source_ids": [
+      "policy"
+    ]
+  },
+  "reviewed_at": "2026-10-12T18:13:00Z",
+  "submission_availability": "not_tested",
+  "limitations": [
+    "Credit depends on assessment, not submission alone; findings remain confidential until UWV's disclosure."
+  ],
+  "sources": [
+    {
+      "id": "policy",
+      "title": "Responsible disclosure and reporting policy",
+      "url": "https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy",
+      "publisher": "UWV (Netherlands Employee Insurance Agency)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    },
+    {
+      "id": "recognition",
+      "title": "Public researcher recognition",
+      "url": "https://www.uwv.nl/en/about-this-site/vulnerability-disclosure-policy/hall-of-fame",
+      "publisher": "UWV (Netherlands Employee Insurance Agency)",
+      "retrieved_at": "2026-10-12T18:13:00Z",
+      "provenance": "official_primary",
+      "access_method": "text"
+    }
+  ],
+  "content_scope": "first_party_recognition_and_reporting_reference",
+  "rights": "Original summary CC BY 4.0; linked sources and trademarks retain their own rights."
+}
+
