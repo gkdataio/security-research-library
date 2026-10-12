@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="152" height="44" viewBox="0 0 152 44" role="img" aria-label="Resource type: browse learning resources by publication type">
+  <title>Resource type</title>
+  <desc>Resource type: browse learning resources by publication type. Static navigation image; the surrounding README link opens the destination.</desc>
+  <rect x="0.5" y="0.5" width="151" height="43" rx="5" fill="#090F12" stroke="#32464B"/>
+  <text x="16" y="27" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F0F3E8">Resource type</text>
+  <polyline points="129,18 133,22 129,26" fill="none" stroke="#9EB2AF" stroke-width="1.5"/>
+</svg>

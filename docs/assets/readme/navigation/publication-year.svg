@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="44" viewBox="0 0 172 44" role="img" aria-label="Publication year: browse known and unknown original dates">
+  <title>Publication year</title>
+  <desc>Publication year: browse known and unknown original dates. Static navigation image; the surrounding README link opens the destination.</desc>
+  <rect x="0.5" y="0.5" width="171" height="43" rx="5" fill="#090F12" stroke="#32464B"/>
+  <text x="16" y="27" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F0F3E8">Publication year</text>
+  <polyline points="149,18 153,22 149,26" fill="none" stroke="#9EB2AF" stroke-width="1.5"/>
+</svg>

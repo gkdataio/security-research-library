@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="44" viewBox="0 0 136 44" role="img" aria-label="Frameworks: browse server/client security">
+  <title>Frameworks</title>
+  <desc>Frameworks: browse server/client security. Static navigation image; the surrounding README link opens the destination.</desc>
+  <rect x="0.5" y="0.5" width="135" height="43" rx="5" fill="#090F12" stroke="#32464B"/>
+  <text x="16" y="27" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#F0F3E8">Frameworks</text>
+  <polyline points="113,18 117,22 113,26" fill="none" stroke="#9EB2AF" stroke-width="1.5"/>
+</svg>

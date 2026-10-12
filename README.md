@@ -13,11 +13,34 @@ Source-backed bug bounty writeups, vulnerability disclosures, official learning 
 
 ### Browse the library
 
-Learning lanes: [CTF and controlled practice](docs/ctf-and-practice.md) · [API security](docs/resource-topics.md#topic-api-security) · [Browser security](docs/resource-topics.md#topic-browser-security) · [Server/client frameworks](docs/resource-topics.md#topic-server-client-frameworks)
+<!-- BEGIN README BUTTONS: vulnerabilities -->
+<p>
+  <a href="docs/vulnerability-types.md" title="Vulnerability types: browse families and specific types"><img src="docs/assets/readme/navigation/vulnerability-types.svg" width="214" height="44" alt="Vulnerability types: browse families and specific types"></a>
+</p>
+<!-- END README BUTTONS: vulnerabilities -->
 
-Browse across collections: [Resource type](docs/resource-types.md) · [Defensive skill](docs/skillsets.md) · [Publication year, including unknown dates](docs/publication-years.md)
+<!-- BEGIN README BUTTONS: learning -->
+**Learning lanes**
 
-**[Browse by vulnerability type](docs/vulnerability-types.md)** — one starting point for broad families, XSS and its subtypes, SSRF and SSTI. Individual type pages separate award-backed reports, educational case studies and learning references into 2025–2026 publication groups, with historical and unknown-date examples clearly labeled. Broader security themes, related learning and conceptual diagrams remain available from the same hub.
+<p>
+  <a href="docs/ctf-and-practice.md" title="CTF &amp; practice: browse controlled training"><img src="docs/assets/readme/navigation/ctf-practice.svg" width="152" height="44" alt="CTF &amp; practice: browse controlled training"></a>
+  <a href="docs/resource-topics.md#topic-api-security" title="API security: browse learning resources"><img src="docs/assets/readme/navigation/api-security.svg" width="136" height="44" alt="API security: browse learning resources"></a>
+  <a href="docs/resource-topics.md#topic-browser-security" title="Browser security: browse learning resources"><img src="docs/assets/readme/navigation/browser-security.svg" width="168" height="44" alt="Browser security: browse learning resources"></a>
+  <a href="docs/resource-topics.md#topic-server-client-frameworks" title="Frameworks: browse server/client security"><img src="docs/assets/readme/navigation/frameworks.svg" width="136" height="44" alt="Frameworks: browse server/client security"></a>
+</p>
+<!-- END README BUTTONS: learning -->
+
+<!-- BEGIN README BUTTONS: browse -->
+**Browse across collections**
+
+<p>
+  <a href="docs/resource-types.md" title="Resource type: browse learning resources by publication type"><img src="docs/assets/readme/navigation/resource-type.svg" width="152" height="44" alt="Resource type: browse learning resources by publication type"></a>
+  <a href="docs/skillsets.md" title="Defensive skill: browse reports and learning resources"><img src="docs/assets/readme/navigation/defensive-skill.svg" width="156" height="44" alt="Defensive skill: browse reports and learning resources"></a>
+  <a href="docs/publication-years.md" title="Publication year: browse known and unknown original dates"><img src="docs/assets/readme/navigation/publication-year.svg" width="172" height="44" alt="Publication year: browse known and unknown original dates"></a>
+</p>
+<!-- END README BUTTONS: browse -->
+
+The vulnerability-type hub is one starting point for broad families, XSS and its subtypes, SSRF and SSTI. Individual type pages separate award-backed reports, educational case studies and learning references into 2025–2026 publication groups, with historical and unknown-date examples clearly labeled. Broader security themes, related learning and conceptual diagrams remain available from the same hub.
 
 Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored](docs/vulnerabilities/stored-xss.md) · [Reflected / RXSS](docs/vulnerabilities/reflected-xss.md) · [Blind](docs/vulnerabilities/blind-xss.md)) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
 
@@ -187,6 +210,7 @@ The scripts keep the collection consistent and reusable. Reading the reports or 
 | [export_resources.py](scripts/export_resources.py) | Generates the separate resource and diagram JSON |
 | [render_diagrams.py](scripts/render_diagrams.py) | Generates Mermaid/DOT source and uses local Graphviz to produce SVG diagrams |
 | [build_navigation.py](scripts/build_navigation.py) | Generates readable report/resource pages, indexes and the static diagram gallery |
+| [render_readme_buttons.py](scripts/render_readme_buttons.py) | Generates the small README navigation buttons and their three marked link groups; existing artwork is unchanged |
 | [export_programs.py](scripts/export_programs.py) | Validates program-policy metadata and builds its separate export and directory |
 | [export_program_discovery.py](scripts/export_program_discovery.py) | Validates official directory observations, deduplicates program pages and preserves continuation provenance |
 | [export_public_bounties.py](scripts/export_public_bounties.py) | Validates dated official scope-table captures and generates the per-program public bounty catalog and JSON export |
@@ -216,6 +240,7 @@ python3 scripts/export_public_bounties.py --check
 python3 scripts/export_bugcrowd_programs.py --check
 python3 scripts/export_scope_audit.py --check
 python3 scripts/build_navigation.py --check
+python3 scripts/render_readme_buttons.py --check
 ```
 
 After editing canonical records, regenerate the affected exports. The recognition exporter also generates its readable directory:
@@ -230,6 +255,7 @@ python3 scripts/export_public_bounties.py
 python3 scripts/export_bugcrowd_programs.py
 python3 scripts/export_scope_audit.py
 python3 scripts/build_navigation.py
+python3 scripts/render_readme_buttons.py
 ```
 
 Regenerating SVGs also requires an installed **Graphviz `dot`** executable. Run `python3 scripts/render_diagrams.py` and visually inspect the resulting SVGs after graph edits. The renderer's `--check` compares generated source text; it does not rerender SVGs or replace visual review.
