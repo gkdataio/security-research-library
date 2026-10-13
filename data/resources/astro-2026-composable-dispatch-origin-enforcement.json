@@ -20,7 +20,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "The maintainer describes origin enforcement attached to optional middleware while independently composed dispatchers could invoke application handlers first. The resulting cross-site request forgery can change state using browser credentials but cannot read cross-origin responses. Conceptual failure: a security setting did not guarantee enforcement along every path to a protected operation.",
+  "summary": "Astro's maintainer reports that optional or late middleware could leave composed request handlers without the required origin check. The resulting cross-site request forgery could change application state using browser credentials, but could not read cross-origin responses. The lesson is that enabling a security setting must enforce it on every route to the protected operation.",
   "defensive_use": "The advisory identifies 7.0.5 as patched, moving equivalent checks to dispatch boundaries so composition order cannot remove them. Editorial lesson: review mandatory controls as invariants of each protected operation, not assumptions about wrapper ordering. Local regression coverage should establish that composition changes preserve rejection before side effects.",
   "prerequisites": [
     "Server-rendered applications and framework composition",

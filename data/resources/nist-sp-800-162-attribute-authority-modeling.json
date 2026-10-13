@@ -24,7 +24,7 @@
     "integration-threat-modeling"
   ],
   "version": "SP 800-162 (January 2014; updated August 2, 2019)",
-  "summary": "Defines authorization in terms of subject, object, operation and environmental attributes evaluated against policy. Enterprise considerations connect business rules to machine-enforced decisions, attribute authorities and consistent meanings across organizations. Attribute maintenance, provenance and integrity are part of the authorization model rather than incidental metadata.",
+  "summary": "NIST explains how access policies use attributes of the user, resource, requested action and environment to decide whether to allow access. It connects business rules to software-enforced decisions and explains why organizations need consistent attribute meanings. Who supplies an attribute, how it is maintained and how it is protected are part of the access-control design.",
   "defensive_use": "For an owned policy design, identify who may assert each attribute, how it is bound to its subject or object, and how changes reach decision points. Compare resulting permissions with the written policy.",
   "prerequisites": [
     "Basic understanding of access-control concepts"

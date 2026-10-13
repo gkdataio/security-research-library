@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.wiz.io/blog/wiz-research-redis-rce-cve-2025-49844>) — Benny Isaacs and Nir Brakha / Wiz Research · [Canonical JSON](<../../data/reports/redis-lua-object-lifetime-isolation-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Redis's Lua interpreter could keep referring to an object after its memory had been freed\. The vendor confirms possible native code execution by an authenticated user allowed to run Lua scripts; host impact still depends on process privileges and deployment isolation\. ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry\.
+
 **Organization:** Redis  
 **Product:** Redis with Lua scripting
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Lua garbage collection could leave an object referenced after its memory was freed, undermining the interpreter’s memory-safety assumptions\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms possible native code execution by an authenticated user able to run Lua scripts\. This crosses the scripting boundary; host impact remains dependent on process privileges and deployment isolation\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Review object-lifetime invariants across embedded interpreters and native components\.
 - Grant scripting access only where needed and retain least-privilege service execution\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One competition-entry award, not the resea
 Exact source quotation and location remain in the [canonical record](<../../data/reports/redis-lua-object-lifetime-isolation-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2025-10-06; precision: day; basis: explicit. Primary research article publication; earlier competition results are separately dated\.
 - **public disclosure:** 2025-05-16; precision: day; basis: explicit. Public demonstration and result; vendor technical advisory followed later\.

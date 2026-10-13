@@ -28,7 +28,7 @@
     "untrusted-input-handling",
     "patch-verification"
   ],
-  "summary": "The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay.cloud 2025 competition entry.",
+  "summary": "MariaDB's JSON normalization could copy text into a buffer that was too small. An authenticated database user could crash the server; the competition demonstration achieved code execution, but the vendor says that outcome depended on unusually controlled memory conditions generally associated with a lab. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay.cloud 2025 entry.",
   "root_cause": "JSON normalization copied variable-length text into an undersized allocation. The fix uses storage management that grows the buffer to fit the value.",
   "impact": "An authenticated database user could crash the server. The researcher demonstrated code execution at the event; the vendor-authored CVE record qualifies that outcome as dependent on unusually controlled memory conditions, generally associated with a lab.",
   "defensive_takeaways": [

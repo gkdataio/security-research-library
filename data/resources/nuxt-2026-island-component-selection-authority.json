@@ -20,7 +20,7 @@
     "authorization-modeling"
   ],
   "version": null,
-  "summary": "The maintainer describes request-controlled island data reaching dynamic component selection through attribute inheritance. This permits unintended registered-component or native-element rendering. The boundary fails when input intended to configure an approved component instead chooses what component runs. The advisory expressly excludes arbitrary JavaScript execution through this vector.",
+  "summary": "Nuxt's maintainer reports that request-controlled island data could select an unintended registered component or native element through attribute inheritance. Input meant to configure an approved component instead influenced which component rendered. The advisory explicitly rules out arbitrary JavaScript execution through this issue.",
   "defensive_use": "Nuxt identifies 4.5.1 and 3.21.10 as patched for the common implicit-inheritance path. Explicit untrusted component selection remains application responsibility. Editorial lesson: define both accepted data and allowed interpretation at component boundaries; map external choices to a closed set of trusted components rather than treating strings as authority.",
   "prerequisites": [
     "Server-rendered applications and framework composition",

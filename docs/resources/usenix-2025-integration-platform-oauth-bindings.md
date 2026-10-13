@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/usenix-2025-integration-platform-oauth-bindings.json>) · [Official resource](<https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan>)
+[Official resource](<https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan>) · [Canonical JSON](<../../data/resources/usenix-2025-integration-platform-oauth-bindings.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+This study finds that integration platforms can lose track of which app an OAuth account-linking approval belongs to\. The authors propose tying each authorization to the specific app throughout the flow\. The findings are historical; the review used the publisher's abstract and prepublication manuscript because the final PDF exceeded retrieval limits\.
+
+## Defensive use
+
+Review whether an owned integration preserves the intended app and authorization issuer throughout account linking, including compatibility migrations\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** USENIX Association  
 **Authors:** Kaixuan Luo; Xianbo Wang; Pui Ho Adonis Fung; Wing Cheong Lau; Julien Lecomte  
@@ -10,16 +23,6 @@
 **Version:** USENIX Security 2025  
 **Topics:** Identity; Authorization; Cloud Security  
 **Defensive skills:** Threat-model integrations; Model access-control invariants; Review identity lifecycle
-
-## Original summary
-
-Studies account linking across multi-app integration platforms and identifies inconsistent app identity as a trust-boundary problem\. Proposes app-specific authorization-context binding\.
-
-## Defensive use
-
-Review whether an owned integration preserves the intended app and authorization issuer throughout account linking, including compatibility migrations\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

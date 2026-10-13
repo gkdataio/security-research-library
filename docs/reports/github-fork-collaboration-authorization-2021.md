@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) — Teddy Katz · [Canonical JSON](<../../data/reports/github-fork-collaboration-authorization-2021.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub checked fork-collaboration permissions differently when a setting was created and when it was changed\. This could give an unauthorized user write access to affected public forks\. The researcher reports a USD 20,000 award for this first finding in the article\.
+
 **Organization:** GitHub  
 **Product:** GitHub fork collaboration
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-The first fork-collaboration finding in this article earned USD 20,000\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Permission checks differed between creation and modification of the same collaboration setting\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 An unauthorized user could obtain write access to affected public forks\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Centralize entitlement checks across mutation paths\.
 - Verify that only an authorized owner can grant collaboration privileges\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. First report only; the separately awarded 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-fork-collaboration-authorization-2021.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2021-03-10; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

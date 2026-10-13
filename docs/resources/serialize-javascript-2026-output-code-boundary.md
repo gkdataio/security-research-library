@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/serialize-javascript-2026-output-code-boundary.json>) · [Official resource](<https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq>)
+[Official resource](<https://github.com/yahoo/serialize-javascript/security/advisories/GHSA-5c6j-r48x-rmvq>) · [Canonical JSON](<../../data/resources/serialize-javascript-2026-output-code-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Serialize JavaScript did not consistently escape strings from all supported object types before including them in generated code\. The maintainer demonstrates local code execution, requiring both attacker-influenced objects and an application that executes the serialized output\. Ordinary JSON input alone does not establish those conditions, and remote or production compromise is not demonstrated\.
+
+## Defensive use
+
+The maintainer advisory and official release identify 7\.0\.3 as the repair\. Editorial lesson: audit serialization contracts across every supported type and output consumer, including overridable object behavior\. Prefer data-only exchange where possible and avoid granting generated text execution authority merely because a serializer produced it\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Yahoo serialize-javascript  
 **Authors:** redonkulus  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Interpreter Boundaries  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-The maintainer describes inconsistent escaping across structured-object serialization: some object-derived strings entered generated JavaScript without equivalent protection\. Code execution requires attacker-influenced objects and subsequent executable interpretation of the output\. The advisory demonstrates local execution; universal remote exploitability or production compromise is not established\.
-
-## Defensive use
-
-The maintainer advisory and official release identify 7\.0\.3 as the repair\. Editorial lesson: audit serialization contracts across every supported type and output consumer, including overridable object behavior\. Prefer data-only exchange where possible and avoid granting generated text execution authority merely because a serializer produced it\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

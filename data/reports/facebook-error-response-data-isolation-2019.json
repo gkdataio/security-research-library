@@ -17,7 +17,7 @@
     "defensive-evidence-writing",
     "patch-verification"
   ],
-  "summary": "Facebook confirms a USD 65,000 bounty payment for an error-response data-exposure report.",
+  "summary": "Facebook error responses could include application data that the requester should not receive. The initial finding led Facebook to review a broader error-handling problem. Facebook confirms a USD 65,000 payment for the report.",
   "root_cause": "An error-handling configuration could include unintended application data in a response; subsequent review found a broader framework issue.",
   "impact": "A copyright-management request could return data fragments not intended for the requester. The award reflected the vendor’s assessment of potential wider impact.",
   "defensive_takeaways": [

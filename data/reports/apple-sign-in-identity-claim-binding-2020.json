@@ -16,7 +16,7 @@
     "authorization-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "Bhavuk Jain reports being paid $100,000 for this finding. The recorded USD denomination is a contextual inference from Apple's May 2019 program documentation, published about one year before the May 2020 disclosure.",
+  "summary": "Sign in with Apple did not reliably check that identity claims belonged to the signed-in user, putting some third-party accounts at risk. Bhavuk Jain reports a $100,000 payment; he did not test the named third-party applications. USD is inferred from Apple's May 2019 program documentation, about a year before the May 2020 disclosure.",
   "root_cause": "Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications. Cryptographic validity alone did not establish correct claim ownership.",
   "impact": "Potential takeover of third-party application accounts using the integration without additional safeguards. Named third-party applications were not tested by the researcher.",
   "defensive_takeaways": [

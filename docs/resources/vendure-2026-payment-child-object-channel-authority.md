@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/vendure-2026-payment-child-object-channel-authority.json>) · [Official resource](<https://github.com/vendurehq/vendure/security/advisories/GHSA-7qvr-c5vf-xxfh>)
+[Official resource](<https://github.com/vendurehq/vendure/security/advisories/GHSA-7qvr-c5vf-xxfh>) · [Canonical JSON](<../../data/resources/vendure-2026-payment-child-object-channel-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Vendure restricted access to orders by channel but did not carry those checks into related payment, refund and fulfillment operations\. The maintainer reports controlled unauthorized refunds by a channel-limited administrator with order-update permission in a suitably configured multi-channel store\. Financial disruption is a potential consequence; production losses are not established\.
+
+## Defensive use
+
+Editorial lesson: derive child-object authority from the parent order and current channel before any external effect\. A later database rejection cannot reliably undo an earlier gateway action\. Review alternate entry points against the same invariant, rather than assuming protected parent reads cover mutations\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Vendure  
 **Authors:** michaelbromley  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-Order-level scoping did not carry into globally loaded payment, refund and fulfillment objects\. A channel-limited administrator could affect another channel through child-object operations\. The advisory contrasts scoped order reads with successful unauthorized refund processing, locating the failure at object-resolution and side-effect boundaries\.
-
-## Defensive use
-
-Editorial lesson: derive child-object authority from the parent order and current channel before any external effect\. A later database rejection cannot reliably undo an earlier gateway action\. Review alternate entry points against the same invariant, rather than assuming protected parent reads cover mutations\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

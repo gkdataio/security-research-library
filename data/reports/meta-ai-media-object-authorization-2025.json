@@ -19,7 +19,7 @@
     "defensive-evidence-writing",
     "patch-verification"
   ],
-  "summary": "An authenticated media-editing operation exposed another user’s prompts and generated content because object ownership was not enforced. The researcher reports a USD 10,000 award.",
+  "summary": "Meta AI's media-editing feature checked that a user was signed in without checking that the requested media belonged to them. A two-user demonstration revealed another user's original prompt and generated media. The researcher reports a USD 10,000 award; broader harvesting was a potential consequence, and the reproduced vendor response says it found no evidence of abuse.",
   "root_cause": "Authentication established a caller but did not bind the requested media object to that caller. The researcher’s two-user comparison exposed this distinction between feature access and content authority.",
   "impact": "The demonstration disclosed another user’s original prompt and generated media. Broader data harvesting was potential impact; the reproduced vendor response reports no evidence of abuse.",
   "defensive_takeaways": [

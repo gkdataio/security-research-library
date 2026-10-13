@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/portswigger-2025-upstream-http-framing-boundaries.json>) · [Official resource](<https://portswigger.net/research/http1-must-die>)
+[Official resource](<https://portswigger.net/research/http1-must-die>) · [Canonical JSON](<../../data/resources/portswigger-2025-upstream-http-framing-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+This PortSwigger research explains how disagreement between proxies and origin servers about where requests end can break isolation on shared upstream connections\. Using HTTP/2 for client connections does not remove the risk if an intermediary translates requests into HTTP/1\.1\.
+
+## Defensive use
+
+Review framing contracts across every intermediary, including protocol translation and connection reuse\. Consider upstream HTTP/2, consistent validation and normalization, and isolation tradeoffs where legacy transport remains\. Assess remediation against the architecture rather than relying on a front-end protocol label or filtering claim\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** PortSwigger  
 **Authors:** James Kettle  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review parsing and serialization; Threat-model integrations; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-The researcher explains how inconsistent message-boundary interpretation across proxies and origins can break request isolation on shared upstream connections\. Client-facing HTTP/2 alone does not remove this risk when intermediaries translate requests into HTTP/1\.1\.
-
-## Defensive use
-
-Review framing contracts across every intermediary, including protocol translation and connection reuse\. Consider upstream HTTP/2, consistent validation and normalization, and isolation tradeoffs where legacy transport remains\. Assess remediation against the architecture rather than relying on a front-end protocol label or filtering claim\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

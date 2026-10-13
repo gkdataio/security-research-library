@@ -15,7 +15,7 @@
     "untrusted-input-handling"
   ],
   "version": null,
-  "summary": "Defense-in-depth guidance for LLM applications that consume untrusted content or invoke tools. Covers data provenance, least privilege, action authorization, monitoring, and the limitations of guardrails.",
+  "summary": "OWASP recommends layered defenses for LLM applications that read untrusted content or use tools. The guidance covers tracking data sources, limiting permissions, authorizing actions and monitoring behavior, while explaining the limits of guardrails.",
   "defensive_use": "Review permissions and action boundaries around an owned AI integration; treat filters and model-based checks as partial defenses rather than guarantees.",
   "prerequisites": [
     "LLM application and tool-call basics",

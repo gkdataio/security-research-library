@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nist-sp-800-190-container-isolation-guide.json>) · [Official resource](<https://csrc.nist.gov/pubs/sp/800/190/final>)
+[Official resource](<https://csrc.nist.gov/pubs/sp/800/190/final>) · [Canonical JSON](<../../data/resources/nist-sp-800-190-container-isolation-guide.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+NIST's container security guide explains the risks of sharing an operating-system kernel and the need to separate workloads and limit runtime permissions\. It covers images, registries, orchestration, runtimes and hosts, including maintenance throughout their lifecycle\.
+
+## Defensive use
+
+Build an owned environment’s boundary-and-responsibility map, then compare product-specific controls with current vendor guidance\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** National Institute of Standards and Technology  
 **Authors:** Murugiah Souppaya; John Morello; Karen Scarfone  
@@ -10,16 +23,6 @@
 **Version:** SP 800-190 \(2017 final\)  
 **Topics:** Cloud Security; Software Supply Chain  
 **Defensive skills:** Threat-model integrations; Review dependency provenance; Verify remediation evidence
-
-## Original summary
-
-A foundational model of container images, registries, orchestration, runtimes and host security\. It explains shared-kernel risk, workload separation, constrained runtime permissions and lifecycle maintenance\.
-
-## Defensive use
-
-Build an owned environment’s boundary-and-responsibility map, then compare product-specific controls with current vendor guidance\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

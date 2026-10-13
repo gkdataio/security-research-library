@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/stripe-webhook-delivery-state-integrity.json>) · [Official resource](<https://docs.stripe.com/webhooks>)
+[Official resource](<https://docs.stripe.com/webhooks>) · [Canonical JSON](<../../data/resources/stripe-webhook-delivery-state-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A valid Stripe webhook signature proves delivery authenticity, not that an event is new or reflects the latest business state\. Stripe's guidance explains that events can arrive more than once or out of order, and retries receive new signatures and timestamps\. Applications must handle those cases separately; this is provider guidance, not a vulnerability report or an exactly-once delivery guarantee\.
+
+## Defensive use
+
+Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants\. Review how application state stays consistent across repeated, delayed and concurrent work\. A recent authenticated delivery can still describe an already-handled event\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Stripe  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; API Security  
 **Defensive skills:** Reason about concurrent state; Threat-model integrations
-
-## Original summary
-
-Stripe documents duplicate deliveries, unordered events and renewed signatures and timestamps on retries\. Signature verification establishes delivery authenticity; it does not establish that the business effect is new or that the event represents the latest application state\.
-
-## Defensive use
-
-Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants\. Review how application state stays consistent across repeated, delayed and concurrent work\. A recent authenticated delivery can still describe an already-handled event\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

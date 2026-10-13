@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/openfga-authorization-query-freshness.json>) · [Official resource](<https://openfga.dev/docs/interacting/consistency>)
+[Official resource](<https://openfga.dev/docs/interacting/consistency>) · [Canonical JSON](<../../data/resources/openfga-authorization-query-freshness.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A permission check can miss a recent relationship update when OpenFGA caching is enabled\. The official documentation describes a low-latency mode that can reuse cached results and a higher-consistency mode that bypasses the cache\. Correct access decisions therefore depend on how recent the relationship data is\.
+
+## Defensive use
+
+Editorial lesson: specify when permission changes must become observable and align decision freshness with that requirement\. Review cache invalidation and performance assumptions together; a newly issued request does not necessarily use newly changed authorization state\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OpenFGA  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Reason about concurrent state
-
-## Original summary
-
-Authorization correctness includes the age of relationship state used for a decision\. OpenFGA documents a latency-oriented mode that can reuse cached results and a higher-consistency mode that bypasses the cache\. With caching enabled, an immediate permission check may miss a relationship update\.
-
-## Defensive use
-
-Editorial lesson: specify when permission changes must become observable and align decision freshness with that requirement\. Review cache invalidation and performance assumptions together; a newly issued request does not necessarily use newly changed authorization state\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

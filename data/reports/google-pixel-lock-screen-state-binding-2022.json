@@ -22,7 +22,7 @@
     "approval-state-integrity",
     "patch-verification"
   ],
-  "summary": "A researcher-published vendor decision documents a USD 70,000 award for CVE-2022-20465.",
+  "summary": "Pixel lock-screen handling could accept completion of one security challenge as completion of another after the active challenge changed. The researcher demonstrated a lock-screen bypass with physical access on Pixel 5 and 6 devices; broader Android coverage was not established. A vendor decision published by the researcher records a USD 70,000 award for CVE-2022-20465.",
   "root_cause": "The researcher’s patch analysis attributes the issue to completion events dismissing a different active security challenge after concurrent state changes.",
   "impact": "Physical access could bypass the lock screen on tested Pixel 5 and 6 devices. Broader Android coverage was not established by the researcher.",
   "defensive_takeaways": [

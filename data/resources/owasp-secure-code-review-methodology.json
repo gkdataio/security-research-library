@@ -16,7 +16,7 @@
     "defensive-evidence-writing"
   ],
   "version": null,
-  "summary": "Explains how whole-codebase reviews and change-focused reviews answer different assurance questions. Connects architecture, business requirements and existing findings to manual examination of data movement, control placement and workflow state. Review documentation records the inspected version, coverage and remediation decisions.",
+  "summary": "OWASP explains the different purposes of a whole-codebase review and a review focused on changes. It connects architecture, business rules and existing findings to examination of data flow, security checks and workflow state. Review records should identify the version examined, coverage and remediation decisions.",
   "defensive_use": "For an owned codebase, document the review boundary and trace a selected security requirement through relevant code and tests. Record unsupported assumptions and unreviewed paths rather than claiming complete coverage.",
   "prerequisites": [
     "Ability to read the application language and framework conventions",

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-account-recovery-state-integrity.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-account-recovery-state-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains how to bind recovery challenges to the right account, limit their lifetime and reuse, and control repeated attempts\. It also covers consistent responses, user notifications and session handling after a password reset\.
+
+## Defensive use
+
+Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Reason about concurrent state
-
-## Original summary
-
-Explains account-bound recovery challenges, limited lifetime and reuse, consistent responses, attempt controls, notifications and post-reset session handling\.
-
-## Defensive use
-
-Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://securitylab.github.com/advisories/GHSL-2025-114_Chromium/>) — Man Yue Mo / GitHub Security Lab · [Canonical JSON](<../../data/reports/google-chrome-v8-type-consistency-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+V8's optimized object handling could keep using type assumptions after they were no longer valid\. Memory reads and writes were possible, but broader code execution required another security failure\. Google awarded USD 50,000 for this one report\.
+
 **Organization:** Google  
 **Product:** Chrome / V8
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-One V8 type-consistency report earned a USD 50,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Optimized object handling could retain invalid type assumptions, producing a type-consistency failure\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Memory read/write was possible; broader code execution required an additional boundary failure\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Optimized execution must invalidate cached assumptions when object state changes and handle all supported object families consistently\.
 - Distinguish issue-status fixes from stable-release availability\.
@@ -33,6 +36,8 @@ Evidence level: vendor\_confirmed. Case notices use $; USD is contextual from th
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-chrome-v8-type-consistency-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-03-17; precision: day; basis: explicit. Detailed researcher advisory; public issue access opened January 13, 2026, after the October 2025 vendor notice\.
 - **public disclosure:** 2025-10-28; precision: day; basis: explicit. Vendor release disclosure; full issue access was enabled later\.

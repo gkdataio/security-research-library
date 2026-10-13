@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/facebook-sdk-message-authentication-randomness-2023.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Facebook's SDK used weak message authentication and could render supplied content as active HTML\. The researcher reports account takeover under mobile in-app browser conditions and a USD 66,000 award\. The effect on other websites depended on their framing controls, so the report does not show that every SDK integration was equally affected\.
+
 **Organization:** Meta  
 **Product:** Facebook JavaScript SDK and mobile application web content
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-A USD 66,000 researcher-reported award illustrates how weak message authentication and unsafe rendering can invalidate an SDK trust boundary\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher followed messages from an embedded plugin into SDK handlers and examined their authority checks\. A callback identifier was treated as an authentication secret despite coming from non-cryptographic randomness\. Separately, a handler interpreted supplied content as active HTML\. An origin check alone did not establish that the message content was authorized or safe to render\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports script execution and Facebook account takeover under mobile in-app browser conditions\. Impact on an arbitrary embedding site depended on its framing controls\. The article does not establish that every website using the SDK was affected equally\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Use cryptographic randomness and context binding for values that authorize message handling\.
 - Validate the sender, expected message relationship and permitted operation independently of rendering safety\.
@@ -35,6 +38,8 @@ Evidence level: researcher\_reported. One researcher-reported bug bounty, not an
 Exact source quotation and location remain in the [canonical record](<../../data/reports/facebook-sdk-message-authentication-randomness-2023.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Current archive page displays 2026-01-17\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure remains unverified; the current archive header does not resolve it\.

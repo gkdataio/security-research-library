@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/openid-fapi-2-api-authorization-profile.json>) · [Official resource](<https://openid.net/specs/fapi-security-profile-2_0-final.html>)
+[Official resource](<https://openid.net/specs/fapi-security-profile-2_0-final.html>) · [Canonical JSON](<../../data/resources/openid-fapi-2-api-authorization-profile.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The OpenID Foundation's FAPI 2\.0 profile sets coordinated OAuth security requirements for confidential clients, authorization servers and resource servers\. It covers sender-constrained tokens and protection of authorization requests\. Resource servers must still decide whether each token grants enough authority for the requested resource\.
+
+## Defensive use
+
+Map the ownership of token validation, issuer trust, client authentication, and resource-access decisions across an owned API integration\. Keep protocol conformance distinct from application-specific authorization\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OpenID Foundation  
 **Authors:** Daniel Fett; Dave Tonge; Joseph Heenan  
@@ -10,16 +23,6 @@
 **Version:** 2\.0 Final  
 **Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations
-
-## Original summary
-
-Defines a high-security OAuth profile with coordinated requirements for confidential clients, authorization servers, and resource servers\. Connects sender-constrained tokens and authorization-request integrity with the separate requirement to evaluate whether a token’s authority is sufficient for each protected resource\.
-
-## Defensive use
-
-Map the ownership of token validation, issuer trust, client authentication, and resource-access decisions across an owned API integration\. Keep protocol conformance distinct from application-specific authorization\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

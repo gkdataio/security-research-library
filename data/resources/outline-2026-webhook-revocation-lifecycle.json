@@ -19,7 +19,7 @@
     "authorization-modeling"
   ],
   "version": null,
-  "summary": "GHSA-33jq-x32c-3ccw describes webhook authority surviving deletion of its creator. Account cleanup omitted webhook subscriptions, while delivery trusted their enabled state. The maintainer-published report describes a local demonstration of document content delivery after the administrator account was deleted.",
+  "summary": "Outline's maintainer-published report demonstrates document content still being delivered by a webhook after its administrator creator's account was deleted (GHSA-33jq-x32c-3ccw). Account cleanup left the subscription in place, and delivery relied on its enabled status. The demonstration was local.",
   "defensive_use": "Editorial lesson: revocation must cover durable integrations and every terminal account state, with delivery-time checks as defense in depth. The advisory identifies 1.8.0 as patched. Its proposed cleanup changes are recommendations, not evidence of the implemented patch.",
   "prerequisites": [
     "Basic server-side authorization concepts"

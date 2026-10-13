@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/umbraco-2026-group-assignment-authority.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-065_Umbraco_CMS/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-065_Umbraco_CMS/>) · [Canonical JSON](<../../data/resources/umbraco-2026-group-assignment-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Umbraco checked who could edit an account without consistently checking which roles they could grant\. GitHub Security Lab reports administrator membership gained from a non-administrator API account in version 17\.2\.0\. This requires access to the backoffice Users section, ordinarily reserved for administrators, so custom delegation matters; the sources do not establish a customer incident\.
+
+## Defensive use
+
+Editorial lesson: model both the target account and the proposed privilege as authorization inputs, using consistent policy across bulk and individual operations\. The maintainer confirms the role-assignment defect and fixes in 16\.5\.1 and 17\.2\.2; upgrade affected installations rather than relying on interface restrictions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Jaroslav Lobačevski  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-31834 separates authority over an account from authority to grant its roles\. Research on Umbraco CMS 17\.2\.0 found that group-membership changes checked access to target users but omitted restrictions applied by the ordinary user-editing flow\. A qualifying non-administrator API account could obtain administrator membership\.
-
-## Defensive use
-
-Editorial lesson: model both the target account and the proposed privilege as authorization inputs, using consistent policy across bulk and individual operations\. The maintainer confirms the role-assignment defect and fixes in 16\.5\.1 and 17\.2\.2; upgrade affected installations rather than relying on interface restrictions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

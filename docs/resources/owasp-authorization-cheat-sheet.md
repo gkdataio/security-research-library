@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-authorization-cheat-sheet.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-authorization-cheat-sheet.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP recommends granting only needed permissions, denying access by default and making consistent authorization decisions on every request\. The guidance also covers failure handling, logging and regression tests for access controls\.
+
+## Defensive use
+
+Document which identities may perform which operations on each resource and check implementation and tests against that policy\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization  
 **Defensive skills:** Model access-control invariants; Review cloud IAM boundaries
-
-## Original summary
-
-Practical design guidance covering least privilege, deny-by-default behavior, consistent per-request decisions, failure handling, logging, and authorization regression tests\.
-
-## Defensive use
-
-Document which identities may perform which operations on each resource and check implementation and tests against that policy\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

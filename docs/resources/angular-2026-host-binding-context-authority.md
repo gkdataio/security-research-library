@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/angular-2026-host-binding-context-authority.json>) · [Official resource](<https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg>)
+[Official resource](<https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg>) · [Canonical JSON](<../../data/resources/angular-2026-host-binding-context-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Angular could choose the wrong sanitization rules for the element receiving a directive's value\. Its CVE-2026-88057 advisory explains that the rules came from the compile-time selector, so reuse or composition could leave a more sensitive element with weaker protection\. The maintainer confirms a risk of browser script execution when an attacker controls that value; the sources do not establish a production compromise\.
+
+## Defensive use
+
+Treat element identity and output context as part of a binding's security contract\. Re-evaluate that contract when composition, inheritance or dynamic construction changes the receiving element\. The maintainer lists 22\.1\.0, 21\.2\.20 and 20\.3\.28 as patched; older end-of-support branches receive no patch\. The researcher issue distinguishes ordinary URL, resource-loading and HTML contexts, so a generic URL filter is not evidence that all contexts are secured\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Angular  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review text-encoding invariants; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-88057 concerns sanitization chosen from a directive's compile-time selector rather than the concrete element receiving its host binding\. Composition and reuse could therefore apply an absent or weaker policy to a more sensitive browser sink\. The maintainer confirms browser script-execution risk when an attacker controls the affected bound value; reviewed sources do not establish production compromise\.
-
-## Defensive use
-
-Treat element identity and output context as part of a binding's security contract\. Re-evaluate that contract when composition, inheritance or dynamic construction changes the receiving element\. The maintainer lists 22\.1\.0, 21\.2\.20 and 20\.3\.28 as patched; older end-of-support branches receive no patch\. The researcher issue distinguishes ordinary URL, resource-loading and HTML contexts, so a generic URL filter is not evidence that all contexts are secured\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

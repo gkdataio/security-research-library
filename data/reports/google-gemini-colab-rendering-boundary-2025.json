@@ -20,7 +20,7 @@
     "secure-parser-review",
     "untrusted-input-handling"
   ],
-  "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
+  "summary": "Content that Gemini treated as inactive could become active when exported to Colab. The researcher reports Workspace-data disclosure after a user exported content, in a scenario requiring access to connected data and exposure to untrusted content. Google awarded USD 20,000 for this finding in a multi-finding article; suggested delivery through training data or embeddings was not separately demonstrated.",
   "root_cause": "Content considered inert by Gemini could acquire active rendering behavior in Colab. The integration did not preserve the same sanitization contract across that boundary.",
   "impact": "The researcher reports confirming Workspace-data disclosure after a user exported content to Colab. The scenario depended on Gemini encountering untrusted content and having access to connected data. Suggested delivery through poisoned training data or embeddings was not separately demonstrated.",
   "defensive_takeaways": [

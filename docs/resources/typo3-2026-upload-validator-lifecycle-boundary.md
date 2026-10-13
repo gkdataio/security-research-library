@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/typo3-2026-upload-validator-lifecycle-boundary.json>) · [Official resource](<https://news.typo3.com/security/advisory/typo3-core-sa-2026-020>)
+[Official resource](<https://news.typo3.com/security/advisory/typo3-core-sa-2026-020>) · [Canonical JSON](<../../data/resources/typo3-2026-upload-validator-lifecycle-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+TYPO3 could skip configured upload-type restrictions because the MIME validator was registered before the form's properties were available\. The maintainer identifies versions 14\.2\.0–14\.3\.4 as affected when forms use file or image uploads with MIME restrictions\. The reported result is acceptance of unintended file types, explicitly excluding PHP uploads; server-side code execution is not established\.
+
+## Defensive use
+
+The official 14\.3\.5 release notes identify runtime registration of the MIME validator as the correction\. Editorial lesson: a declared restriction is not evidence of enforcement\. Trace configuration through construction and execution, and make absent policy enforcement a visible failure rather than an implicit success\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** TYPO3  
 **Authors:** Oliver Hader  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-15305 concerns a lifecycle mismatch between form configuration and upload enforcement\. MIME validation was registered before the concrete form properties were available, so the intended validator never entered the processing pipeline\. The maintainer identifies TYPO3 14\.2\.0–14\.3\.4 as affected\.
-
-## Defensive use
-
-The official 14\.3\.5 release notes identify runtime registration of the MIME validator as the correction\. Editorial lesson: a declared restriction is not evidence of enforcement\. Trace configuration through construction and execution, and make absent policy enforcement a visible failure rather than an implicit success\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

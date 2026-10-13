@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/rfc-9700-oauth-security-best-current-practice.json>) · [Official resource](<https://www.rfc-editor.org/rfc/rfc9700.html>)
+[Official resource](<https://www.rfc-editor.org/rfc/rfc9700.html>) · [Canonical JSON](<../../data/resources/rfc-9700-oauth-security-best-current-practice.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+RFC 9700 updates OAuth security guidance using deployment experience and stronger protocol requirements\. It identifies insecure patterns to stop using and provides a primary reference for reviewing identity integrations\.
+
+## Defensive use
+
+Compare an owned integration's documented design against the standard and record deviations and compensating controls\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Internet Engineering Task Force / RFC Editor  
 **Authors:** Torsten Lodderstedt; John Bradley; Andrey Labunets; Daniel Fett  
@@ -10,16 +23,6 @@
 **Version:** RFC 9700 / BCP 240  
 **Topics:** Identity  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Threat-model integrations
-
-## Original summary
-
-Consensus guidance updating OAuth's security model with deployment experience, stronger protocol requirements, and deprecated insecure patterns\. A primary reference for identity integration reviews\.
-
-## Defensive use
-
-Compare an owned integration's documented design against the standard and record deviations and compensating controls\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

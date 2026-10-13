@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/angular-2026-hydration-state-source-authenticity.json>) · [Official resource](<https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg>)
+[Official resource](<https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg>) · [Canonical JSON](<../../data/resources/angular-2026-hydration-state-source-authenticity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Angular could restore server-rendered state from the wrong part of a document\. The CVE-2026-54267 advisory requires server-side rendering with hydration and untrusted influence over document identifiers; maintainers report corrupted response-cache data, with XSS dependent on unsafe later rendering\. The design lesson is to check where restored data came from, not just whether it can be parsed\.
+
+## Defensive use
+
+Editorial lesson: source authenticity and data validity are separate requirements when restoring state across a server/browser boundary\. Cached content should retain its trust classification through later consumers\. The linked patch restricts restoration to the expected container type\. Review that source-selection invariant separately from safe rendering, and distinguish reading a patch from verifying its effectiveness in a deployment\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Angular maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review input trust boundaries; Review artifact isolation; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-54267 concerns hydrated server state accepting an unintended document source\. Applicability requires SSR with hydration and untrusted influence over document identifiers\. Maintainers describe response-cache integrity loss; XSS depends on unsafe downstream rendering\. Editorial root cause: parseable data was treated as authoritative without sufficiently constraining its source\.
-
-## Defensive use
-
-Editorial lesson: source authenticity and data validity are separate requirements when restoring state across a server/browser boundary\. Cached content should retain its trust classification through later consumers\. The linked patch restricts restoration to the expected container type\. Review that source-selection invariant separately from safe rendering, and distinguish reading a patch from verifying its effectiveness in a deployment\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

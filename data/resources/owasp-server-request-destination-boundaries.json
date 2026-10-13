@@ -17,7 +17,7 @@
     "secrets-containment"
   ],
   "version": null,
-  "summary": "Explains destination validation and network isolation for server-initiated requests, distinguishing fixed trusted destinations from services that need broader external access.",
+  "summary": "OWASP explains how destination checks and network isolation constrain requests made by a server. The guidance distinguishes services that contact a fixed set of trusted destinations from those that need broader external access.",
   "defensive_use": "Review owned-service destination policy, parser consistency, redirect behavior and independent egress restrictions.",
   "prerequisites": [
     "Basic knowledge of web requests and application/network boundaries"

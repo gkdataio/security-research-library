@@ -15,7 +15,7 @@
     "defensive-evidence-writing"
   ],
   "version": "5.0.0",
-  "summary": "Versioned requirements for secure development and reviewing web-application security controls. Useful for turning lessons from disclosures into traceable acceptance criteria and regression coverage.",
+  "summary": "OWASP ASVS provides versioned requirements for developing secure web applications and reviewing their security controls. It helps turn lessons from disclosures into acceptance criteria and regression checks that can be traced to specific requirements.",
   "defensive_use": "Select applicable requirements for an owned application, retain the versioned identifiers, and record evidence for each control.",
   "prerequisites": [
     "Basic web-application architecture",

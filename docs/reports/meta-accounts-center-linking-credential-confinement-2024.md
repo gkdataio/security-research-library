@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/meta-accounts-center-linking-credential-confinement-2024.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta's Facebook–Instagram linking flow did not consistently keep credentials and approval tied to the intended accounts\. The researcher reports unauthorized linking and persistent control, but the scenario required an attacker-controlled Instagram account, account-specific authorization material, and a signed-in Facebook user's visit and confirmation\. The researcher reports a USD 30,000 award; mobile sign-in impact was described as potential\.
+
 **Organization:** Meta  
 **Product:** Accounts Center Facebook–Instagram account linking
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-A researcher-reported USD 30,000 award documents a cross-product account-linking trust failure\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 SSO destination validation and browser-message confidentiality did not preserve account-linking credential confinement\. Session identity could also differ from the person authorizing the connection, allowing linking authority to cross account boundaries\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports unauthorized Facebook linking and persistent account control\. Prerequisites included an attacker-controlled Instagram account, account-specific authorization material, an authenticated Facebook user visiting attacker-controlled content, and user confirmation\. Mobile sign-in is described as potential; no widespread exploitation is established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind linking approval to both intended account identities, the initiating session, and the exact operation\.
 - Constrain credential delivery end to end, including browser-message recipients and final redirect destinations\.
@@ -35,6 +38,8 @@ Evidence level: researcher\_reported. The article assigns one award to the repor
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-accounts-center-linking-credential-confinement-2024.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Current article and archive index display January 15, 2026; original publication versus migration/republication is unverified\. This header is not used to assert recent research\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure was not established\.

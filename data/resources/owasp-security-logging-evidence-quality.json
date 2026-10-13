@@ -16,7 +16,7 @@
     "untrusted-input-handling"
   ],
   "version": null,
-  "summary": "Explains how application events support investigation through consistent context, interaction identifiers, outcomes and confidence information. Distinguishes event occurrence from recording time and treats cross-boundary event data as untrusted. Evidence quality also depends on data minimization, access restrictions, integrity protection and reliable logging behavior.",
+  "summary": "OWASP explains how consistent context, interaction identifiers, outcomes and confidence information make logs more useful for investigations. It distinguishes when an event happened from when it was recorded and treats event data from other systems as untrusted. Useful evidence also requires limited data collection, access restrictions, integrity protection and reliable logging.",
   "defensive_use": "Using synthetic events in an owned application, review whether records can explain a decision without exposing credentials or personal data. Document correlation gaps, timestamp uncertainty and what the logs cannot prove.",
   "prerequisites": [
     "Basic familiarity with application events and structured logs",

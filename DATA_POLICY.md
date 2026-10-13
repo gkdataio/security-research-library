@@ -40,6 +40,16 @@ The validators and exporters process local evidence only. They do not access, sc
 
 ## Release procedure
 
+### Writing for readers
+
+Lead each summary with the concrete finding or lesson. Use short sentences and name the relevant actor, action or failed check instead of relying on abstract phrases. Explain technical terms when needed; do not replace them if that loses a meaningful distinction.
+
+Keep the conditions that make a claim true. Distinguish observed results from possible consequences, researcher accounts from vendor confirmation, and an award from verified payment. Put the original source near the beginning of readable entries; retain full attribution and evidence details below. Edit the canonical JSON, then regenerate its pages and exports.
+
+A wording-only edit is not a fresh source review. Preserve IDs, classifications, URLs, event dates and review/retrieval timestamps unless separately supported by new evidence. Never add testing instructions or reproduction details to make a summary more concrete.
+
+### Source-backed updates
+
 1. Read primary sources and decide included versus candidate
 2. Reuse an existing stable ID for corrections; record updated source retrieval and review times
 3. Preserve unsupported dates as null, qualify impact, and separate actual observations from modeled consequences

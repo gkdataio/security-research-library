@@ -15,7 +15,7 @@
     "concurrency-reasoning"
   ],
   "version": null,
-  "summary": "Authorization correctness includes the age of relationship state used for a decision. OpenFGA documents a latency-oriented mode that can reuse cached results and a higher-consistency mode that bypasses the cache. With caching enabled, an immediate permission check may miss a relationship update.",
+  "summary": "A permission check can miss a recent relationship update when OpenFGA caching is enabled. The official documentation describes a low-latency mode that can reuse cached results and a higher-consistency mode that bypasses the cache. Correct access decisions therefore depend on how recent the relationship data is.",
   "defensive_use": "Editorial lesson: specify when permission changes must become observable and align decision freshness with that requirement. Review cache invalidation and performance assumptions together; a newly issued request does not necessarily use newly changed authorization state.",
   "prerequisites": [
     "Relationship-based authorization and cache consistency concepts"

@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-102999 concerns excessive processing time in the dictionary-based embedded-file interface. The maintainer explains that retrieving each attachment repeatedly parsed the full attachment list. Thus input structure could multiply processing work even when each individual retrieval looked ordinary. The advisory identifies versions before 6.19.0 as affected.",
+  "summary": "pypdf's maintainer reports excessive processing time in the dictionary-based embedded-file interface before 6.19.0 (CVE-2026-102999). Each attachment lookup parsed the full attachment list again. Repeated ordinary lookups could therefore multiply the total work.",
   "defensive_use": "The maintainer identifies 6.19.0 as patched. The merged correction records file objects by name so subsequent retrieval mostly accesses the corresponding stream directly. Editorial lesson for document-processing services: review aggregate complexity across convenience APIs, not only individual parsing calls, and maintain independent worker time and resource budgets.",
   "prerequisites": [
     "Document-processing pipelines and PDF embedded-file concepts",

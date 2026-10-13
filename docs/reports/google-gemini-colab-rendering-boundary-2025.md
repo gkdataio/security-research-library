@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) — Valentino Massaro · [Canonical JSON](<../../data/reports/google-gemini-colab-rendering-boundary-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Content that Gemini treated as inactive could become active when exported to Colab\. The researcher reports Workspace-data disclosure after a user exported content, in a scenario requiring access to connected data and exposure to untrusted content\. Google awarded USD 20,000 for this finding in a multi-finding article; suggested delivery through training data or embeddings was not separately demonstrated\.
+
 **Organization:** Google  
 **Product:** Gemini Export to Colab
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Content considered inert by Gemini could acquire active rendering behavior in Colab\. The integration did not preserve the same sanitization contract across that boundary\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports confirming Workspace-data disclosure after a user exported content to Colab\. The scenario depended on Gemini encountering untrusted content and having access to connected data\. Suggested delivery through poisoned training data or embeddings was not separately demonstrated\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Maintain consistent content-handling contracts across integration boundaries\.
 - Enforce output destinations independently from generated or retrieved text\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. This amount belongs t
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-gemini-colab-rendering-boundary-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2025-11; precision: month; basis: explicit. Author homepage supplies November 2025; exact publication day is not established\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

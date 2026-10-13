@@ -22,7 +22,7 @@
     "patch-verification",
     "defensive-evidence-writing"
   ],
-  "summary": "A Kestrel request-framing report earned a researcher-reported USD 10,000 award.",
+  "summary": "Kestrel and an upstream proxy could disagree about where one HTTP request ended and another began. This could bypass security checks in affected deployments, but the consequences depended on the full proxy and application setup. The researcher reports a USD 10,000 award.",
   "root_cause": "Permissive HTTP framing validation could disagree with an upstream parser about message boundaries.",
   "impact": "Security controls could be bypassed in affected deployments. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel.",
   "defensive_takeaways": [

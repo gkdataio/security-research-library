@@ -17,7 +17,7 @@
     "patch-verification",
     "defensive-evidence-writing"
   ],
-  "summary": "One Chrome graphics report earned USD 250,000 across two award decisions.",
+  "summary": "Chrome's ANGLE graphics layer did not adequately validate untrusted input, potentially weakening browser isolation. Google classified the issue as High severity and awarded USD 250,000 across two decisions for one report.",
   "root_cause": "The graphics translation layer insufficiently validated untrusted input.",
   "impact": "Insufficiently validated graphics input could cross a browser security boundary; the vendor classified the issue High.",
   "defensive_takeaways": [

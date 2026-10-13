@@ -54,7 +54,7 @@
     "note": "Primary advisory and release documentation reviewed. No reproduction, live-target access, or independent patch testing."
   },
   "content_scope": "defensive_education",
-  "summary": "Django confirms CVE-2026-1312: application-controlled column aliases could cross from metadata into SQL structure when used across relation filtering and ordering. Exploitability requires an application to admit untrusted alias definitions into that ORM workflow; using Django alone does not establish exposure. The advisory establishes potential SQL injection, not observed production compromise.",
+  "summary": "Django's CVE-2026-1312 advisory describes column aliases being interpreted as SQL structure when combined with relation filtering and ordering. Exposure requires an application to accept untrusted alias definitions in that ORM workflow; using Django alone is not enough. The advisory establishes possible SQL injection, not a documented production compromise.",
   "defensive_use": "The official announcement identifies repaired releases 6.0.2, 5.2.11 and 4.2.28, issued February 3, 2026; release notes independently corroborate the 6.0.2 fix. Editorial lesson: distinguish query values from identifiers and structural metadata, constrain each according to its role, and preserve that contract when composing ORM features.",
   "prerequisites": [
     "ORM query composition and the distinction between bound values and SQL identifiers",

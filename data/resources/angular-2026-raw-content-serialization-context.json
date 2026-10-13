@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Angular's advisory for CVE-2026-69149 describes unsafe serialization of untrusted text in fallback raw-content containers. A server-generated DOM can lose its intended inert meaning when later serialization and parsing interpret that text as structure. The maintainer confirms same-origin script-execution risk; session theft is a possible application-dependent consequence, not a documented production compromise.",
+  "summary": "Text intended to stay inactive could become browser code when Angular converted a server-generated DOM to HTML and the browser parsed it again. Angular's CVE-2026-69149 advisory traces this to missing escaping in fallback raw-content containers. The maintainer confirms a risk of script execution under the application's origin; session theft depends on the application and was not demonstrated in production.",
   "defensive_use": "Model every serialization and reparse boundary, including HTML post-processing. The linked remediation discussion shows that preserving comment semantics matters alongside escaping. The original advisory lists 22.0.7, 21.2.19 and 20.3.27 as fixes. Later advisories identify additional node and fragment cases, so these historical minimums do not establish comprehensive current remediation.",
   "prerequisites": [
     "Server-side rendering and browser output-context concepts",

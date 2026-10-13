@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.ryanpickren.com/safari-uxss>) — Ryan Pickren · [Canonical JSON](<../../data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Permission to open shared iCloud content could remain valid after that content changed, and Safari did not consistently keep website permissions separate\. Ryan Pickren reports a USD 100,500 award for the combined findings, rather than a separate award for each bug\.
+
 **Organization:** Apple  
 **Product:** iCloud Sharing and Safari
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-The cited researcher documents a USD 100,500 award for this reported chain\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Consent to open shared content remained effective after material content changes, and cross-application trust handling failed to preserve browser isolation\. Review whether persisted consent remains valid as shared resources evolve\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports access across website security contexts and media permissions; additional research covered local-file exposure\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Use one coherent origin model for permission enforcement\.
 - Invalidate persistent consent when the underlying resource or trust context materially changes\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. One award for the reported vulnerability c
 Exact source quotation and location remain in the [canonical record](<../../data/reports/apple-icloud-sharing-consent-safari-origin-boundary-2022.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. The primary researcher page does not supply a publication date; no exact date is inferred\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

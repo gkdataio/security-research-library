@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sveltekit-2026-origin-routing-trust-boundary.json>) · [Official resource](<https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit>)
+[Official resource](<https://zhero-web-sec.github.io/research-and-things/avoiding-the-paradox-a-native-full-read-ssrf-and-oneshot-dos-in-sveltekit>) · [Canonical JSON](<../../data/resources/sveltekit-2026-origin-routing-trust-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+SvelteKit trusted request metadata when choosing where to send internal requests, and unhandled network errors could terminate the process\. Researchers demonstrate response retrieval and process termination; the maintainer says a prerendered route is required, with internal-service disclosure additionally depending on adapter-node and missing origin and host safeguards\. Accessible internal services must require no authentication from the runtime, while cache-related effects depend on the deployment\.
+
+## Defensive use
+
+Trace which component authoritatively establishes the application origin, and contain failures in internal network operations\. The maintainer lists SvelteKit 2\.49\.5 and adapter-node 5\.5\.1 as patched\. Fixed-origin configuration and reverse-proxy host validation address origin trust, but do not substitute for patching the broader availability issue\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** zhero\_web\_security  
 **Authors:** Rachid Allam; Allam Yasser  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Server/Client Framework Security  
 **Defensive skills:** Threat-model integrations; Review input trust boundaries; Review secure error behavior; Verify remediation evidence
-
-## Original summary
-
-Research on CVE-2025-67647 describes framework-internal routing consuming an origin derived from insufficiently trusted request metadata\. The researcher demonstrates server-side response retrieval and process termination from unhandled network errors\. The maintainer limits internal-service exposure to services reachable without authentication from the runtime; downstream cache effects depend on deployment behavior\.
-
-## Defensive use
-
-Trace which component authoritatively establishes the application origin, and contain failures in internal network operations\. The maintainer lists SvelteKit 2\.49\.5 and adapter-node 5\.5\.1 as patched\. Fixed-origin configuration and reverse-proxy host validation address origin trust, but do not substitute for patching the broader availability issue\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

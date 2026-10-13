@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://github.com/petermalone/CVE-2026-84543>) — Peter Malone · [Canonical JSON](<../../data/reports/apple-smbfs-parser-state-consistency-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Rejecting a network response did not fully reset macOS filesystem state\. The researcher demonstrated kernel crashes when a Mac connected to a malicious SMB share, but did not demonstrate general-purpose code execution\. He reports a $20,000 award and subsequent payment\.
+
 **Organization:** Apple  
 **Product:** macOS SMB filesystem
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-A rejected network response left inconsistent filesystem state\. The researcher reports a $20,000 award and subsequent payment\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The parser published a count before validating the associated allocation\. Error cleanup did not restore the count and pointer together\. The researcher compared parsing, cleanup and later consumption to explain why a failed validation still contaminated trusted kernel state\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 A Mac had to connect to a malicious SMB share; guest access was sufficient\. The researcher demonstrated kernel panics on Apple silicon\. Apple describes possible system termination or kernel-memory corruption\. General-purpose code execution was not demonstrated\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Publish related parser fields atomically only after validation succeeds; reset them consistently on every failure\.
 - Require consumers to validate compound state, not merely individual fields\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. One CVE-specific award, not the researcher
 Exact source quotation and location remain in the [canonical record](<../../data/reports/apple-smbfs-parser-state-consistency-2026.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Original detailed README publication date was not established; advisory release is not substituted\.
 - **public disclosure:** 2026-09-14; precision: day; basis: explicit. Vendor security advisory; the researcher README publication date is not established\.

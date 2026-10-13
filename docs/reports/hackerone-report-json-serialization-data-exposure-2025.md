@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.hackerone.com/blog/hai-insight-agent-case-study>) — Crystal Hazen / HackerOne · [Canonical JSON](<../../data/reports/hackerone-report-json-serialization-data-exposure-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+A framework upgrade caused HackerOne's public report responses to include private contributor attributes\. Tests missed the exposure because parsing the response hid a duplicate field that remained visible in the raw output\. HackerOne confirmed a USD 25,000 award; the public report explains both the serialization change and the testing gap\.
+
 **Organization:** HackerOne  
 **Product:** HackerOne report serialization
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A framework upgrade exposed private contributor attributes in public report responses\. The vendor confirmed a USD 25,000 award; the public report supplies the underlying serialization and test-normalization explanation\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The vendor explains that an internal user object and a sanitized public representation shared a field name under different Ruby key types\. Earlier serialization retained only the sanitized representation; the upgrade emitted both\. Snapshot tests reparsed the response and discarded the earlier duplicate field, concealing sensitive data present in the raw response\. The affected context was a disclosed report with a reporter or team-member summary\. This was an application output-boundary failure exposed by a framework behavior change, not an AI-agent defect\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor reproduced private-attribute exposure\. The public report describes personal and security-sensitive account attributes, but does not demonstrate account takeover or establish an affected-user count or wider exploitation\. The vendor announced a deployed fix on February 21, 2025; the researcher retested and observed only intended public attributes for team and reporter summaries\. The exact code change is not disclosed\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: construct public responses from explicit safe fields rather than relying on later serialization to overwrite an internal object\.
 - Editorial lesson: test both raw serialized output and parsed structure; normalization can hide duplicate fields and sensitive data\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. Vendor confirms the individual report’s rew
 Exact source quotation and location remain in the [canonical record](<../../data/reports/hackerone-report-json-serialization-data-exposure-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-04-01; precision: day; basis: explicit. Public technical report disclosure date; the later vendor case study was published June 24, 2025\.
 - **public disclosure:** 2025-04-01; precision: day; basis: explicit

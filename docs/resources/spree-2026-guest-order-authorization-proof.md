@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/spree-2026-guest-order-authorization-proof.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-029_Spree/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-029_Spree/>) · [Canonical JSON](<../../data/resources/spree-2026-guest-order-authorization-proof.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Spree treated completed orders with no account owner as readable without the separate guest-order authorization token\. GitHub Security Lab found the flaw in version 5\.2\.6, and the maintainer reports a controlled demonstration of guest-order disclosure\. Exposure requires an affected storefront and the order identifier; the evidence does not establish access to account-owned orders, changes to orders or account takeover\.
+
+## Defensive use
+
+Editorial lesson: a guest object needs an explicit authorization model even when no account owns it\. Keep object identification separate from evidence of permission\. The maintainer lists patched releases 5\.0\.8, 5\.1\.10, 5\.2\.7 and 5\.3\.2; this record does not independently verify their implementation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Peter Stöckli  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-25757 concerns completed guest orders\. The access decision treated absence of an account owner as sufficient permission, while lookup did not require the separate order token\. GHSL identifies the flaw in tested version 5\.2\.6; the maintainer corroborates guest-order disclosure\.
-
-## Defensive use
-
-Editorial lesson: a guest object needs an explicit authorization model even when no account owns it\. Keep object identification separate from evidence of permission\. The maintainer lists patched releases 5\.0\.8, 5\.1\.10, 5\.2\.7 and 5\.3\.2; this record does not independently verify their implementation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

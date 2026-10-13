@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) — Siddhant Kalgutkar / Praetorian · [Canonical JSON](<../../data/reports/microsoft-kestrel-http-framing-consistency-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Kestrel and an upstream proxy could disagree about where one HTTP request ended and another began\. This could bypass security checks in affected deployments, but the consequences depended on the full proxy and application setup\. The researcher reports a USD 10,000 award\.
+
 **Organization:** Microsoft  
 **Product:** ASP\.NET Core / Kestrel
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A Kestrel request-framing report earned a researcher-reported USD 10,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Permissive HTTP framing validation could disagree with an upstream parser about message boundaries\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Security controls could be bypassed in affected deployments\. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Define consistent message-boundary contracts across intermediaries and application servers; reject ambiguous framing\.
 - Verify deployed runtimes and self-contained applications receive the applicable vendor updates\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Exact award comes from the researcher\. Th
 Exact source quotation and location remain in the [canonical record](<../../data/reports/microsoft-kestrel-http-framing-consistency-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2025-11-07; precision: day; basis: explicit. Detailed article date; vendor disclosure preceded it\.
 - **public disclosure:** 2025-10-14; precision: day; basis: explicit

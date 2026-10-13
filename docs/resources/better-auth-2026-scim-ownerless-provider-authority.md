@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/better-auth-2026-scim-ownerless-provider-authority.json>) · [Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4>)
+[Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4>) · [Canonical JSON](<../../data/resources/better-auth-2026-scim-ownerless-provider-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Better Auth's maintainer reports that personal SCIM providers without an owner could be managed by unrelated signed-in users\. The permission check rejected a mismatched owner only when an owner was recorded\. Reported effects included viewing or deleting providers and replacing tokens; any resulting provisioning access remained limited to enabled SCIM features\.
+
+## Defensive use
+
+Editorial reasoning: an unknown owner is a separate authorization state, not an implicit shared resource\. Review creation, migration and subsequent management together\. The fix mandates owner binding and makes legacy ownerless records fail closed; administrators must resolve those records rather than assuming a package upgrade assigns legitimate ownership\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Better Auth  
 **Authors:** gustavovalverde  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-Personal SCIM providers could lack an owner, while management checks rejected mismatched ownership only when an owner existed\. Missing identity binding therefore admitted unrelated authenticated users\. The maintainer reports provider disclosure, deletion and token replacement, with provisioning authority limited to enabled SCIM features\.
-
-## Defensive use
-
-Editorial reasoning: an unknown owner is a separate authorization state, not an implicit shared resource\. Review creation, migration and subsequent management together\. The fix mandates owner binding and makes legacy ownerless records fail closed; administrators must resolve those records rather than assuming a package upgrade assigns legitimate ownership\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nist-ssdf-1-1-dependency-governance.json>) · [Official resource](<https://csrc.nist.gov/pubs/sp/800/218/final>)
+[Official resource](<https://csrc.nist.gov/pubs/sp/800/218/final>) · [Canonical JSON](<../../data/resources/nist-ssdf-1-1-dependency-governance.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+NIST's SSDF 1\.1 describes how to select, maintain and assess software components throughout their use\. Practices PW\.4\.1 and PW\.4\.4 cover organizational requirements, component integrity, vulnerabilities and maintenance status\. PS\.3\.2 links release records to evidence of where components came from\.
+
+## Defensive use
+
+Give each dependency an owner, acceptance requirements, provenance records, and a plan for maintenance or replacement\. Revisit these decisions throughout the component’s lifetime\. Make the boundary between external supplier evidence and the organization’s own release decision explicit\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** NIST  
 **Authors:** Murugiah Souppaya; Karen Scarfone; Donna Dodson  
@@ -10,16 +23,6 @@
 **Version:** SSDF 1\.1 \(NIST SP 800-218\)  
 **Topics:** Software Supply Chain; Verification  
 **Defensive skills:** Review dependency provenance; Model build and release trust
-
-## Original summary
-
-Provides lifecycle practices for acquiring, maintaining, and assessing software components\. PW\.4\.1 and PW\.4\.4 cover component selection, organizational requirements, ongoing vulnerability and maintenance status, and integrity\. PS\.3\.2 connects release records to component provenance\.
-
-## Defensive use
-
-Give each dependency an owner, acceptance requirements, provenance records, and a plan for maintenance or replacement\. Revisit these decisions throughout the component’s lifetime\. Make the boundary between external supplier evidence and the organization’s own release decision explicit\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

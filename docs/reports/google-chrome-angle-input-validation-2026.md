@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://issues.chromium.org/issues/492218546>) — Google Chromium security team · [Canonical JSON](<../../data/reports/google-chrome-angle-input-validation-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Chrome's ANGLE graphics layer did not adequately validate untrusted input, potentially weakening browser isolation\. Google classified the issue as High severity and awarded USD 250,000 across two decisions for one report\.
+
 **Organization:** Google  
 **Product:** Chrome / ANGLE
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-One Chrome graphics report earned USD 250,000 across two award decisions\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The graphics translation layer insufficiently validated untrusted input\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Insufficiently validated graphics input could cross a browser security boundary; the vendor classified the issue High\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Validate untrusted graphics inputs at security boundaries and verify that mitigations cover all relevant input paths\.
 - Distinguish issue-status fixes from stable-release availability\.
@@ -33,6 +36,8 @@ Evidence level: vendor\_confirmed. USD 25,000 on June 4 plus USD 225,000 on June
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-chrome-angle-input-validation-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-09-03; precision: day; basis: explicit. Full report access restrictions removed; vendor release notice appeared earlier\.
 - **public disclosure:** 2026-06-30; precision: day; basis: explicit. Vendor release disclosure; full issue access was enabled later\.

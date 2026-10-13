@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://hackerone.com/reports/1618347>) — HackerOne and the credited researchers · [Canonical JSON](<../../data/reports/hackerone-private-program-graphql-object-authorization-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+HackerOne's GraphQL interface exposed metadata about private programs without consistently enforcing their visibility rules\. The researcher demonstrated metadata exposure; HackerOne's investigation also found possible access to report titles, but full report-body access was not established\. HackerOne awarded USD 25,000 in 2022, and the report became public in January 2025\.
+
 **Organization:** HackerOne  
 **Product:** HackerOne GraphQL object access
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-HackerOne awarded USD 25,000 in 2022 for private-program GraphQL metadata exposure; the report became public in January 2025 \(primary\)\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 A GraphQL object lookup failed to preserve private-program visibility for associated metadata \(primary\)\. The researcher described an unauthenticated request and triage validated the report\. Exposure depended on resolving a valid program-associated object; the public record does not establish equal reachability across every private-program type\. Conceptually, resolving an object is distinct from authorizing its disclosure\. The exact omitted check and code-level repair are not public\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated private-program metadata exposure\. HackerOne’s internal investigation additionally determined that report titles could be accessed and raised severity to critical; title access was a vendor-assessed consequence, not the researcher’s demonstrated result in the visible evidence\. HackerOne said it found no exploitation beyond the demonstration \(primary\)\. Full report-body access is not established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial design lesson: independently enforce visibility on object lookup, returned fields and related objects, including unauthenticated access paths\.
 - Editorial privacy lesson: program metadata and report titles can disclose confidential information even when report bodies remain protected\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. One report award, not verified cash receipt\.
 Exact source quotation and location remain in the [canonical record](<../../data/reports/hackerone-private-program-graphql-object-authorization-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-01-21; precision: day; basis: explicit. Public disclosure event activity-32092519; the underlying report and award are from 2022\.
 - **public disclosure:** 2025-01-21; precision: day; basis: explicit

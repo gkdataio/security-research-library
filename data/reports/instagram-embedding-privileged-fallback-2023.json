@@ -19,7 +19,7 @@
     "error-response-design",
     "defensive-evidence-writing"
   ],
-  "summary": "The researcher documents USD 14,500 for one report: a 10,000 base bounty and two event bonuses.",
+  "summary": "An Instagram embedding fallback retrieved media with elevated service permissions instead of preserving the requester's privacy limits. Private post text and media could be exposed, but the researcher did not establish the same effect for profile embedding. The researcher reports USD 14,500 for one finding: a 10,000 base award and two event bonuses.",
   "root_cause": "A client-specific error path retrieved media under an elevated service identity, losing the original requester’s privacy constraints.",
   "impact": "Private post text and media could be exposed. The researcher did not establish the same effect for profile embedding.",
   "defensive_takeaways": [

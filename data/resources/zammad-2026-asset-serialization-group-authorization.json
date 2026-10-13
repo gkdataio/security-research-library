@@ -56,7 +56,7 @@
       "note": "No separate resource edition is stated; software fix chronology is recorded in caveats."
     }
   },
-  "summary": "GHSL-2026-049 describes a ticket asset serializer that overrode a permission-aware base implementation without preserving its group-access check. GitHub Security Lab reports confidential ticket and associated-user disclosure in tested Zammad 6.5.2; the vendor corroborates unauthorized asset access.",
+  "summary": "Zammad's specialized ticket serializer omitted a group-permission check present in its base implementation. GitHub Security Lab reports that an authenticated agent-role user could read confidential tickets and associated user information outside permitted groups in version 6.5.2, and the vendor corroborates unauthorized access. The evidence supports disclosure, not demonstrated changes to tickets.",
   "defensive_use": "Editorial lesson: a model override must retain the security contract of its base implementation. Bind serialization to the requesting actor and the resource group before response construction; review inherited and specialized serializers together.",
   "caveats": [
     "The case requires an authenticated agent-role user. Documented impact is reading tickets and associated information outside permitted groups. The research summary mentions possible manipulation, but its impact section and vendor notice substantiate disclosure; this record makes no demonstrated-write claim.",

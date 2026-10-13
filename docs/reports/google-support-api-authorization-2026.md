@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://michaeldalton.au/posts/hacking-google-support>) — Michael Dalton · [Canonical JSON](<../../data/reports/google-support-api-authorization-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Ordinary signed-in customers could read internal Google support activity and identifying details about other customers and agents\. The researcher reports a USD 14,337 award\. The number of affected records was estimated; access to conversation contents and control of calls were not demonstrated\.
+
 **Organization:** Google  
 **Product:** Google Real-time Support API
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Ordinary authenticated customers could read internal support activity; the researcher reports a USD 14,337 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Customer authentication did not enforce the boundary around internal support-wide information\. The researcher contrasted denied resource-specific operations with an accessible aggregate operation\. This supports an authorization gap; middleware behavior and the intended management use remain hypotheses, not confirmed implementation details\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Observed disclosures linked customer names or phone numbers with cases and agents, including agent activity\. Phishing and harassment were potential consequences\. Millions of affected records were estimated; conversation contents and call manipulation were not demonstrated\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: treat aggregate views as separately privileged resources; successful authentication is not evidence of permission to observe other users\.
 - Editorial lesson: reducing identifiable details limits the harm when a support-data boundary fails\. The source does not document the deployed authorization repair\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Single report award i
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-support-api-authorization-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-03-31; precision: day; basis: explicit
 - **public disclosure:** 2026-03-31; precision: day; basis: explicit

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/overthewire-natas-web-security-practice.json>) · [Official resource](<https://overthewire.org/wargames/natas/>)
+[Official resource](<https://overthewire.org/wargames/natas/>) · [Canonical JSON](<../../data/resources/overthewire-natas-web-security-practice.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Natas teaches server-side web-security concepts through a series of purpose-built OverTheWire training websites\. The provider recommends learning Unix/Linux foundations before taking this web-security path\.
+
+## Defensive use
+
+Study how a training application's trust and access boundaries should work\. Keep notes about the expected control and defensive principle, without reproducing challenge credentials or publishing solutions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OverTheWire  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** CTF and Controlled Practice; Web Foundations  
 **Defensive skills:** Learn through controlled practice
-
-## Original summary
-
-A level-based OverTheWire exercise series introducing server-side web-security concepts through intentionally constructed training websites\. The official progression suggests Unix/Linux foundations before choosing this web-security branch\.
-
-## Defensive use
-
-Study how a training application's trust and access boundaries should work\. Keep notes about the expected control and defensive principle, without reproducing challenge credentials or publishing solutions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -20,7 +20,7 @@
     "patch-verification"
   ],
   "version": "SP 800-190 (2017 final)",
-  "summary": "A foundational model of container images, registries, orchestration, runtimes and host security. It explains shared-kernel risk, workload separation, constrained runtime permissions and lifecycle maintenance.",
+  "summary": "NIST's container security guide explains the risks of sharing an operating-system kernel and the need to separate workloads and limit runtime permissions. It covers images, registries, orchestration, runtimes and hosts, including maintenance throughout their lifecycle.",
   "defensive_use": "Build an owned environment’s boundary-and-responsibility map, then compare product-specific controls with current vendor guidance.",
   "prerequisites": [
     "Operating-system, networking and security expertise",

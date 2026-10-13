@@ -20,7 +20,7 @@
     "approval-state-integrity",
     "defensive-evidence-writing"
   ],
-  "summary": "The second fork-collaboration report received its own USD 10,000 award.",
+  "summary": "One GitHub API allowed collaboration consent to change without the pull-request author's permission. A base-repository maintainer could consequently gain unauthorized write access to a contributor's branch. This second finding received its own researcher-reported USD 10,000 award.",
   "root_cause": "One API path omitted the pull-request-author entitlement required to change collaboration consent.",
   "impact": "A base-repository maintainer could gain unauthorized write access to a contributor branch.",
   "defensive_takeaways": [

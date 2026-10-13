@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/meta-conversions-gateway-message-origin-boundary-2024.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta's Conversions API Gateway treated a browser message's origin as authority to choose a script source without verifying that authority\. The researcher reports script execution under specific embedded-browser, initialization and content-policy conditions; the proposed account impact also required user interaction and a signed-in session\. The researcher assigns a separate $62,500 award to this client-side finding, labeled Bug \#1\.
+
 **Organization:** Meta  
 **Product:** Conversions API Gateway
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-The researcher assigns a separate $62,500 award to the client-side finding labeled Bug \#1\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 A browser message origin became trusted script-host configuration without origin authorization\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports script execution and describes possible account takeover\. The scenario depends on specific embedded-browser, initialization and content-policy conditions plus influence over permitted third-party content\. Account impact additionally assumes user interaction and an authenticated session; universal or interaction-free exploitation is not established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Authorize message origins and senders independently of message content; treat an integration identifier as data rather than proof of authority\.
 - Keep script-source authority separate from mutable messaging configuration, and review it together with browser isolation and content policy\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. Separate from Bug \#2; no aggregation\. Th
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-conversions-gateway-message-origin-boundary-2024.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Current header: January 13, 2026\. Original publication is unestablished; archive dating cannot establish first disclosure\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure is not established\.

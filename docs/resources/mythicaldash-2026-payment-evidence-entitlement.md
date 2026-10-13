@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mythicaldash-2026-payment-evidence-entitlement.json>) · [Official resource](<https://github.com/MythicalLTD/MythicalDash/security/advisories/GHSA-qmh4-5v7g-42jq>)
+[Official resource](<https://github.com/MythicalLTD/MythicalDash/security/advisories/GHSA-qmh4-5v7g-42jq>) · [Canonical JSON](<../../data/resources/mythicaldash-2026-payment-evidence-entitlement.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+MythicalDash could grant spendable account credit from a pending payment before the provider confirmed settlement\. Its maintainer advisory reports unpaid credits in a controlled deployment\. The balance update was atomic, but that protected the update from concurrent changes without proving the customer was entitled to the credit\.
+
+## Defensive use
+
+Editorial lesson: separate a request to purchase, trustworthy settlement evidence, the authorized beneficiary and the committed entitlement\. Atomic arithmetic protects a balance update; it cannot supply a missing business precondition\. Make the evidence required for each state transition explicit, and retain uncertainty when a provider outcome is unavailable\. The public June 3 commit adds authentication, ownership binding, a persisted provider reference, and fail-closed checks of paid status and expected amount before crediting\. These are observed code changes, not independently verified deployment behavior\. When assessing remediation, distinguish source changes, controlled negative results, packaged releases and adoption\. Evidence writing should preserve what an experiment actually exercised rather than presenting setup privileges as ordinary customer capabilities\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** MythicalDash  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Review approval-state integrity; Threat-model integrations; Write bounded security evidence
-
-## Original summary
-
-GHSA-qmh4-5v7g-42jq concerns pending payment state being accepted as authority to grant account credit before provider-confirmed settlement\. The account update was atomic, but that concurrency property did not establish entitlement\. The advisory reports unpaid credit creation in a controlled deployment\. The failed boundary is provisional application state becoming spendable value without trustworthy completion evidence\.
-
-## Defensive use
-
-Editorial lesson: separate a request to purchase, trustworthy settlement evidence, the authorized beneficiary and the committed entitlement\. Atomic arithmetic protects a balance update; it cannot supply a missing business precondition\. Make the evidence required for each state transition explicit, and retain uncertainty when a provider outcome is unavailable\. The public June 3 commit adds authentication, ownership binding, a persisted provider reference, and fail-closed checks of paid status and expected amount before crediting\. These are observed code changes, not independently verified deployment behavior\. When assessing remediation, distinguish source changes, controlled negative results, packaged releases and adoption\. Evidence writing should preserve what an experiment actually exercised rather than presenting setup privileges as ordinary customer capabilities\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

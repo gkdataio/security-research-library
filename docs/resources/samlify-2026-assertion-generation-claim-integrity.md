@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/samlify-2026-assertion-generation-claim-integrity.json>) · [Official resource](<https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m>)
+[Official resource](<https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m>) · [Canonical JSON](<../../data/resources/samlify-2026-assertion-generation-claim-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+samlify could turn user-controlled profile text into extra SAML claims before the identity provider signed them\. The maintainer's example shows those added attributes being accepted; gaining privileges would also require the receiving application to use them for access decisions\. A valid signature cannot make improperly constructed claims trustworthy\.
+
+## Defensive use
+
+Editorial reasoning: signatures protect the generated representation, not the authority of each input used to construct it\. Keep profile text separate from authorization-claim structure, use context-correct serialization before signing, and review which upstream actors may supply claims consumed as roles\. A signature check alone cannot repair a compromised issuance boundary\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** samlify  
 **Authors:** tngan  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-The maintainer describes inconsistent escaping between XML attribute and element-text contexts during SAML assertion generation\. User-controlled profile values could change assertion structure before the identity provider signed it\. The service provider subsequently accepted extra attributes as authenticated claims; privilege escalation depends on using those attributes for authorization\.
-
-## Defensive use
-
-Editorial reasoning: signatures protect the generated representation, not the authority of each input used to construct it\. Keep profile text separate from authorization-claim structure, use context-correct serialization before signing, and review which upstream actors may supply claims consumed as roles\. A signature check alone cannot repair a compromised issuance boundary\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

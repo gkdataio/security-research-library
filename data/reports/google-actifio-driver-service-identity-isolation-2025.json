@@ -22,7 +22,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "One Actifio report earned USD 10,000 after a collaboration multiplier.",
+  "summary": "Actifio did not adequately separate user-supplied driver code from a privileged shared service account. Researchers observed access across many compute instances, but broader customer-project compromise was not independently verified. They report a USD 10,000 award after Google doubled the base award for collaboration.",
   "root_cause": "Insufficient separation between user-supplied driver code and a privileged shared service identity.",
   "impact": "Researchers demonstrated execution and observed service-account access across many compute instances. Broader customer-project compromise was claimed, not independently verified.",
   "defensive_takeaways": [

@@ -14,7 +14,7 @@
     "cloud-iam-review"
   ],
   "version": null,
-  "summary": "Practical design guidance covering least privilege, deny-by-default behavior, consistent per-request decisions, failure handling, logging, and authorization regression tests.",
+  "summary": "OWASP recommends granting only needed permissions, denying access by default and making consistent authorization decisions on every request. The guidance also covers failure handling, logging and regression tests for access controls.",
   "defensive_use": "Document which identities may perform which operations on each resource and check implementation and tests against that policy.",
   "prerequisites": [
     "Authentication versus authorization",

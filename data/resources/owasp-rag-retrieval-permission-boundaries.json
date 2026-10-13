@@ -16,7 +16,7 @@
     "integration-threat-modeling"
   ],
   "version": "LLM08:2025",
-  "summary": "Examines security assumptions around retrieval-augmented generation, including access to embeddings, cross-context disclosure and integrity of imported knowledge. Shared retrieval infrastructure must preserve the distinctions between users and data classifications. Source validation and retrieval records help explain which knowledge entered a response and whether access was appropriate.",
+  "summary": "OWASP explains why shared retrieval systems must keep users' permissions and data classifications intact. Its guidance covers access to embeddings, disclosure across contexts and the integrity of imported knowledge. Source checks and retrieval records help show which knowledge entered a response and whether the user was allowed to access it.",
   "defensive_use": "For an owned RAG design, document dataset partitions and permission-aware retrieval, preserve source classifications when combining knowledge, and review ingestion integrity. Record retrieval events so confidentiality and provenance decisions remain reviewable.",
   "prerequisites": [
     "Basic concepts of embeddings, vector stores and retrieval-augmented generation",

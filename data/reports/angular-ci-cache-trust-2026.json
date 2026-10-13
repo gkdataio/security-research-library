@@ -22,7 +22,7 @@
     "approval-state-integrity",
     "defensive-evidence-writing"
   ],
-  "summary": "A Google-rewarded report connected an adjacent CI misconfiguration with insufficient separation of automation trust, creating a potential Angular supply-chain impact.",
+  "summary": "Angular's build automation did not adequately separate untrusted work from trusted build state. The researcher demonstrated credential exposure and described a possible route to repository control, but did not carry out the final supply-chain change. Google awarded the report a bounty.",
   "root_cause": "Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence.",
   "impact": "The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification. Google classified the report as a flagship supply-chain compromise.",
   "defensive_takeaways": [

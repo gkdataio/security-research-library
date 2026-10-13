@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.zeroday.cloud/blog/mariadb-cve-2026-32710-deep-dive>) — Team Xint Code / ZeroDay\.cloud · [Canonical JSON](<../../data/reports/mariadb-json-normalization-buffer-capacity-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+MariaDB's JSON normalization could copy text into a buffer that was too small\. An authenticated database user could crash the server; the competition demonstration achieved code execution, but the vendor says that outcome depended on unusually controlled memory conditions generally associated with a lab\. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay\.cloud 2025 entry\.
+
 **Organization:** MariaDB  
 **Product:** MariaDB Server JSON schema validation
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay\.cloud 2025 competition entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 JSON normalization copied variable-length text into an undersized allocation\. The fix uses storage management that grows the buffer to fit the value\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 An authenticated database user could crash the server\. The researcher demonstrated code execution at the event; the vendor-authored CVE record qualifies that outcome as dependent on unusually controlled memory conditions, generally associated with a lab\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Make input length and allocated capacity explicit invariants in normalization code\.
 - Prefer capacity-aware storage operations and safe local regression coverage\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One entry award, excluding the team’s ot
 Exact source quotation and location remain in the [canonical record](<../../data/reports/mariadb-json-normalization-buffer-capacity-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-05-04; precision: day; basis: inferred. Displayed May 4; year inferred from the completed 2026 remediation timeline\.
 - **public disclosure:** 2025-12-11; precision: day; basis: explicit. Public competition demonstration\. Subsequent CVE/advisory publication and full technical article are separate events\.

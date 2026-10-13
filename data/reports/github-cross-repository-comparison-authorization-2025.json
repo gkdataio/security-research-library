@@ -19,7 +19,7 @@
     "defensive-evidence-writing",
     "patch-verification"
   ],
-  "summary": "GitHub awarded USD 10,000 for a GHES comparison feature that exposed limited code across repository permission boundaries (vendor-report).",
+  "summary": "GitHub Enterprise Server's comparison feature could reveal limited code from a repository the user was not allowed to read. The user needed existing repository access and prior knowledge of private-repository references; the report does not establish unrestricted repository access. GitHub awarded USD 10,000 for the finding.",
   "root_cause": "GitHub identifies improper access control in cross-repository comparison (vendor-report; vendor-release). Access to one repository did not establish permission to disclose content from another contributing repository. The vendor describes prerequisites of existing repository access and prior knowledge of private-repository references; this was not described as unrestricted anonymous browsing. The conceptual failure is authorizing a derived view without preserving every source repository’s access boundary; implementation-level check placement is not disclosed.",
   "impact": "The vendor confirms limited code disclosure from an otherwise unauthorized repository (vendor-report; vendor-release). The public summary does not establish complete repository extraction, write access, account takeover, or exploitation in the wild; those outcomes must not be inferred from the broader report title.",
   "defensive_takeaways": [

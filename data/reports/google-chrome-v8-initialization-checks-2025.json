@@ -21,7 +21,7 @@
     "patch-verification",
     "defensive-evidence-writing"
   ],
-  "summary": "A distinct V8 initialization-check report received a vendor-confirmed USD 50,000 award.",
+  "summary": "V8 removed an initialization check without ensuring that it was safe to do so on every code path. The report demonstrated memory corruption inside a sandboxed renderer, not a sandbox escape or full-machine compromise. Google confirms a USD 50,000 award for this distinct report.",
   "root_cause": "Control-flow analysis treated an initialization safety check as redundant without preserving its guarantee across every incoming path.",
   "impact": "The report demonstrated sandboxed renderer memory corruption. A sandbox escape or full-machine compromise is not established.",
   "defensive_takeaways": [

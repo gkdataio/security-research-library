@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-security-logging-evidence-quality.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-security-logging-evidence-quality.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains how consistent context, interaction identifiers, outcomes and confidence information make logs more useful for investigations\. It distinguishes when an event happened from when it was recorded and treats event data from other systems as untrusted\. Useful evidence also requires limited data collection, access restrictions, integrity protection and reliable logging\.
+
+## Defensive use
+
+Using synthetic events in an owned application, review whether records can explain a decision without exposing credentials or personal data\. Document correlation gaps, timestamp uncertainty and what the logs cannot prove\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Verification; Reporting  
 **Defensive skills:** Write bounded security evidence; Review secrets containment; Review input trust boundaries
-
-## Original summary
-
-Explains how application events support investigation through consistent context, interaction identifiers, outcomes and confidence information\. Distinguishes event occurrence from recording time and treats cross-boundary event data as untrusted\. Evidence quality also depends on data minimization, access restrictions, integrity protection and reliable logging behavior\.
-
-## Defensive use
-
-Using synthetic events in an owned application, review whether records can explain a decision without exposing credentials or personal data\. Document correlation gaps, timestamp uncertainty and what the logs cannot prove\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

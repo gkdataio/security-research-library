@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/github-artifact-attestations.json>) · [Official resource](<https://docs.github.com/en/actions/concepts/security/artifact-attestations>)
+[Official resource](<https://docs.github.com/en/actions/concepts/security/artifact-attestations>) · [Canonical JSON](<../../data/resources/github-artifact-attestations.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+GitHub's guide explains what signed artifact attestations say about a build, including its workflow, repository, organization, environment, commit, triggering event and OIDC identity information\. Consumers use those claims to decide whether an artifact meets their own acceptance rules\. The guide also explains how a software bill of materials can accompany build provenance\.
+
+## Defensive use
+
+Separate the question of where an artifact came from from whether its source and build process meet release requirements\. Compare the expected build identity with recorded provenance before accepting a release\. Treat claims from build infrastructure as evidence that still needs an explicit consumer policy\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Software Supply Chain; Identity; Verification  
 **Defensive skills:** Model build and release trust; Review dependency provenance
-
-## Original summary
-
-Shows the build context carried by signed artifact claims: workflow, repository, organization, environment, commit, triggering event, and OIDC information\. It connects those claims to consumer-defined acceptance policy and explains how an SBOM can accompany provenance\.
-
-## Defensive use
-
-Separate the question of where an artifact came from from whether its source and build process meet release requirements\. Compare the expected build identity with recorded provenance before accepting a release\. Treat claims from build infrastructure as evidence that still needs an explicit consumer policy\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

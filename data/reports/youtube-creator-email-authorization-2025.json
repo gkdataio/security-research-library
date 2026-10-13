@@ -16,7 +16,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "A monetized-channel account could access another monetized creator’s private email through inconsistent cross-API authorization. The researcher reports a USD 20,000 award.",
+  "summary": "A monetized YouTube channel could access another monetized creator's private email because related APIs did not apply consistent permission checks. The exposed address was the one stored when the channel became monetized, which could differ from its current email. The researcher reports a USD 20,000 award; account compromise was not demonstrated.",
   "root_cause": "Ordinary sensitive-field checks appeared effective, but an alternate metadata path exposed a cross-service association. The researcher then questioned whether monetized creator accounts inherited rights intended for specialist rights-management accounts.",
   "impact": "The demonstrated disclosure concerned the email stored when the target channel became monetized, which may differ from its current email. Broader phishing consequences were potential impact, not demonstrated account compromise.",
   "defensive_takeaways": [

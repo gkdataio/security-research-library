@@ -16,7 +16,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "The maintainer traces duplicate downgrade credits to an eligibility check separated from the later balance change, without transactional isolation. A pending-operation guard did not protect the whole transition. The failed invariant was one legitimate refund per service downgrade.",
+  "summary": "Paymenter's maintainer reports duplicate downgrade credits because the eligibility check and balance change were not protected as one transaction. A check for pending operations did not cover the whole process. The intended rule was one refund for each legitimate service downgrade.",
   "defensive_use": "Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement. The advisory identifies 1.5.7 as patched; its release notes explicitly link the fix.",
   "prerequisites": [
     "Basic application state machines, authorization and database transaction concepts"

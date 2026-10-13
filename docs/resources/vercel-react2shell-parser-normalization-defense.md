@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/vercel-react2shell-parser-normalization-defense.json>) · [Official resource](<https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell>)
+[Official resource](<https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell>) · [Canonical JSON](<../../data/resources/vercel-react2shell-parser-normalization-defense.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Vercel's React2Shell retrospective explains why request filters and applications must interpret data consistently\. It describes normalization, separate runtime restrictions, regression tests and customer patching as complementary defenses\. These are vendor-reported measures, not independently audited protection, and mitigations do not replace framework patches\.
+
+## Defensive use
+
+In an owned architecture review, document each parser’s contract and residual assumptions\. Pair input validation with independently enforced execution limits, maintain regression tests and verify application upgrades\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Vercel  
 **Authors:** Malte Ubl  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Cloud Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
-
-## Original summary
-
-Vercel’s retrospective describes request-inspection normalization, independent runtime restrictions, regression coverage and customer patching during its React2Shell response\. It illustrates why a filter’s interpretation must align with application semantics\.
-
-## Defensive use
-
-In an owned architecture review, document each parser’s contract and residual assumptions\. Pair input validation with independently enforced execution limits, maintain regression tests and verify application upgrades\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

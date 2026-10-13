@@ -24,7 +24,7 @@
     "note": "Public primary-source guidance."
   },
   "content_scope": "defensive_education",
-  "summary": "Defines a browser-enforced boundary between ordinary strings and typed values accepted by injection-sensitive APIs. The underlying failure is allowing untrusted text to acquire executable interpretation. Policies centralize creation of accepted values; matching types preserve intended use, but do not independently establish that a policy's transformation is safe.",
+  "summary": "The Trusted Types draft defines how browsers can require policy-created values instead of ordinary strings at injection-sensitive APIs. This centralizes checks, but the policies must still make safe decisions: a matching type alone does not make a value safe. The reviewed Working Draft is not a final standard and does not protect every DOM operation or isolate malicious first-party code.",
   "defensive_use": "Editorial reasoning: review two invariants separately: sensitive consumers accept only policy-produced values, and each producer enforces an adequate trust contract. Minimize policy creation authority, keep policy dependencies reviewable and avoid global state silently changing decisions. The maintainer FAQ explains why sanitization must be consistently applied, rather than merely available in a library.",
   "prerequisites": [
     "JavaScript DOM data flow and Content Security Policy"

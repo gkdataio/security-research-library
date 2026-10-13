@@ -18,7 +18,7 @@
     "concurrency-reasoning",
     "authorization-modeling"
   ],
-  "summary": "The researcher reports a $10,000 award for this finding. USD is a contextual currency inference from Facebook’s later official retrospective of its 2019 bounty program, not an explicit denomination in the individual award statement.",
+  "summary": "Instagram recovery checks did not reliably keep the account, device context and verification secret tied together. The researcher reports a separate account-takeover finding and a $10,000 award. USD is inferred from Facebook's later retrospective of its 2019 bounty program, rather than stated in the individual award report.",
   "root_cause": "Recovery challenge state did not maintain sufficiently strict binding among account, device context, and verification secret. Review challenge ownership and uniqueness throughout the recovery lifecycle.",
   "impact": "Researcher reports a separate, lower-severity account-takeover finding, fixed before publication.",
   "defensive_takeaways": [

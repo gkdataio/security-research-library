@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/n8n-2026-ldap-account-linking-authority.json>) · [Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc>)
+[Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc>) · [Canonical JSON](<../../data/resources/n8n-2026-ldap-account-linking-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+n8n's maintainer advisory describes account linking that treated a matching LDAP email attribute as proof of account ownership \(CVE-2026-33665\)\. It reports that access to the linked account, including administrator permissions, persisted even after the directory attribute changed back\.
+
+## Defensive use
+
+Editorial lesson: an identity association is a security grant with its own approval and revocation requirements\. Attribute equality alone should not establish account ownership\. Review claim provenance, linking consent and existing association cleanup independently\. The maintainer identifies software versions 1\.121\.0 and 2\.4\.0 as fixes for their respective release lines\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** n8n  
 **Authors:** Jubke  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-33665 describes local-account linkage that trusted a matching LDAP email attribute\. The maintainer reports persistent access to the linked account, including administrator authority, even after the directory attribute changed back\.
-
-## Defensive use
-
-Editorial lesson: an identity association is a security grant with its own approval and revocation requirements\. Attribute equality alone should not establish account ownership\. Review claim provenance, linking consent and existing association cleanup independently\. The maintainer identifies software versions 1\.121\.0 and 2\.4\.0 as fixes for their respective release lines\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

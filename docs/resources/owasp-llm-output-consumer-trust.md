@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-llm-output-consumer-trust.json>) · [Official resource](<https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/>)
+[Official resource](<https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/>) · [Canonical JSON](<../../data/resources/owasp-llm-output-consumer-trust.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains why model-generated content must still be treated as untrusted input by browsers, databases and backend functions\. Text should not become executable code or gain extra permissions merely because an application generated it\. This guidance addresses unsafe downstream handling, which is separate from whether an answer is accurate\.
+
+## Defensive use
+
+Map each output consumer in an owned AI application to its validation and encoding contract\. Prefer parameterized database operations and context-aware encoding, with monitoring and browser policy controls as supplementary layers\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Gen AI Security Project  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** LLM05:2025  
 **Topics:** Ai Security; Web Foundations; Browser Security  
 **Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Threat-model integrations
-
-## Original summary
-
-Explains why model-generated content remains untrusted when passed to browsers, databases or backend functions\. The relevant boundary is the consuming component: plausible model text must not acquire executable meaning or greater authority merely because an application generated it\. Distinguishes unsafe downstream handling from general reliance on answer accuracy\.
-
-## Defensive use
-
-Map each output consumer in an owned AI application to its validation and encoding contract\. Prefer parameterized database operations and context-aware encoding, with monitoring and browser policy controls as supplementary layers\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

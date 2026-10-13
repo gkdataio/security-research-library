@@ -30,7 +30,7 @@
     "authorization-modeling",
     "patch-verification"
   ],
-  "summary": "ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry.",
+  "summary": "Redis's Lua interpreter could keep referring to an object after its memory had been freed. The vendor confirms possible native code execution by an authenticated user allowed to run Lua scripts; host impact still depends on process privileges and deployment isolation. ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry.",
   "root_cause": "Lua garbage collection could leave an object referenced after its memory was freed, undermining the interpreter’s memory-safety assumptions.",
   "impact": "The vendor confirms possible native code execution by an authenticated user able to run Lua scripts. This crosses the scripting boundary; host impact remains dependent on process privileges and deployment isolation.",
   "defensive_takeaways": [

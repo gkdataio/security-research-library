@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.zeroday.cloud/blog/postgres-xint>) — Team Xint Code / ZeroDay\.cloud · [Canonical JSON](<../../data/reports/postgresql-pgcrypto-buffer-capacity-validation-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+PostgreSQL's pgcrypto extension did not check that a buffer was large enough before copying key data into it\. The vendor confirms possible code execution as the database's operating-system account, requiring permission to install the extension or supply ciphertext to an existing installation\. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay\.cloud 2025 entry\.
+
 **Organization:** PostgreSQL  
 **Product:** PostgreSQL pgcrypto extension
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay\.cloud 2025 competition entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Cryptographic message parsing copied a derived key length into a fixed-capacity destination without verifying that the destination was large enough\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The PostgreSQL advisory confirms possible code execution under the database operating-system account\. The vendor CVE record limits the prerequisite to permission to install the extension or supply ciphertext to an existing installation\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Validate derived lengths against destination capacity before copying data\.
 - Review extension permissions and least-privilege database process identities\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One entry award, excluding the team’s ot
 Exact source quotation and location remain in the [canonical record](<../../data/reports/postgresql-pgcrypto-buffer-capacity-validation-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-05-04; precision: day; basis: inferred. Displayed May 4; year inferred from the completed 2026 remediation timeline\.
 - **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration\. Subsequent CVE/advisory publication and full technical article are separate events\.

@@ -16,7 +16,7 @@
     "authorization-modeling"
   ],
   "version": null,
-  "summary": "CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration. Maintainers describe potential cross-tenant account takeover. Their adapter-level linking-call demonstration does not establish persisted account linkage, complete token issuance or production compromise.",
+  "summary": "Prowler's maintainers report that token issuance chose a tenant from an asserted email domain rather than the validated SAML configuration (CVE-2026-59151). They describe possible cross-tenant account takeover. Their adapter-level demonstration showed a linking-method call, not a persisted account link, completed token issuance or production compromise.",
   "defensive_use": "Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent. The advisory lists Prowler API through 5.30.2 as affected and 5.30.3 as patched; no patch-release date is established here.",
   "prerequisites": [
     "Basic federation and object-level authorization concepts"

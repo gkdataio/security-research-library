@@ -15,7 +15,7 @@
     "secure-parser-review"
   ],
   "version": null,
-  "summary": "OWASP guidance on centralized handling of unexpected failures, generic client-facing responses and server-side diagnostic records that do not reveal implementation details to clients.",
+  "summary": "OWASP recommends handling unexpected errors centrally and returning generic messages to clients. Detailed diagnostic information belongs in server-side records, without exposing implementation details in the response.",
   "defensive_use": "Define separate public-error and internal-diagnostic contracts, then review ordinary failure handling in owned application code. Keep logging controls separate from response formatting.",
   "prerequisites": [
     "Basic HTTP response semantics",

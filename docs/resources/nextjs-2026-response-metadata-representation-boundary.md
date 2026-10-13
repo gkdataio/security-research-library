@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nextjs-2026-response-metadata-representation-boundary.json>) · [Official resource](<https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs>)
+[Official resource](<https://zhero-web-sec.github.io/research-and-things/re-cache-excessive-reflection-type-confusion-and-0-click-sxss-on-nextjs>) · [Canonical JSON](<../../data/resources/nextjs-2026-response-metadata-representation-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Researchers report stored browser script execution in an anonymized production Next\.js application with unusual middleware header copying and an external shared cache\. Client-supplied metadata changed how the browser interpreted a dynamic App Router response, and the cache retained that mismatch for later visitors\. The lesson is to keep response metadata consistent with the content it describes\.
+
+## Defensive use
+
+Keep ownership of response interpretation with the component that creates the body\. Next\.js documentation warns that copying incoming headers into responses can override framework expectations and recommends selective forwarding\. Editorial lesson: review body format, response metadata and cache variation as one contract\. Data safe for one consumer may be unsafe for another; persistence does not repair that mismatch\. An application review should distinguish intended upstream request metadata from browser-facing response metadata and document which layer owns each decision\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** zhero\_web\_security  
 **Authors:** Rachid Allam \(zhero;\); inzo\_  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Interpreter Boundaries; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Review artifact isolation
-
-## Original summary
-
-Researchers describe client-supplied metadata becoming authoritative response metadata through unusual middleware header copying\. This changed how a dynamic App Router representation was interpreted; an external shared cache preserved the mismatch for later visitors\. They report stored browser script execution in an anonymized production application\. The core failure is a representation contract losing its integrity when request data controls response meaning\.
-
-## Defensive use
-
-Keep ownership of response interpretation with the component that creates the body\. Next\.js documentation warns that copying incoming headers into responses can override framework expectations and recommends selective forwarding\. Editorial lesson: review body format, response metadata and cache variation as one contract\. Data safe for one consumer may be unsafe for another; persistence does not repair that mismatch\. An application review should distinguish intended upstream request metadata from browser-facing response metadata and document which layer owns each decision\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

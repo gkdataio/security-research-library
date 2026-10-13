@@ -32,7 +32,7 @@
     "ai-authority-boundaries",
     "patch-verification"
   ],
-  "summary": "ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry.",
+  "summary": "Codex's command-safety analysis and the shell could interpret the same command differently, so approval did not always cover the operation that actually ran. The vendor describes possible code execution with user privileges after untrusted repository instructions were followed; shell availability and filesystem restrictions still limited the effect. ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry.",
   "root_cause": "Command-safety analysis and the invoked shell interpreted control syntax differently, so the approval decision did not consistently describe the resulting operation.",
   "impact": "The vendor describes possible code execution with user privileges after untrusted repository instructions are followed. Shell availability and filesystem protections constrain impact; command approval failure does not itself disable the filesystem sandbox.",
   "defensive_takeaways": [

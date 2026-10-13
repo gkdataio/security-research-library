@@ -7,7 +7,9 @@
 
 # Security Research Library
 
-Source-backed bug bounty writeups, vulnerability disclosures, official learning resources, and original diagrams for security researchers, bug bounty hunters, application-security engineers, and authorized assessment teams. Study root causes, bounded impact, and defensive lessons with linked evidence, or reuse the structured JSON for local catalogs and analysis.
+Learn from published security findings and official guidance. Each report explains what went wrong, what the evidence shows, and what defenders can learn. Start with the short takeaway, then read the original source for the full account.
+
+The library includes bug bounty writeups, vulnerability disclosures, learning resources, and original diagrams. Researchers and application-security teams can also reuse the structured JSON for local catalogs and analysis. These materials do not authorize testing.
 
 **Evidence-led:** [data policy](DATA_POLICY.md) · **Open reuse:** [CC BY 4.0 educational content](LICENSE.md#educational-content-cc-by-40) · [MIT software](LICENSE.md#software-mit)
 
@@ -40,7 +42,7 @@ Source-backed bug bounty writeups, vulnerability disclosures, official learning 
 </p>
 <!-- END README BUTTONS: browse -->
 
-The vulnerability-type hub is one starting point for broad families, XSS and its subtypes, SSRF and SSTI. Individual type pages separate award-backed reports, educational case studies and learning references into 2025–2026 publication groups, with historical and unknown-date examples clearly labeled. Broader security themes, related learning and conceptual diagrams remain available from the same hub.
+Choose a vulnerability type to find related reports, learning resources and diagrams. Type pages group 2025–2026 publications separately from older examples and those with unknown dates. Award-backed reports, educational case studies and learning references stay clearly labeled.
 
 Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored](docs/vulnerabilities/stored-xss.md) · [Reflected / RXSS](docs/vulnerabilities/reflected-xss.md) · [Blind](docs/vulnerabilities/blind-xss.md)) · [Server-side request forgery (SSRF)](docs/vulnerabilities/ssrf.md) · [Server-side template injection (SSTI)](docs/vulnerabilities/ssti.md)
 
@@ -99,7 +101,7 @@ Curation currently prioritizes web-application security relevant to 2026: author
 |---|---|
 | Browse a vulnerability family or a source-backed subtype | [Vulnerability types](docs/vulnerability-types.md), then a linked type page for publication-year groups and coverage gaps |
 | Find an organization’s own recognition page and direct reporting guidance | [First-party recognition and direct disclosure](docs/direct-disclosure.md) |
-| Find a disclosure and inspect its evidence | [Complete report index](#report-index), then the linked JSON record |
+| Find a disclosure and inspect its evidence | [Readable report index](docs/reports.md), then a short summary and its original source; the [complete report index](#report-index) also links the JSON records |
 | Study hypotheses, code review, contained exercises and evidence | [Research methodology](docs/research-methodology.md) |
 | Study defensive design principles by topic | [Defensive learning guide](docs/learning-guide.md) |
 | Choose a controlled learning exercise | [CTF and practice](docs/ctf-and-practice.md), with prerequisites and provider boundaries |
@@ -146,7 +148,9 @@ Explore the library's conceptual models of identity, authority, and data flow. E
   <img src="docs/assets/readme/evidence.gif" width="1120" alt="A primary source stays connected to evidence and limits, the canonical record, and readable pages and exports.">
 </picture>
 
-Records contain original explanations, not just source links: `root_cause` describes the failed security assumption, `impact` qualifies what the evidence establishes, and `defensive_takeaways` captures review and remediation principles. Award evidence, distinct event dates, classifications and verification limits remain machine-readable. Where the source supports it, the explanation includes the researcher’s conceptual reasoning. Specific discovery methods or patch implementations stay unknown when the source does not establish them.
+Each readable report starts with the main finding and a link to the original source. It then explains the cause, observed or possible impact, and defensive lessons. Conditions and evidence gaps stay visible so a demonstrated result is not mistaken for a broader claim.
+
+The JSON records preserve the same explanations in `root_cause`, `impact` and `defensive_takeaways`, alongside award evidence, separate event dates and verification limits. Discovery methods and patch details remain unknown unless the source establishes them.
 
 ## Use the JSON
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) — Rafie Muhammad / Patchstack · [Canonical JSON](<../../data/reports/litespeed-cache-user-simulation-authentication-2024.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+LiteSpeed Cache relied on a predictable, reusable token for privileged user simulation, allowing unauthenticated users to gain administrator privileges on affected installations\. The advisory identifies an operating-system limitation, so installation totals should not be treated as affected-site counts\. Patchstack confirmed a USD 14,400 Zero Day award\.
+
 **Organization:** LiteSpeed Technologies  
 **Product:** LiteSpeed Cache WordPress plugin
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Patchstack confirmed a USD 14,400 Zero Day award for an authentication-boundary flaw\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Privileged user simulation relied on a predictable, reusable token without adequate context binding\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Unauthenticated users could obtain administrator privileges on affected installations\. The advisory identifies an operating-system limitation, so plugin installation totals do not establish affected-site counts\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Use cryptographically secure token generation, explicit authorization, context binding and limited lifetimes\.
 - Treat impersonation and user-simulation features as privileged authentication boundaries\.
@@ -33,6 +36,8 @@ Evidence level: platform\_confirmed. Records the explicitly isolated Zero Day co
 Exact source quotation and location remain in the [canonical record](<../../data/reports/litespeed-cache-user-simulation-authentication-2024.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2024-08-21; precision: day; basis: explicit
 - **public disclosure:** 2024-08-19; precision: day; basis: explicit. Initial platform vulnerability-database publication preceded the full advisory\.

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://stazot.com/?article=dataprep-actifio-jar-swapping-rce>) — Sivanesh Ashok · [Canonical JSON](<../../data/reports/google-actifio-driver-service-identity-isolation-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Actifio did not adequately separate user-supplied driver code from a privileged shared service account\. Researchers observed access across many compute instances, but broader customer-project compromise was not independently verified\. They report a USD 10,000 award after Google doubled the base award for collaboration\.
+
 **Organization:** Google  
 **Product:** Actifio cloud backup service
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-One Actifio report earned USD 10,000 after a collaboration multiplier\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Insufficient separation between user-supplied driver code and a privileged shared service identity\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Researchers demonstrated execution and observed service-account access across many compute instances\. Broader customer-project compromise was claimed, not independently verified\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Isolate extension execution from service credentials\.
 - Scope delegated identities to the minimum tenant and resource set\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. One report: USD 5,000 base doubled by a co
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-actifio-driver-service-identity-isolation-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-05-04; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

@@ -9,7 +9,7 @@
   "topic_ids": ["identity", "authorization", "web-foundations", "api-security"],
   "skillset_ids": ["identity-lifecycle-review", "security-token-design", "integration-threat-modeling", "patch-verification"],
   "version": null,
-  "summary": "CVE-2026-59219 documents inconsistent session invalidation: HTTP authentication consulted revocation state, while realtime authentication checked only token signature and expiry. The reported local comparison shows revoked credentials rejected by HTTP but accepted for new realtime authentication. Cryptographic validity had been mistaken for continuing session authority.",
+  "summary": "Open WebUI's maintainer advisory describes revoked tokens being rejected over HTTP but accepted for new realtime connections in a local comparison (CVE-2026-59219). Realtime authentication checked the signature and expiry without consulting revocation state. A token could therefore remain cryptographically valid after the session had lost permission to connect.",
   "defensive_use": "Editorial lesson: model revocation as a shared invariant across every transport. The advisory identifies 0.10.0 as patched through shared revocation checks. Distinguish denial of new connections from termination of existing ones when reviewing remediation guarantees.",
   "prerequisites": ["JWT validity, session revocation and asynchronous transports"],
   "prerequisites_basis": "editorial_guidance",

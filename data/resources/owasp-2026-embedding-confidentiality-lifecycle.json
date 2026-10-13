@@ -15,7 +15,7 @@
     "secrets-containment"
   ],
   "version": "LLM09:2026",
-  "summary": "Embeddings remain sensitive derived data after ingestion. Treating them as harmless output can leave retained vectors and backups outside the protections applied to source documents. OWASP's storage-lifecycle guidance connects source deletion to bounded removal of embeddings and reconciliation, keeps backups at source-data sensitivity, and separates encryption-key management from application access. Retrieval authorization alone does not establish retention or deletion.",
+  "summary": "OWASP treats embeddings as sensitive data that still needs protection after ingestion. Its storage guidance calls for timely removal and reconciliation when source data is deleted, backups protected at the source data's sensitivity level, and encryption-key management separate from application access. Controlling retrieval permissions alone does not ensure that retained vectors or backups are deleted.",
   "defensive_use": "Editorial review guidance: map source-to-embedding relationships, assign deletion deadlines and reconciliation evidence, and document backup sensitivity and encryption-key boundaries. Assess these storage obligations separately from permission-aware retrieval in an owned design.",
   "prerequisites": [
     "Basic concepts of embeddings, vector stores and retrieval-augmented generation",

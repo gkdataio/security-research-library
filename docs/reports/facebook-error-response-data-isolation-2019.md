@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook · [Canonical JSON](<../../data/reports/facebook-error-response-data-isolation-2019.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Facebook error responses could include application data that the requester should not receive\. The initial finding led Facebook to review a broader error-handling problem\. Facebook confirms a USD 65,000 payment for the report\.
+
 **Organization:** Meta \(Facebook\)  
 **Product:** Facebook copyright-management endpoint and shared error handling
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Facebook confirms a USD 65,000 bounty payment for an error-response data-exposure report\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 An error-handling configuration could include unintended application data in a response; subsequent review found a broader framework issue\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 A copyright-management request could return data fragments not intended for the requester\. The award reflected the vendor’s assessment of potential wider impact\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Apply data-minimization rules to error responses as well as successful responses\.
 - Review shared exception-handling behavior after an endpoint-level fix\.
@@ -33,6 +36,8 @@ Evidence level: vendor\_confirmed. Vendor explicitly identifies USD and says the
 Exact source quotation and location remain in the [canonical record](<../../data/reports/facebook-error-response-data-isolation-2019.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2020-02-07; precision: day; basis: explicit. Initial page date; a separate May 7, 2020 update is displayed\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. The reviewed vendor retrospective was published February 7, 2020; earliest public disclosure is not established\.

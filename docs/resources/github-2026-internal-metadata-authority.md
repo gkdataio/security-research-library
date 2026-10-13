@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/github-2026-internal-metadata-authority.json>) · [Official resource](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>)
+[Official resource](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>) · [Canonical JSON](<../../data/resources/github-2026-internal-metadata-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+GitHub's backend treated user-controlled operation metadata as trusted configuration in downstream services\. Wiz's CVE-2026-3854 research demonstrated code execution on Enterprise Server and hosted infrastructure\. Cross-tenant content checks used Wiz's own accounts; wider repository exposure was an inferred capability, not demonstrated theft of customer content\.
+
+## Defensive use
+
+Editorial lessons: preserve provenance when internal services exchange mixed-trust data, keep policy decisions independent of user-controlled metadata, and remove environment-inappropriate execution paths\. GitHub confirms input sanitization and removal of unnecessary code paths as remediation\. Review the vendor's maintained release guidance rather than treating a researcher version table as definitive\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Wiz Research  
 **Authors:** Sagi Tzadik  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; Cloud Security  
 **Defensive skills:** Threat-model integrations; Review parsing and serialization; Review input trust boundaries; Write bounded security evidence; Verify remediation evidence
-
-## Original summary
-
-Wiz's CVE-2026-3854 research examines a data-to-authority boundary in GitHub's backend\. User-controlled operation metadata reached downstream services as trusted configuration\. Code execution was demonstrated on Enterprise Server and hosted infrastructure\. Wiz bounded cross-tenant content validation to its own accounts; broader repository exposure was a capability inference, not demonstrated theft of customer content\.
-
-## Defensive use
-
-Editorial lessons: preserve provenance when internal services exchange mixed-trust data, keep policy decisions independent of user-controlled metadata, and remove environment-inappropriate execution paths\. GitHub confirms input sanitization and removal of unnecessary code paths as remediation\. Review the vendor's maintained release guidance rather than treating a researcher version table as definitive\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/vvveb-2026-order-domain-invariant.json>) · [Official resource](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>)
+[Official resource](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>) · [Canonical JSON](<../../data/resources/vvveb-2026-order-domain-invariant.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Vvveb allowed invalid cart quantities to pass through checkout into a saved order with a negative total\. The maintainer-published report describes a validated run with guest checkout and no special extensions, showing a stored integrity failure rather than just a display error\. Effects on payments, accounting or inventory depend on integrations; actual payouts and production losses were not demonstrated\.
+
+## Defensive use
+
+Editorial reasoning: trace domain invariants across every transition that makes provisional state authoritative\. Require valid quantities during cart mutation and revalidate order constraints at commitment\. Keep legitimate credit workflows distinct from purchases\. The advisory proposes these checks; release 1\.0\.8\.2 explicitly lists the corresponding repair\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Vvveb  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Verification  
 **Defensive skills:** Review approval-state integrity; Review input trust boundaries; Write bounded security evidence
-
-## Original summary
-
-CVE-2026-44826 concerns missing domain constraints between cart quantities and authoritative orders\. Arithmetic propagated invalid purchase state through totals and checkout\. The maintainer-published report describes a validated run producing a persisted negative-total order, distinguishing a durable integrity failure from an incorrect display\.
-
-## Defensive use
-
-Editorial reasoning: trace domain invariants across every transition that makes provisional state authoritative\. Require valid quantities during cart mutation and revalidate order constraints at commitment\. Keep legitimate credit workflows distinct from purchases\. The advisory proposes these checks; release 1\.0\.8\.2 explicitly lists the corresponding repair\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

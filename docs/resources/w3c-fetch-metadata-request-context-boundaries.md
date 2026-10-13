@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/w3c-fetch-metadata-request-context-boundaries.json>) · [Official resource](<https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/>)
+[Official resource](<https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/>) · [Canonical JSON](<../../data/resources/w3c-fetch-metadata-request-context-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Fetch Metadata draft defines browser headers that help servers understand a request's site relationship, destination, mode and user activation\. It also explains how redirects and caching affect decisions based on that context\. This Working Draft provides additional policy inputs, not proof of a user's permissions or support in every client\.
+
+## Defensive use
+
+Review an owned service’s documented request-context policy, including redirects, legitimate cross-origin use, and caching\. Treat browser context as an additional policy input rather than proof of a user’s resource permissions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** World Wide Web Consortium  
 **Authors:** Mike West  
@@ -10,16 +23,6 @@
 **Version:** Working Draft, 21 September 2026  
 **Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
-
-## Original summary
-
-Defines browser-provided request context covering site relationship, destination, mode, and user activation\. Explains how redirect history affects that context and why context-dependent responses need matching cache behavior\. This supports reasoning about which browser interactions an application intends to accept\.
-
-## Defensive use
-
-Review an owned service’s documented request-context policy, including redirects, legitimate cross-origin use, and caching\. Treat browser context as an additional policy input rather than proof of a user’s resource permissions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

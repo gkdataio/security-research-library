@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/slsa-v1-2-supply-chain-build-provenance.json>) · [Official resource](<https://slsa.dev/spec/v1.2/>)
+[Official resource](<https://slsa.dev/spec/v1.2/>) · [Canonical JSON](<../../data/resources/slsa-v1-2-supply-chain-build-provenance.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+SLSA v1\.2 defines separate assurance tracks for source code and builds\. Its build track moves from recording how an artifact was produced to authenticated hosted builds and stronger isolation, helping consumers check the builder, inputs and build definition\. Basic provenance alone does not prevent tampering; consumers still need a trusted verification process\.
+
+## Defensive use
+
+Map documented build controls and provenance expectations to an approved architecture review; distinguish attestation presence from trusted verification\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** SLSA Community  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** 1\.2  
 **Topics:** Software Supply Chain; Verification  
 **Defensive skills:** Model build and release trust; Review artifact isolation; Review dependency provenance; Write bounded security evidence
-
-## Original summary
-
-Learn to assess software supply-chain assurance using distinct source and build tracks\. The build track progresses from recording provenance to authenticated hosted builds and stronger platform isolation\. Build provenance connects an artifact to its builder, inputs, and build definition so consumers can evaluate whether its production matches expectations\.
-
-## Defensive use
-
-Map documented build controls and provenance expectations to an approved architecture review; distinguish attestation presence from trusted verification\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

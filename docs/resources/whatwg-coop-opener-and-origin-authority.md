@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/whatwg-coop-opener-and-origin-authority.json>) · [Official resource](<https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies>)
+[Official resource](<https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies>) · [Canonical JSON](<../../data/resources/whatwg-coop-opener-and-origin-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The HTML standard explains how opener policies separate browser windows during navigation\. Breaking the opener connection does not fully isolate same-origin pages, which can still share storage, service workers, messaging and server responses\. These are specified behaviors, not verified support in every browser or a substitute for application authorization\.
+
+## Defensive use
+
+Model window references separately from origin-wide data and service authority\. For an owned application, document every shared client capability and server data path before relying on opener separation; combine appropriate embedding, cookie and response controls with an explicit trust-domain design\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** WHATWG  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** HTML Living Standard \(reviewed 2026-10-03\)  
 **Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
-
-## Original summary
-
-Defines how opener policies affect browsing-context separation during navigation\. The standard expressly distinguishes severing an opener relationship from a robust boundary between same-origin documents: storage, service workers, messaging and server responses can preserve shared authority\.
-
-## Defensive use
-
-Model window references separately from origin-wide data and service authority\. For an owned application, document every shared client capability and server data path before relying on opener separation; combine appropriate embedding, cookie and response controls with an explicit trust-domain design\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

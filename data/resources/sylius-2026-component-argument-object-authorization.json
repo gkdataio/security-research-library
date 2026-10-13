@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-31820 concerns client-supplied component action arguments used to load objects without ownership checks. Property checksums did not cover those arguments. GHSL describes cross-customer address disclosure in tested version 2.2.3-dev; the maintainer additionally identifies disclosure of cart and order financial summaries.",
+  "summary": "Sylius checked component-state integrity without checking ownership of every object referenced by action arguments. GitHub Security Lab demonstrates cross-customer address disclosure by an authenticated customer in version 2.2.3-dev; the maintainer also identifies exposure of cart and order financial summaries. The evidence does not establish write access, payment execution or account takeover.",
   "defensive_use": "Editorial lesson: integrity protection on component state does not establish authority over every referenced object. Bind each lookup to the current customer or authorized session context. The maintainer lists fixes in 2.0.16, 2.1.12 and 2.2.3 and supplies a project-level authorization workaround; its correctness for customized deployments is not established here.",
   "prerequisites": [
     "Basic object-level access-control concepts",

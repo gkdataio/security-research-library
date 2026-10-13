@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) — 003random · [Canonical JSON](<../../data/reports/instagram-embedding-privileged-fallback-2023.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+An Instagram embedding fallback retrieved media with elevated service permissions instead of preserving the requester's privacy limits\. Private post text and media could be exposed, but the researcher did not establish the same effect for profile embedding\. The researcher reports USD 14,500 for one finding: a 10,000 base award and two event bonuses\.
+
 **Organization:** Meta  
 **Product:** Instagram media embedding
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-The researcher documents USD 14,500 for one report: a 10,000 base bounty and two event bonuses\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 A client-specific error path retrieved media under an elevated service identity, losing the original requester’s privacy constraints\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Private post text and media could be exposed\. The researcher did not establish the same effect for profile embedding\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Preserve requester authorization across error handling and fallback paths\.
 - Keep policy decisions consistent across client-specific code paths\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. One report: 10,000 base plus 2,000 and 2,5
 Exact source quotation and location remain in the [canonical record](<../../data/reports/instagram-embedding-privileged-fallback-2023.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2023-10-12; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. This article is dated October 12, 2023\. November 9, 2022 is permission to disclose, not proof of public publication\.

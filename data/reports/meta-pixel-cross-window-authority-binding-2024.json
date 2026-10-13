@@ -20,7 +20,7 @@
     "integration-threat-modeling",
     "browser-isolation-review"
   ],
-  "summary": "The USD 32,500 researcher-reported award illustrates the distinction between message origin and disclosure authority.",
+  "summary": "Meta Pixel checked a browser message's origin without fully checking what information the requested operation could disclose or to whom. The researcher reports exposed authorization material and subsequent Instagram takeover with user interaction, alongside a USD 32,500 award. The report does not establish equivalent impact on every site using the script or evidence of real-world abuse.",
   "root_cause": "The researcher followed how browser messages influenced requests containing page context. A trusted-origin check substituted for a complete authorization decision: the requested operation and recipient identity were not bound to the protected context. The failure allowed sensitive information to cross into a different identity’s request context.",
   "impact": "The researcher reports authorization-material exposure and consequent Instagram takeover with user interaction. Wider script deployment does not establish equivalent impact on every embedding site or evidence of real-world abuse.",
   "defensive_takeaways": [

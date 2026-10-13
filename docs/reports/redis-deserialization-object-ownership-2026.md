@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.zeroday.cloud/blog/redis-cve-2026-25243-deep-dive>) — Emil Lerner / ZeroDay\.cloud · [Canonical JSON](<../../data/reports/redis-deserialization-object-ownership-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Redis could free the same memory twice when loading serialized objects and cleaning up failures\. Code execution was demonstrated at the competition; the vendor limits the affected access to authenticated users with import permission, and wider effects depend on deployment privileges and isolation\. Wiz confirms USD 30,000 for Emil Lerner's entry, with both related defects counted as one award\.
+
 **Organization:** Redis  
 **Product:** Redis serialized-object loading
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Wiz confirms USD 30,000 for Emil Lerner’s Redis competition entry\. Two related disclosed defects remain one awarded entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher traced object ownership through deserialization and failure cleanup\. Validation and conversion interpreted legacy data differently, while another cleanup path released an object still owned elsewhere\. Both defects violated the invariant that each allocation is released exactly once; accepting a data-import request did not make its contents trustworthy\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated code execution in the competition\. The vendor confirms possible execution under Redis-process authority for an authenticated user with import permission\. Host or tenant reach depends on deployment privileges and isolation; it is not established for every Redis installation\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Make ownership transfer and cleanup responsibility explicit on success and failure paths\.
 - Require validators and converters to interpret the same serialized representation consistently\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One individually identified competition en
 Exact source quotation and location remain in the [canonical record](<../../data/reports/redis-deserialization-object-ownership-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-06-02; precision: day; basis: inferred. The article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
 - **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration; separate from later vendor advisory and technical publication\.

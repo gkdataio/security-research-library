@@ -19,7 +19,7 @@
     "identity-lifecycle-review",
     "defensive-evidence-writing"
   ],
-  "summary": "Shopify confirms a $20,000 award for unauthorized collaborator access caused by automatic account conversion.",
+  "summary": "Shopify's automatic conversion of ordinary accounts into collaborator accounts could grant store access without the merchant's approval. Shopify confirms a $20,000 award and unintended access in a partner-account context. Its retrospective does not establish the exact permissions obtained or any data extraction.",
   "root_cause": "Account-conversion logic did not preserve the distinction between identity linkage and authorization to collaborate on a merchant’s store. The vendor attributes the issue to automatic conversion of ordinary accounts into collaborator accounts.",
   "impact": "The vendor confirms unintended store access without merchant interaction in a partner-account context, and says it fixed the issue within hours. Its retrospective does not establish data extraction, the exact permissions obtained or the researcher’s discovery process.",
   "defensive_takeaways": [

@@ -19,7 +19,7 @@
     "approval-state-integrity",
     "defensive-evidence-writing"
   ],
-  "summary": "An isolation misconfiguration exposed runner-image build infrastructure; the researcher reports a $20,000 payment.",
+  "summary": "GitHub runner-image builds shared persistent infrastructure with workflows that had not earned the same level of trust. The researcher demonstrated infrastructure access and exposed build secrets, and reports a $20,000 payment. Compromise of distributed runner images remained a possibility, not a demonstrated result, because intervening production controls were unknown.",
   "root_cause": "Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production.",
   "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown.",
   "defensive_takeaways": [

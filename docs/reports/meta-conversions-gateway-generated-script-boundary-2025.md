@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/meta-conversions-gateway-generated-script-boundary-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta's Conversions API Gateway could turn stored configuration data into executable JavaScript because it did not serialize that data safely\. The researcher reports script execution in pages using the output, but the required configuration-write access and broader deployment impact are not fully established\. The researcher assigns a USD 250,000 award specifically to this backend finding, labeled Bug \#2\.
+
 **Organization:** Meta  
 **Product:** Conversions API Gateway
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-The researcher attributes a USD 250,000 award to the article’s separately identified backend finding, Bug \#2\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Configuration values were concatenated into generated JavaScript without context-safe serialization\. Stored data thereby acquired the authority of executable output\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports stored script execution in consuming pages and potential account compromise\. The article does not fully establish configuration-write prerequisites or independently substantiate its broader deployment and employee-system impact claims\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Keep configuration data separate from executable source; use context-appropriate serialization and structured interfaces\.
 - Treat shared analytics code as part of the consuming application’s trusted computing base\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. Only Bug \#2 is represented; Bug \#1 has a
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-conversions-gateway-generated-script-boundary-2025.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Current page header is January 13, 2026; a separately indexed 2025 URL also exists\. Original publication versus archive migration or republication is not established\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure is not established\.

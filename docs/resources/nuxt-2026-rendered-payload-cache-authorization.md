@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nuxt-2026-rendered-payload-cache-authorization.json>) · [Official resource](<https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43>)
+[Official resource](<https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43>) · [Canonical JSON](<../../data/resources/nuxt-2026-rendered-payload-cache-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Nuxt's maintainer reports that a shared data cache could disclose another user's data, including to unauthenticated visitors, even while the HTML page remained protected \(CVE-2026-71316\)\. The cache used the path without accounting for requester identity and returned data before current-request permission checks\. Application secrets could have been among the contents, but production losses were not independently observed\.
+
+## Defensive use
+
+The advisory identifies 4\.5\.1 as fixed by limiting shared payload caching to prerendering and restoring runtime authorization\. Official release notes corroborate the fix and recommend clearing upstream caches\. Editorial lesson: treat each rendered representation as a separate disclosure boundary; correct HTML protection does not prove data-response protection\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Nuxt  
 **Authors:** danielroe  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Authorization; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review artifact isolation; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-71316 documents an authorization mismatch between server-rendered HTML and extracted data\. A shared path-keyed payload cache omitted requester identity and returned data before current-request guards\. The maintainer confirms cross-user and unauthenticated disclosure while HTML remained protected\. Application-specific secrets are possible contents, not independently observed production losses\.
-
-## Defensive use
-
-The advisory identifies 4\.5\.1 as fixed by limiting shared payload caching to prerendering and restoring runtime authorization\. Official release notes corroborate the fix and recommend clearing upstream caches\. Editorial lesson: treat each rendered representation as a separate disclosure boundary; correct HTML protection does not prove data-response protection\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/microsoft-compensating-transaction-state-integrity.json>) · [Official resource](<https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction>)
+[Official resource](<https://learn.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction>) · [Canonical JSON](<../../data/resources/microsoft-compensating-transaction-state-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Recovering from partly completed work across services may require corrective actions rather than restoring an old snapshot, which could overwrite valid concurrent changes\. Microsoft's architecture guide explains how those actions depend on the business operation\. Recovery can itself fail, and some completed effects cannot meaningfully be undone\.
+
+## Defensive use
+
+Editorial lesson: distinguish an atomic transaction boundary from a process spanning independently committed operations\. Model completion evidence, compensable effects and irreversible commitments\. Preserve recovery progress and repeat-safe corrective actions while respecting concurrent work and business entitlements\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Microsoft Azure Architecture Center  
 **Authors:** claytonsiemens77  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity  
 **Defensive skills:** Reason about concurrent state; Threat-model integrations
-
-## Original summary
-
-Explains recovery after partial completion across services or data stores\. Compensation applies domain-specific corrective effects; restoring an earlier snapshot can overwrite valid concurrent changes\. Recovery can itself fail, and some committed effects cannot be meaningfully reversed\.
-
-## Defensive use
-
-Editorial lesson: distinguish an atomic transaction boundary from a process spanning independently committed operations\. Model completion evidence, compensable effects and irreversible commitments\. Preserve recovery progress and repeat-safe corrective actions while respecting concurrent work and business entitlements\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

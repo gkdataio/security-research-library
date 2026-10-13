@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-error-response-data-minimization.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-error-response-data-minimization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP recommends handling unexpected errors centrally and returning generic messages to clients\. Detailed diagnostic information belongs in server-side records, without exposing implementation details in the response\.
+
+## Defensive use
+
+Define separate public-error and internal-diagnostic contracts, then review ordinary failure handling in owned application code\. Keep logging controls separate from response formatting\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review secure error behavior; Review parsing and serialization
-
-## Original summary
-
-OWASP guidance on centralized handling of unexpected failures, generic client-facing responses and server-side diagnostic records that do not reveal implementation details to clients\.
-
-## Defensive use
-
-Define separate public-error and internal-diagnostic contracts, then review ordinary failure handling in owned application code\. Keep logging controls separate from response formatting\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

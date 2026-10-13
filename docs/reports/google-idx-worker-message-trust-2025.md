@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://sudistark.github.io/2025/07/02/idx.html>) — sudi \(Sudistark\) · [Canonical JSON](<../../data/reports/google-idx-worker-message-trust-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Google IDX's messaging checks could let embedded content control operations in an extension worker\. The researcher demonstrated script execution in that worker, without direct access to the page's DOM; broader account takeover was not established and prior access to an affected resource was required\. A Google notice published by the researcher records a USD 22,500 award\.
+
 **Organization:** Google  
 **Product:** Project IDX / Cloud Workstations
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A browser-IDE trust-boundary report received a USD 22,500 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The messaging boundary treated caller-influenced context as authority for extension-worker operations\. Browser framing permission did not independently establish that embedded content should control the worker\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated script execution in a worker, without direct DOM access\. Same-origin requests were described as a possible consequence; broader account takeover was not established\. The reproduced award notice limits severity because prior access to an affected resource was required\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind messaging trust to a verified origin and context\.
 - Review nested rendering and worker privileges together\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. The image states a $2
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-idx-worker-message-trust-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-07-02; precision: day; basis: explicit. Date displayed by the researcher article\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

@@ -29,7 +29,7 @@
     "pipeline-trust-modeling",
     "secrets-containment"
   ],
-  "summary": "A researcher-published Google award notice for $30,000 (USD contextually inferred) illustrates a gap between approval of a contribution and selection of the code executed.",
+  "summary": "Cloud Build could execute a different revision from the one a reviewer had approved. The researcher demonstrated execution of newer, unreviewed code; access to secrets or cloud resources depended on the build's permissions. A Google notice published by the researcher records a $30,000 award, with USD inferred from program context.",
   "root_cause": "The researcher compared the identity available to the approval event with the revision later selected by the build. Approval referred to mutable contribution state without preserving the exact reviewed version. The execution boundary therefore relied on an assumption that the approved and executed content remained identical.",
   "impact": "The controlled demonstration executed a newer, unreviewed revision. Access to secrets or cloud resources was a potential consequence of the build’s assigned privileges, not evidence that all pipelines exposed those assets.",
   "defensive_takeaways": [

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/dolibarr-2026-portal-object-authorization.json>) · [Official resource](<https://codeant.ai/security-research/cve-2026-71505-dolibarr-bola-enables-portal-account-takeover>)
+[Official resource](<https://codeant.ai/security-research/cve-2026-71505-dolibarr-bola-enables-portal-account-takeover>) · [Canonical JSON](<../../data/resources/dolibarr-2026-portal-object-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+CodeAnt AI's CVE-2026-71505 research found that Dolibarr checked access differently for reading and changing company portal accounts\. Checking a user's role did not establish permission to change the particular company\. In researcher-owned test data, the missing check allowed account takeover, invoice access and disclosure of stored password hashes\.
+
+## Defensive use
+
+Apply actor-to-object checks consistently to every credential mutation\. The linked maintainer patch adds resource checks to account creation, update and deletion; the CNA identifies versions before 24\.0\.0 as affected\. Editorially, keep credential changes explicitly permissioned and sensitive verifiers out of responses\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** CodeAnt AI  
 **Authors:** Amartya Jha  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-Research on CVE-2026-71505 describes inconsistent authorization between reading and modifying company portal accounts\. A role-level check did not establish authority over the particular company\. In researcher-owned fixtures, the omission enabled account takeover, invoice access and disclosure of stored password verifiers\.
-
-## Defensive use
-
-Apply actor-to-object checks consistently to every credential mutation\. The linked maintainer patch adds resource checks to account creation, update and deletion; the CNA identifies versions before 24\.0\.0 as affected\. Editorially, keep credential changes explicitly permissioned and sensitive verifiers out of responses\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

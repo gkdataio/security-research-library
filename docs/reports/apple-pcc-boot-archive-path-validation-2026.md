@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://blog.sentry.security/beyond-prompt-injection-hacking-apples-private-cloud-compute/>) — Drinor Selmanaj / Sentry · [Canonical JSON](<../../data/reports/apple-pcc-boot-archive-path-validation-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Apple Private Cloud Compute did not adequately restrict where startup archives could write files\. The researcher demonstrated configuration changes and telemetry disclosure in Apple's virtual environment; Apple confirms possible sensitive-data leakage from a privileged network position\. Sentry reports a USD 150,000 award to Drinor Selmanaj, but the research did not establish production prompt-content leakage\.
+
 **Organization:** Apple  
 **Product:** Private Cloud Compute server software
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Sentry documents a USD 150,000 award to Drinor Selmanaj for CVE-2026-20685\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Privileged startup archive handling did not adequately confine output paths; mutable configuration could undermine runtime integrity assumptions\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Researcher demonstrated configuration changes and telemetry disclosure in Apple’s virtual environment\. Apple confirms potential sensitive-information leakage from a privileged network position\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Confine archive output and authenticate provisioning inputs\.
 - Include security-relevant mutable configuration in integrity review\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Individual CVE award 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/apple-pcc-boot-archive-path-validation-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-07-31; precision: day; basis: explicit. Sentry’s own article listing supplies the date\.
 - **public disclosure:** 2026-05-18; precision: day; basis: explicit. CVE publication timestamp; detailed researcher article appeared later\.

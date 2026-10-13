@@ -17,7 +17,7 @@
     "error-response-design"
   ],
   "version": null,
-  "summary": "Google's approved long-running-operation guidance separates failures before work starts from failures during execution. Its linked Operation contract distinguishes best-effort cancellation, terminal outcomes and deletion of the tracking resource. Work may finish despite a cancellation request; a returned wait response can still describe pending work.",
+  "summary": "Requesting cancellation does not prove that a long-running operation stopped, and a wait response may still report unfinished work. Google's approved guidance separates failures before execution from failures during it. The linked Operation contract also distinguishes best-effort cancellation, final outcomes and deletion of the resource used to track the work.",
   "defensive_use": "Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects.",
   "prerequisites": [
     "Basic asynchronous API and application state-machine concepts"

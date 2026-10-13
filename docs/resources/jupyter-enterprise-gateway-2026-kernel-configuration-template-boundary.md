@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.json>) · [Official resource](<https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w>)
+[Official resource](<https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w>) · [Canonical JSON](<../../data/resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Jupyter Enterprise Gateway treated untrusted kernel-start configuration as Jinja2 template source while generating Kubernetes pod names\. Its CVE-2026-44181 advisory demonstrates template evaluation and operating-system execution inside the gateway pod, before name normalization could help\. The maintainer explicitly classifies this as server-side template injection, CWE-1336\.
+
+## Defensive use
+
+The advisory and 3\.3\.0 release identify that version as patched\. Editorial lesson: keep trusted template structure separate from external configuration and avoid evaluating configuration as template source\. Name normalization and output escaping do not establish that separation\. Review the deployed fixed version and its intended data-only substitution behavior\. Restricting gateway access and service-account authority provides defense in depth; neither replaces correction of the template boundary\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Jupyter Enterprise Gateway maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Interpreter Boundaries; Cloud Security  
 **Defensive skills:** Review input trust boundaries; Review cloud IAM boundaries; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-44181 describes untrusted kernel-start configuration becoming Jinja2 template source during Kubernetes pod-name generation\. The advisory demonstrates template evaluation and operating-system execution inside the Enterprise Gateway pod\. Conceptual root cause: configuration data acquired server-side interpreter authority before the generated name was normalized\. This is server-side template injection \(SSTI\), explicitly classified as CWE-1336\.
-
-## Defensive use
-
-The advisory and 3\.3\.0 release identify that version as patched\. Editorial lesson: keep trusted template structure separate from external configuration and avoid evaluating configuration as template source\. Name normalization and output escaping do not establish that separation\. Review the deployed fixed version and its intended data-only substitution behavior\. Restricting gateway access and service-account authority provides defense in depth; neither replaces correction of the template boundary\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

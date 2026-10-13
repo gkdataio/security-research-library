@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account>) — Laxman Muthiyah · [Canonical JSON](<../../data/reports/microsoft-account-recovery-rate-limit-consistency-2021.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Microsoft account recovery did not consistently enforce attempt limits during simultaneous verification activity\. The researcher reports potential account takeover, but says Microsoft rated it Important because practical exploitation required substantial resources\. He reports a USD 50,000 award and payment\.
+
 **Organization:** Microsoft  
 **Product:** Microsoft account recovery
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-The cited researcher documents a USD 50,000 award for this finding\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Recovery controls did not enforce attempt limits consistently across simultaneous verification operations\. Defensive reviews should verify atomic, account-bound limits and consistent treatment of recovery and multifactor checks\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Potential account takeover; the researcher says Microsoft classified severity as Important because practical exploitation required substantial resources\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind recovery attempts and verification state to the intended account\.
 - Use atomic security counters and test concurrent state transitions locally\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Researcher says the bounty was received on
 Exact source quotation and location remain in the [canonical record](<../../data/reports/microsoft-account-recovery-rate-limit-consistency-2021.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2021-03-02; precision: day; basis: explicit. Original publication date preserved by the author’s archive; current article header is a later update\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

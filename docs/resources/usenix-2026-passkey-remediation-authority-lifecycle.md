@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/usenix-2026-passkey-remediation-authority-lifecycle.json>) · [Official resource](<https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla>)
+[Official resource](<https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla>) · [Canonical JSON](<../../data/resources/usenix-2026-passkey-remediation-authority-lifecycle.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+In a lab study of 31 people across three services, unclear passkey labels, notifications and recovery screens prevented complete account recovery without help\. The scenario assumed earlier account access sufficient to register a credential, rather than a break in passkey cryptography\. The small controlled study highlights the need to revoke credentials and sessions separately; it does not measure real-world compromise rates or validate the proposed interface improvements\.
+
+## Defensive use
+
+Review an owned application’s recovery completion criteria across registered credentials, sessions and recovery channels\. Make security interfaces explain what each revocation changes and what remains authorized; use clear credential provenance and action-specific notifications\. Treat these as design-review questions, not evidence of a deployed fix\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** USENIX Association  
 **Authors:** Alaa Daffalla; Grace Myers; Rosanna Bellini; Thomas Ristenpart; Nicola Dell  
@@ -10,16 +23,6 @@
 **Version:** USENIX Security 2026 proceedings  
 **Topics:** Identity; Authorization; Web Foundations  
 **Defensive skills:** Review identity lifecycle; Review approval-state integrity; Write bounded security evidence
-
-## Original summary
-
-A qualitative lab study of 31 participants across three services found that unclear passkey labels, notifications and recovery interfaces obstructed complete account remediation\. Conceptual boundary: proof that a recovery action completed does not establish that every independent credential or active session has lost authority\.
-
-## Defensive use
-
-Review an owned application’s recovery completion criteria across registered credentials, sessions and recovery channels\. Make security interfaces explain what each revocation changes and what remains authorized; use clear credential provenance and action-specific notifications\. Treat these as design-review questions, not evidence of a deployed fix\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

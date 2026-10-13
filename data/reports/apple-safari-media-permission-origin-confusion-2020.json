@@ -21,7 +21,7 @@
     "identity-lifecycle-review",
     "patch-verification"
   ],
-  "summary": "The cited researcher documents a USD 75,000 award for this reported chain.",
+  "summary": "Safari could apply a website's existing camera and microphone permissions to the wrong website context. Ryan Pickren reports a USD 75,000 award for the combined findings, rather than a separate award for each bug.",
   "root_cause": "URL parsing, origin identity, and secure-context decisions were inconsistent with the identity used for stored permissions. Defensive design should use one coherent origin model across permission enforcement.",
   "impact": "Unauthorized camera and microphone access under previously granted website permissions.",
   "defensive_takeaways": [

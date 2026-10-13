@@ -22,7 +22,7 @@
     "secrets-containment",
     "defensive-evidence-writing"
   ],
-  "summary": "A reference-validation flaw crossed the GitHub Actions trust boundary and earned USD 25,000.",
+  "summary": "GitHub Actions could give an unauthorized workflow access to repository secrets and write permissions because repository references were not checked consistently. The researcher reports a USD 25,000 award for this finding.",
   "root_cause": "Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced.",
   "impact": "Repository secrets and write authority could become available to an unauthorized workflow.",
   "defensive_takeaways": [

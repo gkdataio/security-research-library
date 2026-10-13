@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) — Sandeep / AppSecure · [Canonical JSON](<../../data/reports/meta-ai-media-object-authorization-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta AI's media-editing feature checked that a user was signed in without checking that the requested media belonged to them\. A two-user demonstration revealed another user's original prompt and generated media\. The researcher reports a USD 10,000 award; broader harvesting was a potential consequence, and the reproduced vendor response says it found no evidence of abuse\.
+
 **Organization:** Meta  
 **Product:** Meta AI media editing
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-An authenticated media-editing operation exposed another user’s prompts and generated content because object ownership was not enforced\. The researcher reports a USD 10,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Authentication established a caller but did not bind the requested media object to that caller\. The researcher’s two-user comparison exposed this distinction between feature access and content authority\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The demonstration disclosed another user’s original prompt and generated media\. Broader data harvesting was potential impact; the reproduced vendor response reports no evidence of abuse\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: preserve ownership checks across derived-media and editing operations\.
 - Editorial lesson: distinguish temporary mitigation, full-fix confirmation and actual deployment timing\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. The researcher explic
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-ai-media-object-authorization-2025.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Page is labeled Updated July 16, 2025; original publication is unknown\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. First public disclosure is not established; article update date is July 16, 2025\.

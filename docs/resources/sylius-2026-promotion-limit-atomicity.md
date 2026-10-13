@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sylius-2026-promotion-limit-atomicity.json>) · [Official resource](<https://github.com/Sylius/Sylius/security/advisories/GHSA-7mp4-25j8-hp5q>)
+[Official resource](<https://github.com/Sylius/Sylius/security/advisories/GHSA-7mp4-25j8-hp5q>) · [Canonical JSON](<../../data/resources/sylius-2026-promotion-limit-atomicity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Sylius could exceed promotion limits because eligibility checks and recorded usage were not kept in sync during overlapping orders\. The maintainer describes stale counts and lost concurrent updates affecting promotion-wide, coupon and per-customer limits\. A limited promotion or coupon is required, but authentication is not; financial loss is a possible consequence rather than a measured production incident\.
+
+## Defensive use
+
+Editorial lesson: model the limit check and entitlement consumption as one serialized decision\. Accounting correctness alone does not prove eligibility correctness\. In owned local models, verify that committed usage never exceeds the authorized allowance, including cancellation semantics\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Sylius  
 **Authors:** NoResponseMate  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity  
 **Defensive skills:** Reason about concurrent state; Review approval-state integrity; Verify remediation evidence
-
-## Original summary
-
-Promotion eligibility used stale in-memory counts, while consumption was persisted later without synchronization\. Absolute counter writes could also lose concurrent updates\. The failed boundary was between a provisional eligibility decision and committed entitlement across global promotion, coupon and per-customer limits\.
-
-## Defensive use
-
-Editorial lesson: model the limit check and entitlement consumption as one serialized decision\. Accounting correctness alone does not prove eligibility correctness\. In owned local models, verify that committed usage never exceeds the authorized allowance, including cancellation semantics\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

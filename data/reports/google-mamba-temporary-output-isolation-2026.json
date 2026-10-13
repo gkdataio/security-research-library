@@ -147,7 +147,7 @@
   "id": "google-mamba-temporary-output-isolation-2026",
   "title": "Google Mamba temporary outputs lacked access isolation",
   "product": "Mamba frame-metrics pipeline",
-  "summary": "Mamba received a distinct USD 37,604.40 award. The case illustrates why temporary processing output needs explicit access isolation, with retrieval dependencies kept separate from standalone impact.",
+  "summary": "Google Mamba did not adequately restrict file copying or isolate temporary output. Copying was possible without authentication, but the demonstrated retrieval depended on the separate Firefly finding, so standalone data access should not be inferred. Mamba received its own USD 37,604.40 award, with the panel accounting for difficult exploitation and additional access requirements.",
   "root_cause": "Untrusted file selection reached privileged storage copying. Shared temporary outputs relied on obscurity, while diagnostic metadata weakened filename secrecy.",
   "impact": "Unauthenticated copying was possible, but demonstrated retrieval required the separately reported Firefly capability. The panel explicitly discounted difficult exploitation and additional access requirements.",
   "defensive_takeaways": [

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/grav-2026-session-account-state-revalidation.json>) · [Official resource](<https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6>)
+[Official resource](<https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6>) · [Canonical JSON](<../../data/resources/grav-2026-session-account-state-revalidation.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Grav's maintainer reports that existing browser or remembered sessions could keep API access after an account was disabled\. Authentication methods enforced account disabling inconsistently: refreshing permissions did not also check whether the account was still valid\.
+
+## Defensive use
+
+Editorial lesson: authentication state is a revocable claim\. Every authentication method should enforce the same account-lifecycle invariants, and failed account refresh must remove authority rather than preserve cached permission\. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors\. The official 1\.0\.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Grav  
 **Authors:** rhukster  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity; API Security  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-GHSA-7qfj-82q8-frw6 describes inconsistent account-disable enforcement across authentication methods\. Existing browser or remembered sessions could retain API authority because refreshed permissions did not also establish current account validity\.
-
-## Defensive use
-
-Editorial lesson: authentication state is a revocable claim\. Every authentication method should enforce the same account-lifecycle invariants, and failed account refresh must remove authority rather than preserve cached permission\. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors\. The official 1\.0\.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

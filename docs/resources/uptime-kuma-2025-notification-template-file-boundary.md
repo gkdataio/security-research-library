@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/uptime-kuma-2025-notification-template-file-boundary.json>) · [Official resource](<https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh>)
+[Official resource](<https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh>) · [Canonical JSON](<../../data/resources/uptime-kuma-2025-notification-template-file-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Uptime Kuma's notification templates could expose server files because their Liquid evaluator had insufficient file-access restrictions\. The maintainer's 2025 advisory requires an authenticated template editor, and disclosure is limited by the application's file permissions; operating-system execution is not established\. A 2026 follow-up reports that the initial fix left a fallback file-resolution path unprotected\.
+
+## Defensive use
+
+Editorial lesson: define a minimal capability set for user-editable templates and keep notification formatting separate from host-file authority\. Apply containment consistently across every resolution path, including fallbacks; process-level least privilege limits exposure but does not repair template isolation\. Review later maintainer advisories before treating an earlier patch as complete\. The 2\.2\.1 release credits upstream LiquidJS remediation\. Capability removal is suggested in the follow-up advisory, but this review does not establish that suggestion as the shipped implementation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Uptime Kuma maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Interpreter Boundaries; Web Foundations  
 **Defensive skills:** Review input trust boundaries; Review secrets containment; Verify remediation evidence
-
-## Original summary
-
-The October 2025 advisory identifies post-authentication SSTI \(CWE-1336\): editable notification templates were evaluated by Liquid with insufficiently restricted file capabilities\. Template-editing authority thereby reached server-side filesystem access\. The reported outcome is server file disclosure\. A 2026 follow-up says the initial restrictions left a file-resolution fallback outside the intended boundary\.
-
-## Defensive use
-
-Editorial lesson: define a minimal capability set for user-editable templates and keep notification formatting separate from host-file authority\. Apply containment consistently across every resolution path, including fallbacks; process-level least privilege limits exposure but does not repair template isolation\. Review later maintainer advisories before treating an earlier patch as complete\. The 2\.2\.1 release credits upstream LiquidJS remediation\. Capability removal is suggested in the follow-up advisory, but this review does not establish that suggestion as the shipped implementation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

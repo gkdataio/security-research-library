@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/astro-2026-route-normalization-authorization-consistency.json>) · [Official resource](<https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f>)
+[Official resource](<https://github.com/withastro/astro/security/advisories/GHSA-376h-93r7-7g6f>) · [Canonical JSON](<../../data/resources/astro-2026-route-normalization-authorization-consistency.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Astro's routing and permission middleware could interpret the same path differently because base-path removal did not check for a complete path segment\. The maintainer limits the resulting authorization bypass to applications with a non-root base path and pathname-based middleware protection\. The finding does not apply to every Astro application\.
+
+## Defensive use
+
+The maintainer identifies 7\.2\.4 as patched, and its release notes confirm segment-aware base handling\. Editorial lesson: a permission decision must bind to the same canonical resource that execution resolves\. Review normalization contracts between middleware and routing, and preserve resource-level checks when public path representations change\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Astro  
 **Authors:** matthewp  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-Astro's base-path removal accepted a textual prefix without establishing a complete path segment\. Routing and authorization middleware could consequently disagree about the requested resource\. The maintainer bounds the authorization bypass to applications with a non-root base and pathname-based middleware protection; it is not a claim that every Astro application lacks authorization\.
-
-## Defensive use
-
-The maintainer identifies 7\.2\.4 as patched, and its release notes confirm segment-aware base handling\. Editorial lesson: a permission decision must bind to the same canonical resource that execution resolves\. Review normalization contracts between middleware and routing, and preserve resource-level checks when public path representations change\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

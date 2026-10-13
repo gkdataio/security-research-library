@@ -28,7 +28,7 @@
     "untrusted-input-handling",
     "patch-verification"
   ],
-  "summary": "ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
+  "summary": "NVIDIA Container Toolkit let container-controlled settings influence privileged startup work on the host. An untrusted image could consequently lead to code execution with elevated host permissions, depending on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE. ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
   "root_cause": "A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority.",
   "impact": "An untrusted container image could lead to code execution with elevated host permissions. Scope depends on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE.",
   "defensive_takeaways": [

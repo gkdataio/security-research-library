@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/authlib-2026-error-path-redirect-authority.json>) · [Official resource](<https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2>)
+[Official resource](<https://github.com/authlib/authlib/security/advisories/GHSA-r95x-qfjj-fjj2>) · [Canonical JSON](<../../data/resources/authlib-2026-error-path-redirect-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Authlib could redirect a browser to an unapproved destination while handling an OIDC error\. In CVE-2026-44681, the error response chose its destination before validating the client and redirect address\. The maintainer explicitly excludes direct disclosure of authorization codes or tokens\.
+
+## Defensive use
+
+Editorial reasoning: an exception can exercise authority even when the main operation fails\. Establish destination trust before producing redirect-capable errors, and review rejection paths across grant implementations\. The official v1\.6\.12 release notes corroborate the validation correction\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Authlib  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Browser Security  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-44681 describes an OIDC error path selecting a response destination before client and destination validation\. The maintainer reports an unauthorized browser redirect, explicitly excluding direct disclosure of authorization codes or tokens\. The failed boundary was untrusted request data becoming trusted error-response routing\.
-
-## Defensive use
-
-Editorial reasoning: an exception can exercise authority even when the main operation fails\. Establish destination trust before producing redirect-capable errors, and review rejection paths across grant implementations\. The official v1\.6\.12 release notes corroborate the validation correction\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

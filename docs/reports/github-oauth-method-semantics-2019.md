@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) — Teddy Katz · [Canonical JSON](<../../data/reports/github-oauth-method-semantics-2019.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub's request-handling layers disagreed about when an OAuth access grant required user consent\. A user visiting a malicious website could unintentionally grant an application access to private GitHub data\. The researcher reports a $25,000 award; USD is inferred from official program evidence published or updated outside the award period\.
+
 **Organization:** GitHub  
 **Product:** GitHub OAuth authorization
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A researcher-reported $25,000 award illustrates how differing framework and controller assumptions can remove an OAuth consent boundary; USD denomination is contextually inferred from non-contemporaneous official program evidence\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher compared the consent screen’s intended state change with routing and controller logic\. The framework accepted a wider set of request semantics than the controller expected\. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply\. The failed invariant was that every new grant required the user’s explicit, validated approval\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports that a user visiting a malicious website could unintentionally grant an application access to read or modify private GitHub data\. This demonstrates unauthorized delegated access, rather than evidence that the attacker learned the account password or that all unrelated account controls failed\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Require positive validation of the intended state-changing operation; reject unrecognized alternatives rather than defaulting to a privileged action\.
 - Model framework routing, request interpretation and consent enforcement as separate layers whose assumptions must agree\.
@@ -35,6 +38,8 @@ Evidence level: researcher\_reported. Individual report; production fix date is 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-oauth-method-semantics-2019.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2019-11-05; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

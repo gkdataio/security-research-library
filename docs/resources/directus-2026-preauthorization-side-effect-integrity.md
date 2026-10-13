@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/directus-2026-preauthorization-side-effect-integrity.json>) · [Official resource](<https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8>)
+[Official resource](<https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8>) · [Canonical JSON](<../../data/resources/directus-2026-preauthorization-side-effect-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Directus could reject a change after cleanup had already modified application state\. Its maintainer advisory describes disconnected automation links, removed attribution metadata and invalidated permission caches because cleanup ran before the permission check\. A denial response therefore did not mean that nothing had changed\.
+
+## Defensive use
+
+Editorial lesson: include cleanup, cache invalidation and relationship changes in the authorization boundary, and assess state preservation on rejected operations\. The maintainer says 12\.1\.0 moves access checks before side effects or defers effects until an authorized mutation succeeds\. PR 27800 independently corroborates the ordering correction\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Directus  
 **Authors:** br41nslug  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review approval-state integrity; Verify remediation evidence
-
-## Original summary
-
-GHSA-p623-wgx3-wxp8 describes service overrides committing cleanup before their superclass checked permission\. Rejected mutations could therefore disconnect automation links, remove attribution metadata or invalidate permission caches\. A denial response did not mean that the operation left application state unchanged\.
-
-## Defensive use
-
-Editorial lesson: include cleanup, cache invalidation and relationship changes in the authorization boundary, and assess state preservation on rejected operations\. The maintainer says 12\.1\.0 moves access checks before side effects or defers effects until an authorized mutation succeeds\. PR 27800 independently corroborates the ordering correction\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

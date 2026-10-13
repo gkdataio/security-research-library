@@ -86,19 +86,20 @@ def resource_pages(resources, diagrams, taxonomy, skills):
     for rec in ordered:
         rid = rec['id']
         canonical = '../../data/resources/'+rid+'.json'
-        index += ['- '+link(rec['title'], 'resources/'+rid+'.md')+' — '+text(rec['publisher'])+'; '+text(types[rec['resource_type_id']])+'.']
+        index += ['- '+link(rec['title'], 'resources/'+rid+'.md')+' — '+text(rec['publisher'])+'; '+text(types[rec['resource_type_id']])+'. '+link('Original source', rec['primary_url'])+'.']
         lines = ['# '+text(rec['title']), '',
                  '[Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)', '',
-                 link('Canonical JSON', canonical)+' · '+link('Official resource', rec['primary_url']), '',
+                 link('Official resource', rec['primary_url'])+' · '+link('Canonical JSON', canonical), '',
+                 '<a id="original-summary"></a>', '## Main takeaway', '', text(rec['summary']), '',
+                 '## Defensive use', '', text(rec['defensive_use']), '',
+                 'Educational reference only; linked material does not authorize testing unrelated systems.', '',
+                 '## About this resource', '',
                  '**Publisher:** '+text(rec['publisher'])+'  ',
                  '**Authors:** '+text('; '.join(rec['authors']) or 'Not identified in the reviewed record')+'  ',
                  '**Resource type:** '+text(types[rec['resource_type_id']])+'  ',
                  '**Version:** '+text(rec['version'] or 'Not established in the reviewed record')+'  ',
                  '**Topics:** '+text('; '.join(topics[t] for t in rec['topic_ids']))+'  ',
                  '**Defensive skills:** '+text('; '.join(skill_titles[t] for t in rec['skillset_ids'])), '',
-                 '## Original summary', '', text(rec['summary']), '',
-                 '## Defensive use', '', text(rec['defensive_use']), '',
-                 'Educational reference only; linked material does not authorize testing unrelated systems.', '',
                  '## Prerequisites', '',
                  '**Basis:** '+text(rec['prerequisites_basis'].replace('_', ' '))+'.', '']
         lines += ['- '+text(v) for v in rec['prerequisites']] or ['No prerequisites recorded; this does not establish that none are needed.']
@@ -158,15 +159,19 @@ def build(root=ROOT):
              'Original defensive summaries with award provenance, distinct event dates and verification limits. These historical disclosures do not authorize testing. Generated from canonical records; edit the JSON, then regenerate.', '']
     for rec in sorted(reports, key=lambda r: (r['organization'], r['title'])):
         rid = rec['id']; reward = rec['reward']
-        index.append(f'- {link(rec["title"], "reports/"+rid+".md")} — {text(reward["currency"])} {reward["amount"]:,}; {text(reward["type"])}')
+        primary = next(source for source in rec['sources'] if source['id'] == rec['primary_source_id'])
+        index.append(f'- {link(rec["title"], "reports/"+rid+".md")} — {text(reward["currency"])} {reward["amount"]:,}; {text(reward["type"])}. '+link('Original source', primary['url'])+'.')
         lines = [f'# {text(rec["title"])}', '', '[Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)', '',
+                 link('Read the original source', primary['url'])+' — '+text(primary['author'])+' · '+link('Canonical JSON', '../../data/reports/'+rid+'.json'), '',
+                 '<a id="what-the-evidence-establishes"></a>', '## Main takeaway', '', text(rec['summary']), '',
                  f'**Organization:** {text(rec["organization"])}  ', f'**Product:** {text(rec["product"])}', '',
-                 '## What the evidence establishes', '', 'Publication window: '+('within the preferred 12-month window' if rec['recency']['within_preferred_window'] is True else 'historical / outside the preferred window' if rec['recency']['within_preferred_window'] is False else 'uncertain original publication date')+'; reviewed as of '+text(rec['recency']['as_of'])+'.', '', text(rec['summary']), '', '### Root cause', '', text(rec['root_cause']), '',
-                 '### Bounded impact', '', text(rec['impact']), '', '### Defensive lessons', '']
+                 '<a id="root-cause"></a>', '## What went wrong', '', text(rec['root_cause']), '',
+                 '<a id="bounded-impact"></a>', '## What the evidence shows', '', text(rec['impact']), '', '## Defensive lessons', '']
         lines += ['- '+text(t) for t in rec['defensive_takeaways']]
         lines += ['', '## Award and evidence', '', f'**{text(reward["currency"])} {reward["amount"]:,}** — {text(reward["type"])}; {text(reward["scope"])}; status: {text(reward["status"])}.', '',
                   f'Evidence level: {text(reward["evidence_level"])}. {text(reward["notes"] or "")}', '',
-                  'Exact source quotation and location remain in the '+link('canonical record', '../../data/reports/'+rid+'.json')+'.', '', '## Dates', '']
+                  'Exact source quotation and location remain in the '+link('canonical record', '../../data/reports/'+rid+'.json')+'.', '', '## Dates', '',
+                  'Publication window: '+('within the preferred 12-month window' if rec['recency']['within_preferred_window'] is True else 'historical / outside the preferred window' if rec['recency']['within_preferred_window'] is False else 'uncertain original publication date')+'; reviewed as of '+text(rec['recency']['as_of'])+'.', '']
         for name, date in rec['dates'].items():
             lines.append(f'- **{text(name.replace("_", " "))}:** {text(date["value"] or "Unknown")}; precision: {text(date["precision"] or "unknown")}; basis: {text(date["basis"])}'+ ('. '+text(date['note']) if date['note'] else ''))
         lines += ['', '## Verification limits', '', f'Reviewed: {text(rec["verification"]["reviewed_at"])}. {text(rec["verification"]["method"])}', '']

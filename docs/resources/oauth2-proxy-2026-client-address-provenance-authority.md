@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/oauth2-proxy-2026-client-address-provenance-authority.json>) · [Official resource](<https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-wr5q-7wxw-x568>)
+[Official resource](<https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-wr5q-7wxw-x568>) · [Canonical JSON](<../../data/resources/oauth2-proxy-2026-client-address-provenance-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OAuth2 Proxy's maintainer reports that unverified client-address metadata could trigger a configured exemption from authentication \(GHSA-wr5q-7wxw-x568\)\. This required optional trusted-address exemptions, reverse-proxy mode and client-controlled address metadata reaching the decision\. Reported access was limited to what those exemptions already allowed, showing why exceptions need their own checks on the source of address information\.
+
+## Defensive use
+
+The v7\.15\.5 release describes transport-peer verification, bounded intermediary trust and safe failure when trusted-intermediary address metadata is missing or malformed\. Upgrading alone is insufficient: compatibility defaults retain overly broad proxy trust\. Deployments retaining exemptions must narrowly scope trusted intermediaries and ensure ingress establishes trustworthy address metadata\. The advisory recommends removing the exemptions as a workaround\. Editorial lesson: treat an authentication exception as an authorization mechanism with its own evidence requirements\. Record who can assert each decision-relevant attribute, what authority it can unlock, and what happens when its provenance is unavailable\. Patch verification must cover effective configuration as well as installed version; a code change cannot establish a trust boundary that deployment policy leaves universal\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OAuth2 Proxy  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Web Foundations  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-GHSA-wr5q-7wxw-x568 describes client-address metadata acquiring authority to waive authentication without verified transport-peer and intermediary provenance\. The maintainer reports unauthenticated access within the authority already granted by configured address exemptions\. This requires optional trusted-address exemptions, reverse-proxy mode and client-controlled address metadata reaching the decision\. The educational focus is the authority of an exception path\.
-
-## Defensive use
-
-The v7\.15\.5 release describes transport-peer verification, bounded intermediary trust and safe failure when trusted-intermediary address metadata is missing or malformed\. Upgrading alone is insufficient: compatibility defaults retain overly broad proxy trust\. Deployments retaining exemptions must narrowly scope trusted intermediaries and ensure ingress establishes trustworthy address metadata\. The advisory recommends removing the exemptions as a workaround\. Editorial lesson: treat an authentication exception as an authorization mechanism with its own evidence requirements\. Record who can assert each decision-relevant attribute, what authority it can unlock, and what happens when its provenance is unavailable\. Patch verification must cover effective configuration as well as installed version; a code change cannot establish a trust boundary that deployment policy leaves universal\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

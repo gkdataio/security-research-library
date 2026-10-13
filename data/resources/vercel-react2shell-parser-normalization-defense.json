@@ -22,7 +22,7 @@
     "defensive-evidence-writing"
   ],
   "version": null,
-  "summary": "Vercel\u2019s retrospective describes request-inspection normalization, independent runtime restrictions, regression coverage and customer patching during its React2Shell response. It illustrates why a filter\u2019s interpretation must align with application semantics.",
+  "summary": "Vercel's React2Shell retrospective explains why request filters and applications must interpret data consistently. It describes normalization, separate runtime restrictions, regression tests and customer patching as complementary defenses. These are vendor-reported measures, not independently audited protection, and mitigations do not replace framework patches.",
   "defensive_use": "In an owned architecture review, document each parser\u2019s contract and residual assumptions. Pair input validation with independently enforced execution limits, maintain regression tests and verify application upgrades.",
   "prerequisites": [
     "HTTP request processing and serialization basics",

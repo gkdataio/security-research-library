@@ -15,7 +15,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "Stripe documents duplicate deliveries, unordered events and renewed signatures and timestamps on retries. Signature verification establishes delivery authenticity; it does not establish that the business effect is new or that the event represents the latest application state.",
+  "summary": "A valid Stripe webhook signature proves delivery authenticity, not that an event is new or reflects the latest business state. Stripe's guidance explains that events can arrive more than once or out of order, and retries receive new signatures and timestamps. Applications must handle those cases separately; this is provider guidance, not a vulnerability report or an exactly-once delivery guarantee.",
   "defensive_use": "Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants. Review how application state stays consistent across repeated, delayed and concurrent work. A recent authenticated delivery can still describe an already-handled event.",
   "prerequisites": [
     "Basic HTTP webhook and asynchronous processing concepts",

@@ -22,7 +22,7 @@
     "controlled-practice"
   ],
   "version": null,
-  "summary": "Free web-security lessons and deliberately designed interactive training environments. Covers authentication, access control, business logic, API security, and other application-security fundamentals.",
+  "summary": "PortSwigger offers free web-security lessons and purpose-built interactive training environments. Topics include authentication, access control, business logic, API security and other application-security fundamentals.",
   "defensive_use": "Learn concepts in the provider's controlled exercises, then use that understanding for secure-design and remediation work within an approved scope.",
   "prerequisites": [
     "Basic HTTP and browser concepts",

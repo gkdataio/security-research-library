@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/obot-2026-oauth-audience-and-consent-boundaries.json>) · [Official resource](<https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr>)
+[Official resource](<https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr>) · [Canonical JSON](<../../data/resources/obot-2026-oauth-audience-and-consent-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient \(GHSA-xwmw-prc4-v3cr\)\. Client authorization also lacked explicit consent\. The described worst case was access to resources already available to the victim, not an observed production compromise\.
+
+## Defensive use
+
+The maintainer identifies v0\.23\.0 as patched\. Its release notes corroborate consent, narrower token routing and audience checks\. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Obot  
 **Authors:** thedadams  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-GHSA-xwmw-prc4-v3cr describes MCP-delegated tokens accepted by broader application APIs because issuer validation did not establish audience authority\. Client authorization also lacked explicit consent\. The maintainer describes possible access to resources already available to the victim; this is bounded worst-case impact, not evidence of observed production compromise\.
-
-## Defensive use
-
-The maintainer identifies v0\.23\.0 as patched\. Its release notes corroborate consent, narrower token routing and audience checks\. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

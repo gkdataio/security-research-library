@@ -18,7 +18,7 @@
     "defensive-evidence-writing",
     "secure-parser-review"
   ],
-  "summary": "HackerOne awarded $12,500 for internal attachments exposed through report export in 2016. Its enduring lesson for 2026 applications is that export and interactive views must enforce the same visibility policy.",
+  "summary": "HackerOne report exports could include team-only attachments that the report view kept private. A user still needed the ability to export that report; this was not access to every private report. HackerOne awarded $12,500 in 2016, and the lesson remains to enforce the same visibility rules in exports and interactive views.",
   "root_cause": "Export authorization diverged from report-view visibility. A file moved into an internal comment remained exportable. The researcher compared redacted display content with archive output; the vendor confirmed this was a distinct newly introduced issue.",
   "impact": "A user able to export a report could obtain team-only attachments. Vendor review additionally identified potential inline-attachment exposure, but found no evidence of malicious exploitation. This does not establish access to every private report.",
   "defensive_takeaways": [

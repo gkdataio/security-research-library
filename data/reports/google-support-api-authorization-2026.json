@@ -16,7 +16,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "Ordinary authenticated customers could read internal support activity; the researcher reports a USD 14,337 award.",
+  "summary": "Ordinary signed-in customers could read internal Google support activity and identifying details about other customers and agents. The researcher reports a USD 14,337 award. The number of affected records was estimated; access to conversation contents and control of calls were not demonstrated.",
   "root_cause": "Customer authentication did not enforce the boundary around internal support-wide information. The researcher contrasted denied resource-specific operations with an accessible aggregate operation. This supports an authorization gap; middleware behavior and the intended management use remain hypotheses, not confirmed implementation details.",
   "impact": "Observed disclosures linked customer names or phone numbers with cases and agents, including agent activity. Phishing and harassment were potential consequences. Millions of affected records were estimated; conversation contents and call manipulation were not demonstrated.",
   "defensive_takeaways": [

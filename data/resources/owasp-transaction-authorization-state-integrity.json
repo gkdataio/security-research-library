@@ -17,7 +17,7 @@
     "security-token-design"
   ],
   "version": null,
-  "summary": "Explains operation-specific approval: show significant transaction details, preserve authorized data, enforce valid state transitions and recheck authorization at execution.",
+  "summary": "OWASP explains how to tie approval to a specific operation and its important details. Applications must preserve the approved data, enforce valid workflow steps and check authorization again when the operation runs.",
   "defensive_use": "Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant.",
   "prerequisites": [
     "Authentication versus operation authorization",

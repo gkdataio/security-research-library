@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nextjs-server-client-data-security.json>) · [Official resource](<https://nextjs.org/docs/app/guides/data-security>)
+[Official resource](<https://nextjs.org/docs/app/guides/data-security>) · [Canonical JSON](<../../data/resources/nextjs-server-client-data-security.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Next\.js guidance recommends a server-side data layer that keeps authorization checks together and returns only the fields the interface needs\. Server Actions still need checks on the caller and requested resource; hiding a page does not protect its actions\. Action return values and properties passed to Client Components must be treated as visible to the client\.
+
+## Defensive use
+
+For an owned application, document where privileged data becomes renderable or serializable\. Keep data access and permission checks together, validate action inputs, and minimize returned fields\. Treat framework safeguards as additional protections around explicit authorization\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Next\.js / Vercel  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization; API Security; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Review input trust boundaries; Review parsing and serialization; Review secrets containment
-
-## Original summary
-
-Explains how server rendering changes data-access assumptions\. A dedicated server-side data layer can centralize authorization and expose only fields required by the interface\. Server Actions need their own caller and resource checks; page visibility does not provide that protection\. Server Action return values and properties passed to Client Components must be treated as client-visible contracts\.
-
-## Defensive use
-
-For an owned application, document where privileged data becomes renderable or serializable\. Keep data access and permission checks together, validate action inputs, and minimize returned fields\. Treat framework safeguards as additional protections around explicit authorization\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

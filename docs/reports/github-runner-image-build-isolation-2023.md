@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) — Adnan Khan · [Canonical JSON](<../../data/reports/github-runner-image-build-isolation-2023.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub runner-image builds shared persistent infrastructure with workflows that had not earned the same level of trust\. The researcher demonstrated infrastructure access and exposed build secrets, and reports a $20,000 payment\. Compromise of distributed runner images remained a possibility, not a demonstrated result, because intervening production controls were unknown\.
+
 **Organization:** GitHub  
 **Product:** GitHub Actions runner-image build infrastructure
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-An isolation misconfiguration exposed runner-image build infrastructure; the researcher reports a $20,000 payment\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure\. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure\. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Separate untrusted contribution processing from privileged build infrastructure and secrets\.
 - Bind review to the workflow being executed; prior contribution history is not continuing authorization\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. One report\. GitHub’s official January 2
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-runner-image-build-isolation-2023.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2023-12-20; precision: day; basis: explicit. Detailed article date\.
 - **public disclosure:** 2023-12-16; precision: day; basis: explicit. Earlier public summary; not the detailed article date\.

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/chrome-local-network-permission-boundaries.json>) · [Official resource](<https://developer.chrome.com/blog/local-network-access>)
+[Official resource](<https://developer.chrome.com/blog/local-network-access>) · [Canonical JSON](<../../data/resources/chrome-local-network-permission-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Chrome's Local Network Access design asks users before allowing websites to use the browser's position on the network to reach local devices\. The secure-context permission check aims to reduce local-device cross-site request forgery and network fingerprinting\. Chrome 145, released in 2026, separates permission for the local network from permission for loopback connections\.
+
+## Defensive use
+
+Editorial lesson: distinguish a website's origin, the browser's network reachability and the user's intended destination class\. Document which local integration actually needs permission and preserve a usable denial path\. Treat the grant as permission to connect, not proof of application-level authorization\. Review local-device authentication separately\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Chris Thompson  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Model access-control invariants
-
-## Original summary
-
-Chrome's design addresses websites using the browser's network position to reach local devices without a separate user decision\. A secure-context permission gate reduces local-device CSRF and network fingerprinting\. The 2026 Chrome 145 release refines the boundary by separating local-network permission from loopback permission\.
-
-## Defensive use
-
-Editorial lesson: distinguish a website's origin, the browser's network reachability and the user's intended destination class\. Document which local integration actually needs permission and preserve a usable denial path\. Treat the grant as permission to connect, not proof of application-level authorization\. Review local-device authentication separately\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

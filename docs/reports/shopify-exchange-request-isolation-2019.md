@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) — Peter Yaworski / Shopify · [Canonical JSON](<../../data/reports/shopify-exchange-request-isolation-2019.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Shopify Exchange's screenshot service could reach internal infrastructure that externally influenced work should not access\. Shopify confirms reported root-access capability within one infrastructure subset, explicitly excluding Shopify core; the report does not establish compromise of every container\. Shopify awarded USD 25,000 for the finding\.
+
 **Organization:** Shopify  
 **Product:** Shopify Exchange screenshot service
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure\. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core\. The retrospective does not establish compromise of every container or quantify exposed data\. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: separately enforce request-destination policy, workload privilege and infrastructure segmentation; each limits a different boundary\.
 - Editorial lesson: treat metadata as privileged infrastructure data and deny unneeded service access\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. Vendor retrospective explicitly ties this amo
 Exact source quotation and location remain in the [canonical record](<../../data/reports/shopify-exchange-request-isolation-2019.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2019-04-03; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

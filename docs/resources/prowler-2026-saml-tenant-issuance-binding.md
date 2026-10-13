@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/prowler-2026-saml-tenant-issuance-binding.json>) · [Official resource](<https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp>)
+[Official resource](<https://github.com/prowler-cloud/prowler/security/advisories/GHSA-h8m9-jgf8-vwvp>) · [Canonical JSON](<../../data/resources/prowler-2026-saml-tenant-issuance-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Prowler's maintainers report that token issuance chose a tenant from an asserted email domain rather than the validated SAML configuration \(CVE-2026-59151\)\. They describe possible cross-tenant account takeover\. Their adapter-level demonstration showed a linking-method call, not a persisted account link, completed token issuance or production compromise\.
+
+## Defensive use
+
+Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent\. The advisory lists Prowler API through 5\.30\.2 as affected and 5\.30\.3 as patched; no patch-release date is established here\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Prowler  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Model access-control invariants
-
-## Original summary
-
-CVE-2026-59151 concerns token issuance selecting a tenant from an asserted email domain instead of retaining the validated SAML configuration\. Maintainers describe potential cross-tenant account takeover\. Their adapter-level linking-call demonstration does not establish persisted account linkage, complete token issuance or production compromise\.
-
-## Defensive use
-
-Keep federation configuration, accepted identity claims, membership changes and issued-token tenant consistent\. The advisory lists Prowler API through 5\.30\.2 as affected and 5\.30\.3 as patched; no patch-release date is established here\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

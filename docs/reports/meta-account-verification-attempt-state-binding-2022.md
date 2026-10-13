@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) — Gtm Mänôz · [Canonical JSON](<../../data/reports/meta-account-verification-attempt-state-binding-2022.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta's phone-verification checks could affect an SMS authentication factor on a linked account without adequately verifying phone ownership\. The researcher demonstrated removal of that factor, and Meta confirms possible SMS-based two-factor authentication bypass; this alone did not establish a password leak or a signed-in session\. Meta confirms a USD 27,200 total award for the report\.
+
 **Organization:** Meta  
 **Product:** Meta Accounts Center, Instagram and Facebook SMS verification
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Meta confirms a USD 27,200 total award for this account-verification report\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Insufficient verification-attempt limits undermined phone ownership checks, while linked-account state changes could affect an existing SMS authentication factor\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms possible SMS-based two-factor authentication bypass\. The researcher demonstrated factor revocation; this alone does not establish password disclosure or an authenticated session\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Enforce verification-attempt limits consistently across linked applications\.
 - Require verified ownership before changing another account’s recovery or second-factor state\.
@@ -33,6 +36,8 @@ Evidence level: vendor\_confirmed. Vendor total for one report\. Researcher desc
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-account-verification-attempt-state-binding-2022.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2023-01-20; precision: day; basis: explicit. Primary technical article date; distinct from the earlier vendor summary\.
 - **public disclosure:** 2022-12-15; precision: day; basis: explicit. Vendor’s high-level public summary\. Researcher confirms this same-day highlight; a 2024 update concerns another case\.

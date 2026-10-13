@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/google-aip-155-request-identity-contract.json>) · [Official resource](<https://google.aip.dev/155>)
+[Official resource](<https://google.aip.dev/155>) · [Canonical JSON](<../../data/resources/google-aip-155-request-identity-contract.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Google's approved request-ID guidance defines how services recognize retries for a service-defined retention period: a duplicate should receive the earlier success response, with a documented exception allowing the current resource state\. AWS's supporting article adds guidance on scoping IDs to callers, keeping response meaning consistent, recording IDs and effects together, and rejecting reuse for a changed intent\. Those AWS recommendations are separate from Google's requirements\.
+
+## Defensive use
+
+Editorial synthesis: distinguish who may act, which logical operation is being repeated and what state was committed\. Document identity scope, retention assumptions and response meaning\. A request ID does not confer authority\. Preventing duplicate effects does not guarantee eventual success or establish end-to-end exactly-once delivery\. Keep each integration's completion and authorization responsibilities explicit\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Web Foundations; API Security  
 **Defensive skills:** Reason about concurrent state; Threat-model integrations
-
-## Original summary
-
-Google's Approved request-identification guidance makes supplied IDs an idempotency contract with service-defined retention\. Duplicates should receive the prior success response; a documented exception permits current resource state\. AWS's supporting article discusses caller-scoped identity, consistent response meaning, coordinated identity/effect recording and rejection of changed intent\.
-
-## Defensive use
-
-Editorial synthesis: distinguish who may act, which logical operation is being repeated and what state was committed\. Document identity scope, retention assumptions and response meaning\. A request ID does not confer authority\. Preventing duplicate effects does not guarantee eventual success or establish end-to-end exactly-once delivery\. Keep each integration's completion and authorization responsibilities explicit\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

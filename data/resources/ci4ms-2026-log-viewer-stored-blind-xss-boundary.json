@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-34560 concerns user-influenced error content retained in CI4MS logs and later interpreted as active browser content in the administrative viewer. The maintainer explicitly identifies stored DOM blind XSS and CWE-79. The supporting GitHub Advisory Database narrative describes delayed execution when an administrator opens the logs. Conceptual boundary: diagnostic storage does not make external data trustworthy for browser interpretation; persistence and a separate observation context explain the two supported subtype labels.",
+  "summary": "User-influenced error text in CI4MS logs could run as browser content when an administrator later viewed it. The maintainer classifies CVE-2026-34560 as stored DOM blind XSS and CWE-79; the supporting GitHub Advisory Database entry describes the delayed execution. Storing diagnostic text does not make it safe to render as active content, and the separate administrator view explains the blind-XSS label.",
   "defensive_use": "Editorial lesson: keep logged values inert throughout storage, retrieval and display. Use text-only rendering or encoding appropriate to the actual output context, including diagnostic interfaces used by privileged staff. Review all log-viewing paths for the same data/code separation. Access restrictions and browser policy are defense in depth, not substitutes for safe rendering. Verify remediation against the deployed version and its migration requirements; the historical patched-version designation alone is not a current deployment recommendation.",
   "prerequisites": [
     "Browser rendering contexts and the distinction between stored data and executable interpretation",

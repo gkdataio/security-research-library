@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) — Adnan Khan · [Canonical JSON](<../../data/reports/angular-ci-cache-trust-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Angular's build automation did not adequately separate untrusted work from trusted build state\. The researcher demonstrated credential exposure and described a possible route to repository control, but did not carry out the final supply-chain change\. Google awarded the report a bounty\.
+
 **Organization:** Google  
 **Product:** Angular development and release infrastructure
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A Google-rewarded report connected an adjacent CI misconfiguration with insufficient separation of automation trust, creating a potential Angular supply-chain impact\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification\. Google classified the report as a flagship supply-chain compromise\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Separate caches and artifacts according to trust level\.
 - Apply consistent review invalidation and least-privilege rules to automated identities\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. A Google award email 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/angular-ci-cache-trust-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-03-03; precision: day; basis: explicit
 - **public disclosure:** 2026-03-03; precision: day; basis: explicit. Publication of this write-up; earliest disclosure elsewhere was not independently established\.

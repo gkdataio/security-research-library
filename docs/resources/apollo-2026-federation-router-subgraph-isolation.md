@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/apollo-2026-federation-router-subgraph-isolation.json>) · [Official resource](<https://www.apollographql.com/blog/securing-apollo-federation-subgraphs-context-and-best-practices>)
+[Official resource](<https://www.apollographql.com/blog/securing-apollo-federation-subgraphs-context-and-best-practices>) · [Canonical JSON](<../../data/resources/apollo-2026-federation-router-subgraph-isolation.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Apollo's guidance says internal GraphQL subgraphs must accept traffic only through the router for centralized security controls to hold\. Disabling ordinary client introspection does not remove the coordination features used by federation\. Hiding schema discovery therefore cannot replace the isolation needed for router-enforced authorization, resource limits and operation restrictions\.
+
+## Defensive use
+
+For an owned federated design, document router and subgraph responsibilities\. Require network isolation and authenticated router-to-subgraph communication, retain entry-point authorization, and review resource limits and schema-change permissions as separate controls\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Apollo GraphQL  
 **Authors:** David Walter  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations
-
-## Original summary
-
-Explains the deployment assumption behind centralized GraphQL federation controls: internal subgraphs accept traffic only through the router\. Federation coordination remains available even when ordinary client introspection is disabled\. Consequently, hiding schema discovery cannot establish the service boundary on which router-enforced authorization, demand controls and operation restrictions depend\.
-
-## Defensive use
-
-For an owned federated design, document router and subgraph responsibilities\. Require network isolation and authenticated router-to-subgraph communication, retain entry-point authorization, and review resource limits and schema-change permissions as separate controls\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

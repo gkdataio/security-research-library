@@ -19,7 +19,7 @@
     "untrusted-input-handling",
     "defensive-evidence-writing"
   ],
-  "summary": "A browser-IDE trust-boundary report received a USD 22,500 award.",
+  "summary": "Google IDX's messaging checks could let embedded content control operations in an extension worker. The researcher demonstrated script execution in that worker, without direct access to the page's DOM; broader account takeover was not established and prior access to an affected resource was required. A Google notice published by the researcher records a USD 22,500 award.",
   "root_cause": "The messaging boundary treated caller-influenced context as authority for extension-worker operations. Browser framing permission did not independently establish that embedded content should control the worker.",
   "impact": "The researcher demonstrated script execution in a worker, without direct DOM access. Same-origin requests were described as a possible consequence; broader account takeover was not established. The reproduced award notice limits severity because prior access to an affected resource was required.",
   "defensive_takeaways": [

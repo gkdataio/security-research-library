@@ -56,7 +56,7 @@
     "note": "Primary advisory and maintainer remediation evidence reviewed; no target testing or deployment verification performed."
   },
   "content_scope": "defensive_education",
-  "summary": "GHSA-p623-wgx3-wxp8 describes service overrides committing cleanup before their superclass checked permission. Rejected mutations could therefore disconnect automation links, remove attribution metadata or invalidate permission caches. A denial response did not mean that the operation left application state unchanged.",
+  "summary": "Directus could reject a change after cleanup had already modified application state. Its maintainer advisory describes disconnected automation links, removed attribution metadata and invalidated permission caches because cleanup ran before the permission check. A denial response therefore did not mean that nothing had changed.",
   "defensive_use": "Editorial lesson: include cleanup, cache invalidation and relationship changes in the authorization boundary, and assess state preservation on rejected operations. The maintainer says 12.1.0 moves access checks before side effects or defers effects until an authorized mutation succeeds. PR 27800 independently corroborates the ordering correction.",
   "sources": [
     {

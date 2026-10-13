@@ -53,7 +53,7 @@
     "note": "Primary advisory and release documentation reviewed. No reproduction, live-target access, or independent patch testing."
   },
   "content_scope": "defensive_education",
-  "summary": "The maintainer advisory for CVE-2026-40871 describes stored configuration being reused unsafely in later database-query construction. Persistence did not make the originally supplied value trustworthy. The source reports disclosure of an administrator password hash through downstream notification processing. High-privilege API access and execution of the affected background processing are prerequisites; unauthenticated access is not established.",
+  "summary": "mailcow reused stored configuration unsafely when building later database queries. Its CVE-2026-40871 advisory reports disclosure of an administrator password hash during downstream notification processing, showing that storing a value does not make it trustworthy. The case requires high-privilege API access and the affected background processing to run; it does not establish unauthenticated access.",
   "defensive_use": "The advisory identifies 2026-03b as the repair boundary; the official blog dates that software release to March 31, 2026 and describes input-validation and escaping improvements. Editorial lesson: preserve data-only semantics at every consumer, parameterize database values, validate structured configuration, and apply least privilege to background database access.",
   "prerequisites": [
     "Stored-data trust provenance and asynchronous background processing",

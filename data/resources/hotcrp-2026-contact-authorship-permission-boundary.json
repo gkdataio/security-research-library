@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "GHSA-v8jx-vq6p-jq52 describes an API permission gap between viewing a submission and changing contact authorship. The maintainer reports that reviewers and program-committee members could obtain author-level access to submissions they could already view, affecting anonymity and integrity.",
+  "summary": "HotCRP allowed permission to view a submission to extend to changing its contact authorship. The maintainer reports that reviewers and program-committee members could gain author-level access to submissions they could already see. This affected submission anonymity and integrity.",
   "defensive_use": "Editorial lesson: authority-changing metadata needs its own permission check; visibility alone must not authorize membership changes. The advisory identifies versions 3.0.0–3.3.1 as affected and 3.4 as fixed. Release notes date 3.4 to August 5, before disclosure on August 11.",
   "prerequisites": [
     "Basic server-side identity and authorization concepts"

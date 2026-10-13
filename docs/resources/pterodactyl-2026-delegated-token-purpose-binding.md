@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/pterodactyl-2026-delegated-token-purpose-binding.json>) · [Official resource](<https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r>)
+[Official resource](<https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r>) · [Canonical JSON](<../../data/resources/pterodactyl-2026-delegated-token-purpose-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Pterodactyl's maintainer-published report describes a subuser uploading files to an already accessible server without the required creation permission \(GHSA-8r6w-3qq5-4p4r\)\. Tokens established the user and server but did not adequately restrict the operation\. The Panel and Wings therefore disagreed about what the token authorized\.
+
+## Defensive use
+
+Editorial lesson: trusted issuer and valid signature establish token provenance, not authorization for every consumer\. Require explicit purpose at issuance and matching operation scope at consumption\. Panel 1\.12\.3 release notes require a scope when generating tokens; Wings 1\.12\.2 release notes describe verifying subsystem-required scopes\. Review the producer and consumer together\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Pterodactyl  
 **Authors:** anthonyphysgun  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity; Identity; API Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Review security-token design; Threat-model integrations
-
-## Original summary
-
-GHSA-8r6w-3qq5-4p4r describes an authorization mismatch between the Panel and Wings\. Tokens established an authenticated user and server context without adequately separating operation purpose\. The maintainer-published report describes an authenticated subuser gaining file-upload authority on an already accessible server despite lacking the required creation permission\.
-
-## Defensive use
-
-Editorial lesson: trusted issuer and valid signature establish token provenance, not authorization for every consumer\. Require explicit purpose at issuance and matching operation scope at consumption\. Panel 1\.12\.3 release notes require a scope when generating tokens; Wings 1\.12\.2 release notes describe verifying subsystem-required scopes\. Review the producer and consumer together\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

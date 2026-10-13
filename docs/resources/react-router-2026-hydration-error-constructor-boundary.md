@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/react-router-2026-hydration-error-constructor-boundary.json>) · [Official resource](<https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg>)
+[Official resource](<https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg>) · [Canonical JSON](<../../data/resources/react-router-2026-hydration-error-constructor-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+React Router's maintainer describes unexpected client constructor execution and outbound network activity when server errors were reconstructed during hydration\. This required unusually specific application behavior that let untrusted input alter parts of caught server errors\. Error metadata was influencing client behavior instead of remaining data\.
+
+## Defensive use
+
+The advisory identifies 7\.18\.0 as patched\. Editorial lesson: preserve a narrow, inert contract for errors crossing the server/client boundary, including metadata used to reconstruct them\. Review error transport separately from visible error text, and constrain client interpretation to explicitly supported representations\. The reviewed advisory does not establish the exact patch implementation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** React Router / Remix  
 **Authors:** brophdawg11  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Review secure error behavior
-
-## Original summary
-
-The maintainer describes an SSR-to-hydration trust failure: application code that lets untrusted input alter aspects of caught server errors could cause unexpected client constructor execution and outbound network activity\. The prerequisite is unusually specific application behavior\. The case distinguishes transporting error data from granting that data authority over client reconstruction\.
-
-## Defensive use
-
-The advisory identifies 7\.18\.0 as patched\. Editorial lesson: preserve a narrow, inert contract for errors crossing the server/client boundary, including metadata used to reconstruct them\. Review error transport separately from visible error text, and constrain client interpretation to explicitly supported representations\. The reviewed advisory does not establish the exact patch implementation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

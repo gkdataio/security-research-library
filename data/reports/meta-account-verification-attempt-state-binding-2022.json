@@ -19,7 +19,7 @@
     "authorization-modeling",
     "integration-threat-modeling"
   ],
-  "summary": "Meta confirms a USD 27,200 total award for this account-verification report.",
+  "summary": "Meta's phone-verification checks could affect an SMS authentication factor on a linked account without adequately verifying phone ownership. The researcher demonstrated removal of that factor, and Meta confirms possible SMS-based two-factor authentication bypass; this alone did not establish a password leak or a signed-in session. Meta confirms a USD 27,200 total award for the report.",
   "root_cause": "Insufficient verification-attempt limits undermined phone ownership checks, while linked-account state changes could affect an existing SMS authentication factor.",
   "impact": "The vendor confirms possible SMS-based two-factor authentication bypass. The researcher demonstrated factor revocation; this alone does not establish password disclosure or an authenticated session.",
   "defensive_takeaways": [

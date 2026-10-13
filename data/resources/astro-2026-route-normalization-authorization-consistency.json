@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Astro's base-path removal accepted a textual prefix without establishing a complete path segment. Routing and authorization middleware could consequently disagree about the requested resource. The maintainer bounds the authorization bypass to applications with a non-root base and pathname-based middleware protection; it is not a claim that every Astro application lacks authorization.",
+  "summary": "Astro's routing and permission middleware could interpret the same path differently because base-path removal did not check for a complete path segment. The maintainer limits the resulting authorization bypass to applications with a non-root base path and pathname-based middleware protection. The finding does not apply to every Astro application.",
   "defensive_use": "The maintainer identifies 7.2.4 as patched, and its release notes confirm segment-aware base handling. Editorial lesson: a permission decision must bind to the same canonical resource that execution resolves. Review normalization contracts between middleware and routing, and preserve resource-level checks when public path representations change.",
   "prerequisites": [
     "URL path normalization and framework routing",

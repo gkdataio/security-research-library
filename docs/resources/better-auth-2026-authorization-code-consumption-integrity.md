@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/better-auth-2026-authorization-code-consumption-integrity.json>) · [Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79>)
+[Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79>) · [Canonical JSON](<../../data/resources/better-auth-2026-authorization-code-consumption-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Better Auth could issue more than one token set for a single-use OAuth authorization code during concurrent processing\. Its CVE-2026-53518 disclosure explains that reading and deleting the authorization record were separate steps\. The extra tokens duplicated the originally approved permissions; they did not expand them\.
+
+## Defensive use
+
+Model consuming a grant as one indivisible state transition, including across service replicas and storage adapters\. A successful read must not itself authorize issuance\. Maintainer release 1\.6\.11 adds atomic consumption and corroborates the OAuth fix; review adapter guarantees rather than relying on process-local serialization\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Better Auth  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Reason about concurrent state; Review security-token design; Review approval-state integrity; Verify remediation evidence
-
-## Original summary
-
-The maintainer disclosure for CVE-2026-53518 identifies separated reading and deletion of a single-use OAuth authorization record\. Under concurrent processing, multiple successful consumers could receive independent token sets\. The established impact is duplicate authority within the original approved scope, not expansion of that scope\.
-
-## Defensive use
-
-Model consuming a grant as one indivisible state transition, including across service replicas and storage adapters\. A successful read must not itself authorize issuance\. Maintainer release 1\.6\.11 adds atomic consumption and corroborates the OAuth fix; review adapter guarantees rather than relying on process-local serialization\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

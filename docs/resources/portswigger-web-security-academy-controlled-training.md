@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/portswigger-web-security-academy-controlled-training.json>) · [Official resource](<https://portswigger.net/web-security>)
+[Official resource](<https://portswigger.net/web-security>) · [Canonical JSON](<../../data/resources/portswigger-web-security-academy-controlled-training.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+PortSwigger offers free web-security lessons and purpose-built interactive training environments\. Topics include authentication, access control, business logic, API security and other application-security fundamentals\.
+
+## Defensive use
+
+Learn concepts in the provider's controlled exercises, then use that understanding for secure-design and remediation work within an approved scope\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** PortSwigger  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; API Security; CTF and Controlled Practice; Identity; Authorization; Business Logic and State Integrity; Browser Security  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Reason about concurrent state; Learn through controlled practice
-
-## Original summary
-
-Free web-security lessons and deliberately designed interactive training environments\. Covers authentication, access control, business logic, API security, and other application-security fundamentals\.
-
-## Defensive use
-
-Learn concepts in the provider's controlled exercises, then use that understanding for secure-design and remediation work within an approved scope\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

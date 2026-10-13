@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-94462 concerns a guest-cart ownership transition that required a signed-in customer but omitted the cart-possession check enforced by sibling operations. Account authentication and object lookup were treated as sufficient authority to claim an unowned cart, exposing existing checkout addresses and changing ownership.",
+  "summary": "Spree let a signed-in customer claim an unowned guest cart without checking proof that the cart was theirs. The maintainer describes recoverable ownership and email changes, plus disclosure of checkout addresses if the cart already stored them. This requires guest checkout and an unassociated cart; it does not establish anonymous access, account takeover or a production incident.",
   "defensive_use": "Editorial lesson: joining guest state to an account is a privileged ownership transition. Verify existing possession before mutation and response serialization; client-supplied proof helps only when the server checks it. The maintainer recommends backend releases 5.4.4 or 5.5.4 and says its storefront already supplied the required cart token.",
   "prerequisites": [
     "Basic object-level authorization and policy-composition concepts"

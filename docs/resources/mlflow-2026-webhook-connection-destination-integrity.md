@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mlflow-2026-webhook-connection-destination-integrity.json>) · [Official resource](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>)
+[Official resource](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>) · [Canonical JSON](<../../data/resources/mlflow-2026-webhook-connection-destination-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+MLflow's initial webhook destination check did not necessarily validate the address used for the actual connection\. The repair for CVE-2026-64849 explains that validation and connection setup could make different address decisions\. The lesson is to enforce destination restrictions when the connection is used, rather than rely only on an earlier check\.
+
+## Defensive use
+
+The connection-fix PR moves enforcement to the connected peer before TLS or HTTP exchange, retaining initial validation as defense in depth\. The classification-fix PR later gives initial and connection-time checks the same address-normalization policy\. Editorial lesson: define one destination invariant, enforce it at the point of use, and keep representation handling consistent across layers\. Review deployment controls and later remediation evidence together; historical fixed-version labels do not prove comprehensive or current protection\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** MLflow  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations  
 **Defensive skills:** Review input trust boundaries; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
-
-## Original summary
-
-CVE-2026-64849 concerns a gap between initial webhook destination checks and the actual network connection\. The initial repair explains that validation and later connection establishment could use different address decisions, so accepting the configured destination did not establish continuing destination authority\. The distinct lesson is to carry the security decision through actual use, rather than treating an earlier check as a durable guarantee\.
-
-## Defensive use
-
-The connection-fix PR moves enforcement to the connected peer before TLS or HTTP exchange, retaining initial validation as defense in depth\. The classification-fix PR later gives initial and connection-time checks the same address-normalization policy\. Editorial lesson: define one destination invariant, enforce it at the point of use, and keep representation handling consistent across layers\. Review deployment controls and later remediation evidence together; historical fixed-version labels do not prove comprehensive or current protection\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

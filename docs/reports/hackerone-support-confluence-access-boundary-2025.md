@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://hackerone.com/reports/3113398>) — HackerOne and the credited researchers · [Canonical JSON](<../../data/reports/hackerone-support-confluence-access-boundary-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+A misconfigured HackerOne support integration let external users view internal Confluence documentation and modify limited content\. The public report does not establish unrestricted control or explain the precise access requirements\. HackerOne awarded USD 12,500 for one report, split between two researchers\.
+
 **Organization:** HackerOne  
 **Product:** HackerOne support and internal documentation
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A support-system misconfiguration allowed external access to internal Confluence documentation, including limited content modification\. One report received USD 12,500 split between two researchers\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The vendor attributes the issue to a support-system misconfiguration that allowed support workflows to cross the boundary into internal documentation\. The public summary does not reveal the precise configuration, authentication prerequisites or permission-propagation mechanism; an identity-entitlement failure is a defensive interpretation, not a documented implementation detail\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms access to nonpublic internal documentation and the ability to view and modify limited Confluence content\. It does not establish unrestricted administrative control, the volume of material exposed, or broader compromise\. The timeline records accepted retesting and Resolved status on June 3, 2025; redacted comment bodies do not reveal the corrective configuration or exact deployment date\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: assess whether external support workflows can confer access to employee-only documentation\.
 - Editorial lesson: review integration permissions separately for read and write access; limited modification is distinct from unrestricted control\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. Dollar notation appears in the report UI; USD
 Exact source quotation and location remain in the [canonical record](<../../data/reports/hackerone-support-confluence-access-boundary-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-08; precision: month; basis: inferred. Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.
 - **public disclosure:** 2025-08; precision: month; basis: inferred. Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.

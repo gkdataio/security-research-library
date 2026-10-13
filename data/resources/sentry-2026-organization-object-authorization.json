@@ -55,7 +55,7 @@
     "note": "Research and maintainer evidence reviewed; no live deployment or remediation testing performed."
   },
   "content_scope": "defensive_education",
-  "summary": "CVE-2026-26004 concerned a missing organization constraint in event retrieval. A permission check on the active organization did not establish ownership of the requested object. GitHub Security Lab reports cross-organization event disclosure in tested Sentry 25.12.0.",
+  "summary": "Sentry checked a user's event-reading permission without ensuring the requested event belonged to that organization. GitHub Security Lab reports cross-organization disclosure in version 25.12.0 by a signed-in user with event-read permission in their own organization. The evidence establishes unauthorized reading, not changes to data or account takeover.",
   "defensive_use": "Editorial lesson: carry tenant identity into resource resolution, rather than checking actor permissions and object lookup independently. The maintainer patch adds the organization constraint and regression coverage for cross-organization denial. Review equivalent response paths against the same invariant.",
   "caveats": [
     "The reported case requires an authenticated user with event-read permission in their own organization. It establishes unauthorized reading, not modification or account takeover; no customer incident or measured data-loss total is supplied.",

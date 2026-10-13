@@ -16,7 +16,7 @@
     "defensive-evidence-writing"
   ],
   "version": null,
-  "summary": "Presents an iterative design-review process linking a system model to potential threats, agreed responses and validation. Data-flow diagrams expose trust boundaries and dependencies; structured prompts help identify missing assumptions. Mitigations become measurable requirements, and accepted residual risks remain documented as the system changes.",
+  "summary": "OWASP describes a repeated design-review process that connects a model of the system to possible threats, agreed responses and validation. Data-flow diagrams and structured questions help reveal dependencies and missing assumptions. Mitigations become measurable requirements, while accepted risks stay documented as the system changes.",
   "defensive_use": "For an owned design, write a bounded hypothesis about a missing security guarantee, identify the assumption behind it, and specify evidence that would support or refute it. Review the model with relevant stakeholders.",
   "prerequisites": [
     "Basic application architecture and security concepts",

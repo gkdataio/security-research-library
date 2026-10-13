@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/aws-iam-machine-identity-best-practices.json>) · [Official resource](<https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>)
+[Official resource](<https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>) · [Canonical JSON](<../../data/resources/aws-iam-machine-identity-best-practices.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+AWS recommends short-lived role credentials for workloads, permissions limited to the actions and resources they need, and removal of unnecessary access\. Its guide also covers policy validation, access reviews and organization-wide permission limits to help keep access aligned with the workload's purpose\.
+
+## Defensive use
+
+Compare an owned workload’s documented identity lifecycle and minimum permission needs with the guide, recording unnecessary access for review\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Amazon Web Services  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Cloud Security; Identity; Authorization  
 **Defensive skills:** Review cloud IAM boundaries; Review machine identities; Review identity lifecycle; Review secrets containment
-
-## Original summary
-
-Use this guide to review machine identity design: favor short-lived role credentials for workloads, limit permissions to required actions and resources, and retire unnecessary access\. It also explains policy validation, access reviews, and organizational guardrails that help keep workload access aligned with its purpose\.
-
-## Defensive use
-
-Compare an owned workload’s documented identity lifecycle and minimum permission needs with the guide, recording unnecessary access for review\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -16,7 +16,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "Google's Approved pagination guidance separates a continuation position from permission to read the collection. Page tokens must be opaque and convey no authorization; each request still requires authorization. Subsequent requests retain the other query arguments, while page size may change. Opacity protects interface abstraction rather than establishing access rights.",
+  "summary": "A page token says where to continue a result set; it does not grant permission to read it. Google's approved pagination guidance requires opaque tokens and authorization on every request. Later requests keep the other query arguments while allowing page size to change; hiding the token's format protects the interface design rather than conferring access rights.",
   "defensive_use": "Editorial lesson: document continuation state and actor/resource policy as separate design contracts. An integration following a stored cursor must still rely on the service's per-request authorization decision. Treat query continuity as a request-consistency requirement, not evidence of entitlement.",
   "prerequisites": [
     "Basic familiarity with paginated collection APIs and access-control modeling"

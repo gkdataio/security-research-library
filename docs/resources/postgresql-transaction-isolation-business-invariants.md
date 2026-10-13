@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/postgresql-transaction-isolation-business-invariants.json>) · [Official resource](<https://www.postgresql.org/docs/18/applevel-consistency.html>)
+[Official resource](<https://www.postgresql.org/docs/18/applevel-consistency.html>) · [Canonical JSON](<../../data/resources/postgresql-transaction-isolation-business-invariants.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+PostgreSQL explains why a stable database snapshot does not, by itself, preserve business rules when transactions overlap\. Its guidance distinguishes serializable consistency from explicit locking\. Retrying after a serialization failure must repeat the whole transaction, including the decisions behind its writes\.
+
+## Defensive use
+
+For an owned application, document the invariant, the transaction boundary and the isolation or locking assumptions that protect it\. As an editorial application, connect approval-state decisions to their database consistency requirements; do not assume that repeating only the final write revalidates an earlier decision\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** PostgreSQL Global Development Group  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** PostgreSQL 18 documentation, sections 13\.4 and 13\.5  
 **Topics:** Business Logic and State Integrity  
 **Defensive skills:** Reason about concurrent state; Review approval-state integrity
-
-## Original summary
-
-Explains why a stable database snapshot alone does not preserve business rules across concurrent transactions\. PostgreSQL distinguishes serializable consistency from explicit locking and requires serialization-failure retries to repeat the whole transaction, including the decisions that produced its writes\.
-
-## Defensive use
-
-For an owned application, document the invariant, the transaction boundary and the isolation or locking assumptions that protect it\. As an editorial application, connect approval-state decisions to their database consistency requirements; do not assume that repeating only the final write revalidates an earlier decision\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+A change to Meta Quest's login flow allowed credentials to leave the intended recipients through redirects\. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse\. It confirms a USD 44,250 total award for this report, including bonuses\.
+
 **Organization:** Meta  
 **Product:** Meta Quest / Oculus account login
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Meta confirms a USD 44,250 total award, including bonuses, for this Quest OAuth account-access report\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher compared login behavior across an identity-system migration\. A previously permitted OAuth return destination began forwarding credentials through a changed redirect flow, losing an earlier containment control\. Trust in the initial destination did not establish that the eventual recipient was authorized to receive the credential\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports exposure of a privileged first-party credential with account-access implications\. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse\. Those statements do not establish that customer accounts were actually compromised\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Reassess credential handling and destination trust whenever an identity provider or login flow changes\.
 - Preserve authorization checks through the full return flow; an initially permitted destination is not a guarantee about later recipients\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. Vendor-confirmed total attached to one report
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2023-01-29; precision: day; basis: explicit. Article date also appears in the researcher’s archive index; historical publication, not the archive’s separate January 2026 entries\.
 - **public disclosure:** 2022-12-15; precision: day; basis: explicit. Dated vendor summary precedes the technical article\. The page’s December 2024 update explicitly concerns another report\.

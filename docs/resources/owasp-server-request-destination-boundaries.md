@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-server-request-destination-boundaries.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-server-request-destination-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains how destination checks and network isolation constrain requests made by a server\. The guidance distinguishes services that contact a fixed set of trusted destinations from those that need broader external access\.
+
+## Defensive use
+
+Review owned-service destination policy, parser consistency, redirect behavior and independent egress restrictions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Cloud Security  
 **Defensive skills:** Threat-model integrations; Review parsing and serialization; Review input trust boundaries; Review secrets containment
-
-## Original summary
-
-Explains destination validation and network isolation for server-initiated requests, distinguishing fixed trusted destinations from services that need broader external access\.
-
-## Defensive use
-
-Review owned-service destination policy, parser consistency, redirect behavior and independent egress restrictions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

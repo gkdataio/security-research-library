@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.postgresql.org/support/security/CVE-2026-2004/>) — PostgreSQL · [Canonical JSON](<../../data/reports/postgresql-extension-input-type-validation-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+PostgreSQL's intarray extension did not check that input had the type its native code expected\. The vendor confirms possible code execution as the database's operating-system account, requiring permission to install the extension or an existing installation plus object-creation permission\. Wiz confirms a USD 30,000 award for Daniel Firer's competition entry and maps it to CVE-2026-2004\.
+
 **Organization:** PostgreSQL  
 **Product:** PostgreSQL intarray extension
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Wiz confirms a USD 30,000 competition award for Daniel Firer’s PostgreSQL entry, uniquely mapped by the organizer to CVE-2026-2004\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The extension’s selectivity estimator accepted input without checking that its type matched the routine’s expectations\. This broke the contract between database objects an authorized user could create and native extension code running with database-process authority\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms possible code execution as the database operating-system account\. A user needed permission to install the vulnerable extension, or an existing installation plus object-creation permission\. The public sources do not establish a universal unauthenticated or cross-tenant compromise\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Validate input types at extension boundaries before applying native-code assumptions\.
 - Review extension installation and object-creation privileges together; either permission in isolation can hide the relevant trust boundary\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One individually identified competition en
 Exact source quotation and location remain in the [canonical record](<../../data/reports/postgresql-extension-input-type-validation-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-02-12; precision: day; basis: explicit. Publication of the vendor CNA record; no separate detailed researcher article was established\.
 - **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration; separate from later vendor advisory and technical publication\.

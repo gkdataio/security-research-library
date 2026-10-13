@@ -18,7 +18,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "OWASP explains origin checks, expected message formats and treating exchanged content as data. These controls address different assumptions at browser communication boundaries.",
+  "summary": "OWASP explains how to check a browser message's origin and format and handle its contents as data. These are separate controls: verifying the sender does not replace validating the message or handling its content safely.",
   "defensive_use": "Document the expected sender, operation, recipient and permitted data for browser messages. Review identity checks, data validation, application authorization and rendering safety separately in owned application designs.",
   "prerequisites": [
     "Basic browser origin and document concepts",

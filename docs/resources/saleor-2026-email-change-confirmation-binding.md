@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/saleor-2026-email-change-confirmation-binding.json>) · [Official resource](<https://github.com/saleor/saleor/security/advisories/GHSA-hwph-9537-mc3p>)
+[Official resource](<https://github.com/saleor/saleor/security/advisories/GHSA-hwph-9537-mc3p>) · [Canonical JSON](<../../data/resources/saleor-2026-email-change-confirmation-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Saleor did not check that an email-change confirmation token belonged to the signed-in account\. The maintainer's scenario requires a valid token for one account and authenticated access to another; it describes possible lasting account compromise, not an unauthenticated takeover or a confirmed production incident\.
+
+## Defensive use
+
+Editorial lesson: a valid confirmation artifact should authorize one subject, one operation and an expected current state\. The linked patch adds subject and operation checks plus agreement with the account's prior email state\. Its confirmation tests cover cross-account rejection and changed-state handling\. Reading those checks and assertions does not establish a successful test run\. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Saleor maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review security-token design; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-35407 concerns email-change confirmation failing to bind a valid token to the authenticated account\. The stated scenario requires a valid confirmation token for one account and authenticated access to a second account\. Maintainers describe account-integrity loss and potential durable compromise; this is not an unauthenticated takeover claim\.
-
-## Defensive use
-
-Editorial lesson: a valid confirmation artifact should authorize one subject, one operation and an expected current state\. The linked patch adds subject and operation checks plus agreement with the account's prior email state\. Its confirmation tests cover cross-account rejection and changed-state handling\. Reading those checks and assertions does not establish a successful test run\. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

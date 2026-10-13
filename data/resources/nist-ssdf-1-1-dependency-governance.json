@@ -54,7 +54,7 @@
     "note": "The final SSDF 1.1 resource and current NIST publication index were reviewed. The index separately lists SSDF 1.2 as an Initial Public Draft."
   },
   "content_scope": "defensive_education",
-  "summary": "Provides lifecycle practices for acquiring, maintaining, and assessing software components. PW.4.1 and PW.4.4 cover component selection, organizational requirements, ongoing vulnerability and maintenance status, and integrity. PS.3.2 connects release records to component provenance.",
+  "summary": "NIST's SSDF 1.1 describes how to select, maintain and assess software components throughout their use. Practices PW.4.1 and PW.4.4 cover organizational requirements, component integrity, vulnerabilities and maintenance status. PS.3.2 links release records to evidence of where components came from.",
   "defensive_use": "Give each dependency an owner, acceptance requirements, provenance records, and a plan for maintenance or replacement. Revisit these decisions throughout the component’s lifetime. Make the boundary between external supplier evidence and the organization’s own release decision explicit.",
   "prerequisites": [
     "Basic dependency management",

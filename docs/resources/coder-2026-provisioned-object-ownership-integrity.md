@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/coder-2026-provisioned-object-ownership-integrity.json>) · [Official resource](<https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v>)
+[Official resource](<https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v>) · [Canonical JSON](<../../data/resources/coder-2026-provisioned-object-ownership-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Coder could change an existing workspace application's ownership during provisioning without checking which workspace already owned it\. The maintainer's CVE-2026-55429 advisory describes possible redirection of later application traffic between workspaces\. The case requires elevated provisioning authority\.
+
+## Defensive use
+
+Editorial lesson: privileged service execution is not evidence that every referenced object belongs to the initiating workspace\. Enforce ownership invariants at the mutation boundary, including collision/update behavior\. The maintainer patch rejects cross-workspace reassignment while preserving legitimate same-workspace rebuilds and initial claims of unowned objects\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Coder  
 **Authors:** jdomeracki-coder  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-55429 concerns a provisioning update-or-insert operation that could change an existing workspace application’s ownership relationship without checking the existing workspace\. The maintainer describes potential redirection of subsequent application traffic across workspace boundaries under elevated provisioning authority\.
-
-## Defensive use
-
-Editorial lesson: privileged service execution is not evidence that every referenced object belongs to the initiating workspace\. Enforce ownership invariants at the mutation boundary, including collision/update behavior\. The maintainer patch rejects cross-workspace reassignment while preserving legitimate same-workspace rebuilds and initial claims of unowned objects\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

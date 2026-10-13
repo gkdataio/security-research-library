@@ -18,7 +18,7 @@
     "authorization-modeling"
   ],
   "version": null,
-  "summary": "Distinguishes application-issued session identifiers from client-selected values. Explains renewing identifiers at login and other privilege changes, retiring previous identifiers, and separating anonymous tracking from authenticated session authority. When several cookies represent one session, their relationship also requires validation.",
+  "summary": "OWASP explains why applications should issue session identifiers themselves and replace them at login or other privilege changes. Previous identifiers must be retired, and anonymous tracking kept separate from authenticated access. When several cookies represent one session, the application must also validate their relationship.",
   "defensive_use": "Model login and privilege changes as explicit session-state transitions, with server-controlled identity and authority bindings. Document which credentials represent anonymous and authenticated state and how superseded state loses authority.",
   "prerequisites": [
     "Basic HTTP cookie and authentication concepts"

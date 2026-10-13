@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/formie-2026-integration-settings-credential-authority.json>) · [Official resource](<https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9>)
+[Official resource](<https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9>) · [Canonical JSON](<../../data/resources/formie-2026-integration-settings-credential-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Formie's maintainer reports that weak permission checks and overly broad settings changes could expose stored integration credentials\. Callers could change the destination used with those credentials, and the advisory also describes server-side requests whose responses were returned to the caller\. The lesson is to restrict both who can change integration settings and which sensitive fields they can change\.
+
+## Defensive use
+
+The two branch-specific patches require control-panel request context, a valid form and integration permission, then limit mutable settings while excluding destination and credential properties\. Editorial lesson: operation authorization and attribute authority are complementary controls; possessing an authenticated session does not establish either\. Review alternate entry points after a shared permission repair\. The official releases identify 2\.2\.23 for Craft 4 and 3\.1\.31 for Craft 5 as patched\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Verbb / Formie  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review secrets containment; Verify remediation evidence
-
-## Original summary
-
-Formie's advisory describes two coupled authority failures: an integration-settings operation lacked sufficient permission checks, and broad settings mutation could change the destination used with stored credentials\. The maintainer reports credential disclosure and server-side requests whose responses were returned to the caller\. The distinct lesson is to constrain both who may invoke an operation and which security-sensitive attributes it may change\.
-
-## Defensive use
-
-The two branch-specific patches require control-panel request context, a valid form and integration permission, then limit mutable settings while excluding destination and credential properties\. Editorial lesson: operation authorization and attribute authority are complementary controls; possessing an authenticated session does not establish either\. Review alternate entry points after a shared permission repair\. The official releases identify 2\.2\.23 for Craft 4 and 3\.1\.31 for Craft 5 as patched\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

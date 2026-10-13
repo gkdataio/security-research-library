@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/n8n-2026-dynamic-credential-object-authority.json>) · [Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf>)
+[Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf>) · [Canonical JSON](<../../data/resources/n8n-2026-dynamic-credential-object-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+n8n's maintainer advisory reports missing ownership and scope checks in authenticated Dynamic Credentials operations \(CVE-2026-54305\)\. The reported effects include unauthorized access to credential metadata, replacement of an OAuth identity and token revocation; later integration runs may use the replacement identity\. The advisory does not establish exploitation in production\.
+
+## Defensive use
+
+Apply object authorization consistently to discovery, authorization and revocation, including indirect workflow references\. Maintainers list fixes in 1\.123\.55, 2\.25\.7 and 2\.26\.2\. Restricting access to trusted users or disabling the feature is temporary mitigation, explicitly not full remediation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** n8n  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Threat-model integrations
-
-## Original summary
-
-CVE-2026-54305 concerns authenticated Dynamic Credentials operations missing workflow and credential ownership or scope checks\. Maintainers report unauthorized credential metadata access, OAuth identity replacement and token revocation\. Subsequent integration execution may use the substituted identity; production exploitation is not established\.
-
-## Defensive use
-
-Apply object authorization consistently to discovery, authorization and revocation, including indirect workflow references\. Maintainers list fixes in 1\.123\.55, 2\.25\.7 and 2\.26\.2\. Restricting access to trusted users or disabling the feature is temporary mitigation, explicitly not full remediation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

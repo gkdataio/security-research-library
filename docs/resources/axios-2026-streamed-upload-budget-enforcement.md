@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/axios-2026-streamed-upload-budget-enforcement.json>) · [Official resource](<https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698>)
+[Official resource](<https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698>) · [Canonical JSON](<../../data/resources/axios-2026-streamed-upload-budget-enforcement.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Axios could send an HTTP/2 streamed upload beyond the application's configured body-size limit because the underlying transport did not enforce it\. The maintainer's CVE-2026-68948 report describes that behavior in a local demonstration\. Effects on bandwidth, quotas and availability depend on the application; the advisory excludes code execution, credential disclosure and control over the destination\.
+
+## Defensive use
+
+The maintainer identifies 1\.18\.0 as patched\. Review byte-budget enforcement as an invariant shared by transport adapters\. The merged remediation describes consistent upload/content limits and regression coverage\. Editorial lesson: enforce limits during consumption of unknown-length input and ensure failure cancels downstream work; configuration metadata alone is not enforcement\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Axios  
 **Authors:** jasonsaayman  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review input trust boundaries; Verify remediation evidence; Write bounded security evidence
-
-## Original summary
-
-CVE-2026-68948 documents a transport-contract mismatch: an application configured an outbound body limit, but the HTTP/2 stream path delegated to a transport that did not enforce it\. The maintainer-published report describes local observation of transmission beyond that budget\. Bandwidth, quota and availability consequences are application-dependent; the advisory excludes code execution, credential disclosure and destination control\.
-
-## Defensive use
-
-The maintainer identifies 1\.18\.0 as patched\. Review byte-budget enforcement as an invariant shared by transport adapters\. The merged remediation describes consistent upload/content limits and regression coverage\. Editorial lesson: enforce limits during consumption of unknown-length input and ensure failure cancels downstream work; configuration metadata alone is not enforcement\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

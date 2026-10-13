@@ -15,7 +15,7 @@
     "untrusted-input-handling"
   ],
   "version": "v2026.5",
-  "summary": "A deliberately insecure teaching application for learning common server-side web-application flaws. Its interactive lessons provide a controlled context for understanding security failures and the need for defensive controls.",
+  "summary": "OWASP WebGoat is a deliberately insecure teaching application for common server-side web flaws. Its interactive lessons offer a controlled setting for understanding security failures and the defenses they need.",
   "defensive_use": "Study lesson concepts in an isolated local training setup, recording the relevant trust assumption and prevention principle. Use the material to improve secure-design reasoning without extending exercise activity to third-party systems.",
   "prerequisites": [
     "A web browser and the ability to run a local teaching application using a supported deployment option.",

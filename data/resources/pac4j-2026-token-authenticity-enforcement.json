@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Research on CVE-2026-29000 describes an authentication boundary failure: successful decryption could allow claims to become an authenticated profile without mandatory signature validation. The researcher reports arbitrary identity and role acceptance in a library-level demonstration on 6.0.3; production compromise is not established.",
+  "summary": "A researcher reports that pac4j could accept decrypted token claims as an authenticated profile without requiring signature validation (CVE-2026-29000). A library-level demonstration on 6.0.3 accepted arbitrary identities and roles. The research does not establish production compromise.",
   "defensive_use": "Treat authenticity checks as mandatory, fail-closed prerequisites for profile creation. Review all accepted token representations. The maintainer confirms remediation and directs upgrades to 4.5.9, 5.7.9 or 6.3.3 and newer within those release lines.",
   "prerequisites": [
     "Basic authentication and access-control concepts",

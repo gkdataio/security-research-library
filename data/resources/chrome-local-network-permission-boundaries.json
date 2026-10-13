@@ -24,7 +24,7 @@
     "note": "Public primary-source guidance."
   },
   "content_scope": "defensive_education",
-  "summary": "Chrome's design addresses websites using the browser's network position to reach local devices without a separate user decision. A secure-context permission gate reduces local-device CSRF and network fingerprinting. The 2026 Chrome 145 release refines the boundary by separating local-network permission from loopback permission.",
+  "summary": "Chrome's Local Network Access design asks users before allowing websites to use the browser's position on the network to reach local devices. The secure-context permission check aims to reduce local-device cross-site request forgery and network fingerprinting. Chrome 145, released in 2026, separates permission for the local network from permission for loopback connections.",
   "defensive_use": "Editorial lesson: distinguish a website's origin, the browser's network reachability and the user's intended destination class. Document which local integration actually needs permission and preserve a usable denial path. Treat the grant as permission to connect, not proof of application-level authorization. Review local-device authentication separately.",
   "prerequisites": [
     "Browser origins, secure contexts and network address spaces"

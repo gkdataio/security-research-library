@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/rfc-10017-browser-oauth-token-custody.json>) · [Official resource](<https://www.rfc-editor.org/rfc/rfc10017.html>)
+[Official resource](<https://www.rfc-editor.org/rfc/rfc10017.html>) · [Canonical JSON](<../../data/resources/rfc-10017-browser-oauth-token-custody.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+RFC 10017 compares browser-only OAuth clients, token-mediating backends and backend-for-frontend designs by where they keep tokens and manage sessions\. It distinguishes protecting token material from limiting what compromised application code on the same origin can still do\.
+
+## Defensive use
+
+Document which component holds each credential, binds the user session, and enforces request destinations\. Compare those responsibilities and residual risks against an owned application’s architecture\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Internet Engineering Task Force / RFC Editor  
 **Authors:** Aaron Parecki; Philippe De Ryck; David Waite  
@@ -10,16 +23,6 @@
 **Version:** RFC 10017 / BCP 212  
 **Topics:** Identity; Authorization; Web Foundations; Browser Security  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Review client isolation
-
-## Original summary
-
-Compares browser-only OAuth clients, token-mediating backends, and backend-for-frontend architectures through their different token-custody and session boundaries\. Separates protection of token material from the residual authority of compromised same-origin application code\.
-
-## Defensive use
-
-Document which component holds each credential, binds the user session, and enforces request destinations\. Compare those responsibilities and residual risks against an owned application’s architecture\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

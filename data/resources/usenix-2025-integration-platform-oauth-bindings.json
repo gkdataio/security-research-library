@@ -23,7 +23,7 @@
     "identity-lifecycle-review"
   ],
   "version": "USENIX Security 2025",
-  "summary": "Studies account linking across multi-app integration platforms and identifies inconsistent app identity as a trust-boundary problem. Proposes app-specific authorization-context binding.",
+  "summary": "This study finds that integration platforms can lose track of which app an OAuth account-linking approval belongs to. The authors propose tying each authorization to the specific app throughout the flow. The findings are historical; the review used the publisher's abstract and prepublication manuscript because the final PDF exceeded retrieval limits.",
   "defensive_use": "Review whether an owned integration preserves the intended app and authorization issuer throughout account linking, including compatibility migrations.",
   "prerequisites": [
     "OAuth client and authorization-server roles",

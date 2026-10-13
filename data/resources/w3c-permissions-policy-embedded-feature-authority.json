@@ -19,7 +19,7 @@
     "integration-threat-modeling"
   ],
   "version": "Editor's Draft, 22 September 2026",
-  "summary": "Defines browser-feature availability through inherited restrictions, document declarations and frame delegation. Feature defaults govern undeclared cases; a child cannot restore authority disabled by its parent.",
+  "summary": "The Permissions Policy draft defines how a page limits browser features for itself and embedded documents. Embedded pages inherit restrictions and cannot re-enable a feature their parent disabled; defaults apply where no rule is declared. This work-in-progress specification complements sandboxing but does not replace user consent, application permissions or a full isolation design.",
   "defensive_use": "Editorial guidance: document which component owns each capability decision and distinguish intended delegation from effective restrictions. Keep browser-feature controls separate from application authorization and user consent in integration reviews.",
   "prerequisites": [
     "Browser origins, embedded documents and HTTP response headers"

@@ -20,7 +20,7 @@
     "integration-threat-modeling"
   ],
   "version": "RFC 9700 / BCP 240",
-  "summary": "Consensus guidance updating OAuth's security model with deployment experience, stronger protocol requirements, and deprecated insecure patterns. A primary reference for identity integration reviews.",
+  "summary": "RFC 9700 updates OAuth security guidance using deployment experience and stronger protocol requirements. It identifies insecure patterns to stop using and provides a primary reference for reviewing identity integrations.",
   "defensive_use": "Compare an owned integration's documented design against the standard and record deviations and compensating controls.",
   "prerequisites": [
     "OAuth roles and authorization flows",

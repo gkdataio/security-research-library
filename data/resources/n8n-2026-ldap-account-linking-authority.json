@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-33665 describes local-account linkage that trusted a matching LDAP email attribute. The maintainer reports persistent access to the linked account, including administrator authority, even after the directory attribute changed back.",
+  "summary": "n8n's maintainer advisory describes account linking that treated a matching LDAP email attribute as proof of account ownership (CVE-2026-33665). It reports that access to the linked account, including administrator permissions, persisted even after the directory attribute changed back.",
   "defensive_use": "Editorial lesson: an identity association is a security grant with its own approval and revocation requirements. Attribute equality alone should not establish account ownership. Review claim provenance, linking consent and existing association cleanup independently. The maintainer identifies software versions 1.121.0 and 2.4.0 as fixes for their respective release lines.",
   "prerequisites": [
     "Basic understanding of authentication, account state and authorization"

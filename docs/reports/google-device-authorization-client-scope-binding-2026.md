@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://weirdmachine64.github.io/research/google-oauth-device-code-hijacking.html>) — weirdmachine64 · [Canonical JSON](<../../data/reports/google-device-authorization-client-scope-binding-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Google's device authorization flow did not consistently preserve the intended device, application and permissions through sign-in\. The researcher reports account and mailbox access; the reduced-interaction case required a signed-in user to open a link and have relevant prior consent\. The researcher reports a USD 13,337 award, but the evidence does not establish that every integration was affected\.
+
 **Organization:** Google  
 **Product:** Google OAuth device authorization
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A researcher reports USD 13,337 for a device-grant authorization-boundary failure\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The account completing authentication could authorize a different requesting device, while client identity and permissions were not preserved through the grant\. The researcher reasoned about consistency between initial authorization and final token authority\. Cross-device sign-in alone is expected behavior; the reported failure was loss of the intended recipient and permission binding\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The author reports third-party account access, elevated permissions and mailbox access\. Reduced-interaction behavior required a signed-in user opening a link and relevant prior consent\. Universal reach, unrestricted persistence and uniform absence of alerts are not independently established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: preserve one server-side authorization decision across device identity, client identity, subject and permitted actions; every completion path must respect it\.
 - The researcher recommends server-side grant binding and explicit device confirmation\. These are proposed controls, not verified descriptions of the deployed fix\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. One chain award, counted once\. The resear
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-device-authorization-client-scope-binding-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-07-15; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

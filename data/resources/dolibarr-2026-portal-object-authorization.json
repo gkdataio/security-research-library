@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Research on CVE-2026-71505 describes inconsistent authorization between reading and modifying company portal accounts. A role-level check did not establish authority over the particular company. In researcher-owned fixtures, the omission enabled account takeover, invoice access and disclosure of stored password verifiers.",
+  "summary": "CodeAnt AI's CVE-2026-71505 research found that Dolibarr checked access differently for reading and changing company portal accounts. Checking a user's role did not establish permission to change the particular company. In researcher-owned test data, the missing check allowed account takeover, invoice access and disclosure of stored password hashes.",
   "defensive_use": "Apply actor-to-object checks consistently to every credential mutation. The linked maintainer patch adds resource checks to account creation, update and deletion; the CNA identifies versions before 24.0.0 as affected. Editorially, keep credential changes explicitly permissioned and sensitive verifiers out of responses.",
   "prerequisites": [
     "Basic authentication and access-control concepts",

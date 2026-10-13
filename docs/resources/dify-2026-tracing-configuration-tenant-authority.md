@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/dify-2026-tracing-configuration-tenant-authority.json>) · [Official resource](<https://www.zafran.io/resources/difytap-zafran-discovers-how-attackers-can-silently-wiretap-ai-data-across-tenants-on-a-platform-powering-1m-apps>)
+[Official resource](<https://www.zafran.io/resources/difytap-zafran-discovers-how-attackers-can-silently-wiretap-ai-data-across-tenants-on-a-platform-powering-1m-apps>) · [Canonical JSON](<../../data/resources/dify-2026-tracing-configuration-tenant-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Dify let console users change tracing settings without checking that the application belonged to their tenant\. Zafran's CVE-2026-41947 research reports cross-tenant control and disclosure of traces containing prompts and responses, because changing the tracing destination changes who receives that data\. The merged maintainer fix confirms the missing tenant restriction\.
+
+## Defensive use
+
+The merged fix resolves applications under the authenticated tenant before tracing operations and returns the same denial as an absent application\. It covers configuration and tracing handlers and later adds cross-tenant regression coverage\. Editorial lesson: treat observability configuration as data-export authority, with authorization independent of ordinary application-client access\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Zafran Labs  
 **Authors:** Ido Shani; Gal Zaban  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Model access-control invariants; Review AI authority boundaries; Verify remediation evidence; Threat-model integrations
-
-## Original summary
-
-Zafran’s tracing case, CVE-2026-41947, explains that console authentication did not bind configuration changes to the application’s tenant\. Traces contain prompts and responses, so changing telemetry routing also changes their recipients\. The researcher reports cross-tenant configuration control and resulting disclosure; the merged maintainer fix corroborates the missing tenant restriction\.
-
-## Defensive use
-
-The merged fix resolves applications under the authenticated tenant before tracing operations and returns the same denial as an absent application\. It covers configuration and tracing handlers and later adds cross-tenant regression coverage\. Editorial lesson: treat observability configuration as data-export authority, with authorization independent of ordinary application-client access\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

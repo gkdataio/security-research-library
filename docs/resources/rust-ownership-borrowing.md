@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/rust-ownership-borrowing.json>) · [Official resource](<https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html>)
+[Official resource](<https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html>) · [Canonical JSON](<../../data/resources/rust-ownership-borrowing.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Rust Book explains that each value has one owner, ownership can move, and the value is dropped when its owner leaves scope\. Borrowing lets code access a value without taking ownership\. References must remain valid, and the borrowing rules restrict conflicting changes\.
+
+## Defensive use
+
+Describe which component owns each input buffer, which components borrow it, and when those borrows end\. Prefer interfaces that express those relationships rather than relying on informal caller assumptions\. Review ownership transfer and shared or exclusive borrowing as contracts between functions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** The Rust Project  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Memory Safety and Process Isolation  
 **Defensive skills:** Review memory-safety assumptions
-
-## Original summary
-
-Introduces ownership as a lifetime discipline: a value has one owner, moving ownership changes who controls it, and leaving the owner’s scope drops the value\. The borrowing chapter explains how references permit access without taking ownership while restricting conflicting mutation and requiring references to remain valid\.
-
-## Defensive use
-
-Describe which component owns each input buffer, which components borrow it, and when those borrows end\. Prefer interfaces that express those relationships rather than relying on informal caller assumptions\. Review ownership transfer and shared or exclusive borrowing as contracts between functions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

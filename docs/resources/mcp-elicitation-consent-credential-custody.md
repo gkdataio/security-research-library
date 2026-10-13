@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mcp-elicitation-consent-credential-custody.json>) · [Official resource](<https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation>)
+[Official resource](<https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation>) · [Canonical JSON](<../../data/resources/mcp-elicitation-consent-credential-custody.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The MCP specification keeps secrets out of form elicitation and places sensitive URL interactions outside the client and model context, with the requesting server and destination visible to the user\. Agreeing to open an interaction does not prove it finished; the server checks completion separately\. For third-party OAuth, the MCP server holds the resulting credentials, and that grant is separate from the client's permission to access the server\.
+
+## Defensive use
+
+Editorial guidance: map the data recipient, credential holder and authoritative completion evidence for each interaction\. Preserve decline and cancellation, bind completion to the initiating identity, and review navigation consent and automatic URL handling independently\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Model Context Protocol  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** 2026-07-28 specification URL  
 **Topics:** Ai Security; Authorization; Identity  
 **Defensive skills:** Review AI authority boundaries; Threat-model integrations; Review secrets containment
-
-## Original summary
-
-Form elicitation excludes secrets\. URL elicitation places sensitive interactions outside the MCP client and model context, with the requesting server and destination visible to the user\. Agreeing to open the interaction is not completion evidence; the server determines completion separately\. For third-party OAuth, the MCP server holds the resulting credentials; this grant is separate from the client's authorization to access that server\.
-
-## Defensive use
-
-Editorial guidance: map the data recipient, credential holder and authoritative completion evidence for each interaction\. Preserve decline and cancellation, bind completion to the initiating identity, and review navigation consent and automatic URL handling independently\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -18,7 +18,7 @@
     "concurrency-reasoning",
     "authorization-modeling"
   ],
-  "summary": "The cited researcher documents a USD 50,000 award for this finding.",
+  "summary": "Microsoft account recovery did not consistently enforce attempt limits during simultaneous verification activity. The researcher reports potential account takeover, but says Microsoft rated it Important because practical exploitation required substantial resources. He reports a USD 50,000 award and payment.",
   "root_cause": "Recovery controls did not enforce attempt limits consistently across simultaneous verification operations. Defensive reviews should verify atomic, account-bound limits and consistent treatment of recovery and multifactor checks.",
   "impact": "Potential account takeover; the researcher says Microsoft classified severity as Important because practical exploitation required substantial resources.",
   "defensive_takeaways": [

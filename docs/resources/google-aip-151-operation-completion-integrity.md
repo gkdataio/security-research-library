@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/google-aip-151-operation-completion-integrity.json>) · [Official resource](<https://google.aip.dev/151>)
+[Official resource](<https://google.aip.dev/151>) · [Canonical JSON](<../../data/resources/google-aip-151-operation-completion-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Requesting cancellation does not prove that a long-running operation stopped, and a wait response may still report unfinished work\. Google's approved guidance separates failures before execution from failures during it\. The linked Operation contract also distinguishes best-effort cancellation, final outcomes and deletion of the resource used to track the work\.
+
+## Defensive use
+
+Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate\. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested\. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Web Foundations; API Security  
 **Defensive skills:** Reason about concurrent state; Threat-model integrations; Review secure error behavior
-
-## Original summary
-
-Google's approved long-running-operation guidance separates failures before work starts from failures during execution\. Its linked Operation contract distinguishes best-effort cancellation, terminal outcomes and deletion of the tracking resource\. Work may finish despite a cancellation request; a returned wait response can still describe pending work\.
-
-## Defensive use
-
-Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate\. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested\. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

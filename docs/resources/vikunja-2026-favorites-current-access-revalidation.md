@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/vikunja-2026-favorites-current-access-revalidation.json>) · [Official resource](<https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf>)
+[Official resource](<https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf>) · [Canonical JSON](<../../data/resources/vikunja-2026-favorites-current-access-revalidation.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Vikunja could keep showing favorited tasks after project access was revoked because search did not recheck current permissions\. The maintainer reports that updated titles and descriptions remained readable, despite direct task reads being denied\. This requires prior write-level sharing and favorites saved while authorized; the read-only exposure is limited to those tasks\.
+
+## Defensive use
+
+Editorial lesson: saved associations express preference, not continuing authority\. Every query branch returning an object should enforce its current authorization policy, including alternate views and aggregates\. The advisory lists 2\.6\.0 as patched; the August 31, 2026 maintainer release article separately confirms this revocation issue was fixed\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Vikunja  
 **Authors:** kolaente  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-GHSA-jp29-jrxc-92vf describes a task-search branch that trusted a saved favorite without checking current project access\. Favorite records survived share revocation, allowing previously authorized collaborators to keep reading selected tasks through search despite denial by direct task reads\.
-
-## Defensive use
-
-Editorial lesson: saved associations express preference, not continuing authority\. Every query branch returning an object should enforce its current authorization policy, including alternate views and aggregates\. The advisory lists 2\.6\.0 as patched; the August 31, 2026 maintainer release article separately confirms this revocation issue was fixed\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

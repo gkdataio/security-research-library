@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19591.json>) — OpenAI CNA, distributed through the CVE Program · [Canonical JSON](<../../data/reports/openai-codex-command-parser-approval-consistency-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Codex's command-safety analysis and the shell could interpret the same command differently, so approval did not always cover the operation that actually ran\. The vendor describes possible code execution with user privileges after untrusted repository instructions were followed; shell availability and filesystem restrictions still limited the effect\. ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry\.
+
 **Organization:** OpenAI  
 **Product:** Codex CLI and Codex Desktop
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Command-safety analysis and the invoked shell interpreted control syntax differently, so the approval decision did not consistently describe the resulting operation\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor describes possible code execution with user privileges after untrusted repository instructions are followed\. Shell availability and filesystem protections constrain impact; command approval failure does not itself disable the filesystem sandbox\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Keep safety classification consistent with actual command interpretation\.
 - Apply independent filesystem restrictions and protect security-sensitive configuration\.
@@ -33,6 +36,8 @@ Evidence level: organizer\_confirmed. Single competition entry awarded to the Co
 Exact source quotation and location remain in the [canonical record](<../../data/reports/openai-codex-command-parser-approval-consistency-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-09-01; precision: day; basis: explicit. Vendor-authored technical CNA publication\. ZDI published its advisory on September 10\.
 - **public disclosure:** 2026-05-14; precision: day; basis: explicit. Public competition demonstration and result, before technical CNA publication\.

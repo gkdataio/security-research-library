@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/steeltoe-2026-diagnostic-uri-data-minimization.json>) · [Official resource](<https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp>)
+[Official resource](<https://github.com/SteeltoeOSS/security-advisories/security/advisories/GHSA-8phw-xrj9-cpqp>) · [Canonical JSON](<../../data/resources/steeltoe-2026-diagnostic-uri-data-minimization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Steeltoe removed credentials from one part of diagnostic URLs but left query-string secrets visible\. The maintainer describes possible disclosure through explicitly exposed diagnostic responses and, when enabled, relevant DEBUG logs\. The diagnostic endpoint is off by default, and the finding requires requests that actually contain query-string secrets\.
+
+## Defensive use
+
+Editorial lesson: define an explicit retention contract for each diagnostic field, then minimize before storage and fan-out\. Check response and logging consumers separately\. The advisory identifies 4\.3\.0 as patched; temporary mitigations include omitting query strings and disabling or authenticating diagnostic exposure\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Steeltoe  
 **Authors:** TimHess  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization  
 **Defensive skills:** Review secrets containment; Review parsing and serialization; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-75523 describes diagnostic URI masking that removed inline credentials but preserved query contents\. The failed assumption was that sanitizing one URI component made the whole representation safe for secondary consumers\. Request secrets could consequently cross into diagnostic responses and DEBUG logs\.
-
-## Defensive use
-
-Editorial lesson: define an explicit retention contract for each diagnostic field, then minimize before storage and fan-out\. Check response and logging consumers separately\. The advisory identifies 4\.3\.0 as patched; temporary mitigations include omitting query strings and disabling or authenticating diagnostic exposure\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

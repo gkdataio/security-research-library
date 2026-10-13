@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://brutecat.com/articles/youtube-creator-emails/>) — Arvin Shivram \(Brutecat\) · [Canonical JSON](<../../data/reports/youtube-creator-email-authorization-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+A monetized YouTube channel could access another monetized creator's private email because related APIs did not apply consistent permission checks\. The exposed address was the one stored when the channel became monetized, which could differ from its current email\. The researcher reports a USD 20,000 award; account compromise was not demonstrated\.
+
 **Organization:** Google  
 **Product:** YouTube Studio and Content ID APIs
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A monetized-channel account could access another monetized creator’s private email through inconsistent cross-API authorization\. The researcher reports a USD 20,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Ordinary sensitive-field checks appeared effective, but an alternate metadata path exposed a cross-service association\. The researcher then questioned whether monetized creator accounts inherited rights intended for specialist rights-management accounts\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The demonstrated disclosure concerned the email stored when the target channel became monetized, which may differ from its current email\. Broader phishing consequences were potential impact, not demonstrated account compromise\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: check privacy guarantees across alternate response paths and linked services\.
 - Editorial lesson: separate caller eligibility for an API from authority over each returned object\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. USD 13,337 initial award plus USD 6,663 ad
 Exact source quotation and location remain in the [canonical record](<../../data/reports/youtube-creator-email-authorization-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-03-13; precision: day; basis: explicit
 - **public disclosure:** 2025-03-13; precision: day; basis: explicit

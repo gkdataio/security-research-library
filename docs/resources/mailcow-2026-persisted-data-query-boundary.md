@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mailcow-2026-persisted-data-query-boundary.json>) · [Official resource](<https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q>)
+[Official resource](<https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q>) · [Canonical JSON](<../../data/resources/mailcow-2026-persisted-data-query-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+mailcow reused stored configuration unsafely when building later database queries\. Its CVE-2026-40871 advisory reports disclosure of an administrator password hash during downstream notification processing, showing that storing a value does not make it trustworthy\. The case requires high-privilege API access and the affected background processing to run; it does not establish unauthenticated access\.
+
+## Defensive use
+
+The advisory identifies 2026-03b as the repair boundary; the official blog dates that software release to March 31, 2026 and describes input-validation and escaping improvements\. Editorial lesson: preserve data-only semantics at every consumer, parameterize database values, validate structured configuration, and apply least privilege to background database access\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** mailcow  
 **Authors:** FreddleSpl0it  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-The maintainer advisory for CVE-2026-40871 describes stored configuration being reused unsafely in later database-query construction\. Persistence did not make the originally supplied value trustworthy\. The source reports disclosure of an administrator password hash through downstream notification processing\. High-privilege API access and execution of the affected background processing are prerequisites; unauthenticated access is not established\.
-
-## Defensive use
-
-The advisory identifies 2026-03b as the repair boundary; the official blog dates that software release to March 31, 2026 and describes input-validation and escaping improvements\. Editorial lesson: preserve data-only semantics at every consumer, parameterize database values, validate structured configuration, and apply least privilege to background database access\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

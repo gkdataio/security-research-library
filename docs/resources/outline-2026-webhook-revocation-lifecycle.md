@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/outline-2026-webhook-revocation-lifecycle.json>) · [Official resource](<https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw>)
+[Official resource](<https://github.com/outline/outline/security/advisories/GHSA-33jq-x32c-3ccw>) · [Canonical JSON](<../../data/resources/outline-2026-webhook-revocation-lifecycle.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Outline's maintainer-published report demonstrates document content still being delivered by a webhook after its administrator creator's account was deleted \(GHSA-33jq-x32c-3ccw\)\. Account cleanup left the subscription in place, and delivery relied on its enabled status\. The demonstration was local\.
+
+## Defensive use
+
+Editorial lesson: revocation must cover durable integrations and every terminal account state, with delivery-time checks as defense in depth\. The advisory identifies 1\.8\.0 as patched\. Its proposed cleanup changes are recommendations, not evidence of the implemented patch\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Outline  
 **Authors:** tommoor  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Identity; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Model access-control invariants
-
-## Original summary
-
-GHSA-33jq-x32c-3ccw describes webhook authority surviving deletion of its creator\. Account cleanup omitted webhook subscriptions, while delivery trusted their enabled state\. The maintainer-published report describes a local demonstration of document content delivery after the administrator account was deleted\.
-
-## Defensive use
-
-Editorial lesson: revocation must cover durable integrations and every terminal account state, with delivery-time checks as defense in depth\. The advisory identifies 1\.8\.0 as patched\. Its proposed cleanup changes are recommendations, not evidence of the implemented patch\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

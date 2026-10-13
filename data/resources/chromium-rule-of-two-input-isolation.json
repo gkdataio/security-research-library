@@ -17,7 +17,7 @@
     "untrusted-input-handling"
   ],
   "version": null,
-  "summary": "An architecture policy for avoiding the combination of untrusted input, memory-unsafe implementation and high privilege. It explains safer parsing, privilege separation and careful review of unsafe code behind safe interfaces.",
+  "summary": "Chromium's Rule of Two says to avoid combining untrusted input, memory-unsafe code and high privilege in one component. The architecture policy covers safer parsing, separating privileges and reviewing unsafe code even when it sits behind a safe interface.",
   "defensive_use": "For an owned component, map input origin, language guarantees and execution privilege. Keep semantic authorization separate from successful parsing.",
   "prerequisites": [
     "Basic understanding of parsing, process privileges and memory lifetime"

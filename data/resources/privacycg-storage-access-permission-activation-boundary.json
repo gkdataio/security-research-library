@@ -20,7 +20,7 @@
     "integration-threat-modeling"
   ],
   "version": "Draft Community Group Report, 22 May 2026",
-  "summary": "The API draft distinguishes permission for the top-level and embedded site pair from activated access in a document and cookie eligibility on each request. Secure context, origin, embedding-policy and sandbox conditions still apply. Navigation and redirects constrain continuity; a document's access does not authorize arbitrary cross-origin cookie attachment. The companion Headers draft adds resource-controlled activation of an existing permission, independently of permission to read cross-origin responses.",
+  "summary": "The Storage Access API draft separates permission for a pair of sites, active access in a document and whether cookies may accompany a particular request. Secure-context, origin, embedding-policy and sandbox conditions still apply, and navigation or redirects can interrupt access; document access does not permit arbitrary cross-origin cookie attachment. The companion Headers draft lets a resource activate an existing permission, separately from permission to read a cross-origin response.",
   "defensive_use": "Editorial guidance: model permission, document access and request eligibility separately. Review denial, revocation and navigation paths, minimize resource opt-in, and retain independent server authorization and CSRF defenses. Cookie availability does not establish authority for a business action.",
   "prerequisites": [
     "Same-site versus same-origin relationships, embedded documents and HTTP cookies"

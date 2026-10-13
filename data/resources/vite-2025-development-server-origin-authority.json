@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2025-24010 describes three development-server trust gaps: permissive HTTP response sharing, missing WebSocket origin validation and missing HTTP hostname validation. Editorial boundary: local reachability does not establish the connecting website's authority.",
+  "summary": "Vite's advisory describes overly broad HTTP response sharing and missing checks on WebSocket origins and HTTP hostnames. With an affected development server running, interaction with an untrusted page could expose development data even when the server listened only locally. The source demonstrates development-update messages and source snippets being disclosed; broader exposure and plugin or proxy effects are qualified claims, and the browser observations are historical.",
   "defensive_use": "Current Vite guidance recommends explicit trusted-origin and controlled-host lists, and warns against all-origin CORS and all-host acceptance. Editorial lesson: document three separate decisions: who may read HTTP responses, who may join a realtime channel and which hostname a service answers to. HTTP configuration does not substitute for WebSocket admission protection. Keep those policies narrow while reviewing reverse proxies and framework/plugin integrations. Select a currently supported patched release; inspect the actual deployment rather than treating a historical fix number as present-day upgrade advice.",
   "prerequisites": [
     "Browser origins, HTTP response-sharing policy and WebSocket admission",

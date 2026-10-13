@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/laravel-2025-debug-diagnostic-output-encoding.json>) · [Official resource](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>)
+[Official resource](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>) · [Canonical JSON](<../../data/resources/laravel-2025-debug-diagnostic-output-encoding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Laravel's debug error page could render request-derived route values without HTML encoding\. SBA Research's CVE-2024-13919 advisory demonstrates browser script execution in a minimal application\. The lesson is that data collected for troubleshooting still needs safe rendering in diagnostic pages\.
+
+## Defensive use
+
+Editorial lesson: preserve context-appropriate output encoding in failure paths as well as normal responses\. Debug interfaces deserve the same data/code separation as application pages\. The maintainer patch replaces raw rendering with escaped output for route context and request-body diagnostics; this supports the encoding change, not a new finding about every changed field\. The advisory recommends disabling debug mode as a workaround\. Verify the deployed remediation and configuration rather than treating the historical fixed version as a current safety recommendation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** SBA Research  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review input trust boundaries; Review secure error behavior; Verify remediation evidence
-
-## Original summary
-
-SBA Research’s CVE-2024-13919 advisory describes request-derived route values entering Laravel’s debug error page without HTML encoding\. Its minimal-application demonstration shows browser script execution\. The conceptual boundary is diagnostic presentation: collecting data for troubleshooting does not give that data authority to become active page content\.
-
-## Defensive use
-
-Editorial lesson: preserve context-appropriate output encoding in failure paths as well as normal responses\. Debug interfaces deserve the same data/code separation as application pages\. The maintainer patch replaces raw rendering with escaped output for route context and request-body diagnostics; this supports the encoding change, not a new finding about every changed field\. The advisory recommends disabling debug mode as a workaround\. Verify the deployed remediation and configuration rather than treating the historical fixed version as a current safety recommendation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

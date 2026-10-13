@@ -20,7 +20,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Research on CVE-2025-67647 describes framework-internal routing consuming an origin derived from insufficiently trusted request metadata. The researcher demonstrates server-side response retrieval and process termination from unhandled network errors. The maintainer limits internal-service exposure to services reachable without authentication from the runtime; downstream cache effects depend on deployment behavior.",
+  "summary": "SvelteKit trusted request metadata when choosing where to send internal requests, and unhandled network errors could terminate the process. Researchers demonstrate response retrieval and process termination; the maintainer says a prerendered route is required, with internal-service disclosure additionally depending on adapter-node and missing origin and host safeguards. Accessible internal services must require no authentication from the runtime, while cache-related effects depend on the deployment.",
   "defensive_use": "Trace which component authoritatively establishes the application origin, and contain failures in internal network operations. The maintainer lists SvelteKit 2.49.5 and adapter-node 5.5.1 as patched. Fixed-origin configuration and reverse-proxy host validation address origin trust, but do not substitute for patching the broader availability issue.",
   "prerequisites": [
     "Server-side rendering and framework integration concepts",

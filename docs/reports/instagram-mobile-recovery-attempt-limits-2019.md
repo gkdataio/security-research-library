@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://thezerohack.com/hack-any-instagram>) — Laxman Muthiyah · [Canonical JSON](<../../data/reports/instagram-mobile-recovery-attempt-limits-2019.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Instagram's mobile recovery checks did not consistently enforce account-level verification limits during concurrent activity\. The researcher demonstrated an unauthorized password reset and reports a USD 30,000 award\. He says the issue was fixed before publication\.
+
 **Organization:** Facebook / Instagram  
 **Product:** Instagram account recovery
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-The cited researcher documents a USD 30,000 award for this finding\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Account recovery relied on verification limits that did not provide a consistent account-level security boundary under concurrent activity\. Centralized, atomic attempt accounting is the defensive concern\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated unauthorized password reset and reports remediation before publication\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind recovery attempts and verification state to the intended account\.
 - Use atomic security counters and test concurrent state transitions locally\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Individual finding, distinct from the rese
 Exact source quotation and location remain in the [canonical record](<../../data/reports/instagram-mobile-recovery-attempt-limits-2019.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2019-07-14; precision: day; basis: explicit. Original publication date preserved by the author’s archive; current article header is a later update\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

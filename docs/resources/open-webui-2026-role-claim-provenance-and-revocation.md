@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/open-webui-2026-role-claim-provenance-and-revocation.json>) · [Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3>)
+[Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-2rr4-q6pg-m5g3>) · [Canonical JSON](<../../data/resources/open-webui-2026-role-claim-provenance-and-revocation.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Open WebUI's maintainer reports that token exchange could preserve a user's old role when role evidence was missing \(GHSA-2rr4-q6pg-m5g3\)\. Browser sign-in supplied identity-token claims, while token exchange supplied only provider user information to the same policy\. Local checks showed continued access in 0\.11\.3 and rejection in 0\.11\.4; access beyond the prior role was not demonstrated\.
+
+## Defensive use
+
+Version 0\.11\.4 is identified as patched\. The linked change and release notes corroborate expanded claim handling and rejection when role evidence cannot be read\. Editorial lesson: sharing policy code is insufficient when callers provide different evidence; document claim provenance and make missing-evidence behavior explicit\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Open WebUI  
 **Authors:** doge-woof  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-GHSA-2rr4-q6pg-m5g3 documents a shared-policy input mismatch: browser sign-in supplied identity-token claims, while token exchange supplied only provider user information\. Missing role evidence preserved an old role\. The maintainer reports local verification of continued access on 0\.11\.3 and rejection on 0\.11\.4; consequences beyond the prior role are not demonstrated\.
-
-## Defensive use
-
-Version 0\.11\.4 is identified as patched\. The linked change and release notes corroborate expanded claim handling and rejection when role evidence cannot be read\. Editorial lesson: sharing policy code is insufficient when callers provide different evidence; document claim provenance and make missing-evidence behavior explicit\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

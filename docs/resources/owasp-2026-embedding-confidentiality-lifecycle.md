@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-2026-embedding-confidentiality-lifecycle.json>) · [Official resource](<https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/9253e38ade58e959b531c0c5c9a4842272c9cd0e/2026/final/LLM09_VectorAndEmbeddingWeaknesses.md#L59-L61>)
+[Official resource](<https://github.com/GenAI-Security-Project/GenAI-LLM-Top10/blob/9253e38ade58e959b531c0c5c9a4842272c9cd0e/2026/final/LLM09_VectorAndEmbeddingWeaknesses.md#L59-L61>) · [Canonical JSON](<../../data/resources/owasp-2026-embedding-confidentiality-lifecycle.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP treats embeddings as sensitive data that still needs protection after ingestion\. Its storage guidance calls for timely removal and reconciliation when source data is deleted, backups protected at the source data's sensitivity level, and encryption-key management separate from application access\. Controlling retrieval permissions alone does not ensure that retained vectors or backups are deleted\.
+
+## Defensive use
+
+Editorial review guidance: map source-to-embedding relationships, assign deletion deadlines and reconciliation evidence, and document backup sensitivity and encryption-key boundaries\. Assess these storage obligations separately from permission-aware retrieval in an owned design\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Gen AI Security Project  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** LLM09:2026  
 **Topics:** Ai Security  
 **Defensive skills:** Review AI authority boundaries; Threat-model integrations; Review secrets containment
-
-## Original summary
-
-Embeddings remain sensitive derived data after ingestion\. Treating them as harmless output can leave retained vectors and backups outside the protections applied to source documents\. OWASP's storage-lifecycle guidance connects source deletion to bounded removal of embeddings and reconciliation, keeps backups at source-data sensitivity, and separates encryption-key management from application access\. Retrieval authorization alone does not establish retention or deletion\.
-
-## Defensive use
-
-Editorial review guidance: map source-to-embedding relationships, assign deletion deadlines and reconciliation evidence, and document backup sensitivity and encryption-key boundaries\. Assess these storage obligations separately from permission-aware retrieval in an owned design\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

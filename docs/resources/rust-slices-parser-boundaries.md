@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/rust-slices-parser-boundaries.json>) · [Official resource](<https://doc.rust-lang.org/book/ch04-03-slices.html>)
+[Official resource](<https://doc.rust-lang.org/book/ch04-03-slices.html>) · [Canonical JSON](<../../data/resources/rust-slices-parser-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Rust Book uses text processing to show why a borrowed slice stays tied to its source buffer while an integer position can become detached from the data it describes\. The language reference explains that safe slice access checks bounds\. The strings chapter separately explains why byte positions must respect UTF-8 character boundaries\.
+
+## Defensive use
+
+Keep a parser’s view connected to its backing storage and represent absence or invalid boundaries explicitly\. Distinguish memory safety, valid encoding, and acceptance of a meaningful message\. Prefer checked, fallible access where input may be incomplete, and document the transition from raw input to borrowed byte or text views\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** The Rust Project  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Memory Safety and Process Isolation  
 **Defensive skills:** Review memory-safety assumptions; Review parsing and serialization; Review text-encoding invariants
-
-## Original summary
-
-Uses a small text-processing example to contrast an integer position, which can become detached from the underlying data, with a borrowed slice tied to the source buffer\. The reference specifies that safe slice access is bounds-checked; the strings chapter explains why byte positions and UTF-8 character boundaries are different contracts\.
-
-## Defensive use
-
-Keep a parser’s view connected to its backing storage and represent absence or invalid boundaries explicitly\. Distinguish memory safety, valid encoding, and acceptance of a meaningful message\. Prefer checked, fallible access where input may be incomplete, and document the transition from raw input to borrowed byte or text views\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

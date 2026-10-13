@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/librechat-2026-mcp-view-secret-projection.json>) · [Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-6vqg-rgpm-qvf9>)
+[Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-6vqg-rgpm-qvf9>) · [Canonical JSON](<../../data/resources/librechat-2026-mcp-view-secret-projection.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+LibreChat returned decrypted integration configuration to viewers without removing service secrets\. Its maintainer advisory describes a local demonstration in which a view-only account received administrator-managed provider credentials\. Configuration prepared for internal use was therefore unsafe to reuse as a viewer response\.
+
+## Defensive use
+
+The source recommends secret-free responses and presence indicators\. Editorial review principle: define separate execution and presentation representations, then verify that list and detail responses preserve the same field-level disclosure policy\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** LibreChat  
 **Authors:** LoGGGG2402  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Review secrets containment; Review AI authority boundaries; Review parsing and serialization
-
-## Original summary
-
-The MCP registry prepared decrypted configuration for internal use, and response handlers returned that representation to viewers without removing secrets\. Object visibility consequently became credential disclosure authority\. The advisory documents a local demonstration exposing administrator-managed provider credentials to a view-only account\.
-
-## Defensive use
-
-The source recommends secret-free responses and presence indicators\. Editorial review principle: define separate execution and presentation representations, then verify that list and detail responses preserve the same field-level disclosure policy\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

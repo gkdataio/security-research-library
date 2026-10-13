@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/microsoft-copilot-2026-streaming-output-activation-boundary.json>) · [Official resource](<https://www.varonis.com/blog/searchleak>)
+[Official resource](<https://www.varonis.com/blog/searchleak>) · [Canonical JSON](<../../data/resources/microsoft-copilot-2026-streaming-output-activation-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+AI output can cause browser effects before checks on the completed response run\. Varonis's SearchLeak research, CVE-2026-42824, reports disclosure of email subjects in a larger chain that included this timing gap\. Cleaning the final response cannot undo effects that have already occurred\.
+
+## Defensive use
+
+Define output-safety invariants for every observable intermediate state, not just the completed answer\. Keep generated content inert until applicable policy checks have passed\. Review rendering and data-disclosure boundaries together; a clean final display is insufficient evidence that no earlier side effect occurred\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Varonis Threat Labs  
 **Authors:** Dolev Taler  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Reason about concurrent state
-
-## Original summary
-
-SearchLeak \(CVE-2026-42824\) illustrates a timing gap between streamed AI output becoming active in a browser and final-response sanitization\. Varonis reports email-subject disclosure in a larger chain containing this failure\. Cleaning the completed response cannot reverse effects that already occurred\.
-
-## Defensive use
-
-Define output-safety invariants for every observable intermediate state, not just the completed answer\. Keep generated content inert until applicable policy checks have passed\. Review rendering and data-disclosure boundaries together; a clean final display is insufficient evidence that no earlier side effect occurred\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

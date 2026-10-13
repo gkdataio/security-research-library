@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-31834 separates authority over an account from authority to grant its roles. Research on Umbraco CMS 17.2.0 found that group-membership changes checked access to target users but omitted restrictions applied by the ordinary user-editing flow. A qualifying non-administrator API account could obtain administrator membership.",
+  "summary": "Umbraco checked who could edit an account without consistently checking which roles they could grant. GitHub Security Lab reports administrator membership gained from a non-administrator API account in version 17.2.0. This requires access to the backoffice Users section, ordinarily reserved for administrators, so custom delegation matters; the sources do not establish a customer incident.",
   "defensive_use": "Editorial lesson: model both the target account and the proposed privilege as authorization inputs, using consistent policy across bulk and individual operations. The maintainer confirms the role-assignment defect and fixes in 16.5.1 and 17.2.2; upgrade affected installations rather than relying on interface restrictions.",
   "prerequisites": [
     "Basic server-side authorization concepts"

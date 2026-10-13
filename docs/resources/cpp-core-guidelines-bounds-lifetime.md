@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/cpp-core-guidelines-bounds-lifetime.json>) · [Official resource](<https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>)
+[Official resource](<https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>) · [Canonical JSON](<../../data/resources/cpp-core-guidelines-bounds-lifetime.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The C\+\+ Core Guidelines connect three safety requirements: use objects with valid types, keep memory accesses within bounds, and ensure references do not outlive their objects\. The bounds and lifetime sections explain how interface and ownership choices support these requirements, including views that carry size information and avoiding pointers that may no longer be valid\.
+
+## Defensive use
+
+During parser design review, document extent, ownership, and validity duration together\. Identify where array-to-pointer conversion discards bounds and where views may outlive storage\. Use the Pro\.bounds, Pro\.lifetime, and GSL\.view sections to reason about these component-boundary contracts\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** C\+\+ Core Guidelines project  
 **Authors:** Bjarne Stroustrup; Herb Sutter  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Memory Safety and Process Isolation  
 **Defensive skills:** Review memory-safety assumptions; Review parsing and serialization
-
-## Original summary
-
-Separates three mutually supporting properties: objects must be used with valid types, accesses must stay inside their allocated bounds, and references must not outlive the objects they designate\. The bounds and lifetime profiles translate these ideas into interface and ownership guidance, including range-carrying views and avoiding potentially invalid pointers\.
-
-## Defensive use
-
-During parser design review, document extent, ownership, and validity duration together\. Identify where array-to-pointer conversion discards bounds and where views may outlive storage\. Use the Pro\.bounds, Pro\.lifetime, and GSL\.view sections to reason about these component-boundary contracts\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

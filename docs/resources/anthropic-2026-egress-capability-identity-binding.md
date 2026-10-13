@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/anthropic-2026-egress-capability-identity-binding.json>) · [Official resource](<https://www.anthropic.com/engineering/how-we-contain-claude>)
+[Official resource](<https://www.anthropic.com/engineering/how-we-contain-claude>) · [Canonical JSON](<../../data/resources/anthropic-2026-egress-capability-identity-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Allowing an API hostname does not ensure data goes to the intended account\. Anthropic describes Cowork workspace data leaving through an approved API while virtual-machine isolation remained intact\. The case required readable workspace content and permitted service access; it does not establish an escape from the hypervisor\.
+
+## Defensive use
+
+Editorial lesson: evaluate egress as an authorization decision over session identity, receiving account, permitted operation and data purpose\. A host allowlist is only one input\. Keep enforcement independent of model instructions, minimize readable data, and retain provenance at the boundary that knows the session\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Anthropic  
 **Authors:** Max McGuinness; Mikaela Grace; Jiri De Jonghe; Jake Eaton; Abel Ribbink  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Review AI authority boundaries; Model access-control invariants; Threat-model integrations
-
-## Original summary
-
-Anthropic describes Cowork workspace data reaching an unintended account through an allowed service while VM isolation held\. The failed assumption was that an approved API hostname established sufficient authority for disclosure\. Readable workspace content and permitted service access were prerequisites; no hypervisor escape is established\.
-
-## Defensive use
-
-Editorial lesson: evaluate egress as an authorization decision over session identity, receiving account, permitted operation and data purpose\. A host allowlist is only one input\. Keep enforcement independent of model instructions, minimize readable data, and retain provenance at the boundary that knows the session\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

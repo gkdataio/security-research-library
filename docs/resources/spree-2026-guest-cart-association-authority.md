@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/spree-2026-guest-cart-association-authority.json>) · [Official resource](<https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2>)
+[Official resource](<https://github.com/spree/spree/security/advisories/GHSA-4825-p4xm-pcf2>) · [Canonical JSON](<../../data/resources/spree-2026-guest-cart-association-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Spree let a signed-in customer claim an unowned guest cart without checking proof that the cart was theirs\. The maintainer describes recoverable ownership and email changes, plus disclosure of checkout addresses if the cart already stored them\. This requires guest checkout and an unassociated cart; it does not establish anonymous access, account takeover or a production incident\.
+
+## Defensive use
+
+Editorial lesson: joining guest state to an account is a privileged ownership transition\. Verify existing possession before mutation and response serialization; client-supplied proof helps only when the server checks it\. The maintainer recommends backend releases 5\.4\.4 or 5\.5\.4 and says its storefront already supplied the required cart token\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Spree  
 **Authors:** damianlegawiec  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-94462 concerns a guest-cart ownership transition that required a signed-in customer but omitted the cart-possession check enforced by sibling operations\. Account authentication and object lookup were treated as sufficient authority to claim an unowned cart, exposing existing checkout addresses and changing ownership\.
-
-## Defensive use
-
-Editorial lesson: joining guest state to an account is a privileged ownership transition\. Verify existing possession before mutation and response serialization; client-supplied proof helps only when the server checks it\. The maintainer recommends backend releases 5\.4\.4 or 5\.5\.4 and says its storefront already supplied the required cart token\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

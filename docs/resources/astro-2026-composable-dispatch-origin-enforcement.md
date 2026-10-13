@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/astro-2026-composable-dispatch-origin-enforcement.json>) · [Official resource](<https://github.com/withastro/astro/security/advisories/GHSA-8mv7-9c27-98vc>)
+[Official resource](<https://github.com/withastro/astro/security/advisories/GHSA-8mv7-9c27-98vc>) · [Canonical JSON](<../../data/resources/astro-2026-composable-dispatch-origin-enforcement.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Astro's maintainer reports that optional or late middleware could leave composed request handlers without the required origin check\. The resulting cross-site request forgery could change application state using browser credentials, but could not read cross-origin responses\. The lesson is that enabling a security setting must enforce it on every route to the protected operation\.
+
+## Defensive use
+
+The advisory identifies 7\.0\.5 as patched, moving equivalent checks to dispatch boundaries so composition order cannot remove them\. Editorial lesson: review mandatory controls as invariants of each protected operation, not assumptions about wrapper ordering\. Local regression coverage should establish that composition changes preserve rejection before side effects\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Astro  
 **Authors:** matthewp  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Threat-model integrations; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-The maintainer describes origin enforcement attached to optional middleware while independently composed dispatchers could invoke application handlers first\. The resulting cross-site request forgery can change state using browser credentials but cannot read cross-origin responses\. Conceptual failure: a security setting did not guarantee enforcement along every path to a protected operation\.
-
-## Defensive use
-
-The advisory identifies 7\.0\.5 as patched, moving equivalent checks to dispatch boundaries so composition order cannot remove them\. Editorial lesson: review mandatory controls as invariants of each protected operation, not assumptions about wrapper ordering\. Local regression coverage should establish that composition changes preserve rejection before side effects\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

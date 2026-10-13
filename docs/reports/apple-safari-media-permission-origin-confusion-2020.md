@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.ryanpickren.com/webcam-hacking-overview>) — Ryan Pickren · [Canonical JSON](<../../data/reports/apple-safari-media-permission-origin-confusion-2020.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Safari could apply a website's existing camera and microphone permissions to the wrong website context\. Ryan Pickren reports a USD 75,000 award for the combined findings, rather than a separate award for each bug\.
+
 **Organization:** Apple  
 **Product:** Safari media permissions
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-The cited researcher documents a USD 75,000 award for this reported chain\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 URL parsing, origin identity, and secure-context decisions were inconsistent with the identity used for stored permissions\. Defensive design should use one coherent origin model across permission enforcement\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Unauthorized camera and microphone access under previously granted website permissions\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Use one coherent origin model for permission enforcement\.
 - Invalidate persistent consent when the underlying resource or trust context materially changes\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. One award for the reported vulnerability c
 Exact source quotation and location remain in the [canonical record](<../../data/reports/apple-safari-media-permission-origin-confusion-2020.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. The primary researcher page does not supply a publication date; no exact date is inferred\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

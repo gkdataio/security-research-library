@@ -23,7 +23,7 @@
     "defensive-evidence-writing"
   ],
   "version": "USENIX Security 2026 proceedings",
-  "summary": "A qualitative lab study of 31 participants across three services found that unclear passkey labels, notifications and recovery interfaces obstructed complete account remediation. Conceptual boundary: proof that a recovery action completed does not establish that every independent credential or active session has lost authority.",
+  "summary": "In a lab study of 31 people across three services, unclear passkey labels, notifications and recovery screens prevented complete account recovery without help. The scenario assumed earlier account access sufficient to register a credential, rather than a break in passkey cryptography. The small controlled study highlights the need to revoke credentials and sessions separately; it does not measure real-world compromise rates or validate the proposed interface improvements.",
   "defensive_use": "Review an owned application’s recovery completion criteria across registered credentials, sessions and recovery channels. Make security interfaces explain what each revocation changes and what remains authorized; use clear credential provenance and action-specific notifications. Treat these as design-review questions, not evidence of a deployed fix.",
   "prerequisites": [
     "Passkey registration and relying-party credential records",

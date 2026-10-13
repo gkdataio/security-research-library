@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/frappe-2026-linked-document-response-authorization.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/>) · [Canonical JSON](<../../data/resources/frappe-2026-linked-document-response-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Frappe could include documents a caller was not allowed to read when expanding linked records in an API response\. GitHub Security Lab's CVE-2026-39351 research found that these records were loaded without permission checks and returned without field filtering\. The reported disclosure was identified in tested version 15\.96\.0\.
+
+## Defensive use
+
+Editorial lesson: authorization on a parent object cannot authorize every object reachable from it\. Define response contracts that preserve both per-document access and field visibility during expansion\. The maintainer advisory identifies patched releases 15\.104\.0 and 16\.14\.0; it does not describe the patch implementation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Man Yue Mo  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-39351 concerns related-document expansion in a REST response\. Frappe loaded linked records without checking the caller’s permission and serialized them without field filtering\. The research identifies disclosure of otherwise inaccessible documents in tested version 15\.96\.0\.
-
-## Defensive use
-
-Editorial lesson: authorization on a parent object cannot authorize every object reachable from it\. Define response contracts that preserve both per-document access and field visibility during expansion\. The maintainer advisory identifies patched releases 15\.104\.0 and 16\.14\.0; it does not describe the patch implementation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) — Preben Ver Eecke, Sectricity · [Canonical JSON](<../../data/reports/meta-service-identity-secrets-trust-boundary-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+An exposed Meta service identity had excessive access to secrets used by other integrations\. Researchers report potential read and write access to 507 private repositories, but say they only confirmed the count and did not browse or clone their contents\. Their organization reports a $150,000 base award\.
+
 **Organization:** Meta  
 **Product:** Internal development and cloud-service integrations
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A researcher organization reports a $150,000 base award for an exposed service identity with excessive downstream integration authority\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 An exposed service identity had unnecessarily broad access to secrets, with downstream integration credentials extending the potential impact into private source repositories\. Apply strong service authentication, minimize identity permissions, and separate trust between integrations\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Researchers report potential read/write access to 507 private repositories; their write-up says they confirmed the count and did not clone or browse repository contents\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Require authenticated, explicitly authorized access to service identities\.
 - Constrain secret access and integration privileges to the minimum required\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Use the $150,000 base
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-service-identity-secrets-trust-boundary-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **reported:** 2026-03-21; precision: day; basis: explicit
 - **awarded:** 2026-04-29; precision: day; basis: explicit

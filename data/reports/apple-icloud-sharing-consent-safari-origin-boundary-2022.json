@@ -22,7 +22,7 @@
     "integration-threat-modeling",
     "identity-lifecycle-review"
   ],
-  "summary": "The cited researcher documents a USD 100,500 award for this reported chain.",
+  "summary": "Permission to open shared iCloud content could remain valid after that content changed, and Safari did not consistently keep website permissions separate. Ryan Pickren reports a USD 100,500 award for the combined findings, rather than a separate award for each bug.",
   "root_cause": "Consent to open shared content remained effective after material content changes, and cross-application trust handling failed to preserve browser isolation. Review whether persisted consent remains valid as shared resources evolve.",
   "impact": "The researcher reports access across website security contexts and media permissions; additional research covered local-file exposure.",
   "defensive_takeaways": [

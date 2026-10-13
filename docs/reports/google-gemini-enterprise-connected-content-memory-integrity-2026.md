@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6>) — Behi · [Canonical JSON](<../../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Gemini Enterprise could treat retrieved Jira content as permission to change saved assistant memory\. Using two controlled accounts, the researcher demonstrated deletion of the recipient's memories; this required access to shared-project content and a user-initiated retrieval\. The researcher reports a $15,000 Google bounty, but the demonstration does not establish actual customer compromise or broader cross-tenant access\.
+
 **Organization:** Google  
 **Product:** Gemini Enterprise Jira integration
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A researcher reports a $15,000 Google bounty for a Gemini Enterprise integration issue affecting persistent assistant memory\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher compared user-confirmed actions with persistent memory changes\. Retrieved collaboration content could influence an operation that changed saved state without equivalent confirmation\. The failed boundary was between permission to read connected data and authority to mutate the user’s lasting assistant state\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 In a two-account setup, the researcher confirmed deletion of the test recipient’s saved memories\. The scenario required shared-project content access and user-initiated retrieval\. Broader cross-tenant access, mailbox compromise and lasting changes to every future response were not demonstrated\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Model persistent memory as a security-sensitive write operation with its own authorization decision\.
 - Preserve provenance when retrieved content passes between a connector, model and state-changing component\.
@@ -35,6 +38,8 @@ Evidence level: researcher\_reported. The researcher reports being paid $15,000 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **reported:** Unknown; precision: unknown; basis: not\_reported
 - **awarded:** Unknown; precision: unknown; basis: not\_reported

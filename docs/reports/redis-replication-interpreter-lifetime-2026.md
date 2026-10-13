@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.zeroday.cloud/blog/redis-cve-2026-23631-dark-replica>) — Yoni Sherez / ZeroDay\.cloud · [Canonical JSON](<../../data/reports/redis-replication-interpreter-lifetime-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Redis replication changes could release interpreter state while a function was still using it\. Code execution was demonstrated at the competition, but the vendor limits exposure to authenticated access and replicas configured, or configurable, for writes\. Wiz confirms a USD 30,000 award for Yoni Sherez's individual entry, identified as CVE-2026-23631\.
+
 **Organization:** Redis  
 **Product:** Redis replication and Lua function execution
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Wiz confirms a USD 30,000 individual competition award for Yoni Sherez’s Redis entry, identified as CVE-2026-23631\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher compared ordinary command handling with replication-related state changes during ongoing function execution\. The latter did not preserve equivalent lifetime checks, so interpreter state could be released while still in use\. The failed invariant was that background synchronization must not invalidate objects needed by active work\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Code execution was demonstrated in the competition\. The vendor limits exposure to authenticated access and replicas configured, or configurable, for writes\. It reported Redis Cloud patched by its May 2026 announcement\. These conditions do not establish equivalent exposure across all deployments\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Apply lifetime invariants to background synchronization and administrative state transitions as well as normal request paths\.
 - Treat reentrant event handling as a concurrency boundary even in a nominally single-threaded service\.
@@ -34,6 +37,8 @@ Evidence level: organizer\_confirmed. One individually identified competition en
 Exact source quotation and location remain in the [canonical record](<../../data/reports/redis-replication-interpreter-lifetime-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-06-02; precision: day; basis: inferred. Article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
 - **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration; separate from later vendor advisory and technical publication\.

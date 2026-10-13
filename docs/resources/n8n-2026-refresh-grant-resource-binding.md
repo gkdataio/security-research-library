@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/n8n-2026-refresh-grant-resource-binding.json>) · [Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73>)
+[Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-cw9w-vv67-hf73>) · [Canonical JSON](<../../data/resources/n8n-2026-refresh-grant-resource-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+n8n's maintainer reports that OAuth token refresh did not preserve the workflow-specific consent recorded during initial authorization\. A client could therefore gain access to another workflow that the consenting user was allowed to run\. The report does not establish access beyond that user's permissions or a production incident\.
+
+## Defensive use
+
+The stated repair retains the granted resource in refresh-token state and rejects conflicting resource choices\. The maintainer also calls for renewed authorization after upgrading because older refresh tokens lack this binding; temporary restrictions are incomplete mitigation\. Editorial lesson: review authorization invariants throughout a grant’s lifecycle, including migration of pre-fix state\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** n8n  
 **Authors:** Matsuuu  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Identity; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations
-
-## Original summary
-
-The maintainer reports that initial OAuth authorization preserved resource-specific consent, while refresh grants checked registration without preserving that binding\. A client could consequently receive authority over another workflow accessible to the consenting user\. This is a delegated-consent failure; the source does not establish access beyond that user’s underlying permissions or a production incident\.
-
-## Defensive use
-
-The stated repair retains the granted resource in refresh-token state and rejects conflicting resource choices\. The maintainer also calls for renewed authorization after upgrading because older refresh tokens lack this binding; temporary restrictions are incomplete mitigation\. Editorial lesson: review authorization invariants throughout a grant’s lifecycle, including migration of pre-fix state\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/better-auth-2026-local-account-linking-verification.json>) · [Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7>)
+[Official resource](<https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7>) · [Canonical JSON](<../../data/resources/better-auth-2026-local-account-linking-verification.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Better Auth could keep an unauthorized local password when linking a verified provider identity to an unverified local account\. Its CVE-2026-53516 advisory explains that provider-side email verification was treated as proof that the earlier local credentials were legitimate\. The merged account could therefore retain that password login even when ordinary email verification was required\.
+
+## Defensive use
+
+Editorial reasoning: linking combines authorities, so prove ownership on both sides before merging credentials\. Requiring verification only after the merge cannot establish who created the earlier password\. Release 1\.6\.11 corroborates a verified-local-email gate; the advisory also identifies 1\.7\.0-beta\.4 as patched\. Disabling implicit linking is a documented interim control\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Better Auth  
 **Authors:** gustavovalverde  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-53516 concerns implicit linking to an unverified local account\. Provider-side email verification was allowed to confer legitimacy on previously stored local credentials\. The resulting merged identity could retain an unauthorized password-based login even when ordinary email verification was required\.
-
-## Defensive use
-
-Editorial reasoning: linking combines authorities, so prove ownership on both sides before merging credentials\. Requiring verification only after the merge cannot establish who created the earlier password\. Release 1\.6\.11 corroborates a verified-local-email gate; the advisory also identifies 1\.7\.0-beta\.4 as patched\. Disabling implicit linking is a documented interim control\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

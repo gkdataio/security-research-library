@@ -22,7 +22,7 @@
     "defensive-evidence-writing"
   ],
   "version": "NDSS 2026 proceedings; DOI 10.14722/ndss.2026.240656",
-  "summary": "An evaluation of 27 services and a 100-participant user study examines missing context, explicit consent and post-login control in cross-device authentication. Conceptual boundary: an already trusted device may approve access on another device, but possession of that trusted session alone does not establish the user’s informed intent for the new session.",
+  "summary": "Approving a login from a trusted device does not, by itself, show that the user understands and wants the new session. This research evaluates 27 services and includes a 100-participant user study of missing context, explicit consent and control over sessions after login.",
   "defensive_use": "For an owned design, connect the approving interface to meaningful target-device and request context, a deliberate consent decision, and accessible session review and revocation. Verify that a revocation decision reaches the actual authorization checks. UI confirmation alone cannot establish backend enforcement.",
   "prerequisites": [
     "Cross-device login approval and session lifecycle",

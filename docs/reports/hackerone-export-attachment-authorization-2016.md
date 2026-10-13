@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://hackerone.com/reports/186230>) — HackerOne and japz · [Canonical JSON](<../../data/reports/hackerone-export-attachment-authorization-2016.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+HackerOne report exports could include team-only attachments that the report view kept private\. A user still needed the ability to export that report; this was not access to every private report\. HackerOne awarded $12,500 in 2016, and the lesson remains to enforce the same visibility rules in exports and interactive views\.
+
 **Organization:** HackerOne  
 **Product:** HackerOne report archive export
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-HackerOne awarded $12,500 for internal attachments exposed through report export in 2016\. Its enduring lesson for 2026 applications is that export and interactive views must enforce the same visibility policy\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Export authorization diverged from report-view visibility\. A file moved into an internal comment remained exportable\. The researcher compared redacted display content with archive output; the vendor confirmed this was a distinct newly introduced issue\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 A user able to export a report could obtain team-only attachments\. Vendor review additionally identified potential inline-attachment exposure, but found no evidence of malicious exploitation\. This does not establish access to every private report\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Derive export contents from the same object-level policy used for interactive views\.
 - Treat referenced attachments as independently authorized objects, including after visibility changes\.
@@ -33,6 +36,8 @@ Evidence level: platform\_confirmed. One report-level award includes the vendor�
 Exact source quotation and location remain in the [canonical record](<../../data/reports/hackerone-export-attachment-authorization-2016.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2016-11-30; precision: day; basis: explicit. Detailed report became public at the recorded disclosure event; later 2017 retrospective is not original publication\.
 - **public disclosure:** 2016-11-30; precision: day; basis: explicit

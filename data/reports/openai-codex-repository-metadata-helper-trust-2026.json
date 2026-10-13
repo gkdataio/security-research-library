@@ -28,7 +28,7 @@
     "untrusted-input-handling",
     "patch-verification"
   ],
-  "summary": "ZDI awarded Doyensec USD 10,000 for this distinct Pwn2Own Berlin entry.",
+  "summary": "Codex's background metadata collection could run a repository-configured helper without the intended approval and sandbox checks. The vendor confirms possible execution with the user's privileges when the required local settings were preserved; an ordinary Git clone does not preserve them. ZDI awarded Doyensec USD 10,000 for this distinct Pwn2Own Berlin entry.",
   "root_cause": "Background metadata collection honored a repository-controlled filesystem-monitor helper without applying the intended approval and sandbox boundaries.",
   "impact": "The vendor confirms possible user-privilege code execution from preserved local repository settings. An ordinary Git clone does not preserve the required configuration.",
   "defensive_takeaways": [

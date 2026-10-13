@@ -55,7 +55,7 @@
       "note": "No separate resource edition is stated; software fix chronology is recorded in caveats."
     }
   },
-  "summary": "CVE-2026-55429 concerns a provisioning update-or-insert operation that could change an existing workspace application’s ownership relationship without checking the existing workspace. The maintainer describes potential redirection of subsequent application traffic across workspace boundaries under elevated provisioning authority.",
+  "summary": "Coder could change an existing workspace application's ownership during provisioning without checking which workspace already owned it. The maintainer's CVE-2026-55429 advisory describes possible redirection of later application traffic between workspaces. The case requires elevated provisioning authority.",
   "defensive_use": "Editorial lesson: privileged service execution is not evidence that every referenced object belongs to the initiating workspace. Enforce ownership invariants at the mutation boundary, including collision/update behavior. The maintainer patch rejects cross-workspace reassignment while preserving legitimate same-workspace rebuilds and initial claims of unowned objects.",
   "caveats": [
     "The maintainer requires elevated access as a template author or external provisioner operator. The stated consequence is application-traffic redirection, including IDE or terminal sessions; no customer incident, measured data loss, or independent reproduction is established here.",

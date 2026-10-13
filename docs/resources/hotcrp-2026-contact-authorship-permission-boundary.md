@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/hotcrp-2026-contact-authorship-permission-boundary.json>) · [Official resource](<https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52>)
+[Official resource](<https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52>) · [Canonical JSON](<../../data/resources/hotcrp-2026-contact-authorship-permission-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+HotCRP allowed permission to view a submission to extend to changing its contact authorship\. The maintainer reports that reviewers and program-committee members could gain author-level access to submissions they could already see\. This affected submission anonymity and integrity\.
+
+## Defensive use
+
+Editorial lesson: authority-changing metadata needs its own permission check; visibility alone must not authorize membership changes\. The advisory identifies versions 3\.0\.0–3\.3\.1 as affected and 3\.4 as fixed\. Release notes date 3\.4 to August 5, before disclosure on August 11\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** HotCRP  
 **Authors:** kohler  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-GHSA-v8jx-vq6p-jq52 describes an API permission gap between viewing a submission and changing contact authorship\. The maintainer reports that reviewers and program-committee members could obtain author-level access to submissions they could already view, affecting anonymity and integrity\.
-
-## Defensive use
-
-Editorial lesson: authority-changing metadata needs its own permission check; visibility alone must not authorize membership changes\. The advisory identifies versions 3\.0\.0–3\.3\.1 as affected and 3\.4 as fixed\. Release notes date 3\.4 to August 5, before disclosure on August 11\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

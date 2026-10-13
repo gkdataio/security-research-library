@@ -51,7 +51,7 @@
     "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
   },
   "content_scope": "defensive_education",
-  "summary": "Shows the build context carried by signed artifact claims: workflow, repository, organization, environment, commit, triggering event, and OIDC information. It connects those claims to consumer-defined acceptance policy and explains how an SBOM can accompany provenance.",
+  "summary": "GitHub's guide explains what signed artifact attestations say about a build, including its workflow, repository, organization, environment, commit, triggering event and OIDC identity information. Consumers use those claims to decide whether an artifact meets their own acceptance rules. The guide also explains how a software bill of materials can accompany build provenance.",
   "defensive_use": "Separate the question of where an artifact came from from whether its source and build process meet release requirements. Compare the expected build identity with recorded provenance before accepting a release. Treat claims from build infrastructure as evidence that still needs an explicit consumer policy.",
   "prerequisites": [
     "Git commits and repositories",

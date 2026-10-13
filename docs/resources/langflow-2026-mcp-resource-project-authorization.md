@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/langflow-2026-mcp-resource-project-authorization.json>) · [Official resource](<https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c>)
+[Official resource](<https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c>) · [Canonical JSON](<../../data/resources/langflow-2026-mcp-resource-project-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Langflow's maintainer reports that file-reading handlers did not carry forward the user and project restrictions established by MCP authentication\. A local two-user demonstration disclosed another user's file, while the ordinary download interface denied access\. Authenticating a project connection therefore did not ensure permission for each later file read\.
+
+## Defensive use
+
+The documented fix carries authenticated context into object resolution, constrains project membership, and scopes discovery results\. Editorial lesson: connection admission and storage containment cannot replace per-resource authorization; compare policy across every interface to the same object\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Langflow  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization; Identity; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review AI authority boundaries; Verify remediation evidence
-
-## Original summary
-
-The maintainer confirms that project-level MCP authentication did not authorize later file reads\. Resource handlers reached storage without retaining user and project restrictions\. A local two-user demonstration showed cross-user file disclosure, contrasting with denial by the ordinary download interface\.
-
-## Defensive use
-
-The documented fix carries authenticated context into object resolution, constrains project membership, and scopes discovery results\. Editorial lesson: connection admission and storage containment cannot replace per-resource authorization; compare policy across every interface to the same object\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

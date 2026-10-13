@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) — Teddy Katz · [Canonical JSON](<../../data/reports/github-fork-collaboration-consent-2021.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+One GitHub API allowed collaboration consent to change without the pull-request author's permission\. A base-repository maintainer could consequently gain unauthorized write access to a contributor's branch\. This second finding received its own researcher-reported USD 10,000 award\.
+
 **Organization:** GitHub  
 **Product:** GitHub fork collaboration / GraphQL
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-The second fork-collaboration report received its own USD 10,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 One API path omitted the pull-request-author entitlement required to change collaboration consent\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 A base-repository maintainer could gain unauthorized write access to a contributor branch\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Keep collaboration consent separate from ordinary metadata privileges\.
 - Enforce identical ownership rules across API implementations\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Separate report and award, initially marke
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-fork-collaboration-consent-2021.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2021-03-10; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

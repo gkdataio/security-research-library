@@ -14,7 +14,7 @@
     "controlled-practice"
   ],
   "version": null,
-  "summary": "A level-based OverTheWire exercise series introducing server-side web-security concepts through intentionally constructed training websites. The official progression suggests Unix/Linux foundations before choosing this web-security branch.",
+  "summary": "Natas teaches server-side web-security concepts through a series of purpose-built OverTheWire training websites. The provider recommends learning Unix/Linux foundations before taking this web-security path.",
   "defensive_use": "Study how a training application's trust and access boundaries should work. Keep notes about the expected control and defensive principle, without reproducing challenge credentials or publishing solutions.",
   "prerequisites": [
     "A web browser and basic familiarity with web requests.",

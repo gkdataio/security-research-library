@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "GHSA-r899-h629-j84r describes inconsistent interpretation of uploaded-file metadata across admission, storage and browser consumption. The maintainer reports stored cross-site scripting when unsupported filename types retained invalid media-type metadata. The affected storage configurations preserved that metadata; default GridFS is explicitly unaffected.",
+  "summary": "Parse Server's maintainer reports stored cross-site scripting caused by inconsistent handling of uploaded-file metadata during upload checks, storage and browser use (GHSA-r899-h629-j84r). Unsupported filename types could retain invalid media-type metadata in affected storage configurations. The default GridFS configuration was explicitly unaffected.",
   "defensive_use": "The maintainer recommends corrected versions, application-specific file allowlists, origin separation for uploads and storage-layer anti-sniffing policy. Editorial lesson: admission checks and delivery behavior form one security contract. A successful upload validation result alone does not establish that later consumers will treat the object as inert data.",
   "prerequisites": [
     "Basic web upload handling and server-side validation",

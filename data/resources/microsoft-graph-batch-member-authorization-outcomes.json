@@ -19,7 +19,7 @@
     "error-response-design"
   ],
   "version": null,
-  "summary": "Microsoft Graph documentation distinguishes batch-envelope success from individual outcomes. Its example includes permission denials inside a successful batch response. Member results can arrive in a different order and must be correlated by their identifiers. Dependency failures and per-member throttling are separate outcomes, not evidence of an authorization decision.",
+  "summary": "A successful Microsoft Graph batch response does not mean every request inside it succeeded; the official documentation shows permission denials within a successful batch. Individual results may arrive out of order and must be matched by identifier. Dependency failures and per-request throttling are distinct outcomes, not evidence that authorization was granted or denied.",
   "defensive_use": "Editorial synthesis: keep transport completion, permission for each operation and application-level completion separate. Preserve a member's denied, failed or unresolved state when presenting an overall result or composing downstream state. Define what partial completion means for the application rather than turning a successful envelope into blanket success. A correlation identifier associates evidence; it grants no authority. Dependency ordering alone should not be treated as an atomic rollback guarantee.",
   "prerequisites": [
     "Basic familiarity with API authorization, response handling and application state transitions"

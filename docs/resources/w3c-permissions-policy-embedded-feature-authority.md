@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/w3c-permissions-policy-embedded-feature-authority.json>) · [Official resource](<https://w3c.github.io/webappsec-permissions-policy/>)
+[Official resource](<https://w3c.github.io/webappsec-permissions-policy/>) · [Canonical JSON](<../../data/resources/w3c-permissions-policy-embedded-feature-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Permissions Policy draft defines how a page limits browser features for itself and embedded documents\. Embedded pages inherit restrictions and cannot re-enable a feature their parent disabled; defaults apply where no rule is declared\. This work-in-progress specification complements sandboxing but does not replace user consent, application permissions or a full isolation design\.
+
+## Defensive use
+
+Editorial guidance: document which component owns each capability decision and distinguish intended delegation from effective restrictions\. Keep browser-feature controls separate from application authorization and user consent in integration reviews\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** World Wide Web Consortium  
 **Authors:** Ian Clelland; Ari Chivukula  
@@ -10,16 +23,6 @@
 **Version:** Editor's Draft, 22 September 2026  
 **Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
-
-## Original summary
-
-Defines browser-feature availability through inherited restrictions, document declarations and frame delegation\. Feature defaults govern undeclared cases; a child cannot restore authority disabled by its parent\.
-
-## Defensive use
-
-Editorial guidance: document which component owns each capability decision and distinguish intended delegation from effective restrictions\. Keep browser-feature controls separate from application authorization and user consent in integration reviews\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

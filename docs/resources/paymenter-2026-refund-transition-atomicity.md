@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/paymenter-2026-refund-transition-atomicity.json>) · [Official resource](<https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7>)
+[Official resource](<https://github.com/Paymenter/Paymenter/security/advisories/GHSA-5gmm-hjfj-8ff7>) · [Canonical JSON](<../../data/resources/paymenter-2026-refund-transition-atomicity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Paymenter's maintainer reports duplicate downgrade credits because the eligibility check and balance change were not protected as one transaction\. A check for pending operations did not cover the whole process\. The intended rule was one refund for each legitimate service downgrade\.
+
+## Defensive use
+
+Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision\. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement\. The advisory identifies 1\.5\.7 as patched; its release notes explicitly link the fix\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Paymenter  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Reason about concurrent state; Review approval-state integrity; Verify remediation evidence
-
-## Original summary
-
-The maintainer traces duplicate downgrade credits to an eligibility check separated from the later balance change, without transactional isolation\. A pending-operation guard did not protect the whole transition\. The failed invariant was one legitimate refund per service downgrade\.
-
-## Defensive use
-
-Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision\. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement\. The advisory identifies 1\.5\.7 as patched; its release notes explicitly link the fix\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

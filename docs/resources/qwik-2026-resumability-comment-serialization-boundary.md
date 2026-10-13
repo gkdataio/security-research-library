@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/qwik-2026-resumability-comment-serialization-boundary.json>) · [Official resource](<https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c>)
+[Official resource](<https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c>) · [Canonical JSON](<../../data/resources/qwik-2026-resumability-comment-serialization-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Qwik's maintainer reports unsafe handling of virtual-component metadata written into server-rendered HTML comments\. When users could influence attribute names or values, that state could be interpreted as browser content, causing same-origin script execution and potentially disrupting resumability state\. The advisory documents neither production compromise nor independently measured downstream data loss\.
+
+## Defensive use
+
+The maintainer identifies 1\.19\.0 as patched\. Editorial lesson: serialization safety depends on the actual browser context, including structural metadata and comment boundaries, rather than only visible text or conventional attributes\. Review all server-to-client state representations and preserve the contract between their encoder and consumer\. A patch for this mechanism is not proof that every application output path is safe\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** QwikDev  
 **Authors:** Varixo  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Review client isolation
-
-## Original summary
-
-The maintainer describes unsafe serialization of virtual-component metadata into server-rendered HTML comments\. Application-controlled attributes could cross from serialized state into browser interpretation when user influence reached their names or values\. The reported impact is same-origin browser script execution, with possible resumability-state disruption\. The advisory does not document a production compromise or independently measured downstream data loss\.
-
-## Defensive use
-
-The maintainer identifies 1\.19\.0 as patched\. Editorial lesson: serialization safety depends on the actual browser context, including structural metadata and comment boundaries, rather than only visible text or conventional attributes\. Review all server-to-client state representations and preserve the contract between their encoder and consumer\. A patch for this mechanism is not proof that every application output path is safe\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

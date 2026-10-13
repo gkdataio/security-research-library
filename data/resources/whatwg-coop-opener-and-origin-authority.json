@@ -26,7 +26,7 @@
     "note": "Official documentation readable without an account at review time."
   },
   "content_scope": "defensive_education",
-  "summary": "Defines how opener policies affect browsing-context separation during navigation. The standard expressly distinguishes severing an opener relationship from a robust boundary between same-origin documents: storage, service workers, messaging and server responses can preserve shared authority.",
+  "summary": "The HTML standard explains how opener policies separate browser windows during navigation. Breaking the opener connection does not fully isolate same-origin pages, which can still share storage, service workers, messaging and server responses. These are specified behaviors, not verified support in every browser or a substitute for application authorization.",
   "defensive_use": "Model window references separately from origin-wide data and service authority. For an owned application, document every shared client capability and server data path before relying on opener separation; combine appropriate embedding, cookie and response controls with an explicit trust-domain design.",
   "dates": {
     "published": {

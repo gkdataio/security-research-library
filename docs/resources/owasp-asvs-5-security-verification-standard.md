@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-asvs-5-security-verification-standard.json>) · [Official resource](<https://owasp.org/projects/asvs>)
+[Official resource](<https://owasp.org/projects/asvs>) · [Canonical JSON](<../../data/resources/owasp-asvs-5-security-verification-standard.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP ASVS provides versioned requirements for developing secure web applications and reviewing their security controls\. It helps turn lessons from disclosures into acceptance criteria and regression checks that can be traced to specific requirements\.
+
+## Defensive use
+
+Select applicable requirements for an owned application, retain the versioned identifiers, and record evidence for each control\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Foundation  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** 5\.0\.0  
 **Topics:** Verification  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Write bounded security evidence
-
-## Original summary
-
-Versioned requirements for secure development and reviewing web-application security controls\. Useful for turning lessons from disclosures into traceable acceptance criteria and regression coverage\.
-
-## Defensive use
-
-Select applicable requirements for an owned application, retain the versioned identifiers, and record evidence for each control\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

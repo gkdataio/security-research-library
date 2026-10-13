@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-browser-message-trust-boundaries.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-browser-message-trust-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains how to check a browser message's origin and format and handle its contents as data\. These are separate controls: verifying the sender does not replace validating the message or handling its content safely\.
+
+## Defensive use
+
+Document the expected sender, operation, recipient and permitted data for browser messages\. Review identity checks, data validation, application authorization and rendering safety separately in owned application designs\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Review input trust boundaries; Model access-control invariants; Threat-model integrations
-
-## Original summary
-
-OWASP explains origin checks, expected message formats and treating exchanged content as data\. These controls address different assumptions at browser communication boundaries\.
-
-## Defensive use
-
-Document the expected sender, operation, recipient and permitted data for browser messages\. Review identity checks, data validation, application authorization and rendering safety separately in owned application designs\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

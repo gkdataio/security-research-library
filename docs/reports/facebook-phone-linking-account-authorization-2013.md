@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) — Jack Whitton · [Canonical JSON](<../../data/reports/facebook-phone-linking-account-authorization-2013.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Facebook checked possession of a phone without separately checking permission to add it to the selected account for recovery\. The 2013 researcher disclosure reports a $20,000 award\. The lesson still applies: controlling a recovery phone does not prove ownership of the account it will recover\.
+
 **Organization:** Meta \(Facebook\)  
 **Product:** Facebook phone linking and account recovery
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A 2013 researcher disclosure reports a $20,000 award for unauthorized recovery-phone binding\. Its enduring lesson for 2026 applications is that recovery-factor possession and account-change authority require separate checks\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Phone possession and requester reauthentication did not establish permission to change the selected account\. The missing boundary was authorization over the account receiving a recovery factor\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher describes account takeover without victim interaction, requiring a researcher-controlled account and phone\. The demonstrated flow reached password recovery; broader account coverage is the researcher’s claim\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind recovery-factor enrollment to the authenticated subject and authorized account\.
 - Possession of a new factor cannot substitute for authority over the account it will recover\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. The researcher states an assigned award, n
 Exact source quotation and location remain in the [canonical record](<../../data/reports/facebook-phone-linking-account-authorization-2013.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2013-06-26; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

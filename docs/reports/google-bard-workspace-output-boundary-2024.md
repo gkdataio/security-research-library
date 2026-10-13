@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://depi.security/blog/20240304-google-hack-50000/>) — Roni Carta · [Canonical JSON](<../../data/reports/google-bard-workspace-output-boundary-2024.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Bard's Workspace integration could disclose connected email content through generated output\. Researchers demonstrated this with a controlled account and report a USD 20,000 base award for the finding\. That award covers one finding within a broader article\.
+
 **Organization:** Google  
 **Product:** Bard Workspace integration
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-One Workspace data-disclosure finding within a broader research article earned USD 20,000\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Generated content and browser output restrictions did not maintain the intended boundary around connected Workspace data\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researchers demonstrated disclosure of email content from a controlled account\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Independently constrain external destinations for sensitive model output\.
 - Review connector data access and rendering as a single end-to-end trust boundary\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Records the individual base award, not the
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-bard-workspace-output-boundary-2024.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2024-03-04; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

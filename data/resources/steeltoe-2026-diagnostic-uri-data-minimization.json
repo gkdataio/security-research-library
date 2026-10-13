@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-75523 describes diagnostic URI masking that removed inline credentials but preserved query contents. The failed assumption was that sanitizing one URI component made the whole representation safe for secondary consumers. Request secrets could consequently cross into diagnostic responses and DEBUG logs.",
+  "summary": "Steeltoe removed credentials from one part of diagnostic URLs but left query-string secrets visible. The maintainer describes possible disclosure through explicitly exposed diagnostic responses and, when enabled, relevant DEBUG logs. The diagnostic endpoint is off by default, and the finding requires requests that actually contain query-string secrets.",
   "defensive_use": "Editorial lesson: define an explicit retention contract for each diagnostic field, then minimize before storage and fan-out. Check response and logging consumers separately. The advisory identifies 4.3.0 as patched; temporary mitigations include omitting query strings and disabling or authenticating diagnostic exposure.",
   "prerequisites": [
     "HTTP credentials, integration boundaries and secure data handling"

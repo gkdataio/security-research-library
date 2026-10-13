@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) — Furbreeze · [Canonical JSON](<../../data/reports/github-ruby-dependency-confusion-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub build and development services could confuse internal Ruby packages with packages from a public source\. The researcher observed code execution in several service contexts and reports a $20,000 award for one finding\. The account does not establish a wider compromise beyond those observations\.
+
 **Organization:** GitHub  
 **Product:** GitHub build and development services
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A researcher reported one dependency-confusion finding affecting GitHub build and development services and a $20,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher observed code execution across multiple service contexts\. The disclosed account does not establish a broader compromise beyond those observations\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Define explicit package sources and reserve internal namespaces where applicable\.
 - Treat build and developer environments as separate trust zones and minimize their credentials\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. The researcher states this was a critical 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-ruby-dependency-confusion-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2025-10-28; precision: day; basis: url\_date. Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.
 - **public disclosure:** 2025-10-28; precision: day; basis: url\_date. Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.

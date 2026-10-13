@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/payload-2026-local-api-caller-authority.json>) · [Official resource](<https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx>)
+[Official resource](<https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx>) · [Canonical JSON](<../../data/resources/payload-2026-local-api-caller-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A Payload plugin maintainer reports that authenticated endpoints called the privileged Local API without preserving the caller's collection permissions \(CVE-2026-59965\)\. Because the Local API skips access checks by default, checking for a session did not establish permission to access the selected upload documents\. The plugin used server-level privileges where it needed the user's permissions\.
+
+## Defensive use
+
+Treat every request-to-server-API adapter as an authority boundary\. Explicitly preserve the requesting actor and require the relevant collection policy for both reads and changes\. Separate permission to use a feature from permission to act on its underlying data, and distinguish the collections a plugin manages from those a particular caller may access\. These are editorial design-review objectives; the presence of a policy definition does not establish that an operation evaluates it\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** jhb-software / Payload plugins  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-59965 describes authenticated plugin endpoints invoking a privileged server interface without preserving collection-level authorization\. Payload's Local API skips access checks by default, so a session check alone did not establish permission for selected upload documents\. The conceptual failure is a request adapter inheriting trusted-server authority instead of retaining the caller's permissions\.
-
-## Defensive use
-
-Treat every request-to-server-API adapter as an authority boundary\. Explicitly preserve the requesting actor and require the relevant collection policy for both reads and changes\. Separate permission to use a feature from permission to act on its underlying data, and distinguish the collections a plugin manages from those a particular caller may access\. These are editorial design-review objectives; the presence of a policy definition does not establish that an operation evaluates it\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

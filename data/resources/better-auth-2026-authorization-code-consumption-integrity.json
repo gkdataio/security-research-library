@@ -30,7 +30,7 @@
     "note": "Reviewed primary disclosure and maintainer corroboration; no independent vulnerability reproduction performed."
   },
   "content_scope": "defensive_education",
-  "summary": "The maintainer disclosure for CVE-2026-53518 identifies separated reading and deletion of a single-use OAuth authorization record. Under concurrent processing, multiple successful consumers could receive independent token sets. The established impact is duplicate authority within the original approved scope, not expansion of that scope.",
+  "summary": "Better Auth could issue more than one token set for a single-use OAuth authorization code during concurrent processing. Its CVE-2026-53518 disclosure explains that reading and deleting the authorization record were separate steps. The extra tokens duplicated the originally approved permissions; they did not expand them.",
   "defensive_use": "Model consuming a grant as one indivisible state transition, including across service replicas and storage adapters. A successful read must not itself authorize issuance. Maintainer release 1.6.11 adds atomic consumption and corroborates the OAuth fix; review adapter guarantees rather than relying on process-local serialization.",
   "prerequisites": [
     "OAuth authorization-code and token lifecycle concepts",

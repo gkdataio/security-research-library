@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-44681 describes an OIDC error path selecting a response destination before client and destination validation. The maintainer reports an unauthorized browser redirect, explicitly excluding direct disclosure of authorization codes or tokens. The failed boundary was untrusted request data becoming trusted error-response routing.",
+  "summary": "Authlib could redirect a browser to an unapproved destination while handling an OIDC error. In CVE-2026-44681, the error response chose its destination before validating the client and redirect address. The maintainer explicitly excludes direct disclosure of authorization codes or tokens.",
   "defensive_use": "Editorial reasoning: an exception can exercise authority even when the main operation fails. Establish destination trust before producing redirect-capable errors, and review rejection paths across grant implementations. The official v1.6.12 release notes corroborate the validation correction.",
   "prerequisites": [
     "Identity-provider integration and authorization concepts"

@@ -22,7 +22,7 @@
     "browser-isolation-review"
   ],
   "version": "RFC 10017 / BCP 212",
-  "summary": "Compares browser-only OAuth clients, token-mediating backends, and backend-for-frontend architectures through their different token-custody and session boundaries. Separates protection of token material from the residual authority of compromised same-origin application code.",
+  "summary": "RFC 10017 compares browser-only OAuth clients, token-mediating backends and backend-for-frontend designs by where they keep tokens and manage sessions. It distinguishes protecting token material from limiting what compromised application code on the same origin can still do.",
   "defensive_use": "Document which component holds each credential, binds the user session, and enforces request destinations. Compare those responsibilities and residual risks against an owned application’s architecture.",
   "prerequisites": [
     "OAuth client and resource-server roles",

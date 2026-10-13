@@ -48,7 +48,7 @@
     "note": "Official primary source reviewed. No explicit publication or revision date is displayed."
   },
   "content_scope": "defensive_education",
-  "summary": "Introduces ownership as a lifetime discipline: a value has one owner, moving ownership changes who controls it, and leaving the owner’s scope drops the value. The borrowing chapter explains how references permit access without taking ownership while restricting conflicting mutation and requiring references to remain valid.",
+  "summary": "The Rust Book explains that each value has one owner, ownership can move, and the value is dropped when its owner leaves scope. Borrowing lets code access a value without taking ownership. References must remain valid, and the borrowing rules restrict conflicting changes.",
   "defensive_use": "Describe which component owns each input buffer, which components borrow it, and when those borrows end. Prefer interfaces that express those relationships rather than relying on informal caller assumptions. Review ownership transfer and shared or exclusive borrowing as contracts between functions.",
   "prerequisites": [
     "Variables, functions, and scope",

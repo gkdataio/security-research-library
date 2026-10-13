@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-webgoat-controlled-training.json>) · [Official resource](<https://owasp.org/projects/webgoat>)
+[Official resource](<https://owasp.org/projects/webgoat>) · [Canonical JSON](<../../data/resources/owasp-webgoat-controlled-training.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP WebGoat is a deliberately insecure teaching application for common server-side web flaws\. Its interactive lessons offer a controlled setting for understanding security failures and the defenses they need\.
+
+## Defensive use
+
+Study lesson concepts in an isolated local training setup, recording the relevant trust assumption and prevention principle\. Use the material to improve secure-design reasoning without extending exercise activity to third-party systems\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Foundation  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** v2026\.5  
 **Topics:** CTF and Controlled Practice; Web Foundations  
 **Defensive skills:** Learn through controlled practice; Review input trust boundaries
-
-## Original summary
-
-A deliberately insecure teaching application for learning common server-side web-application flaws\. Its interactive lessons provide a controlled context for understanding security failures and the need for defensive controls\.
-
-## Defensive use
-
-Study lesson concepts in an isolated local training setup, recording the relevant trust assumption and prevention principle\. Use the material to improve secure-design reasoning without extending exercise activity to third-party systems\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

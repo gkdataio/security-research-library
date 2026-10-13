@@ -18,7 +18,7 @@
     "integration-threat-modeling"
   ],
   "version": "Working Draft, 21 September 2026",
-  "summary": "Defines browser-provided request context covering site relationship, destination, mode, and user activation. Explains how redirect history affects that context and why context-dependent responses need matching cache behavior. This supports reasoning about which browser interactions an application intends to accept.",
+  "summary": "The Fetch Metadata draft defines browser headers that help servers understand a request's site relationship, destination, mode and user activation. It also explains how redirects and caching affect decisions based on that context. This Working Draft provides additional policy inputs, not proof of a user's permissions or support in every client.",
   "defensive_use": "Review an owned service’s documented request-context policy, including redirects, legitimate cross-origin use, and caching. Treat browser context as an additional policy input rather than proof of a user’s resource permissions.",
   "prerequisites": [
     "HTTP requests and response caching",

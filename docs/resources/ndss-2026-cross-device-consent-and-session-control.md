@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/ndss-2026-cross-device-consent-and-session-control.json>) · [Official resource](<https://www.ndss-symposium.org/ndss-paper/anchors-of-trust-a-usability-study-on-user-awareness-consent-and-control-in-cross-device-authentication/>)
+[Official resource](<https://www.ndss-symposium.org/ndss-paper/anchors-of-trust-a-usability-study-on-user-awareness-consent-and-control-in-cross-device-authentication/>) · [Canonical JSON](<../../data/resources/ndss-2026-cross-device-consent-and-session-control.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Approving a login from a trusted device does not, by itself, show that the user understands and wants the new session\. This research evaluates 27 services and includes a 100-participant user study of missing context, explicit consent and control over sessions after login\.
+
+## Defensive use
+
+For an owned design, connect the approving interface to meaningful target-device and request context, a deliberate consent decision, and accessible session review and revocation\. Verify that a revocation decision reaches the actual authorization checks\. UI confirmation alone cannot establish backend enforcement\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Internet Society / NDSS Symposium  
 **Authors:** Xin Zhang; Xiaohan Zhang; Huijun Zhou; Bo Zhao  
@@ -10,16 +23,6 @@
 **Version:** NDSS 2026 proceedings; DOI 10\.14722/ndss\.2026\.240656  
 **Topics:** Identity; Authorization; Web Foundations  
 **Defensive skills:** Review identity lifecycle; Review approval-state integrity; Write bounded security evidence
-
-## Original summary
-
-An evaluation of 27 services and a 100-participant user study examines missing context, explicit consent and post-login control in cross-device authentication\. Conceptual boundary: an already trusted device may approve access on another device, but possession of that trusted session alone does not establish the user’s informed intent for the new session\.
-
-## Defensive use
-
-For an owned design, connect the approving interface to meaningful target-device and request context, a deliberate consent decision, and accessible session review and revocation\. Verify that a revocation decision reaches the actual authorization checks\. UI confirmation alone cannot establish backend enforcement\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

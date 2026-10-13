@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sylius-2026-component-argument-object-authorization.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-055_Sylius/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-055_Sylius/>) · [Canonical JSON](<../../data/resources/sylius-2026-component-argument-object-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Sylius checked component-state integrity without checking ownership of every object referenced by action arguments\. GitHub Security Lab demonstrates cross-customer address disclosure by an authenticated customer in version 2\.2\.3-dev; the maintainer also identifies exposure of cart and order financial summaries\. The evidence does not establish write access, payment execution or account takeover\.
+
+## Defensive use
+
+Editorial lesson: integrity protection on component state does not establish authority over every referenced object\. Bind each lookup to the current customer or authorized session context\. The maintainer lists fixes in 2\.0\.16, 2\.1\.12 and 2\.2\.3 and supplies a project-level authorization workaround; its correctness for customized deployments is not established here\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Man Yue Mo  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security; Server/Client Framework Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-31820 concerns client-supplied component action arguments used to load objects without ownership checks\. Property checksums did not cover those arguments\. GHSL describes cross-customer address disclosure in tested version 2\.2\.3-dev; the maintainer additionally identifies disclosure of cart and order financial summaries\.
-
-## Defensive use
-
-Editorial lesson: integrity protection on component state does not establish authority over every referenced object\. Bind each lookup to the current customer or authorized session context\. The maintainer lists fixes in 2\.0\.16, 2\.1\.12 and 2\.2\.3 and supplies a project-level authorization workaround; its correctness for customized deployments is not established here\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

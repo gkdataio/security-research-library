@@ -9,7 +9,7 @@
   "topic_ids": ["web-foundations", "memory-safety", "browser-security"],
   "skillset_ids": ["browser-isolation-review", "integration-threat-modeling", "secrets-containment"],
   "version": null,
-  "summary": "Explains per-document cross-origin isolation as a response to process-level information exposure that logical origin checks alone cannot prevent. Document Isolation Policy allows independently isolated frames while preserving popup communication. Subresource policy either requires explicit sharing permission or removes credentials from relevant cross-origin requests.",
+  "summary": "Chrome's Document Isolation Policy addresses information exposure within browser processes that origin checks alone cannot prevent. The guide explains how frames can be isolated independently while retaining popup communication. For relevant cross-origin resources, the policy either requires explicit sharing permission or removes request credentials.",
   "defensive_use": "Editorial lesson: separate process confidentiality, resource delivery and application authority in architecture reviews. Isolation does not remove same-origin storage access or asynchronous messaging, so these channels retain their own authorization requirements. Evaluate isolation choices against required embedded-resource and sign-in behavior.",
   "prerequisites": ["Browser origins, frames, HTTP resource policies and process isolation"],
   "prerequisites_basis": "editorial_guidance",

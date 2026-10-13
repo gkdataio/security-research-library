@@ -18,7 +18,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "The advisory distinguishes ownership of an order from authority over its payment operations. Customer-context requests were constrained by ownership but not by operation. A connected payment provider could therefore change financial state while local order status still indicated payment completion.",
+  "summary": "Sylius checked that customers owned an order but did not adequately limit which payment actions they could request. The maintainer describes a risk of provider-side financial changes while the local order still appeared paid. This requires an enabled production API and a gateway supporting the relevant operations; a plain default installation without that gateway is excluded, and actual merchant losses are not documented.",
   "defensive_use": "Editorial lesson: define operation permissions independently from object ownership, and reconcile provider outcomes with local fulfillment state. The advisory recommends rejecting disallowed customer-context operations before effects. Maintainer release notes corroborate remediation in 2.1.16 and 2.2.9.",
   "prerequisites": [
     "Basic application state machines, authorization and database transaction concepts"

@@ -13,7 +13,7 @@
     "controlled-practice"
   ],
   "version": null,
-  "summary": "An OverTheWire wargame for absolute beginners, introducing Unix/Linux basics through a sequence of contained exercises. The official overview encourages reading documentation and learning command-line concepts before progressing to other wargames.",
+  "summary": "Bandit teaches Unix/Linux basics to absolute beginners through a sequence of contained OverTheWire exercises. Its official overview encourages learning command-line concepts and reading documentation before moving to other wargames.",
   "defensive_use": "Build foundational command-line literacy in the designated training game. Record what each exercise teaches and the limits of the environment before relating those concepts to defensive administration or later web-security study.",
   "prerequisites": [
     "The publisher describes Bandit as suitable for absolute beginners."

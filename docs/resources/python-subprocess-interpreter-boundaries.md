@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/python-subprocess-interpreter-boundaries.json>) · [Official resource](<https://docs.python.org/3.14/library/subprocess.html#security-considerations>)
+[Official resource](<https://docs.python.org/3.14/library/subprocess.html#security-considerations>) · [Canonical JSON](<../../data/resources/python-subprocess-interpreter-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Python's documentation distinguishes the executable being launched, its arguments and any shell that interprets them\. Python does not implicitly choose a shell, but Windows may launch batch files through one\. The shlex reference limits its quoting guarantees to Unix shells, so quoting alone is not a portable way to handle different interpreters\.
+
+## Defensive use
+
+Editorial learning objective: distinguish preserving argument boundaries from authorizing their meaning\. Review which executable and interpreter receive data, what actions the receiving program assigns to arguments, and whether those actions fit the intended authority\. This resource supports conceptual design review, without execution recipes\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Python Software Foundation  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Python 3\.14 documentation branch  
 **Topics:** Interpreter Boundaries  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization
-
-## Original summary
-
-Runtime documentation distinguishes the selected executable, its arguments, and shell interpretation\. Python does not implicitly select a shell, but Windows may launch batch files through one\. The companion shlex reference limits its quoting guarantees to Unix shells; quoting is not a portable substitute for understanding the receiving interpreter\.
-
-## Defensive use
-
-Editorial learning objective: distinguish preserving argument boundaries from authorizing their meaning\. Review which executable and interpreter receive data, what actions the receiving program assigns to arguments, and whether those actions fit the intended authority\. This resource supports conceptual design review, without execution recipes\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

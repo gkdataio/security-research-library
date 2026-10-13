@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/chrome-bfcache-restored-session-state.json>) · [Official resource](<https://developer.chrome.com/docs/web-platform/bfcache-ccns>)
+[Official resource](<https://developer.chrome.com/docs/web-platform/bfcache-ccns>) · [Canonical JSON](<../../data/resources/chrome-bfcache-restored-session-state.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A page restored from Chrome's back/forward cache resumes its saved in-memory state rather than loading again from the network\. Chrome's guide explains when pages marked no-store may enter that cache, describes eviction safeguards for authentication changes, and recommends considering a data refresh when a page is restored\.
+
+## Defensive use
+
+Distinguish HTTP cache policy from suspended-page lifetime in an owned application’s session model\. Define how sensitive state is cleared or refreshed after restoration and how logout remains effective across navigation\. Preserve server-side authorization independently of restored client state\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Barry Pollard  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Identity; Browser Security  
 **Defensive skills:** Review client isolation; Review identity lifecycle
-
-## Original summary
-
-Explains Chrome’s conditional admission of no-store pages to the back/forward cache\. A restored page resumes in-memory document state rather than performing a fresh network load\. The guide describes eviction safeguards around authentication changes and recommends considering data refresh on restoration\.
-
-## Defensive use
-
-Distinguish HTTP cache policy from suspended-page lifetime in an owned application’s session model\. Define how sensitive state is cleared or refreshed after restoration and how logout remains effective across navigation\. Preserve server-side authorization independently of restored client state\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

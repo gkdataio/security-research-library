@@ -28,7 +28,7 @@
     "integration-threat-modeling",
     "patch-verification"
   ],
-  "summary": "Sentry documents a USD 150,000 award to Drinor Selmanaj for CVE-2026-20685.",
+  "summary": "Apple Private Cloud Compute did not adequately restrict where startup archives could write files. The researcher demonstrated configuration changes and telemetry disclosure in Apple's virtual environment; Apple confirms possible sensitive-data leakage from a privileged network position. Sentry reports a USD 150,000 award to Drinor Selmanaj, but the research did not establish production prompt-content leakage.",
   "root_cause": "Privileged startup archive handling did not adequately confine output paths; mutable configuration could undermine runtime integrity assumptions.",
   "impact": "Researcher demonstrated configuration changes and telemetry disclosure in Apple’s virtual environment. Apple confirms potential sensitive-information leakage from a privileged network position.",
   "defensive_takeaways": [

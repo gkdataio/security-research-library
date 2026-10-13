@@ -19,7 +19,7 @@
     "identity-lifecycle-review"
   ],
   "version": "v20.2.0",
-  "summary": "An intentionally insecure web training application with varied-difficulty challenges, optional guided tutorials, and coding exercises that connect a flaw to a suitable fix. Its learning materials link relevant mitigation guidance.",
+  "summary": "OWASP Juice Shop is a deliberately insecure web application for learning how flaws arise and how to fix them. It offers challenges at different difficulty levels, optional guided tutorials and coding exercises, with links to relevant mitigation guidance.",
   "defensive_use": "Use an isolated, explicitly authorized training copy to study application trust boundaries and remediation choices. Pair conceptual findings with the linked defensive guidance rather than treating challenge success as evidence about a real service.",
   "prerequisites": [
     "A browser and basic HTTP/application concepts.",

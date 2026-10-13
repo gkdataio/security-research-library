@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nist-sp-800-162-attribute-authority-modeling.json>) · [Official resource](<https://csrc.nist.gov/pubs/sp/800/162/upd2/final>)
+[Official resource](<https://csrc.nist.gov/pubs/sp/800/162/upd2/final>) · [Canonical JSON](<../../data/resources/nist-sp-800-162-attribute-authority-modeling.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+NIST explains how access policies use attributes of the user, resource, requested action and environment to decide whether to allow access\. It connects business rules to software-enforced decisions and explains why organizations need consistent attribute meanings\. Who supplies an attribute, how it is maintained and how it is protected are part of the access-control design\.
+
+## Defensive use
+
+For an owned policy design, identify who may assert each attribute, how it is bound to its subject or object, and how changes reach decision points\. Compare resulting permissions with the written policy\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** National Institute of Standards and Technology  
 **Authors:** Vincent C\. Hu; David Ferraiolo; Rick Kuhn; Adam Schnitzer; Kenneth Sandlin; Robert Miller; Karen Scarfone  
@@ -10,16 +23,6 @@
 **Version:** SP 800-162 \(January 2014; updated August 2, 2019\)  
 **Topics:** Authorization; Identity  
 **Defensive skills:** Model access-control invariants; Review identity lifecycle; Threat-model integrations
-
-## Original summary
-
-Defines authorization in terms of subject, object, operation and environmental attributes evaluated against policy\. Enterprise considerations connect business rules to machine-enforced decisions, attribute authorities and consistent meanings across organizations\. Attribute maintenance, provenance and integrity are part of the authorization model rather than incidental metadata\.
-
-## Defensive use
-
-For an owned policy design, identify who may assert each attribute, how it is bound to its subject or object, and how changes reach decision points\. Compare resulting permissions with the written policy\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

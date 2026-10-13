@@ -21,7 +21,7 @@
     "integration-threat-modeling"
   ],
   "version": "2.0 Final",
-  "summary": "Defines a high-security OAuth profile with coordinated requirements for confidential clients, authorization servers, and resource servers. Connects sender-constrained tokens and authorization-request integrity with the separate requirement to evaluate whether a token’s authority is sufficient for each protected resource.",
+  "summary": "The OpenID Foundation's FAPI 2.0 profile sets coordinated OAuth security requirements for confidential clients, authorization servers and resource servers. It covers sender-constrained tokens and protection of authorization requests. Resource servers must still decide whether each token grants enough authority for the requested resource.",
   "defensive_use": "Map the ownership of token validation, issuer trust, client authentication, and resource-access decisions across an owned API integration. Keep protocol conformance distinct from application-specific authorization.",
   "prerequisites": [
     "OAuth roles and authorization-code flows",

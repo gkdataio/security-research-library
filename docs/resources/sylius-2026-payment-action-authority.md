@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sylius-2026-payment-action-authority.json>) · [Official resource](<https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf>)
+[Official resource](<https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf>) · [Canonical JSON](<../../data/resources/sylius-2026-payment-action-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Sylius checked that customers owned an order but did not adequately limit which payment actions they could request\. The maintainer describes a risk of provider-side financial changes while the local order still appeared paid\. This requires an enabled production API and a gateway supporting the relevant operations; a plain default installation without that gateway is excluded, and actual merchant losses are not documented\.
+
+## Defensive use
+
+Editorial lesson: define operation permissions independently from object ownership, and reconcile provider outcomes with local fulfillment state\. The advisory recommends rejecting disallowed customer-context operations before effects\. Maintainer release notes corroborate remediation in 2\.1\.16 and 2\.2\.9\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Sylius  
 **Authors:** TheMilek  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Model access-control invariants; Review approval-state integrity; Threat-model integrations
-
-## Original summary
-
-The advisory distinguishes ownership of an order from authority over its payment operations\. Customer-context requests were constrained by ownership but not by operation\. A connected payment provider could therefore change financial state while local order status still indicated payment completion\.
-
-## Defensive use
-
-Editorial lesson: define operation permissions independently from object ownership, and reconcile provider outcomes with local fulfillment state\. The advisory recommends rejecting disallowed customer-context operations before effects\. Maintainer release notes corroborate remediation in 2\.1\.16 and 2\.2\.9\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

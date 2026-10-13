@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) — Arvin Shivram \(Brutecat\), published on Google Bug Hunters · [Canonical JSON](<../../data/reports/google-mamba-temporary-output-isolation-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Google Mamba did not adequately restrict file copying or isolate temporary output\. Copying was possible without authentication, but the demonstrated retrieval depended on the separate Firefly finding, so standalone data access should not be inferred\. Mamba received its own USD 37,604\.40 award, with the panel accounting for difficult exploitation and additional access requirements\.
+
 **Organization:** Google  
 **Product:** Mamba frame-metrics pipeline
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Mamba received a distinct USD 37,604\.40 award\. The case illustrates why temporary processing output needs explicit access isolation, with retrieval dependencies kept separate from standalone impact\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Untrusted file selection reached privileged storage copying\. Shared temporary outputs relied on obscurity, while diagnostic metadata weakened filename secrecy\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Unauthenticated copying was possible, but demonstrated retrieval required the separately reported Firefly capability\. The panel explicitly discounted difficult exploitation and additional access requirements\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: isolate temporary outputs by authenticated principal and enforce access controls independent of filename secrecy\.
 - Editorial lesson: restrict file-source capabilities and minimize diagnostic disclosure; document dependencies before assigning standalone impact\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Separate report award
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-mamba-temporary-output-isolation-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-09-11; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

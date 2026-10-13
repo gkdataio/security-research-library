@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-rag-retrieval-permission-boundaries.json>) · [Official resource](<https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/>)
+[Official resource](<https://genai.owasp.org/llmrisk/llm082025-vector-and-embedding-weaknesses/>) · [Canonical JSON](<../../data/resources/owasp-rag-retrieval-permission-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains why shared retrieval systems must keep users' permissions and data classifications intact\. Its guidance covers access to embeddings, disclosure across contexts and the integrity of imported knowledge\. Source checks and retrieval records help show which knowledge entered a response and whether the user was allowed to access it\.
+
+## Defensive use
+
+For an owned RAG design, document dataset partitions and permission-aware retrieval, preserve source classifications when combining knowledge, and review ingestion integrity\. Record retrieval events so confidentiality and provenance decisions remain reviewable\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Gen AI Security Project  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** LLM08:2025  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Model access-control invariants; Review AI authority boundaries; Threat-model integrations
-
-## Original summary
-
-Examines security assumptions around retrieval-augmented generation, including access to embeddings, cross-context disclosure and integrity of imported knowledge\. Shared retrieval infrastructure must preserve the distinctions between users and data classifications\. Source validation and retrieval records help explain which knowledge entered a response and whether access was appropriate\.
-
-## Defensive use
-
-For an owned RAG design, document dataset partitions and permission-aware retrieval, preserve source classifications when combining knowledge, and review ingestion integrity\. Record retrieval events so confidentiality and provenance decisions remain reviewable\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

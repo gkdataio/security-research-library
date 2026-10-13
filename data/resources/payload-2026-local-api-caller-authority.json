@@ -16,7 +16,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-59965 describes authenticated plugin endpoints invoking a privileged server interface without preserving collection-level authorization. Payload's Local API skips access checks by default, so a session check alone did not establish permission for selected upload documents. The conceptual failure is a request adapter inheriting trusted-server authority instead of retaining the caller's permissions.",
+  "summary": "A Payload plugin maintainer reports that authenticated endpoints called the privileged Local API without preserving the caller's collection permissions (CVE-2026-59965). Because the Local API skips access checks by default, checking for a session did not establish permission to access the selected upload documents. The plugin used server-level privileges where it needed the user's permissions.",
   "defensive_use": "Treat every request-to-server-API adapter as an authority boundary. Explicitly preserve the requesting actor and require the relevant collection policy for both reads and changes. Separate permission to use a feature from permission to act on its underlying data, and distinguish the collections a plugin manages from those a particular caller may access. These are editorial design-review objectives; the presence of a policy definition does not establish that an operation evaluates it.",
   "prerequisites": [
     "Authentication versus operation-specific authorization",

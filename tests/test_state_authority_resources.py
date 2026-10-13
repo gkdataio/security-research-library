@@ -45,8 +45,8 @@ class StateAuthorityResourceTests(unittest.TestCase):
 
     def test_angular_retains_applicability_and_conditional_impact(self):
         record = self.records[self.angular_id]
-        for phrase in ('SSR with hydration', 'untrusted influence',
-                       'XSS depends on unsafe downstream rendering', 'parseable data'):
+        for phrase in ('server-side rendering with hydration', 'untrusted influence',
+                       'XSS dependent on unsafe later rendering', 'not just whether it can be parsed'):
             self.assertIn(phrase, record['summary'])
         caveats = ' '.join(record['caveats'])
         for phrase in ('22.0.1', '21.2.17', '20.3.25', '<= 19.2.25',
@@ -81,9 +81,9 @@ class StateAuthorityResourceTests(unittest.TestCase):
 
     def test_saleor_retains_authenticated_access_and_branch_context(self):
         record = self.records[self.saleor_id]
-        self.assertIn('valid confirmation token for one account and authenticated access to a second account',
+        self.assertIn('valid token for one account and authenticated access to another',
                       record['summary'])
-        self.assertIn('not an unauthenticated takeover claim', record['summary'])
+        self.assertIn('not an unauthenticated takeover', record['summary'])
         caveats = ' '.join(record['caveats'])
         for phrase in ('3.23.0a3', '3.22.47', '3.21.54', '3.20.118',
                        'each start at 2.10.0', '3.23.0a3 is a prerelease',

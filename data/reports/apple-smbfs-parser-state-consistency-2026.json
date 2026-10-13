@@ -21,7 +21,7 @@
     "patch-verification",
     "defensive-evidence-writing"
   ],
-  "summary": "A rejected network response left inconsistent filesystem state. The researcher reports a $20,000 award and subsequent payment.",
+  "summary": "Rejecting a network response did not fully reset macOS filesystem state. The researcher demonstrated kernel crashes when a Mac connected to a malicious SMB share, but did not demonstrate general-purpose code execution. He reports a $20,000 award and subsequent payment.",
   "root_cause": "The parser published a count before validating the associated allocation. Error cleanup did not restore the count and pointer together. The researcher compared parsing, cleanup and later consumption to explain why a failed validation still contaminated trusted kernel state.",
   "impact": "A Mac had to connect to a malicious SMB share; guest access was sufficient. The researcher demonstrated kernel panics on Apple silicon. Apple describes possible system termination or kernel-memory corruption. General-purpose code execution was not demonstrated.",
   "defensive_takeaways": [

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/graphql-ruby-2026-authorization-exception-integrity.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/>) · [Canonical JSON](<../../data/resources/graphql-ruby-2026-authorization-exception-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+GraphQL-Ruby could continue running a resolver after its authorization check raised an exception\. GitHub Security Lab demonstrated the denied resolver returning a test value in the newer execution engine, while the legacy engine stopped it\. The lesson is that error handling must keep an access denial from turning into permission to proceed\.
+
+## Defensive use
+
+The maintainer identifies versions 2\.5\.23 through 2\.6\.5 as affected and 2\.6\.6 as patched\. Only the newer Execution::Next mode and resolver-thrown authorization errors are implicated; other authorization forms worked correctly\. Editorial lesson: preserve denial semantics across execution engines and keep error formatting separate from authority to execute\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Bas Alberts  
@@ -10,16 +23,6 @@
 **Version:** GHSL-2026-152 / GHSA-j7xr-4g94-r9h3  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Review secure error behavior; Verify remediation evidence
-
-## Original summary
-
-A GraphQL-Ruby execution-engine path converted a resolver authorization exception into permission to continue\. Research demonstrates a denied resolver running and returning a fixture value, while the legacy engine stopped it\. This illustrates why error handling must preserve the security meaning of a denial\.
-
-## Defensive use
-
-The maintainer identifies versions 2\.5\.23 through 2\.6\.5 as affected and 2\.6\.6 as patched\. Only the newer Execution::Next mode and resolver-thrown authorization errors are implicated; other authorization forms worked correctly\. Editorial lesson: preserve denial semantics across execution engines and keep error formatting separate from authority to execute\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

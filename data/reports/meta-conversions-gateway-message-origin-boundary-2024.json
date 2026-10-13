@@ -19,7 +19,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "The researcher assigns a separate $62,500 award to the client-side finding labeled Bug #1.",
+  "summary": "Meta's Conversions API Gateway treated a browser message's origin as authority to choose a script source without verifying that authority. The researcher reports script execution under specific embedded-browser, initialization and content-policy conditions; the proposed account impact also required user interaction and a signed-in session. The researcher assigns a separate $62,500 award to this client-side finding, labeled Bug #1.",
   "root_cause": "A browser message origin became trusted script-host configuration without origin authorization.",
   "impact": "The researcher reports script execution and describes possible account takeover. The scenario depends on specific embedded-browser, initialization and content-policy conditions plus influence over permitted third-party content. Account impact additionally assumes user interaction and an authenticated session; universal or interaction-free exploitation is not established.",
   "defensive_takeaways": [

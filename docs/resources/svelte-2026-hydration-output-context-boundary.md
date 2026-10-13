@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/svelte-2026-hydration-output-context-boundary.json>) · [Official resource](<https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/>)
+[Official resource](<https://caverav.cl/posts/svelte-hydratable-xss/svelte-hydratable-xss/>) · [Canonical JSON](<../../data/resources/svelte-2026-hydration-output-context-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Svelte protected hydration values for their HTML context but did not apply the same protection to keys\. Camilo Vera demonstrates browser script execution in a minimal application using experimental async rendering and untrusted hydration keys\. Account compromise depends on the application and was not demonstrated in a production account\.
+
+## Defensive use
+
+Compare all fields crossing rendering contexts, including metadata keys\. The researcher describes replacement with an HTML-safe serializer and regression coverage\. The maintainer identifies Svelte 5\.46\.4 as patched\. Preserve one encoding contract across keys and values, rather than treating valid JSON as sufficient for every output context\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Camilo Vera  
 **Authors:** Camilo Vera  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-Research on CVE-2025-15265 explains a data-to-code boundary failure: hydration keys received JavaScript-string serialization without the HTML-context protection already used for values\. The researcher demonstrates browser script execution in a minimal application\. Account compromise is an application-dependent consequence, not evidence of a compromised production account\.
-
-## Defensive use
-
-Compare all fields crossing rendering contexts, including metadata keys\. The researcher describes replacement with an HTML-safe serializer and regression coverage\. The maintainer identifies Svelte 5\.46\.4 as patched\. Preserve one encoding contract across keys and values, rather than treating valid JSON as sufficient for every output context\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

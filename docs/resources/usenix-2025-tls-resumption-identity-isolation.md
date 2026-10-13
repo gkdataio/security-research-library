@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/usenix-2025-tls-resumption-identity-isolation.json>) · [Official resource](<https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok>)
+[Official resource](<https://www.usenix.org/conference/usenixsecurity25/presentation/hebrok>) · [Canonical JSON](<../../data/resources/usenix-2025-tls-resumption-identity-isolation.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+This study shows how shared TLS session-ticket infrastructure can restore a session without preserving the intended virtual-host identity or client-authentication rules\. The authors connect that mismatch to failures of isolation during session resumption\. Their measurements have sampling and configuration limits and do not establish current vendor exposure\.
+
+## Defensive use
+
+Document which authenticated identities and policy decisions must survive connection resumption in an owned hosting design\. Review library contracts and remediation evidence for preserved identity context rather than assuming that an accepted session ticket establishes all application authority\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** USENIX Association  
 **Authors:** Sven Hebrok; Tim Leonhard Storm; Felix Matthias Cramer; Maximilian Radoy; Juraj Somorovsky  
@@ -10,16 +23,6 @@
 **Version:** USENIX Security 2025  
 **Topics:** Identity; Authorization; Web Foundations  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Review security-token design
-
-## Original summary
-
-Studies a cross-layer authentication failure: shared TLS session-ticket infrastructure can preserve cryptographic session state without preserving the intended virtual-host identity and client-authentication policy\. The authors connect that mismatch to inconsistent isolation during session resumption\.
-
-## Defensive use
-
-Document which authenticated identities and policy decisions must survive connection resumption in an owned hosting design\. Review library contracts and remediation evidence for preserved identity context rather than assuming that an accepted session ticket establishes all application authority\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

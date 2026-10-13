@@ -18,7 +18,7 @@
     "defensive-evidence-writing",
     "identity-lifecycle-review"
   ],
-  "summary": "A 2013 researcher disclosure reports a $20,000 award for unauthorized recovery-phone binding. Its enduring lesson for 2026 applications is that recovery-factor possession and account-change authority require separate checks.",
+  "summary": "Facebook checked possession of a phone without separately checking permission to add it to the selected account for recovery. The 2013 researcher disclosure reports a $20,000 award. The lesson still applies: controlling a recovery phone does not prove ownership of the account it will recover.",
   "root_cause": "Phone possession and requester reauthentication did not establish permission to change the selected account. The missing boundary was authorization over the account receiving a recovery factor.",
   "impact": "The researcher describes account takeover without victim interaction, requiring a researcher-controlled account and phone. The demonstrated flow reached password recovery; broader account coverage is the researcher’s claim.",
   "defensive_takeaways": [

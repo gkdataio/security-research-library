@@ -20,7 +20,7 @@
     "error-response-design"
   ],
   "version": null,
-  "summary": "The maintainer describes an SSR-to-hydration trust failure: application code that lets untrusted input alter aspects of caught server errors could cause unexpected client constructor execution and outbound network activity. The prerequisite is unusually specific application behavior. The case distinguishes transporting error data from granting that data authority over client reconstruction.",
+  "summary": "React Router's maintainer describes unexpected client constructor execution and outbound network activity when server errors were reconstructed during hydration. This required unusually specific application behavior that let untrusted input alter parts of caught server errors. Error metadata was influencing client behavior instead of remaining data.",
   "defensive_use": "The advisory identifies 7.18.0 as patched. Editorial lesson: preserve a narrow, inert contract for errors crossing the server/client boundary, including metadata used to reconstruct them. Review error transport separately from visible error text, and constrain client interpretation to explicitly supported representations. The reviewed advisory does not establish the exact patch implementation.",
   "prerequisites": [
     "Server-side rendering and client hydration",

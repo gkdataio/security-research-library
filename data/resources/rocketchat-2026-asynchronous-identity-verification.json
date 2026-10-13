@@ -56,7 +56,7 @@
     "note": "Research and maintainer evidence reviewed; no live deployment or remediation testing performed."
   },
   "content_scope": "defensive_education",
-  "summary": "CVE-2026-28514 concerned asynchronous password verification in the enterprise account service. The authentication decision treated an unfinished validation object as success instead of using its eventual result. The researcher tested Rocket.Chat 7.13.2; the maintainer corroborates unauthorized access to available service methods, with possible account takeover depending on subsequent application behavior.",
+  "summary": "Rocket.Chat's enterprise account service treated unfinished password verification as a successful result (CVE-2026-28514). The researcher demonstrated the issue on 7.13.2, and the maintainer corroborates unauthorized access to available service methods. Account takeover depended on what subsequent application behavior allowed.",
   "defensive_use": "Editorial lesson: model authentication as a completed, explicit decision; pending, rejected, and failed validation must not imply success. Maintain regression coverage for asynchronous rejection and service-specific authentication equivalence. The maintainer remediation requires waiting for verification and recommends tooling to detect unhandled asynchronous results.",
   "caveats": [
     "Requires the affected enterprise streaming/account-service deployment and an account with password authentication configured; the reported identity must be known or guessable. Do not generalize this to every Rocket.Chat installation or authentication mode.",

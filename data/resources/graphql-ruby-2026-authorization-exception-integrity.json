@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": "GHSL-2026-152 / GHSA-j7xr-4g94-r9h3",
-  "summary": "A GraphQL-Ruby execution-engine path converted a resolver authorization exception into permission to continue. Research demonstrates a denied resolver running and returning a fixture value, while the legacy engine stopped it. This illustrates why error handling must preserve the security meaning of a denial.",
+  "summary": "GraphQL-Ruby could continue running a resolver after its authorization check raised an exception. GitHub Security Lab demonstrated the denied resolver returning a test value in the newer execution engine, while the legacy engine stopped it. The lesson is that error handling must keep an access denial from turning into permission to proceed.",
   "defensive_use": "The maintainer identifies versions 2.5.23 through 2.6.5 as affected and 2.6.6 as patched. Only the newer Execution::Next mode and resolver-thrown authorization errors are implicated; other authorization forms worked correctly. Editorial lesson: preserve denial semantics across execution engines and keep error formatting separate from authority to execute.",
   "prerequisites": [
     "Basic API access-control concepts",

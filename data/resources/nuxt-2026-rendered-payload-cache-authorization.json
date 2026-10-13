@@ -20,7 +20,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-71316 documents an authorization mismatch between server-rendered HTML and extracted data. A shared path-keyed payload cache omitted requester identity and returned data before current-request guards. The maintainer confirms cross-user and unauthenticated disclosure while HTML remained protected. Application-specific secrets are possible contents, not independently observed production losses.",
+  "summary": "Nuxt's maintainer reports that a shared data cache could disclose another user's data, including to unauthenticated visitors, even while the HTML page remained protected (CVE-2026-71316). The cache used the path without accounting for requester identity and returned data before current-request permission checks. Application secrets could have been among the contents, but production losses were not independently observed.",
   "defensive_use": "The advisory identifies 4.5.1 as fixed by limiting shared payload caching to prerendering and restoring runtime authorization. Official release notes corroborate the fix and recommend clearing upstream caches. Editorial lesson: treat each rendered representation as a separate disclosure boundary; correct HTML protection does not prove data-response protection.",
   "prerequisites": [
     "Server-side rendering and client data hydration",

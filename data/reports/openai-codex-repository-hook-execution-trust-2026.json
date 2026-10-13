@@ -28,7 +28,7 @@
     "untrusted-input-handling",
     "patch-verification"
   ],
-  "summary": "ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry.",
+  "summary": "Codex Desktop's automated Git operations could honor repository-local execution settings without applying the intended command-approval checks. The vendor confirms possible execution with the user's privileges when specially prepared local configuration was preserved; an ordinary Git clone does not preserve it. ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry.",
   "root_cause": "Automated repository operations honored repository-local Git hook configuration outside the intended command-approval boundary.",
   "impact": "The vendor confirms possible user-privilege code execution when specially prepared local repository configuration is preserved. An ordinary Git clone does not preserve that configuration.",
   "defensive_takeaways": [

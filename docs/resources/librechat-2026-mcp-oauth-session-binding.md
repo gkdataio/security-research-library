@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/librechat-2026-mcp-oauth-session-binding.json>) · [Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g>)
+[Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-vf7j-7mrx-hp7g>) · [Canonical JSON](<../../data/resources/librechat-2026-mcp-oauth-session-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+LibreChat could associate third-party credentials with the wrong local account during an MCP OAuth callback\. Its CVE-2026-31944 advisory explains that the callback trusted the cached initiator identity without authenticating the returning browser or checking that the identities matched\. The reported consequences stay within the integration's delegated permissions; they do not amount to takeover of the person's LibreChat account\.
+
+## Defensive use
+
+Editorial lesson: bind OAuth initiation, callback session, and credential-storage owner before accepting a grant\. Treat transaction state as correlation, not sufficient proof of browser identity\. The advisory names 0\.8\.3-rc1 as patched but does not explain its implementation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** LibreChat  
 **Authors:** danny-avila  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization; Identity  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review AI authority boundaries; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-31944 describes an MCP OAuth callback that trusted cached initiator identity without authenticating the returning browser or checking identity continuity\. The advisory describes third-party credentials being associated with the wrong local account\. Consequences are bounded by delegated integration scopes, not takeover of the affected person’s LibreChat account\.
-
-## Defensive use
-
-Editorial lesson: bind OAuth initiation, callback session, and credential-storage owner before accepting a grant\. Treat transaction state as correlation, not sufficient proof of browser identity\. The advisory names 0\.8\.3-rc1 as patched but does not explain its implementation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

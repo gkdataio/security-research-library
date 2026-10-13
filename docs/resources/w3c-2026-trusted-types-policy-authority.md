@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/w3c-2026-trusted-types-policy-authority.json>) · [Official resource](<https://www.w3.org/TR/2026/WD-trusted-types-20260623/>)
+[Official resource](<https://www.w3.org/TR/2026/WD-trusted-types-20260623/>) · [Canonical JSON](<../../data/resources/w3c-2026-trusted-types-policy-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Trusted Types draft defines how browsers can require policy-created values instead of ordinary strings at injection-sensitive APIs\. This centralizes checks, but the policies must still make safe decisions: a matching type alone does not make a value safe\. The reviewed Working Draft is not a final standard and does not protect every DOM operation or isolate malicious first-party code\.
+
+## Defensive use
+
+Editorial reasoning: review two invariants separately: sensitive consumers accept only policy-produced values, and each producer enforces an adequate trust contract\. Minimize policy creation authority, keep policy dependencies reviewable and avoid global state silently changing decisions\. The maintainer FAQ explains why sanitization must be consistently applied, rather than merely available in a library\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** World Wide Web Consortium  
 **Authors:** Krzysztof Kotowicz  
@@ -10,16 +23,6 @@
 **Version:** Working Draft, 23 June 2026  
 **Topics:** Web Foundations; Browser Security  
 **Defensive skills:** Review client isolation; Review input trust boundaries; Review parsing and serialization
-
-## Original summary
-
-Defines a browser-enforced boundary between ordinary strings and typed values accepted by injection-sensitive APIs\. The underlying failure is allowing untrusted text to acquire executable interpretation\. Policies centralize creation of accepted values; matching types preserve intended use, but do not independently establish that a policy's transformation is safe\.
-
-## Defensive use
-
-Editorial reasoning: review two invariants separately: sensitive consumers accept only policy-produced values, and each producer enforces an adequate trust contract\. Minimize policy creation authority, keep policy dependencies reviewable and avoid global state silently changing decisions\. The maintainer FAQ explains why sanitization must be consistently applied, rather than merely available in a library\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

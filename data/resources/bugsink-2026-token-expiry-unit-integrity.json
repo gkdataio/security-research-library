@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "GHSA-4f45-qmjf-82cv describes account-access links whose configured seconds were interpreted as days. The maintainer reports unused email-verification, password-reset and new-user setup tokens surviving their intended lifetime.",
+  "summary": "Bugsink interpreted token lifetimes expressed in seconds as days. Its maintainer reports that unused email-verification, password-reset and new-user setup links therefore stayed valid beyond their intended expiry.",
   "defensive_use": "Editorial lesson: represent security durations with explicit units and verify expiration independently of single-use behavior. The maintainer lists versions before 2.5.1 as affected and identifies 2.5.1 as correcting the unit conversion and removing over-age tokens before acceptance.",
   "prerequisites": [
     "Basic server-side identity and authorization concepts"

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/microsoft-graph-batch-member-authorization-outcomes.json>) · [Official resource](<https://learn.microsoft.com/en-us/graph/json-batching>)
+[Official resource](<https://learn.microsoft.com/en-us/graph/json-batching>) · [Canonical JSON](<../../data/resources/microsoft-graph-batch-member-authorization-outcomes.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A successful Microsoft Graph batch response does not mean every request inside it succeeded; the official documentation shows permission denials within a successful batch\. Individual results may arrive out of order and must be matched by identifier\. Dependency failures and per-request throttling are distinct outcomes, not evidence that authorization was granted or denied\.
+
+## Defensive use
+
+Editorial synthesis: keep transport completion, permission for each operation and application-level completion separate\. Preserve a member's denied, failed or unresolved state when presenting an overall result or composing downstream state\. Define what partial completion means for the application rather than turning a successful envelope into blanket success\. A correlation identifier associates evidence; it grants no authority\. Dependency ordering alone should not be treated as an atomic rollback guarantee\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Microsoft  
 **Authors:** FaithOmbongi  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review secure error behavior
-
-## Original summary
-
-Microsoft Graph documentation distinguishes batch-envelope success from individual outcomes\. Its example includes permission denials inside a successful batch response\. Member results can arrive in a different order and must be correlated by their identifiers\. Dependency failures and per-member throttling are separate outcomes, not evidence of an authorization decision\.
-
-## Defensive use
-
-Editorial synthesis: keep transport completion, permission for each operation and application-level completion separate\. Preserve a member's denied, failed or unresolved state when presenting an overall result or composing downstream state\. Define what partial completion means for the application rather than turning a successful envelope into blanket success\. A correlation identifier associates evidence; it grants no authority\. Dependency ordering alone should not be treated as an atomic rollback guarantee\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

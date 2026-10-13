@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Research on CVE-2025-15265 explains a data-to-code boundary failure: hydration keys received JavaScript-string serialization without the HTML-context protection already used for values. The researcher demonstrates browser script execution in a minimal application. Account compromise is an application-dependent consequence, not evidence of a compromised production account.",
+  "summary": "Svelte protected hydration values for their HTML context but did not apply the same protection to keys. Camilo Vera demonstrates browser script execution in a minimal application using experimental async rendering and untrusted hydration keys. Account compromise depends on the application and was not demonstrated in a production account.",
   "defensive_use": "Compare all fields crossing rendering contexts, including metadata keys. The researcher describes replacement with an HTML-safe serializer and regression coverage. The maintainer identifies Svelte 5.46.4 as patched. Preserve one encoding contract across keys and values, rather than treating valid JSON as sufficient for every output context.",
   "prerequisites": [
     "Server-side rendering and framework integration concepts",

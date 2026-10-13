@@ -19,7 +19,7 @@
     "secrets-containment",
     "defensive-evidence-writing"
   ],
-  "summary": "Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset.",
+  "summary": "Shopify Exchange's screenshot service could reach internal infrastructure that externally influenced work should not access. Shopify confirms reported root-access capability within one infrastructure subset, explicitly excluding Shopify core; the report does not establish compromise of every container. Shopify awarded USD 25,000 for the finding.",
   "root_cause": "Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process.",
   "impact": "Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core. The retrospective does not establish compromise of every container or quantify exposed data. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions.",
   "defensive_takeaways": [

@@ -54,7 +54,7 @@
     "note": "Reviewed maintainer advisory and corroborating project sources. No software executed or deployment tested."
   },
   "content_scope": "defensive_education",
-  "summary": "GHSA-xwmw-prc4-v3cr describes MCP-delegated tokens accepted by broader application APIs because issuer validation did not establish audience authority. Client authorization also lacked explicit consent. The maintainer describes possible access to resources already available to the victim; this is bounded worst-case impact, not evidence of observed production compromise.",
+  "summary": "Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient (GHSA-xwmw-prc4-v3cr). Client authorization also lacked explicit consent. The described worst case was access to resources already available to the victim, not an observed production compromise.",
   "defensive_use": "The maintainer identifies v0.23.0 as patched. Its release notes corroborate consent, narrower token routing and audience checks. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance.",
   "prerequisites": [
     "OAuth client registration, consent and token audience concepts",

@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/google-aip-158-pagination-authorization-boundary.json>) · [Official resource](<https://google.aip.dev/158>)
+[Official resource](<https://google.aip.dev/158>) · [Canonical JSON](<../../data/resources/google-aip-158-pagination-authorization-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A page token says where to continue a result set; it does not grant permission to read it\. Google's approved pagination guidance requires opaque tokens and authorization on every request\. Later requests keep the other query arguments while allowing page size to change; hiding the token's format protects the interface design rather than conferring access rights\.
+
+## Defensive use
+
+Editorial lesson: document continuation state and actor/resource policy as separate design contracts\. An integration following a stored cursor must still rely on the service's per-request authorization decision\. Treat query continuity as a request-consistency requirement, not evidence of entitlement\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations
-
-## Original summary
-
-Google's Approved pagination guidance separates a continuation position from permission to read the collection\. Page tokens must be opaque and convey no authorization; each request still requires authorization\. Subsequent requests retain the other query arguments, while page size may change\. Opacity protects interface abstraction rather than establishing access rights\.
-
-## Defensive use
-
-Editorial lesson: document continuation state and actor/resource policy as separate design contracts\. An integration following a stored cursor must still rely on the service's per-request authorization decision\. Treat query continuity as a request-consistency requirement, not evidence of entitlement\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

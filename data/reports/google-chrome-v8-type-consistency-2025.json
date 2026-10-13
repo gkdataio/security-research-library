@@ -21,7 +21,7 @@
     "patch-verification",
     "defensive-evidence-writing"
   ],
-  "summary": "One V8 type-consistency report earned a USD 50,000 award.",
+  "summary": "V8's optimized object handling could keep using type assumptions after they were no longer valid. Memory reads and writes were possible, but broader code execution required another security failure. Google awarded USD 50,000 for this one report.",
   "root_cause": "Optimized object handling could retain invalid type assumptions, producing a type-consistency failure.",
   "impact": "Memory read/write was possible; broader code execution required an additional boundary failure.",
   "defensive_takeaways": [

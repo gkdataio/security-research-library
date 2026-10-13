@@ -16,7 +16,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "The advisory contrasts denied access to a private agent with accepted changes to its attached files. Upload handling omitted the agent permissions enforced elsewhere, allowing unauthorized context and search-file additions. The documented demonstration changed the owner-visible agent response. This is an application authorization failure before model interpretation.",
+  "summary": "LibreChat could deny access to a private agent yet accept unauthorized additions to its context and search files. The maintainer advisory attributes this to upload handling that omitted the agent permission checks used elsewhere, and its demonstration changed the response visible to the owner. The failure was in application authorization before the model interpreted the added content.",
   "defensive_use": "The source recommends checking agent-edit permission for uploads. Editorial review principle: enumerate every mutation of an agent\u2019s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations.",
   "prerequisites": [
     "Object-level authorization and agent context composition"

@@ -20,7 +20,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "The researcher attributes a USD 250,000 award to the article’s separately identified backend finding, Bug #2.",
+  "summary": "Meta's Conversions API Gateway could turn stored configuration data into executable JavaScript because it did not serialize that data safely. The researcher reports script execution in pages using the output, but the required configuration-write access and broader deployment impact are not fully established. The researcher assigns a USD 250,000 award specifically to this backend finding, labeled Bug #2.",
   "root_cause": "Configuration values were concatenated into generated JavaScript without context-safe serialization. Stored data thereby acquired the authority of executable output.",
   "impact": "The researcher reports stored script execution in consuming pages and potential account compromise. The article does not fully establish configuration-write prerequisites or independently substantiate its broader deployment and employee-system impact claims.",
   "defensive_takeaways": [

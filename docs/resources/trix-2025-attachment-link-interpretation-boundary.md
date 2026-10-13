@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/trix-2025-attachment-link-interpretation-boundary.json>) · [Official resource](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>)
+[Official resource](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>) · [Canonical JSON](<../../data/resources/trix-2025-attachment-link-interpretation-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Trix could turn stored attachment metadata into an unsafe browser link without checking its meaning when rendered\. The maintainer describes stored cross-site scripting that requires control over that metadata, later rendering and a user click\. Unauthorized actions or information disclosure are possible consequences; production exploitation and independently reproduced execution are not established here\.
+
+## Defensive use
+
+Editorial lesson: validate the meaning of untrusted values whenever data becomes an active browser attribute, including after storage and transformation\. The maintainer patch and release notes add DOMPurify attribute validation before attachment links become anchors\. The patch includes regression assertions; reading them does not establish that tests ran or that every integration is protected\. Review the deployed rendering path and dependency state\. The historical patched version is not a current safety recommendation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Trix maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review input trust boundaries; Review client isolation; Verify remediation evidence
-
-## Original summary
-
-The Trix maintainer advisory explicitly identifies stored XSS involving attachment metadata, later HTML rendering and a user click\. It describes JavaScript running in the user’s session, with possible unauthorized actions or information disclosure\. Conceptual root cause: stored attachment data was reused as link authority without validating its meaning in that browser context; storage does not confer trust\.
-
-## Defensive use
-
-Editorial lesson: validate the meaning of untrusted values whenever data becomes an active browser attribute, including after storage and transformation\. The maintainer patch and release notes add DOMPurify attribute validation before attachment links become anchors\. The patch includes regression assertions; reading them does not establish that tests ran or that every integration is protected\. Review the deployed rendering path and dependency state\. The historical patched version is not a current safety recommendation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

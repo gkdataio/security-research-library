@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://www.wiz.io/blog/nvidia-ai-vulnerability-cve-2025-23266-nvidiascape>) — Nir Ohfeld and Shir Tamari / Wiz Research · [Canonical JSON](<../../data/reports/nvidia-container-runtime-environment-trust-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+NVIDIA Container Toolkit let container-controlled settings influence privileged startup work on the host\. An untrusted image could consequently lead to code execution with elevated host permissions, depending on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE\. ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry\.
+
 **Organization:** NVIDIA  
 **Product:** NVIDIA Container Toolkit
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 An untrusted container image could lead to code execution with elevated host permissions\. Scope depends on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Keep privileged runtime initialization independent of workload-controlled configuration\.
 - Use layered tenant isolation and verify vendor-specific runtime applicability before remediation\.
@@ -33,6 +36,8 @@ Evidence level: organizer\_confirmed. One competition-entry award, not the resea
 Exact source quotation and location remain in the [canonical record](<../../data/reports/nvidia-container-runtime-environment-trust-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-07-17; precision: day; basis: explicit. Primary research article publication; earlier competition results are separately dated\.
 - **public disclosure:** 2025-05-17; precision: day; basis: explicit. Public demonstration and result; vendor technical advisory followed later\.

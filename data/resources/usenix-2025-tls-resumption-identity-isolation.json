@@ -23,7 +23,7 @@
     "security-token-design"
   ],
   "version": "USENIX Security 2025",
-  "summary": "Studies a cross-layer authentication failure: shared TLS session-ticket infrastructure can preserve cryptographic session state without preserving the intended virtual-host identity and client-authentication policy. The authors connect that mismatch to inconsistent isolation during session resumption.",
+  "summary": "This study shows how shared TLS session-ticket infrastructure can restore a session without preserving the intended virtual-host identity or client-authentication rules. The authors connect that mismatch to failures of isolation during session resumption. Their measurements have sampling and configuration limits and do not establish current vendor exposure.",
   "defensive_use": "Document which authenticated identities and policy decisions must survive connection resumption in an owned hosting design. Review library contracts and remediation evidence for preserved identity context rather than assuming that an accepted session ticket establishes all application authority.",
   "prerequisites": [
     "TLS certificates and session resumption",

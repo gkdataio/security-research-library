@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/servicenow-2025-agent-discovery-delegation-authority.json>) · [Official resource](<https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/>)
+[Official resource](<https://appomni.com/ao-labs/ai-agent-to-agent-discovery-prompt-injection/>) · [Canonical JSON](<../../data/resources/servicenow-2025-agent-discovery-delegation-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+An AI agent's permissions can extend through other agents it can call, even when its own tools are restricted\. AppOmni reports controlled reading, changes and external disclosure of records in a privileged Now Assist configuration that treated lower-trust content as instructions, despite prompt-level protections\. AppOmni says ServiceNow treated the behavior as intended; the findings depend on configuration and do not establish production exploitation or a vulnerability patch\.
+
+## Defensive use
+
+Review permitted collaborators, execution identities and sensitive-action approvals together\. Restrict team composition and delegated capabilities to the task, apply least privilege, and require approval for sensitive actions\. ServiceNow's current documentation distinguishes discovery/invocation access from the agent's data-access identity and describes supervised execution\. Editorial lesson: evaluate reachable authority across the collaboration, rather than only the first agent's tool list\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** AppOmni AO Labs  
 **Authors:** Aaron Costello  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Review AI authority boundaries; Threat-model integrations; Model access-control invariants
-
-## Original summary
-
-AppOmni's configuration research illustrates why an agent's effective authority includes capabilities reachable through collaborating agents\. Restricting its own tools may leave a wider delegation boundary when lower-trust content is treated as task authority\. Aaron Costello reports controlled record-access, record-change and external-disclosure effects in Now Assist despite prompt-level protections\.
-
-## Defensive use
-
-Review permitted collaborators, execution identities and sensitive-action approvals together\. Restrict team composition and delegated capabilities to the task, apply least privilege, and require approval for sensitive actions\. ServiceNow's current documentation distinguishes discovery/invocation access from the agent's data-access identity and describes supervised execution\. Editorial lesson: evaluate reachable authority across the collaboration, rather than only the first agent's tool list\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

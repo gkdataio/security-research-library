@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "Promotion eligibility used stale in-memory counts, while consumption was persisted later without synchronization. Absolute counter writes could also lose concurrent updates. The failed boundary was between a provisional eligibility decision and committed entitlement across global promotion, coupon and per-customer limits.",
+  "summary": "Sylius could exceed promotion limits because eligibility checks and recorded usage were not kept in sync during overlapping orders. The maintainer describes stale counts and lost concurrent updates affecting promotion-wide, coupon and per-customer limits. A limited promotion or coupon is required, but authentication is not; financial loss is a possible consequence rather than a measured production incident.",
   "defensive_use": "Editorial lesson: model the limit check and entitlement consumption as one serialized decision. Accounting correctness alone does not prove eligibility correctness. In owned local models, verify that committed usage never exceeds the authorized allowance, including cancellation semantics.",
   "prerequisites": [
     "Basic authorization, application state machines and database transaction concepts"

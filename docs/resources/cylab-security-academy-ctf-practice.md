@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/cylab-security-academy-ctf-practice.json>) · [Official resource](<https://cylabacademy.org/>)
+[Official resource](<https://cylabacademy.org/>) · [Canonical JSON](<../../data/resources/cylab-security-academy-ctf-practice.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Carnegie Mellon University's free CyLab Security Academy continues the former picoCTF learning service\. Challenges grouped by topic and difficulty, alongside curated learning paths, introduce computing and security concepts including web security\.
+
+## Defensive use
+
+Use the provider's deliberately constructed exercises to learn security concepts and explain the assumptions behind a result\. Treat challenge completion as practice, then connect observations to secure design and bounded evidence\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Carnegie Mellon University  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** CTF and Controlled Practice; Web Foundations  
 **Defensive skills:** Learn through controlled practice; Review input trust boundaries; Write bounded security evidence
-
-## Original summary
-
-Carnegie Mellon University's free CTF learning platform, continuing the former picoCTF learning service\. Topic- and difficulty-organized challenges and curated learning paths introduce computing and security concepts, including web security\.
-
-## Defensive use
-
-Use the provider's deliberately constructed exercises to learn security concepts and explain the assumptions behind a result\. Treat challenge completion as practice, then connect observations to secure design and bounded evidence\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

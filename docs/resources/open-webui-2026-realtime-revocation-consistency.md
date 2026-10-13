@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/open-webui-2026-realtime-revocation-consistency.json>) · [Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw>)
+[Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-855v-hq7w-jmjw>) · [Canonical JSON](<../../data/resources/open-webui-2026-realtime-revocation-consistency.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Open WebUI's maintainer advisory describes revoked tokens being rejected over HTTP but accepted for new realtime connections in a local comparison \(CVE-2026-59219\)\. Realtime authentication checked the signature and expiry without consulting revocation state\. A token could therefore remain cryptographically valid after the session had lost permission to connect\.
+
+## Defensive use
+
+Editorial lesson: model revocation as a shared invariant across every transport\. The advisory identifies 0\.10\.0 as patched through shared revocation checks\. Distinguish denial of new connections from termination of existing ones when reviewing remediation guarantees\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Open WebUI  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Web Foundations; API Security  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-59219 documents inconsistent session invalidation: HTTP authentication consulted revocation state, while realtime authentication checked only token signature and expiry\. The reported local comparison shows revoked credentials rejected by HTTP but accepted for new realtime authentication\. Cryptographic validity had been mistaken for continuing session authority\.
-
-## Defensive use
-
-Editorial lesson: model revocation as a shared invariant across every transport\. The advisory identifies 0\.10\.0 as patched through shared revocation checks\. Distinguish denial of new connections from termination of existing ones when reviewing remediation guarantees\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

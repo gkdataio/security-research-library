@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://issues.chromium.org/issues/450618029>) — Google Chromium security team · [Canonical JSON](<../../data/reports/google-chrome-v8-initialization-checks-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+V8 removed an initialization check without ensuring that it was safe to do so on every code path\. The report demonstrated memory corruption inside a sandboxed renderer, not a sandbox escape or full-machine compromise\. Google confirms a USD 50,000 award for this distinct report\.
+
 **Organization:** Google  
 **Product:** Chrome / V8
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A distinct V8 initialization-check report received a vendor-confirmed USD 50,000 award\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Control-flow analysis treated an initialization safety check as redundant without preserving its guarantee across every incoming path\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The report demonstrated sandboxed renderer memory corruption\. A sandbox escape or full-machine compromise is not established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Check-removal optimizations must preserve initialization guarantees across all control-flow paths\.
 - Separate a compiler fix, stable-release availability and public report access in remediation records\.
@@ -33,6 +36,8 @@ Evidence level: vendor\_confirmed. Panel decision and tracker reward metadata id
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-chrome-v8-initialization-checks-2025.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-01-22; precision: day; basis: explicit. Comment \#24 records removal of issue access restrictions\.
 - **public disclosure:** 2025-10-28; precision: day; basis: explicit. Vendor advisory preceded full issue access\.

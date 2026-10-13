@@ -20,7 +20,7 @@
     "secure-parser-review",
     "approval-state-integrity"
   ],
-  "summary": "A researcher-reported $25,000 award illustrates how differing framework and controller assumptions can remove an OAuth consent boundary; USD denomination is contextually inferred from non-contemporaneous official program evidence.",
+  "summary": "GitHub's request-handling layers disagreed about when an OAuth access grant required user consent. A user visiting a malicious website could unintentionally grant an application access to private GitHub data. The researcher reports a $25,000 award; USD is inferred from official program evidence published or updated outside the award period.",
   "root_cause": "The researcher compared the consent screen’s intended state change with routing and controller logic. The framework accepted a wider set of request semantics than the controller expected. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply. The failed invariant was that every new grant required the user’s explicit, validated approval.",
   "impact": "The researcher reports that a user visiting a malicious website could unintentionally grant an application access to read or modify private GitHub data. This demonstrates unauthorized delegated access, rather than evidence that the attacker learned the account password or that all unrelated account controls failed.",
   "defensive_takeaways": [

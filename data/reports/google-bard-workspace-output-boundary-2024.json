@@ -20,7 +20,7 @@
     "integration-threat-modeling",
     "untrusted-input-handling"
   ],
-  "summary": "One Workspace data-disclosure finding within a broader research article earned USD 20,000.",
+  "summary": "Bard's Workspace integration could disclose connected email content through generated output. Researchers demonstrated this with a controlled account and report a USD 20,000 base award for the finding. That award covers one finding within a broader article.",
   "root_cause": "Generated content and browser output restrictions did not maintain the intended boundary around connected Workspace data.",
   "impact": "The researchers demonstrated disclosure of email content from a controlled account.",
   "defensive_takeaways": [

@@ -20,7 +20,7 @@
     "approval-state-integrity",
     "defensive-evidence-writing"
   ],
-  "summary": "The first fork-collaboration finding in this article earned USD 20,000.",
+  "summary": "GitHub checked fork-collaboration permissions differently when a setting was created and when it was changed. This could give an unauthorized user write access to affected public forks. The researcher reports a USD 20,000 award for this first finding in the article.",
   "root_cause": "Permission checks differed between creation and modification of the same collaboration setting.",
   "impact": "An unauthorized user could obtain write access to affected public forks.",
   "defensive_takeaways": [

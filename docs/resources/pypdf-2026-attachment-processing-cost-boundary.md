@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/pypdf-2026-attachment-processing-cost-boundary.json>) · [Official resource](<https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj>)
+[Official resource](<https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj>) · [Canonical JSON](<../../data/resources/pypdf-2026-attachment-processing-cost-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+pypdf's maintainer reports excessive processing time in the dictionary-based embedded-file interface before 6\.19\.0 \(CVE-2026-102999\)\. Each attachment lookup parsed the full attachment list again\. Repeated ordinary lookups could therefore multiply the total work\.
+
+## Defensive use
+
+The maintainer identifies 6\.19\.0 as patched\. The merged correction records file objects by name so subsequent retrieval mostly accesses the corresponding stream directly\. Editorial lesson for document-processing services: review aggregate complexity across convenience APIs, not only individual parsing calls, and maintain independent worker time and resource budgets\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** py-pdf / pypdf  
 **Authors:** stefan6419846  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-102999 concerns excessive processing time in the dictionary-based embedded-file interface\. The maintainer explains that retrieving each attachment repeatedly parsed the full attachment list\. Thus input structure could multiply processing work even when each individual retrieval looked ordinary\. The advisory identifies versions before 6\.19\.0 as affected\.
-
-## Defensive use
-
-The maintainer identifies 6\.19\.0 as patched\. The merged correction records file objects by name so subsequent retrieval mostly accesses the corresponding stream directly\. Editorial lesson for document-processing services: review aggregate complexity across convenience APIs, not only individual parsing calls, and maintain independent worker time and resource budgets\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

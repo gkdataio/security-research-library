@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "The maintainer describes inconsistent escaping between XML attribute and element-text contexts during SAML assertion generation. User-controlled profile values could change assertion structure before the identity provider signed it. The service provider subsequently accepted extra attributes as authenticated claims; privilege escalation depends on using those attributes for authorization.",
+  "summary": "samlify could turn user-controlled profile text into extra SAML claims before the identity provider signed them. The maintainer's example shows those added attributes being accepted; gaining privileges would also require the receiving application to use them for access decisions. A valid signature cannot make improperly constructed claims trustworthy.",
   "defensive_use": "Editorial reasoning: signatures protect the generated representation, not the authority of each input used to construct it. Keep profile text separate from authorization-claim structure, use context-correct serialization before signing, and review which upstream actors may supply claims consumed as roles. A signature check alone cannot repair a compromised issuance boundary.",
   "prerequisites": [
     "SAML issuer/relying-party roles, XML contexts and claim-based authorization"

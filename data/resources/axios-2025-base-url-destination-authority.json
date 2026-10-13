@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2025-27152 explicitly identifies possible SSRF when an application assumes baseURL confines destinations but accepts unvalidated caller-controlled URL input. An absolute URL can select another destination; configured sensitive headers may then reach an unintended recipient. The contained demonstration returns content from a different destination; it does not establish production compromise. Conceptual boundary: constructing a URL and authorizing its destination are separate responsibilities.",
+  "summary": "An Axios base URL does not by itself restrict where requests can go: an absolute URL can select a different destination. The CVE-2025-27152 advisory describes possible server-side request forgery when applications accept unvalidated caller-controlled URLs, and possible disclosure of sensitive headers to an unintended recipient. Its controlled demonstration retrieved content from a different destination; it did not establish a production compromise.",
   "defensive_use": "Current official Axios documentation treats baseURL as a convenience rather than an access-control boundary. Absolute destinations can override it by default; disabling that behavior does not constrain relative-path normalization. Editorial lesson: validate the resolved destination against application policy, scope credentials to their intended recipients, and apply least-privilege egress controls. Review the selected transport and deployed version together. A software upgrade or configuration toggle alone does not make arbitrary caller input safe.",
   "prerequisites": [
     "URL resolution and the distinction between construction and destination authorization",

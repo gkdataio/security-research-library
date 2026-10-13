@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://brutecat.com/articles/google-cloud-rce/>) — Arvin Shivram \(Brutecat\) · [Canonical JSON](<../../data/reports/google-application-integration-authorization-boundaries-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Google Application Integration did not consistently check resource ownership and the authority of backend tasks\. The researcher reports cross-project access and test execution, but did not demonstrate completed code execution in production\. He reports a $75,000 base award for this distinct finding\.
+
 **Organization:** Google  
 **Product:** Google Cloud Application Integration
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-A researcher reports a $75,000 base award for a distinct Application Integration report\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Resource-ownership checks and task-authority checks were inconsistent\. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The authenticated-user research reports cross-project access and test execution\. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated\. Wider impact remains unverified\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: authorize the actual resource owner at every service boundary rather than relying on an enclosing project context\.
 - Editorial lesson: independently constrain service-task authority even when the initiating user may legitimately configure an integration\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. Only the second report’s base award; exc
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-application-integration-authorization-boundaries-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-05-22; precision: day; basis: explicit. Visible article header supplies May 22, 2026 and author Arvin Shivram\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

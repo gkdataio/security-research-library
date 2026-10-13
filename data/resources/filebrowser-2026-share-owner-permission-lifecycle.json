@@ -18,7 +18,7 @@
     "identity-lifecycle-review"
   ],
   "version": null,
-  "summary": "GHSA-v9w4-gm2x-6rvf describes public file-sharing authority outliving its owner's permissions. Creating a share required sharing and download rights, but subsequent public access did not revalidate those rights. The maintainer-published report describes continued file retrieval after revocation in version 2.62.2.",
+  "summary": "File Browser's maintainer reports that existing public share links still allowed downloads after the owner's permissions were revoked in version 2.62.2. Creating the share required both sharing and download permissions, but later public access did not check them again. Permission changes therefore failed to restrict links already issued.",
   "defensive_use": "Editorial lesson: permission changes must constrain previously issued capabilities, not only new capability creation. The merged remediation checks the owner's current sharing and download permissions during public access. Its pull-request description records separate regression cases for revoking either permission. Model issuance and later use as distinct authorization decisions.",
   "prerequisites": [
     "Basic server-side authorization concepts"

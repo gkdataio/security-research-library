@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://shopify.engineering/bug-bounty-year-in-review>) — Peter Yaworski / Shopify · [Canonical JSON](<../../data/reports/shopify-collaborator-conversion-consent-2017.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Shopify's automatic conversion of ordinary accounts into collaborator accounts could grant store access without the merchant's approval\. Shopify confirms a $20,000 award and unintended access in a partner-account context\. Its retrospective does not establish the exact permissions obtained or any data extraction\.
+
 **Organization:** Shopify  
 **Product:** Shopify partner collaborator accounts
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-Shopify confirms a $20,000 award for unauthorized collaborator access caused by automatic account conversion\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Account-conversion logic did not preserve the distinction between identity linkage and authorization to collaborate on a merchant’s store\. The vendor attributes the issue to automatic conversion of ordinary accounts into collaborator accounts\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms unintended store access without merchant interaction in a partner-account context, and says it fixed the issue within hours\. Its retrospective does not establish data extraction, the exact permissions obtained or the researcher’s discovery process\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: require an independently verified entitlement for each role transition; matching identity attributes do not prove resource access rights\.
 - Editorial lesson: preserve merchant approval when accounts are linked, merged or automatically converted\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. One report, separate from event totals\. USD 
 Exact source quotation and location remain in the [canonical record](<../../data/reports/shopify-collaborator-conversion-consent-2017.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2018-02-22; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

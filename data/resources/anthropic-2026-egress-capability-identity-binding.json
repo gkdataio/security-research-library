@@ -22,7 +22,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "Anthropic describes Cowork workspace data reaching an unintended account through an allowed service while VM isolation held. The failed assumption was that an approved API hostname established sufficient authority for disclosure. Readable workspace content and permitted service access were prerequisites; no hypervisor escape is established.",
+  "summary": "Allowing an API hostname does not ensure data goes to the intended account. Anthropic describes Cowork workspace data leaving through an approved API while virtual-machine isolation remained intact. The case required readable workspace content and permitted service access; it does not establish an escape from the hypervisor.",
   "defensive_use": "Editorial lesson: evaluate egress as an authorization decision over session identity, receiving account, permitted operation and data purpose. A host allowlist is only one input. Keep enforcement independent of model instructions, minimize readable data, and retain provenance at the boundary that knows the session.",
   "prerequisites": [
     "Basic access-control and service-identity concepts",

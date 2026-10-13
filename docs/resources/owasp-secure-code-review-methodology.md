@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-secure-code-review-methodology.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Secure_Code_Review_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-secure-code-review-methodology.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains the different purposes of a whole-codebase review and a review focused on changes\. It connects architecture, business rules and existing findings to examination of data flow, security checks and workflow state\. Review records should identify the version examined, coverage and remediation decisions\.
+
+## Defensive use
+
+For an owned codebase, document the review boundary and trace a selected security requirement through relevant code and tests\. Record unsupported assumptions and unreviewed paths rather than claiming complete coverage\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Verification; Business Logic and State Integrity  
 **Defensive skills:** Review input trust boundaries; Model access-control invariants; Write bounded security evidence
-
-## Original summary
-
-Explains how whole-codebase reviews and change-focused reviews answer different assurance questions\. Connects architecture, business requirements and existing findings to manual examination of data movement, control placement and workflow state\. Review documentation records the inspected version, coverage and remediation decisions\.
-
-## Defensive use
-
-For an owned codebase, document the review boundary and trace a selected security requirement through relevant code and tests\. Record unsupported assumptions and unreviewed paths rather than claiming complete coverage\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

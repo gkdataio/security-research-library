@@ -20,7 +20,7 @@
     "defensive-evidence-writing"
   ],
   "version": "arXiv:2608.04744v1",
-  "summary": "This author-submitted study connects unnecessary cache-key variation with redundant object storage, reduced cache effectiveness and increased origin load. It treats cache-key design as an application availability boundary, rather than a performance-only setting.",
+  "summary": "Unnecessary differences in cache keys can store multiple copies of the same content, make caching less effective and increase work for the origin server. This author-submitted study explains why cache-key design affects availability as well as performance.",
   "defensive_use": "Document which request properties genuinely distinguish representations, and review key definitions against that application contract. Compare precise keying with deduplication overhead and the legitimate-traffic costs of rate limiting or anomaly detection; preserve meaningful response distinctions when simplifying keys.",
   "prerequisites": [
     "HTTP request and response semantics",

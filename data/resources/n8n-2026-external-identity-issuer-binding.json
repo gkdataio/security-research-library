@@ -16,7 +16,7 @@
     "authorization-modeling"
   ],
   "version": null,
-  "summary": "CVE-2026-59208 concerns token exchange resolving external identities by subject alone, dropping the issuer namespace. With the feature enabled and multiple trusted issuers, a valid token whose subject matches an identity from another issuer can resolve to the wrong local account. Maintainers report impersonation; the reviewed advisory does not provide a controlled demonstration or establish production compromise.",
+  "summary": "n8n's maintainers report that token exchange matched external identities by subject without keeping track of the issuer (CVE-2026-59208). When the feature was enabled with multiple trusted issuers, this could associate a valid token with the wrong local account. The advisory reports impersonation but provides neither a controlled demonstration nor evidence of production compromise.",
   "defensive_use": "Editorial lesson: retain issuer and subject together throughout external-identity lookup and account binding; successful token validation alone does not establish which local account it represents. OpenID Connect Core section 5.7 supplies conceptual support for issuer-scoped identity. Follow the maintainer's upgrade guidance; reducing trusted issuers or disabling unused exchange is explicitly incomplete temporary mitigation.",
   "prerequisites": [
     "Basic federation, token claims and local-account binding concepts"

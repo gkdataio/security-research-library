@@ -19,7 +19,7 @@
     "secrets-containment",
     "defensive-evidence-writing"
   ],
-  "summary": "A researcher reported one dependency-confusion finding affecting GitHub build and development services and a $20,000 award.",
+  "summary": "GitHub build and development services could confuse internal Ruby packages with packages from a public source. The researcher observed code execution in several service contexts and reports a $20,000 award for one finding. The account does not establish a wider compromise beyond those observations.",
   "root_cause": "Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source.",
   "impact": "The researcher observed code execution across multiple service contexts. The disclosed account does not establish a broader compromise beyond those observations.",
   "defensive_takeaways": [

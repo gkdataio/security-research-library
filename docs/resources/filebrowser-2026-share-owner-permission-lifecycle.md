@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/filebrowser-2026-share-owner-permission-lifecycle.json>) · [Official resource](<https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf>)
+[Official resource](<https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf>) · [Canonical JSON](<../../data/resources/filebrowser-2026-share-owner-permission-lifecycle.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+File Browser's maintainer reports that existing public share links still allowed downloads after the owner's permissions were revoked in version 2\.62\.2\. Creating the share required both sharing and download permissions, but later public access did not check them again\. Permission changes therefore failed to restrict links already issued\.
+
+## Defensive use
+
+Editorial lesson: permission changes must constrain previously issued capabilities, not only new capability creation\. The merged remediation checks the owner's current sharing and download permissions during public access\. Its pull-request description records separate regression cases for revoking either permission\. Model issuance and later use as distinct authorization decisions\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** File Browser  
 **Authors:** hacdias  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence; Review identity lifecycle
-
-## Original summary
-
-GHSA-v9w4-gm2x-6rvf describes public file-sharing authority outliving its owner's permissions\. Creating a share required sharing and download rights, but subsequent public access did not revalidate those rights\. The maintainer-published report describes continued file retrieval after revocation in version 2\.62\.2\.
-
-## Defensive use
-
-Editorial lesson: permission changes must constrain previously issued capabilities, not only new capability creation\. The merged remediation checks the owner's current sharing and download permissions during public access\. Its pull-request description records separate regression cases for revoking either permission\. Model issuance and later use as distinct authorization decisions\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

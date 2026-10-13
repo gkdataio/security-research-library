@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nuxt-2026-island-component-selection-authority.json>) · [Official resource](<https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3>)
+[Official resource](<https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3>) · [Canonical JSON](<../../data/resources/nuxt-2026-island-component-selection-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Nuxt's maintainer reports that request-controlled island data could select an unintended registered component or native element through attribute inheritance\. Input meant to configure an approved component instead influenced which component rendered\. The advisory explicitly rules out arbitrary JavaScript execution through this issue\.
+
+## Defensive use
+
+Nuxt identifies 4\.5\.1 and 3\.21\.10 as patched for the common implicit-inheritance path\. Explicit untrusted component selection remains application responsibility\. Editorial lesson: define both accepted data and allowed interpretation at component boundaries; map external choices to a closed set of trusted components rather than treating strings as authority\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Nuxt  
 **Authors:** danielroe  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Threat-model integrations; Review input trust boundaries; Model access-control invariants
-
-## Original summary
-
-The maintainer describes request-controlled island data reaching dynamic component selection through attribute inheritance\. This permits unintended registered-component or native-element rendering\. The boundary fails when input intended to configure an approved component instead chooses what component runs\. The advisory expressly excludes arbitrary JavaScript execution through this vector\.
-
-## Defensive use
-
-Nuxt identifies 4\.5\.1 and 3\.21\.10 as patched for the common implicit-inheritance path\. Explicit untrusted component selection remains application responsibility\. Editorial lesson: define both accepted data and allowed interpretation at component boundaries; map external choices to a closed set of trusted components rather than treating strings as authority\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

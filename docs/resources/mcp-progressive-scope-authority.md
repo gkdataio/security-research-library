@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mcp-progressive-scope-authority.json>) · [Official resource](<https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices>)
+[Official resource](<https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices>) · [Canonical JSON](<../../data/resources/mcp-progressive-scope-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+MCP's official guidance explains how a server's permission requests influence the permissions a general-purpose client asks the user to grant\. Broad discovery metadata and permissions accumulated over time can expand that access\. The application still needs its own authorization checks even when a token has the requested scopes\.
+
+## Defensive use
+
+Map operations to permissions, issue focused challenges, support reduced grants and record elevations\. Review initial discovery and subsequent consent together; do not assume every authorization request represents only the current operation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Model Context Protocol  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** 2026-07-28 documentation URL  
 **Topics:** Ai Security; Authorization; Identity  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Review AI authority boundaries
-
-## Original summary
-
-Server permission challenges shape what a general-purpose MCP client requests\. Broad discovery metadata and accumulated scopes can enlarge delegated authority\. Token scopes still require application-side authorization\.
-
-## Defensive use
-
-Map operations to permissions, issue focused challenges, support reduced grants and record elevations\. Review initial discovery and subsequent consent together; do not assume every authorization request represents only the current operation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

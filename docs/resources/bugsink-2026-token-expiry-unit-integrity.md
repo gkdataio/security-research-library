@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/bugsink-2026-token-expiry-unit-integrity.json>) · [Official resource](<https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv>)
+[Official resource](<https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv>) · [Canonical JSON](<../../data/resources/bugsink-2026-token-expiry-unit-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Bugsink interpreted token lifetimes expressed in seconds as days\. Its maintainer reports that unused email-verification, password-reset and new-user setup links therefore stayed valid beyond their intended expiry\.
+
+## Defensive use
+
+Editorial lesson: represent security durations with explicit units and verify expiration independently of single-use behavior\. The maintainer lists versions before 2\.5\.1 as affected and identifies 2\.5\.1 as correcting the unit conversion and removing over-age tokens before acceptance\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Bugsink  
 **Authors:** vanschelven  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Business Logic and State Integrity  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Verify remediation evidence
-
-## Original summary
-
-GHSA-4f45-qmjf-82cv describes account-access links whose configured seconds were interpreted as days\. The maintainer reports unused email-verification, password-reset and new-user setup tokens surviving their intended lifetime\.
-
-## Defensive use
-
-Editorial lesson: represent security durations with explicit units and verify expiration independently of single-use behavior\. The maintainer lists versions before 2\.5\.1 as affected and identifies 2\.5\.1 as correcting the unit conversion and removing over-age tokens before acceptance\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

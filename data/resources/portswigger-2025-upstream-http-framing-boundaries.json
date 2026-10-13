@@ -19,7 +19,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "The researcher explains how inconsistent message-boundary interpretation across proxies and origins can break request isolation on shared upstream connections. Client-facing HTTP/2 alone does not remove this risk when intermediaries translate requests into HTTP/1.1.",
+  "summary": "This PortSwigger research explains how disagreement between proxies and origin servers about where requests end can break isolation on shared upstream connections. Using HTTP/2 for client connections does not remove the risk if an intermediary translates requests into HTTP/1.1.",
   "defensive_use": "Review framing contracts across every intermediary, including protocol translation and connection reuse. Consider upstream HTTP/2, consistent validation and normalization, and isolation tradeoffs where legacy transport remains. Assess remediation against the architecture rather than relying on a front-end protocol label or filtering claim.",
   "prerequisites": [
     "HTTP request and response semantics",

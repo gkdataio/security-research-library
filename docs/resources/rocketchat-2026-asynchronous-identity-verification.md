@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/rocketchat-2026-asynchronous-identity-verification.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-004_GHSL-2026-005_Rocket_Chat/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-004_GHSL-2026-005_Rocket_Chat/>) · [Canonical JSON](<../../data/resources/rocketchat-2026-asynchronous-identity-verification.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Rocket\.Chat's enterprise account service treated unfinished password verification as a successful result \(CVE-2026-28514\)\. The researcher demonstrated the issue on 7\.13\.2, and the maintainer corroborates unauthorized access to available service methods\. Account takeover depended on what subsequent application behavior allowed\.
+
+## Defensive use
+
+Editorial lesson: model authentication as a completed, explicit decision; pending, rejected, and failed validation must not imply success\. Maintain regression coverage for asynchronous rejection and service-specific authentication equivalence\. The maintainer remediation requires waiting for verification and recommends tooling to detect unhandled asynchronous results\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Peter Stöckli  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Web Foundations  
 **Defensive skills:** Review identity lifecycle; Reason about concurrent state; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-28514 concerned asynchronous password verification in the enterprise account service\. The authentication decision treated an unfinished validation object as success instead of using its eventual result\. The researcher tested Rocket\.Chat 7\.13\.2; the maintainer corroborates unauthorized access to available service methods, with possible account takeover depending on subsequent application behavior\.
-
-## Defensive use
-
-Editorial lesson: model authentication as a completed, explicit decision; pending, rejected, and failed validation must not imply success\. Maintain regression coverage for asynchronous rejection and service-specific authentication equivalence\. The maintainer remediation requires waiting for verification and recommends tooling to detect unhandled asynchronous results\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

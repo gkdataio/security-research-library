@@ -18,7 +18,7 @@
     "concurrency-reasoning",
     "authorization-modeling"
   ],
-  "summary": "The cited researcher documents a USD 30,000 award for this finding.",
+  "summary": "Instagram's mobile recovery checks did not consistently enforce account-level verification limits during concurrent activity. The researcher demonstrated an unauthorized password reset and reports a USD 30,000 award. He says the issue was fixed before publication.",
   "root_cause": "Account recovery relied on verification limits that did not provide a consistent account-level security boundary under concurrent activity. Centralized, atomic attempt accounting is the defensive concern.",
   "impact": "The researcher demonstrated unauthorized password reset and reports remediation before publication.",
   "defensive_takeaways": [

@@ -18,7 +18,7 @@
     "defensive-evidence-writing"
   ],
   "version": null,
-  "summary": "CVE-2026-68948 documents a transport-contract mismatch: an application configured an outbound body limit, but the HTTP/2 stream path delegated to a transport that did not enforce it. The maintainer-published report describes local observation of transmission beyond that budget. Bandwidth, quota and availability consequences are application-dependent; the advisory excludes code execution, credential disclosure and destination control.",
+  "summary": "Axios could send an HTTP/2 streamed upload beyond the application's configured body-size limit because the underlying transport did not enforce it. The maintainer's CVE-2026-68948 report describes that behavior in a local demonstration. Effects on bandwidth, quotas and availability depend on the application; the advisory excludes code execution, credential disclosure and control over the destination.",
   "defensive_use": "The maintainer identifies 1.18.0 as patched. Review byte-budget enforcement as an invariant shared by transport adapters. The merged remediation describes consistent upload/content limits and regression coverage. Editorial lesson: enforce limits during consumption of unknown-length input and ensure failure cancels downstream work; configuration metadata alone is not enforcement.",
   "prerequisites": [
     "HTTP transport adapters and streamed request bodies",

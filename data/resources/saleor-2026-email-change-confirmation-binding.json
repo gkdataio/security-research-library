@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-35407 concerns email-change confirmation failing to bind a valid token to the authenticated account. The stated scenario requires a valid confirmation token for one account and authenticated access to a second account. Maintainers describe account-integrity loss and potential durable compromise; this is not an unauthenticated takeover claim.",
+  "summary": "Saleor did not check that an email-change confirmation token belonged to the signed-in account. The maintainer's scenario requires a valid token for one account and authenticated access to another; it describes possible lasting account compromise, not an unauthenticated takeover or a confirmed production incident.",
   "defensive_use": "Editorial lesson: a valid confirmation artifact should authorize one subject, one operation and an expected current state. The linked patch adds subject and operation checks plus agreement with the account's prior email state. Its confirmation tests cover cross-account rejection and changed-state handling. Reading those checks and assertions does not establish a successful test run. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission.",
   "prerequisites": [
     "Authenticated sessions, confirmation tokens and account lifecycle concepts",

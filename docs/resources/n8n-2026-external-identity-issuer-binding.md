@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/n8n-2026-external-identity-issuer-binding.json>) · [Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-mq3m-f8x3-579w>)
+[Official resource](<https://github.com/n8n-io/n8n/security/advisories/GHSA-mq3m-f8x3-579w>) · [Canonical JSON](<../../data/resources/n8n-2026-external-identity-issuer-binding.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+n8n's maintainers report that token exchange matched external identities by subject without keeping track of the issuer \(CVE-2026-59208\)\. When the feature was enabled with multiple trusted issuers, this could associate a valid token with the wrong local account\. The advisory reports impersonation but provides neither a controlled demonstration nor evidence of production compromise\.
+
+## Defensive use
+
+Editorial lesson: retain issuer and subject together throughout external-identity lookup and account binding; successful token validation alone does not establish which local account it represents\. OpenID Connect Core section 5\.7 supplies conceptual support for issuer-scoped identity\. Follow the maintainer's upgrade guidance; reducing trusted issuers or disabling unused exchange is explicitly incomplete temporary mitigation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** n8n  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Model access-control invariants
-
-## Original summary
-
-CVE-2026-59208 concerns token exchange resolving external identities by subject alone, dropping the issuer namespace\. With the feature enabled and multiple trusted issuers, a valid token whose subject matches an identity from another issuer can resolve to the wrong local account\. Maintainers report impersonation; the reviewed advisory does not provide a controlled demonstration or establish production compromise\.
-
-## Defensive use
-
-Editorial lesson: retain issuer and subject together throughout external-identity lookup and account binding; successful token validation alone does not establish which local account it represents\. OpenID Connect Core section 5\.7 supplies conceptual support for issuer-scoped identity\. Follow the maintainer's upgrade guidance; reducing trusted issuers or disabling unused exchange is explicitly incomplete temporary mitigation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

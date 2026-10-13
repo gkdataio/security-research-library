@@ -16,7 +16,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "HackerOne awarded USD 25,000 in 2022 for private-program GraphQL metadata exposure; the report became public in January 2025 (primary).",
+  "summary": "HackerOne's GraphQL interface exposed metadata about private programs without consistently enforcing their visibility rules. The researcher demonstrated metadata exposure; HackerOne's investigation also found possible access to report titles, but full report-body access was not established. HackerOne awarded USD 25,000 in 2022, and the report became public in January 2025.",
   "root_cause": "A GraphQL object lookup failed to preserve private-program visibility for associated metadata (primary). The researcher described an unauthenticated request and triage validated the report. Exposure depended on resolving a valid program-associated object; the public record does not establish equal reachability across every private-program type. Conceptually, resolving an object is distinct from authorizing its disclosure. The exact omitted check and code-level repair are not public.",
   "impact": "The researcher demonstrated private-program metadata exposure. HackerOne’s internal investigation additionally determined that report titles could be accessed and raised severity to critical; title access was a vendor-assessed consequence, not the researcher’s demonstrated result in the visible evidence. HackerOne said it found no exploitation beyond the demonstration (primary). Full report-body access is not established.",
   "defensive_takeaways": [

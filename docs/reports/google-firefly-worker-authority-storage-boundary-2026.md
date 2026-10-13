@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) — Arvin Shivram \(Brutecat\), published on Google Bug Hunters · [Canonical JSON](<../../data/reports/google-firefly-worker-authority-storage-boundary-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Google Firefly let delegated workers and storage operations use more authority than the caller's permissions justified\. The researcher demonstrated storage reads and a local test-file write under a production identity; wider access still depended on permissions\. Firefly received a separate USD 60,000 award, and the report does not establish anonymous access or universal infrastructure compromise\.
+
 **Organization:** Google  
 **Product:** Firefly partner-management API
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-Firefly received a separately identified USD 60,000 award\. The case illustrates how delegated worker authority and storage permissions can diverge from caller authorization\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Missing caller authorization, unverified worker-result authority and unconstrained storage abstraction crossed service boundaries\. The researcher questioned whether a narrowly named field actually limited backend authority\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher demonstrated storage reads and a local test-file write under a production identity\. Broader access remained permission-dependent; universal infrastructure compromise is not established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial lesson: authenticate scheduler callbacks against the assigned worker and bind completion to an immutable task\.
 - Editorial lesson: enforce explicit storage capabilities rather than relying on field names; apply resource authorization before delegated execution\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Separate report award
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-firefly-worker-authority-storage-boundary-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-09-11; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

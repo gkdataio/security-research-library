@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-session-privilege-transition-integrity.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-session-privilege-transition-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains why applications should issue session identifiers themselves and replace them at login or other privilege changes\. Previous identifiers must be retired, and anonymous tracking kept separate from authenticated access\. When several cookies represent one session, the application must also validate their relationship\.
+
+## Defensive use
+
+Model login and privilege changes as explicit session-state transitions, with server-controlled identity and authority bindings\. Document which credentials represent anonymous and authenticated state and how superseded state loses authority\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Web Foundations; Browser Security  
 **Defensive skills:** Review identity lifecycle; Review security-token design; Model access-control invariants
-
-## Original summary
-
-Distinguishes application-issued session identifiers from client-selected values\. Explains renewing identifiers at login and other privilege changes, retiring previous identifiers, and separating anonymous tracking from authenticated session authority\. When several cookies represent one session, their relationship also requires validation\.
-
-## Defensive use
-
-Model login and privilege changes as explicit session-state transitions, with server-controlled identity and authority bindings\. Document which credentials represent anonymous and authenticated state and how superseded state loses authority\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

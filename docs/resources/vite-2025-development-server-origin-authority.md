@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/vite-2025-development-server-origin-authority.json>) · [Official resource](<https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6>)
+[Official resource](<https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6>) · [Canonical JSON](<../../data/resources/vite-2025-development-server-origin-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Vite's advisory describes overly broad HTTP response sharing and missing checks on WebSocket origins and HTTP hostnames\. With an affected development server running, interaction with an untrusted page could expose development data even when the server listened only locally\. The source demonstrates development-update messages and source snippets being disclosed; broader exposure and plugin or proxy effects are qualified claims, and the browser observations are historical\.
+
+## Defensive use
+
+Current Vite guidance recommends explicit trusted-origin and controlled-host lists, and warns against all-origin CORS and all-host acceptance\. Editorial lesson: document three separate decisions: who may read HTTP responses, who may join a realtime channel and which hostname a service answers to\. HTTP configuration does not substitute for WebSocket admission protection\. Keep those policies narrow while reviewing reverse proxies and framework/plugin integrations\. Select a currently supported patched release; inspect the actual deployment rather than treating a historical fix number as present-day upgrade advice\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Vite  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Authorization; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2025-24010 describes three development-server trust gaps: permissive HTTP response sharing, missing WebSocket origin validation and missing HTTP hostname validation\. Editorial boundary: local reachability does not establish the connecting website's authority\.
-
-## Defensive use
-
-Current Vite guidance recommends explicit trusted-origin and controlled-host lists, and warns against all-origin CORS and all-host acceptance\. Editorial lesson: document three separate decisions: who may read HTTP responses, who may join a realtime channel and which hostname a service answers to\. HTTP configuration does not substitute for WebSocket admission protection\. Keep those policies narrow while reviewing reverse proxies and framework/plugin integrations\. Select a currently supported patched release; inspect the actual deployment rather than treating a historical fix number as present-day upgrade advice\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

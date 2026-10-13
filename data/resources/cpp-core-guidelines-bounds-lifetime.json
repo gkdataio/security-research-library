@@ -52,7 +52,7 @@
     "note": "Reviewed the living document displaying 2026-06-14, especially Pro.bounds, Pro.lifetime, and GSL.view. No original publication date was established."
   },
   "content_scope": "defensive_education",
-  "summary": "Separates three mutually supporting properties: objects must be used with valid types, accesses must stay inside their allocated bounds, and references must not outlive the objects they designate. The bounds and lifetime profiles translate these ideas into interface and ownership guidance, including range-carrying views and avoiding potentially invalid pointers.",
+  "summary": "The C++ Core Guidelines connect three safety requirements: use objects with valid types, keep memory accesses within bounds, and ensure references do not outlive their objects. The bounds and lifetime sections explain how interface and ownership choices support these requirements, including views that carry size information and avoiding pointers that may no longer be valid.",
   "defensive_use": "During parser design review, document extent, ownership, and validity duration together. Identify where array-to-pointer conversion discards bounds and where views may outlive storage. Use the Pro.bounds, Pro.lifetime, and GSL.view sections to reason about these component-boundary contracts.",
   "prerequisites": [
     "C++ pointers and references",

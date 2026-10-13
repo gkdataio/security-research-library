@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/angular-2026-raw-content-serialization-context.json>) · [Official resource](<https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v>)
+[Official resource](<https://github.com/angular/angular/security/advisories/GHSA-vpx6-8pjr-4g3v>) · [Canonical JSON](<../../data/resources/angular-2026-raw-content-serialization-context.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Text intended to stay inactive could become browser code when Angular converted a server-generated DOM to HTML and the browser parsed it again\. Angular's CVE-2026-69149 advisory traces this to missing escaping in fallback raw-content containers\. The maintainer confirms a risk of script execution under the application's origin; session theft depends on the application and was not demonstrated in production\.
+
+## Defensive use
+
+Model every serialization and reparse boundary, including HTML post-processing\. The linked remediation discussion shows that preserving comment semantics matters alongside escaping\. The original advisory lists 22\.0\.7, 21\.2\.19 and 20\.3\.27 as fixes\. Later advisories identify additional node and fragment cases, so these historical minimums do not establish comprehensive current remediation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Angular  
 **Authors:** alan-agius4  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
 **Defensive skills:** Review text-encoding invariants; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-Angular's advisory for CVE-2026-69149 describes unsafe serialization of untrusted text in fallback raw-content containers\. A server-generated DOM can lose its intended inert meaning when later serialization and parsing interpret that text as structure\. The maintainer confirms same-origin script-execution risk; session theft is a possible application-dependent consequence, not a documented production compromise\.
-
-## Defensive use
-
-Model every serialization and reparse boundary, including HTML post-processing\. The linked remediation discussion shows that preserving comment semantics matters alongside escaping\. The original advisory lists 22\.0\.7, 21\.2\.19 and 20\.3\.27 as fixes\. Later advisories identify additional node and fragment cases, so these historical minimums do not establish comprehensive current remediation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

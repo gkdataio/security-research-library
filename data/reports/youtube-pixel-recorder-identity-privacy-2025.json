@@ -17,7 +17,7 @@
     "integration-threat-modeling",
     "defensive-evidence-writing"
   ],
-  "summary": "One cross-product privacy report received USD 3,133 and a USD 7,500 adjustment, totaling USD 10,633.",
+  "summary": "YouTube and Pixel Recorder exposed links between identities that could reveal private email addresses associated with YouTube users. The researchers report this privacy failure, but no mass breach is established. The one report received USD 3,133 plus a USD 7,500 adjustment, totaling USD 10,633.",
   "root_cause": "Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity.",
   "impact": "Researchers reported that private email addresses associated with YouTube users could be revealed. No mass breach is established.",
   "defensive_takeaways": [

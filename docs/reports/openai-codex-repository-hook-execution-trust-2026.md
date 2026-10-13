@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19590.json>) — OpenAI CNA, distributed through the CVE Program · [Canonical JSON](<../../data/reports/openai-codex-repository-hook-execution-trust-2026.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Codex Desktop's automated Git operations could honor repository-local execution settings without applying the intended command-approval checks\. The vendor confirms possible execution with the user's privileges when specially prepared local configuration was preserved; an ordinary Git clone does not preserve it\. ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry\.
+
 **Organization:** OpenAI  
 **Product:** Codex Desktop
 
-## What the evidence establishes
-
-Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
-
-ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Automated repository operations honored repository-local Git hook configuration outside the intended command-approval boundary\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms possible user-privilege code execution when specially prepared local repository configuration is preserved\. An ordinary Git clone does not preserve that configuration\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Treat repository-local execution settings as untrusted input\.
 - Apply execution policy to background tooling as well as user-visible agent commands\.
@@ -33,6 +36,8 @@ Evidence level: organizer\_confirmed. The successful second-round entry earned U
 Exact source quotation and location remain in the [canonical record](<../../data/reports/openai-codex-repository-hook-execution-trust-2026.json>).
 
 ## Dates
+
+Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
 - **published:** 2026-09-01; precision: day; basis: explicit. Vendor-authored technical CNA publication\. ZDI published its advisory on September 10\.
 - **public disclosure:** 2026-05-15; precision: day; basis: explicit. Public competition demonstration and result, before technical CNA publication\.

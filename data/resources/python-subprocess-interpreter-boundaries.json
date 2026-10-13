@@ -14,7 +14,7 @@
     "secure-parser-review"
   ],
   "version": "Python 3.14 documentation branch",
-  "summary": "Runtime documentation distinguishes the selected executable, its arguments, and shell interpretation. Python does not implicitly select a shell, but Windows may launch batch files through one. The companion shlex reference limits its quoting guarantees to Unix shells; quoting is not a portable substitute for understanding the receiving interpreter.",
+  "summary": "Python's documentation distinguishes the executable being launched, its arguments and any shell that interprets them. Python does not implicitly choose a shell, but Windows may launch batch files through one. The shlex reference limits its quoting guarantees to Unix shells, so quoting alone is not a portable way to handle different interpreters.",
   "defensive_use": "Editorial learning objective: distinguish preserving argument boundaries from authorizing their meaning. Review which executable and interpreter receive data, what actions the receiving program assigns to arguments, and whether those actions fit the intended authority. This resource supports conceptual design review, without execution recipes.",
   "prerequisites": [
     "Basic familiarity with processes, arguments, and operating-system differences."

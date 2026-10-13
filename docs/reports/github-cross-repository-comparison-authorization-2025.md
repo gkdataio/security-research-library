@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://hackerone.com/reports/3124517>) — GitHub security team and furbreeze · [Canonical JSON](<../../data/reports/github-cross-repository-comparison-authorization-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub Enterprise Server's comparison feature could reveal limited code from a repository the user was not allowed to read\. The user needed existing repository access and prior knowledge of private-repository references; the report does not establish unrestricted repository access\. GitHub awarded USD 10,000 for the finding\.
+
 **Organization:** GitHub  
 **Product:** GitHub Enterprise Server
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-GitHub awarded USD 10,000 for a GHES comparison feature that exposed limited code across repository permission boundaries \(vendor-report\)\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 GitHub identifies improper access control in cross-repository comparison \(vendor-report; vendor-release\)\. Access to one repository did not establish permission to disclose content from another contributing repository\. The vendor describes prerequisites of existing repository access and prior knowledge of private-repository references; this was not described as unrestricted anonymous browsing\. The conceptual failure is authorizing a derived view without preserving every source repository’s access boundary; implementation-level check placement is not disclosed\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The vendor confirms limited code disclosure from an otherwise unauthorized repository \(vendor-report; vendor-release\)\. The public summary does not establish complete repository extraction, write access, account takeover, or exploitation in the wild; those outcomes must not be inferred from the broader report title\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Editorial design lesson: authorize every contributing source under the requesting actor before returning a combined or derived view\.
 - Editorial review objective: ensure that permission to access one repository never substitutes for permission to read another repository’s content\.
@@ -34,6 +37,8 @@ Evidence level: vendor\_confirmed. One report award; cash receipt is unverified\
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-cross-repository-comparison-authorization-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-09-23; precision: day; basis: explicit. Detailed report disclosure event, activity-37054322\.
 - **public disclosure:** 2025-08-25; precision: day; basis: explicit. Vendor advisory in Enterprise Server 3\.17\.5 release notes preceded the detailed report\.

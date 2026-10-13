@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) — Teddy Katz · [Canonical JSON](<../../data/reports/github-actions-reference-validation-2021.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+GitHub Actions could give an unauthorized workflow access to repository secrets and write permissions because repository references were not checked consistently\. The researcher reports a USD 25,000 award for this finding\.
+
 **Organization:** GitHub  
 **Product:** GitHub Actions and GitHub Enterprise Server
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A reference-validation flaw crossed the GitHub Actions trust boundary and earned USD 25,000\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Repository secrets and write authority could become available to an unauthorized workflow\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Enforce security invariants at every mutation and at their privileged consumers\.
 - Keep repository secrets confined to explicitly trusted execution contexts\.
@@ -33,6 +36,8 @@ Evidence level: researcher\_reported. Single finding; the later 2022 follow-up e
 Exact source quotation and location remain in the [canonical record](<../../data/reports/github-actions-reference-validation-2021.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2021-03-17; precision: day; basis: explicit
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported

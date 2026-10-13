@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/django-2026-query-alias-structure-boundary.json>) · [Official resource](<https://www.djangoproject.com/weblog/2026/feb/03/security-releases/>)
+[Official resource](<https://www.djangoproject.com/weblog/2026/feb/03/security-releases/>) · [Canonical JSON](<../../data/resources/django-2026-query-alias-structure-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Django's CVE-2026-1312 advisory describes column aliases being interpreted as SQL structure when combined with relation filtering and ordering\. Exposure requires an application to accept untrusted alias definitions in that ORM workflow; using Django alone is not enough\. The advisory establishes possible SQL injection, not a documented production compromise\.
+
+## Defensive use
+
+The official announcement identifies repaired releases 6\.0\.2, 5\.2\.11 and 4\.2\.28, issued February 3, 2026; release notes independently corroborate the 6\.0\.2 fix\. Editorial lesson: distinguish query values from identifiers and structural metadata, constrain each according to its role, and preserve that contract when composing ORM features\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Django Software Foundation  
 **Authors:** Jacob Walls  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Interpreter Boundaries  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-Django confirms CVE-2026-1312: application-controlled column aliases could cross from metadata into SQL structure when used across relation filtering and ordering\. Exploitability requires an application to admit untrusted alias definitions into that ORM workflow; using Django alone does not establish exposure\. The advisory establishes potential SQL injection, not observed production compromise\.
-
-## Defensive use
-
-The official announcement identifies repaired releases 6\.0\.2, 5\.2\.11 and 4\.2\.28, issued February 3, 2026; release notes independently corroborate the 6\.0\.2 fix\. Editorial lesson: distinguish query values from identifiers and structural metadata, constrain each according to its role, and preserve that contract when composing ORM features\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

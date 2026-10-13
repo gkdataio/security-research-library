@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sigstore-security-model.json>) · [Official resource](<https://docs.sigstore.dev/about/security/>)
+[Official resource](<https://docs.sigstore.dev/about/security/>) · [Canonical JSON](<../../data/resources/sigstore-security-model.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Sigstore's security guide explains how software signatures link an artifact to a signing identity and an auditable history\. It describes identity issuers, Fulcio's short-lived certificates, trusted roots and Rekor's logs as separate parts of that assurance\. Signatures do not assess code quality, and detecting misuse through transparency still requires someone to monitor the logs\.
+
+## Defensive use
+
+Identify the expected publisher or workload and its issuer, document which certificate authority and log are trusted, and assign responsibility for detecting unexpected signing events\. Trace the trust boundary from identity issuer through certificate and artifact to the consumer’s acceptance policy\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Sigstore  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Software Supply Chain; Identity; Verification  
 **Defensive skills:** Model build and release trust; Review machine identities
-
-## Original summary
-
-Explains how identity-based artifact signing combines an OIDC issuer and subject, Fulcio’s short-lived certificates, a managed trust root, and Rekor’s auditable signature history\. Identity certification, artifact integrity, and transparency are separate guarantees with different dependencies\.
-
-## Defensive use
-
-Identify the expected publisher or workload and its issuer, document which certificate authority and log are trusted, and assign responsibility for detecting unexpected signing events\. Trace the trust boundary from identity issuer through certificate and artifact to the consumer’s acceptance policy\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

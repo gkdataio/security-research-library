@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/privacycg-storage-access-permission-activation-boundary.json>) · [Official resource](<https://privacycg.github.io/storage-access/>)
+[Official resource](<https://privacycg.github.io/storage-access/>) · [Canonical JSON](<../../data/resources/privacycg-storage-access-permission-activation-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+The Storage Access API draft separates permission for a pair of sites, active access in a document and whether cookies may accompany a particular request\. Secure-context, origin, embedding-policy and sandbox conditions still apply, and navigation or redirects can interrupt access; document access does not permit arbitrary cross-origin cookie attachment\. The companion Headers draft lets a resource activate an existing permission, separately from permission to read a cross-origin response\.
+
+## Defensive use
+
+Editorial guidance: model permission, document access and request eligibility separately\. Review denial, revocation and navigation paths, minimize resource opt-in, and retain independent server authorization and CSRF defenses\. Cookie availability does not establish authority for a business action\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Privacy Community Group  
 **Authors:** Benjamin VanderSloot; Johann Hofmann; Anne van Kesteren  
@@ -10,16 +23,6 @@
 **Version:** Draft Community Group Report, 22 May 2026  
 **Topics:** Web Foundations; Authorization; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations
-
-## Original summary
-
-The API draft distinguishes permission for the top-level and embedded site pair from activated access in a document and cookie eligibility on each request\. Secure context, origin, embedding-policy and sandbox conditions still apply\. Navigation and redirects constrain continuity; a document's access does not authorize arbitrary cross-origin cookie attachment\. The companion Headers draft adds resource-controlled activation of an existing permission, independently of permission to read cross-origin responses\.
-
-## Defensive use
-
-Editorial guidance: model permission, document access and request eligibility separately\. Review denial, revocation and navigation paths, minimize resource opt-in, and retain independent server authorization and CSRF defenses\. Cookie availability does not establish authority for a business action\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

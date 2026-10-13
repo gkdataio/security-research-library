@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/openfga-2026-composed-policy-exclusion-integrity.json>) · [Official resource](<https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m>)
+[Official resource](<https://github.com/openfga/openfga/security/advisories/GHSA-g3pg-frfm-pr2m>) · [Canonical JSON](<../../data/resources/openfga-2026-composed-policy-exclusion-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OpenFGA's maintainer advisory describes excluded users incorrectly returning in user-enumeration results \(CVE-2026-61709\)\. This happened with a particular combination of wildcard membership, exclusion and intersection, where another policy component could reintroduce a denied user\. Combining permission sets must preserve explicit exclusions\.
+
+## Defensive use
+
+Editorial lesson: reason about policy results as complete sets, including exclusions, rather than merging positive membership alone\. Design contained regression cases that compare composed policy outcomes with their intended semantics\. The maintainer recommends OpenFGA 1\.18\.1 or later and lists Helm chart 0\.3\.10 as patched\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OpenFGA  
 **Authors:** justincoh  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-61709 describes incorrect authorization-policy evaluation in user enumeration\. Under a particular composition of wildcard membership, exclusion and intersection, a user denied by one policy component could reappear in the result through another component\. The failed boundary is preservation of explicit denial when combining permission sets\.
-
-## Defensive use
-
-Editorial lesson: reason about policy results as complete sets, including exclusions, rather than merging positive membership alone\. Design contained regression cases that compare composed policy outcomes with their intended semantics\. The maintainer recommends OpenFGA 1\.18\.1 or later and lists Helm chart 0\.3\.10 as patched\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

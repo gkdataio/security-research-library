@@ -18,7 +18,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-15305 concerns a lifecycle mismatch between form configuration and upload enforcement. MIME validation was registered before the concrete form properties were available, so the intended validator never entered the processing pipeline. The maintainer identifies TYPO3 14.2.0–14.3.4 as affected.",
+  "summary": "TYPO3 could skip configured upload-type restrictions because the MIME validator was registered before the form's properties were available. The maintainer identifies versions 14.2.0–14.3.4 as affected when forms use file or image uploads with MIME restrictions. The reported result is acceptance of unintended file types, explicitly excluding PHP uploads; server-side code execution is not established.",
   "defensive_use": "The official 14.3.5 release notes identify runtime registration of the MIME validator as the correction. Editorial lesson: a declared restriction is not evidence of enforcement. Trace configuration through construction and execution, and make absent policy enforcement a visible failure rather than an implicit success.",
   "prerequisites": [
     "Basic web upload handling and server-side validation",

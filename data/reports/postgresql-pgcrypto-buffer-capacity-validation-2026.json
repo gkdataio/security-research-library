@@ -28,7 +28,7 @@
     "untrusted-input-handling",
     "patch-verification"
   ],
-  "summary": "The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay.cloud 2025 competition entry.",
+  "summary": "PostgreSQL's pgcrypto extension did not check that a buffer was large enough before copying key data into it. The vendor confirms possible code execution as the database's operating-system account, requiring permission to install the extension or supply ciphertext to an existing installation. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay.cloud 2025 entry.",
   "root_cause": "Cryptographic message parsing copied a derived key length into a fixed-capacity destination without verifying that the destination was large enough.",
   "impact": "The PostgreSQL advisory confirms possible code execution under the database operating-system account. The vendor CVE record limits the prerequisite to permission to install the extension or supply ciphertext to an existing installation.",
   "defensive_takeaways": [

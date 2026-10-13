@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/authentik-2026-source-mapping-mutation-authority.json>) · [Official resource](<https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr>)
+[Official resource](<https://github.com/goauthentik/authentik/security/advisories/GHSA-wr38-7xg8-fqxr>) · [Canonical JSON](<../../data/resources/authentik-2026-source-mapping-mutation-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Permission to manage an authentik source connection could also let a user change which local account or group it represented\. The CVE-2026-49443 advisory attributes this to identity-mapping fields that the API allowed callers to edit\. The maintainer reports authentication as another user; its example demonstrates user mappings, while the stated impact also includes groups\.
+
+## Defensive use
+
+Editorial reasoning: permission to maintain an integration object does not establish permission to reassign the identity it authenticates\. Treat identity bindings as security-sensitive relationships, restrict writable fields, and separately authorize any supported reassignment\. The advisory lists patched versions 2025\.12\.6, 2026\.2\.4 and 2026\.5\.1\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** authentik  
 **Authors:** rissson  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; API Security  
 **Defensive skills:** Review identity lifecycle; Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-49443 concerns writable identity-mapping fields in API serializers\. Delegated connection-management authority could alter which local user or group a source identity represented\. The maintainer reports victim-account authentication; its example addresses user mappings, while the impact statement also covers groups\.
-
-## Defensive use
-
-Editorial reasoning: permission to maintain an integration object does not establish permission to reassign the identity it authenticates\. Treat identity bindings as security-sensitive relationships, restrict writable fields, and separately authorize any supported reassignment\. The advisory lists patched versions 2025\.12\.6, 2026\.2\.4 and 2026\.5\.1\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

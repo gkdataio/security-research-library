@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/google-aip-161-update-field-authority.json>) · [Official resource](<https://google.aip.dev/161>)
+[Official resource](<https://google.aip.dev/161>) · [Canonical JSON](<../../data/resources/google-aip-161-update-field-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Google's approved field-mask guidance defines which fields an update selects, while separate field rules determine what may change\. Services must ignore output-only input even when a containing field is selected; the supporting guidance says to ignore unchanged immutable values and return INVALID\_ARGUMENT for attempted changes\. These annotations describe required behavior but do not perform validation themselves\.
+
+## Defensive use
+
+Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts\. Valid field selection does not establish permission to change it\. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Business Logic and State Integrity; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Review input trust boundaries
-
-## Original summary
-
-Google's Approved field-mask guidance defines which resource fields participate in an update\. Services must ignore output-only input whether selected directly or through a containing field\. Supporting field-behavior guidance says unchanged immutable values should be ignored, while requested changes should return INVALID\_ARGUMENT\. Its annotations describe behavior but add no validation themselves\.
-
-## Defensive use
-
-Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts\. Valid field selection does not establish permission to change it\. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

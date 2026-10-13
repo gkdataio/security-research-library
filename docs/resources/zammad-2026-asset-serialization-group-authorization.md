@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/zammad-2026-asset-serialization-group-authorization.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/>) · [Canonical JSON](<../../data/resources/zammad-2026-asset-serialization-group-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Zammad's specialized ticket serializer omitted a group-permission check present in its base implementation\. GitHub Security Lab reports that an authenticated agent-role user could read confidential tickets and associated user information outside permitted groups in version 6\.5\.2, and the vendor corroborates unauthorized access\. The evidence supports disclosure, not demonstrated changes to tickets\.
+
+## Defensive use
+
+Editorial lesson: a model override must retain the security contract of its base implementation\. Bind serialization to the requesting actor and the resource group before response construction; review inherited and specialized serializers together\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Man Yue Mo  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-GHSL-2026-049 describes a ticket asset serializer that overrode a permission-aware base implementation without preserving its group-access check\. GitHub Security Lab reports confidential ticket and associated-user disclosure in tested Zammad 6\.5\.2; the vendor corroborates unauthorized asset access\.
-
-## Defensive use
-
-Editorial lesson: a model override must retain the security contract of its base implementation\. Bind serialization to the requesting actor and the resource group before response construction; review inherited and specialized serializers together\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

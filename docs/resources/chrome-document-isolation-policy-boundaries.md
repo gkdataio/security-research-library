@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/chrome-document-isolation-policy-boundaries.json>) · [Official resource](<https://developer.chrome.com/blog/document-isolation-policy>)
+[Official resource](<https://developer.chrome.com/blog/document-isolation-policy>) · [Canonical JSON](<../../data/resources/chrome-document-isolation-policy-boundaries.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Chrome's Document Isolation Policy addresses information exposure within browser processes that origin checks alone cannot prevent\. The guide explains how frames can be isolated independently while retaining popup communication\. For relevant cross-origin resources, the policy either requires explicit sharing permission or removes request credentials\.
+
+## Defensive use
+
+Editorial lesson: separate process confidentiality, resource delivery and application authority in architecture reviews\. Isolation does not remove same-origin storage access or asynchronous messaging, so these channels retain their own authorization requirements\. Evaluate isolation choices against required embedded-resource and sign-in behavior\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Camille Lamy  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Memory Safety and Process Isolation; Browser Security  
 **Defensive skills:** Review client isolation; Threat-model integrations; Review secrets containment
-
-## Original summary
-
-Explains per-document cross-origin isolation as a response to process-level information exposure that logical origin checks alone cannot prevent\. Document Isolation Policy allows independently isolated frames while preserving popup communication\. Subresource policy either requires explicit sharing permission or removes credentials from relevant cross-origin requests\.
-
-## Defensive use
-
-Editorial lesson: separate process confidentiality, resource delivery and application authority in architecture reviews\. Isolation does not remove same-origin storage access or asynchronous messaging, so these channels retain their own authorization requirements\. Evaluate isolation choices against required embedded-resource and sign-in behavior\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

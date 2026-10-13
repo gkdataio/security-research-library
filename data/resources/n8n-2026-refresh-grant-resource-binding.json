@@ -19,7 +19,7 @@
     "integration-threat-modeling"
   ],
   "version": null,
-  "summary": "The maintainer reports that initial OAuth authorization preserved resource-specific consent, while refresh grants checked registration without preserving that binding. A client could consequently receive authority over another workflow accessible to the consenting user. This is a delegated-consent failure; the source does not establish access beyond that user’s underlying permissions or a production incident.",
+  "summary": "n8n's maintainer reports that OAuth token refresh did not preserve the workflow-specific consent recorded during initial authorization. A client could therefore gain access to another workflow that the consenting user was allowed to run. The report does not establish access beyond that user's permissions or a production incident.",
   "defensive_use": "The stated repair retains the granted resource in refresh-token state and rejects conflicting resource choices. The maintainer also calls for renewed authorization after upgrading because older refresh tokens lack this binding; temporary restrictions are incomplete mitigation. Editorial lesson: review authorization invariants throughout a grant’s lifecycle, including migration of pre-fix state.",
   "prerequisites": [
     "OAuth grant, refresh, resource, and consent concepts",

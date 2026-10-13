@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/lobehub-2026-knowledge-membership-mutation-authority.json>) · [Official resource](<https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r>)
+[Official resource](<https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r>) · [Canonical JSON](<../../data/resources/lobehub-2026-knowledge-membership-mutation-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+LobeHub's maintainer reports that a missing ownership check allowed removal of files from another user's knowledge base\. The advisory's demonstration reports one deletion result\. Being signed in did not establish permission to change another user's retrieval collection\.
+
+## Defensive use
+
+Editorial review principle: enforce ownership at the mutation, including every relationship being removed\. Random identifiers reduce accidental discovery but do not prove permission\. Review negative cross-owner cases and verify which underlying objects a removal actually changes\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** LobeHub  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Model access-control invariants; Review AI authority boundaries; Verify remediation evidence
-
-## Original summary
-
-The maintainer advisory attributes cross-user knowledge-base file removal to an omitted ownership restriction in a database mutation\. Its reported demonstration shows one deletion result\. The boundary is between being authenticated and being authorized to change another user’s retrieval corpus\.
-
-## Defensive use
-
-Editorial review principle: enforce ownership at the mutation, including every relationship being removed\. Random identifiers reduce accidental discovery but do not prove permission\. Review negative cross-owner cases and verify which underlying objects a removal actually changes\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

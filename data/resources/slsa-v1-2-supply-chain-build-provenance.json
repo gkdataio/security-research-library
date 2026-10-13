@@ -17,7 +17,7 @@
     "defensive-evidence-writing"
   ],
   "version": "1.2",
-  "summary": "Learn to assess software supply-chain assurance using distinct source and build tracks. The build track progresses from recording provenance to authenticated hosted builds and stronger platform isolation. Build provenance connects an artifact to its builder, inputs, and build definition so consumers can evaluate whether its production matches expectations.",
+  "summary": "SLSA v1.2 defines separate assurance tracks for source code and builds. Its build track moves from recording how an artifact was produced to authenticated hosted builds and stronger isolation, helping consumers check the builder, inputs and build definition. Basic provenance alone does not prevent tampering; consumers still need a trusted verification process.",
   "defensive_use": "Map documented build controls and provenance expectations to an approved architecture review; distinguish attestation presence from trusted verification.",
   "prerequisites": [
     "Basic familiarity with version control and continuous integration",

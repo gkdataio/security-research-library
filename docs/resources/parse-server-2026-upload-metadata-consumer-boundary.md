@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/parse-server-2026-upload-metadata-consumer-boundary.json>) · [Official resource](<https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r>)
+[Official resource](<https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r>) · [Canonical JSON](<../../data/resources/parse-server-2026-upload-metadata-consumer-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Parse Server's maintainer reports stored cross-site scripting caused by inconsistent handling of uploaded-file metadata during upload checks, storage and browser use \(GHSA-r899-h629-j84r\)\. Unsupported filename types could retain invalid media-type metadata in affected storage configurations\. The default GridFS configuration was explicitly unaffected\.
+
+## Defensive use
+
+The maintainer recommends corrected versions, application-specific file allowlists, origin separation for uploads and storage-layer anti-sniffing policy\. Editorial lesson: admission checks and delivery behavior form one security contract\. A successful upload validation result alone does not establish that later consumers will treat the object as inert data\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Parse Community  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Verification; Browser Security  
 **Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
-
-## Original summary
-
-GHSA-r899-h629-j84r describes inconsistent interpretation of uploaded-file metadata across admission, storage and browser consumption\. The maintainer reports stored cross-site scripting when unsupported filename types retained invalid media-type metadata\. The affected storage configurations preserved that metadata; default GridFS is explicitly unaffected\.
-
-## Defensive use
-
-The maintainer recommends corrected versions, application-specific file allowlists, origin separation for uploads and storage-layer anti-sniffing policy\. Editorial lesson: admission checks and delivery behavior form one security contract\. A successful upload validation result alone does not establish that later consumers will treat the object as inert data\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

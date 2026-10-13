@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-juice-shop-controlled-training.json>) · [Official resource](<https://owasp.org/projects/juice-shop>)
+[Official resource](<https://owasp.org/projects/juice-shop>) · [Canonical JSON](<../../data/resources/owasp-juice-shop-controlled-training.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP Juice Shop is a deliberately insecure web application for learning how flaws arise and how to fix them\. It offers challenges at different difficulty levels, optional guided tutorials and coding exercises, with links to relevant mitigation guidance\.
+
+## Defensive use
+
+Use an isolated, explicitly authorized training copy to study application trust boundaries and remediation choices\. Pair conceptual findings with the linked defensive guidance rather than treating challenge success as evidence about a real service\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Foundation  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** v20\.2\.0  
 **Topics:** CTF and Controlled Practice; Web Foundations; Authorization; Identity  
 **Defensive skills:** Learn through controlled practice; Review input trust boundaries; Model access-control invariants; Review identity lifecycle
-
-## Original summary
-
-An intentionally insecure web training application with varied-difficulty challenges, optional guided tutorials, and coding exercises that connect a flaw to a suitable fix\. Its learning materials link relevant mitigation guidance\.
-
-## Defensive use
-
-Use an isolated, explicitly authorized training copy to study application trust boundaries and remediation choices\. Pair conceptual findings with the linked defensive guidance rather than treating challenge success as evidence about a real service\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

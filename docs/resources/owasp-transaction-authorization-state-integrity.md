@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-transaction-authorization-state-integrity.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-transaction-authorization-state-integrity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP explains how to tie approval to a specific operation and its important details\. Applications must preserve the approved data, enforce valid workflow steps and check authorization again when the operation runs\.
+
+## Defensive use
+
+Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Business Logic and State Integrity; Authorization  
 **Defensive skills:** Review approval-state integrity; Reason about concurrent state; Model access-control invariants; Review security-token design
-
-## Original summary
-
-Explains operation-specific approval: show significant transaction details, preserve authorized data, enforce valid state transitions and recheck authorization at execution\.
-
-## Defensive use
-
-Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

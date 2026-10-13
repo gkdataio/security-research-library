@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/mlflow-2026-alternate-interface-authorization-consistency.json>) · [Official resource](<https://tachyon.so/blog/cve-2025-14297-mlflow-authorization-bypass>)
+[Official resource](<https://tachyon.so/blog/cve-2025-14297-mlflow-authorization-bypass>) · [Canonical JSON](<../../data/resources/mlflow-2026-alternate-interface-authorization-consistency.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+MLflow could authenticate a user yet allow restricted resource access when an interface lacked an authorization mapping\. Tachyon's 2026 account of CVE-2025-14297 demonstrates restricted artifact reads and describes unauthorized writes and metadata access\. The maintainer's change to the artifact interface supports the finding of a missing permission check\.
+
+## Defensive use
+
+Document one actor/action/resource policy shared by all interfaces\. Treat new helper interfaces as additions to the authorization model, and make missing enforcement fail closed\. Compare remediation claims with the actual maintainer change: the reviewed artifact patch aligns alternate interface recognition with permission enforcement\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Tachyon  
 **Authors:** Aakash Japi  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Web Foundations; API Security  
 **Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
-
-## Original summary
-
-Tachyon’s 2026 account of CVE-2025-14297 describes resource permissions depending on incomplete interface registration\. Authentication could succeed while a missing authorization mapping permitted resource access\. The researcher demonstrates restricted artifact reads and describes unauthorized writes and metadata access; the maintainer’s artifact-interface change corroborates a concrete enforcement gap\.
-
-## Defensive use
-
-Document one actor/action/resource policy shared by all interfaces\. Treat new helper interfaces as additions to the authorization model, and make missing enforcement fail closed\. Compare remediation claims with the actual maintainer change: the reviewed artifact patch aligns alternate interface recognition with permission enforcement\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

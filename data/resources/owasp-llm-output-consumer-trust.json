@@ -17,7 +17,7 @@
     "integration-threat-modeling"
   ],
   "version": "LLM05:2025",
-  "summary": "Explains why model-generated content remains untrusted when passed to browsers, databases or backend functions. The relevant boundary is the consuming component: plausible model text must not acquire executable meaning or greater authority merely because an application generated it. Distinguishes unsafe downstream handling from general reliance on answer accuracy.",
+  "summary": "OWASP explains why model-generated content must still be treated as untrusted input by browsers, databases and backend functions. Text should not become executable code or gain extra permissions merely because an application generated it. This guidance addresses unsafe downstream handling, which is separate from whether an answer is accurate.",
   "defensive_use": "Map each output consumer in an owned AI application to its validation and encoding contract. Prefer parameterized database operations and context-aware encoding, with monitoring and browser policy controls as supplementary layers.",
   "prerequisites": [
     "Basic LLM application data flow",

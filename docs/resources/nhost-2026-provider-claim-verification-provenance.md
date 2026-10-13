@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/nhost-2026-provider-claim-verification-provenance.json>) · [Official resource](<https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr>)
+[Official resource](<https://github.com/nhost/nhost/security/advisories/GHSA-6g38-8j4p-j3pr>) · [Canonical JSON](<../../data/resources/nhost-2026-provider-claim-verification-provenance.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Nhost's maintainer advisory reports that provider adapters treated an email address or fallback profile attribute as a verified identity claim \(CVE-2026-41574\)\. Account linking then accepted that claim as proof of ownership\. The reported result was unauthorized merging of identities and signed-in access to an existing account\.
+
+## Defensive use
+
+Editorial reasoning: normalization must retain the strength and origin of evidence\. A nonempty identity attribute is not interchangeable with proof of mailbox control\. Review adapter contracts and the account-linking decision together; rejecting absent or unverified evidence must remain consistent across providers\. Official auth@0\.49\.1 release notes dated 2026-04-17 corroborate stricter provider email-verification handling\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Nhost  
 **Authors:** dbarrosop  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review identity lifecycle; Threat-model integrations; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-41574 describes provider adapters converting email presence or fallback profile attributes into a verification claim\. An account-linking consumer then treated that normalized claim as ownership evidence\. The maintainer reports unauthorized identity merging and authenticated access to an existing account\.
-
-## Defensive use
-
-Editorial reasoning: normalization must retain the strength and origin of evidence\. A nonempty identity attribute is not interchangeable with proof of mailbox control\. Review adapter contracts and the account-linking decision together; rejecting absent or unverified evidence must remain consistent across providers\. Official auth@0\.49\.1 release notes dated 2026-04-17 corroborate stricter provider email-verification handling\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

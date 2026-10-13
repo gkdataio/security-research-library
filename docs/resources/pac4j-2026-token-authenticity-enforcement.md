@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/pac4j-2026-token-authenticity-enforcement.json>) · [Official resource](<https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key>)
+[Official resource](<https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key>) · [Canonical JSON](<../../data/resources/pac4j-2026-token-authenticity-enforcement.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+A researcher reports that pac4j could accept decrypted token claims as an authenticated profile without requiring signature validation \(CVE-2026-29000\)\. A library-level demonstration on 6\.0\.3 accepted arbitrary identities and roles\. The research does not establish production compromise\.
+
+## Defensive use
+
+Treat authenticity checks as mandatory, fail-closed prerequisites for profile creation\. Review all accepted token representations\. The maintainer confirms remediation and directs upgrades to 4\.5\.9, 5\.7\.9 or 6\.3\.3 and newer within those release lines\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** CodeAnt AI  
 **Authors:** Amartya Jha  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization  
 **Defensive skills:** Review security-token design; Review identity lifecycle; Verify remediation evidence
-
-## Original summary
-
-Research on CVE-2026-29000 describes an authentication boundary failure: successful decryption could allow claims to become an authenticated profile without mandatory signature validation\. The researcher reports arbitrary identity and role acceptance in a library-level demonstration on 6\.0\.3; production compromise is not established\.
-
-## Defensive use
-
-Treat authenticity checks as mandatory, fail-closed prerequisites for profile creation\. Review all accepted token representations\. The maintainer confirms remediation and directs upgrades to 4\.5\.9, 5\.7\.9 or 6\.3\.3 and newer within those release lines\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

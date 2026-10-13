@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/arxiv-2026-cache-key-precision-and-capacity.json>) · [Official resource](<https://arxiv.org/abs/2608.04744>)
+[Official resource](<https://arxiv.org/abs/2608.04744>) · [Canonical JSON](<../../data/resources/arxiv-2026-cache-key-precision-and-capacity.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Unnecessary differences in cache keys can store multiple copies of the same content, make caching less effective and increase work for the origin server\. This author-submitted study explains why cache-key design affects availability as well as performance\.
+
+## Defensive use
+
+Document which request properties genuinely distinguish representations, and review key definitions against that application contract\. Compare precise keying with deduplication overhead and the legitimate-traffic costs of rate limiting or anomaly detection; preserve meaningful response distinctions when simplifying keys\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** arXiv  
 **Authors:** Matteo Golinelli; Kaan Onarlioglu; Bruno Crispo  
@@ -10,16 +23,6 @@
 **Version:** arXiv:2608\.04744v1  
 **Topics:** Web Foundations; Verification  
 **Defensive skills:** Review artifact isolation; Threat-model integrations; Write bounded security evidence
-
-## Original summary
-
-This author-submitted study connects unnecessary cache-key variation with redundant object storage, reduced cache effectiveness and increased origin load\. It treats cache-key design as an application availability boundary, rather than a performance-only setting\.
-
-## Defensive use
-
-Document which request properties genuinely distinguish representations, and review key definitions against that application contract\. Compare precise keying with deduplication overhead and the legitimate-traffic costs of rate limiting or anomaly detection; preserve meaningful response distinctions when simplifying keys\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

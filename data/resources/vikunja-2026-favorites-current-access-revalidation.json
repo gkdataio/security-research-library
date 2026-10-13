@@ -56,7 +56,7 @@
     "note": "Primary advisory and maintainer remediation evidence reviewed; no target testing or deployment verification performed."
   },
   "content_scope": "defensive_education",
-  "summary": "GHSA-jp29-jrxc-92vf describes a task-search branch that trusted a saved favorite without checking current project access. Favorite records survived share revocation, allowing previously authorized collaborators to keep reading selected tasks through search despite denial by direct task reads.",
+  "summary": "Vikunja could keep showing favorited tasks after project access was revoked because search did not recheck current permissions. The maintainer reports that updated titles and descriptions remained readable, despite direct task reads being denied. This requires prior write-level sharing and favorites saved while authorized; the read-only exposure is limited to those tasks.",
   "defensive_use": "Editorial lesson: saved associations express preference, not continuing authority. Every query branch returning an object should enforce its current authorization policy, including alternate views and aggregates. The advisory lists 2.6.0 as patched; the August 31, 2026 maintainer release article separately confirms this revocation issue was fixed.",
   "sources": [
     {

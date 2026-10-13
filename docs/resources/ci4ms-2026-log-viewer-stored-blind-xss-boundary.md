@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.json>) · [Official resource](<https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4>)
+[Official resource](<https://github.com/ci4-cms-erp/ci4ms/security/advisories/GHSA-r4v5-rwr2-q7r4>) · [Canonical JSON](<../../data/resources/ci4ms-2026-log-viewer-stored-blind-xss-boundary.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+User-influenced error text in CI4MS logs could run as browser content when an administrator later viewed it\. The maintainer classifies CVE-2026-34560 as stored DOM blind XSS and CWE-79; the supporting GitHub Advisory Database entry describes the delayed execution\. Storing diagnostic text does not make it safe to render as active content, and the separate administrator view explains the blind-XSS label\.
+
+## Defensive use
+
+Editorial lesson: keep logged values inert throughout storage, retrieval and display\. Use text-only rendering or encoding appropriate to the actual output context, including diagnostic interfaces used by privileged staff\. Review all log-viewing paths for the same data/code separation\. Access restrictions and browser policy are defense in depth, not substitutes for safe rendering\. Verify remediation against the deployed version and its migration requirements; the historical patched-version designation alone is not a current deployment recommendation\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** CI4MS maintainers  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Web Foundations; Interpreter Boundaries; Browser Security  
 **Defensive skills:** Review input trust boundaries; Review client isolation; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-34560 concerns user-influenced error content retained in CI4MS logs and later interpreted as active browser content in the administrative viewer\. The maintainer explicitly identifies stored DOM blind XSS and CWE-79\. The supporting GitHub Advisory Database narrative describes delayed execution when an administrator opens the logs\. Conceptual boundary: diagnostic storage does not make external data trustworthy for browser interpretation; persistence and a separate observation context explain the two supported subtype labels\.
-
-## Defensive use
-
-Editorial lesson: keep logged values inert throughout storage, retrieval and display\. Use text-only rendering or encoding appropriate to the actual output context, including diagnostic interfaces used by privileged staff\. Review all log-viewing paths for the same data/code separation\. Access restrictions and browser policy are defense in depth, not substitutes for safe rendering\. Verify remediation against the deployed version and its migration requirements; the historical patched-version designation alone is not a current deployment recommendation\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

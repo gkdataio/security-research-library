@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/overthewire-bandit-unix-foundations.json>) · [Official resource](<https://overthewire.org/wargames/bandit/>)
+[Official resource](<https://overthewire.org/wargames/bandit/>) · [Canonical JSON](<../../data/resources/overthewire-bandit-unix-foundations.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Bandit teaches Unix/Linux basics to absolute beginners through a sequence of contained OverTheWire exercises\. Its official overview encourages learning command-line concepts and reading documentation before moving to other wargames\.
+
+## Defensive use
+
+Build foundational command-line literacy in the designated training game\. Record what each exercise teaches and the limits of the environment before relating those concepts to defensive administration or later web-security study\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OverTheWire  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** CTF and Controlled Practice  
 **Defensive skills:** Learn through controlled practice
-
-## Original summary
-
-An OverTheWire wargame for absolute beginners, introducing Unix/Linux basics through a sequence of contained exercises\. The official overview encourages reading documentation and learning command-line concepts before progressing to other wargames\.
-
-## Defensive use
-
-Build foundational command-line literacy in the designated training game\. Record what each exercise teaches and the limits of the environment before relating those concepts to defensive administration or later web-security study\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

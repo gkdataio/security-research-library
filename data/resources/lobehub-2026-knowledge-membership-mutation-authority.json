@@ -65,7 +65,7 @@
     }
   ],
   "content_scope": "defensive_education",
-  "summary": "The maintainer advisory attributes cross-user knowledge-base file removal to an omitted ownership restriction in a database mutation. Its reported demonstration shows one deletion result. The boundary is between being authenticated and being authorized to change another user’s retrieval corpus.",
+  "summary": "LobeHub's maintainer reports that a missing ownership check allowed removal of files from another user's knowledge base. The advisory's demonstration reports one deletion result. Being signed in did not establish permission to change another user's retrieval collection.",
   "defensive_use": "Editorial review principle: enforce ownership at the mutation, including every relationship being removed. Random identifiers reduce accidental discovery but do not prove permission. Review negative cross-owner cases and verify which underlying objects a removal actually changes.",
   "prerequisites": [
     "Object ownership and relationship-level authorization",

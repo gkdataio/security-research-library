@@ -17,7 +17,7 @@
     "patch-verification"
   ],
   "version": null,
-  "summary": "CVE-2026-49458 describes a mismatch between accepting DOM objects from another realm and recognizing them during later sanitization. Checks tied to local constructor identity could omit protective decisions and subtree traversal. The general lesson is that admitting an input representation also commits the implementation to enforcing every required security check for that representation.",
+  "summary": "DOMPurify could accept DOM objects from another JavaScript realm but fail to recognize them during later sanitization. Its CVE-2026-49458 advisory describes local-constructor checks that could skip protections and leave nested content unchecked. The lesson is that every accepted kind of input needs the full set of security checks.",
   "defensive_use": "Compare the set of accepted representations with the set covered by every protective decision, including nested content. Treat an unrecognized representation as an explicit policy decision rather than silently skipping validation. Review remediation and regression coverage together. These are conceptual review objectives, not a claim that any specific proposed implementation was shipped or independently tested.",
   "prerequisites": [
     "JavaScript realm and DOM object concepts",

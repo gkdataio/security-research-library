@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/open-webui-2026-connection-credential-capture.json>) · [Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7>)
+[Official resource](<https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7>) · [Canonical JSON](<../../data/resources/open-webui-2026-connection-credential-capture.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Open WebUI's maintainer reports unintended session-cookie forwarding in a controlled observation \(CVE-2026-87015\)\. Tool functions kept their own headers but read cookies from shared state after connection processing finished\. As a result, a connection's authentication setting did not reliably limit which credentials it sent\.
+
+## Defensive use
+
+Editorial lesson: treat destination, headers and cookies as one immutable request-authority context\. Review capture semantics independently of configuration correctness\. The advisory identifies 0\.11\.1 as fixed by binding cookies per connection\. Credential isolation should survive changes in connection order\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** Open WebUI  
 **Authors:** doge-woof  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Identity; Authorization; Ai Security  
 **Defensive skills:** Threat-model integrations; Review secrets containment; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-87015 concerns late-bound connection state: tool callables retained their own headers but read a shared cookie variable after connection processing finished\. A maintainer-described controlled observation confirmed unintended session-cookie forwarding\. Connection-specific authentication choice therefore failed to constrain the credentials crossing an integration boundary\.
-
-## Defensive use
-
-Editorial lesson: treat destination, headers and cookies as one immutable request-authority context\. Review capture semantics independently of configuration correctness\. The advisory identifies 0\.11\.1 as fixed by binding cookies per connection\. Credential isolation should survive changes in connection order\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

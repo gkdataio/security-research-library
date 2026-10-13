@@ -20,7 +20,7 @@
     "concurrency-reasoning"
   ],
   "version": null,
-  "summary": "SearchLeak (CVE-2026-42824) illustrates a timing gap between streamed AI output becoming active in a browser and final-response sanitization. Varonis reports email-subject disclosure in a larger chain containing this failure. Cleaning the completed response cannot reverse effects that already occurred.",
+  "summary": "AI output can cause browser effects before checks on the completed response run. Varonis's SearchLeak research, CVE-2026-42824, reports disclosure of email subjects in a larger chain that included this timing gap. Cleaning the final response cannot undo effects that have already occurred.",
   "defensive_use": "Define output-safety invariants for every observable intermediate state, not just the completed answer. Keep generated content inert until applicable policy checks have passed. Review rendering and data-disclosure boundaries together; a clean final display is insufficient evidence that no earlier side effect occurred.",
   "prerequisites": [
     "Browser rendering, sanitization and content-security-policy concepts",

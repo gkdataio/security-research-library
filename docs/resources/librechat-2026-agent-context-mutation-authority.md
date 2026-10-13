@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/librechat-2026-agent-context-mutation-authority.json>) · [Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59>)
+[Official resource](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59>) · [Canonical JSON](<../../data/resources/librechat-2026-agent-context-mutation-authority.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+LibreChat could deny access to a private agent yet accept unauthorized additions to its context and search files\. The maintainer advisory attributes this to upload handling that omitted the agent permission checks used elsewhere, and its demonstration changed the response visible to the owner\. The failure was in application authorization before the model interpreted the added content\.
+
+## Defensive use
+
+The source recommends checking agent-edit permission for uploads\. Editorial review principle: enumerate every mutation of an agent’s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** LibreChat  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security; Authorization  
 **Defensive skills:** Model access-control invariants; Review AI authority boundaries; Verify remediation evidence
-
-## Original summary
-
-The advisory contrasts denied access to a private agent with accepted changes to its attached files\. Upload handling omitted the agent permissions enforced elsewhere, allowing unauthorized context and search-file additions\. The documented demonstration changed the owner-visible agent response\. This is an application authorization failure before model interpretation\.
-
-## Defensive use
-
-The source recommends checking agent-edit permission for uploads\. Editorial review principle: enumerate every mutation of an agent’s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) — Youssef Sammouda · [Canonical JSON](<../../data/reports/meta-pixel-cross-window-authority-binding-2024.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Meta Pixel checked a browser message's origin without fully checking what information the requested operation could disclose or to whom\. The researcher reports exposed authorization material and subsequent Instagram takeover with user interaction, alongside a USD 32,500 award\. The report does not establish equivalent impact on every site using the script or evidence of real-world abuse\.
+
 **Organization:** Meta  
 **Product:** Meta Pixel and Instagram account integrations
 
-## What the evidence establishes
-
-Publication window: uncertain original publication date; reviewed as of 2026-10-03.
-
-The USD 32,500 researcher-reported award illustrates the distinction between message origin and disclosure authority\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher followed how browser messages influenced requests containing page context\. A trusted-origin check substituted for a complete authorization decision: the requested operation and recipient identity were not bound to the protected context\. The failure allowed sensitive information to cross into a different identity’s request context\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 The researcher reports authorization-material exposure and consequent Instagram takeover with user interaction\. Wider script deployment does not establish equivalent impact on every embedding site or evidence of real-world abuse\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Check the expected sender relationship and message structure, then independently authorize the requested operation and recipient\.
 - Define a minimal disclosure contract for analytics and integration messages; omit authentication artifacts from general page context\.
@@ -35,6 +38,8 @@ Evidence level: researcher\_reported. One researcher-reported bug bounty, not an
 Exact source quotation and location remain in the [canonical record](<../../data/reports/meta-pixel-cross-window-authority-binding-2024.json>).
 
 ## Dates
+
+Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
 - **published:** Unknown; precision: unknown; basis: not\_reported. Current archive page displays 2026-01-16\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
 - **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure remains unverified; the current archive header does not resolve it\.

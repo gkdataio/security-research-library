@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/owasp-llm-prompt-injection-prevention.json>) · [Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html>)
+[Official resource](<https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html>) · [Canonical JSON](<../../data/resources/owasp-llm-prompt-injection-prevention.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+OWASP recommends layered defenses for LLM applications that read untrusted content or use tools\. The guidance covers tracking data sources, limiting permissions, authorizing actions and monitoring behavior, while explaining the limits of guardrails\.
+
+## Defensive use
+
+Review permissions and action boundaries around an owned AI integration; treat filters and model-based checks as partial defenses rather than guarantees\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Ai Security  
 **Defensive skills:** Review AI authority boundaries; Threat-model integrations; Review input trust boundaries
-
-## Original summary
-
-Defense-in-depth guidance for LLM applications that consume untrusted content or invoke tools\. Covers data provenance, least privilege, action authorization, monitoring, and the limitations of guardrails\.
-
-## Defensive use
-
-Review permissions and action boundaries around an owned AI integration; treat filters and model-based checks as partial defenses rather than guarantees\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://brutecat.com/articles/leaking-youtube-emails/>) — Arvin Shivram and Nathan · [Canonical JSON](<../../data/reports/youtube-pixel-recorder-identity-privacy-2025.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+YouTube and Pixel Recorder exposed links between identities that could reveal private email addresses associated with YouTube users\. The researchers report this privacy failure, but no mass breach is established\. The one report received USD 3,133 plus a USD 7,500 adjustment, totaling USD 10,633\.
+
 **Organization:** Google  
 **Product:** YouTube and Pixel Recorder
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-One cross-product privacy report received USD 3,133 and a USD 7,500 adjustment, totaling USD 10,633\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Researchers reported that private email addresses associated with YouTube users could be revealed\. No mass breach is established\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Treat cross-product identifiers as sensitive correlation data\.
 - Require entitlement before returning identity attributes\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported. One report: December 3 entry explicitly sa
 Exact source quotation and location remain in the [canonical record](<../../data/reports/youtube-pixel-recorder-identity-privacy-2025.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2025-02-12; precision: day; basis: explicit
 - **public disclosure:** 2025-02-12; precision: day; basis: explicit

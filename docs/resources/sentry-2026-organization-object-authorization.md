@@ -2,7 +2,20 @@
 
 [Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)
 
-[Canonical JSON](<../../data/resources/sentry-2026-organization-object-authorization.json>) · [Official resource](<https://securitylab.github.com/advisories/GHSL-2025-130_Sentry/>)
+[Official resource](<https://securitylab.github.com/advisories/GHSL-2025-130_Sentry/>) · [Canonical JSON](<../../data/resources/sentry-2026-organization-object-authorization.json>)
+
+<a id="original-summary"></a>
+## Main takeaway
+
+Sentry checked a user's event-reading permission without ensuring the requested event belonged to that organization\. GitHub Security Lab reports cross-organization disclosure in version 25\.12\.0 by a signed-in user with event-read permission in their own organization\. The evidence establishes unauthorized reading, not changes to data or account takeover\.
+
+## Defensive use
+
+Editorial lesson: carry tenant identity into resource resolution, rather than checking actor permissions and object lookup independently\. The maintainer patch adds the organization constraint and regression coverage for cross-organization denial\. Review equivalent response paths against the same invariant\.
+
+Educational reference only; linked material does not authorize testing unrelated systems.
+
+## About this resource
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Peter Stöckli  
@@ -10,16 +23,6 @@
 **Version:** Not established in the reviewed record  
 **Topics:** Authorization; Identity  
 **Defensive skills:** Model access-control invariants; Verify remediation evidence
-
-## Original summary
-
-CVE-2026-26004 concerned a missing organization constraint in event retrieval\. A permission check on the active organization did not establish ownership of the requested object\. GitHub Security Lab reports cross-organization event disclosure in tested Sentry 25\.12\.0\.
-
-## Defensive use
-
-Editorial lesson: carry tenant identity into resource resolution, rather than checking actor permissions and object lookup independently\. The maintainer patch adds the organization constraint and regression coverage for cross-organization denial\. Review equivalent response paths against the same invariant\.
-
-Educational reference only; linked material does not authorize testing unrelated systems.
 
 ## Prerequisites
 

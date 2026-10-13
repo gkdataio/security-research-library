@@ -344,7 +344,7 @@
       "id": "google-mamba-temporary-output-isolation-2026",
       "title": "Google Mamba temporary outputs lacked access isolation",
       "product": "Mamba frame-metrics pipeline",
-      "summary": "Mamba received a distinct USD 37,604.40 award. The case illustrates why temporary processing output needs explicit access isolation, with retrieval dependencies kept separate from standalone impact.",
+      "summary": "Google Mamba did not adequately restrict file copying or isolate temporary output. Copying was possible without authentication, but the demonstrated retrieval depended on the separate Firefly finding, so standalone data access should not be inferred. Mamba received its own USD 37,604.40 award, with the panel accounting for difficult exploitation and additional access requirements.",
       "root_cause": "Untrusted file selection reached privileged storage copying. Shared temporary outputs relied on obscurity, while diagnostic metadata weakened filename secrecy.",
       "impact": "Unauthenticated copying was possible, but demonstrated retrieval required the separately reported Firefly capability. The panel explicitly discounted difficult exploitation and additional access requirements.",
       "defensive_takeaways": [
@@ -500,7 +500,7 @@
       "id": "google-firefly-worker-authority-storage-boundary-2026",
       "title": "Google Firefly confused worker authority and storage boundaries",
       "product": "Firefly partner-management API",
-      "summary": "Firefly received a separately identified USD 60,000 award. The case illustrates how delegated worker authority and storage permissions can diverge from caller authorization.",
+      "summary": "Google Firefly let delegated workers and storage operations use more authority than the caller's permissions justified. The researcher demonstrated storage reads and a local test-file write under a production identity; wider access still depended on permissions. Firefly received a separate USD 60,000 award, and the report does not establish anonymous access or universal infrastructure compromise.",
       "root_cause": "Missing caller authorization, unverified worker-result authority and unconstrained storage abstraction crossed service boundaries. The researcher questioned whether a narrowly named field actually limited backend authority.",
       "impact": "The researcher demonstrated storage reads and a local test-file write under a production identity. Broader access remained permission-dependent; universal infrastructure compromise is not established.",
       "defensive_takeaways": [
@@ -527,7 +527,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "One Chrome graphics report earned USD 250,000 across two award decisions.",
+      "summary": "Chrome's ANGLE graphics layer did not adequately validate untrusted input, potentially weakening browser isolation. Google classified the issue as High severity and awarded USD 250,000 across two decisions for one report.",
       "root_cause": "The graphics translation layer insufficiently validated untrusted input.",
       "impact": "Insufficiently validated graphics input could cross a browser security boundary; the vendor classified the issue High.",
       "defensive_takeaways": [
@@ -698,7 +698,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "ZDI awarded Doyensec USD 10,000 for this distinct Pwn2Own Berlin entry.",
+      "summary": "Codex's background metadata collection could run a repository-configured helper without the intended approval and sandbox checks. The vendor confirms possible execution with the user's privileges when the required local settings were preserved; an ordinary Git clone does not preserve them. ZDI awarded Doyensec USD 10,000 for this distinct Pwn2Own Berlin entry.",
       "root_cause": "Background metadata collection honored a repository-controlled filesystem-monitor helper without applying the intended approval and sandbox boundaries.",
       "impact": "The vendor confirms possible user-privilege code execution from preserved local repository settings. An ordinary Git clone does not preserve the required configuration.",
       "defensive_takeaways": [
@@ -884,7 +884,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry.",
+      "summary": "Codex Desktop's automated Git operations could honor repository-local execution settings without applying the intended command-approval checks. The vendor confirms possible execution with the user's privileges when specially prepared local configuration was preserved; an ordinary Git clone does not preserve it. ZDI awarded Summoning Team USD 20,000 for this distinct Pwn2Own Berlin entry.",
       "root_cause": "Automated repository operations honored repository-local Git hook configuration outside the intended command-approval boundary.",
       "impact": "The vendor confirms possible user-privilege code execution when specially prepared local repository configuration is preserved. An ordinary Git clone does not preserve that configuration.",
       "defensive_takeaways": [
@@ -1073,7 +1073,7 @@
         "ai-authority-boundaries",
         "patch-verification"
       ],
-      "summary": "ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry.",
+      "summary": "Codex's command-safety analysis and the shell could interpret the same command differently, so approval did not always cover the operation that actually ran. The vendor describes possible code execution with user privileges after untrusted repository instructions were followed; shell availability and filesystem restrictions still limited the effect. ZDI awarded Compass Security USD 40,000 for this distinct Pwn2Own Berlin entry.",
       "root_cause": "Command-safety analysis and the invoked shell interpreted control syntax differently, so the approval decision did not consistently describe the resulting operation.",
       "impact": "The vendor describes possible code execution with user privileges after untrusted repository instructions are followed. Shell availability and filesystem protections constrain impact; command approval failure does not itself disable the filesystem sandbox.",
       "defensive_takeaways": [
@@ -1258,7 +1258,7 @@
         "integration-threat-modeling",
         "patch-verification"
       ],
-      "summary": "Sentry documents a USD 150,000 award to Drinor Selmanaj for CVE-2026-20685.",
+      "summary": "Apple Private Cloud Compute did not adequately restrict where startup archives could write files. The researcher demonstrated configuration changes and telemetry disclosure in Apple's virtual environment; Apple confirms possible sensitive-data leakage from a privileged network position. Sentry reports a USD 150,000 award to Drinor Selmanaj, but the research did not establish production prompt-content leakage.",
       "root_cause": "Privileged startup archive handling did not adequately confine output paths; mutable configuration could undermine runtime integrity assumptions.",
       "impact": "Researcher demonstrated configuration changes and telemetry disclosure in Apple’s virtual environment. Apple confirms potential sensitive-information leakage from a privileged network position.",
       "defensive_takeaways": [
@@ -1445,7 +1445,7 @@
         "authorization-modeling",
         "security-token-design"
       ],
-      "summary": "A researcher reports USD 13,337 for a device-grant authorization-boundary failure.",
+      "summary": "Google's device authorization flow did not consistently preserve the intended device, application and permissions through sign-in. The researcher reports account and mailbox access; the reduced-interaction case required a signed-in user to open a link and have relevant prior consent. The researcher reports a USD 13,337 award, but the evidence does not establish that every integration was affected.",
       "root_cause": "The account completing authentication could authorize a different requesting device, while client identity and permissions were not preserved through the grant. The researcher reasoned about consistency between initial authorization and final token authority. Cross-device sign-in alone is expected behavior; the reported failure was loss of the intended recipient and permission binding.",
       "impact": "The author reports third-party account access, elevated permissions and mailbox access. Reduced-interaction behavior required a signed-in user opening a link and relevant prior consent. Universal reach, unrestricted persistence and uniform absence of alerts are not independently established.",
       "defensive_takeaways": [
@@ -1603,7 +1603,7 @@
         "integration-threat-modeling",
         "patch-verification"
       ],
-      "summary": "Wiz confirms a USD 30,000 individual competition award for Yoni Sherez’s Redis entry, identified as CVE-2026-23631.",
+      "summary": "Redis replication changes could release interpreter state while a function was still using it. Code execution was demonstrated at the competition, but the vendor limits exposure to authenticated access and replicas configured, or configurable, for writes. Wiz confirms a USD 30,000 award for Yoni Sherez's individual entry, identified as CVE-2026-23631.",
       "root_cause": "The researcher compared ordinary command handling with replication-related state changes during ongoing function execution. The latter did not preserve equivalent lifetime checks, so interpreter state could be released while still in use. The failed invariant was that background synchronization must not invalidate objects needed by active work.",
       "impact": "Code execution was demonstrated in the competition. The vendor limits exposure to authenticated access and replicas configured, or configurable, for writes. It reported Redis Cloud patched by its May 2026 announcement. These conditions do not establish equivalent exposure across all deployments.",
       "defensive_takeaways": [
@@ -1844,7 +1844,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "Wiz confirms USD 30,000 for Emil Lerner’s Redis competition entry. Two related disclosed defects remain one awarded entry.",
+      "summary": "Redis could free the same memory twice when loading serialized objects and cleaning up failures. Code execution was demonstrated at the competition; the vendor limits the affected access to authenticated users with import permission, and wider effects depend on deployment privileges and isolation. Wiz confirms USD 30,000 for Emil Lerner's entry, with both related defects counted as one award.",
       "root_cause": "The researcher traced object ownership through deserialization and failure cleanup. Validation and conversion interpreted legacy data differently, while another cleanup path released an object still owned elsewhere. Both defects violated the invariant that each allocation is released exactly once; accepting a data-import request did not make its contents trustworthy.",
       "impact": "The researcher demonstrated code execution in the competition. The vendor confirms possible execution under Redis-process authority for an authenticated user with import permission. Host or tenant reach depends on deployment privileges and isolation; it is not established for every Redis installation.",
       "defensive_takeaways": [
@@ -2065,7 +2065,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "A researcher organization reports a $150,000 base award for an exposed service identity with excessive downstream integration authority.",
+      "summary": "An exposed Meta service identity had excessive access to secrets used by other integrations. Researchers report potential read and write access to 507 private repositories, but say they only confirmed the count and did not browse or clone their contents. Their organization reports a $150,000 base award.",
       "root_cause": "An exposed service identity had unnecessarily broad access to secrets, with downstream integration credentials extending the potential impact into private source repositories. Apply strong service authentication, minimize identity permissions, and separate trust between integrations.",
       "impact": "Researchers report potential read/write access to 507 private repositories; their write-up says they confirmed the count and did not clone or browse repository contents.",
       "defensive_takeaways": [
@@ -2213,7 +2213,7 @@
         "cloud-iam-review",
         "defensive-evidence-writing"
       ],
-      "summary": "A researcher reports a $75,000 base award for a distinct Application Integration report.",
+      "summary": "Google Application Integration did not consistently check resource ownership and the authority of backend tasks. The researcher reports cross-project access and test execution, but did not demonstrate completed code execution in production. He reports a $75,000 base award for this distinct finding.",
       "root_cause": "Resource-ownership checks and task-authority checks were inconsistent. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations.",
       "impact": "The authenticated-user research reports cross-project access and test execution. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated. Wider impact remains unverified.",
       "defensive_takeaways": [
@@ -2382,7 +2382,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay.cloud 2025 competition entry.",
+      "summary": "PostgreSQL's pgcrypto extension did not check that a buffer was large enough before copying key data into it. The vendor confirms possible code execution as the database's operating-system account, requiring permission to install the extension or supply ciphertext to an existing installation. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay.cloud 2025 entry.",
       "root_cause": "Cryptographic message parsing copied a derived key length into a fixed-capacity destination without verifying that the destination was large enough.",
       "impact": "The PostgreSQL advisory confirms possible code execution under the database operating-system account. The vendor CVE record limits the prerequisite to permission to install the extension or supply ciphertext to an existing installation.",
       "defensive_takeaways": [
@@ -2591,7 +2591,7 @@
         "integration-threat-modeling",
         "patch-verification"
       ],
-      "summary": "A PostgreSQL encoding-validation failure earned Team Bugz Bunnies a $30,000 individual-entry award at ZeroDay.cloud. The vendor subsequently issued CVE-2026-2006.",
+      "summary": "A PostgreSQL extension could violate text-encoding rules that other routines relied on for safe memory calculations. The vendor confirms that an authenticated database user could reach code execution with the database operating-system account's privileges. Team Bugz Bunnies received a $30,000 individual-entry award at ZeroDay.cloud, and the vendor subsequently issued CVE-2026-2006.",
       "root_cause": "A trusted extension did not uphold a database-wide text-encoding invariant, while downstream text routines relied on that invariant for memory-safe length calculations. Defensive reviews should verify contracts across parser and extension boundaries.",
       "impact": "Vendor confirms that an authenticated database user could reach code execution with the database operating-system account's privileges.",
       "defensive_takeaways": [
@@ -2789,7 +2789,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "The organizer awarded Team Xint Code USD 30,000 for this individually identified ZeroDay.cloud 2025 competition entry.",
+      "summary": "MariaDB's JSON normalization could copy text into a buffer that was too small. An authenticated database user could crash the server; the competition demonstration achieved code execution, but the vendor says that outcome depended on unusually controlled memory conditions generally associated with a lab. The organizer awarded Team Xint Code USD 30,000 for this individual ZeroDay.cloud 2025 entry.",
       "root_cause": "JSON normalization copied variable-length text into an undersized allocation. The fix uses storage management that grows the buffer to fit the value.",
       "impact": "An authenticated database user could crash the server. The researcher demonstrated code execution at the event; the vendor-authored CVE record qualifies that outcome as dependent on unusually controlled memory conditions, generally associated with a lab.",
       "defensive_takeaways": [
@@ -3003,7 +3003,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "Ordinary authenticated customers could read internal support activity; the researcher reports a USD 14,337 award.",
+      "summary": "Ordinary signed-in customers could read internal Google support activity and identifying details about other customers and agents. The researcher reports a USD 14,337 award. The number of affected records was estimated; access to conversation contents and control of calls were not demonstrated.",
       "root_cause": "Customer authentication did not enforce the boundary around internal support-wide information. The researcher contrasted denied resource-specific operations with an accessible aggregate operation. This supports an authorization gap; middleware behavior and the intended management use remain hypotheses, not confirmed implementation details.",
       "impact": "Observed disclosures linked customer names or phone numbers with cases and agents, including agent activity. Phishing and harassment were potential consequences. Millions of affected records were estimated; conversation contents and call manipulation were not demonstrated.",
       "defensive_takeaways": [
@@ -3141,7 +3141,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "One V8 type-consistency report earned a USD 50,000 award.",
+      "summary": "V8's optimized object handling could keep using type assumptions after they were no longer valid. Memory reads and writes were possible, but broader code execution required another security failure. Google awarded USD 50,000 for this one report.",
       "root_cause": "Optimized object handling could retain invalid type assumptions, producing a type-consistency failure.",
       "impact": "Memory read/write was possible; broader code execution required an additional boundary failure.",
       "defensive_takeaways": [
@@ -3319,7 +3319,7 @@
         "untrusted-input-handling",
         "defensive-evidence-writing"
       ],
-      "summary": "A researcher reports a $15,000 Google bounty for a Gemini Enterprise integration issue affecting persistent assistant memory.",
+      "summary": "Gemini Enterprise could treat retrieved Jira content as permission to change saved assistant memory. Using two controlled accounts, the researcher demonstrated deletion of the recipient's memories; this required access to shared-project content and a user-initiated retrieval. The researcher reports a $15,000 Google bounty, but the demonstration does not establish actual customer compromise or broader cross-tenant access.",
       "root_cause": "The researcher compared user-confirmed actions with persistent memory changes. Retrieved collaboration content could influence an operation that changed saved state without equivalent confirmation. The failed boundary was between permission to read connected data and authority to mutate the user’s lasting assistant state.",
       "impact": "In a two-account setup, the researcher confirmed deletion of the test recipient’s saved memories. The scenario required shared-project content access and user-initiated retrieval. Broader cross-tenant access, mailbox compromise and lasting changes to every future response were not demonstrated.",
       "defensive_takeaways": [
@@ -3472,7 +3472,7 @@
         "approval-state-integrity",
         "defensive-evidence-writing"
       ],
-      "summary": "A Google-rewarded report connected an adjacent CI misconfiguration with insufficient separation of automation trust, creating a potential Angular supply-chain impact.",
+      "summary": "Angular's build automation did not adequately separate untrusted work from trusted build state. The researcher demonstrated credential exposure and described a possible route to repository control, but did not carry out the final supply-chain change. Google awarded the report a bounty.",
       "root_cause": "Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence.",
       "impact": "The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification. Google classified the report as a flagship supply-chain compromise.",
       "defensive_takeaways": [
@@ -3629,7 +3629,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "Wiz confirms a USD 30,000 competition award for Daniel Firer’s PostgreSQL entry, uniquely mapped by the organizer to CVE-2026-2004.",
+      "summary": "PostgreSQL's intarray extension did not check that input had the type its native code expected. The vendor confirms possible code execution as the database's operating-system account, requiring permission to install the extension or an existing installation plus object-creation permission. Wiz confirms a USD 30,000 award for Daniel Firer's competition entry and maps it to CVE-2026-2004.",
       "root_cause": "The extension’s selectivity estimator accepted input without checking that its type matched the routine’s expectations. This broke the contract between database objects an authorized user could create and native extension code running with database-process authority.",
       "impact": "The vendor confirms possible code execution as the database operating-system account. A user needed permission to install the vulnerable extension, or an existing installation plus object-creation permission. The public sources do not establish a universal unauthenticated or cross-tenant compromise.",
       "defensive_takeaways": [
@@ -3819,7 +3819,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "A distinct V8 initialization-check report received a vendor-confirmed USD 50,000 award.",
+      "summary": "V8 removed an initialization check without ensuring that it was safe to do so on every code path. The report demonstrated memory corruption inside a sandboxed renderer, not a sandbox escape or full-machine compromise. Google confirms a USD 50,000 award for this distinct report.",
       "root_cause": "Control-flow analysis treated an initialization safety check as redundant without preserving its guarantee across every incoming path.",
       "impact": "The report demonstrated sandboxed renderer memory corruption. A sandbox escape or full-machine compromise is not established.",
       "defensive_takeaways": [
@@ -3987,7 +3987,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "A Kestrel request-framing report earned a researcher-reported USD 10,000 award.",
+      "summary": "Kestrel and an upstream proxy could disagree about where one HTTP request ended and another began. This could bypass security checks in affected deployments, but the consequences depended on the full proxy and application setup. The researcher reports a USD 10,000 award.",
       "root_cause": "Permissive HTTP framing validation could disagree with an upstream parser about message boundaries.",
       "impact": "Security controls could be bypassed in affected deployments. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel.",
       "defensive_takeaways": [
@@ -4152,7 +4152,7 @@
         "secure-parser-review",
         "untrusted-input-handling"
       ],
-      "summary": "Google awarded USD 20,000 for the Colab-export finding in a multi-finding research article.",
+      "summary": "Content that Gemini treated as inactive could become active when exported to Colab. The researcher reports Workspace-data disclosure after a user exported content, in a scenario requiring access to connected data and exposure to untrusted content. Google awarded USD 20,000 for this finding in a multi-finding article; suggested delivery through training data or embeddings was not separately demonstrated.",
       "root_cause": "Content considered inert by Gemini could acquire active rendering behavior in Colab. The integration did not preserve the same sanitization contract across that boundary.",
       "impact": "The researcher reports confirming Workspace-data disclosure after a user exported content to Colab. The scenario depended on Gemini encountering untrusted content and having access to connected data. Suggested delivery through poisoned training data or embeddings was not separately demonstrated.",
       "defensive_takeaways": [
@@ -4301,7 +4301,7 @@
         "secrets-containment",
         "defensive-evidence-writing"
       ],
-      "summary": "A researcher reported one dependency-confusion finding affecting GitHub build and development services and a $20,000 award.",
+      "summary": "GitHub build and development services could confuse internal Ruby packages with packages from a public source. The researcher observed code execution in several service contexts and reports a $20,000 award for one finding. The account does not establish a wider compromise beyond those observations.",
       "root_cause": "Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source.",
       "impact": "The researcher observed code execution across multiple service contexts. The disclosed account does not establish a broader compromise beyond those observations.",
       "defensive_takeaways": [
@@ -4447,7 +4447,7 @@
         "authorization-modeling",
         "patch-verification"
       ],
-      "summary": "ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry.",
+      "summary": "Redis's Lua interpreter could keep referring to an object after its memory had been freed. The vendor confirms possible native code execution by an authenticated user allowed to run Lua scripts; host impact still depends on process privileges and deployment isolation. ZDI awarded Wiz researchers USD 40,000 for this single Pwn2Own Berlin 2025 entry.",
       "root_cause": "Lua garbage collection could leave an object referenced after its memory was freed, undermining the interpreter’s memory-safety assumptions.",
       "impact": "The vendor confirms possible native code execution by an authenticated user able to run Lua scripts. This crosses the scripting boundary; host impact remains dependent on process privileges and deployment isolation.",
       "defensive_takeaways": [
@@ -4638,7 +4638,7 @@
         "defensive-evidence-writing",
         "patch-verification"
       ],
-      "summary": "GitHub awarded USD 10,000 for a GHES comparison feature that exposed limited code across repository permission boundaries (vendor-report).",
+      "summary": "GitHub Enterprise Server's comparison feature could reveal limited code from a repository the user was not allowed to read. The user needed existing repository access and prior knowledge of private-repository references; the report does not establish unrestricted repository access. GitHub awarded USD 10,000 for the finding.",
       "root_cause": "GitHub identifies improper access control in cross-repository comparison (vendor-report; vendor-release). Access to one repository did not establish permission to disclose content from another contributing repository. The vendor describes prerequisites of existing repository access and prior knowledge of private-repository references; this was not described as unrestricted anonymous browsing. The conceptual failure is authorizing a derived view without preserving every source repository’s access boundary; implementation-level check placement is not disclosed.",
       "impact": "The vendor confirms limited code disclosure from an otherwise unauthorized repository (vendor-report; vendor-release). The public summary does not establish complete repository extraction, write access, account takeover, or exploitation in the wild; those outcomes must not be inferred from the broader report title.",
       "defensive_takeaways": [
@@ -4802,7 +4802,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "A support-system misconfiguration allowed external access to internal Confluence documentation, including limited content modification. One report received USD 12,500 split between two researchers.",
+      "summary": "A misconfigured HackerOne support integration let external users view internal Confluence documentation and modify limited content. The public report does not establish unrestricted control or explain the precise access requirements. HackerOne awarded USD 12,500 for one report, split between two researchers.",
       "root_cause": "The vendor attributes the issue to a support-system misconfiguration that allowed support workflows to cross the boundary into internal documentation. The public summary does not reveal the precise configuration, authentication prerequisites or permission-propagation mechanism; an identity-entitlement failure is a defensive interpretation, not a documented implementation detail.",
       "impact": "The vendor confirms access to nonpublic internal documentation and the ability to view and modify limited Confluence content. It does not establish unrestricted administrative control, the volume of material exposed, or broader compromise. The timeline records accepted retesting and Resolved status on June 3, 2025; redacted comment bodies do not reveal the corrective configuration or exact deployment date.",
       "defensive_takeaways": [
@@ -4962,7 +4962,7 @@
         "pipeline-trust-modeling",
         "secrets-containment"
       ],
-      "summary": "A researcher-published Google award notice for $30,000 (USD contextually inferred) illustrates a gap between approval of a contribution and selection of the code executed.",
+      "summary": "Cloud Build could execute a different revision from the one a reviewer had approved. The researcher demonstrated execution of newer, unreviewed code; access to secrets or cloud resources depended on the build's permissions. A Google notice published by the researcher records a $30,000 award, with USD inferred from program context.",
       "root_cause": "The researcher compared the identity available to the approval event with the revision later selected by the build. Approval referred to mutable contribution state without preserving the exact reviewed version. The execution boundary therefore relied on an assumption that the approved and executed content remained identical.",
       "impact": "The controlled demonstration executed a newer, unreviewed revision. Access to secrets or cloud resources was a potential consequence of the build’s assigned privileges, not evidence that all pipelines exposed those assets.",
       "defensive_takeaways": [
@@ -5143,7 +5143,7 @@
         "untrusted-input-handling",
         "patch-verification"
       ],
-      "summary": "ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
+      "summary": "NVIDIA Container Toolkit let container-controlled settings influence privileged startup work on the host. An untrusted image could consequently lead to code execution with elevated host permissions, depending on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE. ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
       "root_cause": "A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority.",
       "impact": "An untrusted container image could lead to code execution with elevated host permissions. Scope depends on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE.",
       "defensive_takeaways": [
@@ -5335,7 +5335,7 @@
         "untrusted-input-handling",
         "defensive-evidence-writing"
       ],
-      "summary": "A browser-IDE trust-boundary report received a USD 22,500 award.",
+      "summary": "Google IDX's messaging checks could let embedded content control operations in an extension worker. The researcher demonstrated script execution in that worker, without direct access to the page's DOM; broader account takeover was not established and prior access to an affected resource was required. A Google notice published by the researcher records a USD 22,500 award.",
       "root_cause": "The messaging boundary treated caller-influenced context as authority for extension-worker operations. Browser framing permission did not independently establish that embedded content should control the worker.",
       "impact": "The researcher demonstrated script execution in a worker, without direct DOM access. Same-origin requests were described as a possible consequence; broader account takeover was not established. The reproduced award notice limits severity because prior access to an affected resource was required.",
       "defensive_takeaways": [
@@ -5499,7 +5499,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "One Actifio report earned USD 10,000 after a collaboration multiplier.",
+      "summary": "Actifio did not adequately separate user-supplied driver code from a privileged shared service account. Researchers observed access across many compute instances, but broader customer-project compromise was not independently verified. They report a USD 10,000 award after Google doubled the base award for collaboration.",
       "root_cause": "Insufficient separation between user-supplied driver code and a privileged shared service identity.",
       "impact": "Researchers demonstrated execution and observed service-account access across many compute instances. Broader customer-project compromise was claimed, not independently verified.",
       "defensive_takeaways": [
@@ -5654,7 +5654,7 @@
         "authorization-modeling",
         "patch-verification"
       ],
-      "summary": "A framework upgrade exposed private contributor attributes in public report responses. The vendor confirmed a USD 25,000 award; the public report supplies the underlying serialization and test-normalization explanation.",
+      "summary": "A framework upgrade caused HackerOne's public report responses to include private contributor attributes. Tests missed the exposure because parsing the response hid a duplicate field that remained visible in the raw output. HackerOne confirmed a USD 25,000 award; the public report explains both the serialization change and the testing gap.",
       "root_cause": "The vendor explains that an internal user object and a sanitized public representation shared a field name under different Ruby key types. Earlier serialization retained only the sanitized representation; the upgrade emitted both. Snapshot tests reparsed the response and discarded the earlier duplicate field, concealing sensitive data present in the raw response. The affected context was a disclosed report with a reporter or team-member summary. This was an application output-boundary failure exposed by a framework behavior change, not an AI-agent defect.",
       "impact": "The vendor reproduced private-attribute exposure. The public report describes personal and security-sensitive account attributes, but does not demonstrate account takeover or establish an affected-user count or wider exploitation. The vendor announced a deployed fix on February 21, 2025; the researcher retested and observed only intended public attributes for team and reporter summaries. The exact code change is not disclosed.",
       "defensive_takeaways": [
@@ -5828,7 +5828,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "A monetized-channel account could access another monetized creator’s private email through inconsistent cross-API authorization. The researcher reports a USD 20,000 award.",
+      "summary": "A monetized YouTube channel could access another monetized creator's private email because related APIs did not apply consistent permission checks. The exposed address was the one stored when the channel became monetized, which could differ from its current email. The researcher reports a USD 20,000 award; account compromise was not demonstrated.",
       "root_cause": "Ordinary sensitive-field checks appeared effective, but an alternate metadata path exposed a cross-service association. The researcher then questioned whether monetized creator accounts inherited rights intended for specialist rights-management accounts.",
       "impact": "The demonstrated disclosure concerned the email stored when the target channel became monetized, which may differ from its current email. Broader phishing consequences were potential impact, not demonstrated account compromise.",
       "defensive_takeaways": [
@@ -5967,7 +5967,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "One recovery report received USD 35,000 across two award events.",
+      "summary": "GitLab's recovery feature could send password-reset messages without consistently checking that the recipient address belonged to the account. Enforced two-factor authentication still prevented login, but did not prevent a password reset; offering SSO alone was insufficient if password login remained available. GitLab awarded USD 35,000 across two decisions for this one report.",
       "root_cause": "A secondary-address recovery feature expanded delivery choices without consistently preserving verified-address ownership. The vendor attributes the regression to email verification; recovery authorization must remain bound to trusted account state as features change.",
       "impact": "Unauthorized password changes could lead to account takeover. Enforced second-factor authentication still prevented login, but did not prevent password reset. Offering SSO alone did not eliminate exposure when password authentication remained available.",
       "defensive_takeaways": [
@@ -6130,7 +6130,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "One cross-product privacy report received USD 3,133 and a USD 7,500 adjustment, totaling USD 10,633.",
+      "summary": "YouTube and Pixel Recorder exposed links between identities that could reveal private email addresses associated with YouTube users. The researchers report this privacy failure, but no mass breach is established. The one report received USD 3,133 plus a USD 7,500 adjustment, totaling USD 10,633.",
       "root_cause": "Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity.",
       "impact": "Researchers reported that private email addresses associated with YouTube users could be revealed. No mass breach is established.",
       "defensive_takeaways": [
@@ -6277,7 +6277,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "HackerOne awarded USD 25,000 in 2022 for private-program GraphQL metadata exposure; the report became public in January 2025 (primary).",
+      "summary": "HackerOne's GraphQL interface exposed metadata about private programs without consistently enforcing their visibility rules. The researcher demonstrated metadata exposure; HackerOne's investigation also found possible access to report titles, but full report-body access was not established. HackerOne awarded USD 25,000 in 2022, and the report became public in January 2025.",
       "root_cause": "A GraphQL object lookup failed to preserve private-program visibility for associated metadata (primary). The researcher described an unauthenticated request and triage validated the report. Exposure depended on resolving a valid program-associated object; the public record does not establish equal reachability across every private-program type. Conceptually, resolving an object is distinct from authorizing its disclosure. The exact omitted check and code-level repair are not public.",
       "impact": "The researcher demonstrated private-program metadata exposure. HackerOne’s internal investigation additionally determined that report titles could be accessed and raised severity to critical; title access was a vendor-assessed consequence, not the researcher’s demonstrated result in the visible evidence. HackerOne said it found no exploitation beyond the demonstration (primary). Full report-body access is not established.",
       "defensive_takeaways": [
@@ -6429,7 +6429,7 @@
         "authorization-modeling",
         "patch-verification"
       ],
-      "summary": "Patchstack confirmed a USD 14,400 Zero Day award for an authentication-boundary flaw.",
+      "summary": "LiteSpeed Cache relied on a predictable, reusable token for privileged user simulation, allowing unauthenticated users to gain administrator privileges on affected installations. The advisory identifies an operating-system limitation, so installation totals should not be treated as affected-site counts. Patchstack confirmed a USD 14,400 Zero Day award.",
       "root_cause": "Privileged user simulation relied on a predictable, reusable token without adequate context binding.",
       "impact": "Unauthenticated users could obtain administrator privileges on affected installations. The advisory identifies an operating-system limitation, so plugin installation totals do not establish affected-site counts.",
       "defensive_takeaways": [
@@ -6592,7 +6592,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "A historical unsafe-reflection finding exposed production-container credentials on GitHub.com. GitHub's award retrospective links its highest single paid reward of 2023 to the incident notice. The researcher later published technical analysis and separately described GHES execution impact. This 2024 disclosure remains useful in 2026 for reviewing input-to-operation authority, runtime secret containment and deployment-specific evidence.",
+      "summary": "GitHub.com exposed production-container credentials because user input could select internal operations that should have been restricted. GitHub links this incident to its highest single paid reward of 2023; the researcher's later analysis separately describes code-execution potential on GitHub Enterprise Server, not demonstrated execution on GitHub.com. This historical case shows why applications need to restrict operation selection, limit runtime secrets and distinguish evidence from different deployments.",
       "root_cause": "Externally controlled method selection was insufficiently restricted to intended operations. The researcher traces this unsafe reflection to a boundary where selection data acquired internal application authority; the GHES advisory corroborates the weakness class. Authentication and organization ownership limited reachability but did not make unrestricted operation selection safe.",
       "impact": "GitHub confirms production-container credential exposure and assessed with high confidence that the issue had not been previously exploited and impact was isolated to the researcher. The researcher separately reports GHES code-execution potential; GitHub's GHES advisory corroborates that impact class and requires an authenticated organization-owner account. These sources do not establish code execution on GitHub.com. No secret values or private victim data are retained.",
       "defensive_takeaways": [
@@ -6796,7 +6796,7 @@
         "integration-threat-modeling",
         "untrusted-input-handling"
       ],
-      "summary": "One Workspace data-disclosure finding within a broader research article earned USD 20,000.",
+      "summary": "Bard's Workspace integration could disclose connected email content through generated output. Researchers demonstrated this with a controlled account and report a USD 20,000 base award for the finding. That award covers one finding within a broader article.",
       "root_cause": "Generated content and browser output restrictions did not maintain the intended boundary around connected Workspace data.",
       "impact": "The researchers demonstrated disclosure of email content from a controlled account.",
       "defensive_takeaways": [
@@ -6931,7 +6931,7 @@
         "approval-state-integrity",
         "defensive-evidence-writing"
       ],
-      "summary": "An isolation misconfiguration exposed runner-image build infrastructure; the researcher reports a $20,000 payment.",
+      "summary": "GitHub runner-image builds shared persistent infrastructure with workflows that had not earned the same level of trust. The researcher demonstrated infrastructure access and exposed build secrets, and reports a $20,000 payment. Compromise of distributed runner images remained a possibility, not a demonstrated result, because intervening production controls were unknown.",
       "root_cause": "Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production.",
       "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown.",
       "defensive_takeaways": [
@@ -7104,7 +7104,7 @@
         "error-response-design",
         "defensive-evidence-writing"
       ],
-      "summary": "The researcher documents USD 14,500 for one report: a 10,000 base bounty and two event bonuses.",
+      "summary": "An Instagram embedding fallback retrieved media with elevated service permissions instead of preserving the requester's privacy limits. Private post text and media could be exposed, but the researcher did not establish the same effect for profile embedding. The researcher reports USD 14,500 for one finding: a 10,000 base award and two event bonuses.",
       "root_cause": "A client-specific error path retrieved media under an elevated service identity, losing the original requester’s privacy constraints.",
       "impact": "Private post text and media could be exposed. The researcher did not establish the same effect for profile embedding.",
       "defensive_takeaways": [
@@ -7254,7 +7254,7 @@
         "security-token-design",
         "browser-isolation-review"
       ],
-      "summary": "Meta confirms a USD 44,250 total award, including bonuses, for this Quest OAuth account-access report.",
+      "summary": "A change to Meta Quest's login flow allowed credentials to leave the intended recipients through redirects. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. It confirms a USD 44,250 total award for this report, including bonuses.",
       "root_cause": "The researcher compared login behavior across an identity-system migration. A previously permitted OAuth return destination began forwarding credentials through a changed redirect flow, losing an earlier containment control. Trust in the initial destination did not establish that the eventual recipient was authorized to receive the credential.",
       "impact": "The researcher reports exposure of a privileged first-party credential with account-access implications. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. Those statements do not establish that customer accounts were actually compromised.",
       "defensive_takeaways": [
@@ -7419,7 +7419,7 @@
         "authorization-modeling",
         "integration-threat-modeling"
       ],
-      "summary": "Meta confirms a USD 27,200 total award for this account-verification report.",
+      "summary": "Meta's phone-verification checks could affect an SMS authentication factor on a linked account without adequately verifying phone ownership. The researcher demonstrated removal of that factor, and Meta confirms possible SMS-based two-factor authentication bypass; this alone did not establish a password leak or a signed-in session. Meta confirms a USD 27,200 total award for the report.",
       "root_cause": "Insufficient verification-attempt limits undermined phone ownership checks, while linked-account state changes could affect an existing SMS authentication factor.",
       "impact": "The vendor confirms possible SMS-based two-factor authentication bypass. The researcher demonstrated factor revocation; this alone does not establish password disclosure or an authenticated session.",
       "defensive_takeaways": [
@@ -7584,7 +7584,7 @@
         "approval-state-integrity",
         "patch-verification"
       ],
-      "summary": "A researcher-published vendor decision documents a USD 70,000 award for CVE-2022-20465.",
+      "summary": "Pixel lock-screen handling could accept completion of one security challenge as completion of another after the active challenge changed. The researcher demonstrated a lock-screen bypass with physical access on Pixel 5 and 6 devices; broader Android coverage was not established. A vendor decision published by the researcher records a USD 70,000 award for CVE-2022-20465.",
       "root_cause": "The researcher’s patch analysis attributes the issue to completion events dismissing a different active security challenge after concurrent state changes.",
       "impact": "Physical access could bypass the lock screen on tested Pixel 5 and 6 devices. Broader Android coverage was not established by the researcher.",
       "defensive_takeaways": [
@@ -7779,7 +7779,7 @@
         "authorization-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "Meta confirmed a $30,000 base award for an Instagram application-token exposure; additional researcher-listed bonuses are excluded from the recorded amount.",
+      "summary": "Instagram included an application credential in interface configuration sent to the client. The researcher reports access to application-role metadata; Meta confirms the exposure but says independent protections limited further impact and it found no abuse. Meta confirmed a $30,000 base award, with the researcher's separately listed bonuses excluded from this record.",
       "root_cause": "Server-delivered interface configuration exposed an application credential to a client. The researcher distinguished application-level authority from ordinary client-token authority, identifying a mismatch between the data needed for rendering and the privilege carried by an embedded credential.",
       "impact": "The researcher reports retrieving application-role metadata. Meta confirms credential exposure but says independent protections limited further impact and it found no evidence of abuse. Unrestricted administration, account takeover and actual customer compromise were not established.",
       "defensive_takeaways": [
@@ -7947,7 +7947,7 @@
         "secrets-containment",
         "defensive-evidence-writing"
       ],
-      "summary": "A reference-validation flaw crossed the GitHub Actions trust boundary and earned USD 25,000.",
+      "summary": "GitHub Actions could give an unauthorized workflow access to repository secrets and write permissions because repository references were not checked consistently. The researcher reports a USD 25,000 award for this finding.",
       "root_cause": "Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced.",
       "impact": "Repository secrets and write authority could become available to an unauthorized workflow.",
       "defensive_takeaways": [
@@ -8083,7 +8083,7 @@
         "approval-state-integrity",
         "defensive-evidence-writing"
       ],
-      "summary": "The second fork-collaboration report received its own USD 10,000 award.",
+      "summary": "One GitHub API allowed collaboration consent to change without the pull-request author's permission. A base-repository maintainer could consequently gain unauthorized write access to a contributor's branch. This second finding received its own researcher-reported USD 10,000 award.",
       "root_cause": "One API path omitted the pull-request-author entitlement required to change collaboration consent.",
       "impact": "A base-repository maintainer could gain unauthorized write access to a contributor branch.",
       "defensive_takeaways": [
@@ -8241,7 +8241,7 @@
         "approval-state-integrity",
         "defensive-evidence-writing"
       ],
-      "summary": "The first fork-collaboration finding in this article earned USD 20,000.",
+      "summary": "GitHub checked fork-collaboration permissions differently when a setting was created and when it was changed. This could give an unauthorized user write access to affected public forks. The researcher reports a USD 20,000 award for this first finding in the article.",
       "root_cause": "Permission checks differed between creation and modification of the same collaboration setting.",
       "impact": "An unauthorized user could obtain write access to affected public forks.",
       "defensive_takeaways": [
@@ -8382,7 +8382,7 @@
         "concurrency-reasoning",
         "authorization-modeling"
       ],
-      "summary": "The cited researcher documents a USD 50,000 award for this finding.",
+      "summary": "Microsoft account recovery did not consistently enforce attempt limits during simultaneous verification activity. The researcher reports potential account takeover, but says Microsoft rated it Important because practical exploitation required substantial resources. He reports a USD 50,000 award and payment.",
       "root_cause": "Recovery controls did not enforce attempt limits consistently across simultaneous verification operations. Defensive reviews should verify atomic, account-bound limits and consistent treatment of recovery and multifactor checks.",
       "impact": "Potential account takeover; the researcher says Microsoft classified severity as Important because practical exploitation required substantial resources.",
       "defensive_takeaways": [
@@ -8526,7 +8526,7 @@
         "authorization-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "Bhavuk Jain reports being paid $100,000 for this finding. The recorded USD denomination is a contextual inference from Apple's May 2019 program documentation, published about one year before the May 2020 disclosure.",
+      "summary": "Sign in with Apple did not reliably check that identity claims belonged to the signed-in user, putting some third-party accounts at risk. Bhavuk Jain reports a $100,000 payment; he did not test the named third-party applications. USD is inferred from Apple's May 2019 program documentation, about a year before the May 2020 disclosure.",
       "root_cause": "Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications. Cryptographic validity alone did not establish correct claim ownership.",
       "impact": "Potential takeover of third-party application accounts using the integration without additional safeguards. Named third-party applications were not tested by the researcher.",
       "defensive_takeaways": [
@@ -8671,7 +8671,7 @@
         "defensive-evidence-writing",
         "patch-verification"
       ],
-      "summary": "Facebook confirms a USD 65,000 bounty payment for an error-response data-exposure report.",
+      "summary": "Facebook error responses could include application data that the requester should not receive. The initial finding led Facebook to review a broader error-handling problem. Facebook confirms a USD 65,000 payment for the report.",
       "root_cause": "An error-handling configuration could include unintended application data in a response; subsequent review found a broader framework issue.",
       "impact": "A copyright-management request could return data fragments not intended for the requester. The award reflected the vendor’s assessment of potential wider impact.",
       "defensive_takeaways": [
@@ -8808,7 +8808,7 @@
         "secure-parser-review",
         "approval-state-integrity"
       ],
-      "summary": "A researcher-reported $25,000 award illustrates how differing framework and controller assumptions can remove an OAuth consent boundary; USD denomination is contextually inferred from non-contemporaneous official program evidence.",
+      "summary": "GitHub's request-handling layers disagreed about when an OAuth access grant required user consent. A user visiting a malicious website could unintentionally grant an application access to private GitHub data. The researcher reports a $25,000 award; USD is inferred from official program evidence published or updated outside the award period.",
       "root_cause": "The researcher compared the consent screen’s intended state change with routing and controller logic. The framework accepted a wider set of request semantics than the controller expected. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply. The failed invariant was that every new grant required the user’s explicit, validated approval.",
       "impact": "The researcher reports that a user visiting a malicious website could unintentionally grant an application access to read or modify private GitHub data. This demonstrates unauthorized delegated access, rather than evidence that the attacker learned the account password or that all unrelated account controls failed.",
       "defensive_takeaways": [
@@ -8957,7 +8957,7 @@
         "concurrency-reasoning",
         "authorization-modeling"
       ],
-      "summary": "The researcher reports a $10,000 award for this finding. USD is a contextual currency inference from Facebook’s later official retrospective of its 2019 bounty program, not an explicit denomination in the individual award statement.",
+      "summary": "Instagram recovery checks did not reliably keep the account, device context and verification secret tied together. The researcher reports a separate account-takeover finding and a $10,000 award. USD is inferred from Facebook's later retrospective of its 2019 bounty program, rather than stated in the individual award report.",
       "root_cause": "Recovery challenge state did not maintain sufficiently strict binding among account, device context, and verification secret. Review challenge ownership and uniqueness throughout the recovery lifecycle.",
       "impact": "Researcher reports a separate, lower-severity account-takeover finding, fixed before publication.",
       "defensive_takeaways": [
@@ -9116,7 +9116,7 @@
         "concurrency-reasoning",
         "authorization-modeling"
       ],
-      "summary": "The cited researcher documents a USD 30,000 award for this finding.",
+      "summary": "Instagram's mobile recovery checks did not consistently enforce account-level verification limits during concurrent activity. The researcher demonstrated an unauthorized password reset and reports a USD 30,000 award. He says the issue was fixed before publication.",
       "root_cause": "Account recovery relied on verification limits that did not provide a consistent account-level security boundary under concurrent activity. Centralized, atomic attempt accounting is the defensive concern.",
       "impact": "The researcher demonstrated unauthorized password reset and reports remediation before publication.",
       "defensive_takeaways": [
@@ -9264,7 +9264,7 @@
         "secrets-containment",
         "defensive-evidence-writing"
       ],
-      "summary": "Shopify awarded USD 25,000 for a screenshot-service request-isolation flaw with impact bounded to one infrastructure subset.",
+      "summary": "Shopify Exchange's screenshot service could reach internal infrastructure that externally influenced work should not access. Shopify confirms reported root-access capability within one infrastructure subset, explicitly excluding Shopify core; the report does not establish compromise of every container. Shopify awarded USD 25,000 for the finding.",
       "root_cause": "Server-side fetching crossed the boundary between externally influenced screenshot work and internal infrastructure. The vendor’s remediation targeted metadata access and internal destinations; its retrospective omits authentication prerequisites and the researcher’s reasoning process.",
       "impact": "Shopify confirms reported root-access capability across containers in the affected subset, explicitly excluding Shopify core. The retrospective does not establish compromise of every container or quantify exposed data. The service was disabled within an hour; infrastructure review preceded metadata shielding and internal-address restrictions.",
       "defensive_takeaways": [
@@ -9401,7 +9401,7 @@
         "identity-lifecycle-review",
         "defensive-evidence-writing"
       ],
-      "summary": "Shopify confirms a $20,000 award for unauthorized collaborator access caused by automatic account conversion.",
+      "summary": "Shopify's automatic conversion of ordinary accounts into collaborator accounts could grant store access without the merchant's approval. Shopify confirms a $20,000 award and unintended access in a partner-account context. Its retrospective does not establish the exact permissions obtained or any data extraction.",
       "root_cause": "Account-conversion logic did not preserve the distinction between identity linkage and authorization to collaborate on a merchant’s store. The vendor attributes the issue to automatic conversion of ordinary accounts into collaborator accounts.",
       "impact": "The vendor confirms unintended store access without merchant interaction in a partner-account context, and says it fixed the issue within hours. Its retrospective does not establish data extraction, the exact permissions obtained or the researcher’s discovery process.",
       "defensive_takeaways": [
@@ -9549,7 +9549,7 @@
         "defensive-evidence-writing",
         "secure-parser-review"
       ],
-      "summary": "HackerOne awarded $12,500 for internal attachments exposed through report export in 2016. Its enduring lesson for 2026 applications is that export and interactive views must enforce the same visibility policy.",
+      "summary": "HackerOne report exports could include team-only attachments that the report view kept private. A user still needed the ability to export that report; this was not access to every private report. HackerOne awarded $12,500 in 2016, and the lesson remains to enforce the same visibility rules in exports and interactive views.",
       "root_cause": "Export authorization diverged from report-view visibility. A file moved into an internal comment remained exportable. The researcher compared redacted display content with archive output; the vendor confirmed this was a distinct newly introduced issue.",
       "impact": "A user able to export a report could obtain team-only attachments. Vendor review additionally identified potential inline-attachment exposure, but found no evidence of malicious exploitation. This does not establish access to every private report.",
       "defensive_takeaways": [
@@ -9709,7 +9709,7 @@
         "defensive-evidence-writing",
         "identity-lifecycle-review"
       ],
-      "summary": "A 2013 researcher disclosure reports a $20,000 award for unauthorized recovery-phone binding. Its enduring lesson for 2026 applications is that recovery-factor possession and account-change authority require separate checks.",
+      "summary": "Facebook checked possession of a phone without separately checking permission to add it to the selected account for recovery. The 2013 researcher disclosure reports a $20,000 award. The lesson still applies: controlling a recovery phone does not prove ownership of the account it will recover.",
       "root_cause": "Phone possession and requester reauthentication did not establish permission to change the selected account. The missing boundary was authorization over the account receiving a recovery factor.",
       "impact": "The researcher describes account takeover without victim interaction, requiring a researcher-controlled account and phone. The demonstrated flow reached password recovery; broader account coverage is the researcher’s claim.",
       "defensive_takeaways": [
@@ -9858,7 +9858,7 @@
         "integration-threat-modeling",
         "browser-isolation-review"
       ],
-      "summary": "The USD 32,500 researcher-reported award illustrates the distinction between message origin and disclosure authority.",
+      "summary": "Meta Pixel checked a browser message's origin without fully checking what information the requested operation could disclose or to whom. The researcher reports exposed authorization material and subsequent Instagram takeover with user interaction, alongside a USD 32,500 award. The report does not establish equivalent impact on every site using the script or evidence of real-world abuse.",
       "root_cause": "The researcher followed how browser messages influenced requests containing page context. A trusted-origin check substituted for a complete authorization decision: the requested operation and recipient identity were not bound to the protected context. The failure allowed sensitive information to cross into a different identity’s request context.",
       "impact": "The researcher reports authorization-material exposure and consequent Instagram takeover with user interaction. Wider script deployment does not establish equivalent impact on every embedding site or evidence of real-world abuse.",
       "defensive_takeaways": [
@@ -10009,7 +10009,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "The researcher assigns a separate $62,500 award to the client-side finding labeled Bug #1.",
+      "summary": "Meta's Conversions API Gateway treated a browser message's origin as authority to choose a script source without verifying that authority. The researcher reports script execution under specific embedded-browser, initialization and content-policy conditions; the proposed account impact also required user interaction and a signed-in session. The researcher assigns a separate $62,500 award to this client-side finding, labeled Bug #1.",
       "root_cause": "A browser message origin became trusted script-host configuration without origin authorization.",
       "impact": "The researcher reports script execution and describes possible account takeover. The scenario depends on specific embedded-browser, initialization and content-policy conditions plus influence over permitted third-party content. Account impact additionally assumes user interaction and an authenticated session; universal or interaction-free exploitation is not established.",
       "defensive_takeaways": [
@@ -10169,7 +10169,7 @@
         "integration-threat-modeling",
         "defensive-evidence-writing"
       ],
-      "summary": "The researcher attributes a USD 250,000 award to the article’s separately identified backend finding, Bug #2.",
+      "summary": "Meta's Conversions API Gateway could turn stored configuration data into executable JavaScript because it did not serialize that data safely. The researcher reports script execution in pages using the output, but the required configuration-write access and broader deployment impact are not fully established. The researcher assigns a USD 250,000 award specifically to this backend finding, labeled Bug #2.",
       "root_cause": "Configuration values were concatenated into generated JavaScript without context-safe serialization. Stored data thereby acquired the authority of executable output.",
       "impact": "The researcher reports stored script execution in consuming pages and potential account compromise. The article does not fully establish configuration-write prerequisites or independently substantiate its broader deployment and employee-system impact claims.",
       "defensive_takeaways": [
@@ -10328,7 +10328,7 @@
         "defensive-evidence-writing",
         "patch-verification"
       ],
-      "summary": "An authenticated media-editing operation exposed another user’s prompts and generated content because object ownership was not enforced. The researcher reports a USD 10,000 award.",
+      "summary": "Meta AI's media-editing feature checked that a user was signed in without checking that the requested media belonged to them. A two-user demonstration revealed another user's original prompt and generated media. The researcher reports a USD 10,000 award; broader harvesting was a potential consequence, and the reproduced vendor response says it found no evidence of abuse.",
       "root_cause": "Authentication established a caller but did not bind the requested media object to that caller. The researcher’s two-user comparison exposed this distinction between feature access and content authority.",
       "impact": "The demonstration disclosed another user’s original prompt and generated media. Broader data harvesting was potential impact; the reproduced vendor response reports no evidence of abuse.",
       "defensive_takeaways": [
@@ -10467,7 +10467,7 @@
         "security-token-design",
         "browser-isolation-review"
       ],
-      "summary": "A researcher-reported USD 30,000 award documents a cross-product account-linking trust failure.",
+      "summary": "Meta's Facebook–Instagram linking flow did not consistently keep credentials and approval tied to the intended accounts. The researcher reports unauthorized linking and persistent control, but the scenario required an attacker-controlled Instagram account, account-specific authorization material, and a signed-in Facebook user's visit and confirmation. The researcher reports a USD 30,000 award; mobile sign-in impact was described as potential.",
       "root_cause": "SSO destination validation and browser-message confidentiality did not preserve account-linking credential confinement. Session identity could also differ from the person authorizing the connection, allowing linking authority to cross account boundaries.",
       "impact": "The researcher reports unauthorized Facebook linking and persistent account control. Prerequisites included an attacker-controlled Instagram account, account-specific authorization material, an authenticated Facebook user visiting attacker-controlled content, and user confirmation. Mobile sign-in is described as potential; no widespread exploitation is established.",
       "defensive_takeaways": [
@@ -10620,7 +10620,7 @@
         "untrusted-input-handling",
         "integration-threat-modeling"
       ],
-      "summary": "A USD 66,000 researcher-reported award illustrates how weak message authentication and unsafe rendering can invalidate an SDK trust boundary.",
+      "summary": "Facebook's SDK used weak message authentication and could render supplied content as active HTML. The researcher reports account takeover under mobile in-app browser conditions and a USD 66,000 award. The effect on other websites depended on their framing controls, so the report does not show that every SDK integration was equally affected.",
       "root_cause": "The researcher followed messages from an embedded plugin into SDK handlers and examined their authority checks. A callback identifier was treated as an authentication secret despite coming from non-cryptographic randomness. Separately, a handler interpreted supplied content as active HTML. An origin check alone did not establish that the message content was authorized or safe to render.",
       "impact": "The researcher reports script execution and Facebook account takeover under mobile in-app browser conditions. Impact on an arbitrary embedding site depended on its framing controls. The article does not establish that every website using the SDK was affected equally.",
       "defensive_takeaways": [
@@ -10772,7 +10772,7 @@
         "patch-verification",
         "defensive-evidence-writing"
       ],
-      "summary": "A rejected network response left inconsistent filesystem state. The researcher reports a $20,000 award and subsequent payment.",
+      "summary": "Rejecting a network response did not fully reset macOS filesystem state. The researcher demonstrated kernel crashes when a Mac connected to a malicious SMB share, but did not demonstrate general-purpose code execution. He reports a $20,000 award and subsequent payment.",
       "root_cause": "The parser published a count before validating the associated allocation. Error cleanup did not restore the count and pointer together. The researcher compared parsing, cleanup and later consumption to explain why a failed validation still contaminated trusted kernel state.",
       "impact": "A Mac had to connect to a malicious SMB share; guest access was sufficient. The researcher demonstrated kernel panics on Apple silicon. Apple describes possible system termination or kernel-memory corruption. General-purpose code execution was not demonstrated.",
       "defensive_takeaways": [
@@ -10939,7 +10939,7 @@
         "identity-lifecycle-review",
         "patch-verification"
       ],
-      "summary": "The cited researcher documents a USD 75,000 award for this reported chain.",
+      "summary": "Safari could apply a website's existing camera and microphone permissions to the wrong website context. Ryan Pickren reports a USD 75,000 award for the combined findings, rather than a separate award for each bug.",
       "root_cause": "URL parsing, origin identity, and secure-context decisions were inconsistent with the identity used for stored permissions. Defensive design should use one coherent origin model across permission enforcement.",
       "impact": "Unauthorized camera and microphone access under previously granted website permissions.",
       "defensive_takeaways": [
@@ -11092,7 +11092,7 @@
         "integration-threat-modeling",
         "identity-lifecycle-review"
       ],
-      "summary": "The cited researcher documents a USD 100,500 award for this reported chain.",
+      "summary": "Permission to open shared iCloud content could remain valid after that content changed, and Safari did not consistently keep website permissions separate. Ryan Pickren reports a USD 100,500 award for the combined findings, rather than a separate award for each bug.",
       "root_cause": "Consent to open shared content remained effective after material content changes, and cross-application trust handling failed to preserve browser isolation. Review whether persisted consent remains valid as shared resources evolve.",
       "impact": "The researcher reports access across website security contexts and media permissions; additional research covered local-file exposure.",
       "defensive_takeaways": [

@@ -21,7 +21,7 @@
     "authorization-modeling",
     "patch-verification"
   ],
-  "summary": "Patchstack confirmed a USD 14,400 Zero Day award for an authentication-boundary flaw.",
+  "summary": "LiteSpeed Cache relied on a predictable, reusable token for privileged user simulation, allowing unauthenticated users to gain administrator privileges on affected installations. The advisory identifies an operating-system limitation, so installation totals should not be treated as affected-site counts. Patchstack confirmed a USD 14,400 Zero Day award.",
   "root_cause": "Privileged user simulation relied on a predictable, reusable token without adequate context binding.",
   "impact": "Unauthenticated users could obtain administrator privileges on affected installations. The advisory identifies an operating-system limitation, so plugin installation totals do not establish affected-site counts.",
   "defensive_takeaways": [

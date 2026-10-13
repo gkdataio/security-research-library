@@ -2,24 +2,27 @@
 
 [Report index](../reports.md) · [Diagram gallery](../diagram-gallery.md) · [Library home](../../README.md)
 
+[Read the original source](<https://bugs.xdavidhu.me/google/2022/11/10/accidental-70k-google-pixel-lock-screen-bypass/>) — David Schütz · [Canonical JSON](<../../data/reports/google-pixel-lock-screen-state-binding-2022.json>)
+
+<a id="what-the-evidence-establishes"></a>
+## Main takeaway
+
+Pixel lock-screen handling could accept completion of one security challenge as completion of another after the active challenge changed\. The researcher demonstrated a lock-screen bypass with physical access on Pixel 5 and 6 devices; broader Android coverage was not established\. A vendor decision published by the researcher records a USD 70,000 award for CVE-2022-20465\.
+
 **Organization:** Google  
 **Product:** Google Pixel / Android lock-screen state management
 
-## What the evidence establishes
-
-Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
-
-A researcher-published vendor decision documents a USD 70,000 award for CVE-2022-20465\.
-
-### Root cause
+<a id="root-cause"></a>
+## What went wrong
 
 The researcher’s patch analysis attributes the issue to completion events dismissing a different active security challenge after concurrent state changes\.
 
-### Bounded impact
+<a id="bounded-impact"></a>
+## What the evidence shows
 
 Physical access could bypass the lock screen on tested Pixel 5 and 6 devices\. Broader Android coverage was not established by the researcher\.
 
-### Defensive lessons
+## Defensive lessons
 
 - Bind authentication completion to the exact challenge and security context it satisfies\.
 - Model concurrent authentication-state transitions and reject stale completion events\.
@@ -34,6 +37,8 @@ Evidence level: researcher\_reported\_with\_vendor\_quote. Explicit USD decision
 Exact source quotation and location remain in the [canonical record](<../../data/reports/google-pixel-lock-screen-state-binding-2022.json>).
 
 ## Dates
+
+Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
 - **published:** 2022-11-10; precision: day; basis: explicit
 - **public disclosure:** 2022-11-08; precision: day; basis: explicit. CVE record publication\. The Android bulletin is dated November 7; its original snapshot was not retrieved, so first appearance of this entry is not asserted\.
