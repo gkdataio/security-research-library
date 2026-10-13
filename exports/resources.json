@@ -5012,7 +5012,7 @@
         }
       ],
       "content_scope": "defensive_education",
-      "summary": "LibreChat could associate third-party credentials with the wrong local account during an MCP OAuth callback. Its CVE-2026-31944 advisory explains that the callback trusted the cached initiator identity without authenticating the returning browser or checking that the identities matched. The reported consequences stay within the integration's delegated permissions; they do not amount to takeover of the person's LibreChat account.",
+      "summary": "LibreChat could associate third-party credentials with the wrong local account during an MCP OAuth callback. Its CVE-2026-31944 advisory explains that the callback trusted the cached initiator identity without authenticating the returning browser or checking that the identities matched. The reported consequences stay within the integration's delegated permissions; they do not amount to takeover of the person's LibreChat account. The scenario requires an authenticated initiator, enabled MCP OAuth and another person's interaction with the authorization flow. Prior provider consent may skip the consent screen, but interaction is still required.",
       "defensive_use": "Editorial lesson: bind OAuth initiation, callback session, and credential-storage owner before accepting a grant. Treat transaction state as correlation, not sufficient proof of browser identity. The advisory names 0.8.3-rc1 as patched but does not explain its implementation.",
       "prerequisites": [
         "OAuth authorization-code callbacks and transaction state",
@@ -7568,7 +7568,7 @@
         "note": "Reviewed maintainer advisory and corroborating project sources. No software executed or deployment tested."
       },
       "content_scope": "defensive_education",
-      "summary": "Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient (GHSA-xwmw-prc4-v3cr). Client authorization also lacked explicit consent. The described worst case was access to resources already available to the victim, not an observed production compromise.",
+      "summary": "Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient (GHSA-xwmw-prc4-v3cr). Client authorization also lacked explicit consent. The scenario requires application authentication to be enabled and interaction by an already signed-in user. The described worst case was access to resources already available to the victim, not an observed production compromise.",
       "defensive_use": "The maintainer identifies v0.23.0 as patched. Its release notes corroborate consent, narrower token routing and audience checks. Editorial lesson: verify issuer, intended recipient and permitted actions independently; consent alone cannot repair overbroad token acceptance.",
       "prerequisites": [
         "OAuth client registration, consent and token audience concepts",

@@ -20,7 +20,7 @@
     "security-token-design",
     "browser-isolation-review"
   ],
-  "summary": "A change to Meta Quest's login flow allowed credentials to leave the intended recipients through redirects. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. It confirms a USD 44,250 total award for this report, including bonuses.",
+  "summary": "A change to Meta Quest's login flow allowed access tokens to reach unintended recipients through redirects. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. It confirms a USD 44,250 total award for this report, including bonuses.",
   "root_cause": "The researcher compared login behavior across an identity-system migration. A previously permitted OAuth return destination began forwarding credentials through a changed redirect flow, losing an earlier containment control. Trust in the initial destination did not establish that the eventual recipient was authorized to receive the credential.",
   "impact": "The researcher reports exposure of a privileged first-party credential with account-access implications. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse. Those statements do not establish that customer accounts were actually compromised.",
   "defensive_takeaways": [

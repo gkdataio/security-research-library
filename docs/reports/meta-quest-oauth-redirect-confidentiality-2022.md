@@ -7,7 +7,7 @@
 <a id="what-the-evidence-establishes"></a>
 ## Main takeaway
 
-A change to Meta Quest's login flow allowed credentials to leave the intended recipients through redirects\. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse\. It confirms a USD 44,250 total award for this report, including bonuses\.
+A change to Meta Quest's login flow allowed access tokens to reach unintended recipients through redirects\. Meta confirms possible account takeover requiring user interaction and says its investigation found no abuse\. It confirms a USD 44,250 total award for this report, including bonuses\.
 
 **Organization:** Meta  
 **Product:** Meta Quest / Oculus account login

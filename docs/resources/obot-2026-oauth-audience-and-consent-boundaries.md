@@ -7,7 +7,7 @@
 <a id="original-summary"></a>
 ## Main takeaway
 
-Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient \(GHSA-xwmw-prc4-v3cr\)\. Client authorization also lacked explicit consent\. The described worst case was access to resources already available to the victim, not an observed production compromise\.
+Obot's maintainer reports that tokens delegated for MCP were accepted by broader application APIs because checking the issuer did not check the intended recipient \(GHSA-xwmw-prc4-v3cr\)\. Client authorization also lacked explicit consent\. The scenario requires application authentication to be enabled and interaction by an already signed-in user\. The described worst case was access to resources already available to the victim, not an observed production compromise\.
 
 ## Defensive use
 

@@ -7,7 +7,7 @@
 <a id="original-summary"></a>
 ## Main takeaway
 
-LibreChat could associate third-party credentials with the wrong local account during an MCP OAuth callback\. Its CVE-2026-31944 advisory explains that the callback trusted the cached initiator identity without authenticating the returning browser or checking that the identities matched\. The reported consequences stay within the integration's delegated permissions; they do not amount to takeover of the person's LibreChat account\.
+LibreChat could associate third-party credentials with the wrong local account during an MCP OAuth callback\. Its CVE-2026-31944 advisory explains that the callback trusted the cached initiator identity without authenticating the returning browser or checking that the identities matched\. The reported consequences stay within the integration's delegated permissions; they do not amount to takeover of the person's LibreChat account\. The scenario requires an authenticated initiator, enabled MCP OAuth and another person's interaction with the authorization flow\. Prior provider consent may skip the consent screen, but interaction is still required\.
 
 ## Defensive use
 
