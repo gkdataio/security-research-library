@@ -15,7 +15,7 @@ Google Firefly let delegated workers and storage operations use more authority t
 <a id="root-cause"></a>
 ## What went wrong
 
-Missing caller authorization, unverified worker-result authority and unconstrained storage abstraction crossed service boundaries\. The researcher questioned whether a narrowly named field actually limited backend authority\.
+The services did not consistently check caller permissions, verify the authority of worker results or restrict storage operations\. The researcher questioned whether a narrowly named field actually limited what the backend could do\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

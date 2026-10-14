@@ -21,7 +21,7 @@
     "defensive-evidence-writing"
   ],
   "summary": "Gemini Enterprise could treat retrieved Jira content as permission to change saved assistant memory. Using two controlled accounts, the researcher demonstrated deletion of the recipient's memories; this required access to shared-project content and a user-initiated retrieval. The researcher reports a $15,000 Google bounty, but the demonstration does not establish actual customer compromise or broader cross-tenant access.",
-  "root_cause": "The researcher compared user-confirmed actions with persistent memory changes. Retrieved collaboration content could influence an operation that changed saved state without equivalent confirmation. The failed boundary was between permission to read connected data and authority to mutate the user’s lasting assistant state.",
+  "root_cause": "Retrieved collaboration content could influence changes to saved memory without the confirmation prompt typically used for other user-data actions. The researcher compared those two paths. Permission to read connected data was being treated as authority to change the user’s lasting assistant state.",
   "impact": "In a two-account setup, the researcher confirmed deletion of the test recipient’s saved memories. The scenario required shared-project content access and user-initiated retrieval. Broader cross-tenant access, mailbox compromise and lasting changes to every future response were not demonstrated.",
   "defensive_takeaways": [
     "Model persistent memory as a security-sensitive write operation with its own authorization decision.",

@@ -20,8 +20,8 @@
     "defensive-evidence-writing"
   ],
   "summary": "GitHub runner-image builds shared persistent infrastructure with workflows that had not earned the same level of trust. The researcher demonstrated infrastructure access and exposed build secrets, and reports a $20,000 payment. Compromise of distributed runner images remained a possibility, not a demonstrated result, because intervening production controls were unknown.",
-  "root_cause": "Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production.",
-  "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown.",
+  "root_cause": "Contributor status was treated as enough reason to trust workflows running on persistent self-hosted infrastructure. The researcher examined approval rules, runner reuse and build privileges together. Outside contributions were not adequately separated from trusted image production.",
+  "impact": "With contributor access under the affected configuration, the researcher demonstrated infrastructure access and exposure of build secrets. Compromise of distributed runner images remained a possible consequence, not a demonstrated result, because the intervening production controls were unknown.",
   "defensive_takeaways": [
     "Separate untrusted contribution processing from privileged build infrastructure and secrets.",
     "Bind review to the workflow being executed; prior contribution history is not continuing authorization.",

@@ -15,7 +15,7 @@ PostgreSQL's intarray extension did not check that input had the type its native
 <a id="root-cause"></a>
 ## What went wrong
 
-The extension’s selectivity estimator accepted input without checking that its type matched the routine’s expectations\. This broke the contract between database objects an authorized user could create and native extension code running with database-process authority\.
+The extension’s selectivity estimator did not check that input had the type it expected\. Native extension code running with database-process privileges then relied on that unchecked type\. This broke the contract between objects an authorized database user could create and the extension code that handled them\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

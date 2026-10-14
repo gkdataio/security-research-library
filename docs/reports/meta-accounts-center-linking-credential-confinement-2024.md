@@ -15,7 +15,7 @@ Meta's Facebook–Instagram linking flow did not consistently keep credentials a
 <a id="root-cause"></a>
 ## What went wrong
 
-SSO destination validation and browser-message confidentiality did not preserve account-linking credential confinement\. Session identity could also differ from the person authorizing the connection, allowing linking authority to cross account boundaries\.
+SSO destination checks and browser-message handling did not keep account-linking credentials within their intended recipients\. The session identity could also differ from the person approving the connection, allowing one account’s linking authority to be used across account boundaries\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

@@ -2,11 +2,11 @@
 
 [Library home](../README.md) · [Readable reports](reports.md) · [Program policies](programs.md) · [Learning guide](learning-guide.md)
 
-This guide is for security researchers, bug hunters, authorized offensive-security teams and people building research catalogs with agents or APIs. The methods below are editorial learning guidance. A linked disclosure supports its own recorded observations, not a claim that its researcher followed every method here.
+This guide helps security researchers, bug hunters and authorized offensive-security teams turn a question into a supported finding. It also covers using the collection in research catalogs, agents and APIs. These are editorial suggestions: a linked disclosure shows what its author reported, not that the author followed every method below.
 
 ## Modern webapp boundaries
 
-For 2026-relevant study, prioritize the boundaries a modern application combines: browser and backend identity, API object ownership, server-to-client serialization, and AI retrieval/output consumers. A newer publication date does not by itself establish greater relevance or an unpatched vulnerability.
+For 2026-relevant study, look at how applications connect browser and backend identities, enforce API object ownership, send server data to clients and use AI-retrieved or generated content. A newer publication is not necessarily more relevant, nor does it mean the vulnerability remains unpatched.
 
 - [Browser OAuth token custody](../data/resources/rfc-10017-browser-oauth-token-custody.json): separate protection of token material from the authority available to same-origin application code.
 - [API authorization responsibilities](../data/resources/openid-fapi-2-api-authorization-profile.json): distinguish valid protocol credentials from permission for a particular resource.
@@ -18,11 +18,11 @@ For 2026-relevant study, prioritize the boundaries a modern application combines
 
 The [server disclosure and browser interpretation diagram](diagram-gallery.md#server-client-data-consumer-boundaries) separates permission to disclose fields from safe interpretation by their consumer. It is an editorial model, not a vendor execution trace.
 
-These are conceptual review questions, with source versions and limitations in the linked records. Use evidence to establish which boundary actually failed before assigning an impact.
+The linked records give source versions and limitations for these review questions. Establish which boundary failed before claiming an impact.
 
 ## Form a precise hypothesis
 
-State the security property before choosing a technique: which identity owns the data, what an approval covers, which state a completion event belongs to, or which assumptions a parser guarantees. Distinguish an architectural hypothesis from a demonstrated defect. Record what evidence would disprove the hypothesis.
+Start with a rule the system should enforce. Who owns the data? What does an approval cover? Which state does a completion event belong to? What does the parser guarantee? Write down what would disprove your hypothesis, and keep the hypothesis separate from any defect you have demonstrated.
 
 The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028.md) illustrates why recovery integrity and login protection need separate claims. The [Cloud Build case](reports/google-cloud-build-approval-toctou-2025.md) separates the identity of reviewed content from its later version. These are reasoning examples, not instructions to repeat the incidents.
 
@@ -32,25 +32,25 @@ The [OWASP threat-modeling resource](../data/resources/owasp-threat-modeling-ass
 
 ## Read code across a trust boundary
 
-In code you are permitted to review, document where untrusted values enter, where identity or ownership is established, and which component enforces the final decision. Compare the stated contract with the consumer's assumptions. Include error paths and feature transitions; a validation function's presence does not establish that all callers use it consistently.
+In code you are permitted to review, trace where untrusted values enter, where identity or ownership is checked and where the final access decision happens. Compare each component's promises with what the next component assumes. Include error paths and feature changes. Finding a validation function does not prove that every caller uses it correctly.
 
-Prerequisites include understanding the language's data types, the application's identity model and the relevant framework's documented behavior. Keep source-backed descriptions of a real fix distinct from your proposed design improvement.
+Before starting, you need to understand the language's data types, the application's identity model and the framework's documented behavior. Label your proposed design improvements separately from fixes documented by a source.
 
 Relevant tags: `secure-parser-review`, `untrusted-input-handling`, `integration-threat-modeling`, `error-response-design`.
 
-The [OWASP code-review resource](../data/resources/owasp-secure-code-review-methodology.json) distinguishes a whole-codebase baseline from change-focused review; neither should silently imply coverage of the other.
+The [OWASP code-review resource](../data/resources/owasp-secure-code-review-methodology.json) distinguishes a whole-codebase baseline from a review of specific changes. Say which kind of review you performed; neither establishes that you also did the other.
 
 ## Use contained exercises to test an invariant
 
-Use deliberately vulnerable training material or a synthetic local model with fictitious identities and data. Express the intended property as a unit-test assertion or state diagram. Compare ordinary valid transitions with invalid states and verify that a rejected transition preserves the protected state. Keep network access and real credentials out of a self-contained learning exercise.
+Use deliberately vulnerable training material or a local model with fictitious identities and data. Write the expected rule as a unit-test assertion or state diagram. Compare valid transitions with invalid states, and check that rejecting a transition leaves the protected state unchanged. Keep network access and real credentials out of a self-contained learning exercise.
 
-Prerequisites are a documented exercise boundary, reversible fixtures and a known expected result. The artifact should explain the invariant and test result; it should not become a live-system reproduction sequence. The [diagram gallery](diagram-gallery.md) supplies conceptual models, and the [resource catalog](resources.md) links official guidance.
+Before starting, define the exercise's boundaries, use fixtures you can reset and state the expected result. Explain the rule and test outcome without turning the writeup into instructions for reproducing a flaw on a live system. The [diagram gallery](diagram-gallery.md) supplies conceptual models, and the [resource catalog](resources.md) links official guidance.
 
 ## Collect the minimum evidence for the claim
 
-Separate observation, inference and uncertainty. Document the environment and version represented by the evidence, without turning identifiers into a target inventory. Use synthetic or redacted examples; discovering another person's data is a reason to stop and follow the governing reporting process.
+Say what you observed, what you inferred and what you do not know. Record the environment and version covered by the evidence without compiling a target inventory. Use synthetic or redacted examples. If you encounter another person's data, stop and follow the governing reporting process.
 
-Describe demonstrated impact before hypothetical reach. A failed security assumption does not, by itself, prove reliable account takeover or arbitrary execution in every deployment. Preserve attribution when a vendor response is reproduced by a researcher rather than independently published by the vendor.
+Describe demonstrated impact before possible consequences. A failed security assumption does not, by itself, prove reliable account takeover or arbitrary execution in every deployment. If a researcher reproduces a vendor response, say so; do not present it as a separate vendor publication.
 
 Relevant tags: `defensive-evidence-writing`, `patch-verification`.
 
@@ -58,7 +58,7 @@ The [OWASP logging resource](../data/resources/owasp-security-logging-evidence-q
 
 ## Use the JSON as a research interface
 
-Canonical records and deterministic exports support indexing, retrieval, comparison and agent-assisted study. They are ordinary data files, not a hosted ingestion API or an authorization feed.
+Use the canonical records and reproducible exports to index, retrieve and compare findings, including in agent-assisted study. They are data files, not a hosted ingestion API or a source of testing permission.
 
 - Resolve stable IDs before joining reports, diagrams, resources and taxonomy.
 - Preserve the source links and distinguish source-explicit facts from editorial classifications.

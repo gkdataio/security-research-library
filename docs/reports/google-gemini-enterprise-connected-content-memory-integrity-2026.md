@@ -15,7 +15,7 @@ Gemini Enterprise could treat retrieved Jira content as permission to change sav
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher compared user-confirmed actions with persistent memory changes\. Retrieved collaboration content could influence an operation that changed saved state without equivalent confirmation\. The failed boundary was between permission to read connected data and authority to mutate the user’s lasting assistant state\.
+Retrieved collaboration content could influence changes to saved memory without the confirmation prompt typically used for other user-data actions\. The researcher compared those two paths\. Permission to read connected data was being treated as authority to change the user’s lasting assistant state\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

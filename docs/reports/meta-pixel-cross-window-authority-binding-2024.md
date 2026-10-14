@@ -15,7 +15,7 @@ Meta Pixel checked a browser message's origin without fully checking what inform
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher followed how browser messages influenced requests containing page context\. A trusted-origin check substituted for a complete authorization decision: the requested operation and recipient identity were not bound to the protected context\. The failure allowed sensitive information to cross into a different identity’s request context\.
+A trusted-origin check was treated as a complete access decision\. It did not bind the requested operation and recipient to the page data being protected\. By tracing browser messages into requests containing page context, the researcher found that sensitive information could pass into a request associated with a different identity\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

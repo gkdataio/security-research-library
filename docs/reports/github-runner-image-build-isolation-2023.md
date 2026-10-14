@@ -15,12 +15,12 @@ GitHub runner-image builds shared persistent infrastructure with workflows that 
 <a id="root-cause"></a>
 ## What went wrong
 
-Contributor status was treated as sufficient trust for workflows using persistent self-hosted infrastructure\. The researcher connected approval policy, runner reuse and privileged build context to identify a boundary failure between outside contributions and trusted image production\.
+Contributor status was treated as enough reason to trust workflows running on persistent self-hosted infrastructure\. The researcher examined approval rules, runner reuse and build privileges together\. Outside contributions were not adequately separated from trusted image production\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
 
-With contributor access under the affected configuration, the researcher demonstrated infrastructure access and build-secret exposure\. Downstream compromise of distributed runner images remained a modeled consequence: intervening production controls were unknown\.
+With contributor access under the affected configuration, the researcher demonstrated infrastructure access and exposure of build secrets\. Compromise of distributed runner images remained a possible consequence, not a demonstrated result, because the intervening production controls were unknown\.
 
 ## Defensive lessons
 

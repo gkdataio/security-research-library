@@ -15,7 +15,7 @@ Cloud Build could execute a different revision from the one a reviewer had appro
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher compared the identity available to the approval event with the revision later selected by the build\. Approval referred to mutable contribution state without preserving the exact reviewed version\. The execution boundary therefore relied on an assumption that the approved and executed content remained identical\.
+Approval referred to contribution state that could still change, rather than the exact version reviewed\. The researcher compared the version identifiable at approval with the revision the build later selected\. The build assumed those versions still matched instead of preserving that link\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

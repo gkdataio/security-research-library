@@ -15,7 +15,7 @@ Redis replication changes could release interpreter state while a function was s
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher compared ordinary command handling with replication-related state changes during ongoing function execution\. The latter did not preserve equivalent lifetime checks, so interpreter state could be released while still in use\. The failed invariant was that background synchronization must not invalidate objects needed by active work\.
+Replication-related state changes could free interpreter state while a function was still using it\. The researcher compared those changes with ordinary command handling and found that they lacked equivalent lifetime checks\. Background synchronization needed to preserve objects required by active work\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

@@ -6,7 +6,7 @@ These are original conceptual models grounded in linked disclosures and official
 
 ![Reviewed content and its immutable version are bound to approval. Execution checks that the version matches; mismatches require a new review.](../diagrams/approval-version-integrity.svg)
 
-The key invariant is that the content executed is the content approved. Validation belongs at both the decision and the privileged consumer.
+The system should execute exactly the content that was approved. Check the version when granting approval and again when the privileged component uses it.
 
 [Evidence and metadata](../data/diagrams/approval-version-integrity.json) · [Mermaid source](../diagrams/approval-version-integrity.mmd)
 
@@ -46,7 +46,7 @@ Combine application policy with an independent network boundary. Choose destinat
 
 ![An account-bound challenge is checked before changing a password. Invalid proof leaves account state unchanged; valid proof is consumed and followed by notification.](../diagrams/account-recovery-challenge-lifecycle.svg)
 
-Review challenge binding, consistent attempt accounting and post-reset session policy together. This conceptual model connects the GitLab, Microsoft and Instagram cases.
+Check which account each challenge belongs to, how attempts are counted and what happens to sessions after a reset. Review these rules together. This conceptual model connects the GitLab, Microsoft and Instagram cases.
 
 [Evidence and metadata](../data/diagrams/account-recovery-challenge-lifecycle.json) · [Mermaid source](../diagrams/account-recovery-challenge-lifecycle.mmd)
 
@@ -54,7 +54,7 @@ Review challenge binding, consistent attempt accounting and post-reset session p
 
 ![Untrusted input is safely parsed into a bounded result. A separate meaning and authorization check controls the permitted operation; failed checks reject the request.](../diagrams/parsing-safety-action-authority.svg)
 
-Memory safety and restricted privileges reduce parsing risk. They do not authorize the meaning of parsed data. Keep the final policy decision independent of the parser.
+Memory safety and restricted privileges reduce parsing risk. Successfully parsing a request still does not give permission to carry it out. Keep that access decision independent of the parser.
 
 [Evidence and metadata](../data/diagrams/parsing-safety-action-authority.json) · [Mermaid source](../diagrams/parsing-safety-action-authority.mmd)
 
@@ -70,7 +70,7 @@ Knowing where a message came from does not settle what it may request or which d
 
 ![A request enters a server-side caller, resource and operation authorization decision. Denial returns no protected data. Approval proceeds to explicit field selection before serialization. Only permitted, necessary fields cross into client-visible data. A separate consumer-context handling step keeps content, including generated text, from acquiring executable meaning before display. Browser rendering never supplies server authorization.](../diagrams/server-client-data-consumer-boundaries.svg)
 
-A server-side origin does not make every field suitable for the browser. Project only the data the current consumer may receive, then treat returned content according to its output context.
+Data is not safe to send to a browser just because it came from a server. Select only the fields the recipient may receive, then handle the content safely for the context where it will be used.
 
 [Evidence and metadata](../data/diagrams/server-client-data-consumer-boundaries.json) · [Mermaid source](../diagrams/server-client-data-consumer-boundaries.mmd)
 
@@ -78,7 +78,7 @@ A server-side origin does not make every field suitable for the browser. Project
 
 ![Untrusted contributions remain separated from trusted build state. An artifact and its provenance reach a consumer policy gate. Only authenticated evidence matching the artifact and expected builder and inputs makes it eligible for release review; missing or mismatched evidence prevents promotion.](../diagrams/build-artifact-provenance-boundary.svg)
 
-Build isolation and consumer verification address different decisions. Separate untrusted contributions from trusted build state, then check whether authenticated provenance matches the artifact and expected build. Passing the gate only makes the artifact eligible for remaining release review; provenance is not a guarantee of vulnerability-free software.
+Keep untrusted contributions separate from trusted build state. Then, before using a build artifact, check that its authenticated provenance matches the artifact and the expected build. Passing that check still leaves the rest of the release review to do; provenance does not guarantee vulnerability-free software.
 
 [Evidence and metadata](../data/diagrams/build-artifact-provenance-boundary.json) · [Mermaid source](../diagrams/build-artifact-provenance-boundary.mmd)
 
@@ -86,7 +86,7 @@ Build isolation and consumer verification address different decisions. Separate 
 
 ![A failure reaches a shared error handler. The public response contains minimal generic information. A separate diagnostic path selects useful context, removes secrets and unnecessary personal data, and stores it under access and retention controls. Raw exception details do not flow directly to the client.](../diagrams/error-diagnostic-disclosure-boundary.svg)
 
-Failure paths need explicit disclosure rules too. Give clients a minimal response, while selecting, minimizing and protecting diagnostic context independently. Internal logs still need a legitimate purpose, restricted access and a retention policy.
+Decide what an error response may reveal and what belongs only in diagnostics. Give clients a minimal response. Collect only useful diagnostic details and protect them separately. Internal logs still need a legitimate purpose, restricted access and a retention policy.
 
 [Evidence and metadata](../data/diagrams/error-diagnostic-disclosure-boundary.json) · [Mermaid source](../diagrams/error-diagnostic-disclosure-boundary.mmd)
 
@@ -94,7 +94,7 @@ Failure paths need explicit disclosure rules too. Give clients a minimal respons
 
 ![A caller requests a combined view. Source A and source B each have an independent authorization decision. Either denial stops the combined view. An explicit AND gate requires both permissions before composition; field selection preserves each source’s field permissions before only permitted data is returned.](../diagrams/combined-view-source-authorization.svg)
 
-Access to one contributing source never supplies permission for another. Require both source decisions to permit the caller, then preserve each source’s field restrictions in the response. This all-or-nothing model connects GitHub’s cross-repository comparison disclosure with Frappe’s linked-document response disclosure and OWASP authorization guidance. Partial results require a separately specified non-disclosing omission policy. Snapshot consistency, permission-change races and inference from combined values are outside this model.
+Permission to read one source does not grant access to another. In this all-or-nothing model, both sources must permit the caller, and the combined response must retain each source's field restrictions. It connects GitHub's cross-repository comparison disclosure with Frappe's linked-document response disclosure and OWASP authorization guidance. Returning partial results needs a separate policy for omitting inaccessible data without revealing it. The model does not cover snapshot consistency, races with permission changes or information inferred from combined values.
 
 [Evidence and metadata](../data/diagrams/combined-view-source-authorization.json) · [Mermaid source](../diagrams/combined-view-source-authorization.mmd) · [DOT source](../diagrams/combined-view-source-authorization.dot)
 
@@ -102,7 +102,7 @@ Access to one contributing source never supplies permission for another. Require
 
 ![A failure retains the caller, action and resource. Explicit access denial stops without protected data. A known recoverable operational failure may propose a fallback, but execution identity adds no caller entitlement. Application policy must permit the fallback for the original caller before a scoped execution returns only caller-permitted data. Denied or indeterminate decisions stop.](../diagrams/fallback-requester-authorization.svg)
 
-Recovery must stay within the original caller's permissions. An access denial is a terminal result for this logical operation; a recoverable operational failure only permits consideration of a fallback. Evaluate that fallback under the caller's authority and application policy, regardless of the identity used to execute it. This editorial model connects the researcher's account of Instagram's privileged error handling with OWASP authorization guidance. It does not depict Instagram's architecture or documented patch. Separately authorized background work, permission freshness, revocation and distributed consistency are outside the model.
+A fallback must stay within the original caller's permissions. An access denial ends this operation. A recoverable operational failure may justify considering a fallback, but application policy must still permit it for the original caller, regardless of which identity executes it. This editorial model connects the researcher's account of Instagram's privileged error handling with OWASP authorization guidance. It does not describe Instagram's architecture or patch. It also does not cover separately authorized background work, permission freshness, revocation or distributed consistency.
 
 [Evidence and metadata](../data/diagrams/fallback-requester-authorization.json) · [Mermaid source](../diagrams/fallback-requester-authorization.mmd) · [DOT source](../diagrams/fallback-requester-authorization.dot)
 
@@ -110,7 +110,9 @@ Recovery must stay within the original caller's permissions. An access denial is
 
 ![Approved grant context and a first-issuance or renewal request are both required. Resolve trusted context, then check the correct grant and client and whether requested authority stays within approval. Issue only bounded authority; mismatch or incomplete binding prevents issuance. Changing approved authority needs a separate authorization decision.](../diagrams/delegated-grant-authority-continuity.svg)
 
-A user's wider access and a client's registration do not enlarge the authority delegated by a particular grant. Preserve its subject, client and permission boundaries across first issuance and renewal, even when those paths have different protocol steps. This editorial synthesis connects the Google device-grant disclosure, n8n's refresh-resource advisory and RFC 9700 sections 2.3 and 4.14.2. Narrower issuance and separately approved incremental authority are compatible with the model. The graph assumes integrity-protected grant context and applicable client verification; it does not prescribe storage, depict vendor architecture or verify a deployed repair. Revocation, concurrency, replay protection and consent usability remain outside its scope.
+A grant authorizes a particular subject, client and set of permissions. Keep those limits through first issuance and renewal, even if the protocol steps differ. The user's wider access and the client's registration do not expand the grant. Issuing less authority, or adding authority with separate approval, still fits this model.
+
+This editorial model connects the Google device-grant disclosure, n8n's refresh-resource advisory and RFC 9700 sections 2.3 and 4.14.2. It assumes that grant context is protected against tampering and that applicable client checks have been performed. It does not prescribe storage, describe vendor architecture or verify a deployed fix. Revocation, concurrency, replay protection and consent usability are outside its scope.
 
 [Evidence and metadata](../data/diagrams/delegated-grant-authority-continuity.json) · [Mermaid source](../diagrams/delegated-grant-authority-continuity.mmd) · [DOT source](../diagrams/delegated-grant-authority-continuity.dot)
 

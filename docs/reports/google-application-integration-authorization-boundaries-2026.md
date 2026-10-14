@@ -15,7 +15,7 @@ Google Application Integration did not consistently check resource ownership and
 <a id="root-cause"></a>
 ## What went wrong
 
-Resource-ownership checks and task-authority checks were inconsistent\. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations\.
+The service did not consistently check who owned a resource or what a backend task was allowed to do\. The researcher compared customer-project permissions with backend integration-service permissions and found gaps between allowed customer actions and privileged service operations\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

@@ -147,7 +147,7 @@
   "title": "Google Firefly confused worker authority and storage boundaries",
   "product": "Firefly partner-management API",
   "summary": "Google Firefly let delegated workers and storage operations use more authority than the caller's permissions justified. The researcher demonstrated storage reads and a local test-file write under a production identity; wider access still depended on permissions. Firefly received a separate USD 60,000 award, and the report does not establish anonymous access or universal infrastructure compromise.",
-  "root_cause": "Missing caller authorization, unverified worker-result authority and unconstrained storage abstraction crossed service boundaries. The researcher questioned whether a narrowly named field actually limited backend authority.",
+  "root_cause": "The services did not consistently check caller permissions, verify the authority of worker results or restrict storage operations. The researcher questioned whether a narrowly named field actually limited what the backend could do.",
   "impact": "The researcher demonstrated storage reads and a local test-file write under a production identity. Broader access remained permission-dependent; universal infrastructure compromise is not established.",
   "defensive_takeaways": [
     "Editorial lesson: authenticate scheduler callbacks against the assigned worker and bind completion to an immutable task.",

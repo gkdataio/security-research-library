@@ -15,7 +15,7 @@ Redis could free the same memory twice when loading serialized objects and clean
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher traced object ownership through deserialization and failure cleanup\. Validation and conversion interpreted legacy data differently, while another cleanup path released an object still owned elsewhere\. Both defects violated the invariant that each allocation is released exactly once; accepting a data-import request did not make its contents trustworthy\.
+Validation and conversion interpreted legacy serialized data differently\. A separate cleanup path could free an object that another part of the program still owned\. The researcher traced ownership through deserialization and failure cleanup to identify both defects\. Each allocation needed to be freed exactly once; accepting an import request did not make its contents trustworthy\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

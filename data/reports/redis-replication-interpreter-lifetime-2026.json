@@ -30,7 +30,7 @@
     "patch-verification"
   ],
   "summary": "Redis replication changes could release interpreter state while a function was still using it. Code execution was demonstrated at the competition, but the vendor limits exposure to authenticated access and replicas configured, or configurable, for writes. Wiz confirms a USD 30,000 award for Yoni Sherez's individual entry, identified as CVE-2026-23631.",
-  "root_cause": "The researcher compared ordinary command handling with replication-related state changes during ongoing function execution. The latter did not preserve equivalent lifetime checks, so interpreter state could be released while still in use. The failed invariant was that background synchronization must not invalidate objects needed by active work.",
+  "root_cause": "Replication-related state changes could free interpreter state while a function was still using it. The researcher compared those changes with ordinary command handling and found that they lacked equivalent lifetime checks. Background synchronization needed to preserve objects required by active work.",
   "impact": "Code execution was demonstrated in the competition. The vendor limits exposure to authenticated access and replicas configured, or configurable, for writes. It reported Redis Cloud patched by its May 2026 announcement. These conditions do not establish equivalent exposure across all deployments.",
   "defensive_takeaways": [
     "Apply lifetime invariants to background synchronization and administrative state transitions as well as normal request paths.",

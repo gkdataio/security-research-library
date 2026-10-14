@@ -15,7 +15,7 @@ GitHub Enterprise Server's comparison feature could reveal limited code from a r
 <a id="root-cause"></a>
 ## What went wrong
 
-GitHub identifies improper access control in cross-repository comparison \(vendor-report; vendor-release\)\. Access to one repository did not establish permission to disclose content from another contributing repository\. The vendor describes prerequisites of existing repository access and prior knowledge of private-repository references; this was not described as unrestricted anonymous browsing\. The conceptual failure is authorizing a derived view without preserving every source repository’s access boundary; implementation-level check placement is not disclosed\.
+GitHub identifies an access-control failure in cross-repository comparison \(vendor-report; vendor-release\)\. Permission to read one repository did not grant permission to see code from another repository in the comparison\. The user needed existing repository access and prior knowledge of private-repository references; this was not unrestricted anonymous browsing\. The general lesson is to check access to every source used in a combined view\. The vendor does not disclose how the access checks were implemented\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

@@ -15,7 +15,7 @@ Google IDX's messaging checks could let embedded content control operations in a
 <a id="root-cause"></a>
 ## What went wrong
 
-The messaging boundary treated caller-influenced context as authority for extension-worker operations\. Browser framing permission did not independently establish that embedded content should control the worker\.
+Messaging checks treated context influenced by the caller as permission to control extension-worker operations\. Permission to embed content in a browser frame did not establish that the content should also control the worker\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

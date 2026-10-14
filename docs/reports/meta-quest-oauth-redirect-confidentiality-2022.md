@@ -15,7 +15,7 @@ A change to Meta Quest's login flow allowed access tokens to reach unintended re
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher compared login behavior across an identity-system migration\. A previously permitted OAuth return destination began forwarding credentials through a changed redirect flow, losing an earlier containment control\. Trust in the initial destination did not establish that the eventual recipient was authorized to receive the credential\.
+During an identity-system migration, a previously permitted OAuth return destination began forwarding credentials through a changed redirect flow\. The researcher compared behavior before and after the change and found that an earlier credential-containment control had been lost\. Trusting the first destination did not establish that the eventual recipient was allowed to receive the credential\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

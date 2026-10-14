@@ -20,7 +20,7 @@
     "defensive-evidence-writing"
   ],
   "summary": "Google Application Integration did not consistently check resource ownership and the authority of backend tasks. The researcher reports cross-project access and test execution, but did not demonstrate completed code execution in production. He reports a $75,000 base award for this distinct finding.",
-  "root_cause": "Resource-ownership checks and task-authority checks were inconsistent. The researcher compared customer-project permissions with the authority of backend integration services, identifying gaps between authorized customer activity and privileged service operations.",
+  "root_cause": "The service did not consistently check who owned a resource or what a backend task was allowed to do. The researcher compared customer-project permissions with backend integration-service permissions and found gaps between allowed customer actions and privileged service operations.",
   "impact": "The authenticated-user research reports cross-project access and test execution. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated. Wider impact remains unverified.",
   "defensive_takeaways": [
     "Editorial lesson: authorize the actual resource owner at every service boundary rather than relying on an enclosing project context.",

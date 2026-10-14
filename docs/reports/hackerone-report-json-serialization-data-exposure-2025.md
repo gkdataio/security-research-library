@@ -15,7 +15,7 @@ A framework upgrade caused HackerOne's public report responses to include privat
 <a id="root-cause"></a>
 ## What went wrong
 
-The vendor explains that an internal user object and a sanitized public representation shared a field name under different Ruby key types\. Earlier serialization retained only the sanitized representation; the upgrade emitted both\. Snapshot tests reparsed the response and discarded the earlier duplicate field, concealing sensitive data present in the raw response\. The affected context was a disclosed report with a reporter or team-member summary\. This was an application output-boundary failure exposed by a framework behavior change, not an AI-agent defect\.
+An internal user object and its sanitized public version used the same field name with different Ruby key types\. According to the vendor, earlier serialization kept only the public version, but the framework upgrade emitted both\. Snapshot tests parsed the response again and discarded the earlier duplicate, hiding private data that was still present in the raw output\. This affected disclosed reports with a reporter or team-member summary\. The failure concerned application output after a framework change, not an AI agent\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

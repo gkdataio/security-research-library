@@ -15,7 +15,7 @@ Sign in with Apple did not reliably check that identity claims belonged to the s
 <a id="root-cause"></a>
 ## What went wrong
 
-Token issuance failed to maintain a trustworthy relationship between the authenticated identity and identity claims used by relying applications\. Cryptographic validity alone did not establish correct claim ownership\.
+Token issuance did not reliably bind identity claims to the authenticated user\. A relying application could receive a cryptographically valid token whose claims did not belong to that user\. Checking the token’s cryptography alone could not establish claim ownership\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

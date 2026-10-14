@@ -15,7 +15,7 @@ A misconfigured HackerOne support integration let external users view internal C
 <a id="root-cause"></a>
 ## What went wrong
 
-The vendor attributes the issue to a support-system misconfiguration that allowed support workflows to cross the boundary into internal documentation\. The public summary does not reveal the precise configuration, authentication prerequisites or permission-propagation mechanism; an identity-entitlement failure is a defensive interpretation, not a documented implementation detail\.
+The vendor says a support-system misconfiguration let support workflows reach internal documentation\. The public summary does not disclose the configuration, required authentication or how permissions were passed between systems\. Describing this as a failure to keep identities within their allowed access is a defensive interpretation, not a documented implementation detail\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

@@ -15,7 +15,7 @@ Facebook's SDK used weak message authentication and could render supplied conten
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher followed messages from an embedded plugin into SDK handlers and examined their authority checks\. A callback identifier was treated as an authentication secret despite coming from non-cryptographic randomness\. Separately, a handler interpreted supplied content as active HTML\. An origin check alone did not establish that the message content was authorized or safe to render\.
+The SDK treated a callback identifier as an authentication secret even though it came from non-cryptographic randomness\. The researcher traced messages from an embedded plugin into the SDK’s handlers and checked how they were authorized\. A separate handler rendered supplied content as active HTML\. Checking the message’s origin alone did not prove that its content was authorized or safe to render\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

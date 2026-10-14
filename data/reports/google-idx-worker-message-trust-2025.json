@@ -20,7 +20,7 @@
     "defensive-evidence-writing"
   ],
   "summary": "Google IDX's messaging checks could let embedded content control operations in an extension worker. The researcher demonstrated script execution in that worker, without direct access to the page's DOM; broader account takeover was not established and prior access to an affected resource was required. A Google notice published by the researcher records a USD 22,500 award.",
-  "root_cause": "The messaging boundary treated caller-influenced context as authority for extension-worker operations. Browser framing permission did not independently establish that embedded content should control the worker.",
+  "root_cause": "Messaging checks treated context influenced by the caller as permission to control extension-worker operations. Permission to embed content in a browser frame did not establish that the content should also control the worker.",
   "impact": "The researcher demonstrated script execution in a worker, without direct DOM access. Same-origin requests were described as a possible consequence; broader account takeover was not established. The reproduced award notice limits severity because prior access to an affected resource was required.",
   "defensive_takeaways": [
     "Bind messaging trust to a verified origin and context.",

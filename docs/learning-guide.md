@@ -1,12 +1,12 @@
 # Defensive learning guide
 
-Use the historical cases as architecture-review examples. Researchers and authorized offensive-security teams can also use the [methodology guide](research-methodology.md) for hypothesis formation, code-review reasoning and contained learning exercises. The goal is to understand and verify security invariants in an owned or authorized environment, not to replay a public exploit against other systems.
+Use these historical cases to ask better questions about a system's design. Each topic names a security rule that should always hold, also called an invariant, and suggests a way to review it. The [methodology guide](research-methodology.md) covers hypotheses, code review and contained learning exercises for researchers and authorized offensive-security teams. Work only in an owned or authorized environment; these examples are not permission to replay a public exploit elsewhere.
 
 ## 1. Approval and concurrency integrity
 
 **Case:** Cloud Build approval consistency (older reference)
 
-Learn to distinguish mutable object names from immutable versions, document exactly what an approval authorizes, and model ordering assumptions. A useful review artifact is a state diagram with the approved version, executed version, and invalidation conditions. Local unit tests should demonstrate the invariant across ordinary state changes.
+Does the system execute the exact version a reviewer approved? A name can stay the same while its contents change. Draw the approved version, the executed version and the changes that would require a new approval. Use local unit tests to check that the rule holds as state changes.
 
 The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025.json) distinguishes the observed revision mismatch from possible consequences under a pipeline’s privileges. Its fix-status confirmation is kept separate from an unknown deployment date.
 
@@ -18,9 +18,9 @@ The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025
 
 **Cases:** Meta service-identity and secret-access boundaries; Actifio driver and service-identity isolation; Apple PCC provisioning and mutable-configuration integrity
 
-Learn effective-permission review, service authentication, secret ownership, and least privilege across integrations. Produce an identity-to-resource access matrix and a justified minimum-permission design. Separate reported reach from actual data access; stop evidence collection once the approved review objective is met.
+List each service identity, how it authenticates, which secrets it owns and which resources it can access through each integration. Compare those permissions with what the service actually needs. Keep possible access separate from data that was actually read, and stop collecting evidence once the approved review objective is met.
 
-The [Instagram application-credential case](../data/reports/instagram-application-credential-client-containment-2022.json) illustrates credential classification: data delivered to a client should not carry server-level authority. Its vendor-confirmed award coexists with explicit limits on downstream impact.
+The [Instagram application-credential case](../data/reports/instagram-application-credential-client-containment-2022.json) shows why credential types matter: data delivered to a client should not carry server-level authority. The vendor confirmed the award, but the record still limits what can be claimed about downstream impact.
 
 **Taxonomy:** `cloud-iam-review`, `machine-identity-governance`, `secrets-containment`
 
@@ -32,7 +32,7 @@ Foundational reading: [Sigstore trust assumptions](resources/sigstore-security-m
 
 **Cases:** GitHub dependency-source trust; Angular build-cache and automation trust
 
-Learn registry provenance, namespace governance, artifact integrity, cache separation, and bot authorization. Produce a trust-boundary diagram identifying who can create each input and which execution context consumes it. Review both direct privileges and shared state without assuming a read-only job is isolated.
+Trace where dependencies and build inputs come from, who controls their names and contents, and which jobs use them. Include shared caches, artifacts and bots in the diagram. A job's read-only permissions do not tell you whether its shared state is isolated from more privileged work.
 
 **Taxonomy:** `pipeline-trust-modeling`, `dependency-provenance`, `cache-artifact-isolation`, `machine-identity-governance`
 
@@ -42,9 +42,9 @@ Learn registry provenance, namespace governance, artifact integrity, cache separ
 
 **Case:** Gemini Enterprise persistent-memory integrity
 
-Learn data provenance and the difference between retrieved text and user authorization. Document which operations change persistent state, what independent checks authorize them, and how connector content is kept out of the authority path. Use synthetic content and a local mock integration for regression coverage.
+Reading a document should not give that document permission to change saved state. List the operations that make lasting changes, the checks that authorize them and how the system keeps retrieved text from supplying that authorization. Use synthetic content and a local mock integration to check the distinction.
 
-The [Gemini memory record](../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json) distinguishes an observed deletion in a researcher-controlled account from broader consequences. Its conceptual lesson is that reading permission does not authorize a lasting state change; the vendor’s exact fix remains unknown.
+In the [Gemini memory record](../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json), the researcher observed deletion in a controlled account. Broader consequences were not demonstrated, and the vendor's exact fix remains unknown.
 
 **Taxonomy:** `ai-authority-boundaries`, `authorization-modeling`, `untrusted-input-handling`
 
@@ -54,7 +54,7 @@ Foundational reading: [Rust ownership and borrowing](resources/rust-ownership-bo
 
 **Cases:** PostgreSQL CVE-2026-2006 encoding contracts, CVE-2026-2005 buffer capacity and CVE-2026-2004 input-type validation (competition entries); MariaDB JSON normalization; Chrome V8 type consistency and initialization checks; Redis Lua object-lifetime integrity, deserialization ownership and replication-state lifetime
 
-Learn encoding validity, length accounting, extension contracts, and safe use of assumptions across components. Produce a contract map showing where validation occurs and which downstream routines depend on it. Follow vendor patch guidance; review safe unit-test coverage rather than developing an exploit. The MariaDB example also teaches evidence calibration: a controlled code-execution demonstration does not establish the same reliability in every deployment.
+Which component checks an input's encoding, type and length, and which later routines rely on those checks? Map those dependencies, including extensions. Follow vendor patch guidance and review safe unit-test coverage rather than developing an exploit. The MariaDB case also shows a limit of demonstration evidence: code execution in a controlled setting does not establish the same reliability in every deployment.
 
 **Taxonomy:** `secure-parser-review`, `encoding-invariant-review`, `memory-safety-review`, `patch-verification`
 
@@ -64,9 +64,9 @@ Learn encoding validity, length accounting, extension contracts, and safe use of
 
 **Cases:** Microsoft account recovery; both Instagram recovery findings; Sign in with Apple; Google device-grant binding; Meta Quest login-migration credential confinement; Meta linked-account SMS verification; GitLab recovery-address binding; LiteSpeed Cache privileged user simulation
 
-Learn to express which account a verification challenge or token represents, which actor may use it, and when it expires. Review atomic attempt accounting, challenge uniqueness, and relying-party assumptions. A useful deliverable is an identity-state model with local unit tests for its invariants.
+For each challenge or token, write down the account it belongs to, who may use it and when it expires. Check that attempt limits remain correct under concurrent use, challenges are unique and relying applications make compatible assumptions. A state diagram and local unit tests can make these rules easier to review.
 
-The [Meta Quest migration case](../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) highlights a change-management question: does an existing login destination still preserve the same security guarantees after the identity flow changes? Document the intended recipient of a credential throughout its lifecycle and distinguish the reported fix from assumptions about every related component.
+The [Meta Quest migration case](../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) asks a useful question about upgrades: is an existing login destination still safe after the identity flow changes? Track who should receive each credential throughout the flow. A reported fix does not establish how every related component behaves.
 
 The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028.md) separates password-reset integrity from login protection. A second factor can preserve the login boundary while recovery remains flawed. Its documented remediation covers the complete reset flow, including address handling and generated email, rather than only a single input check.
 
@@ -78,7 +78,7 @@ The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028
 
 **Cases:** Google Support; YouTube creator privacy; YouTube/Pixel Recorder identity correlation; both GitHub fork-collaboration reports and cross-repository comparisons; HackerOne report serialization, private-program objects and support integration; Meta AI media ownership
 
-Learn how the same entitlement can be represented across API surfaces and framework layers. Define response allowlists, ownership checks, and privacy-contract tests. Compare the intended policies at creation, editing, serialization, and consumption rather than assuming an earlier check remains sufficient.
+Follow the same access rule through each API and framework layer. Check who owns an object, which fields a response may include and whether those limits survive creation, editing, serialization and use by another component. Test the privacy rules at each stage; an earlier check may no longer be sufficient.
 
 **Taxonomy:** `authorization-modeling`, `secure-parser-review`, `untrusted-input-handling`, `patch-verification`
 
@@ -86,11 +86,11 @@ Learn how the same entitlement can be represented across API surfaces and framew
 
 **Cases:** Both Ryan Pickren Apple research chains; GitHub OAuth consent; Google IDX worker isolation; Facebook SDK message authentication and Meta Pixel context binding; Chrome graphics input validation; Pixel authentication-state binding
 
-Learn origin identity, permission persistence, request semantics, and consent invalidation when a resource changes. Produce a consent-lifecycle map identifying what was approved, by whom, and under which immutable context. Keep approved application behavior separate from assumptions about framework or OS defaults.
+Record what the user approved, which origin received permission, how long it lasts and which changes should invalidate it. Include request handling and the context that must remain unchanged. Check framework and OS defaults separately from the application's intended consent rules.
 
-The [Facebook SDK record](../data/reports/facebook-sdk-message-authentication-randomness-2023.json) gives a concrete reasoning example: examine what grants a message authority, then assess how accepted content is consumed. Authentication, rendering safety and embedding permissions are separate invariants. The record distinguishes reported mobile-browser impact from broader effects that depend on deployment, and labels remediation guidance as recommendations rather than an undocumented vendor patch.
+The [Facebook SDK record](../data/reports/facebook-sdk-message-authentication-randomness-2023.json) separates three questions: is the message authentic, is its content safe to render and is the page allowed to be embedded? Its reported mobile-browser impact does not establish the same effect in every deployment. The defensive advice is a set of recommendations, not a description of the vendor's undisclosed patch.
 
-The Meta Pixel case adds a data-disclosure boundary: sender identity does not determine the recipient’s authority over page context. [OWASP messaging guidance](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html) and the [message-boundary visual](visual-theory.md#keep-browser-message-identity-separate-from-authority) keep transport checks, action authorization and content safety distinct.
+The Meta Pixel case adds another question: may the recipient receive the page data being sent? Knowing who sent the message does not answer it. [OWASP messaging guidance](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html) and the [message-boundary visual](visual-theory.md#keep-browser-message-identity-separate-from-authority) separate transport checks, permission to act and safe content handling.
 
 **Taxonomy:** `browser-isolation-review`, `approval-state-integrity`, `identity-lifecycle-review`, `secure-parser-review`
 
@@ -98,7 +98,7 @@ The Meta Pixel case adds a data-disclosure boundary: sender identity does not de
 
 **Case:** ASP.NET Core Kestrel framing consistency
 
-Review the documented parsing contract across proxies and application servers. Each layer should agree on message boundaries and reject ambiguous input. Record deployment-specific assumptions and check that updated runtimes and self-contained applications are actually deployed. A useful artifact is a parser-contract matrix linked to vendor remediation evidence.
+Compare how each proxy and application server decides where an HTTP message ends. The layers should agree and reject ambiguous input. Record assumptions that depend on the deployment, then check that both runtimes and self-contained applications have received the applicable updates. Link each component's parsing rules to the vendor's remediation evidence.
 
 **Taxonomy:** `secure-parser-review`, `untrusted-input-handling`, `integration-threat-modeling`, `patch-verification`
 
@@ -106,7 +106,7 @@ Review the documented parsing contract across proxies and application servers. E
 
 **Resource:** [USENIX Security 2025 research on integration-platform OAuth bindings](https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan)
 
-Keep the intended integration app and authorization issuer consistent throughout account linking. Model which component owns each identity check and how compatibility transitions preserve it. This research considers a different multi-app threat model from the Google device-grant case.
+Track the intended integration app and authorization issuer through every stage of account linking. Identify which component checks each identity and whether those checks survive compatibility changes. This research studies a different multi-app threat model from the Google device-grant case.
 
 **Taxonomy:** `integration-threat-modeling`, `authorization-modeling`, `identity-lifecycle-review`
 
@@ -114,7 +114,7 @@ Keep the intended integration app and authorization issuer consistent throughout
 
 **Cases:** Codex command-parser approval consistency, repository hook configuration, and metadata-helper configuration
 
-Review both explicit agent actions and background tool operations. Security decisions must describe the operation the interpreter will execute, while repository-controlled configuration must not silently gain host authority. Preserve independent filesystem controls and distinguish ordinary repository content from local execution settings.
+Check background tool operations as well as the commands an agent shows the user. An approval must cover what the interpreter will actually execute. Repository-controlled configuration should not silently gain permission to run on the host. Keep filesystem restrictions independent of command approval, and distinguish ordinary repository files from local settings that can trigger execution.
 
 **Taxonomy:** `ai-authority-boundaries`, `secure-parser-review`, `integration-threat-modeling`, `untrusted-input-handling`
 
@@ -122,7 +122,7 @@ Review both explicit agent actions and background tool operations. Security deci
 
 **Cases:** NVIDIA container-initialization context (historical 2025 entry); Redis scripting isolation
 
-Separate workload-controlled configuration from privileged runtime initialization. Document where isolation relies on language memory safety, container boundaries, host identities, or virtualization. Check runtime-specific exceptions and corrected vendor release information. An architecture-review deliverable should identify each boundary and its independent safeguards, without assuming that all containers or all managed services share the same impact.
+Keep configuration supplied by a workload separate from privileged runtime startup. Identify where isolation depends on memory safety, containers, host identities or virtualization, and record the safeguards at each boundary. Check runtime-specific exceptions and corrected vendor release guidance. The effect on one deployment does not establish the same impact for every container or managed service.
 
 **Taxonomy:** `integration-threat-modeling`, `untrusted-input-handling`, `memory-safety-review`, `patch-verification`
 
@@ -132,7 +132,7 @@ Separate workload-controlled configuration from privileged runtime initializatio
 
 **Cases:** Facebook error-response exposure; Instagram privileged embedding fallback (historical)
 
-Treat failure handling as part of the security contract. Error responses should avoid returning unintended data, while alternate execution paths should retain the requester’s original authority. Review common handlers and exceptional paths separately: a generic error message alone does not ensure a safe authorization decision.
+When an operation fails, its privacy and access rules still apply. Error responses should not leak data, and a fallback should stay within the original requester's permissions. Review shared error handlers and exceptional paths separately. Returning a generic error message does not, by itself, make the access decision safe.
 
 **Taxonomy:** `error-response-design`, `authorization-modeling`, `secure-parser-review`
 
@@ -140,4 +140,4 @@ Treat failure handling as part of the security contract. Error responses should 
 
 ## Common reporting skill
 
-For every review, distinguish the observed behavior, the intended invariant, the evidence supporting impact, and the limits of that evidence. Document remediation and residual uncertainty. A large historical award is neither a forecast of future earnings nor permission to test a target.
+Explain what happened, what should have happened and which evidence supports the claimed impact. Say what was fixed and what remains unknown. A large historical award does not predict future earnings or grant permission to test a target.

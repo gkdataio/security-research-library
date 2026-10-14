@@ -15,7 +15,7 @@ GitHub's request-handling layers disagreed about when an OAuth access grant requ
 <a id="root-cause"></a>
 ## What went wrong
 
-The researcher compared the consent screen’s intended state change with routing and controller logic\. The framework accepted a wider set of request semantics than the controller expected\. Application logic treated the unexpected case as permission to grant access, even though the usual consent safeguards did not apply\. The failed invariant was that every new grant required the user’s explicit, validated approval\.
+The framework accepted request semantics that the controller did not expect\. Application logic treated that unexpected case as permission to grant access, even though the usual consent checks did not apply\. The researcher found the mismatch by comparing the consent screen’s intended action with routing and controller behavior\. Every new grant should have required explicit, validated user approval\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

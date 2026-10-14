@@ -15,7 +15,7 @@ Google's device authorization flow did not consistently preserve the intended de
 <a id="root-cause"></a>
 ## What went wrong
 
-The account completing authentication could authorize a different requesting device, while client identity and permissions were not preserved through the grant\. The researcher reasoned about consistency between initial authorization and final token authority\. Cross-device sign-in alone is expected behavior; the reported failure was loss of the intended recipient and permission binding\.
+The account completing sign-in could authorize a different requesting device, and the grant did not preserve the intended client and permissions\. The researcher compared the initial approval with the authority of the final token\. Cross-device sign-in is expected behavior; the flaw was losing the link to the intended recipient and permissions\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

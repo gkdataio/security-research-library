@@ -30,7 +30,7 @@
     "secrets-containment"
   ],
   "summary": "Cloud Build could execute a different revision from the one a reviewer had approved. The researcher demonstrated execution of newer, unreviewed code; access to secrets or cloud resources depended on the build's permissions. A Google notice published by the researcher records a $30,000 award, with USD inferred from program context.",
-  "root_cause": "The researcher compared the identity available to the approval event with the revision later selected by the build. Approval referred to mutable contribution state without preserving the exact reviewed version. The execution boundary therefore relied on an assumption that the approved and executed content remained identical.",
+  "root_cause": "Approval referred to contribution state that could still change, rather than the exact version reviewed. The researcher compared the version identifiable at approval with the revision the build later selected. The build assumed those versions still matched instead of preserving that link.",
   "impact": "The controlled demonstration executed a newer, unreviewed revision. Access to secrets or cloud resources was a potential consequence of the build’s assigned privileges, not evidence that all pipelines exposed those assets.",
   "defensive_takeaways": [
     "Bind approval and execution to immutable content identities, with explicit confirmation when the intended revision is ambiguous.",

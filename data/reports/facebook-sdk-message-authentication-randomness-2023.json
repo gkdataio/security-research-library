@@ -21,7 +21,7 @@
     "integration-threat-modeling"
   ],
   "summary": "Facebook's SDK used weak message authentication and could render supplied content as active HTML. The researcher reports account takeover under mobile in-app browser conditions and a USD 66,000 award. The effect on other websites depended on their framing controls, so the report does not show that every SDK integration was equally affected.",
-  "root_cause": "The researcher followed messages from an embedded plugin into SDK handlers and examined their authority checks. A callback identifier was treated as an authentication secret despite coming from non-cryptographic randomness. Separately, a handler interpreted supplied content as active HTML. An origin check alone did not establish that the message content was authorized or safe to render.",
+  "root_cause": "The SDK treated a callback identifier as an authentication secret even though it came from non-cryptographic randomness. The researcher traced messages from an embedded plugin into the SDK’s handlers and checked how they were authorized. A separate handler rendered supplied content as active HTML. Checking the message’s origin alone did not prove that its content was authorized or safe to render.",
   "impact": "The researcher reports script execution and Facebook account takeover under mobile in-app browser conditions. Impact on an arbitrary embedding site depended on its framing controls. The article does not establish that every website using the SDK was affected equally.",
   "defensive_takeaways": [
     "Use cryptographic randomness and context binding for values that authorize message handling.",
