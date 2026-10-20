@@ -67,4 +67,4 @@ Use the canonical records and reproducible exports to index, retrieve and compar
 - Preserve publication, reporting, award and fix dates as different events.
 - Use verification timestamps to decide what needs rechecking; they do not certify that a historical issue remains present.
 
-See the [schemas and exports](../README.md#use-the-json). Program summaries omit asset inventories and do not authorize testing; consult current official terms and your actual authorization. This collection supplies no exploit recipes, live-target chains or autonomous targeting workflow.
+See the [schemas and exports](../README.md#use-the-json). Program-policy summaries and dated asset-scope snapshots help readers navigate published policies; neither authorizes testing. Consult current official terms and confirm your own authorization. This collection supplies no exploit recipes, live-target chains or autonomous targeting workflow.
