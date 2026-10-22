@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
-**Defensive skills:** Review secure error behavior; Review parsing and serialization
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review secure error behavior](<../skillsets.md#skill-error-response-design>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>)
 
 ## Prerequisites
 

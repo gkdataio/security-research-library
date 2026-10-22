@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** samlify  
 **Authors:** tngan  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization  
-**Defensive skills:** Review identity lifecycle; Review parsing and serialization; Verify remediation evidence
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

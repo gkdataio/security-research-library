@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Vendure  
 **Authors:** michaelbromley  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Business Logic and State Integrity; API Security  
-**Defensive skills:** Model access-control invariants; Threat-model integrations; Verify remediation evidence
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

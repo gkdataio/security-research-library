@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** n8n  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; API Security  
-**Defensive skills:** Model access-control invariants; Review identity lifecycle; Threat-model integrations
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

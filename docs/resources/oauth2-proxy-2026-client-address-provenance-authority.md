@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OAuth2 Proxy  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; Web Foundations  
-**Defensive skills:** Model access-control invariants; Threat-model integrations; Review input trust boundaries; Verify remediation evidence
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** SLSA Community  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Security Standard  
+**Resource type:** [Security Standard](<../resource-types.md#type-security-standard>)  
 **Version:** 1\.2  
-**Topics:** Software Supply Chain; Verification  
-**Defensive skills:** Model build and release trust; Review artifact isolation; Review dependency provenance; Write bounded security evidence
+**Topics:** [Software Supply Chain](<../resource-topics.md#topic-supply-chain>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Model build and release trust](<../skillsets.md#skill-pipeline-trust-modeling>); [Review artifact isolation](<../skillsets.md#skill-cache-artifact-isolation>); [Review dependency provenance](<../skillsets.md#skill-dependency-provenance>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

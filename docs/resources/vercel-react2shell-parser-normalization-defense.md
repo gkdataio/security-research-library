@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Vercel  
 **Authors:** Malte Ubl  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Cloud Security; Server/Client Framework Security  
-**Defensive skills:** Review parsing and serialization; Review input trust boundaries; Threat-model integrations; Verify remediation evidence; Write bounded security evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>); [Cloud Security](<../resource-topics.md#topic-cloud-security>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

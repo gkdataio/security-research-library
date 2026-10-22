@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OpenFGA  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Business Logic and State Integrity  
-**Defensive skills:** Model access-control invariants; Reason about concurrent state
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>)
 
 ## Prerequisites
 

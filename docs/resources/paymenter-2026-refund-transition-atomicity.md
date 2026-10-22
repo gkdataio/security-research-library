@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Paymenter  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Authorization  
-**Defensive skills:** Reason about concurrent state; Review approval-state integrity; Verify remediation evidence
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

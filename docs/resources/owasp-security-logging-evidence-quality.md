@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Verification; Reporting  
-**Defensive skills:** Write bounded security evidence; Review secrets containment; Review input trust boundaries
+**Topics:** [Verification](<../resource-topics.md#topic-verification>); [Reporting](<../resource-topics.md#topic-reporting>)  
+**Defensive skills:** [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>)
 
 ## Prerequisites
 

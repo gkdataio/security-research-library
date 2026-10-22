@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Gen AI Security Project  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** LLM08:2025  
-**Topics:** Ai Security; Authorization  
-**Defensive skills:** Model access-control invariants; Review AI authority boundaries; Threat-model integrations
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

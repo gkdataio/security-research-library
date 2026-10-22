@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Nuxt  
 **Authors:** danielroe  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Authorization; Server/Client Framework Security  
-**Defensive skills:** Model access-control invariants; Review artifact isolation; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>); [Authorization](<../resource-topics.md#topic-authorization>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review artifact isolation](<../skillsets.md#skill-cache-artifact-isolation>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

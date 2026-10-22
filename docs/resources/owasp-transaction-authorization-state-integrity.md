@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Authorization  
-**Defensive skills:** Review approval-state integrity; Reason about concurrent state; Model access-control invariants; Review security-token design
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review security-token design](<../skillsets.md#skill-security-token-design>)
 
 ## Prerequisites
 

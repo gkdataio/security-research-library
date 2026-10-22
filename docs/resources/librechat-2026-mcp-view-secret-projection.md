@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** LibreChat  
 **Authors:** LoGGGG2402  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security; Authorization; API Security  
-**Defensive skills:** Model access-control invariants; Review secrets containment; Review AI authority boundaries; Review parsing and serialization
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Authorization](<../resource-topics.md#topic-authorization>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>); [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>)
 
 ## Prerequisites
 

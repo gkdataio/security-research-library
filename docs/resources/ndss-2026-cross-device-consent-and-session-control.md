@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Internet Society / NDSS Symposium  
 **Authors:** Xin Zhang; Xiaohan Zhang; Huijun Zhou; Bo Zhao  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** NDSS 2026 proceedings; DOI 10\.14722/ndss\.2026\.240656  
-**Topics:** Identity; Authorization; Web Foundations  
-**Defensive skills:** Review identity lifecycle; Review approval-state integrity; Write bounded security evidence
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

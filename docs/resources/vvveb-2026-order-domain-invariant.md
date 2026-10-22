@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Vvveb  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Verification  
-**Defensive skills:** Review approval-state integrity; Review input trust boundaries; Write bounded security evidence
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

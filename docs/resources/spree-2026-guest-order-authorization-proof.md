@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Peter Stöckli  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Web Foundations  
-**Defensive skills:** Model access-control invariants; Verify remediation evidence
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

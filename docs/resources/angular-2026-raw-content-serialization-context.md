@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Angular  
 **Authors:** alan-agius4  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Browser Security; Server/Client Framework Security  
-**Defensive skills:** Review text-encoding invariants; Review parsing and serialization; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Browser Security](<../resource-topics.md#topic-browser-security>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Review text-encoding invariants](<../skillsets.md#skill-encoding-invariant-review>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

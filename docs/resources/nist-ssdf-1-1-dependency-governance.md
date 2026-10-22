@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** NIST  
 **Authors:** Murugiah Souppaya; Karen Scarfone; Donna Dodson  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** SSDF 1\.1 \(NIST SP 800-218\)  
-**Topics:** Software Supply Chain; Verification  
-**Defensive skills:** Review dependency provenance; Model build and release trust
+**Topics:** [Software Supply Chain](<../resource-topics.md#topic-supply-chain>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review dependency provenance](<../skillsets.md#skill-dependency-provenance>); [Model build and release trust](<../skillsets.md#skill-pipeline-trust-modeling>)
 
 ## Prerequisites
 

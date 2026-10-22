@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Foundation  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Training Lab  
+**Resource type:** [Training Lab](<../resource-types.md#type-training-lab>)  
 **Version:** v20\.2\.0  
-**Topics:** CTF and Controlled Practice; Web Foundations; Authorization; Identity  
-**Defensive skills:** Learn through controlled practice; Review input trust boundaries; Model access-control invariants; Review identity lifecycle
+**Topics:** [CTF and Controlled Practice](<../resource-topics.md#topic-ctf-and-practice>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>); [Identity](<../resource-topics.md#topic-identity>)  
+**Defensive skills:** [Learn through controlled practice](<../skillsets.md#skill-controlled-practice>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>)
 
 ## Prerequisites
 

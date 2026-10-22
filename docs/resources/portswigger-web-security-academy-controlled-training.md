@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** PortSwigger  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Training Lab  
+**Resource type:** [Training Lab](<../resource-types.md#type-training-lab>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; API Security; CTF and Controlled Practice; Identity; Authorization; Business Logic and State Integrity; Browser Security  
-**Defensive skills:** Model access-control invariants; Review identity lifecycle; Reason about concurrent state; Learn through controlled practice
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [API Security](<../resource-topics.md#topic-api-security>); [CTF and Controlled Practice](<../resource-topics.md#topic-ctf-and-practice>); [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Learn through controlled practice](<../skillsets.md#skill-controlled-practice>)
 
 ## Prerequisites
 

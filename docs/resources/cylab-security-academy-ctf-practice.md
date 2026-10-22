@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Carnegie Mellon University  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Training Lab  
+**Resource type:** [Training Lab](<../resource-types.md#type-training-lab>)  
 **Version:** Not established in the reviewed record  
-**Topics:** CTF and Controlled Practice; Web Foundations  
-**Defensive skills:** Learn through controlled practice; Review input trust boundaries; Write bounded security evidence
+**Topics:** [CTF and Controlled Practice](<../resource-topics.md#topic-ctf-and-practice>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Learn through controlled practice](<../skillsets.md#skill-controlled-practice>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

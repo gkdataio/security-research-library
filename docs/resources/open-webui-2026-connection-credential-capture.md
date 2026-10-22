@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Open WebUI  
 **Authors:** doge-woof  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Authorization; Ai Security  
-**Defensive skills:** Threat-model integrations; Review secrets containment; Verify remediation evidence
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Ai Security](<../resource-topics.md#topic-ai-security>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

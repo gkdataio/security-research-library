@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Foundation  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Security Standard  
+**Resource type:** [Security Standard](<../resource-types.md#type-security-standard>)  
 **Version:** 5\.0\.0  
-**Topics:** Verification  
-**Defensive skills:** Model access-control invariants; Verify remediation evidence; Write bounded security evidence
+**Topics:** [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

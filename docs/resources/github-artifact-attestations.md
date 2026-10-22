@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** GitHub  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Software Supply Chain; Identity; Verification  
-**Defensive skills:** Model build and release trust; Review dependency provenance
+**Topics:** [Software Supply Chain](<../resource-topics.md#topic-supply-chain>); [Identity](<../resource-topics.md#topic-identity>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Model build and release trust](<../skillsets.md#skill-pipeline-trust-modeling>); [Review dependency provenance](<../skillsets.md#skill-dependency-provenance>)
 
 ## Prerequisites
 

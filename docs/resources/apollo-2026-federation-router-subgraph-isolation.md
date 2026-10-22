@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Apollo GraphQL  
 **Authors:** David Walter  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization; API Security  
-**Defensive skills:** Model access-control invariants; Threat-model integrations
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** PostgreSQL Global Development Group  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** PostgreSQL 18 documentation, sections 13\.4 and 13\.5  
-**Topics:** Business Logic and State Integrity  
-**Defensive skills:** Reason about concurrent state; Review approval-state integrity
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>)  
+**Defensive skills:** [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>)
 
 ## Prerequisites
 

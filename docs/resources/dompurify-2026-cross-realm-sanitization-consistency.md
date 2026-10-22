@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** DOMPurify / Cure53  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Interpreter Boundaries; Browser Security  
-**Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

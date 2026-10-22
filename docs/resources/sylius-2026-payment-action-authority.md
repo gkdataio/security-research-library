@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Sylius  
 **Authors:** TheMilek  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Authorization  
-**Defensive skills:** Model access-control invariants; Review approval-state integrity; Threat-model integrations
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

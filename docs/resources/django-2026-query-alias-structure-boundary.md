@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Django Software Foundation  
 **Authors:** Jacob Walls  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Interpreter Boundaries  
-**Defensive skills:** Review input trust boundaries; Review parsing and serialization; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>); [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

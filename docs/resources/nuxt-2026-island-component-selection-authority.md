@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Nuxt  
 **Authors:** danielroe  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification; Browser Security; Server/Client Framework Security  
-**Defensive skills:** Threat-model integrations; Review input trust boundaries; Model access-control invariants
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>); [Browser Security](<../resource-topics.md#topic-browser-security>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>)
 
 ## Prerequisites
 

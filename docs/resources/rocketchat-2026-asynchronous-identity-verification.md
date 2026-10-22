@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Peter Stöckli  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Web Foundations  
-**Defensive skills:** Review identity lifecycle; Reason about concurrent state; Verify remediation evidence
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

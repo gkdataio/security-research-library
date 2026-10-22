@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** USENIX Association  
 **Authors:** Kaixuan Luo; Xianbo Wang; Pui Ho Adonis Fung; Wing Cheong Lau; Julien Lecomte  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** USENIX Security 2025  
-**Topics:** Identity; Authorization; Cloud Security  
-**Defensive skills:** Threat-model integrations; Model access-control invariants; Review identity lifecycle
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Cloud Security](<../resource-topics.md#topic-cloud-security>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>)
 
 ## Prerequisites
 

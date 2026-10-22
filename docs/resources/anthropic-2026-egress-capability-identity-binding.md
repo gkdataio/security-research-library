@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Anthropic  
 **Authors:** Max McGuinness; Mikaela Grace; Jiri De Jonghe; Jake Eaton; Abel Ribbink  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security; Authorization  
-**Defensive skills:** Review AI authority boundaries; Model access-control invariants; Threat-model integrations
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

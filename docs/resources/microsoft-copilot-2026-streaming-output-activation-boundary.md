@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Varonis Threat Labs  
 **Authors:** Dolev Taler  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security; Web Foundations; Interpreter Boundaries; Browser Security  
-**Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Reason about concurrent state
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>)
 
 ## Prerequisites
 

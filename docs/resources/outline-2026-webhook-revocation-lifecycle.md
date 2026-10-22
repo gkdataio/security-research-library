@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Outline  
 **Authors:** tommoor  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Identity; Business Logic and State Integrity  
-**Defensive skills:** Review identity lifecycle; Threat-model integrations; Model access-control invariants
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Identity](<../resource-topics.md#topic-identity>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>)
 
 ## Prerequisites
 

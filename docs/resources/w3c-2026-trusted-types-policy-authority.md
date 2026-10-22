@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** World Wide Web Consortium  
 **Authors:** Krzysztof Kotowicz  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** Working Draft, 23 June 2026  
-**Topics:** Web Foundations; Browser Security  
-**Defensive skills:** Review client isolation; Review input trust boundaries; Review parsing and serialization
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** MythicalDash  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Authorization  
-**Defensive skills:** Review approval-state integrity; Threat-model integrations; Write bounded security evidence
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review approval-state integrity](<../skillsets.md#skill-approval-state-integrity>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization  
-**Defensive skills:** Model access-control invariants; Review cloud IAM boundaries
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review cloud IAM boundaries](<../skillsets.md#skill-cloud-iam-review>)
 
 ## Prerequisites
 

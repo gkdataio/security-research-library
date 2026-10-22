@@ -7,7 +7,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
-from build_navigation import resource_pages
+from build_navigation import link, resource_pages
 from export_resources import build_export
 from validate import Invalid
 from validate_extra import validate_all, validate_resource
@@ -117,7 +117,9 @@ class ResourceTypeTests(unittest.TestCase):
         for ids, label in ((MIGRATED_IDS, 'Maintainer Advisory'), (RESEARCH_IDS, 'Research Paper')):
             for rid in ids:
                 with self.subTest(resource=rid):
-                    self.assertIn('**Resource type:** ' + label, pages['docs/resources/' + rid + '.md'])
+                    type_id = self.records[rid]['resource_type_id']
+                    self.assertIn('**Resource type:** ' + link(label, '../resource-types.md#type-' + type_id),
+                                  pages['docs/resources/' + rid + '.md'])
                     entry = next(line for line in index.splitlines() if 'resources/' + rid + '.md' in line)
                     self.assertIn('; ' + label + '.', entry)
 

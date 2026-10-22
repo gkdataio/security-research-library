@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** The Rust Project  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Memory Safety and Process Isolation  
-**Defensive skills:** Review memory-safety assumptions; Review parsing and serialization; Review text-encoding invariants
+**Topics:** [Memory Safety and Process Isolation](<../resource-topics.md#topic-memory-safety>)  
+**Defensive skills:** [Review memory-safety assumptions](<../skillsets.md#skill-memory-safety-review>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review text-encoding invariants](<../skillsets.md#skill-encoding-invariant-review>)
 
 ## Prerequisites
 

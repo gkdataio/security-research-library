@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Google  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; Web Foundations; API Security  
-**Defensive skills:** Reason about concurrent state; Threat-model integrations; Review secure error behavior
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review secure error behavior](<../skillsets.md#skill-error-response-design>)
 
 ## Prerequisites
 

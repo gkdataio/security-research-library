@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Internet Engineering Task Force / RFC Editor  
 **Authors:** Aaron Parecki; Philippe De Ryck; David Waite  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** RFC 10017 / BCP 212  
-**Topics:** Identity; Authorization; Web Foundations; Browser Security  
-**Defensive skills:** Review identity lifecycle; Threat-model integrations; Review client isolation
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review client isolation](<../skillsets.md#skill-browser-isolation-review>)
 
 ## Prerequisites
 

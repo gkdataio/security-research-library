@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Uptime Kuma maintainers  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Interpreter Boundaries; Web Foundations  
-**Defensive skills:** Review input trust boundaries; Review secrets containment; Verify remediation evidence
+**Topics:** [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

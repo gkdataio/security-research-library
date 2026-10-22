@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** USENIX Association  
 **Authors:** Sven Hebrok; Tim Leonhard Storm; Felix Matthias Cramer; Maximilian Radoy; Juraj Somorovsky  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** USENIX Security 2025  
-**Topics:** Identity; Authorization; Web Foundations  
-**Defensive skills:** Review identity lifecycle; Threat-model integrations; Review security-token design
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review security-token design](<../skillsets.md#skill-security-token-design>)
 
 ## Prerequisites
 

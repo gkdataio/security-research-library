@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Vite  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization; Browser Security; Server/Client Framework Security  
-**Defensive skills:** Review client isolation; Threat-model integrations; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>); [Browser Security](<../resource-topics.md#topic-browser-security>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

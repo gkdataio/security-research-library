@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Camille Lamy  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Memory Safety and Process Isolation; Browser Security  
-**Defensive skills:** Review client isolation; Threat-model integrations; Review secrets containment
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Memory Safety and Process Isolation](<../resource-topics.md#topic-memory-safety>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>)
 
 ## Prerequisites
 

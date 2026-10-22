@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** py-pdf / pypdf  
 **Authors:** stefan6419846  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
-**Defensive skills:** Review parsing and serialization; Review input trust boundaries; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

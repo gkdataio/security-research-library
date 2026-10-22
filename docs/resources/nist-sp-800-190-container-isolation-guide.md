@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** National Institute of Standards and Technology  
 **Authors:** Murugiah Souppaya; John Morello; Karen Scarfone  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** SP 800-190 \(2017 final\)  
-**Topics:** Cloud Security; Software Supply Chain  
-**Defensive skills:** Threat-model integrations; Review dependency provenance; Verify remediation evidence
+**Topics:** [Cloud Security](<../resource-topics.md#topic-cloud-security>); [Software Supply Chain](<../resource-topics.md#topic-supply-chain>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review dependency provenance](<../skillsets.md#skill-dependency-provenance>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** arXiv  
 **Authors:** Matteo Golinelli; Kaan Onarlioglu; Bruno Crispo  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** arXiv:2608\.04744v1  
-**Topics:** Web Foundations; Verification  
-**Defensive skills:** Review artifact isolation; Threat-model integrations; Write bounded security evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review artifact isolation](<../skillsets.md#skill-cache-artifact-isolation>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>)
 
 ## Prerequisites
 

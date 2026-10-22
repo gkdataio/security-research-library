@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** n8n  
 **Authors:** Matsuuu  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Identity; Business Logic and State Integrity  
-**Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Identity](<../resource-topics.md#topic-identity>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review security-token design](<../skillsets.md#skill-security-token-design>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

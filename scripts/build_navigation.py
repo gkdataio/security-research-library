@@ -96,10 +96,10 @@ def resource_pages(resources, diagrams, taxonomy, skills):
                  '## About this resource', '',
                  '**Publisher:** '+text(rec['publisher'])+'  ',
                  '**Authors:** '+text('; '.join(rec['authors']) or 'Not identified in the reviewed record')+'  ',
-                 '**Resource type:** '+text(types[rec['resource_type_id']])+'  ',
+                 '**Resource type:** '+link(types[rec['resource_type_id']], '../resource-types.md#type-'+quote(rec['resource_type_id'], safe=''))+'  ',
                  '**Version:** '+text(rec['version'] or 'Not established in the reviewed record')+'  ',
-                 '**Topics:** '+text('; '.join(topics[t] for t in rec['topic_ids']))+'  ',
-                 '**Defensive skills:** '+text('; '.join(skill_titles[t] for t in rec['skillset_ids'])), '',
+                 '**Topics:** '+'; '.join(link(topics[t], '../resource-topics.md#topic-'+quote(t, safe='')) for t in rec['topic_ids'])+'  ',
+                 '**Defensive skills:** '+'; '.join(link(skill_titles[t], '../skillsets.md#skill-'+quote(t, safe='')) for t in rec['skillset_ids']), '',
                  '## Prerequisites', '',
                  '**Basis:** '+text(rec['prerequisites_basis'].replace('_', ' '))+'.', '']
         lines += ['- '+text(v) for v in rec['prerequisites']] or ['No prerequisites recorded; this does not establish that none are needed.']

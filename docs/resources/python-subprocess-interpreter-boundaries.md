@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Python Software Foundation  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Python 3\.14 documentation branch  
-**Topics:** Interpreter Boundaries  
-**Defensive skills:** Review input trust boundaries; Review parsing and serialization
+**Topics:** [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>)
 
 ## Prerequisites
 

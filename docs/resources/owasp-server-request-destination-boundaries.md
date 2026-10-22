@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Cloud Security  
-**Defensive skills:** Threat-model integrations; Review parsing and serialization; Review input trust boundaries; Review secrets containment
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Cloud Security](<../resource-topics.md#topic-cloud-security>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>)
 
 ## Prerequisites
 

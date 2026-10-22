@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** zhero\_web\_security  
 **Authors:** Rachid Allam \(zhero;\); inzo\_  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Interpreter Boundaries; Browser Security; Server/Client Framework Security  
-**Defensive skills:** Review input trust boundaries; Review parsing and serialization; Review artifact isolation
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>); [Browser Security](<../resource-topics.md#topic-browser-security>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review artifact isolation](<../skillsets.md#skill-cache-artifact-isolation>)
 
 ## Prerequisites
 

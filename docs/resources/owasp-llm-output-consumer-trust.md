@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Gen AI Security Project  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** LLM05:2025  
-**Topics:** Ai Security; Web Foundations; Browser Security  
-**Defensive skills:** Review AI authority boundaries; Review input trust boundaries; Threat-model integrations
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

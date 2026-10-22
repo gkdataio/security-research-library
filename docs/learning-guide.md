@@ -1,6 +1,25 @@
 # Defensive learning guide
 
+[Library home](../README.md) · [Browse vulnerability types](vulnerability-types.md) · [All reports](reports.md) · [Learning resources](resource-index.md)
+
 Use these historical cases to ask better questions about a system's design. Each topic names a security rule that should always hold, also called an invariant, and suggests a way to review it. The [methodology guide](research-methodology.md) covers hypotheses, code review and contained learning exercises for researchers and authorized offensive-security teams. Work only in an owned or authorized environment; these examples are not permission to replay a public exploit elsewhere.
+
+**Jump to a topic:**
+
+- [1. Approval and concurrency integrity](#1-approval-and-concurrency-integrity)
+- [2. Cloud identities and integration permissions](#2-cloud-identities-and-integration-permissions)
+- [3. Build systems and dependency provenance](#3-build-systems-and-dependency-provenance)
+- [4. AI tools and persistent-state authorization](#4-ai-tools-and-persistent-state-authorization)
+- [5. Parser contracts and memory safety](#5-parser-contracts-and-memory-safety)
+- [6. Account recovery and identity binding](#6-account-recovery-and-identity-binding)
+- [7. Cross-API consistency and safe serialization](#7-cross-api-consistency-and-safe-serialization)
+- [8. Browser permission and consent lifecycle](#8-browser-permission-and-consent-lifecycle)
+- [9. HTTP message-boundary consistency](#9-http-message-boundary-consistency)
+- [10. Multi-app authorization context](#10-multi-app-authorization-context)
+- [11. Coding-tool execution boundaries](#11-coding-tool-execution-boundaries)
+- [12. Workload-to-host trust boundaries](#12-workload-to-host-trust-boundaries)
+- [13. Failure-path privacy and authorization](#13-failure-path-privacy-and-authorization)
+- [Common reporting skill](#common-reporting-skill)
 
 ## 1. Approval and concurrency integrity
 
@@ -8,7 +27,7 @@ Use these historical cases to ask better questions about a system's design. Each
 
 Does the system execute the exact version a reviewer approved? A name can stay the same while its contents change. Draw the approved version, the executed version and the changes that would require a new approval. Use local unit tests to check that the rule holds as state changes.
 
-The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025.json) distinguishes the observed revision mismatch from possible consequences under a pipeline’s privileges. Its fix-status confirmation is kept separate from an unknown deployment date.
+The [Cloud Build record](reports/google-cloud-build-approval-toctou-2025.md) distinguishes the observed revision mismatch from possible consequences under a pipeline’s privileges. Its fix-status confirmation is kept separate from an unknown deployment date.
 
 **Taxonomy:** `approval-state-integrity`, `concurrency-reasoning`, `integration-threat-modeling`
 
@@ -20,7 +39,7 @@ The [Cloud Build record](../data/reports/google-cloud-build-approval-toctou-2025
 
 List each service identity, how it authenticates, which secrets it owns and which resources it can access through each integration. Compare those permissions with what the service actually needs. Keep possible access separate from data that was actually read, and stop collecting evidence once the approved review objective is met.
 
-The [Instagram application-credential case](../data/reports/instagram-application-credential-client-containment-2022.json) shows why credential types matter: data delivered to a client should not carry server-level authority. The vendor confirmed the award, but the record still limits what can be claimed about downstream impact.
+The [Instagram application-credential case](reports/instagram-application-credential-client-containment-2022.md) shows why credential types matter: data delivered to a client should not carry server-level authority. The vendor confirmed the award, but the record still limits what can be claimed about downstream impact.
 
 **Taxonomy:** `cloud-iam-review`, `machine-identity-governance`, `secrets-containment`
 
@@ -44,7 +63,7 @@ Trace where dependencies and build inputs come from, who controls their names an
 
 Reading a document should not give that document permission to change saved state. List the operations that make lasting changes, the checks that authorize them and how the system keeps retrieved text from supplying that authorization. Use synthetic content and a local mock integration to check the distinction.
 
-In the [Gemini memory record](../data/reports/google-gemini-enterprise-connected-content-memory-integrity-2026.json), the researcher observed deletion in a controlled account. Broader consequences were not demonstrated, and the vendor's exact fix remains unknown.
+In the [Gemini memory record](reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md), the researcher observed deletion in a controlled account. Broader consequences were not demonstrated, and the vendor's exact fix remains unknown.
 
 **Taxonomy:** `ai-authority-boundaries`, `authorization-modeling`, `untrusted-input-handling`
 
@@ -66,7 +85,7 @@ Which component checks an input's encoding, type and length, and which later rou
 
 For each challenge or token, write down the account it belongs to, who may use it and when it expires. Check that attempt limits remain correct under concurrent use, challenges are unique and relying applications make compatible assumptions. A state diagram and local unit tests can make these rules easier to review.
 
-The [Meta Quest migration case](../data/reports/meta-quest-oauth-redirect-confidentiality-2022.json) asks a useful question about upgrades: is an existing login destination still safe after the identity flow changes? Track who should receive each credential throughout the flow. A reported fix does not establish how every related component behaves.
+The [Meta Quest migration case](reports/meta-quest-oauth-redirect-confidentiality-2022.md) asks a useful question about upgrades: is an existing login destination still safe after the identity flow changes? Track who should receive each credential throughout the flow. A reported fix does not establish how every related component behaves.
 
 The [GitLab recovery case](reports/gitlab-recovery-address-binding-cve-2023-7028.md) separates password-reset integrity from login protection. A second factor can preserve the login boundary while recovery remains flawed. Its documented remediation covers the complete reset flow, including address handling and generated email, rather than only a single input check.
 
@@ -88,7 +107,7 @@ Follow the same access rule through each API and framework layer. Check who owns
 
 Record what the user approved, which origin received permission, how long it lasts and which changes should invalidate it. Include request handling and the context that must remain unchanged. Check framework and OS defaults separately from the application's intended consent rules.
 
-The [Facebook SDK record](../data/reports/facebook-sdk-message-authentication-randomness-2023.json) separates three questions: is the message authentic, is its content safe to render and is the page allowed to be embedded? Its reported mobile-browser impact does not establish the same effect in every deployment. The defensive advice is a set of recommendations, not a description of the vendor's undisclosed patch.
+The [Facebook SDK record](reports/facebook-sdk-message-authentication-randomness-2023.md) separates three questions: is the message authentic, is its content safe to render and is the page allowed to be embedded? Its reported mobile-browser impact does not establish the same effect in every deployment. The defensive advice is a set of recommendations, not a description of the vendor's undisclosed patch.
 
 The Meta Pixel case adds another question: may the recipient receive the page data being sent? Knowing who sent the message does not answer it. [OWASP messaging guidance](https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html) and the [message-boundary visual](visual-theory.md#keep-browser-message-identity-separate-from-authority) separate transport checks, permission to act and safe content handling.
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Amazon Web Services  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Cloud Security; Identity; Authorization  
-**Defensive skills:** Review cloud IAM boundaries; Review machine identities; Review identity lifecycle; Review secrets containment
+**Topics:** [Cloud Security](<../resource-topics.md#topic-cloud-security>); [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review cloud IAM boundaries](<../skillsets.md#skill-cloud-iam-review>); [Review machine identities](<../skillsets.md#skill-machine-identity-governance>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>)
 
 ## Prerequisites
 

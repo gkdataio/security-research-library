@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Wiz Research  
 **Authors:** Sagi Tzadik  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Authorization; Web Foundations; Cloud Security  
-**Defensive skills:** Threat-model integrations; Review parsing and serialization; Review input trust boundaries; Write bounded security evidence; Verify remediation evidence
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Cloud Security](<../resource-topics.md#topic-cloud-security>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Write bounded security evidence](<../skillsets.md#skill-defensive-evidence-writing>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

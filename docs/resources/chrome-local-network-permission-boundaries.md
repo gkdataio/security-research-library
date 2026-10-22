@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Chris Thompson  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Browser Security  
-**Defensive skills:** Review client isolation; Threat-model integrations; Model access-control invariants
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>)
 
 ## Prerequisites
 

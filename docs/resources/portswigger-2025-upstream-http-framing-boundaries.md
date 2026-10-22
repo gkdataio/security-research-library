@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** PortSwigger  
 **Authors:** James Kettle  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Verification  
-**Defensive skills:** Review parsing and serialization; Threat-model integrations; Review input trust boundaries; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

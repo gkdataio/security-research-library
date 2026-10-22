@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** World Wide Web Consortium  
 **Authors:** Ian Clelland; Ari Chivukula  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** Editor's Draft, 22 September 2026  
-**Topics:** Web Foundations; Authorization; Browser Security  
-**Defensive skills:** Review client isolation; Threat-model integrations
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

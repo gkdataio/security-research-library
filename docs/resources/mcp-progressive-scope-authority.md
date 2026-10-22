@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Model Context Protocol  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** 2026-07-28 documentation URL  
-**Topics:** Ai Security; Authorization; Identity  
-**Defensive skills:** Model access-control invariants; Threat-model integrations; Review AI authority boundaries
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Authorization](<../resource-topics.md#topic-authorization>); [Identity](<../resource-topics.md#topic-identity>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>)
 
 ## Prerequisites
 

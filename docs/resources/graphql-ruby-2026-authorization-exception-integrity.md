@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** GitHub Security Lab  
 **Authors:** Bas Alberts  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** GHSL-2026-152 / GHSA-j7xr-4g94-r9h3  
-**Topics:** Authorization; Web Foundations; API Security  
-**Defensive skills:** Model access-control invariants; Review secure error behavior; Verify remediation evidence
+**Topics:** [Authorization](<../resource-topics.md#topic-authorization>); [Web Foundations](<../resource-topics.md#topic-web-foundations>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review secure error behavior](<../skillsets.md#skill-error-response-design>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

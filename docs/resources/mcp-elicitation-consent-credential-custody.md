@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Model Context Protocol  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** 2026-07-28 specification URL  
-**Topics:** Ai Security; Authorization; Identity  
-**Defensive skills:** Review AI authority boundaries; Threat-model integrations; Review secrets containment
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>); [Authorization](<../resource-topics.md#topic-authorization>); [Identity](<../resource-topics.md#topic-identity>)  
+**Defensive skills:** [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review secrets containment](<../skillsets.md#skill-secrets-containment>)
 
 ## Prerequisites
 

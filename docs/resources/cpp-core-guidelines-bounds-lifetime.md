@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** C\+\+ Core Guidelines project  
 **Authors:** Bjarne Stroustrup; Herb Sutter  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Memory Safety and Process Isolation  
-**Defensive skills:** Review memory-safety assumptions; Review parsing and serialization
+**Topics:** [Memory Safety and Process Isolation](<../resource-topics.md#topic-memory-safety>)  
+**Defensive skills:** [Review memory-safety assumptions](<../skillsets.md#skill-memory-safety-review>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>)
 
 ## Prerequisites
 

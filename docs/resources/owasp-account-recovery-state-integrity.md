@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Identity; Business Logic and State Integrity  
-**Defensive skills:** Review identity lifecycle; Review security-token design; Reason about concurrent state
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Review security-token design](<../skillsets.md#skill-security-token-design>); [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>)
 
 ## Prerequisites
 

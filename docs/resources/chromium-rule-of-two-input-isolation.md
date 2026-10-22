@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Chromium Project  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Memory Safety and Process Isolation; Verification  
-**Defensive skills:** Review memory-safety assumptions; Review parsing and serialization; Review client isolation; Review input trust boundaries
+**Topics:** [Memory Safety and Process Isolation](<../resource-topics.md#topic-memory-safety>); [Verification](<../resource-topics.md#topic-verification>)  
+**Defensive skills:** [Review memory-safety assumptions](<../skillsets.md#skill-memory-safety-review>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>)
 
 ## Prerequisites
 

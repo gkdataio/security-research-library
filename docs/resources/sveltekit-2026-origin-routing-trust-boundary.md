@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** zhero\_web\_security  
 **Authors:** Rachid Allam; Allam Yasser  
-**Resource type:** Research Paper  
+**Resource type:** [Research Paper](<../resource-types.md#type-research-paper>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Server/Client Framework Security  
-**Defensive skills:** Threat-model integrations; Review input trust boundaries; Review secure error behavior; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Server/Client Framework Security](<../resource-topics.md#topic-server-client-frameworks>)  
+**Defensive skills:** [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review secure error behavior](<../skillsets.md#skill-error-response-design>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

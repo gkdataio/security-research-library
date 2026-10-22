@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Stripe  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Business Logic and State Integrity; API Security  
-**Defensive skills:** Reason about concurrent state; Threat-model integrations
+**Topics:** [Business Logic and State Integrity](<../resource-topics.md#topic-business-logic>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Reason about concurrent state](<../skillsets.md#skill-concurrency-reasoning>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

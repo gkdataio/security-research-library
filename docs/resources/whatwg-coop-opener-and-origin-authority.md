@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** WHATWG  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** HTML Living Standard \(reviewed 2026-10-03\)  
-**Topics:** Web Foundations; Authorization; Browser Security  
-**Defensive skills:** Review client isolation; Threat-model integrations
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

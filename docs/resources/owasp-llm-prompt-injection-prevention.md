@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OWASP Cheat Sheet Series  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Architecture Guide  
+**Resource type:** [Architecture Guide](<../resource-types.md#type-architecture-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Ai Security  
-**Defensive skills:** Review AI authority boundaries; Threat-model integrations; Review input trust boundaries
+**Topics:** [Ai Security](<../resource-topics.md#topic-ai-security>)  
+**Defensive skills:** [Review AI authority boundaries](<../skillsets.md#skill-ai-authority-boundaries>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>)
 
 ## Prerequisites
 

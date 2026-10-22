@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Internet Engineering Task Force / RFC Editor  
 **Authors:** Torsten Lodderstedt; John Bradley; Andrey Labunets; Daniel Fett  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** RFC 9700 / BCP 240  
-**Topics:** Identity  
-**Defensive skills:** Review identity lifecycle; Model access-control invariants; Threat-model integrations
+**Topics:** [Identity](<../resource-topics.md#topic-identity>)  
+**Defensive skills:** [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>); [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Google Chrome for Developers  
 **Authors:** Barry Pollard  
-**Resource type:** Implementation Guide  
+**Resource type:** [Implementation Guide](<../resource-types.md#type-implementation-guide>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Identity; Browser Security  
-**Defensive skills:** Review client isolation; Review identity lifecycle
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Identity](<../resource-topics.md#topic-identity>); [Browser Security](<../resource-topics.md#topic-browser-security>)  
+**Defensive skills:** [Review client isolation](<../skillsets.md#skill-browser-isolation-review>); [Review identity lifecycle](<../skillsets.md#skill-identity-lifecycle-review>)
 
 ## Prerequisites
 

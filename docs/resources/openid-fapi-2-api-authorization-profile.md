@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** OpenID Foundation  
 **Authors:** Daniel Fett; Dave Tonge; Joseph Heenan  
-**Resource type:** Technical Standard  
+**Resource type:** [Technical Standard](<../resource-types.md#type-technical-standard>)  
 **Version:** 2\.0 Final  
-**Topics:** Identity; Authorization; API Security  
-**Defensive skills:** Model access-control invariants; Review security-token design; Threat-model integrations
+**Topics:** [Identity](<../resource-topics.md#topic-identity>); [Authorization](<../resource-topics.md#topic-authorization>); [API Security](<../resource-topics.md#topic-api-security>)  
+**Defensive skills:** [Model access-control invariants](<../skillsets.md#skill-authorization-modeling>); [Review security-token design](<../skillsets.md#skill-security-token-design>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>)
 
 ## Prerequisites
 

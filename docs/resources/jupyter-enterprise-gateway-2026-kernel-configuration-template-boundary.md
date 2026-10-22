@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Jupyter Enterprise Gateway maintainers  
 **Authors:** Not identified in the reviewed record  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Interpreter Boundaries; Cloud Security  
-**Defensive skills:** Review input trust boundaries; Review cloud IAM boundaries; Verify remediation evidence
+**Topics:** [Interpreter Boundaries](<../resource-topics.md#topic-interpreter-boundaries>); [Cloud Security](<../resource-topics.md#topic-cloud-security>)  
+**Defensive skills:** [Review input trust boundaries](<../skillsets.md#skill-untrusted-input-handling>); [Review cloud IAM boundaries](<../skillsets.md#skill-cloud-iam-review>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 

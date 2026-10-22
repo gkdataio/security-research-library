@@ -19,10 +19,10 @@ Educational reference only; linked material does not authorize testing unrelated
 
 **Publisher:** Steeltoe  
 **Authors:** TimHess  
-**Resource type:** Maintainer Advisory  
+**Resource type:** [Maintainer Advisory](<../resource-types.md#type-maintainer-advisory>)  
 **Version:** Not established in the reviewed record  
-**Topics:** Web Foundations; Authorization  
-**Defensive skills:** Review secrets containment; Review parsing and serialization; Threat-model integrations; Verify remediation evidence
+**Topics:** [Web Foundations](<../resource-topics.md#topic-web-foundations>); [Authorization](<../resource-topics.md#topic-authorization>)  
+**Defensive skills:** [Review secrets containment](<../skillsets.md#skill-secrets-containment>); [Review parsing and serialization](<../skillsets.md#skill-secure-parser-review>); [Threat-model integrations](<../skillsets.md#skill-integration-threat-modeling>); [Verify remediation evidence](<../skillsets.md#skill-patch-verification>)
 
 ## Prerequisites
 
