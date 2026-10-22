@@ -17,7 +17,7 @@
   ],
   "version": null,
   "summary": "OWASP explains how to bind recovery challenges to the right account, limit their lifetime and reuse, and control repeated attempts. It also covers consistent responses, user notifications and session handling after a password reset.",
-  "defensive_use": "Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements.",
+  "defensive_use": "Write down the security rules that must hold throughout account recovery. Check that recovery does not silently weaken the account’s normal authentication requirements.",
   "prerequisites": [
     "Basic authentication and session concepts"
   ],

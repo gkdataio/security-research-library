@@ -11,7 +11,7 @@ PostgreSQL explains why a stable database snapshot does not, by itself, preserve
 
 ## Defensive use
 
-For an owned application, document the invariant, the transaction boundary and the isolation or locking assumptions that protect it\. As an editorial application, connect approval-state decisions to their database consistency requirements; do not assume that repeating only the final write revalidates an earlier decision\.
+For an application you own, write down the business rule that must hold, which operations belong in one transaction and how isolation or locks protect the rule\. Editorial application: connect approval decisions to these database consistency requirements\. Do not assume that repeating only the final write rechecks the earlier decision that led to it\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

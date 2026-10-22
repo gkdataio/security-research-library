@@ -11,7 +11,7 @@ A valid Stripe webhook signature proves delivery authenticity, not that an event
 
 ## Defensive use
 
-Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants\. Review how application state stays consistent across repeated, delayed and concurrent work\. A recent authenticated delivery can still describe an already-handled event\.
+Editorial lesson: check separately whether a delivery should be accepted, which event it represents and which business changes have already been committed\. Review how application state stays consistent when work is repeated, delayed or processed concurrently\. A recent authenticated delivery can still describe an event that was already handled\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

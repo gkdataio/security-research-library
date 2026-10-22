@@ -11,7 +11,7 @@ OWASP explains how to tie approval to a specific operation and its important det
 
 ## Defensive use
 
-Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant\.
+For a workflow you own, map the approval steps, when approvals expire and what changes invalidate them\. At each step, state the security rule the server must preserve\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

@@ -8585,7 +8585,7 @@
       ],
       "version": null,
       "summary": "OWASP explains how to bind recovery challenges to the right account, limit their lifetime and reuse, and control repeated attempts. It also covers consistent responses, user notifications and session handling after a password reset.",
-      "defensive_use": "Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements.",
+      "defensive_use": "Write down the security rules that must hold throughout account recovery. Check that recovery does not silently weaken the account’s normal authentication requirements.",
       "prerequisites": [
         "Basic authentication and session concepts"
       ],
@@ -9838,7 +9838,7 @@
       ],
       "version": null,
       "summary": "OWASP explains how to tie approval to a specific operation and its important details. Applications must preserve the approved data, enforce valid workflow steps and check authorization again when the operation runs.",
-      "defensive_use": "Model an owned workflow’s approval states, expiration and invalidation rules, and relate each transition to a server-side invariant.",
+      "defensive_use": "For a workflow you own, map the approval steps, when approvals expire and what changes invalidate them. At each step, state the security rule the server must preserve.",
       "prerequisites": [
         "Authentication versus operation authorization",
         "Basic application state-machine concepts"
@@ -10601,7 +10601,7 @@
       ],
       "version": "PostgreSQL 18 documentation, sections 13.4 and 13.5",
       "summary": "PostgreSQL explains why a stable database snapshot does not, by itself, preserve business rules when transactions overlap. Its guidance distinguishes serializable consistency from explicit locking. Retrying after a serialization failure must repeat the whole transaction, including the decisions behind its writes.",
-      "defensive_use": "For an owned application, document the invariant, the transaction boundary and the isolation or locking assumptions that protect it. As an editorial application, connect approval-state decisions to their database consistency requirements; do not assume that repeating only the final write revalidates an earlier decision.",
+      "defensive_use": "For an application you own, write down the business rule that must hold, which operations belong in one transaction and how isolation or locks protect the rule. Editorial application: connect approval decisions to these database consistency requirements. Do not assume that repeating only the final write rechecks the earlier decision that led to it.",
       "prerequisites": [
         "Basic database transactions and isolation levels",
         "Application business rules and state transitions"
@@ -12817,7 +12817,7 @@
       ],
       "version": null,
       "summary": "A valid Stripe webhook signature proves delivery authenticity, not that an event is new or reflects the latest business state. Stripe's guidance explains that events can arrive more than once or out of order, and retries receive new signatures and timestamps. Applications must handle those cases separately; this is provider guidance, not a vulnerability report or an exactly-once delivery guarantee.",
-      "defensive_use": "Editorial lesson: model delivery acceptance, event identity and committed business effects as separate invariants. Review how application state stays consistent across repeated, delayed and concurrent work. A recent authenticated delivery can still describe an already-handled event.",
+      "defensive_use": "Editorial lesson: check separately whether a delivery should be accepted, which event it represents and which business changes have already been committed. Review how application state stays consistent when work is repeated, delayed or processed concurrently. A recent authenticated delivery can still describe an event that was already handled.",
       "prerequisites": [
         "Basic HTTP webhook and asynchronous processing concepts",
         "Basic application state-transition and concurrency concepts"

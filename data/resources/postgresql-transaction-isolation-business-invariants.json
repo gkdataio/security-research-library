@@ -15,7 +15,7 @@
   ],
   "version": "PostgreSQL 18 documentation, sections 13.4 and 13.5",
   "summary": "PostgreSQL explains why a stable database snapshot does not, by itself, preserve business rules when transactions overlap. Its guidance distinguishes serializable consistency from explicit locking. Retrying after a serialization failure must repeat the whole transaction, including the decisions behind its writes.",
-  "defensive_use": "For an owned application, document the invariant, the transaction boundary and the isolation or locking assumptions that protect it. As an editorial application, connect approval-state decisions to their database consistency requirements; do not assume that repeating only the final write revalidates an earlier decision.",
+  "defensive_use": "For an application you own, write down the business rule that must hold, which operations belong in one transaction and how isolation or locks protect the rule. Editorial application: connect approval decisions to these database consistency requirements. Do not assume that repeating only the final write rechecks the earlier decision that led to it.",
   "prerequisites": [
     "Basic database transactions and isolation levels",
     "Application business rules and state transitions"

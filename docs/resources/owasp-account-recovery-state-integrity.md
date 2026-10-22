@@ -11,7 +11,7 @@ OWASP explains how to bind recovery challenges to the right account, limit their
 
 ## Defensive use
 
-Document recovery-state invariants and ensure recovery cannot silently weaken the account’s normal authentication requirements\.
+Write down the security rules that must hold throughout account recovery\. Check that recovery does not silently weaken the account’s normal authentication requirements\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
