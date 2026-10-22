@@ -35,6 +35,44 @@ class ResourceNavigationTests(unittest.TestCase):
         for rec in self.resources:
             self.assertEqual(index.count('(<'+'resources/'+rec['id']+'.md'+'>)'), 1)
 
+    def test_index_letter_groups_match_titles_and_link_targets(self):
+        index = self.pages['docs/resource-index.md']
+        def group(rec):
+            initial = rec['title'][0]
+            if re.fullmatch('[A-Za-z]', initial):
+                return initial.lower()
+            return '0-9' if re.fullmatch('[0-9]', initial) else 'other'
+        expected_letters = [key for key in ['0-9', *'abcdefghijklmnopqrstuvwxyz', 'other']
+                            if any(group(rec) == key for rec in self.resources)]
+        self.assertEqual(re.findall(r'<a id="letter-([^"]+)"></a>', index), expected_letters)
+        for letter in expected_letters:
+            label = 'Other titles' if letter == 'other' else letter.upper()
+            self.assertIn(link(label, '#letter-'+letter), index)
+            section = index.split('<a id="letter-'+letter+'"></a>', 1)[1].split('<a id=', 1)[0]
+            expected = sorted((r for r in self.resources if group(r) == letter),
+                              key=lambda r: (r['title'].casefold(), r['id']))
+            actual = re.findall(r'\]\(<resources/([^>]+)\.md>\)', section)
+            self.assertEqual(actual, [r['id'] for r in expected])
+
+    def test_index_initial_groups_handle_ties_digits_unicode_and_empty_input(self):
+        records = [copy.deepcopy(self.resources[0]) for _ in range(7)]
+        for rec, rid, title in zip(records, ('z', 'b', 'a', 'n', 'p', 'u', 'v'),
+                                   ('Zulu', 'Alpha', 'alpha', '2 examples', '<literal>', 'Évidence', 'ßeta')):
+            rec.update(id=rid, title=title)
+        before = copy.deepcopy(records)
+        index = self.render(records)['docs/resource-index.md']
+        self.assertEqual(records, before)
+        self.assertEqual(index, self.render(list(reversed(records)))['docs/resource-index.md'])
+        self.assertEqual(re.findall(r'<a id="letter-([^"]+)"></a>', index), ['0-9', 'a', 'z', 'other'])
+        self.assertEqual(re.findall(r'\]\(<resources/([^>]+)\.md>\)', index), ['n', 'a', 'b', 'z', 'p', 'v', 'u'])
+        self.assertIn(link('Other titles', '#letter-other'), index)
+        self.assertIn(text('<literal>'), index)
+        self.assertNotIn('<literal>', index)
+        empty = self.render([])['docs/resource-index.md']
+        self.assertIn('0 resources.', empty)
+        self.assertNotIn('Jump by title', empty)
+        self.assertNotIn('id="letter-', empty)
+
     def test_record_content_and_provenance_preserved(self):
         for rec in self.resources:
             with self.subTest(resource=rec['id']):

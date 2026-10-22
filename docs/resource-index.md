@@ -6,6 +6,11 @@ Original defensive summaries of official educational references. These resources
 
 155 resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.
 
+**Jump by title:** [A](<#letter-a>) · [B](<#letter-b>) · [C](<#letter-c>) · [D](<#letter-d>) · [E](<#letter-e>) · [F](<#letter-f>) · [G](<#letter-g>) · [H](<#letter-h>) · [J](<#letter-j>) · [L](<#letter-l>) · [M](<#letter-m>) · [N](<#letter-n>) · [O](<#letter-o>) · [P](<#letter-p>) · [Q](<#letter-q>) · [R](<#letter-r>) · [S](<#letter-s>) · [T](<#letter-t>) · [U](<#letter-u>) · [V](<#letter-v>) · [W](<#letter-w>) · [Z](<#letter-z>)
+
+<a id="letter-a"></a>
+## A
+
 - [Adversarial passkeys: account recovery must close every continuing source of authority](<resources/usenix-2026-passkey-remediation-authority-lifecycle.md>) — USENIX Association; Research Paper. [Original source](<https://www.usenix.org/conference/usenixsecurity26/presentation/daffalla>).
 - [Angular host bindings: bind sanitization to the concrete output element](<resources/angular-2026-host-binding-context-authority.md>) — Angular; Maintainer Advisory. [Original source](<https://github.com/angular/angular/security/advisories/GHSA-hh8m-fm6v-7cvg>).
 - [Angular hydration: verify the source of restored state](<resources/angular-2026-hydration-state-source-authenticity.md>) — Angular maintainers; Maintainer Advisory. [Original source](<https://github.com/angular/angular/security/advisories/GHSA-rgjc-h3x7-9mwg>).
@@ -19,10 +24,18 @@ Original defensive summaries of official educational references. These resources
 - [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>) — Amazon Web Services; Implementation Guide. [Original source](<https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html>).
 - [Axios: enforce upload budgets across transport implementations](<resources/axios-2026-streamed-upload-budget-enforcement.md>) — Axios; Maintainer Advisory. [Original source](<https://github.com/axios/axios/security/advisories/GHSA-mwf2-3pr3-8698>).
 - [Axios: URL construction does not establish destination authority](<resources/axios-2025-base-url-destination-authority.md>) — Axios; Maintainer Advisory. [Original source](<https://github.com/axios/axios/security/advisories/GHSA-jr5f-v2jv-69x6>).
+
+<a id="letter-b"></a>
+## B
+
 - [Better Auth SCIM: absent ownership must not grant shared authority](<resources/better-auth-2026-scim-ownerless-provider-authority.md>) — Better Auth; Maintainer Advisory. [Original source](<https://github.com/better-auth/better-auth/security/advisories/GHSA-j8v8-g9cx-5qf4>).
 - [Better Auth: incoming identity proof does not validate existing credentials](<resources/better-auth-2026-local-account-linking-verification.md>) — Better Auth; Maintainer Advisory. [Original source](<https://github.com/better-auth/better-auth/security/advisories/GHSA-g38m-r43w-p2q7>).
 - [Better Auth: single-use authorization requires atomic state consumption](<resources/better-auth-2026-authorization-code-consumption-integrity.md>) — Better Auth; Maintainer Advisory. [Original source](<https://github.com/better-auth/better-auth/security/advisories/GHSA-7w99-5wm4-3g79>).
 - [Bugsink: time-unit consistency in account-access token expiry](<resources/bugsink-2026-token-expiry-unit-integrity.md>) — Bugsink; Maintainer Advisory. [Original source](<https://github.com/bugsink/bugsink/security/advisories/GHSA-4f45-qmjf-82cv>).
+
+<a id="letter-c"></a>
+## C
+
 - [C\+\+ Core Guidelines: Bounds and Lifetime Safety](<resources/cpp-core-guidelines-bounds-lifetime.md>) — C\+\+ Core Guidelines project; Implementation Guide. [Original source](<https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>).
 - [Chrome bfcache: restored pages and session-state boundaries](<resources/chrome-bfcache-restored-session-state.md>) — Google Chrome for Developers; Implementation Guide. [Original source](<https://developer.chrome.com/docs/web-platform/bfcache-ccns>).
 - [Chrome Local Network Access: separate browser reachability from site authority](<resources/chrome-local-network-permission-boundaries.md>) — Google Chrome for Developers; Architecture Guide. [Original source](<https://developer.chrome.com/blog/local-network-access>).
@@ -32,18 +45,34 @@ Original defensive summaries of official educational references. These resources
 - [Coder: privileged provisioning must preserve existing object ownership](<resources/coder-2026-provisioned-object-ownership-integrity.md>) — Coder; Maintainer Advisory. [Original source](<https://github.com/coder/coder/security/advisories/GHSA-9rjw-3gwp-f59v>).
 - [Cross-device authentication: bind informed consent to session authority](<resources/ndss-2026-cross-device-consent-and-session-control.md>) — Internet Society / NDSS Symposium; Research Paper. [Original source](<https://www.ndss-symposium.org/ndss-paper/anchors-of-trust-a-usability-study-on-user-awareness-consent-and-control-in-cross-device-authentication/>).
 - [CyLab Security Academy: Self-Paced CTF Learning](<resources/cylab-security-academy-ctf-practice.md>) — Carnegie Mellon University; Training Lab. [Original source](<https://cylabacademy.org/>).
+
+<a id="letter-d"></a>
+## D
+
 - [Dify: telemetry destination changes carry tenant data-disclosure authority](<resources/dify-2026-tracing-configuration-tenant-authority.md>) — Zafran Labs; Research Paper. [Original source](<https://www.zafran.io/resources/difytap-zafran-discovers-how-attackers-can-silently-wiretap-ai-data-across-tenants-on-a-platform-powering-1m-apps>).
 - [Directus: denied mutations must leave dependent state unchanged](<resources/directus-2026-preauthorization-side-effect-integrity.md>) — Directus; Maintainer Advisory. [Original source](<https://github.com/directus/directus/security/advisories/GHSA-p623-wgx3-wxp8>).
 - [Django: ORM alias metadata must not acquire query authority](<resources/django-2026-query-alias-structure-boundary.md>) — Django Software Foundation; Maintainer Advisory. [Original source](<https://www.djangoproject.com/weblog/2026/feb/03/security-releases/>).
 - [Document Isolation Policy: process separation and residual authority](<resources/chrome-document-isolation-policy-boundaries.md>) — Google Chrome for Developers; Architecture Guide. [Original source](<https://developer.chrome.com/blog/document-isolation-policy>).
 - [Dolibarr portal accounts: credential writes need object authorization](<resources/dolibarr-2026-portal-object-authorization.md>) — CodeAnt AI; Research Paper. [Original source](<https://codeant.ai/security-research/cve-2026-71505-dolibarr-bola-enables-portal-account-takeover>).
 - [DOMPurify: accepted DOM realms must retain complete sanitization](<resources/dompurify-2026-cross-realm-sanitization-consistency.md>) — DOMPurify / Cure53; Maintainer Advisory. [Original source](<https://github.com/cure53/DOMPurify/security/advisories/GHSA-hpcv-96wg-7vj8>).
+
+<a id="letter-e"></a>
+## E
+
 - [Error Handling Cheat Sheet](<resources/owasp-error-response-data-minimization.md>) — OWASP Cheat Sheet Series; Implementation Guide. [Original source](<https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html>).
+
+<a id="letter-f"></a>
+## F
+
 - [FAPI 2\.0 Security Profile](<resources/openid-fapi-2-api-authorization-profile.md>) — OpenID Foundation; Technical Standard. [Original source](<https://openid.net/specs/fapi-security-profile-2_0-final.html>).
 - [Fetch Metadata Request Headers](<resources/w3c-fetch-metadata-request-context-boundaries.md>) — World Wide Web Consortium; Technical Standard. [Original source](<https://www.w3.org/TR/2026/WD-fetch-metadata-20260921/>).
 - [File Browser: existing shares must follow current owner permissions](<resources/filebrowser-2026-share-owner-permission-lifecycle.md>) — File Browser; Maintainer Advisory. [Original source](<https://github.com/filebrowser/filebrowser/security/advisories/GHSA-v9w4-gm2x-6rvf>).
 - [Formie: integration settings need operation and attribute authority](<resources/formie-2026-integration-settings-credential-authority.md>) — Verbb / Formie; Maintainer Advisory. [Original source](<https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9>).
 - [Frappe: linked data must preserve document and field permissions](<resources/frappe-2026-linked-document-response-authorization.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-012_Frappe/>).
+
+<a id="letter-g"></a>
+## G
+
 - [GitHub Artifact Attestations: Provenance and Consumer Policy](<resources/github-artifact-attestations.md>) — GitHub; Architecture Guide. [Original source](<https://docs.github.com/en/actions/concepts/security/artifact-attestations>).
 - [GitHub internal metadata: preserve the boundary between user data and service authority](<resources/github-2026-internal-metadata-authority.md>) — Wiz Research; Research Paper. [Original source](<https://www.wiz.io/blog/github-rce-vulnerability-cve-2026-3854>).
 - [Google AIP-158: pagination continuation does not grant resource authority](<resources/google-aip-158-pagination-authorization-boundary.md>) — Google; Implementation Guide. [Original source](<https://google.aip.dev/158>).
@@ -52,10 +81,22 @@ Original defensive summaries of official educational references. These resources
 - [Google long-running operations: cancellation requests and completion evidence](<resources/google-aip-151-operation-completion-integrity.md>) — Google; Implementation Guide. [Original source](<https://google.aip.dev/151>).
 - [GraphQL-Ruby: authorization exceptions must stop execution](<resources/graphql-ruby-2026-authorization-exception-integrity.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-152_graphql-ruby/>).
 - [Grav API: account-disable enforcement across session authenticators](<resources/grav-2026-session-account-state-revalidation.md>) — Grav; Maintainer Advisory. [Original source](<https://github.com/getgrav/grav/security/advisories/GHSA-7qfj-82q8-frw6>).
+
+<a id="letter-h"></a>
+## H
+
 - [HotCRP: separate submission visibility from authorship authority](<resources/hotcrp-2026-contact-authorship-permission-boundary.md>) — HotCRP; Maintainer Advisory. [Original source](<https://github.com/kohler/hotcrp/security/advisories/GHSA-v8jx-vq6p-jq52>).
 - [HTML COOP: opener separation and same-origin authority](<resources/whatwg-coop-opener-and-origin-authority.md>) — WHATWG; Technical Standard. [Original source](<https://html.spec.whatwg.org/multipage/browsers.html#cross-origin-opener-policies>).
 - [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>) — OWASP Cheat Sheet Series; Implementation Guide. [Original source](<https://cheatsheetseries.owasp.org/cheatsheets/HTML5_Security_Cheat_Sheet.html>).
+
+<a id="letter-j"></a>
+## J
+
 - [Jupyter Enterprise Gateway: keep kernel configuration outside template authority](<resources/jupyter-enterprise-gateway-2026-kernel-configuration-template-boundary.md>) — Jupyter Enterprise Gateway maintainers; Maintainer Advisory. [Original source](<https://github.com/jupyter-server/enterprise_gateway/security/advisories/GHSA-f49j-v924-fx9w>).
+
+<a id="letter-l"></a>
+## L
+
 - [Langflow: project transport authorization must reach each resource read](<resources/langflow-2026-mcp-resource-project-authorization.md>) — Langflow; Maintainer Advisory. [Original source](<https://github.com/langflow-ai/langflow/security/advisories/GHSA-4hmc-cfm3-w43c>).
 - [Laravel: preserve output encoding in debug diagnostics](<resources/laravel-2025-debug-diagnostic-output-encoding.md>) — SBA Research; Research Paper. [Original source](<https://github.com/sbaresearch/advisories/tree/public/2024/SBA-ADV-20241209-02_Laravel_Reflected_XSS_via_Route_Parameter_in_Debug-Mode_Error_Page>).
 - [LibreChat: agent edit authority must cover attached context](<resources/librechat-2026-agent-context-mutation-authority.md>) — LibreChat; Maintainer Advisory. [Original source](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-xcmf-rpmh-hg59>).
@@ -63,6 +104,10 @@ Original defensive summaries of official educational references. These resources
 - [LibreChat: viewing an integration must not reveal its service secrets](<resources/librechat-2026-mcp-view-secret-projection.md>) — LibreChat; Maintainer Advisory. [Original source](<https://github.com/LibreChat-AI/LibreChat/security/advisories/GHSA-6vqg-rgpm-qvf9>).
 - [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>) — OWASP Cheat Sheet Series; Architecture Guide. [Original source](<https://cheatsheetseries.owasp.org/cheatsheets/LLM_Prompt_Injection_Prevention_Cheat_Sheet.html>).
 - [LobeHub: knowledge-base membership changes require ownership authorization](<resources/lobehub-2026-knowledge-membership-mutation-authority.md>) — LobeHub; Maintainer Advisory. [Original source](<https://github.com/lobehub/lobehub/security/advisories/GHSA-j7xp-4mg9-x28r>).
+
+<a id="letter-m"></a>
+## M
+
 - [mailcow: stored configuration retains its original trust level](<resources/mailcow-2026-persisted-data-query-boundary.md>) — mailcow; Maintainer Advisory. [Original source](<https://github.com/mailcow/mailcow-dockerized/security/advisories/GHSA-r8fq-wrfm-cj2q>).
 - [MCP elicitation: consent, credential custody and completion](<resources/mcp-elicitation-consent-credential-custody.md>) — Model Context Protocol; Technical Standard. [Original source](<https://modelcontextprotocol.io/specification/2026-07-28/client/elicitation>).
 - [MCP scope selection: progressive consent and accumulated authority](<resources/mcp-progressive-scope-authority.md>) — Model Context Protocol; Architecture Guide. [Original source](<https://modelcontextprotocol.io/docs/2026-07-28/tutorials/security/security_best_practices>).
@@ -71,6 +116,10 @@ Original defensive summaries of official educational references. These resources
 - [MLflow: authorization must survive alternate resource interfaces](<resources/mlflow-2026-alternate-interface-authorization-consistency.md>) — Tachyon; Research Paper. [Original source](<https://tachyon.so/blog/cve-2025-14297-mlflow-authorization-bypass>).
 - [MLflow: destination validation must remain bound to the actual connection](<resources/mlflow-2026-webhook-connection-destination-integrity.md>) — MLflow; Maintainer Advisory. [Original source](<https://github.com/mlflow/mlflow/security/advisories/GHSA-7gwp-5pfp-969j>).
 - [MythicalDash: payment evidence must establish credit entitlement](<resources/mythicaldash-2026-payment-evidence-entitlement.md>) — MythicalDash; Maintainer Advisory. [Original source](<https://github.com/MythicalLTD/MythicalDash/security/advisories/GHSA-qmh4-5v7g-42jq>).
+
+<a id="letter-n"></a>
+## N
+
 - [n8n Dynamic Credentials: authorize credential lifecycle operations](<resources/n8n-2026-dynamic-credential-object-authority.md>) — n8n; Maintainer Advisory. [Original source](<https://github.com/n8n-io/n8n/security/advisories/GHSA-2j5h-858j-5mpf>).
 - [n8n token exchange: preserve the issuer namespace](<resources/n8n-2026-external-identity-issuer-binding.md>) — n8n; Maintainer Advisory. [Original source](<https://github.com/n8n-io/n8n/security/advisories/GHSA-mq3m-f8x3-579w>).
 - [n8n: directory-attribute authority in durable account linking](<resources/n8n-2026-ldap-account-linking-authority.md>) — n8n; Maintainer Advisory. [Original source](<https://github.com/n8n-io/n8n/security/advisories/GHSA-c545-x2rh-82fc>).
@@ -83,6 +132,10 @@ Original defensive summaries of official educational references. These resources
 - [NIST SSDF 1\.1: Component Governance and Release Provenance](<resources/nist-ssdf-1-1-dependency-governance.md>) — NIST; Implementation Guide. [Original source](<https://csrc.nist.gov/pubs/sp/800/218/final>).
 - [Nuxt: island data must not acquire component-selection authority](<resources/nuxt-2026-island-component-selection-authority.md>) — Nuxt; Maintainer Advisory. [Original source](<https://github.com/nuxt/nuxt/security/advisories/GHSA-48hr-524c-v5w3>).
 - [Nuxt: rendered-data caches must preserve request authorization](<resources/nuxt-2026-rendered-payload-cache-authorization.md>) — Nuxt; Maintainer Advisory. [Original source](<https://github.com/nuxt/nuxt/security/advisories/GHSA-wm8w-6qjm-cv43>).
+
+<a id="letter-o"></a>
+## O
+
 - [OAuth2 Proxy: client-address provenance must precede authentication exemptions](<resources/oauth2-proxy-2026-client-address-provenance-authority.md>) — OAuth2 Proxy; Maintainer Advisory. [Original source](<https://github.com/oauth2-proxy/oauth2-proxy/security/advisories/GHSA-wr5q-7wxw-x568>).
 - [Obot: preserve delegated token audience and consent boundaries](<resources/obot-2026-oauth-audience-and-consent-boundaries.md>) — Obot; Maintainer Advisory. [Original source](<https://github.com/obot-platform/obot/security/advisories/GHSA-xwmw-prc4-v3cr>).
 - [Open WebUI: credentials must bind to their destination connection](<resources/open-webui-2026-connection-credential-capture.md>) — Open WebUI; Maintainer Advisory. [Original source](<https://github.com/open-webui/open-webui/security/advisories/GHSA-p78m-89r6-pgf7>).
@@ -106,6 +159,10 @@ Original defensive summaries of official educational references. These resources
 - [OWASP Threat Modeling: system assumptions and mitigation validation](<resources/owasp-threat-modeling-assumptions-and-validation.md>) — OWASP Cheat Sheet Series; Architecture Guide. [Original source](<https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html>).
 - [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>) — OWASP Cheat Sheet Series; Implementation Guide. [Original source](<https://cheatsheetseries.owasp.org/cheatsheets/Transaction_Authorization_Cheat_Sheet.html>).
 - [OWASP WebGoat: Web-Application Security Lessons](<resources/owasp-webgoat-controlled-training.md>) — OWASP Foundation; Training Lab. [Original source](<https://owasp.org/projects/webgoat>).
+
+<a id="letter-p"></a>
+## P
+
 - [pac4j JWT validation: confidentiality does not establish authenticity](<resources/pac4j-2026-token-authenticity-enforcement.md>) — CodeAnt AI; Research Paper. [Original source](<https://codeant.ai/security-research/pac4j-jwt-authentication-bypass-public-key>).
 - [Parse Server: preserve safe file interpretation across storage and browsers](<resources/parse-server-2026-upload-metadata-consumer-boundary.md>) — Parse Community; Maintainer Advisory. [Original source](<https://github.com/parse-community/parse-server/security/advisories/GHSA-r899-h629-j84r>).
 - [Payload: request adapters must retain caller-level authorization](<resources/payload-2026-local-api-caller-authority.md>) — jhb-software / Payload plugins; Maintainer Advisory. [Original source](<https://github.com/jhb-software/payload-plugins/security/advisories/GHSA-4qpv-39hg-f7fx>).
@@ -116,8 +173,16 @@ Original defensive summaries of official educational references. These resources
 - [Pterodactyl: delegated tokens must preserve action-specific authority](<resources/pterodactyl-2026-delegated-token-purpose-binding.md>) — Pterodactyl; Maintainer Advisory. [Original source](<https://github.com/pterodactyl/panel/security/advisories/GHSA-8r6w-3qq5-4p4r>).
 - [pypdf: bound repeated work when reading embedded attachments](<resources/pypdf-2026-attachment-processing-cost-boundary.md>) — py-pdf / pypdf; Maintainer Advisory. [Original source](<https://github.com/py-pdf/pypdf/security/advisories/GHSA-v247-6f48-mgcj>).
 - [Python subprocess: executable, argument, and interpreter boundaries](<resources/python-subprocess-interpreter-boundaries.md>) — Python Software Foundation; Implementation Guide. [Original source](<https://docs.python.org/3.14/library/subprocess.html#security-considerations>).
+
+<a id="letter-q"></a>
+## Q
+
 - [Quality Reports](<resources/hackerone-quality-vulnerability-reports.md>) — HackerOne Help Center; Reporting Guide. [Original source](<https://docs.hackerone.com/en/articles/8475116-quality-reports>).
 - [Qwik: resumability metadata must preserve HTML serialization boundaries](<resources/qwik-2026-resumability-comment-serialization-boundary.md>) — QwikDev; Maintainer Advisory. [Original source](<https://github.com/QwikDev/qwik/security/advisories/GHSA-m6jq-g7gq-5w3c>).
+
+<a id="letter-r"></a>
+## R
+
 - [React Router: hydrated error metadata must not select client behavior](<resources/react-router-2026-hydration-error-constructor-boundary.md>) — React Router / Remix; Maintainer Advisory. [Original source](<https://github.com/remix-run/react-router/security/advisories/GHSA-337j-9hxr-rhxg>).
 - [React2Shell response: parser consistency and layered remediation](<resources/vercel-react2shell-parser-normalization-defense.md>) — Vercel; Architecture Guide. [Original source](<https://vercel.com/blog/our-million-dollar-hacker-challenge-for-react2shell>).
 - [RFC 10017: OAuth 2\.0 for Browser-Based Applications](<resources/rfc-10017-browser-oauth-token-custody.md>) — Internet Engineering Task Force / RFC Editor; Technical Standard. [Original source](<https://www.rfc-editor.org/rfc/rfc10017.html>).
@@ -125,6 +190,10 @@ Original defensive summaries of official educational references. These resources
 - [Rocket\.Chat: authentication must await a completed verification decision](<resources/rocketchat-2026-asynchronous-identity-verification.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-004_GHSL-2026-005_Rocket_Chat/>).
 - [Rust Ownership and Borrowing: Lifetime Contracts](<resources/rust-ownership-borrowing.md>) — The Rust Project; Implementation Guide. [Original source](<https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html>).
 - [Rust Slices: Bounds, Borrowing, and Text Boundaries](<resources/rust-slices-parser-boundaries.md>) — The Rust Project; Implementation Guide. [Original source](<https://doc.rust-lang.org/book/ch04-03-slices.html>).
+
+<a id="letter-s"></a>
+## S
+
 - [Saleor email changes: bind confirmation to account and state](<resources/saleor-2026-email-change-confirmation-binding.md>) — Saleor maintainers; Maintainer Advisory. [Original source](<https://github.com/saleor/saleor/security/advisories/GHSA-hwph-9537-mc3p>).
 - [samlify: signing does not establish claim provenance](<resources/samlify-2026-assertion-generation-claim-integrity.md>) — samlify; Maintainer Advisory. [Original source](<https://github.com/tngan/samlify/security/advisories/GHSA-34r5-q4jw-r36m>).
 - [SearchLeak: streamed output needs policy enforcement before browser activation](<resources/microsoft-copilot-2026-streaming-output-activation-boundary.md>) — Varonis Threat Labs; Research Paper. [Original source](<https://www.varonis.com/blog/searchleak>).
@@ -144,20 +213,40 @@ Original defensive summaries of official educational references. These resources
 - [Sylius: component integrity does not authorize referenced objects](<resources/sylius-2026-component-argument-object-authorization.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-055_Sylius/>).
 - [Sylius: order ownership does not confer payment-operation authority](<resources/sylius-2026-payment-action-authority.md>) — Sylius; Maintainer Advisory. [Original source](<https://github.com/Sylius/Sylius/security/advisories/GHSA-2rv4-pjmm-7fxf>).
 - [Sylius: promotion entitlement must be checked and consumed atomically](<resources/sylius-2026-promotion-limit-atomicity.md>) — Sylius; Maintainer Advisory. [Original source](<https://github.com/Sylius/Sylius/security/advisories/GHSA-7mp4-25j8-hp5q>).
+
+<a id="letter-t"></a>
+## T
+
 - [TanStack Start: preserve server-owned response authority through errors](<resources/tanstack-2026-server-function-response-authority.md>) — TanStack; Maintainer Advisory. [Original source](<https://github.com/TanStack/router/security/advisories/GHSA-qx66-fv34-fjm8>).
 - [Trix: validate stored attachment data before link interpretation](<resources/trix-2025-attachment-link-interpretation-boundary.md>) — Trix maintainers; Maintainer Advisory. [Original source](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>).
 - [Trusted Types: typed sinks depend on trustworthy policy creation](<resources/w3c-2026-trusted-types-policy-authority.md>) — World Wide Web Consortium; Technical Standard. [Original source](<https://www.w3.org/TR/2026/WD-trusted-types-20260623/>).
 - [TYPO3: configured upload policy must reach the runtime validator](<resources/typo3-2026-upload-validator-lifecycle-boundary.md>) — TYPO3; Maintainer Advisory. [Original source](<https://news.typo3.com/security/advisory/typo3-core-sa-2026-020>).
+
+<a id="letter-u"></a>
+## U
+
 - [Umbraco: editing an account does not authorize assigning every role](<resources/umbraco-2026-group-assignment-authority.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-065_Umbraco_CMS/>).
 - [Universal Cross-app Attacks: Exploiting and Securing OAuth 2\.0 in Integration Platforms](<resources/usenix-2025-integration-platform-oauth-bindings.md>) — USENIX Association; Research Paper. [Original source](<https://www.usenix.org/conference/usenixsecurity25/presentation/luo-kaixuan>).
 - [Upstream HTTP framing and parser-consistency boundaries](<resources/portswigger-2025-upstream-http-framing-boundaries.md>) — PortSwigger; Research Paper. [Original source](<https://portswigger.net/research/http1-must-die>).
 - [Uptime Kuma: separate notification-template authority from server files](<resources/uptime-kuma-2025-notification-template-file-boundary.md>) — Uptime Kuma maintainers; Maintainer Advisory. [Original source](<https://github.com/louislam/uptime-kuma/security/advisories/GHSA-vffh-c9pq-4crh>).
+
+<a id="letter-v"></a>
+## V
+
 - [Vendure: payment child objects must inherit order channel authority](<resources/vendure-2026-payment-child-object-channel-authority.md>) — Vendure; Maintainer Advisory. [Original source](<https://github.com/vendurehq/vendure/security/advisories/GHSA-7qvr-c5vf-xxfh>).
 - [Vercel React Router: session identity must not select unrestricted storage authority](<resources/vercel-react-router-2026-session-storage-key-authority.md>) — Vercel; Maintainer Advisory. [Original source](<https://github.com/vercel/vercel/security/advisories/GHSA-7wjf-49rm-77gx>).
 - [Vikunja: saved favorites must recheck current project access](<resources/vikunja-2026-favorites-current-access-revalidation.md>) — Vikunja; Maintainer Advisory. [Original source](<https://github.com/go-vikunja/vikunja/security/advisories/GHSA-jp29-jrxc-92vf>).
 - [Vite: local reachability does not establish browser-origin authority](<resources/vite-2025-development-server-origin-authority.md>) — Vite; Maintainer Advisory. [Original source](<https://github.com/vitejs/vite/security/advisories/GHSA-vg6x-rcgg-rjx6>).
 - [Vvveb: numeric input validity does not establish legitimate order state](<resources/vvveb-2026-order-domain-invariant.md>) — Vvveb; Maintainer Advisory. [Original source](<https://github.com/givanz/Vvveb/security/advisories/GHSA-75x2-j47j-mg8j>).
+
+<a id="letter-w"></a>
+## W
+
 - [Web cache key precision and capacity isolation](<resources/arxiv-2026-cache-key-precision-and-capacity.md>) — arXiv; Research Paper. [Original source](<https://arxiv.org/abs/2608.04744>).
 - [Web Security Academy: Free Online Training from PortSwigger](<resources/portswigger-web-security-academy-controlled-training.md>) — PortSwigger; Training Lab. [Original source](<https://portswigger.net/web-security>).
 - [What is a security vulnerability?](<resources/google-understanding-security-vulnerability-reports.md>) — Google Bug Hunters; Reporting Guide. [Original source](<https://bughunters.google.com/learn/improving-your-reports/getting-started/what-is-a-security-vulnerability>).
+
+<a id="letter-z"></a>
+## Z
+
 - [Zammad: overridden serialization must preserve group authorization](<resources/zammad-2026-asset-serialization-group-authorization.md>) — GitHub Security Lab; Research Paper. [Original source](<https://securitylab.github.com/advisories/GHSL-2026-049_Zammad/>).

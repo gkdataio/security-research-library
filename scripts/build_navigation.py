@@ -82,11 +82,28 @@ def resource_pages(resources, diagrams, taxonomy, skills):
              '[Library home](../README.md) · [Browse by topic](resource-topics.md) · [Curated resource guide](resources.md) · [Report index](reports.md) · [Diagram gallery](diagram-gallery.md)', '',
              'Original defensive summaries of official educational references. These resources are separate from award-backed reports and grant no testing authorization. Generated from canonical JSON; edit the records, then regenerate.', '',
              f'{len(ordered)} resources. Review timestamps describe recorded source reviews, not a fresh check performed by this offline build.', '']
+    # Group title initials only; publication types and topic memberships stay unchanged.
+    groups = {key: [] for key in ['0-9', *'abcdefghijklmnopqrstuvwxyz', 'other']}
+    for rec in ordered:
+        initial = rec['title'][:1]
+        if initial.isascii() and initial.isalpha():
+            key = initial.lower()
+        else:
+            key = '0-9' if initial.isascii() and initial.isdigit() else 'other'
+        groups[key].append(rec)
+    groups = {key: records for key, records in groups.items() if records}
+    labels = {key: ('Other titles' if key == 'other' else key.upper()) for key in groups}
+    if groups:
+        index += ['**Jump by title:** '+ ' · '.join(link(labels[key], '#letter-'+key) for key in groups), '']
+    for key, records in groups.items():
+        index += [f'<a id="letter-{key}"></a>', '## '+labels[key], '']
+        index += ['- '+link(rec['title'], 'resources/'+rec['id']+'.md')+' — '+text(rec['publisher'])+'; '+text(types[rec['resource_type_id']])+'. '+link('Original source', rec['primary_url'])+'.'
+                  for rec in records]
+        index.append('')
     pages = {}
     for rec in ordered:
         rid = rec['id']
         canonical = '../../data/resources/'+rid+'.json'
-        index += ['- '+link(rec['title'], 'resources/'+rid+'.md')+' — '+text(rec['publisher'])+'; '+text(types[rec['resource_type_id']])+'. '+link('Original source', rec['primary_url'])+'.']
         lines = ['# '+text(rec['title']), '',
                  '[Resource index](../resource-index.md) · [Curated resource guide](../resources.md) · [Library home](../../README.md)', '',
                  link('Official resource', rec['primary_url'])+' · '+link('Canonical JSON', canonical), '',
@@ -135,7 +152,7 @@ def resource_pages(resources, diagrams, taxonomy, skills):
                       '; retrieved '+text(source['retrieved_at'])+'; supports: '+text(', '.join(source['supports']))+'.']
         lines += ['', 'Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).', '']
         pages['docs/resources/'+rid+'.md'] = '\n'.join(lines)
-    pages['docs/resource-index.md'] = '\n'.join(index)+'\n'
+    pages['docs/resource-index.md'] = '\n'.join(index).rstrip()+'\n'
     pages['docs/resource-topics.md'] = resource_topic_page(resources, taxonomy)
     return pages
 
