@@ -110,7 +110,7 @@ A fallback must stay within the original caller's permissions. An access denial 
 
 ![Approved grant context and a first-issuance or renewal request are both required. Resolve trusted context, then check the correct grant and client and whether requested authority stays within approval. Issue only bounded authority; mismatch or incomplete binding prevents issuance. Changing approved authority needs a separate authorization decision.](../diagrams/delegated-grant-authority-continuity.svg)
 
-A grant authorizes a particular subject, client and set of permissions. Keep those limits through first issuance and renewal, even if the protocol steps differ. The user's wider access and the client's registration do not expand the grant. Issuing less authority, or adding authority with separate approval, still fits this model.
+A grant authorizes a particular subject, client and set of permissions. Keep those limits when first issuing authority and when renewing it, even if the protocol steps differ. The user's wider access and the client's registration do not expand the grant. The system may issue less authority than the grant permits. Adding authority requires separate approval.
 
 This editorial model connects the Google device-grant disclosure, n8n's refresh-resource advisory and RFC 9700 sections 2.3 and 4.14.2. It assumes that grant context is protected against tampering and that applicable client checks have been performed. It does not prescribe storage, describe vendor architecture or verify a deployed fix. Revocation, concurrency, replay protection and consent usability are outside its scope.
 
