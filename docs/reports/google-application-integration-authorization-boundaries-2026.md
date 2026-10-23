@@ -20,7 +20,7 @@ The service did not consistently check who owned a resource or what a backend ta
 <a id="bounded-impact"></a>
 ## What the evidence shows
 
-The authenticated-user research reports cross-project access and test execution\. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated\. Wider impact remains unverified\.
+The researcher reports cross-project access and test execution during authenticated testing\. Production compromise potential was reportedly confirmed by Google, which stopped further testing; completed code execution in production was not demonstrated\. Wider impact remains unverified\.
 
 ## Defensive lessons
 

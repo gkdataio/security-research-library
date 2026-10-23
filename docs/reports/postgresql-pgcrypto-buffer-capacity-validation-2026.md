@@ -15,7 +15,7 @@ PostgreSQL's pgcrypto extension did not check that a buffer was large enough bef
 <a id="root-cause"></a>
 ## What went wrong
 
-Cryptographic message parsing copied a derived key length into a fixed-capacity destination without verifying that the destination was large enough\.
+Cryptographic message parsing used a derived key length to copy data into a fixed-capacity destination without verifying that the destination was large enough\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
