@@ -208,6 +208,9 @@ def build(root=ROOT):
     for d in diagrams:
         gallery += [f'<a id="{d["id"]}"></a>', f'## {text(d["title"])}', '', f'![{text(d["alt_text"])}](../{d["files"]["svg"]})', '', text(d['interpretation']), '', '**Related reports**', '']
         gallery += ['- '+link(next(r['title'] for r in reports if r['id']==rid), 'reports/'+rid+'.md') for rid in d['linked_report_ids']]
+        if d['linked_resource_ids']:
+            gallery += ['', '**Related learning resources**', '']
+            gallery += ['- '+link(next(r['title'] for r in resources if r['id']==rid), 'resources/'+rid+'.md') for rid in d['linked_resource_ids']]
         gallery += ['', link('Canonical graph and provenance', '../data/diagrams/'+d['id']+'.json')+' · '+link('Mermaid source', '../'+d['files']['mermaid'])+' · '+link('DOT source', '../'+d['files']['graphviz']), '']
     gallery += ['Original diagrams: Security Research Library contributors, CC BY 4.0. [License scope](../LICENSE.md).', '']
     pages['docs/diagram-gallery.md'] = '\n'.join(gallery)

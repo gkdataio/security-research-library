@@ -24,6 +24,24 @@ class ResourceNavigationTests(unittest.TestCase):
     def render(self, records):
         return resource_pages(records, self.diagrams, self.taxonomy, self.skills)
 
+    def test_gallery_resource_links_match_canonical_relationships(self):
+        gallery = self.pages['docs/diagram-gallery.md']
+        resources = {r['id']: r for r in self.resources}
+        for diagram in self.diagrams:
+            with self.subTest(diagram=diagram['id']):
+                section = gallery.split('<a id="'+diagram['id']+'"></a>', 1)[1].split('<a id=', 1)[0]
+                actual = re.findall(r'\]\(<resources/([^>]+)\.md>\)', section)
+                self.assertEqual(actual, diagram['linked_resource_ids'])
+                self.assertEqual('**Related learning resources**' in section,
+                                 bool(diagram['linked_resource_ids']))
+                self.assertIn(text(diagram['interpretation']), section)
+                self.assertIn(link('Canonical graph and provenance',
+                                   '../data/diagrams/'+diagram['id']+'.json'), section)
+                for rid in diagram['linked_resource_ids']:
+                    self.assertIn(link(resources[rid]['title'], 'resources/'+rid+'.md'), section)
+                    page = self.pages['docs/resources/'+rid+'.md']
+                    self.assertIn(link(diagram['title'], '../diagram-gallery.md#'+diagram['id']), page)
+
     def test_exactly_one_page_per_resource(self):
         expected = {'docs/resources/'+r['id']+'.md' for r in self.resources}
         self.assertEqual(expected, {p for p in self.pages if p.startswith('docs/resources/')})

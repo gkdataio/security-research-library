@@ -17,6 +17,10 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 - [Microsoft account recovery lacked consistent attempt-limit enforcement](<reports/microsoft-account-recovery-rate-limit-consistency-2021.md>)
 - [Instagram recovery challenges were insufficiently bound to accounts](<reports/instagram-recovery-challenge-account-binding-2019.md>)
 
+**Related learning resources**
+
+- [OWASP Forgot Password](<resources/owasp-account-recovery-state-integrity.md>)
+
 [Canonical graph and provenance](<../data/diagrams/account-recovery-challenge-lifecycle.json>) · [Mermaid source](<../diagrams/account-recovery-challenge-lifecycle.mmd>) · [DOT source](<../diagrams/account-recovery-challenge-lifecycle.dot>)
 
 <a id="ai-content-authority-separation"></a>
@@ -30,6 +34,10 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 
 - [Gemini Enterprise connected-content trust failure allowed persistent-memory modification](<reports/google-gemini-enterprise-connected-content-memory-integrity-2026.md>)
 - [Gemini-to-Colab rendering boundary exposed Workspace data](<reports/google-gemini-colab-rendering-boundary-2025.md>)
+
+**Related learning resources**
+
+- [LLM Prompt Injection Prevention Cheat Sheet](<resources/owasp-llm-prompt-injection-prevention.md>)
 
 [Canonical graph and provenance](<../data/diagrams/ai-content-authority-separation.json>) · [Mermaid source](<../diagrams/ai-content-authority-separation.mmd>) · [DOT source](<../diagrams/ai-content-authority-separation.dot>)
 
@@ -45,6 +53,11 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 - [Cloud Build approval was not bound to immutable code](<reports/google-cloud-build-approval-toctou-2025.md>)
 - [GitHub Actions trust depended on invalid repository references](<reports/github-actions-reference-validation-2021.md>)
 
+**Related learning resources**
+
+- [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>)
+- [OWASP Transaction Authorization](<resources/owasp-transaction-authorization-state-integrity.md>)
+
 [Canonical graph and provenance](<../data/diagrams/approval-version-integrity.json>) · [Mermaid source](<../diagrams/approval-version-integrity.mmd>) · [DOT source](<../diagrams/approval-version-integrity.dot>)
 
 <a id="browser-message-authority-boundaries"></a>
@@ -59,6 +72,11 @@ Original defensive model combining OWASP messaging and authorization guidance wi
 - [Facebook SDK message authentication relied on insecure randomness](<reports/facebook-sdk-message-authentication-randomness-2023.md>)
 - [Meta Pixel cross-window handling lost message and token authority](<reports/meta-pixel-cross-window-authority-binding-2024.md>)
 
+**Related learning resources**
+
+- [HTML5 Security Cheat Sheet: Web Messaging](<resources/owasp-browser-message-trust-boundaries.md>)
+- [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>)
+
 [Canonical graph and provenance](<../data/diagrams/browser-message-authority-boundaries.json>) · [Mermaid source](<../diagrams/browser-message-authority-boundaries.mmd>) · [DOT source](<../diagrams/browser-message-authority-boundaries.dot>)
 
 <a id="build-artifact-provenance-boundary"></a>
@@ -71,6 +89,10 @@ Editorial conceptual model combining the Angular case with SLSA build guidance\.
 **Related reports**
 
 - [Angular automation trust and cache isolation weakness](<reports/angular-ci-cache-trust-2026.md>)
+
+**Related learning resources**
+
+- [SLSA v1\.2: supply-chain security and build provenance](<resources/slsa-v1-2-supply-chain-build-provenance.md>)
 
 [Canonical graph and provenance](<../data/diagrams/build-artifact-provenance-boundary.json>) · [Mermaid source](<../diagrams/build-artifact-provenance-boundary.mmd>) · [DOT source](<../diagrams/build-artifact-provenance-boundary.dot>)
 
@@ -85,6 +107,11 @@ Original conceptual model for a view that requires multiple independently protec
 
 - [GitHub comparison output lacked source-repository authorization](<reports/github-cross-repository-comparison-authorization-2025.md>)
 
+**Related learning resources**
+
+- [Frappe: linked data must preserve document and field permissions](<resources/frappe-2026-linked-document-response-authorization.md>)
+- [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>)
+
 [Canonical graph and provenance](<../data/diagrams/combined-view-source-authorization.json>) · [Mermaid source](<../diagrams/combined-view-source-authorization.mmd>) · [DOT source](<../diagrams/combined-view-source-authorization.dot>)
 
 <a id="delegated-grant-authority-continuity"></a>
@@ -97,6 +124,11 @@ Original editorial defensive synthesis, not a vendor architecture, protocol sequ
 **Related reports**
 
 - [Google device grants lost client and permission binding](<reports/google-device-authorization-client-scope-binding-2026.md>)
+
+**Related learning resources**
+
+- [n8n: refreshed authority must remain bound to the consented resource](<resources/n8n-2026-refresh-grant-resource-binding.md>)
+- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<resources/rfc-9700-oauth-security-best-current-practice.md>)
 
 [Canonical graph and provenance](<../data/diagrams/delegated-grant-authority-continuity.json>) · [Mermaid source](<../diagrams/delegated-grant-authority-continuity.mmd>) · [DOT source](<../diagrams/delegated-grant-authority-continuity.dot>)
 
@@ -111,6 +143,11 @@ Editorial conceptual model derived from the Facebook error-response case and OWA
 
 - [Facebook error responses exposed unintended application data](<reports/facebook-error-response-data-isolation-2019.md>)
 
+**Related learning resources**
+
+- [Error Handling Cheat Sheet](<resources/owasp-error-response-data-minimization.md>)
+- [OWASP Logging: trustworthy and minimal application evidence](<resources/owasp-security-logging-evidence-quality.md>)
+
 [Canonical graph and provenance](<../data/diagrams/error-diagnostic-disclosure-boundary.json>) · [Mermaid source](<../diagrams/error-diagnostic-disclosure-boundary.mmd>) · [DOT source](<../diagrams/error-diagnostic-disclosure-boundary.dot>)
 
 <a id="fallback-requester-authorization"></a>
@@ -123,6 +160,10 @@ Original editorial defensive synthesis of the Instagram embedding disclosure and
 **Related reports**
 
 - [Instagram embedding fallback changed the authorization context](<reports/instagram-embedding-privileged-fallback-2023.md>)
+
+**Related learning resources**
+
+- [Authorization Cheat Sheet](<resources/owasp-authorization-cheat-sheet.md>)
 
 [Canonical graph and provenance](<../data/diagrams/fallback-requester-authorization.json>) · [Mermaid source](<../diagrams/fallback-requester-authorization.mmd>) · [DOT source](<../diagrams/fallback-requester-authorization.dot>)
 
@@ -138,6 +179,10 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 - [Sign in with Apple failed to bind identity claims to the authenticated user](<reports/apple-sign-in-identity-claim-binding-2020.md>)
 - [GitHub OAuth consent failed across request-method semantics](<reports/github-oauth-method-semantics-2019.md>)
 
+**Related learning resources**
+
+- [RFC 9700: Best Current Practice for OAuth 2\.0 Security](<resources/rfc-9700-oauth-security-best-current-practice.md>)
+
 [Canonical graph and provenance](<../data/diagrams/identity-claim-binding.json>) · [Mermaid source](<../diagrams/identity-claim-binding.mmd>) · [DOT source](<../diagrams/identity-claim-binding.dot>)
 
 <a id="parsing-safety-action-authority"></a>
@@ -152,6 +197,10 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 - [V8 optimized object handling retained invalid type assumptions](<reports/google-chrome-v8-type-consistency-2025.md>)
 - [Redis Lua object lifetime failure crossed the scripting boundary](<reports/redis-lua-object-lifetime-isolation-2025.md>)
 
+**Related learning resources**
+
+- [Chromium Rule of Two: input trust, memory safety and privilege](<resources/chromium-rule-of-two-input-isolation.md>)
+
 [Canonical graph and provenance](<../data/diagrams/parsing-safety-action-authority.json>) · [Mermaid source](<../diagrams/parsing-safety-action-authority.mmd>) · [DOT source](<../diagrams/parsing-safety-action-authority.dot>)
 
 <a id="server-client-data-consumer-boundaries"></a>
@@ -164,6 +213,11 @@ Editorial conceptual model: assumes an application with server-side privileged d
 **Related reports**
 
 - [Framework serialization change exposed private HackerOne user attributes](<reports/hackerone-report-json-serialization-data-exposure-2025.md>)
+
+**Related learning resources**
+
+- [Next\.js data security: server authorization and client-visible data](<resources/nextjs-server-client-data-security.md>)
+- [OWASP LLM05:2025: generated-output consumer trust](<resources/owasp-llm-output-consumer-trust.md>)
 
 [Canonical graph and provenance](<../data/diagrams/server-client-data-consumer-boundaries.json>) · [Mermaid source](<../diagrams/server-client-data-consumer-boundaries.mmd>) · [DOT source](<../diagrams/server-client-data-consumer-boundaries.dot>)
 
@@ -178,6 +232,10 @@ Original conceptual defense-in-depth model linked to the historical Shopify Exch
 
 - [Shopify Exchange screenshot service crossed internal boundaries](<reports/shopify-exchange-request-isolation-2019.md>)
 
+**Related learning resources**
+
+- [OWASP Server-Side Request Forgery Prevention](<resources/owasp-server-request-destination-boundaries.md>)
+
 [Canonical graph and provenance](<../data/diagrams/server-request-destination-policy.json>) · [Mermaid source](<../diagrams/server-request-destination-policy.mmd>) · [DOT source](<../diagrams/server-request-destination-policy.dot>)
 
 <a id="workload-identity-tenant-scope"></a>
@@ -191,6 +249,10 @@ Editorial conceptual model derived from the linked cases and official guidance; 
 
 - [Meta service-identity exposure amplified by excessive secret access](<reports/meta-service-identity-secrets-trust-boundary-2026.md>)
 - [Actifio driver execution exposed excessive shared-service authority](<reports/google-actifio-driver-service-identity-isolation-2025.md>)
+
+**Related learning resources**
+
+- [AWS IAM security best practices for workload identities](<resources/aws-iam-machine-identity-best-practices.md>)
 
 [Canonical graph and provenance](<../data/diagrams/workload-identity-tenant-scope.json>) · [Mermaid source](<../diagrams/workload-identity-tenant-scope.mmd>) · [DOT source](<../diagrams/workload-identity-tenant-scope.dot>)
 
