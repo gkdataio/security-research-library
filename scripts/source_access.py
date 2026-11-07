@@ -8,7 +8,13 @@ import posixpath
 from urllib.parse import unquote, urlsplit
 
 
-EXCLUDED_BUGCROWD_ENGAGEMENTS = frozenset({"fmshrc-vdp", "abmc-vdp", "oshrc-vdp"})
+BUGCROWD_SCOPE_HOSTS = frozenset({
+    "bugcrowd.com", "www.bugcrowd.com", "eu.bugcrowd.net", "gov.bugcrowd.net",
+})
+EXCLUDED_BUGCROWD_ENGAGEMENTS = frozenset({
+    "fmshrc-vdp", "abmc-vdp", "oshrc-vdp",
+    "demo-eu-admin-test", "demo-eu-admin-pentest-max-4",
+})
 EXCLUSION_REASON = "Source access excluded; no request made; current scope unknown; last-good data retained"
 
 
@@ -18,7 +24,7 @@ class SourceAccessExcluded(ValueError):
 
 def excluded_source_reason(url):
     parts = urlsplit(url)
-    if parts.hostname not in ("bugcrowd.com", "www.bugcrowd.com"):
+    if parts.hostname not in BUGCROWD_SCOPE_HOSTS:
         return None
     # Cover display aliases and every child (including saved brief JSON), not
     # only the engagement landing page. Match whole identities, never prefixes.

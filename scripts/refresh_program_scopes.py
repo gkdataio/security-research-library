@@ -20,28 +20,45 @@ from urllib.error import HTTPError
 from urllib.parse import urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
-from source_access import excluded_source_reason, require_source_access
+from source_access import BUGCROWD_SCOPE_HOSTS, excluded_source_reason, require_source_access
 
 ROOT = Path(__file__).resolve().parents[1]
 CAPTURES = ('data/public-bounty-scopes.json', 'data/bugcrowd-vdp-scopes.json')
 AUDIT = 'data/scope-refresh-status.json'
 MAX_BYTES = 8 * 1024 * 1024
+# One already recorded public identity contains a literal ampersand. Keep this
+# exception exact instead of permitting arbitrary URL punctuation or decoding.
+INTIGRITI_AMPERSAND_PATH = '/programs/uz%20leuven/ehealthhub&meta-hubvznkul'
+INTIGRITI_PROGRAM_PATH = r'/programs/(?:[a-zA-Z0-9_-]|%20)+/(?:[a-zA-Z0-9_-]|%20)+'
 
 
 def now():
     return dt.datetime.now(dt.timezone.utc).isoformat(timespec='seconds').replace('+00:00', 'Z')
 
 
+def exact_url_parts(url):
+    # urlsplit silently strips some whitespace/control characters. Reject them
+    # before parsing, along with backslashes and even empty query/fragment marks.
+    if not isinstance(url, str) or re.search(r'[\s\x00-\x1f\x7f\\?#]', url):
+        raise ValueError('Not an exact approved public platform scope URL')
+    return urlsplit(url)
+
+
+def intigriti_program_path(path):
+    return path == INTIGRITI_AMPERSAND_PATH or bool(re.fullmatch(INTIGRITI_PROGRAM_PATH, path))
+
+
 def official_url(url):
     require_source_access(url)
-    parts = urlsplit(url)
+    parts = exact_url_parts(url)
     if (parts.scheme == 'https' and parts.netloc == 'app.intigriti.com' and not parts.query
-            and not parts.fragment and re.fullmatch(r'/programs/(?:[a-zA-Z0-9_-]|%20)+/(?:[a-zA-Z0-9_-]|%20)+/detail', parts.path)):
+            and not parts.fragment and parts.path.endswith('/detail')
+            and intigriti_program_path(parts.path[:-len('/detail')])):
         return parts
     if (parts.scheme == 'https' and parts.netloc == 'hackerone.com' and not parts.query
             and not parts.fragment and re.fullmatch(r'/teams/[a-zA-Z0-9_-]+/assets/download_csv\.csv', parts.path)):
         return parts
-    if (parts.scheme != 'https' or parts.netloc not in ('bugcrowd.com', 'www.bugcrowd.com')
+    if (parts.scheme != 'https' or parts.netloc not in BUGCROWD_SCOPE_HOSTS
             or parts.query or parts.fragment or not re.fullmatch(
                 r'/engagements/[a-zA-Z0-9_-]+(?:/changelog/[a-zA-Z0-9_-]+\.json)?', parts.path)):
         raise ValueError('Not an exact approved public platform scope URL')
@@ -85,7 +102,8 @@ def parse_brief(program_url, page, body_get):
     path = links.pop()
     if not re.fullmatch(re.escape(program.path) + r'/changelog/[a-zA-Z0-9_-]+', path):
         raise ValueError('Current brief does not belong to this exact program')
-    source = 'https://bugcrowd.com' + path + '.json'
+    source = program.scheme + '://' + program.netloc + path + '.json'
+    official_url(source)
     raw = body_get(source)
     document = json.loads(raw)
     groups = document['data']['scope']
@@ -162,11 +180,12 @@ def parse_hackerone(program_url, body_get):
 
 
 def parse_intigriti(program_url, body_get):
-    program = urlsplit(program_url)
+    program = exact_url_parts(program_url)
     if (program.scheme != 'https' or program.netloc != 'app.intigriti.com' or program.query
-            or program.fragment or not re.fullmatch(r'/programs/(?:[a-zA-Z0-9_-]|%20)+/(?:[a-zA-Z0-9_-]|%20)+/?', program.path)):
+            or program.fragment or not intigriti_program_path(program.path.removesuffix('/'))):
         raise ValueError('Not an exact Intigriti program identity')
     source = program_url.rstrip('/') + '/detail'
+    official_url(source)
     raw = body_get(source)
     tables = re.findall(r'<lib-assets-detail(?:\s[^>]*)?>(.*?)</lib-assets-detail>', raw, re.S)
     if len(tables) != 1 or len(re.findall(r'<lib-assets-detail(?:\s|>)', raw)) != 1:

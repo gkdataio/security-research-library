@@ -5,6 +5,7 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+from unittest.mock import Mock, patch
 from urllib.error import HTTPError
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import refresh_program_scopes as refresh
@@ -14,6 +15,7 @@ PAGE = '{"getBriefVersionDocument":"/engagements/example/changelog/abc-123"}'
 BODY = {'data': {'scope': [{'name': 'In scope', 'inScope': True,
                           'targets': [{'name': '*.example.com', 'category': 'website',
                                        'uri': 'https://example.com'}]}]}}
+INTIGRITI_PAGE = '<lib-assets-detail><lib-asset-detail><div class="asset-name"><a href="https://example.com">example.com</a></div><lib-asset-type-label>URL</lib-asset-type-label><lib-bounty-tier-label>Out of scope</lib-bounty-tier-label></lib-asset-detail></lib-assets-detail>'
 
 class RefreshTests(unittest.TestCase):
     def fresh(self, body=None):
@@ -40,6 +42,47 @@ class RefreshTests(unittest.TestCase):
             with self.assertRaises(ValueError): self.fresh(body)
         with self.assertRaises(ValueError):
             refresh.parse_brief(URL, 'login page', lambda _: self.fail('Must not fetch'))
+
+    def test_bugcrowd_preserves_each_approved_origin_and_exact_identity(self):
+        from scope_integrity import source_belongs_to_program
+        for host in ('bugcrowd.com', 'www.bugcrowd.com', 'eu.bugcrowd.net', 'gov.bugcrowd.net'):
+            url = 'https://' + host + '/engagements/example'
+            get = Mock(return_value=json.dumps(BODY))
+            with self.subTest(host=host):
+                result = refresh.parse_brief(url, PAGE, get)
+                source = url + '/changelog/abc-123.json'
+                get.assert_called_once_with(source)
+                self.assertEqual(result['source_url'], source)
+                self.assertTrue(source_belongs_to_program('Bugcrowd', url, source, 'bugcrowd_scope'))
+                self.assertEqual(refresh.official_url(source).netloc, host)
+                for link in ('https://bugcrowd.com/engagements/example/changelog/abc-123',
+                             '//bugcrowd.com/engagements/example/changelog/abc-123',
+                             '/engagements/other/changelog/abc-123',
+                             '/engagements/example/changelog/../abc-123',
+                             '/engagements/example/changelog/abc-123?x=1'):
+                    with self.subTest(link=link), self.assertRaises(ValueError):
+                        refresh.parse_brief(url, json.dumps({'getBriefVersionDocument': link}),
+                                            lambda _: self.fail('Must not fetch'))
+
+    def test_bugcrowd_rejects_unapproved_origins_and_unsafe_forms_before_request(self):
+        path = '/engagements/example'
+        urls = ['https://' + host + path for host in
+                ('bugcrowd.net', 'www.eu.bugcrowd.net', 'tracker.eu.bugcrowd.net',
+                 'evil.bugcrowd.net', 'eu.bugcrowd.net.evil.test', 'eu.bugcrowd.net:443',
+                 'user@eu.bugcrowd.net', 'eu.bugcrowd.net@evil.test')]
+        urls += ['http://eu.bugcrowd.net' + path, 'https://gov.bugcrowd.net' + path + '?',
+                 'https://eu.bugcrowd.net' + path + '#', ' https://eu.bugcrowd.net' + path,
+                 'https://eu.bugcrowd.net\n' + path, 'https://eu.bugcrowd.net' + path + '\\child',
+                 'https://eu.bugcrowd.net/engagements/example%2fchild',
+                 'https://eu.bugcrowd.net/engagements/other/../example']
+        client = refresh.PublicClient()
+        client.opener = Mock()
+        for url in urls:
+            with self.subTest(url=url), patch.object(refresh.time, 'sleep') as sleep:
+                with self.assertRaises(ValueError):
+                    client.get(url)
+                sleep.assert_not_called()
+        client.opener.open.assert_not_called()
 
     def test_duplicate_rows_and_scope_direction(self):
         body = copy.deepcopy(BODY)
@@ -84,6 +127,32 @@ class RefreshTests(unittest.TestCase):
         for invalid in (source.replace('</lib-assets-detail>', ''), source.replace('</lib-asset-detail>', ''),
                         source.replace('Out of scope', 'Unknown'), source.replace('</lib-assets-detail>', '<button>Load more</button></lib-assets-detail>')):
             with self.assertRaises(ValueError): refresh.parse_intigriti(url, lambda _: invalid)
+
+    def test_existing_intigriti_ampersand_path_round_trips_without_rewriting(self):
+        base = 'https://app.intigriti.com/programs/uz%20leuven/ehealthhub&meta-hubvznkul'
+        for url in (base, base + '/'):
+            get = Mock(return_value=INTIGRITI_PAGE)
+            with self.subTest(url=url):
+                result = refresh.parse_intigriti(url, get)
+                get.assert_called_once_with(base + '/detail')
+                self.assertEqual(result['source_url'], base + '/detail')
+                self.assertEqual(refresh.official_url(result['source_url']).netloc, 'app.intigriti.com')
+
+    def test_intigriti_ampersand_exception_rejects_other_punctuation_and_unsafe_urls(self):
+        base = 'https://app.intigriti.com/programs/uz%20leuven/ehealthhub&meta-hubvznkul'
+        urls = [base + suffix for suffix in ('?', '#', '?x=1', '#scope', '//', '/detail', '/other')]
+        urls += [base.replace('&', encoded) for encoded in ('%26', '%2526', '/', '%2f', '%3f', ';', '\\')]
+        urls += [base.replace('uz%20leuven', 'other'), base.replace('meta-hubvznkul', 'other'),
+                 base.replace('https:', 'http:'), base.replace('app.intigriti.com', 'app.intigriti.com.evil.test'),
+                 base.replace('app.intigriti.com', 'user@app.intigriti.com'),
+                 base.replace('app.intigriti.com', 'app.intigriti.com:443'),
+                 base.replace('programs/', 'programs/other/../'), '\t' + base, base + '\n']
+        for url in urls:
+            with self.subTest(url=url):
+                with self.assertRaises(ValueError):
+                    refresh.parse_intigriti(url, lambda _: self.fail('Must not fetch'))
+                with self.assertRaises(ValueError):
+                    refresh.official_url(url + '/detail')
 
     def test_display_url_alias_deduplication(self):
         self.assertEqual(refresh.queue_identity({'platform': 'HackerOne', 'program_url': 'https://hackerone.com/example?type=team'}), 'https://hackerone.com/example')

@@ -12,14 +12,48 @@ from export_programs import build as programs, validate_program
 from build_navigation import build as navigation, text, link
 from validate_extra import validate_inert_svg
 
+def legacy_policy_fixture(record):
+    rec = copy.deepcopy(record)
+    # Strip only sources owned by the removed scope extension, regardless of
+    # their naming convention. Sources still cited by policy claims must stay.
+    scope_sources = set(rec.pop('asset_scope', {}).get('source_ids', []))
+    rec.pop('scope_context', None)
+    remaining_refs, pending = set(), [rec]
+    while pending:
+        value = pending.pop()
+        if isinstance(value, dict):
+            remaining_refs.update(value.get('source_ids', []))
+            pending.extend(value.values())
+        elif isinstance(value, list):
+            pending.extend(value)
+    rec['sources'] = [s for s in rec['sources'] if s['id'] not in scope_sources - remaining_refs]
+    return rec
+
+
 class ProgramTests(unittest.TestCase):
     def setUp(self):
-        self.rec=json.loads(next((ROOT/'data/programs').glob('*.json')).read_text())
         # Legacy/type fixtures deliberately omit the separately tested scope extensions.
-        self.rec.pop('scope_context', None)
-        self.rec.pop('asset_scope', None)
-        self.rec['sources']=[s for s in self.rec['sources'] if not s['id'].startswith('assets-')]
+        self.rec=legacy_policy_fixture(json.loads(next((ROOT/'data/programs').glob('*.json')).read_text()))
         self.schema=json.loads((ROOT/'schema/program.schema.json').read_text())
+    def test_legacy_fixture_preserves_policy_evidence_and_dates(self):
+        for path in sorted((ROOT/'data/programs').glob('*.json')):
+            original = json.loads(path.read_text())
+            untouched = copy.deepcopy(original)
+            with self.subTest(program=original['id']):
+                rec = legacy_policy_fixture(original)
+                validate_program(rec, self.schema)
+                self.assertEqual(original, untouched)
+                self.assertEqual(rec['last_verified_at'], original['last_verified_at'])
+                source_map = {s['id']: s for s in original['sources']}
+                self.assertTrue(all(s == source_map[s['id']] for s in rec['sources']))
+                for field in ('rewards', 'eligibility', 'restrictions', 'submission_status', 'program_type'):
+                    self.assertEqual(rec.get(field), original.get(field))
+    def test_legacy_fixture_keeps_scope_source_when_also_cited_by_policy(self):
+        original = {'asset_scope': {'source_ids': ['scope-only', 'shared']},
+                    'sources': [{'id': key} for key in ('scope-only', 'shared', 'policy')],
+                    'restrictions': {'source_ids': ['shared', 'policy']}}
+        rec = legacy_policy_fixture(original)
+        self.assertEqual([s['id'] for s in rec['sources']], ['shared', 'policy'])
     def test_valid(self): validate_program(self.rec,self.schema)
     def test_program_type_is_optional_for_existing_versions(self):
         self.rec.pop('program_type',None)

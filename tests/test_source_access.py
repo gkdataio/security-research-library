@@ -14,8 +14,10 @@ from source_access import (EXCLUDED_BUGCROWD_ENGAGEMENTS, EXCLUSION_REASON,
                            SourceAccessExcluded, excluded_source_reason)
 
 
-SLUGS = ("fmshrc-vdp", "abmc-vdp", "oshrc-vdp")
-URLS = tuple("https://bugcrowd.com/engagements/" + slug for slug in SLUGS)
+SLUGS = ("fmshrc-vdp", "abmc-vdp", "oshrc-vdp",
+         "demo-eu-admin-test", "demo-eu-admin-pentest-max-4")
+HOSTS = ("bugcrowd.com", "www.bugcrowd.com", "eu.bugcrowd.net", "gov.bugcrowd.net")
+URLS = tuple("https://" + host + "/engagements/" + slug for host in HOSTS for slug in SLUGS)
 
 
 def targets(urls):
@@ -27,7 +29,7 @@ class SourceAccessTests(unittest.TestCase):
     def test_exact_exclusions_cover_aliases_and_children_not_nearby_identities(self):
         self.assertEqual(EXCLUDED_BUGCROWD_ENGAGEMENTS, frozenset(SLUGS))
         for slug in SLUGS:
-            for host in ("bugcrowd.com", "www.bugcrowd.com", "BUGCROWD.COM"):
+            for host in (*HOSTS, *(host.upper() for host in HOSTS)):
                 for path in (f"/engagements/{slug}", f"/engagements/{slug}/",
                              f"/engagements/{slug}/changelog/old-version.json",
                              f"/engagements/{slug}?view=brief", f"/engagements/{slug}#scope",
@@ -80,8 +82,8 @@ class SourceAccessTests(unittest.TestCase):
             client.get.side_effect = AssertionError("Excluded source requested")
             audit = refresh.refresh(root, client)
             client.get.assert_not_called()
-            self.assertEqual(audit["counts"], {"refreshed": 0, "failed": 0, "deferred": 3,
-                                              "unsupported": 0, "total": 3, "attempted": 0})
+            self.assertEqual(audit["counts"], {"refreshed": 0, "failed": 0, "deferred": len(URLS),
+                                              "unsupported": 0, "total": len(URLS), "attempted": 0})
             self.assertEqual({row["program_url"] for row in audit["results"]}, set(URLS))
             for row in audit["results"]:
                 self.assertEqual(row["reason_code"], "source_excluded")
@@ -115,9 +117,9 @@ class SourceAccessTests(unittest.TestCase):
                 for skip_recent_hours in (0, 12):
                     report = changes.check_live(targets(urls), state, plan=plan, fetcher=fetch,
                                                 skip_recent_hours=skip_recent_hours, max_requests=0)
-                    self.assertEqual(report["counts"]["deferred"], 6)
+                    self.assertEqual(report["counts"]["deferred"], len(urls))
                     self.assertEqual(report["counts"]["requests"], 0)
-                    self.assertEqual(len(report["signals"]), 6)
+                    self.assertEqual(len(report["signals"]), len(urls))
                     for row in report["signals"]:
                         self.assertEqual(row["reason"], "source_excluded")
                         self.assertEqual(row["verification_status"], "unknown")
@@ -130,7 +132,7 @@ class SourceAccessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             state = Path(directory) / "state.json"
             report = changes.check_live(targets([*URLS, allowed]), state, fetcher=fetch, max_requests=1)
-            self.assertEqual(report["counts"]["deferred"], 3)
+            self.assertEqual(report["counts"]["deferred"], len(URLS))
             self.assertEqual(report["counts"]["requests"], 1)
             self.assertEqual(report["counts"]["baselined"], 1)
             self.assertEqual(fetch.call_args.args[0], allowed)
@@ -142,7 +144,7 @@ class SourceAccessTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             report = changes.check_live(targets([allowed, *URLS, allowed + "-other"]),
                                         Path(directory) / "state.json", fetcher=fetch)
-            self.assertEqual(report["counts"]["deferred"], 4)
+            self.assertEqual(report["counts"]["deferred"], len(URLS) + 1)
             self.assertEqual(report["counts"]["requests"], 1)
             excluded = [row for row in report["signals"] if row.get("reason") == "source_excluded"]
             self.assertEqual({row["url"] for row in excluded}, set(URLS))
