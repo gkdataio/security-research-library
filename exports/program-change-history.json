@@ -1,0 +1,5 @@
+{
+  "schema_version": "1.0.0",
+  "notice": "Retained semantic differences between saved public records, not live verification. recorded_at is the recording time, not the effective date of a scope change. History starts when explicitly recorded; earlier changes are not automatically backfilled.",
+  "entries": []
+}

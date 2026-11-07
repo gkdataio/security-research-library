@@ -55,7 +55,8 @@ A wording-only edit is not a fresh source review. Preserve IDs, classifications,
 3. Preserve unsupported dates as null, qualify impact, and separate actual observations from modeled consequences
 4. Update taxonomy references only when a defensible learning objective requires them
 5. Update recency across the inventory, validate, run tests, regenerate and check the export
-6. Commit a concise summary of source-backed changes; no empty or fabricated daily additions
+6. For program or scope updates, run `python3 scripts/check_program_changes.py --base HEAD --record-history` before committing, review the retained semantic differences, and include `exports/program-change-history.json` with the update. If the update is already committed, select its preceding commit as the baseline. Do not turn live response hashes into verified scope-change events.
+7. Commit a concise summary of source-backed changes; no empty or fabricated daily additions
 
 Do not push over an unexpected remote change. Read the current branch and existing files, then create a fast-forward commit preserving unrelated work. No repository workflow or deployment should be added without explicit scope.
 

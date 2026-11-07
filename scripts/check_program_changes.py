@@ -208,6 +208,76 @@ def compare_inventories(before, after):
     return changes
 
 
+HISTORY_PATH = "exports/program-change-history.json"
+HISTORY_NOTICE = ("Retained semantic differences between saved public records, not live verification. "
+                  "recorded_at is the recording time, not the effective date of a scope change. "
+                  "History starts when explicitly recorded; earlier changes are not automatically backfilled.")
+
+
+def _digest(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False,
+                                     separators=(",", ":")).encode("utf-8")).hexdigest()
+
+
+def append_history(path, baseline_sha, before, after, recorded_at):
+    """Retain comparison batches without replacing old entries or duplicating retries.
+
+    A lock prevents two writers from losing each other's additions. A stale lock
+    must be investigated rather than silently removed. No HTTP state is retained.
+    """
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    lock = path.with_suffix(path.suffix + ".lock")
+    try:
+        descriptor = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+    except FileExistsError:
+        raise Invalid("history is locked; check for an active writer: " + str(lock)) from None
+    try:
+        os.close(descriptor)
+        if path.exists():
+            try:
+                history = json.loads(path.read_text(encoding="utf-8"))
+            except (ValueError, OSError) as error:
+                raise Invalid("cannot read history; refusing to replace it: " + str(error)) from None
+            validate_history(history)
+        else:
+            history = {"schema_version": "1.0.0", "notice": HISTORY_NOTICE, "entries": []}
+        changes = compare_inventories(before, after)
+        # Preserve scope details even when an entire program is added or removed.
+        for change in changes:
+            if change["kind"] in ("added", "removed"):
+                change["snapshot"] = (after if change["kind"] == "added" else before)[change["key"]]
+        content = {"baseline_commit": baseline_sha, "baseline_digest": _digest(before),
+                   "current_digest": _digest(after), "changes": changes}
+        ident = _digest(content)
+        added = bool(changes) and not any(item["id"] == ident for item in history["entries"])
+        if added:
+            history["entries"].append({"id": ident, "recorded_at": recorded_at, **content})
+        if added or not path.exists():
+            _write_json_atomic(path, history)
+        return history, added
+    finally:
+        lock.unlink()
+
+
+def validate_history(history):
+    """Fail closed on malformed/modified retained data, rather than reset it."""
+    if (not isinstance(history, dict) or history.get("schema_version") != "1.0.0"
+            or history.get("notice") != HISTORY_NOTICE or not isinstance(history.get("entries"), list)):
+        raise Invalid("invalid program change history")
+    ids = set()
+    for item in history["entries"]:
+        required = {"id", "recorded_at", "baseline_commit", "baseline_digest", "current_digest", "changes"}
+        if not isinstance(item, dict) or set(item) != required:
+            raise Invalid("invalid history entry fields")
+        content = {key: value for key, value in item.items() if key not in ("id", "recorded_at")}
+        if (not isinstance(item["id"], str) or item["id"] != _digest(content) or item["id"] in ids
+                or not isinstance(item["recorded_at"], str)
+                or not isinstance(item["changes"], list) or not item["changes"]):
+            raise Invalid("invalid or duplicate history entry")
+        ids.add(item["id"])
+
+
 def official_targets(payload, include_scope_sources=True):
     """Build a request list solely from recorded official program/policy URLs."""
     targets = defaultdict(lambda: {"programs": set(), "roles": set(), "platforms": set()})
@@ -430,7 +500,16 @@ def main():
     parser.add_argument("--program", action="append", help="Only check this listing:<id> or policy:<id> in live mode")
     parser.add_argument("--json-out", type=Path, help="Write a machine-readable report")
     parser.add_argument("--fail-on-change", action="store_true", help="Exit 1 when a saved or live change is found")
+    parser.add_argument("--record-history", action="store_true",
+                        help="Append saved semantic differences to tracked " + HISTORY_PATH)
     args = parser.parse_args()
+    history_path = ROOT / HISTORY_PATH
+    if args.json_out and args.json_out.resolve() == history_path.resolve():
+        parser.error("--json-out cannot overwrite retained history; use --record-history")
+    if args.state.resolve() == history_path.resolve():
+        parser.error("--state cannot overwrite retained history")
+    if args.record_history and args.live:
+        parser.error("record history in saved-data mode, without --live")
     if args.plan and not args.live:
         parser.error("--plan requires --live")
     if args.json_out and args.live and args.json_out.resolve() == args.state.resolve():
@@ -466,6 +545,9 @@ def main():
             print("  review page: " + signal["url"] + " (" + ", ".join(signal["programs"]) + ")")
         if len(changed_pages) > 20:
             print(f"  ... {len(changed_pages) - 20} more changed pages; use --json-out.")
+    if args.record_history:
+        history, added = append_history(history_path, baseline_sha, before, after, report["checked_at"])
+        print(f"History: {len(history['entries'])} retained batches; appended={added}.")
     if args.json_out:
         _write_json_atomic(args.json_out, report)
         print("Report: " + str(args.json_out))

@@ -62,7 +62,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 |---|---|
 | **Disclosures** | [Read reports](docs/reports.md) · [Report topics](docs/report-topics.md) |
 | **Programs** | [First-party recognition and direct disclosure](docs/direct-disclosure.md) · [Verified programs](docs/programs.md) · [Public Bugcrowd programs](docs/bugcrowd-programs.md) · [Public bounty scopes](docs/public-bounties.md) |
-| **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) · [Program change checker](#check-program-changes) |
+| **Coverage** | [Scope coverage audit](docs/program-scope-audit.md) · [Discovery queue](docs/program-discovery.md) · [Program change checker](#check-program-changes) · [Retained change feed](docs/program-changes.md) |
 | **Learn** | [Research methodology](docs/research-methodology.md) · [Learning guide](docs/learning-guide.md) · [Resources](docs/resources.md) · [Readable resource catalog](docs/resource-index.md) · [Resource topics](docs/resource-topics.md) |
 | **Visuals** | [Diagram gallery](docs/diagram-gallery.md) · [Visual guide](docs/visual-theory.md) |
 | **Reuse** | [Use the JSON](#use-the-json) · [Licensing](LICENSE.md) |
@@ -272,9 +272,12 @@ The change checker covers all distinct directory listings and reviewed policies,
 
 ```sh
 python3 scripts/check_program_changes.py --base HEAD~1 --json-out .program-change-report.json
+python3 scripts/check_program_changes.py --base HEAD --record-history
 python3 scripts/check_program_changes.py --live --plan
 python3 scripts/check_program_changes.py --live --max-requests 100 --json-out .program-change-report.json
 ```
+
+The [retained change feed](docs/program-changes.md) keeps saved semantic changes, including scope additions/removals and bounty eligibility, in tracked `exports/program-change-history.json`. Run `--record-history` after updating canonical records and exports but before committing, then commit the feed alongside the update. Identical comparisons are deduplicated; no-change runs never erase prior batches. Recording is explicit, not automatic, and the initial feed has no backfilled events. Live response hashes are not scope-change evidence.
 
 Live mode checks recorded official program and policy pages plus official scope sources, defaulting to one second between requests. It stores response hashes, status and cache headers in the Git-ignored `.program-change-state.json`; the first successful request establishes a baseline. Repeat the bounded command to continue through the collection: successful checks and unavailable attempts from the previous 12 hours are skipped. Use `--skip-recent-hours 0` for an immediate recheck, `--pages-only` to omit scope-source URLs, or `--platform` / `--program` to narrow a run. Redirects are recorded but never followed, and HTTP 429 stops the batch. A changed response is a lead for manual official-policy review; it does not verify an asset-scope or eligibility change or alter canonical records.
 
