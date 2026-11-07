@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:04Z.
+**Capture time:** 2026-11-07T14:51:24Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/yahoo/yahoobugbounty/detail>)
 
-## In-scope entries (37)
+## In-scope entries (36)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Yahoo HK News | Other | — | Tier 2 | — |
 | Yahoo Mail | Other | — | Tier 2 | — |
 | Yahoo News | Other | — | Tier 2 | — |
-| Yahoo Open Source Projects | Other | — | Tier 3 | — |
 | Yahoo Search | Other | — | Tier 2 | — |
 | Yahoo Sports: Best Ball | Other | — | Tier 2 | — |
 | Yahoo Sports: Daily Fantasy | Other | — | Tier 2 | — |
@@ -56,10 +55,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Yahoo\! \(Misc\) | Other | — | Tier 2 | — |
 | yimg\.com | URL | http://yimg\.com | Tier 2 | — |
 
-## Out-of-scope entries (2)
+## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Yahoo Open Source Projects | Other | — | — | — |
 | Flurry | Other | — | — | — |
 | TW eCommerce: Store | Other | — | — | — |
 

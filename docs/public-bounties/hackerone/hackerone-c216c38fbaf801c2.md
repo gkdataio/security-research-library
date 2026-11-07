@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:54:10Z.
+**Capture time:** 2026-11-07T14:55:54Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/rei_bbp/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/rei_bbp/assets/download_csv.csv>)
 
 ## In-scope entries (6)
 
@@ -25,7 +25,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Any public cloud resource or infrastructure operated and managed by REI\. | OTHER | — | — | Bounty eligible |
 | Android &amp; iOS App for REI Customers | OTHER | — | — | Bounty eligible |
 
-## Out-of-scope entries (19)
+## Out-of-scope entries (20)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -48,6 +48,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | foryourbenefit-rei\.com/ | URL | — | — | Not bounty eligible |
 | rei\.gladly\.com | URL | — | — | Not bounty eligible |
 | http://rei\.com/lists | URL | — | — | Not bounty eligible |
+| catalogs\.rei\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

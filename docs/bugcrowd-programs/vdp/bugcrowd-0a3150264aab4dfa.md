@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:18Z.
+**Capture time:** 2026-11-07T14:57:49Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mcdonalds/changelog/71717aae-178d-4ae9-861f-390d797fc821.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mcdonalds/changelog/0e8646a0-a53c-4701-bf75-506f8e74f4fa.json>)
 
 ## In-scope entries (2)
 

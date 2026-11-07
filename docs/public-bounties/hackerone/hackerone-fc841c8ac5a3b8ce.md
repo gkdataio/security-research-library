@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:48Z.
+**Capture time:** 2026-11-07T14:53:26Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/bybit_fintech/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/bybit_fintech/assets/download_csv.csv>)
 
-## In-scope entries (9)
+## In-scope entries (15)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -27,6 +27,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | http://www\.byreal\.io | URL | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.bybit\.app&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/us/app/bybit-app/id1488296980 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://www\.bybit\.com/en/ai-bot/home | URL | — | — | Bounty eligible |
+| https://www\.bybit\.com/en/stocks | URL | — | — | Bounty eligible |
+| https://testnet\.bybit\.com/en/trade/usdt/btcusdt | URL | — | — | Bounty eligible |
+| https://testnet\.bybit\.com/en/trade/option/usdt/spcx | URL | — | — | Bounty eligible |
+| https://testnet\.bybit\.com/en/trade/odds/ | URL | — | — | Bounty eligible |
+| https://testnet\.bybit\.com/en/earn/rwa/ | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

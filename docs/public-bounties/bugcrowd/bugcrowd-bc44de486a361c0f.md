@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:02Z.
+**Capture time:** 2026-11-07T14:54:59Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Retail.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hutgroup-public/changelog/c321ca42-ab54-4b40-8f62-939fa6cc82dc.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hutgroup-public/changelog/f93203a5-4a8e-408c-a833-1d1a29d85d42.json>)
 
-## In-scope entries (9)
+## In-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,9 +30,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://\*\.myvitamins\.com/ | website | https://www\.myvitamins\.com/ | Ingenuity E-Commerce | — |
 | https://\*\.arrowfilms\.com | website | https://www\.arrowfilms\.com | Ingenuity E-Commerce | — |
 | https://\*\.mankind\.co\.uk/ | website | https://www\.mankind\.co\.uk/ | Ingenuity E-Commerce | — |
-| https://\*\.illamasqua\.com/ | website | https://www\.illamasqua\.com/ | Ingenuity E-Commerce | — |
 | https://www\.matalan\.co\.uk | website | https://www\.matalan\.co\.uk | Ingenuity E-Commerce | — |
-| https://\*\.enjoyselfish\.com | website | https://www\.enjoyselfish\.com | Ingenuity E-Commerce | — |
 
 ## Out-of-scope entries (1)
 

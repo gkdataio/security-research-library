@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:36Z.
+**Capture time:** 2026-11-07T14:55:07Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/marriott/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/marriott/assets/download_csv.csv>)
 
-## In-scope entries (81)
+## In-scope entries (59)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -25,59 +25,38 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.apigatewayc\.marriott\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.apigwc\.marriott\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.artifactory\.marriott\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.sba\.marriott\.com | WILDCARD | — | — | Bounty eligible |
 | homes-and-villas\.marriott\.com | URL | — | — | Bounty eligible |
-| careers\.marriott\.com | URL | — | — | Bounty eligible |
 | sso\.marriott\.com | URL | — | — | Bounty eligible |
 | mgs\.marriott\.com | URL | — | — | Bounty eligible |
-| jobs\.marriott\.com | URL | — | — | Bounty eligible |
 | passwordchallenge\.marriott\.com | URL | — | — | Bounty eligible |
 | gateway\*\.marriott\.com | URL | — | — | Bounty eligible |
 | dcfgateway\*\.marriott\.com | URL | — | — | Bounty eligible |
-| marriottfranchisetransactions\.marriott\.com | URL | — | — | Bounty eligible |
 | lawmanager\.marriott\.com | URL | — | — | Bounty eligible |
-| all-inclusive\.marriott\.com | URL | — | — | Bounty eligible |
-| reservations\.all-inclusive\.marriott\.com | URL | — | — | Bounty eligible |
 | marrtool\.com | URL | — | — | Bounty eligible |
 | cpp\.marriott\.com | URL | — | — | Bounty eligible |
 | editionhotels\.com | URL | — | — | Bounty eligible |
-| https://gatewaydsapdev2\.marriott\.com/ | URL | — | — | Bounty eligible |
-| https://dcfgatewaytst1\.marriott\.com/ | URL | — | — | Bounty eligible |
-| https://gatewaydsaptst1\.marriott\.com/ | URL | — | — | Bounty eligible |
 | https://gatewaydsapprd\.marriott\.com/v2/ | URL | — | — | Bounty eligible |
 | www\.marriott\.com | URL | — | — | Bounty eligible |
 | moments\.marriottbonvoy\.com | URL | — | — | Bounty eligible |
 | help\.marriott\.com | URL | — | — | Bounty eligible |
-| psp\.marriott\.com | URL | — | — | Bounty eligible |
 | esupplier\.marriott\.com | URL | — | — | Bounty eligible |
 | https://gatewaydsapprd\.marriott\.com/v1/ | URL | — | — | Bounty eligible |
-| activities\.marriott\.com | URL | — | — | Bounty eligible |
-| https://gatewaydsaptst2\.marriott\.com/ | URL | — | — | Bounty eligible |
-| www\.ritzcarlton\.com/ | URL | — | — | Bounty eligible |
-| \*uat\.marriott\.com | URL | — | — | Bounty eligible |
 | traveler\.marriott\.com | URL | — | — | Bounty eligible |
 | travelagents\.marriott\.com/ | URL | — | — | Bounty eligible |
-| mipartnerprivileges\.marriott\.com | URL | — | — | Bounty eligible |
-| efast\.marriott\.com | URL | — | — | Bounty eligible |
 | eidhelp\.marriott\.com | URL | — | — | Bounty eligible |
 | apcgateway\.marriott\.com | URL | — | — | Bounty eligible |
 | auth-apc\.marriott\.com | URL | — | — | Bounty eligible |
 | bpa2\.marriott\.com | URL | — | — | Bounty eligible |
 | device\.marriott\.com | URL | — | — | Bounty eligible |
-| ifast\.marriott\.com | URL | — | — | Bounty eligible |
 | wechat\.api\.marriott\.com | URL | — | — | Bounty eligible |
-| hotel-deals\.marriott\.com | URL | — | — | Bounty eligible |
-| http://www\.shopmarriott\.com | URL | — | — | Bounty eligible |
 | smetrics\.marriott\.com | URL | — | — | Bounty eligible |
 | bsp\.marriott\.com | URL | — | — | Bounty eligible |
-| cache\.marriott\.com | URL | — | — | Bounty eligible |
 | channel-portal\.homes-and-villas\.marriott\.com | URL | — | — | Bounty eligible |
 | ci-propertyconversionportal\.marriott\.com | URL | — | — | Bounty eligible |
 | contentportal\.marriott\.com | URL | — | — | Bounty eligible |
 | contentportalauth\.marriott\.com | URL | — | — | Bounty eligible |
 | join\.marriott\.com | URL | — | — | Bounty eligible |
 | joinrewards\.marriott\.com | URL | — | — | Bounty eligible |
-| oasisprod\.marriott\.com | URL | — | — | Bounty eligible |
 | ocijlbex1prd\.marriott\.com | URL | — | — | Bounty eligible |
 | owa\.marriott\.com | URL | — | — | Bounty eligible |
 | app-insiders\.marriott\.com | URL | — | — | Bounty eligible |
@@ -88,19 +67,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | uber\.marriott\.com | URL | — | — | Bounty eligible |
 | university\.marriott\.com | URL | — | — | Bounty eligible |
 | bilt\.marriott\.com | URL | — | — | Bounty eligible |
-| gifts\.marriott\.com | URL | — | — | Bounty eligible |
 | joinmarriottbonvoy\.com | URL | — | — | Bounty eligible |
-| hotel-development\.marriott\.com | URL | — | — | Bounty eligible |
 | hotshoppeservices\.com | URL | — | — | Bounty eligible |
 | vacation\.marriott\.com | URL | — | — | Bounty eligible |
-| moments\.marriott\.com | URL | — | — | Bounty eligible |
 | www\.giving\.marriott\.com | URL | — | — | Bounty eligible |
 | www\.members\.marriott\.com | URL | — | — | Bounty eligible |
 | splunk-phantom-nlb\.marriott\.com | URL | — | — | Bounty eligible |
 | 455004730 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| giftcards\.marriott\.com | URL | — | — | Not bounty eligible |
+| reservations\.all-inclusive\.marriott\.com | URL | — | — | Not bounty eligible |
+| \*uat\.marriott\.com | WILDCARD | — | — | Not bounty eligible |
+| uat\.marriott\.com | URL | — | — | Not bounty eligible |
 
-## Out-of-scope entries (31)
+## Out-of-scope entries (40)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -108,7 +86,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | vacations\.marriott\.com | URL | — | — | Not bounty eligible |
 | towneplacesuites\.marriott\.com | URL | — | — | Not bounty eligible |
 | www\.travelagents\.marriott\.com | URL | — | — | Not bounty eligible |
-| \*moxymix\*\.marriott\.com | URL | — | — | Not bounty eligible |
 | mi\.bookmarriott\.com | URL | — | — | Not bounty eligible |
 | \*\.ritzcarltonyachtcollection\.com | URL | — | — | Not bounty eligible |
 | \*\.phunware\.com | URL | — | — | Not bounty eligible |
@@ -129,12 +106,22 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | latinoamerica\.marriott\.com | URL | — | — | Not bounty eligible |
 | clmagtest\.marriott\.com | URL | — | — | Not bounty eligible |
 | gis\.marriott\.com | URL | — | — | Not bounty eligible |
-| eswebdev\.marriott\.com | URL | — | — | Not bounty eligible |
 | ofhub\.marriott\.com | URL | — | — | Not bounty eligible |
 | gdstest\.marriott\.com | URL | — | — | Not bounty eligible |
 | \*\.ritzcarlton\.com | OTHER | — | — | Not bounty eligible |
-| Phoenix Platform | OTHER | — | — | Not bounty eligible |
 | Not-Listed Assets | OTHER | — | — | Not bounty eligible |
+| marriottfranchisetransactions\.marriott\.com | URL | — | — | Not bounty eligible |
+| oasisprod\.marriott\.com | URL | — | — | Not bounty eligible |
+| jobs\.marriott\.com | URL | — | — | Not bounty eligible |
+| moments\.marriott\.com | URL | — | — | Not bounty eligible |
+| http://www\.shopmarriott\.com | URL | — | — | Not bounty eligible |
+| hotel-deals\.marriott\.com | URL | — | — | Not bounty eligible |
+| gifts\.marriott\.com | URL | — | — | Not bounty eligible |
+| psp\.marriott\.com | URL | — | — | Not bounty eligible |
+| all-inclusive\.marriott\.com | URL | — | — | Not bounty eligible |
+| mipartnerprivileges\.marriott\.com | URL | — | — | Not bounty eligible |
+| ifast\.marriott\.com | URL | — | — | Not bounty eligible |
+| hotel-development\.marriott\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

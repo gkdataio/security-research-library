@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:07Z.
+**Capture time:** 2026-11-07T14:54:16Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/fetlife/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/fetlife/assets/download_csv.csv>)
 
 ## In-scope entries (3)
 

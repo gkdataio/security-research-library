@@ -5,8 +5,8 @@
   "counts": {
     "verified_policy_records": 40,
     "verified_with_asset_scope": 40,
-    "verified_in_scope_rows": 470,
-    "verified_out_of_scope_rows": 194,
+    "verified_in_scope_rows": 473,
+    "verified_out_of_scope_rows": 198,
     "discovery_listings": 1156,
     "discovery_verified_policy_overlap": 33,
     "discovery_scope_tables_captured": 785,
@@ -15,8 +15,8 @@
     "bugcrowd_public_listings": 516,
     "bugcrowd_scope_captured": 507,
     "bugcrowd_scope_gaps": 9,
-    "bugcrowd_in_scope_rows": 5621,
-    "bugcrowd_out_of_scope_rows": 1394,
+    "bugcrowd_in_scope_rows": 5560,
+    "bugcrowd_out_of_scope_rows": 1434,
     "cross_platform_bounty_candidates": 627,
     "bounty_by_platform": {
       "Bugcrowd": 293,
@@ -25,14 +25,14 @@
     },
     "bounty_scope_captured": 591,
     "bounty_scope_gaps": 36,
-    "bounty_in_scope_rows": 9098,
-    "bounty_out_of_scope_rows": 3112,
+    "bounty_in_scope_rows": 9184,
+    "bounty_out_of_scope_rows": 3185,
     "catalog_overlap": 293,
     "distinct_catalog_programs": 850,
     "distinct_scope_captured": 808,
     "distinct_scope_gaps": 42,
-    "distinct_in_scope_rows": 11758,
-    "distinct_out_of_scope_rows": 3414,
+    "distinct_in_scope_rows": 11815,
+    "distinct_out_of_scope_rows": 3490,
     "duplicate_source_rows_collapsed": 77,
     "by_gap_status": {
       "fetch_failed": 2,
@@ -41,9 +41,8 @@
       "terms_only": 12
     },
     "by_gap_result": {
-      "empty_published_table": 7,
+      "empty_published_table": 10,
       "http_403": 2,
-      "javascript_required": 3,
       "preview_login_gate": 18,
       "terms_login_gate": 12
     },
@@ -57,11 +56,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-1ee3d56124cf736f.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/arlokudos",
+        "reviewed_at": "2026-11-07T14:58:31Z",
+        "policy_url": "https://bugcrowd.com/engagements/arlokudos/changelog/3d6114ec-05df-466f-a3c5-0e06a9bd942d.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -99,11 +98,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-2ba4f933d6de7ca7.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/dyson-demo-vdp-engagement",
+        "reviewed_at": "2026-11-07T14:58:47Z",
+        "policy_url": "https://bugcrowd.com/engagements/dyson-demo-vdp-engagement/changelog/96267c44-4fde-4575-a2ce-5fd89bb24596.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -127,11 +126,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-ff6465c6cc35cf62.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/opm-vdp",
+        "reviewed_at": "2026-11-07T15:03:02Z",
+        "policy_url": "https://bugcrowd.com/engagements/opm-vdp/changelog/2ed64b94-6bb3-4d9b-b03b-af5d0d091095.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -141,11 +140,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-ee194a4857e12397.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/progressdatacloud-vdp-pro",
+        "reviewed_at": "2026-11-07T15:02:44Z",
+        "policy_url": "https://bugcrowd.com/engagements/progressdatacloud-vdp-pro/changelog/e39ebfc2-5ea6-4be5-95db-b0087697d611.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -155,11 +154,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-3c7ab64d8b64c31f.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/stickman2",
+        "reviewed_at": "2026-11-07T14:59:15Z",
+        "policy_url": "https://bugcrowd.com/engagements/stickman2/changelog/d97caf37-4781-4d98-af1e-d102f9b3dd95.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -169,11 +168,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/bugcrowd-programs/vdp/bugcrowd-6df51f6ee18c7b08.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://bugcrowd.com/engagements/testing-vdp-pro",
+        "reviewed_at": "2026-11-07T15:00:42Z",
+        "policy_url": "https://bugcrowd.com/engagements/testing-vdp-pro/changelog/6202eb72-98ec-4580-b241-6d475adae7de.json",
         "http_status": 200,
         "result": "empty_published_table",
-        "note": "The official engagement page was available, but its public brief published zero scope groups and zero target rows. Policy prose may still define or limit scope; no asset row was inferred."
+        "note": "Official current public brief was retrieved; its scope groups contained no published asset rows. No scope permission is inferred."
       }
     },
     {
@@ -183,11 +182,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/public-bounties/hackerone/hackerone-506fc9236b351984.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://hackerone.com/coinmate/policy_scopes",
+        "reviewed_at": "2026-11-07T14:53:40Z",
+        "policy_url": "https://hackerone.com/teams/coinmate/assets/download_csv.csv",
         "http_status": 200,
-        "result": "javascript_required",
-        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+        "result": "empty_published_table",
+        "note": "The official public CSV scope export returned its expected column header and zero asset rows. No asset scope is inferred; policy prose was not re-reviewed."
       }
     },
     {
@@ -197,11 +196,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/public-bounties/hackerone/hackerone-be10e8ab9c7750da.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://hackerone.com/django/policy_scopes",
+        "reviewed_at": "2026-11-07T14:53:54Z",
+        "policy_url": "https://hackerone.com/teams/django/assets/download_csv.csv",
         "http_status": 200,
-        "result": "javascript_required",
-        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+        "result": "empty_published_table",
+        "note": "The official public CSV scope export returned its expected column header and zero asset rows. No asset scope is inferred; policy prose was not re-reviewed."
       }
     },
     {
@@ -211,11 +210,11 @@
       "status": "no_published_assets",
       "visual_page": "docs/public-bounties/hackerone/hackerone-0402fac19fe5f16c.md",
       "gap_review": {
-        "reviewed_at": "2026-10-03T17:12:14Z",
-        "policy_url": "https://hackerone.com/phabricator/policy_scopes",
+        "reviewed_at": "2026-11-07T14:55:35Z",
+        "policy_url": "https://hackerone.com/teams/phabricator/assets/download_csv.csv",
         "http_status": 200,
-        "result": "javascript_required",
-        "note": "The official public policy_scopes page returned a JavaScript app shell during this review. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page."
+        "result": "empty_published_table",
+        "note": "The official public CSV scope export returned its expected column header and zero asset rows. No asset scope is inferred; policy prose was not re-reviewed."
       }
     },
     {

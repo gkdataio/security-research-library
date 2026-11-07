@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:54:58Z.
+**Capture time:** 2026-11-07T14:56:29Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/superhuman/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/superhuman/assets/download_csv.csv>)
 
-## In-scope entries (30)
+## In-scope entries (29)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -39,7 +39,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Superhuman Mail Desktop App | OTHER | — | — | Bounty eligible |
 | Superhuman Mail Chrome Extension | OTHER | — | — | Bounty eligible |
 | Coda Chrome Extension | OTHER | — | — | Bounty eligible |
-| Superhuman Mail | OTHER | — | — | Bounty eligible |
 | com\.grammarly\.android\.keyboard | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | io\.coda\.codaapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.superhuman\.mail | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
@@ -47,7 +46,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Grammarly Desktop for macOS | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | com\.grammarly\.keyboard | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | io\.coda | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.superhuman\.mail | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.superhuman\.mail  | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

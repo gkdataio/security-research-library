@@ -12,46 +12,46 @@ This is a small, manually reviewed starting directory, not a complete or continu
 
 | Program | Platform | In-scope entries | Out-of-scope entries | Asset review |
 | --- | --- | ---: | ---: | --- |
-| [1Password Bug Bounty](<#program-1password-bug-bounty>) | HackerOne | 4 | 4 | 2026-10-03T14:59:09Z |
-| [ADAC Vulnerability Disclosure Program](<#program-adac-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-10-03T14:55:52Z |
+| [1Password Bug Bounty](<#program-1password-bug-bounty>) | HackerOne | 4 | 4 | 2026-11-07T14:52:54Z |
+| [ADAC Vulnerability Disclosure Program](<#program-adac-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-11-07T14:52:00Z |
 | [Adobe Public Bug Bounty](<#program-adobe-public-bug-bounty>) | Intigriti | 40 | 0 | 2026-10-03T14:55:54Z |
-| [Apple Security Bounty](<#program-apple-security-bounty>) | Independent | 8 | 3 | 2026-10-03T15:03:35Z |
-| [Arc Bug Bounty](<#program-arc-circle-bug-bounty>) | HackerOne | 6 | 3 | 2026-10-03T14:59:10Z |
-| [Atlassian Bug Bounty](<#program-atlassian-bug-bounty>) | Bugcrowd | 50 | 13 | 2026-10-03T14:55:55Z |
-| [curl Vulnerability Disclosure](<#program-curl-vulnerability-disclosure>) | HackerOne | 1 | 0 | 2026-10-03T14:59:11Z |
-| [Dashlane Vulnerability Disclosure Program](<#program-dashlane-vulnerability-disclosure>) | Intigriti | 6 | 0 | 2026-10-03T14:55:58Z |
-| [Dropbox Bug Bounty](<#program-dropbox-bug-bounty>) | Intigriti | 26 | 9 | 2026-10-03T14:55:58Z |
-| [Dutch Lottery Vulnerability Disclosure Program](<#program-dutch-lottery-vulnerability-disclosure>) | Intigriti | 9 | 0 | 2026-10-03T14:56:01Z |
-| [Exoscale Bug Bounty](<#program-exoscale-bug-bounty>) | Intigriti | 7 | 6 | 2026-10-03T14:56:02Z |
+| [Apple Security Bounty](<#program-apple-security-bounty>) | Independent | 8 | 3 | 2026-11-07T14:48:59Z |
+| [Arc Bug Bounty](<#program-arc-circle-bug-bounty>) | HackerOne | 6 | 3 | 2026-11-07T14:53:12Z |
+| [Atlassian Bug Bounty](<#program-atlassian-bug-bounty>) | Bugcrowd | 50 | 13 | 2026-11-07T15:03:28Z |
+| [curl Vulnerability Disclosure](<#program-curl-vulnerability-disclosure>) | HackerOne | 1 | 0 | 2026-11-07T14:57:40Z |
+| [Dashlane Vulnerability Disclosure Program](<#program-dashlane-vulnerability-disclosure>) | Intigriti | 6 | 0 | 2026-11-07T14:52:05Z |
+| [Dropbox Bug Bounty](<#program-dropbox-bug-bounty>) | Intigriti | 26 | 13 | 2026-11-07T14:52:15Z |
+| [Dutch Lottery Vulnerability Disclosure Program](<#program-dutch-lottery-vulnerability-disclosure>) | Intigriti | 9 | 0 | 2026-11-07T14:52:01Z |
+| [Exoscale Bug Bounty](<#program-exoscale-bug-bounty>) | Intigriti | 7 | 6 | 2026-11-07T14:52:01Z |
 | [Fastmail Bug Bounty](<#program-fastmail-bug-bounty>) | Direct vendor program | 2 | 3 | 2026-10-03T15:03:35Z |
-| [GitHub Bug Bounty](<#program-github-bug-bounty>) | HackerOne submission channel | 27 | 24 | 2026-10-03T15:03:35Z |
-| [GitLab Bug Bounty](<#program-gitlab-bug-bounty>) | HackerOne | 19 | 25 | 2026-10-03T14:59:12Z |
-| [Grafana Labs Vulnerability Disclosure Program](<#program-grafana-labs-vulnerability-disclosure>) | Intigriti | 11 | 0 | 2026-10-03T14:56:03Z |
-| [HackerOne Security Bounty](<#program-hackerone-security-bounty>) | HackerOne | 26 | 8 | 2026-10-03T14:59:13Z |
-| [HostGator LATAM Bug Bounty](<#program-hostgator-latam-bug-bounty>) | Bugcrowd | 2 | 4 | 2026-10-03T14:56:05Z |
-| [Intel Vulnerability Disclosure Program](<#program-intel-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-10-03T14:56:06Z |
-| [Ivo AI Vulnerability Disclosure Program](<#program-ivo-ai-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-10-03T14:56:08Z |
-| [LaunchDarkly Managed Bug Bounty Engagement](<#program-launchdarkly-managed-bug-bounty>) | Bugcrowd | 6 | 6 | 2026-10-03T14:56:09Z |
-| [MATLAB Online - Ongoing Bug Bounty Engagement](<#program-matlab-online-bug-bounty>) | Bugcrowd | 1 | 0 | 2026-10-03T14:56:10Z |
-| [Microsoft Edge Bounty Program](<#program-microsoft-edge-bug-bounty>) | MSRC | 3 | 4 | 2026-10-03T15:03:35Z |
-| [Moovit Managed Bug Bounty Program](<#program-moovit-managed-bug-bounty>) | Bugcrowd | 4 | 3 | 2026-10-03T14:56:11Z |
-| [Mozilla Client Bug Bounty](<#program-mozilla-client-bug-bounty>) | Bugzilla | 3 | 2 | 2026-10-03T15:03:35Z |
-| [Mozilla Web Bug Bounty](<#program-mozilla-web-bug-bounty>) | HackerOne | 24 | 0 | 2026-10-03T14:59:14Z |
-| [Nubank Brasil Managed Bug Bounty Program](<#program-nubank-brasil-bug-bounty>) | Bugcrowd | 9 | 4 | 2026-10-03T14:56:13Z |
-| [NVIDIA Public Bug Bounty](<#program-nvidia-public-bug-bounty>) | Intigriti | 11 | 0 | 2026-10-03T14:56:15Z |
-| [NxtPort Vulnerability Disclosure Program](<#program-nxtport-vulnerability-disclosure>) | Intigriti | 1 | 0 | 2026-10-03T14:56:16Z |
-| [Okta Bug Bounty](<#program-okta-bug-bounty>) | Bugcrowd | 21 | 18 | 2026-10-03T14:56:17Z |
-| [OneTrust Bug Bounty](<#program-onetrust-bug-bounty>) | Bugcrowd | 1 | 26 | 2026-10-03T14:56:19Z |
-| [OpenAI Security Bug Bounty](<#program-openai-security-bug-bounty>) | Bugcrowd | 12 | 0 | 2026-10-03T14:56:20Z |
-| [Proton Bug Bounty](<#program-proton-bug-bounty>) | Direct vendor program | 34 | 8 | 2026-10-03T15:03:35Z |
-| [Rapyd Bug Bounty](<#program-rapyd-bug-bounty>) | Bugcrowd | 10 | 11 | 2026-10-03T14:56:21Z |
-| [Spacelift Vulnerability Disclosure Program](<#program-spacelift-vulnerability-disclosure>) | Intigriti | 3 | 0 | 2026-10-03T14:56:22Z |
-| [Telegram Bug Bounty](<#program-telegram-bug-bounty>) | Direct vendor program | 16 | 2 | 2026-10-03T15:03:35Z |
-| [TrueLayer Vulnerability Disclosure Program](<#program-truelayer-vulnerability-disclosure>) | Intigriti | 11 | 1 | 2026-10-03T14:56:24Z |
-| [Trusted Firmware Bug Bounty](<#program-trusted-firmware-bug-bounty>) | Intigriti | 4 | 0 | 2026-10-03T14:56:26Z |
-| [Vercel Bug Bounty](<#program-vercel-bug-bounty>) | HackerOne | 24 | 1 | 2026-10-03T14:59:15Z |
-| [Vinted Bug Bounty](<#program-vinted-bug-bounty>) | Bugcrowd | 12 | 0 | 2026-10-03T14:56:27Z |
-| [Web\.com Bug Bounty](<#program-web-com-bug-bounty>) | Bugcrowd | 4 | 6 | 2026-10-03T14:56:28Z |
+| [GitHub Bug Bounty](<#program-github-bug-bounty>) | HackerOne submission channel | 27 | 24 | 2026-11-07T14:48:59Z |
+| [GitLab Bug Bounty](<#program-gitlab-bug-bounty>) | HackerOne | 19 | 25 | 2026-11-07T14:54:30Z |
+| [Grafana Labs Vulnerability Disclosure Program](<#program-grafana-labs-vulnerability-disclosure>) | Intigriti | 11 | 0 | 2026-11-07T14:51:57Z |
+| [HackerOne Security Bounty](<#program-hackerone-security-bounty>) | HackerOne | 26 | 8 | 2026-11-07T14:54:37Z |
+| [HostGator LATAM Bug Bounty](<#program-hostgator-latam-bug-bounty>) | Bugcrowd | 2 | 4 | 2026-11-07T15:03:28Z |
+| [Intel Vulnerability Disclosure Program](<#program-intel-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-11-07T14:52:10Z |
+| [Ivo AI Vulnerability Disclosure Program](<#program-ivo-ai-vulnerability-disclosure>) | Intigriti | 4 | 0 | 2026-11-07T14:52:05Z |
+| [LaunchDarkly Managed Bug Bounty Engagement](<#program-launchdarkly-managed-bug-bounty>) | Bugcrowd | 6 | 6 | 2026-11-07T15:03:08Z |
+| [MATLAB Online - Ongoing Bug Bounty Engagement](<#program-matlab-online-bug-bounty>) | Bugcrowd | 1 | 0 | 2026-11-07T15:03:08Z |
+| [Microsoft Edge Bounty Program](<#program-microsoft-edge-bug-bounty>) | MSRC | 3 | 4 | 2026-11-07T14:48:59Z |
+| [Moovit Managed Bug Bounty Program](<#program-moovit-managed-bug-bounty>) | Bugcrowd | 4 | 3 | 2026-11-07T15:03:08Z |
+| [Mozilla Client Bug Bounty](<#program-mozilla-client-bug-bounty>) | Bugzilla | 3 | 2 | 2026-11-07T14:48:59Z |
+| [Mozilla Web Bug Bounty](<#program-mozilla-web-bug-bounty>) | HackerOne | 24 | 0 | 2026-11-07T14:57:40Z |
+| [Nubank Brasil Managed Bug Bounty Program](<#program-nubank-brasil-bug-bounty>) | Bugcrowd | 9 | 4 | 2026-11-07T15:03:28Z |
+| [NVIDIA Public Bug Bounty](<#program-nvidia-public-bug-bounty>) | Intigriti | 11 | 0 | 2026-11-07T14:52:19Z |
+| [NxtPort Vulnerability Disclosure Program](<#program-nxtport-vulnerability-disclosure>) | Intigriti | 3 | 0 | 2026-11-07T14:52:04Z |
+| [Okta Bug Bounty](<#program-okta-bug-bounty>) | Bugcrowd | 21 | 18 | 2026-11-07T15:03:35Z |
+| [OneTrust Bug Bounty](<#program-onetrust-bug-bounty>) | Bugcrowd | 1 | 26 | 2026-11-07T15:03:32Z |
+| [OpenAI Security Bug Bounty](<#program-openai-security-bug-bounty>) | Bugcrowd | 12 | 0 | 2026-11-07T15:03:05Z |
+| [Proton Bug Bounty](<#program-proton-bug-bounty>) | Direct vendor program | 34 | 8 | 2026-11-07T14:48:59Z |
+| [Rapyd Bug Bounty](<#program-rapyd-bug-bounty>) | Bugcrowd | 10 | 11 | 2026-11-07T15:03:10Z |
+| [Spacelift Vulnerability Disclosure Program](<#program-spacelift-vulnerability-disclosure>) | Intigriti | 3 | 0 | 2026-11-07T14:52:10Z |
+| [Telegram Bug Bounty](<#program-telegram-bug-bounty>) | Direct vendor program | 16 | 2 | 2026-11-07T14:48:59Z |
+| [TrueLayer Vulnerability Disclosure Program](<#program-truelayer-vulnerability-disclosure>) | Intigriti | 11 | 1 | 2026-11-07T14:52:15Z |
+| [Trusted Firmware Bug Bounty](<#program-trusted-firmware-bug-bounty>) | Intigriti | 4 | 0 | 2026-11-07T14:52:14Z |
+| [Vercel Bug Bounty](<#program-vercel-bug-bounty>) | HackerOne | 26 | 1 | 2026-11-07T14:56:50Z |
+| [Vinted Bug Bounty](<#program-vinted-bug-bounty>) | Bugcrowd | 11 | 0 | 2026-11-07T15:03:35Z |
+| [Web\.com Bug Bounty](<#program-web-com-bug-bounty>) | Bugcrowd | 4 | 6 | 2026-11-07T15:03:35Z |
 
 <a id="program-1password-bug-bounty"></a>
 ## 1Password Bug Bounty
@@ -75,7 +75,7 @@ This is a small, manually reviewed starting directory, not a complete or continu
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:09Z.
+**Asset review:** 2026-11-07T14:52:54Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -99,9 +99,9 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/1password/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/1password/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -116,7 +116,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [1Password program restrictions](<https://hackerone.com/1password/policy_scopes>) — 1Password / HackerOne; retrieved 2026-10-02T21:22:00Z.
 - [1Password security assessments](<https://support.1password.com/security-assessments/>) — 1Password; retrieved 2026-10-02T21:22:00Z.
 - [HackerOne vulnerability disclosure guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T21:22:00Z.
-- [Published HackerOne structured scope](<https://hackerone.com/1password/policy_scopes>) — 1Password; retrieved 2026-10-03T14:59:09Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/1password/assets/download_csv.csv>) — 1Password; retrieved 2026-11-07T14:52:54Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -158,7 +158,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:55:52Z.
+**Asset review:** 2026-11-07T14:52:00Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -191,7 +191,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [ADAC Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram>) — ADAC Group / Intigriti; retrieved 2026-10-03T03:56:43Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram/detail>) — ADAC Group; retrieved 2026-10-03T14:55:52Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram/detail>) — ADAC Group; retrieved 2026-11-07T14:52:00Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -348,7 +348,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** policy defined; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -393,8 +393,8 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Apple bounty guidelines](<https://security.apple.com/bounty/guidelines/>) — Apple; retrieved 2026-10-03T03:38:36Z.
 - [Apple security terms and conditions](<https://security.apple.com/terms-and-conditions/>) — Apple; retrieved 2026-10-03T03:39:06Z.
 - [Apple Security Bounty evolved](<https://security.apple.com/blog/apple-security-bounty-evolved/>) — Apple; retrieved 2026-10-02T21:01:00Z.
-- [Apple Security Bounty guidelines](<https://security.apple.com/bounty/guidelines/>) — Apple; retrieved 2026-10-03T15:03:35Z.
-- [Apple Security Bounty terms](<https://security.apple.com/terms-and-conditions/>) — Apple; retrieved 2026-10-03T15:03:35Z.
+- [Apple Security Bounty guidelines](<https://security.apple.com/bounty/guidelines/>) — Apple; retrieved 2026-11-07T14:48:59Z.
+- [Apple Security Bounty terms](<https://security.apple.com/terms-and-conditions/>) — Apple; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -420,7 +420,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:10Z.
+**Asset review:** 2026-11-07T14:53:12Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -445,9 +445,9 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/arc-bbp/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/arc-bbp/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -461,7 +461,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 - [Arc \| Bounty Policy \| HackerOne](<https://hackerone.com/arc-bbp?type=team>) — Circle / HackerOne; retrieved 2026-10-03T01:51:06Z.
 - [Arc public program updates](<https://hackerone.com/arc-bbp/updates>) — Circle / HackerOne; retrieved 2026-10-03T01:51:44Z.
-- [Published HackerOne structured scope](<https://hackerone.com/arc-bbp/policy_scopes>) — Circle Internet Contract Services, LLC; retrieved 2026-10-03T14:59:10Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/arc-bbp/assets/download_csv.csv>) — Circle Internet Contract Services, LLC; retrieved 2026-11-07T14:53:12Z.
 
 Change-log link: [Official updates](<https://hackerone.com/arc-bbp/updates>).
 
@@ -487,7 +487,7 @@ Change-log link: [Official updates](<https://hackerone.com/arc-bbp/updates>).
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:55:55Z.
+**Asset review:** 2026-11-07T15:03:28Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -568,7 +568,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
 
-**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/atlassian/changelog/c31ec9fd-9fff-4aa1-9b4e-aa9929f1086a.json>)
+**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/atlassian/changelog/983ceab8-ee25-460d-8da3-d30233c261cb.json>)
 
 **Verification limits**
 
@@ -582,7 +582,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Atlassian program announcements](<https://bugcrowd.com/engagements/atlassian/announcements>) — Atlassian / Bugcrowd; retrieved 2026-10-02T21:22:00Z.
 - [Bugcrowd fund management overview](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T21:22:00Z.
 - [Getting rewarded](<https://docs.bugcrowd.com/researchers/receiving-rewards/getting-rewarded/>) — Bugcrowd; retrieved 2026-10-02T21:22:00Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/atlassian/changelog/c31ec9fd-9fff-4aa1-9b4e-aa9929f1086a.json>) — Atlassian; retrieved 2026-10-03T14:55:55Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/atlassian/changelog/983ceab8-ee25-460d-8da3-d30233c261cb.json>) — Atlassian; retrieved 2026-11-07T15:03:28Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/atlassian/announcements>).
 
@@ -624,7 +624,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:11Z.
+**Asset review:** 2026-11-07T14:57:40Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -640,9 +640,9 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/curl/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/curl/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -663,7 +663,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 - [The end of the curl bug-bounty](<https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/>) — Daniel Stenberg, curl maintainer; retrieved 2026-10-03T02:31:44Z.
 - [curl program updates](<https://hackerone.com/curl/updates>) — curl project / HackerOne; retrieved 2026-10-03T02:31:44Z.
 - [Former curl bug bounty page, redirected to disclosure policy](<https://curl.se/docs/bugbounty.html>) — curl project; retrieved 2026-10-03T02:31:44Z.
-- [Published HackerOne structured scope](<https://hackerone.com/curl/policy_scopes>) — curl project; retrieved 2026-10-03T14:59:11Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/curl/assets/download_csv.csv>) — curl project; retrieved 2026-11-07T14:57:40Z.
 
 Change-log link: [Official updates](<https://hackerone.com/curl/updates>).
 
@@ -705,7 +705,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:55:58Z.
+**Asset review:** 2026-11-07T14:52:05Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -742,7 +742,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Dashlane Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram>) — Dashlane / Intigriti; retrieved 2026-10-03T03:38:55Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T01:50:12Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram/detail>) — Dashlane; retrieved 2026-10-03T14:55:58Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram/detail>) — Dashlane; retrieved 2026-11-07T14:52:05Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -784,7 +784,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:55:58Z.
+**Asset review:** 2026-11-07T14:52:15Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -792,46 +792,50 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| Dropbox\.com | URL | http://Dropbox\.com | Tier 1 | — |
-| sign\.dropbox\.com | URL | http://sign\.dropbox\.com | Tier 1 | — |
-| HelloSign\.com | URL | http://HelloSign\.com | Tier 1 | — |
-| dash\.ai | URL | http://dash\.ai | Tier 1 | — |
-| dash\.dropbox\.com | Other | — | Tier 1 | — |
 | api\.dropbox\.com | URL | http://api\.dropbox\.com | Tier 1 | — |
-| Dropbox Desktop Application | Other | — | Tier 2 | — |
-| 327630330 | iOS | https://apps\.apple\.com/app/327630330 | Tier 2 | — |
-| 6450553960 | iOS | https://apps\.apple\.com/app/6450553960 | Tier 2 | — |
+| Dropbox\.com | URL | http://Dropbox\.com | Tier 1 | — |
+| HelloSign\.com | URL | http://HelloSign\.com | Tier 1 | — |
+| sign\.dropbox\.com | URL | http://sign\.dropbox\.com | Tier 1 | — |
 | 1080074001 | iOS | https://apps\.apple\.com/app/1080074001 | Tier 2 | — |
-| com\.dropbox\.dash | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.dash | Tier 2 | — |
-| com\.dropbox\.android | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.android | Tier 2 | — |
-| HelloFax\.com | URL | http://HelloFax\.com | Tier 2 | — |
-| docsend\.com | URL | http://docsend\.com | Tier 2 | — |
+| 327630330 | iOS | https://apps\.apple\.com/app/327630330 | Tier 2 | — |
 | app\.Reclaim\.ai | URL | http://app\.Reclaim\.ai | Tier 2 | — |
+| com\.dropbox\.android | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.android | Tier 2 | — |
+| docsend\.com | URL | http://docsend\.com | Tier 2 | — |
+| Dropbox Desktop Application | Other | — | Tier 2 | — |
 | dropbox\.com/paper | URL | http://dropbox\.com/paper | Tier 2 | — |
+| HelloFax\.com | URL | http://HelloFax\.com | Tier 2 | — |
+| \*\.docsend\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropbox\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropboxer\.net | Wildcard | — | Tier 3 | — |
 | \*\.dropboxforum\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropboxpartners\.com | Wildcard | — | Tier 3 | — |
 | \*\.hellofax\.com | Wildcard | — | Tier 3 | — |
-| \*\.docsend\.com | Wildcard | — | Tier 3 | — |
-| \*\.reclaim\.ai | Wildcard | — | Tier 3 | — |
-| \*\.helloworks\.com | Wildcard | — | Tier 3 | — |
 | \*\.hellosign\.com | Wildcard | — | Tier 3 | — |
-| \*\.dash\.ai | Wildcard | — | Tier 3 | — |
+| \*\.helloworks\.com | Wildcard | — | Tier 3 | — |
+| \*\.reclaim\.ai | Wildcard | — | Tier 3 | — |
+| \*\.dash\.ai | Wildcard | — | No bounty | — |
+| 6450553960 | iOS | https://apps\.apple\.com/app/6450553960 | No bounty | — |
+| com\.dropbox\.dash | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.dash | No bounty | — |
+| dash\.ai | URL | http://dash\.ai | No bounty | — |
+| dash\.dropbox\.com | Other | — | No bounty | — |
 
-#### Out-of-scope entries (9)
+#### Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| community\.dropbox\.com | URL | http://community\.dropbox\.com | — | — |
-| replay\.dropbox\.com | URL | http://replay\.dropbox\.com | — | — |
-| Boxcryptor | Other | — | — | — |
-| Formswift | Other | — | — | — |
-| Dropbox Passwords | Other | — | — | — |
-| Dropbox Capture Windows Desktop App | Other | — | — | — |
-| Dropbox Capture macOS Desktop App | Other | — | — | — |
-| com\.dropbox\.paper | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.paper | — | — |
+| \*\.tigrisdata\.com | Wildcard | — | — | — |
+| \*\.tigrisdata\.io | Wildcard | — | — | — |
 | 1126623662 | iOS | https://apps\.apple\.com/app/1126623662 | — | — |
+| Boxcryptor | Other | — | — | — |
+| com\.dropbox\.paper | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.paper | — | — |
+| community-dev\.dropbox\.com | URL | http://community-dev\.dropbox\.com | — | — |
+| community-stage\.dropbox\.com | URL | http://community-stage\.dropbox\.com | — | — |
+| community\.dropbox\.com | URL | http://community\.dropbox\.com | — | — |
+| Dropbox Capture macOS Desktop App | Other | — | — | — |
+| Dropbox Capture Windows Desktop App | Other | — | — | — |
+| Dropbox Passwords | Other | — | — | — |
+| Formswift | Other | — | — | — |
+| replay\.dropbox\.com | URL | http://replay\.dropbox\.com | — | — |
 
 **Asset-scope limits**
 
@@ -851,7 +855,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Dropbox Bug Bounty public policy](<https://app.intigriti.com/programs/dropbox/dropbox>) — Dropbox / Intigriti; retrieved 2026-10-03T03:20:30Z.
 - [Dropbox Bug Bounty official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>) — Dropbox / Intigriti; retrieved 2026-10-03T02:14:45Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T02:12:34Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/dropbox/dropbox/detail>) — Dropbox; retrieved 2026-10-03T14:55:58Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/dropbox/dropbox/detail>) — Dropbox; retrieved 2026-11-07T14:52:15Z.
 
 Change-log link: [Official updates](<https://app.intigriti.com/programs/dropbox/dropbox/updates>).
 
@@ -893,7 +897,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:01Z.
+**Asset review:** 2026-11-07T14:52:01Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -931,7 +935,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Dutch Lottery Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp>) — Nederlandse Loterij / Intigriti; retrieved 2026-10-03T04:28:45Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp/detail>) — Nederlandse Loterij; retrieved 2026-10-03T14:56:01Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp/detail>) — Nederlandse Loterij; retrieved 2026-11-07T14:52:01Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -973,7 +977,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:02Z.
+**Asset review:** 2026-11-07T14:52:01Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1016,7 +1020,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 - [Exoscale Bug Bounty policy](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty>) — Exoscale / Akenes SA / Intigriti; retrieved 2026-10-03T03:57:30Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail>) — Exoscale / Akenes SA; retrieved 2026-10-03T14:56:02Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail>) — Exoscale / Akenes SA; retrieved 2026-11-07T14:52:01Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1135,7 +1139,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1225,8 +1229,8 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [GitHub program rules](<https://bounty.github.com/rules>) — GitHub; retrieved 2026-10-03T03:38:24Z.
 - [GitHub ineligible submissions](<https://bounty.github.com/ineligible>) — GitHub; retrieved 2026-10-03T03:39:41Z.
 - [GitHub high-level program scope policy](<https://bounty.github.com/scope>) — GitHub; retrieved 2026-10-03T03:38:36Z.
-- [GitHub Bug Bounty scope](<https://bounty.github.com/scope>) — GitHub; retrieved 2026-10-03T15:03:35Z.
-- [GitHub Bug Bounty target directory](<https://bounty.github.com/targets>) — GitHub; retrieved 2026-10-03T15:03:35Z.
+- [GitHub Bug Bounty scope](<https://bounty.github.com/scope>) — GitHub; retrieved 2026-11-07T14:48:59Z.
+- [GitHub Bug Bounty target directory](<https://bounty.github.com/targets>) — GitHub; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1252,7 +1256,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:12Z.
+**Asset review:** 2026-11-07T14:54:30Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1312,9 +1316,9 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/gitlab/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/gitlab/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -1325,7 +1329,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 **Official evidence and updates**
 
 - [GitLab Bug Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/gitlab?type=team>) — GitLab / HackerOne; retrieved 2026-10-02T21:10:00Z.
-- [Published HackerOne structured scope](<https://hackerone.com/gitlab/policy_scopes>) — GitLab; retrieved 2026-10-03T14:59:12Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/gitlab/assets/download_csv.csv>) — GitLab; retrieved 2026-11-07T14:54:30Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1367,7 +1371,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:03Z.
+**Asset review:** 2026-11-07T14:51:57Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1407,7 +1411,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Grafana Labs Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp>) — Grafana Labs / Intigriti; retrieved 2026-10-03T03:56:33Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp/detail>) — Grafana Labs; retrieved 2026-10-03T14:56:03Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp/detail>) — Grafana Labs; retrieved 2026-11-07T14:51:57Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1433,7 +1437,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:13Z.
+**Asset review:** 2026-11-07T14:54:37Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1483,9 +1487,9 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/security/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/security/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -1496,7 +1500,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 **Official evidence and updates**
 
 - [HackerOne Security Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/security?type=team>) — HackerOne / HackerOne; retrieved 2026-10-02T21:09:00Z.
-- [Published HackerOne structured scope](<https://hackerone.com/security/policy_scopes>) — HackerOne; retrieved 2026-10-03T14:59:13Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/security/assets/download_csv.csv>) — HackerOne; retrieved 2026-11-07T14:54:37Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1538,7 +1542,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:05Z.
+**Asset review:** 2026-11-07T15:03:28Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1577,7 +1581,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [HostGator LATAM Bug Bounty change index](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog>) — Newfold Digital / HostGator LATAM / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json>) — Newfold Digital / HostGator LATAM; retrieved 2026-10-03T14:56:05Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json>) — Newfold Digital / HostGator LATAM; retrieved 2026-11-07T15:03:28Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/hostgator-latam-bb/changelog>).
 
@@ -1619,7 +1623,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:06Z.
+**Asset review:** 2026-11-07T14:52:10Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1652,7 +1656,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 **Official evidence and updates**
 
 - [Intel Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram>) — Intel / Intigriti; retrieved 2026-10-03T03:39:30Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram/detail>) — Intel; retrieved 2026-10-03T14:56:06Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram/detail>) — Intel; retrieved 2026-11-07T14:52:10Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1694,7 +1698,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:08Z.
+**Asset review:** 2026-11-07T14:52:05Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1727,7 +1731,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Ivo AI Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram>) — Ivo AI / Intigriti; retrieved 2026-10-03T04:28:36Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram/detail>) — Ivo AI; retrieved 2026-10-03T14:56:08Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram/detail>) — Ivo AI; retrieved 2026-11-07T14:52:05Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1753,7 +1757,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:09Z.
+**Asset review:** 2026-11-07T15:03:08Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1797,7 +1801,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [LaunchDarkly public program brief](<https://bugcrowd.com/engagements/launchdarkly-mbb-og>) — LaunchDarkly / Bugcrowd; retrieved 2026-10-02T23:00:00Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/launchdarkly-mbb-og/changelog/884450ef-4277-41a9-8394-5f8c49cae2d8.json>) — LaunchDarkly; retrieved 2026-10-03T14:56:09Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/launchdarkly-mbb-og/changelog/884450ef-4277-41a9-8394-5f8c49cae2d8.json>) — LaunchDarkly; retrieved 2026-11-07T15:03:08Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -1823,7 +1827,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:10Z.
+**Asset review:** 2026-11-07T15:03:08Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1841,7 +1845,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
 
-**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/matlab-online/changelog/6b90f7f3-355b-406d-848e-3dfb0622f02a.json>)
+**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json>)
 
 **Verification limits**
 
@@ -1857,7 +1861,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 - [MATLAB Online - Ongoing Bug Bounty Engagement change index](<https://bugcrowd.com/engagements/matlab-online/changelog>) — MathWorks / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/matlab-online/changelog/6b90f7f3-355b-406d-848e-3dfb0622f02a.json>) — MathWorks; retrieved 2026-10-03T14:56:10Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json>) — MathWorks; retrieved 2026-11-07T15:03:08Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/matlab-online/changelog>).
 
@@ -1899,7 +1903,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** policy defined; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -1938,7 +1942,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Microsoft Edge Bounty Program and revision history](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) — Microsoft; retrieved 2026-10-03T03:38:36Z.
 - [Microsoft Bounty Program Guidelines, terms, safe harbor and Standard Award Policy](<https://www.microsoft.com/en-us/msrc/bounty-guidelines>) — Microsoft; retrieved 2026-10-03T03:41:08Z.
 - [Microsoft Security Testing Rules of Engagement](<https://www.microsoft.com/en-us/msrc/pentest-rules-of-engagement>) — Microsoft; retrieved 2026-10-03T03:41:15Z.
-- [Microsoft Edge Bounty Program](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) — Microsoft Corporation; retrieved 2026-10-03T15:03:35Z.
+- [Microsoft Edge Bounty Program](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>) — Microsoft Corporation; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: [Official updates](<https://www.microsoft.com/en-us/msrc/bounty-new-edge>).
 
@@ -1964,7 +1968,7 @@ Change-log link: [Official updates](<https://www.microsoft.com/en-us/msrc/bounty
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:11Z.
+**Asset review:** 2026-11-07T15:03:08Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2006,7 +2010,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Moovit Managed Bug Bounty Program change index](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog>) — Moovit / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog/6bded391-eff8-479d-a41c-4efdcee70ed0.json>) — Moovit; retrieved 2026-10-03T14:56:11Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog/6bded391-eff8-479d-a41c-4efdcee70ed0.json>) — Moovit; retrieved 2026-11-07T15:03:08Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/moovit-mbb-og/changelog>).
 
@@ -2049,7 +2053,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** policy defined; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2088,7 +2092,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Mozilla Security Bug Bounty general eligibility and safe harbor](<https://www.mozilla.org/en-US/security/bug-bounty/>) — Mozilla; retrieved 2026-10-03T03:39:31Z.
 - [Mozilla Bug Bounty Program FAQ](<https://www.mozilla.org/en-US/security/bug-bounty/faq/>) — Mozilla; retrieved 2026-10-03T03:38:30Z.
 - [Mozilla public program updates: client continuity and policy changes](<https://hackerone.com/mozilla/updates?type=team>) — Mozilla / HackerOne; retrieved 2026-10-03T02:31:44Z.
-- [Mozilla Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) — Mozilla; retrieved 2026-10-03T15:03:35Z.
+- [Mozilla Client Bug Bounty Program](<https://www.mozilla.org/en-US/security/client-bug-bounty/>) — Mozilla; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2114,7 +2118,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:14Z.
+**Asset review:** 2026-11-07T14:57:40Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2153,9 +2157,9 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/mozilla/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/mozilla/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -2167,7 +2171,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Mozilla Web Bug Bounty \| Bounty Policy \| HackerOne](<https://hackerone.com/mozilla?type=team>) — Mozilla / HackerOne; retrieved 2026-10-02T21:10:00Z.
 - [Mozilla Web Bug Bounty \| Updates \| HackerOne](<https://hackerone.com/mozilla/updates?type=team>) — Mozilla / HackerOne; retrieved 2026-10-02T21:10:00Z.
-- [Published HackerOne structured scope](<https://hackerone.com/mozilla/policy_scopes>) — Mozilla; retrieved 2026-10-03T14:59:14Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/mozilla/assets/download_csv.csv>) — Mozilla; retrieved 2026-11-07T14:57:40Z.
 
 Change-log link: [Official updates](<https://hackerone.com/mozilla/updates?type=team>).
 
@@ -2209,7 +2213,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:13Z.
+**Asset review:** 2026-11-07T15:03:28Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2255,7 +2259,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Nubank Brasil Managed Bug Bounty Program change index](<https://bugcrowd.com/engagements/nubank/changelog>) — Nubank Brasil / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json>) — Nubank Brasil; retrieved 2026-10-03T14:56:13Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json>) — Nubank Brasil; retrieved 2026-11-07T15:03:28Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/nubank/changelog>).
 
@@ -2281,7 +2285,7 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/nubank/cha
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:15Z.
+**Asset review:** 2026-11-07T14:52:19Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2321,7 +2325,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [NVIDIA Public Bug Bounty program policy](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty>) — NVIDIA / Intigriti; retrieved 2026-10-02T23:00:00Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-02T23:00:00Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail>) — NVIDIA; retrieved 2026-10-03T14:56:15Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail>) — NVIDIA; retrieved 2026-11-07T14:52:19Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2363,14 +2367,16 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:16Z.
+**Asset review:** 2026-11-07T14:52:04Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
-#### In-scope entries (1)
+#### In-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| \*\.inboundrelease\.com | Wildcard | — | No bounty | — |
+| \*\.certifiedpickup\.com | Wildcard | — | No bounty | — |
 | \*\.nxtport\.com | Wildcard | — | No bounty | — |
 
 #### Out-of-scope entries (0)
@@ -2393,7 +2399,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [NxtPort Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp>) — NxtPort / Intigriti; retrieved 2026-10-03T03:38:48Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T01:50:12Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp/detail>) — NxtPort; retrieved 2026-10-03T14:56:16Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/portofantwerp/nxtportvdp/detail>) — NxtPort; retrieved 2026-11-07T14:52:04Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2419,7 +2425,7 @@ Change-log link: No dedicated change-log URL verified; consult the current polic
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:17Z.
+**Asset review:** 2026-11-07T15:03:35Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2492,7 +2498,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T23:00:00Z.
 - [Okta Vulnerability Disclosure Policy Supplemental Terms](<https://www.okta.com/sites/default/files/VDP_Supplemental_Terms.pdf>) — Okta; retrieved 2026-10-02T23:00:00Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/okta/changelog/d4dc2398-db8d-4b89-9f7f-0aae75251307.json>) — Okta; retrieved 2026-10-03T14:56:17Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/okta/changelog/d4dc2398-db8d-4b89-9f7f-0aae75251307.json>) — Okta; retrieved 2026-11-07T15:03:35Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2535,7 +2541,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:19Z.
+**Asset review:** 2026-11-07T15:03:32Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2595,7 +2601,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [OneTrust Bug Bounty change index](<https://bugcrowd.com/engagements/onetrust/changelog>) — OneTrust / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json>) — OneTrust; retrieved 2026-10-03T14:56:19Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json>) — OneTrust; retrieved 2026-11-07T15:03:32Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/onetrust/changelog>).
 
@@ -2621,7 +2627,7 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/onetrust/c
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:20Z.
+**Asset review:** 2026-11-07T15:03:05Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2629,18 +2635,18 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| ChatGPT Web | website | https://chatgpt\.com | ChatGPT Services | — |
+| ChatGPT Plugins | api | https://chat\.openai\.com | ChatGPT Services | — |
 | api\.openai\.com | api | https://api\.openai\.com | API Targets | — |
-| ChatGPT | website | https://chat\.openai\.com | ChatGPT | — |
-| ChatGPT Plugins | api | https://chat\.openai\.com | ChatGPT | — |
+| Developer Platform Playground | website | https://platform\.openai\.com/playground | API Targets | — |
+| ChatGPT Desktop | other | — | ChatGPT Desktop &amp; Codex CLI | — |
+| Codex CLI | other | — | ChatGPT Desktop &amp; Codex CLI | — |
+| openai\.com | website | https://openai\.com/ | Other OpenAI Targets | — |
+| OpenAi Research | website | https://\*\.openai\.org | Other OpenAI Targets | — |
+| \*\.openai\.com | website | — | Other OpenAI Targets | — |
+| Other | other | — | Other OpenAI Targets | — |
 | Third Party Targets | website | — | Third Party Corporate Targets | — |
 | OpenAI API Keys | api | — | OpenAI API Keys | — |
-| https://openai\.org | website | https://\*\.openai\.org | OpenAI Research Org | — |
-| \*\.openai\.org | api | https://\*\.openai\.org | OpenAI Research Org | — |
-| openai\.com | website | https://openai\.com/ | Other OpenAI Targets | — |
-| \*\.openai\.com | other | — | Other OpenAI Targets | — |
-| Developer Platform Playground | website | https://platform\.openai\.com/playground | Other OpenAI Targets | — |
-| Other | other | — | Other OpenAI Targets | — |
-| Codex Desktop | other | — | Codex | — |
 
 #### Out-of-scope entries (0)
 
@@ -2650,7 +2656,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
 
-**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/openai/changelog/e76106d3-3796-492b-9997-569446b51b72.json>)
+**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json>)
 
 **Verification limits**
 
@@ -2664,7 +2670,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 - [OpenAI Security Bug Bounty](<https://bugcrowd.com/engagements/openai>) — OpenAI / Bugcrowd; retrieved 2026-10-02T21:01:00Z.
 - [OpenAI program announcements](<https://bugcrowd.com/engagements/openai/announcements>) — OpenAI / Bugcrowd; retrieved 2026-10-02T21:01:00Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-02T21:01:00Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/openai/changelog/e76106d3-3796-492b-9997-569446b51b72.json>) — OpenAI; retrieved 2026-10-03T14:56:20Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json>) — OpenAI; retrieved 2026-11-07T15:03:05Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/openai/announcements>).
 
@@ -2706,7 +2712,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2781,7 +2787,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Proton bug bounty program](<https://proton.me/security/bug-bounty>) — Proton AG; retrieved 2026-10-03T03:20:30Z.
 - [Proton vulnerability disclosure policy](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T03:20:30Z.
 - [Proton legal safe harbor policy](<https://proton.me/security/safe-harbor>) — Proton AG; retrieved 2026-10-03T02:12:34Z.
-- [Proton vulnerability disclosure scope](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-10-03T15:03:35Z.
+- [Proton vulnerability disclosure scope](<https://proton.me/security/vulnerability-disclosure>) — Proton AG; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2823,7 +2829,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:21Z.
+**Asset review:** 2026-11-07T15:03:10Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2862,7 +2868,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
 
-**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/rapyd/changelog/4fd154ee-8a7d-4d42-bab8-2ff1e017c1b2.json>)
+**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/rapyd/changelog/b7d3849b-cc64-466e-afe2-9a8d564f96f8.json>)
 
 **Verification limits**
 
@@ -2877,7 +2883,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Rapyd Bug Bounty change index](<https://bugcrowd.com/engagements/rapyd/changelog>) — Rapyd / Bugcrowd; retrieved 2026-10-03T04:12:14Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T04:09:31Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T04:10:21Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/rapyd/changelog/4fd154ee-8a7d-4d42-bab8-2ff1e017c1b2.json>) — Rapyd; retrieved 2026-10-03T14:56:21Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/rapyd/changelog/b7d3849b-cc64-466e-afe2-9a8d564f96f8.json>) — Rapyd; retrieved 2026-11-07T15:03:10Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/rapyd/changelog>).
 
@@ -2919,7 +2925,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:22Z.
+**Asset review:** 2026-11-07T14:52:10Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -2951,7 +2957,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - [Spacelift Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/spacelift/spaceliftvdp>) — Spacelift / Intigriti; retrieved 2026-10-03T04:28:45Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/spacelift/spaceliftvdp/detail>) — Spacelift; retrieved 2026-10-03T14:56:22Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/spacelift/spaceliftvdp/detail>) — Spacelift; retrieved 2026-11-07T14:52:10Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -2993,7 +2999,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** policy defined; official policy page.
 
-**Asset review:** 2026-10-03T15:03:35Z.
+**Asset review:** 2026-11-07T14:48:59Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -3039,7 +3045,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 **Official evidence and updates**
 
 - [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T03:20:30Z.
-- [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-10-03T15:03:35Z.
+- [Telegram Bug Bounty Program](<https://core.telegram.org/bug-bounty>) — Telegram; retrieved 2026-11-07T14:48:59Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -3081,7 +3087,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:24Z.
+**Asset review:** 2026-11-07T14:52:15Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -3124,7 +3130,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 - [TrueLayer Vulnerability Disclosure Program policy](<https://app.intigriti.com/programs/truelayer/truelayervdp>) — TrueLayer / Intigriti; retrieved 2026-10-03T04:29:06Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T04:29:02Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/truelayer/truelayervdp/detail>) — TrueLayer; retrieved 2026-10-03T14:56:24Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/truelayer/truelayervdp/detail>) — TrueLayer; retrieved 2026-11-07T14:52:15Z.
 
 Change-log link: No dedicated change-log URL verified; consult the current policy and linked announcements.
 
@@ -3167,7 +3173,7 @@ High-level context only; not an asset inventory, a completeness guarantee or aut
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:26Z.
+**Asset review:** 2026-11-07T14:52:14Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -3202,7 +3208,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 - [Trusted Firmware Bug Bounty policy](<https://app.intigriti.com/programs/arm/trustedfirmware>) — Arm / Intigriti; retrieved 2026-10-03T03:56:43Z.
 - [Intigriti Researcher Terms &amp; Conditions](<https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions>) — Intigriti; retrieved 2026-10-03T03:57:30Z.
 - [Trusted Firmware program updates: July 17 and July 28, 2026](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>) — Arm / Intigriti; retrieved 2026-10-03T03:57:17Z.
-- [Published Intigriti asset table](<https://app.intigriti.com/programs/arm/trustedfirmware/detail>) — Arm; retrieved 2026-10-03T14:56:26Z.
+- [Published Intigriti asset table](<https://app.intigriti.com/programs/arm/trustedfirmware/detail>) — Arm; retrieved 2026-11-07T14:52:14Z.
 
 Change-log link: [Official updates](<https://app.intigriti.com/programs/arm/trustedfirmware/updates>).
 
@@ -3228,11 +3234,11 @@ Change-log link: [Official updates](<https://app.intigriti.com/programs/arm/trus
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:59:15Z.
+**Asset review:** 2026-11-07T14:56:50Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
-#### In-scope entries (24)
+#### In-scope entries (26)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -3260,6 +3266,8 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 | https://github\.com/vercel/eve | SOURCE\_CODE | — | — | bounty eligible |
 | https://github\.com/vercel/ms | SOURCE\_CODE | — | — | bounty eligible |
 | Vercel sandbox | OTHER | — | — | bounty eligible |
+| https://github\.com/sveltejs/kit | SOURCE\_CODE | — | — | bounty eligible |
+| https://github\.com/better-auth/better-auth | SOURCE\_CODE | — | — | bounty eligible |
 
 #### Out-of-scope entries (1)
 
@@ -3269,9 +3277,9 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 
 **Asset-scope limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
 
-**Asset evidence:** [Published HackerOne structured scope](<https://hackerone.com/vercel/policy_scopes>)
+**Asset evidence:** [Published HackerOne scope CSV export](<https://hackerone.com/teams/vercel/assets/download_csv.csv>)
 
 **Verification limits**
 
@@ -3285,7 +3293,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Vercel \| Bounty Policy \| HackerOne](<https://hackerone.com/vercel?type=team>) — Vercel / HackerOne; retrieved 2026-10-03T01:49:43Z.
 - [Vercel scope and advertised rewards](<https://hackerone.com/vercel/policy_scopes>) — Vercel / HackerOne; retrieved 2026-10-03T01:50:37Z.
 - [Vercel public program updates](<https://hackerone.com/vercel/updates>) — Vercel / HackerOne; retrieved 2026-10-03T01:50:10Z.
-- [Published HackerOne structured scope](<https://hackerone.com/vercel/policy_scopes>) — Vercel; retrieved 2026-10-03T14:59:15Z.
+- [Published HackerOne scope CSV export](<https://hackerone.com/teams/vercel/assets/download_csv.csv>) — Vercel; retrieved 2026-11-07T14:56:50Z.
 
 Change-log link: [Official updates](<https://hackerone.com/vercel/updates>).
 
@@ -3311,11 +3319,11 @@ Change-log link: [Official updates](<https://hackerone.com/vercel/updates>).
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:27Z.
+**Asset review:** 2026-11-07T15:03:35Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
-#### In-scope entries (12)
+#### In-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -3325,7 +3333,6 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 | Vinted iOS application | ios | https://apps\.apple\.com/us/app/vinted-pre-loved-marketplace/id632064380 | Primary Target Group | — |
 | Vinted Android application | android | https://play\.google\.com/store/apps/details?id=fr\.vinted | Primary Target Group | — |
 | Vinted Go Sandbox | website | https://sandbox\.vintedgo\.com | Secondary Target Group | — |
-| Vinted Sandbox | website | https://sandbox\.vinted\.com | Secondary Target Group | — |
 | Vinted Go Escalations test | website | https://test-escalations\.vintedgo\.com | Secondary Target Group | — |
 | Encryption Service | website | https://badger\.it\.vinted\.com | Secondary Target Group | — |
 | Vinted Careers | website | https://careers\.vinted\.com | Secondary Target Group | — |
@@ -3340,7 +3347,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
 
-**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/762b2474-e004-41d0-b720-c050b4e16705.json>)
+**Asset evidence:** [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/0a61783f-81be-4cd8-8b6d-e9a819e97ead.json>)
 
 **Verification limits**
 
@@ -3356,7 +3363,7 @@ No explicit asset entry was captured in this category. Policy exclusions may sti
 - [Vinted Bug Bounty change index](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog>) — Vinted / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/762b2474-e004-41d0-b720-c050b4e16705.json>) — Vinted; retrieved 2026-10-03T14:56:27Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/0a61783f-81be-4cd8-8b6d-e9a819e97ead.json>) — Vinted; retrieved 2026-11-07T15:03:35Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/vinted-uab-mbb/changelog>).
 
@@ -3382,7 +3389,7 @@ Change-log link: [Official updates](<https://bugcrowd.com/engagements/vinted-uab
 
 **Capture:** published list; official platform scope table.
 
-**Asset review:** 2026-10-03T14:56:28Z.
+**Asset review:** 2026-11-07T15:03:35Z.
 
 Entries reproduce official asset identifiers or summarize policy-defined categories. They may be qualified by product, environment, account ownership, impact or report type. Read the source before testing.
 
@@ -3427,7 +3434,7 @@ Entries reproduce official asset identifiers or summarize policy-defined categor
 - [Web\.com Bug Bounty change index](<https://bugcrowd.com/engagements/webdotcom/changelog>) — Newfold Digital / Web\.com / Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Organization Accounting](<https://docs.bugcrowd.com/customers/fund-management/overview/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
 - [Bugcrowd Standard Disclosure Terms](<https://www.bugcrowd.com/resources/hacker-resources/standard-disclosure-terms/>) — Bugcrowd; retrieved 2026-10-03T01:52:33Z.
-- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/webdotcom/changelog/cdf0a5a7-3e14-4bd2-8997-a9567e0bb63e.json>) — Newfold Digital / Web\.com; retrieved 2026-10-03T14:56:28Z.
+- [Published Bugcrowd scope groups](<https://bugcrowd.com/engagements/webdotcom/changelog/cdf0a5a7-3e14-4bd2-8997-a9567e0bb63e.json>) — Newfold Digital / Web\.com; retrieved 2026-11-07T15:03:35Z.
 
 Change-log link: [Official updates](<https://bugcrowd.com/engagements/webdotcom/changelog>).
 

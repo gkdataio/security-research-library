@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:26Z.
+**Capture time:** 2026-11-07T14:53:16Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/automattic/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/automattic/assets/download_csv.csv>)
 
-## In-scope entries (31)
+## In-scope entries (30)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -44,7 +44,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | WordPress Plugins &amp; Themes | OTHER | — | — | Bounty eligible |
 | WordPress VIP | OTHER | — | — | Bounty eligible |
 | WP Cloud | OTHER | — | — | Bounty eligible |
-| Texts | OTHER | — | — | Bounty eligible |
 | Beeper | OTHER | — | — | Bounty eligible |
 | com\.tumblr | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.tumblr\.tumblr | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |

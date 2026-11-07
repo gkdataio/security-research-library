@@ -10,21 +10,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:07Z.
+**Capture time:** 2026-11-07T14:54:47Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/judgeme/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/judgeme/assets/download_csv.csv>)
 
-## In-scope entries (7)
+## In-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | judge\.me | URL | — | — | Bounty eligible |
 | https://judge\.me/reviews | URL | — | — | Bounty eligible |
 | shop\.judge\.me | URL | — | — | Bounty eligible |
-| woocommerce-adapter\.judge\.me | URL | — | — | Bounty eligible |
-| bigcommerce-adapter\.judge\.me | URL | — | — | Bounty eligible |
 | cache\.judge\.me | URL | — | — | Bounty eligible |
 | insights\.judgeme\.dev | URL | — | — | Bounty eligible |
+| emails\.judge\.me | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

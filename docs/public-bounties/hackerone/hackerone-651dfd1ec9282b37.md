@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:40Z.
+**Capture time:** 2026-11-07T14:55:07Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/meesho_bbp/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/meesho_bbp/assets/download_csv.csv>)
 
 ## In-scope entries (12)
 
@@ -31,7 +31,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 1457958492 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | prod\.meeshoapi\.com | API | — | — | Bounty eligible |
 
-## Out-of-scope entries (19)
+## Out-of-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -52,8 +52,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | log10-web-staging\.valmo\.in | URL | — | — | Not bounty eligible |
 | admin\.meesho\.io | URL | — | — | Not bounty eligible |
 | Other Asset | OTHER | — | — | Not bounty eligible |
-| Rider App | OTHER | — | — | Not bounty eligible |
-| com\.valmo\.ops | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 
 **Limits**
 

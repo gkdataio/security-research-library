@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:34Z.
+**Capture time:** 2026-11-07T14:55:32Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/palantir_public/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/palantir_public/assets/download_csv.csv>)
 
 ## In-scope entries (2)
 
@@ -21,7 +21,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Any public \(Internet-facing\) infrastructure owned and operated by Palantir\. | OTHER | — | — | Bounty eligible |
 | Any public cloud \(e\.g\. Amazon AWS, Microsoft Azure\) resource or infrastructure operated and managed by Palantir\. | OTHER | — | — | Bounty eligible |
 
-## Out-of-scope entries (15)
+## Out-of-scope entries (16)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -40,6 +40,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | community\.palantir\.com | URL | — | — | Not bounty eligible |
 | store\.palantir\.com | URL | — | — | Not bounty eligible |
 | Any infrastructure or assets related to Silk, FancyThat, or other Palantir acquisitions\. | OTHER | — | — | Not bounty eligible |
+| https://github\.com/palantir/\* | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**
 

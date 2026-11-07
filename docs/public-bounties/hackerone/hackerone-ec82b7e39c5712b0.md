@@ -10,17 +10,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:43Z.
+**Capture time:** 2026-11-07T14:53:22Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/braze_inc/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/braze_inc/assets/download_csv.csv>)
 
-## In-scope entries (3)
+## In-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | https://bug-bounty-dashboard\.k8s\.tools-001\.d-use-1\.braze-dev\.com/ | URL | — | — | Bounty eligible |
 | https://bug-bounty-api\.k8s\.tools-001\.d-use-1\.braze-dev\.com/ | API | — | — | Bounty eligible |
 | https://bug-bounty-rest\.k8s\.tools-001\.d-use-1\.braze-dev\.com/ | API | — | — | Bounty eligible |
+| https://bug-bounty-mcp\.k8s\.tools-001\.d-use-1\.braze-dev\.com/mcp | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

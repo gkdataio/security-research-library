@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:01Z.
+**Capture time:** 2026-11-07T14:53:33Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/chia_network/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/chia_network/assets/download_csv.csv>)
 
 ## In-scope entries (9)
 
@@ -26,7 +26,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/Chia-Network/chia\_rs | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chiapos | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chiavdf | SOURCE\_CODE | — | — | Bounty eligible |
-| https://apps\.apple\.com/app/chia-signer/id6504493785 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://apps\.apple\.com/app/chia-signer/id6504493785  | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

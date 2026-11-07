@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:13Z.
+**Capture time:** 2026-11-07T14:54:50Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/kiwicom/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/kiwicom/assets/download_csv.csv>)
 
-## In-scope entries (19)
+## In-scope entries (9)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -25,16 +25,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | tequila\.kiwi\.com | URL | — | — | Bounty eligible |
 | http://www\.kiwi\.com/stories | URL | — | — | Bounty eligible |
 | jobs\.kiwi\.com | URL | — | — | Bounty eligible |
-| https://github\.com/kiwicom/js-iam-middleware | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/k8s-vault-operator | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/kiwi-cache | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/kiwi-json | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/kiwi-structlog-config | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/konfetti | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/navigation-compose-typed | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/orbit | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/pg2avro | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/kiwicom/request-session | SOURCE\_CODE | — | — | Bounty eligible |
 | com\.skypicker\.main | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.skypicker\.Skypicker | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 

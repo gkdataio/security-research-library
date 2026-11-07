@@ -10,36 +10,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:34Z.
+**Capture time:** 2026-11-07T14:55:04Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/malwarebytes/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/malwarebytes/assets/download_csv.csv>)
 
-## In-scope entries (38)
+## In-scope entries (25)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.mwbsys\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.mb-cosmos\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.mbamupdates\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.cloud\.malwarebytes\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.malwarebytes\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.mwb-threatintel\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.threatdown\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.cyrus-security\.com | WILDCARD | — | — | Bounty eligible |
 | www\.malwarebytes\.com | URL | — | — | Bounty eligible |
 | my\.malwarebytes\.com | URL | — | — | Bounty eligible |
-| cloud\.malwarebytes\.com | URL | — | — | Bounty eligible |
-| oneview\.threatdown\.com | URL | — | — | Bounty eligible |
-| https://oneview\.threatdownstage\.com | URL | — | — | Bounty eligible |
-| cloud\.threatdown\.com | URL | — | — | Bounty eligible |
 | BrowserGuard \(Firefox/Chrome/Safari browser extension\) | OTHER | — | — | Bounty eligible |
-| ThreatDown Patch Management | OTHER | — | — | Bounty eligible |
-| ThreatDown Endpoint Detection &amp; Response \(EDR\) | OTHER | — | — | Bounty eligible |
-| ThreatDown Endpoint Protection | OTHER | — | — | Bounty eligible |
-| ThreatDown Device Control | OTHER | — | — | Bounty eligible |
 | Any other Malwarebytes asset | OTHER | — | — | Bounty eligible |
-| ThreatDown Browser Phishing Protection | OTHER | — | — | Bounty eligible |
-| Any other ThreatDown asset | OTHER | — | — | Bounty eligible |
 | Malwarebytes Privacy \(VPN\) | OTHER | — | — | Bounty eligible |
 | org\.malwarebytes\.antimalware | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | Malwarebytes for Windows | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
@@ -57,7 +44,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Malwarebytes Anti-Exploit | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 | USB Flash Drive Control | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 
-## Out-of-scope entries (7)
+## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -65,7 +52,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | store\.malwarebytes\.com | URL | — | — | Not bounty eligible |
 | pages\.malwarebytes\.com | URL | — | — | Not bounty eligible |
 | view\.malwarebytes\.com | URL | — | — | Not bounty eligible |
-| store\.threatdown\.com | URL | — | — | Not bounty eligible |
 | malwarebytes\.zoom\.us | URL | — | — | Not bounty eligible |
 | Malwarebytes Anti-Ransomware | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 

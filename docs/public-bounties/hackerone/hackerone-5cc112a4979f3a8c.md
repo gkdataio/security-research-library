@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:55:30Z.
+**Capture time:** 2026-11-07T14:56:43Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/ui/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/ui/assets/download_csv.csv>)
 
-## In-scope entries (52)
+## In-scope entries (53)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -57,7 +57,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | UCRM | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | UNMS | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | UISP | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| UniFi OS Server | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | https://\*\.ui\.com/distributors/ | WILDCARD | — | — | Not bounty eligible |
 | https://\*\.ui\.com/training/partners/ | WILDCARD | — | — | Not bounty eligible |
 | ir\.ui\.com | URL | — | — | Not bounty eligible |
@@ -70,6 +69,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://ui\.com/training/partners/ | URL | — | — | Not bounty eligible |
 | help\.uisp\.com | URL | — | — | Not bounty eligible |
 | com\.ubnt\.ucrm | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+|  UniFi OS Server | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| WiFiman | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 
 ## Out-of-scope entries (14)
 
@@ -82,13 +83,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | UniFi Video Cloud | OTHER | — | — | Not bounty eligible |
 | UniFi Video | HARDWARE | — | — | Not bounty eligible |
 | mFi | HARDWARE | — | — | Not bounty eligible |
-| UniFi Talk Conference Speaker - UT-Conference | HARDWARE | — | — | Not bounty eligible |
 | UniFi Voip | HARDWARE | — | — | Not bounty eligible |
 | com\.ubnt\.unifivideo | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.ubnt\.unifi\.edu | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.ubnt\.mpower | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | AirControl | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 | UniFi Video Server | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| UniFi Talk Conference Speaker - UT-Conference  | HARDWARE | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:21Z.
+**Capture time:** 2026-11-07T14:53:12Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/arkose_labs/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/arkose_labs/assets/download_csv.csv>)
 
 ## In-scope entries (8)
 

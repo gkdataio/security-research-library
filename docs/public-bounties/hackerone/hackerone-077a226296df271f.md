@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:26Z.
+**Capture time:** 2026-11-07T14:53:50Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/common_codes/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/common_codes/assets/download_csv.csv>)
 
 ## In-scope entries (7)
 
@@ -23,8 +23,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/wpb | API | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/rwsca | API | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/mdvm | API | — | — | Bounty eligible |
-| https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/status-lists | API | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/pns | API | — | — | Bounty eligible |
+| https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/status-lists | API | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

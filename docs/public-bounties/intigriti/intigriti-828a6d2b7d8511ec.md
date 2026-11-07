@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:34Z.
+**Capture time:** 2026-11-07T14:49:19Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/digitalocean/digitalocean/detail>)
 
-## In-scope entries (20)
+## In-scope entries (19)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -37,9 +37,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/digitalocean/do-agent | Source code | https://github\.com/digitalocean/do-agent | No bounty | — |
 | https://github\.com/digitalocean/droplet-agent | Source code | https://github\.com/digitalocean/droplet-agent | No bounty | — |
 | https://github\.com/digitalocean/doctl | Source code | https://github\.com/digitalocean/doctl | No bounty | — |
-| https://github\.com/digitalocean/terraform-provider-digitalocean | Source code | https://github\.com/digitalocean/terraform-provider-digitalocean | No bounty | — |
 
-## Out-of-scope entries (39)
+## Out-of-scope entries (41)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -47,6 +46,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/digitalocean/action-doctl | Source code | https://github\.com/digitalocean/action-doctl | — | — |
 | https://github\.com/digitalocean/godo | Source code | https://github\.com/digitalocean/godo | — | — |
 | https://github\.com/digitalocean/pydo | Source code | https://github\.com/digitalocean/pydo | — | — |
+| https://github\.com/digitalocean/terraform-provider-digitalocean | Source code | https://github\.com/digitalocean/terraform-provider-digitalocean | — | — |
 | https://github\.com/digitalocean/go-nbd | Source code | https://github\.com/digitalocean/go-nbd | — | — |
 | https://github\.com/digitalocean/do-markdownit | Source code | https://github\.com/digitalocean/do-markdownit | — | — |
 | anchor\.digitalocean\.com | URL | http://anchor\.digitalocean\.com | — | — |
@@ -76,6 +76,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.k8s\.ondigitalocean\.com | Wildcard | — | — | — |
 | \*\.ondigitalocean\.app | Wildcard | — | — | — |
 | registry\.digitalocean\.com/\* | Wildcard | — | — | — |
+| \*\.agents-internal\.do-ai\.run | Wildcard | — | — | — |
 | Assets created by other DigitalOcean customers | Other | — | — | — |
 | \*\.doserverless-dev3\.io | Wildcard | — | — | — |
 | \*\.ondbaasdev\.com | Wildcard | — | — | — |

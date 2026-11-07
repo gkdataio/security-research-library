@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:24Z.
+**Capture time:** 2026-11-07T14:53:51Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Finance.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mastercard/changelog/0eb3c506-d8ac-41ee-b469-3e0c2778dd1b.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mastercard/changelog/a5439559-9e41-4eb3-9709-218bd789ac03.json>)
 
-## In-scope entries (22)
+## In-scope entries (21)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,7 +30,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | MasterCard\.com\.au - www\.mastercard\.com\.au/en-au\.html | website | https://www\.mastercard\.com\.au/en-au\.html | Public Targets \(In-scope\) | — |
 | MasterCard\.nl - www\.mastercard\.nl/nl-nl\.html | website | https://www\.mastercard\.nl/nl-nl\.html | Public Targets \(In-scope\) | — |
 | https://developer\.mastercard\.com | website | https://developer\.mastercard\.com | Public Targets \(In-scope\) | — |
-| donate\.mastercard\.com | website | https://donate\.mastercard\.com | Public Targets \(In-scope\) | — |
 | Core Priceless\.com - demo\.priceless\.com | website | https://demo\.priceless\.com/ | Public Targets \(In-scope\) | — |
 | https://priceless\.com/golf/ | website | https://priceless\.com/golf/ | Public Targets \(In-scope\) | — |
 | https://performancemarketing\.mastercard\.com/portal/ | website | https://performancemarketing\.mastercard\.com/portal/ | Public Targets \(In-scope\) | — |

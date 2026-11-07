@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:55Z.
+**Capture time:** 2026-11-07T14:55:46Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/priceline/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/priceline/assets/download_csv.csv>)
 
 ## In-scope entries (13)
 
@@ -80,7 +80,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | api-gnae1-poc\.priceline\.com | URL | — | — | Not bounty eligible |
 | ace-qa\.corp\.priceline\.com | URL | — | — | Not bounty eligible |
 | 1psb\.priceline\.com | URL | — | — | Not bounty eligible |
-| www\.priceline\.com/vp-web/\* | OTHER | — | — | Not bounty eligible |
+| www\.priceline\.com/vp-web/\*  | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

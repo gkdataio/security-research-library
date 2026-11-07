@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:31Z.
+**Capture time:** 2026-11-07T14:52:06Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Finance.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/fis/changelog/94ae44bf-701a-47f9-b1cc-052c0b8db3d5.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/fis/changelog/5d5b37cd-9a38-4c26-a401-fa9173d65a2d.json>)
 
 ## In-scope entries (2)
 

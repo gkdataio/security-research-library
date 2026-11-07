@@ -97,20 +97,20 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Apple Security Bounty guidelines",
       "url": "https://security.apple.com/bounty/guidelines/",
       "publisher": "Apple",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
     {
-      "id": "assets-terms-2026-10-03",
+      "id": "assets-terms-2026-11-07",
       "title": "Apple Security Bounty terms",
       "url": "https://security.apple.com/terms-and-conditions/",
       "publisher": "Apple",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -138,10 +138,10 @@
   "asset_scope": {
     "capture_status": "policy_defined",
     "collection_method": "official_policy_page",
-    "verified_at": "2026-10-03T15:03:35Z",
+    "verified_at": "2026-11-07T14:48:59Z",
     "source_ids": [
-      "assets-scope-2026-10-03",
-      "assets-terms-2026-10-03"
+      "assets-scope-2026-11-07",
+      "assets-terms-2026-11-07"
     ],
     "in_scope": [
       {
@@ -150,7 +150,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -159,7 +159,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -168,7 +168,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -177,7 +177,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -186,7 +186,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -195,7 +195,7 @@
         "location": null,
         "group": "Current public release, including eligible beta",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -204,7 +204,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Standard configuration and applicable Apple-designed components."
       },
@@ -214,7 +214,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "No finite hostname inventory is published in these terms."
       }
@@ -226,7 +226,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-terms-2026-10-03"
+          "assets-terms-2026-11-07"
         ]
       },
       {
@@ -235,7 +235,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-terms-2026-10-03"
+          "assets-terms-2026-11-07"
         ]
       },
       {
@@ -244,7 +244,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-terms-2026-10-03"
+          "assets-terms-2026-11-07"
         ]
       }
     ],

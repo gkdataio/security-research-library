@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:46Z.
+**Capture time:** 2026-11-07T14:52:06Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,24 +18,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Not listed.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/imperva-mbb/changelog/82c0b7ed-46ed-4de8-8b89-98c6db7d6fce.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/imperva-mbb/changelog/787b5105-7414-4dff-9f28-75060a204ef8.json>)
 
-## In-scope entries (5)
-
-| Asset | Type | Location | Group | Qualification |
-| --- | --- | --- | --- | --- |
-| https://\*\.imperva\.com | website | https://\*\.imperva\.com | In Scope Targets | — |
-| https://\*\.cloudvector\.com/ | website | https://www\.cloudvector\.com/ | In Scope Targets | — |
-| https://\*\.incapsula\.com | api | https://\*\.incapsula\.com | In Scope Targets | — |
-| https://supportportal\.thalesgroup\.com | website | https://supportportal\.thalesgroup\.com | In Scope Targets | — |
-| PTaaS Reference | website | — | In Scope Targets | — |
-
-## Out-of-scope entries (2)
+## In-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| http://docs\.imperva\.com/ | website | — | Out of Scope | — |
-| http://docs-be\.imperva\.com/ | website | — | Out of Scope | — |
+| cpl\.thalesgroup\.com | website | https://cpl\.thalesgroup\.com | Thales Cyber Security Products | — |
+| www\.imperva\.com | website | https://www\.imperva\.com | Thales Cyber Security Products | — |
+| https://supportportal\.thalesgroup\.com | website | https://supportportal\.thalesgroup\.com | Thales Cyber Security Products | — |
+| Thales Cyber Security Products | collection | https://bugcrowd\.com/engagements/imperva-mbb | Thales Cyber Security Products | — |
+
+## Out-of-scope entries (0)
+
+No explicit asset rows were captured in this category. The policy may still impose exclusions.
 
 **Limits**
 

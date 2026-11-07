@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:02Z.
+**Capture time:** 2026-11-07T14:54:16Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/fanduel/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/fanduel/assets/download_csv.csv>)
 
-## In-scope entries (19)
+## In-scope entries (20)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -37,6 +37,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 1485539253 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6740879082 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1413721906 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| FanDuel Customer Support Sites | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

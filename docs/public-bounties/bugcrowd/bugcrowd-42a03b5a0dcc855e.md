@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:10Z.
+**Capture time:** 2026-11-07T14:50:47Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Cloud.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/auth0-okta/changelog/3491b799-94fd-4a62-8ce0-1d5eaa0e09c6.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/auth0-okta/changelog/50537787-c3c5-4230-af0e-d15f5af7fc70.json>)
 
-## In-scope entries (25)
+## In-scope entries (26)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -35,6 +35,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://api\.us1\.fga\.dev/ | api | https://api\.us1\.fga\.dev/ | Tier 1 Targets | — |
 | https://customers\.us1\.fga\.dev/ | api | https://customers\.us1\.fga\.dev/ | Tier 1 Targets | — |
 | https://play\.fga\.dev/ | website | https://play\.fga\.dev/ | Tier 1 Targets | — |
+| webtask\.run | website | — | Tier 1 Targets | — |
 | Auth0 SDK for Web \(Auth0\.js\) | other | https://github\.com/auth0/auth0\.js | SDK Targets | — |
 | Lock for Web \(lock\) | other | https://github\.com/auth0/lock | SDK Targets | — |
 | Auth0 Single Page App SDK \(auth0-spa-js\) | other | https://github\.com/auth0/auth0-spa-js | SDK Targets | — |
@@ -50,14 +51,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | jwt\.io | website | — | Tier 2 Targets | — |
 | auth0\.net | website | — | Tier 2 Targets | — |
 
-## Out-of-scope entries (12)
+## Out-of-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | auth0\.auth0\.com | website | — | Out of scope targets | — |
 | manage\.auth0\.com | website | — | Out of scope targets | — |
 | accounts\.auth0\.com | website | — | Out of scope targets | — |
-| webtask\.io | website | — | Out of scope targets | — |
 | phenix\.rocks | website | — | Out of scope targets | — |
 | Auth0 Docs \(including quickstarts\) | website | — | Out of scope targets | — |
 | sharelock\.io | website | — | Out of scope targets | — |

@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:48:45Z.
+**Capture time:** 2026-11-07T14:52:54Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/1win_com/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/1win_com/assets/download_csv.csv>)
 
-## In-scope entries (6)
+## In-scope entries (14)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -24,6 +24,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 1w\.cash | URL | — | — | Bounty eligible |
 | 1w\.run | URL | — | — | Bounty eligible |
 | Deposit/Withdraw | OTHER | — | — | Bounty eligible |
+| 1wintoken\.com | URL | — | — | Bounty eligible |
+| 1wtoken\.com | URL | — | — | Bounty eligible |
+| https://solscan\.io/account/GWvQinGBRa7ZUzhXY23MrLjdsx3KfRGxH8yXURBwrz1R | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://solscan\.io/account/sxzuA7TuRvjVbrXkJUgrYq2hfjVf3RFd8WFaSxt2rYm | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://solscan\.io/account/B2RFzpckwjtHXHMrPMKarg6Cj6xkSdT6mru4gJiJE87L | SMART\_CONTRACT | — | — | Bounty eligible |
+| 1win-partners\.com | URL | — | — | Bounty eligible |
+| 1win\.io | URL | — | — | Bounty eligible |
+| forum\.1win\.io | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

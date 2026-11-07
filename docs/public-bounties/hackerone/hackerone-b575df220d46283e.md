@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:22Z.
+**Capture time:** 2026-11-07T14:53:43Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/creditkarma/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/creditkarma/assets/download_csv.csv>)
 
 ## In-scope entries (14)
 

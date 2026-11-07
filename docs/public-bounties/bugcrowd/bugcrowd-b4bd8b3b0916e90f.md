@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-10-03T14:56:10Z.
+**Capture time:** 2026-11-07T15:03:08Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Computer Software.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/matlab-online/changelog/6b90f7f3-355b-406d-848e-3dfb0622f02a.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json>)
 
 ## In-scope entries (1)
 

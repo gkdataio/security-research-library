@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:56Z.
+**Capture time:** 2026-11-07T14:49:55Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/stonikbyte/changelog/4be6048f-9d65-4761-9655-7915ec388dac.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/stonikbyte/changelog/ee636743-6706-464c-b83d-bab8012bbbc4.json>)
 
-## In-scope entries (9)
+## In-scope entries (16)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -33,6 +33,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://marketplace\.atlassian\.com/apps/2077076462/wip-run-wip-aging-charts-for-scrum-kanban-scaled-agile?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/2077076462/wip-run-wip-aging-charts-for-scrum-kanban-scaled-agile?hosting=cloud&amp;tab=overview | In Scope | — |
 | https://marketplace\.atlassian\.com/apps/375826955/burndown-burnup-charts-with-forecast-for-agile-teams?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/375826955/burndown-burnup-charts-with-forecast-for-agile-teams?hosting=cloud&amp;tab=overview | In Scope | — |
 | Cumulative Flow Diagram - https://marketplace\.atlassian\.com/apps/1752044660/cumulative-flow-diagram-cfd-charts-for-agile-scrum-kanban?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/1752044660/cumulative-flow-diagram-cfd-charts-for-agile-scrum-kanban?hosting=cloud&amp;tab=overview | In Scope | — |
+| Team Wallboard for Agile, Scrum, Kanban &amp; ITSM Dashboards - https://marketplace\.atlassian\.com/apps/3937617820/team-wallboard-for-agile-scrum-kanban-itsm-dashboards?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/3937617820/team-wallboard-for-agile-scrum-kanban-itsm-dashboards?hosting=cloud&amp;tab=overview | In Scope | — |
+| Work Breakdown Structure, Link Hierarchy &amp; Dependency Tree - https://marketplace\.atlassian\.com/apps/4240011577/work-breakdown-structure-link-hierarchy-dependency-tree?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/4240011577/work-breakdown-structure-link-hierarchy-dependency-tree?hosting=cloud&amp;tab=overview | In Scope | — |
+| Countdown &amp; Regional Clock - https://marketplace\.atlassian\.com/apps/1157161318/countdown-regional-clock?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/1157161318/countdown-regional-clock?hosting=cloud&amp;tab=overview | In Scope | — |
+| Formula Cards, Gauge Charts, RAG Reports &amp; Custom KPIs - https://marketplace\.atlassian\.com/apps/2113139725/formula-cards-gauge-charts-rag-reports-custom-kpis?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/2113139725/formula-cards-gauge-charts-rag-reports-custom-kpis?hosting=cloud&amp;tab=overview | In Scope | — |
+| Cycle Time, Lead Time &amp; Time in Status Charts for Agile - https://marketplace\.atlassian\.com/apps/2194903109/cycle-time-lead-time-time-in-status-charts-for-agile?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/2194903109/cycle-time-lead-time-time-in-status-charts-for-agile?hosting=cloud&amp;tab=overview | In Scope | — |
+| Pivot Worklog Reports: Timesheets, Charts &amp; Heatmaps - https://marketplace\.atlassian\.com/apps/89496753/pivot-worklog-reports-timesheets-charts-heatmaps?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/89496753/pivot-worklog-reports-timesheets-charts-heatmaps?hosting=cloud&amp;tab=overview | In Scope | — |
+| Pivot Tables, Charts &amp; Heatmaps for Jira Agile Reporting - https://marketplace\.atlassian\.com/apps/1855294554/pivot-tables-charts-heatmaps-for-jira-agile-reporting?hosting=cloud&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/1855294554/pivot-tables-charts-heatmaps-for-jira-agile-reporting?hosting=cloud&amp;tab=overview | In Scope | — |
 
 ## Out-of-scope entries (1)
 

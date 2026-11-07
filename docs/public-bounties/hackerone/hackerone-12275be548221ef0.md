@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:56:08Z.
+**Capture time:** 2026-11-07T14:57:26Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/xiaomi/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/xiaomi/assets/download_csv.csv>)
 
 ## In-scope entries (66)
 
@@ -78,12 +78,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Other APK Assets | OTHER | — | — | Bounty eligible |
 | Mi/Redmi Phone | HARDWARE | — | — | Bounty eligible |
 | Mi Band | HARDWARE | — | — | Bounty eligible |
-| Mi Home Webcam | HARDWARE | — | — | Bounty eligible |
 | Mi Robot Vacuum | HARDWARE | — | — | Bounty eligible |
 | Mi TV Box | HARDWARE | — | — | Bounty eligible |
 | Mi Laser Projector | HARDWARE | — | — | Bounty eligible |
-| Mi TV | HARDWARE | — | — | Bounty eligible |
-| Mi Electric Scooter | HARDWARE | — | — | Bounty eligible |
+| Mi Home Webcam  | HARDWARE | — | — | Bounty eligible |
+| Mi TV  | HARDWARE | — | — | Bounty eligible |
+| Mi Electric Scooter  | HARDWARE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

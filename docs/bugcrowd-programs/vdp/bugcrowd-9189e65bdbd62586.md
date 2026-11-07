@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:09Z.
+**Capture time:** 2026-11-07T15:01:14Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/home-depot-vdp-pro/changelog/693fa647-f03e-4cd2-aa47-aaa66c3e3a9f.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/home-depot-vdp-pro/changelog/e84e26af-b06c-4e49-9ca3-df430167b970.json>)
 
 ## In-scope entries (3)
 

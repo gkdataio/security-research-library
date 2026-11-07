@@ -9,7 +9,7 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Measure | Count |
 | --- | ---: |
 | Separately reviewed policy records | 40 |
-| Reviewed policy in-scope / out-of-scope rows | 470 / 194 |
+| Reviewed policy in-scope / out-of-scope rows | 473 / 198 |
 | Discovery program-page listings | 1156 |
 | Discovery listings linked to reviewed policies | 33 |
 | Discovery listings with captured public scope tables | 785 |
@@ -17,39 +17,39 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Bugcrowd public listings | 516 |
 | Bugcrowd published scope captured | 507 |
 | Bugcrowd scope gaps | 9 |
-| Bugcrowd in-scope / out-of-scope rows | 5621 / 1394 |
+| Bugcrowd in-scope / out-of-scope rows | 5560 / 1434 |
 | Cross-platform bounty candidates | 627 |
 | Bounty published scope captured | 591 |
 | Bounty scope gaps | 36 |
-| Bounty in-scope / out-of-scope rows | 9098 / 3112 |
+| Bounty in-scope / out-of-scope rows | 9184 / 3185 |
 | Overlapping Bugcrowd bounty listings | 293 |
 | Distinct programs across both catalogs | 850 |
 | Distinct programs with captured scope rows | 808 |
 | Distinct unresolved scope gaps | 42 |
-| Distinct in-scope rows | 11758 |
-| Distinct out-of-scope rows | 3414 |
+| Distinct in-scope rows | 11815 |
+| Distinct out-of-scope rows | 3490 |
 | Repeated source rows collapsed | 77 |
 
 The 293 overlapping Bugcrowd bounty pages are counted once in the distinct totals. The 40 separately reviewed policies include 23 bounty-catalog records; they are not added again. The October 3 Bugcrowd snapshot is paired with the earlier HackerOne and Intigriti directory observations.
 
 ## Unresolved gaps
 
-Official pages showed 18 preview login gates, 12 terms login gates, 7 empty public tables, 3 JavaScript shells without an independently visible asset list, and 2 HTTP 403 responses.
+Official pages showed 18 preview login gates, 12 terms login gates, 10 empty public tables, 0 JavaScript shells without an independently visible asset list, and 2 HTTP 403 responses.
 
 | Program | Platform | Status | Official policy review |
 | --- | --- | --- | --- |
-| [Arlo Kudos Rewards](<bugcrowd-programs/vdp/bugcrowd-1ee3d56124cf736f.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/arlokudos>) |
+| [Arlo Kudos Rewards](<bugcrowd-programs/vdp/bugcrowd-1ee3d56124cf736f.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/arlokudos/changelog/3d6114ec-05df-466f-a3c5-0e06a9bd942d.json>) |
 | [Demo-EU-admin-PenTest-Max-4](<public-bounties/bugcrowd/bugcrowd-eef3c6de790e5363.md>) | Bugcrowd | fetch failed | [http 403](<https://eu.bugcrowd.net/engagements/demo-eu-admin-pentest-max-4>) |
 | [Demo-EU-admin-Test](<public-bounties/bugcrowd/bugcrowd-128c3420fe4d74c6.md>) | Bugcrowd | fetch failed | [http 403](<https://eu.bugcrowd.net/engagements/Demo-EU-admin-Test>) |
-| [Dyson Demo VDP Engagement](<bugcrowd-programs/vdp/bugcrowd-2ba4f933d6de7ca7.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/dyson-demo-vdp-engagement>) |
+| [Dyson Demo VDP Engagement](<bugcrowd-programs/vdp/bugcrowd-2ba4f933d6de7ca7.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/dyson-demo-vdp-engagement/changelog/96267c44-4fde-4575-a2ce-5fd89bb24596.json>) |
 | [EU-Automation-Test-Regression-Engagement1-B](<public-bounties/bugcrowd/bugcrowd-0deaf756ac57137f.md>) | Bugcrowd | no published assets | [empty published table](<https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b>) |
-| [Office of Personnel Management - Vulnerability Disclosure Program](<bugcrowd-programs/vdp/bugcrowd-ff6465c6cc35cf62.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/opm-vdp>) |
-| [Progress Software – Progress Data Cloud](<bugcrowd-programs/vdp/bugcrowd-ee194a4857e12397.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/progressdatacloud-vdp-pro>) |
-| [Stickman 2](<bugcrowd-programs/vdp/bugcrowd-3c7ab64d8b64c31f.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/stickman2>) |
-| [test engagement](<bugcrowd-programs/vdp/bugcrowd-6df51f6ee18c7b08.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/testing-vdp-pro>) |
-| [CoinMate\.io](<public-bounties/hackerone/hackerone-506fc9236b351984.md>) | HackerOne | no published assets | [javascript required](<https://hackerone.com/coinmate/policy_scopes>) |
-| [Django](<public-bounties/hackerone/hackerone-be10e8ab9c7750da.md>) | HackerOne | no published assets | [javascript required](<https://hackerone.com/django/policy_scopes>) |
-| [Phabricator](<public-bounties/hackerone/hackerone-0402fac19fe5f16c.md>) | HackerOne | no published assets | [javascript required](<https://hackerone.com/phabricator/policy_scopes>) |
+| [Office of Personnel Management - Vulnerability Disclosure Program](<bugcrowd-programs/vdp/bugcrowd-ff6465c6cc35cf62.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/opm-vdp/changelog/2ed64b94-6bb3-4d9b-b03b-af5d0d091095.json>) |
+| [Progress Software – Progress Data Cloud](<bugcrowd-programs/vdp/bugcrowd-ee194a4857e12397.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/progressdatacloud-vdp-pro/changelog/e39ebfc2-5ea6-4be5-95db-b0087697d611.json>) |
+| [Stickman 2](<bugcrowd-programs/vdp/bugcrowd-3c7ab64d8b64c31f.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/stickman2/changelog/d97caf37-4781-4d98-af1e-d102f9b3dd95.json>) |
+| [test engagement](<bugcrowd-programs/vdp/bugcrowd-6df51f6ee18c7b08.md>) | Bugcrowd | no published assets | [empty published table](<https://bugcrowd.com/engagements/testing-vdp-pro/changelog/6202eb72-98ec-4580-b241-6d475adae7de.json>) |
+| [CoinMate\.io](<public-bounties/hackerone/hackerone-506fc9236b351984.md>) | HackerOne | no published assets | [empty published table](<https://hackerone.com/teams/coinmate/assets/download_csv.csv>) |
+| [Django](<public-bounties/hackerone/hackerone-be10e8ab9c7750da.md>) | HackerOne | no published assets | [empty published table](<https://hackerone.com/teams/django/assets/download_csv.csv>) |
+| [Phabricator](<public-bounties/hackerone/hackerone-0402fac19fe5f16c.md>) | HackerOne | no published assets | [empty published table](<https://hackerone.com/teams/phabricator/assets/download_csv.csv>) |
 | [12Build Bug Bounty Program](<public-bounties/intigriti/intigriti-f80b2fe8a24e9060.md>) | Intigriti | preview only | [preview login gate](<https://app.intigriti.com/programs/onetwobuild/12build/preview/detail>) |
 | [Allekabels](<public-bounties/intigriti/intigriti-0c5bec9f65e46eb9.md>) | Intigriti | preview only | [preview login gate](<https://app.intigriti.com/programs/rpip/allekabels/preview/detail>) |
 | [Belfius](<public-bounties/intigriti/intigriti-aa34891c6a4d965a.md>) | Intigriti | terms only | [terms login gate](<https://app.intigriti.com/programs/belfius/belfius/tac/detail>) |

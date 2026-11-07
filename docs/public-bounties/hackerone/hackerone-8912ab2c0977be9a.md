@@ -10,40 +10,100 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:55:26Z.
+**Capture time:** 2026-11-07T14:56:43Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/twilio/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/twilio/assets/download_csv.csv>)
 
-## In-scope entries (24)
+## In-scope entries (84)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.sip\.\*\.twilio\.com | WILDCARD | — | — | Bounty eligible |
 | static\*\.twilio\.com | WILDCARD | — | — | Bounty eligible |
-| http://tsock\.us1\.twilio\.com | URL | — | — | Bounty eligible |
-| https://www\.twilio\.com/login?g=%2fconsole%3f&amp;t=2b1c98334b25c1a785ef15b6556396290e3c704a9b57fc40687cbccd79c46a8c | URL | — | — | Bounty eligible |
-| http://twilio\.com/blog | URL | — | — | Bounty eligible |
-| http://help\.twilio\.com | URL | — | — | Bounty eligible |
 | sendgrid\.com | URL | — | — | Bounty eligible |
 | app\.sendgrid\.com | URL | — | — | Bounty eligible |
 | signup\.sendgrid\.com | URL | — | — | Bounty eligible |
-| api\.sendgrid\.com | URL | — | — | Bounty eligible |
 | mc\.sendgrid\.com | URL | — | — | Bounty eligible |
 | app\.segment\.com | URL | — | — | Bounty eligible |
-| https://segment\.com/docs/connections/sources/ | URL | — | — | Bounty eligible |
-| https://www\.twilio\.com/en-us/blog/get-started-webrtc | OTHER | — | — | Bounty eligible |
-| https://www\.twilio\.com/docs/libraries | OTHER | — | — | Bounty eligible |
-| smtp\.sendgrid\.net | OTHER | — | — | Bounty eligible |
 | Any host/web property verified to be owned by Twilio et al\. | OTHER | — | — | Bounty eligible |
-| https://www\.authy\.com/download/ | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://www\.authy\.com/download/ | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | api\.twilio\.com | API | — | — | Bounty eligible |
-| Twilio APIs | API | — | — | Bounty eligible |
-| https://www\.twilio\.com/docs/verify/api | API | — | — | Bounty eligible |
-| https://www\.twilio\.com/docs/authy/api | API | — | — | Bounty eligible |
 | api\.segment\.io | API | — | — | Bounty eligible |
+| api\.stytch\.com | API | — | — | Bounty eligible |
+| blog\.twilio\.com | URL | — | — | Bounty eligible |
+| console\.twilio\.com | URL | — | — | Bounty eligible |
+| help\.twilio\.com | URL | — | — | Bounty eligible |
+| tsock\.us1\.twilio\.com | URL | — | — | Bounty eligible |
+| twilio\.com | URL | — | — | Bounty eligible |
+| https://stytch\.com/blog | URL | — | — | Bounty eligible |
+| https://stytch\.com/dashboard | URL | — | — | Bounty eligible |
+| accounts\.twilio\.com | API | — | — | Bounty eligible |
+| api\.authy\.com | API | — | — | Bounty eligible |
+| api\.segmentapis\.com | API | — | — | Bounty eligible |
+| api\.sendgrid\.com | API | — | — | Bounty eligible |
+| assistants\.twilio\.com | API | — | — | Bounty eligible |
+| bulkexports\.twilio\.com | API | — | — | Bounty eligible |
+| client\.dev | URL | — | — | Bounty eligible |
+| com\.authy | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.authy\.authy | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| connectedapps\.dev | URL | — | — | Bounty eligible |
+| content\.twilio\.com | API | — | — | Bounty eligible |
+| conversations\.twilio\.com | API | — | — | Bounty eligible |
+| events\.twilio\.com | API | — | — | Bounty eligible |
+| flex-api\.twilio\.com | API | — | — | Bounty eligible |
+| frontline-api\.twilio\.com | API | — | — | Bounty eligible |
+| github\.com/segmentio | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/sendgrid | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/is-agent | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/samlshield | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-android | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-browser | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-dotnet | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-go | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-ios | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-ios-dfp | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-java | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-management-go | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-management-python | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-mobile | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-node | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-php | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-python | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-ruby | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/stytch-rust | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/stytchauth/terraform-provider-stytch | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/twilio | SOURCE\_CODE | — | — | Bounty eligible |
+| github\.com/twilio-labs | SOURCE\_CODE | — | — | Bounty eligible |
+| iam\.twilio\.com | API | — | — | Bounty eligible |
+| insights\.twilio\.com | API | — | — | Bounty eligible |
+| intelligence\.twilio\.com | API | — | — | Bounty eligible |
+| isagent\.dev | URL | — | — | Bounty eligible |
+| knowledge\.twilio\.com | API | — | — | Bounty eligible |
+| lookups\.twilio\.com | API | — | — | Bounty eligible |
+| management\.stytch\.com | API | — | — | Bounty eligible |
+| marketplace\.twilio\.com | API | — | — | Bounty eligible |
+| memory\.twilio\.com | API | — | — | Bounty eligible |
+| messaging\.twilio\.com | API | — | — | Bounty eligible |
+| monitor\.twilio\.com | API | — | — | Bounty eligible |
+| notify\.twilio\.com | API | — | — | Bounty eligible |
+| numbers\.twilio\.com | API | — | — | Bounty eligible |
+| oauth\.twilio\.com | API | — | — | Bounty eligible |
+| platform\.segmentapis\.com | API | — | — | Bounty eligible |
+| preview\.twilio\.com | API | — | — | Bounty eligible |
+| pricing\.twilio\.com | API | — | — | Bounty eligible |
+| profile\.segment\.com | API | — | — | Bounty eligible |
+| proxy\.twilio\.com | API | — | — | Bounty eligible |
+| routes\.twilio\.com | API | — | — | Bounty eligible |
+| smtp\.sendgrid\.net | URL | — | — | Bounty eligible |
+| serverless\.twilio\.com | API | — | — | Bounty eligible |
+| studio\.twilio\.com | API | — | — | Bounty eligible |
+| sync\.twilio\.com | API | — | — | Bounty eligible |
+| taskrouter\.twilio\.com | API | — | — | Bounty eligible |
+| telemetry\.stytch\.com | API | — | — | Bounty eligible |
+| test\.stytch\.com | API | — | — | Bounty eligible |
+| trunking\.twilio\.com | API | — | — | Bounty eligible |
+| 1console\.twilio\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (32)
+## Out-of-scope entries (28)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -53,7 +113,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | support\.twilio\.com | URL | — | — | Not bounty eligible |
 | surveys\.twilio\.com | URL | — | — | Not bounty eligible |
 | talks\.twilio\.com | URL | — | — | Not bounty eligible |
-| community\.segment\.com | URL | — | — | Not bounty eligible |
 | status\.segment\.com | URL | — | — | Not bounty eligible |
 | webinars\.segment\.com | URL | — | — | Not bounty eligible |
 | status\.sendgrid\.com | URL | — | — | Not bounty eligible |
@@ -64,21 +123,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | twil\.io | URL | — | — | Not bounty eligible |
 | twiliotraining\.com | URL | — | — | Not bounty eligible |
 | zipwhip\.com | URL | — | — | Not bounty eligible |
-| http://segment\.com/contact | URL | — | — | Not bounty eligible |
-| http://segment\.com/jobs | URL | — | — | Not bounty eligible |
-| http://twilio\.com/en-us/company/jobs | URL | — | — | Not bounty eligible |
-| http://twilio\.com/labs | URL | — | — | Not bounty eligible |
-| http://apjevents\.twilio\.com | URL | — | — | Not bounty eligible |
-| http://events\.cdpweek\.com | URL | — | — | Not bounty eligible |
 | jobs\.twilio\.com | URL | — | — | Not bounty eligible |
-| All Twilio acquisitions until explicitly noted under the in-scope targets | OTHER | — | — | Not bounty eligible |
-| Ytica and its assets | OTHER | — | — | Not bounty eligible |
-| Electric Imp and its assets | OTHER | — | — | Not bounty eligible |
-| TwimlBins | OTHER | — | — | Not bounty eligible |
-| All Kurento domains | OTHER | — | — | Not bounty eligible |
-| Twilio Quest | OTHER | — | — | Not bounty eligible |
-| Twilio Wireless | OTHER | — | — | Not bounty eligible |
-| Third-party services | OTHER | — | — | Not bounty eligible |
+| apjevents\.twilio\.com | URL | — | — | Not bounty eligible |
+| portal\.partnerships\.twilio\.com | URL | — | — | Not bounty eligible |
+| partners\.segment\.com | URL | — | — | Not bounty eligible |
+| click\.sendgrid\.com | URL | — | — | Not bounty eligible |
+| js\.stytch\.com | URL | — | — | Not bounty eligible |
+| status\.stytch\.com | URL | — | — | Not bounty eligible |
+| web\.stytch\.com | URL | — | — | Not bounty eligible |
+| cdpweek\.com | URL | — | — | Not bounty eligible |
+| All Twilio acquisitions unless explicitly listed as in-scope | OTHER | — | — | Not bounty eligible |
+| chatagotchi\.app | URL | — | — | Not bounty eligible |
+| github\.com/stytchauth/sqx | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**
 

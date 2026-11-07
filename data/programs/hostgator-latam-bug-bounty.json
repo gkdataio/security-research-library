@@ -102,11 +102,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Published Bugcrowd scope groups",
       "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json",
       "publisher": "Newfold Digital / HostGator LATAM",
-      "retrieved_at": "2026-10-03T14:56:05Z",
+      "retrieved_at": "2026-11-07T15:03:28Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -127,9 +127,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-10-03T14:56:05Z",
+    "verified_at": "2026-11-07T15:03:28Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "assets-scope-2026-11-07"
     ],
     "in_scope": [
       {
@@ -138,7 +138,7 @@
         "location": "https://www.hostgator.com.br/",
         "group": "In Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -147,7 +147,7 @@
         "location": "https://financeiro.hostgator.com.br",
         "group": "In Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       }
     ],
@@ -158,7 +158,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -167,7 +167,7 @@
         "location": "https://www.academy.hostgator.com",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -176,7 +176,7 @@
         "location": "https://www.hostgator.com.br",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -185,7 +185,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       }
     ],

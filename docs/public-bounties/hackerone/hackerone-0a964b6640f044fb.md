@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:42Z.
+**Capture time:** 2026-11-07T14:55:11Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/mercadolibre/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/mercadolibre/assets/download_csv.csv>)
 
-## In-scope entries (76)
+## In-scope entries (78)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -79,7 +79,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Crypto | OTHER | — | — | Bounty eligible |
 | Tier 3 | OTHER | — | — | Bounty eligible |
 | Wonder | OTHER | — | — | Bounty eligible |
-| Leaked Credentials | OTHER | — | — | Bounty eligible |
 | Point Smart | HARDWARE | — | — | Bounty eligible |
 | com\.mercadopago\.wallet | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.mercadolibre | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
@@ -94,6 +93,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | mercadolibreexperience\.com\.\* | WILDCARD | — | — | Not bounty eligible |
 | mercadoenvios\.com\.ve | URL | — | — | Not bounty eligible |
 | www\.ipbooster\.com | URL | — | — | Not bounty eligible |
+| mercadolivreexperience\.mercadolivre\.com\.br | URL | — | — | Not bounty eligible |
+| \*\.modoblack\.mercadolivre\.com\.br | URL | — | — | Not bounty eligible |
+| fullbarhomologa\.modoblackfullbar\.com\.br | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (9)
 

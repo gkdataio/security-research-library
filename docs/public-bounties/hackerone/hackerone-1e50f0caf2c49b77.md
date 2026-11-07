@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:44Z.
+**Capture time:** 2026-11-07T14:54:01Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/early_warning/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/early_warning/assets/download_csv.csv>)
 
-## In-scope entries (9)
+## In-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -27,6 +27,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ews-fusion\.my\.site\.com | URL | — | — | Bounty eligible |
 | zelleservice\.my\.salesforce\.com | URL | — | — | Bounty eligible |
 | www\.certos\.com | URL | — | — | Bounty eligible |
+| https://accountinfo\.earlywarning\.com | URL | — | — | Bounty eligible |
+| accountinfodirect\.earlywarning\.com | URL | — | — | Bounty eligible |
+| accountinfodirect-snd\.earlywarning\.com | URL | — | — | Bounty eligible |
+| https://aoa-ws\.earlywarning\.com/aoainquiryservice/services/aoainquiryservice | URL | — | — | Bounty eligible |
+| https://aoa-ws-direct\.earlywarning\.com/aoainquiryservice/services/aoainquiryservice | URL | — | — | Bounty eligible |
+| https://aoa-ws-direct-snd\.earlywarning\.com/aoainquiryservice/services/aoainquiryservice | URL | — | — | Bounty eligible |
+| inquirydirect\.earlywarning\.com | URL | — | — | Bounty eligible |
+| aoa-ws-fis\.earlywarning\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (16)
 

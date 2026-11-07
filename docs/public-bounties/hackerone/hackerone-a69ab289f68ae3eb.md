@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:53Z.
+**Capture time:** 2026-11-07T14:55:14Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/mongodb/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/mongodb/assets/download_csv.csv>)
 
 ## In-scope entries (30)
 
@@ -40,7 +40,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Atlas IAM | OTHER | — | — | Bounty eligible |
 | Atlas Data Federation | OTHER | — | — | Bounty eligible |
 | Atlas Payments/Billing | OTHER | — | — | Bounty eligible |
-| MongoDB Atlas Agent Engine | OTHER | — | — | Bounty eligible |
 | MongoDB Atlas Agent Engine CLI and First Party Libraries | OTHER | — | — | Bounty eligible |
 | Atlas Infinite | OTHER | — | — | Bounty eligible |
 | Drivers | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
@@ -48,6 +47,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | University Platform | OTHER | — | — | Not bounty eligible |
 | MongoDB Toolchain | OTHER | — | — | Not bounty eligible |
 | App Services/Realm | OTHER | — | — | Not bounty eligible |
+| MongoDB Atlas Agent Engine  | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

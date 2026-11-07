@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:19Z.
+**Capture time:** 2026-11-07T14:49:10Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Retail.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/maffashion/changelog/17e7a8a3-0049-417f-956e-6f7ae42679d0.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/maffashion/changelog/51694445-9568-4c21-8e57-ec7153185035.json>)
 
 ## In-scope entries (13)
 
@@ -36,7 +36,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://www\.shiseido\.me/ | website | https://www\.shiseido\.me/ | In Scope Targets | — |
 | lego\.me | website | — | In Scope Targets | — |
 | psychobunny\.me | website | — | In Scope Targets | — |
-| fashion4less\.me | website | — | In Scope Targets | — |
+| www\.pacsun\.me | website | https://www\.pacsun\.me/ | In Scope Targets | — |
 
 ## Out-of-scope entries (1)
 

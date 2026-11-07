@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:04Z.
+**Capture time:** 2026-11-07T14:51:37Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** eCommerce.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/klaviyo-og/changelog/b9a9ae9f-653c-45bd-8624-34935291c360.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/klaviyo-og/changelog/61e444b6-8046-4ab2-b0c5-8bdfff74e7c9.json>)
 
 ## In-scope entries (51)
 

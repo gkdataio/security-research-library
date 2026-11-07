@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:52Z.
+**Capture time:** 2026-11-07T14:55:38Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Electronics.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/irobot/changelog/95b563b0-74ef-4336-b844-625172a41fed.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/irobot/changelog/77d61114-71a7-4754-ae41-a9a3fd372e9d.json>)
 
-## In-scope entries (28)
+## In-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -36,6 +36,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://zuora-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/notifications/raas | api | https://zuora-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/notifications/raas | iRobot Cloud | — |
 | https://aspen-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/robots/\{robot\_id\}/entitlements | api | https://aspen-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/robots/\{robot\_id\}/entitlements | iRobot Cloud | — |
 | https://aspen-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/users/\{user\_id\}/entitlements | api | https://aspen-ecommerce-prod\.iot\.irobotapi\.com/dev/v1/ecommerce/users/\{user\_id\}/entitlements | iRobot Cloud | — |
+
+## Out-of-scope entries (16)
+
+| Asset | Type | Location | Group | Qualification |
+| --- | --- | --- | --- | --- |
 | https://www\.irobot\.com | website | https://www\.irobot\.com | iRobot Commercial Web Properties | — |
 | https://www\.irobot\.ca/en\_CA | website | https://www\.irobot\.ca/en\_CA | iRobot Commercial Web Properties | — |
 | https://www\.irobot\.ca/fr\_CA/home | website | https://www\.irobot\.ca/fr\_CA/home | iRobot Commercial Web Properties | — |
@@ -52,10 +57,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://media\.irobot\.com | website | https://media\.irobot\.com | All other official iRobot Web Applications | — |
 | https://investor\.irobot\.com | website | https://investor\.irobot\.com | All other official iRobot Web Applications | — |
 | https://answers\.irobot\.com | website | https://answers\.irobot\.com | All other official iRobot Web Applications | — |
-
-## Out-of-scope entries (0)
-
-No explicit asset rows were captured in this category. The policy may still impose exclusions.
 
 **Limits**
 

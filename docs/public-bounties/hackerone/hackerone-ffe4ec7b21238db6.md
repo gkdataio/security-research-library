@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:16Z.
+**Capture time:** 2026-11-07T14:55:28Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/notion/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/notion/assets/download_csv.csv>)
 
-## In-scope entries (12)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | notion\.id | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | Notion Desktop App | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Notion AI | AI\_MODEL | — | — | Bounty eligible |
+| Notion MCP | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

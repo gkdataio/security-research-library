@@ -101,11 +101,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Published Bugcrowd scope groups",
       "url": "https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json",
       "publisher": "OneTrust",
-      "retrieved_at": "2026-10-03T14:56:19Z",
+      "retrieved_at": "2026-11-07T15:03:32Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -128,9 +128,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-10-03T14:56:19Z",
+    "verified_at": "2026-11-07T15:03:32Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "assets-scope-2026-11-07"
     ],
     "in_scope": [
       {
@@ -139,7 +139,7 @@
         "location": "https://pentest-app.onetrust.com/",
         "group": "In-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       }
     ],
@@ -150,7 +150,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -159,7 +159,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -168,7 +168,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -177,7 +177,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -186,7 +186,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -195,7 +195,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -204,7 +204,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -213,7 +213,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -222,7 +222,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -231,7 +231,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -240,7 +240,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -249,7 +249,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -258,7 +258,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -267,7 +267,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -276,7 +276,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -285,7 +285,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -294,7 +294,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -303,7 +303,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -312,7 +312,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -321,7 +321,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -330,7 +330,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -339,7 +339,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -348,7 +348,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -357,7 +357,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -366,7 +366,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -375,7 +375,7 @@
         "location": null,
         "group": "Out-of-Scope Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       }
     ],

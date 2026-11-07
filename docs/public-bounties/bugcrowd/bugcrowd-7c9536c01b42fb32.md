@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:45Z.
+**Capture time:** 2026-11-07T14:52:56Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Government.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/68e42953-6e69-443a-b56f-7f1f33a636ed.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/d05b2569-c1ad-4c1e-a76f-1cd0363e4b9a.json>)
 
 ## In-scope entries (25)
 
@@ -50,16 +50,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | City of Vienna Google Play Apps | android | https://play\.google\.com/store/apps/developer?id=Stadt\+Wien&amp;hl=de\_AT | In scope | — |
 | City of Vienna iOS Apps | ios | https://apps\.apple\.com/at/developer/stadt-wien/id858505368 | In scope | — |
 
-## Out-of-scope entries (7)
+## Out-of-scope entries (9)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://www\.wien\.gv\.at/advuew/\* | website | — | Out of scope | — |
+| https://\*/advuew/\* | website | — | Out of scope | — |
 | https://\*/geoserverneuogd/\* \(Multiple Domains\) | website | — | Out of scope | — |
 | https://\*/agssoe/\* \(Multiple Domains\) | website | — | Out of scope | — |
+| https://\*/agsinspire/\* | website | — | Out of scope | — |
+| https://\*/arcgis/\* | website | — | Out of scope | — |
 | geschichtewiki\.wien\.gv\.at | website | https://www\.geschichtewiki\.wien\.gv\.at | Out of scope | — |
 | https://bi\.bildung-wien\.gv\.at/\* | website | — | Out of scope | — |
-| https://www\.wien\.gv\.at/umfrage/\* | website | — | Out of scope | — |
+| https://\*/umfrage/\* | website | — | Out of scope | — |
 | Public Network / Veranstaltungsnetz | other | — | Out of scope | — |
 
 **Limits**

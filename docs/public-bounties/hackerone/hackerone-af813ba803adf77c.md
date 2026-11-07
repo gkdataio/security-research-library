@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:13Z.
+**Capture time:** 2026-11-07T14:53:40Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/coinbase/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/coinbase/assets/download_csv.csv>)
 
 ## In-scope entries (16)
 
@@ -35,13 +35,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/coinbase/cb-mpc-go | SOURCE\_CODE | — | — | Not bounty eligible |
 | Other | OTHER | — | — | Not bounty eligible |
 
-## Out-of-scope entries (3)
+## Out-of-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | status\.\*\.coinbase\.com | WILDCARD | — | — | Not bounty eligible |
 | status\.coinbase\.com | URL | — | — | Not bounty eligible |
 | N/A - Not Coinbase owned or operated | OTHER | — | — | Not bounty eligible |
+| https://github\.com/x402-foundation/ | SOURCE\_CODE | — | — | Not bounty eligible |
+| https://github\.com/coinbase/x402 | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:55:37Z.
+**Capture time:** 2026-11-07T14:56:51Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/valve/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/valve/assets/download_csv.csv>)
 
 ## In-scope entries (21)
 

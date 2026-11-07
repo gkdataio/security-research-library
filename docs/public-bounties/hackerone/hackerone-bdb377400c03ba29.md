@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:57Z.
+**Capture time:** 2026-11-07T14:54:47Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/inspectorio/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/inspectorio/assets/download_csv.csv>)
 
 ## In-scope entries (11)
 
@@ -26,9 +26,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | docuflow\.stg\.inspectorio\.com | URL | — | — | Bounty eligible |
 | id\.stg\.inspectorio\.com | URL | — | — | Bounty eligible |
 | https://testflight\.apple\.com/join/vwFxXX7t | TESTFLIGHT | — | — | Bounty eligible |
-| https://app\.bitrise\.io/app/51a95edaab331ec5/installable-artifacts/e5213e1a814bf0ba/public-install-page/bed0d33f048271d6828c5a4a979ecc96 | OTHER\_APK | — | — | Bounty eligible |
 | files-stg\.inspectorio\.com | URL | — | — | Not bounty eligible |
 | https://collabora\.stg\.inspectorio\.com | URL | — | — | Not bounty eligible |
+| https://app\.bitrise\.io/app/51a95edaab331ec5/installable-artifacts/48548bd7878361ab/public-install-page/82f78f6dddbebab09e2f4ac3c0081984 | OTHER\_APK | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

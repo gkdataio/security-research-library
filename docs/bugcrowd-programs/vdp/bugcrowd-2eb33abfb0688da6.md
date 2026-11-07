@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:11Z.
+**Capture time:** 2026-11-07T14:58:53Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/connecteam-vdp-pro/changelog/a2f91c15-8569-458d-9ee3-67171719fffb.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/connecteam-vdp-pro/changelog/d0ec2e24-3fe6-4e10-a3d3-b654b032b3d6.json>)
 
 ## In-scope entries (14)
 

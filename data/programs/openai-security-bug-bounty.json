@@ -79,11 +79,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Published Bugcrowd scope groups",
-      "url": "https://bugcrowd.com/engagements/openai/changelog/e76106d3-3796-492b-9997-569446b51b72.json",
+      "url": "https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json",
       "publisher": "OpenAI",
-      "retrieved_at": "2026-10-03T14:56:20Z",
+      "retrieved_at": "2026-11-07T15:03:05Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -100,72 +100,63 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-10-03T14:56:20Z",
+    "verified_at": "2026-11-07T15:03:05Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "assets-scope-2026-11-07"
     ],
     "in_scope": [
       {
-        "name": "api.openai.com",
-        "asset_type": "api",
-        "location": "https://api.openai.com",
-        "group": "API Targets",
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "ChatGPT",
+        "name": "ChatGPT Web",
         "asset_type": "website",
-        "location": "https://chat.openai.com",
-        "group": "ChatGPT",
+        "location": "https://chatgpt.com",
+        "group": "ChatGPT Services",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
         "name": "ChatGPT Plugins",
         "asset_type": "api",
         "location": "https://chat.openai.com",
-        "group": "ChatGPT",
+        "group": "ChatGPT Services",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
-        "name": "Third Party Targets",
-        "asset_type": "website",
-        "location": null,
-        "group": "Third Party Corporate Targets",
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "OpenAI API Keys",
+        "name": "api.openai.com",
         "asset_type": "api",
-        "location": null,
-        "group": "OpenAI API Keys",
+        "location": "https://api.openai.com",
+        "group": "API Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
-        "name": "https://openai.org",
+        "name": "Developer Platform Playground",
         "asset_type": "website",
-        "location": "https://*.openai.org",
-        "group": "OpenAI Research Org",
+        "location": "https://platform.openai.com/playground",
+        "group": "API Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
-        "name": "*.openai.org",
-        "asset_type": "api",
-        "location": "https://*.openai.org",
-        "group": "OpenAI Research Org",
+        "name": "ChatGPT Desktop",
+        "asset_type": "other",
+        "location": null,
+        "group": "ChatGPT Desktop & Codex CLI",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
+        ]
+      },
+      {
+        "name": "Codex CLI",
+        "asset_type": "other",
+        "location": null,
+        "group": "ChatGPT Desktop & Codex CLI",
+        "source_ids": [
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -174,25 +165,25 @@
         "location": "https://openai.com/",
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
+        ]
+      },
+      {
+        "name": "OpenAi Research",
+        "asset_type": "website",
+        "location": "https://*.openai.org",
+        "group": "Other OpenAI Targets",
+        "source_ids": [
+          "assets-scope-2026-11-07"
         ]
       },
       {
         "name": "*.openai.com",
-        "asset_type": "other",
+        "asset_type": "website",
         "location": null,
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "Developer Platform Playground",
-        "asset_type": "website",
-        "location": "https://platform.openai.com/playground",
-        "group": "Other OpenAI Targets",
-        "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -201,16 +192,25 @@
         "location": null,
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
-        "name": "Codex Desktop",
-        "asset_type": "other",
+        "name": "Third Party Targets",
+        "asset_type": "website",
         "location": null,
-        "group": "Codex",
+        "group": "Third Party Corporate Targets",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
+        ]
+      },
+      {
+        "name": "OpenAI API Keys",
+        "asset_type": "api",
+        "location": null,
+        "group": "OpenAI API Keys",
+        "source_ids": [
+          "assets-scope-2026-11-07"
         ]
       }
     ],

@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-10-03T14:59:10Z.
+**Capture time:** 2026-11-07T14:53:12Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/arc-bbp/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/arc-bbp/assets/download_csv.csv>)
 
 ## In-scope entries (6)
 
@@ -35,4 +35,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.

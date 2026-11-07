@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:45:51Z.
+**Capture time:** 2026-11-07T14:58:22Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,37 +18,37 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/gapinc/changelog/cceb97f9-3e7d-4114-a123-bbd4d2debbfe.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/gapinc/changelog/5a57409c-6360-4f88-b1e2-6383a3b7b024.json>)
 
 ## In-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.gap\.com | website | https://gap\.com | In Scope Web Targets  | — |
-| https://gap\.com/shopping-bag | website | https://gap\.com/shopping-bag | In Scope Web Targets  | — |
-| https://gap\.com/checkout | website | https://gap\.com/checkout | In Scope Web Targets  | — |
-| https://secure-www\.gap\.com/checkout/place-order/ | website | https://secure-www\.gap\.com/checkout/place-order/ | In Scope Web Targets  | — |
-| https://secure-www\.gap\.com/checkout/place-order/xapi/update-payment-method-action | website | — | In Scope Web Targets  | — |
-| https://secure-www\.gap\.com/checkout/place-order/xapi/place-order-action | website | — | In Scope Web Targets  | — |
-| https://api\.gap\.com/credit\_cards/v1/?external\_customer\_id= | website | — | In Scope Web Targets  | — |
-| https://api\.gap\.com/ | api | — | In Scope Web Targets  | — |
-| https://secure-www\.gap\.com | website | — | In Scope Web Targets  | — |
-| Gap \(Android\) | android | https://play\.google\.com/store/apps/details?id=com\.skava\.hybridapp\.gap&amp;hl=en\_US&amp;gl=US | In Scope Mobile Targets  | — |
-| Gap \(iOS\) | ios | https://apps\.apple\.com/us/app/gap/id326347260 | In Scope Mobile Targets  | — |
+| ██████████ | website | — | █████████████████████ | — |
+| ████████████████████████████ | website | — | █████████████████████ | — |
+| ████████████████████████ | website | — | █████████████████████ | — |
+| ████████████████████████████████████████████████ | website | — | █████████████████████ | — |
+| █████████████████████████████████████████████████████████████████████████████████ | website | — | █████████████████████ | — |
+| ███████████████████████████████████████████████████████████████████████ | website | — | █████████████████████ | — |
+| ██████████████████████████████████████████████████████████ | website | — | █████████████████████ | — |
+| ████████████████████ | api | — | █████████████████████ | — |
+| ██████████████████████████ | website | — | █████████████████████ | — |
+| ██████████████ | android | — | ████████████████████████ | — |
+| █████████ | ios | — | ████████████████████████ | — |
 
-## Out-of-scope entries (8)
+## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| equality\.gapinc\.com | website | — | Out of Scope | — |
-| investors\.gapinc\.com | website | — | Out of Scope | — |
-| Recruiting - jobs\.gapinc\.com, careersblog\.gapinc\.com | website | — | Out of Scope | — |
-| \*\.gaptech\.com | website | — | Out of Scope | — |
-| \*\.gap\.com\.mx | website | — | Out of Scope | — |
-| \*\.liverpool\.com\.\* | website | — | Out of Scope | — |
-| Janie &amp; Jack | website | — | Out of Scope | — |
-| Intermix | website | — | Out of Scope | — |
+| ███████████████████ | website | — | ████████████ | — |
+| ████████████████████ | website | — | ████████████ | — |
+| ████████████████████████████████████████████████████ | website | — | ████████████ | — |
+| █████████████ | website | — | ████████████ | — |
+| ████████████ | website | — | ████████████ | — |
+| █████████████████ | website | — | ████████████ | — |
+| ████████ | website | — | ████████████ | — |
 
 **Limits**
 
 - Only the published asset table was captured; program rules and submission eligibility still require individual review\.
+- 1 repeated rows in the published table were collapsed in this catalog\.

@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:43Z.
+**Capture time:** 2026-11-07T14:54:37Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/hilton/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/hilton/assets/download_csv.csv>)
 
 ## In-scope entries (23)
 
@@ -42,7 +42,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 121\.200\.237\.36/29 | CIDR | — | — | Bounty eligible |
 | id635150066 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
-## Out-of-scope entries (12)
+## Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -58,6 +58,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | hgv\.com | URL | — | — | Not bounty eligible |
 | hiltonfoundation\.org | URL | — | — | Not bounty eligible |
 | a1\.hilton\.com | URL | — | — | Not bounty eligible |
+| hhibeachandtennis\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:54Z.
+**Capture time:** 2026-11-07T14:54:44Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/indrive/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/indrive/assets/download_csv.csv>)
 
-## In-scope entries (140)
+## In-scope entries (174)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,40 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | referral-program\.indrive\.com | URL | — | — | Bounty eligible |
 | www\.juntasllegamos\.indrive\.com | URL | — | — | Bounty eligible |
 | coms\.ryadom\.kz | URL | — | — | Bounty eligible |
+| ps-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| ra-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| ra-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| ra-gw-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| rc-cf\.africa\.afso1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| rc-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| rp-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| rs-gw-cf\.africa\.afso1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| rs-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sc-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sc-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sc-gw-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sfc-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sn-api-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| ssn-lb-cf\.africa\.afso1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| ssn-lb-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sur-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| sur-gw-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| tr-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| tr-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| tr-gw-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| tr-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| trv-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| txd-cf\.cis\.euce1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| txf-cf\.cis\.euce1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| txm-gw-cf\.cis\.euce1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| vm-cf\.mena\.meso1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| vm-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| was-cf\.africa\.afso1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| was-gw-scf\.sa\.apse1\.aws\.indriverapp\.com | URL | — | — | Bounty eligible |
+| wd1-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| wd1-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| wlr-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
+| wlr-scf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 

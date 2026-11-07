@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:53Z.
+**Capture time:** 2026-11-07T14:53:29Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/capital-one-bounty/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/capital-one-bounty/assets/download_csv.csv>)
 
 ## In-scope entries (10)
 
@@ -29,9 +29,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 407558537 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1089294040 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
-## Out-of-scope entries (0)
+## Out-of-scope entries (2)
 
-No explicit asset rows were captured in this category. The policy may still impose exclusions.
+| Asset | Type | Location | Group | Qualification |
+| --- | --- | --- | --- | --- |
+| http://api-an\.capitalone\.com/private/907765/digital-intake/ | API | — | — | Not bounty eligible |
+| api-an\.capitalone\.com/private​/1289118​/sdu​/\* | API | — | — | Not bounty eligible |
 
 **Limits**
 

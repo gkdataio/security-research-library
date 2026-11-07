@@ -76,11 +76,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Microsoft Edge Bounty Program",
       "url": "https://www.microsoft.com/en-us/msrc/bounty-new-edge",
       "publisher": "Microsoft Corporation",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -106,9 +106,9 @@
   "asset_scope": {
     "capture_status": "policy_defined",
     "collection_method": "official_policy_page",
-    "verified_at": "2026-10-03T15:03:35Z",
+    "verified_at": "2026-11-07T14:48:59Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "assets-scope-2026-11-07"
     ],
     "in_scope": [
       {
@@ -117,7 +117,7 @@
         "location": null,
         "group": "Dev, Beta and Stable",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Latest supported version; qualifying findings must not reproduce in equivalent Chrome channel."
       },
@@ -127,7 +127,7 @@
         "location": null,
         "group": "Prerelease and release",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Current SDK on a fully patched supported Windows version."
       },
@@ -137,7 +137,7 @@
         "location": null,
         "group": "Evergreen, Edge Dev and Beta runtimes",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Current runtime on a fully patched supported Windows version."
       }
@@ -149,7 +149,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -158,7 +158,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Versions through 45."
       },
@@ -168,7 +168,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Findings that reproduce only in Canary are excluded."
       },
@@ -178,7 +178,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Excluded from this bounty program's awards."
       }

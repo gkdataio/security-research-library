@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-10-03T14:55:58Z.
+**Capture time:** 2026-11-07T14:52:15Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dropbox/dropbox/detail>)
 
@@ -18,46 +18,50 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| Dropbox\.com | URL | http://Dropbox\.com | Tier 1 | — |
-| sign\.dropbox\.com | URL | http://sign\.dropbox\.com | Tier 1 | — |
-| HelloSign\.com | URL | http://HelloSign\.com | Tier 1 | — |
-| dash\.ai | URL | http://dash\.ai | Tier 1 | — |
-| dash\.dropbox\.com | Other | — | Tier 1 | — |
 | api\.dropbox\.com | URL | http://api\.dropbox\.com | Tier 1 | — |
-| Dropbox Desktop Application | Other | — | Tier 2 | — |
-| 327630330 | iOS | https://apps\.apple\.com/app/327630330 | Tier 2 | — |
-| 6450553960 | iOS | https://apps\.apple\.com/app/6450553960 | Tier 2 | — |
+| Dropbox\.com | URL | http://Dropbox\.com | Tier 1 | — |
+| HelloSign\.com | URL | http://HelloSign\.com | Tier 1 | — |
+| sign\.dropbox\.com | URL | http://sign\.dropbox\.com | Tier 1 | — |
 | 1080074001 | iOS | https://apps\.apple\.com/app/1080074001 | Tier 2 | — |
-| com\.dropbox\.dash | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.dash | Tier 2 | — |
-| com\.dropbox\.android | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.android | Tier 2 | — |
-| HelloFax\.com | URL | http://HelloFax\.com | Tier 2 | — |
-| docsend\.com | URL | http://docsend\.com | Tier 2 | — |
+| 327630330 | iOS | https://apps\.apple\.com/app/327630330 | Tier 2 | — |
 | app\.Reclaim\.ai | URL | http://app\.Reclaim\.ai | Tier 2 | — |
+| com\.dropbox\.android | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.android | Tier 2 | — |
+| docsend\.com | URL | http://docsend\.com | Tier 2 | — |
+| Dropbox Desktop Application | Other | — | Tier 2 | — |
 | dropbox\.com/paper | URL | http://dropbox\.com/paper | Tier 2 | — |
+| HelloFax\.com | URL | http://HelloFax\.com | Tier 2 | — |
+| \*\.docsend\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropbox\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropboxer\.net | Wildcard | — | Tier 3 | — |
 | \*\.dropboxforum\.com | Wildcard | — | Tier 3 | — |
 | \*\.dropboxpartners\.com | Wildcard | — | Tier 3 | — |
 | \*\.hellofax\.com | Wildcard | — | Tier 3 | — |
-| \*\.docsend\.com | Wildcard | — | Tier 3 | — |
-| \*\.reclaim\.ai | Wildcard | — | Tier 3 | — |
-| \*\.helloworks\.com | Wildcard | — | Tier 3 | — |
 | \*\.hellosign\.com | Wildcard | — | Tier 3 | — |
-| \*\.dash\.ai | Wildcard | — | Tier 3 | — |
+| \*\.helloworks\.com | Wildcard | — | Tier 3 | — |
+| \*\.reclaim\.ai | Wildcard | — | Tier 3 | — |
+| \*\.dash\.ai | Wildcard | — | No bounty | — |
+| 6450553960 | iOS | https://apps\.apple\.com/app/6450553960 | No bounty | — |
+| com\.dropbox\.dash | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.dash | No bounty | — |
+| dash\.ai | URL | http://dash\.ai | No bounty | — |
+| dash\.dropbox\.com | Other | — | No bounty | — |
 
-## Out-of-scope entries (9)
+## Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| community\.dropbox\.com | URL | http://community\.dropbox\.com | — | — |
-| replay\.dropbox\.com | URL | http://replay\.dropbox\.com | — | — |
-| Boxcryptor | Other | — | — | — |
-| Formswift | Other | — | — | — |
-| Dropbox Passwords | Other | — | — | — |
-| Dropbox Capture Windows Desktop App | Other | — | — | — |
-| Dropbox Capture macOS Desktop App | Other | — | — | — |
-| com\.dropbox\.paper | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.paper | — | — |
+| \*\.tigrisdata\.com | Wildcard | — | — | — |
+| \*\.tigrisdata\.io | Wildcard | — | — | — |
 | 1126623662 | iOS | https://apps\.apple\.com/app/1126623662 | — | — |
+| Boxcryptor | Other | — | — | — |
+| com\.dropbox\.paper | Android | https://play\.google\.com/store/apps/details?id=com\.dropbox\.paper | — | — |
+| community-dev\.dropbox\.com | URL | http://community-dev\.dropbox\.com | — | — |
+| community-stage\.dropbox\.com | URL | http://community-stage\.dropbox\.com | — | — |
+| community\.dropbox\.com | URL | http://community\.dropbox\.com | — | — |
+| Dropbox Capture macOS Desktop App | Other | — | — | — |
+| Dropbox Capture Windows Desktop App | Other | — | — | — |
+| Dropbox Passwords | Other | — | — | — |
+| Formswift | Other | — | — | — |
+| replay\.dropbox\.com | URL | http://replay\.dropbox\.com | — | — |
 
 **Limits**
 

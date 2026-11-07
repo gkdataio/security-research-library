@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:51Z.
+**Capture time:** 2026-11-07T14:51:53Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/personio/personio/detail>)
 
@@ -26,11 +26,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | api\.personio\.com | URL | http://api\.personio\.com | Tier 2 | — |
 | https://\*\.personio\.de | Wildcard | — | Tier 2 | — |
 | https://\*\.personiowhistleblowing\.com | Wildcard | — | Tier 2 | — |
-| https://community\.personio\.com | URL | https://community\.personio\.com | Tier 3 | — |
 | https://hug\.personio\.com | URL | https://hug\.personio\.com | Tier 2 | — |
-| https://sec-test-&lt;intigriti handle&gt;-&lt;nn&gt;\.personio\.de | URL | https://sec-test-&lt;intigriti handle&gt;-&lt;nn&gt;\.personio\.de | Tier 2 | — |
+| - \.personio\.de" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; position: relative;"&gt; https://sec-test-&lt;intigriti handle&gt;-&lt;nn&gt;\.personio\.de | URL | https://sec-test-&lt;intigriti handle&gt;-&lt;nn&gt;\.personio\.de | Tier 2 | — |
 | https://www\.personio\.com/free-trial/ | URL | https://www\.personio\.com/free-trial/ | Tier 3 | — |
 | https://www\.personio\.de/kostenlos-testen/ | URL | https://www\.personio\.de/kostenlos-testen/ | Tier 3 | — |
+| https://community\.personio\.com | URL | https://community\.personio\.com | Tier 3 | — |
 | Other assets owned by Personio | URL | http://Other assets owned by Personio | Tier 3 | — |
 
 ## Out-of-scope entries (6)

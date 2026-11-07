@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:56:00Z.
+**Capture time:** 2026-11-07T14:57:19Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/whoop_bug_bounty/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/whoop_bug_bounty/assets/download_csv.csv>)
 
 ## In-scope entries (8)
 

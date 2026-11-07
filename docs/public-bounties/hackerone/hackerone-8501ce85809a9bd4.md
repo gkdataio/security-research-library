@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:30Z.
+**Capture time:** 2026-11-07T14:53:16Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/banco_plata/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/banco_plata/assets/download_csv.csv>)
 
-## In-scope entries (4)
+## In-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -22,6 +22,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.bancoplata\.mx | WILDCARD | — | — | Bounty eligible |
 | dif\.tech\.plata | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | id6443932656 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| people\.plata\.team | URL | — | — | Bounty eligible |
+| plata\.co | URL | — | — | Bounty eligible |
+| prime\.plata\.co | API | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

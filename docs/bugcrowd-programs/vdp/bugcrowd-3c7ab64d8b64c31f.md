@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** directory listing only.
 
-**Capture time:** 2026-10-03T16:44:37Z.
+**Capture time:** 2026-11-07T14:59:15Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -32,4 +32,4 @@ No explicit asset rows were captured in this category. The policy may still impo
 
 - Full program policy review remains outstanding\.
 - No public asset rows were captured; consult the live official program policy for any policy-defined scope\.
-- The official engagement page was available, but its public brief published zero scope groups and zero target rows\. Policy prose may still define or limit scope; no asset row was inferred\.
+- Official current public brief was retrieved; its scope groups contained no published asset rows\. No scope permission is inferred\.

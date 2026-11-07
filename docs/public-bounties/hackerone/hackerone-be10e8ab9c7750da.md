@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** directory listing only.
 
-**Capture time:** 2026-10-03T15:50:37Z.
+**Capture time:** 2026-11-07T14:53:54Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/django/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/django/assets/download_csv.csv>)
 
 ## In-scope entries (0)
 
@@ -26,4 +26,4 @@ No explicit asset rows were captured in this category. The policy may still impo
 
 - Full program policy review remains outstanding\.
 - No complete public scope table is available in this capture; consult the live official program page\.
-- The official public policy\_scopes page returned a JavaScript app shell during this review\. The existing structured-scope capture had zero rows; a current asset list was not independently visible from this page\.
+- The official public CSV scope export returned its expected column header and zero asset rows\. No asset scope is inferred; policy prose was not re-reviewed\.

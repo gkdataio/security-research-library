@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:22Z.
+**Capture time:** 2026-11-07T14:54:26Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/forescout_technologies/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/forescout_technologies/assets/download_csv.csv>)
 
 ## In-scope entries (63)
 

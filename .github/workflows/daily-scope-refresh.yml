@@ -1,0 +1,90 @@
+name: Daily public scope refresh
+on:
+  schedule:
+    - cron: '23 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-scope-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test collectors before network access
+        run: python -m unittest discover -s tests -v
+      - name: Report new-program discovery coverage
+        run: python scripts/discover_programs.py
+      - name: Refresh supported public scope tables
+        run: python scripts/refresh_program_scopes.py
+      - name: Record workflow identity
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          for filename in ('data/scope-refresh-status.json', 'data/program-discovery-status.json'):
+              path = Path(filename)
+              audit = json.loads(path.read_text())
+              audit['workflow_run_id'] = os.environ['GITHUB_RUN_ID']
+              audit['workflow_run_attempt'] = os.environ['GITHUB_RUN_ATTEMPT']
+              audit['baseline_commit'] = os.environ['GITHUB_SHA']
+              path.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
+          PY
+      - name: Regenerate and validate
+        run: |
+          set -euo pipefail
+          python scripts/export_programs.py
+          python scripts/export_program_discovery.py
+          python scripts/export_public_bounties.py
+          python scripts/export_bugcrowd_programs.py
+          python scripts/export_scope_audit.py
+          python scripts/check_program_changes.py --base HEAD --record-history
+          python scripts/validate.py
+          python scripts/validate_extra.py
+          python -m unittest discover -s tests -v
+          for script in export export_resources export_programs export_program_discovery export_public_bounties export_bugcrowd_programs export_scope_audit export_recognition build_navigation render_readme_buttons render_diagrams; do
+            python scripts/$script.py --check
+          done
+      - name: Publish validated snapshots and audit
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/programs data/public-bounty-scopes.json data/bugcrowd-vdp-scopes.json data/scope-refresh-status.json data/program-discovery-status.json exports docs
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh public program scope snapshots and daily audit'
+            git push origin HEAD:main
+            test "$(git rev-parse HEAD)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
+          fi
+      - name: Upload run evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scope-refresh-${{ github.run_id }}
+          path: |
+            data/scope-refresh-status.json
+            data/program-discovery-status.json
+          if-no-files-found: warn
+          retention-days: 30
+      - name: Surface incomplete supported coverage
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          audit = json.loads(Path('data/scope-refresh-status.json').read_text())
+          print(json.dumps(audit['counts'], indent=2))
+          discovery = json.loads(Path('data/program-discovery-status.json').read_text())
+          if discovery['status'] == 'incomplete':
+              print('::warning::New-program discovery needs current complete browser observations; discovery has not run.')
+          if audit['counts']['failed'] or audit['counts']['deferred']:
+              raise SystemExit('Some supported programs were not refreshed; last-good records retained. Inspect the audit.')
+          PY

@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:57Z.
+**Capture time:** 2026-11-07T14:54:12Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/exodus/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/exodus/assets/download_csv.csv>)
 
-## In-scope entries (27)
+## In-scope entries (28)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -45,6 +45,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Exodus Desktop Wallet | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | exodus-movement\.exodus | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| agents\.exodus\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (34)
 

@@ -82,7 +82,8 @@ def source_belongs_to_program(platform, program_url, source_url, kind):
         if _host(platform, program.hostname) != "hackerone.com" or not re.fullmatch(r"/[A-Za-z0-9_-]+", path):
             return False
         expected = path if kind == "hackerone_program" else path + "/policy_scopes"
-        return source_path == expected
+        return source_path == expected or (kind == "hackerone_scope" and
+            source_path == "/teams" + path + "/assets/download_csv.csv")
     if platform == "Intigriti" and kind in ("intigriti_detail", "intigriti_preview", "intigriti_terms"):
         if program.hostname != "app.intigriti.com" or not re.fullmatch(r"/programs/[^/]+/[^/]+", path):
             return False

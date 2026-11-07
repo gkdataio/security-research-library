@@ -10,15 +10,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:03Z.
+**Capture time:** 2026-11-07T14:48:26Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/axelspringerse/nmt/detail>)
 
-## In-scope entries (42)
+## In-scope entries (41)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| emarketer\.com | URL | http://emarketer\.com | Tier 2 | — |
 | newsos\.com | URL | http://newsos\.com | Tier 2 | — |
 | politico\.eu | URL | http://politico\.eu | Tier 1 | — |
 | adtechnology\.axelspringer\.com | URL | http://adtechnology\.axelspringer\.com | Tier 1 | — |

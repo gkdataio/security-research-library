@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:23Z.
+**Capture time:** 2026-11-07T14:53:12Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/att/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/att/assets/download_csv.csv>)
 
 ## In-scope entries (1)
 
@@ -20,7 +20,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | Other Assets | OTHER | — | — | Bounty eligible |
 
-## Out-of-scope entries (75)
+## Out-of-scope entries (76)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -99,6 +99,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 12\.0\.1\.28 | OTHER | — | — | Not bounty eligible |
 | DirecTV Owned Assets | OTHER | — | — | Not bounty eligible |
 | 40\.233\.66\.139 | IP\_ADDRESS | — | — | Not bounty eligible |
+| http://accesspro\.att\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

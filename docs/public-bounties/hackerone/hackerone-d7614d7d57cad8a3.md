@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:58Z.
+**Capture time:** 2026-11-07T14:54:47Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/instacart/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/instacart/assets/download_csv.csv>)
 
 ## In-scope entries (10)
 
@@ -29,7 +29,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.instacart\.client | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 545599256 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
-## Out-of-scope entries (12)
+## Out-of-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -37,14 +37,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | brand\.instacart\.com | URL | — | — | Not bounty eligible |
 | careers\.instacart\.com | URL | — | — | Not bounty eligible |
 | carrotstore\.instacart\.com | URL | — | — | Not bounty eligible |
-| corporate\.instacart\.com | URL | — | — | Not bounty eligible |
-| covidresponse\.instacart\.com | URL | — | — | Not bounty eligible |
-| design\.instacart\.com | URL | — | — | Not bounty eligible |
-| life\.instacart\.com | URL | — | — | Not bounty eligible |
-| news\.instacart\.com | URL | — | — | Not bounty eligible |
-| tech\.instacart\.com | URL | — | — | Not bounty eligible |
 | enterprise-status\.instacart\.com | URL | — | — | Not bounty eligible |
 | instacart\.careers | URL | — | — | Not bounty eligible |
+| heyitsinstacart\.com | URL | — | — | Not bounty eligible |
+| affiliate\.instacart\.com | URL | — | — | Not bounty eligible |
+| \*\.unatalabs\.com | WILDCARD | — | — | Not bounty eligible |
+| company\.instacart\.com | URL | — | — | Not bounty eligible |
+| company\.instacart\.dev | URL | — | — | Not bounty eligible |
 
 **Limits**
 

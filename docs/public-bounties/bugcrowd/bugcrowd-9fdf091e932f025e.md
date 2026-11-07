@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:36Z.
+**Capture time:** 2026-11-07T14:54:02Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Consumer Services.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/glassdoor-ogbb/changelog/f2e7ea74-4b97-483d-9a51-d0da7e7f4b11.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/glassdoor-ogbb/changelog/a2221674-84c2-415e-b759-a480cf5921f4.json>)
 
 ## In-scope entries (15)
 

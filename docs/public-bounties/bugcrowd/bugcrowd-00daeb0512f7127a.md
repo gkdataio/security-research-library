@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-10-03T14:56:20Z.
+**Capture time:** 2026-11-07T15:03:05Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,24 +18,24 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/openai/changelog/e76106d3-3796-492b-9997-569446b51b72.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json>)
 
 ## In-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| ChatGPT Web | website | https://chatgpt\.com | ChatGPT Services | — |
+| ChatGPT Plugins | api | https://chat\.openai\.com | ChatGPT Services | — |
 | api\.openai\.com | api | https://api\.openai\.com | API Targets | — |
-| ChatGPT | website | https://chat\.openai\.com | ChatGPT | — |
-| ChatGPT Plugins | api | https://chat\.openai\.com | ChatGPT | — |
+| Developer Platform Playground | website | https://platform\.openai\.com/playground | API Targets | — |
+| ChatGPT Desktop | other | — | ChatGPT Desktop &amp; Codex CLI | — |
+| Codex CLI | other | — | ChatGPT Desktop &amp; Codex CLI | — |
+| openai\.com | website | https://openai\.com/ | Other OpenAI Targets | — |
+| OpenAi Research | website | https://\*\.openai\.org | Other OpenAI Targets | — |
+| \*\.openai\.com | website | — | Other OpenAI Targets | — |
+| Other | other | — | Other OpenAI Targets | — |
 | Third Party Targets | website | — | Third Party Corporate Targets | — |
 | OpenAI API Keys | api | — | OpenAI API Keys | — |
-| https://openai\.org | website | https://\*\.openai\.org | OpenAI Research Org | — |
-| \*\.openai\.org | api | https://\*\.openai\.org | OpenAI Research Org | — |
-| openai\.com | website | https://openai\.com/ | Other OpenAI Targets | — |
-| \*\.openai\.com | other | — | Other OpenAI Targets | — |
-| Developer Platform Playground | website | https://platform\.openai\.com/playground | Other OpenAI Targets | — |
-| Other | other | — | Other OpenAI Targets | — |
-| Codex Desktop | other | — | Codex | — |
 
 ## Out-of-scope entries (0)
 

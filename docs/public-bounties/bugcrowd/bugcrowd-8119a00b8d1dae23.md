@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:26Z.
+**Capture time:** 2026-11-07T14:53:00Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/bolt-og/changelog/3d19c7a0-b06b-48e2-93ca-996402a0c261.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/bolt-og/changelog/4804705b-593a-4e0b-8f6b-2ac8661f37dc.json>)
 
-## In-scope entries (7)
+## In-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -31,6 +31,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.taxify\.eu | website | https://taxify\.eu/ | Web | — |
 | \*\.bolt\.eu | website | https://bolt\.eu/ | Web | — |
 | \*\.boltable\.eu | website | https://\*\.boltable\.eu | Web | — |
+| new-food\.bolt\.eu | website | https://new-food\.bolt\.eu | Web | — |
 
 ## Out-of-scope entries (5)
 

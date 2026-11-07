@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:52:54Z.
+**Capture time:** 2026-11-07T14:55:18Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/moonpay/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/moonpay/assets/download_csv.csv>)
 
-## In-scope entries (20)
+## In-scope entries (21)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -38,6 +38,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/moonpay | SOURCE\_CODE | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.moonpay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/app/id1635031432 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.dflow\.net | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (19)
 

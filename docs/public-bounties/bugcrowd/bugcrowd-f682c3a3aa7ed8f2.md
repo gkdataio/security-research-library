@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:49:14Z.
+**Capture time:** 2026-11-07T14:56:56Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Finance.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/binance/changelog/c2bdd90c-9f9b-4c3e-9225-a5dc9570bfb9.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/binance/changelog/3074eb70-195f-4d4c-8a56-0de459eecc80.json>)
 
-## In-scope entries (20)
+## In-scope entries (21)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -44,6 +44,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.binance\.us | website | https://www\.binance\.us/ | In Scope | — |
 | binance\.tr | website | https://binance\.tr | In Scope | — |
 | Trustwallet Chrome Extension | website | — | In Scope | — |
+| https://binance\.th/ | website | — | In Scope | — |
 
 ## Out-of-scope entries (10)
 

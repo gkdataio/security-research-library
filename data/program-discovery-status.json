@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "completed_at": "2026-11-07T14:53:16.939611Z",
+  "status": "incomplete",
+  "mode": "offline_observation_import",
+  "notice": "New means absent from the historical URL baseline, not newly launched. Directory listings are not testing authorization. No removals inferred; canonical data is unchanged.",
+  "counts": {
+    "baseline_urls": 1156,
+    "platforms_completed": 0,
+    "new_programs": null,
+    "validated_candidates": 0
+  },
+  "platforms": [
+    {
+      "platform": "Bugcrowd",
+      "status": "needs_browser",
+      "observed_count": null,
+      "new_count": null,
+      "candidates": [],
+      "sources": [],
+      "reason": "No current browser-observed complete directory supplied. No live collector is implemented."
+    },
+    {
+      "platform": "HackerOne",
+      "status": "needs_browser",
+      "observed_count": null,
+      "new_count": null,
+      "candidates": [],
+      "sources": [],
+      "reason": "No current browser-observed complete directory supplied. No live collector is implemented."
+    },
+    {
+      "platform": "Intigriti",
+      "status": "needs_browser",
+      "observed_count": null,
+      "new_count": null,
+      "candidates": [],
+      "sources": [],
+      "reason": "No current browser-observed complete directory supplied. No live collector is implemented."
+    }
+  ],
+  "baseline_sha256": "2c26e4431300c273437130c0d6845bae0d312c7b1161819ebcd6df655c05c860"
+}

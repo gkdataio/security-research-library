@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:04Z.
+**Capture time:** 2026-11-07T14:55:18Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/nba-public/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/nba-public/assets/download_csv.csv>)
 
-## In-scope entries (441)
+## In-scope entries (460)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -459,6 +459,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | valley-qa\.gleague\.nba\.com | URL | — | — | Bounty eligible |
 | com\.nbaimd\.gametime\.nba2011 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.nbaimd\.gametime\.universal | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| cweb-ott-wnba\.nba\.com | URL | — | — | Bounty eligible |
+| comets-qa\.wnba\.com | URL | — | — | Bounty eligible |
+| tue\.wnba\.com | URL | — | — | Bounty eligible |
+| dev\.stats\.wnba\.com | URL | — | — | Bounty eligible |
+| lineemup-dev\.wnba\.com | URL | — | — | Bounty eligible |
+| comets-dev\.wnba\.com | URL | — | — | Bounty eligible |
+| pata\.wnba\.com | URL | — | — | Bounty eligible |
+| cweb-ott-wnba-dev\.nba\.com | URL | — | — | Bounty eligible |
+| login-qa\.wnba\.com | URL | — | — | Bounty eligible |
+| cweb-ott-uat\.nba\.com | URL | — | — | Bounty eligible |
+| comets\.wnba\.com | URL | — | — | Bounty eligible |
+| comets-uat\.wnba\.com | URL | — | — | Bounty eligible |
+| login-uat\.wnba\.com | URL | — | — | Bounty eligible |
+| lineemup\.wnba\.com | URL | — | — | Bounty eligible |
+| playbook\.wnba\.com | URL | — | — | Bounty eligible |
+| login-dev\.wnba\.com | URL | — | — | Bounty eligible |
+| login\.wnba\.com | URL | — | — | Bounty eligible |
+| cweb-ott-wnba-qa\.nba\.com | URL | — | — | Bounty eligible |
+| identity\.wnba\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (29)
 

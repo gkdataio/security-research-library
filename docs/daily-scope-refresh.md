@@ -1,0 +1,35 @@
+# Daily public scope refresh
+
+The `Daily public scope refresh` GitHub Actions workflow is scheduled for 06:23 UTC daily and can also be run manually. GitHub schedules may run late or be disabled after prolonged inactivity in a public repository; a cron definition is not proof that a run happened. No vulns.co import is performed.
+
+## What is updated automatically
+
+The initial unattended collector supports **existing Bugcrowd public programs , HackerOne public bounty scopes and Intigriti visible public asset tables** in the bounty, VDP and reviewed-policy records. HackerOne is retrieved from the public Download CSV export, with strict headers and separate submission/bounty eligibility flags; its instruction prose and severity fields are not copied. Previously classified non-bounty HackerOne entries require separate review and are retained unchanged. It requests the recorded official Bugcrowd engagement page and the exact current public brief JSON linked by that page. It parses separate in-scope and out-of-scope asset groups, updates canonical scope evidence and regenerates the catalogs and semantic change feed. Every supported program is considered on each run; a daily rotation avoids repeatedly starving the same suffix after a platform-wide access stop. No listed target is requested.
+
+This is an asset-table refresh, not a full policy review. Whole-policy dates, eligibility, reward summaries and rules remain unchanged. An empty table, schema mismatch, redirect, fetch error, or removal of more than half of prior asset identities retains the last-good record and produces a review failure. An HTTP 401, 403 or 429 stops further requests to that platform for this run. Requests are sequential, at least two seconds apart by default, with a 35-second request timeout, a 65-minute collection budget, no automatic retries and an 8 MiB response limit. These are conservative collection limits, not a claim that a platform grants unrestricted automated access. A platform objection or changed access requirements must be respected.
+
+Independent-policy sites are explicitly reported as unsupported by this initial unattended scope collector. Their dated snapshots remain available and are **not** relabeled as fresh. The source queue is not an assertion that every current or new public program is included.
+
+Intigriti collection reads only the exact public `/programs/org/name/detail` page, rejects redirects and requires one complete SSR asset-table container, fully parsed rows and known tiers. Potential pagination/load-more markers fail closed. It captures asset labels, types, links and tiers, not collapsed descriptions or policy prose. A complete visible SSR table is not a guarantee of every private or hidden asset. No alternate access route is attempted after a gate.
+
+## How to verify each day
+
+1. Find the latest run of `.github/workflows/daily-scope-refresh.yml` in GitHub Actions. Check its run ID, start time and conclusion. A missing run is a failure to check, not success.
+2. Read `data/scope-refresh-status.json` on `main`. Its `workflow_run_id` and `workflow_run_attempt` must match that Actions run. Check that `completed_at` is recent, `counts.total` equals the result list length, and every recorded program is represented.
+3. Check `counts.attempted`, `refreshed`, `failed`, `deferred` and `unsupported`. Unsupported coverage is a known gap, not successful verification. Review failures and deferred rows individually; their old scope dates must remain unchanged.
+4. Verify that validation and publication steps succeeded and that the published commit is on `main`. The workflow checks the remote commit after a normal, non-force push. It does not rebase over simultaneous edits: a conflicting push fails for review.
+5. Inspect `exports/program-change-history.json` for semantic changes. A successful refresh may have no semantic differences. HTTP/body hashes alone do not establish scope changes.
+
+A run with partial supported coverage publishes only validated successful updates and the audit, then deliberately concludes as failed to surface the gap. If validation or publication fails, the working audit is uploaded as a 30-day Actions artifact and must not be mistaken for a published snapshot. If the collector is interrupted before completing, no new completed audit is written. Always compare audit run identity and time, never just its presence.
+
+The per-run audit includes exact source URLs, capture times, response hashes and row counts. Canonical files retain scope evidence; the semantic history retains changes. Full HTTP responses are not archived. Git history retains published daily audits.
+
+## Local checks
+
+Run `python3 -m unittest discover -s tests -v` before enabling or modifying a collector. `python3 scripts/refresh_program_scopes.py` performs live official-page reads and updates local snapshots, so use it only for an authorized refresh. Regenerate the affected exports and run all README validation/check commands before publishing. No credentials are required or created by this collector.
+
+## New-program discovery gap
+
+`scripts/discover_programs.py` is an **offline validator/importer of browser-observed directory pages**, not a live discovery collector. The daily workflow currently writes `data/program-discovery-status.json` with `needs_browser` for each platform, unknown new-program counts (`null`), and an explicit Actions warning. It does not claim that no new programs exist. To fulfill daily discovery, a separate authorized browser pass must supply fresh, complete visible directory observations through `--observations`; a workflow run alone does not fulfill that requirement.
+
+The importer checks official URL identity, observation recency, contiguous pagination, stable advertised totals where present, duplicate identities and explicit exhaustion. It compares candidates against the historical catalog without inferring removals or promoting candidates to reviewed policies. Validated candidates still require public scope/policy collection before adding them to the canonical catalog. Its report records the baseline hash and coverage limits. Daily oversight must flag missing observations rather than treating a green scope-collector run as complete discovery.

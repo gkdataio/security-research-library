@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:54:54Z.
+**Capture time:** 2026-11-07T14:56:25Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/stripe/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/stripe/assets/download_csv.csv>)
 
-## In-scope entries (52)
+## In-scope entries (55)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -70,6 +70,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.stripe\.android\.dashboard | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 978516833 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | www\.stripe\.partners | URL | — | — | Not bounty eligible |
+| files\.stripe\.com | URL | — | — | Bounty eligible |
+| stripe\.com | URL | — | — | Bounty eligible |
+| stripe\.dev | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

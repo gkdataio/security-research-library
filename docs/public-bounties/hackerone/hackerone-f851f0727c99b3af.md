@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:09Z.
+**Capture time:** 2026-11-07T14:53:36Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/cloudflare/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/cloudflare/assets/download_csv.csv>)
 
-## In-scope entries (51)
+## In-scope entries (52)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -49,7 +49,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Workers | OTHER | — | — | Bounty eligible |
 | Cloudflare Tunnel | OTHER | — | — | Bounty eligible |
 | AMP Real URL | OTHER | — | — | Bounty eligible |
-| Cloudflare Cache | OTHER | — | — | Bounty eligible |
 | Magic Firewall | OTHER | — | — | Bounty eligible |
 | Cloudflare Zaraz | OTHER | — | — | Bounty eligible |
 | China Network | OTHER | — | — | Bounty eligible |
@@ -69,8 +68,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Cloudflare Workers CI | OTHER | — | — | Bounty eligible |
 | Images | OTHER | — | — | Bounty eligible |
 | Workers AI | AI\_MODEL | — | — | Bounty eligible |
+| Cloudflare Cache  | OTHER | — | — | Bounty eligible |
+| https://php-rce\.cloudflare\.app/ | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (27)
+## Out-of-scope entries (31)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -91,7 +92,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/cloudflare/moq-rs | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/privacy-gateway-server-go | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/saffron\.git | SOURCE\_CODE | — | — | Not bounty eligible |
-| https://github\.com/cloudflare/realtimekit-web-examples | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/recapn | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/computer | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/cloudflare-os | SOURCE\_CODE | — | — | Not bounty eligible |
@@ -100,7 +100,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/cloudflare/agentic-inbox | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/cf | SOURCE\_CODE | — | — | Not bounty eligible |
 | Turnstile | OTHER | — | — | Not bounty eligible |
-| 172\.65\.0\.0/16 | OTHER | — | — | Not bounty eligible |
+| 172\.65\.0\.0/16  | OTHER | — | — | Not bounty eligible |
+| https://github\.com/cloudflare/realtimekit-web-examples  | SOURCE\_CODE | — | — | Not bounty eligible |
+| https://github\.com/cloudflare/security-audit-skill | SOURCE\_CODE | — | — | Not bounty eligible |
+| https://playground\.ai\.cloudflare\.com/ | URL | — | — | Not bounty eligible |
+| https://github\.com/cloudflare/vibesdk | SOURCE\_CODE | — | — | Not bounty eligible |
+| https://vibecoder\.cloudflare\.dev/ | URL | — | — | Not bounty eligible |
 
 **Limits**
 

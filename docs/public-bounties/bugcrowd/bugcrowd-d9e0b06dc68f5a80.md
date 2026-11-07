@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:26Z.
+**Capture time:** 2026-11-07T14:55:41Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,18 +18,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Consumer Services.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/viator/changelog/3d692266-89d0-42d6-a49b-1430f275ec8f.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/viator/changelog/949c64c5-03c7-4d2f-b2bb-f7b553035db8.json>)
 
-## In-scope entries (14)
+## In-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | iOS Viator Tours &amp; Activities App | ios | https://apps\.apple\.com/us/app/viator-tours-activities/id434832826 | Viator In Scope Targets  | — |
 | Android Viator Tours &amp; Activities App | android | https://play\.google\.com/store/apps/details?id=com\.viator\.mobile\.android&amp;hl=en\_US&amp;gl=US | Viator In Scope Targets  | — |
 | https://supplier\.viator\.com/ | website | https://supplier\.viator\.com/ | Viator In Scope Targets  | — |
-| https://www\.toursgds\.com/ | api | https://www\.toursgds\.com/ | Viator In Scope Targets  | — |
-| https://www\.toursgds\.com/ToursGdsService?wsdl | api | https://www\.toursgds\.com/ToursGdsService?wsdl | Viator In Scope Targets  | — |
-| https://www\.toursgds\.com/SupplierService?wsdl | api | https://www\.toursgds\.com/SupplierService?wsdl | Viator In Scope Targets  | — |
 | https://partners\.viator\.com | website | https://partners\.viator\.com | Viator In Scope Targets  | — |
 | travelagents\.viator\.com | website | https://travelagents\.viator\.com | Viator In Scope Targets  | — |
 | https://help\.supplier\.viator\.com/en | website | https://help\.supplier\.viator\.com/en | Viator In Scope Targets  | — |

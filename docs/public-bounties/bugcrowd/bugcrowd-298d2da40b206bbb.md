@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:32Z.
+**Capture time:** 2026-11-07T14:49:38Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Not listed.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/moneytreekkog/changelog/86959e61-5387-49f8-b326-483b3a91aa9d.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/moneytreekkog/changelog/ddf77c9e-277c-40f8-938a-2f32d58e0187.json>)
 
-## In-scope entries (11)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -35,6 +35,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Moneytree API | api | https://jp-api-staging\.getmoneytree\.com | Staging @ moneytree\.jp | — |
 | Moneytree Android Mobile Application \(staging; see below\) | android | https://play\.google\.com/store/apps/details?id=jp\.moneytree\.moneytree&amp;hl=en\_AU&amp;gl=US | Staging @ moneytree\.jp | — |
 | Moneytree iOS Mobile Application \(production; see below\) | ios | https://apps\.apple\.com/vc/app/moneytree-finance-made-easy/id586847189 | Staging @ moneytree\.jp | — |
+| MCP Server | api | https://mcp-staging\.getmoneytree\.com/ | Staging @ moneytree\.jp | — |
+| fitbit-lottery \(temporary\) | website | https://fitbit-lottery\.getmoneytree\.com/ | Staging @ moneytree\.jp | — |
 
 ## Out-of-scope entries (3)
 

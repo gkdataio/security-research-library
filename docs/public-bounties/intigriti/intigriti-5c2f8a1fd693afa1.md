@@ -10,20 +10,22 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:11Z.
+**Capture time:** 2026-11-07T14:48:55Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/socialdeal/socialdeal/detail>)
 
-## In-scope entries (6)
+## In-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| 910898851 | iOS | https://apps\.apple\.com/app/910898851 | Tier 2 | — |
-| app\.nl\.socialdeal | Android | https://play\.google\.com/store/apps/details?id=app\.nl\.socialdeal | Tier 2 | — |
+| Social Deal IOS APP | iOS | https://apps\.apple\.com/nl/app/social-deal-d%C3%A9-beste-deals/id910898851 | Tier 1 | — |
+| www\.socialdeal\.nl/blog/ | URL | http://www\.socialdeal\.nl/blog/ | Tier 1 | — |
+| https://www\.spontaan\.nl/ | URL | https://www\.spontaan\.nl/ | Tier 2 | — |
+| app\.nl\.socialdeal | Android | https://play\.google\.com/store/apps/details?id=app\.nl\.socialdeal | Tier 1 | — |
 | http://socialdeal\.nl/inspirations/bluemonday/ | URL | http://socialdeal\.nl/inspirations/bluemonday/ | Tier 2 | — |
 | http://www\.whynot\.com/ | URL | http://www\.whynot\.com/ | Tier 2 | — |
 | https://www\.socialdeal\.nl/orderlist/5e834ae0bed5c/63d772e2ed277/ | URL | https://www\.socialdeal\.nl/orderlist/5e834ae0bed5c/63d772e2ed277/ | Tier 2 | — |
-| www\.socialdeal\.nl | URL | http://www\.socialdeal\.nl | Tier 2 | — |
+| www\.socialdeal\.nl | URL | http://www\.socialdeal\.nl | Tier 1 | — |
 
 ## Out-of-scope entries (0)
 

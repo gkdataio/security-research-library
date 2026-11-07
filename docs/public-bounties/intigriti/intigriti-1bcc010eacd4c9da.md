@@ -10,14 +10,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:43Z.
+**Capture time:** 2026-11-07T14:47:43Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs/detail>)
 
-## In-scope entries (2)
+## In-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| idp-url\.nexuzhealth\.be | URL | http://idp-url\.nexuzhealth\.be | Tier 2 | — |
 | idp-contact\.nexuzhealth\.be | URL | http:// idp-contact\.nexuzhealth\.be | Tier 2 | — |
 | media\.nexuzhealth\.be/patient/ | URL | http://media\.nexuzhealth\.be/patient/  | Tier 2 | — |
 

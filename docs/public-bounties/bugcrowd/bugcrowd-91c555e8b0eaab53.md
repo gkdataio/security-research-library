@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:40Z.
+**Capture time:** 2026-11-07T14:53:29Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,25 +18,24 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Healthcare.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hotdoc/changelog/ca45da66-501a-492a-986f-9e34c130e1c5.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hotdoc/changelog/c884ffc1-9f77-4e29-b9d5-518abadfdd89.json>)
 
 ## In-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| █████████████████████████████████████████ | website | — | ███████ | — |
-| ██████████████████████████████████ | api | — | ███████ | — |
-| ███████████████████████████████████████████████████████████ | website | — | ███████ | — |
+| https://bugcrowd\.hotdoc\.com\.au \(Patients\) | website | https://bugcrowd\.hotdoc\.com\.au | Inscope | — |
+| https://bugcrowd\.hotdoc\.com\.au/api | api | https://bugcrowd\.hotdoc\.com\.au/api | Inscope | — |
+| https://bugcrowd\.hotdoc\.com\.au/dashboard \(Clinic Dashboard\) | website | https://bugcrowd\.hotdoc\.com\.au/dashboard | Inscope | — |
 
 ## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| ███████████ | android | — | ████████████ | — |
-| ███████ | ios | — | ████████████ | — |
-| ██████████████████████████████████████████ | website | — | ████████████ | — |
+| Android App | android | — | Out of Scope | — |
+| IoS App | ios | — | Out of Scope | — |
+| https://try\.hotdoc\.com\.au/hotdoc-profiles | website | https://try\.hotdoc\.com\.au/hotdoc-profiles | Out of Scope | — |
 
 **Limits**
 
 - Only the published asset table was captured; program rules and eligibility still require individual review\.
-- The platform redacts at least one asset label; that row is not a usable target identifier\.

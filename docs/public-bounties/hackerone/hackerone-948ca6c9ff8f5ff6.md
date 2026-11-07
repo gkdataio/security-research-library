@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:55:48Z.
+**Capture time:** 2026-11-07T14:57:11Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/visa/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/visa/assets/download_csv.csv>)
 
-## In-scope entries (165)
+## In-scope entries (168)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -183,6 +183,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | developers\.pismo\.io | URL | — | — | Bounty eligible |
 | forms\.cybersource\.com | URL | — | — | Bounty eligible |
 | \*\.prod\.innovexperiments\.com | OTHER | — | — | Bounty eligible |
+| https://ebctest\.cybersource\.com/varm | URL | — | — | Bounty eligible |
+| https://ebc2test\.cybersource\.com/settings | URL | — | — | Bounty eligible |
+| http://test\.payworks\.io/uis/mngr/ | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

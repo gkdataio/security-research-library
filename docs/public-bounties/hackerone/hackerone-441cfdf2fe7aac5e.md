@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:56:07Z.
+**Capture time:** 2026-11-07T14:57:23Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/x/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/x/assets/download_csv.csv>)
 
-## In-scope entries (24)
+## In-scope entries (23)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -38,14 +38,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | X Pixel Helper \(Chrome Extension\) | OTHER | — | — | Bounty eligible |
 | com\.twitter\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | ai\.x\.grok | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| grok-build | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | com\.atebits\.Tweetie2 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | ai\.x\.GrokApp | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | xadsacademy\.com | URL | — | — | Not bounty eligible |
 
-## Out-of-scope entries (0)
+## Out-of-scope entries (1)
 
-No explicit asset rows were captured in this category. The policy may still impose exclusions.
+| Asset | Type | Location | Group | Qualification |
+| --- | --- | --- | --- | --- |
+| grok-build | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 
 **Limits**
 

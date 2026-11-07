@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:46Z.
+**Capture time:** 2026-11-07T14:47:44Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/visma/visma/detail>)
 
-## In-scope entries (20)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -22,9 +22,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | accountsettings\.connect\.identity\.stagaws\.visma\.com | URL | http://accountsettings\.connect\.identity\.stagaws\.visma\.com | Tier 2 | — |
 | admin\.stage\.vismaonline\.com | URL | http://admin\.stage\.vismaonline\.com | Tier 2 | — |
 | aiassistant\.stage\.vismaonline\.com | URL | http://aiassistant\.stage\.vismaonline\.com | Tier 2 | — |
-| api\.workbox\.dk | URL | http://api\.workbox\.dk | Tier 2 | — |
-| app\.workbox\.dk | URL | http://app\.workbox\.dk | Tier 2 | — |
-| authz\.workbox\.dk | URL | http://authz\.workbox\.dk | Tier 2 | — |
 | com\.visma\.blue | Android | https://play\.google\.com/store/apps/details?id=com\.visma\.blue | Tier 2 | — |
 | connect\.identity\.stagaws\.visma\.com | URL | http://connect\.identity\.stagaws\.visma\.com | Tier 2 | — |
 | eaccounting\.stage\.vismaonline\.com | URL | http://eaccounting\.stage\.vismaonline\.com | Tier 2 | — |
@@ -34,10 +31,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | myservices\.stage\.vismaonline\.com | URL | http://myservices\.stage\.vismaonline\.com | Tier 2 | — |
 | oauth\.developers\.stagaws\.visma\.com | URL | http://oauth\.developers\.stagaws\.visma\.com | Tier 2 | — |
 | photoservice\.stage\.vismaonline\.com | URL | http://photoservice\.stage\.vismaonline\.com | Tier 2 | — |
-| ai-testing\.maventa\.com | URL | http://ai-testing\.maventa\.com | Tier 2 | — |
-| ax-stage\.maventa\.com | URL | http://ax-stage\.maventa\.com | Tier 2 | — |
-| autointerface\.stag\.visma\.net | URL | http://autointerface\.stag\.visma\.net | Tier 2 | — |
-| testing\.maventa\.com | URL | http://testing\.maventa\.com | Tier 2 | — |
 
 ## Out-of-scope entries (0)
 

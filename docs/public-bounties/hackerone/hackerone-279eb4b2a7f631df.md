@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:56Z.
+**Capture time:** 2026-11-07T14:54:12Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/exness/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/exness/assets/download_csv.csv>)
 
 ## In-scope entries (14)
 
@@ -31,7 +31,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Exness Investor | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | Any subdomain infrastructure issue | OTHER | — | — | Not bounty eligible |
 | Any subdomain application issue | OTHER | — | — | Not bounty eligible |
-| External service data leakage | OTHER | — | — | Not bounty eligible |
+| External service data leakage  | OTHER | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (1)
 

@@ -10,38 +10,51 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:53Z.
+**Capture time:** 2026-11-07T14:48:11Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/waterlink/water-link/detail>)
 
-## In-scope entries (7)
+## In-scope entries (19)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://desktop\.water-link\.be/ | URL | https://desktop\.water-link\.be/ | Tier 2 | — |
-| https://pit\.water-link\.be/ | URL | https://pit\.water-link\.be/ | Tier 2 | — |
-| \*\.water-link\.be/ | Wildcard | — | Tier 3 | — |
+| desktop\.water-link\.be | URL | http://desktop\.water-link\.be | Tier 2 | — |
+| pit\.water-link\.be | URL | http://pit\.water-link\.be | Tier 2 | — |
+| \*\.aww\.be | Wildcard | — | Tier 3 | — |
+| \*\.water-link\.be | Wildcard | — | Tier 3 | — |
+| indussiibis\.water-link\.be | URL | http://indussiibis\.water-link\.be | Tier 3 | — |
+| water-link-jaarverslag\.be | URL | http://water-link-jaarverslag\.be | Tier 3 | — |
 | \*\.mijnwater-link\.be | Wildcard | — | Tier 3 | — |
-| https://www\.water-link-jaarverslag\.be | URL | https://www\.water-link-jaarverslag\.be | Tier 3 | — |
-| https://www\.water-link\.be | URL | https://www\.water-link\.be | Tier 3 | — |
-| https://www\.waterstoring\.be/ | URL | https://www\.waterstoring\.be/ | Tier 3 | — |
+| aquawardsspatial\.water-link\.be | URL | http://aquawardsspatial\.water-link\.be | Tier 3 | — |
+| aquawardsoperate\.water-link\.be | URL | http://aquawardsoperate\.water-link\.be | Tier 3 | — |
+| waterkracht-levering\.be | URL | http://waterkracht-levering\.be | Tier 4 | — |
+| induss\.eu | URL | http://induss\.eu | Tier 4 | — |
+| rio-link\.be | URL | http://rio-link\.be | Tier 4 | — |
+| water-kracht-levering\.eu | URL | http://water-kracht-levering\.eu | Tier 4 | — |
+| adelta\.be | URL | http://adelta\.be | Tier 4 | — |
+| waterkracht-levering\.eu | URL | http://waterkracht-levering\.eu | Tier 4 | — |
+| aww\.eu | URL | http://aww\.eu | Tier 4 | — |
+| waterlink\.be | URL | http://waterlink\.be | Tier 4 | — |
+| water-kracht-levering\.be | URL | http://water-kracht-levering\.be | Tier 4 | — |
+| waterstoringen\.be | URL | http://waterstoringen\.be | Tier 4 | — |
 
-## Out-of-scope entries (12)
+## Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| aquawardsspatial\.water-link\.be | URL | http://aquawardsspatial\.water-link\.be | — | — |
-| gisacc\(\*\)\.water-link\.be | Wildcard | — | — | — |
-| https://aquawardsoperate\.water-link\.be/ | URL | https://aquawardsoperate\.water-link\.be/ | — | — |
-| https://aquawardsoperateacc\.water-link\.be | URL | https://aquawardsoperateacc\.water-link\.be | — | — |
-| https://feedback\.water-link\.be | URL | https://feedback\.water-link\.be | — | — |
-| https://gis\.water-link\.be | URL | https://gis\.water-link\.be | — | — |
-| https://gis1\.water-link\.be | URL | https://gis1\.water-link\.be | — | — |
-| https://gis2\.water-link\.be | URL | https://gis2\.water-link\.be | — | — |
-| https://jobs\.water-link\.be | URL | https://jobs\.water-link\.be | — | — |
+| waterwise\.be | URL | http://waterwise\.be | — | — |
+| peppol-a\.water-link\.be | URL | http://peppol-a\.water-link\.be | — | — |
+| aquawise\.be | URL | http://aquawise\.be | — | — |
+| oxum\.be | URL | http://oxum\.be | — | — |
+| peppol-t\.water-link\.be | URL | http://peppol-t\.water-link\.be | — | — |
 | storingvideo-t\.water-link\.be | URL | http://storingvideo-t\.water-link\.be | — | — |
-| https://wl\_acc\.water-link\.be/ | URL | https://wl\_acc\.water-link\.be/ | — | — |
-| https://wl\_dev\.water-link\.be/ | URL | https://wl\_dev\.water-link\.be/ | — | — |
+| wl\_dev\.water-link\.be | URL | http://wl\_dev\.water-link\.be | — | — |
+| wl\_acc\.water-link\.be | URL | http://wl\_acc\.water-link\.be | — | — |
+| aquawardsoperateacc\.water-link\.be | URL | http://aquawardsoperateacc\.water-link\.be | — | — |
+| gisacc\(\*\)\.water-link\.be | Wildcard | — | — | — |
+| secrets\.water-link\.be | URL | http://secrets\.water-link\.be | — | — |
+| feedback\.water-link\.be | URL | http://feedback\.water-link\.be | — | — |
+| jobs\.water-link\.be | URL | http://jobs\.water-link\.be | — | — |
 
 **Limits**
 

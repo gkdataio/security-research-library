@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:08Z.
+**Capture time:** 2026-11-07T14:53:36Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/csg-public/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/csg-public/assets/download_csv.csv>)
 
 ## In-scope entries (17)
 

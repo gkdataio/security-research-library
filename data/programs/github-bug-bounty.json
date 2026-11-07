@@ -94,20 +94,20 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "GitHub Bug Bounty scope",
       "url": "https://bounty.github.com/scope",
       "publisher": "GitHub",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     },
     {
-      "id": "assets-targets-2026-10-03",
+      "id": "assets-targets-2026-11-07",
       "title": "GitHub Bug Bounty target directory",
       "url": "https://bounty.github.com/targets",
       "publisher": "GitHub",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -144,10 +144,10 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_policy_page",
-    "verified_at": "2026-10-03T15:03:35Z",
+    "verified_at": "2026-11-07T14:48:59Z",
     "source_ids": [
-      "assets-scope-2026-10-03",
-      "assets-targets-2026-10-03"
+      "assets-scope-2026-11-07",
+      "assets-targets-2026-11-07"
     ],
     "in_scope": [
       {
@@ -156,7 +156,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -166,7 +166,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -176,7 +176,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -186,7 +186,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -196,7 +196,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -206,7 +206,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -216,7 +216,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -226,7 +226,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Subject to the explicit exceptions and target-specific policy pages."
       },
@@ -236,7 +236,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -245,7 +245,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -254,7 +254,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -263,7 +263,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -272,7 +272,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -281,7 +281,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -290,7 +290,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -299,7 +299,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -308,7 +308,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -317,7 +317,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -326,7 +326,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -335,7 +335,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -344,7 +344,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -353,7 +353,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -362,7 +362,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -371,7 +371,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -380,7 +380,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -389,7 +389,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       },
       {
@@ -398,7 +398,7 @@
         "location": null,
         "group": "Target directory",
         "source_ids": [
-          "assets-targets-2026-10-03"
+          "assets-targets-2026-11-07"
         ]
       }
     ],
@@ -409,7 +409,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -419,7 +419,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -429,7 +429,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -439,7 +439,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -449,7 +449,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -459,7 +459,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -469,7 +469,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -479,7 +479,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -489,7 +489,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -499,7 +499,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -509,7 +509,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -519,7 +519,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -529,7 +529,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -539,7 +539,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -549,7 +549,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -559,7 +559,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -569,7 +569,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -579,7 +579,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -589,7 +589,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -599,7 +599,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -609,7 +609,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -619,7 +619,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -629,7 +629,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       },
@@ -639,7 +639,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicit exception to the applicable in-scope wildcard."
       }

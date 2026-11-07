@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:54:12Z.
+**Capture time:** 2026-11-07T14:55:57Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/remitly/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/remitly/assets/download_csv.csv>)
 
-## In-scope entries (72)
+## In-scope entries (73)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -90,6 +90,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 674258465 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | funding-webhooks\.remitly\.io | API | — | — | Bounty eligible |
 | hub-api-sandbox\.remitly\.io | API | — | — | Bounty eligible |
+| api\.remitly\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

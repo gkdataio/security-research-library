@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:15Z.
+**Capture time:** 2026-11-07T15:01:02Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,9 +18,9 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/costar-vdp-pro/changelog/b9f52550-a5a5-41d6-979e-89a663bd9ce7.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/costar-vdp-pro/changelog/9e347b78-3183-4a14-9f94-34a38994eb66.json>)
 
-## In-scope entries (60)
+## In-scope entries (63)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -80,10 +80,13 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | Visual Lease | website | https://visuallease\.com/ | In Scope | — |
 | Visual Lease Webhook | website | https://webhook\.visuallease\.com/ | In Scope | — |
 | Web Enterprise | website | https://we\.costar\.com/ | In Scope | — |
-| Discover Matterport | website | https://discover\.matterport\.com/ | In Scope | — |
 | Capture Services QA | website | https://qa3-captureservices\.matterport\.com/ | In Scope | — |
+| Discover Matterport | website | https://discover\.matterport\.com/ | In Scope | — |
 | Capture Services | website | https://captureservices\.matterport\.com | In Scope | — |
 | API Matterport | website | https://dev-api\.matterport\.com/graphiql | In Scope | — |
+| Deal Navigator | website | https://www\.dealnavigator\.com | In Scope | — |
+| Dev Auth Matterport | website | https://dev-authn\.matterport\.com/ | In Scope | — |
+| Dev CaptureServices Matterport | website | https://dev-captureservices\.matterport\.com | In Scope | — |
 
 ## Out-of-scope entries (1)
 

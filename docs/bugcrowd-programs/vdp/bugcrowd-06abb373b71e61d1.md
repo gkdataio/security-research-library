@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:51Z.
+**Capture time:** 2026-11-07T14:57:36Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,13 +18,13 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/retool-vdp/changelog/bb1f3cc4-03db-4ddf-8e0e-69bcd423cbe7.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/retool-vdp/changelog/8272e6b9-cafd-4aad-bd66-9e69605d4462.json>)
 
 ## In-scope entries (1)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| login\.retool\.com | website | https://login\.retool\.com | In-Scope Targets | — |
+| ████████████████ | website | — | ████████████████ | — |
 
 ## Out-of-scope entries (0)
 

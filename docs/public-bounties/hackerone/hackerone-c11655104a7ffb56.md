@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:44Z.
+**Capture time:** 2026-11-07T14:54:37Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/hostinger/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/hostinger/assets/download_csv.csv>)
 
-## In-scope entries (12)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | H5G/Agency | OTHER | — | — | Bounty eligible |
 | mail\.hostinger\.com | OTHER | — | — | Bounty eligible |
 | Managed OpenClaw | OTHER | — | — | Bounty eligible |
+| ai-builder\.hostinger\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

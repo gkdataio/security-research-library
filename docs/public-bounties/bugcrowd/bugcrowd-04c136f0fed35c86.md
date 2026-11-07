@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:33Z.
+**Capture time:** 2026-11-07T14:48:13Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,13 +18,16 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Computer Software.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/fivetran-mbb-og/changelog/c2b5060d-5f00-4a6d-9af7-77c90fc6fe07.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/fivetran-mbb-og/changelog/5361ca72-ceb4-4afd-8764-efe583615ffb.json>)
 
-## In-scope entries (1)
+## In-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.fivetran\.com | website | https://fivetran\.com/login | In Scope Targets | — |
+| \*\.fivetran\.com | website | https://fivetran\.com/login | In Scope Targets: Fivetran | — |
+| https://\*\.getdbt\.com | website | https://\*\.getdbt\.com | In Scope Targets: dbt | — |
+| https://\*\.dbt\.com | website | https://\*\.dbt\.com | In Scope Targets: dbt | — |
+| https://\*\.dbtlabs\.com | website | https://\*\.dbtlabs\.com | In Scope Targets: dbt | — |
 
 ## Out-of-scope entries (9)
 

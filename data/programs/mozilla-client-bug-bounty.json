@@ -95,11 +95,11 @@
       "access_method": "browser"
     },
     {
-      "id": "assets-scope-2026-10-03",
+      "id": "assets-scope-2026-11-07",
       "title": "Mozilla Client Bug Bounty Program",
       "url": "https://www.mozilla.org/en-US/security/client-bug-bounty/",
       "publisher": "Mozilla",
-      "retrieved_at": "2026-10-03T15:03:35Z",
+      "retrieved_at": "2026-11-07T14:48:59Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -120,9 +120,9 @@
   "asset_scope": {
     "capture_status": "policy_defined",
     "collection_method": "official_policy_page",
-    "verified_at": "2026-10-03T15:03:35Z",
+    "verified_at": "2026-11-07T14:48:59Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "assets-scope-2026-11-07"
     ],
     "in_scope": [
       {
@@ -131,7 +131,7 @@
         "location": null,
         "group": "Current release and supported development channels",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -140,7 +140,7 @@
         "location": null,
         "group": "Current release and supported development channels",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       },
       {
@@ -149,7 +149,7 @@
         "location": null,
         "group": "Current release and supported development channels",
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ]
       }
     ],
@@ -160,7 +160,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Explicitly excluded from exploit-mitigation bounty coverage."
       },
@@ -170,7 +170,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "assets-scope-2026-11-07"
         ],
         "note": "Not eligible for the client security bounty."
       }

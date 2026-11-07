@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:37Z.
+**Capture time:** 2026-11-07T14:55:35Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/paypal/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/paypal/assets/download_csv.csv>)
 
-## In-scope entries (41)
+## In-scope entries (42)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -59,6 +59,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.xoom\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.paypal\.merchant | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.yourcompany\.PPClient | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| Account restrictions and control bypasses - campaign | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (8)
 

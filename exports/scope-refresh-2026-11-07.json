@@ -1,0 +1,1102 @@
+{
+  "schema_version": "1.0.0",
+  "review_date": "2026-11-07",
+  "baseline_commit": "cb017eaea66e81b23690c0805e88daa5d97c1a3b",
+  "purpose": "One-time official public scope refresh for existing program records; no target requests or testing.",
+  "coverage": [
+    {
+      "platform": "Bugcrowd",
+      "official_program_sources_attempted": 516,
+      "freshly_read": 505
+    },
+    {
+      "platform": "HackerOne",
+      "official_program_sources_attempted": 224,
+      "freshly_read": 223
+    },
+    {
+      "platform": "Intigriti",
+      "official_program_sources_attempted": 121,
+      "freshly_read": 90
+    },
+    {
+      "platform": "Direct policy",
+      "official_program_sources_attempted": 7,
+      "freshly_read": 6
+    }
+  ],
+  "canonical_records_refreshed": 823,
+  "records_with_scope_row_changes": 105,
+  "scope_row_changes": [
+    {
+      "id": "bugcrowd-00126820d84bf20e",
+      "name": "Magic Apps Marketplace Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/magic-apps",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-04c136f0fed35c86",
+      "name": "Fivetran",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/fivetran-mbb-og",
+      "added_rows": 4,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-0a2cee613b3d1476",
+      "name": "Kantega SSO",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/kantega",
+      "added_rows": 0,
+      "removed_rows": 4
+    },
+    {
+      "id": "bugcrowd-109f91f978300f62",
+      "name": "Caelor Group",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/caelor-group-market",
+      "added_rows": 1,
+      "removed_rows": 4
+    },
+    {
+      "id": "bugcrowd-1d665db53af0f4a0",
+      "name": "Majid Al Futtaim Lifestyle",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/maffashion",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-298d2da40b206bbb",
+      "name": "Moneytree KK",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/moneytreekkog",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-340c854715d1afd4",
+      "name": "StonikByte",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/stonikbyte",
+      "added_rows": 7,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-3d5e38383524336c",
+      "name": "Centers for Medicare & Medicaid Services - Public Bug Bounty Program 2026",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/cms-bbpublic",
+      "added_rows": 10,
+      "removed_rows": 3
+    },
+    {
+      "id": "bugcrowd-42a03b5a0dcc855e",
+      "name": "Auth0 by Okta",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/auth0-okta",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-440c8420c2ec7898",
+      "name": "Nemetschek",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/nemetschek",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-6a006f4f968cdcdc",
+      "name": "Imperva - Thales Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/imperva-mbb",
+      "added_rows": 4,
+      "removed_rows": 7
+    },
+    {
+      "id": "bugcrowd-6b4160c4d3ab907f",
+      "name": "AI | Apps+ Marketplace Bug Bounty Program",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/apps-plus2",
+      "added_rows": 19,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-7c9536c01b42fb32",
+      "name": "City of Vienna Managed Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/city-of-vienna-mbb-og",
+      "added_rows": 4,
+      "removed_rows": 2
+    },
+    {
+      "id": "bugcrowd-8119a00b8d1dae23",
+      "name": "Bolt Technology OÜ",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/bolt-og",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-9052f631389a67cb",
+      "name": "T-Mobile",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/t-mobile",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-91c555e8b0eaab53",
+      "name": "HotDoc",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/hotdoc",
+      "added_rows": 6,
+      "removed_rows": 6
+    },
+    {
+      "id": "bugcrowd-9358ab34ac09914a",
+      "name": "Resolution",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/resolutionde",
+      "added_rows": 1,
+      "removed_rows": 20
+    },
+    {
+      "id": "bugcrowd-9cac9944ac97cc74",
+      "name": "Mastercard Public Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/mastercard",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-a32ac2750258b402",
+      "name": "Raley Apps",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/raleyapps",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-bc44de486a361c0f",
+      "name": "The Hut Group: Public Managed Bug Bounty Engagement",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/hutgroup-public",
+      "added_rows": 0,
+      "removed_rows": 2
+    },
+    {
+      "id": "bugcrowd-d89cc334bcfd73d7",
+      "name": "iRobot",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/irobot",
+      "added_rows": 16,
+      "removed_rows": 16
+    },
+    {
+      "id": "bugcrowd-d9e0b06dc68f5a80",
+      "name": "Viator",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/viator",
+      "added_rows": 0,
+      "removed_rows": 3
+    },
+    {
+      "id": "bugcrowd-da2091edd60344e7",
+      "name": "DevAcrobats",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/devacrobats-market",
+      "added_rows": 2,
+      "removed_rows": 2
+    },
+    {
+      "id": "bugcrowd-f682c3a3aa7ed8f2",
+      "name": "Binance",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/binance",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-012d67a58a1e6aa1",
+      "name": "PayPal",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/paypal?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-066b23fc84620102",
+      "name": "Databricks",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/databricks?type=team",
+      "added_rows": 4,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-077a226296df271f",
+      "name": "d-you App & German EUDI Wallet Ecosystem",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/common_codes?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-0a964b6640f044fb",
+      "name": "MercadoLibre",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/mercadolibre?type=team",
+      "added_rows": 3,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-12275be548221ef0",
+      "name": "Xiaomi",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/xiaomi?type=team",
+      "added_rows": 3,
+      "removed_rows": 3
+    },
+    {
+      "id": "hackerone-168d379057d4efbd",
+      "name": "Marriott Bug Bounty Program",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/marriott?type=team",
+      "added_rows": 15,
+      "removed_rows": 28
+    },
+    {
+      "id": "hackerone-18bbf0c481f44e77",
+      "name": "Nintendo",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/nintendo?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-199022bdc17fe291",
+      "name": "Kiwi.com",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/kiwicom?type=team",
+      "added_rows": 0,
+      "removed_rows": 10
+    },
+    {
+      "id": "hackerone-1c6388c9199b6308",
+      "name": "The Browser Company of NYC",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/bcny?type=team",
+      "added_rows": 5,
+      "removed_rows": 5
+    },
+    {
+      "id": "hackerone-1e50f0caf2c49b77",
+      "name": "Early Warning",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/early_warning?type=team",
+      "added_rows": 8,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-279eb4b2a7f631df",
+      "name": "EXNESS",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/exness?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-283069b8a0f4c015",
+      "name": "WordPress",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/wordpress?type=team",
+      "added_rows": 2,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-298c0611acddd5ba",
+      "name": "Remitly",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/remitly?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-32855a40ca375ec2",
+      "name": "Judge.me ",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/judgeme?type=team",
+      "added_rows": 1,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-4098ddf23f2ec872",
+      "name": "Palantir Public",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/palantir_public?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-441cfdf2fe7aac5e",
+      "name": "X / xAI",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/x?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-44dcd09820086753",
+      "name": "Goldman Sachs",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/goldmansachs?type=team",
+      "added_rows": 0,
+      "removed_rows": 6
+    },
+    {
+      "id": "hackerone-511dcd018ac31f8b",
+      "name": "Stripe",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/stripe?type=team",
+      "added_rows": 3,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-56f0e651cd324f30",
+      "name": "Priceline",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/priceline?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-58030e9572e48f03",
+      "name": "Expedia Group Bug Bounty",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/expediagroup_bbp?type=team",
+      "added_rows": 6,
+      "removed_rows": 3
+    },
+    {
+      "id": "hackerone-5cc112a4979f3a8c",
+      "name": "Ubiquiti Inc.",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/ui?type=team",
+      "added_rows": 3,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-651dfd1ec9282b37",
+      "name": "Meesho",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/meesho_bbp?type=team",
+      "added_rows": 0,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-6fb7a0454f1fd1a0",
+      "name": "Hilton",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/hilton?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-72dfb267385f03d8",
+      "name": "Automattic",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/automattic?type=team",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-751224ddab8e7db1",
+      "name": "Malwarebytes",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/malwarebytes?type=team",
+      "added_rows": 0,
+      "removed_rows": 14
+    },
+    {
+      "id": "hackerone-849058e2387b747d",
+      "name": "Epic Games",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/epicgames?type=team",
+      "added_rows": 4,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-8501ce85809a9bd4",
+      "name": "Banco Plata",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/banco_plata?type=team",
+      "added_rows": 3,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-8756d9f7bdf35d4e",
+      "name": "Chia Network",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/chia_network?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-8912ab2c0977be9a",
+      "name": "Twilio",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/twilio?type=team",
+      "added_rows": 85,
+      "removed_rows": 29
+    },
+    {
+      "id": "hackerone-8aa3bd7b67d92531",
+      "name": "FanDuel",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/fanduel?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-8cd014b6cccdc484",
+      "name": "AT&T",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/att?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-948ca6c9ff8f5ff6",
+      "name": "Visa",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/visa?type=team",
+      "added_rows": 3,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-991e61b782021406",
+      "name": "Netflix",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/netflix?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-9970a869a4d513da",
+      "name": "Exodus",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/exodus?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-9b1526800575fa1e",
+      "name": "Hyatt Hotels",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/hyatt?type=team",
+      "added_rows": 0,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-9c22f93a3085991d",
+      "name": "Anduril Industries",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/anduril_industries?type=team",
+      "added_rows": 1,
+      "removed_rows": 3
+    },
+    {
+      "id": "hackerone-a69ab289f68ae3eb",
+      "name": "MongoDB",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/mongodb?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-af813ba803adf77c",
+      "name": "Coinbase",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/coinbase?type=team",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-b72f75de28feb0fd",
+      "name": "Superhuman (formerly Grammarly)",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/superhuman?type=team",
+      "added_rows": 1,
+      "removed_rows": 2
+    },
+    {
+      "id": "hackerone-bdb377400c03ba29",
+      "name": "Inspectorio",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/inspectorio?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-c11655104a7ffb56",
+      "name": "hostinger ",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/hostinger?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-c216c38fbaf801c2",
+      "name": "REI BBP",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/rei_bbp?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-c9db05e34bcf3c4b",
+      "name": "Via",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/ridewithvia?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-cb354b491a6a1e62",
+      "name": "Polygon Technology",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/polygon-technology?type=team",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "hackerone-cf81d600977a6a5e",
+      "name": "NBA Public Bug Bounty",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/nba-public?type=team",
+      "added_rows": 19,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-d7614d7d57cad8a3",
+      "name": "Instacart",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/instacart?type=team",
+      "added_rows": 5,
+      "removed_rows": 6
+    },
+    {
+      "id": "hackerone-da644f4b80e67dcd",
+      "name": "1win",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/1win_com?type=team",
+      "added_rows": 8,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-e14b1026056fd046",
+      "name": "Compass",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/compass-bbp?type=team",
+      "added_rows": 4,
+      "removed_rows": 4
+    },
+    {
+      "id": "hackerone-e423c4958e9e2df8",
+      "name": "MoonPay ",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/moonpay?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-ec82b7e39c5712b0",
+      "name": "Braze, Inc.",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/braze_inc?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-eecd057ab79e141f",
+      "name": "inDrive",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/indrive?type=team",
+      "added_rows": 34,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-f244151680c83618",
+      "name": "Enjin",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/enjin?type=team",
+      "added_rows": 1,
+      "removed_rows": 3
+    },
+    {
+      "id": "hackerone-f69ab9781883de03",
+      "name": "Capital One Bug Bounty",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/capital-one-bounty?type=team",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-f851f0727c99b3af",
+      "name": "Cloudflare Public Bug Bounty",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/cloudflare?type=team",
+      "added_rows": 8,
+      "removed_rows": 3
+    },
+    {
+      "id": "hackerone-fc841c8ac5a3b8ce",
+      "name": "Bybit Fintech Ltd",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/bybit_fintech?type=team",
+      "added_rows": 6,
+      "removed_rows": 0
+    },
+    {
+      "id": "hackerone-ffe4ec7b21238db6",
+      "name": "Notion Labs, Inc.",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/notion?type=team",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "intigriti-12936eec3f8c8c8b",
+      "name": "Visma",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/visma/visma",
+      "added_rows": 0,
+      "removed_rows": 7
+    },
+    {
+      "id": "intigriti-1bcc010eacd4c9da",
+      "name": "Nexuzhealth Web PACS",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/uz%20leuven/nexuzhealthwebpacs",
+      "added_rows": 1,
+      "removed_rows": 0
+    },
+    {
+      "id": "intigriti-2c18ef465c4e31be",
+      "name": "Water-Link",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/waterlink/water-link",
+      "added_rows": 29,
+      "removed_rows": 16
+    },
+    {
+      "id": "intigriti-42afa90b3827da99",
+      "name": "Axel Springer National Media & Tech",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/axelspringerse/nmt",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "intigriti-5c2f8a1fd693afa1",
+      "name": "Social Deal",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/socialdeal/socialdeal",
+      "added_rows": 5,
+      "removed_rows": 3
+    },
+    {
+      "id": "intigriti-631624525009fdeb",
+      "name": "Veriff Bug Bounty",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/veriff/veriffbugbounty",
+      "added_rows": 2,
+      "removed_rows": 2
+    },
+    {
+      "id": "intigriti-6e7c18751a748f03",
+      "name": "RIPE NCC",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/ripencc/ripencc",
+      "added_rows": 6,
+      "removed_rows": 6
+    },
+    {
+      "id": "intigriti-828a6d2b7d8511ec",
+      "name": "DigitalOcean",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/digitalocean/digitalocean",
+      "added_rows": 2,
+      "removed_rows": 1
+    },
+    {
+      "id": "intigriti-a3ffa1f1256a691e",
+      "name": "Here Technologies",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/heretechnologies/heretechnologies",
+      "added_rows": 18,
+      "removed_rows": 8
+    },
+    {
+      "id": "intigriti-bb77675d6cfe285d",
+      "name": "Uphold",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/Uphold/upholdcom",
+      "added_rows": 23,
+      "removed_rows": 12
+    },
+    {
+      "id": "intigriti-cac050d725fa29b1",
+      "name": "Yahoo Bug Bounty",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/yahoo/yahoobugbounty",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "intigriti-f67fd7e02341ee40",
+      "name": "Personio",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/personio/personio",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-06abb373b71e61d1",
+      "name": "Retool Vulnerability Disclosure Program",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/retool-vdp",
+      "added_rows": 1,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-12f03056ae8dc130",
+      "name": "Gap Inc.",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/gapinc",
+      "added_rows": 18,
+      "removed_rows": 19
+    },
+    {
+      "id": "bugcrowd-565e1101006fd714",
+      "name": "Lumen VDP",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/lumenvdp",
+      "added_rows": 4,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-801fed70d571ca5b",
+      "name": "CoStar Vulnerability Disclosure Engagement",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/costar-vdp-pro",
+      "added_rows": 3,
+      "removed_rows": 0
+    },
+    {
+      "id": "bugcrowd-af9e1984c38f5f93",
+      "name": "Centers for Medicare & Medicaid Services (CMS) - Vulnerability Disclosure Program",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/cms-vdp",
+      "added_rows": 2,
+      "removed_rows": 2
+    },
+    {
+      "id": "bugcrowd-bfd15b71beacd9c3",
+      "name": "Ziff Davis Vulnerability Disclosure Program",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/ziffdavis-vdp-pro",
+      "added_rows": 5,
+      "removed_rows": 38
+    },
+    {
+      "id": "bugcrowd-d8b5d00b8363e318",
+      "name": "Chemist Warehouse Vulnerability Disclosure Engagement",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/chemistwarehouse-vdp-pro",
+      "added_rows": 0,
+      "removed_rows": 1
+    },
+    {
+      "id": "bugcrowd-e3ce6906961d0763",
+      "name": "BNZ Responsible Disclosure Program",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/bnz",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "openai-security-bug-bounty",
+      "name": "OpenAI Security Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/openai",
+      "added_rows": 7,
+      "removed_rows": 7
+    },
+    {
+      "id": "nxtport-vulnerability-disclosure",
+      "name": "NxtPort Vulnerability Disclosure Program",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/portofantwerp/nxtportvdp",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "vercel-bug-bounty",
+      "name": "Vercel Bug Bounty",
+      "platform": "HackerOne",
+      "program_url": "https://hackerone.com/vercel?type=team",
+      "added_rows": 2,
+      "removed_rows": 0
+    },
+    {
+      "id": "dropbox-bug-bounty",
+      "name": "Dropbox Bug Bounty",
+      "platform": "Intigriti",
+      "program_url": "https://app.intigriti.com/programs/dropbox/dropbox",
+      "added_rows": 9,
+      "removed_rows": 5
+    },
+    {
+      "id": "vinted-bug-bounty",
+      "name": "Vinted Bug Bounty",
+      "platform": "Bugcrowd",
+      "program_url": "https://bugcrowd.com/engagements/vinted-uab-mbb",
+      "added_rows": 0,
+      "removed_rows": 1
+    }
+  ],
+  "failed_or_unavailable_sources": [
+    {
+      "platform": "Bugcrowd",
+      "url": "https://eu.bugcrowd.net/engagements/eu-automation-test-regression-engagement1-b",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://eu.bugcrowd.net/engagements/Demo-EU-admin-Test",
+      "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://eu.bugcrowd.net/engagements/eu-public-1",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://eu.bugcrowd.net/engagements/demo-eu-admin-pentest-max-4",
+      "reason": "HTTPError: HTTP Error 403: Forbidden"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://bugcrowd.com/engagements/fmshrc-vdp",
+      "reason": "ValueError: No current public brief version on page"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://gov.bugcrowd.net/engagements/fmc-vdp",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://bugcrowd.com/engagements/ciscosecurity",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://bugcrowd.com/engagements/abmc-vdp",
+      "reason": "ValueError: No current public brief version on page"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://eu.bugcrowd.net/engagements/eu-vdp-1",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://bugcrowd.com/engagements/oshrc-vdp",
+      "reason": "ValueError: No current public brief version on page"
+    },
+    {
+      "platform": "Bugcrowd",
+      "url": "https://gov.bugcrowd.net/engagements/sec-vdp",
+      "reason": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "platform": "HackerOne",
+      "url": "https://hackerone.com/kong?type=team",
+      "reason": "Official CSV returned HTTP 404. Normal public policy_scopes UI redirected to HackerOne sign-in; no sign-in attempted, prior scope and dates retained."
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/upcloud/upcloud",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/rpip/allekabels",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/leapsome/leapsome",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/farfetch/farfetchbugbounty",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/intigriti/captureourflag",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/doccle/doccle",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/liveperson/livepersonconversationalcloud",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/wl/wirelesslogic",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/telenet/telenetgroup",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/rampf/rampfbugbounty",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/uitgeverijdeviant/uitgeverijdeviant",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/mydirtyhobby-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/kahoot/kahoot",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/trafficjunky-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/probiller-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/colruyt/colruytgroupidcheck",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/belfius/belfius",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/nutaku-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/ideals/ideals",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/brazzers-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/sdworx/myworkandme",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/intertoys/intertoys",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/combell/webnode",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/fortnox/fortnox",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/daytona/daytonabugbounty",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/onetwobuild/12build",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/aylo/pornhub-bbp",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": "https://app.intigriti.com/programs/colruyt/newpharma",
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Intigriti",
+      "url": null,
+      "reason": "HTTP Error 302: Found"
+    },
+    {
+      "platform": "Direct policy",
+      "url": "https://www.fastmail.com/bug-bounty/",
+      "reason": "HTTP 403 Forbidden on official policy page. No access workaround or retry attempted. Prior scope and dates preserved."
+    }
+  ],
+  "limitations": [
+    "Directory snapshot remains October 3, 2026; no discovery completeness claim is made by this refresh.",
+    "Existing historical non-bounty HackerOne classification-only records with no captured scope are outside this catalog-scope pass.",
+    "Scope rows and source observations do not establish current submission eligibility, bounty classification or permission to test.",
+    "Failed, redirected or inaccessible sources retain their last verified scopes and timestamps.",
+    "Current official policy controls. Platform scope tables do not capture every qualification or policy exclusion.",
+    "The retained change feed also includes provenance/version changes; these are distinct from asset-row changes."
+  ]
+}

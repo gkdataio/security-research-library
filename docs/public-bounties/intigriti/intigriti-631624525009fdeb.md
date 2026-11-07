@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:44Z.
+**Capture time:** 2026-11-07T14:48:59Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/veriff/veriffbugbounty/detail>)
 
@@ -18,12 +18,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| 1467907532 | iOS | https://apps\.apple\.com/app/1467907532 | Tier 1 | — |
+| 1467907532 | iOS | https://apps\.apple\.com/app/1467907532 | Tier 2 | — |
 | alchemy\.veriff\.com | URL | http://alchemy\.veriff\.com | Tier 1 | — |
 | api\.flamingo-eu\.veriff\.com | URL | http://api\.flamingo-eu\.veriff\.com | Tier 1 | — |
 | api\.us\.veriff\.me | URL | http://api\.us\.veriff\.me | Tier 1 | — |
 | api\.veriff\.me | URL | http://api\.veriff\.me | Tier 1 | — |
-| com\.veriff\.demo | Android | https://play\.google\.com/store/apps/details?id=com\.veriff\.demo | Tier 1 | — |
+| com\.veriff\.demo | Android | https://play\.google\.com/store/apps/details?id=com\.veriff\.demo | Tier 2 | — |
 | louvre\.veriff\.me | URL | http://louvre\.veriff\.me | Tier 1 | — |
 | magic\.veriff\.me | URL | http://magic\.veriff\.me | Tier 1 | — |
 | station\.veriff\.com | URL | http://station\.veriff\.com | Tier 1 | — |

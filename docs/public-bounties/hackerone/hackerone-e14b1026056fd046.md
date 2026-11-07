@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:50:16Z.
+**Capture time:** 2026-11-07T14:53:43Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/compass-bbp/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/compass-bbp/assets/download_csv.csv>)
 
 ## In-scope entries (3)
 
@@ -56,13 +56,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | c21\.hk | URL | — | — | Not bounty eligible |
 | glide\.com | URL | — | — | Not bounty eligible |
 | Christie’s International Real Estate | OTHER | — | — | Not bounty eligible |
-| @properties | OTHER | — | — | Not bounty eligible |
-| Consumer’s Title of California | OTHER | — | — | Not bounty eligible |
 | Chartwell | OTHER | — | — | Not bounty eligible |
 | LegacyTexas Title | OTHER | — | — | Not bounty eligible |
 | SQS Square Settlements | OTHER | — | — | Not bounty eligible |
-| KVS Title | OTHER | — | — | Not bounty eligible |
-| Glide | OTHER | — | — | Not bounty eligible |
+|  @properties | OTHER | — | — | Not bounty eligible |
+| Consumer’s Title of California  | OTHER | — | — | Not bounty eligible |
+| KVS Title  | OTHER | — | — | Not bounty eligible |
+| Glide  | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

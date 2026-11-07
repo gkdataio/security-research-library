@@ -10,15 +10,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:51:49Z.
+**Capture time:** 2026-11-07T14:54:40Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/hyatt/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/hyatt/assets/download_csv.csv>)
 
-## In-scope entries (61)
+## In-scope entries (59)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| hyatt\.com | URL | — | — | Bounty eligible |
 | www\.hyatt\.com | URL | — | — | Bounty eligible |
 | world\.hyatt\.com | URL | — | — | Bounty eligible |
 | assets\.hyatt\.com | URL | — | — | Bounty eligible |
@@ -57,7 +56,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.wynnvacations\.com | URL | — | — | Bounty eligible |
 | www\.beachbound\.com | URL | — | — | Bounty eligible |
 | book\.applevacations\.com | URL | — | — | Bounty eligible |
-| book\.booktandl\.com | URL | — | — | Bounty eligible |
 | login\.www\.vaxvacationaccess\.com | URL | — | — | Bounty eligible |
 | new\.www\.vaxvacationaccess\.com | URL | — | — | Bounty eligible |
 | res\.blueskytours\.globalbookingsolutions\.com | URL | — | — | Bounty eligible |

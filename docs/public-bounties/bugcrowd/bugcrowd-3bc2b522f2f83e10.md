@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:53:29Z.
+**Capture time:** 2026-11-07T14:50:26Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Automotive.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/volkswagen-og/changelog/6bc3d4da-d19f-4458-8135-ad3a020ac71e.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/volkswagen-og/changelog/16c84d05-be41-49dc-a6a2-5264053fd347.json>)
 
 ## In-scope entries (1)
 

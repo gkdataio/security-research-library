@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:55:46Z.
+**Capture time:** 2026-11-07T14:56:54Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/ridewithvia/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/ridewithvia/assets/download_csv.csv>)
 
 ## In-scope entries (13)
 
@@ -24,13 +24,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://metroconnect\.app\.ridewithvia\.com | URL | — | — | Bounty eligible |
 | https://pt-runner\.app\.ridewithvia\.com | URL | — | — | Bounty eligible |
 | via\.rider | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.citymapper\.app\.release | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | ridewithvia\.neoridelittlerock | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | ridewithvia\.par\.piercetransit | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 657777015 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 469463298 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6449737830 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6464473474 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+|  com\.citymapper\.app\.release | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 

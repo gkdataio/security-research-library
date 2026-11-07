@@ -73,7 +73,7 @@ Quick links: [Cross-site scripting (XSS)](docs/vulnerabilities/xss.md) ([Stored]
 
 ## At a glance
 
-**Learning counts: October 12, 2026; report counts: October 7, 2026; program snapshots and report recency: October 3, 2026**
+**Learning counts: October 12, 2026; report counts: October 7, 2026; directory snapshots and report recency: October 3, 2026. Existing scope sources were revisited November 7, 2026; see [refresh coverage and preserved gaps](docs/scope-refresh-2026-11-07.md).**
 
 - **67 qualifying report records:** 56 bug-bounty awards and 11 explicitly labeled competition entries
 - **40 public program-policy summaries**, maintained separately from award evidence

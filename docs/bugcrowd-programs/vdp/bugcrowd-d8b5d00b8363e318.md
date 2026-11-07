@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:30Z.
+**Capture time:** 2026-11-07T15:02:28Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,9 +18,9 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/chemistwarehouse-vdp-pro/changelog/53291dfd-8e6f-47b3-8fb6-9ac48fd1b8f1.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/chemistwarehouse-vdp-pro/changelog/77508ad1-de96-437e-beb9-9c6477d04376.json>)
 
-## In-scope entries (16)
+## In-scope entries (15)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,6 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | adf\.sigmahealthcare\.com\.au | website | https://adf\.sigmahealthcare\.com\.au | In Scope | — |
 | www\.mpsconnect\.com\.au | website | https://www\.mpsconnect\.com\.au | In Scope | — |
 | www\.wagnerhealth\.com\.au/ | website | https://www\.wagnerhealth\.com\.au/ | In Scope | — |
-| rsvp\.chemistwarehouse\.com\.au | website | https://rsvp\.chemistwarehouse\.com\.au/ | In Scope | — |
 | www\.mybeautyspot\.com\.au | website | https://www\.mybeautyspot\.com\.au | In Scope | — |
 
 ## Out-of-scope entries (1)

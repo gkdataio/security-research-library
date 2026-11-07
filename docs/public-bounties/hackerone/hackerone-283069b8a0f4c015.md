@@ -10,9 +10,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T15:56:04Z.
+**Capture time:** 2026-11-07T14:57:23Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/wordpress/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/wordpress/assets/download_csv.csv>)
 
 ## In-scope entries (23)
 
@@ -38,9 +38,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Official WordPress plugins | SOURCE\_CODE | — | — | Bounty eligible |
 | Secure Custom Fields | SOURCE\_CODE | — | — | Bounty eligible |
 | SQLite Database Integration | SOURCE\_CODE | — | — | Bounty eligible |
-| Create Block Theme | SOURCE\_CODE | — | — | Bounty eligible |
-| github\.com/wordpress | SOURCE\_CODE | — | — | Bounty eligible |
 | Playground | SOURCE\_CODE | — | — | Bounty eligible |
+| Create Block Theme | SOURCE\_CODE | — | — | Not bounty eligible |
+| Other github\.com/wordpress repos | SOURCE\_CODE | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (10)
 

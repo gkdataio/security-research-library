@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-10-03T16:44:48Z.
+**Capture time:** 2026-11-07T15:01:44Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,9 +18,9 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/cms-vdp/changelog/6bd0166c-58d6-4170-923b-d7eedc947982.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/cms-vdp/changelog/97641953-4860-46bb-a29e-6e8b1c998894.json>)
 
-## In-scope entries (7)
+## In-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,17 +28,17 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | https://www\.cms\.gov/ | website | https://www\.cms\.gov/ | In Scope  | — |
 | https://www\.insurekidsnow\.gov/ | website | https://www\.insurekidsnow\.gov/ | In Scope  | — |
 | https://www\.medicaid\.gov/ | website | https://www\.medicaid\.gov/ | In Scope  | — |
-| https://www\.medicare\.gov/ | website | https://www\.medicare\.gov/ | In Scope  | — |
-| https://mymedicare\.gov/ | website | https://mymedicare\.gov/ | In Scope  | — |
 | https://qualitynet\.cms\.gov/ | website | https://qualitynet\.cms\.gov/ | In Scope  | — |
 
-## Out-of-scope entries (3)
+## Out-of-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | https://portal\.cms\.gov/ | website | https://portal\.cms\.gov/ | Out of Scope targets | — |
 | https://www\.healthcare\.gov/ | website | https://www\.healthcare\.gov/ | Out of Scope targets | — |
 | https://www\.cuidadodesalud\.gov/es/ | website | https://www\.cuidadodesalud\.gov/es/ | Out of Scope targets | — |
+| https://www\.medicare\.gov/ | website | https://www\.medicare\.gov/ | Out of Scope targets | — |
+| https://mymedicare\.gov/ | website | https://mymedicare\.gov/ | Out of Scope targets | — |
 
 **Limits**
 

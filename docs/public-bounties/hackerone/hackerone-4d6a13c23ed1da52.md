@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-10-03T14:59:15Z.
+**Capture time:** 2026-11-07T14:56:50Z.
 
-**Scope source:** [Official source 1](<https://hackerone.com/vercel/policy_scopes>)
+**Scope source:** [Official source 1](<https://hackerone.com/teams/vercel/assets/download_csv.csv>)
 
-## In-scope entries (24)
+## In-scope entries (26)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -42,6 +42,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/vercel/eve | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/vercel/ms | SOURCE\_CODE | — | — | Bounty eligible |
 | Vercel sandbox | OTHER | — | — | Bounty eligible |
+| https://github\.com/sveltejs/kit | SOURCE\_CODE | — | — | Bounty eligible |
+| https://github\.com/better-auth/better-auth | SOURCE\_CODE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 
@@ -51,4 +53,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Limits**
 
-- Published structured-scope rows were captured\. Submission eligibility and bounty eligibility differ; program policy text may add restrictions\.
+- Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
