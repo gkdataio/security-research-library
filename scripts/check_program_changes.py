@@ -24,6 +24,7 @@ from export_bugcrowd_programs import build as build_bugcrowd
 from export_program_discovery import build as build_discovery
 from export_programs import build as build_programs
 from export_public_bounties import build as build_bounties
+from source_access import excluded_source_reason
 from validate import ROOT, Invalid
 
 
@@ -326,6 +327,10 @@ def _safe_redirect(base, location):
 
 
 def fetch_official_page(url, prior=None, timeout=15, max_bytes=2_000_000, opener=None):
+    exclusion = excluded_source_reason(url)
+    if exclusion:
+        return {"kind": "deferred", "reason": "source_excluded",
+                "verification_status": "unknown", "detail": exclusion}
     headers = {"User-Agent": "security-research-library-program-change-check/1.0",
                "Accept": "text/html, application/json;q=0.9, text/plain;q=0.8",
                "Accept-Encoding": "identity"}
@@ -423,7 +428,18 @@ def check_live(targets, state_path, *, plan=False, max_requests=None, interval=1
     requests = 0
     scheduled = 0
     last_request = None
+    readable = {}
+    # Classify exclusions before rate-limit/recent-check/request-budget handling
+    # so every excluded source remains explicit even when a batch stops early.
     for url, item in selected.items():
+        exclusion = excluded_source_reason(url)
+        if exclusion:
+            counts["deferred"] += 1
+            results.append({"url": url, **item, "kind": "deferred", "reason": "source_excluded",
+                            "verification_status": "unknown", "detail": exclusion})
+        else:
+            readable[url] = item
+    for url, item in readable.items():
         prior = state["pages"].get(url)
         if _recent(prior, skip_recent_hours, now):
             counts["skipped_unavailable" if prior.get("last_failure") else "skipped_recent"] += 1

@@ -20,6 +20,8 @@ from urllib.error import HTTPError
 from urllib.parse import urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
+from source_access import excluded_source_reason, require_source_access
+
 ROOT = Path(__file__).resolve().parents[1]
 CAPTURES = ('data/public-bounty-scopes.json', 'data/bugcrowd-vdp-scopes.json')
 AUDIT = 'data/scope-refresh-status.json'
@@ -31,6 +33,7 @@ def now():
 
 
 def official_url(url):
+    require_source_access(url)
     parts = urlsplit(url)
     if (parts.scheme == 'https' and parts.netloc == 'app.intigriti.com' and not parts.query
             and not parts.fragment and re.fullmatch(r'/programs/(?:[a-zA-Z0-9_-]|%20)+/(?:[a-zA-Z0-9_-]|%20)+/detail', parts.path)):
@@ -303,7 +306,11 @@ def refresh(root, client):
         refs = queue[url]
         platform = refs[0][2]['platform']
         outcome = {'program_url': url, 'platform': platform}
-        if platform not in audit['supported_platforms']:
+        exclusion = excluded_source_reason(url)
+        if exclusion:
+            outcome.update(status='deferred', reason_code='source_excluded',
+                           verification_status='unknown', reason=exclusion)
+        elif platform not in audit['supported_platforms']:
             outcome.update(status='unsupported', reason='No validated unattended collector for this platform')
         elif platform == 'HackerOne' and all(row.get('status') == 'not_paid_bounty' for _, _, row in refs):
             outcome.update(status='unsupported', reason='Prior non-bounty classification requires a separate program review; scope CSV cannot reverify it')

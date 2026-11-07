@@ -10,6 +10,12 @@ This is an asset-table refresh, not a full policy review. Whole-policy dates, el
 
 Independent-policy sites are explicitly reported as unsupported by this initial unattended scope collector. Their dated snapshots remain available and are **not** relabeled as fresh. The source queue is not an assertion that every current or new public program is included.
 
+### Explicit source exclusions
+
+The Bugcrowd engagements `fmshrc-vdp`, `abmc-vdp` and `oshrc-vdp` are excluded from live reads. The shared `scripts/source_access.py` guard blocks their engagement pages and every child source, including saved brief JSON, on both `bugcrowd.com` and `www.bugcrowd.com`. Both the daily scope refresher and the optional live program-change checker enforce the exclusions before scheduling requests and again at their HTTP boundary. There is no command-line override or automatic expiry.
+
+Their existing records, evidence and capture dates remain unchanged. Refresh audits report `deferred`, `reason_code: source_excluded` and `verification_status: unknown`, without an attempted timestamp; change-check reports use `kind: deferred` and `reason: source_excluded`. These are unverified coverage gaps, not unchanged scopes, removals or closed programs. Exclusions do not consume the request budget or prevent other permitted sources from being checked. A daily run still surfaces deferred coverage as incomplete. Changing an exclusion requires a separate access review; a successful test or later schedule does not grant access.
+
 Intigriti collection reads only the exact public `/programs/org/name/detail` page, rejects redirects and requires one complete SSR asset-table container, fully parsed rows and known tiers. Potential pagination/load-more markers fail closed. It captures asset labels, types, links and tiers, not collapsed descriptions or policy prose. A complete visible SSR table is not a guarantee of every private or hidden asset. No alternate access route is attempted after a gate.
 
 ## How to verify each day
