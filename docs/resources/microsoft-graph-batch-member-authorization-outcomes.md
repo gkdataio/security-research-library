@@ -11,7 +11,7 @@ A successful Microsoft Graph batch response does not mean every request inside i
 
 ## Defensive use
 
-Editorial synthesis: keep transport completion, permission for each operation and application-level completion separate\. Preserve a member's denied, failed or unresolved state when presenting an overall result or composing downstream state\. Define what partial completion means for the application rather than turning a successful envelope into blanket success\. A correlation identifier associates evidence; it grants no authority\. Dependency ordering alone should not be treated as an atomic rollback guarantee\.
+Editorial synthesis: distinguish receiving a batch response from authorization of each request and completion of the application's work\. Preserve each denied, failed or unresolved result when reporting the batch outcome or updating other application state\. Define how the application handles partial completion instead of treating a successful batch response as proof that every request succeeded\. A correlation identifier matches a response to its request but grants no permission\. Request ordering alone does not guarantee that earlier changes will be rolled back if a later request fails\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

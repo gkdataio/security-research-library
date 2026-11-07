@@ -18,7 +18,7 @@
   ],
   "version": null,
   "summary": "Google's approved field-mask guidance defines which fields an update selects, while separate field rules determine what may change. Services must ignore output-only input even when a containing field is selected; the supporting guidance says to ignore unchanged immutable values and return INVALID_ARGUMENT for attempted changes. These annotations describe required behavior but do not perform validation themselves.",
-  "defensive_use": "Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts. Valid field selection does not establish permission to change it. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations.",
+  "defensive_use": "Editorial synthesis: document separately what the caller is allowed to change, which fields the request selects and the server's rules for changing each field. Selecting a valid field does not grant permission to modify it. Enforce each nested field's own rules, regardless of its parent's annotation. Use dedicated operations for business-state changes when the API contract requires them, rather than a generic update.",
   "prerequisites": [
     "Basic familiarity with resource-oriented APIs, partial updates and access-control modeling"
   ],

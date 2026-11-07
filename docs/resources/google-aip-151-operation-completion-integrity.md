@@ -11,7 +11,7 @@ Requesting cancellation does not prove that a long-running operation stopped, an
 
 ## Defensive use
 
-Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate\. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested\. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects\.
+Editorial synthesis: distinguish what the client requested, what the service acknowledged, the operation's final outcome and any effects already committed\. Do not mark an action as reversed or release a reserved entitlement just because cancellation was requested\. Define what evidence is needed to establish the service's final outcome and account for changes already made\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

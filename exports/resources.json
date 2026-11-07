@@ -3684,7 +3684,7 @@
       ],
       "version": null,
       "summary": "Requesting cancellation does not prove that a long-running operation stopped, and a wait response may still report unfinished work. Google's approved guidance separates failures before execution from failures during it. The linked Operation contract also distinguishes best-effort cancellation, final outcomes and deletion of the resource used to track the work.",
-      "defensive_use": "Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects.",
+      "defensive_use": "Editorial synthesis: distinguish what the client requested, what the service acknowledged, the operation's final outcome and any effects already committed. Do not mark an action as reversed or release a reserved entitlement just because cancellation was requested. Define what evidence is needed to establish the service's final outcome and account for changes already made.",
       "prerequisites": [
         "Basic asynchronous API and application state-machine concepts"
       ],
@@ -3979,7 +3979,7 @@
       ],
       "version": null,
       "summary": "Google's approved field-mask guidance defines which fields an update selects, while separate field rules determine what may change. Services must ignore output-only input even when a containing field is selected; the supporting guidance says to ignore unchanged immutable values and return INVALID_ARGUMENT for attempted changes. These annotations describe required behavior but do not perform validation themselves.",
-      "defensive_use": "Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts. Valid field selection does not establish permission to change it. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations.",
+      "defensive_use": "Editorial synthesis: document separately what the caller is allowed to change, which fields the request selects and the server's rules for changing each field. Selecting a valid field does not grant permission to modify it. Enforce each nested field's own rules, regardless of its parent's annotation. Use dedicated operations for business-state changes when the API contract requires them, rather than a generic update.",
       "prerequisites": [
         "Basic familiarity with resource-oriented APIs, partial updates and access-control modeling"
       ],
@@ -5708,7 +5708,7 @@
       ],
       "version": null,
       "summary": "A successful Microsoft Graph batch response does not mean every request inside it succeeded; the official documentation shows permission denials within a successful batch. Individual results may arrive out of order and must be matched by identifier. Dependency failures and per-request throttling are distinct outcomes, not evidence that authorization was granted or denied.",
-      "defensive_use": "Editorial synthesis: keep transport completion, permission for each operation and application-level completion separate. Preserve a member's denied, failed or unresolved state when presenting an overall result or composing downstream state. Define what partial completion means for the application rather than turning a successful envelope into blanket success. A correlation identifier associates evidence; it grants no authority. Dependency ordering alone should not be treated as an atomic rollback guarantee.",
+      "defensive_use": "Editorial synthesis: distinguish receiving a batch response from authorization of each request and completion of the application's work. Preserve each denied, failed or unresolved result when reporting the batch outcome or updating other application state. Define how the application handles partial completion instead of treating a successful batch response as proof that every request succeeded. A correlation identifier matches a response to its request but grants no permission. Request ordering alone does not guarantee that earlier changes will be rolled back if a later request fails.",
       "prerequisites": [
         "Basic familiarity with API authorization, response handling and application state transitions"
       ],
@@ -14672,7 +14672,7 @@
       ],
       "version": null,
       "summary": "Vvveb allowed invalid cart quantities to pass through checkout into a saved order with a negative total. The maintainer-published report describes a validated run with guest checkout and no special extensions, showing a stored integrity failure rather than just a display error. Effects on payments, accounting or inventory depend on integrations; actual payouts and production losses were not demonstrated.",
-      "defensive_use": "Editorial reasoning: trace domain invariants across every transition that makes provisional state authoritative. Require valid quantities during cart mutation and revalidate order constraints at commitment. Keep legitimate credit workflows distinct from purchases. The advisory proposes these checks; release 1.0.8.2 explicitly lists the corresponding repair.",
+      "defensive_use": "Editorial reasoning: check business rules at each step from cart changes to a saved order. Require valid quantities whenever the cart changes, and check order constraints again before saving the order. Keep legitimate credit workflows separate from purchases. The advisory proposes these checks. Release 1.0.8.2 explicitly lists the corresponding repair.",
       "prerequisites": [
         "Basic understanding of checkout state, numeric validation and database integrity"
       ],

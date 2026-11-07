@@ -11,7 +11,7 @@ Vvveb allowed invalid cart quantities to pass through checkout into a saved orde
 
 ## Defensive use
 
-Editorial reasoning: trace domain invariants across every transition that makes provisional state authoritative\. Require valid quantities during cart mutation and revalidate order constraints at commitment\. Keep legitimate credit workflows distinct from purchases\. The advisory proposes these checks; release 1\.0\.8\.2 explicitly lists the corresponding repair\.
+Editorial reasoning: check business rules at each step from cart changes to a saved order\. Require valid quantities whenever the cart changes, and check order constraints again before saving the order\. Keep legitimate credit workflows separate from purchases\. The advisory proposes these checks\. Release 1\.0\.8\.2 explicitly lists the corresponding repair\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

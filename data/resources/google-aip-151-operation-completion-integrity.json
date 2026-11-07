@@ -18,7 +18,7 @@
   ],
   "version": null,
   "summary": "Requesting cancellation does not prove that a long-running operation stopped, and a wait response may still report unfinished work. Google's approved guidance separates failures before execution from failures during it. The linked Operation contract also distinguishes best-effort cancellation, final outcomes and deletion of the resource used to track the work.",
-  "defensive_use": "Editorial synthesis: keep client intent, control acknowledgements, terminal operation evidence and business effects separate. An application should not mark an action reversed or release a reserved entitlement merely because cancellation was requested. Define the service-specific evidence needed to reconcile the outcome and any already-committed effects.",
+  "defensive_use": "Editorial synthesis: distinguish what the client requested, what the service acknowledged, the operation's final outcome and any effects already committed. Do not mark an action as reversed or release a reserved entitlement just because cancellation was requested. Define what evidence is needed to establish the service's final outcome and account for changes already made.",
   "prerequisites": [
     "Basic asynchronous API and application state-machine concepts"
   ],

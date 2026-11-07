@@ -11,7 +11,7 @@ Google's approved field-mask guidance defines which fields an update selects, wh
 
 ## Defensive use
 
-Editorial synthesis: document caller authorization, the selected change set and server-enforced field mutability as separate contracts\. Valid field selection does not establish permission to change it\. Preserve each nested field's behavior independently of its parent, and keep business-state transitions outside generic updates when the API contract requires dedicated operations\.
+Editorial synthesis: document separately what the caller is allowed to change, which fields the request selects and the server's rules for changing each field\. Selecting a valid field does not grant permission to modify it\. Enforce each nested field's own rules, regardless of its parent's annotation\. Use dedicated operations for business-state changes when the API contract requires them, rather than a generic update\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
