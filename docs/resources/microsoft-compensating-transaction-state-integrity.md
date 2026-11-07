@@ -11,7 +11,7 @@ Recovering from partly completed work across services may require corrective act
 
 ## Defensive use
 
-Editorial lesson: distinguish an atomic transaction boundary from a process spanning independently committed operations\. Model completion evidence, compensable effects and irreversible commitments\. Preserve recovery progress and repeat-safe corrective actions while respecting concurrent work and business entitlements\.
+Editorial lesson: distinguish work that commits or rolls back as one transaction from a process whose steps commit separately\. Identify how to confirm each step completed, which effects can be corrected and which commitments cannot be undone\. Record recovery progress and make corrective steps safe to repeat\. Account for concurrent work and respect the entitlements defined by the business rules\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

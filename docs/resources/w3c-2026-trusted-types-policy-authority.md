@@ -11,7 +11,7 @@ The Trusted Types draft defines how browsers can require policy-created values i
 
 ## Defensive use
 
-Editorial reasoning: review two invariants separately: sensitive consumers accept only policy-produced values, and each producer enforces an adequate trust contract\. Minimize policy creation authority, keep policy dependencies reviewable and avoid global state silently changing decisions\. The maintainer FAQ explains why sanitization must be consistently applied, rather than merely available in a library\.
+Editorial reasoning: check two things separately: that protected APIs accept only policy-created values, and that each policy enforces the rules needed for safe use\. Limit which code can create policies\. Review each policy together with the code and state it depends on, and avoid global state that can silently change its decisions\. As the maintainer FAQ explains, having a sanitization library is not enough if the application does not consistently use it\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
