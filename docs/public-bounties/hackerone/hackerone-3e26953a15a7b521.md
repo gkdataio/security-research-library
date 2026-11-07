@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:00Z.
+**Capture time:** 2026-11-07T19:23:55Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/logitech/assets/download_csv.csv>)
 
@@ -18,52 +18,70 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*vc\.logitech\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.streamlabs\.com | WILDCARD | — | — | Bounty eligible |
+| partner\.logitech\.com | URL | — | — | Not bounty eligible |
 | circle\.logi\.com | URL | — | — | Bounty eligible |
 | id\.logi\.com | URL | — | — | Bounty eligible |
 | accounts\.logi\.com | URL | — | — | Bounty eligible |
-| www\.logitech\.com | URL | — | — | Bounty eligible |
-| www\.logitechg\.com | URL | — | — | Bounty eligible |
-| www\.ultimateears\.com | URL | — | — | Bounty eligible |
-| www\.astrogaming\.com | URL | — | — | Bounty eligible |
-| www\.logitech\.com\.cn | URL | — | — | Bounty eligible |
-| sync\.logitech\.com | URL | — | — | Bounty eligible |
-| www\.logicool\.co\.jp | URL | — | — | Bounty eligible |
-| logitechg\.com\.cn | URL | — | — | Bounty eligible |
-| gaming\.logicool\.co\.jp | URL | — | — | Bounty eligible |
-| logiq\.logitech\.io | URL | — | — | Bounty eligible |
+| \*\.logitech\.com | WILDCARD | — | — | Not bounty eligible |
 | Circle Cameras | HARDWARE | — | — | Bounty eligible |
-| Video Conferencing Products | HARDWARE | — | — | Bounty eligible |
-| USB Unifying and LightSpeed Receivers | HARDWARE | — | — | Bounty eligible |
-| Presentation Remotes | HARDWARE | — | — | Bounty eligible |
-| Logitech Mice &amp; Keyboards | HARDWARE | — | — | Bounty eligible |
+| Harmony Remotes | HARDWARE | — | — | Not bounty eligible |
 | Ultimate Ears Speakers | HARDWARE | — | — | Bounty eligible |
+| Presentation Remotes | HARDWARE | — | — | Bounty eligible |
 | com\.logitech\.ueboom | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.logitech\.circle | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.streamlabs\.slobsrc | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.streamlabs | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.logitech\.logue | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Streamlabs Desktop Application PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Logitech Sync | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Logitech MIXLINE | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Logi Tune PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| G Hub | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Logi Options\+ PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | 632344648 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1018340690 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1294578643 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1476615877 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1456293789 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*\.logitech\.com | WILDCARD | — | — | Not bounty eligible |
+| Scope Questions: Items not explicitly listed here | OTHER | — | — | Not bounty eligible |
+| www\.logitech\.com | URL | — | — | Bounty eligible |
+| community\.logitech\.com | URL | — | — | Not bounty eligible |
+| www\.logitechg\.com | URL | — | — | Bounty eligible |
+| www\.logitech-partner\.com | URL | — | — | Not bounty eligible |
+| maintenance\.logitech\.com | URL | — | — | Not bounty eligible |
+| www\.jaybirdsport\.com | URL | — | — | Not bounty eligible |
+| www\.ultimateears\.com | URL | — | — | Bounty eligible |
+| www\.astrogaming\.com | URL | — | — | Bounty eligible |
 | \*\.ultimateearsuniversity\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.mysqueezebox\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.lukwerks\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.logitechmusic\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.logitechauthorization\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.logitech-channel-marketing\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.cognitiveperformer\.com | WILDCARD | — | — | Not bounty eligible |
+| buy\.logitech\.com | URL | — | — | Not bounty eligible |
+| outage\.logitech\.com | URL | — | — | Not bounty eligible |
+| outagehistory\.logitech\.com | URL | — | — | Not bounty eligible |
+| \*vc\.logitech\.com | WILDCARD | — | — | Bounty eligible |
+| external\.logitech\.com | URL | — | — | Not bounty eligible |
+| logilife\.logitech\.com | URL | — | — | Not bounty eligible |
+| www\.logitech\.com\.cn | URL | — | — | Bounty eligible |
+| logitech\.zendesk\.com | URL | — | — | Not bounty eligible |
 | \*\.harmonyremote\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.slimdevices\.com | WILDCARD | — | — | Not bounty eligible |
+| support\.logi\.com | URL | — | — | Not bounty eligible |
+| feedback\.logitech\.com | URL | — | — | Not bounty eligible |
 | \*\.uesmartradio\.com | WILDCARD | — | — | Not bounty eligible |
+| www\.logitechstore\.com\.br | URL | — | — | Not bounty eligible |
+| jira\.logitech\.com | URL | — | — | Not bounty eligible |
+| \*\.streamlabs\.com | WILDCARD | — | — | Bounty eligible |
+| Streamlabs Desktop Application PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| 1294578643 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1476615877 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.streamlabs\.slobsrc | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.streamlabs | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1456293789 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.logitech\.logue | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| Logi Tune PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Video Conferencing Products | HARDWARE | — | — | Bounty eligible |
+| Logitech Sync | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| USB Unifying and LightSpeed Receivers | HARDWARE | — | — | Bounty eligible |
+| Other Logitech Desktop and Mobile Application | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| G Hub | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| alert\.logitech\.com | URL | — | — | Not bounty eligible |
+| sync\.logitech\.com | URL | — | — | Bounty eligible |
+| Logitech Options PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| Harmony Remote Software | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| Other Logitech Hardware/IoT | HARDWARE | — | — | Not bounty eligible |
+| Logitech Mice &amp; Keyboards | HARDWARE | — | — | Bounty eligible |
 | \*\.myharmony\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.streamlabscharity\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.melonapp\.com | WILDCARD | — | — | Not bounty eligible |
@@ -73,37 +91,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.wlo\.link | WILDCARD | — | — | Not bounty eligible |
 | \*\.mevo\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.logi\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.crossclip\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.logitechg\.com\* | WILDCARD | — | — | Not bounty eligible |
-| \*\.lukwerks\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.cognitiveperformer\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.logicool\.co\.jp | WILDCARD | — | — | Not bounty eligible |
-| partner\.logitech\.com | URL | — | — | Not bounty eligible |
-| community\.logitech\.com | URL | — | — | Not bounty eligible |
-| www\.logitech-partner\.com | URL | — | — | Not bounty eligible |
-| maintenance\.logitech\.com | URL | — | — | Not bounty eligible |
-| www\.jaybirdsport\.com | URL | — | — | Not bounty eligible |
-| buy\.logitech\.com | URL | — | — | Not bounty eligible |
-| outage\.logitech\.com | URL | — | — | Not bounty eligible |
-| outagehistory\.logitech\.com | URL | — | — | Not bounty eligible |
-| external\.logitech\.com | URL | — | — | Not bounty eligible |
-| logilife\.logitech\.com | URL | — | — | Not bounty eligible |
-| logitech\.zendesk\.com | URL | — | — | Not bounty eligible |
-| support\.logi\.com | URL | — | — | Not bounty eligible |
-| feedback\.logitech\.com | URL | — | — | Not bounty eligible |
-| www\.logitechstore\.com\.br | URL | — | — | Not bounty eligible |
-| jira\.logitech\.com | URL | — | — | Not bounty eligible |
 | logitechgchallenge\.com | URL | — | — | Not bounty eligible |
 | www\.logitechclub\.com | URL | — | — | Not bounty eligible |
+| \*\.crossclip\.com | WILDCARD | — | — | Not bounty eligible |
+| Logi Options\+ PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | select\.logitech\.com | URL | — | — | Not bounty eligible |
+| www\.logicool\.co\.jp | URL | — | — | Bounty eligible |
+| logitechg\.com\.cn | URL | — | — | Bounty eligible |
+| gaming\.logicool\.co\.jp | URL | — | — | Bounty eligible |
+| Logitech MIXLINE | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | https://www\.logitech\.com/blog | URL | — | — | Not bounty eligible |
-| alert\.logitech\.com | URL | — | — | Not bounty eligible |
-| Scope Questions: Items not explicitly listed here | OTHER | — | — | Not bounty eligible |
-| Other Logitech Hardware/IoT | HARDWARE | — | — | Not bounty eligible |
-| Harmony Remotes | HARDWARE | — | — | Not bounty eligible |
-| Other Logitech Desktop and Mobile Application | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
-| Harmony Remote Software | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
-| Logitech Options PC/MAC | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| \*\.logicool\.co\.jp | WILDCARD | — | — | Not bounty eligible |
+| \*\.logitechg\.com\* | WILDCARD | — | — | Not bounty eligible |
+| logiq\.logitech\.io | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (7)
 
@@ -112,9 +112,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.saitekforum\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.saitek-fr\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.saitek\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.wilife\.com | WILDCARD | — | — | Not bounty eligible |
 | Squeezebox Products | HARDWARE | — | — | Not bounty eligible |
 | Logitech Alert Cameras | HARDWARE | — | — | Not bounty eligible |
+| \*\.wilife\.com | WILDCARD | — | — | Not bounty eligible |
 | Logitech Capture | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 
 **Limits**

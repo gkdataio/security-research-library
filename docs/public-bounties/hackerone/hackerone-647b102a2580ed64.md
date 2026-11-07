@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:57Z.
+**Capture time:** 2026-11-07T19:23:49Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/lark_technologies/assets/download_csv.csv>)
 
@@ -30,11 +30,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | internal-api\.larksuite\.com | URL | — | — | Bounty eligible |
 | internal-api-lark-api\.larksuite\.com | URL | — | — | Bounty eligible |
 | internal-api-drive-stream\.larksuite\.com | URL | — | — | Bounty eligible |
-| hackers\_chosendomain\.larksuite\.com | URL | — | — | Bounty eligible |
-| com\.larksuite\.suite | OTHER\_APK | — | — | Bounty eligible |
 | Windows OS Executable: Download here https://www\.larksuite\.com/download | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Mac OS Executable: Download here https://www\.larksuite\.com/download | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | 1452166623 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.larksuite\.suite | OTHER\_APK | — | — | Bounty eligible |
+| hackers\_chosendomain\.larksuite\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

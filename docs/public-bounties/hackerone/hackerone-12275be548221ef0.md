@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:26Z.
+**Capture time:** 2026-11-07T19:27:29Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/xiaomi/assets/download_csv.csv>)
 
@@ -20,9 +20,32 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.mi\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.xiaomi\.com | WILDCARD | — | — | Bounty eligible |
+| Mi/Redmi Phone | HARDWARE | — | — | Bounty eligible |
+| Mi Band | HARDWARE | — | — | Bounty eligible |
+| Mi Home Webcam  | HARDWARE | — | — | Bounty eligible |
+| Mi Robot Vacuum | HARDWARE | — | — | Bounty eligible |
+| Mi TV Box | HARDWARE | — | — | Bounty eligible |
+| Mi Laser Projector | HARDWARE | — | — | Bounty eligible |
+| Mi TV  | HARDWARE | — | — | Bounty eligible |
+| Mi Electric Scooter  | HARDWARE | — | — | Bounty eligible |
+| com\.miui\.micloudsync | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.smarthome | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.market | OTHER\_APK | — | — | Bounty eligible |
+| com\.mi\.global\.shop | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.mibrain\.speech | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.account | OTHER\_APK | — | — | Bounty eligible |
 | \*\.miui\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.xiaomiyoupin\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.miwifi\.com | WILDCARD | — | — | Bounty eligible |
+| com\.xiaomi\.payment | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.mipicks | OTHER\_APK | — | — | Bounty eligible |
+| com\.xiaomi\.micloud\.sdk | OTHER\_APK | — | — | Bounty eligible |
+| com\.miui\.cloudbackup | OTHER\_APK | — | — | Bounty eligible |
+| com\.miui\.cloudservice | OTHER\_APK | — | — | Bounty eligible |
+| com\.android\.browser | OTHER\_APK | — | — | Bounty eligible |
+| Other APK Assets | OTHER | — | — | Bounty eligible |
+| Other Hardware Assets | OTHER | — | — | Bounty eligible |
+| MIUI OS for Xiaomi Phone | OTHER | — | — | Bounty eligible |
 | \*\.airstar-finance\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.airstar\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.airstarfinance\.net | WILDCARD | — | — | Bounty eligible |
@@ -61,29 +84,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.youpin\.cn | WILDCARD | — | — | Bounty eligible |
 | \*\.zmifi\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.xiaomimimo\.com | WILDCARD | — | — | Bounty eligible |
-| com\.miui\.micloudsync | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.smarthome | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.market | OTHER\_APK | — | — | Bounty eligible |
-| com\.mi\.global\.shop | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.mibrain\.speech | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.account | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.payment | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.mipicks | OTHER\_APK | — | — | Bounty eligible |
-| com\.xiaomi\.micloud\.sdk | OTHER\_APK | — | — | Bounty eligible |
-| com\.miui\.cloudbackup | OTHER\_APK | — | — | Bounty eligible |
-| com\.miui\.cloudservice | OTHER\_APK | — | — | Bounty eligible |
-| com\.android\.browser | OTHER\_APK | — | — | Bounty eligible |
-| Other Hardware Assets | OTHER | — | — | Bounty eligible |
-| MIUI OS for Xiaomi Phone | OTHER | — | — | Bounty eligible |
-| Other APK Assets | OTHER | — | — | Bounty eligible |
-| Mi/Redmi Phone | HARDWARE | — | — | Bounty eligible |
-| Mi Band | HARDWARE | — | — | Bounty eligible |
-| Mi Robot Vacuum | HARDWARE | — | — | Bounty eligible |
-| Mi TV Box | HARDWARE | — | — | Bounty eligible |
-| Mi Laser Projector | HARDWARE | — | — | Bounty eligible |
-| Mi Home Webcam  | HARDWARE | — | — | Bounty eligible |
-| Mi TV  | HARDWARE | — | — | Bounty eligible |
-| Mi Electric Scooter  | HARDWARE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

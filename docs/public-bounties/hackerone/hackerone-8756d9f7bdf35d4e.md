@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:33Z.
+**Capture time:** 2026-11-07T19:21:25Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/chia_network/assets/download_csv.csv>)
 
@@ -18,15 +18,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://vault\.chiatest\.net/ | URL | — | — | Bounty eligible |
-| api\.vault\.chiatest\.net | URL | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chia-blockchain | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chia-blockchain-gui | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/clvm\_rs | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chia\_rs | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chiapos | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/Chia-Network/chiavdf | SOURCE\_CODE | — | — | Bounty eligible |
+| https://vault\.chiatest\.net/ | URL | — | — | Bounty eligible |
 | https://apps\.apple\.com/app/chia-signer/id6504493785  | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| api\.vault\.chiatest\.net | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

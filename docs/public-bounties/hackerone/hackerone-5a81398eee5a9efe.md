@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:25Z.
+**Capture time:** 2026-11-07T19:24:35Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/newegg/assets/download_csv.csv>)
 
@@ -20,12 +20,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | http://\*\.newegg\.com | WILDCARD | — | — | Bounty eligible |
 | http://\*\.newegg\.ca | WILDCARD | — | — | Bounty eligible |
+| sellerportal\.newegg\.com | URL | — | — | Not bounty eligible |
+| com\.newegg\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.newegg\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://secure\.newegg\.com | URL | — | — | Bounty eligible |
 | secure\.newegg\.ca | URL | — | — | Bounty eligible |
 | pmtcards\.newegg\.com | URL | — | — | Bounty eligible |
-| com\.newegg\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.newegg\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| sellerportal\.newegg\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (3)
 

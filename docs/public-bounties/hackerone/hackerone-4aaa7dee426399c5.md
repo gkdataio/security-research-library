@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:36Z.
+**Capture time:** 2026-11-07T19:21:53Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/csg-public/assets/download_csv.csv>)
 
@@ -25,16 +25,16 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | onboarding\.cloud\.com | URL | — | — | Bounty eligible |
 | onboarding-\*\.cloud\.com | URL | — | — | Bounty eligible |
 | accounts\.cloud\.com | URL | — | — | Bounty eligible |
+| \*developer\.cloud\.com | URL | — | — | Not bounty eligible |
 | adm\.cloud\.com | URL | — | — | Bounty eligible |
 | api\.adm\.cloud\.com | URL | — | — | Bounty eligible |
 | Citrix Secure Access client for Windows | OTHER | — | — | Bounty eligible |
+| Citrix Secure Access client for macOS | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | Citrix Secure Access client for iOS | OTHER | — | — | Bounty eligible |
+| Citrix Secure Access client for Android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | Citrix Secure Access client for Linux | OTHER | — | — | Bounty eligible |
 | Citrix End Point Analysis \(EPA\) client for Linux | OTHER | — | — | Bounty eligible |
 | Citrix End Point Analysis \(EPA\) client for Windows | OTHER | — | — | Bounty eligible |
-| Citrix Secure Access client for Android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Citrix Secure Access client for macOS | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*developer\.cloud\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (16)
 
@@ -43,6 +43,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | citrix\.cloud\.com | URL | — | — | Not bounty eligible |
 | www\.cloud\.com | URL | — | — | Not bounty eligible |
 | accounts-internal\.cloud\.com | URL | — | — | Not bounty eligible |
+| \*\.browser\.cloud\.com | OTHER | — | — | Not bounty eligible |
 | launch\.cloud\.com | URL | — | — | Not bounty eligible |
 | \*\.citrix\*\.com | URL | — | — | Not bounty eligible |
 | \*\.cloudburrito\.com | URL | — | — | Not bounty eligible |
@@ -55,7 +56,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.xmtest\.cloud\.com | URL | — | — | Not bounty eligible |
 | \*\.xmqa\.cloud\.com | URL | — | — | Not bounty eligible |
 | \*\.xmdev\.cloud\.com | URL | — | — | Not bounty eligible |
-| \*\.browser\.cloud\.com | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

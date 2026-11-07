@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:40Z.
+**Capture time:** 2026-11-07T19:23:19Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hypr-corp/assets/download_csv.csv>)
 
@@ -19,11 +19,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.hypr\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.gethypr\.com | WILDCARD | — | — | Bounty eligible |
+| com\.hypr\.one | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.hypr\.one | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | HyprUnlock\.exe | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | HYPR Workforce Access\.app | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| com\.hypr\.one | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.gethypr\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 

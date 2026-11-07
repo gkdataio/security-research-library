@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:46Z.
+**Capture time:** 2026-11-07T19:25:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/portswigger/assets/download_csv.csv>)
 
@@ -19,23 +19,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | portswigger\.net | URL | — | — | Bounty eligible |
+| Burp Suite Pro/Community | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Burp Collaborator | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | ai\.portswigger\.net | URL | — | — | Bounty eligible |
+| Burp Suite DAST | OTHER | — | — | Bounty eligible |
+| http1mustdie\.com | URL | — | — | Bounty eligible |
 | collections\.portswigger\.net | URL | — | — | Bounty eligible |
 | share\.portswigger\.net | URL | — | — | Bounty eligible |
 | links\.portswigger\.net | URL | — | — | Bounty eligible |
 | id\.portswigger\.net | URL | — | — | Bounty eligible |
-| http1mustdie\.com | URL | — | — | Bounty eligible |
-| Burp Suite DAST | OTHER | — | — | Bounty eligible |
-| Burp Collaborator | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Burp Suite Pro/Community | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.portswigger\.net | WILDCARD | — | — | Not bounty eligible |
-| \*\.web-security-academy\.net | WILDCARD | — | — | Not bounty eligible |
 | Burp Suite Extension \(BApps\) | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| \*\.web-security-academy\.net | WILDCARD | — | — | Not bounty eligible |
+| \*\.portswigger\.net | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

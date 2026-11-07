@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:52:54Z.
+**Capture time:** 2026-11-07T19:20:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/1win_com/assets/download_csv.csv>)
 
@@ -21,9 +21,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 1win\.com | URL | — | — | Bounty eligible |
 | https://1win\.com/betting | URL | — | — | Bounty eligible |
 | https://1win\.com/casino | URL | — | — | Bounty eligible |
+| Deposit/Withdraw | OTHER | — | — | Bounty eligible |
 | 1w\.cash | URL | — | — | Bounty eligible |
 | 1w\.run | URL | — | — | Bounty eligible |
-| Deposit/Withdraw | OTHER | — | — | Bounty eligible |
 | 1wintoken\.com | URL | — | — | Bounty eligible |
 | 1wtoken\.com | URL | — | — | Bounty eligible |
 | https://solscan\.io/account/GWvQinGBRa7ZUzhXY23MrLjdsx3KfRGxH8yXURBwrz1R | SMART\_CONTRACT | — | — | Bounty eligible |

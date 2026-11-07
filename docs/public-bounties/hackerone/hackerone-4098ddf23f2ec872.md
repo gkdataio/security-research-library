@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:32Z.
+**Capture time:** 2026-11-07T19:24:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/palantir_public/assets/download_csv.csv>)
 
@@ -31,15 +31,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | go\.palantir\.com | URL | — | — | Not bounty eligible |
 | explore\.palantir\.com | URL | — | — | Not bounty eligible |
 | info\.palantir\.com | URL | — | — | Not bounty eligible |
+| Any infrastructure or assets related to Silk, FancyThat, or other Palantir acquisitions\. | OTHER | — | — | Not bounty eligible |
 | certification\.palantir\.com | URL | — | — | Not bounty eligible |
 | training\.palantir\.com | URL | — | — | Not bounty eligible |
 | learn\.palantir\.com | URL | — | — | Not bounty eligible |
-| sandbox\.training\.palantir\.com | URL | — | — | Not bounty eligible |
 | palantirpacusa\.com | URL | — | — | Not bounty eligible |
 | palantirfedstart\.com | URL | — | — | Not bounty eligible |
+| sandbox\.training\.palantir\.com | URL | — | — | Not bounty eligible |
 | community\.palantir\.com | URL | — | — | Not bounty eligible |
 | store\.palantir\.com | URL | — | — | Not bounty eligible |
-| Any infrastructure or assets related to Silk, FancyThat, or other Palantir acquisitions\. | OTHER | — | — | Not bounty eligible |
 | https://github\.com/palantir/\* | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:01Z.
+**Capture time:** 2026-11-07T19:22:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/dyson/assets/download_csv.csv>)
 
@@ -18,6 +18,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| 993135524 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.dyson\.mobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| Dyson Connected Products \(IoT Hardware\) | HARDWARE | — | — | Bounty eligible |
+| Other Dyson Assets | OTHER | — | — | Bounty eligible |
+| Github findings | OTHER | — | — | Bounty eligible |
 | www\.dyson\.co\.uk | URL | — | — | Bounty eligible |
 | www\.dyson\.com | URL | — | — | Bounty eligible |
 | www\.dysoncanada\.ca | URL | — | — | Bounty eligible |
@@ -79,18 +84,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.dyson\.tw | URL | — | — | Bounty eligible |
 | www\.gr\.dyson\.com | URL | — | — | Bounty eligible |
 | www\.dyson\.com\.ee | URL | — | — | Bounty eligible |
-| Other Dyson Assets | OTHER | — | — | Bounty eligible |
-| Github findings | OTHER | — | — | Bounty eligible |
-| Dyson Connected Products \(IoT Hardware\) | HARDWARE | — | — | Bounty eligible |
-| com\.dyson\.mobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 993135524 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (32)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*dyson-demo\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.dynsystem\.kr | WILDCARD | — | — | Not bounty eligible |
 | comm\.dyson\* | URL | — | — | Not bounty eligible |
 | bounce\.dyson\* | URL | — | — | Not bounty eligible |
 | sakti3\.com | URL | — | — | Not bounty eligible |
@@ -121,6 +119,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | central-test\.dyson\.com | URL | — | — | Not bounty eligible |
 | community\.dyson\.com | URL | — | — | Not bounty eligible |
 | careers\.dyson\.com | URL | — | — | Not bounty eligible |
+| \*dyson-demo\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.dynsystem\.kr | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

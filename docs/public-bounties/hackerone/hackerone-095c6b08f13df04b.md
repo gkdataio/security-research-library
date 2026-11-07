@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:57Z.
+**Capture time:** 2026-11-07T19:25:35Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/ripio/assets/download_csv.csv>)
 
@@ -18,14 +18,16 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*ripiotrade\.co | WILDCARD | — | — | Bounty eligible |
+| com\.ripio\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.ripio\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | trade\.ripio\.com | URL | — | — | Bounty eligible |
 | https://app\.ripio\.com | URL | — | — | Bounty eligible |
 | https://kyc\.ripio\.com/ | URL | — | — | Bounty eligible |
+| \*ripio\.com | WILDCARD | — | — | Not bounty eligible |
 | http://auth\.ripio\.com | URL | — | — | Bounty eligible |
 | defi\.ripio\.com | URL | — | — | Bounty eligible |
+| \*ripiotrade\.co | WILDCARD | — | — | Bounty eligible |
 | sandbox-b2b\.ripio\.com | URL | — | — | Bounty eligible |
-| https://bridge\.ripio\.com/ | URL | — | — | Bounty eligible |
 | https://etherscan\.io/address/0x0DC4F92879B7670e5f4e4e6e3c801D229129D90D | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://etherscan\.io/address/0x337E7456B420bD3481e7FA61fA9850343d610d34 | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://etherscan\.io/address/0xD76f5Faf6888e24D9F04Bf92a0c8B921FE4390e0 | SMART\_CONTRACT | — | — | Bounty eligible |
@@ -38,10 +40,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://etherscan\.io/address/0xD168CFbBE260D48cd119497a9a2eE8482080C5E7 | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://basescan\.org/address/0xf469eC9dEBf7F0adEBA4d1Db2FF5c70707bEeB30 | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://worldscan\.org/address/0xDe7Ec97CFDeE9F20f9d256F4a0A0d694479fa2E0 | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://bridge\.ripio\.com/ | URL | — | — | Bounty eligible |
 | Web3 - Smart Contracts Scope | OTHER | — | — | Bounty eligible |
-| com\.ripio\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.ripio\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*ripio\.com | WILDCARD | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (0)
 

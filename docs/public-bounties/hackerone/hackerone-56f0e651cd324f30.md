@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:46Z.
+**Capture time:** 2026-11-07T19:25:15Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/priceline/assets/download_csv.csv>)
 
@@ -20,17 +20,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | www\.priceline\.com | URL | — | — | Bounty eligible |
 | cruises\.priceline\.com | URL | — | — | Bounty eligible |
+| www\.bookingholdings\.com | URL | — | — | Bounty eligible |
+| 336381998 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.priceline\.android\.negotiator | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| press\.priceline\.com | URL | — | — | Bounty eligible |
 | www\.getaroom\.com | URL | — | — | Bounty eligible |
 | flyiin\.com | URL | — | — | Bounty eligible |
 | priceline\.com | URL | — | — | Bounty eligible |
+| Penny | AI\_MODEL | — | — | Bounty eligible |
 | ir\.bookingholdings\.com | URL | — | — | Bounty eligible |
 | bookingholdings-coe\.com | URL | — | — | Bounty eligible |
 | https://www\.priceline\.com/pwd/v0/pcln-graphql/ | URL | — | — | Bounty eligible |
-| press\.priceline\.com | URL | — | — | Bounty eligible |
-| www\.bookingholdings\.com | URL | — | — | Bounty eligible |
-| com\.priceline\.android\.negotiator | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 336381998 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| Penny | AI\_MODEL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (45)
 
@@ -39,6 +39,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | secure\.rezserver\.com | URL | — | — | Not bounty eligible |
 | reservations\.rezserver\.com | URL | — | — | Not bounty eligible |
 | www\.airportrentalcars\.com | URL | — | — | Not bounty eligible |
+| www\.priceline\.com/vp-web/\*  | OTHER | — | — | Not bounty eligible |
 | api\.rezserver\.com | URL | — | — | Not bounty eligible |
 | admin\.rezserver\.com | URL | — | — | Not bounty eligible |
 | availability\.getaroom\.com | URL | — | — | Not bounty eligible |
@@ -50,9 +51,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.testaroom\.com | URL | — | — | Not bounty eligible |
 | \*\.testaroom\.cloud | URL | — | — | Not bounty eligible |
 | groupdeals\.priceline\.com | URL | — | — | Not bounty eligible |
-| careers\.priceline\.com | URL | — | — | Not bounty eligible |
 | weatherstatus\.priceline\.com | URL | — | — | Not bounty eligible |
-| img1\.priceline\.com | URL | — | — | Not bounty eligible |
 | url5932\.travel\.priceline\.com | URL | — | — | Not bounty eligible |
 | tools\.corp\.priceline\.com | URL | — | — | Not bounty eligible |
 | tools-qaa\.corp\.priceline\.com | URL | — | — | Not bounty eligible |
@@ -75,12 +74,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | dev\.customerservice-ccp\.priceline\.com | URL | — | — | Not bounty eligible |
 | dashboard\.corp\.priceline\.com | URL | — | — | Not bounty eligible |
 | customerservice-ccp\.priceline\.com | URL | — | — | Not bounty eligible |
+| careers\.priceline\.com | URL | — | — | Not bounty eligible |
 | booking\.priceline\.com | URL | — | — | Not bounty eligible |
 | api-guse4-poc\.priceline\.com | URL | — | — | Not bounty eligible |
 | api-gnae1-poc\.priceline\.com | URL | — | — | Not bounty eligible |
 | ace-qa\.corp\.priceline\.com | URL | — | — | Not bounty eligible |
 | 1psb\.priceline\.com | URL | — | — | Not bounty eligible |
-| www\.priceline\.com/vp-web/\*  | OTHER | — | — | Not bounty eligible |
+| img1\.priceline\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

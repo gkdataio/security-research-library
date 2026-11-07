@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:26Z.
+**Capture time:** 2026-11-07T19:21:15Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/bybit_fintech/assets/download_csv.csv>)
 
@@ -18,15 +18,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| https://apps\.apple\.com/us/app/bybit-app/id1488296980 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | \*\.bybit\.com | WILDCARD | — | — | Bounty eligible |
+| https://play\.google\.com/store/apps/details?id=com\.bybit\.app&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.bybit\.eu | WILDCARD | — | — | Bounty eligible |
-| \*\.bybit\.tr | WILDCARD | — | — | Bounty eligible |
 | http://testnet\.bybit\.eu | URL | — | — | Bounty eligible |
+| \*\.bybit\.tr | WILDCARD | — | — | Bounty eligible |
 | http://www\.bybit\.com/trade/tradfi/ | URL | — | — | Bounty eligible |
 | http://www\.bybit\.com/en/alpha/overview/ | URL | — | — | Bounty eligible |
 | http://www\.byreal\.io | URL | — | — | Bounty eligible |
-| https://play\.google\.com/store/apps/details?id=com\.bybit\.app&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/bybit-app/id1488296980 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://www\.bybit\.com/en/ai-bot/home | URL | — | — | Bounty eligible |
 | https://www\.bybit\.com/en/stocks | URL | — | — | Bounty eligible |
 | https://testnet\.bybit\.com/en/trade/usdt/btcusdt | URL | — | — | Bounty eligible |

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:12Z.
+**Capture time:** 2026-11-07T19:22:33Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/exodus/assets/download_csv.csv>)
 
@@ -20,7 +20,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.exodus\.io | WILDCARD | — | — | Bounty eligible |
 | \*\.a\.exodus\.io | WILDCARD | — | — | Bounty eligible |
+| exodus-movement\.exodus | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Exodus Desktop Wallet | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | \*\.exodus\.com | WILDCARD | — | — | Bounty eligible |
+| https://apps\.apple\.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://play\.google\.com/store/apps/details?id=exodusmovement\.exodus&amp;hl=en\_IN | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | pay\.exodus\.io | URL | — | — | Bounty eligible |
 | login\.exodus\.com | URL | — | — | Bounty eligible |
 | pay-admin\.exodus\.io | URL | — | — | Bounty eligible |
@@ -41,26 +45,28 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://www\.npmjs\.com/package/@exodus/safe-string | SOURCE\_CODE | — | — | Bounty eligible |
 | Smart Contract: Solana - EQYRmLmkE7G7a2WQyojwrXg4SeguypCdnbm3ecncizsd | OTHER | — | — | Bounty eligible |
 | Smart Contract: Solana mainnet - xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y | OTHER | — | — | Bounty eligible |
-| https://play\.google\.com/store/apps/details?id=exodusmovement\.exodus&amp;hl=en\_IN | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Exodus Desktop Wallet | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| exodus-movement\.exodus | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/exodus-crypto-bitcoin-wallet/id1414384820 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | agents\.exodus\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (34)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| get\.exodus\.\* | WILDCARD | — | — | Not bounty eligible |
-| www\.exodus\.com/job-application/\* | WILDCARD | — | — | Not bounty eligible |
-| \*\.atp-exodus\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.grateful\.me | WILDCARD | — | — | Not bounty eligible |
 | support\.exodus\.com | URL | — | — | Not bounty eligible |
+| get\.exodus\.\* | WILDCARD | — | — | Not bounty eligible |
 | http://www\.exodus\.com/contact-support | URL | — | — | Not bounty eligible |
 | support-helpers\.a\.exodus\.io | URL | — | — | Not bounty eligible |
+| www\.exodus\.com/job-application/\* | WILDCARD | — | — | Not bounty eligible |
 | slack-invite\.exodus\.com | URL | — | — | Not bounty eligible |
+| \*\.atp-exodus\.com | WILDCARD | — | — | Not bounty eligible |
 | exodus\.atlassian\.net | URL | — | — | Not bounty eligible |
 | exodusstore\.blob\.core\.windows\.net | URL | — | — | Not bounty eligible |
+| Passkey Wallet | OTHER | — | — | Not bounty eligible |
+| https://exodus\.atlassian\.net | URL | — | — | Not bounty eligible |
+| http://exodus\.com/keybase\.txt | URL | — | — | Not bounty eligible |
+| Exodus Browser Extension | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| https://play\.google\.com/store/apps/details?id=com\.exodus\.grateful | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| https://apps\.apple\.com/us/app/grateful-by-exodus/id6754093889 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| \*\.grateful\.me | WILDCARD | — | — | Not bounty eligible |
 | safeguard\.a\.exodus\.io | URL | — | — | Not bounty eligible |
 | passkeys\.foundation | URL | — | — | Not bounty eligible |
 | wallet\.passkeys\.foundation | URL | — | — | Not bounty eligible |
@@ -78,13 +84,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | dashboard\.xoswap\.com | URL | — | — | Not bounty eligible |
 | dashboard-p\.xoswap\.com | URL | — | — | Not bounty eligible |
 | exchange-server\.exodus\.io | URL | — | — | Not bounty eligible |
-| https://exodus\.atlassian\.net | URL | — | — | Not bounty eligible |
-| http://exodus\.com/keybase\.txt | URL | — | — | Not bounty eligible |
-| Passkey Wallet | OTHER | — | — | Not bounty eligible |
 | Exodus Mobile App Browser and Wallet Connect | OTHER | — | — | Not bounty eligible |
-| https://play\.google\.com/store/apps/details?id=com\.exodus\.grateful | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| Exodus Browser Extension | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
-| https://apps\.apple\.com/us/app/grateful-by-exodus/id6754093889 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 
 **Limits**
 

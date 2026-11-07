@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:16Z.
+**Capture time:** 2026-11-07T19:22:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/faraday_inc/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| s3://faraday-secret | OTHER | — | — | Bounty eligible |
 | app\.faraday\.ai | URL | — | — | Bounty eligible |
 | api\.faraday\.ai | URL | — | — | Bounty eligible |
+| gs://fdy-production-sdk-uploads | OTHER | — | — | Bounty eligible |
+| gs://faraday-secret | OTHER | — | — | Bounty eligible |
 | vault2\.faraday\.ai | URL | — | — | Bounty eligible |
 | row\.pro | URL | — | — | Bounty eligible |
 | api\.row\.pro | URL | — | — | Bounty eligible |
 | pro\.faraday\.ai | URL | — | — | Bounty eligible |
 | mcp\.faraday\.ai | URL | — | — | Bounty eligible |
-| api\.pro\.faraday\.ai | URL | — | — | Bounty eligible |
-| s3://faraday-secret | OTHER | — | — | Bounty eligible |
-| gs://fdy-production-sdk-uploads | OTHER | — | — | Bounty eligible |
-| gs://faraday-secret | OTHER | — | — | Bounty eligible |
 | BigQuery | OTHER | — | — | Bounty eligible |
+| api\.pro\.faraday\.ai | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| faraday\.ai | URL | — | — | Not bounty eligible |
-| faraday\.atlassian\.net | URL | — | — | Not bounty eligible |
 | s3://faraday-uploads | OTHER | — | — | Not bounty eligible |
 | Support Live Chat | OTHER | — | — | Not bounty eligible |
+| faraday\.ai | URL | — | — | Not bounty eligible |
+| faraday\.atlassian\.net | URL | — | — | Not bounty eligible |
 
 **Limits**
 

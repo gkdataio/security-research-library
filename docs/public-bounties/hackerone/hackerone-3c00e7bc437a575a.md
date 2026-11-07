@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:50Z.
+**Capture time:** 2026-11-07T19:23:35Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/khealth/assets/download_csv.csv>)
 
@@ -19,6 +19,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | https://\*\.khealth\.com | WILDCARD | — | — | Bounty eligible |
+| https://apps\.apple\.com/us/app/hhc-24-7/id6741442288 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 6741442288 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| org\.hartfordhealthcare\.hhc247 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.hhc247\.org | WILDCARD | — | — | Bounty eligible |
 | \*\.khealth-test\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.csconnect\.org | WILDCARD | — | — | Bounty eligible |
@@ -28,19 +31,16 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.primarycareondemand\.mayoclinic\.org | WILDCARD | — | — | Bounty eligible |
 | \*\.novanthealthvirtualprimarycare\.org | WILDCARD | — | — | Bounty eligible |
 | \*\.pennmedicine\.connect-visit\.com | WILDCARD | — | — | Bounty eligible |
-| org\.hartfordhealthcare\.hhc247 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/hhc-24-7/id6741442288 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 6741442288 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| 1180400838 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| ai\.kanghealth | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | www\.kpharmacyllc\.com | URL | — | — | Not bounty eligible |
 | app\.khealth\.com | URL | — | — | Not bounty eligible |
 | salesforce\.khealth\.com | URL | — | — | Not bounty eligible |
-| ai\.kanghealth | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| 1180400838 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 
 **Limits**
 

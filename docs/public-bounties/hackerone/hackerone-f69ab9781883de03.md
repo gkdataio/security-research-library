@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:29Z.
+**Capture time:** 2026-11-07T19:21:19Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/capital-one-bounty/assets/download_csv.csv>)
 
@@ -21,11 +21,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Eno® Browser Extension | OTHER | — | — | Bounty eligible |
 | \*\.capitalone\.com | OTHER | — | — | Bounty eligible |
 | \*\.capitaloneshopping\.com | OTHER | — | — | Bounty eligible |
+| com\.konylabs\.capitalone | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.wikibuy\.prod\.main | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | Capital One Shopping Browser Extension | OTHER | — | — | Bounty eligible |
 | \*\.capitalonegslbex\.com | OTHER | — | — | Bounty eligible |
 | \*\.capitalone\.ca | OTHER | — | — | Bounty eligible |
-| com\.konylabs\.capitalone | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.wikibuy\.prod\.main | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 407558537 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1089294040 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 

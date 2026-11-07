@@ -102,11 +102,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json",
-      "publisher": "MathWorks",
-      "retrieved_at": "2026-11-07T15:03:08Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T19:03:45Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -116,9 +116,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:08Z",
+    "verified_at": "2026-11-07T19:03:45Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -127,13 +127,14 @@
         "location": "https://matlab.mathworks.com/",
         "group": "In Scope ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "out_of_scope": [],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

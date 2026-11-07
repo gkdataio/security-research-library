@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:44Z.
+**Capture time:** 2026-11-07T19:23:23Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/indrive/assets/download_csv.csv>)
 
@@ -19,15 +19,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.indriverapp\.com | WILDCARD | — | — | Bounty eligible |
-| https://\*\.indriver\.io | WILDCARD | — | — | Bounty eligible |
-| \*\.indrive\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.indriver\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.indrive\.com | WILDCARD | — | — | Bounty eligible |
 | cargo\.indrive\.com | URL | — | — | Bounty eligible |
+| https://\*\.indriver\.io | WILDCARD | — | — | Bounty eligible |
 | volans\.tech | URL | — | — | Bounty eligible |
 | wga\.volans\.tech | URL | — | — | Bounty eligible |
 | external\.indrive\.dev | URL | — | — | Bounty eligible |
 | debug\.clairvoyance\.indrive\.tech | URL | — | — | Bounty eligible |
 | ingest\.clairvoyance\.indrive\.tech | URL | — | — | Bounty eligible |
+| alternativa\.film | URL | — | — | Bounty eligible |
+| auroratechaward\.com | URL | — | — | Bounty eligible |
 | job\.ryadom\.kz | URL | — | — | Bounty eligible |
 | ryadom\.kz | URL | — | — | Bounty eligible |
 | couriers\.indrive\.com | URL | — | — | Bounty eligible |
@@ -35,7 +37,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | indrive\.com | URL | — | — | Bounty eligible |
 | intercity\.indrive\.com | URL | — | — | Bounty eligible |
 | media\.indrive\.com | URL | — | — | Bounty eligible |
+| movie\.indrive\.com | URL | — | — | Bounty eligible |
 | url-checker\.indrive\.com | URL | — | — | Bounty eligible |
+| oymyakon\.indriver\.io | URL | — | — | Bounty eligible |
 | teammate\.indriver\.io | URL | — | — | Bounty eligible |
 | blog\.indrive\.com | URL | — | — | Bounty eligible |
 | delivery-webview\.indrive\.com | URL | — | — | Bounty eligible |
@@ -144,10 +148,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ppw-gw-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
 | ppw\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
 | ps-cf\.euce1\.indriverapp\.com | URL | — | — | Bounty eligible |
-| alternativa\.film | URL | — | — | Bounty eligible |
-| auroratechaward\.com | URL | — | — | Bounty eligible |
-| movie\.indrive\.com | URL | — | — | Bounty eligible |
-| oymyakon\.indriver\.io | URL | — | — | Bounty eligible |
 | arsentomsky\.indrive\.com | URL | — | — | Bounty eligible |
 | av\.indrive\.com | URL | — | — | Bounty eligible |
 | company\.indrive\.com | URL | — | — | Bounty eligible |
@@ -197,11 +197,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| bus\.\*\.indrive\.com | WILDCARD | — | — | Not bounty eligible |
+| sinet\.startup\.inDriver | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | servicos\.indrive\.com | URL | — | — | Not bounty eligible |
 | coaching\.supernovas\.indrive\.com | URL | — | — | Not bounty eligible |
 | www\.supernovas\.indrive\.com | URL | — | — | Not bounty eligible |
-| sinet\.startup\.inDriver | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| bus\.\*\.indrive\.com | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

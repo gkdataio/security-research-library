@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:43Z.
+**Capture time:** 2026-11-07T19:26:45Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/uber/assets/download_csv.csv>)
 
@@ -27,11 +27,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*scaledsolutions\.uber\.com | WILDCARD | — | — | Not bounty eligible |
-| scaledsolutions\*\.uber\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.uberscoot\.us | URL | — | — | Not bounty eligible |
+| Fraud Reports | OTHER | — | — | Not bounty eligible |
 | \*\.ubertransit\.io | URL | — | — | Not bounty eligible |
-| merchants\.ubereats\.com | URL | — | — | Not bounty eligible |
 | bizblog\.uber\.com | URL | — | — | Not bounty eligible |
 | et\.uber\.com | URL | — | — | Not bounty eligible |
 | newsroom\.uber\.com | URL | — | — | Not bounty eligible |
@@ -41,12 +39,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | drive\.uber\.com | URL | — | — | Not bounty eligible |
 | uber\.onelogin\.com | URL | — | — | Not bounty eligible |
 | uber\.com\.cn | URL | — | — | Not bounty eligible |
+| \*\.ubercarshare\.com | OTHER | — | — | Not bounty eligible |
 | https://assets\.uber\.com | URL | — | — | Not bounty eligible |
 | https://brand\.uber\.com | URL | — | — | Not bounty eligible |
+| scaledsolutions\*\.uber\.com | WILDCARD | — | — | Not bounty eligible |
+| \*scaledsolutions\.uber\.com | WILDCARD | — | — | Not bounty eligible |
+| merchants\.ubereats\.com | URL | — | — | Not bounty eligible |
 | central-beta\.uber\.com | URL | — | — | Not bounty eligible |
 | adsacademy\.uber\.com | URL | — | — | Not bounty eligible |
-| Fraud Reports | OTHER | — | — | Not bounty eligible |
-| \*\.ubercarshare\.com | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

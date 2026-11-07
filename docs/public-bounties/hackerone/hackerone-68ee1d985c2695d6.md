@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:00Z.
+**Capture time:** 2026-11-07T19:23:53Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/live_nation/assets/download_csv.csv>)
 
@@ -18,6 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| https://apps\.apple\.com/us/app/ticketmaster-buy-sell-tickets/id500003565 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | app\.livenation\.com | URL | — | — | Bounty eligible |
 | app\.ticketmaster\.com | URL | — | — | Bounty eligible |
 | app\.ticketmaster\.com\.au | URL | — | — | Bounty eligible |
@@ -39,10 +40,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.livenation\.co\.uk | URL | — | — | Bounty eligible |
 | www\.royalarena\.dk | URL | — | — | Bounty eligible |
 | www\.onthewaterfrontfestival\.com | URL | — | — | Bounty eligible |
-| www\.lineup\.com\.mx | URL | — | — | Bounty eligible |
 | dk\.royalarena\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/ticketmaster-buy-sell-tickets/id500003565 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/no/app/royal-arena/id1181913144 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| www\.lineup\.com\.mx | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

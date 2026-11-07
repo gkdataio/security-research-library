@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:04Z.
+**Capture time:** 2026-11-07T19:23:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/magic-eden/assets/download_csv.csv>)
 
@@ -26,7 +26,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | magiceden\.io | URL | — | — | Not bounty eligible |
+| \*\.magiceden\.io | OTHER | — | — | Not bounty eligible |
+| \*\.magiceden\.dev | OTHER | — | — | Not bounty eligible |
 | blog\.magiceden\.io | URL | — | — | Not bounty eligible |
+| \*\.magiceden\.workers\.dev | OTHER | — | — | Not bounty eligible |
 | eng\.magiceden\.io | URL | — | — | Not bounty eligible |
 | eng\.magiceden\.dev | URL | — | — | Not bounty eligible |
 | http://ord-mirror\.magiceden\.dev | URL | — | — | Not bounty eligible |
@@ -37,9 +40,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | staging\.dicey\.com | URL | — | — | Not bounty eligible |
 | help\.dicey\.com | URL | — | — | Not bounty eligible |
 | docs\.magiceden\.io | URL | — | — | Not bounty eligible |
-| \*\.magiceden\.io | OTHER | — | — | Not bounty eligible |
-| \*\.magiceden\.dev | OTHER | — | — | Not bounty eligible |
-| \*\.magiceden\.workers\.dev | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

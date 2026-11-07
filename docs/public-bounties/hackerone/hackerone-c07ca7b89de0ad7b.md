@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:50Z.
+**Capture time:** 2026-11-07T19:25:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/privy-bbp/assets/download_csv.csv>)
 
@@ -18,18 +18,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| https://www\.npmjs\.com/package/@privy-io/react-auth | SOURCE\_CODE | — | — | Bounty eligible |
 | auth\.privy\.io | URL | — | — | Bounty eligible |
 | dashboard\.privy\.io | URL | — | — | Bounty eligible |
-| home\.privy\.io | URL | — | — | Bounty eligible |
-| recovery\.privy\.io | URL | — | — | Bounty eligible |
-| api\.privy\.io | URL | — | — | Bounty eligible |
-| https://www\.npmjs\.com/package/@privy-io/react-auth | SOURCE\_CODE | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@privy-io/js-sdk-core | OTHER | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@privy-io/expo | OTHER | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@privy-io/wagmi | OTHER | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@privy-io/cross-app-connect | OTHER | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@privy-io/cross-app-provider | OTHER | — | — | Bounty eligible |
+| home\.privy\.io | URL | — | — | Bounty eligible |
+| recovery\.privy\.io | URL | — | — | Bounty eligible |
 | @privy-io controlled namespace dependencies | OTHER | — | — | Bounty eligible |
+| api\.privy\.io | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 
@@ -37,8 +37,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | privy\.io | URL | — | — | Not bounty eligible |
 | blog\.privy\.io | URL | — | — | Not bounty eligible |
-| demo\.privy\.io | URL | — | — | Not bounty eligible |
 | docs\.privy\.io | URL | — | — | Not bounty eligible |
+| demo\.privy\.io | URL | — | — | Not bounty eligible |
 
 **Limits**
 

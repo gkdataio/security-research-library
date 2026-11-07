@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:37Z.
+**Capture time:** 2026-11-07T19:23:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hostinger/assets/download_csv.csv>)
 
@@ -22,14 +22,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | cpanel\.hostinger\.com | URL | — | — | Bounty eligible |
 | hpanel\.hostinger\.com | URL | — | — | Bounty eligible |
 | builder\.hostinger\.com | URL | — | — | Bounty eligible |
+| H5G/Agency | OTHER | — | — | Bounty eligible |
 | horizons\.hostinger\.com | URL | — | — | Bounty eligible |
 | reach\.hostinger\.com | URL | — | — | Bounty eligible |
+| mail\.hostinger\.com | OTHER | — | — | Bounty eligible |
 | agents\.hostinger\.com | URL | — | — | Bounty eligible |
 | payments\.hostinger\.com | URL | — | — | Bounty eligible |
-| ecommerce\.hostinger\.com | URL | — | — | Bounty eligible |
-| H5G/Agency | OTHER | — | — | Bounty eligible |
-| mail\.hostinger\.com | OTHER | — | — | Bounty eligible |
 | Managed OpenClaw | OTHER | — | — | Bounty eligible |
+| ecommerce\.hostinger\.com | URL | — | — | Bounty eligible |
 | ai-builder\.hostinger\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)

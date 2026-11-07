@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:04Z.
+**Capture time:** 2026-11-07T19:23:57Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/lyst/assets/download_csv.csv>)
 
@@ -19,12 +19,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.lyst\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.lystit\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.lyst\.co | WILDCARD | — | — | Bounty eligible |
+| 597940518 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | cdna\.lystit\.com | URL | — | — | Bounty eligible |
 | mobileapi\.lystit\.com | URL | — | — | Bounty eligible |
+| \*\.lystit\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.lyst\.co | WILDCARD | — | — | Bounty eligible |
 | com\.lyst\.lystapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 597940518 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

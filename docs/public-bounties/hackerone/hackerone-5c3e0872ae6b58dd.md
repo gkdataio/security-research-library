@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:26Z.
+**Capture time:** 2026-11-07T19:22:57Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/fronthq/assets/download_csv.csv>)
 
@@ -20,10 +20,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | app\.frontapp\.com | URL | — | — | Bounty eligible |
 | api2\.frontapp\.com | URL | — | — | Bounty eligible |
+| com\.frontapp\.mobile | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.frontapp\.mobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | Front for Mac | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Front for Windows | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| com\.frontapp\.mobile | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

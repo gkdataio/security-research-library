@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:54Z.
+**Capture time:** 2026-11-07T19:25:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/rei_bbp/assets/download_csv.csv>)
 
@@ -19,17 +19,16 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | rei\.com | URL | — | — | Bounty eligible |
+| Any public cloud resource or infrastructure operated and managed by REI\. | OTHER | — | — | Bounty eligible |
+| Android &amp; iOS App for REI Customers | OTHER | — | — | Bounty eligible |
 | login\.rei\.com | URL | — | — | Bounty eligible |
 | http://www\.rei\.com/learn/expert-advice | URL | — | — | Bounty eligible |
 | http://collaboration\.rei\.com | URL | — | — | Bounty eligible |
-| Any public cloud resource or infrastructure operated and managed by REI\. | OTHER | — | — | Bounty eligible |
-| Android &amp; iOS App for REI Customers | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (20)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.rentals\.rei\.com | WILDCARD | — | — | Not bounty eligible |
 | http://rei\.com/used | URL | — | — | Not bounty eligible |
 | http://rei\.com/blog | URL | — | — | Not bounty eligible |
 | http://rei\.com/rentals | URL | — | — | Not bounty eligible |
@@ -42,6 +41,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | reicasting\.com | URL | — | — | Not bounty eligible |
 | engineering\.rei\.com | URL | — | — | Not bounty eligible |
 | test-login\.rei\.com | URL | — | — | Not bounty eligible |
+| \*\.rentals\.rei\.com | WILDCARD | — | — | Not bounty eligible |
 | wpvip\.rei\.com | URL | — | — | Not bounty eligible |
 | vpn\.rei\.com | URL | — | — | Not bounty eligible |
 | desktop\.rei\.com | URL | — | — | Not bounty eligible |

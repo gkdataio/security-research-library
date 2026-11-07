@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:22Z.
+**Capture time:** 2026-11-07T19:21:07Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/box_private/assets/download_csv.csv>)
 
@@ -18,6 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Android Box Mobile App | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| iOS Box Mobile App | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Box Drive | OTHER | — | — | Bounty eligible |
 | m\.box\.com | URL | — | — | Bounty eligible |
 | notes\.services\.box\.com | URL | — | — | Bounty eligible |
 | app\.box\.com | URL | — | — | Bounty eligible |
@@ -26,10 +29,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | upload\.box\.com | URL | — | — | Bounty eligible |
 | dl\.boxcloud\.com | URL | — | — | Bounty eligible |
 | cloud\.app\.box\.com | URL | — | — | Bounty eligible |
-| Box Drive | OTHER | — | — | Bounty eligible |
 | Box Tools | OTHER | — | — | Bounty eligible |
-| Android Box Mobile App | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| iOS Box Mobile App | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

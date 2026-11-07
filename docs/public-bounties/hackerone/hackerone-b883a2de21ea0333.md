@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:09Z.
+**Capture time:** 2026-11-07T19:25:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/semrush/assets/download_csv.csv>)
 
@@ -19,19 +19,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.semrush\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.berush\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.semrush\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.seoquake\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.seoab\.io | WILDCARD | — | — | Bounty eligible |
 | \*\.scatec\.io | WILDCARD | — | — | Bounty eligible |
-| \*\.myinsights\.io | WILDCARD | — | — | Bounty eligible |
-| \*\.sellzone\.com | WILDCARD | — | — | Bounty eligible |
-| www\.semrush\.com | URL | — | — | Bounty eligible |
-| Other Semrush Related Asset | OTHER | — | — | Bounty eligible |
-| Leaked/Сompromised Employee accounts | OTHER | — | — | Bounty eligible |
-| \*\.prowly\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.berush\.com | WILDCARD | — | — | Not bounty eligible |
 | workflows\.semrush\.com | URL | — | — | Not bounty eligible |
 | investors\.semrush\.com | URL | — | — | Not bounty eligible |
+| \*\.sellzone\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.prowly\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.myinsights\.io | WILDCARD | — | — | Bounty eligible |
+| Other Semrush Related Asset | OTHER | — | — | Bounty eligible |
+| Leaked/Сompromised Employee accounts | OTHER | — | — | Bounty eligible |
+| www\.semrush\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

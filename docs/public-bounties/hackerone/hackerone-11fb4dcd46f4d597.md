@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-07T14:54:30Z.
+**Capture time:** 2026-11-07T19:22:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/gitlab/assets/download_csv.csv>)
 
@@ -18,34 +18,30 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.gitlab\.net | WILDCARD | — | — | Bounty eligible |
-| \*\.gitlab\.org | WILDCARD | — | — | Bounty eligible |
-| \*\.gitlap\.com | WILDCARD | — | — | Bounty eligible |
 | customers\.gitlab\.com | URL | — | — | Bounty eligible |
 | registry\.gitlab\.com | URL | — | — | Bounty eligible |
 | gitlab\.com | URL | — | — | Bounty eligible |
-| about\.gitlab\.com | URL | — | — | Bounty eligible |
-| docs\.gitlab\.com | URL | — | — | Bounty eligible |
-| design\.gitlab\.com | URL | — | — | Bounty eligible |
-| advisories\.gitlab\.com | URL | — | — | Bounty eligible |
+| Your Own GitLab Instance | OTHER | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitlab | SOURCE\_CODE | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitlab-runner | SOURCE\_CODE | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitaly | SOURCE\_CODE | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitlab-pages | SOURCE\_CODE | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitlab-shell | SOURCE\_CODE | — | — | Bounty eligible |
 | https://gitlab\.com/gitlab-org/gitlab-vscode-extension | SOURCE\_CODE | — | — | Bounty eligible |
-| Your Own GitLab Instance | OTHER | — | — | Bounty eligible |
 | Other non-production infrastructure | OTHER | — | — | Bounty eligible |
+| \*\.gitlab\.net | WILDCARD | — | — | Bounty eligible |
+| \*\.gitlab\.org | WILDCARD | — | — | Bounty eligible |
+| \*\.gitlap\.com | WILDCARD | — | — | Bounty eligible |
+| about\.gitlab\.com | URL | — | — | Bounty eligible |
+| docs\.gitlab\.com | URL | — | — | Bounty eligible |
+| design\.gitlab\.com | URL | — | — | Bounty eligible |
+| advisories\.gitlab\.com | URL | — | — | Bounty eligible |
 | GitLab for Jira Cloud | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (25)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.gitlab\.cn | WILDCARD | — | — | Not bounty eligible |
-| \*\.runway\.gitlab\.net | WILDCARD | — | — | Not bounty eligible |
-| \*\.gitlab-private\.org | WILDCARD | — | — | Not bounty eligible |
-| \*\.service-now\.com | WILDCARD | — | — | Not bounty eligible |
 | dashboards\.gitlab\.com | URL | — | — | Not bounty eligible |
 | alerts\.gitlab\.com | URL | — | — | Not bounty eligible |
 | support\.gitlab\.com | URL | — | — | Not bounty eligible |
@@ -60,14 +56,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ir\.gitlab\.com | URL | — | — | Not bounty eligible |
 | levelup\.gitlab\.com | URL | — | — | Not bounty eligible |
 | gitlab\.biterg\.io | URL | — | — | Not bounty eligible |
-| gitlabsandbox\.net | URL | — | — | Not bounty eligible |
-| gitlabdemo\.cloud | URL | — | — | Not bounty eligible |
-| gitlabtraining\.cloud | URL | — | — | Not bounty eligible |
-| packages\.gitlab\.com | URL | — | — | Not bounty eligible |
 | https://gitlab\.com/gitlab-org/cli/ | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://gitlab\.com/gitlab-org/opstrace/opstrace-ui | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://gitlab\.com/gitlab-org/opstrace/opstrace | SOURCE\_CODE | — | — | Not bounty eligible |
+| \*\.gitlab\.cn | WILDCARD | — | — | Not bounty eligible |
+| gitlabsandbox\.net | URL | — | — | Not bounty eligible |
+| gitlabdemo\.cloud | URL | — | — | Not bounty eligible |
+| gitlabtraining\.cloud | URL | — | — | Not bounty eligible |
+| \*\.service-now\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.runway\.gitlab\.net | WILDCARD | — | — | Not bounty eligible |
+| packages\.gitlab\.com | URL | — | — | Not bounty eligible |
+| \*\.gitlab-private\.org | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 
 - Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
+- Only public asset identifiers and explicit scope/bounty flags were refreshed automatically\. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced\. Whole-policy review dates, eligibility and restrictions were not refreshed\. Live program rules prevail; this snapshot is not testing authorization\.

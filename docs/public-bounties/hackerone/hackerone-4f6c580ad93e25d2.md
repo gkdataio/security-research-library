@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:32Z.
+**Capture time:** 2026-11-07T19:24:49Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/oppo_bbp/assets/download_csv.csv>)
 
@@ -18,77 +18,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| com\.katanlabs\.worm\.ioeatemall | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
-| opposhop\.cn | URL | — | — | Bounty eligible |
-| https://www\.opposhop\.cn/ | URL | — | — | Bounty eligible |
-| https://www\.opposhop\.cn/m/ | URL | — | — | Bounty eligible |
-| https://cloud\.oppo\.com/ | URL | — | — | Bounty eligible |
-| https://www\.oppo\.com/my/store | URL | — | — | Bounty eligible |
-| https://www\.oppo\.com/id/store | URL | — | — | Bounty eligible |
-| https://www\.oppo\.com/th/store | URL | — | — | Bounty eligible |
-| https://gcsm\.oppoit\.com/ | URL | — | — | Bounty eligible |
-| https://e\.oppo\.com/ | URL | — | — | Bounty eligible |
-| https://u\.oppomobile\.com/ | URL | — | — | Bounty eligible |
-| https://drp\.myoppo\.com/ | URL | — | — | Bounty eligible |
-| https://www\.oppo\.com/in/store | URL | — | — | Bounty eligible |
-| id\.oppo\.com | URL | — | — | Bounty eligible |
-| id\.heytap\.com | URL | — | — | Bounty eligible |
-| https://safe\.heytap\.com/ | URL | — | — | Bounty eligible |
-| https://zhongbao-ear\.heytap\.com/ | URL | — | — | Bounty eligible |
-| https://zhongbao\.heytap\.com/ | URL | — | — | Bounty eligible |
-| https://www\.coloros\.com/ | URL | — | — | Bounty eligible |
-| https://developers\.oppomobile\.com/ | URL | — | — | Bounty eligible |
-| http://open\.oppomobile\.com | URL | — | — | Bounty eligible |
-| https://c\.realme\.com/eg/ | URL | — | — | Bounty eligible |
-| https://c\.realme\.com/global/ | URL | — | — | Bounty eligible |
-| https://c\.realme\.com/id/ | URL | — | — | Bounty eligible |
-| https://c\.realme\.com/in/ | URL | — | — | Bounty eligible |
-| https://c\.realme\.com/ru/ | URL | — | — | Bounty eligible |
-| https://community\.oppo\.com/ | URL | — | — | Bounty eligible |
-| https://communityin\.oppo\.com/ | URL | — | — | Bounty eligible |
-| https://e-global\.heytap\.com/marketing/login | URL | — | — | Bounty eligible |
-| com\.oplus\.games | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.music | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.pictorial | OTHER\_APK | — | — | Bounty eligible |
-| com\.coloros\.pictorial | OTHER\_APK | — | — | Bounty eligible |
-| com\.coloros\.findmyphone | OTHER\_APK | — | — | Bounty eligible |
-| com\.finshell\.wallet | OTHER\_APK | — | — | Bounty eligible |
-| com\.nearme\.gamecenter | OTHER\_APK | — | — | Bounty eligible |
-| com\.finshell\.finance | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.research | OTHER\_APK | — | — | Bounty eligible |
-| com\.netease\.my\.nearme\.gamecenter | OTHER\_APK | — | — | Bounty eligible |
-| com\.oplus\.aimemory | OTHER\_APK | — | — | Bounty eligible |
-| com\.oppo\.speechassist | OTHER\_APK | — | — | Bounty eligible |
-| com\.oplus\.play | OTHER\_APK | — | — | Bounty eligible |
-| com\.coloros\.wallet | OTHER\_APK | — | — | Bounty eligible |
-| com\.coloros\.assistantscreen | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wallet | OTHER\_APK | — | — | Bounty eligible |
-| com\.fintech\.life | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.book | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.databaseengine | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.health\.quickapp | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.heymelody | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.miniapp\.sports | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.ocsp\.client | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.reader | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.tas | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.breeno | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.browser | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.elves | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.healthassessment | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.market | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.research | OTHER\_APK | — | — | Bounty eligible |
-| com\.heytap\.wearable\.themestore | OTHER\_APK | — | — | Bounty eligible |
-| com\.oplus\.accesscard | OTHER\_APK | — | — | Bounty eligible |
-| com\.oplus\.melody | OTHER\_APK | — | — | Bounty eligible |
-| com\.oplus\.studycenter | OTHER\_APK | — | — | Bounty eligible |
-| com\.qpon\.merchant | OTHER\_APK | — | — | Bounty eligible |
-| com\.qpon\.platform | OTHER\_APK | — | — | Bounty eligible |
-| com\.shopai\.apps | OTHER\_APK | — | — | Bounty eligible |
-| com\.katanlabs\.bubblepop | OTHER\_APK | — | — | Bounty eligible |
-| com\.katanlabs\.matchballgame | OTHER\_APK | — | — | Bounty eligible |
 | ColorOS | OTHER | — | — | Bounty eligible |
-| Low Level Properties and Test environment | OTHER | — | — | Bounty eligible |
+| com\.coloros\.video | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.browser | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.cloud | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.health\.international | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.market | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.themestore | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.xgame | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.oplus\.account | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.oplus\.themestore | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.oppo\.market | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.oppo\.quicksearchbox | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| opposhop\.cn | URL | — | — | Bounty eligible |
 | A16k | HARDWARE | — | — | Bounty eligible |
 | A76 | HARDWARE | — | — | Bounty eligible |
 | A96 | HARDWARE | — | — | Bounty eligible |
@@ -118,6 +60,38 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Reno9Pro\+5G | HARDWARE | — | — | Bounty eligible |
 | Reno9Pro5G | HARDWARE | — | — | Bounty eligible |
 | Reno 9 5G | HARDWARE | — | — | Bounty eligible |
+| Low Level Properties and Test environment | OTHER | — | — | Bounty eligible |
+| https://www\.opposhop\.cn/ | URL | — | — | Bounty eligible |
+| https://www\.opposhop\.cn/m/ | URL | — | — | Bounty eligible |
+| https://cloud\.oppo\.com/ | URL | — | — | Bounty eligible |
+| com\.oplus\.games | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.music | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.pictorial | OTHER\_APK | — | — | Bounty eligible |
+| com\.coloros\.pictorial | OTHER\_APK | — | — | Bounty eligible |
+| https://www\.oppo\.com/my/store | URL | — | — | Bounty eligible |
+| https://www\.oppo\.com/id/store | URL | — | — | Bounty eligible |
+| https://www\.oppo\.com/th/store | URL | — | — | Bounty eligible |
+| com\.heytap\.store | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.heytap\.mall | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.coloros\.findmyphone | OTHER\_APK | — | — | Bounty eligible |
+| com\.finshell\.wallet | OTHER\_APK | — | — | Bounty eligible |
+| com\.nearme\.gamecenter | OTHER\_APK | — | — | Bounty eligible |
+| com\.finshell\.finance | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.research | OTHER\_APK | — | — | Bounty eligible |
+| https://gcsm\.oppoit\.com/ | URL | — | — | Bounty eligible |
+| https://e\.oppo\.com/ | URL | — | — | Bounty eligible |
+| https://u\.oppomobile\.com/ | URL | — | — | Bounty eligible |
+| com\.netease\.my\.nearme\.gamecenter | OTHER\_APK | — | — | Bounty eligible |
+| https://drp\.myoppo\.com/ | URL | — | — | Bounty eligible |
+| com\.oplus\.aimemory | OTHER\_APK | — | — | Bounty eligible |
+| com\.oppo\.speechassist | OTHER\_APK | — | — | Bounty eligible |
+| com\.oplus\.play | OTHER\_APK | — | — | Bounty eligible |
+| com\.oppo\.store | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| https://www\.oppo\.com/in/store | URL | — | — | Bounty eligible |
+| com\.coloros\.wallet | OTHER\_APK | — | — | Bounty eligible |
+| id\.oppo\.com | URL | — | — | Bounty eligible |
+| id\.heytap\.com | URL | — | — | Bounty eligible |
+| https://safe\.heytap\.com/ | URL | — | — | Bounty eligible |
 | realme GT7Pro | HARDWARE | — | — | Bounty eligible |
 | realme GT7 | HARDWARE | — | — | Bounty eligible |
 | realme GT7T | HARDWARE | — | — | Bounty eligible |
@@ -137,20 +111,46 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | realme Note 70 | HARDWARE | — | — | Bounty eligible |
 | realme C75 5G | HARDWARE | — | — | Bounty eligible |
 | realme C71 | HARDWARE | — | — | Bounty eligible |
-| com\.coloros\.video | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.browser | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.cloud | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.health\.international | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.market | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.themestore | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.xgame | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oplus\.account | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oplus\.themestore | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oppo\.market | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oppo\.quicksearchbox | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.store | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.heytap\.mall | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oppo\.store | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.coloros\.assistantscreen | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wallet | OTHER\_APK | — | — | Bounty eligible |
+| https://zhongbao-ear\.heytap\.com/ | URL | — | — | Bounty eligible |
+| https://zhongbao\.heytap\.com/ | URL | — | — | Bounty eligible |
+| https://www\.coloros\.com/ | URL | — | — | Bounty eligible |
+| com\.fintech\.life | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.book | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.databaseengine | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.health\.quickapp | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.heymelody | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.miniapp\.sports | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.ocsp\.client | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.reader | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.tas | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.breeno | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.browser | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.elves | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.healthassessment | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.market | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.research | OTHER\_APK | — | — | Bounty eligible |
+| com\.heytap\.wearable\.themestore | OTHER\_APK | — | — | Bounty eligible |
+| com\.oplus\.accesscard | OTHER\_APK | — | — | Bounty eligible |
+| com\.oplus\.melody | OTHER\_APK | — | — | Bounty eligible |
+| com\.oplus\.studycenter | OTHER\_APK | — | — | Bounty eligible |
+| com\.qpon\.merchant | OTHER\_APK | — | — | Bounty eligible |
+| com\.qpon\.platform | OTHER\_APK | — | — | Bounty eligible |
+| com\.shopai\.apps | OTHER\_APK | — | — | Bounty eligible |
+| https://developers\.oppomobile\.com/ | URL | — | — | Bounty eligible |
+| com\.katanlabs\.bubblepop | OTHER\_APK | — | — | Bounty eligible |
+| com\.katanlabs\.matchballgame | OTHER\_APK | — | — | Bounty eligible |
+| com\.katanlabs\.worm\.ioeatemall | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
+| http://open\.oppomobile\.com | URL | — | — | Bounty eligible |
+| https://c\.realme\.com/eg/ | URL | — | — | Bounty eligible |
+| https://c\.realme\.com/global/ | URL | — | — | Bounty eligible |
+| https://c\.realme\.com/id/ | URL | — | — | Bounty eligible |
+| https://c\.realme\.com/in/ | URL | — | — | Bounty eligible |
+| https://c\.realme\.com/ru/ | URL | — | — | Bounty eligible |
+| https://community\.oppo\.com/ | URL | — | — | Bounty eligible |
+| https://communityin\.oppo\.com/ | URL | — | — | Bounty eligible |
+| https://e-global\.heytap\.com/marketing/login | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

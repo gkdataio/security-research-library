@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:50Z.
+**Capture time:** 2026-11-07T19:21:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/common_codes/assets/download_csv.csv>)
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| d-you Wallet iOS Test | TESTFLIGHT | — | — | Bounty eligible |
-| d-you Wallet Android Test | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/wpb | API | — | — | Bounty eligible |
+| d-you Wallet Android Test | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| d-you Wallet iOS Test | TESTFLIGHT | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/rwsca | API | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/mdvm | API | — | — | Bounty eligible |
 | https://wallet-backend-sandbox\.apps\.sandbox\.nwb\.youniqx\.com/v1/pns | API | — | — | Bounty eligible |

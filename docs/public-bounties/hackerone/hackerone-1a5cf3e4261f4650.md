@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:33Z.
+**Capture time:** 2026-11-07T19:21:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/circle-bbp/assets/download_csv.csv>)
 
@@ -20,26 +20,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | api\.circle\.com | URL | — | — | Bounty eligible |
 | app\.circle\.com | URL | — | — | Bounty eligible |
-| console\.circle\.com | URL | — | — | Bounty eligible |
-| https://github\.com/circlefin/stellar-cctp | URL | — | — | Bounty eligible |
-| https://github\.com/circlefin/stablecoin-sui | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/circlefin/stablecoin-aptos | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/circlefin/sui-cctp | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/circlefin/stablecoin-starknet | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/circlefin/aptos-cctp | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/circlefin/stablecoin-xlm | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/evm-cctp-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
 | http://github\.com/circlefin/noble-cctp | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/solana-cctp-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| console\.circle\.com | URL | — | — | Bounty eligible |
+| https://github\.com/circlefin/stablecoin-sui | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/buidl-wallet-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/stablecoin-evm | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/noble-fiattokenfactory | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/circlefin/stablecoin-aptos | SOURCE\_CODE | — | — | Bounty eligible |
+| https://github\.com/circlefin/sui-cctp | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/evm-gateway-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/circlefin/stablecoin-starknet | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/evm-xreserve-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/circlefin/aptos-cctp | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/starknet-cctp | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/evm-cpn-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/stablecoin-near | SMART\_CONTRACT | — | — | Bounty eligible |
 | https://github\.com/circlefin/solana-gateway-contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/circlefin/stablecoin-xlm | SOURCE\_CODE | — | — | Bounty eligible |
+| https://github\.com/circlefin/stellar-cctp | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

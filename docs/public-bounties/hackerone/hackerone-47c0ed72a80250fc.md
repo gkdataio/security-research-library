@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:17Z.
+**Capture time:** 2026-11-07T19:26:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/snapchat/assets/download_csv.csv>)
 
@@ -18,21 +18,31 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| accounts\.snapchat\.com | URL | — | — | Bounty eligible |
-| app\.snapchat\.com | URL | — | — | Bounty eligible |
-| \*\.sc-core\.net | URL | — | — | Bounty eligible |
-| business\.snapchat\.com | URL | — | — | Bounty eligible |
-| store\.snapchat\.com | URL | — | — | Bounty eligible |
-| web\.snapchat\.com | URL | — | — | Bounty eligible |
+| com\.bitstrips\.imoji | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.bitstrips\.imoji | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.toyopagroup\.picaboo | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.snapchat\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| www\.bitmoji\.com | URL | — | — | Bounty eligible |
+| www\.bitstrips\.com | URL | — | — | Bounty eligible |
+| scan\.snapchat\.com | URL | — | — | Bounty eligible |
 | kit\.snapchat\.com | URL | — | — | Bounty eligible |
 | snappublisher\.snapchat\.com | URL | — | — | Bounty eligible |
 | geofilters\.snapchat\.com | URL | — | — | Bounty eligible |
+| spectacles\.com | URL | — | — | Bounty eligible |
+| accounts\.snapchat\.com | URL | — | — | Bounty eligible |
+| app\.snapchat\.com | URL | — | — | Bounty eligible |
+| Lens Studio | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| map\.snapchat\.com | URL | — | — | Bounty eligible |
+| story\.snapchat\.com | URL | — | — | Bounty eligible |
 | ads\.snapchat\.com | URL | — | — | Bounty eligible |
+| \*\.sc-core\.net | URL | — | — | Bounty eligible |
 | create\.snapchat\.com | URL | — | — | Bounty eligible |
+| business\.snapchat\.com | URL | — | — | Bounty eligible |
 | my\.snapchat\.com | URL | — | — | Bounty eligible |
 | businesshelp\.snapchat\.com | URL | — | — | Bounty eligible |
-| www\.bitmoji\.com | URL | — | — | Bounty eligible |
-| www\.bitstrips\.com | URL | — | — | Bounty eligible |
+| https://lensstudio\.snapchat\.com/api/ | SOURCE\_CODE | — | — | Bounty eligible |
+| store\.snapchat\.com | URL | — | — | Bounty eligible |
+| web\.snapchat\.com | URL | — | — | Bounty eligible |
 | blog\.playcanvas\.com | URL | — | — | Bounty eligible |
 | code\.playcanvas\.com | URL | — | — | Bounty eligible |
 | developer\.playcanvas\.com | URL | — | — | Bounty eligible |
@@ -45,30 +55,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | rt\.playcanvas\.com | URL | — | — | Bounty eligible |
 | store\.playcanvas\.com | URL | — | — | Bounty eligible |
 | playcanv\.as | URL | — | — | Bounty eligible |
-| scan\.snapchat\.com | URL | — | — | Bounty eligible |
-| spectacles\.com | URL | — | — | Bounty eligible |
-| map\.snapchat\.com | URL | — | — | Bounty eligible |
-| story\.snapchat\.com | URL | — | — | Bounty eligible |
-| https://lensstudio\.snapchat\.com/api/ | SOURCE\_CODE | — | — | Bounty eligible |
 | \*\.sc-corp\.net | OTHER | — | — | Bounty eligible |
 | Tier A - Core Assets | OTHER | — | — | Bounty eligible |
 | Tier B - Non Core \(Bitmoji, Playcanvas\) | OTHER | — | — | Bounty eligible |
-| com\.snapchat\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.bitstrips\.imoji | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Lens Studio | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| com\.toyopagroup\.picaboo | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.bitstrips\.imoji | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| http://dev\*\.playcanvas\.com | WILDCARD | — | — | Not bounty eligible |
 | returns\.spectacles\.com | URL | — | — | Not bounty eligible |
 | support\.snapchat\.com | URL | — | — | Not bounty eligible |
-| dev\.playcanv\.as | URL | — | — | Not bounty eligible |
 | Spectacles charging case | HARDWARE | — | — | Not bounty eligible |
 | Spectacles | HARDWARE | — | — | Not bounty eligible |
+| http://dev\*\.playcanvas\.com | WILDCARD | — | — | Not bounty eligible |
+| dev\.playcanv\.as | URL | — | — | Not bounty eligible |
 
 **Limits**
 

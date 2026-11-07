@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:09Z.
+**Capture time:** 2026-11-07T19:20:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/amazonvrp/assets/download_csv.csv>)
 
@@ -18,6 +18,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Other Amazon Retail Sites \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
+| Other Amazon Retail Mobile Apps \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
+| Amazon Subsidiaries \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
+| www\.amazon\.\* | URL | — | — | Bounty eligible |
+| com\.amazon\.mShop\.android\.shopping | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 297606951 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Other Amazon Retail Assets \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
+| https://www\.amazonpay\.in/\* | OTHER | — | — | Bounty eligible |
+| amazonpayinsurance\.in | URL | — | — | Bounty eligible |
 | \*\.amazon\.cl | WILDCARD | — | — | Bounty eligible |
 | \*\.amazon\.co\.za | WILDCARD | — | — | Bounty eligible |
 | \*\.amazon\.com\.au | WILDCARD | — | — | Bounty eligible |
@@ -44,22 +53,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.amazon\.se | WILDCARD | — | — | Bounty eligible |
 | \*\.amazon\.sg | WILDCARD | — | — | Bounty eligible |
 | \*\.amazon\.com | WILDCARD | — | — | Bounty eligible |
+| GenAI Apps under \*\.amazon\.\* | AI\_MODEL | — | — | Bounty eligible |
 | primevideo\.com/\* | WILDCARD | — | — | Bounty eligible |
-| www\.amazon\.\* | URL | — | — | Bounty eligible |
-| amazonpayinsurance\.in | URL | — | — | Bounty eligible |
-| https://www\.amazonpay\.in/\* | OTHER | — | — | Bounty eligible |
-| Vega OS | OTHER | — | — | Bounty eligible |
-| Devices | OTHER | — | — | Bounty eligible |
-| Services/Mobile/GenAI | OTHER | — | — | Bounty eligible |
-| Echo Family Devices | HARDWARE | — | — | Bounty eligible |
-| FireTV | HARDWARE | — | — | Bounty eligible |
-| Kindle E-Reader | HARDWARE | — | — | Bounty eligible |
-| Luna | HARDWARE | — | — | Bounty eligible |
-| Tablets | HARDWARE | — | — | Bounty eligible |
-| com\.amazon\.mShop\.android\.shopping | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | amazon\.speech\.sim | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1552455423 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.mShop\.android\.business\.shopping | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1498197033 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1265170914 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.mp3 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 510855668 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 6452192521 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 545519333 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1475021574 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1454725763 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1276296103 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.flex\.rabbit | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.imdbtv\.livingroom | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.amazonvideo\.livingroom | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
@@ -67,53 +74,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.amazon\.dee\.alexaonwearos | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.localqueen | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.helix\.prod | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 6471528064 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.tahoe\.grownups | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.sft\.rangoli\.seller\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1532153219 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.imdb\.tv\.mobile\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.minitv\.android\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.ziggy\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.music\.tv | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1579372261 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | in\.amazon\.mShop\.android\.business\.shopping | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1478350915 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | in\.amazon\.mShop\.android\.shopping | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.relay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.avod\.thirdpartyclient | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 794141485 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.sellerflexmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.shopperpanel\.android\.mobile\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.vendormobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.technician\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.primenow\.seller\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.vendormobile\.india\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.sellermobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.astro | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.warhol\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.amazonone\.androidapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.kisan\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.aba\.application | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.enterprise\.access\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.firetv\.recast\.blaster\.aosp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.ihm\.candycane | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.swa\.mobileapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.clouddrive\.photos | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.dee\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.kindle | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.storm\.lightning\.client\.aosp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.tahoe\.freetime | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.tails | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 297606951 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1552455423 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1498197033 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1265170914 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 510855668 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 6452192521 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 545519333 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1475021574 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1454725763 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1276296103 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 6471528064 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1532153219 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1579372261 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1478350915 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 794141485 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1494755014 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 342576766 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 358861688 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
@@ -122,30 +99,53 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 335187483 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1592204907 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6444868926 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.vendormobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 988788863 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.technician\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.primenow\.seller\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1057338687 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.vendormobile\.india\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1659883691 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.sellermobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.astro | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.warhol\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.amazonone\.androidapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.kisan\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1151746202 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6479334468 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6560104638 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.aba\.application | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.enterprise\.access\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.firetv\.recast\.blaster\.aosp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.ihm\.candycane | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.swa\.mobileapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1324809509 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1528364633 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 302584613 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 621574163 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 944011620 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 947984433 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| GenAI Apps under \*\.amazon\.\* | AI\_MODEL | — | — | Bounty eligible |
-| Other Amazon Retail Sites \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
-| Other Amazon Retail Mobile Apps \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
-| Amazon Subsidiaries \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
-| Other Amazon Retail Assets \(Please only actively test explicitly stated scope\) | OTHER | — | — | Not bounty eligible |
+| Echo Family Devices | HARDWARE | — | — | Bounty eligible |
+| FireTV | HARDWARE | — | — | Bounty eligible |
+| Kindle E-Reader | HARDWARE | — | — | Bounty eligible |
+| Luna | HARDWARE | — | — | Bounty eligible |
+| Tablets | HARDWARE | — | — | Bounty eligible |
+| Vega OS | OTHER | — | — | Bounty eligible |
+| com\.amazon\.clouddrive\.photos | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.dee\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.kindle | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.storm\.lightning\.client\.aosp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.tahoe\.freetime | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.amazon\.tails | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| Devices | OTHER | — | — | Bounty eligible |
+| Services/Mobile/GenAI | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (10)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| amazongames\.com | URL | — | — | Not bounty eligible |
 | Amazon Web Services \(AWS\) | OTHER | — | — | Not bounty eligible |
+| amazongames\.com | URL | — | — | Not bounty eligible |
 | "Contact Us" Functionality | OTHER | — | — | Not bounty eligible |
 | AWS and AWS customer assets are strictly out of scope | OTHER | — | — | Not bounty eligible |
 | \*\.\*a2z\*\.\* | OTHER | — | — | Not bounty eligible |

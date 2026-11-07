@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:57Z.
+**Capture time:** 2026-11-07T19:25:29Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/remitly/assets/download_csv.csv>)
 
@@ -18,29 +18,33 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.int\.remitly\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.dev\.remitly\.com | WILDCARD | — | — | Bounty eligible |
 | remitly\.com | URL | — | — | Bounty eligible |
 | blog\.remitly\.com | URL | — | — | Bounty eligible |
+| com\.remitly\.androidapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 674258465 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | api\.remitly\.io | URL | — | — | Bounty eligible |
 | cards\.remitly\.io | URL | — | — | Bounty eligible |
 | rewire\.com | URL | — | — | Bounty eligible |
 | app\.rewire\.to | URL | — | — | Bounty eligible |
-| cardpayments\.remitly\.io | URL | — | — | Bounty eligible |
-| access\.remitly\.com | URL | — | — | Bounty eligible |
-| auth\.remitly\.com | URL | — | — | Bounty eligible |
-| login\.remitly\.com | URL | — | — | Bounty eligible |
-| media\.remitly\.io | URL | — | — | Bounty eligible |
-| partner-webhook\.remitly\.io | URL | — | — | Bounty eligible |
-| ablink\.info\.remitly\.com | URL | — | — | Bounty eligible |
-| ir\.remitly\.com | URL | — | — | Bounty eligible |
-| news\.remitly\.com | URL | — | — | Bounty eligible |
-| access-sandbox\.remitly\.com | URL | — | — | Bounty eligible |
 | rates\.rewire\.com | URL | — | — | Bounty eligible |
 | app3\.rewire\.to | URL | — | — | Bounty eligible |
+| \*\.dev\.remitly\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.int\.remitly\.com | WILDCARD | — | — | Bounty eligible |
+| funding-webhooks\.remitly\.io | API | — | — | Bounty eligible |
+| media\.remitly\.io | URL | — | — | Bounty eligible |
+| hub-api-sandbox\.remitly\.io | API | — | — | Bounty eligible |
+| cardpayments\.remitly\.io | URL | — | — | Bounty eligible |
+| partner-webhook\.remitly\.io | URL | — | — | Bounty eligible |
+| ablink\.info\.remitly\.com | URL | — | — | Bounty eligible |
 | careers\.remitly\.com | URL | — | — | Bounty eligible |
+| ir\.remitly\.com | URL | — | — | Bounty eligible |
 | metrics\.int\.remitly\.com | URL | — | — | Bounty eligible |
+| news\.remitly\.com | URL | — | — | Bounty eligible |
+| access\.remitly\.com | URL | — | — | Bounty eligible |
+| access-sandbox\.remitly\.com | URL | — | — | Bounty eligible |
+| auth\.remitly\.com | URL | — | — | Bounty eligible |
 | site\.rewire\.com | URL | — | — | Bounty eligible |
+| login\.remitly\.com | URL | — | — | Bounty eligible |
 | remitly\.io | URL | — | — | Bounty eligible |
 | beamitmobile\.com | URL | — | — | Bounty eligible |
 | getorigen\.com | URL | — | — | Bounty eligible |
@@ -86,10 +90,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | remitresearch\.com | URL | — | — | Bounty eligible |
 | travelcash\.money | URL | — | — | Bounty eligible |
 | whyisend\.com | URL | — | — | Bounty eligible |
-| com\.remitly\.androidapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 674258465 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| funding-webhooks\.remitly\.io | API | — | — | Bounty eligible |
-| hub-api-sandbox\.remitly\.io | API | — | — | Bounty eligible |
 | api\.remitly\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)

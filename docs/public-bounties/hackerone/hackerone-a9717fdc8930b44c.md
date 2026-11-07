@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:19Z.
+**Capture time:** 2026-11-07T19:27:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/whoop_bug_bounty/assets/download_csv.csv>)
 
@@ -18,21 +18,21 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| com\.whoop\.iphone | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.whoop\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| WHOOP 4\.0 STRAP | OTHER | — | — | Bounty eligible |
 | api\.prod\.whoop\.com | URL | — | — | Bounty eligible |
 | app\.whoop\.com | URL | — | — | Bounty eligible |
-| shop\.whoop\.com | URL | — | — | Bounty eligible |
-| WHOOP 4\.0 STRAP | OTHER | — | — | Bounty eligible |
 | join\.whoop\.com | OTHER | — | — | Bounty eligible |
+| shop\.whoop\.com | URL | — | — | Bounty eligible |
 | WHOOP 5\.0/MG STRAP | OTHER | — | — | Bounty eligible |
-| com\.whoop\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.whoop\.iphone | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| okta\.whoop\.com | URL | — | — | Not bounty eligible |
 | Support System | OTHER | — | — | Not bounty eligible |
+| okta\.whoop\.com | URL | — | — | Not bounty eligible |
 | Azure AD, Google Drive, Link Sharing Websites | OTHER | — | — | Not bounty eligible |
 | Credit/Debit Card Testing | OTHER | — | — | Not bounty eligible |
 

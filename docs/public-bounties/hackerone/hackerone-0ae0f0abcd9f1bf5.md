@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:42Z.
+**Capture time:** 2026-11-07T19:25:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/playstation/assets/download_csv.csv>)
 
@@ -26,21 +26,21 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | social\.playstation\.com | URL | — | — | Bounty eligible |
 | transact\.playstation\.com | URL | — | — | Bounty eligible |
 | wallets\.api\.playstation\.com | URL | — | — | Bounty eligible |
+| PlayStation 4 | HARDWARE | — | — | Bounty eligible |
 | direct\.playstation\.com | URL | — | — | Bounty eligible |
 | api\.direct\.playstation\.com | URL | — | — | Bounty eligible |
+| PlayStation 5 | HARDWARE | — | — | Bounty eligible |
 | ca\.account\.sony\.com | URL | — | — | Bounty eligible |
 | my\.account\.sony\.com | URL | — | — | Bounty eligible |
 | ps5\.np\.playstation\.net | URL | — | — | Bounty eligible |
+| iOS Playstation App | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Android Playstation App | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | checkout\.playstation\.com | URL | — | — | Bounty eligible |
 | profile\.playstation\.com | URL | — | — | Bounty eligible |
 | session-share\.playstation\.com | URL | — | — | Bounty eligible |
 | compete\.playstation\.com | URL | — | — | Bounty eligible |
 | web\.np\.playstation\.com | URL | — | — | Bounty eligible |
 | www\.playstation\.com | URL | — | — | Bounty eligible |
-| PlayStation 4 | HARDWARE | — | — | Bounty eligible |
-| PlayStation 5 | HARDWARE | — | — | Bounty eligible |
-| Android Playstation App | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| iOS Playstation App | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | \*\.playstation\.com | WILDCARD | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (0)

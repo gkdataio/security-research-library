@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:09Z.
+**Capture time:** 2026-11-07T19:25:55Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/shein/assets/download_csv.csv>)
 
@@ -19,12 +19,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.shein\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.romwe\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.sheingsp\.com | WILDCARD | — | — | Bounty eligible |
-| com\.zzkko | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.romwe | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 878577184 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.zzkko | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.romwe\.com | WILDCARD | — | — | Bounty eligible |
+| com\.romwe | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1080248000 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.sheingsp\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

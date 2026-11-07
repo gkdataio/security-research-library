@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:23Z.
+**Capture time:** 2026-11-07T19:22:53Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/flutteruki/assets/download_csv.csv>)
 
@@ -50,58 +50,58 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.skybettingandgaming\.info | WILDCARD | — | — | Bounty eligible |
 | \*\.betsharedservices\.io | WILDCARD | — | — | Bounty eligible |
 | \*\.sportinglife\.com | WILDCARD | — | — | Bounty eligible |
+| super6\.skysports\.com | URL | — | — | Bounty eligible |
+| itv7\.itv\.com | URL | — | — | Bounty eligible |
 | \*\.paddypartners\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.ppbdev\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.dibz\.co\.uk | WILDCARD | — | — | Bounty eligible |
-| \*\.ppb\.com | WILDCARD | — | — | Bounty eligible |
-| super6\.skysports\.com | URL | — | — | Bounty eligible |
-| itv7\.itv\.com | URL | — | — | Bounty eligible |
-| rafflee\.co\.uk | URL | — | — | Bounty eligible |
-| metrocompetitions\.com | URL | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/developer?id=Sky\+Betting\+and\+Gaming\+Apps&amp;gl=uk | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/dev?id=9151483005769461618&amp;gl=GB | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/dev?id=8912907283039023448&amp;gl=GB | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/dev?id=5503565801970655430&amp;gl=gb | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| rafflee\.co\.uk | URL | — | — | Bounty eligible |
+| \*\.ppb\.com | WILDCARD | — | — | Bounty eligible |
+| metrocompetitions\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (36)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.us\.betfair\.com | WILDCARD | — | — | Not bounty eligible |
+| community\.betfair\.com | URL | — | — | Not bounty eligible |
 | \*\.betfair\.com\.au | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbpartner\.it | WILDCARD | — | — | Not bounty eligible |
+| affiliatehub\.skybet\.com | URL | — | — | Not bounty eligible |
+| partners\.skybet\.com | URL | — | — | Not bounty eligible |
 | \*\.skybet\.de | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybet\.it | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybetcareers\.com | WILDCARD | — | — | Not bounty eligible |
+| technology\.skybettingandgaming\.com | URL | — | — | Not bounty eligible |
 | \*\.skybetpartner\.de | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybettingandgamingresearch\.com | WILDCARD | — | — | Not bounty eligible |
+| email1\.skybet\.com | URL | — | — | Not bounty eligible |
+| skymail\.sky\.com | URL | — | — | Not bounty eligible |
 | \*\.sbgpeople\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbga\.me | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbg\.life | WILDCARD | — | — | Not bounty eligible |
+| skyrgs\.blueprintgaming\.com | URL | — | — | Not bounty eligible |
 | \*\.skybet-it\.info | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybetchiusuraconto\.it | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbgdataintl\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbgcolab\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybetgraduates\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbggraduates\.com | WILDCARD | — | — | Not bounty eligible |
+| community\.skypoker\.com | URL | — | — | Not bounty eligible |
+| community\.staging\.skypoker\.com | URL | — | — | Not bounty eligible |
+| sbagmail\.skybettingandgaming\.com | URL | — | — | Not bounty eligible |
 | \*\.s6\.sbgservices\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.sbgmail\.skybettingandgaming\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.email\.skybet\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.skybusinessemail\.com | WILDCARD | — | — | Not bounty eligible |
 | online\.\*\.skybingo\.com | WILDCARD | — | — | Not bounty eligible |
+| www\.betfair\.com\.co | URL | — | — | Not bounty eligible |
 | \*\.sbagmail\.skybettingandgaming\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.technology\.skybettingandgaming\.com | WILDCARD | — | — | Not bounty eligible |
-| community\.betfair\.com | URL | — | — | Not bounty eligible |
-| affiliatehub\.skybet\.com | URL | — | — | Not bounty eligible |
-| partners\.skybet\.com | URL | — | — | Not bounty eligible |
-| technology\.skybettingandgaming\.com | URL | — | — | Not bounty eligible |
-| email1\.skybet\.com | URL | — | — | Not bounty eligible |
-| skymail\.sky\.com | URL | — | — | Not bounty eligible |
-| skyrgs\.blueprintgaming\.com | URL | — | — | Not bounty eligible |
-| community\.skypoker\.com | URL | — | — | Not bounty eligible |
-| community\.staging\.skypoker\.com | URL | — | — | Not bounty eligible |
-| sbagmail\.skybettingandgaming\.com | URL | — | — | Not bounty eligible |
-| www\.betfair\.com\.co | URL | — | — | Not bounty eligible |
 | support\.developer\.betfair\.com | URL | — | — | Not bounty eligible |
 
 **Limits**

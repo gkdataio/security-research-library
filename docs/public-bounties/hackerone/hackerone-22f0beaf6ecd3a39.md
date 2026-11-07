@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:15Z.
+**Capture time:** 2026-11-07T19:27:11Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/wealthsimple/assets/download_csv.csv>)
 
@@ -19,10 +19,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.wealthsimple\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.simpletax\.ca | WILDCARD | — | — | Bounty eligible |
-| com\.wealthsimple | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.wealthsimple\.predict | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.wealthsimple\.wealthsimple | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.wealthsimple | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.simpletax\.ca | WILDCARD | — | — | Bounty eligible |
+| com\.wealthsimple\.predict | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.wealthsimple\.predict | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (13)
@@ -32,6 +32,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | help\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | support\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | work\.wealthsimple\.com | URL | — | — | Not bounty eligible |
+| tldr-archive\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | status\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | trust\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | start\.wealthsimple\.com | URL | — | — | Not bounty eligible |
@@ -41,7 +42,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | newsroom\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | app\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 | gifts\.wealthsimple\.com | URL | — | — | Not bounty eligible |
-| tldr-archive\.wealthsimple\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -79,11 +79,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Intigriti asset table",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/dropbox/dropbox/detail",
-      "publisher": "Dropbox",
-      "retrieved_at": "2026-11-07T14:52:15Z",
+      "publisher": "Intigriti",
+      "retrieved_at": "2026-11-07T19:29:25Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -109,9 +109,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T14:52:15Z",
+    "verified_at": "2026-11-07T19:29:25Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -120,7 +120,7 @@
         "location": "http://api.dropbox.com",
         "group": "Tier 1",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -129,7 +129,7 @@
         "location": "http://Dropbox.com",
         "group": "Tier 1",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -138,7 +138,7 @@
         "location": "http://HelloSign.com",
         "group": "Tier 1",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -147,7 +147,7 @@
         "location": "http://sign.dropbox.com",
         "group": "Tier 1",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -156,7 +156,7 @@
         "location": "https://apps.apple.com/app/1080074001",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -165,7 +165,7 @@
         "location": "https://apps.apple.com/app/327630330",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -174,7 +174,7 @@
         "location": "http://app.Reclaim.ai",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -183,7 +183,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.dropbox.android",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -192,7 +192,7 @@
         "location": "http://docsend.com",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -201,7 +201,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -210,7 +210,7 @@
         "location": "http://dropbox.com/paper",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -219,7 +219,7 @@
         "location": "http://HelloFax.com",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -228,7 +228,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -237,7 +237,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -246,7 +246,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -255,7 +255,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -264,7 +264,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -273,7 +273,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -282,7 +282,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -291,7 +291,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -300,7 +300,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -309,7 +309,7 @@
         "location": null,
         "group": "No bounty",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -318,7 +318,7 @@
         "location": "https://apps.apple.com/app/6450553960",
         "group": "No bounty",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -327,7 +327,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.dropbox.dash",
         "group": "No bounty",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -336,7 +336,7 @@
         "location": "http://dash.ai",
         "group": "No bounty",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -345,7 +345,7 @@
         "location": null,
         "group": "No bounty",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -356,7 +356,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -365,7 +365,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -374,7 +374,7 @@
         "location": "https://apps.apple.com/app/1126623662",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -383,7 +383,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -392,7 +392,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.dropbox.paper",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -401,7 +401,7 @@
         "location": "http://community-dev.dropbox.com",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -410,7 +410,7 @@
         "location": "http://community-stage.dropbox.com",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -419,7 +419,7 @@
         "location": "http://community.dropbox.com",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -428,7 +428,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -437,7 +437,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -446,7 +446,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -455,7 +455,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -464,12 +464,13 @@
         "location": "http://replay.dropbox.com",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

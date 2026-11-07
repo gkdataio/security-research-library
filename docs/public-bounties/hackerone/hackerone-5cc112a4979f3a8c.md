@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:43Z.
+**Capture time:** 2026-11-07T19:26:49Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/ui/assets/download_csv.csv>)
 
@@ -19,26 +19,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.ubnt\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.ui\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.uisp\.com | WILDCARD | — | — | Bounty eligible |
+| training\.ui\.com | URL | — | — | Not bounty eligible |
 | store\.ui\.com | URL | — | — | Bounty eligible |
 | community\.ui\.com | URL | — | — | Bounty eligible |
-| account\.ui\.com | URL | — | — | Bounty eligible |
-| fw-update\.ubnt\.com | URL | — | — | Bounty eligible |
-| rma\.ui\.com | URL | — | — | Bounty eligible |
-| design\.ui\.com | URL | — | — | Bounty eligible |
-| uisp\.com | URL | — | — | Bounty eligible |
-| unifi\.ui\.com | URL | — | — | Bounty eligible |
-| careers\.ui\.com | URL | — | — | Bounty eligible |
-| ispdesign\.ui\.com | URL | — | — | Bounty eligible |
-| UniFi Cloud | OTHER | — | — | Bounty eligible |
-| UID | OTHER | — | — | Bounty eligible |
+| ir\.ui\.com | URL | — | — | Not bounty eligible |
+| help\.ui\.com | URL | — | — | Not bounty eligible |
+| blog\.ui\.com | URL | — | — | Not bounty eligible |
 | airMAX | HARDWARE | — | — | Bounty eligible |
 | UniFi | HARDWARE | — | — | Bounty eligible |
 | EdgeMAX | HARDWARE | — | — | Bounty eligible |
 | airFiber | HARDWARE | — | — | Bounty eligible |
 | UFiber | HARDWARE | — | — | Bounty eligible |
+| UniFi Cloud | OTHER | — | — | Bounty eligible |
+| UniFi Network Application | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| com\.ubnt\.easyunifi | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.ubnt\.umobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.ubnt\.discovery\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.ubnt\.ucrm | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| UCRM | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| UNMS | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | AmpliFi | HARDWARE | — | — | Bounty eligible |
+| \*\.ui\.com | WILDCARD | — | — | Bounty eligible |
 | UniFi Talk | HARDWARE | — | — | Bounty eligible |
 | UniFi Protect | HARDWARE | — | — | Bounty eligible |
 | UniFi Switches | HARDWARE | — | — | Bounty eligible |
@@ -47,48 +48,47 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Cloudkey | HARDWARE | — | — | Bounty eligible |
 | UniFi LED | HARDWARE | — | — | Bounty eligible |
 | UniFi Access | HARDWARE | — | — | Bounty eligible |
-| UniFi Connect | HARDWARE | — | — | Bounty eligible |
-| Enterprise Audio/Video | HARDWARE | — | — | Bounty eligible |
-| UniFi-Play | HARDWARE | — | — | Bounty eligible |
-| com\.ubnt\.easyunifi | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.ubnt\.umobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.ubnt\.discovery\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| UniFi Network Application | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| UCRM | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| UNMS | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| UISP | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| https://\*\.ui\.com/distributors/ | WILDCARD | — | — | Not bounty eligible |
-| https://\*\.ui\.com/training/partners/ | WILDCARD | — | — | Not bounty eligible |
-| ir\.ui\.com | URL | — | — | Not bounty eligible |
-| help\.ui\.com | URL | — | — | Not bounty eligible |
-| blog\.ui\.com | URL | — | — | Not bounty eligible |
-| training\.ui\.com | URL | — | — | Not bounty eligible |
+| account\.ui\.com | URL | — | — | Bounty eligible |
+| fw-update\.ubnt\.com | URL | — | — | Bounty eligible |
+| rma\.ui\.com | URL | — | — | Bounty eligible |
+| design\.ui\.com | URL | — | — | Bounty eligible |
+| uisp\.com | URL | — | — | Bounty eligible |
+| unifi\.ui\.com | URL | — | — | Bounty eligible |
+| careers\.ui\.com | URL | — | — | Bounty eligible |
+| ispdesign\.ui\.com | URL | — | — | Bounty eligible |
+| UID | OTHER | — | — | Bounty eligible |
 | dev-training\.ui\.com | URL | — | — | Not bounty eligible |
 | wiki\.ui\.com | URL | — | — | Not bounty eligible |
 | https://ui\.com/distributors/ | URL | — | — | Not bounty eligible |
+| https://\*\.ui\.com/distributors/ | WILDCARD | — | — | Not bounty eligible |
 | https://ui\.com/training/partners/ | URL | — | — | Not bounty eligible |
-| help\.uisp\.com | URL | — | — | Not bounty eligible |
-| com\.ubnt\.ucrm | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| https://\*\.ui\.com/training/partners/ | WILDCARD | — | — | Not bounty eligible |
+| UniFi Connect | HARDWARE | — | — | Bounty eligible |
+| UISP | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| \*\.uisp\.com | WILDCARD | — | — | Bounty eligible |
 |  UniFi OS Server | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| help\.uisp\.com | URL | — | — | Not bounty eligible |
+| Enterprise Audio/Video | HARDWARE | — | — | Bounty eligible |
+| UniFi-Play | HARDWARE | — | — | Bounty eligible |
 | WiFiman | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 
 ## Out-of-scope entries (14)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.go\.ubnt\.com | WILDCARD | — | — | Not bounty eligible |
 | forum-es\.ui\.com | URL | — | — | Not bounty eligible |
 | forum-pt\.ui\.com | URL | — | — | Not bounty eligible |
-| security\.community\.ui\.com | URL | — | — | Not bounty eligible |
-| UniFi Video Cloud | OTHER | — | — | Not bounty eligible |
 | UniFi Video | HARDWARE | — | — | Not bounty eligible |
+| UniFi Video Cloud | OTHER | — | — | Not bounty eligible |
+| AirControl | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| UniFi Video Server | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 | mFi | HARDWARE | — | — | Not bounty eligible |
-| UniFi Voip | HARDWARE | — | — | Not bounty eligible |
 | com\.ubnt\.unifivideo | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.ubnt\.unifi\.edu | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.ubnt\.mpower | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| AirControl | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
-| UniFi Video Server | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| UniFi Voip | HARDWARE | — | — | Not bounty eligible |
+| security\.community\.ui\.com | URL | — | — | Not bounty eligible |
+| \*\.go\.ubnt\.com | WILDCARD | — | — | Not bounty eligible |
 | UniFi Talk Conference Speaker - UT-Conference  | HARDWARE | — | — | Not bounty eligible |
 
 **Limits**

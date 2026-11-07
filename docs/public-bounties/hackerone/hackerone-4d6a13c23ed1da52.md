@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-07T14:56:50Z.
+**Capture time:** 2026-11-07T19:26:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/vercel/assets/download_csv.csv>)
 
@@ -18,13 +18,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.vercel\.live | WILDCARD | — | — | Bounty eligible |
-| \*\.vercel\.com | WILDCARD | — | — | Bounty eligible |
 | vercel\.app | URL | — | — | Bounty eligible |
 | vercel\.com | URL | — | — | Bounty eligible |
+| \*\.vercel\.live | WILDCARD | — | — | Bounty eligible |
+| \*\.vercel\.com | WILDCARD | — | — | Bounty eligible |
+| https://github\.com/vercel | SOURCE\_CODE | — | — | Bounty eligible |
 | v0\.dev | URL | — | — | Bounty eligible |
 | v0\.app | URL | — | — | Bounty eligible |
-| https://github\.com/vercel | SOURCE\_CODE | — | — | Bounty eligible |
+| Vercel sandbox | OTHER | — | — | Bounty eligible |
 | https://github\.com/nitrojs/nitro | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/nuxt/nuxt | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/sveltejs/svelte | SOURCE\_CODE | — | — | Bounty eligible |
@@ -41,7 +42,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/vercel/workflow | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/vercel/eve | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/vercel/ms | SOURCE\_CODE | — | — | Bounty eligible |
-| Vercel sandbox | OTHER | — | — | Bounty eligible |
 | https://github\.com/sveltejs/kit | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/better-auth/better-auth | SOURCE\_CODE | — | — | Bounty eligible |
 
@@ -54,3 +54,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
+- Only public asset identifiers and explicit scope/bounty flags were refreshed automatically\. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced\. Whole-policy review dates, eligibility and restrictions were not refreshed\. Live program rules prevail; this snapshot is not testing authorization\.

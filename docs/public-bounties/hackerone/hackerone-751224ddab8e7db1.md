@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:04Z.
+**Capture time:** 2026-11-07T19:24:01Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/malwarebytes/assets/download_csv.csv>)
 
@@ -18,31 +18,31 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| forums\.malwarebytes\.com | URL | — | — | Not bounty eligible |
+| Malwarebytes for Windows | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Malwarebytes for Mac | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| org\.malwarebytes\.antimalware | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| blog\.malwarebytes\.com | URL | — | — | Not bounty eligible |
+| support\.malwarebytes\.com | URL | — | — | Not bounty eligible |
+| www\.malwarebytes\.com | URL | — | — | Bounty eligible |
+| my\.malwarebytes\.com | URL | — | — | Bounty eligible |
+| Malwarebytes Privacy \(VPN\) | OTHER | — | — | Bounty eligible |
+| AdwCleaner | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| com\.malwarebytes\.Malwarebytes | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| BrowserGuard \(Firefox/Chrome/Safari browser extension\) | OTHER | — | — | Bounty eligible |
+| Malwarebytes for Teams | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Malwarebytes Remediation for CrowdStrike | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Malwarebytes ToolSet \(MBTS\) | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Malwarebytes Anti-Exploit | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| Malwarebytes Windows Firewall Control | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| USB Flash Drive Control | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 | \*\.mwbsys\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.mbamupdates\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.malwarebytes\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.mwb-threatintel\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.cyrus-security\.com | WILDCARD | — | — | Bounty eligible |
-| www\.malwarebytes\.com | URL | — | — | Bounty eligible |
-| my\.malwarebytes\.com | URL | — | — | Bounty eligible |
-| BrowserGuard \(Firefox/Chrome/Safari browser extension\) | OTHER | — | — | Bounty eligible |
 | Any other Malwarebytes asset | OTHER | — | — | Bounty eligible |
-| Malwarebytes Privacy \(VPN\) | OTHER | — | — | Bounty eligible |
-| org\.malwarebytes\.antimalware | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Malwarebytes for Windows | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Malwarebytes for Mac | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| AdwCleaner | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Malwarebytes for Teams | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Malwarebytes Remediation for CrowdStrike | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Malwarebytes ToolSet \(MBTS\) | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| \*\.cyrus-security\.com | WILDCARD | — | — | Bounty eligible |
 | Malwarebytes Support Tool \(MBST\) | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Malwarebytes Windows Firewall Control | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| com\.malwarebytes\.Malwarebytes | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| forums\.malwarebytes\.com | URL | — | — | Not bounty eligible |
-| blog\.malwarebytes\.com | URL | — | — | Not bounty eligible |
-| support\.malwarebytes\.com | URL | — | — | Not bounty eligible |
-| Malwarebytes Anti-Exploit | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
-| USB Flash Drive Control | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (6)
 
@@ -52,8 +52,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | store\.malwarebytes\.com | URL | — | — | Not bounty eligible |
 | pages\.malwarebytes\.com | URL | — | — | Not bounty eligible |
 | view\.malwarebytes\.com | URL | — | — | Not bounty eligible |
-| malwarebytes\.zoom\.us | URL | — | — | Not bounty eligible |
 | Malwarebytes Anti-Ransomware | DOWNLOADABLE\_EXECUTABLES | — | — | Not bounty eligible |
+| malwarebytes\.zoom\.us | URL | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:47Z.
+**Capture time:** 2026-11-07T19:23:30Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/instacart/assets/download_csv.csv>)
 
@@ -18,25 +18,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.instacart\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.instacart\.tools | WILDCARD | — | — | Bounty eligible |
 | api\.instacart\.com | URL | — | — | Bounty eligible |
 | www\.instacart\.com | URL | — | — | Bounty eligible |
-| admin\.instacart\.com | URL | — | — | Bounty eligible |
-| shoppers\.instacart\.com | URL | — | — | Bounty eligible |
-| template\.uat\.foodstorm\.com | URL | — | — | Bounty eligible |
-| Android &amp; iOS App for Instacart Shoppers | OTHER | — | — | Bounty eligible |
 | com\.instacart\.client | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 545599256 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| admin\.instacart\.com | URL | — | — | Bounty eligible |
+| shoppers\.instacart\.com | URL | — | — | Bounty eligible |
+| Android &amp; iOS App for Instacart Shoppers | OTHER | — | — | Bounty eligible |
+| \*\.instacart\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.instacart\.tools | WILDCARD | — | — | Bounty eligible |
+| template\.uat\.foodstorm\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.email\.instacart\.com | WILDCARD | — | — | Not bounty eligible |
 | brand\.instacart\.com | URL | — | — | Not bounty eligible |
 | careers\.instacart\.com | URL | — | — | Not bounty eligible |
 | carrotstore\.instacart\.com | URL | — | — | Not bounty eligible |
+| \*\.email\.instacart\.com | WILDCARD | — | — | Not bounty eligible |
 | enterprise-status\.instacart\.com | URL | — | — | Not bounty eligible |
 | instacart\.careers | URL | — | — | Not bounty eligible |
 | heyitsinstacart\.com | URL | — | — | Not bounty eligible |

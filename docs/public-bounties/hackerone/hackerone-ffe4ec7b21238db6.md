@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:28Z.
+**Capture time:** 2026-11-07T19:24:43Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/notion/assets/download_csv.csv>)
 
@@ -18,18 +18,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| mail\.notion\.so | URL | — | — | Bounty eligible |
-| calendar\.notion\.so | URL | — | — | Bounty eligible |
+| notion\.id | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| Notion Desktop App | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Notion Frontend | OTHER | — | — | Bounty eligible |
 | Product API | OTHER | — | — | Bounty eligible |
 | Public API | OTHER | — | — | Bounty eligible |
+| Notion AI | AI\_MODEL | — | — | Bounty eligible |
 | Notion Integrations | OTHER | — | — | Bounty eligible |
 | Privilege Escalation | OTHER | — | — | Bounty eligible |
 | Notion Authentication | OTHER | — | — | Bounty eligible |
+| mail\.notion\.so | URL | — | — | Bounty eligible |
+| calendar\.notion\.so | URL | — | — | Bounty eligible |
 | Github Repositories or other public artifacts owned by makenotion | OTHER | — | — | Bounty eligible |
-| notion\.id | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Notion Desktop App | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Notion AI | AI\_MODEL | — | — | Bounty eligible |
 | Notion MCP | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)

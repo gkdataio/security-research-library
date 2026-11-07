@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:23Z.
+**Capture time:** 2026-11-07T19:27:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/x/assets/download_csv.csv>)
 
@@ -20,27 +20,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.twitter\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.vine\.co | WILDCARD | — | — | Bounty eligible |
+| com\.twitter\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.atebits\.Tweetie2 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | \*\.twimg\.com | WILDCARD | — | — | Bounty eligible |
+| t\.co | URL | — | — | Bounty eligible |
+| x\.com | URL | — | — | Bounty eligible |
+| xadsacademy\.com | URL | — | — | Not bounty eligible |
+| accounts\.x\.ai | URL | — | — | Bounty eligible |
+| console\.x\.ai | URL | — | — | Bounty eligible |
 | \*\.x\.ai | WILDCARD | — | — | Bounty eligible |
 | \*\.x\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.grok\.com | WILDCARD | — | — | Bounty eligible |
-| x\.com | URL | — | — | Bounty eligible |
-| accounts\.x\.ai | URL | — | — | Bounty eligible |
-| console\.x\.ai | URL | — | — | Bounty eligible |
 | grok\.com | URL | — | — | Bounty eligible |
+| ai\.x\.GrokApp | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| ai\.x\.grok | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | chat\.x\.com | URL | — | — | Bounty eligible |
 | grokipedia\.com | URL | — | — | Bounty eligible |
 | money\.x\.com | URL | — | — | Bounty eligible |
 | console\.x\.com | URL | — | — | Bounty eligible |
+| X Pixel Helper \(Chrome Extension\) | OTHER | — | — | Bounty eligible |
 | pscp\.tv | URL | — | — | Bounty eligible |
 | x\.ai | URL | — | — | Bounty eligible |
-| t\.co | URL | — | — | Bounty eligible |
-| X Pixel Helper \(Chrome Extension\) | OTHER | — | — | Bounty eligible |
-| com\.twitter\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| ai\.x\.grok | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.atebits\.Tweetie2 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| ai\.x\.GrokApp | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| xadsacademy\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (1)
 

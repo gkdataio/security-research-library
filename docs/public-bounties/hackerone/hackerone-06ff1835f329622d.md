@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:37Z.
+**Capture time:** 2026-11-07T19:27:35Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/yoti/assets/download_csv.csv>)
 
@@ -18,6 +18,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| com\.yoti\.mobile\.android\.live | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 983980808 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | core\.yoti\.com | URL | — | — | Bounty eligible |
 | api\.yoti\.com | URL | — | — | Bounty eligible |
 | ccloud\.yoti\.com | URL | — | — | Bounty eligible |
@@ -25,8 +27,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.yotisign\.com | URL | — | — | Bounty eligible |
 | hub\.yoti\.com | URL | — | — | Bounty eligible |
 | identity\.yoti\.com | URL | — | — | Bounty eligible |
-| com\.yoti\.mobile\.android\.live | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 983980808 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 

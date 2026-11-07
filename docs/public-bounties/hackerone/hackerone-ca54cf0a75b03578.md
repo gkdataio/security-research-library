@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:16Z.
+**Capture time:** 2026-11-07T19:22:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/fetlife/assets/download_csv.csv>)
 
@@ -18,23 +18,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.fetlife\.com | WILDCARD | — | — | Bounty eligible |
 | fetlife\.com | URL | — | — | Bounty eligible |
+| \*\.fetlife\.com | WILDCARD | — | — | Bounty eligible |
 | fetlifemail\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (9)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.bitlove\.co | WILDCARD | — | — | Not bounty eligible |
 | status\.fetlife\.com | URL | — | — | Not bounty eligible |
+| com\.bitlove\.fetlife | OTHER\_APK | — | — | Not bounty eligible |
 | mail\.fetlife\.com | URL | — | — | Not bounty eligible |
 | n2\.fetlife\.com | URL | — | — | Not bounty eligible |
 | fetlifestatus\.com | URL | — | — | Not bounty eligible |
-| bitlove\.co | URL | — | — | Not bounty eligible |
-| com\.bitlove\.fetlife | OTHER\_APK | — | — | Not bounty eligible |
-| Requests to our ad endpoints \(on any server\): \`/ads/serve\`, \`/ads/application\_serve\*\`, and \`/ads/click/\*\` | OTHER | — | — | Not bounty eligible |
 | co\.bitlove\.opensource\.FetLife | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| Requests to our ad endpoints \(on any server\): \`/ads/serve\`, \`/ads/application\_serve\*\`, and \`/ads/click/\*\` | OTHER | — | — | Not bounty eligible |
+| \*\.bitlove\.co | WILDCARD | — | — | Not bounty eligible |
+| bitlove\.co | URL | — | — | Not bounty eligible |
 
 **Limits**
 

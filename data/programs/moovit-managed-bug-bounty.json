@@ -105,11 +105,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/moovit-mbb-og/changelog/6bded391-eff8-479d-a41c-4efdcee70ed0.json",
-      "publisher": "Moovit",
-      "retrieved_at": "2026-11-07T15:03:08Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T19:04:37Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -119,9 +119,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:08Z",
+    "verified_at": "2026-11-07T19:04:37Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -130,7 +130,7 @@
         "location": null,
         "group": "Limited Double Bounty Promotion | July 7th - July 22nd",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -139,7 +139,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.tranzmate&hl=en_US",
         "group": "In Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -148,7 +148,7 @@
         "location": "https://apps.apple.com/us/app/moovit-all-transit-options/id498477945",
         "group": "In Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -157,7 +157,7 @@
         "location": "https://support.moovitapp.com/hc/en-us/articles/11389054527122-WayFinder-Augmented-Reality-helper-to-find-your-stop-iPhone-only",
         "group": "In Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -168,7 +168,7 @@
         "location": null,
         "group": "Out Of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -177,7 +177,7 @@
         "location": null,
         "group": "Out Of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -186,12 +186,13 @@
         "location": null,
         "group": "Out Of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

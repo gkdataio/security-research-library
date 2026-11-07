@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:12Z.
+**Capture time:** 2026-11-07T19:20:49Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/att/assets/download_csv.csv>)
 
@@ -24,6 +24,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| prod-taxexempt\.att\.com | URL | — | — | Not bounty eligible |
+| \*\.sky\.com\.mx | URL | — | — | Not bounty eligible |
+| accbusinesspricing\.att\.com | URL | — | — | Not bounty eligible |
+| rcloud\.social | URL | — | — | Not bounty eligible |
+| attdashboard\.wireless\.att\.com | URL | — | — | Not bounty eligible |
+| https://clec\.att\.com/clec/ | URL | — | — | Not bounty eligible |
+| 12\.0\.1\.28 | OTHER | — | — | Not bounty eligible |
+| attsuppliers\.com | URL | — | — | Not bounty eligible |
+| attpurchasing\.com | URL | — | — | Not bounty eligible |
+| authkeysmx01\.att\.com\.mx | URL | — | — | Not bounty eligible |
+| 40\.233\.66\.139 | IP\_ADDRESS | — | — | Not bounty eligible |
+| https://40\.233\.66\.139 | URL | — | — | Not bounty eligible |
+| thedirectvmarketingzone\.com | URL | — | — | Not bounty eligible |
+| att\.suppliergateway\.com | URL | — | — | Not bounty eligible |
+| DirecTV Owned Assets | OTHER | — | — | Not bounty eligible |
+| att\.com/acctmgmt/\*/stub\*/\* | WILDCARD | — | — | Not bounty eligible |
+| att\.com/acctmgmt/\*/chunks/\* | WILDCARD | — | — | Not bounty eligible |
+| \*tworks-att\.com | WILDCARD | — | — | Not bounty eligible |
+| http://dna-uat\.az\.cloud\.att\.com/ | URL | — | — | Not bounty eligible |
 | \*\.oml\.att\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.bizsoltraining\.att\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.workdayinfortraining\.att\.com | WILDCARD | — | — | Not bounty eligible |
@@ -80,25 +99,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.vtt\.directv\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.comtrain\.directv\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.learning\.directv\.com | WILDCARD | — | — | Not bounty eligible |
-| att\.com/acctmgmt/\*/stub\*/\* | WILDCARD | — | — | Not bounty eligible |
-| att\.com/acctmgmt/\*/chunks/\* | WILDCARD | — | — | Not bounty eligible |
-| \*tworks-att\.com | WILDCARD | — | — | Not bounty eligible |
-| prod-taxexempt\.att\.com | URL | — | — | Not bounty eligible |
-| \*\.sky\.com\.mx | URL | — | — | Not bounty eligible |
-| accbusinesspricing\.att\.com | URL | — | — | Not bounty eligible |
-| rcloud\.social | URL | — | — | Not bounty eligible |
-| attdashboard\.wireless\.att\.com | URL | — | — | Not bounty eligible |
-| https://clec\.att\.com/clec/ | URL | — | — | Not bounty eligible |
-| attsuppliers\.com | URL | — | — | Not bounty eligible |
-| attpurchasing\.com | URL | — | — | Not bounty eligible |
-| authkeysmx01\.att\.com\.mx | URL | — | — | Not bounty eligible |
-| https://40\.233\.66\.139 | URL | — | — | Not bounty eligible |
-| thedirectvmarketingzone\.com | URL | — | — | Not bounty eligible |
-| att\.suppliergateway\.com | URL | — | — | Not bounty eligible |
-| http://dna-uat\.az\.cloud\.att\.com/ | URL | — | — | Not bounty eligible |
-| 12\.0\.1\.28 | OTHER | — | — | Not bounty eligible |
-| DirecTV Owned Assets | OTHER | — | — | Not bounty eligible |
-| 40\.233\.66\.139 | IP\_ADDRESS | — | — | Not bounty eligible |
 | http://accesspro\.att\.com | URL | — | — | Not bounty eligible |
 
 **Limits**

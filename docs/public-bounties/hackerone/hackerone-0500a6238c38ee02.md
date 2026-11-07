@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:26Z.
+**Capture time:** 2026-11-07T19:27:33Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/yelp/assets/download_csv.csv>)
 
@@ -19,25 +19,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.yelp\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.yelpwifi\.com | WILDCARD | — | — | Bounty eligible |
-| yelptop100\.com | URL | — | — | Bounty eligible |
-| com\.yelp\.android\.biz | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.yelp\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 284910350 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 936983378 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 542767785 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.yelp\.android\.biz | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.yelp\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.yelpwifi\.com | WILDCARD | — | — | Bounty eligible |
+| yelptop100\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| engineeringblog\.yelp\.com | URL | — | — | Not bounty eligible |
+| blog\.yelp\.com | URL | — | — | Not bounty eligible |
 | \*\.yelp-support\.com | WILDCARD | — | — | Not bounty eligible |
 | www\.yelp-ir\.com | URL | — | — | Not bounty eligible |
 | cloud\.e\.yelp-business\.com | URL | — | — | Not bounty eligible |
 | yelp-press\.com | URL | — | — | Not bounty eligible |
 | yelp\.careers | URL | — | — | Not bounty eligible |
-| blog\.yelp\.com | URL | — | — | Not bounty eligible |
-| engineeringblog\.yelp\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

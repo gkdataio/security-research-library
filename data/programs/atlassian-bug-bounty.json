@@ -87,11 +87,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/atlassian/changelog/983ceab8-ee25-460d-8da3-d30233c261cb.json",
-      "publisher": "Atlassian",
-      "retrieved_at": "2026-11-07T15:03:28Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T18:48:31Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -108,9 +108,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:28Z",
+    "verified_at": "2026-11-07T18:48:31Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -119,7 +119,7 @@
         "location": "https://admin.atlassian.com/atlassian-guard",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -128,7 +128,7 @@
         "location": "https://admin.atlassian.com/",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -137,7 +137,7 @@
         "location": "https://id.atlassian.com/login",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -146,7 +146,7 @@
         "location": "https://start.atlassian.com",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -155,7 +155,7 @@
         "location": "https://bitbucket.org",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -164,7 +164,7 @@
         "location": "https://www.atlassian.com/software/confluence",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -173,7 +173,7 @@
         "location": "https://www.atlassian.com/software/confluence/premium",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -182,7 +182,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.atlassian.android.confluence.core&hl=en_US&gl=US",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -191,7 +191,7 @@
         "location": "https://apps.apple.com/us/app/confluence-cloud/id1006971684",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -200,7 +200,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.atlassian.android.jira.core&hl=en_US&gl=US",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -209,7 +209,7 @@
         "location": "https://apps.apple.com/us/app/jira-cloud-by-atlassian/id1006972087",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -218,7 +218,7 @@
         "location": "https://www.atlassian.com/software/jira/service-management",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -227,7 +227,7 @@
         "location": "https://www.atlassian.com/software/jira",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -236,7 +236,7 @@
         "location": "https://www.atlassian.com/software/jira/work-management",
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -245,7 +245,7 @@
         "location": null,
         "group": "Tier 1 ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -254,7 +254,7 @@
         "location": "https://www.atlassian.com/software/rovo",
         "group": "Rovo, Rovo Dev and other AI Features",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -263,7 +263,7 @@
         "location": "https://support.atlassian.com/rovo/docs/use-rovo-dev-cli/",
         "group": "Rovo, Rovo Dev and other AI Features",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -272,7 +272,7 @@
         "location": "https://www.atlassian.com/software/rovo-dev",
         "group": "Rovo, Rovo Dev and other AI Features",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -281,7 +281,7 @@
         "location": "https://mcp.atlassian.com",
         "group": "Rovo, Rovo Dev and other AI Features",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -290,7 +290,7 @@
         "location": "https://marketplace.atlassian.com",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -299,7 +299,7 @@
         "location": "https://www.atlassian.com/software/atlas",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -308,7 +308,7 @@
         "location": "https://*.atlastunnel.com",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -317,7 +317,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -326,7 +326,7 @@
         "location": "https://www.loom.com/",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -335,7 +335,7 @@
         "location": "https://www.loom.com/download",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -344,7 +344,7 @@
         "location": "https://www.loom.com/download",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -353,7 +353,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.loom.android&hl=en_US&pli=1",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -362,7 +362,7 @@
         "location": "https://apps.apple.com/us/app/loom-screen-recorder/id1474480829",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -371,7 +371,7 @@
         "location": "https://chromewebstore.google.com/detail/loom-%E2%80%93-screen-recorder-sc/liecbddmkiiihnedobmlmillhodjkdmb?hl=en-US&pli=1",
         "group": "Atlassian Loom",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -380,7 +380,7 @@
         "location": "https://www.atlassian.com/software/compass",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -389,7 +389,7 @@
         "location": "https://www.atlassian.com/software/bamboo",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -398,7 +398,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/bitbucket",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -407,7 +407,7 @@
         "location": "https://confluence.atlassian.com/doc/install-atlassian-companion-992678880.html",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -416,7 +416,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.atlassian.confluence.server",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -425,7 +425,7 @@
         "location": "https://apps.apple.com/us/app/confluence-server/id1288365159",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -434,7 +434,7 @@
         "location": "https://www.atlassian.com/software/crucible",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -443,7 +443,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/confluence",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -452,7 +452,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/crowd",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -461,7 +461,7 @@
         "location": "https://www.atlassian.com/software/fisheye",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -470,7 +470,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/jira",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -479,7 +479,7 @@
         "location": "https://play.google.com/store/apps/details?id=com.atlassian.jira.server&hl=en_US&gl=US",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -488,7 +488,7 @@
         "location": "https://apps.apple.com/us/app/jira-server/id1405353949",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -497,7 +497,7 @@
         "location": "https://www.atlassian.com/software/jira/product-discovery",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -506,7 +506,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/jira/service-management",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -515,7 +515,7 @@
         "location": "https://www.atlassian.com/enterprise/data-center/jira",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -524,7 +524,7 @@
         "location": "https://www.sourcetreeapp.com/",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -533,7 +533,7 @@
         "location": null,
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -542,7 +542,7 @@
         "location": null,
         "group": "Atlassian Forge",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -551,7 +551,7 @@
         "location": null,
         "group": "Atlassian Forge",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -560,7 +560,7 @@
         "location": "https://www.npmjs.com/package/@forge/cli\t",
         "group": "Atlassian Forge",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -571,7 +571,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -580,7 +580,7 @@
         "location": "https://bugcrowd.com/atlassianapps",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -589,7 +589,7 @@
         "location": "https://shop.atlassian.com",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -598,7 +598,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -607,7 +607,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -616,7 +616,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -625,7 +625,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -634,7 +634,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -643,7 +643,7 @@
         "location": "https://support.atlassian.com",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -652,7 +652,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -661,7 +661,7 @@
         "location": null,
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -670,7 +670,7 @@
         "location": "https://support.loom.com",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -679,12 +679,13 @@
         "location": "https://info.loom.com/",
         "group": "Out of Scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

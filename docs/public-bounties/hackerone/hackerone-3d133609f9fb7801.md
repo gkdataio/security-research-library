@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:43Z.
+**Capture time:** 2026-11-07T19:21:43Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/coupang_tw/assets/download_csv.csv>)
 
@@ -49,6 +49,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | tw\.coupangcorp\.com | URL | — | — | Bounty eligible |
 | tw\.coupangls\.com | URL | — | — | Bounty eligible |
 | promo\.tw\.coupang\.com | URL | — | — | Bounty eligible |
+| SUPERAPP \(IOS\) | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | cart\.tw\.coupang\.com | URL | — | — | Bounty eligible |
 | cash\.tw\.coupang\.com | URL | — | — | Bounty eligible |
 | checkout\.tw\.coupang\.com | URL | — | — | Bounty eligible |
@@ -64,7 +65,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | tw\.coupang\.com | URL | — | — | Bounty eligible |
 | www\.tw\.coupang\.com | URL | — | — | Bounty eligible |
 | SUPERAPP \(AOS\) | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| SUPERAPP \(IOS\) | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

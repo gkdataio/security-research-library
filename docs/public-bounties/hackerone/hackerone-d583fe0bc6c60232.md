@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:40Z.
+**Capture time:** 2026-11-07T19:23:15Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hubspot/assets/download_csv.csv>)
 
@@ -18,21 +18,21 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| app\*\.hubspot\.com | WILDCARD | — | — | Bounty eligible |
-| api\*\.hubspot\.com | WILDCARD | — | — | Bounty eligible |
-| api\*\.hubapi\.com | WILDCARD | — | — | Bounty eligible |
+| chatspot\.ai | URL | — | — | Bounty eligible |
 | \*\.hubspotemail\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.hs-sites\(-eu1\)?\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.hubspotpagebuilder\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.hubspotpagebuilder\.eu | WILDCARD | — | — | Bounty eligible |
-| chatspot\.ai | URL | — | — | Bounty eligible |
-| hubspot\.net | URL | — | — | Bounty eligible |
-| Customer Connected Domain | OTHER | — | — | Bounty eligible |
-| HubSpot Sales Office 365 add-in | OTHER | — | — | Bounty eligible |
 | Customer Portal | OTHER | — | — | Bounty eligible |
-| Other HubSpot-owned \(sub\)domains not listed as Out of Scope | OTHER | — | — | Bounty eligible |
+| Customer Connected Domain | OTHER | — | — | Bounty eligible |
 | HubSpot Android Mobile App | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | HubSpot iOS Mobile App | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| HubSpot Sales Office 365 add-in | OTHER | — | — | Bounty eligible |
+| Other HubSpot-owned \(sub\)domains not listed as Out of Scope | OTHER | — | — | Bounty eligible |
+| app\*\.hubspot\.com | WILDCARD | — | — | Bounty eligible |
+| api\*\.hubspot\.com | WILDCARD | — | — | Bounty eligible |
+| api\*\.hubapi\.com | WILDCARD | — | — | Bounty eligible |
+| hubspot\.net | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 

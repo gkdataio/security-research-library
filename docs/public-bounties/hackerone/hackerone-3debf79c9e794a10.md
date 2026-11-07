@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:13Z.
+**Capture time:** 2026-11-07T19:25:57Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/shopify/assets/download_csv.csv>)
 
@@ -18,41 +18,41 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.shopifycs\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.pci\.shopifyinc\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.shopify\.io | WILDCARD | — | — | Bounty eligible |
-| \*\.shopify\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.shopifykloud\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.shopifycloud\.com | WILDCARD | — | — | Bounty eligible |
 | your-store\.myshopify\.com | URL | — | — | Bounty eligible |
 | partners\.shopify\.com | URL | — | — | Bounty eligible |
 | accounts\.shopify\.com | URL | — | — | Bounty eligible |
+| Shopify Third Party Apps | OTHER | — | — | Not bounty eligible |
+| Shopify Third Party Store | OTHER | — | — | Not bounty eligible |
+| \*\.shopify\.io | WILDCARD | — | — | Bounty eligible |
+| \*\.shopify\.com | WILDCARD | — | — | Bounty eligible |
+| Shopify Developed Apps | OTHER | — | — | Bounty eligible |
+| Shopify Mobile Applications | OTHER | — | — | Bounty eligible |
+| \*\.shopifykloud\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.shopifycloud\.com | WILDCARD | — | — | Bounty eligible |
+| linkpop\.com | URL | — | — | Bounty eligible |
+| shopifyinbox\.com | URL | — | — | Bounty eligible |
 | shop\.app | URL | — | — | Bounty eligible |
 | shopify\.plus | URL | — | — | Bounty eligible |
 | arrive-server\.shopifycloud\.com | URL | — | — | Bounty eligible |
 | admin\.shopify\.com | URL | — | — | Bounty eligible |
-| linkpop\.com | URL | — | — | Bounty eligible |
-| shopifyinbox\.com | URL | — | — | Bounty eligible |
 | https://github\.com/Shopify/\* | SOURCE\_CODE | — | — | Bounty eligible |
-| Shopify Mobile Applications | OTHER | — | — | Bounty eligible |
+| \*\.shopifycs\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.pci\.shopifyinc\.com | WILDCARD | — | — | Bounty eligible |
 | Authentication &amp; ATO | OTHER | — | — | Bounty eligible |
-| Shopify Developed Apps | OTHER | — | — | Bounty eligible |
-| Shopify Third Party Apps | OTHER | — | — | Not bounty eligible |
-| Shopify Third Party Store | OTHER | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (9)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| investors\.shopify\.com | URL | — | — | Not bounty eligible |
 | \*\.email\.shopify\.com | WILDCARD | — | — | Not bounty eligible |
+| Other | OTHER | — | — | Not bounty eligible |
 | cdn\.shopify\.com | URL | — | — | Not bounty eligible |
 | livechat\.shopify\.com | URL | — | — | Not bounty eligible |
 | community\.shopify\.com | URL | — | — | Not bounty eligible |
-| community\.shopify\.dev | URL | — | — | Not bounty eligible |
-| investors\.shopify\.com | URL | — | — | Not bounty eligible |
-| academy\.shopify\.com | URL | — | — | Not bounty eligible |
-| Other | OTHER | — | — | Not bounty eligible |
 | supplier-portal\.shopifycloud\.com | OTHER | — | — | Not bounty eligible |
+| academy\.shopify\.com | URL | — | — | Not bounty eligible |
+| community\.shopify\.dev | URL | — | — | Not bounty eligible |
 
 **Limits**
 

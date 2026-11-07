@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:40Z.
+**Capture time:** 2026-11-07T19:21:37Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/coinspot/assets/download_csv.csv>)
 
@@ -19,9 +19,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | www\.coinspot\.com\.au | URL | — | — | Bounty eligible |
-| https://www\.coinspot\.com\.au/v2/api | URL | — | — | Bounty eligible |
 | com\.coinspot\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1541949985 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://www\.coinspot\.com\.au/v2/api | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

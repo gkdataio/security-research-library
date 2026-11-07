@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:25Z.
+**Capture time:** 2026-11-07T19:24:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/nintendo/assets/download_csv.csv>)
 
@@ -30,8 +30,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| Nintendo 3DS System | HARDWARE | — | — | Not bounty eligible |
 | Nintendo 3DS applications for which Nintendo is the publisher worldwide	 | HARDWARE | — | — | Not bounty eligible |
+| Nintendo 3DS System | HARDWARE | — | — | Not bounty eligible |
 
 **Limits**
 

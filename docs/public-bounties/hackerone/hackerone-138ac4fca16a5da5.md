@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:15Z.
+**Capture time:** 2026-11-07T19:27:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/wellsfargo-bbp/assets/download_csv.csv>)
 
@@ -20,18 +20,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.wellsfargo\.com | WILDCARD | — | — | Bounty eligible |
 | connect\.secure\.wellsfargo\.com | URL | — | — | Bounty eligible |
-| http://wellsfargo\.com | URL | — | — | Bounty eligible |
+| \*\.wf\.com | WILDCARD | — | — | Not bounty eligible |
 | com\.wellsfargo\.ceomobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.wf\.wellsfargomobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.wf\.mobilebanking | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.wf\.ceomobile | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*\.wf\.com | WILDCARD | — | — | Not bounty eligible |
+| http://wellsfargo\.com | URL | — | — | Bounty eligible |
 | http://wf\.com | URL | — | — | Not bounty eligible |
-| homeloans\.wellsfargo\.com | URL | — | — | Not bounty eligible |
-| accountoffers\.wellsfargo\.com | URL | — | — | Not bounty eligible |
 | \*\.advisor-connection\.com | OTHER | — | — | Not bounty eligible |
 | \*\.mworld\.com | OTHER | — | — | Not bounty eligible |
 | \*\.wellsfargoadvisors\.com | OTHER | — | — | Not bounty eligible |
+| homeloans\.wellsfargo\.com | URL | — | — | Not bounty eligible |
+| accountoffers\.wellsfargo\.com | URL | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (0)
 

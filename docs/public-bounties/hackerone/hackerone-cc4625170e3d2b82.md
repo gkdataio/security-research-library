@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:33Z.
+**Capture time:** 2026-11-07T19:23:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/grab/assets/download_csv.csv>)
 
@@ -18,38 +18,38 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| \*\.grabtaxi\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.myteksi\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.myteksi\.net | WILDCARD | — | — | Bounty eligible |
-| \*\.grab\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.grabpay\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.grab-sure\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.ovofinansial\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.ovo\.id | WILDCARD | — | — | Bounty eligible |
-| \*\.grabtaxi\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.grab\.co | WILDCARD | — | — | Bounty eligible |
+| \*\.grab\.com | WILDCARD | — | — | Bounty eligible |
 | p\.grabtaxi\.com | URL | — | — | Bounty eligible |
 | gamma\.grab\.co | URL | — | — | Bounty eligible |
 | manage\.grab\.co | URL | — | — | Bounty eligible |
-| api\.grabpay\.com | URL | — | — | Bounty eligible |
-| xtramile\.grabpay\.com | URL | — | — | Bounty eligible |
-| gifts\.grab\.com | URL | — | — | Bounty eligible |
-| hungrygowhere\.com | URL | — | — | Bounty eligible |
-| grab\.careers | URL | — | — | Bounty eligible |
-| kartaview\.org | URL | — | — | Bounty eligible |
-| C100447517 | OTHER | — | — | Bounty eligible |
-| C103149579 | OTHER | — | — | Bounty eligible |
-| Cloud &amp; 3rd-Party Services \(First-Party Misconfigurations\) | OTHER | — | — | Bounty eligible |
-| com\.grabtaxi\.passenger | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.grabtaxi\.driver2 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.grab\.merchant | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| ovo\.id | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.moveit\.app\.customer | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.grabpay\.merchant | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 647268330 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1257641454 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1142114207 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1481198245 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.grabtaxi\.passenger | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.grabtaxi\.driver2 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| grab\.careers | URL | — | — | Bounty eligible |
+| api\.grabpay\.com | URL | — | — | Bounty eligible |
+| \*\.grabpay\.com | WILDCARD | — | — | Bounty eligible |
+| com\.grabpay\.merchant | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1343620481 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| xtramile\.grabpay\.com | URL | — | — | Bounty eligible |
+| com\.grab\.merchant | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| C100447517 | OTHER | — | — | Bounty eligible |
+| C103149579 | OTHER | — | — | Bounty eligible |
+| kartaview\.org | URL | — | — | Bounty eligible |
+| \*\.grab-sure\.com | WILDCARD | — | — | Bounty eligible |
+| gifts\.grab\.com | URL | — | — | Bounty eligible |
+| \*\.ovo\.id | WILDCARD | — | — | Bounty eligible |
+| 1142114207 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| ovo\.id | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| hungrygowhere\.com | URL | — | — | Bounty eligible |
+| 1481198245 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.moveit\.app\.customer | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.ovofinansial\.com | WILDCARD | — | — | Bounty eligible |
+| Cloud &amp; 3rd-Party Services \(First-Party Misconfigurations\) | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:01Z.
+**Capture time:** 2026-11-07T19:25:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/roblox/assets/download_csv.csv>)
 
@@ -18,12 +18,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Roblox Client | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Roblox Studio | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | \*\.roblox\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.rbx\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.ra\.roblox\.com | WILDCARD | — | — | Bounty eligible |
 | blox\.link | URL | — | — | Bounty eligible |
-| Roblox Client | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| Roblox Studio | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Roblox Engine | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)

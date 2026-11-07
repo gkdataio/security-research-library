@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:42Z.
+**Capture time:** 2026-11-07T19:25:09Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/polygon-technology/assets/download_csv.csv>)
 
@@ -22,8 +22,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | faucet\.polygon\.technology | URL | — | — | Bounty eligible |
 | portal\.polygon\.technology | URL | — | — | Bounty eligible |
 | staking\.polygon\.technology | URL | — | — | Bounty eligible |
-| api-gateway\.polygon\.technology | API | — | — | Bounty eligible |
 | faucet-api\.polygon\.technology/ | API | — | — | Bounty eligible |
+| api-gateway\.polygon\.technology | API | — | — | Bounty eligible |
 | gasstation\.polygon\.technology/ | API | — | — | Bounty eligible |
 | api-polygon-tokens\.polygon\.technology/ | API | — | — | Bounty eligible |
 
@@ -31,12 +31,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.matic\.network | WILDCARD | — | — | Not bounty eligible |
 | https://github\.com/maticnetwork/heimdall | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/maticnetwork/bor | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/maticnetwork/contracts | SOURCE\_CODE | — | — | Not bounty eligible |
-| https://github\.com/0xPolygon/heimdall-v2 | SOURCE\_CODE | — | — | Not bounty eligible |
+| \*\.matic\.network | WILDCARD | — | — | Not bounty eligible |
 | https://github\.com/maticnetwork/matic-cli  | SOURCE\_CODE | — | — | Not bounty eligible |
+| https://github\.com/0xPolygon/heimdall-v2 | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:09Z.
+**Capture time:** 2026-11-07T19:22:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/eufy_security/assets/download_csv.csv>)
 
@@ -18,25 +18,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| eufyMake Studio\(2D UV\) | OTHER | — | — | Bounty eligible |
-| https://us\.eufy\.com/products/e8213181 | HARDWARE | — | — | Bounty eligible |
-| eufyMake E1 | HARDWARE | — | — | Bounty eligible |
-| Solarbank 2 E1600 Pro | HARDWARE | — | — | Bounty eligible |
-| Anker soundcore Work D3200 | HARDWARE | — | — | Bounty eligible |
-| Liberty 5 Pro Max D1204 | HARDWARE | — | — | Bounty eligible |
 | https://us\.eufy\.com/products/t88711w1 | HARDWARE | — | — | Bounty eligible |
 | https://us\.eufy\.com/products/t88511d1 | HARDWARE | — | — | Bounty eligible |
 | https://us\.eufy\.com/products/t8410121 | HARDWARE | — | — | Bounty eligible |
+| com\.security\.BatteryCam | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://us\.eufy\.com/products/e8213181 | HARDWARE | — | — | Bounty eligible |
+| com\.oceanwing\.battery\.cam | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.anker\.AnkerMake | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.oceanwing\.FDMPrint | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| eufyMake E1 | HARDWARE | — | — | Bounty eligible |
+| Solarbank 2 E1600 Pro | HARDWARE | — | — | Bounty eligible |
+| com\.anker\.charging | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| Anker | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| eufyMake Studio\(2D UV\) | OTHER | — | — | Bounty eligible |
+| Anker soundcore Work D3200 | HARDWARE | — | — | Bounty eligible |
+| Liberty 5 Pro Max D1204 | HARDWARE | — | — | Bounty eligible |
+| anker-nebula/id1319092174 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | id=com\.oceanwing\.soundcore | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | id=com\.zhixin\.controller | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oceanwing\.battery\.cam | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.oceanwing\.FDMPrint | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.anker\.charging | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| anker-nebula/id1319092174 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | soundcore/id1331876603 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.security\.BatteryCam | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.anker\.AnkerMake | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| Anker | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:25Z.
+**Capture time:** 2026-11-07T19:26:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/stripchat/assets/download_csv.csv>)
 
@@ -25,12 +25,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://stripchat\.com/page\* | WILDCARD | — | — | Not bounty eligible |
-| mta\*\.stripchat\.com | WILDCARD | — | — | Not bounty eligible |
 | pxl\.stripchat\.com | URL | — | — | Not bounty eligible |
+| https://stripchat\.com/page\* | WILDCARD | — | — | Not bounty eligible |
 | support\.stripchat\.com | URL | — | — | Not bounty eligible |
 | https://stripchat\.com/wiki | URL | — | — | Not bounty eligible |
 | wiki\.stripchat\.com | URL | — | — | Not bounty eligible |
+| mta\*\.stripchat\.com | WILDCARD | — | — | Not bounty eligible |
 | ext\.stripchat\.com | URL | — | — | Not bounty eligible |
 | extensions\.stripchat\.com | URL | — | — | Not bounty eligible |
 | websocket-apps\.sc-apps\.com | URL | — | — | Not bounty eligible |

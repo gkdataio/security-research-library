@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:57Z.
+**Capture time:** 2026-11-07T19:22:09Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/doppler/assets/download_csv.csv>)
 
@@ -18,12 +18,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| https://github\.com/DopplerHQ/cli | SOURCE\_CODE | — | — | Bounty eligible |
 | doppler\.team | URL | — | — | Bounty eligible |
 | api\.doppler\.com | URL | — | — | Bounty eligible |
 | dashboard\.doppler\.com | URL | — | — | Bounty eligible |
-| share\.doppler\.com | URL | — | — | Bounty eligible |
-| https://github\.com/DopplerHQ/cli | SOURCE\_CODE | — | — | Bounty eligible |
 | doppler | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| share\.doppler\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 

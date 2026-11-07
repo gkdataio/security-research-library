@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:42Z.
+**Capture time:** 2026-11-07T19:25:07Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/playtika/assets/download_csv.csv>)
 
@@ -18,71 +18,71 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| 9nqwjwnqjj5n | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
+| air\.com\.playtika\.slotomania | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 447553564 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | \*\.slotomania\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.playtika\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.bingoblitz\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.caesarsgames\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.boardkingsgame\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.houseoffun\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.playwsop\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.serious\.li | WILDCARD | — | — | Bounty eligible |
-| \*\.wooga\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.redecor\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.seriously\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.monopoly-poker\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.playticorp\.com | WILDCARD | — | — | Bounty eligible |
 | gnocchi-www\.buffalo-ggn\.net | URL | — | — | Bounty eligible |
-| bestfiends\.com | URL | — | — | Bounty eligible |
+| \*\.bingoblitz\.com | WILDCARD | — | — | Bounty eligible |
+| air\.com\.buffalo\_studios\.newflashbingo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 529996768 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.caesarsgames\.com | WILDCARD | — | — | Bounty eligible |
+| com\.playtika\.caesarscasino | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 603097018 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.boardkingsgame\.com | WILDCARD | — | — | Bounty eligible |
+| com\.jellybtn\.boardkings | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1116488672 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.houseoffun\.com | WILDCARD | — | — | Bounty eligible |
+| 586634331 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.pacificinteractive\.HouseOfFun | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.playwsop\.com | WILDCARD | — | — | Bounty eligible |
+| 719525810 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.playtika\.wsop\.gp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 868013618 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.Seriously\.BestFiends | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 654671575 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.jellybtn\.cashkingmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.serious\.li | WILDCARD | — | — | Bounty eligible |
+| 1223338261 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| net\.supertreat\.solitaire | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| net\.wooga\.junes\_journey\_hidden\_object\_mystery\_game | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1200391796 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.wooga\.com | WILDCARD | — | — | Bounty eligible |
+| air\.com\.playtika\.cvs | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 975035622 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.bigblueparrot\.pokerfriends | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 480523695 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| fi\.reworks\.redecor | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1413287364 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.redecor\.com | WILDCARD | — | — | Bounty eligible |
 | https://apps\.facebook\.com/pokerheat | OTHER | — | — | Bounty eligible |
 | https://apps\.facebook\.com/vegas\_downtown\_slots | OTHER | — | — | Bounty eligible |
+| \*\.seriously\.com | WILDCARD | — | — | Bounty eligible |
+| 1438744533 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.Seriously\.Phoenix | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| lol\.onevone | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1508620125 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 645949180 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 1510325826 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| net\.wooga\.switchcraft\.googleplay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1215220850 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| net\.wooga\.tropicats\_tropical\_cats\_puzzle\_paradise | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 594802437 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.wooga\.pearlsperil | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.facebook\.com/pearls-peril | OTHER | — | — | Bounty eligible |
+| bestfiends\.com | URL | — | — | Bounty eligible |
+| \*\.governorofpoker\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.gop3\.nl | WILDCARD | — | — | Not bounty eligible |
+| \*\.monopoly-poker\.com | WILDCARD | — | — | Bounty eligible |
+| 1448884851 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.youdagames\.monopolypoker | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 9nqwjwnqjj5n | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1474700 \(Steam app id\) | OTHER | — | — | Bounty eligible |
+| \*\.playticorp\.com | WILDCARD | — | — | Bounty eligible |
 | Tier 1 Studios | OTHER | — | — | Bounty eligible |
 | Tier 2 | OTHER | — | — | Bounty eligible |
 | Tier 3 | OTHER | — | — | Bounty eligible |
 | Tier 1 | OTHER | — | — | Bounty eligible |
-| air\.com\.playtika\.slotomania | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| air\.com\.buffalo\_studios\.newflashbingo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.playtika\.caesarscasino | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.jellybtn\.boardkings | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.pacificinteractive\.HouseOfFun | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.playtika\.wsop\.gp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.Seriously\.BestFiends | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.jellybtn\.cashkingmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| net\.supertreat\.solitaire | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| net\.wooga\.junes\_journey\_hidden\_object\_mystery\_game | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| air\.com\.playtika\.cvs | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.bigblueparrot\.pokerfriends | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| fi\.reworks\.redecor | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.Seriously\.Phoenix | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| lol\.onevone | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| net\.wooga\.switchcraft\.googleplay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| net\.wooga\.tropicats\_tropical\_cats\_puzzle\_paradise | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.wooga\.pearlsperil | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.youdagames\.monopolypoker | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 447553564 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 529996768 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 603097018 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1116488672 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 586634331 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 719525810 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 868013618 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 654671575 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1223338261 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1200391796 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 975035622 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 480523695 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1413287364 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1438744533 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1508620125 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 645949180 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1510325826 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1215220850 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 594802437 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1448884851 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*\.governorofpoker\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.gop3\.nl | WILDCARD | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (0)
 

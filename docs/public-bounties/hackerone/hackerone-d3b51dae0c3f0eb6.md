@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:47Z.
+**Capture time:** 2026-11-07T19:26:53Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/urbancompany/assets/download_csv.csv>)
 
@@ -19,11 +19,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | www\.urbancompany\.com | URL | — | — | Bounty eligible |
-| www\.urbanclap\.com | URL | — | — | Bounty eligible |
 | com\.urbanclap\.provider | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.urbanclap\.urbanclap | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1032480595 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 982922982 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| www\.urbanclap\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

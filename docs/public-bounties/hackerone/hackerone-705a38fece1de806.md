@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:50Z.
+**Capture time:** 2026-11-07T19:25:19Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/quora/assets/download_csv.csv>)
 
@@ -19,9 +19,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.quora\.com | WILDCARD | — | — | Bounty eligible |
-| http://poe\.com | URL | — | — | Bounty eligible |
-| com\.quora\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.quora\.app\.mobile | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.quora\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| http://poe\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

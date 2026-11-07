@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:13Z.
+**Capture time:** 2026-11-07T19:25:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/six-group/assets/download_csv.csv>)
 
@@ -20,17 +20,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | www\.six-group\.com | URL | — | — | Bounty eligible |
 | www\.bolsasymercados\.es | URL | — | — | Bounty eligible |
-| https://www\.sdx\.com/ | URL | — | — | Bounty eligible |
-| https://secure-test\.six-swiss-exchange\.com/ | URL | — | — | Bounty eligible |
-| https://disclosure-test\.six-exchange-regulation\.com/ | URL | — | — | Bounty eligible |
-| http://ibt-test\.six-group\.com | URL | — | — | Bounty eligible |
-| https://fx-qa\.np\.bolsasymercados\.es/ | URL | — | — | Bounty eligible |
-| https://web3\.sdx\.com | URL | — | — | Bounty eligible |
+| 153\.46\.96\.0/20 | CIDR | — | — | Bounty eligible |
+| 193\.110\.154\.0/24 | CIDR | — | — | Bounty eligible |
+| https://apps\.apple\.com/ch/app/debix/id1581440132?l=en-GB | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://apps\.apple\.com/mx/app/debix/id1581440132 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://apps\.apple\.com/mx/app/six-id/id1620496931 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://apps\.apple\.com/us/app/bme-conecta/id6443938949 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.sixgroup\.debixplus | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.sixgroup\.id&amp;hl=en\_US&amp;pli=1 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=es\.grupobme\.bmeconecta | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 153\.46\.96\.0/20 | CIDR | — | — | Bounty eligible |
-| 193\.110\.154\.0/24 | CIDR | — | — | Bounty eligible |
+| https://web3\.sdx\.com | URL | — | — | Bounty eligible |
+| https://www\.sdx\.com/ | URL | — | — | Bounty eligible |
 | 193\.109\.229\.0/24 | CIDR | — | — | Bounty eligible |
 | 153\.46\.240\.0/20 | CIDR | — | — | Bounty eligible |
 | 153\.46\.108\.0/22 | CIDR | — | — | Bounty eligible |
@@ -66,33 +66,33 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 146\.109\.148\.0/24 | CIDR | — | — | Bounty eligible |
 | 146\.109\.149\.0/24 | CIDR | — | — | Bounty eligible |
 | 146\.109\.150\.0/24 | CIDR | — | — | Bounty eligible |
+| https://secure-test\.six-swiss-exchange\.com/ | URL | — | — | Bounty eligible |
 | 146\.109\.151\.0/24 | CIDR | — | — | Bounty eligible |
 | 146\.109\.161\.0/24 | CIDR | — | — | Bounty eligible |
 | 193\.5\.66\.0/23 | CIDR | — | — | Bounty eligible |
 | 193\.8\.251\.0/24 | CIDR | — | — | Bounty eligible |
 | 194\.35\.79\.0/24 | CIDR | — | — | Bounty eligible |
-| https://apps\.apple\.com/ch/app/debix/id1581440132?l=en-GB | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/mx/app/debix/id1581440132 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/mx/app/six-id/id1620496931 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/bme-conecta/id6443938949 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| https://disclosure-test\.six-exchange-regulation\.com/ | URL | — | — | Bounty eligible |
+| http://ibt-test\.six-group\.com | URL | — | — | Bounty eligible |
+| https://fx-qa\.np\.bolsasymercados\.es/ | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.sixidmobile\.com | WILDCARD | — | — | Not bounty eligible |
-| https://www\.six-structured-products\.com/ | URL | — | — | Not bounty eligible |
-| https://providerhub\.six-group\.com/ | URL | — | — | Not bounty eligible |
-| http://ibt\.six-group\.com | URL | — | — | Not bounty eligible |
-| https://bmefx\.es/ | URL | — | — | Not bounty eligible |
+| https://apps\.apple\.com/mx/app/schweizer-finanzmuseum/id1225222871 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| https://play\.google\.com/store/search?q=Schweizer\+Finanzmuseum&amp;c=apps | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| 153\.46\.254\.150 | IP\_ADDRESS | — | — | Not bounty eligible |
 | saferpay\.com | URL | — | — | Not bounty eligible |
 | 193\.109\.229\.71 | URL | — | — | Not bounty eligible |
-| https://disclosure\.six-exchange-regulation\.com/ | URL | — | — | Not bounty eligible |
-| 153\.46\.254\.150 | IP\_ADDRESS | — | — | Not bounty eligible |
-| https://play\.google\.com/store/search?q=Schweizer\+Finanzmuseum&amp;c=apps | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| \*\.sixidmobile\.com | WILDCARD | — | — | Not bounty eligible |
 | 213\.41\.106\.0/24 | CIDR | — | — | Not bounty eligible |
 | 194\.98\.112\.0/24 | CIDR | — | — | Not bounty eligible |
-| https://apps\.apple\.com/mx/app/schweizer-finanzmuseum/id1225222871 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| https://www\.six-structured-products\.com/ | URL | — | — | Not bounty eligible |
+| https://providerhub\.six-group\.com/ | URL | — | — | Not bounty eligible |
+| https://disclosure\.six-exchange-regulation\.com/ | URL | — | — | Not bounty eligible |
+| http://ibt\.six-group\.com | URL | — | — | Not bounty eligible |
+| https://bmefx\.es/ | URL | — | — | Not bounty eligible |
 
 **Limits**
 

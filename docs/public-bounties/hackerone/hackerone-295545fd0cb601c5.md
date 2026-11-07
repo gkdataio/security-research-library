@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:36Z.
+**Capture time:** 2026-11-07T19:26:31Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/tinder/assets/download_csv.csv>)
 
@@ -20,12 +20,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.tinder\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.gotinder\.com | WILDCARD | — | — | Bounty eligible |
+| 547702041 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.tinder | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.tinderops\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.tstaging\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.tstaging\.tools | WILDCARD | — | — | Bounty eligible |
 | \*\.tinderwebstaging\.com | WILDCARD | — | — | Bounty eligible |
-| com\.tinder | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 547702041 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 

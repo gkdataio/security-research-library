@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:53Z.
+**Capture time:** 2026-11-07T19:23:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/klarna/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Merchant Portal | OTHER | — | — | Bounty eligible |
+| Klarna iOS App \(com\.klarna\.app\) | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Klarna Android App \(com\.myklarnamobile\) | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| app\.klarna\.com | API | — | — | Bounty eligible |
 | \*\.klarna\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.klarna\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.klarnacdn\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.pricerunner\.com | WILDCARD | — | — | Bounty eligible |
-| Merchant Portal | OTHER | — | — | Bounty eligible |
-| Klarna Android App \(com\.myklarnamobile\) | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Klarna iOS App \(com\.klarna\.app\) | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| app\.klarna\.com | API | — | — | Bounty eligible |
 
 ## Out-of-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| Kustom | OTHER | — | — | Not bounty eligible |
+| nuji\.com | URL | — | — | Not bounty eligible |
 | locker\.klarna\.com | URL | — | — | Not bounty eligible |
 | https://app\.klarna\.com/us/api/connected\_card\_bff/ | URL | — | — | Not bounty eligible |
 | https://api\.pricerunner\.com/swagger-ui\.html | URL | — | — | Not bounty eligible |
 | https://api-us\.pricerunner\.com/swagger-ui\.html | URL | — | — | Not bounty eligible |
 | https://api-stage\.pricerunner\.com/swagger-ui\.html | URL | — | — | Not bounty eligible |
-| nuji\.com | URL | — | — | Not bounty eligible |
 | jobs\.pricerunner\.com | URL | — | — | Not bounty eligible |
-| Kustom | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

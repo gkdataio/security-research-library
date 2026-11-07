@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:26Z.
+**Capture time:** 2026-11-07T19:22:55Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/forescout_technologies/assets/download_csv.csv>)
 
@@ -25,12 +25,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | datapod-1-query\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | mgmtpod-1-dashboard\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | mgmtpod-1\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
+| 38\.140\.238\.56/29 | CIDR | — | — | Bounty eligible |
+| 97\.105\.243\.96/28 | CIDR | — | — | Bounty eligible |
+| 64\.47\.18\.80/29 | CIDR | — | — | Bounty eligible |
+| 194\.90\.25\.80/29 | CIDR | — | — | Bounty eligible |
+| 194\.90\.151\.192/28 | CIDR | — | — | Bounty eligible |
+| 194\.90\.89\.165/32 | CIDR | — | — | Bounty eligible |
+| 212\.143\.112\.81/29 | CIDR | — | — | Bounty eligible |
 | logstash-props\.devicecloud\.acceptance\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | datapod-1-100-druid-ingest\.development\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | datapod-1-100-druid-query\.development\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | datapod-1-100-druid-ingest\.testing\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | datapod-1-druid-ingest\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | datapod-1-100-druid-query\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
+| 64\.84\.60\.0/24 | CIDR | — | — | Bounty eligible |
 | datapod-2-druid-ingest\.production\.forescoutcloud\.net | URL | — | — | Bounty eligible |
 | https://telemetry-polling\.devicecloud\.acceptance\.forescoutcloud\.net/v1/upload | URL | — | — | Bounty eligible |
 | https://telemetry-polling\.devicecloud\.acceptance\.forescoutcloud\.net/v1/polling | URL | — | — | Bounty eligible |
@@ -73,14 +81,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | de\.forescout\.cloud | URL | — | — | Bounty eligible |
 | cloud\.forescout\.com | URL | — | — | Bounty eligible |
 | CounterAct 9\.x | HARDWARE | — | — | Bounty eligible |
-| 38\.140\.238\.56/29 | CIDR | — | — | Bounty eligible |
-| 97\.105\.243\.96/28 | CIDR | — | — | Bounty eligible |
-| 64\.47\.18\.80/29 | CIDR | — | — | Bounty eligible |
-| 194\.90\.25\.80/29 | CIDR | — | — | Bounty eligible |
-| 194\.90\.151\.192/28 | CIDR | — | — | Bounty eligible |
-| 194\.90\.89\.165/32 | CIDR | — | — | Bounty eligible |
-| 212\.143\.112\.81/29 | CIDR | — | — | Bounty eligible |
-| 64\.84\.60\.0/24 | CIDR | — | — | Bounty eligible |
 
 ## Out-of-scope entries (8)
 

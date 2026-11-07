@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:09Z.
+**Capture time:** 2026-11-07T19:22:29Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/evernote/assets/download_csv.csv>)
 
@@ -18,22 +18,22 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| 9wzdncrfj3mb | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
 | www\.evernote\.com | URL | — | — | Bounty eligible |
 | accounts\.evernote\.com | URL | — | — | Bounty eligible |
-| api\.evernote\.com | URL | — | — | Bounty eligible |
-| com\.evernote | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 406056744 | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | 281796108 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 9wzdncrfj3mb | WINDOWS\_APP\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 406056744 | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | accounts\.stage\.evernote\.com | URL | — | — | Not bounty eligible |
+| api\.evernote\.com | URL | — | — | Bounty eligible |
 | api\.stage\.evernote\.com | URL | — | — | Not bounty eligible |
+| com\.evernote | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| help\.evernote\.com | URL | — | — | Not bounty eligible |
 | com\.evernote\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| help\.evernote\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

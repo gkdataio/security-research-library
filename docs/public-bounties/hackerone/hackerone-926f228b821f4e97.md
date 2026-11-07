@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:19Z.
+**Capture time:** 2026-11-07T19:21:03Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/bookingcom/assets/download_csv.csv>)
 
@@ -18,10 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.fareharbor\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.booking\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.rentalcars\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.fareharbor\.engineering | WILDCARD | — | — | Bounty eligible |
 | booking\.com | URL | — | — | Bounty eligible |
 | secure\.booking\.com | URL | — | — | Bounty eligible |
 | careers\.booking\.com | URL | — | — | Bounty eligible |
@@ -51,6 +47,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | portal\.taxi\.booking\.com | URL | — | — | Bounty eligible |
 | flights\.booking\.com | URL | — | — | Bounty eligible |
 | secure-supply-xml\.booking\.com | URL | — | — | Bounty eligible |
+| \*\.fareharbor\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.booking\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.rentalcars\.com | WILDCARD | — | — | Bounty eligible |
 | http://secure-iphone-xml\.booking\.com/json/ | URL | — | — | Bounty eligible |
 | spark\.fareharbor\.com | URL | — | — | Bounty eligible |
 | www\.fareharbor\.com | URL | — | — | Bounty eligible |
@@ -61,28 +60,33 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | sites\.fareharbor\.com | URL | — | — | Bounty eligible |
 | compass\.fareharbor\.com | URL | — | — | Bounty eligible |
 | fhdn\.fareharbor\.com | URL | — | — | Bounty eligible |
+| \*\.fareharbor\.engineering | WILDCARD | — | — | Bounty eligible |
 | tableau\.fareharbor\.engineering | URL | — | — | Bounty eligible |
 | fareharborsites\.com | URL | — | — | Bounty eligible |
+| https://apps\.apple\.com/us/app/booking-com-hotels-travel/id367003839 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.booking&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://play\.google\.com/store/apps/details?id=com\.booking\.hotelmanager&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/us/app/booking-com-hotels-travel/id367003839 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/us/app/pulse-for-booking-com-partners/id992795726 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (26)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| spadmin\.booking\.com/ | URL | — | — | Not bounty eligible |
 | www\.booking\.com/bbmanage/\* | WILDCARD | — | — | Not bounty eligible |
 | www\.booking\.com/bbmanage/data/\* | WILDCARD | — | — | Not bounty eligible |
 | secure\.booking\.com/company/\* | WILDCARD | — | — | Not bounty eligible |
 | secure\.booking\.com/orgnode/\* | WILDCARD | — | — | Not bounty eligible |
-| spadmin\.booking\.com/ | URL | — | — | Not bounty eligible |
 | business\.booking\.com/ | URL | — | — | Not bounty eligible |
 | https://www\.booking\.com/bbm\.html | URL | — | — | Not bounty eligible |
 | https://secure\.booking\.com/companyjoin\.html | URL | — | — | Not bounty eligible |
 | https://secure\.booking\.com/enterprise/signon\.en-gb\.html | URL | — | — | Not bounty eligible |
 | https://ugcupload\.booking\.com/upload\_bbtool\_company\_logo | URL | — | — | Not bounty eligible |
 | https://fareharbor\.com/demo/ | URL | — | — | Not bounty eligible |
+| partnerfeedback\.booking\.com | URL | — | — | Not bounty eligible |
+| recruitmentsurveys\.booking\.com | URL | — | — | Not bounty eligible |
+| desk-demo\.fareharbor\.engineering | URL | — | — | Not bounty eligible |
+| desk-demo-api\.fareharbor\.engineering | URL | — | — | Not bounty eligible |
 | jobs\.booking\.com | URL | — | — | Not bounty eligible |
 | welcomekit\.booking\.com/ | URL | — | — | Not bounty eligible |
 | cpass\.booking\.com | URL | — | — | Not bounty eligible |
@@ -94,10 +98,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | workforce\.booking\.com | URL | — | — | Not bounty eligible |
 | workforce-dev\.voicedqs\.booking\.com | URL | — | — | Not bounty eligible |
 | surveys\.booking\.com | URL | — | — | Not bounty eligible |
-| partnerfeedback\.booking\.com | URL | — | — | Not bounty eligible |
-| recruitmentsurveys\.booking\.com | URL | — | — | Not bounty eligible |
-| desk-demo\.fareharbor\.engineering | URL | — | — | Not bounty eligible |
-| desk-demo-api\.fareharbor\.engineering | URL | — | — | Not bounty eligible |
 
 **Limits**
 

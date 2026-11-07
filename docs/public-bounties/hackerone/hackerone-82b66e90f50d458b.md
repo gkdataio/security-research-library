@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-07T14:53:12Z.
+**Capture time:** 2026-11-07T19:20:45Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/arc-bbp/assets/download_csv.csv>)
 
@@ -18,12 +18,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.arc\.io | WILDCARD | — | — | Bounty eligible |
-| rpc\.testnet\.arc\.network | URL | — | — | Bounty eligible |
-| rpc\.drpc\.testnet\.arc\.network | URL | — | — | Bounty eligible |
 | https://github\.com/circlefin/malachite | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/arc-node | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/circlefin/arc-remote-signer | SOURCE\_CODE | — | — | Bounty eligible |
+| rpc\.testnet\.arc\.network | URL | — | — | Bounty eligible |
+| \*\.arc\.io | WILDCARD | — | — | Bounty eligible |
+| rpc\.drpc\.testnet\.arc\.network | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 
@@ -36,3 +36,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
+- Only public asset identifiers and explicit scope/bounty flags were refreshed automatically\. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced\. Whole-policy review dates, eligibility and restrictions were not refreshed\. Live program rules prevail; this snapshot is not testing authorization\.

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:35Z.
+**Capture time:** 2026-11-07T19:24:53Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/payoneer/assets/download_csv.csv>)
 
@@ -35,9 +35,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | explore\.payoneer\.com | URL | — | — | Not bounty eligible |
 | register\.payoneer\.com | URL | — | — | Not bounty eligible |
 | duediligence\.payoneer\.com | URL | — | — | Not bounty eligible |
-| skuad\.io | URL | — | — | Not bounty eligible |
-| brand\.payoneer\.com | URL | — | — | Not bounty eligible |
 | investorday\.payoneer\.com | URL | — | — | Not bounty eligible |
+| brand\.payoneer\.com | URL | — | — | Not bounty eligible |
+| skuad\.io | URL | — | — | Not bounty eligible |
 
 **Limits**
 

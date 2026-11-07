@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:38Z.
+**Capture time:** 2026-11-07T19:24:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/pingidentity/assets/download_csv.csv>)
 
@@ -18,10 +18,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://ort-admin\.pingone\.com/\* | WILDCARD | — | — | Bounty eligible |
-| https://openam-bug-bounty-stag\.forgeblocks\.com/\* | WILDCARD | — | — | Bounty eligible |
 | https://ort-authenticator\.pingone\.com/\* | WILDCARD | — | — | Bounty eligible |
+| https://ort-admin\.pingone\.com/\* | WILDCARD | — | — | Bounty eligible |
 | https://ort-desktop\.pingone\.com/\* | WILDCARD | — | — | Bounty eligible |
+| https://openam-bug-bounty-stag\.forgeblocks\.com/\* | WILDCARD | — | — | Bounty eligible |
 | api\.ort-one-pingone\.com | URL | — | — | Bounty eligible |
 | console\.ort-one-pingone\.com | URL | — | — | Bounty eligible |
 | apps\.ort-one-pingone\.com | URL | — | — | Bounty eligible |
@@ -34,20 +34,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | https://\*\.pingidentity\.com | WILDCARD | — | — | Not bounty eligible |
-| https://\*\.pingidentity\.io | WILDCARD | — | — | Not bounty eligible |
-| https://\*\.pingidentity\.net | WILDCARD | — | — | Not bounty eligible |
-| https://developer\.pingidentity\.com/\* | WILDCARD | — | — | Not bounty eligible |
 | admin\.pingone\.com | URL | — | — | Not bounty eligible |
 | api\.pingone\.com | URL | — | — | Not bounty eligible |
+| desktop\.pingone\.com | URL | — | — | Not bounty eligible |
+| https://\*\.pingidentity\.io | WILDCARD | — | — | Not bounty eligible |
+| test-desktop\.pingone\.com | URL | — | — | Not bounty eligible |
+| test-sso\.connect\.pingidentity\.com | URL | — | — | Not bounty eligible |
 | authenticator\.pingone\.com | URL | — | — | Not bounty eligible |
+| https://\*\.pingidentity\.net | WILDCARD | — | — | Not bounty eligible |
 | console\.pingone\.com | URL | — | — | Not bounty eligible |
+| https://developer\.pingidentity\.com/\* | WILDCARD | — | — | Not bounty eligible |
 | uploads\.pingone\.com | URL | — | — | Not bounty eligible |
 | uploads-staging\.pingone\.com | URL | — | — | Not bounty eligible |
 | api-staging\.pingone\.com | URL | — | — | Not bounty eligible |
 | console-staging\.pingone\.com | URL | — | — | Not bounty eligible |
-| desktop\.pingone\.com | URL | — | — | Not bounty eligible |
-| test-desktop\.pingone\.com | URL | — | — | Not bounty eligible |
-| test-sso\.connect\.pingidentity\.com | URL | — | — | Not bounty eligible |
 | privilege\.ort-one-pingone\.com | URL | — | — | Not bounty eligible |
 
 **Limits**

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:43Z.
+**Capture time:** 2026-11-07T19:26:43Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/twilio/assets/download_csv.csv>)
 
@@ -18,6 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| api\.twilio\.com | API | — | — | Bounty eligible |
 | \*\.sip\.\*\.twilio\.com | WILDCARD | — | — | Bounty eligible |
 | static\*\.twilio\.com | WILDCARD | — | — | Bounty eligible |
 | sendgrid\.com | URL | — | — | Bounty eligible |
@@ -25,9 +26,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | signup\.sendgrid\.com | URL | — | — | Bounty eligible |
 | mc\.sendgrid\.com | URL | — | — | Bounty eligible |
 | app\.segment\.com | URL | — | — | Bounty eligible |
-| Any host/web property verified to be owned by Twilio et al\. | OTHER | — | — | Bounty eligible |
-| api\.twilio\.com | API | — | — | Bounty eligible |
 | api\.segment\.io | API | — | — | Bounty eligible |
+| Any host/web property verified to be owned by Twilio et al\. | OTHER | — | — | Bounty eligible |
 | api\.stytch\.com | API | — | — | Bounty eligible |
 | blog\.twilio\.com | URL | — | — | Bounty eligible |
 | console\.twilio\.com | URL | — | — | Bounty eligible |

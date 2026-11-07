@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:47Z.
+**Capture time:** 2026-11-07T19:21:48Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/crowdstrike/assets/download_csv.csv>)
 
@@ -19,25 +19,25 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.crowdstrike\.com | WILDCARD | — | — | Bounty eligible |
+| www\.crowdstrike\.org | URL | — | — | Bounty eligible |
+| CrowdStrike public infrastructure | OTHER | — | — | Bounty eligible |
+| falcon-sandbox\.com | URL | — | — | Bounty eligible |
+| hybrid-analysis\.com | URL | — | — | Bounty eligible |
+| www\.crowdstrike\.com | URL | — | — | Bounty eligible |
 | \*\.humio\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.securecircle\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.preempt\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.preemptsecurity\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.reposify\.com | WILDCARD | — | — | Bounty eligible |
+| apps\.apple\.com/us/app/crowdstrike-falcon/id1458815656 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| play\.google\.com/store/apps/details?id=com\.crowdstrike\.falconmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.bionic\.ai | WILDCARD | — | — | Bounty eligible |
 | \*\.flowsecurity\.app | WILDCARD | — | — | Bounty eligible |
 | \*\.adaptive-shield\.com | WILDCARD | — | — | Bounty eligible |
-| www\.crowdstrike\.org | URL | — | — | Bounty eligible |
-| falcon-sandbox\.com | URL | — | — | Bounty eligible |
-| hybrid-analysis\.com | URL | — | — | Bounty eligible |
-| www\.crowdstrike\.com | URL | — | — | Bounty eligible |
 | sgnl\.ai | URL | — | — | Bounty eligible |
 | sgnl\.cloud | URL | — | — | Bounty eligible |
 | sgnl\.team | URL | — | — | Bounty eligible |
 | sgnlapis\.cloud | URL | — | — | Bounty eligible |
-| CrowdStrike public infrastructure | OTHER | — | — | Bounty eligible |
-| play\.google\.com/store/apps/details?id=com\.crowdstrike\.falconmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| apps\.apple\.com/us/app/crowdstrike-falcon/id1458815656 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

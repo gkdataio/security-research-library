@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-07T14:52:54Z.
+**Capture time:** 2026-11-07T19:20:15Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/1password/assets/download_csv.csv>)
 
@@ -35,3 +35,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export\. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control\.
+- Only public asset identifiers and explicit scope/bounty flags were refreshed automatically\. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced\. Whole-policy review dates, eligibility and restrictions were not refreshed\. Live program rules prevail; this snapshot is not testing authorization\.

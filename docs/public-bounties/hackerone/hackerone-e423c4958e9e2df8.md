@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:18Z.
+**Capture time:** 2026-11-07T19:24:21Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/moonpay/assets/download_csv.csv>)
 
@@ -18,13 +18,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| moonpay\.com | URL | — | — | Bounty eligible |
 | \*\.moonpaycloud\.com | WILDCARD | — | — | Bounty eligible |
+| hypermint\.com | URL | — | — | Bounty eligible |
 | \*\.hypermint\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.moonpay\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.iron\.xyz | WILDCARD | — | — | Bounty eligible |
-| \*\.swaps\.xyz | WILDCARD | — | — | Bounty eligible |
-| moonpay\.com | URL | — | — | Bounty eligible |
-| hypermint\.com | URL | — | — | Bounty eligible |
+| https://github\.com/moonpay | SOURCE\_CODE | — | — | Bounty eligible |
+| https://play\.google\.com/store/apps/details?id=com\.moonpay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| https://apps\.apple\.com/app/id1635031432 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | web3\.moonpay\.com | URL | — | — | Bounty eligible |
 | sell\.moonpay\.com | URL | — | — | Bounty eligible |
 | buy\.moonpay\.com | URL | — | — | Bounty eligible |
@@ -35,22 +36,20 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | api\.paybox\.sh | URL | — | — | Bounty eligible |
 | iframe\.moonx-dev\.com | URL | — | — | Bounty eligible |
 | api\.moonx-dev\.com | URL | — | — | Bounty eligible |
-| https://github\.com/moonpay | SOURCE\_CODE | — | — | Bounty eligible |
-| https://play\.google\.com/store/apps/details?id=com\.moonpay | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| https://apps\.apple\.com/app/id1635031432 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.iron\.xyz | WILDCARD | — | — | Bounty eligible |
+| \*\.swaps\.xyz | WILDCARD | — | — | Bounty eligible |
 | \*\.dflow\.net | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (19)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.hel\.io | WILDCARD | — | — | Not bounty eligible |
-| \*\.plexlabs\.io | WILDCARD | — | — | Not bounty eligible |
 | clicks\.moonpay\.com | URL | — | — | Not bounty eligible |
 | qr\.moonpay\.com | URL | — | — | Not bounty eligible |
 | page\.moonpay\.com | URL | — | — | Not bounty eligible |
 | support\.moonpay\.com | URL | — | — | Not bounty eligible |
 | docs\.moonpay\.com | URL | — | — | Not bounty eligible |
+| \*\.plexlabs\.io | WILDCARD | — | — | Not bounty eligible |
 | plexlabs\.io | URL | — | — | Not bounty eligible |
 | request-headers-no-proxy\.moonpay\.com | URL | — | — | Not bounty eligible |
 | request-headers\.moonpay\.com | URL | — | — | Not bounty eligible |
@@ -63,6 +62,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/moonpay/moonpay-sign | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/moonpay/moonpay-demo-integrations | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/moonpay/devops-challenge | SOURCE\_CODE | — | — | Not bounty eligible |
+| \*\.hel\.io | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

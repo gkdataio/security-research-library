@@ -101,11 +101,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/rapyd/changelog/b7d3849b-cc64-466e-afe2-9a8d564f96f8.json",
-      "publisher": "Rapyd",
-      "retrieved_at": "2026-11-07T15:03:10Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T19:10:45Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -126,9 +126,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:10Z",
+    "verified_at": "2026-11-07T19:10:45Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -137,7 +137,7 @@
         "location": null,
         "group": "Tier 3 In scope Premium",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -146,7 +146,7 @@
         "location": "https://dashboard.rapyd.net/",
         "group": "Tier 2 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -155,7 +155,7 @@
         "location": null,
         "group": "Tier 2 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -164,7 +164,7 @@
         "location": null,
         "group": "Tier 2 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -173,7 +173,7 @@
         "location": null,
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -182,7 +182,7 @@
         "location": null,
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -191,7 +191,7 @@
         "location": "https://jointhemoment.net/",
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -200,7 +200,7 @@
         "location": null,
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -209,7 +209,7 @@
         "location": null,
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -218,7 +218,7 @@
         "location": null,
         "group": "Tier 1 In scope",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -229,7 +229,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -238,7 +238,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -247,7 +247,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -256,7 +256,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -265,7 +265,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -274,7 +274,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -283,7 +283,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -292,7 +292,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -301,7 +301,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -310,7 +310,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -319,12 +319,13 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

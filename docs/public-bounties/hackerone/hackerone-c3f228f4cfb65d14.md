@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:47Z.
+**Capture time:** 2026-11-07T19:21:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/cs_money/assets/download_csv.csv>)
 
@@ -20,17 +20,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | cs\.money | URL | — | — | Bounty eligible |
 | support\.cs\.money | URL | — | — | Bounty eligible |
-| blog\.cs\.money | URL | — | — | Bounty eligible |
 | wiki\.cs\.money | URL | — | — | Bounty eligible |
 | 3d\.cs\.money | URL | — | — | Bounty eligible |
+| blog\.cs\.money | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | old\.cs\.money | URL | — | — | Not bounty eligible |
-| grafana\.cs\.money | URL | — | — | Not bounty eligible |
 | CS\.Money Antiscam | OTHER | — | — | Not bounty eligible |
+| grafana\.cs\.money | URL | — | — | Not bounty eligible |
 
 **Limits**
 

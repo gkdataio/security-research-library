@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:19Z.
+**Capture time:** 2026-11-07T19:22:47Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/flickr/assets/download_csv.csv>)
 
@@ -19,16 +19,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.flickr\.com | WILDCARD | — | — | Bounty eligible |
+| 328407587 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.yahoo\.mobile\.client\.android\.flickr | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | www\.whatismode\.com | URL | — | — | Bounty eligible |
 | modefestival\.com | URL | — | — | Bounty eligible |
-| com\.yahoo\.mobile\.client\.android\.flickr | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 328407587 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.flickr\.net | WILDCARD | — | — | Not bounty eligible |
 | blog\.flickr\.com | URL | — | — | Not bounty eligible |
 | amt\.flickr\.com | URL | — | — | Not bounty eligible |
 | appletv\.flickr\.com | URL | — | — | Not bounty eligible |
@@ -43,6 +42,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | help\.flickr\.com | URL | — | — | Not bounty eligible |
 | parkorbird\.flickr\.com | URL | — | — | Not bounty eligible |
 | links\.flickr\.com | URL | — | — | Not bounty eligible |
+| \*\.flickr\.net | WILDCARD | — | — | Not bounty eligible |
 | flickrhelp\.com | URL | — | — | Not bounty eligible |
 | Zero Day Vulnerabilities/Security Upgrades | OTHER | — | — | Not bounty eligible |
 

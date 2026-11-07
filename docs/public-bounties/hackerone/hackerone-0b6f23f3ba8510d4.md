@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:23Z.
+**Capture time:** 2026-11-07T19:22:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/floqast/assets/download_csv.csv>)
 
@@ -19,9 +19,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.eu\.floqast\.app | WILDCARD | — | — | Bounty eligible |
+| api-eu\.floqast\.app | URL | — | — | Bounty eligible |
 | \*\.floqast\.app | WILDCARD | — | — | Bounty eligible |
 | https://\*\.floqast\.engineering | WILDCARD | — | — | Bounty eligible |
-| api-eu\.floqast\.app | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 

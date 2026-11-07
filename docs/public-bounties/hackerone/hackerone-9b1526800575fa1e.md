@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:40Z.
+**Capture time:** 2026-11-07T19:23:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hyatt/assets/download_csv.csv>)
 
@@ -19,9 +19,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | www\.hyatt\.com | URL | — | — | Bounty eligible |
+| 476639005 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.Hyatt | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | world\.hyatt\.com | URL | — | — | Bounty eligible |
 | assets\.hyatt\.com | URL | — | — | Bounty eligible |
+| 140\.95\.0\.0/16 | CIDR | — | — | Bounty eligible |
 | newsroom\.images\.hyatt\.com | URL | — | — | Bounty eligible |
+| 213\.139\.133\.32/28 | CIDR | — | — | Bounty eligible |
 | salesportal\.hyatt\.com | URL | — | — | Bounty eligible |
 | meetings\.hyatt\.com | URL | — | — | Bounty eligible |
 | ebsext\.oft\.hyatt\.com | URL | — | — | Bounty eligible |
@@ -69,14 +73,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.triseptdemo\.com | URL | — | — | Bounty eligible |
 | vacations\.united\.com | URL | — | — | Bounty eligible |
 | www\.applevacations\.com | URL | — | — | Bounty eligible |
+| 199\.66\.248\.0/22 | CIDR | — | — | Bounty eligible |
 | res\.hyattinclusivecollection\.com | URL | — | — | Bounty eligible |
 | www\.hyattinclusivecollection\.com | URL | — | — | Bounty eligible |
 | booking\.applevacations\.com | URL | — | — | Bounty eligible |
-| com\.Hyatt | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 140\.95\.0\.0/16 | CIDR | — | — | Bounty eligible |
-| 213\.139\.133\.32/28 | CIDR | — | — | Bounty eligible |
-| 199\.66\.248\.0/22 | CIDR | — | — | Bounty eligible |
-| 476639005 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

@@ -71,11 +71,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Intigriti asset table",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
-      "publisher": "Exoscale / Akenes SA",
-      "retrieved_at": "2026-11-07T14:52:01Z",
+      "publisher": "Intigriti",
+      "retrieved_at": "2026-11-07T19:29:31Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -96,9 +96,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T14:52:01Z",
+    "verified_at": "2026-11-07T19:29:31Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -107,7 +107,7 @@
         "location": "https://portal.exoscale.com/",
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -116,7 +116,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -125,7 +125,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -134,7 +134,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -143,7 +143,7 @@
         "location": null,
         "group": "Tier 2",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -152,7 +152,7 @@
         "location": "https://www.exoscale.com/",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -161,7 +161,7 @@
         "location": "https://community.exoscale.com/",
         "group": "Tier 3",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -172,7 +172,7 @@
         "location": "https://changelog.exoscale.com/",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -181,7 +181,7 @@
         "location": "https://exoscalestatus.com/",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -190,7 +190,7 @@
         "location": "https://academy.exoscale.com/",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -199,7 +199,7 @@
         "location": "https://jobs.exoscale.com/",
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -208,7 +208,7 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -217,12 +217,13 @@
         "location": null,
         "group": null,
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+      "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:52:57Z.
+**Capture time:** 2026-11-07T19:20:25Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/abercrombie_fitch_bbp/assets/download_csv.csv>)
 
@@ -20,12 +20,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | abercrombie\.com | URL | — | — | Bounty eligible |
 | hollisterco\.com | URL | — | — | Bounty eligible |
-| corporate\.abercrombie\.com | URL | — | — | Bounty eligible |
-| anfcorp\.com | URL | — | — | Bounty eligible |
-| com\.abercrombie\.abercrombie | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.abercrombie\.hollister | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 339041767 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 383915209 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.abercrombie\.abercrombie | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.abercrombie\.hollister | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| corporate\.abercrombie\.com | URL | — | — | Bounty eligible |
+| anfcorp\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

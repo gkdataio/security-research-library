@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:54Z.
+**Capture time:** 2026-11-07T19:22:01Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/deriv/assets/download_csv.csv>)
 
@@ -18,24 +18,24 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| github\.com/binary-com | SOURCE\_CODE | — | — | Bounty eligible |
 | \*\.deriv\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.deriv\.cloud | WILDCARD | — | — | Bounty eligible |
-| \*\.derivws\.com | WILDCARD | — | — | Bounty eligible |
 | app\.deriv\.com | URL | — | — | Bounty eligible |
 | smarttrader\.deriv\.com | URL | — | — | Bounty eligible |
 | cashier\.deriv\.com | URL | — | — | Bounty eligible |
+| \*\.deriv\.cloud | WILDCARD | — | — | Bounty eligible |
 | oauth\.deriv\.com | URL | — | — | Bounty eligible |
 | api\.deriv\.com | URL | — | — | Bounty eligible |
-| derivws\.com | URL | — | — | Bounty eligible |
-| secure-dfadmin\.deriv\.com | URL | — | — | Bounty eligible |
-| home\.deriv\.com | URL | — | — | Bounty eligible |
-| core-api\.deriv\.com | URL | — | — | Bounty eligible |
-| https://api-core\.deriv\.com | URL | — | — | Bounty eligible |
-| github\.com/binary-com | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/deriv-com | OTHER | — | — | Bounty eligible |
+| derivws\.com | URL | — | — | Bounty eligible |
+| \*\.derivws\.com | WILDCARD | — | — | Bounty eligible |
+| secure-dfadmin\.deriv\.com | URL | — | — | Bounty eligible |
 | ct\.deriv\.com | URL | — | — | Not bounty eligible |
+| home\.deriv\.com | URL | — | — | Bounty eligible |
 | deriv\.partners | URL | — | — | Not bounty eligible |
 | partners\.deriv\.com | URL | — | — | Not bounty eligible |
+| core-api\.deriv\.com | URL | — | — | Bounty eligible |
+| https://api-core\.deriv\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (7)
 
@@ -46,8 +46,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | trade\.mql5\.com | URL | — | — | Not bounty eligible |
 | community\.deriv\.com | URL | — | — | Not bounty eligible |
 | https://deriv\.atlassian\.net/servicedesk/customer/user/signup | URL | — | — | Not bounty eligible |
-| deriv\.ae | URL | — | — | Not bounty eligible |
 | Any 3rd party managed domain | OTHER | — | — | Not bounty eligible |
+| deriv\.ae | URL | — | — | Not bounty eligible |
 
 **Limits**
 

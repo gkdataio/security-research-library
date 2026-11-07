@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:51Z.
+**Capture time:** 2026-11-07T19:26:55Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/valve/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.steamstatic\.com | WILDCARD | — | — | Bounty eligible |
 | www\.dota2\.com | URL | — | — | Bounty eligible |
+| Steam Servers | OTHER | — | — | Bounty eligible |
 | support\.steampowered\.com | URL | — | — | Bounty eligible |
 | partner\.steampowered\.com | URL | — | — | Bounty eligible |
+| com\.valvesoftware\.Steam | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.valvesoftware\.Steam | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | store\.steampowered\.com | URL | — | — | Bounty eligible |
 | www\.valvesoftware\.com | URL | — | — | Bounty eligible |
 | api\.steampowered\.com | URL | — | — | Bounty eligible |
 | partner\.steamgames\.com | URL | — | — | Bounty eligible |
 | steamcommunity\.com | URL | — | — | Bounty eligible |
+| storefront\.steampowered\.com | URL | — | — | Not bounty eligible |
 | www\.teamfortress\.com | URL | — | — | Bounty eligible |
 | www\.counter-strike\.net | URL | — | — | Bounty eligible |
-| playartifact\.com | URL | — | — | Bounty eligible |
-| help\.steampowered\.com | URL | — | — | Bounty eligible |
-| developer\.valvesoftware\.com | URL | — | — | Bounty eligible |
-| Steam Servers | OTHER | — | — | Bounty eligible |
-| Steam Client | OTHER | — | — | Bounty eligible |
-| com\.valvesoftware\.Steam | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.valvesoftware\.Steam | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| storefront\.steampowered\.com | URL | — | — | Not bounty eligible |
 | wiki\.teamfortress\.com | URL | — | — | Not bounty eligible |
 | https://github\.com/valvesoftware | SOURCE\_CODE | — | — | Not bounty eligible |
+| developer\.valvesoftware\.com | URL | — | — | Bounty eligible |
+| playartifact\.com | URL | — | — | Bounty eligible |
+| help\.steampowered\.com | URL | — | — | Bounty eligible |
+| Steam Client | OTHER | — | — | Bounty eligible |
+| \*\.steamstatic\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 

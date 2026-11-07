@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:30Z.
+**Capture time:** 2026-11-07T19:23:03Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/goodrx/assets/download_csv.csv>)
 
@@ -18,21 +18,21 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| www\.goodrx\.com | URL | — | — | Bounty eligible |
-| com\.goodrx | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.goodrx\.iphone | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.goodrx | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| www\.goodrx\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | support\.goodrx\.com | URL | — | — | Not bounty eligible |
+| com\.goodrx\.doctors | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.goodrx\.doctors | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| com\.goodrx\.gold | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.goodrx\.gold | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | sso\.identity\.goodrx\.com | URL | — | — | Not bounty eligible |
 | investors\.goodrx\.com | URL | — | — | Not bounty eligible |
-| com\.goodrx\.doctors | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.goodrx\.gold | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.goodrx\.doctors | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
-| com\.goodrx\.gold | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 
 **Limits**
 

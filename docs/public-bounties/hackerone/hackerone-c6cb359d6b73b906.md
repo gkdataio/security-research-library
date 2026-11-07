@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:19Z.
+**Capture time:** 2026-11-07T19:22:45Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/files/assets/download_csv.csv>)
 
@@ -20,14 +20,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | app\.files\.com | URL | — | — | Bounty eligible |
 | your-assigned-subdomain\.files\.com | URL | — | — | Bounty eligible |
-| your-assigned-subdomain\.hosted-by-files\.com | URL | — | — | Bounty eligible |
 | www\.files\.com | URL | — | — | Bounty eligible |
 | FIles\.com REST API | OTHER | — | — | Bounty eligible |
 | Files\.com SDKs and MCP | OTHER | — | — | Bounty eligible |
-| Files\.com Mobile App | OTHER | — | — | Bounty eligible |
 | Files\.com Command Line Interface \(CLI\) App | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Files\.com Desktop v6 App | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| Files\.com Mobile App | OTHER | — | — | Bounty eligible |
 | Files\.com On-Premise Agent | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| your-assigned-subdomain\.hosted-by-files\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 

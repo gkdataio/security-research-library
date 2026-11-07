@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:09Z.
+**Capture time:** 2026-11-07T19:20:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/anduril_industries/assets/download_csv.csv>)
 
@@ -18,17 +18,17 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| anduril\.com | URL | — | — | Bounty eligible |
 | \*\.andurildev\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.anduril\.dev | WILDCARD | — | — | Bounty eligible |
 | \*\.andurildev\.au | WILDCARD | — | — | Bounty eligible |
-| anduril\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| andurilgear\.com | URL | — | — | Not bounty eligible |
 | Anduril Property and Facilities | OTHER | — | — | Not bounty eligible |
+| andurilgear\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

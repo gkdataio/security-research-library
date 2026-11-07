@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:26Z.
+**Capture time:** 2026-11-07T19:21:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/bumble/assets/download_csv.csv>)
 
@@ -20,6 +20,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | www\.bumble\.com | URL | — | — | Bounty eligible |
 | bma\.bumble\.com | URL | — | — | Bounty eligible |
+| 930441707 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.bumble\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.badoo\.mobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.badoo\.twa | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 351331194 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 403684733 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | badoo\.com | URL | — | — | Bounty eligible |
 | eu1\.badoo\.com | URL | — | — | Bounty eligible |
 | us1\.badoo\.com | URL | — | — | Bounty eligible |
@@ -34,6 +40,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ccardseu1\.badoo\.com | URL | — | — | Bounty eligible |
 | ccardsus1\.badoo\.com | URL | — | — | Bounty eligible |
 | chatdate\.app | URL | — | — | Bounty eligible |
+| com\.hotornot\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.bumblebff\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | www\.geneva-staging\.chat | URL | — | — | Bounty eligible |
 | www\.geneva-staging\.com | URL | — | — | Bounty eligible |
 | web\.geneva-staging\.com | URL | — | — | Bounty eligible |
@@ -56,17 +64,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | router\.geneva-staging\.com | URL | — | — | Bounty eligible |
 | social\.geneva-staging\.com | URL | — | — | Bounty eligible |
 | social\.geneva-staging\.chat | URL | — | — | Bounty eligible |
-| app\.geneva-staging\.com | URL | — | — | Bounty eligible |
 | https://testflight\.apple\.com/join/Y4cHu289 | TESTFLIGHT | — | — | Bounty eligible |
 | com\.genevachat\.staging | OTHER\_APK | — | — | Bounty eligible |
-| com\.bumble\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.badoo\.mobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.badoo\.twa | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.hotornot\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.bumblebff\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 930441707 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 351331194 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 403684733 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| app\.geneva-staging\.com | URL | — | — | Bounty eligible |
 | 6444040977 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)

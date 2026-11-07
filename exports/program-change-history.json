@@ -11552,6 +11552,623 @@
           ]
         }
       ]
+    },
+    {
+      "id": "68ed2fa4b200467b150fc0ab7f8126e408e6896623b156e49267dc220a713596",
+      "recorded_at": "2026-11-07T19:32:09Z",
+      "baseline_commit": "201793489addcfa3bf13fcdd239951967a99dd87",
+      "baseline_digest": "661068e45c2c951ba1782b32a3ab8d9467800dda4e00a6ecdec6cb0ffda78bb8",
+      "current_digest": "becf04a9eec6c413f7f1167b26f89b04bc239922278e06c0302a1df92b615339",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-00daeb0512f7127a",
+          "name": "OpenAI",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/openai",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-52bd57313a7f7e27",
+          "name": "Nubank Brasil Managed Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/nubank",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-58c3412e03830b70",
+          "name": "Atlassian",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/atlassian",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-72f2cd2dfaa18ddb",
+          "name": "Web.com Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/webdotcom",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-758420a1e8b43734",
+          "name": "Okta",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/okta",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-836a00e24d71dc8c",
+          "name": "HostGator LATAM Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/hostgator-latam-bb",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8a7562d7d64064d9",
+          "name": "Vinted Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/vinted-uab-mbb",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8c79e5965dcb8c85",
+          "name": "LaunchDarkly Managed Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9977a9c172a632fe",
+          "name": "Rapyd",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/rapyd",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-b4bd8b3b0916e90f",
+          "name": "MATLAB Online - Ongoing Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/matlab-online",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-bc1852a81ee6062a",
+          "name": "OneTrust",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/onetrust",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-d6f8548570a7cae7",
+          "name": "Moovit Managed Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/moovit-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+              ],
+              "after": [
+                "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-11fb4dcd46f4d597",
+          "name": "GitLab",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/gitlab?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-3c380cec9385aec5",
+          "name": "HackerOne",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/security?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-4d6a13c23ed1da52",
+          "name": "Vercel",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/vercel?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-82b66e90f50d458b",
+          "name": "Arc",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/arc-bbp?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-df9e660827f32e55",
+          "name": "1Password - Enterprise Password Manager",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/1password?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-dffe9f578f5b498e",
+          "name": "curl",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/curl?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-07f90746b449bbc9",
+          "name": "Dashlane Vulnerability Disclosure Program",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-3aad97cfcaed8ee2",
+          "name": "NxtPort VDP",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/portofantwerp/nxtportvdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-499c24019a091619",
+          "name": "Exoscale Bug Bounty",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-7024f970275792fe",
+          "name": "Trusted Firmware",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/arm/trustedfirmware",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-7aa05d09059a0c26",
+          "name": "NVIDIA Public Bug Bounty",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-905e49fd1148d7d3",
+          "name": "Intel® Vulnerability Disclosure Program",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-91b2b9c5cf81d988",
+          "name": "Dropbox Bug Bounty",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dropbox/dropbox",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-9b3a3e0723acf795",
+          "name": "Ivo: AI VDP",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-b1b4764dcf6ec91f",
+          "name": "Spacelift VDP",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-cfeefdb6d9f78faf",
+          "name": "Grafana Labs - Vulnerability Disclosure Program (VDP)",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-eb5a113d92468770",
+          "name": "TrueLayer VDP",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/truelayer/truelayervdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-f9f68f87b387ad01",
+          "name": "ADAC Vulnerability Disclosure Program",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-fda0bd80021e632b",
+          "name": "Dutch Lottery VDP",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope."
+              ],
+              "after": [
+                "Published asset table rows were captured; program detail and out-of-scope prose may add restrictions. An empty out-of-scope table is not unrestricted scope.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        },
+        {
+          "key": "policy:mozilla-web-bug-bounty",
+          "name": "Mozilla Web Bug Bounty",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/mozilla?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.limitations",
+              "before": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+              ],
+              "after": [
+                "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+                "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

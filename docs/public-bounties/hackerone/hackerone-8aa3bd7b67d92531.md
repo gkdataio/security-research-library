@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:16Z.
+**Capture time:** 2026-11-07T19:22:37Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/fanduel/assets/download_csv.csv>)
 
@@ -19,24 +19,24 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.fanduel\.com | WILDCARD | — | — | Bounty eligible |
+| 599664106 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.fanduel\.android\.self | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| login-4ngbets\.us\.betfair\.com | URL | — | — | Bounty eligible |
+| www\.4njbets\.com | URL | — | — | Bounty eligible |
 | \*\.mgmt\.fndlsb\.net | WILDCARD | — | — | Bounty eligible |
 | \*\.prd\.fndlsb\.net | WILDCARD | — | — | Bounty eligible |
 | \*inf\.fndlsb\.net | WILDCARD | — | — | Bounty eligible |
-| \*\.tvg\.com | WILDCARD | — | — | Bounty eligible |
-| login-4ngbets\.us\.betfair\.com | URL | — | — | Bounty eligible |
-| www\.4njbets\.com | URL | — | — | Bounty eligible |
 | 4njbets\.com | URL | — | — | Bounty eligible |
 | 4njbets\.us\.betfair\.com | URL | — | — | Bounty eligible |
 | login-4njbets\.us\.betfair\.com | URL | — | — | Bounty eligible |
-| com\.fanduel\.android\.self | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.fanduel\.sportsbook | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.fanduel\.casino | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.fanduel\.racing | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 599664106 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1506229470 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.fanduel\.racing | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1485539253 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6740879082 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1413721906 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.tvg\.com | WILDCARD | — | — | Bounty eligible |
 | FanDuel Customer Support Sites | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)

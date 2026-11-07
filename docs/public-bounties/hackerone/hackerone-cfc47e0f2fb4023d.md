@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:00Z.
+**Capture time:** 2026-11-07T19:23:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/linkedin/assets/download_csv.csv>)
 
@@ -20,9 +20,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | www\.linkedin\.com | URL | — | — | Bounty eligible |
 | api\.linkedin\.com | URL | — | — | Bounty eligible |
-| business\.linkedin\.com | URL | — | — | Bounty eligible |
-| com\.linkedin\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 288429040 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.linkedin\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| business\.linkedin\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

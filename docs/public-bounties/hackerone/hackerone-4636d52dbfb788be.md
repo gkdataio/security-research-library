@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:09Z.
+**Capture time:** 2026-11-07T19:20:44Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/anthropic/assets/download_csv.csv>)
 
@@ -19,19 +19,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | claude\.ai | URL | — | — | Bounty eligible |
-| console\.anthropic\.com | URL | — | — | Bounty eligible |
-| api\.anthropic\.com | URL | — | — | Bounty eligible |
-| docs\.anthropic\.com | URL | — | — | Bounty eligible |
-| support\.anthropic\.com | URL | — | — | Bounty eligible |
-| anthropic\.atlassian\.com | URL | — | — | Bounty eligible |
-| github\.com/anthropics | SOURCE\_CODE | — | — | Bounty eligible |
+| API &amp; SDKs | AI\_MODEL | — | — | Bounty eligible |
 | Infrastructure &amp; Internal Apps/Services | OTHER | — | — | Bounty eligible |
 | Official Clients | OTHER | — | — | Bounty eligible |
 | Claude Code | OTHER | — | — | Bounty eligible |
+| console\.anthropic\.com | URL | — | — | Bounty eligible |
+| api\.anthropic\.com | URL | — | — | Bounty eligible |
 | Leaked Employee API Keys | OTHER | — | — | Bounty eligible |
+| docs\.anthropic\.com | URL | — | — | Bounty eligible |
+| support\.anthropic\.com | URL | — | — | Bounty eligible |
+| github\.com/anthropics | SOURCE\_CODE | — | — | Bounty eligible |
+| anthropic\.atlassian\.com | URL | — | — | Bounty eligible |
 | Claude Desktop Extensions and Claude\.ai MCP servers | OTHER | — | — | Bounty eligible |
 | Claude in Chrome | OTHER | — | — | Bounty eligible |
-| API &amp; SDKs | AI\_MODEL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (1)
 

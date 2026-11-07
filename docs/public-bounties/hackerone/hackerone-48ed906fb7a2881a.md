@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:05Z.
+**Capture time:** 2026-11-07T19:25:47Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/scopely/assets/download_csv.csv>)
 
@@ -20,28 +20,28 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.scopely\.io | WILDCARD | — | — | Bounty eligible |
 | \*\.scopely\.com | WILDCARD | — | — | Bounty eligible |
+| com\.pieyel\.scrabble | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.pieyel\.scrabble | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| com\.withbuddies\.dice\.free | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.withbuddies\.dice\.free | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| com\.scopely\.yux | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.scopely\.yux | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | \*\.withbuddies\.com | WILDCARD | — | — | Bounty eligible |
-| Games Tier 1 | OTHER | — | — | Bounty eligible |
-| Games Tier 2 | OTHER | — | — | Bounty eligible |
-| Games Tier 3 | OTHER | — | — | Bounty eligible |
 | com\.foxnextgames\.m3 | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.foxnextgames\.m3 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.scopely\.monopolygo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.scopely\.startrek | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.foxnextgames\.m3 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | id1427744264 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| id1621328561 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.pieyel\.scrabble | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.withbuddies\.dice\.free | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.scopely\.yux | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.kitkagames\.fallbuddies | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| id1541153375 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| Games Tier 1 | OTHER | — | — | Bounty eligible |
+| Games Tier 2 | OTHER | — | — | Bounty eligible |
 | com\.gsn\.android\.casino | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.gsn\.grandcasino | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | air\.com\.bitrhymes\.bingo | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.gsn\.android\.tripeaks | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.pieyel\.scrabble | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
-| com\.withbuddies\.dice\.free | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
-| com\.scopely\.yux | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
-| id1541153375 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| id1621328561 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Games Tier 3 | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 

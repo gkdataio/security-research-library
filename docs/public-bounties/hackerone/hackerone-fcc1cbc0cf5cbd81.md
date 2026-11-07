@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:57Z.
+**Capture time:** 2026-11-07T19:23:45Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/krisp/assets/download_csv.csv>)
 
@@ -18,7 +18,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.krisp\.ai | WILDCARD | — | — | Bounty eligible |
+| https://download\.krisp\.ai/win | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| https://download\.krisp\.ai/mac | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | krisp\.ai | URL | — | — | Bounty eligible |
 | account\.krisp\.ai | URL | — | — | Bounty eligible |
 | api\.krisp\.ai | URL | — | — | Bounty eligible |
@@ -26,20 +27,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | download\.krisp\.ai | URL | — | — | Bounty eligible |
 | analytics\.krisp\.ai | URL | — | — | Bounty eligible |
 | upld\.krisp\.ai | URL | — | — | Bounty eligible |
-| app\.krisp\.ai | URL | — | — | Bounty eligible |
-| Other | OTHER | — | — | Bounty eligible |
-| https://download\.krisp\.ai/win | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| https://download\.krisp\.ai/mac | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| \*\.krisp\.ai | WILDCARD | — | — | Bounty eligible |
 | help\.krisp\.ai | URL | — | — | Not bounty eligible |
-| help-jp\.krisp\.ai | URL | — | — | Not bounty eligible |
+| Other | OTHER | — | — | Bounty eligible |
 | resources\.krisp\.ai | URL | — | — | Not bounty eligible |
+| help-jp\.krisp\.ai | URL | — | — | Not bounty eligible |
+| app\.krisp\.ai | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*dev\*\.krisp\.ai | WILDCARD | — | — | Not bounty eligible |
 | whatsnew\.krisp\.ai | URL | — | — | Not bounty eligible |
+| \*dev\*\.krisp\.ai | WILDCARD | — | — | Not bounty eligible |
 | url5145\.krisp\.ai | URL | — | — | Not bounty eligible |
 | voice-ai-newsletter\.krisp\.ai | URL | — | — | Not bounty eligible |
 | sdk-docs\.krisp\.ai | URL | — | — | Not bounty eligible |

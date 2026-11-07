@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:25Z.
+**Capture time:** 2026-11-07T19:26:19Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/stripe/assets/download_csv.csv>)
 
@@ -18,19 +18,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.lemonsqueezy\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.bridge\.xyz | WILDCARD | — | — | Bounty eligible |
-| \*\.metronome\.com | WILDCARD | — | — | Bounty eligible |
 | api\.stripe\.com | URL | — | — | Bounty eligible |
 | \*\.stripe\.com | URL | — | — | Bounty eligible |
+| com\.stripe\.android\.dashboard | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 978516833 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | js\.stripe\.com | URL | — | — | Bounty eligible |
-| api\.taxjar\.com | URL | — | — | Bounty eligible |
-| app\.taxjar\.com | URL | — | — | Bounty eligible |
-| \*\.recko\.io | URL | — | — | Bounty eligible |
-| \*\.reckoproduction\.com | URL | — | — | Bounty eligible |
-| \*\.reckostaging\.com | URL | — | — | Bounty eligible |
-| \*\.link\.co | URL | — | — | Bounty eligible |
-| mcp\.stripe\.com | URL | — | — | Bounty eligible |
 | Stripe Payments | OTHER | — | — | Bounty eligible |
 | Stripe Checkout | OTHER | — | — | Bounty eligible |
 | Stripe Connect | OTHER | — | — | Bounty eligible |
@@ -44,6 +36,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Stripe Atlas | OTHER | — | — | Bounty eligible |
 | Stripe SDKs | OTHER | — | — | Bounty eligible |
 | Stripe Open Source | OTHER | — | — | Bounty eligible |
+| api\.taxjar\.com | URL | — | — | Bounty eligible |
+| app\.taxjar\.com | URL | — | — | Bounty eligible |
+| \*\.recko\.io | URL | — | — | Bounty eligible |
+| \*\.reckoproduction\.com | URL | — | — | Bounty eligible |
+| \*\.reckostaging\.com | URL | — | — | Bounty eligible |
+| \*\.link\.co | URL | — | — | Bounty eligible |
+| www\.stripe\.partners | URL | — | — | Not bounty eligible |
 | Stripe Apps | OTHER | — | — | Bounty eligible |
 | Stripe Payment Links | OTHER | — | — | Bounty eligible |
 | Stripe Invoicing | OTHER | — | — | Bounty eligible |
@@ -55,21 +54,22 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Stripe Tax | OTHER | — | — | Bounty eligible |
 | Stripe Capital | OTHER | — | — | Bounty eligible |
 | Stripe Treasury | OTHER | — | — | Bounty eligible |
+| \*\.lemonsqueezy\.com | WILDCARD | — | — | Bounty eligible |
 | Stripe for Visual Studio Code | OTHER | — | — | Bounty eligible |
 | Tap to Pay \(Android\) | OTHER | — | — | Bounty eligible |
 | Tap to Pay \(iOS\) | OTHER | — | — | Bounty eligible |
 | Sandboxes | OTHER | — | — | Bounty eligible |
 | Stripe Organizations | OTHER | — | — | Bounty eligible |
+| \*\.bridge\.xyz | WILDCARD | — | — | Bounty eligible |
 | Smokescreen Open Source Project | OTHER | — | — | Bounty eligible |
 | Munkisrv Open Source Project | OTHER | — | — | Bounty eligible |
+| \*\.metronome\.com | WILDCARD | — | — | Bounty eligible |
+| mcp\.stripe\.com | URL | — | — | Bounty eligible |
 | Stripe CLI | OTHER | — | — | Bounty eligible |
 | Stripe Projects | OTHER | — | — | Bounty eligible |
 | Stripe fiat-to-crypto onramp | OTHER | — | — | Bounty eligible |
 | Global Payouts | OTHER | — | — | Bounty eligible |
 | Customer Portal | OTHER | — | — | Bounty eligible |
-| com\.stripe\.android\.dashboard | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 978516833 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| www\.stripe\.partners | URL | — | — | Not bounty eligible |
 | files\.stripe\.com | URL | — | — | Bounty eligible |
 | stripe\.com | URL | — | — | Bounty eligible |
 | stripe\.dev | URL | — | — | Bounty eligible |

@@ -105,11 +105,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/webdotcom/changelog/cdf0a5a7-3e14-4bd2-8997-a9567e0bb63e.json",
-      "publisher": "Newfold Digital / Web.com",
-      "retrieved_at": "2026-11-07T15:03:35Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T19:19:17Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -119,9 +119,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:35Z",
+    "verified_at": "2026-11-07T19:19:17Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -130,7 +130,7 @@
         "location": "https://app.web.com",
         "group": "In Scope ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -139,7 +139,7 @@
         "location": "https://www.networksolutions.com",
         "group": "In Scope ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -148,7 +148,7 @@
         "location": "https://www.bluehost.com/",
         "group": "In Scope ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -157,7 +157,7 @@
         "location": "https://www.hostgator.com/",
         "group": "In Scope ",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
@@ -168,7 +168,7 @@
         "location": "https://*.web.com",
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -177,7 +177,7 @@
         "location": "https://*.register.com",
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -186,7 +186,7 @@
         "location": "https://*.networksolutions.com",
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -195,7 +195,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -204,7 +204,7 @@
         "location": null,
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -213,12 +213,13 @@
         "location": "https://*.hostgator.com",
         "group": "Out of Scope Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

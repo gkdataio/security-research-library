@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:57Z.
+**Capture time:** 2026-11-07T19:25:33Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/ring/assets/download_csv.csv>)
 
@@ -18,10 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://\*\.immedia-semi\.com/\* | WILDCARD | — | — | Bounty eligible |
-| https://\*\.blinkforhome\.com/\* | WILDCARD | — | — | Bounty eligible |
-| prd-ring-web-us\.prd\.rings\.solutions | URL | — | — | Bounty eligible |
-| publicsafety\.ring\.com | URL | — | — | Bounty eligible |
 | https://ring\.com/\* | OTHER | — | — | Bounty eligible |
 | https://api\.ring\.com/\* | OTHER | — | — | Bounty eligible |
 | https://fw\.ring\.com/\* | OTHER | — | — | Bounty eligible |
@@ -30,6 +26,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://nw\.ring\.com/\* | OTHER | — | — | Bounty eligible |
 | https://oauth\.ring\.com/\* | OTHER | — | — | Bounty eligible |
 | https://billing\.ring\.com/\* | OTHER | — | — | Bounty eligible |
+| prd-ring-web-us\.prd\.rings\.solutions | URL | — | — | Bounty eligible |
+| https://\*\.immedia-semi\.com/\* | WILDCARD | — | — | Bounty eligible |
+| https://\*\.blinkforhome\.com/\* | WILDCARD | — | — | Bounty eligible |
 | Video Doorbell | HARDWARE | — | — | Bounty eligible |
 | Peephole Cam | HARDWARE | — | — | Bounty eligible |
 | Indoor Cam | HARDWARE | — | — | Bounty eligible |
@@ -48,6 +47,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 1013961111 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1218902777 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 926252661 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| publicsafety\.ring\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

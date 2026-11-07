@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:21Z.
+**Capture time:** 2026-11-07T19:24:31Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/netlify/assets/download_csv.csv>)
 
@@ -18,14 +18,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.services\.netlify\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.services-prod\.nsvcs\.net | WILDCARD | — | — | Bounty eligible |
-| \*\.infra-prod\.nsvcs\.net | WILDCARD | — | — | Bounty eligible |
-| \*\.ops\.netlify\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.onegraph\.com | WILDCARD | — | — | Bounty eligible |
 | app\.netlify\.com | URL | — | — | Bounty eligible |
 | api\.netlify\.com | URL | — | — | Bounty eligible |
+| \*\.onegraph\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.services\.netlify\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.services-prod\.nsvcs\.net | WILDCARD | — | — | Bounty eligible |
 | internal\.netlify\.com | URL | — | — | Bounty eligible |
+| \*\.infra-prod\.nsvcs\.net | WILDCARD | — | — | Bounty eligible |
+| \*\.ops\.netlify\.com | WILDCARD | — | — | Bounty eligible |
 | netlify-cdp-loader\.netlify\.app | URL | — | — | Bounty eligible |
 | screenshot-proxy\.netlify\.app | URL | — | — | Bounty eligible |
 | netlify-rum\.netlify\.app | URL | — | — | Bounty eligible |
@@ -37,14 +37,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.netlify\.app | WILDCARD | — | — | Not bounty eligible |
-| \*\.netlify\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.netlifycms\.org | WILDCARD | — | — | Not bounty eligible |
 | www\.netlify\.com | URL | — | — | Not bounty eligible |
 | webpop\.com | URL | — | — | Not bounty eligible |
+| \*\.netlify\.app | WILDCARD | — | — | Not bounty eligible |
 | docs\.netlify\.com | URL | — | — | Not bounty eligible |
 | answers\.netlify\.com | URL | — | — | Not bounty eligible |
+| \*\.netlify\.com | WILDCARD | — | — | Not bounty eligible |
 | https://github\.com/netlify/ | URL | — | — | Not bounty eligible |
+| \*\.netlifycms\.org | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

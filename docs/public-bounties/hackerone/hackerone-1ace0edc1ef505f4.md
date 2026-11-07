@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:05Z.
+**Capture time:** 2026-11-07T19:20:35Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/airtable/assets/download_csv.csv>)
 
@@ -18,18 +18,22 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| staging\.airtable\.com | URL | — | — | Bounty eligible |
 | \*\.staging-airtableblocks\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.staging\.airtable\.com | WILDCARD | — | — | Bounty eligible |
-| staging\.airtable\.com | URL | — | — | Bounty eligible |
 | api-staging\.airtable\.com | URL | — | — | Bounty eligible |
-| mcp\.staging\.airtable\.com | URL | — | — | Bounty eligible |
 | airtable\.js SDK \(https://www\.npmjs\.com/package/airtable\) | SOURCE\_CODE | — | — | Bounty eligible |
+| mcp\.staging\.airtable\.com | URL | — | — | Bounty eligible |
 | https://www\.npmjs\.com/package/@airtable/mcp-cli | SOURCE\_CODE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| com\.FormaGrid\.Hyperbase | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.formagrid\.airtable | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| Airtable macOS app | OTHER | — | — | Not bounty eligible |
+| Airtable Windows app | OTHER | — | — | Not bounty eligible |
 | blog\.airtable\.com | URL | — | — | Not bounty eligible |
 | support\.airtable\.com | URL | — | — | Not bounty eligible |
 | guide\.airtable\.com | URL | — | — | Not bounty eligible |
@@ -37,10 +41,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | dl\.airtable\.com | URL | — | — | Not bounty eligible |
 | dl\.getforma\.com | URL | — | — | Not bounty eligible |
 | community\.airtable\.com | URL | — | — | Not bounty eligible |
-| Airtable macOS app | OTHER | — | — | Not bounty eligible |
-| Airtable Windows app | OTHER | — | — | Not bounty eligible |
-| com\.formagrid\.airtable | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
-| com\.FormaGrid\.Hyperbase | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 
 **Limits**
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:16Z.
+**Capture time:** 2026-11-07T19:20:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/audible/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| tax\.audible\.com | URL | — | — | Bounty eligible |
 | \*\.audible\.\(TLD\) | OTHER | — | — | Bounty eligible |
 | com\.audible\.application | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 379693831 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| tax\.audible\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.acx\.com | WILDCARD | — | — | Not bounty eligible |
 | newsletters\.audible\.com | URL | — | — | Not bounty eligible |
 | www\.audiblecareers\.com | URL | — | — | Not bounty eligible |
-| https://www\.audiblehub\.com/submit | URL | — | — | Not bounty eligible |
-| acx-horizonte\.audible\.com/ | URL | — | — | Not bounty eligible |
 | https://www\.audible\.com/ep/podcast-development-program | URL | — | — | Not bounty eligible |
-| demdex\.net | URL | — | — | Not bounty eligible |
-| omtrdc\.net | URL | — | — | Not bounty eligible |
-| adobedtm\.com | URL | — | — | Not bounty eligible |
+| https://www\.audiblehub\.com/submit | URL | — | — | Not bounty eligible |
 | All help centers across marketplaces | OTHER | — | — | Not bounty eligible |
 | All Audible blogs across marketplaces | OTHER | — | — | Not bounty eligible |
 | Affiliate Programs | OTHER | — | — | Not bounty eligible |
+| \*\.acx\.com | WILDCARD | — | — | Not bounty eligible |
+| demdex\.net | URL | — | — | Not bounty eligible |
+| omtrdc\.net | URL | — | — | Not bounty eligible |
+| adobedtm\.com | URL | — | — | Not bounty eligible |
+| acx-horizonte\.audible\.com/ | URL | — | — | Not bounty eligible |
 
 **Limits**
 

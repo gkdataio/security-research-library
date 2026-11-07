@@ -65,11 +65,11 @@
       "access_method": "browser"
     },
     {
-      "id": "assets-scope-2026-10-03",
-      "title": "Published HackerOne scope CSV export",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://hackerone.com/teams/mozilla/assets/download_csv.csv",
-      "publisher": "Mozilla",
-      "retrieved_at": "2026-11-07T14:57:40Z",
+      "publisher": "HackerOne",
+      "retrieved_at": "2026-11-07T19:24:23Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -86,9 +86,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T14:57:40Z",
+    "verified_at": "2026-11-07T19:24:23Z",
     "source_ids": [
-      "assets-scope-2026-10-03"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -98,7 +98,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -108,7 +108,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -118,7 +118,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -128,7 +128,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -138,7 +138,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -148,7 +148,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -158,7 +158,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -168,7 +168,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -178,127 +178,7 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "aus5.mozilla.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "bugzilla.mozilla.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "crash-reports.allizom.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "crash-stats.allizom.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "firefox-ci-tc.services.mozilla.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "firefox.settings.services.mozilla.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "lando.services.mozilla.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "merino.services.mozilla.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "phabricator.allizom.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "sync.services.mozilla.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "www.firefox.com",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
-        ]
-      },
-      {
-        "name": "pontoon.allizom.org",
-        "asset_type": "URL",
-        "location": null,
-        "group": null,
-        "bounty_eligible": true,
-        "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -308,7 +188,107 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "aus5.mozilla.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "bugzilla.mozilla.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "crash-reports.allizom.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "crash-stats.allizom.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "firefox-ci-tc.services.mozilla.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "firefox.settings.services.mozilla.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "lando.services.mozilla.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "merino.services.mozilla.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "phabricator.allizom.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "sync.services.mozilla.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -318,7 +298,27 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "www.firefox.com",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "pontoon.allizom.org",
+        "asset_type": "URL",
+        "location": null,
+        "group": null,
+        "bounty_eligible": true,
+        "source_ids": [
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -328,13 +328,14 @@
         "group": null,
         "bounty_eligible": true,
         "source_ids": [
-          "assets-scope-2026-10-03"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "out_of_scope": [],
     "limitations": [
-      "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control."
+      "Published asset identifiers, types, submission eligibility and bounty eligibility were refreshed from the official CSV export. Policy prose, row-specific instructions and other restrictions were not re-reviewed; current official terms control.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:33Z.
+**Capture time:** 2026-11-07T19:21:23Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/chaturbate/assets/download_csv.csv>)
 
@@ -18,15 +18,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| chaturbate\.com | URL | — | — | Bounty eligible |
 | \*\.highwebmedia\.com | WILDCARD | — | — | Bounty eligible |
+| m\.chaturbate\.com | URL | — | — | Bounty eligible |
 | \*\.securegatewayaccess\.com | WILDCARD | — | — | Bounty eligible |
+| billingsupport\.chaturbate\.com | URL | — | — | Bounty eligible |
+| secure\.chaturbate\.com | URL | — | — | Bounty eligible |
 | \*\.mmcdn\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.cb\.dev | WILDCARD | — | — | Bounty eligible |
 | \*\.mmwebc\.dev | WILDCARD | — | — | Bounty eligible |
-| chaturbate\.com | URL | — | — | Bounty eligible |
-| m\.chaturbate\.com | URL | — | — | Bounty eligible |
-| billingsupport\.chaturbate\.com | URL | — | — | Bounty eligible |
-| secure\.chaturbate\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

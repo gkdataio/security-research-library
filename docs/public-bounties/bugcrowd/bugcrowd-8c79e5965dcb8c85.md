@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-07T15:03:08Z.
+**Capture time:** 2026-11-07T19:01:53Z.
 
 **Directory category:** Bug Bounty.
 
@@ -45,3 +45,4 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 **Limits**
 
 - Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research\.
+- Only public asset identifiers and explicit scope/bounty flags were refreshed automatically\. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced\. Whole-policy review dates, eligibility and restrictions were not refreshed\. Live program rules prevail; this snapshot is not testing authorization\.

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:01Z.
+**Capture time:** 2026-11-07T19:22:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/eero/assets/download_csv.csv>)
 
@@ -18,11 +18,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.eero\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.e2ro\.com | WILDCARD | — | — | Bounty eligible |
-| eero Devices | HARDWARE | — | — | Bounty eligible |
 | com\.eero\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1023499075 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| eero Devices | HARDWARE | — | — | Bounty eligible |
+| \*\.eero\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.e2ro\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

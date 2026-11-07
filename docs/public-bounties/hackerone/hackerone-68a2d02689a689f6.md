@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:38Z.
+**Capture time:** 2026-11-07T19:25:01Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/pixiv/assets/download_csv.csv>)
 
@@ -18,7 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.fanbox\.cc | WILDCARD | — | — | Bounty eligible |
 | booth\.pm | URL | — | — | Bounty eligible |
 | comic\.pixiv\.net | URL | — | — | Bounty eligible |
 | sketch\.pixiv\.net | URL | — | — | Bounty eligible |
@@ -27,6 +26,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.pixiv\.net | URL | — | — | Bounty eligible |
 | hub\.vroid\.com | URL | — | — | Bounty eligible |
 | dic\.pixiv\.net | URL | — | — | Bounty eligible |
+| \*\.fanbox\.cc | WILDCARD | — | — | Bounty eligible |
 | vroid\.com | URL | — | — | Bounty eligible |
 | payment\.pixiv\.net | URL | — | — | Bounty eligible |
 | neoket\.net | URL | — | — | Bounty eligible |
@@ -41,8 +41,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.pixiv\.co\.jp | WILDCARD | — | — | Not bounty eligible |
 | factory\.pixiv\.net | URL | — | — | Not bounty eligible |
+| \*\.pixiv\.co\.jp | WILDCARD | — | — | Not bounty eligible |
 | ads\.pixiv\.net | URL | — | — | Not bounty eligible |
 
 **Limits**

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:01Z.
+**Capture time:** 2026-11-07T19:25:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/rockstargames/assets/download_csv.csv>)
 
@@ -19,23 +19,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | socialclub\.rockstargames\.com | URL | — | — | Bounty eligible |
+| rockstarnorth\.com | URL | — | — | Bounty eligible |
 | prod\.ros\.rockstargames\.com | URL | — | — | Bounty eligible |
 | support\.rockstargames\.com | URL | — | — | Bounty eligible |
+| Rockstar Games Launcher | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | \*\.rockstargames\.com | URL | — | — | Bounty eligible |
 | store\.rockstargames\.com | URL | — | — | Bounty eligible |
-| www\.rockstargames\.com | URL | — | — | Bounty eligible |
-| rockstarnorth\.com | URL | — | — | Bounty eligible |
 | circolocorecords\.com/ | URL | — | — | Bounty eligible |
-| Rockstar Games Launcher | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| www\.rockstargames\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| lifeinvader\.com | URL | — | — | Not bounty eligible |
 | faspex\.rockstargames\.com | URL | — | — | Not bounty eligible |
 | emailcontent\.rockstargames\.com | URL | — | — | Not bounty eligible |
 | bomgar\.rockstargames\.com | URL | — | — | Not bounty eligible |
-| lifeinvader\.com | URL | — | — | Not bounty eligible |
 | any-invalid-domains\.rockstargames\.com | URL | — | — | Not bounty eligible |
 | anomotion\.com | URL | — | — | Not bounty eligible |
 

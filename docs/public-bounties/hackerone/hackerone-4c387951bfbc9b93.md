@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:32Z.
+**Capture time:** 2026-11-07T19:26:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/temu/assets/download_csv.csv>)
 
@@ -19,11 +19,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | www\.temu\.com | URL | — | — | Bounty eligible |
+| com\.einnovation\.temu | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| 1641486558 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | seller\.temu\.com | URL | — | — | Bounty eligible |
 | ads\.temu\.com | URL | — | — | Bounty eligible |
 | partner\.temu\.com | URL | — | — | Bounty eligible |
-| com\.einnovation\.temu | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 1641486558 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

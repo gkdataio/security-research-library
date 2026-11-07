@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:37Z.
+**Capture time:** 2026-11-07T19:27:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/zooplus/assets/download_csv.csv>)
 
@@ -53,8 +53,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.matina-gmbh\.de | URL | — | — | Not bounty eligible |
 | zooplus\.io | URL | — | — | Not bounty eligible |
 | www\.wolf-of-wilderness\.com | URL | — | — | Not bounty eligible |
-| https://www\.zooplus\.es/veterinarios | URL | — | — | Not bounty eligible |
 | https://www\.zooplus\.de/tierarzt | URL | — | — | Not bounty eligible |
+| https://www\.zooplus\.es/veterinarios | URL | — | — | Not bounty eligible |
 | https://www\.zooplus\.fr/veterinaire | URL | — | — | Not bounty eligible |
 | https://www\.zooplus\.hu/allatorvos | URL | — | — | Not bounty eligible |
 | https://www\.zooplus\.it/veterinari | URL | — | — | Not bounty eligible |

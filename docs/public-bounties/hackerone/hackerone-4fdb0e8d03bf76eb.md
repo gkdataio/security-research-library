@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:29Z.
+**Capture time:** 2026-11-07T19:21:21Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/chainlink/assets/download_csv.csv>)
 
@@ -18,34 +18,34 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| https://github\.com/smartcontractkit/chainlink | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/smartcontractkit/external-adapters-js/ | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/smartcontractkit/staking-v0\.1/tree/master/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
-| https://github\.com/smartcontractkit/chainlink-evm/tree/develop/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
-| https://github\.com/smartcontractkit/chainlink-solana/tree/develop/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| chain\.link | URL | — | — | Not bounty eligible |
 | Faucets | OTHER | — | — | Bounty eligible |
 | \*\.smartcontract\.com | WILDCARD | — | — | Not bounty eligible |
-| chain\.link | URL | — | — | Not bounty eligible |
+| https://github\.com/smartcontractkit/staking-v0\.1/tree/master/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/smartcontractkit/external-adapters-js/ | SOURCE\_CODE | — | — | Bounty eligible |
+| https://github\.com/smartcontractkit/chainlink-evm/tree/develop/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/smartcontractkit/chainlink-solana/tree/develop/contracts | SMART\_CONTRACT | — | — | Bounty eligible |
+| https://github\.com/smartcontractkit/chainlink | SOURCE\_CODE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (15)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| docs\.chain\.link | URL | — | — | Not bounty eligible |
-| chainlinklabs\.com | URL | — | — | Not bounty eligible |
-| blog\.chain\.link | URL | — | — | Not bounty eligible |
+| https://github\.com/smartcontractkit/chainlink | SMART\_CONTRACT | — | — | Not bounty eligible |
 | create\.smartcontract\.com | URL | — | — | Not bounty eligible |
+| docs\.chain\.link | URL | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink/tree/master/core/sgx | SOURCE\_CODE | — | — | Not bounty eligible |
+| Intercom | OTHER | — | — | Not bounty eligible |
+| https://github\.com/smartcontractkit/chainlink/tree/master/contracts | SMART\_CONTRACT | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink/tree/master/tools | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink/tree/master/integration | SOURCE\_CODE | — | — | Not bounty eligible |
 | github\.com/smartcontractkit/chainlink/examples | SOURCE\_CODE | — | — | Not bounty eligible |
 | github\.com/smartcontractkit/chainlink/contracts/src/\*/dev | SOURCE\_CODE | — | — | Not bounty eligible |
+| chainlinklabs\.com | URL | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink/tree/master/core/internal | SOURCE\_CODE | — | — | Not bounty eligible |
-| https://github\.com/smartcontractkit/chainlink | SMART\_CONTRACT | — | — | Not bounty eligible |
-| https://github\.com/smartcontractkit/chainlink/tree/master/contracts | SMART\_CONTRACT | — | — | Not bounty eligible |
+| blog\.chain\.link | URL | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink-evm/tree/develop/contracts/\.\.\./dev | SMART\_CONTRACT | — | — | Not bounty eligible |
 | https://github\.com/smartcontractkit/chainlink-solana/tree/develop/contracts/\.\.\./dev | SMART\_CONTRACT | — | — | Not bounty eligible |
-| Intercom | OTHER | — | — | Not bounty eligible |
 
 **Limits**
 

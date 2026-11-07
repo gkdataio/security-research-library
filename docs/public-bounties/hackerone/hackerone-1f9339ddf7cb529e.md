@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:05Z.
+**Capture time:** 2026-11-07T19:20:33Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/airbnb/assets/download_csv.csv>)
 
@@ -18,10 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.hoteltonight\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.airbnb\.org | WILDCARD | — | — | Bounty eligible |
-| \*\.musta\.ch | WILDCARD | — | — | Bounty eligible |
-| \*\.airbnbpayments\.com | WILDCARD | — | — | Bounty eligible |
 | www\.airbnb\.com | URL | — | — | Bounty eligible |
 | next\.airbnb\.com | URL | — | — | Bounty eligible |
 | api\.airbnb\.com | URL | — | — | Bounty eligible |
@@ -32,19 +28,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | open\.airbnb\.com | URL | — | — | Bounty eligible |
 | callbacks\.airbnb\.com | URL | — | — | Bounty eligible |
 | \*\.airbnb\.com | URL | — | — | Bounty eligible |
+| Localized airbnb sites listed at the link below: | OTHER | — | — | Bounty eligible |
 | \*\.airbnbcitizen\.com | URL | — | — | Bounty eligible |
+| com\.airbnb\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.airbnb\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.atairbnb\.com | URL | — | — | Bounty eligible |
 | \*\.withairbnb\.com | URL | — | — | Bounty eligible |
 | \*\.byairbnb\.com | URL | — | — | Bounty eligible |
 | \*\.muscache\.com | URL | — | — | Bounty eligible |
 | \*\.airbnb-aws\.com | URL | — | — | Bounty eligible |
 | \*\.luxuryretreats\.com | URL | — | — | Bounty eligible |
+| com\.luxuryretreats\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | \*\.hoteltonight-test\.com | URL | — | — | Bounty eligible |
 | www\.hoteltonight\.com | URL | — | — | Bounty eligible |
-| Localized airbnb sites listed at the link below: | OTHER | — | — | Bounty eligible |
-| com\.airbnb\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.airbnb\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.luxuryretreats\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.hoteltonight\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.airbnb\.org | WILDCARD | — | — | Bounty eligible |
+| \*\.musta\.ch | WILDCARD | — | — | Bounty eligible |
+| \*\.airbnbpayments\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (8)
 

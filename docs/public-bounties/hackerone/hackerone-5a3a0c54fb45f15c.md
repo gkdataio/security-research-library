@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:14Z.
+**Capture time:** 2026-11-07T19:24:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/moneybird/assets/download_csv.csv>)
 
@@ -20,8 +20,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | moneybird\.com | URL | — | — | Bounty eligible |
 | moneybirdstorage\.com | URL | — | — | Bounty eligible |
-| com\.moneybird\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.moneybird\.Moneybird | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.moneybird\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

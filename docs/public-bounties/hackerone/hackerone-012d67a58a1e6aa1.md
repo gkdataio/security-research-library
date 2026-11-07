@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:35Z.
+**Capture time:** 2026-11-07T19:24:55Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/paypal/assets/download_csv.csv>)
 
@@ -18,22 +18,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| 351727428 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.xoom\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.yourcompany\.PPClient | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.paypal\.merchant | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.xoom\.android\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.paypal\.merchant\.client | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.paypal\.android\.p2pmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.venmo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| www\.paypal-\*\.com | URL | — | — | Bounty eligible |
 | \*\.xoom\.com | URL | — | — | Bounty eligible |
 | \*\.paypal\.com | URL | — | — | Bounty eligible |
 | \*\.braintreegateway\.com | URL | — | — | Bounty eligible |
 | \*\.paydiant\.com | URL | — | — | Bounty eligible |
 | \*\.venmo\.com | URL | — | — | Bounty eligible |
+| paypalobjects\.com | URL | — | — | Bounty eligible |
 | paypal\.me | URL | — | — | Bounty eligible |
 | py\.pl | URL | — | — | Bounty eligible |
 | \*\.braintreepayments\.com | URL | — | — | Bounty eligible |
 | \*\.braintree-api\.com | URL | — | — | Bounty eligible |
 | \*\.braintree\.tools | URL | — | — | Bounty eligible |
-| \*\.paypalcorp\.com | URL | — | — | Bounty eligible |
-| \*\.hyperwallet\.com | URL | — | — | Bounty eligible |
-| \*\.paylution\.com | URL | — | — | Bounty eligible |
-| paypalobjects\.com | URL | — | — | Bounty eligible |
-| sandbox\.braintreegateway\.com | URL | — | — | Bounty eligible |
-| www\.paypal-\*\.com | URL | — | — | Bounty eligible |
 | prequal\.swiftfinancial\.com | URL | — | — | Bounty eligible |
 | partner\.swiftfinancial\.com | URL | — | — | Bounty eligible |
 | decision\.swiftfinancial\.com | URL | — | — | Bounty eligible |
@@ -49,30 +53,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | loanbuilder\.com | URL | — | — | Bounty eligible |
 | swiftfinancial\.com | URL | — | — | Bounty eligible |
 | swiftcapital\.com | URL | — | — | Bounty eligible |
+| \*\.paypalcorp\.com | URL | — | — | Bounty eligible |
+| \*\.hyperwallet\.com | URL | — | — | Bounty eligible |
+| \*\.paylution\.com | URL | — | — | Bounty eligible |
+| sandbox\.braintreegateway\.com | URL | — | — | Bounty eligible |
 | Braintree SDK | OTHER | — | — | Bounty eligible |
 | PayPal SDK | OTHER | — | — | Bounty eligible |
-| com\.xoom\.android\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.paypal\.merchant\.client | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.paypal\.android\.p2pmobile | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.venmo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 351727428 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.xoom\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.paypal\.merchant | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| com\.yourcompany\.PPClient | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 | Account restrictions and control bypasses - campaign | OTHER | — | — | Bounty eligible |
 
 ## Out-of-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.paypal\.cn | URL | — | — | Not bounty eligible |
-| braintree\.com | URL | — | — | Not bounty eligible |
-| www\.gopay\.com | URL | — | — | Not bounty eligible |
-| www\.paypal-support\.com | URL | — | — | Not bounty eligible |
-| \*\.atlassian\.net | OTHER | — | — | Not bounty eligible |
-| com\.paypal\.here | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | com\.paypal\.herehd | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
 | com\.paypal\.here | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| com\.paypal\.here | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
+| \*\.paypal\.cn | URL | — | — | Not bounty eligible |
+| braintree\.com | URL | — | — | Not bounty eligible |
+| \*\.atlassian\.net | OTHER | — | — | Not bounty eligible |
+| www\.gopay\.com | URL | — | — | Not bounty eligible |
+| www\.paypal-support\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

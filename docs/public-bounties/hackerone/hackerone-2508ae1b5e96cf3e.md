@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:29Z.
+**Capture time:** 2026-11-07T19:26:21Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/superbet/assets/download_csv.csv>)
 
@@ -22,6 +22,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.superbet\.rs | WILDCARD | — | — | Bounty eligible |
 | \*\.superbet\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.spinaway\.com | WILDCARD | — | — | Bounty eligible |
+| ro\.superbet\.sport | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| ro\.superbet\.games | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.luckydays\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.luckydays\.ca | WILDCARD | — | — | Bounty eligible |
 | \*\.napoleoncasino\.be | WILDCARD | — | — | Bounty eligible |
@@ -29,9 +31,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.napoleongames\.be | WILDCARD | — | — | Bounty eligible |
 | \*\.napoleonsports\.be | WILDCARD | — | — | Bounty eligible |
 | \*\.superbet\.pl | WILDCARD | — | — | Bounty eligible |
-| \*\.happening\.dev | WILDCARD | — | — | Bounty eligible |
-| \*\.superbet\.gr | WILDCARD | — | — | Bounty eligible |
-| \*\.super\.xyz | WILDCARD | — | — | Bounty eligible |
 | superbet\.bet\.br | URL | — | — | Bounty eligible |
 | https://napoleoncasino\.be/en-be/game/hogamba-crash?demo=false | URL | — | — | Bounty eligible |
 | https://superbet\.ro | URL | — | — | Bounty eligible |
@@ -41,11 +40,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://napoleondice\.be | URL | — | — | Bounty eligible |
 | https://napoleongames\.be | URL | — | — | Bounty eligible |
 | https://superbet\.rs | URL | — | — | Bounty eligible |
-| https://super\.xyz | URL | — | — | Bounty eligible |
 | WGP Slot Games | OTHER | — | — | Bounty eligible |
 | https://napoleoncasino\.be/nl-be/game/plinko-napoleon?demo=false | OTHER | — | — | Bounty eligible |
-| ro\.superbet\.sport | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| ro\.superbet\.games | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| \*\.happening\.dev | WILDCARD | — | — | Bounty eligible |
+| \*\.superbet\.gr | WILDCARD | — | — | Bounty eligible |
+| \*\.super\.xyz | WILDCARD | — | — | Bounty eligible |
+| https://super\.xyz | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (16)
 

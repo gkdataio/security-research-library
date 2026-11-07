@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:54:54Z.
+**Capture time:** 2026-11-07T19:23:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/koho/assets/download_csv.csv>)
 
@@ -19,23 +19,23 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | web\.koho\.ca | URL | — | — | Bounty eligible |
+| www\.koho\.ca | URL | — | — | Bounty eligible |
 | http://api\.koho\.ca/1\.0 | URL | — | — | Bounty eligible |
 | http://api\.koho\.ca/partner | URL | — | — | Bounty eligible |
-| app\.koho\.ca | URL | — | — | Bounty eligible |
-| login\.koho\.ca | URL | — | — | Bounty eligible |
-| www\.koho\.ca | URL | — | — | Bounty eligible |
 | usercontent\.koho\.ca | URL | — | — | Bounty eligible |
+| app\.koho\.ca | URL | — | — | Bounty eligible |
+| 1091010942 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| ca\.koho | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| login\.koho\.ca | URL | — | — | Bounty eligible |
 | assets\.koho\.ca | URL | — | — | Bounty eligible |
 | clicks\.koho\.ca | URL | — | — | Bounty eligible |
-| ca\.koho | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| 1091010942 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.line-of-credit\.koho\.ca | WILDCARD | — | — | Not bounty eligible |
 | \*\.koho\.ca/cdn-cgi | WILDCARD | — | — | Not bounty eligible |
+| \*\.line-of-credit\.koho\.ca | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

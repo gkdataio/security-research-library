@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:36Z.
+**Capture time:** 2026-11-07T19:21:29Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/clear/assets/download_csv.csv>)
 
@@ -24,26 +24,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | web-edge\.clearme\.com | URL | — | — | Bounty eligible |
 | my\.clearme\.com | URL | — | — | Bounty eligible |
 | mobile\.clearme\.com | URL | — | — | Bounty eligible |
+| com\.clearme\.clearapp | OTHER\_APK | — | — | Bounty eligible |
+| com\.clearme\.Clear | OTHER\_IPA | — | — | Bounty eligible |
+| clearme\.atlassian\.net | URL | — | — | Bounty eligible |
 | ir\.clearme\.com | URL | — | — | Bounty eligible |
 | scan\.clearme\.com | URL | — | — | Bounty eligible |
 | authentication\.clearme\.com | URL | — | — | Bounty eligible |
 | verified\.clearme\.com | URL | — | — | Bounty eligible |
+| verified\.clearme\.com/v1/verification\_sessions | API | — | — | Bounty eligible |
 | concierge\.clearme\.com | URL | — | — | Bounty eligible |
 | identity\.clearme\.com | URL | — | — | Bounty eligible |
 | http://verified\.clearme\.com/dashboard | URL | — | — | Bounty eligible |
-| clearme\.atlassian\.net | URL | — | — | Bounty eligible |
-| com\.clearme\.Clear | OTHER\_IPA | — | — | Bounty eligible |
-| com\.clearme\.clearapp | OTHER\_APK | — | — | Bounty eligible |
-| verified\.clearme\.com/v1/verification\_sessions | API | — | — | Bounty eligible |
 
 ## Out-of-scope entries (4)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| fieldsupport\.clearme\.com | URL | — | — | Not bounty eligible |
-| docs\.clearme\.com | URL | — | — | Not bounty eligible |
 | hub\.clearme\.com | URL | — | — | Not bounty eligible |
+| fieldsupport\.clearme\.com | URL | — | — | Not bounty eligible |
 | legal\.clearme\.com | URL | — | — | Not bounty eligible |
+| docs\.clearme\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

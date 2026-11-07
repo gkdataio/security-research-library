@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:57Z.
+**Capture time:** 2026-11-07T19:22:07Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/doordash/assets/download_csv.csv>)
 
@@ -28,12 +28,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | \*\.dashapi\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.doorcrawl\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.order\.online | WILDCARD | — | — | Not bounty eligible |
-| doordash\.com/unified-gateway/\* | WILDCARD | — | — | Not bounty eligible |
-| doordash\.com/orders/drive/\* | WILDCARD | — | — | Not bounty eligible |
 | http://help\.doordash\.com | URL | — | — | Not bounty eligible |
+| \*\.order\.online | WILDCARD | — | — | Not bounty eligible |
+| DoorDash Payments | OTHER | — | — | Not bounty eligible |
 | careersatdoordash\.com | URL | — | — | Not bounty eligible |
 | ir\.doordash\.com | URL | — | — | Not bounty eligible |
+| doordash\.com/unified-gateway/\* | WILDCARD | — | — | Not bounty eligible |
 | unified-gateway\.doordash\.com | URL | — | — | Not bounty eligible |
 | consumer-mobile-bff\.doordash\.com | URL | — | — | Not bounty eligible |
 | merchant-mobile-bff\.doordash\.com | URL | — | — | Not bounty eligible |
@@ -41,7 +41,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://doordash\.com/merchant | URL | — | — | Not bounty eligible |
 | track\.doordash\.com | URL | — | — | Not bounty eligible |
 | internal\.doordash\.com | URL | — | — | Not bounty eligible |
-| DoorDash Payments | OTHER | — | — | Not bounty eligible |
+| doordash\.com/orders/drive/\* | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

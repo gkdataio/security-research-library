@@ -79,11 +79,11 @@
       "access_method": "text"
     },
     {
-      "id": "assets-scope-2026-11-07",
-      "title": "Published Bugcrowd scope groups",
+      "id": "automated-public-asset-scope",
+      "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json",
-      "publisher": "OpenAI",
-      "retrieved_at": "2026-11-07T15:03:05Z",
+      "publisher": "Bugcrowd",
+      "retrieved_at": "2026-11-07T19:07:01Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -100,9 +100,9 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T15:03:05Z",
+    "verified_at": "2026-11-07T19:07:01Z",
     "source_ids": [
-      "assets-scope-2026-11-07"
+      "automated-public-asset-scope"
     ],
     "in_scope": [
       {
@@ -111,7 +111,7 @@
         "location": "https://chatgpt.com",
         "group": "ChatGPT Services",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -120,7 +120,7 @@
         "location": "https://chat.openai.com",
         "group": "ChatGPT Services",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -129,7 +129,7 @@
         "location": "https://api.openai.com",
         "group": "API Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -138,7 +138,7 @@
         "location": "https://platform.openai.com/playground",
         "group": "API Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -147,7 +147,7 @@
         "location": null,
         "group": "ChatGPT Desktop & Codex CLI",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -156,7 +156,7 @@
         "location": null,
         "group": "ChatGPT Desktop & Codex CLI",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -165,7 +165,7 @@
         "location": "https://openai.com/",
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -174,7 +174,7 @@
         "location": "https://*.openai.org",
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -183,7 +183,7 @@
         "location": null,
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -192,7 +192,7 @@
         "location": null,
         "group": "Other OpenAI Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -201,7 +201,7 @@
         "location": null,
         "group": "Third Party Corporate Targets",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       },
       {
@@ -210,13 +210,14 @@
         "location": null,
         "group": "OpenAI API Keys",
         "source_ids": [
-          "assets-scope-2026-11-07"
+          "automated-public-asset-scope"
         ]
       }
     ],
     "out_of_scope": [],
     "limitations": [
-      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research."
+      "Published target group rows were captured; group descriptions, rules and exclusions may further narrow permitted research.",
+      "Only public asset identifiers and explicit scope/bounty flags were refreshed automatically. Per-asset instruction prose, severity, group descriptions and rules may further restrict permission and are not reproduced. Whole-policy review dates, eligibility and restrictions were not refreshed. Live program rules prevail; this snapshot is not testing authorization."
     ]
   }
 }

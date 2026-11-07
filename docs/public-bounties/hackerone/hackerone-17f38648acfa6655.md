@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:52:54Z.
+**Capture time:** 2026-11-07T19:20:19Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/23andme_bbp/assets/download_csv.csv>)
 
@@ -26,6 +26,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | 23andme\.org/clinicians | URL | — | — | Bounty eligible |
 | store\.23andme\.org | URL | — | — | Bounty eligible |
 | you\.23andme\.com | URL | — | — | Bounty eligible |
+| 23andme\.org/research | URL | — | — | Bounty eligible |
 | www\.23andme\.org | URL | — | — | Bounty eligible |
 | merch\.23andme\.com | URL | — | — | Bounty eligible |
 | portal\.23andme\.com | URL | — | — | Bounty eligible |
@@ -35,7 +36,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | trust\.23andme\.com | URL | — | — | Bounty eligible |
 | 23andmeresearchinstitute\.org | URL | — | — | Bounty eligible |
 | refer\.23andme\.com | URL | — | — | Bounty eligible |
-| 23andme\.org/research | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

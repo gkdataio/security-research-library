@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:40Z.
+**Capture time:** 2026-11-07T19:26:39Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/trip_com/assets/download_csv.csv>)
 
@@ -19,8 +19,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.trip\.com | WILDCARD | — | — | Bounty eligible |
+| &lt;locale&gt;\.trip\.com | OTHER | — | — | Bounty eligible |
+| com\.trip\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.trip\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | \*\.travix\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.travix\.io | WILDCARD | — | — | Bounty eligible |
+| \*\.staging\.travix\.com | OTHER | — | — | Not bounty eligible |
 | \*\.trainpal\.com,\*\.mytrainpal\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.cheaptickets\.nl | WILDCARD | — | — | Bounty eligible |
 | \*\.triplinkintl\.com | WILDCARD | — | — | Bounty eligible |
@@ -30,10 +34,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.vayama\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.vliegwinkel\.nl | WILDCARD | — | — | Bounty eligible |
 | \*\.trip\.biz | WILDCARD | — | — | Bounty eligible |
-| &lt;locale&gt;\.trip\.com | OTHER | — | — | Bounty eligible |
-| com\.trip\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.trip\.ios | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| \*\.staging\.travix\.com | OTHER | — | — | Not bounty eligible |
 
 ## Out-of-scope entries (4)
 

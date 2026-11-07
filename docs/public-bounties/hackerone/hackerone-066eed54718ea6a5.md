@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:19Z.
+**Capture time:** 2026-11-07T19:27:21Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/wisdomtree/assets/download_csv.csv>)
 
@@ -19,11 +19,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | api\.wisdomtreeprimeapp\.com | URL | — | — | Bounty eligible |
+| com\.wisdomtree\.wtprime | TESTFLIGHT | — | — | Bounty eligible |
+| com\.wisdomtree\.wtprime | OTHER\_APK | — | — | Bounty eligible |
 | https://app\.wisdomtreeconnect\.com/api/ | URL | — | — | Bounty eligible |
 | https://app\.wisdomtreeconnect\.com/o/token/ | URL | — | — | Bounty eligible |
 | https://app\.wisdomtreeconnect\.com | URL | — | — | Bounty eligible |
-| com\.wisdomtree\.wtprime | TESTFLIGHT | — | — | Bounty eligible |
-| com\.wisdomtree\.wtprime | OTHER\_APK | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 

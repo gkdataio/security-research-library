@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:23Z.
+**Capture time:** 2026-11-07T19:27:23Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/wolt/assets/download_csv.csv>)
 
@@ -18,7 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.wolt\.com | WILDCARD | — | — | Bounty eligible |
 | authentication\.wolt\.com | URL | — | — | Bounty eligible |
 | corporate\.wolt\.com | URL | — | — | Bounty eligible |
 | drive\.wolt\.com | URL | — | — | Bounty eligible |
@@ -30,23 +29,24 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.wolt\.courierapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1477299281 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 943905271 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| \*\.wolt\.com | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.pipedrive\.com | WILDCARD | — | — | Not bounty eligible |
+| wolt\.atlassian\.net | URL | — | — | Not bounty eligible |
+| press\.wolt\.com | URL | — | — | Not bounty eligible |
+| links\.wolt\.com | URL | — | — | Not bounty eligible |
 | gettest\.wolt\.com | URL | — | — | Not bounty eligible |
+| blog\.wolt\.com | URL | — | — | Not bounty eligible |
+| \*\.pipedrive\.com | WILDCARD | — | — | Not bounty eligible |
 | https://merchant\.wolt\.com/api/merchant-onboarding/merchant-admin/inbound-merchant | URL | — | — | Not bounty eligible |
 | https://restaurant-api\.wolt\.com/v1/waw-api/corporate-leads | URL | — | — | Not bounty eligible |
 | https://merchant-onboarding-service\.wolt\.com/merchant-admin/inbound-merchant | URL | — | — | Not bounty eligible |
 | https://wolt\.com/en/wolt-for-work-contact-request | URL | — | — | Not bounty eligible |
 | https://merchant\.wolt\.com/app/partner-with-wolt | URL | — | — | Not bounty eligible |
 | https://wolt\.typeform\.com | URL | — | — | Not bounty eligible |
-| wolt\.atlassian\.net | URL | — | — | Not bounty eligible |
-| press\.wolt\.com | URL | — | — | Not bounty eligible |
-| links\.wolt\.com | URL | — | — | Not bounty eligible |
-| blog\.wolt\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

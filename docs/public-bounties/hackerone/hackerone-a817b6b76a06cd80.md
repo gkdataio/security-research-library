@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:56:40Z.
+**Capture time:** 2026-11-07T19:26:37Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/trendyol/assets/download_csv.csv>)
 
@@ -20,15 +20,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | www\.trendyol\.com | URL | — | — | Bounty eligible |
 | www\.dolap\.com | URL | — | — | Bounty eligible |
-| www\.trendyol-milla\.com | URL | — | — | Bounty eligible |
-| www\.tgoyemek\.com | URL | — | — | Bounty eligible |
-| trendyol\.com | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.dolap\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.trendyol\.milla\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.trendyol\.go | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 524362642 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 1127881507 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| trendyol\.com | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.dolap\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| www\.trendyol-milla\.com | URL | — | — | Bounty eligible |
 | 6467634418 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| com\.trendyol\.milla\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| www\.tgoyemek\.com | URL | — | — | Bounty eligible |
+| com\.trendyol\.go | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

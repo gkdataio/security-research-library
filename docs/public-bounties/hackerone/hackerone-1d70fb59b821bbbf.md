@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:38Z.
+**Capture time:** 2026-11-07T19:25:03Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/plaid/assets/download_csv.csv>)
 
@@ -20,13 +20,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | production\.plaid\.com | URL | — | — | Bounty eligible |
 | dashboard\.plaid\.com | URL | — | — | Bounty eligible |
-| cdn\.plaid\.com | URL | — | — | Bounty eligible |
-| my\.plaid\.com | URL | — | — | Bounty eligible |
-| secure\.plaid\.com | URL | — | — | Bounty eligible |
 | demo\.plaid\.com | URL | — | — | Bounty eligible |
-| plaid\.com | URL | — | — | Bounty eligible |
+| cdn\.plaid\.com | URL | — | — | Bounty eligible |
 | https://github\.com/plaid/plaid-link-ios | SOURCE\_CODE | — | — | Bounty eligible |
+| my\.plaid\.com | URL | — | — | Bounty eligible |
 | https://github\.com/plaid/plaid-link-android | SOURCE\_CODE | — | — | Bounty eligible |
+| secure\.plaid\.com | URL | — | — | Bounty eligible |
+| plaid\.com | URL | — | — | Bounty eligible |
 | https://github\.com/plaid/plaid-ruby | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/plaid/react-native-plaid-link-sdk | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/plaid/react-plaid-link | SOURCE\_CODE | — | — | Bounty eligible |

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:14Z.
+**Capture time:** 2026-11-07T19:24:15Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/modern_treasury/assets/download_csv.csv>)
 
@@ -28,9 +28,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.moderntreasury\.com | URL | — | — | Not bounty eligible |
 | docs\.moderntreasury\.com | URL | — | — | Not bounty eligible |
 | trust\.moderntreasury\.com | URL | — | — | Not bounty eligible |
-| http://app\.moderntreasury\.com/tell\_us\_more | URL | — | — | Not bounty eligible |
 | help\.moderntreasury\.com | URL | — | — | Not bounty eligible |
 | ph\.moderntreasury\.com | URL | — | — | Not bounty eligible |
+| http://app\.moderntreasury\.com/tell\_us\_more | URL | — | — | Not bounty eligible |
 
 **Limits**
 

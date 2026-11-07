@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:43Z.
+**Capture time:** 2026-11-07T19:21:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/compass-bbp/assets/download_csv.csv>)
 
@@ -26,6 +26,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| http://www\.compass\.com/contact/ | URL | — | — | Not bounty eligible |
+| http://www\.compass\.com/api/v3/lead\_forms/agent\_profile | URL | — | — | Not bounty eligible |
+| Christie’s International Real Estate | OTHER | — | — | Not bounty eligible |
+|  @properties | OTHER | — | — | Not bounty eligible |
+| glide\.com | URL | — | — | Not bounty eligible |
+| \*\.ctccal\.com | WILDCARD | — | — | Not bounty eligible |
+| Consumer’s Title of California  | OTHER | — | — | Not bounty eligible |
+| \*\.chartwellescrow\.com | WILDCARD | — | — | Not bounty eligible |
+| Chartwell | OTHER | — | — | Not bounty eligible |
+| \*\.legacytexastitle\.com | WILDCARD | — | — | Not bounty eligible |
+| LegacyTexas Title | OTHER | — | — | Not bounty eligible |
+| \*\.firstalliancetitle\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.sqstitle\.com | WILDCARD | — | — | Not bounty eligible |
+| SQS Square Settlements | OTHER | — | — | Not bounty eligible |
+| \*\.attorneyskeytitle\.com | WILDCARD | — | — | Not bounty eligible |
+| \*\.kvstitle\.com | WILDCARD | — | — | Not bounty eligible |
+| KVS Title  | OTHER | — | — | Not bounty eligible |
+| Glide  | OTHER | — | — | Not bounty eligible |
+| \*\.anywhere\.re | WILDCARD | — | — | Not bounty eligible |
+| \*\.trgc\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.sothebysrealty\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.realogy\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.nrtllc\.com | WILDCARD | — | — | Not bounty eligible |
@@ -40,29 +60,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.cartus\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.c21\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.bhgre\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.porchlightgroup\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.ctccal\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.chartwellescrow\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.legacytexastitle\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.firstalliancetitle\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.sqstitle\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.attorneyskeytitle\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.kvstitle\.com | WILDCARD | — | — | Not bounty eligible |
-| \*\.anywhere\.re | WILDCARD | — | — | Not bounty eligible |
-| \*\.trgc\.com | WILDCARD | — | — | Not bounty eligible |
-| http://www\.compass\.com/contact/ | URL | — | — | Not bounty eligible |
-| http://www\.compass\.com/api/v3/lead\_forms/agent\_profile | URL | — | — | Not bounty eligible |
 | century21\.hk | URL | — | — | Not bounty eligible |
 | c21\.hk | URL | — | — | Not bounty eligible |
-| glide\.com | URL | — | — | Not bounty eligible |
-| Christie’s International Real Estate | OTHER | — | — | Not bounty eligible |
-| Chartwell | OTHER | — | — | Not bounty eligible |
-| LegacyTexas Title | OTHER | — | — | Not bounty eligible |
-| SQS Square Settlements | OTHER | — | — | Not bounty eligible |
-|  @properties | OTHER | — | — | Not bounty eligible |
-| Consumer’s Title of California  | OTHER | — | — | Not bounty eligible |
-| KVS Title  | OTHER | — | — | Not bounty eligible |
-| Glide  | OTHER | — | — | Not bounty eligible |
+| \*\.porchlightgroup\.com | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

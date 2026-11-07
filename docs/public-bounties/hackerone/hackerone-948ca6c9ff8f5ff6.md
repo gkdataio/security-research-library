@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:11Z.
+**Capture time:** 2026-11-07T19:27:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/visa/assets/download_csv.csv>)
 
@@ -18,7 +18,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*\.visamiddleeast\.com | WILDCARD | — | — | Bounty eligible |
 | bd\.visa\.com | URL | — | — | Bounty eligible |
 | www\.visa\.com\.br | URL | — | — | Bounty eligible |
 | www\.visa\.com\.mx | URL | — | — | Bounty eligible |
@@ -66,12 +65,14 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | developer\.visa\.com | URL | — | — | Bounty eligible |
 | test\.payworks\.io | URL | — | — | Bounty eligible |
 | console\.tink\.com | URL | — | — | Bounty eligible |
+| developer\.currencycloud\.com | URL | — | — | Bounty eligible |
 | direct-demo\.currencycloud\.com | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/listmanager | URL | — | — | Bounty eligible |
 | https://www\.visa\.com\.az/az\_az/account/registration | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/merchant-mgmt/ | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/ums | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/cds/ | URL | — | — | Bounty eligible |
+| www\.visa\.fr | URL | — | — | Bounty eligible |
 | my\.visa\.fr | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/CGK2 | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/bin | URL | — | — | Bounty eligible |
@@ -108,11 +109,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://ebctest\.cybersource\.com/kms/ | URL | — | — | Bounty eligible |
 | www\.trialpay\.com | URL | — | — | Bounty eligible |
 | vwcm\.visa\.com | URL | — | — | Bounty eligible |
+| \*\.prod\.innovexperiments\.com | OTHER | — | — | Bounty eligible |
 | capability\.prod\.innovexperiments\.com | URL | — | — | Bounty eligible |
+| vgov\.catalogue\.digitalcontrolroom\.com | URL | — | — | Bounty eligible |
+| myvu\.visauniversity\.com | URL | — | — | Bounty eligible |
+| codeofconduct\.visa\.com | URL | — | — | Bounty eligible |
+| visainnovationprogram\.com | URL | — | — | Bounty eligible |
 | visasgic\.api-xperience\.com | URL | — | — | Bounty eligible |
 | sap\.api-xperience\.com | URL | — | — | Bounty eligible |
 | vasdemos\.visa\.com | URL | — | — | Bounty eligible |
 | dwy\.visa\.com | URL | — | — | Bounty eligible |
+| visaonchainanalytics\.com | URL | — | — | Bounty eligible |
+| developers\.pismo\.io | URL | — | — | Bounty eligible |
 | admin-portal\.api-xperience\.com | URL | — | — | Bounty eligible |
 | testbank\.xs2a\.com | URL | — | — | Bounty eligible |
 | askpeopleteam\.visa\.com | URL | — | — | Bounty eligible |
@@ -120,6 +128,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://ebctest\.cybersource\.com/pbl | URL | — | — | Bounty eligible |
 | survey\.visa\.com | URL | — | — | Bounty eligible |
 | www\.visa\.com\.ru | URL | — | — | Bounty eligible |
+| forms\.cybersource\.com | URL | — | — | Bounty eligible |
 | www\.visa\.co\.cr | URL | — | — | Bounty eligible |
 | www\.visa\.co\.ni | URL | — | — | Bounty eligible |
 | www\.visa\.com\.bo | URL | — | — | Bounty eligible |
@@ -170,19 +179,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://ebctest\.cybersource\.com/underwriting | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/bos | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/vroom | URL | — | — | Bounty eligible |
+| \*\.visamiddleeast\.com | WILDCARD | — | — | Bounty eligible |
 | developer\.plus\.authorize\.net | URL | — | — | Bounty eligible |
 | sandbox\.developer\.plus\.authorize\.net | URL | — | — | Bounty eligible |
 | https://www\.currencycloud\.com/ | URL | — | — | Bounty eligible |
-| developer\.currencycloud\.com | URL | — | — | Bounty eligible |
-| www\.visa\.fr | URL | — | — | Bounty eligible |
-| vgov\.catalogue\.digitalcontrolroom\.com | URL | — | — | Bounty eligible |
-| myvu\.visauniversity\.com | URL | — | — | Bounty eligible |
-| codeofconduct\.visa\.com | URL | — | — | Bounty eligible |
-| visainnovationprogram\.com | URL | — | — | Bounty eligible |
-| visaonchainanalytics\.com | URL | — | — | Bounty eligible |
-| developers\.pismo\.io | URL | — | — | Bounty eligible |
-| forms\.cybersource\.com | URL | — | — | Bounty eligible |
-| \*\.prod\.innovexperiments\.com | OTHER | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/varm | URL | — | — | Bounty eligible |
 | https://ebc2test\.cybersource\.com/settings | URL | — | — | Bounty eligible |
 | http://test\.payworks\.io/uis/mngr/ | URL | — | — | Bounty eligible |

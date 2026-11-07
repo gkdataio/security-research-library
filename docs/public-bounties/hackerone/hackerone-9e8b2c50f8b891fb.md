@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:57:11Z.
+**Capture time:** 2026-11-07T19:27:07Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/vodafone_oman/assets/download_csv.csv>)
 
@@ -23,8 +23,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | vfo01\.vodafone\.om | URL | — | — | Bounty eligible |
 | vfo02\.vodafone\.om | URL | — | — | Bounty eligible |
 | vfo03\.vodafone\.om | URL | — | — | Bounty eligible |
-| om\.vodafone\.mva | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1589071345 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| om\.vodafone\.mva | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (0)
 

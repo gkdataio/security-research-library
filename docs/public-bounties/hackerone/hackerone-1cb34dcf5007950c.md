@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:53:02Z.
+**Capture time:** 2026-11-07T19:20:27Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/acronis/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| \*-api-\*\.acronis\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.acronis\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.5nine\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.devicelock\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.acronis\.work | WILDCARD | — | — | Bounty eligible |
 | beta-cloud\.acronis\.com | URL | — | — | Bounty eligible |
-| account\.acronis\.com | URL | — | — | Bounty eligible |
-| Acronis Cyber Infrastructure | OTHER | — | — | Bounty eligible |
+| \*-api-\*\.acronis\.com | WILDCARD | — | — | Bounty eligible |
 | Other Acronis Domains | OTHER | — | — | Bounty eligible |
+| Acronis Agent | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| 1118448159 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| 978342143 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.acronis\.acronistrueimage | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.acronis\.abc | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| Acronis Agent | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Acronis Cyber Protect | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| \*\.acronis\.com | WILDCARD | — | — | Bounty eligible |
+| account\.acronis\.com | URL | — | — | Bounty eligible |
+| 1192506963 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
+| Acronis Cyber Infrastructure | OTHER | — | — | Bounty eligible |
+| \*\.5nine\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.devicelock\.com | WILDCARD | — | — | Bounty eligible |
 | Acronis DeviceLock DLP | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Acronis Snap Deploy | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
+| \*\.acronis\.work | WILDCARD | — | — | Bounty eligible |
 | Other Acronis executables | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Acronis Cloud Manager | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
 | Acronis True Image \(formerly Acronis Cyber Protect Home Office\) | DOWNLOADABLE\_EXECUTABLES | — | — | Bounty eligible |
-| 1118448159 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 978342143 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
-| 1192506963 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T14:55:07Z.
+**Capture time:** 2026-11-07T19:24:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/matomo/assets/download_csv.csv>)
 
@@ -18,27 +18,27 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| matomo\.cloud | URL | — | — | Bounty eligible |
-| https://github\.com/matomo-org/docker | URL | — | — | Bounty eligible |
 | https://github\.com/matomo-org/matomo | SOURCE\_CODE | — | — | Bounty eligible |
 | https://plugins\.matomo\.org/developer/matomo-org | SOURCE\_CODE | — | — | Bounty eligible |
 | https://plugins\.matomo\.org/developer/innocraft | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/matomo-org | SOURCE\_CODE | — | — | Bounty eligible |
 | https://github\.com/innocraft/ | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/matomo-org/tracker-proxy | SOURCE\_CODE | — | — | Bounty eligible |
-| https://github\.com/matomo-org/developer-documentation | SOURCE\_CODE | — | — | Bounty eligible |
+| matomo\.cloud | URL | — | — | Bounty eligible |
 | org\.piwik\.mobile2 | GOOGLE\_PLAY\_APP\_ID | — | — | Not bounty eligible |
 | 737216887 | APPLE\_STORE\_APP\_ID | — | — | Not bounty eligible |
+| https://github\.com/matomo-org/docker | URL | — | — | Bounty eligible |
+| https://github\.com/matomo-org/tracker-proxy | SOURCE\_CODE | — | — | Bounty eligible |
+| https://github\.com/matomo-org/developer-documentation | SOURCE\_CODE | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| plugins\.matomo\.org | URL | — | — | Not bounty eligible |
 | api\.matomo\.org | URL | — | — | Not bounty eligible |
 | matomo\.org | URL | — | — | Not bounty eligible |
 | forum\.matomo\.org | URL | — | — | Not bounty eligible |
 | shop\.matomo\.org | URL | — | — | Not bounty eligible |
-| plugins\.matomo\.org | URL | — | — | Not bounty eligible |
 
 **Limits**
 
