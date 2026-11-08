@@ -80,7 +80,7 @@
       "title": "Current published public asset table",
       "url": "https://hackerone.com/teams/arc-bbp/assets/download_csv.csv",
       "publisher": "HackerOne",
-      "retrieved_at": "2026-11-07T19:20:45Z",
+      "retrieved_at": "2026-11-08T14:14:21Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -88,7 +88,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T19:20:45Z",
+    "verified_at": "2026-11-08T14:14:21Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

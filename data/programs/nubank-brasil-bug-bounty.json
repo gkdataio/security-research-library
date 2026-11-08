@@ -105,7 +105,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-07T19:06:17Z",
+      "retrieved_at": "2026-11-08T13:59:39Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -126,7 +126,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-07T19:06:17Z",
+    "verified_at": "2026-11-08T13:59:39Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

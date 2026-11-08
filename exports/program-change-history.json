@@ -12169,6 +12169,34 @@
           ]
         }
       ]
+    },
+    {
+      "id": "2641aee177bac68f4ebe7998668081e598c2ca6ef9ad3826fa6ec79dca7f7030",
+      "recorded_at": "2026-11-08T14:25:45Z",
+      "baseline_commit": "21ab3ddecad26b978050c2a6faabd3ddcaeb3357",
+      "baseline_digest": "becf04a9eec6c413f7f1167b26f89b04bc239922278e06c0302a1df92b615339",
+      "current_digest": "ca0b1f0e8251875220bec580b75dabc9409ba0b26f497d6d624648c67dd839e4",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-24bb0555751df42e",
+          "name": "FEDERAL MARITIME COMMISSION - VDP",
+          "platform": "Bugcrowd",
+          "program_url": "https://gov.bugcrowd.net/engagements/fmc-vdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2022-05-05T17:02:38.000Z",
+              "after": "2026-10-06T18:37:05.718Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://gov.bugcrowd.net/engagements/fmc-vdp/changelog/e37325ec-2b1a-4eca-83e4-9a58571e2cb3.json",
+              "after": "https://gov.bugcrowd.net/engagements/fmc-vdp/changelog/a5541c5b-ca6d-43f5-8c29-d222f73eb212.json"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

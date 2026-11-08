@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T19:27:37Z.
+**Capture time:** 2026-11-08T14:21:13Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/yuga_labs/assets/download_csv.csv>)
 

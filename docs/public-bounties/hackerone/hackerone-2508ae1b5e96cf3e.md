@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-07T19:26:21Z.
+**Capture time:** 2026-11-08T14:19:57Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/superbet/assets/download_csv.csv>)
 
