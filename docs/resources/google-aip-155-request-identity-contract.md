@@ -7,7 +7,7 @@
 <a id="original-summary"></a>
 ## Main takeaway
 
-Google's approved request-ID guidance defines how services recognize retries for a service-defined retention period: a duplicate should receive the earlier success response, with a documented exception allowing the current resource state\. AWS's supporting article adds guidance on scoping IDs to callers, keeping response meaning consistent, recording IDs and effects together, and rejecting reuse for a changed intent\. Those AWS recommendations are separate from Google's requirements\.
+Google's approved request-ID guidance lets each service choose how long it recognizes retries\. A duplicate should receive the earlier success response\. If reproducing that response is infeasible, the service may return the resource's current state\. The supporting AWS article recommends matching both caller and request ID, returning responses with the same meaning, and recording the ID and applying the request's changes as one atomic operation\. It also recommends rejecting reuse of an ID with different parameters\. These AWS recommendations are separate from Google's requirements\.
 
 ## Defensive use
 
