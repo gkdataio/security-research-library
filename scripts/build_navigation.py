@@ -189,8 +189,12 @@ def build(root=ROOT):
                   f'Evidence level: {text(reward["evidence_level"])}. {text(reward["notes"] or "")}', '',
                   'Exact source quotation and location remain in the '+link('canonical record', '../../data/reports/'+rid+'.json')+'.', '', '## Dates', '',
                   'Publication window: '+('within the preferred 12-month window' if rec['recency']['within_preferred_window'] is True else 'historical / outside the preferred window' if rec['recency']['within_preferred_window'] is False else 'uncertain original publication date')+'; reviewed as of '+text(rec['recency']['as_of'])+'.', '']
+        sources = {source['id']: source for source in rec['sources']}
         for name, date in rec['dates'].items():
-            lines.append(f'- **{text(name.replace("_", " "))}:** {text(date["value"] or "Unknown")}; precision: {text(date["precision"] or "unknown")}; basis: {text(date["basis"])}'+ ('. '+text(date['note']) if date['note'] else ''))
+            source = sources.get(date['source_id'])
+            provenance = (link(source['title'], source['url'])+' (source ID: '+text(source['id'])+')') if source else 'Not recorded'
+            lines.append(f'- **{text(name.replace("_", " "))}:** {text(date["value"] or "Unknown")}; precision: {text(date["precision"] or "unknown")}; basis: {text(date["basis"])}'+
+                         '; source: '+provenance+'.'+(' '+text(date['note']) if date['note'] else ''))
         lines += ['', '## Verification limits', '', f'Reviewed: {text(rec["verification"]["reviewed_at"])}. {text(rec["verification"]["method"])}', '']
         lines += ['- '+text(v) for v in rec['verification']['limitations']]
         related = [d for d in diagrams if rid in d['linked_report_ids']]
@@ -198,7 +202,7 @@ def build(root=ROOT):
             lines += ['', '## Related conceptual diagrams', '']
             lines += ['- '+link(d['title'], '../diagram-gallery.md#'+d['id']) for d in related]
         lines += ['', '## Sources and attribution', '']
-        lines += ['- '+link(s['title'], s['url'])+f' — {text(s["author"])}; retrieved {text(s["retrieved_at"])}.' for s in rec['sources']]
+        lines += ['- '+link(s['title'], s['url'])+f' — {text(s["author"])}; source ID: {text(s["id"])}; retrieved {text(s["retrieved_at"])}.' for s in rec['sources']]
         lines += ['', 'Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).', '']
         pages['docs/reports/'+rid+'.md'] = '\n'.join(lines)
     pages['docs/reports.md'] = '\n'.join(index)+ '\n'

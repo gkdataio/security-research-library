@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. The primary researcher page does not supply a publication date; no exact date is inferred\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2021-07; precision: month; basis: explicit
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The primary researcher page does not supply a publication date; no exact date is inferred\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2021-07; precision: month; basis: explicit; source: [iCloud sharing consent and Safari trust boundaries failed together](<https://www.ryanpickren.com/safari-uxss>) (source ID: primary).
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,8 +59,8 @@ Reviewed: 2026-10-02T14:43:00Z. Primary public sources read; individual reward, 
 
 ## Sources and attribution
 
-- [iCloud sharing consent and Safari trust boundaries failed together](<https://www.ryanpickren.com/safari-uxss>) — Ryan Pickren; retrieved 2026-10-02T14:43:00Z.
-- [Apple security release advisory](<https://support.apple.com/en-us/103237>) — Apple; retrieved 2026-10-02T14:43:00Z.
-- [Apple security release advisory](<https://support.apple.com/en-us/103236>) — Apple; retrieved 2026-10-02T14:43:00Z.
+- [iCloud sharing consent and Safari trust boundaries failed together](<https://www.ryanpickren.com/safari-uxss>) — Ryan Pickren; source ID: primary; retrieved 2026-10-02T14:43:00Z.
+- [Apple security release advisory](<https://support.apple.com/en-us/103237>) — Apple; source ID: source-2; retrieved 2026-10-02T14:43:00Z.
+- [Apple security release advisory](<https://support.apple.com/en-us/103236>) — Apple; source ID: source-3; retrieved 2026-10-02T14:43:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

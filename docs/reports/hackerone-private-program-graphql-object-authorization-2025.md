@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-01-21; precision: day; basis: explicit. Public disclosure event activity-32092519; the underlying report and award are from 2022\.
-- **public disclosure:** 2025-01-21; precision: day; basis: explicit
-- **reported:** 2022-06-28; precision: day; basis: explicit
-- **awarded:** 2022-07-05; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Report status changed to Resolved on July 5, 2022; exact deployment time is not stated\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-01-21; precision: day; basis: explicit; source: [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) (source ID: primary). Public disclosure event activity-32092519; the underlying report and award are from 2022\.
+- **public disclosure:** 2025-01-21; precision: day; basis: explicit; source: [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) (source ID: primary).
+- **reported:** 2022-06-28; precision: day; basis: explicit; source: [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) (source ID: primary).
+- **awarded:** 2022-07-05; precision: day; basis: explicit; source: [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Report status changed to Resolved on July 5, 2022; exact deployment time is not stated\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,7 +61,7 @@ Reviewed: 2026-10-03T05:30:46Z. Freshly read the rendered public report, researc
 
 ## Sources and attribution
 
-- [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) — HackerOne and the credited researchers; retrieved 2026-10-03T05:30:46Z.
-- [Vulnerability Disclosure Standards: Bug Bounty payment denomination](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-03T05:30:46Z.
+- [GraphQL object authorization exposed private-program metadata \(report 1618347\)](<https://hackerone.com/reports/1618347>) — HackerOne and the credited researchers; source ID: primary; retrieved 2026-10-03T05:30:46Z.
+- [Vulnerability Disclosure Standards: Bug Bounty payment denomination](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: currency-context; retrieved 2026-10-03T05:30:46Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2022-11-10; precision: day; basis: explicit
-- **public disclosure:** 2022-11-08; precision: day; basis: explicit. CVE record publication\. The Android bulletin is dated November 7; its original snapshot was not retrieved, so first appearance of this entry is not asserted\.
-- **reported:** 2022-06-13; precision: day; basis: explicit
-- **awarded:** 2022-10-12; precision: day; basis: explicit
-- **fixed:** 2022-11; precision: month; basis: explicit. Reported fixed in the November update\. The 2022-11-05 patch-level label is not used as an exact rollout date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2022-11-10; precision: day; basis: explicit; source: [Accidental $70k Google Pixel Lock Screen Bypass](<https://bugs.xdavidhu.me/google/2022/11/10/accidental-70k-google-pixel-lock-screen-bypass/>) (source ID: primary).
+- **public disclosure:** 2022-11-08; precision: day; basis: explicit; source: [Google Android CNA record for CVE-2022-20465](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2022/20xxx/CVE-2022-20465.json>) (source ID: vendor-cna). CVE record publication\. The Android bulletin is dated November 7; its original snapshot was not retrieved, so first appearance of this entry is not asserted\.
+- **reported:** 2022-06-13; precision: day; basis: explicit; source: [Report 0016: Complete Lock Screen Bypass on Google Pixel devices](<https://feed.bugs.xdavidhu.me/bugs/0016>) (source ID: report-transcript).
+- **awarded:** 2022-10-12; precision: day; basis: explicit; source: [Report 0016: Complete Lock Screen Bypass on Google Pixel devices](<https://feed.bugs.xdavidhu.me/bugs/0016>) (source ID: report-transcript).
+- **fixed:** 2022-11; precision: month; basis: explicit; source: [Report 0016: Complete Lock Screen Bypass on Google Pixel devices](<https://feed.bugs.xdavidhu.me/bugs/0016>) (source ID: report-transcript). Reported fixed in the November update\. The 2022-11-05 patch-level label is not used as an exact rollout date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,10 +59,10 @@ Reviewed: 2026-10-02T17:14:30Z. Read the researcher article, full reproduced rep
 
 ## Sources and attribution
 
-- [Accidental $70k Google Pixel Lock Screen Bypass](<https://bugs.xdavidhu.me/google/2022/11/10/accidental-70k-google-pixel-lock-screen-bypass/>) — David Schütz; retrieved 2026-10-02T17:12:00Z.
-- [Report 0016: Complete Lock Screen Bypass on Google Pixel devices](<https://feed.bugs.xdavidhu.me/bugs/0016>) — David Schütz; retrieved 2026-10-02T17:12:00Z.
-- [Android Security Bulletin, November 2022](<https://source.android.com/docs/security/bulletin/2022-11-01>) — Android Open Source Project / Google; retrieved 2026-10-02T17:12:00Z.
-- [Pixel Update Bulletin, November 2022](<https://source.android.com/docs/security/bulletin/pixel/2022-11-01>) — Google; retrieved 2026-10-02T17:12:00Z.
-- [Google Android CNA record for CVE-2022-20465](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2022/20xxx/CVE-2022-20465.json>) — Google Android CNA, distributed through the CVE Program; retrieved 2026-10-02T17:14:30Z.
+- [Accidental $70k Google Pixel Lock Screen Bypass](<https://bugs.xdavidhu.me/google/2022/11/10/accidental-70k-google-pixel-lock-screen-bypass/>) — David Schütz; source ID: primary; retrieved 2026-10-02T17:12:00Z.
+- [Report 0016: Complete Lock Screen Bypass on Google Pixel devices](<https://feed.bugs.xdavidhu.me/bugs/0016>) — David Schütz; source ID: report-transcript; retrieved 2026-10-02T17:12:00Z.
+- [Android Security Bulletin, November 2022](<https://source.android.com/docs/security/bulletin/2022-11-01>) — Android Open Source Project / Google; source ID: android-bulletin; retrieved 2026-10-02T17:12:00Z.
+- [Pixel Update Bulletin, November 2022](<https://source.android.com/docs/security/bulletin/pixel/2022-11-01>) — Google; source ID: pixel-bulletin; retrieved 2026-10-02T17:12:00Z.
+- [Google Android CNA record for CVE-2022-20465](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2022/20xxx/CVE-2022-20465.json>) — Google Android CNA, distributed through the CVE Program; source ID: vendor-cna; retrieved 2026-10-02T17:14:30Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

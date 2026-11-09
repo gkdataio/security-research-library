@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-09-01; precision: day; basis: explicit. Vendor-authored technical CNA publication\. ZDI published its advisory on September 10\.
-- **public disclosure:** 2026-05-15; precision: day; basis: explicit. Public competition demonstration and result, before technical CNA publication\.
-- **reported:** Unknown; precision: unknown; basis: not\_reported. Original submission to the competition organizer is unknown\. ZDI later lists 2026-06-02 as reported to vendor; this is a separate event, not the original submission date\.
-- **awarded:** 2026-05-15; precision: day; basis: explicit. Individual-entry award reported in the day’s results\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Vendor CNA lists fixed versions, but an exact release/deployment date was not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2026-05-15; precision: day; basis: explicit
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-09-01; precision: day; basis: explicit; source: [OpenAI CNA record for CVE-2026-19590](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19590.json>) (source ID: vendor-cna). Vendor-authored technical CNA publication\. ZDI published its advisory on September 10\.
+- **public disclosure:** 2026-05-15; precision: day; basis: explicit; source: [Pwn2Own Berlin 2026 daily results](<https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results>) (source ID: competition-results). Public competition demonstration and result, before technical CNA publication\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Original submission to the competition organizer is unknown\. ZDI later lists 2026-06-02 as reported to vendor; this is a separate event, not the original submission date\.
+- **awarded:** 2026-05-15; precision: day; basis: explicit; source: [Pwn2Own Berlin 2026 daily results](<https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results>) (source ID: competition-results). Individual-entry award reported in the day’s results\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Vendor CNA lists fixed versions, but an exact release/deployment date was not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2026-05-15; precision: day; basis: explicit; source: [Pwn2Own Berlin 2026 daily results](<https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results>) (source ID: competition-results).
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,9 +58,9 @@ Reviewed: 2026-10-02T17:23:00Z. Matched organizer result to the credited team, p
 
 ## Sources and attribution
 
-- [OpenAI CNA record for CVE-2026-19590](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19590.json>) — OpenAI CNA, distributed through the CVE Program; retrieved 2026-10-02T17:23:00Z.
-- [Pwn2Own Berlin 2026 daily results](<https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results>) — Dustin Childs / Zero Day Initiative; retrieved 2026-10-02T17:23:00Z.
-- [Pwn2Own Berlin 2026 rules](<https://www.zerodayinitiative.com/Pwn2OwnBerlin2026Rules.html>) — Trend Micro Zero Day Initiative; retrieved 2026-10-02T17:23:00Z.
-- [ZDI-26-648 Codex advisory](<https://www.zerodayinitiative.com/advisories/ZDI-26-648/>) — Zero Day Initiative; retrieved 2026-10-02T17:23:00Z.
+- [OpenAI CNA record for CVE-2026-19590](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/19xxx/CVE-2026-19590.json>) — OpenAI CNA, distributed through the CVE Program; source ID: vendor-cna; retrieved 2026-10-02T17:23:00Z.
+- [Pwn2Own Berlin 2026 daily results](<https://www.zerodayinitiative.com/blog/2026/5/15/pwn2own-berlin-2026-day-two-results>) — Dustin Childs / Zero Day Initiative; source ID: competition-results; retrieved 2026-10-02T17:23:00Z.
+- [Pwn2Own Berlin 2026 rules](<https://www.zerodayinitiative.com/Pwn2OwnBerlin2026Rules.html>) — Trend Micro Zero Day Initiative; source ID: competition-rules; retrieved 2026-10-02T17:23:00Z.
+- [ZDI-26-648 Codex advisory](<https://www.zerodayinitiative.com/advisories/ZDI-26-648/>) — Zero Day Initiative; source ID: zdi-advisory; retrieved 2026-10-02T17:23:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

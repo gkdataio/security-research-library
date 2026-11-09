@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2019-11-05; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2019-06-19; precision: day; basis: explicit
-- **awarded:** 2019-06-26; precision: day; basis: explicit
-- **fixed:** 2019-06-20; precision: day; basis: explicit
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2019-11-05; precision: day; basis: explicit; source: [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2019-06-19; precision: day; basis: explicit; source: [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) (source ID: primary).
+- **awarded:** 2019-06-26; precision: day; basis: explicit; source: [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) (source ID: primary).
+- **fixed:** 2019-06-20; precision: day; basis: explicit; source: [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) (source ID: primary).
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -64,7 +64,7 @@ Reviewed: 2026-10-05T20:41:30Z. Re-read the researcher's award statement and tim
 
 ## Sources and attribution
 
-- [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) — Teddy Katz; retrieved 2026-10-05T20:39:26Z.
-- [Bug Bounty anniversary promotion: bigger bounties in January and February](<https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/>) — Neil Matatall; retrieved 2026-10-05T20:39:26Z.
+- [Bypassing GitHub’s OAuth flow](<https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html>) — Teddy Katz; source ID: primary; retrieved 2026-10-05T20:39:26Z.
+- [Bug Bounty anniversary promotion: bigger bounties in January and February](<https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/>) — Neil Matatall; source ID: github-currency-context-2017; retrieved 2026-10-05T20:39:26Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

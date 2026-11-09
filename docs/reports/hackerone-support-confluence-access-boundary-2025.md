@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-08; precision: month; basis: inferred. Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.
-- **public disclosure:** 2025-08; precision: month; basis: inferred. Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.
-- **reported:** 2025-04-26; precision: day; basis: explicit
-- **awarded:** 2025-05-30; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Report marked Resolved June 3, 2025; exact deployment date is unknown\. A later edited retest comment is not a deployment timestamp\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-08; precision: month; basis: inferred; source: [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) (source ID: primary). Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.
+- **public disclosure:** 2025-08; precision: month; basis: inferred; source: [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) (source ID: primary). Disclosure events appear August 13 and August 15, 2025\. The sidebar shows August 15; month retained because first public day is ambiguous\.
+- **reported:** 2025-04-26; precision: day; basis: explicit; source: [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) (source ID: primary).
+- **awarded:** 2025-05-30; precision: day; basis: explicit; source: [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Report marked Resolved June 3, 2025; exact deployment date is unknown\. A later edited retest comment is not a deployment timestamp\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,7 +60,7 @@ Reviewed: 2026-10-03T08:59:00Z. Freshly read the public vendor summary, expanded
 
 ## Sources and attribution
 
-- [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) — HackerOne and the credited researchers; retrieved 2026-10-03T08:59:00Z.
-- [Vulnerability Disclosure Standards: Bug Bounty payment denomination](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T15:43:47Z.
+- [Support integration exposed internal Confluence documentation \(report 3113398\)](<https://hackerone.com/reports/3113398>) — HackerOne and the credited researchers; source ID: primary; retrieved 2026-10-03T08:59:00Z.
+- [Vulnerability Disclosure Standards: Bug Bounty payment denomination](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: currency-context; retrieved 2026-10-02T15:43:47Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

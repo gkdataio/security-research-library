@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2016-11-30; precision: day; basis: explicit. Detailed report became public at the recorded disclosure event; later 2017 retrospective is not original publication\.
-- **public disclosure:** 2016-11-30; precision: day; basis: explicit
-- **reported:** 2016-11-29; precision: day; basis: explicit
-- **awarded:** 2016-11-30; precision: day; basis: explicit
-- **fixed:** 2016-11-29; precision: day; basis: explicit. Vendor fix-release comment at 04:36 UTC; researcher confirmation at 05:02 UTC\. Summary says November 28 without a timezone; UTC timeline supplies the recorded date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2016-11-30; precision: day; basis: explicit; source: [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) (source ID: public-report). Detailed report became public at the recorded disclosure event; later 2017 retrospective is not original publication\.
+- **public disclosure:** 2016-11-30; precision: day; basis: explicit; source: [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) (source ID: public-report).
+- **reported:** 2016-11-29; precision: day; basis: explicit; source: [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) (source ID: public-report).
+- **awarded:** 2016-11-30; precision: day; basis: explicit; source: [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) (source ID: public-report).
+- **fixed:** 2016-11-29; precision: day; basis: explicit; source: [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) (source ID: public-report). Vendor fix-release comment at 04:36 UTC; researcher confirmation at 05:02 UTC\. Summary says November 28 without a timezone; UTC timeline supplies the recorded date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,8 +59,8 @@ Reviewed: 2026-10-03T14:00:08Z. Read the full public report in the cloud browser
 
 ## Sources and attribution
 
-- [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) — HackerOne and japz; retrieved 2026-10-03T14:00:08Z.
-- [Celebrating $20M in Bounties with a Recap of Our Top 20 Up Voted Reports on Hacktivity](<https://www.hackerone.com/blog/celebrating-20m-bounties-recap-our-top-20-voted-reports-hacktivity>) — johnk / HackerOne; retrieved 2026-10-03T14:00:08Z.
-- [Vulnerability Disclosure Guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-03T14:00:08Z.
+- [Internal attachments can be exported via "Export as \.zip" feature](<https://hackerone.com/reports/186230>) — HackerOne and japz; source ID: public-report; retrieved 2026-10-03T14:00:08Z.
+- [Celebrating $20M in Bounties with a Recap of Our Top 20 Up Voted Reports on Hacktivity](<https://www.hackerone.com/blog/celebrating-20m-bounties-recap-our-top-20-voted-reports-hacktivity>) — johnk / HackerOne; source ID: vendor-retrospective; retrieved 2026-10-03T14:00:08Z.
+- [Vulnerability Disclosure Guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: currency-context; retrieved 2026-10-03T14:00:08Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

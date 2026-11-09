@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-06-02; precision: day; basis: inferred. Article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
-- **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration; separate from later vendor advisory and technical publication\.
-- **reported:** Unknown; precision: unknown; basis: not\_reported. Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2026-05-05; precision: day; basis: explicit. Official Redis 8\.6\.3 release names the CVE\. Other supported release lines are listed separately by the vendor; this date is not a customer deployment date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2025-12-16; precision: day; basis: explicit. Organizer recap confirms the per-entry award; decision and payment dates remain unknown\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-06-02; precision: day; basis: inferred; source: [DarkReplica \(CVE-2026-23631\): Redis Use-After-Free Leads to Post-Auth RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-23631-dark-replica>) (source ID: researcher-report). Article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
+- **public disclosure:** 2025-12-10; precision: day; basis: explicit; source: [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) (source ID: competition-tracker). Public competition demonstration; separate from later vendor advisory and technical publication\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2026-05-05; precision: day; basis: explicit; source: [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) (source ID: vendor-release). Official Redis 8\.6\.3 release names the CVE\. Other supported release lines are listed separately by the vendor; this date is not a customer deployment date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2025-12-16; precision: day; basis: explicit; source: [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) (source ID: competition-results). Organizer recap confirms the per-entry award; decision and payment dates remain unknown\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,13 +61,13 @@ Reviewed: 2026-10-02T20:00:00Z. Matched the individual award to the exact tracke
 
 ## Sources and attribution
 
-- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; retrieved 2026-10-02T20:00:00Z.
-- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; retrieved 2026-10-02T20:00:00Z.
-- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; retrieved 2026-10-02T19:21:00Z.
-- [DarkReplica \(CVE-2026-23631\): Redis Use-After-Free Leads to Post-Auth RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-23631-dark-replica>) — Yoni Sherez / ZeroDay\.cloud; retrieved 2026-10-02T20:00:00Z.
-- [Redis Lua lifetime advisory GHSA-8ghh-qpmp-7826](<https://github.com/redis/redis/security/advisories/GHSA-8ghh-qpmp-7826>) — Redis; retrieved 2026-10-02T20:00:00Z.
-- [CVE-2026-23631 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/23xxx/CVE-2026-23631.json>) — Redis / GitHub CNA; retrieved 2026-10-02T20:00:00Z.
-- [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) — Redis; retrieved 2026-10-02T20:00:00Z.
-- [Redis May 2026 security advisory and product remediation table](<https://redis.io/blog/security-advisory-cve202623479-cve202625243-cve-2026-25588-cve202625589-cve-2026-23631/>) — Riaz Lakhani / Redis; retrieved 2026-10-02T20:00:00Z.
+- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; source ID: competition-results; retrieved 2026-10-02T20:00:00Z.
+- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; source ID: competition-tracker; retrieved 2026-10-02T20:00:00Z.
+- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; source ID: currency-context; retrieved 2026-10-02T19:21:00Z.
+- [DarkReplica \(CVE-2026-23631\): Redis Use-After-Free Leads to Post-Auth RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-23631-dark-replica>) — Yoni Sherez / ZeroDay\.cloud; source ID: researcher-report; retrieved 2026-10-02T20:00:00Z.
+- [Redis Lua lifetime advisory GHSA-8ghh-qpmp-7826](<https://github.com/redis/redis/security/advisories/GHSA-8ghh-qpmp-7826>) — Redis; source ID: vendor-advisory; retrieved 2026-10-02T20:00:00Z.
+- [CVE-2026-23631 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/23xxx/CVE-2026-23631.json>) — Redis / GitHub CNA; source ID: vendor-cve; retrieved 2026-10-02T20:00:00Z.
+- [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) — Redis; source ID: vendor-release; retrieved 2026-10-02T20:00:00Z.
+- [Redis May 2026 security advisory and product remediation table](<https://redis.io/blog/security-advisory-cve202623479-cve202625243-cve-2026-25588-cve202625589-cve-2026-23631/>) — Riaz Lakhani / Redis; source ID: vendor-product-guidance; retrieved 2026-10-02T20:00:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

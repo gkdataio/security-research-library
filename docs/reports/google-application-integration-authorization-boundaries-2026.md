@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-05-22; precision: day; basis: explicit. Visible article header supplies May 22, 2026 and author Arvin Shivram\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2026-03-21; precision: day; basis: explicit
-- **awarded:** 2026-04-28; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-05-22; precision: day; basis: explicit; source: [StubZero: $148,337 RCE in Google Cloud Production](<https://brutecat.com/articles/google-cloud-rce/>) (source ID: primary). Visible article header supplies May 22, 2026 and author Arvin Shivram\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2026-03-21; precision: day; basis: explicit; source: [StubZero: $148,337 RCE in Google Cloud Production](<https://brutecat.com/articles/google-cloud-rce/>) (source ID: primary).
+- **awarded:** 2026-04-28; precision: day; basis: explicit; source: [StubZero: $148,337 RCE in Google Cloud Production](<https://brutecat.com/articles/google-cloud-rce/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,8 +60,8 @@ Reviewed: 2026-10-03T02:35:33Z. Read primary article text, including the dated b
 
 ## Sources and attribution
 
-- [StubZero: $148,337 RCE in Google Cloud Production](<https://brutecat.com/articles/google-cloud-rce/>) — Arvin Shivram \(Brutecat\); retrieved 2026-10-03T02:35:33Z.
-- [Increasing Google &amp; Alphabet VRP rewards up to $151,515](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; retrieved 2026-10-03T02:35:33Z.
-- [Introducing Google Cloud’s new Vulnerability Reward Program](<https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program>) — Michael Cote and Sri Tulasiram / Google Cloud; retrieved 2026-10-03T02:35:33Z.
+- [StubZero: $148,337 RCE in Google Cloud Production](<https://brutecat.com/articles/google-cloud-rce/>) — Arvin Shivram \(Brutecat\); source ID: primary; retrieved 2026-10-03T02:35:33Z.
+- [Increasing Google &amp; Alphabet VRP rewards up to $151,515](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; source ID: google-currency; retrieved 2026-10-03T02:35:33Z.
+- [Introducing Google Cloud’s new Vulnerability Reward Program](<https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program>) — Michael Cote and Sri Tulasiram / Google Cloud; source ID: cloud-program-continuity; retrieved 2026-10-03T02:35:33Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

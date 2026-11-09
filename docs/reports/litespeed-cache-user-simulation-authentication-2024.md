@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2024-08-21; precision: day; basis: explicit
-- **public disclosure:** 2024-08-19; precision: day; basis: explicit. Initial platform vulnerability-database publication preceded the full advisory\.
-- **reported:** 2024-08-01; precision: day; basis: explicit. Report received by Patchstack; vendor contacted August 5\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2024-08-13; precision: day; basis: explicit. Release of version 6\.4\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported. Payment acknowledged in September 6, 2024 interview, without a settlement date\.
-- **award announced:** 2024-08-21; precision: day; basis: explicit. Direct award amount stated in the advisory; earliest announcement not independently established\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2024-08-21; precision: day; basis: explicit; source: [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) (source ID: platform-advisory).
+- **public disclosure:** 2024-08-19; precision: day; basis: explicit; source: [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) (source ID: platform-advisory). Initial platform vulnerability-database publication preceded the full advisory\.
+- **reported:** 2024-08-01; precision: day; basis: explicit; source: [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) (source ID: platform-advisory). Report received by Patchstack; vendor contacted August 5\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2024-08-13; precision: day; basis: explicit; source: [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) (source ID: platform-advisory). Release of version 6\.4\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Payment acknowledged in September 6, 2024 interview, without a settlement date\.
+- **award announced:** 2024-08-21; precision: day; basis: explicit; source: [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) (source ID: platform-advisory). Direct award amount stated in the advisory; earliest announcement not independently established\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,8 +58,8 @@ Reviewed: 2026-10-02T16:42:07Z. Read platform advisory, coordinated timeline, re
 
 ## Sources and attribution
 
-- [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) — Rafie Muhammad / Patchstack; retrieved 2026-10-02T16:42:07Z.
-- [Interview with John Blackbourn](<https://patchstack.com/articles/interview-with-john-blackbourn/>) — Maciek Palmowski / Patchstack; retrieved 2026-10-02T16:42:07Z.
-- [State of WordPress Security 2025](<https://patchstack.com/whitepaper/state-of-wordpress-security-in-2025/>) — Patchstack; retrieved 2026-10-02T16:42:07Z.
+- [LiteSpeed Cache CVE-2024-28000 coordinated advisory](<https://patchstack.com/articles/critical-privilege-escalation-in-litespeed-cache-plugin-affecting-5-million-sites/>) — Rafie Muhammad / Patchstack; source ID: platform-advisory; retrieved 2026-10-02T16:42:07Z.
+- [Interview with John Blackbourn](<https://patchstack.com/articles/interview-with-john-blackbourn/>) — Maciek Palmowski / Patchstack; source ID: platform-interview; retrieved 2026-10-02T16:42:07Z.
+- [State of WordPress Security 2025](<https://patchstack.com/whitepaper/state-of-wordpress-security-in-2025/>) — Patchstack; source ID: platform-retrospective; retrieved 2026-10-02T16:42:07Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

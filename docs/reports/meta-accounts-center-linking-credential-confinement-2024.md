@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Current article and archive index display January 15, 2026; original publication versus migration/republication is unverified\. This header is not used to assert recent research\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure was not established\.
-- **reported:** 2024-10-16; precision: day; basis: explicit
-- **awarded:** 2024-11-27; precision: day; basis: explicit
-- **fixed:** 2024-11-05; precision: day; basis: explicit. Overall researcher timeline label; component-level remediation and patch details are not independently verified\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Current article and archive index display January 15, 2026; original publication versus migration/republication is unverified\. This header is not used to assert recent research\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Earliest public disclosure was not established\.
+- **reported:** 2024-10-16; precision: day; basis: explicit; source: [Two-click Facebook account takeover via FXAuth token and blob theft](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) (source ID: researcher-writeup).
+- **awarded:** 2024-11-27; precision: day; basis: explicit; source: [Two-click Facebook account takeover via FXAuth token and blob theft](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) (source ID: researcher-writeup).
+- **fixed:** 2024-11-05; precision: day; basis: explicit; source: [Two-click Facebook account takeover via FXAuth token and blob theft](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) (source ID: researcher-writeup). Overall researcher timeline label; component-level remediation and patch details are not independently verified\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -62,7 +62,7 @@ Reviewed: 2026-10-03T10:10:05\.389636Z. Read the primary article and dated indiv
 
 ## Sources and attribution
 
-- [Two-click Facebook account takeover via FXAuth token and blob theft](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) — Youssef Sammouda; retrieved 2026-10-03T10:10:05\.389636Z.
-- [Una mirada retrospectiva a los aspectos más destacados de Bug Bounty 2019](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-03T10:10:05\.389636Z.
+- [Two-click Facebook account takeover via FXAuth token and blob theft](<https://ysamm.com/uncategorized/2026/01/15/steal-fxauth-leads-instagram-ato.html>) — Youssef Sammouda; source ID: researcher-writeup; retrieved 2026-10-03T10:10:05\.389636Z.
+- [Una mirada retrospectiva a los aspectos más destacados de Bug Bounty 2019](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-03T10:10:05\.389636Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

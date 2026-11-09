@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-07-31; precision: day; basis: explicit. Sentry’s own article listing supplies the date\.
-- **public disclosure:** 2026-05-18; precision: day; basis: explicit. CVE publication timestamp; detailed researcher article appeared later\.
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Apple identifies PCC Release 5E290\.3 as fixed; exact release/deployment date was not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-07-31; precision: day; basis: explicit; source: [Sentry article listing](<https://blog.sentry.security/>) (source ID: publication-index). Sentry’s own article listing supplies the date\.
+- **public disclosure:** 2026-05-18; precision: day; basis: explicit; source: [Apple CNA record for CVE-2026-20685](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/20xxx/CVE-2026-20685.json>) (source ID: vendor-cna). CVE publication timestamp; detailed researcher article appeared later\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Apple identifies PCC Release 5E290\.3 as fixed; exact release/deployment date was not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,10 +60,10 @@ Reviewed: 2026-10-02T17:03:00Z. Read the researcher article, publication index, 
 
 ## Sources and attribution
 
-- [Beyond Prompt Injection: Hacking Apple's Private Cloud Compute](<https://blog.sentry.security/beyond-prompt-injection-hacking-apples-private-cloud-compute/>) — Drinor Selmanaj / Sentry; retrieved 2026-10-02T17:03:00Z.
-- [Sentry article listing](<https://blog.sentry.security/>) — Sentry; retrieved 2026-10-02T17:03:00Z.
-- [Apple CNA record for CVE-2026-20685](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/20xxx/CVE-2026-20685.json>) — Apple CNA, distributed through the CVE Program; retrieved 2026-10-02T17:03:00Z.
-- [Researcher-hosted Apple award-offer graphic](<https://storage.ghost.io/c/3c/85/3c852989-e4b5-4868-8226-9c9bebdfb8f2/content/images/2026/07/150k-post2.png>) — Sentry; retrieved 2026-10-02T17:03:00Z.
-- [Apple Security Bounty US-dollar program context](<https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/>) — Apple Newsroom; retrieved 2026-10-02T17:03:00Z.
+- [Beyond Prompt Injection: Hacking Apple's Private Cloud Compute](<https://blog.sentry.security/beyond-prompt-injection-hacking-apples-private-cloud-compute/>) — Drinor Selmanaj / Sentry; source ID: primary; retrieved 2026-10-02T17:03:00Z.
+- [Sentry article listing](<https://blog.sentry.security/>) — Sentry; source ID: publication-index; retrieved 2026-10-02T17:03:00Z.
+- [Apple CNA record for CVE-2026-20685](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/20xxx/CVE-2026-20685.json>) — Apple CNA, distributed through the CVE Program; source ID: vendor-cna; retrieved 2026-10-02T17:03:00Z.
+- [Researcher-hosted Apple award-offer graphic](<https://storage.ghost.io/c/3c/85/3c852989-e4b5-4868-8226-9c9bebdfb8f2/content/images/2026/07/150k-post2.png>) — Sentry; source ID: award-image; retrieved 2026-10-02T17:03:00Z.
+- [Apple Security Bounty US-dollar program context](<https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/>) — Apple Newsroom; source ID: currency-context; retrieved 2026-10-02T17:03:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

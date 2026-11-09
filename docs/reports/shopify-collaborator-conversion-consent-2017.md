@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2018-02-22; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** 2017; precision: year; basis: explicit. The vendor identifies the award as occurring during 2017; no precise day is supplied\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Vendor reports a fix within hours but supplies no calendar date in the reviewed retrospective\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2018-02-22; precision: day; basis: explicit; source: [2017 Bug Bounty Year in Review](<https://shopify.engineering/bug-bounty-year-in-review>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** 2017; precision: year; basis: explicit; source: [2017 Bug Bounty Year in Review](<https://shopify.engineering/bug-bounty-year-in-review>) (source ID: primary). The vendor identifies the award as occurring during 2017; no precise day is supplied\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Vendor reports a fix within hours but supplies no calendar date in the reviewed retrospective\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,7 +59,7 @@ Reviewed: 2026-10-03T02:32:41Z. Read public primary-source text and checked awar
 
 ## Sources and attribution
 
-- [2017 Bug Bounty Year in Review](<https://shopify.engineering/bug-bounty-year-in-review>) — Peter Yaworski / Shopify; retrieved 2026-10-03T02:32:41Z.
-- [Vulnerability Disclosure Standards](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-03T02:32:41Z.
+- [2017 Bug Bounty Year in Review](<https://shopify.engineering/bug-bounty-year-in-review>) — Peter Yaworski / Shopify; source ID: primary; retrieved 2026-10-03T02:32:41Z.
+- [Vulnerability Disclosure Standards](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: platform-currency; retrieved 2026-10-03T02:32:41Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

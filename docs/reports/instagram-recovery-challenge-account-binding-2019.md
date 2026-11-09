@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2019-08-25; precision: day; basis: explicit. Original publication date preserved by the author’s archive; current article header is a later update\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2019-08-25; precision: day; basis: explicit; source: [Original publication archive](<https://thezerohack.com/digital-marketing>) (source ID: source-2). Original publication date preserved by the author’s archive; current article header is a later update\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -64,8 +64,8 @@ Reviewed: 2026-10-03T23:53:25Z. Re-read the primary article award statement and 
 
 ## Sources and attribution
 
-- [Instagram recovery challenges were insufficiently bound to accounts](<https://thezerohack.com/hack-instagram-again>) — Laxman Muthiyah; retrieved 2026-10-03T23:51:11Z.
-- [Original publication archive](<https://thezerohack.com/digital-marketing>) — Laxman Muthiyah; retrieved 2026-10-02T14:43:00Z.
-- [Facebook 2019 Bug Bounty retrospective — contextual USD denomination only](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-03T23:50:58Z.
+- [Instagram recovery challenges were insufficiently bound to accounts](<https://thezerohack.com/hack-instagram-again>) — Laxman Muthiyah; source ID: primary; retrieved 2026-10-03T23:51:11Z.
+- [Original publication archive](<https://thezerohack.com/digital-marketing>) — Laxman Muthiyah; source ID: source-2; retrieved 2026-10-02T14:43:00Z.
+- [Facebook 2019 Bug Bounty retrospective — contextual USD denomination only](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: source-3; retrieved 2026-10-03T23:50:58Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

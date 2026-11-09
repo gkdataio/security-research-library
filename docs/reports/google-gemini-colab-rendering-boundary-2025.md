@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2025-11; precision: month; basis: explicit. Author homepage supplies November 2025; exact publication day is not established\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2025-04-30; precision: day; basis: explicit
-- **awarded:** 2025-05-20; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-11; precision: month; basis: explicit; source: [Valentino’s issue tracker](<https://buganizer.cc/>) (source ID: publication-index). Author homepage supplies November 2025; exact publication day is not established\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2025-04-30; precision: day; basis: explicit; source: [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) (source ID: primary).
+- **awarded:** 2025-05-20; precision: day; basis: explicit; source: [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -63,7 +63,7 @@ Reviewed: 2026-10-03T05:19:42Z. Fresh-read the researcher article and publicatio
 
 ## Sources and attribution
 
-- [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) — Valentino Massaro; retrieved 2026-10-03T05:19:42Z.
-- [Valentino’s issue tracker](<https://buganizer.cc/>) — Valentino Massaro; retrieved 2026-10-03T05:19:42Z.
+- [Hacking Gemini: A Multi-Layered Approach](<https://buganizer.cc/hacking-gemini-a-multi-layered-approach-md/>) — Valentino Massaro; source ID: primary; retrieved 2026-10-03T05:19:42Z.
+- [Valentino’s issue tracker](<https://buganizer.cc/>) — Valentino Massaro; source ID: publication-index; retrieved 2026-10-03T05:19:42Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

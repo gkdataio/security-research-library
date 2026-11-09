@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2022-07-20; precision: day; basis: explicit. Dated vendor publication is used\. The researcher page presents February 24, 2022 and August 27, 2024 without a clearly extracted original-versus-update label; its original public release remains uncertain\.
-- **public disclosure:** 2022-07-20; precision: day; basis: explicit. Vendor discussion and direct researcher link establish public availability by this date, not the earliest possible disclosure\.
-- **reported:** 2022-02-24; precision: day; basis: explicit
-- **awarded:** 2022-05-19; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. The researcher records fix confirmation on February 24, 2022 and removal within hours\. The exact deployment date is not independently established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2022-07-20; precision: day; basis: explicit. Public vendor confirmation; an earlier researcher announcement is possible\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2022-07-20; precision: day; basis: explicit; source: [How Meta and the security industry collaborate to secure the internet](<https://engineering.fb.com/2022/07/20/security/how-meta-and-the-security-industry-collaborate-to-secure-the-internet/>) (source ID: vendor-bulletin). Dated vendor publication is used\. The researcher page presents February 24, 2022 and August 27, 2024 without a clearly extracted original-versus-update label; its original public release remains uncertain\.
+- **public disclosure:** 2022-07-20; precision: day; basis: explicit; source: [How Meta and the security industry collaborate to secure the internet](<https://engineering.fb.com/2022/07/20/security/how-meta-and-the-security-industry-collaborate-to-secure-the-internet/>) (source ID: vendor-bulletin). Vendor discussion and direct researcher link establish public availability by this date, not the earliest possible disclosure\.
+- **reported:** 2022-02-24; precision: day; basis: explicit; source: [Instagram App Access Token](<https://philippeharewood.com/instagram-app-access-token/>) (source ID: researcher-writeup).
+- **awarded:** 2022-05-19; precision: day; basis: explicit; source: [Instagram App Access Token](<https://philippeharewood.com/instagram-app-access-token/>) (source ID: researcher-writeup).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The researcher records fix confirmation on February 24, 2022 and removal within hours\. The exact deployment date is not independently established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2022-07-20; precision: day; basis: explicit; source: [How Meta and the security industry collaborate to secure the internet](<https://engineering.fb.com/2022/07/20/security/how-meta-and-the-security-industry-collaborate-to-secure-the-internet/>) (source ID: vendor-bulletin). Public vendor confirmation; an earlier researcher announcement is possible\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,8 +61,8 @@ Reviewed: 2026-10-02T20:20:00Z. Matched Meta’s named researcher and report-spe
 
 ## Sources and attribution
 
-- [How Meta and the security industry collaborate to secure the internet](<https://engineering.fb.com/2022/07/20/security/how-meta-and-the-security-industry-collaborate-to-secure-the-internet/>) — Meta Engineering; retrieved 2026-10-02T20:20:00Z.
-- [Instagram App Access Token](<https://philippeharewood.com/instagram-app-access-token/>) — Philippe Harewood; retrieved 2026-10-02T20:20:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T20:20:00Z.
+- [How Meta and the security industry collaborate to secure the internet](<https://engineering.fb.com/2022/07/20/security/how-meta-and-the-security-industry-collaborate-to-secure-the-internet/>) — Meta Engineering; source ID: vendor-bulletin; retrieved 2026-10-02T20:20:00Z.
+- [Instagram App Access Token](<https://philippeharewood.com/instagram-app-access-token/>) — Philippe Harewood; source ID: researcher-writeup; retrieved 2026-10-02T20:20:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T20:20:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

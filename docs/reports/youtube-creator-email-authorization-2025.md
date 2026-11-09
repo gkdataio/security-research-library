@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-03-13; precision: day; basis: explicit
-- **public disclosure:** 2025-03-13; precision: day; basis: explicit
-- **reported:** 2024-12-12; precision: day; basis: explicit
-- **awarded:** 2025-01-23; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Vendor confirmed the issue fixed on February 21, 2025; actual deployment date is not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-03-13; precision: day; basis: explicit; source: [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) (source ID: primary).
+- **public disclosure:** 2025-03-13; precision: day; basis: explicit; source: [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) (source ID: primary).
+- **reported:** 2024-12-12; precision: day; basis: explicit; source: [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) (source ID: primary).
+- **awarded:** 2025-01-23; precision: day; basis: explicit; source: [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Vendor confirmed the issue fixed on February 21, 2025; actual deployment date is not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -57,6 +57,6 @@ Reviewed: 2026-10-03T05:09:57Z. Fresh read of the primary researcher article thr
 
 ## Sources and attribution
 
-- [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) — Arvin Shivram \(Brutecat\); retrieved 2026-10-03T05:09:57Z.
+- [Disclosing YouTube Creator Emails for a $20k Bounty](<https://brutecat.com/articles/youtube-creator-emails/>) — Arvin Shivram \(Brutecat\); source ID: primary; retrieved 2026-10-03T05:09:57Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2023-01-20; precision: day; basis: explicit. Primary technical article date; distinct from the earlier vendor summary\.
-- **public disclosure:** 2022-12-15; precision: day; basis: explicit. Vendor’s high-level public summary\. Researcher confirms this same-day highlight; a 2024 update concerns another case\.
-- **reported:** 2022-09-14; precision: day; basis: explicit
-- **awarded:** 2022-12-15; precision: day; basis: explicit. Final additional award; initial amount was awarded September 24, 2022\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Researcher received fix confirmation October 17, 2022; exact deployment date is not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2022-12-15; precision: day; basis: explicit
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2023-01-20; precision: day; basis: explicit; source: [Two Factor Authentication Bypass On Facebook](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) (source ID: researcher-writeup). Primary technical article date; distinct from the earlier vendor summary\.
+- **public disclosure:** 2022-12-15; precision: day; basis: explicit; source: [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) (source ID: vendor-retrospective). Vendor’s high-level public summary\. Researcher confirms this same-day highlight; a 2024 update concerns another case\.
+- **reported:** 2022-09-14; precision: day; basis: explicit; source: [Two Factor Authentication Bypass On Facebook](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) (source ID: researcher-writeup).
+- **awarded:** 2022-12-15; precision: day; basis: explicit; source: [Two Factor Authentication Bypass On Facebook](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) (source ID: researcher-writeup). Final additional award; initial amount was awarded September 24, 2022\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Researcher received fix confirmation October 17, 2022; exact deployment date is not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2022-12-15; precision: day; basis: explicit; source: [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) (source ID: vendor-retrospective).
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,8 +58,8 @@ Reviewed: 2026-10-02T19:03:00Z. Matched the researcher’s explicit vendor-retro
 
 ## Sources and attribution
 
-- [Two Factor Authentication Bypass On Facebook](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) — Gtm Mänôz; retrieved 2026-10-02T19:03:00Z.
-- [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) — Neta Oren / Meta; retrieved 2026-10-02T19:03:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [Two Factor Authentication Bypass On Facebook](<https://medium.com/pentesternepal/two-factor-authentication-bypass-on-facebook-3f4ac3ea139c>) — Gtm Mänôz; source ID: researcher-writeup; retrieved 2026-10-02T19:03:00Z.
+- [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) — Neta Oren / Meta; source ID: vendor-retrospective; retrieved 2026-10-02T19:03:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

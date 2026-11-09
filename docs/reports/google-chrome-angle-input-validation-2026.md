@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-09-03; precision: day; basis: explicit. Full report access restrictions removed; vendor release notice appeared earlier\.
-- **public disclosure:** 2026-06-30; precision: day; basis: explicit. Vendor release disclosure; full issue access was enabled later\.
-- **reported:** 2026-03-13; precision: day; basis: explicit
-- **awarded:** 2026-06-29; precision: day; basis: explicit
-- **fixed:** 2026-06-30; precision: day; basis: explicit. Documented stable release; issue was marked Fixed 2026-05-27\. Backport availability may differ\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2026-06-30; precision: day; basis: explicit. Per-issue reward listed in the public release notice\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-09-03; precision: day; basis: explicit; source: [Chromium issue 492218546](<https://issues.chromium.org/issues/492218546>) (source ID: vendor-report). Full report access restrictions removed; vendor release notice appeared earlier\.
+- **public disclosure:** 2026-06-30; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2026-06-30](<https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1>) (source ID: release). Vendor release disclosure; full issue access was enabled later\.
+- **reported:** 2026-03-13; precision: day; basis: explicit; source: [Chromium issue 492218546](<https://issues.chromium.org/issues/492218546>) (source ID: vendor-report).
+- **awarded:** 2026-06-29; precision: day; basis: explicit; source: [Chromium issue 492218546](<https://issues.chromium.org/issues/492218546>) (source ID: vendor-report).
+- **fixed:** 2026-06-30; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2026-06-30](<https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1>) (source ID: release). Documented stable release; issue was marked Fixed 2026-05-27\. Backport availability may differ\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2026-06-30; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2026-06-30](<https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1>) (source ID: release). Per-issue reward listed in the public release notice\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,8 +59,8 @@ Reviewed: 2026-10-02T16:08:00Z. Public Chromium issue award/date metadata read i
 
 ## Sources and attribution
 
-- [Chromium issue 492218546](<https://issues.chromium.org/issues/492218546>) — Google Chromium security team; retrieved 2026-10-02T16:08:00Z.
-- [Chrome Stable Channel Update for Desktop, 2026-06-30](<https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1>) — Google Chrome team; retrieved 2026-10-02T16:08:00Z.
-- [Security rewards at Google: Two MEEELLION Dollars Later](<https://blog.chromium.org/2013/08/security-rewards-at-google-two.html>) — Chromium team; retrieved 2026-10-02T16:08:00Z.
+- [Chromium issue 492218546](<https://issues.chromium.org/issues/492218546>) — Google Chromium security team; source ID: vendor-report; retrieved 2026-10-02T16:08:00Z.
+- [Chrome Stable Channel Update for Desktop, 2026-06-30](<https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_0175352312.html?m=1>) — Google Chrome team; source ID: release; retrieved 2026-10-02T16:08:00Z.
+- [Security rewards at Google: Two MEEELLION Dollars Later](<https://blog.chromium.org/2013/08/security-rewards-at-google-two.html>) — Chromium team; source ID: currency-context; retrieved 2026-10-02T16:08:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

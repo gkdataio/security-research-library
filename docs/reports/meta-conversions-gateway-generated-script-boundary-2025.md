@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Current page header is January 13, 2026; a separately indexed 2025 URL also exists\. Original publication versus archive migration or republication is not established\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure is not established\.
-- **reported:** 2024-11-22; precision: day; basis: explicit. Timeline entry specifically identified as Bug \#2\.
-- **awarded:** 2025-01-16; precision: day; basis: explicit. Timeline entry specifically identified as Bug \#2\.
-- **fixed:** 2025-01-03; precision: day; basis: explicit. Timeline entry specifically identified as Bug \#2\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Current page header is January 13, 2026; a separately indexed 2025 URL also exists\. Original publication versus archive migration or republication is not established\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Earliest public disclosure is not established\.
+- **reported:** 2024-11-22; precision: day; basis: explicit; source: [Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) (source ID: researcher-writeup). Timeline entry specifically identified as Bug \#2\.
+- **awarded:** 2025-01-16; precision: day; basis: explicit; source: [Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) (source ID: researcher-writeup). Timeline entry specifically identified as Bug \#2\.
+- **fixed:** 2025-01-03; precision: day; basis: explicit; source: [Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) (source ID: researcher-writeup). Timeline entry specifically identified as Bug \#2\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -62,7 +62,7 @@ Reviewed: 2026-10-03T09:50:24Z. Read the primary article and separately assigned
 
 ## Sources and attribution
 
-- [Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) — Youssef Sammouda; retrieved 2026-10-03T09:50:24Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-03T09:50:24Z.
+- [Multiple XSS in Meta Conversion API Gateway Leading to Zero-Click Account Takeover](<https://ysamm.com/uncategorized/2026/01/13/capig-xss.html>) — Youssef Sammouda; source ID: researcher-writeup; retrieved 2026-10-03T09:50:24Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-03T09:50:24Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

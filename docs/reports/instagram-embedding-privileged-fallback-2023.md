@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2023-10-12; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. This article is dated October 12, 2023\. November 9, 2022 is permission to disclose, not proof of public publication\.
-- **reported:** 2022-09-20; precision: day; basis: explicit
-- **awarded:** 2022-09-25; precision: day; basis: explicit. All three report-linked reward components share this timeline date\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. The article says the issue was fixed, without an exact deployment date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2023-10-12; precision: day; basis: explicit; source: [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) (source ID: researcher-writeup).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. This article is dated October 12, 2023\. November 9, 2022 is permission to disclose, not proof of public publication\.
+- **reported:** 2022-09-20; precision: day; basis: explicit; source: [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) (source ID: researcher-writeup).
+- **awarded:** 2022-09-25; precision: day; basis: explicit; source: [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) (source ID: researcher-writeup). All three report-linked reward components share this timeline date\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The article says the issue was fixed, without an exact deployment date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -63,7 +63,7 @@ Reviewed: 2026-10-02T18:24:00Z. Read researcher timeline, bounded impact and att
 
 ## Sources and attribution
 
-- [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) — 003random; retrieved 2026-10-02T18:24:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [How I Exposed Instagram's Private Posts by Blocking Users](<https://003random.com/posts/meta-bountycon-instagram-writeup/>) — 003random; source ID: researcher-writeup; retrieved 2026-10-02T18:24:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

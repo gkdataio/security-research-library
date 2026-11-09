@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-03-03; precision: day; basis: explicit
-- **public disclosure:** 2026-03-03; precision: day; basis: explicit. Publication of this write-up; earliest disclosure elsewhere was not independently established\.
-- **reported:** 2025-12-11; precision: day; basis: explicit
-- **awarded:** 2026-01-28; precision: day; basis: explicit
-- **fixed:** 2025-12-21; precision: day; basis: explicit. Researcher timeline says the report was marked fixed on this date; deployment timing and patch effectiveness were not independently verified\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported. Cash settlement date not independently established\.
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** 2025-12-12; precision: day; basis: explicit. Researcher timeline records disabling the workflow as mitigation\.
+- **published:** 2026-03-03; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary).
+- **public disclosure:** 2026-03-03; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary). Publication of this write-up; earliest disclosure elsewhere was not independently established\.
+- **reported:** 2025-12-11; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary).
+- **awarded:** 2026-01-28; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary).
+- **fixed:** 2025-12-21; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary). Researcher timeline says the report was marked fixed on this date; deployment timing and patch effectiveness were not independently verified\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Cash settlement date not independently established\.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** 2025-12-12; precision: day; basis: explicit; source: [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) (source ID: primary). Researcher timeline records disabling the workflow as mitigation\.
 
 ## Verification limits
 
@@ -62,7 +62,7 @@ Reviewed: 2026-10-03T19:54:00Z. Primary researcher award and timeline reread; of
 
 ## Sources and attribution
 
-- [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) — Adnan Khan; retrieved 2026-10-03T19:52:01Z.
-- [Google Open Source Software Vulnerability Reward Program Rules — Reward amounts](<https://bughunters.google.com/about/rules/open-source/google-open-source-software-vulnerability-reward-program-rules#reward-amounts>) — Google; retrieved 2026-10-03T19:53:20Z.
+- [Turning Almost Nothing into a Supply Chain Compromise of Angular with GitHub Actions Cache Poisoning](<https://adnanthekhan.com/posts/angular-compromise-through-dev-infra/>) — Adnan Khan; source ID: primary; retrieved 2026-10-03T19:52:01Z.
+- [Google Open Source Software Vulnerability Reward Program Rules — Reward amounts](<https://bughunters.google.com/about/rules/open-source/google-open-source-software-vulnerability-reward-program-rules#reward-amounts>) — Google; source ID: currency-context; retrieved 2026-10-03T19:53:20Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

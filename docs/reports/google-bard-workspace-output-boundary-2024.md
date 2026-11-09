@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2024-03-04; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2024-03-04; precision: day; basis: explicit; source: [We Hacked Google A\.I\. for $50,000](<https://depi.security/blog/20240304-google-hack-50000/>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -56,6 +56,6 @@ Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and
 
 ## Sources and attribution
 
-- [We Hacked Google A\.I\. for $50,000](<https://depi.security/blog/20240304-google-hack-50000/>) — Roni Carta; retrieved 2026-10-02T14:39:00Z.
+- [We Hacked Google A\.I\. for $50,000](<https://depi.security/blog/20240304-google-hack-50000/>) — Roni Carta; source ID: primary; retrieved 2026-10-02T14:39:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

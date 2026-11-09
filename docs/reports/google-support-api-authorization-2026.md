@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-03-31; precision: day; basis: explicit
-- **public disclosure:** 2026-03-31; precision: day; basis: explicit
-- **reported:** 2025-06-01; precision: day; basis: explicit
-- **awarded:** 2025-06-10; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. The source records closure as fixed on November 12, 2025, not a deployment date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-03-31; precision: day; basis: explicit; source: [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) (source ID: primary).
+- **public disclosure:** 2026-03-31; precision: day; basis: explicit; source: [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) (source ID: primary).
+- **reported:** 2025-06-01; precision: day; basis: explicit; source: [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) (source ID: primary).
+- **awarded:** 2025-06-10; precision: day; basis: explicit; source: [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The source records closure as fixed on November 12, 2025, not a deployment date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -57,6 +57,6 @@ Reviewed: 2026-10-03T04:49:20Z. Fresh-read the primary disclosure and timeline; 
 
 ## Sources and attribution
 
-- [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) — Michael Dalton; retrieved 2026-10-03T04:49:20Z.
+- [Hacking Google Support: Leaking millions of customer records \($14k bounty\)](<https://michaeldalton.au/posts/hacking-google-support>) — Michael Dalton; source ID: primary; retrieved 2026-10-03T04:49:20Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

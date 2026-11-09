@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **reported:** 2026-03-21; precision: day; basis: explicit
-- **awarded:** 2026-04-29; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. The source says mitigated, not that a final software fix was released\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** 2026-03-23; precision: day; basis: explicit. Triaged and mitigated according to the researcher timeline\.
-- **published:** 2026-05-28; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure has not been independently established\.
+- **reported:** 2026-03-21; precision: day; basis: explicit; source: [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) (source ID: primary).
+- **awarded:** 2026-04-29; precision: day; basis: explicit; source: [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The source says mitigated, not that a final software fix was released\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** 2026-03-23; precision: day; basis: explicit; source: [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) (source ID: primary). Triaged and mitigated according to the researcher timeline\.
+- **published:** 2026-05-28; precision: day; basis: explicit; source: [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Earliest public disclosure has not been independently established\.
 
 ## Verification limits
 
@@ -63,7 +63,7 @@ Reviewed: 2026-10-02T03:54:00Z. Primary public sources read; reward distinguishe
 
 ## Sources and attribution
 
-- [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) — Preben Ver Eecke, Sectricity; retrieved 2026-10-02T03:54:00Z.
-- [Supporting primary disclosure source](<https://sectricity.com/about/method-ethics/>) — Preben Ver Eecke, Sectricity; retrieved 2026-10-02T03:54:00Z.
+- [Meta service-identity exposure amplified by excessive secret access](<https://sectricity.com/blog/misconfigured-grafana-507-private-meta-repos/>) — Preben Ver Eecke, Sectricity; source ID: primary; retrieved 2026-10-02T03:54:00Z.
+- [Supporting primary disclosure source](<https://sectricity.com/about/method-ethics/>) — Preben Ver Eecke, Sectricity; source ID: source-2; retrieved 2026-10-02T03:54:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

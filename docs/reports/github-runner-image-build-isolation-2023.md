@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2023-12-20; precision: day; basis: explicit. Detailed article date\.
-- **public disclosure:** 2023-12-16; precision: day; basis: explicit. Earlier public summary; not the detailed article date\.
-- **reported:** 2023-07-22; precision: day; basis: explicit
-- **awarded:** 2023-11-14; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** 2023-11-14; precision: day; basis: explicit
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** 2023-07-25; precision: day; basis: explicit. Detailed timeline: initial mitigations\. Earlier summary says immediate fixes July 26; final technical fix date remains unknown\.
+- **published:** 2023-12-20; precision: day; basis: explicit; source: [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) (source ID: primary). Detailed article date\.
+- **public disclosure:** 2023-12-16; precision: day; basis: explicit; source: [Welcome to my blog - there is more to come\!](<https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/>) (source ID: announcement). Earlier public summary; not the detailed article date\.
+- **reported:** 2023-07-22; precision: day; basis: explicit; source: [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) (source ID: primary).
+- **awarded:** 2023-11-14; precision: day; basis: explicit; source: [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** 2023-11-14; precision: day; basis: explicit; source: [Welcome to my blog - there is more to come\!](<https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/>) (source ID: announcement).
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** 2023-07-25; precision: day; basis: explicit; source: [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) (source ID: primary). Detailed timeline: initial mitigations\. Earlier summary says immediate fixes July 26; final technical fix date remains unknown\.
 
 ## Verification limits
 
@@ -59,9 +59,9 @@ Reviewed: 2026-10-02T23:05:44Z. Read primary public disclosures and corroboratin
 
 ## Sources and attribution
 
-- [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) — Adnan Khan; retrieved 2026-10-02T23:01:00Z.
-- [Welcome to my blog - there is more to come\!](<https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/>) — Adnan Khan; retrieved 2026-10-02T23:01:00Z.
-- [Vulnerability Disclosure Guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T23:01:00Z.
-- [Bug bounty anniversary promotion: Bigger bounties in January and February](<https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/>) — Neil Matatall / GitHub; retrieved 2026-10-02T23:05:17Z.
+- [One Supply Chain Attack to Rule Them All - Poisoning GitHub's Runner Images](<https://adnanthekhan.com/2023/12/20/one-supply-chain-attack-to-rule-them-all/>) — Adnan Khan; source ID: primary; retrieved 2026-10-02T23:01:00Z.
+- [Welcome to my blog - there is more to come\!](<https://adnanthekhan.com/2023/12/16/welcome-to-my-blog-there-is-more-to-come/>) — Adnan Khan; source ID: announcement; retrieved 2026-10-02T23:01:00Z.
+- [Vulnerability Disclosure Guidelines](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: currency-context; retrieved 2026-10-02T23:01:00Z.
+- [Bug bounty anniversary promotion: Bigger bounties in January and February](<https://github.blog/news-insights/company-news/bug-bounty-anniversary-promotion-bigger-bounties-in-january-and-february/>) — Neil Matatall / GitHub; source ID: historical-currency-context; retrieved 2026-10-02T23:05:17Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

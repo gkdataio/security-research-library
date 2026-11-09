@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2020-02-07; precision: day; basis: explicit. Initial page date; a separate May 7, 2020 update is displayed\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. The reviewed vendor retrospective was published February 7, 2020; earliest public disclosure is not established\.
-- **reported:** 2019-09; precision: month; basis: inferred. September event in the vendor’s 2019 retrospective; the day is unspecified\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Vendor states an initial fix followed within hours of the report, then broader framework remediation; exact deployment dates are not supplied\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported. Vendor confirms payment but gives no transfer date\.
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2020-02-07; precision: day; basis: explicit; source: [2019 Bug Bounty highlights, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) (source ID: vendor-retrospective). Initial page date; a separate May 7, 2020 update is displayed\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The reviewed vendor retrospective was published February 7, 2020; earliest public disclosure is not established\.
+- **reported:** 2019-09; precision: month; basis: inferred; source: [2019 Bug Bounty highlights, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) (source ID: vendor-retrospective). September event in the vendor’s 2019 retrospective; the day is unspecified\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Vendor states an initial fix followed within hours of the report, then broader framework remediation; exact deployment dates are not supplied\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Vendor confirms payment but gives no transfer date\.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,6 +61,6 @@ Reviewed: 2026-10-02T18:24:00Z. Read the official vendor retrospective and its e
 
 ## Sources and attribution
 
-- [2019 Bug Bounty highlights, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [2019 Bug Bounty highlights, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: vendor-retrospective; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

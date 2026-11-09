@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2025-10-28; precision: day; basis: url\_date. Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.
-- **public disclosure:** 2025-10-28; precision: day; basis: url\_date. Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.
-- **reported:** 2025-09-01; precision: day; basis: inferred. The timeline supplies September 1; year is inferred from the 2025 publication context\.
-- **awarded:** 2025-10-21; precision: day; basis: inferred. The timeline supplies October 21; year is inferred from the 2025 publication context\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported. Cash settlement date not independently established\.
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-10-28; precision: day; basis: url\_date; source: [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) (source ID: primary). Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.
+- **public disclosure:** 2025-10-28; precision: day; basis: url\_date; source: [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) (source ID: primary). Date encoded in the researcher publication permalink; earliest disclosure elsewhere was not independently established\.
+- **reported:** 2025-09-01; precision: day; basis: inferred; source: [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) (source ID: primary). The timeline supplies September 1; year is inferred from the 2025 publication context\.
+- **awarded:** 2025-10-21; precision: day; basis: inferred; source: [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) (source ID: primary). The timeline supplies October 21; year is inferred from the 2025 publication context\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Cash settlement date not independently established\.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -56,6 +56,6 @@ Reviewed: 2026-10-04T11:43:25Z. Primary public source read; award distinguished 
 
 ## Sources and attribution
 
-- [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) — Furbreeze; retrieved 2026-10-04T11:40:43Z.
+- [Vibecoding my way to a crit on Github](<https://furbreeze.github.io/2025/10/28/vibecoding-my-way-to-a-crit-on-github.html>) — Furbreeze; source ID: primary; retrieved 2026-10-04T11:40:43Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

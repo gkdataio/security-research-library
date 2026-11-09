@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-05-04; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported. The narrative gives approximate historical context but no distinct submission date for this Actifio report\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-05-04; precision: day; basis: explicit; source: [Two RCEs in Google Cloud products and Nike Air Max 90s](<https://stazot.com/?article=dataprep-actifio-jar-swapping-rce>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The narrative gives approximate historical context but no distinct submission date for this Actifio report\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -63,7 +63,7 @@ Reviewed: 2026-10-02T15:31:00Z. Full researcher article read in the cloud browse
 
 ## Sources and attribution
 
-- [Two RCEs in Google Cloud products and Nike Air Max 90s](<https://stazot.com/?article=dataprep-actifio-jar-swapping-rce>) — Sivanesh Ashok; retrieved 2026-10-02T15:31:00Z.
-- [VRP news from Nullcon: Google web VRP USD denomination](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Josh Armour / Google; retrieved 2026-10-02T15:11:49Z.
+- [Two RCEs in Google Cloud products and Nike Air Max 90s](<https://stazot.com/?article=dataprep-actifio-jar-swapping-rce>) — Sivanesh Ashok; source ID: primary; retrieved 2026-10-02T15:31:00Z.
+- [VRP news from Nullcon: Google web VRP USD denomination](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Josh Armour / Google; source ID: google-usd-context; retrieved 2026-10-02T15:11:49Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

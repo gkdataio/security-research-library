@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Current archive page displays 2026-01-16\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure remains unverified; the current archive header does not resolve it\.
-- **reported:** 2024-10-16; precision: day; basis: explicit
-- **awarded:** 2025-02-12; precision: day; basis: explicit
-- **fixed:** 2024-10-24; precision: day; basis: explicit. Overall fix date in the researcher timeline\. A separately alleged, disputed grant-binding component has no confirmed fix date; this timestamp does not cover it\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Current archive page displays 2026-01-16\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Earliest public disclosure remains unverified; the current archive header does not resolve it\.
+- **reported:** 2024-10-16; precision: day; basis: explicit; source: [Instagram account takeover via Meta Pixel script abuse](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) (source ID: researcher-writeup).
+- **awarded:** 2025-02-12; precision: day; basis: explicit; source: [Instagram account takeover via Meta Pixel script abuse](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) (source ID: researcher-writeup).
+- **fixed:** 2024-10-24; precision: day; basis: explicit; source: [Instagram account takeover via Meta Pixel script abuse](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) (source ID: researcher-writeup). Overall fix date in the researcher timeline\. A separately alleged, disputed grant-binding component has no confirmed fix date; this timestamp does not cover it\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -65,7 +65,7 @@ Reviewed: 2026-10-02T19:49:00Z. Reviewed the primary explanation and timeline; c
 
 ## Sources and attribution
 
-- [Instagram account takeover via Meta Pixel script abuse](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) — Youssef Sammouda; retrieved 2026-10-02T19:49:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [Instagram account takeover via Meta Pixel script abuse](<https://ysamm.com/uncategorized/2026/01/16/leaking-fbevents-ato.html>) — Youssef Sammouda; source ID: researcher-writeup; retrieved 2026-10-02T19:49:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

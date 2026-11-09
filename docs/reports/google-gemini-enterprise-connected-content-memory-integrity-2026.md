@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
-- **published:** 2026-03-12; precision: day; basis: inferred. DEV article March 12, 2026; the researcher's Reddit write-up is dated March 9, 2026\. Original X post is linked but its exact date was not independently established\. No exact report, award, or fix dates were found\.
-- **public disclosure:** 2026-03-09; precision: day; basis: explicit. Earlier researcher publication on Reddit; linked original X post might be earlier\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **published:** 2026-03-12; precision: day; basis: inferred; source: [Google paid me $15,000 for this Prompt Injection bug\.](<https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6>) (source ID: primary). DEV article March 12, 2026; the researcher's Reddit write-up is dated March 9, 2026\. Original X post is linked but its exact date was not independently established\. No exact report, award, or fix dates were found\.
+- **public disclosure:** 2026-03-09; precision: day; basis: explicit; source: [Supporting primary disclosure source](<https://www.reddit.com/r/bugbounty/comments/1row41z/google_paid_me_15000_for_this_prompt_injection_bug/>) (source ID: source-2). Earlier researcher publication on Reddit; linked original X post might be earlier\.
 
 ## Verification limits
 
@@ -65,7 +65,7 @@ Reviewed: 2026-10-02T20:20:00Z. Re-read the researcher’s primary article, pres
 
 ## Sources and attribution
 
-- [Google paid me $15,000 for this Prompt Injection bug\.](<https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6>) — Behi; retrieved 2026-10-02T20:20:00Z.
-- [Supporting primary disclosure source](<https://www.reddit.com/r/bugbounty/comments/1row41z/google_paid_me_15000_for_this_prompt_injection_bug/>) — Behi; retrieved 2026-10-02T03:54:00Z.
+- [Google paid me $15,000 for this Prompt Injection bug\.](<https://dev.to/behi_sec/google-paid-me-15000-for-this-prompt-injection-bug-5fn6>) — Behi; source ID: primary; retrieved 2026-10-02T20:20:00Z.
+- [Supporting primary disclosure source](<https://www.reddit.com/r/bugbounty/comments/1row41z/google_paid_me_15000_for_this_prompt_injection_bug/>) — Behi; source ID: source-2; retrieved 2026-10-02T03:54:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

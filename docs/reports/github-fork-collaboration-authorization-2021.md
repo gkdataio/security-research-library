@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2021-03-10; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2021-01-22; precision: day; basis: explicit
-- **awarded:** 2021-03-02; precision: day; basis: explicit
-- **fixed:** 2021-01-27; precision: day; basis: explicit. github\.com deployment; Enterprise Server releases followed March 2, 2021\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2021-03-10; precision: day; basis: explicit; source: [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2021-01-22; precision: day; basis: explicit; source: [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) (source ID: primary).
+- **awarded:** 2021-03-02; precision: day; basis: explicit; source: [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) (source ID: primary).
+- **fixed:** 2021-01-27; precision: day; basis: explicit; source: [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) (source ID: primary). github\.com deployment; Enterprise Server releases followed March 2, 2021\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -56,6 +56,6 @@ Reviewed: 2026-10-02T15:12:00Z. Primary public source read; individual award and
 
 ## Sources and attribution
 
-- [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) — Teddy Katz; retrieved 2026-10-02T15:12:00Z.
+- [Messing with GitHub’s fork collaboration for fun and profit](<https://blog.teddykatz.com/2021/03/10/fork-collab-abuse.html>) — Teddy Katz; source ID: primary; retrieved 2026-10-02T15:12:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-04-01; precision: day; basis: explicit. Public technical report disclosure date; the later vendor case study was published June 24, 2025\.
-- **public disclosure:** 2025-04-01; precision: day; basis: explicit
-- **reported:** 2025-02-19; precision: day; basis: explicit
-- **awarded:** 2025-02-21; precision: day; basis: explicit. Public timeline records the bounty event; the vendor case study establishes its USD 25,000 amount\. Separate retest compensation is not included\.
-- **fixed:** 2025-02-21; precision: day; basis: explicit. Vendor deployment confirmation and successful researcher retest appear on this day; exact deployment time is not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-04-01; precision: day; basis: explicit; source: [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) (source ID: technical-report). Public technical report disclosure date; the later vendor case study was published June 24, 2025\.
+- **public disclosure:** 2025-04-01; precision: day; basis: explicit; source: [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) (source ID: technical-report).
+- **reported:** 2025-02-19; precision: day; basis: explicit; source: [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) (source ID: technical-report).
+- **awarded:** 2025-02-21; precision: day; basis: explicit; source: [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) (source ID: technical-report). Public timeline records the bounty event; the vendor case study establishes its USD 25,000 amount\. Separate retest compensation is not included\.
+- **fixed:** 2025-02-21; precision: day; basis: explicit; source: [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) (source ID: technical-report). Vendor deployment confirmation and successful researcher retest appear on this day; exact deployment time is not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -65,9 +65,9 @@ Reviewed: 2026-10-03T08:59:00Z. Freshly read the vendor case study and the publi
 
 ## Sources and attribution
 
-- [We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action](<https://www.hackerone.com/blog/hai-insight-agent-case-study>) — Crystal Hazen / HackerOne; retrieved 2026-10-03T08:59:00Z.
-- [Vulnerability Disclosure Standards](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; retrieved 2026-10-02T23:03:50Z.
-- [HackerOne terms and disclosure guidelines in official reseller GSA contract attachment, Exhibit C](<https://www.carahsoft.com/buy/gsa-schedule-contracts/approved-csas/docFileDownload/286450/24c3653f-9d13-4944-8f2e-5baa23efa63c>) — HackerOne / Carahsoft \(contract attachment\); retrieved 2026-10-02T23:05:44Z.
-- [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) — HackerOne and avinash\_; retrieved 2026-10-03T08:59:00Z.
+- [We’re Running Hai Insight Agent on Our Own Bug Bounty Program – See it in Action](<https://www.hackerone.com/blog/hai-insight-agent-case-study>) — Crystal Hazen / HackerOne; source ID: primary; retrieved 2026-10-03T08:59:00Z.
+- [Vulnerability Disclosure Standards](<https://www.hackerone.com/terms/disclosure-guidelines>) — HackerOne; source ID: currency-context; retrieved 2026-10-02T23:03:50Z.
+- [HackerOne terms and disclosure guidelines in official reseller GSA contract attachment, Exhibit C](<https://www.carahsoft.com/buy/gsa-schedule-contracts/approved-csas/docFileDownload/286450/24c3653f-9d13-4944-8f2e-5baa23efa63c>) — HackerOne / Carahsoft \(contract attachment\); source ID: historical-currency-context; retrieved 2026-10-02T23:05:44Z.
+- [Public report 3000510: private user attributes exposed in report serialization](<https://hackerone.com/reports/3000510>) — HackerOne and avinash\_; source ID: technical-report; retrieved 2026-10-03T08:59:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

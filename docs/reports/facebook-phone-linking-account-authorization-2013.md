@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2013-06-26; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2013-05-23; precision: day; basis: explicit
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2013-05-28; precision: day; basis: explicit
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2013-06-26; precision: day; basis: explicit; source: [Hijacking a Facebook Account with SMS](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) (source ID: researcher-writeup).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2013-05-23; precision: day; basis: explicit; source: [Hijacking a Facebook Account with SMS](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) (source ID: researcher-writeup).
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2013-05-28; precision: day; basis: explicit; source: [Hijacking a Facebook Account with SMS](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) (source ID: researcher-writeup).
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,7 +58,7 @@ Reviewed: 2026-10-03T14:00:08Z. Read the original dated researcher article and i
 
 ## Sources and attribution
 
-- [Hijacking a Facebook Account with SMS](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) — Jack Whitton; retrieved 2026-10-03T14:00:08Z.
-- [Facebook 2019 Bug Bounty retrospective, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-03T14:00:08Z.
+- [Hijacking a Facebook Account with SMS](<https://whitton.io/articles/hijacking-a-facebook-account-with-sms/>) — Jack Whitton; source ID: researcher-writeup; retrieved 2026-10-03T14:00:08Z.
+- [Facebook 2019 Bug Bounty retrospective, official Spanish edition](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-03T14:00:08Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

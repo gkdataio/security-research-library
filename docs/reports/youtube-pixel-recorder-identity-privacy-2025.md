@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-02-12; precision: day; basis: explicit
-- **public disclosure:** 2025-02-12; precision: day; basis: explicit
-- **reported:** 2024-09-15; precision: day; basis: explicit
-- **awarded:** 2024-12-12; precision: day; basis: explicit. Final additional award; initial award was November 5, 2024\.
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Researcher confirmed both components fixed on February 9, 2025; actual deployment date is not supplied\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-02-12; precision: day; basis: explicit; source: [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) (source ID: primary).
+- **public disclosure:** 2025-02-12; precision: day; basis: explicit; source: [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) (source ID: primary).
+- **reported:** 2024-09-15; precision: day; basis: explicit; source: [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) (source ID: primary).
+- **awarded:** 2024-12-12; precision: day; basis: explicit; source: [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) (source ID: primary). Final additional award; initial award was November 5, 2024\.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Researcher confirmed both components fixed on February 9, 2025; actual deployment date is not supplied\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,7 +60,7 @@ Reviewed: 2026-10-02T15:14:47Z. Primary source reviewed; individual award and at
 
 ## Sources and attribution
 
-- [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) — Arvin Shivram and Nathan; retrieved 2026-10-02T15:12:00Z.
-- [Google and Alphabet VRP reward-denomination announcement, July 11, 2024](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; retrieved 2026-10-02T15:14:47Z.
+- [Leaking the email of any YouTube user for $10,000](<https://brutecat.com/articles/leaking-youtube-emails/>) — Arvin Shivram and Nathan; source ID: primary; retrieved 2026-10-02T15:12:00Z.
+- [Google and Alphabet VRP reward-denomination announcement, July 11, 2024](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; source ID: google-usd-context; retrieved 2026-10-02T15:14:47Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

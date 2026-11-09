@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2021-03-02; precision: day; basis: explicit. Original publication date preserved by the author’s archive; current article header is a later update\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2020-11; precision: month; basis: explicit
-- **paid:** 2021-02-09; precision: day; basis: explicit
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2021-03-02; precision: day; basis: explicit; source: [Original publication archive](<https://thezerohack.com/digital-marketing>) (source ID: source-2). Original publication date preserved by the author’s archive; current article header is a later update\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2020-11; precision: month; basis: explicit; source: [Microsoft account recovery lacked consistent attempt-limit enforcement](<https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account>) (source ID: primary).
+- **paid:** 2021-02-09; precision: day; basis: explicit; source: [Microsoft account recovery lacked consistent attempt-limit enforcement](<https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account>) (source ID: primary).
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -62,7 +62,7 @@ Reviewed: 2026-10-02T14:43:00Z. Primary public sources read; individual reward, 
 
 ## Sources and attribution
 
-- [Microsoft account recovery lacked consistent attempt-limit enforcement](<https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account>) — Laxman Muthiyah; retrieved 2026-10-02T14:43:00Z.
-- [Original publication archive](<https://thezerohack.com/digital-marketing>) — Laxman Muthiyah; retrieved 2026-10-02T14:43:00Z.
+- [Microsoft account recovery lacked consistent attempt-limit enforcement](<https://thezerohack.com/how-i-might-have-hacked-any-microsoft-account>) — Laxman Muthiyah; source ID: primary; retrieved 2026-10-02T14:43:00Z.
+- [Original publication archive](<https://thezerohack.com/digital-marketing>) — Laxman Muthiyah; source ID: source-2; retrieved 2026-10-02T14:43:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

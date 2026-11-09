@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-07-02; precision: day; basis: explicit. Date displayed by the researcher article\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2024; precision: year; basis: inferred. Article says the report was submitted last year; year inferred from its 2025 publication header\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-07-02; precision: day; basis: explicit; source: [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) (source ID: primary). Date displayed by the researcher article\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2024; precision: year; basis: inferred; source: [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) (source ID: primary). Article says the report was submitted last year; year inferred from its 2025 publication header\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,8 +61,8 @@ Reviewed: 2026-10-03T05:19:42Z. Fresh-read the article; retained previously insp
 
 ## Sources and attribution
 
-- [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) — sudi \(Sudistark\); retrieved 2026-10-03T05:19:42Z.
-- [Researcher-published Google award email for IDX report](<https://sudistark.github.io/tmp/cdn-images/Pasted%20image%2020250729220436.png>) — sudi \(Sudistark\), reproducing a Google award notice; retrieved 2026-10-02T15:12:00Z.
-- [Google and Alphabet VRP reward-denomination announcement, July 11, 2024](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; retrieved 2026-10-02T15:14:47Z.
+- [XSS in Google IDX Workstation](<https://sudistark.github.io/2025/07/02/idx.html>) — sudi \(Sudistark\); source ID: primary; retrieved 2026-10-03T05:19:42Z.
+- [Researcher-published Google award email for IDX report](<https://sudistark.github.io/tmp/cdn-images/Pasted%20image%2020250729220436.png>) — sudi \(Sudistark\), reproducing a Google award notice; source ID: award-image; retrieved 2026-10-02T15:12:00Z.
+- [Google and Alphabet VRP reward-denomination announcement, July 11, 2024](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz / Google; source ID: google-usd-context; retrieved 2026-10-02T15:14:47Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

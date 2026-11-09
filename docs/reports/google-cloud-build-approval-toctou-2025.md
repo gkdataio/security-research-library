@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2025-07-21; precision: day; basis: explicit
-- **public disclosure:** 2025-07-21; precision: day; basis: explicit. Publication of this write-up; earliest disclosure elsewhere was not independently established\.
-- **reported:** 2024-11-13; precision: day; basis: explicit
-- **awarded:** 2025-01-28; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. The researcher says Google marked the issue fixed on June 18, 2025\. The exact deployment date is not established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported. Cash settlement date not independently established\.
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-07-21; precision: day; basis: explicit; source: [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) (source ID: primary).
+- **public disclosure:** 2025-07-21; precision: day; basis: explicit; source: [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) (source ID: primary). Publication of this write-up; earliest disclosure elsewhere was not independently established\.
+- **reported:** 2024-11-13; precision: day; basis: explicit; source: [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) (source ID: primary).
+- **awarded:** 2025-01-28; precision: day; basis: explicit; source: [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) (source ID: primary).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The researcher says Google marked the issue fixed on June 18, 2025\. The exact deployment date is not established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Cash settlement date not independently established\.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -64,9 +64,9 @@ Reviewed: 2026-10-05T21:13:58Z. Reviewed the researcher-published award image an
 
 ## Sources and attribution
 
-- [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) — Adnan Khan; retrieved 2026-10-02T20:00:00Z.
-- [Researcher-published Google award notice for the Cloud Build report](<https://adnanthekhan.com/_astro/images/google-bounty-payment.BiMCzkaR_287nKC.webp>) — Adnan Khan, reproducing a Google award notice; retrieved 2026-10-05T21:08:43Z.
-- [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Josh Armour / Google; retrieved 2026-10-05T21:11:25Z.
-- [Introducing Google Cloud’s new Vulnerability Reward Program](<https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program>) — Michael Cote and Sri Tulasiram / Google Cloud; retrieved 2026-10-05T21:11:25Z.
+- [Who's SHA is it Anyway: Bypassing Google Cloud Build Comment Control for $30,000](<https://adnanthekhan.com/posts/cloud-build-toctou/>) — Adnan Khan; source ID: primary; retrieved 2026-10-02T20:00:00Z.
+- [Researcher-published Google award notice for the Cloud Build report](<https://adnanthekhan.com/_astro/images/google-bounty-payment.BiMCzkaR_287nKC.webp>) — Adnan Khan, reproducing a Google award notice; source ID: award-image; retrieved 2026-10-05T21:08:43Z.
+- [VRP news from Nullcon](<https://security.googleblog.com/2017/03/vrp-news-from-nullcon.html>) — Josh Armour / Google; source ID: google-usd-context-2017; retrieved 2026-10-05T21:11:25Z.
+- [Introducing Google Cloud’s new Vulnerability Reward Program](<https://cloud.google.com/blog/products/identity-security/google-cloud-launches-new-vulnerability-rewards-program>) — Michael Cote and Sri Tulasiram / Google Cloud; source ID: cloud-program-continuity-2024; retrieved 2026-10-05T21:11:25Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

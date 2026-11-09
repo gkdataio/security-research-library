@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2021-03-17; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2021-02-04; precision: day; basis: explicit
-- **awarded:** 2021-03-03; precision: day; basis: explicit
-- **fixed:** 2021-03-02; precision: day; basis: explicit. GitHub Enterprise Server 3\.0\.1 release; github\.com was fixed earlier in February, without an exact final timestamp in the source\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2021-03-17; precision: day; basis: explicit; source: [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2021-02-04; precision: day; basis: explicit; source: [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) (source ID: primary).
+- **awarded:** 2021-03-03; precision: day; basis: explicit; source: [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) (source ID: primary).
+- **fixed:** 2021-03-02; precision: day; basis: explicit; source: [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) (source ID: primary). GitHub Enterprise Server 3\.0\.1 release; github\.com was fixed earlier in February, without an exact final timestamp in the source\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,6 +60,6 @@ Reviewed: 2026-10-02T14:39:00Z. Primary public source read; individual award and
 
 ## Sources and attribution
 
-- [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) — Teddy Katz; retrieved 2026-10-02T14:39:00Z.
+- [Stealing arbitrary GitHub Actions secrets](<https://blog.teddykatz.com/2021/03/17/github-actions-write-access.html>) — Teddy Katz; source ID: primary; retrieved 2026-10-02T14:39:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

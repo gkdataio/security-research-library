@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-09-11; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** 2026-07-18; precision: day; basis: explicit
-- **awarded:** 2026-07-24; precision: day; basis: explicit
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Article states resolution without a date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-09-11; precision: day; basis: explicit; source: [Breaking into Google's GFile for $100k](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) (source ID: researcher-writeup).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** 2026-07-18; precision: day; basis: explicit; source: [Breaking into Google's GFile for $100k](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) (source ID: researcher-writeup).
+- **awarded:** 2026-07-24; precision: day; basis: explicit; source: [Breaking into Google's GFile for $100k](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) (source ID: researcher-writeup).
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Article states resolution without a date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,7 +59,7 @@ Reviewed: 2026-10-03T16:00:54Z. Read both primary pages in the cloud browser aft
 
 ## Sources and attribution
 
-- [Breaking into Google's GFile for $100k](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) — Arvin Shivram \(Brutecat\), published on Google Bug Hunters; retrieved 2026-10-03T16:00:54Z.
-- [Increasing Google &amp; Alphabet VRP rewards up to $151,515](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz, Google; retrieved 2026-10-03T16:00:54Z.
+- [Breaking into Google's GFile for $100k](<https://bughunters.google.com/blog/breaking-into-googles-gfile-for-100k>) — Arvin Shivram \(Brutecat\), published on Google Bug Hunters; source ID: researcher-writeup; retrieved 2026-10-03T16:00:54Z.
+- [Increasing Google &amp; Alphabet VRP rewards up to $151,515](<https://bughunters.google.com/blog/increasing-google-alphabet-vrp-rewards-up-to-151515>) — Sam Erb and Krzysztof Kotowicz, Google; source ID: currency-context; retrieved 2026-10-03T16:00:54Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

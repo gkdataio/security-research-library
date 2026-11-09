@@ -41,14 +41,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Current archive page displays 2026-01-17\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. Earliest public disclosure remains unverified; the current archive header does not resolve it\.
-- **reported:** 2023-06-22; precision: day; basis: explicit
-- **awarded:** 2023-06-28; precision: day; basis: explicit
-- **fixed:** 2023-12-15; precision: day; basis: explicit. Researcher timeline explicitly labels this as the vendor fix date\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Current archive page displays 2026-01-17\. Original publication versus migration/republication is not established, so this date is not used as a recent disclosure\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Earliest public disclosure remains unverified; the current archive header does not resolve it\.
+- **reported:** 2023-06-22; precision: day; basis: explicit; source: [Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) (source ID: researcher-writeup).
+- **awarded:** 2023-06-28; precision: day; basis: explicit; source: [Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) (source ID: researcher-writeup).
+- **fixed:** 2023-12-15; precision: day; basis: explicit; source: [Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) (source ID: researcher-writeup). Researcher timeline explicitly labels this as the vendor fix date\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -64,7 +64,7 @@ Reviewed: 2026-10-02T19:21:00Z. Re-read the SDK introduction, trust checks, rand
 
 ## Sources and attribution
 
-- [Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) — Youssef Sammouda; retrieved 2026-10-02T19:21:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [Account Takeover in Facebook mobile app due to usage of cryptographically unsecure random number generator and XSS in Facebook JS SDK](<https://ysamm.com/uncategorized/2026/01/17/math-random-facebook-sdk.html>) — Youssef Sammouda; source ID: researcher-writeup; retrieved 2026-10-02T19:21:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

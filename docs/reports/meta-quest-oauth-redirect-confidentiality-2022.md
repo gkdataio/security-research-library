@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2023-01-29; precision: day; basis: explicit. Article date also appears in the researcher’s archive index; historical publication, not the archive’s separate January 2026 entries\.
-- **public disclosure:** 2022-12-15; precision: day; basis: explicit. Dated vendor summary precedes the technical article\. The page’s December 2024 update explicitly concerns another report\.
-- **reported:** 2022-08-27; precision: day; basis: explicit
-- **awarded:** 2022-09-25; precision: day; basis: explicit. Researcher’s dated total including bonuses; exact funds-transfer date is not established\.
-- **fixed:** 2022-09-25; precision: day; basis: explicit. Researcher labels this as the Meta fix date\. The article withholds details of a separate redirect component that it says was not fully fixed; this is not a claim that every component was remediated that day\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2022-12-15; precision: day; basis: explicit
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2023-01-29; precision: day; basis: explicit; source: [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) (source ID: researcher-writeup). Article date also appears in the researcher’s archive index; historical publication, not the archive’s separate January 2026 entries\.
+- **public disclosure:** 2022-12-15; precision: day; basis: explicit; source: [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) (source ID: vendor-retrospective). Dated vendor summary precedes the technical article\. The page’s December 2024 update explicitly concerns another report\.
+- **reported:** 2022-08-27; precision: day; basis: explicit; source: [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) (source ID: researcher-writeup).
+- **awarded:** 2022-09-25; precision: day; basis: explicit; source: [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) (source ID: researcher-writeup). Researcher’s dated total including bonuses; exact funds-transfer date is not established\.
+- **fixed:** 2022-09-25; precision: day; basis: explicit; source: [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) (source ID: researcher-writeup). Researcher labels this as the Meta fix date\. The article withholds details of a separate redirect component that it says was not fully fixed; this is not a claim that every component was remediated that day\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2022-12-15; precision: day; basis: explicit; source: [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) (source ID: vendor-retrospective).
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,8 +60,8 @@ Reviewed: 2026-10-02T19:39:00Z. Matched the researcher, Quest/Oculus OAuth issue
 
 ## Sources and attribution
 
-- [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) — Youssef Sammouda; retrieved 2026-10-02T19:39:00Z.
-- [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) — Neta Oren / Meta; retrieved 2026-10-02T19:39:00Z.
-- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; retrieved 2026-10-02T18:24:00Z.
+- [Account takeover of Facebook/Oculus accounts due to First-Party access\_token stealing](<https://ysamm.com/uncategorized/2023/01/29/account-takeover-of-facebook-oculus-accounts-due-to-first-party-access_token-stealing.html>) — Youssef Sammouda; source ID: researcher-writeup; retrieved 2026-10-02T19:39:00Z.
+- [Looking Back at Our Bug Bounty Program in 2022](<https://about.fb.com/news/2022/12/metas-bug-bounty-program-2022/>) — Neta Oren / Meta; source ID: vendor-retrospective; retrieved 2026-10-02T19:39:00Z.
+- [Facebook Bug Bounty and BountyCon US-dollar reporting](<https://about.fb.com/ltam/news/2020/02/una-mirada-retrospectiva-a-los-aspectos-mas-destacados-de-bug-bounty-2019/>) — Dan Gurfinkel / Facebook; source ID: currency-context; retrieved 2026-10-02T18:24:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

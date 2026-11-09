@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-05-04; precision: day; basis: inferred. Displayed May 4; year inferred from the completed 2026 remediation timeline\.
-- **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration\. Subsequent CVE/advisory publication and full technical article are separate events\.
-- **reported:** Unknown; precision: unknown; basis: not\_reported. The researcher identifies the December 10–11 event; no exact initial vendor-report date is stated\. The tracker dates the public entry December 10\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2026-02-12; precision: day; basis: explicit. Vendor patch release, not proof of deployment by every customer\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2025-12-16; precision: day; basis: explicit. Dated organizer recap announces the exact entry award; decision and transfer dates remain unknown\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-05-04; precision: day; basis: inferred; source: [CVE-2026-2005: PostgreSQL pgcrypto heap buffer overflow leading to RCE](<https://www.zeroday.cloud/blog/postgres-xint>) (source ID: researcher-report). Displayed May 4; year inferred from the completed 2026 remediation timeline\.
+- **public disclosure:** 2025-12-10; precision: day; basis: explicit; source: [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) (source ID: competition-tracker). Public competition demonstration\. Subsequent CVE/advisory publication and full technical article are separate events\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The researcher identifies the December 10–11 event; no exact initial vendor-report date is stated\. The tracker dates the public entry December 10\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2026-02-12; precision: day; basis: explicit; source: [PostgreSQL CVE-2026-2005 security advisory](<https://www.postgresql.org/support/security/CVE-2026-2005/>) (source ID: vendor-advisory). Vendor patch release, not proof of deployment by every customer\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2025-12-16; precision: day; basis: explicit; source: [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) (source ID: competition-results). Dated organizer recap announces the exact entry award; decision and transfer dates remain unknown\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,11 +61,11 @@ Reviewed: 2026-10-02T18:12:00Z. Read the named researcher report, organizer CVE 
 
 ## Sources and attribution
 
-- [CVE-2026-2005: PostgreSQL pgcrypto heap buffer overflow leading to RCE](<https://www.zeroday.cloud/blog/postgres-xint>) — Team Xint Code / ZeroDay\.cloud; retrieved 2026-10-02T18:12:00Z.
-- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; retrieved 2026-10-02T18:12:00Z.
-- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; retrieved 2026-10-02T18:12:00Z.
-- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; retrieved 2026-10-02T18:12:00Z.
-- [PostgreSQL CVE-2026-2005 security advisory](<https://www.postgresql.org/support/security/CVE-2026-2005/>) — PostgreSQL; retrieved 2026-10-02T18:12:00Z.
-- [CVE-2026-2005 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/2xxx/CVE-2026-2005.json>) — PostgreSQL CNA / CVE Program; retrieved 2026-10-02T18:12:00Z.
+- [CVE-2026-2005: PostgreSQL pgcrypto heap buffer overflow leading to RCE](<https://www.zeroday.cloud/blog/postgres-xint>) — Team Xint Code / ZeroDay\.cloud; source ID: researcher-report; retrieved 2026-10-02T18:12:00Z.
+- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; source ID: competition-results; retrieved 2026-10-02T18:12:00Z.
+- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; source ID: competition-tracker; retrieved 2026-10-02T18:12:00Z.
+- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; source ID: currency-context; retrieved 2026-10-02T18:12:00Z.
+- [PostgreSQL CVE-2026-2005 security advisory](<https://www.postgresql.org/support/security/CVE-2026-2005/>) — PostgreSQL; source ID: vendor-advisory; retrieved 2026-10-02T18:12:00Z.
+- [CVE-2026-2005 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/2xxx/CVE-2026-2005.json>) — PostgreSQL CNA / CVE Program; source ID: vendor-cve; retrieved 2026-10-02T18:12:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-06-02; precision: day; basis: inferred. The article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
-- **public disclosure:** 2025-12-10; precision: day; basis: explicit. Public competition demonstration; separate from later vendor advisory and technical publication\.
-- **reported:** Unknown; precision: unknown; basis: not\_reported. Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt\.
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2026-05-05; precision: day; basis: explicit. Official Redis 8\.6\.3 release names the CVE\. Researcher also identifies fixed versions in four other maintained series\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2025-12-16; precision: day; basis: explicit. Organizer recap confirms the per-entry award; decision and payment dates remain unknown\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-06-02; precision: day; basis: inferred; source: [CVE-2026-25243: Two Redis RESTORE Bugs Leading to RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-25243-deep-dive>) (source ID: researcher-report). The article displays June 2; 2026 is inferred from its completed May 5, 2026 remediation timeline\.
+- **public disclosure:** 2025-12-10; precision: day; basis: explicit; source: [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) (source ID: competition-tracker). Public competition demonstration; separate from later vendor advisory and technical publication\.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Exact initial report to the vendor is not stated; the tracker dates the competition entry, not vendor receipt\.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2026-05-05; precision: day; basis: explicit; source: [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) (source ID: vendor-release). Official Redis 8\.6\.3 release names the CVE\. Researcher also identifies fixed versions in four other maintained series\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2025-12-16; precision: day; basis: explicit; source: [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) (source ID: competition-results). Organizer recap confirms the per-entry award; decision and payment dates remain unknown\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -61,12 +61,12 @@ Reviewed: 2026-10-02T19:21:00Z. Matched the individual award, exact CVE tracker 
 
 ## Sources and attribution
 
-- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; retrieved 2026-10-02T19:21:00Z.
-- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; retrieved 2026-10-02T19:21:00Z.
-- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; retrieved 2026-10-02T19:21:00Z.
-- [CVE-2026-25243: Two Redis RESTORE Bugs Leading to RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-25243-deep-dive>) — Emil Lerner / ZeroDay\.cloud; retrieved 2026-10-02T19:21:00Z.
-- [Redis serialized-value validation advisory GHSA-c8h9-259x-jff4](<https://github.com/redis/redis/security/advisories/GHSA-c8h9-259x-jff4>) — Redis; retrieved 2026-10-02T19:21:00Z.
-- [CVE-2026-25243 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/25xxx/CVE-2026-25243.json>) — Redis / GitHub CNA; retrieved 2026-10-02T19:21:00Z.
-- [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) — Redis; retrieved 2026-10-02T19:21:00Z.
+- [ZeroDay\.cloud 2025 individual competition results](<https://www.wiz.io/blog/wiz-zeroday-cloud-hacking-competition-behind-the-scenes>) — Nir Ohfeld / Wiz Research; source ID: competition-results; retrieved 2026-10-02T19:21:00Z.
+- [ZeroDay\.cloud vulnerability tracker](<https://www.zeroday.cloud/vulnerability-tracker>) — Wiz / ZeroDay\.cloud; source ID: competition-tracker; retrieved 2026-10-02T19:21:00Z.
+- [ZeroDay\.cloud current rules: US-dollar denomination](<https://www.zeroday.cloud/rules>) — Wiz; source ID: currency-context; retrieved 2026-10-02T19:21:00Z.
+- [CVE-2026-25243: Two Redis RESTORE Bugs Leading to RCE](<https://www.zeroday.cloud/blog/redis-cve-2026-25243-deep-dive>) — Emil Lerner / ZeroDay\.cloud; source ID: researcher-report; retrieved 2026-10-02T19:21:00Z.
+- [Redis serialized-value validation advisory GHSA-c8h9-259x-jff4](<https://github.com/redis/redis/security/advisories/GHSA-c8h9-259x-jff4>) — Redis; source ID: vendor-advisory; retrieved 2026-10-02T19:21:00Z.
+- [CVE-2026-25243 CNA record](<https://github.com/CVEProject/cvelistV5/blob/main/cves/2026/25xxx/CVE-2026-25243.json>) — Redis / GitHub CNA; source ID: vendor-cve; retrieved 2026-10-02T19:21:00Z.
+- [Redis 8\.6\.3 security release](<https://github.com/redis/redis/releases/tag/8.6.3>) — Redis; source ID: vendor-release; retrieved 2026-10-02T19:21:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

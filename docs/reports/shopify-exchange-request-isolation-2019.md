@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: historical / outside the preferred window; reviewed as of 2026-10-03.
 
-- **published:** 2019-04-03; precision: day; basis: explicit
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2019-04-03; precision: day; basis: explicit; source: [One Million Dollars in Bug Bounties](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) (source ID: primary).
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -62,6 +62,6 @@ Reviewed: 2026-10-02T23:00:55Z. Reread the vendor retrospective, including its i
 
 ## Sources and attribution
 
-- [One Million Dollars in Bug Bounties](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) — Peter Yaworski / Shopify; retrieved 2026-10-02T23:00:55Z.
+- [One Million Dollars in Bug Bounties](<https://shopify.engineering/one-million-dollars-in-bug-bounties>) — Peter Yaworski / Shopify; source ID: primary; retrieved 2026-10-02T23:00:55Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

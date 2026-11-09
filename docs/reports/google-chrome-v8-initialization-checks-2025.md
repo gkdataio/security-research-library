@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2026-01-22; precision: day; basis: explicit. Comment \#24 records removal of issue access restrictions\.
-- **public disclosure:** 2025-10-28; precision: day; basis: explicit. Vendor advisory preceded full issue access\.
-- **reported:** 2025-10-10; precision: day; basis: explicit
-- **awarded:** 2025-10-17; precision: day; basis: explicit
-- **fixed:** 2025-10-28; precision: day; basis: explicit. Stable release announced staged rollout; main fix recorded October 10 and Fixed status October 15\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** 2025-10-28; precision: day; basis: explicit. Listed in the dated release notice; no original-page snapshot reviewed\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2026-01-22; precision: day; basis: explicit; source: [Chromium issue 450618029](<https://issues.chromium.org/issues/450618029>) (source ID: vendor-report). Comment \#24 records removal of issue access restrictions\.
+- **public disclosure:** 2025-10-28; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2025-10-28](<https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr>) (source ID: release). Vendor advisory preceded full issue access\.
+- **reported:** 2025-10-10; precision: day; basis: explicit; source: [Chromium issue 450618029](<https://issues.chromium.org/issues/450618029>) (source ID: vendor-report).
+- **awarded:** 2025-10-17; precision: day; basis: explicit; source: [Chromium issue 450618029](<https://issues.chromium.org/issues/450618029>) (source ID: vendor-report).
+- **fixed:** 2025-10-28; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2025-10-28](<https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr>) (source ID: release). Stable release announced staged rollout; main fix recorded October 10 and Fixed status October 15\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** 2025-10-28; precision: day; basis: explicit; source: [Chrome Stable Channel Update for Desktop, 2025-10-28](<https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr>) (source ID: release). Listed in the dated release notice; no original-page snapshot reviewed\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,8 +58,8 @@ Reviewed: 2026-10-02T16:21:50Z. Read the public rendered Chromium issue and offi
 
 ## Sources and attribution
 
-- [Chromium issue 450618029](<https://issues.chromium.org/issues/450618029>) — Google Chromium security team; retrieved 2026-10-02T16:21:50Z.
-- [Chrome Stable Channel Update for Desktop, 2025-10-28](<https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr>) — Google Chrome team; retrieved 2026-10-02T16:21:00Z.
-- [Security rewards at Google: Two MEEELLION Dollars Later](<https://blog.chromium.org/2013/08/security-rewards-at-google-two.html>) — Chromium team; retrieved 2026-10-02T16:08:00Z.
+- [Chromium issue 450618029](<https://issues.chromium.org/issues/450618029>) — Google Chromium security team; source ID: vendor-report; retrieved 2026-10-02T16:21:50Z.
+- [Chrome Stable Channel Update for Desktop, 2025-10-28](<https://chromereleases.googleblog.com/2025/10/stable-channel-update-for-desktop_28.html?hl=fr>) — Google Chrome team; source ID: release; retrieved 2026-10-02T16:21:00Z.
+- [Security rewards at Google: Two MEEELLION Dollars Later](<https://blog.chromium.org/2013/08/security-rewards-at-google-two.html>) — Chromium team; source ID: currency-context; retrieved 2026-10-02T16:08:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. The primary researcher page does not supply a publication date; no exact date is inferred\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported
-- **reported:** Unknown; precision: unknown; basis: not\_reported
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** 2020-01-28; precision: day; basis: explicit. Safari 13\.0\.5 vendor release date; the advisory entry was added February 6\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. The primary researcher page does not supply a publication date; no exact date is inferred\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **reported:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** 2020-01-28; precision: day; basis: explicit; source: [Apple security release advisory](<https://support.apple.com/en-sa/103780>) (source ID: source-2). Safari 13\.0\.5 vendor release date; the advisory entry was added February 6\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -59,7 +59,7 @@ Reviewed: 2026-10-02T14:43:00Z. Primary public sources read; individual reward, 
 
 ## Sources and attribution
 
-- [Safari origin confusion undermined stored media permissions](<https://www.ryanpickren.com/webcam-hacking-overview>) — Ryan Pickren; retrieved 2026-10-02T14:43:00Z.
-- [Apple security release advisory](<https://support.apple.com/en-sa/103780>) — Apple; retrieved 2026-10-02T14:43:00Z.
+- [Safari origin confusion undermined stored media permissions](<https://www.ryanpickren.com/webcam-hacking-overview>) — Ryan Pickren; source ID: primary; retrieved 2026-10-02T14:43:00Z.
+- [Apple security release advisory](<https://support.apple.com/en-sa/103780>) — Apple; source ID: source-2; retrieved 2026-10-02T14:43:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

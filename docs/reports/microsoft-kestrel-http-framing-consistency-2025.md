@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: within the preferred 12-month window; reviewed as of 2026-10-03.
 
-- **published:** 2025-11-07; precision: day; basis: explicit. Detailed article date; vendor disclosure preceded it\.
-- **public disclosure:** 2025-10-14; precision: day; basis: explicit
-- **reported:** 2025-06-22; precision: day; basis: explicit
-- **awarded:** 2025-07-21; precision: day; basis: explicit
-- **fixed:** 2025-10-14; precision: day; basis: explicit. Public patch release; vendor advisory independently identifies patched versions\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported. First public award-announcement date is not established\.
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** 2025-11-07; precision: day; basis: explicit; source: [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) (source ID: researcher-writeup). Detailed article date; vendor disclosure preceded it\.
+- **public disclosure:** 2025-10-14; precision: day; basis: explicit; source: [Microsoft Security Advisory CVE-2025-55315](<https://github.com/dotnet/aspnetcore/security/advisories/GHSA-5rrx-jjjq-q2r5>) (source ID: vendor-advisory).
+- **reported:** 2025-06-22; precision: day; basis: explicit; source: [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) (source ID: researcher-writeup).
+- **awarded:** 2025-07-21; precision: day; basis: explicit; source: [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) (source ID: researcher-writeup).
+- **fixed:** 2025-10-14; precision: day; basis: explicit; source: [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) (source ID: researcher-writeup). Public patch release; vendor advisory independently identifies patched versions\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. First public award-announcement date is not established\.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -58,8 +58,8 @@ Reviewed: 2026-10-02T16:21:00Z. Read the primary researcher article and timeline
 
 ## Sources and attribution
 
-- [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) — Siddhant Kalgutkar / Praetorian; retrieved 2026-10-02T16:20:00Z.
-- [Microsoft Security Advisory CVE-2025-55315](<https://github.com/dotnet/aspnetcore/security/advisories/GHSA-5rrx-jjjq-q2r5>) — Microsoft \.NET security team; retrieved 2026-10-02T16:20:00Z.
-- [\.NET Bounty Program update, July 31, 2025](<https://www.microsoft.com/en-us/msrc/blog/2025/07/net-bounty-program-now-offers-up-to-40000-in-awards>) — Madeline Eckert and Barry Dorrans / Microsoft; retrieved 2026-10-02T16:21:00Z.
+- [ASP\.NET Core CVE-2025-55315 disclosure and award timeline](<https://www.praetorian.com/blog/how-i-found-the-worst-asp-net-vulnerability-a-10k-bug-cve-2025-55315/>) — Siddhant Kalgutkar / Praetorian; source ID: researcher-writeup; retrieved 2026-10-02T16:20:00Z.
+- [Microsoft Security Advisory CVE-2025-55315](<https://github.com/dotnet/aspnetcore/security/advisories/GHSA-5rrx-jjjq-q2r5>) — Microsoft \.NET security team; source ID: vendor-advisory; retrieved 2026-10-02T16:20:00Z.
+- [\.NET Bounty Program update, July 31, 2025](<https://www.microsoft.com/en-us/msrc/blog/2025/07/net-bounty-program-now-offers-up-to-40000-in-awards>) — Madeline Eckert and Barry Dorrans / Microsoft; source ID: currency-context; retrieved 2026-10-02T16:21:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

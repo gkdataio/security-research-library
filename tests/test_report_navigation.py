@@ -96,6 +96,36 @@ class ReportTopicNavigationTests(unittest.TestCase):
         self.assertIn('(<#'+anchor+'>)', page)
         self.assertNotIn('<tag>', page)
 
+    def test_report_source_rows_preserve_ids_links_authors_and_retrieval(self):
+        for rec in self.reports:
+            section = self.pages['docs/reports/'+rec['id']+'.md'].split('## Sources and attribution\n', 1)[1]
+            for source in rec['sources']:
+                with self.subTest(report=rec['id'], source=source['id']):
+                    expected = ('- '+link(source['title'], source['url'])+' — '+text(source['author'])+
+                                '; source ID: '+text(source['id'])+'; retrieved '+text(source['retrieved_at'])+'.')
+                    self.assertIn(expected, section)
+
+    def test_report_dates_resolve_their_own_source_and_preserve_evidence(self):
+        for rec in self.reports:
+            section = self.pages['docs/reports/'+rec['id']+'.md'].split('## Dates\n', 1)[1].split('## Verification limits', 1)[0]
+            sources = {source['id']: source for source in rec['sources']}
+            for name, date in rec['dates'].items():
+                with self.subTest(report=rec['id'], date=name):
+                    prefix = '- **'+text(name.replace('_', ' '))+':** '
+                    row = next(line for line in section.splitlines() if line.startswith(prefix))
+                    self.assertIn(prefix+text(date['value'] or 'Unknown')+'; precision: '+
+                                  text(date['precision'] or 'unknown')+'; basis: '+text(date['basis']), row)
+                    if date['source_id'] is None:
+                        self.assertIn('; source: Not recorded.', row)
+                        self.assertNotIn('](<', row)
+                        self.assertNotIn('source ID:', row)
+                    else:
+                        source = sources[date['source_id']]
+                        self.assertIn('; source: '+link(source['title'], source['url'])+
+                                      ' (source ID: '+text(source['id'])+').', row)
+                    if date['note']:
+                        self.assertTrue(row.endswith(text(date['note'])))
+
     def test_generated_page_matches_build_and_details_remain_present(self):
         self.assertEqual((ROOT/'docs/report-topics.md').read_text(), self.pages['docs/report-topics.md'])
         expected = {'docs/reports/'+r['id']+'.md' for r in self.reports}

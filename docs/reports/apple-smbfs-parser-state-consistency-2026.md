@@ -40,14 +40,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Original detailed README publication date was not established; advisory release is not substituted\.
-- **public disclosure:** 2026-09-14; precision: day; basis: explicit. Vendor security advisory; the researcher README publication date is not established\.
-- **reported:** 2026-05-03; precision: day; basis: explicit
-- **awarded:** 2026-05-14; precision: day; basis: explicit
-- **fixed:** 2026-09-14; precision: day; basis: explicit. Golden Gate 27 release and matching SMB advisory\.
-- **paid:** 2026-06-15; precision: day; basis: explicit
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** Unknown; precision: unknown; basis: not\_reported
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Original detailed README publication date was not established; advisory release is not substituted\.
+- **public disclosure:** 2026-09-14; precision: day; basis: explicit; source: [About the security content of macOS Golden Gate 27](<https://support.apple.com/en-us/149035>) (source ID: vendor). Vendor security advisory; the researcher README publication date is not established\.
+- **reported:** 2026-05-03; precision: day; basis: explicit; source: [CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS](<https://github.com/petermalone/CVE-2026-84543>) (source ID: primary).
+- **awarded:** 2026-05-14; precision: day; basis: explicit; source: [CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS](<https://github.com/petermalone/CVE-2026-84543>) (source ID: primary).
+- **fixed:** 2026-09-14; precision: day; basis: explicit; source: [About the security content of macOS Golden Gate 27](<https://support.apple.com/en-us/149035>) (source ID: vendor). Golden Gate 27 release and matching SMB advisory\.
+- **paid:** 2026-06-15; precision: day; basis: explicit; source: [CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS](<https://github.com/petermalone/CVE-2026-84543>) (source ID: primary).
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
 
 ## Verification limits
 
@@ -60,8 +60,8 @@ Reviewed: 2026-10-02T23:06:13Z. Read primary public disclosures and corroboratin
 
 ## Sources and attribution
 
-- [CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS](<https://github.com/petermalone/CVE-2026-84543>) — Peter Malone; retrieved 2026-10-02T23:01:00Z.
-- [About the security content of macOS Golden Gate 27](<https://support.apple.com/en-us/149035>) — Apple; retrieved 2026-10-02T23:01:00Z.
-- [Apple expands industry-leading commitment to protect users from highly targeted mercenary spyware](<https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/>) — Apple; retrieved 2026-10-02T23:01:00Z.
+- [CVE-2026-84543: a remote kernel vulnerability in macOS SMBFS](<https://github.com/petermalone/CVE-2026-84543>) — Peter Malone; source ID: primary; retrieved 2026-10-02T23:01:00Z.
+- [About the security content of macOS Golden Gate 27](<https://support.apple.com/en-us/149035>) — Apple; source ID: vendor; retrieved 2026-10-02T23:01:00Z.
+- [Apple expands industry-leading commitment to protect users from highly targeted mercenary spyware](<https://www.apple.com/nz/newsroom/2022/07/apple-expands-commitment-to-protect-users-from-mercenary-spyware/>) — Apple; source ID: currency-context; retrieved 2026-10-02T23:01:00Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).

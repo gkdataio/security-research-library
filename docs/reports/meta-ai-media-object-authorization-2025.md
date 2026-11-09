@@ -39,14 +39,14 @@ Exact source quotation and location remain in the [canonical record](<../../data
 
 Publication window: uncertain original publication date; reviewed as of 2026-10-03.
 
-- **published:** Unknown; precision: unknown; basis: not\_reported. Page is labeled Updated July 16, 2025; original publication is unknown\.
-- **public disclosure:** Unknown; precision: unknown; basis: not\_reported. First public disclosure is not established; article update date is July 16, 2025\.
-- **reported:** 2024-12-26; precision: day; basis: explicit
-- **awarded:** Unknown; precision: unknown; basis: not\_reported
-- **fixed:** Unknown; precision: unknown; basis: not\_reported. Full fix confirmed April 24, 2025; deployment date is not separately established\.
-- **paid:** Unknown; precision: unknown; basis: not\_reported
-- **award announced:** Unknown; precision: unknown; basis: not\_reported
-- **mitigated:** 2025-01-24; precision: day; basis: explicit. Timeline labels this a temporary fix\.
+- **published:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Page is labeled Updated July 16, 2025; original publication is unknown\.
+- **public disclosure:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. First public disclosure is not established; article update date is July 16, 2025\.
+- **reported:** 2024-12-26; precision: day; basis: explicit; source: [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) (source ID: researcher-writeup).
+- **awarded:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **fixed:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded. Full fix confirmed April 24, 2025; deployment date is not separately established\.
+- **paid:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **award announced:** Unknown; precision: unknown; basis: not\_reported; source: Not recorded.
+- **mitigated:** 2025-01-24; precision: day; basis: explicit; source: [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) (source ID: researcher-writeup). Timeline labels this a temporary fix\.
 
 ## Verification limits
 
@@ -59,6 +59,6 @@ Reviewed: 2026-10-03T05:09:57Z. Fresh read of the primary researcher article thr
 
 ## Sources and attribution
 
-- [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) — Sandeep / AppSecure; retrieved 2026-10-03T05:09:57Z.
+- [Meta AI prompts and generated content: technical analysis](<https://www.appsecure.security/blog/meta-ai-prompt-and-genertaed-content-leakage-technical-analysis>) — Sandeep / AppSecure; source ID: researcher-writeup; retrieved 2026-10-03T05:09:57Z.
 
 Original summary: Security Research Library contributors, CC BY 4.0. Linked sources retain their own rights. [License scope](../../LICENSE.md).
