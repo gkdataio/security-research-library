@@ -1,7 +1,13 @@
 name: Daily public scope refresh
 on:
   schedule:
-    - cron: '23 6 * * *'
+    # Independent backup opportunities, not guaranteed delivery times.
+    - cron: '23 6,10,14 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/daily-scope-refresh.yml'
+      - 'scripts/scope_refresh_due.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -20,26 +26,34 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check for a published attempt today
+        id: freshness
+        run: python scripts/scope_refresh_due.py
       - name: Test collectors before network access
+        if: steps.freshness.outputs.due == 'true'
         run: python -m unittest discover -s tests -v
       - name: Report new-program discovery coverage
+        if: steps.freshness.outputs.due == 'true'
         run: python scripts/discover_programs.py
       - name: Refresh supported public scope tables
+        if: steps.freshness.outputs.due == 'true'
         run: python scripts/refresh_program_scopes.py
       - name: Record workflow identity
+        if: steps.freshness.outputs.due == 'true'
         run: |
           python - <<'PY'
-          import json, os
+          import json, os, subprocess
           from pathlib import Path
           for filename in ('data/scope-refresh-status.json', 'data/program-discovery-status.json'):
               path = Path(filename)
               audit = json.loads(path.read_text())
               audit['workflow_run_id'] = os.environ['GITHUB_RUN_ID']
               audit['workflow_run_attempt'] = os.environ['GITHUB_RUN_ATTEMPT']
-              audit['baseline_commit'] = os.environ['GITHUB_SHA']
+              audit['baseline_commit'] = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
               path.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + '\n')
           PY
       - name: Regenerate and validate
+        if: steps.freshness.outputs.due == 'true'
         run: |
           set -euo pipefail
           python scripts/export_programs.py
@@ -55,6 +69,7 @@ jobs:
             python scripts/$script.py --check
           done
       - name: Publish validated snapshots and audit
+        if: steps.freshness.outputs.due == 'true'
         run: |
           set -euo pipefail
           git config user.name 'github-actions[bot]'
@@ -66,7 +81,7 @@ jobs:
             test "$(git rev-parse HEAD)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
           fi
       - name: Upload run evidence even on failure
-        if: always()
+        if: always() && steps.freshness.outputs.due == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: scope-refresh-${{ github.run_id }}
@@ -76,6 +91,7 @@ jobs:
           if-no-files-found: warn
           retention-days: 30
       - name: Surface incomplete supported coverage
+        if: steps.freshness.outputs.due == 'true'
         run: |
           python - <<'PY'
           import json

@@ -1,6 +1,6 @@
 # Daily public scope refresh
 
-The `Daily public scope refresh` GitHub Actions workflow is scheduled for 06:23 UTC daily and can also be run manually. GitHub schedules may run late or be disabled after prolonged inactivity in a public repository; a cron definition is not proof that a run happened. No vulns.co import is performed.
+The `Daily public scope refresh` GitHub Actions workflow has scheduled opportunities at 06:23, 10:23 and 14:23 UTC daily and can also be run manually. After checkout of current `main`, scheduled runs skip live collection if a completed Actions audit is already published for the current UTC day, even when that attempt reported partial coverage. This prevents backup triggers from repeatedly requesting failed or excluded sources. Manual dispatch always requests a fresh attempt. Changes pushed to the workflow or its scheduling guard on `main` also trigger a fresh attempt, so scheduling fixes are exercised immediately. The workflow concurrency group serializes attempts; queued runs inspect the latest published audit after checkout. GitHub schedules may run late or be disabled after prolonged inactivity in a public repository; a cron definition is not proof that a run happened. Backup opportunities reduce dependence on a single trigger but do not guarantee daily execution. A skipped backup is not successful verification: inspect the actual published attempt and its coverage. No vulns.co import is performed.
 
 ## What is updated automatically
 
