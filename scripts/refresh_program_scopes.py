@@ -16,8 +16,8 @@ import json
 from pathlib import Path
 import re
 import time
-from urllib.error import HTTPError
-from urllib.parse import urlsplit
+from urllib.error import HTTPError, URLError
+from urllib.parse import urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from source_access import BUGCROWD_SCOPE_HOSTS, excluded_source_reason, require_source_access
@@ -65,10 +65,175 @@ def official_url(url):
     return parts
 
 
+OBSERVATION_MESSAGES = {
+    'redirect_requires_review': 'Redirect requires manual review; no redirect was followed',
+    'bugcrowd_scope_schema_invalid': 'Missing or malformed public scope structure; last-good scope retained',
+    'bugcrowd_scope_empty': 'Validated public scope structure contains zero asset rows; last-good scope retained',
+    'hackerone_scope_empty': 'Validated CSV contains zero asset rows; last-good scope retained',
+    'intigriti_no_visible_rows': 'No visible SSR asset rows were observed; table readiness and current scope remain unverified; last-good scope retained',
+}
+SAFE_VALUE_ERRORS = {
+    'Not an exact approved public platform scope URL': 'source_url_invalid',
+    'Not an exact HackerOne program identity': 'program_identity_invalid',
+    'Not an exact Intigriti program identity': 'program_identity_invalid',
+    'Response exceeds size limit': 'response_size_limit',
+    'Incomplete HTTP response': 'response_incomplete',
+    'Missing or ambiguous current public brief': 'current_brief_ambiguous',
+    'Current brief does not belong to this exact program': 'current_brief_identity_mismatch',
+    'Scope group schema changed': 'scope_group_schema_invalid',
+    'Scope target schema changed': 'scope_target_schema_invalid',
+    'Invalid publication timestamp': 'publication_timestamp_invalid',
+    'CSV response lacks complete final line': 'csv_response_incomplete',
+    'Public CSV schema changed or incomplete response': 'csv_schema_invalid',
+    'Invalid or incomplete CSV asset row': 'csv_row_invalid',
+    'Missing or ambiguous complete SSR asset table': 'ssr_table_ambiguous',
+    'Possible asset table pagination requires review': 'ssr_pagination_unverified',
+    'Unclosed or unparsed asset row': 'ssr_row_incomplete',
+    'Incomplete SSR asset row': 'ssr_row_incomplete',
+    'Empty asset value or unknown bounty tier': 'ssr_row_invalid',
+    'More than half of prior asset identities disappeared; manual review required': 'scope_removal_guard',
+    'Reviewed policy has no existing scope table; manual review required': 'policy_scope_missing',
+    'Curated scope qualifications require manual review': 'curated_qualifications_require_review',
+    'Automated source is shared by policy claims; manual review required': 'policy_source_shared',
+}
+REDIRECT_CATEGORIES = frozenset({
+    'same_program_preview_route', 'same_program_terms_route', 'same_program_scope_route',
+    'same_origin_other_route', 'cross_origin', 'unsafe_or_unrecognized',
+})
+
+
+class ObservationError(ValueError):
+    """Typed evidence, never a raw response, header, or exception message."""
+    def __init__(self, reason_code, **details):
+        super().__init__(OBSERVATION_MESSAGES[reason_code])
+        self.reason_code = reason_code
+        self.details = details
+
+
+def safe_audit_source(url):
+    """Return only a validated scope URL, without query, fragment or credentials.
+
+    This is for reporting only. It never relaxes the request URL validator.
+    Callers use the requested source, never an HTTP error's untrusted URL.
+    """
+    if not isinstance(url, str) or len(url) > 4096 or re.search(r'[\s\x00-\x1f\x7f\\]', url):
+        return None
+    try:
+        parts = urlsplit(url)
+        if parts.username or parts.password or parts.port:
+            return None
+        clean = parts._replace(query='', fragment='').geturl()
+        official_url(clean)
+        return clean
+    except (ValueError, TypeError):
+        return None
+
+
+def redirect_category(source, destination):
+    """Classify a no-follow Location without retaining any destination text.
+
+    A preview/terms route is not a verified login gate. Hostnames and path/query
+    text from unrecognized destinations are never written to the audit.
+    """
+    source = safe_audit_source(source)
+    if (not source or not isinstance(destination, str) or not destination or len(destination) > 4096
+            or re.search(r'[\s\x00-\x1f\x7f\\]', destination)):
+        return 'unsafe_or_unrecognized'
+    try:
+        before, after = urlsplit(source), urlsplit(urljoin(source, destination))
+        if after.scheme != 'https' or not after.hostname or after.username or after.password or after.port:
+            return 'unsafe_or_unrecognized'
+        if before.netloc != after.netloc:
+            return 'cross_origin'
+        if before.netloc == 'app.intigriti.com' and before.path.endswith('/detail'):
+            base = before.path[:-len('/detail')]
+            routes = {base + '/preview/detail': 'same_program_preview_route',
+                      base + '/tac/detail': 'same_program_terms_route',
+                      base + '/detail': 'same_program_scope_route'}
+            if after.path in routes:
+                return routes[after.path]
+        return 'same_origin_other_route'
+    except (ValueError, TypeError):
+        return 'unsafe_or_unrecognized'
+
+
+def failure_fields(error, stage, source_url=None):
+    """Allowlist audit fields. Never serialize str(error), headers, or bodies."""
+    result = {'status': 'failed', 'verification_status': 'unknown',
+              'failure_stage': stage if stage in ('identity_validation', 'source_request', 'response_parse', 'record_update') else 'unknown',
+              'reason_code': 'unexpected_collector_error',
+              'reason': 'Unexpected collector error; details omitted; last-good scope retained',
+              'observation_status': 'unverified'}
+    if isinstance(error, ObservationError) and error.reason_code in OBSERVATION_MESSAGES:
+        result.update(reason_code=error.reason_code, reason=OBSERVATION_MESSAGES[error.reason_code])
+        details = error.details
+        if error.reason_code == 'redirect_requires_review':
+            result['observation_status'] = 'redirect_not_followed'
+            category = details.get('redirect_category')
+            result['redirect_category'] = category if isinstance(category, str) and category in REDIRECT_CATEGORIES else 'unsafe_or_unrecognized'
+        elif error.reason_code.endswith('_scope_empty'):
+            result.update(observation_status='empty_public_table', observed_asset_count=0)
+        elif error.reason_code == 'intigriti_no_visible_rows':
+            # A zero-row SSR container can be a loading or login shell. Without
+            # a validated empty-state marker it cannot prove an empty scope.
+            result.update(observation_status='unverified_no_rows_observed', observed_asset_row_count=0)
+        else:
+            result['observation_status'] = 'invalid_source_response'
+        digest = details.get('response_sha256')
+        if isinstance(digest, str) and re.fullmatch(r'[0-9a-f]{64}', digest):
+            result['response_sha256'] = digest
+        code = details.get('http_status')
+        if type(code) is int and 300 <= code <= 399 and error.reason_code == 'redirect_requires_review':
+            result['http_status'] = code
+    elif isinstance(error, HTTPError):
+        code = error.code
+        if type(code) is int and 100 <= code <= 599:
+            result.update(reason_code='http_error', http_status=code,
+                          reason=f'HTTP {code}; last-good scope retained')
+        else:
+            result.update(reason_code='http_error', reason='HTTP request failed; last-good scope retained')
+        result['observation_status'] = 'source_request_failed'
+    elif isinstance(error, (TimeoutError, URLError)):
+        result.update(reason_code='source_transport_error', observation_status='source_request_failed',
+                      reason='Source request failed or timed out; details omitted; last-good scope retained')
+    elif isinstance(error, (json.JSONDecodeError, csv.Error, UnicodeError)):
+        result.update(reason_code='source_encoding_or_syntax_invalid', observation_status='invalid_source_response',
+                      reason='Source response encoding or syntax is invalid; last-good scope retained')
+    elif isinstance(error, ValueError) and str(error) in SAFE_VALUE_ERRORS:
+        message = str(error)
+        result.update(reason_code=SAFE_VALUE_ERRORS[message], reason=message,
+                      observation_status='record_update_rejected' if stage == 'record_update' else 'invalid_source_response')
+    clean = safe_audit_source(source_url)
+    if clean and stage == 'source_request':
+        result['failed_source_url'] = clean
+    elif clean and stage == 'response_parse':
+        result['observation_source_url'] = clean
+    return result
+
+
 class NoRedirect(HTTPRedirectHandler):
+    def http_error_302(self, req, fp, code, msg, headers):
+        # Inspect only metadata and stop before urllib normalizes/rejects a
+        # Location or tries another request. Never retain its untrusted text.
+        if hasattr(headers, 'get_all'):
+            locations = headers.get_all('Location', []) or headers.get_all('URI', [])
+        else:
+            locations = [value for key, value in headers.items() if key.lower() == 'location']
+            if not locations:
+                locations = [value for key, value in headers.items() if key.lower() == 'uri']
+        destination = locations[0] if len(locations) == 1 else None
+        try:
+            return self.redirect_request(req, fp, code, msg, headers, destination)
+        finally:
+            if fp is not None:
+                fp.close()
+
+    http_error_301 = http_error_303 = http_error_307 = http_error_308 = http_error_302
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         # A changed identity or access gate needs review, not automatic traversal.
-        raise ValueError('Redirect requires manual review')
+        raise ObservationError('redirect_requires_review', http_status=code,
+                               redirect_category=redirect_category(req.full_url, newurl))
 
 
 class PublicClient:
@@ -105,17 +270,25 @@ def parse_brief(program_url, page, body_get):
     source = program.scheme + '://' + program.netloc + path + '.json'
     official_url(source)
     raw = body_get(source)
-    document = json.loads(raw)
+    digest = hashlib.sha256(raw.encode()).hexdigest()
+    try:
+        document = json.loads(raw)
+    except json.JSONDecodeError:
+        raise ObservationError('bugcrowd_scope_schema_invalid', response_sha256=digest) from None
+    if (not isinstance(document, dict) or not isinstance(document.get('data'), dict)
+            or not isinstance(document['data'].get('scope'), list)):
+        raise ObservationError('bugcrowd_scope_schema_invalid', response_sha256=digest)
     groups = document['data']['scope']
-    if not isinstance(groups, list) or not groups:
-        raise ValueError('Missing or empty scope groups require review')
+    published = document.get('publishedAt')
+    if published is not None and not isinstance(published, str):
+        raise ValueError('Invalid publication timestamp')
     assets, seen, duplicates = [], set(), 0
     for group in groups:
-        if (type(group.get('inScope')) is not bool or not isinstance(group.get('name'), str)
+        if (not isinstance(group, dict) or type(group.get('inScope')) is not bool or not isinstance(group.get('name'), str)
                 or not isinstance(group.get('targets'), list)):
             raise ValueError('Scope group schema changed')
         for target in group['targets']:
-            if (not isinstance(target.get('name'), str) or not target['name'].strip()
+            if (not isinstance(target, dict) or not isinstance(target.get('name'), str) or not target['name'].strip()
                     or not isinstance(target.get('category'), str) or not target['category'].strip()
                     or (target.get('uri') is not None and not isinstance(target['uri'], str))):
                 raise ValueError('Scope target schema changed')
@@ -129,10 +302,7 @@ def parse_brief(program_url, page, body_get):
                 seen.add(key)
                 assets.append(asset)
     if not assets:
-        raise ValueError('Empty public table requires review; last-good scope retained')
-    published = document.get('publishedAt')
-    if published is not None and not isinstance(published, str):
-        raise ValueError('Invalid publication timestamp')
+        raise ObservationError('bugcrowd_scope_empty', response_sha256=digest)
     return {'assets': assets, 'source_url': source, 'captured_at': now(),
             'published_at': published, 'scope_groups': len(groups),
             'duplicate_source_rows': duplicates, 'published_asset_count': len(assets) + duplicates,
@@ -172,7 +342,7 @@ def parse_hackerone(program_url, body_get):
             seen.add(key)
             assets.append(asset)
     if not assets:
-        raise ValueError('Empty CSV requires review; last-good scope retained')
+        raise ObservationError('hackerone_scope_empty', response_sha256=hashlib.sha256(raw.encode()).hexdigest())
     return {'assets': assets, 'source_url': source, 'captured_at': now(),
             'source_method': 'public_hackerone_program_and_structured_scopes',
             'published_asset_count': total, 'duplicate_source_rows': total - len(assets),
@@ -217,7 +387,7 @@ def parse_intigriti(program_url, body_get):
             seen.add(key)
             assets.append(asset)
     if not assets:
-        raise ValueError('Empty visible SSR table requires review; last-good scope retained')
+        raise ObservationError('intigriti_no_visible_rows', response_sha256=hashlib.sha256(raw.encode()).hexdigest())
     return {'assets': assets, 'source_url': source, 'captured_at': now(),
             'source_method': 'public_intigriti_asset_table', 'html_has_assets_heading': 'header="Assets"' in raw,
             'duplicate_source_rows': len(rows) - len(assets),
@@ -339,10 +509,22 @@ def refresh(root, client):
             outcome.update(status='deferred', reason='Platform access/rate-limit stop; last-good data retained')
         else:
             outcome['attempted_at'] = now()
+            failure_stage, last_source = 'identity_validation', None
+            def observed_get(source):
+                nonlocal failure_stage, last_source
+                # Validate before recording or requesting. An invalid new source
+                # must not inherit the preceding successful request's attribution.
+                failure_stage, last_source = 'identity_validation', None
+                official_url(source)
+                failure_stage, last_source = 'source_request', source
+                body = client.get(source)
+                failure_stage = 'response_parse'
+                return body
             try:
-                fresh = (parse_brief(url, client.get(url), client.get) if platform == 'Bugcrowd'
-                         else parse_hackerone(url, client.get) if platform == 'HackerOne'
-                         else parse_intigriti(url, client.get))
+                fresh = (parse_brief(url, observed_get(url), observed_get) if platform == 'Bugcrowd'
+                         else parse_hackerone(url, observed_get) if platform == 'HackerOne'
+                         else parse_intigriti(url, observed_get))
+                failure_stage = 'record_update'
                 # Prepare every reference before changing any: overlap stays consistent.
                 changed = [(name, index, update_capture(row, fresh) if index is not None else update_program(row, fresh))
                            for name, index, row in refs]
@@ -356,7 +538,7 @@ def refresh(root, client):
                                in_scope=sum(a['scope'] == 'in' for a in fresh['assets']),
                                out_of_scope=sum(a['scope'] == 'out' for a in fresh['assets']))
             except Exception as error:
-                outcome.update(status='failed', reason=f'{type(error).__name__}: {error}')
+                outcome.update(failure_fields(error, failure_stage, last_source))
                 if isinstance(error, HTTPError) and error.code in (401, 403, 429):
                     stopped.add(platform)
         audit['results'].append(outcome)
