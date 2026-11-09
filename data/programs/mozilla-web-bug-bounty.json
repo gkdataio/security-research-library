@@ -69,7 +69,7 @@
       "title": "Current published public asset table",
       "url": "https://hackerone.com/teams/mozilla/assets/download_csv.csv",
       "publisher": "HackerOne",
-      "retrieved_at": "2026-11-08T14:17:59Z",
+      "retrieved_at": "2026-11-09T16:56:49Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -86,7 +86,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-08T14:17:59Z",
+    "verified_at": "2026-11-09T16:56:49Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

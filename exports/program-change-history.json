@@ -12197,6 +12197,73 @@
           ]
         }
       ]
+    },
+    {
+      "id": "8e230e7d47893bd7b3de6469f0a04d7de2f3e65981c43acfe57201b899fd2a27",
+      "recorded_at": "2026-11-09T17:04:39Z",
+      "baseline_commit": "00ccf4daf7dfb67d3b6644c7cbd77f1921726d91",
+      "baseline_digest": "ca0b1f0e8251875220bec580b75dabc9409ba0b26f497d6d624648c67dd839e4",
+      "current_digest": "8848a59fb7591ae4e312d84085bbfc1b943aad217d77be7938d9cdb2c8c30395",
+      "changes": [
+        {
+          "key": "listing:hackerone-8912ab2c0977be9a",
+          "name": "Twilio",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/twilio?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "SOURCE_CODE",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "github.com/stytchauth/samlshield",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-2c18ef465c4e31be",
+          "name": "Water-Link",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/waterlink/water-link",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://water-link-jaarverslag.be",
+                  "name": "water-link-jaarverslag.be",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": null,
+                  "location": "http://water-link-jaarverslag.be",
+                  "name": "water-link-jaarverslag.be",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

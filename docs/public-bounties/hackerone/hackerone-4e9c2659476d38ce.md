@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-08T14:17:35Z.
+**Capture time:** 2026-11-09T16:56:25Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/magic-eden/assets/download_csv.csv>)
 

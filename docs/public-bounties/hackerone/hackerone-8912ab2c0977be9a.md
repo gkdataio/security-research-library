@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-08T14:20:19Z.
+**Capture time:** 2026-11-09T16:59:09Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/twilio/assets/download_csv.csv>)
 
-## In-scope entries (84)
+## In-scope entries (83)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -54,7 +54,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | github\.com/segmentio | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/sendgrid | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/stytchauth/is-agent | SOURCE\_CODE | — | — | Bounty eligible |
-| github\.com/stytchauth/samlshield | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/stytchauth/stytch-android | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/stytchauth/stytch-browser | SOURCE\_CODE | — | — | Bounty eligible |
 | github\.com/stytchauth/stytch-dotnet | SOURCE\_CODE | — | — | Bounty eligible |

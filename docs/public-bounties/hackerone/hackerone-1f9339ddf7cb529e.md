@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-08T14:14:09Z.
+**Capture time:** 2026-11-09T16:52:59Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/airbnb/assets/download_csv.csv>)
 
