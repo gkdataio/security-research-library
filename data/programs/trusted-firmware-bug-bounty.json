@@ -87,7 +87,7 @@
       "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/arm/trustedfirmware/detail",
       "publisher": "Intigriti",
-      "retrieved_at": "2026-11-10T15:44:13Z",
+      "retrieved_at": "2026-11-10T21:49:54Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -110,7 +110,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-10T15:44:13Z",
+    "verified_at": "2026-11-10T21:49:54Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

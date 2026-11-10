@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-10T15:42:10Z.
+**Capture time:** 2026-11-10T21:47:51Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/shopify/assets/download_csv.csv>)
 
-## In-scope entries (21)
+## In-scope entries (24)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -29,7 +29,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Shopify Mobile Applications | OTHER | — | — | Bounty eligible |
 | \*\.shopifykloud\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.shopifycloud\.com | WILDCARD | — | — | Bounty eligible |
-| linkpop\.com | URL | — | — | Bounty eligible |
 | shopifyinbox\.com | URL | — | — | Bounty eligible |
 | shop\.app | URL | — | — | Bounty eligible |
 | shopify\.plus | URL | — | — | Bounty eligible |
@@ -38,21 +37,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/Shopify/\* | SOURCE\_CODE | — | — | Bounty eligible |
 | \*\.shopifycs\.com | WILDCARD | — | — | Bounty eligible |
 | \*\.pci\.shopifyinc\.com | WILDCARD | — | — | Bounty eligible |
-| Authentication &amp; ATO | OTHER | — | — | Bounty eligible |
+| Sidekick | OTHER | — | — | Bounty eligible |
+| help\.shop\.app | URL | — | — | Bounty eligible |
+| Shop Minis | OTHER | — | — | Bounty eligible |
+| \*\.shopifysvc\.com | WILDCARD | — | — | Bounty eligible |
+| shop\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (9)
+## Out-of-scope entries (10)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| investors\.shopify\.com | URL | — | — | Not bounty eligible |
 | \*\.email\.shopify\.com | WILDCARD | — | — | Not bounty eligible |
 | Other | OTHER | — | — | Not bounty eligible |
 | cdn\.shopify\.com | URL | — | — | Not bounty eligible |
 | livechat\.shopify\.com | URL | — | — | Not bounty eligible |
 | community\.shopify\.com | URL | — | — | Not bounty eligible |
 | supplier-portal\.shopifycloud\.com | OTHER | — | — | Not bounty eligible |
-| academy\.shopify\.com | URL | — | — | Not bounty eligible |
 | community\.shopify\.dev | URL | — | — | Not bounty eligible |
+| shopify\.photo | URL | — | — | Not bounty eligible |
+| shopifypartnerships\.com | URL | — | — | Not bounty eligible |
+| shopifyevents\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 

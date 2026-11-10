@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-07T14:53:54Z.
 
-**Latest refresh failed (2026-11-10T15:37:35Z):** Validated CSV contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-10T21:43:58Z):** Validated CSV contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Official source review (2026-11-10):** Django announced on October 8, 2026 that it no longer accepts new security reports through HackerOne\. Existing HackerOne reports remain open; new reports go to security@djangoproject\.com under the official Django security policy\. Historical directory and bounty flags below do not establish current HackerOne submission availability\. This does not establish reward eligibility or a new asset-scope table\.
 

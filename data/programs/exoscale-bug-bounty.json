@@ -75,7 +75,7 @@
       "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
       "publisher": "Intigriti",
-      "retrieved_at": "2026-11-10T15:45:43Z",
+      "retrieved_at": "2026-11-10T21:51:24Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -96,7 +96,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-10T15:45:43Z",
+    "verified_at": "2026-11-10T21:51:24Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

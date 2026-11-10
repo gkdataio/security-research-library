@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-10T15:44:23Z.
+**Capture time:** 2026-11-10T21:50:04Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/aswatson/theperfumeshop/detail>)
 

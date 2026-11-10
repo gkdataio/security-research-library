@@ -104,7 +104,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/1password/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:35:32Z",
+          "retrieved_at": "2026-11-10T21:42:08Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -121,7 +121,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:35:32Z",
+        "verified_at": "2026-11-10T21:42:08Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -292,7 +292,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/adac/adacvulnerabilitydisclosureprogram/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:43:57Z",
+          "retrieved_at": "2026-11-10T21:49:38Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -313,7 +313,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:43:57Z",
+        "verified_at": "2026-11-10T21:49:38Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -1172,7 +1172,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/arc-bbp/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:36:10Z",
+          "retrieved_at": "2026-11-10T21:42:38Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -1180,7 +1180,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:36:10Z",
+        "verified_at": "2026-11-10T21:42:38Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -1377,7 +1377,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/atlassian/changelog/983ceab8-ee25-460d-8da3-d30233c261cb.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:03:39Z",
+          "retrieved_at": "2026-11-10T21:10:15Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -1394,7 +1394,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:03:39Z",
+        "verified_at": "2026-11-10T21:10:15Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -2112,7 +2112,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/curl/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:37:25Z",
+          "retrieved_at": "2026-11-10T21:43:47Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2131,7 +2131,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:37:25Z",
+        "verified_at": "2026-11-10T21:43:47Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -2233,7 +2233,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/dashlane/dashlanevulnerabilitydisclosureprogram/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:45:02Z",
+          "retrieved_at": "2026-11-10T21:50:42Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2254,7 +2254,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:45:02Z",
+        "verified_at": "2026-11-10T21:50:42Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -2406,7 +2406,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/dropbox/dropbox/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:45:38Z",
+          "retrieved_at": "2026-11-10T21:51:19Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2432,7 +2432,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:45:38Z",
+        "verified_at": "2026-11-10T21:51:19Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -2876,7 +2876,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/nederlandseloterij/dutchlotteryvdp/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:46:33Z",
+          "retrieved_at": "2026-11-10T21:52:14Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -2895,7 +2895,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:46:33Z",
+        "verified_at": "2026-11-10T21:52:14Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -3066,7 +3066,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:45:43Z",
+          "retrieved_at": "2026-11-10T21:51:24Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -3087,7 +3087,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:45:43Z",
+        "verified_at": "2026-11-10T21:51:24Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -4081,7 +4081,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/gitlab/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:38:32Z",
+          "retrieved_at": "2026-11-10T21:44:52Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -4098,7 +4098,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:38:32Z",
+        "verified_at": "2026-11-10T21:44:52Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -4629,7 +4629,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/grafanalabs/grafanalabsvdp/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:45:50Z",
+          "retrieved_at": "2026-11-10T21:51:30Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -4650,7 +4650,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:45:50Z",
+        "verified_at": "2026-11-10T21:51:30Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -4822,7 +4822,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/security/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:42:01Z",
+          "retrieved_at": "2026-11-10T21:47:43Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -4839,7 +4839,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:42:01Z",
+        "verified_at": "2026-11-10T21:47:43Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -5301,7 +5301,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:14:07Z",
+          "retrieved_at": "2026-11-10T21:20:43Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -5322,7 +5322,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:14:07Z",
+        "verified_at": "2026-11-10T21:20:43Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -5458,7 +5458,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/intel/intelvulnerabilitydisclosureprogram/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:45:59Z",
+          "retrieved_at": "2026-11-10T21:51:40Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -5479,7 +5479,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:45:59Z",
+        "verified_at": "2026-11-10T21:51:40Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -5607,7 +5607,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/ivoai/ivovulnerabilitydisclosureprogram/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:46:09Z",
+          "retrieved_at": "2026-11-10T21:51:50Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -5626,7 +5626,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:46:09Z",
+        "verified_at": "2026-11-10T21:51:50Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -5765,7 +5765,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og/changelog/884450ef-4277-41a9-8394-5f8c49cae2d8.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:16:59Z",
+          "retrieved_at": "2026-11-10T21:23:35Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -5773,7 +5773,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:16:59Z",
+        "verified_at": "2026-11-10T21:23:35Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -6003,7 +6003,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:18:51Z",
+          "retrieved_at": "2026-11-10T21:25:27Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -6013,7 +6013,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:18:51Z",
+        "verified_at": "2026-11-10T21:25:27Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -6336,7 +6336,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/moovit-mbb-og/changelog/6bded391-eff8-479d-a41c-4efdcee70ed0.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:19:43Z",
+          "retrieved_at": "2026-11-10T21:26:19Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -6346,7 +6346,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:19:43Z",
+        "verified_at": "2026-11-10T21:26:19Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -6676,7 +6676,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/mozilla/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:40:05Z",
+          "retrieved_at": "2026-11-10T21:46:17Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -6693,7 +6693,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:40:05Z",
+        "verified_at": "2026-11-10T21:46:17Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -7053,7 +7053,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:21:23Z",
+          "retrieved_at": "2026-11-10T21:27:59Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -7074,7 +7074,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:21:23Z",
+        "verified_at": "2026-11-10T21:27:59Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -7284,7 +7284,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:46:41Z",
+          "retrieved_at": "2026-11-10T21:52:22Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -7292,7 +7292,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:46:41Z",
+        "verified_at": "2026-11-10T21:52:22Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -7481,7 +7481,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/portofantwerp/nxtportvdp/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:46:49Z",
+          "retrieved_at": "2026-11-10T21:52:30Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -7502,7 +7502,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:46:49Z",
+        "verified_at": "2026-11-10T21:52:30Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -7644,7 +7644,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/okta/changelog/d4dc2398-db8d-4b89-9f7f-0aae75251307.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:21:47Z",
+          "retrieved_at": "2026-11-10T21:28:23Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -7652,7 +7652,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:21:47Z",
+        "verified_at": "2026-11-10T21:28:23Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -8124,7 +8124,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:21:55Z",
+          "retrieved_at": "2026-11-10T21:28:31Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -8147,7 +8147,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:21:55Z",
+        "verified_at": "2026-11-10T21:28:31Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -8489,7 +8489,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/openai/changelog/9cb985b1-a7c8-42fd-95bc-e944991529aa.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:22:07Z",
+          "retrieved_at": "2026-11-10T21:28:44Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -8506,7 +8506,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:22:07Z",
+        "verified_at": "2026-11-10T21:28:44Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -9244,7 +9244,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/rapyd/changelog/b7d3849b-cc64-466e-afe2-9a8d564f96f8.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:25:51Z",
+          "retrieved_at": "2026-11-10T21:32:27Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -9265,7 +9265,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:25:51Z",
+        "verified_at": "2026-11-10T21:32:27Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -9547,7 +9547,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/spacelift/spaceliftvdp/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:47:13Z",
+          "retrieved_at": "2026-11-10T21:52:54Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -9566,7 +9566,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:47:13Z",
+        "verified_at": "2026-11-10T21:52:54Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -9952,7 +9952,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/truelayer/truelayervdp/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:47:27Z",
+          "retrieved_at": "2026-11-10T21:53:08Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -9971,7 +9971,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:47:27Z",
+        "verified_at": "2026-11-10T21:53:08Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -10182,7 +10182,7 @@
           "title": "Current published public asset table",
           "url": "https://app.intigriti.com/programs/arm/trustedfirmware/detail",
           "publisher": "Intigriti",
-          "retrieved_at": "2026-11-10T15:44:13Z",
+          "retrieved_at": "2026-11-10T21:49:54Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -10205,7 +10205,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:44:13Z",
+        "verified_at": "2026-11-10T21:49:54Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -10346,7 +10346,7 @@
           "title": "Current published public asset table",
           "url": "https://hackerone.com/teams/vercel/assets/download_csv.csv",
           "publisher": "HackerOne",
-          "retrieved_at": "2026-11-10T15:43:13Z",
+          "retrieved_at": "2026-11-10T21:48:53Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -10354,7 +10354,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:43:13Z",
+        "verified_at": "2026-11-10T21:48:53Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -10747,7 +10747,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/0a61783f-81be-4cd8-8b6d-e9a819e97ead.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:33:51Z",
+          "retrieved_at": "2026-11-10T21:40:27Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -10757,7 +10757,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:33:51Z",
+        "verified_at": "2026-11-10T21:40:27Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],
@@ -10980,7 +10980,7 @@
           "title": "Current published public asset table",
           "url": "https://bugcrowd.com/engagements/webdotcom/changelog/cdf0a5a7-3e14-4bd2-8997-a9567e0bb63e.json",
           "publisher": "Bugcrowd",
-          "retrieved_at": "2026-11-10T15:34:19Z",
+          "retrieved_at": "2026-11-10T21:40:55Z",
           "provenance": "official_primary",
           "access_method": "text"
         }
@@ -10990,7 +10990,7 @@
       "asset_scope": {
         "capture_status": "published_list",
         "collection_method": "official_platform_scope_table",
-        "verified_at": "2026-11-10T15:34:19Z",
+        "verified_at": "2026-11-10T21:40:55Z",
         "source_ids": [
           "automated-public-asset-scope"
         ],

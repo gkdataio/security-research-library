@@ -12687,6 +12687,153 @@
           ]
         }
       ]
+    },
+    {
+      "id": "c846bddb9b2ad3e8948f8078d47cf1c0406b6da37e38223493e628079b04e158",
+      "recorded_at": "2026-11-10T21:54:12Z",
+      "baseline_commit": "42c29dc0a87d5149e4e18ac410bd551c409cb9eb",
+      "baseline_digest": "7c0c0893d345f98418046616f03315ac01a0982e9b3e59050fb3e9a6ade6647b",
+      "current_digest": "6e658191c327df63f1676ef1e9bd15eadec7ac29999263a067a9f925ad598be6",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-9052f631389a67cb",
+          "name": "T-Mobile",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/t-mobile",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-09T18:57:59.760Z",
+              "after": "2026-11-10T19:50:27.669Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/t-mobile/changelog/d586c584-d616-43fe-9053-a2a8bc468605.json",
+              "after": "https://bugcrowd.com/engagements/t-mobile/changelog/9de013ca-a21b-4193-912f-f72e0568d526.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-3debf79c9e794a10",
+          "name": "Shopify",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/shopify?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "OTHER",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "Authentication & ATO",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "linkpop.com",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "OTHER",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "Shop Minis",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "OTHER",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "Sidekick",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "help.shop.app",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "shop.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.shopifysvc.com",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "academy.shopify.com",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "investors.shopify.com",
+                  "scope": "out"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "shopify.photo",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "shopifyevents.com",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "shopifypartnerships.com",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
