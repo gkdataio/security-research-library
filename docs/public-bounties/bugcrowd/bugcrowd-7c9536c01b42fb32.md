@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:24:48Z.
+**Capture time:** 2026-11-10T15:07:43Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Government.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/d05b2569-c1ad-4c1e-a76f-1cd0363e4b9a.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/c47c1598-8b6e-446c-82f4-5109745a0c9a.json>)
 
 ## In-scope entries (25)
 
@@ -50,7 +50,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | City of Vienna Google Play Apps | android | https://play\.google\.com/store/apps/developer?id=Stadt\+Wien&amp;hl=de\_AT | In scope | — |
 | City of Vienna iOS Apps | ios | https://apps\.apple\.com/at/developer/stadt-wien/id858505368 | In scope | — |
 
-## Out-of-scope entries (9)
+## Out-of-scope entries (10)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -59,6 +59,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://\*/agssoe/\* \(Multiple Domains\) | website | — | Out of scope | — |
 | https://\*/agsinspire/\* | website | — | Out of scope | — |
 | https://\*/arcgis/\* | website | — | Out of scope | — |
+| https://data\.wien\.gv\.at/daten/\* | website | — | Out of scope | — |
 | geschichtewiki\.wien\.gv\.at | website | https://www\.geschichtewiki\.wien\.gv\.at | Out of scope | — |
 | https://bi\.bildung-wien\.gv\.at/\* | website | — | Out of scope | — |
 | https://\*/umfrage/\* | website | — | Out of scope | — |

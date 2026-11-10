@@ -12264,6 +12264,429 @@
           ]
         }
       ]
+    },
+    {
+      "id": "8891a4119e1b78444777556b6ab5651d7fd9a4d3accf9753e86b2f549478f5f1",
+      "recorded_at": "2026-11-10T15:48:31Z",
+      "baseline_commit": "d2f7f917a899ce308ddb835f50fa3e855cb94130",
+      "baseline_digest": "8848a59fb7591ae4e312d84085bbfc1b943aad217d77be7938d9cdb2c8c30395",
+      "current_digest": "7c0c0893d345f98418046616f03315ac01a0982e9b3e59050fb3e9a6ade6647b",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-00daeb0512f7127a",
+          "name": "OpenAI",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/openai",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "ChatGPT Dots",
+                  "location": "https://chatgpt.com/dots/",
+                  "name": "ChatGPT Dots"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-207944c1beac290c",
+          "name": "Sunrun Vulnerability Disclosure Pro Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/sunrun-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-23T19:10:12.004Z",
+              "after": "2026-11-09T22:46:49.442Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/sunrun-vdp-pro/changelog/b0e25799-d4d9-47f2-86dc-6b7c2d67772d.json",
+              "after": "https://bugcrowd.com/engagements/sunrun-vdp-pro/changelog/f42a264f-baab-44ed-9105-feaf22ce30f6.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-4ec7fd30567b4542",
+          "name": "Figment Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/figment-vdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "website",
+                  "group": "In Scope Targets ",
+                  "location": "https://rewards-calculator.figment.io",
+                  "name": "rewards-calculator.figment.io",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "other",
+                  "group": "In Scope Targets ",
+                  "location": "https://github.com/figment-networks",
+                  "name": "Public GitHub Repositories",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2025-03-26T17:40:43.953Z",
+              "after": "2026-11-09T21:32:31.075Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/figment-vdp/changelog/752d06eb-6302-4058-9ef2-5f17e2bf9b86.json",
+              "after": "https://bugcrowd.com/engagements/figment-vdp/changelog/7d62942e-e7f3-454d-be48-6ea560015514.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-7440fb39ee67de1a",
+          "name": "SecureDrop",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/freedomofpress",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-26T18:55:50.108Z",
+              "after": "2026-11-09T16:53:42.469Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/freedomofpress/changelog/8cda910a-43f2-4767-8a42-e494490cf43a.json",
+              "after": "https://bugcrowd.com/engagements/freedomofpress/changelog/2434a9b9-f6cd-4390-9faf-c79a3ae3da5d.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-7c9536c01b42fb32",
+          "name": "City of Vienna Managed Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/city-of-vienna-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "Out of scope",
+                  "location": null,
+                  "name": "https://data.wien.gv.at/daten/*",
+                  "scope": "out"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-03T14:23:00.009Z",
+              "after": "2026-11-09T17:15:04.013Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/d05b2569-c1ad-4c1e-a76f-1cd0363e4b9a.json",
+              "after": "https://bugcrowd.com/engagements/city-of-vienna-mbb-og/changelog/c47c1598-8b6e-446c-82f4-5109745a0c9a.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9052f631389a67cb",
+          "name": "T-Mobile",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/t-mobile",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-02T18:44:51.855Z",
+              "after": "2026-11-09T18:57:59.760Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/t-mobile/changelog/38849347-4347-4adb-9769-a84e5e50116e.json",
+              "after": "https://bugcrowd.com/engagements/t-mobile/changelog/d586c584-d616-43fe-9053-a2a8bc468605.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-b453878121ec1606",
+          "name": "SimpliSafe Managed Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/simplisafe",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-17T14:22:05.498Z",
+              "after": "2026-11-10T14:21:01.613Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/simplisafe/changelog/3d443036-c530-47c2-8139-5649a834eb7b.json",
+              "after": "https://bugcrowd.com/engagements/simplisafe/changelog/9624c237-7bea-4a9e-af57-8430027a7315.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-dae6649841387d56",
+          "name": "Bitpanda Ongoing Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/bitpanda-og-bb",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "Tier 1 Assets ",
+                  "location": "https://login.bitpanda.com",
+                  "name": "login.bitpanda.com",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2025-03-17T14:15:24.149Z",
+              "after": "2026-11-10T09:01:09.765Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/bitpanda-og-bb/changelog/07e14180-dd4e-4ad5-9a3f-532f7361bc8e.json",
+              "after": "https://bugcrowd.com/engagements/bitpanda-og-bb/changelog/f822d113-ea66-4468-b60e-b13d428f5c68.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-ff5ec604673ccb13",
+          "name": "U.S. Securities and Exchange Commission (SEC) - Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://gov.bugcrowd.net/engagements/sec-vdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-12T17:13:45.023Z",
+              "after": "2026-11-09T22:30:15.653Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://gov.bugcrowd.net/engagements/sec-vdp/changelog/7dce9446-f985-4317-a4a2-c0000f8cd102.json",
+              "after": "https://gov.bugcrowd.net/engagements/sec-vdp/changelog/acd01a6e-e113-446e-b35b-99eca91f7b4f.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-01350c382d147687",
+          "name": "Walt.io",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/walt_io?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "GOOGLE_PLAY_APP_ID",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "io.walt.app",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-0373299e645bdb72",
+          "name": "Amazon Vulnerability Research Program",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/amazonvrp?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "GOOGLE_PLAY_APP_ID",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "com.amazon.amazonone.androidapp",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-2508ae1b5e96cf3e",
+          "name": "Superbet",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/superbet?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.luckydays.ca",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.luckydays.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.spinaway.com",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "*.luckydays.ca",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-fc841c8ac5a3b8ce",
+          "name": "Bybit Fintech Ltd",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/bybit_fintech?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "https://www.bybit.com/en/ai-bot/home",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-2c18ef465c4e31be",
+          "name": "Water-Link",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/waterlink/water-link",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://indussiibis.water-link.be",
+                  "name": "indussiibis.water-link.be",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 4",
+                  "location": "http://indussiibis.water-link.be",
+                  "name": "indussiibis.water-link.be",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 4",
+                  "location": "http://water-link-jaarverslag.be",
+                  "name": "water-link-jaarverslag.be",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": null,
+                  "location": "http://water-link-jaarverslag.be",
+                  "name": "water-link-jaarverslag.be",
+                  "scope": "out"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-53e89133e9571255",
+          "name": "SBB - Swiss Federal Railways",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/sbb/sbbglobal",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Wildcard",
+                  "group": null,
+                  "location": null,
+                  "name": "*.event.sbb.ch",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

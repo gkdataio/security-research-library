@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:29:20Z.
+**Capture time:** 2026-11-10T15:12:15Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/figment-vdp/changelog/752d06eb-6302-4058-9ef2-5f17e2bf9b86.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/figment-vdp/changelog/7d62942e-e7f3-454d-be48-6ea560015514.json>)
 
 ## In-scope entries (5)
 
@@ -28,7 +28,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | app\.figment\.io | website | https://app\.figment\.io | In Scope Targets  | — |
 | api\.figment\.io | api | https://api\.figment\.io | In Scope Targets  | — |
 | dapp\.figment\.io | website | https://dapp\.figment\.io | In Scope Targets  | — |
-| rewards-calculator\.figment\.io | website | https://rewards-calculator\.figment\.io | In Scope Targets  | — |
+| Public GitHub Repositories | other | https://github\.com/figment-networks | In Scope Targets  | — |
 
 ## Out-of-scope entries (0)
 

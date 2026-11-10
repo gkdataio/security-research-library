@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T17:04:03Z.
+**Capture time:** 2026-11-10T15:47:49Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/waterlink/water-link/detail>)
 
-## In-scope entries (18)
+## In-scope entries (19)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -22,7 +22,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | pit\.water-link\.be | URL | http://pit\.water-link\.be | Tier 2 | — |
 | \*\.aww\.be | Wildcard | — | Tier 3 | — |
 | \*\.water-link\.be | Wildcard | — | Tier 3 | — |
-| indussiibis\.water-link\.be | URL | http://indussiibis\.water-link\.be | Tier 3 | — |
+| indussiibis\.water-link\.be | URL | http://indussiibis\.water-link\.be | Tier 4 | — |
+| water-link-jaarverslag\.be | URL | http://water-link-jaarverslag\.be | Tier 4 | — |
 | \*\.mijnwater-link\.be | Wildcard | — | Tier 3 | — |
 | aquawardsspatial\.water-link\.be | URL | http://aquawardsspatial\.water-link\.be | Tier 3 | — |
 | aquawardsoperate\.water-link\.be | URL | http://aquawardsoperate\.water-link\.be | Tier 3 | — |
@@ -37,7 +38,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | water-kracht-levering\.be | URL | http://water-kracht-levering\.be | Tier 4 | — |
 | waterstoringen\.be | URL | http://waterstoringen\.be | Tier 4 | — |
 
-## Out-of-scope entries (14)
+## Out-of-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -54,7 +55,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | secrets\.water-link\.be | URL | http://secrets\.water-link\.be | — | — |
 | feedback\.water-link\.be | URL | http://feedback\.water-link\.be | — | — |
 | jobs\.water-link\.be | URL | http://jobs\.water-link\.be | — | — |
-| water-link-jaarverslag\.be | URL | http://water-link-jaarverslag\.be | — | — |
 
 **Limits**
 

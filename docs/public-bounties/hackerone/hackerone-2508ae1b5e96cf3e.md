@@ -10,22 +10,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:58:47Z.
+**Capture time:** 2026-11-10T15:42:34Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/superbet/assets/download_csv.csv>)
 
-## In-scope entries (28)
+## In-scope entries (25)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | \*\.superbet\.ro | WILDCARD | — | — | Bounty eligible |
 | \*\.superbet\.rs | WILDCARD | — | — | Bounty eligible |
 | \*\.superbet\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.spinaway\.com | WILDCARD | — | — | Bounty eligible |
 | ro\.superbet\.sport | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | ro\.superbet\.games | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| \*\.luckydays\.com | WILDCARD | — | — | Bounty eligible |
-| \*\.luckydays\.ca | WILDCARD | — | — | Bounty eligible |
 | \*\.napoleoncasino\.be | WILDCARD | — | — | Bounty eligible |
 | \*\.napoleondice\.be | WILDCARD | — | — | Bounty eligible |
 | \*\.napoleongames\.be | WILDCARD | — | — | Bounty eligible |
@@ -47,7 +44,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.super\.xyz | WILDCARD | — | — | Bounty eligible |
 | https://super\.xyz | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (16)
+## Out-of-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -55,6 +52,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://legacy-web\.superbet\.ro/session/login | URL | — | — | Not bounty eligible |
 | affiliates\.superbet\.com | URL | — | — | Not bounty eligible |
 | affiliates\.superbet\.rs | URL | — | — | Not bounty eligible |
+| \*\.luckydays\.ca | WILDCARD | — | — | Not bounty eligible |
 | affiliate\.napoleongames\.be | URL | — | — | Not bounty eligible |
 | https://retail\.prod\.incubator\.superbet\.ro/ssbt-api/ | URL | — | — | Not bounty eligible |
 | http://surveys\.superbet\.com | URL | — | — | Not bounty eligible |

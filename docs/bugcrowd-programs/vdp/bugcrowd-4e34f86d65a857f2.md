@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:48:48Z.
+**Capture time:** 2026-11-10T15:31:41Z.
 
 **Directory category:** Vulnerability Disclosure.
 

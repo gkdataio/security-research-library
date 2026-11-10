@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:53:41Z.
+**Capture time:** 2026-11-10T15:36:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/bybit_fintech/assets/download_csv.csv>)
 
-## In-scope entries (15)
+## In-scope entries (14)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -27,7 +27,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | http://www\.bybit\.com/trade/tradfi/ | URL | — | — | Bounty eligible |
 | http://www\.bybit\.com/en/alpha/overview/ | URL | — | — | Bounty eligible |
 | http://www\.byreal\.io | URL | — | — | Bounty eligible |
-| https://www\.bybit\.com/en/ai-bot/home | URL | — | — | Bounty eligible |
 | https://www\.bybit\.com/en/stocks | URL | — | — | Bounty eligible |
 | https://testnet\.bybit\.com/en/trade/usdt/btcusdt | URL | — | — | Bounty eligible |
 | https://testnet\.bybit\.com/en/trade/option/usdt/spcx | URL | — | — | Bounty eligible |

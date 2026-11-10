@@ -106,7 +106,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/hostgator-latam-bb/changelog/e57fb9c2-18c7-4440-891f-d7fd8857088c.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-09T16:31:12Z",
+      "retrieved_at": "2026-11-10T15:14:07Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -127,7 +127,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-09T16:31:12Z",
+    "verified_at": "2026-11-10T15:14:07Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

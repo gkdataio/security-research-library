@@ -107,7 +107,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/0a61783f-81be-4cd8-8b6d-e9a819e97ead.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-09T16:51:00Z",
+      "retrieved_at": "2026-11-10T15:33:51Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -117,7 +117,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-09T16:51:00Z",
+    "verified_at": "2026-11-10T15:33:51Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

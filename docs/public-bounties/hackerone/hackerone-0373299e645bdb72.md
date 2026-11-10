@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-09T16:53:05Z.
+**Capture time:** 2026-11-10T15:36:04Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/amazonvrp/assets/download_csv.csv>)
 
-## In-scope entries (121)
+## In-scope entries (120)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -109,7 +109,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | com\.amazon\.sellermobile\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.astro | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.warhol\.android | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
-| com\.amazon\.amazonone\.androidapp | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | com\.amazon\.kisan\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | 1151746202 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | 6479334468 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |

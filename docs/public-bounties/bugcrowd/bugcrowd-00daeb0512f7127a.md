@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-09T16:39:12Z.
+**Capture time:** 2026-11-10T15:22:07Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/openai/changelog/7ba8b26b-28f2-4132-a988-d108070520f3.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/openai/changelog/9cb985b1-a7c8-42fd-95bc-e944991529aa.json>)
 
-## In-scope entries (12)
+## In-scope entries (13)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,6 +28,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | ChatGPT Plugins | api | https://chat\.openai\.com | ChatGPT Services | — |
 | api\.openai\.com | api | https://api\.openai\.com | API Targets | — |
 | Developer Platform Playground | website | https://platform\.openai\.com/playground | API Targets | — |
+| ChatGPT Dots | website | https://chatgpt\.com/dots/ | ChatGPT Dots | — |
 | ChatGPT Desktop | other | — | ChatGPT Desktop &amp; Codex CLI | — |
 | Codex CLI | other | — | ChatGPT Desktop &amp; Codex CLI | — |
 | openai\.com | website | https://openai\.com/ | Other OpenAI Targets | — |
