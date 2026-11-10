@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
-from validate import Invalid, validate_library, check_schema
+from validate import Invalid, validate_library, validate_record, check_schema
 from export import build_export
 
 class ReportIdentityTests(unittest.TestCase):
@@ -52,6 +52,10 @@ class ReportIdentityTests(unittest.TestCase):
     def test_shared_source_quotes_have_combined_limit(self):
         self.records[1]['reward']['evidence_quote']=' '.join(['word']*17)
         with self.assertRaises(Invalid):self.check()
+    def test_cve_identifier_is_not_a_source_label_quotation(self):
+        self.records = self.records[:1]
+        self.records[0]['reward']['evidence_quote'] = ' '.join(['word'] * 25)
+        self.check()
     def test_fragment_is_not_a_report_discriminator(self):
         del self.records[1]['report_identity']
         self.records[1]['sources'][0]['url']+='#another-section'
@@ -72,6 +76,12 @@ class SourceLabelIdentityTests(ReportIdentityTests):
             record['sources'][0]['supports'].append('report_identity')
 
     # CVE-specific expectations are covered by the original class.
+    def test_cve_identifier_is_not_a_source_label_quotation(self):
+        self.records = self.records[:1]
+        self.records[0]['reward']['evidence_quote'] = ' '.join(['word'] * 25)
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
+
     def test_identity_needs_matching_cve(self):
         self.records[1]['report_identity']['kind'] = 'cve'
         self.records[1]['report_identity']['value'] = 'CVE-2021-99999'
@@ -157,6 +167,69 @@ class SourceLabelIdentityTests(ReportIdentityTests):
         before = copy.deepcopy(self.records)
         self.check()
         self.assertEqual(self.records, before)
+
+    def test_labels_and_rewards_share_one_source_budget(self):
+        # 18 reward words plus seven label words exactly fill the source budget.
+        self.records[0]['report_identity']['value'] = 'Report one distinct label'
+        self.records[1]['report_identity']['value'] = 'Report two label'
+        self.check()
+        self.records[1]['report_identity']['value'] += ' extra'
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
+
+    def test_single_record_label_and_reward_share_budget(self):
+        self.records = self.records[:1]
+        record = self.records[0]
+        record['reward']['evidence_quote'] = ' '.join(['award'] * 24)
+        record['report_identity']['value'] = 'Report one'
+        schema = json.loads((ROOT/'schema/report.schema.json').read_text())
+        taxonomy = json.loads((ROOT/'data/taxonomy.json').read_text())
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            validate_record(record, taxonomy, schema)
+
+    def test_label_alone_cannot_exceed_budget(self):
+        self.records = self.records[:1]
+        self.records[0]['report_identity']['value'] = ' '.join(['label'] * 26)
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
+
+    def test_label_quotation_uses_normalized_source_url(self):
+        self.records[0]['report_identity']['value'] = ' '.join(['first'] * 4)
+        self.records[1]['report_identity']['value'] = ' '.join(['second'] * 4)
+        self.records[1]['sources'][0]['url'] = self.records[0]['sources'][0]['url'].replace(
+            'https://blog.teddykatz.com', 'https://BLOG.TEDDYKATZ.COM') + '/#report-two'
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
+
+    def test_label_budget_follows_identity_source_not_reward_source(self):
+        self.records = self.records[:1]
+        record = self.records[0]
+        source = copy.deepcopy(record['sources'][0])
+        source.update(id='separate-award', url='https://example.com/award')
+        record['sources'].append(source)
+        record['reward']['source_id'] = source['id']
+        record['reward']['evidence_quote'] = ' '.join(['award'] * 25)
+        record['report_identity']['value'] = ' '.join(['label'] * 25)
+        self.check()
+        record['report_identity']['value'] += ' extra'
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
+
+    def test_labels_aggregate_with_rewards_in_other_records(self):
+        first, second = self.records
+        first['report_identity']['value'] = ' '.join(['label'] * 25)
+        source = copy.deepcopy(first['sources'][0])
+        source.update(id='separate-award', url='https://example.com/award')
+        first['sources'].append(source)
+        first['reward']['source_id'] = source['id']
+        second['sources'][0]['url'] = 'https://example.com/other-primary'
+        source = copy.deepcopy(first['sources'][0])
+        source['id'] = 'shared-award'
+        second['sources'].append(source)
+        second['reward']['source_id'] = source['id']
+        second['reward']['evidence_quote'] = 'Award'
+        with self.assertRaisesRegex(Invalid, 'quotations from one source exceed 25 words'):
+            self.check()
 
 class IdentityCompatibilityTests(unittest.TestCase):
     def test_export_version_and_legacy_records_preserved(self):

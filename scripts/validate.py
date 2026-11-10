@@ -118,6 +118,20 @@ def normalize_url(url):
     u = urlsplit(url)
     return urlunsplit((u.scheme.lower(), u.netloc.lower(), u.path.rstrip('/'), u.query, ''))
 
+def source_quote_words(record):
+    """Count exact source-label and reward quotations against their own sources."""
+    sources = {s['id']: s for s in record['sources']}
+    reward = record['reward']
+    quotations = [(reward['source_id'], reward['evidence_quote'])]
+    identity = record.get('report_identity')
+    if identity and identity['kind'] == 'source_label':
+        quotations.append((identity['source_id'], identity['value']))
+    words = {}
+    for source_id, quotation in quotations:
+        url = normalize_url(sources[source_id]['url'])
+        words[url] = words.get(url, 0) + len(quotation.split())
+    return words
+
 def validate_record(record, taxonomy, schema):
     check_schema(record, schema, schema)
     cats = {x['id'] for x in taxonomy['categories']}
@@ -166,6 +180,8 @@ def validate_record(record, taxonomy, schema):
         fail(record['id'], 'reward source does not support reward')
     if len(reward['evidence_quote'].split()) > 25:
         fail(record['id'], 'reward quotation exceeds 25 words')
+    if any(words > 25 for words in source_quote_words(record).values()):
+        fail(record['id'], 'combined quotations from one source exceed 25 words')
     try:
         bounds = {key:date_bounds(item) for key,item in record['dates'].items()}
     except (ValueError, TypeError) as exc:
@@ -212,12 +228,10 @@ def validate_library(root=ROOT):
             fail(str(path), 'CVE counted in multiple award records; reconcile the reports first')
         cves.update(record['cve_ids'])
         urls.setdefault(url, []).append(record)
-        reward = record['reward']
-        reward_source = next(s for s in record['sources'] if s['id'] == reward['source_id'])
-        quote_url = normalize_url(reward_source['url'])
-        quote_words[quote_url] = quote_words.get(quote_url, 0) + len(reward['evidence_quote'].split())
-        if quote_words[quote_url] > 25:
-            fail(str(path), 'combined reward quotations from one source exceed 25 words')
+        for quote_url, words in source_quote_words(record).items():
+            quote_words[quote_url] = quote_words.get(quote_url, 0) + words
+            if quote_words[quote_url] > 25:
+                fail(str(path), 'combined quotations from one source exceed 25 words')
         ids.add(record['id']); records.append(record)
     for url, group in urls.items():
         if len(group) <= 1:

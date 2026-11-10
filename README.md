@@ -253,6 +253,8 @@ python3 scripts/build_navigation.py --check
 python3 scripts/render_readme_buttons.py --check
 ```
 
+The [offline CI workflow](.github/workflows/offline-ci.yml) runs these checks on pull requests and pushes to `main`, using Python 3.10 and 3.12. It has read-only repository access and checks that the working tree stays unchanged. It does not collect live sources, regenerate snapshots, or publish changes; the daily scope refresh remains a separate workflow.
+
 After editing canonical records, regenerate the affected exports. The recognition exporter also generates its readable directory:
 
 ```sh

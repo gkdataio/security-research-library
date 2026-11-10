@@ -10,9 +10,11 @@ import argparse
 from collections import Counter, defaultdict
 import datetime as dt
 import hashlib
+from http.client import HTTPException
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import tempfile
 import time
@@ -320,10 +322,49 @@ class NoRedirect(HTTPRedirectHandler):
 
 
 def _safe_redirect(base, location):
-    if not location:
+    """Keep redirect identity signals, never raw credentials or path tokens.
+
+    Location is untrusted even when the requested URL is an official page.
+    Query strings and fragments are deliberately ignored, as before. A path
+    digest distinguishes destinations without retaining arbitrary path values.
+    """
+    if not location or any(ord(char) < 32 or ord(char) == 127 for char in location):
         return None
-    parts = urlsplit(urljoin(base, location))
-    return urlunsplit((parts.scheme, parts.netloc, parts.path, "", ""))
+    try:
+        parts = urlsplit(urljoin(base, location))
+        if parts.scheme not in ("http", "https") or not parts.hostname:
+            return None
+        host = parts.hostname
+        if ":" in host:
+            # URL parsing accepts IPv6 zone IDs; these are not public origins.
+            if "%" in host:
+                return None
+            host = "[" + host + "]"
+        else:
+            host = host.encode("idna").decode("ascii")
+            if len(host) > 253 or any(not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?", label)
+                                      for label in host.rstrip(".").split(".")):
+                return None
+        port = parts.port
+        if port is not None:
+            host += ":" + str(port)
+        path_digest = hashlib.sha256(parts.path.encode("utf-8")).hexdigest()
+    except ValueError:
+        return None
+    return {"origin": urlunsplit((parts.scheme, host, "", "", "")),
+            "path_sha256": path_digest}
+
+
+def _sanitize_redirect_fingerprints(state):
+    """Upgrade old local fingerprints before saving or reporting them again."""
+    changed = False
+    for entry in state["pages"].values():
+        fingerprint = entry.get("fingerprint") or {}
+        destination = fingerprint.get("redirect_to")
+        if isinstance(destination, str):
+            fingerprint["redirect_to"] = _safe_redirect("", destination)
+            changed = True
+    return changed
 
 
 def fetch_official_page(url, prior=None, timeout=15, max_bytes=2_000_000, opener=None):
@@ -343,7 +384,7 @@ def fetch_official_page(url, prior=None, timeout=15, max_bytes=2_000_000, opener
         response = opener.open(Request(url, headers=headers, method="GET"), timeout=timeout)
     except HTTPError as error:
         response = error
-    except (URLError, TimeoutError, OSError) as error:
+    except (URLError, TimeoutError, OSError, HTTPException) as error:
         return {"kind": "unavailable", "reason": type(error).__name__}
     with response:
         status = response.code
@@ -366,9 +407,26 @@ def fetch_official_page(url, prior=None, timeout=15, max_bytes=2_000_000, opener
             if content_type not in ("text/html", "text/plain", "application/json", "application/ld+json",
                                     "application/xhtml+xml"):
                 return {"kind": "unavailable", "status": status, "reason": "unsupported_content_type"}
-            body = response.read(max_bytes + 1)
+            length = response.headers.get("Content-Length")
+            if length is not None:
+                length = length.strip()
+                if not length.isascii() or not length.isdecimal():
+                    return {"kind": "unavailable", "status": status, "reason": "invalid_content_length"}
+                try:
+                    length = int(length)
+                except ValueError:
+                    return {"kind": "unavailable", "status": status, "reason": "invalid_content_length"}
+                if length > max_bytes:
+                    return {"kind": "unavailable", "status": status, "reason": "response_too_large"}
+            try:
+                body = response.read(max_bytes + 1)
+            except (URLError, TimeoutError, OSError, HTTPException) as error:
+                # Exception text can contain partial bodies or untrusted URLs.
+                return {"kind": "unavailable", "status": status, "reason": type(error).__name__}
             if len(body) > max_bytes:
                 return {"kind": "unavailable", "status": status, "reason": "response_too_large"}
+            if length is not None and len(body) != length:
+                return {"kind": "unavailable", "status": status, "reason": "incomplete_response"}
             fingerprint = {"status": status, "content_type": content_type,
                            "sha256": hashlib.sha256(body).hexdigest()}
         else:
@@ -418,6 +476,8 @@ def check_live(targets, state_path, *, plan=False, max_requests=None, interval=1
                timeout=15, max_bytes=2_000_000, skip_recent_hours=12,
                platforms=None, programs=None, fetcher=fetch_official_page):
     state = _read_state(state_path)
+    if _sanitize_redirect_fingerprints(state) and not plan:
+        _write_json_atomic(state_path, state)
     now = dt.datetime.now(dt.timezone.utc)
     selected = {url: item for url, item in targets.items()
                 if (not platforms or set(item["platforms"]) & set(platforms))
@@ -461,13 +521,13 @@ def check_live(targets, state_path, *, plan=False, max_requests=None, interval=1
             counts["unavailable"] += 1
             results.append({"url": url, **item, "kind": kind, "status": observed.get("status"),
                             "reason": observed["reason"]})
-            if observed.get("reason") == "rate_limited":
-                counts["rate_limited"] += 1
-                break
             state["pages"][url] = {**(prior or {}), "attempted_at": _now(),
                                    "last_failure": {"status": observed.get("status"),
                                                     "reason": observed["reason"]}}
             _write_json_atomic(state_path, state)
+            if observed.get("reason") == "rate_limited":
+                counts["rate_limited"] += 1
+                break
             continue
         if kind == "not_modified":
             counts["unchanged"] += 1
@@ -508,7 +568,7 @@ def main():
     parser.add_argument("--timeout", type=float, default=15.0, help="Per-request timeout in seconds")
     parser.add_argument("--max-bytes", type=int, default=2_000_000, help="Maximum bytes read from a response")
     parser.add_argument("--skip-recent-hours", type=float, default=12.0,
-                        help="Skip URLs checked successfully within this many hours; use 0 to recheck")
+                        help="Skip successful checks and failed attempts within this many hours; use 0 to recheck")
     parser.add_argument("--pages-only", action="store_true", help="Skip official scope-source URLs in live mode")
     parser.add_argument("--platform", action="append", choices=("Bugcrowd", "HackerOne", "Intigriti",
                                                                   "Independent", "Direct vendor program",

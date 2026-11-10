@@ -95,6 +95,21 @@ class InventoryTests(unittest.TestCase):
         pg=next(r for r in out['reports'] if r['id']=='postgresql-multibyte-validation-cve-2026-2006')
         self.assertEqual(pg['reward']['type'],'competition_award')
         self.assertIsNone(pg['dates']['paid']['value'])
+    def test_historical_supplement_does_not_invent_review_time(self):
+        pg = next(r for r in build_export(ROOT)['reports']
+                  if r['id'] == 'postgresql-multibyte-validation-cve-2026-2006')
+        self.assertEqual(pg['verification']['reviewed_at'], '2026-10-02T03:54:00Z')
+        sources = {source['id']: source for source in pg['sources']}
+        self.assertEqual(sources['currency-context']['retrieved_at'], '2026-10-06T04:19:11Z')
+        self.assertEqual(sources['currency-context']['url'], 'https://www.zeroday.cloud/rules')
+        self.assertEqual(pg['recency']['as_of'], '2026-10-03')
+        self.assertIn('Initial primary-source review', pg['verification']['method'])
+        limitations = ' '.join(pg['verification']['limitations'])
+        for qualification in ('initial 2026-10-02 review', 'currency-context supplement',
+                              '2026-10-06T04:19:11Z',
+                              'exact supplemental review time was not recorded',
+                              'does not represent a new source review'):
+            self.assertIn(qualification, limitations)
     def test_unknown_amount_candidates_excluded(self):
         out=build_export(ROOT)
         self.assertFalse(any(r['id'].startswith('dependabot') for r in out['reports']))
