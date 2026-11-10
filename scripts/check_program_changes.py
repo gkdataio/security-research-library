@@ -442,10 +442,44 @@ def _now():
 def _read_state(path):
     if not path.is_file():
         return {"schema_version": "1.0.0", "pages": {}}
-    state = json.loads(path.read_text(encoding="utf-8"))
-    if state.get("schema_version") != "1.0.0" or not isinstance(state.get("pages"), dict):
+    try:
+        state = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        raise Invalid("cannot read local program-change state file; no requests made") from None
+    if (not isinstance(state, dict) or state.get("schema_version") != "1.0.0"
+            or not isinstance(state.get("pages"), dict)):
         raise Invalid("unsupported local program-change state file")
+    # Validate the entire file before redaction, writes, or requests. Silently
+    # dropping a malformed time could discard a failed attempt's cooldown.
+    for entry in state["pages"].values():
+        if not isinstance(entry, dict):
+            raise Invalid("invalid local program-change page entry; no requests made")
+        for field in ("fingerprint", "last_failure"):
+            if entry.get(field) is not None and not isinstance(entry[field], dict):
+                raise Invalid("invalid local program-change " + field + "; no requests made")
+        for field in ("etag", "last_modified"):
+            if entry.get(field) is not None and not isinstance(entry[field], str):
+                raise Invalid("invalid local program-change " + field + "; no requests made")
+        for field in ("checked_at", "attempted_at"):
+            if field in entry:
+                _state_timestamp(entry[field])
+        if entry.get("last_failure") is not None and "attempted_at" not in entry:
+            raise Invalid("local program-change failure is missing its attempted_at timestamp; "
+                          "state retained and no requests made")
     return state
+
+
+def _state_timestamp(value):
+    try:
+        if not isinstance(value, str):
+            raise ValueError
+        parsed = dt.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        if parsed.tzinfo is None:
+            raise ValueError
+        return parsed.astimezone(dt.timezone.utc)
+    except (ValueError, OverflowError):
+        raise Invalid("invalid local program-change timestamp; expected a timezone-aware ISO timestamp; "
+                      "state retained and no requests made") from None
 
 
 def _write_json_atomic(path, data):
@@ -461,11 +495,8 @@ def _write_json_atomic(path, data):
 def _recent(entry, hours, now):
     if not entry or hours <= 0:
         return False
-    try:
-        times = [dt.datetime.fromisoformat(entry[field].replace("Z", "+00:00"))
-                 for field in ("checked_at", "attempted_at") if entry.get(field)]
-    except ValueError:
-        return False
+    times = [_state_timestamp(entry[field])
+             for field in ("checked_at", "attempted_at") if field in entry]
     if not times:
         return False
     age = now - max(times)

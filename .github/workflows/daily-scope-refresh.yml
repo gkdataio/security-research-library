@@ -18,6 +18,8 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 90
+    env:
+      SCOPE_EVIDENCE_NAME: scope-refresh-${{ github.run_id }}-${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -29,17 +31,24 @@ jobs:
       - name: Check for a published attempt today
         id: freshness
         run: python scripts/scope_refresh_due.py
+      - name: Start run evidence manifest
+        if: steps.freshness.outputs.due == 'true'
+        run: python scripts/scope_refresh_evidence.py --start --directory "$RUNNER_TEMP/$SCOPE_EVIDENCE_NAME"
       - name: Test collectors before network access
         if: steps.freshness.outputs.due == 'true'
+        id: tests
         run: python -m unittest discover -s tests -v
       - name: Report new-program discovery coverage
         if: steps.freshness.outputs.due == 'true'
+        id: discovery
         run: python scripts/discover_programs.py
       - name: Refresh supported public scope tables
         if: steps.freshness.outputs.due == 'true'
+        id: collector
         run: python scripts/refresh_program_scopes.py
       - name: Record workflow identity
         if: steps.freshness.outputs.due == 'true'
+        id: identity
         run: |
           python - <<'PY'
           import json, os, subprocess
@@ -54,8 +63,10 @@ jobs:
           PY
       - name: Regenerate and validate
         if: steps.freshness.outputs.due == 'true'
+        id: validation
         run: |
           set -euo pipefail
+          python scripts/scope_refresh_due.py --validate-audit data/scope-refresh-status.json
           python scripts/export_programs.py
           python scripts/export_program_discovery.py
           python scripts/export_public_bounties.py
@@ -70,8 +81,10 @@ jobs:
           done
       - name: Publish validated snapshots and audit
         if: steps.freshness.outputs.due == 'true'
+        id: publication
         run: |
           set -euo pipefail
+          python scripts/scope_refresh_due.py --validate-audit data/scope-refresh-status.json
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/programs data/public-bounty-scopes.json data/bugcrowd-vdp-scopes.json data/scope-refresh-status.json data/program-discovery-status.json exports docs
@@ -80,27 +93,40 @@ jobs:
             git push origin HEAD:main
             test "$(git rev-parse HEAD)" = "$(git ls-remote origin refs/heads/main | cut -f1)"
           fi
+      - name: Surface incomplete supported coverage
+        if: steps.freshness.outputs.due == 'true'
+        id: coverage
+        run: |
+          python - <<'PY'
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from scope_refresh_due import validate_audit
+          audit = json.loads(Path('data/scope-refresh-status.json').read_text())
+          counts = validate_audit(audit)
+          print(json.dumps(counts, indent=2))
+          discovery = json.loads(Path('data/program-discovery-status.json').read_text())
+          if discovery['status'] == 'incomplete':
+              print('::warning::New-program discovery needs current complete browser observations; discovery has not run.')
+          if counts['failed'] or counts['deferred']:
+              raise SystemExit('Some supported programs were not refreshed; last-good records retained. Inspect the audit.')
+          PY
+      - name: Finish run evidence manifest even on failure
+        if: always() && steps.freshness.outputs.due == 'true'
+        run: |
+          python scripts/scope_refresh_evidence.py --finish --directory "$RUNNER_TEMP/$SCOPE_EVIDENCE_NAME" \
+            --step tests=${{ steps.tests.outcome }} \
+            --step discovery=${{ steps.discovery.outcome }} \
+            --step collector=${{ steps.collector.outcome }} \
+            --step identity=${{ steps.identity.outcome }} \
+            --step validation=${{ steps.validation.outcome }} \
+            --step publication=${{ steps.publication.outcome }} \
+            --step coverage=${{ steps.coverage.outcome }}
       - name: Upload run evidence even on failure
         if: always() && steps.freshness.outputs.due == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: scope-refresh-${{ github.run_id }}
-          path: |
-            data/scope-refresh-status.json
-            data/program-discovery-status.json
+          name: scope-refresh-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/${{ env.SCOPE_EVIDENCE_NAME }}
           if-no-files-found: warn
           retention-days: 30
-      - name: Surface incomplete supported coverage
-        if: steps.freshness.outputs.due == 'true'
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          audit = json.loads(Path('data/scope-refresh-status.json').read_text())
-          print(json.dumps(audit['counts'], indent=2))
-          discovery = json.loads(Path('data/program-discovery-status.json').read_text())
-          if discovery['status'] == 'incomplete':
-              print('::warning::New-program discovery needs current complete browser observations; discovery has not run.')
-          if audit['counts']['failed'] or audit['counts']['deferred']:
-              raise SystemExit('Some supported programs were not refreshed; last-good records retained. Inspect the audit.')
-          PY
