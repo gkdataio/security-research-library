@@ -11,6 +11,7 @@ from export_public_bounties import build as build_bounties, render_asset_table
 from scope_integrity import (SOURCE_METHODS, source_belongs_to_program,
                              validate_gap_review, validate_unique_scope_rows)
 from validate import ROOT, Invalid, check_schema
+from scope_source_visibility import load_visibility, visibility_lines
 
 
 STATUS_LABELS = {
@@ -114,6 +115,7 @@ def bounty_record(listing, source, capture):
 
 
 def build(root=ROOT):
+    visibility = load_visibility(root)
     discovery = json.loads(build_discovery(root)["exports/program-discovery.json"])
     batches = [batch for batch in discovery["batches"] if batch["platform"] == "Bugcrowd"]
     latest = max(batches, key=lambda batch: batch["reviewed_at"])
@@ -203,6 +205,7 @@ def build(root=ROOT):
                           "**Scope status:** " + STATUS_LABELS[item["scope_status"]] + ".", "",
                           "**Policy review:** " + text(item["policy_review_state"].replace("_", " ")) + ".", "",
                           "**Capture time:** " + text(item["scope_captured_at"] or "Not captured") + ".", ""]
+                detail += visibility_lines(item, visibility, "../../../data/scope-refresh-status.json")
                 if item["directory_card"]:
                     detail += ["**Directory category:** " + text(card["publisher_category"]) + ".", "",
                                "**Industry:** " + text(card["industry"] or "Not listed") + ".", "",

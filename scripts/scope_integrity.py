@@ -14,6 +14,34 @@ SOURCE_METHODS = {
 }
 
 
+def redacted_scope_row(row):
+    """True only when the asset name is a block mask and no location is visible.
+
+    Do not guess concealed identifiers. A real location still supplies a public
+    identifier even when its display name is masked. Mixed tables retain rows.
+    """
+    def masked(value):
+        return (isinstance(value, str) and bool(re.search(r"[\u2580-\u259f]", value))
+                and bool(re.fullmatch(r"[\u2580-\u259f\s]+", value)))
+    name, location = row.get("name"), row.get("location")
+    return masked(name) and (not location or not location.strip() or masked(location))
+
+
+def redacted_scope_count(rows):
+    return sum(redacted_scope_row(row) for row in rows)
+
+
+def redaction_warning(rows):
+    count = redacted_scope_count(rows)
+    if not count:
+        return None
+    if count == len(rows):
+        return ("Every captured asset identifier is redacted. These historical rows do not provide "
+                "usable public asset identifiers; row counts must not be read as usable scope coverage.")
+    return (f"{count} captured asset rows have fully redacted identifiers and no visible location. "
+            "Those rows are not usable public asset identifiers; other rows remain separate evidence.")
+
+
 def _fold(value):
     return value.strip().casefold() if isinstance(value, str) else value
 

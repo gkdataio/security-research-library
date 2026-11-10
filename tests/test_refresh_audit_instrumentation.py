@@ -74,6 +74,92 @@ class AuditInstrumentationTests(unittest.TestCase):
         self.assertEqual(audit['results'][0]['verification_status'], 'unknown')
         return audit['results'][0]
 
+    def test_partial_http_response_cannot_be_parsed_or_advance_scope(self):
+        class Response(io.BytesIO):
+            def __init__(self, body, status=200, ranged=False):
+                super().__init__(body.encode())
+                self.status, self.read_called = status, False
+                self.headers = Message()
+                self.headers['Content-Length'] = str(len(body.encode()))
+                if ranged:
+                    self.headers['Content-Range'] = SECRET
+            def getcode(self): return self.status
+            def read(self, *args):
+                self.read_called = True
+                return super().read(*args)
+        for status, ranged in ((206, True), (206, False), (200, True), (204, False), (201, False)):
+            calls = []
+            partial = Response(json.dumps(BODY), status, ranged)
+            class Opener:
+                def open(self, request, timeout):
+                    calls.append(request.full_url)
+                    return Response(PAGE) if request.full_url == URL else partial
+            client = refresh.PublicClient(); client.opener = Opener()
+            with self.subTest(status=status, ranged=ranged), patch.object(refresh.time, 'sleep'):
+                result = self.failure(client, overlap=True)
+                self.assertEqual(result['reason_code'], 'http_response_incomplete')
+                self.assertEqual(result['http_status'], status)
+                self.assertEqual(result['failed_source_url'], BRIEF)
+                self.assertEqual(calls, [URL, BRIEF])
+                self.assertFalse(partial.read_called)
+                self.assertTrue(partial.closed)
+                self.assertNotIn(SECRET, json.dumps(result))
+
+    def test_complete_200_without_content_range_is_accepted(self):
+        class Response(io.BytesIO):
+            def __init__(self, body):
+                super().__init__(body.encode())
+                self.headers = Message()
+                self.headers['Content-Length'] = str(len(body.encode()))
+            def getcode(self): return 200
+        class Opener:
+            def open(self, request, timeout):
+                return Response(PAGE if request.full_url == URL else json.dumps(BODY))
+        client = refresh.PublicClient(); client.opener = Opener()
+        with patch.object(refresh.time, 'sleep'):
+            audit, _, _ = self.run_fixture(client)
+        self.assertEqual(audit['counts']['refreshed'], 1)
+        self.assertEqual(audit['counts']['failed'], 0)
+
+    def test_all_redacted_brief_is_not_a_fresh_usable_scope(self):
+        body = copy.deepcopy(BODY)
+        body['data']['scope'][0]['targets'][0]['name'] = '██████'
+        result = self.failure(Client({URL: PAGE, BRIEF: json.dumps(body)}))
+        self.assertEqual(result['reason_code'], 'bugcrowd_scope_redacted')
+        self.assertEqual(result['observation_status'], 'redacted_public_table')
+        self.assertEqual(result['observed_redacted_asset_count'], 1)
+        self.assertEqual(result['observed_non_redacted_asset_count'], 0)
+        self.assertEqual(result['observation_source_url'], BRIEF)
+        self.assertRegex(result['response_sha256'], '^[a-f0-9]{64}$')
+        self.assertNotIn('████', json.dumps(result, ensure_ascii=False))
+
+    def test_mixed_redacted_rows_and_visible_locations_are_not_erased(self):
+        for targets in ([{'name': '████', 'category': 'website', 'uri': 'https://example.test'}],
+                        [{'name': '████', 'category': 'website', 'uri': None},
+                         {'name': 'example.test', 'category': 'website', 'uri': None}]):
+            body = copy.deepcopy(BODY)
+            body['data']['scope'][0]['targets'] = targets
+            parsed = refresh.parse_brief(URL, PAGE, lambda source: json.dumps(body))
+            self.assertEqual(len(parsed['assets']), len(targets))
+            self.assertEqual([x['name'] for x in parsed['assets']], [x['name'] for x in targets])
+
+    def test_redacted_count_cannot_leak_untrusted_details(self):
+        for count in (SECRET, True, -1, None):
+            error = refresh.ObservationError('bugcrowd_scope_redacted', observed_redacted_asset_count=count,
+                                             response_body=SECRET)
+            result = refresh.failure_fields(error, 'response_parse', BRIEF)
+            self.assertNotIn('observed_redacted_asset_count', result)
+            self.assertNotIn(SECRET, json.dumps(result))
+
+    def test_migration_redirect_is_classified_without_following_it(self):
+        client = Client({URL: refresh.ObservationError('redirect_requires_review', http_status=302,
+                        redirect_category=refresh.redirect_category(URL, URL + '/migrated?token=' + SECRET))})
+        result = self.failure(client)
+        self.assertEqual(result['redirect_category'], 'same_program_migration_route')
+        self.assertEqual(client.calls, [URL])
+        self.assertNotIn(SECRET, json.dumps(result))
+        self.assertEqual(refresh.redirect_category(URL, URL + '-other/migrated'), 'same_origin_other_route')
+
     def test_404_records_exact_requested_brief_not_error_url_or_headers(self):
         error = HTTPError('https://other.test/' + SECRET + '?token=' + SECRET, 404, SECRET,
                           {'Location': SECRET, 'Set-Cookie': SECRET}, io.BytesIO(SECRET.encode()))

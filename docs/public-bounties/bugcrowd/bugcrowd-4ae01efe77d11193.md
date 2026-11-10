@@ -12,6 +12,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-10T15:06:35Z.
 
+**Redacted scope:** Every captured asset identifier is redacted\. These historical rows do not provide usable public asset identifiers; row counts must not be read as usable scope coverage\.
+
 **Directory category:** Bug Bounty.
 
 **Displayed reward:** $100 - $18,000.

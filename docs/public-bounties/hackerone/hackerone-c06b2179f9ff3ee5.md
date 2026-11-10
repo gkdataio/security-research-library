@@ -12,6 +12,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:52:17Z.
 
+**Latest refresh failed (2026-11-10T15:39:19Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+
 **Scope source:** [Official source 1](<https://hackerone.com/kong/policy_scopes>)
 
 ## In-scope entries (14)

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "bugcrowd_snapshot_date": "2026-10-03",
   "notice": "Counts cover dated public directory snapshots and published scope rows. A visible listing or captured table is not a complete policy review or authorization to test. Empty exclusions do not mean unrestricted scope.",
   "counts": {
@@ -31,6 +31,9 @@
     "distinct_catalog_programs": 850,
     "distinct_scope_captured": 808,
     "distinct_scope_gaps": 42,
+    "distinct_redacted_only_programs": 30,
+    "distinct_with_non_redacted_scope_rows": 778,
+    "distinct_redacted_asset_rows": 293,
     "distinct_in_scope_rows": 11812,
     "distinct_out_of_scope_rows": 3493,
     "duplicate_source_rows_collapsed": 77,
@@ -636,6 +639,188 @@
         "result": "preview_login_gate",
         "note": "The official program detail redirected to a preview page with a login or application gate. No public asset rows were visible."
       }
+    }
+  ],
+  "redacted_only_programs": [
+    {
+      "id": "bugcrowd-0670535f899adf47",
+      "name": "PNI Media - Bug Bounty",
+      "program_url": "https://bugcrowd.com/engagements/pnimedia-bb",
+      "captured_asset_rows": 38
+    },
+    {
+      "id": "bugcrowd-06abb373b71e61d1",
+      "name": "Retool Vulnerability Disclosure Program",
+      "program_url": "https://bugcrowd.com/engagements/retool-vdp",
+      "captured_asset_rows": 1
+    },
+    {
+      "id": "bugcrowd-0f2855e69aa69153",
+      "name": "Orderly Network: Bug Bounty Program",
+      "program_url": "https://bugcrowd.com/engagements/orderlynetwork-mbb-og",
+      "captured_asset_rows": 3
+    },
+    {
+      "id": "bugcrowd-12f03056ae8dc130",
+      "name": "Gap Inc.",
+      "program_url": "https://bugcrowd.com/engagements/gapinc",
+      "captured_asset_rows": 18
+    },
+    {
+      "id": "bugcrowd-24bb0555751df42e",
+      "name": "FEDERAL MARITIME COMMISSION - VDP",
+      "program_url": "https://gov.bugcrowd.net/engagements/fmc-vdp",
+      "captured_asset_rows": 1
+    },
+    {
+      "id": "bugcrowd-331f87409b14080b",
+      "name": "Orderly Network Public Managed Bug Bounty Engagement",
+      "program_url": "https://bugcrowd.com/engagements/orderlynetwork-mbb-og2",
+      "captured_asset_rows": 3
+    },
+    {
+      "id": "bugcrowd-34ee7f01629a6e29",
+      "name": "Xfinity Home & xFi",
+      "program_url": "https://bugcrowd.com/engagements/xfinity-home",
+      "captured_asset_rows": 42
+    },
+    {
+      "id": "bugcrowd-364dac5184d92780",
+      "name": "Coles Group Limited Vulnerability Disclosure Program",
+      "program_url": "https://bugcrowd.com/engagements/coles-vdp-pro",
+      "captured_asset_rows": 20
+    },
+    {
+      "id": "bugcrowd-3d5e38383524336c",
+      "name": "Centers for Medicare & Medicaid Services - Public Bug Bounty Program 2026",
+      "program_url": "https://bugcrowd.com/engagements/cms-bbpublic",
+      "captured_asset_rows": 15
+    },
+    {
+      "id": "bugcrowd-4ae01efe77d11193",
+      "name": "Cash App",
+      "program_url": "https://bugcrowd.com/engagements/cashapp",
+      "captured_asset_rows": 4
+    },
+    {
+      "id": "bugcrowd-5666a64d02635d13",
+      "name": "Kiteworks",
+      "program_url": "https://bugcrowd.com/engagements/kiteworks-public",
+      "captured_asset_rows": 2
+    },
+    {
+      "id": "bugcrowd-5cd930125a62c3e1",
+      "name": "Magic Labs Managed Bug Bounty Engagement",
+      "program_url": "https://bugcrowd.com/engagements/magiclabs-mbb-og",
+      "captured_asset_rows": 3
+    },
+    {
+      "id": "bugcrowd-5dbe680990001fd6",
+      "name": "Square",
+      "program_url": "https://bugcrowd.com/engagements/square",
+      "captured_asset_rows": 16
+    },
+    {
+      "id": "bugcrowd-63fc8c4f8df523ba",
+      "name": "Comcast Xfinity Bug Bounty",
+      "program_url": "https://bugcrowd.com/engagements/comcast-mbb",
+      "captured_asset_rows": 16
+    },
+    {
+      "id": "bugcrowd-78d1fe8fa4d18fe9",
+      "name": "Cisco Responsible Disclosure",
+      "program_url": "https://bugcrowd.com/engagements/ciscosecurity",
+      "captured_asset_rows": 3
+    },
+    {
+      "id": "bugcrowd-7b00f3e4451f80fe",
+      "name": "Latitude Financial Services Vulnerability Disclosure Program",
+      "program_url": "https://bugcrowd.com/engagements/latitudefinancial-vdp",
+      "captured_asset_rows": 13
+    },
+    {
+      "id": "bugcrowd-865b838bf98feae1",
+      "name": "Block Open Source",
+      "program_url": "https://bugcrowd.com/engagements/blockopensource",
+      "captured_asset_rows": 7
+    },
+    {
+      "id": "bugcrowd-91c855cfe9a79c85",
+      "name": "TIDAL",
+      "program_url": "https://bugcrowd.com/engagements/tidal-bugbounty",
+      "captured_asset_rows": 10
+    },
+    {
+      "id": "bugcrowd-ab809b2562b9e467",
+      "name": "Unilever Vulnerability Disclosure Program",
+      "program_url": "https://bugcrowd.com/engagements/unilever-vdp",
+      "captured_asset_rows": 1
+    },
+    {
+      "id": "bugcrowd-ac7779f0b4aa65b9",
+      "name": "Rec Room Video Games",
+      "program_url": "https://bugcrowd.com/engagements/recroom-og",
+      "captured_asset_rows": 12
+    },
+    {
+      "id": "bugcrowd-bb5a580105b38587",
+      "name": "Afterpay Bug Bounty Program",
+      "program_url": "https://bugcrowd.com/engagements/afterpay",
+      "captured_asset_rows": 14
+    },
+    {
+      "id": "bugcrowd-c6e7a4e989508d26",
+      "name": "Zola Managed Bug Bounty",
+      "program_url": "https://bugcrowd.com/engagements/zola-mbb-og",
+      "captured_asset_rows": 7
+    },
+    {
+      "id": "bugcrowd-c8208ebdb3ec36a3",
+      "name": "BitDiscovery",
+      "program_url": "https://bugcrowd.com/engagements/bitdiscovery",
+      "captured_asset_rows": 3
+    },
+    {
+      "id": "bugcrowd-c83dcd73ad17a9b0",
+      "name": "oDesk",
+      "program_url": "https://bugcrowd.com/engagements/odesk",
+      "captured_asset_rows": 1
+    },
+    {
+      "id": "bugcrowd-e12a5f0e456f4fa4",
+      "name": "Nextup.ai",
+      "program_url": "https://bugcrowd.com/engagements/nextupai",
+      "captured_asset_rows": 5
+    },
+    {
+      "id": "bugcrowd-f043619331dae594",
+      "name": "Empower Personal Wealth",
+      "program_url": "https://bugcrowd.com/engagements/personalcapital",
+      "captured_asset_rows": 5
+    },
+    {
+      "id": "bugcrowd-f0758bf93ee937f9",
+      "name": "Directly",
+      "program_url": "https://bugcrowd.com/engagements/directly",
+      "captured_asset_rows": 6
+    },
+    {
+      "id": "bugcrowd-f63d7f44f611c7d9",
+      "name": "Council on Foreign Relations",
+      "program_url": "https://bugcrowd.com/engagements/cfr",
+      "captured_asset_rows": 7
+    },
+    {
+      "id": "bugcrowd-fa369eff5afec47f",
+      "name": "Seek.com",
+      "program_url": "https://bugcrowd.com/engagements/seek-com",
+      "captured_asset_rows": 9
+    },
+    {
+      "id": "bugcrowd-ff6e05dc38ce5e2d",
+      "name": "Dell Technologies' Products Bug Bounty Program",
+      "program_url": "https://bugcrowd.com/engagements/dell-product",
+      "captured_asset_rows": 8
     }
   ]
 }

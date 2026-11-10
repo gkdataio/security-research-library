@@ -12,6 +12,8 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Capture time:** 2026-11-10T15:13:11Z.
 
+**Redacted scope:** Every captured asset identifier is redacted\. These historical rows do not provide usable public asset identifiers; row counts must not be read as usable scope coverage\.
+
 **Directory category:** Vulnerability Disclosure.
 
 **Industry:** Retail.

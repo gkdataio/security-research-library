@@ -32,6 +32,16 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 
 The 293 overlapping Bugcrowd bounty pages are counted once in the distinct totals. The 40 separately reviewed policies include 23 bounty-catalog records; they are not added again. The October 3 Bugcrowd snapshot is paired with the earlier HackerOne and Intigriti directory observations.
 
+## Redacted identifiers
+
+30 programs have only masked asset identifiers. Only 778 of the 808 captured program tables contain at least one non-redacted row. That is not a current authorization or a full policy review. Historical captured-row totals above are preserved, not relabeled as usable scope.
+
+Across both catalogs, 293 retained rows have fully redacted names and no visible location. Mixed tables retain visible and redacted evidence separately. The JSON audit lists every redacted-only program; its rows and original evidence dates are unchanged.
+
+## Latest refresh versus historical capture
+
+A captured table can subsequently become inaccessible, empty or redacted. Individual program pages now show the latest failed or deferred attempt separately from their retained capture status and date. See the [latest collection audit](../data/scope-refresh-status.json) and [November 10 repair review](scope-repair-2026-11-10.md).
+
 ## Unresolved gaps
 
 Official pages showed 18 preview login gates, 12 terms login gates, 10 empty public tables, 0 JavaScript shells without an independently visible asset list, and 2 HTTP 403 responses.

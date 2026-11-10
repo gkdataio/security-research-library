@@ -11,6 +11,7 @@ from export_program_discovery import build as build_discovery
 from scope_integrity import (SOURCE_METHODS, capture_source_kind, source_belongs_to_program,
                              validate_gap_review, validate_unique_scope_rows)
 from validate import ROOT, Invalid, check_schema
+from scope_source_visibility import load_visibility, visibility_lines
 
 
 PLATFORMS = ("Bugcrowd", "HackerOne", "Intigriti")
@@ -167,6 +168,7 @@ def render_asset_table(assets):
 
 
 def build(root=ROOT):
+    visibility = load_visibility(root)
     discovery = json.loads(build_discovery(root)["exports/program-discovery.json"])
     listings = [item for item in discovery["listings"] if item["platform"] in PLATFORMS]
     capture_data, captures = load_captures(root, listings)
@@ -241,6 +243,7 @@ def build(root=ROOT):
                       "**Scope status:** " + STATUS_LABELS[item["scope_status"]] + ".", "",
                       "**Policy review:** " + text(item["policy_review_state"].replace("_", " ")) + ".", "",
                       "**Capture time:** " + text(item["scope_captured_at"] or "Not captured") + ".", ""]
+            detail += visibility_lines(item, visibility, "../../../data/scope-refresh-status.json")
             if item["directory_card"]:
                 card = item["directory_card"]
                 detail += ["**Directory category:** " + text(card["publisher_category"]) + ".", "",

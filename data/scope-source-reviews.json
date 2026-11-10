@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "reviews": [
+    {
+      "program_url": "https://bugcrowd.com/engagements/cfpb-vdp",
+      "reviewed_at": "2026-11-10T20:37:01Z",
+      "kind": "migrated_login_required",
+      "note": "The official migration page names Bugcrowd Gov (US). Its linked transition page requires a separate Gov login. No sign-in or replacement scope-table request was made. The previous public rows remain historical evidence; this is not a verified current scope or program closure.",
+      "official_source_urls": [
+        "https://bugcrowd.com/engagements/cfpb-vdp/migrated"
+      ]
+    },
+    {
+      "program_url": "https://bugcrowd.com/engagements/tva-vdp",
+      "reviewed_at": "2026-11-10T20:37:01Z",
+      "kind": "migrated_login_required",
+      "note": "The official migration page names Bugcrowd Gov (US). Its linked transition page requires a separate Gov login. No sign-in or replacement scope-table request was made. The previous public rows remain historical evidence; this is not a verified current scope or program closure.",
+      "official_source_urls": [
+        "https://bugcrowd.com/engagements/tva-vdp/migrated"
+      ]
+    },
+    {
+      "program_url": "https://bugcrowd.com/engagements/usdot-vdp",
+      "reviewed_at": "2026-11-10T20:37:01Z",
+      "kind": "migrated_login_required",
+      "note": "The official migration page names Bugcrowd Gov (US). Its linked transition page requires a separate Gov login. No sign-in or replacement scope-table request was made. The previous public rows remain historical evidence; this is not a verified current scope or program closure.",
+      "official_source_urls": [
+        "https://bugcrowd.com/engagements/usdot-vdp/migrated"
+      ]
+    },
+    {
+      "program_url": "https://hackerone.com/django",
+      "reviewed_at": "2026-11-10T20:37:01Z",
+      "kind": "new_submissions_moved",
+      "note": "Django announced on October 8, 2026 that it no longer accepts new security reports through HackerOne. Existing HackerOne reports remain open; new reports go to security@djangoproject.com under the official Django security policy. Historical directory and bounty flags below do not establish current HackerOne submission availability. This does not establish reward eligibility or a new asset-scope table.",
+      "official_source_urls": [
+        "https://www.djangoproject.com/weblog/2026/oct/08/django-security-reporting-update/",
+        "https://docs.djangoproject.com/en/dev/internals/security/"
+      ]
+    }
+  ]
+}

@@ -21,6 +21,7 @@ from urllib.parse import urljoin, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from source_access import BUGCROWD_SCOPE_HOSTS, excluded_source_reason, require_source_access
+from scope_integrity import redacted_scope_count
 
 ROOT = Path(__file__).resolve().parents[1]
 CAPTURES = ('data/public-bounty-scopes.json', 'data/bugcrowd-vdp-scopes.json')
@@ -66,9 +67,11 @@ def official_url(url):
 
 
 OBSERVATION_MESSAGES = {
+    'http_response_incomplete': 'HTTP response is not a complete 200 response; last-good scope retained',
     'redirect_requires_review': 'Redirect requires manual review; no redirect was followed',
     'bugcrowd_scope_schema_invalid': 'Missing or malformed public scope structure; last-good scope retained',
     'bugcrowd_scope_empty': 'Validated public scope structure contains zero asset rows; last-good scope retained',
+    'bugcrowd_scope_redacted': 'Public scope rows contain only redacted identifiers; no usable public asset identifiers verified; last-good scope retained',
     'hackerone_scope_empty': 'Validated CSV contains zero asset rows; last-good scope retained',
     'intigriti_no_visible_rows': 'No visible SSR asset rows were observed; table readiness and current scope remain unverified; last-good scope retained',
 }
@@ -98,7 +101,7 @@ SAFE_VALUE_ERRORS = {
 }
 REDIRECT_CATEGORIES = frozenset({
     'same_program_preview_route', 'same_program_terms_route', 'same_program_scope_route',
-    'same_origin_other_route', 'cross_origin', 'unsafe_or_unrecognized',
+    'same_program_migration_route', 'same_origin_other_route', 'cross_origin', 'unsafe_or_unrecognized',
 })
 
 
@@ -145,6 +148,10 @@ def redirect_category(source, destination):
             return 'unsafe_or_unrecognized'
         if before.netloc != after.netloc:
             return 'cross_origin'
+        if (before.netloc in BUGCROWD_SCOPE_HOSTS
+                and re.fullmatch(r'/engagements/[a-zA-Z0-9_-]+', before.path)
+                and after.path == before.path + '/migrated'):
+            return 'same_program_migration_route'
         if before.netloc == 'app.intigriti.com' and before.path.endswith('/detail'):
             base = before.path[:-len('/detail')]
             routes = {base + '/preview/detail': 'same_program_preview_route',
@@ -171,6 +178,11 @@ def failure_fields(error, stage, source_url=None):
             result['observation_status'] = 'redirect_not_followed'
             category = details.get('redirect_category')
             result['redirect_category'] = category if isinstance(category, str) and category in REDIRECT_CATEGORIES else 'unsafe_or_unrecognized'
+        elif error.reason_code == 'bugcrowd_scope_redacted':
+            result.update(observation_status='redacted_public_table', observed_non_redacted_asset_count=0)
+            count = details.get('observed_redacted_asset_count')
+            if type(count) is int and count > 0:
+                result['observed_redacted_asset_count'] = count
         elif error.reason_code.endswith('_scope_empty'):
             result.update(observation_status='empty_public_table', observed_asset_count=0)
         elif error.reason_code == 'intigriti_no_visible_rows':
@@ -183,7 +195,8 @@ def failure_fields(error, stage, source_url=None):
         if isinstance(digest, str) and re.fullmatch(r'[0-9a-f]{64}', digest):
             result['response_sha256'] = digest
         code = details.get('http_status')
-        if type(code) is int and 300 <= code <= 399 and error.reason_code == 'redirect_requires_review':
+        if type(code) is int and ((300 <= code <= 399 and error.reason_code == 'redirect_requires_review')
+                                 or (100 <= code <= 599 and error.reason_code == 'http_response_incomplete')):
             result['http_status'] = code
     elif isinstance(error, HTTPError):
         code = error.code
@@ -249,6 +262,9 @@ class PublicClient:
         request = Request(url, headers={'User-Agent': 'PublicScopeCatalogReview/1.0',
                                        'Accept': 'text/html,application/json'})
         with self.opener.open(request, timeout=35) as response:
+            status = response.getcode()
+            if status != 200 or response.headers.get('Content-Range') is not None:
+                raise ObservationError('http_response_incomplete', http_status=status)
             raw = response.read(MAX_BYTES + 1)
             if len(raw) > MAX_BYTES:
                 raise ValueError('Response exceeds size limit')
@@ -303,6 +319,9 @@ def parse_brief(program_url, page, body_get):
                 assets.append(asset)
     if not assets:
         raise ObservationError('bugcrowd_scope_empty', response_sha256=digest)
+    if redacted_scope_count(assets) == len(assets):
+        raise ObservationError('bugcrowd_scope_redacted', response_sha256=digest,
+                               observed_redacted_asset_count=len(assets))
     return {'assets': assets, 'source_url': source, 'captured_at': now(),
             'published_at': published, 'scope_groups': len(groups),
             'duplicate_source_rows': duplicates, 'published_asset_count': len(assets) + duplicates,

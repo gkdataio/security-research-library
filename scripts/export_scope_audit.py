@@ -11,6 +11,7 @@ from export_program_discovery import build as build_discovery
 from export_programs import build as build_programs
 from export_public_bounties import build as build_bounties
 from validate import ROOT, Invalid
+from scope_integrity import redacted_scope_count
 
 
 def _read(root, name):
@@ -118,6 +119,10 @@ def build(root=ROOT):
         _expect("Out-of-scope entries (" + str(len(item["out_of_scope"])) + ")" in content,
                 "generated out-of-scope heading differs from JSON: " + item["id"])
 
+    redacted_only = [item for item in union.values()
+                     if item['in_scope'] + item['out_of_scope']
+                     and redacted_scope_count(item['in_scope'] + item['out_of_scope']) ==
+                     len(item['in_scope'] + item['out_of_scope'])]
     status_counts = dict(sorted(Counter(item["scope_status"] for item in union.values()).items()))
     duplicate_rows = sum(item.get("duplicate_source_rows", 0) for item in raw_bounty + raw_vdp)
     counts = {
@@ -147,6 +152,10 @@ def build(root=ROOT):
         "distinct_catalog_programs": len(union),
         "distinct_scope_captured": status_counts.get("captured", 0),
         "distinct_scope_gaps": len(gaps),
+        "distinct_redacted_only_programs": len(redacted_only),
+        "distinct_with_non_redacted_scope_rows": status_counts.get("captured", 0) - len(redacted_only),
+        "distinct_redacted_asset_rows": sum(redacted_scope_count(item['in_scope'] + item['out_of_scope'])
+                                             for item in union.values()),
         "distinct_in_scope_rows": sum(len(item["in_scope"]) for item in union.values()),
         "distinct_out_of_scope_rows": sum(len(item["out_of_scope"]) for item in union.values()),
         "duplicate_source_rows_collapsed": duplicate_rows,
@@ -211,8 +220,11 @@ def build(root=ROOT):
     notice = ("Counts cover dated public directory snapshots and published scope rows. "
               "A visible listing or captured table is not a complete policy review or authorization to test. "
               "Empty exclusions do not mean unrestricted scope.")
-    export = {"schema_version": "1.0.0", "bugcrowd_snapshot_date": bugcrowd["directory_snapshot_date"],
-              "notice": notice, "counts": counts, "unresolved_gaps": gap_records}
+    export = {"schema_version": "1.1.0", "bugcrowd_snapshot_date": bugcrowd["directory_snapshot_date"],
+              "notice": notice, "counts": counts, "unresolved_gaps": gap_records,
+              "redacted_only_programs": [{"id": item["id"], "name": item["name"],
+                  "program_url": item["program_url"], "captured_asset_rows": len(item["in_scope"] + item["out_of_scope"])}
+                  for item in sorted(redacted_only, key=lambda item: item['id'])]}
     lines = ["# Program scope coverage audit", "",
              "[Library home](../README.md) · [Bugcrowd catalog](bugcrowd-programs.md) · "
              "[Bounty catalog](public-bounties.md) · [Discovery queue](program-discovery.md)", "",
@@ -243,6 +255,19 @@ def build(root=ROOT):
              f"The {counts['verified_policy_records']} separately reviewed policies include "
              f"{bounty['counts']['verified_policy_records']} bounty-catalog records; they are not added again. "
              "The October 3 Bugcrowd snapshot is paired with the earlier HackerOne and Intigriti directory observations.", "",
+             "## Redacted identifiers", "",
+             f"{counts['distinct_redacted_only_programs']} programs have only masked asset identifiers. "
+             f"Only {counts['distinct_with_non_redacted_scope_rows']} of the {counts['distinct_scope_captured']} "
+             "captured program tables contain at least one non-redacted row. That is not a current authorization "
+             "or a full policy review. Historical captured-row totals above are preserved, not relabeled as usable scope.", "",
+             f"Across both catalogs, {counts['distinct_redacted_asset_rows']} retained rows have fully redacted "
+             "names and no visible location. Mixed tables retain visible and redacted evidence separately. "
+             "The JSON audit lists every redacted-only program; its rows and original evidence dates are unchanged.", "",
+             "## Latest refresh versus historical capture", "",
+             "A captured table can subsequently become inaccessible, empty or redacted. Individual program pages "
+             "now show the latest failed or deferred attempt separately from their retained capture status and date. "
+             "See the [latest collection audit](../data/scope-refresh-status.json) and "
+             "[November 10 repair review](scope-repair-2026-11-10.md).", "",
              "## Unresolved gaps", "",
              f"Official pages showed {counts['by_gap_result'].get('preview_login_gate', 0)} preview login gates, "
              f"{counts['by_gap_result'].get('terms_login_gate', 0)} terms login gates, "
