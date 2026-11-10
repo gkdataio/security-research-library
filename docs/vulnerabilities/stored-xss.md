@@ -73,7 +73,7 @@ Maintainer advisories and researcher publications remain educational resources; 
   Date qualification: Original maintainer-advisory publication; later database events are separate\.
   Classification: Stored XSS (source explicit). The maintainer explicitly identifies stored XSS involving attachment metadata later rendered as browser content and clicked by a user\.
   Evidence: [Trix attachment-link security advisory GHSA-g9jg-w8vm-g96v](<https://github.com/basecamp/trix/security/advisories/GHSA-g9jg-w8vm-g96v>); location: Advisory title and Impact.
-  2025–2026 learning relevance (editorial): Preserve semantic validation when stored metadata becomes link authority\. Keep the affected integration and interaction prerequisites explicit; the 2025 publication is separate from later database events\.
+  2025–2026 learning relevance (editorial): Validate stored attachment metadata before rendering it as a browser link\. Keep the affected integration and required user interaction explicit\. The 2025 publication is separate from later database events\.
 
 <a id="learning"></a>
 ## Related learning references

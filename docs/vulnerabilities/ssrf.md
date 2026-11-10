@@ -4,7 +4,7 @@
 
 **1 award-backed report · 4 educational case studies · 1 learning reference**
 
-Source-established failures of server request-destination authority\. Keep affected configurations, runtime reachability and bounded impact in the linked evidence\.
+Cases where a source shows that a server can be made to request a destination outside the application's intended policy\. Preserve the affected configuration, which destinations the runtime can reach and the limits of the reported impact\.
 
 Search aliases: server-side-request-forgery.
 
@@ -45,7 +45,7 @@ Maintainer advisories and researcher publications remain educational resources; 
   Date qualification: Maintainer publication; separate from the later database entry\.
   Classification: Server-side request forgery \(SSRF\) (source explicit). The maintainer explicitly identifies SSRF with responses returned to an authenticated caller; the classification is not inferred from destination settings alone\.
   Evidence: [Formie integration-settings security advisory](<https://github.com/verbb/formie/security/advisories/GHSA-v3f3-cmj4-cvj9>); location: Advisory title; Description / Impact; Weaknesses CWE-918.
-  2025–2026 learning relevance (editorial): Integration permission checks and restrictions on security-sensitive settings must preserve destination authority and credential confinement; retain the affected-configuration requirement and avoid inferring a production incident\.
+  2025–2026 learning relevance (editorial): Check who may change integration settings and which destination or credential fields they may change\. Restrict request destinations and where stored credentials can be sent\. Keep the affected-configuration requirement explicit and do not infer a production incident\.
 
 - **[MLflow: destination validation must remain bound to the actual connection](<../resources/mlflow-2026-webhook-connection-destination-integrity.md>)**
   Maintainer Advisory; publication: 2026-08-02; precision: day; basis: explicit.
