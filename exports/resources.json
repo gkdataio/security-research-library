@@ -4303,7 +4303,7 @@
       ],
       "version": null,
       "summary": "Grav's maintainer reports that existing browser or remembered sessions could keep API access after an account was disabled. Authentication methods enforced account disabling inconsistently: refreshing permissions did not also check whether the account was still valid.",
-      "defensive_use": "Editorial lesson: authentication state is a revocable claim. Every authentication method should enforce the same account-lifecycle invariants, and failed account refresh must remove authority rather than preserve cached permission. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors. The official 1.0.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result.",
+      "defensive_use": "Editorial lesson: a saved login must stop granting access when the account is no longer valid. Every authentication method should enforce the same account-status rules. If account refresh fails, deny access rather than reuse cached permission. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors. The official 1.0.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result.",
       "prerequisites": [
         "Basic understanding of authentication, account state and authorization"
       ],
@@ -11848,7 +11848,7 @@
       ],
       "version": null,
       "summary": "Saleor did not check that an email-change confirmation token belonged to the signed-in account. The maintainer's scenario requires a valid token for one account and authenticated access to another; it describes possible lasting account compromise, not an unauthenticated takeover or a confirmed production incident.",
-      "defensive_use": "Editorial lesson: a valid confirmation artifact should authorize one subject, one operation and an expected current state. The linked patch adds subject and operation checks plus agreement with the account's prior email state. Its confirmation tests cover cross-account rejection and changed-state handling. Reading those checks and assertions does not establish a successful test run. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission.",
+      "defensive_use": "Editorial lesson: a valid confirmation token should authorize only the intended account and operation, and only while the expected account state still holds. The linked patch checks the account, the operation and whether the prior email state still matches. Its confirmation tests cover cross-account rejection and changed-state handling. Reading those checks and assertions does not establish a successful test run. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission.",
       "prerequisites": [
         "Authenticated sessions, confirmation tokens and account lifecycle concepts",
         "Authorization invariants across business-state transitions"

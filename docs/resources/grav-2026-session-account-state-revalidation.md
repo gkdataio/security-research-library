@@ -11,7 +11,7 @@ Grav's maintainer reports that existing browser or remembered sessions could kee
 
 ## Defensive use
 
-Editorial lesson: authentication state is a revocable claim\. Every authentication method should enforce the same account-lifecycle invariants, and failed account refresh must remove authority rather than preserve cached permission\. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors\. The official 1\.0\.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result\.
+Editorial lesson: a saved login must stop granting access when the account is no longer valid\. Every authentication method should enforce the same account-status rules\. If account refresh fails, deny access rather than reuse cached permission\. The advisory describes requiring a freshly loaded, enabled account and failing closed on refresh errors\. The official 1\.0\.36 release notes state that disabling or deleting an account immediately terminates its API sessions; this is maintainer-stated remediation, not an independently tested result\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

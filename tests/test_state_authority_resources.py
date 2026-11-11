@@ -97,7 +97,7 @@ class StateAuthorityResourceTests(unittest.TestCase):
 
     def test_saleor_patch_scope_and_execution_limits_are_explicit(self):
         record = self.records[self.saleor_id]
-        for phrase in ('one subject, one operation', 'expected current state',
+        for phrase in ('only the intended account and operation', 'expected account state still holds',
                        'prior email state', 'does not establish a successful test run'):
             self.assertIn(phrase, record['defensive_use'])
         self.assertIn('Upstream code was not executed', record['freshness']['note'])

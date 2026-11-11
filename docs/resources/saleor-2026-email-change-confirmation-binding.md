@@ -11,7 +11,7 @@ Saleor did not check that an email-change confirmation token belonged to the sig
 
 ## Defensive use
 
-Editorial lesson: a valid confirmation artifact should authorize one subject, one operation and an expected current state\. The linked patch adds subject and operation checks plus agreement with the account's prior email state\. Its confirmation tests cover cross-account rejection and changed-state handling\. Reading those checks and assertions does not establish a successful test run\. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission\.
+Editorial lesson: a valid confirmation token should authorize only the intended account and operation, and only while the expected account state still holds\. The linked patch checks the account, the operation and whether the prior email state still matches\. Its confirmation tests cover cross-account rejection and changed-state handling\. Reading those checks and assertions does not establish a successful test run\. Review identity transitions as a complete authorization contract rather than treating token validity as sufficient permission\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
