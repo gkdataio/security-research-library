@@ -24,8 +24,8 @@ Researcher reports a separate, lower-severity account-takeover finding, fixed be
 
 ## Defensive lessons
 
-- Bind recovery attempts and verification state to the intended account\.
-- Use atomic security counters and test concurrent state transitions locally\.
+- Editorial lesson: bind each recovery challenge to its intended account; a shared device context is not evidence of account ownership\.
+- Editorial review objective: use synthetic-account unit tests to verify that sharing a device context cannot make one account's recovery challenge authorize another account's recovery\.
 
 ## Award and evidence
 
