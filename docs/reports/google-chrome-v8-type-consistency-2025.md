@@ -7,7 +7,7 @@
 <a id="what-the-evidence-establishes"></a>
 ## Main takeaway
 
-V8's optimized object handling could keep using type assumptions after they were no longer valid\. Memory reads and writes were possible, but broader code execution required another security failure\. Google awarded USD 50,000 for this one report\.
+V8's optimized property lookup could keep using outdated assumptions after an object's structure changed\. Memory reads and writes were possible; the researcher describes possible renderer code execution when combined with a separate V8 heap-sandbox escape\. Google awarded USD 50,000 for this one report\.
 
 **Organization:** Google  
 **Product:** Chrome / V8
@@ -15,12 +15,12 @@ V8's optimized object handling could keep using type assumptions after they were
 <a id="root-cause"></a>
 ## What went wrong
 
-Optimized object handling could retain invalid type assumptions, producing a type-consistency failure\.
+V8 sped up property lookups by caching assumptions about the objects that supplied them\. For prototype chains involving WebAssembly objects, changes to an object's structure did not always invalidate those assumptions\. An optimized handler could then use the wrong type assumptions\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
 
-Memory read/write was possible; broader code execution required an additional boundary failure\.
+Memory read/write was possible\. The researcher describes possible code execution within Chrome's renderer when combined with a separate V8 heap-sandbox escape\. This does not establish escape from the renderer's process sandbox or full-machine compromise\.
 
 ## Defensive lessons
 
