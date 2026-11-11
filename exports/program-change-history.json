@@ -12834,6 +12834,132 @@
           ]
         }
       ]
+    },
+    {
+      "id": "a3b7c38df9d80d4b7098e867f8b03c513ad501d402ebc4ffad58fbebde3b2e28",
+      "recorded_at": "2026-11-11T15:19:32Z",
+      "baseline_commit": "8e58013c8b84f3e77c531fe022b843bc60e51be3",
+      "baseline_digest": "6e658191c327df63f1676ef1e9bd15eadec7ac29999263a067a9f925ad598be6",
+      "current_digest": "722771cd109354fd0160f120c46684942476492f5f052fad696eb89939430dcc",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-7effc3b4fbd675a8",
+          "name": "K15t",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/k15t",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2024-01-12T13:23:43.957Z",
+              "after": "2026-11-11T07:30:41.953Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/k15t/changelog/29204ba3-1a5d-40a8-ad4d-dc52c83d9d04.json",
+              "after": "https://bugcrowd.com/engagements/k15t/changelog/4e4cb6d0-2039-4af6-a92c-04f5386b179c.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-d6bd13de58bd71bb",
+          "name": "The NatWest Group Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/natwest-vdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2024-10-28T10:04:46.321Z",
+              "after": "2026-11-11T11:39:43.361Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/natwest-vdp/changelog/49d03813-c82a-496c-ad34-2305039031ac.json",
+              "after": "https://bugcrowd.com/engagements/natwest-vdp/changelog/c0927d1d-f0a4-440a-8e6d-244a33d4f4c2.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-2508ae1b5e96cf3e",
+          "name": "Superbet",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/superbet?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.maxbet.ro",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-87b3e665c8fafc1d",
+          "name": "Unico IDtech",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/unico_idtech?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "devcenter.unico.io",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "api.humantoken.unico.app",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "dashboard.unico.app",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "developer.unico.io",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "humantoken.unico.app",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

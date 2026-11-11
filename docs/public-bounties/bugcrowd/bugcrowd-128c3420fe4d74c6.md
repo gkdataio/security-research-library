@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T16:03:16Z.
 
-**Latest refresh deferred (2026-11-10T21:54:03Z):** Source access excluded; no request made; current scope unknown; last-good data retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh deferred (2026-11-11T15:19:25Z):** Source access excluded; no request made; current scope unknown; last-good data retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Bug Bounty.
 

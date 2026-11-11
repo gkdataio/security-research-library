@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-10T21:49:02Z.
+**Capture time:** 2026-11-11T15:14:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/vodafone_oman/assets/download_csv.csv>)
 

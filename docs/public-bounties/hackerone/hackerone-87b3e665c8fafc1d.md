@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-10T21:48:45Z.
+**Capture time:** 2026-11-11T15:14:01Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/unico_idtech/assets/download_csv.csv>)
 
-## In-scope entries (14)
+## In-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -31,7 +31,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | secure\.unico\.io | URL | — | — | Bounty eligible |
 | blog\.unico\.io | URL | — | — | Bounty eligible |
 | unico\.io | URL | — | — | Bounty eligible |
-| devcenter\.unico\.io | URL | — | — | Bounty eligible |
+| humantoken\.unico\.app | URL | — | — | Bounty eligible |
+| api\.humantoken\.unico\.app | URL | — | — | Bounty eligible |
+| dashboard\.unico\.app | URL | — | — | Bounty eligible |
+| developer\.unico\.io | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 

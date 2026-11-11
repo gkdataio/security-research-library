@@ -25,7 +25,7 @@
     },
     "bounty_scope_captured": 591,
     "bounty_scope_gaps": 36,
-    "bounty_in_scope_rows": 9184,
+    "bounty_in_scope_rows": 9188,
     "bounty_out_of_scope_rows": 3189,
     "catalog_overlap": 293,
     "distinct_catalog_programs": 850,
@@ -34,7 +34,7 @@
     "distinct_redacted_only_programs": 30,
     "distinct_with_non_redacted_scope_rows": 778,
     "distinct_redacted_asset_rows": 293,
-    "distinct_in_scope_rows": 11815,
+    "distinct_in_scope_rows": 11819,
     "distinct_out_of_scope_rows": 3494,
     "duplicate_source_rows_collapsed": 77,
     "by_gap_status": {

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-10T21:32:27Z.
+**Capture time:** 2026-11-11T14:57:41Z.
 
 **Directory category:** Bug Bounty.
 

@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-10T21:48:15Z.
+**Capture time:** 2026-11-11T15:13:31Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/superbet/assets/download_csv.csv>)
 
-## In-scope entries (25)
+## In-scope entries (26)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -43,6 +43,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.superbet\.gr | WILDCARD | — | — | Bounty eligible |
 | \*\.super\.xyz | WILDCARD | — | — | Bounty eligible |
 | https://super\.xyz | URL | — | — | Bounty eligible |
+| \*\.maxbet\.ro | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (17)
 

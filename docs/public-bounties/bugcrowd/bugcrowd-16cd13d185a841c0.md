@@ -12,6 +12,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-10T21:17:32Z.
 
+**Latest refresh failed (2026-11-11T14:42:41Z):** More than half of prior asset identities disappeared; manual review required. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+
 **Directory category:** Bug Bounty.
 
 **Displayed reward:** $150 - $2,000.

@@ -106,7 +106,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/matlab-online/changelog/4d2d30bd-a510-4e77-b513-0d9e25ab1301.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-10T21:25:27Z",
+      "retrieved_at": "2026-11-11T14:50:41Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -116,7 +116,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-10T21:25:27Z",
+    "verified_at": "2026-11-11T14:50:41Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

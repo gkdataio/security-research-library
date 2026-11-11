@@ -88,7 +88,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/launchdarkly-mbb-og/changelog/884450ef-4277-41a9-8394-5f8c49cae2d8.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-10T21:23:35Z",
+      "retrieved_at": "2026-11-11T14:48:49Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -96,7 +96,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-10T21:23:35Z",
+    "verified_at": "2026-11-11T14:48:49Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
