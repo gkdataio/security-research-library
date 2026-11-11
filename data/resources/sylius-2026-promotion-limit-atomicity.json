@@ -18,7 +18,7 @@
   ],
   "version": null,
   "summary": "Sylius could exceed promotion limits because eligibility checks and recorded usage were not kept in sync during overlapping orders. The maintainer describes stale counts and lost concurrent updates affecting promotion-wide, coupon and per-customer limits. A limited promotion or coupon is required, but authentication is not; financial loss is a possible consequence rather than a measured production incident.",
-  "defensive_use": "Editorial lesson: model the limit check and entitlement consumption as one serialized decision. Accounting correctness alone does not prove eligibility correctness. In owned local models, verify that committed usage never exceeds the authorized allowance, including cancellation semantics.",
+  "defensive_use": "Editorial lesson: check the remaining allowance and record its use as one serialized decision, so overlapping orders cannot consume the same allowance. Correct usage counts alone do not prove that an order was eligible when it completed. In owned local models, verify that committed usage stays within the authorized limit and that coupon reuse after cancellation follows the configured policy.",
   "prerequisites": [
     "Basic authorization, application state machines and database transaction concepts"
   ],

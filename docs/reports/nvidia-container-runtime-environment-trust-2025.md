@@ -15,7 +15,7 @@ NVIDIA Container Toolkit let container-controlled settings influence privileged 
 <a id="root-cause"></a>
 ## What went wrong
 
-A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority\.
+A container-startup helper ran with host privileges but inherited environment variables supplied by the container image\. Workload-controlled settings could therefore affect execution inside a privileged host process\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows

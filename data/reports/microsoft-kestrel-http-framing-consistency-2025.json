@@ -23,11 +23,11 @@
     "defensive-evidence-writing"
   ],
   "summary": "Kestrel and an upstream proxy could disagree about where one HTTP request ended and another began. This could bypass security checks in affected deployments, but the consequences depended on the full proxy and application setup. The researcher reports a USD 10,000 award.",
-  "root_cause": "Permissive HTTP framing validation could disagree with an upstream parser about message boundaries.",
+  "root_cause": "Kestrel accepted malformed HTTP/1.1 chunk metadata that an upstream proxy could interpret differently. The two parsers could then disagree about where one request ended and the next began.",
   "impact": "Security controls could be bypassed in affected deployments. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel.",
   "defensive_takeaways": [
     "Define consistent message-boundary contracts across intermediaries and application servers; reject ambiguous framing.",
-    "Verify deployed runtimes and self-contained applications receive the applicable vendor updates."
+    "Apply the vendor updates to deployed runtimes. Microsoft also requires affected self-contained applications to be rebuilt and redeployed with the corrected runtime."
   ],
   "reward": {
     "amount": 10000,

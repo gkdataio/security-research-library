@@ -15,7 +15,7 @@ Kestrel and an upstream proxy could disagree about where one HTTP request ended 
 <a id="root-cause"></a>
 ## What went wrong
 
-Permissive HTTP framing validation could disagree with an upstream parser about message boundaries\.
+Kestrel accepted malformed HTTP/1\.1 chunk metadata that an upstream proxy could interpret differently\. The two parsers could then disagree about where one request ended and the next began\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
@@ -25,7 +25,7 @@ Security controls could be bypassed in affected deployments\. Consequences depen
 ## Defensive lessons
 
 - Define consistent message-boundary contracts across intermediaries and application servers; reject ambiguous framing\.
-- Verify deployed runtimes and self-contained applications receive the applicable vendor updates\.
+- Apply the vendor updates to deployed runtimes\. Microsoft also requires affected self-contained applications to be rebuilt and redeployed with the corrected runtime\.
 
 ## Award and evidence
 

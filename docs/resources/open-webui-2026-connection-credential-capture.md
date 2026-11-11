@@ -11,7 +11,7 @@ Open WebUI's maintainer reports unintended session-cookie forwarding in a contro
 
 ## Defensive use
 
-Editorial lesson: treat destination, headers and cookies as one immutable request-authority context\. Review capture semantics independently of configuration correctness\. The advisory identifies 0\.11\.1 as fixed by binding cookies per connection\. Credential isolation should survive changes in connection order\.
+Editorial lesson: bind each connection's destination, headers and cookies together when its request function is created\. Correct authentication settings do not help if that function later reads cookies shared with other connections\. The advisory identifies 0\.11\.1 as fixed by binding cookies per connection\. Credential isolation should not depend on connection order\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

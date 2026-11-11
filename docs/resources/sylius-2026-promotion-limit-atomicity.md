@@ -11,7 +11,7 @@ Sylius could exceed promotion limits because eligibility checks and recorded usa
 
 ## Defensive use
 
-Editorial lesson: model the limit check and entitlement consumption as one serialized decision\. Accounting correctness alone does not prove eligibility correctness\. In owned local models, verify that committed usage never exceeds the authorized allowance, including cancellation semantics\.
+Editorial lesson: check the remaining allowance and record its use as one serialized decision, so overlapping orders cannot consume the same allowance\. Correct usage counts alone do not prove that an order was eligible when it completed\. In owned local models, verify that committed usage stays within the authorized limit and that coupon reuse after cancellation follows the configured policy\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

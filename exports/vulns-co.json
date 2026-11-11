@@ -3989,11 +3989,11 @@
         "defensive-evidence-writing"
       ],
       "summary": "Kestrel and an upstream proxy could disagree about where one HTTP request ended and another began. This could bypass security checks in affected deployments, but the consequences depended on the full proxy and application setup. The researcher reports a USD 10,000 award.",
-      "root_cause": "Permissive HTTP framing validation could disagree with an upstream parser about message boundaries.",
+      "root_cause": "Kestrel accepted malformed HTTP/1.1 chunk metadata that an upstream proxy could interpret differently. The two parsers could then disagree about where one request ended and the next began.",
       "impact": "Security controls could be bypassed in affected deployments. Consequences depended on the complete proxy/application architecture, not merely the presence of Kestrel.",
       "defensive_takeaways": [
         "Define consistent message-boundary contracts across intermediaries and application servers; reject ambiguous framing.",
-        "Verify deployed runtimes and self-contained applications receive the applicable vendor updates."
+        "Apply the vendor updates to deployed runtimes. Microsoft also requires affected self-contained applications to be rebuilt and redeployed with the corrected runtime."
       ],
       "reward": {
         "amount": 10000,
@@ -5145,7 +5145,7 @@
         "patch-verification"
       ],
       "summary": "NVIDIA Container Toolkit let container-controlled settings influence privileged startup work on the host. An untrusted image could consequently lead to code execution with elevated host permissions, depending on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE. ZDI awarded Wiz researchers USD 30,000 for this single Pwn2Own Berlin 2025 entry.",
-      "root_cause": "A privileged container-initialization component inherited container-controlled execution context without sufficient separation from host authority.",
+      "root_cause": "A container-startup helper ran with host privileges but inherited environment variables supplied by the container image. Workload-controlled settings could therefore affect execution inside a privileged host process.",
       "impact": "An untrusted container image could lead to code execution with elevated host permissions. Scope depends on runtime configuration; NVIDIA explicitly excludes systems using crun from this CVE.",
       "defensive_takeaways": [
         "Keep privileged runtime initialization independent of workload-controlled configuration.",
