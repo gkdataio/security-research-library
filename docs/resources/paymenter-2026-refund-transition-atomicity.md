@@ -11,7 +11,7 @@ Paymenter's maintainer reports duplicate downgrade credits because the eligibili
 
 ## Defensive use
 
-Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision\. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement\. The advisory identifies 1\.5\.7 as patched; its release notes explicitly link the fix\.
+Editorial lesson: check refund eligibility, identify the downgrade being refunded and update the balance as one atomic operation\. Local regression checks should establish that repeated or overlapping processing cannot grant multiple credits for the same downgrade\. The advisory identifies 1\.5\.7 as patched; its release notes explicitly link the fix\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

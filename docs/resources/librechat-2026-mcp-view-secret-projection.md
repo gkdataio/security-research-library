@@ -11,7 +11,7 @@ LibreChat returned decrypted integration configuration to viewers without removi
 
 ## Defensive use
 
-The source recommends secret-free responses and presence indicators\. Editorial review principle: define separate execution and presentation representations, then verify that list and detail responses preserve the same field-level disclosure policy\.
+The source recommends removing secrets from responses and, where useful, indicating only whether a secret is configured\. Editorial review principle: keep configuration used to run an integration separate from data shown to viewers\. Check that both list and detail responses enforce the same rules about which fields a viewer may see\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

@@ -5048,7 +5048,7 @@
       ],
       "version": null,
       "summary": "LibreChat returned decrypted integration configuration to viewers without removing service secrets. Its maintainer advisory describes a local demonstration in which a view-only account received administrator-managed provider credentials. Configuration prepared for internal use was therefore unsafe to reuse as a viewer response.",
-      "defensive_use": "The source recommends secret-free responses and presence indicators. Editorial review principle: define separate execution and presentation representations, then verify that list and detail responses preserve the same field-level disclosure policy.",
+      "defensive_use": "The source recommends removing secrets from responses and, where useful, indicating only whether a secret is configured. Editorial review principle: keep configuration used to run an integration separate from data shown to viewers. Check that both list and detail responses enforce the same rules about which fields a viewer may see.",
       "prerequisites": [
         "Integration credentials, response serialization, and object versus field authorization"
       ],
@@ -10345,7 +10345,7 @@
       ],
       "version": null,
       "summary": "Paymenter's maintainer reports duplicate downgrade credits because the eligibility check and balance change were not protected as one transaction. A check for pending operations did not cover the whole process. The intended rule was one refund for each legitimate service downgrade.",
-      "defensive_use": "Editorial lesson: model refund eligibility, transition identity and ledger mutation as one atomic decision. Local regression checks should establish that repeated or overlapping processing cannot mint additional entitlement. The advisory identifies 1.5.7 as patched; its release notes explicitly link the fix.",
+      "defensive_use": "Editorial lesson: check refund eligibility, identify the downgrade being refunded and update the balance as one atomic operation. Local regression checks should establish that repeated or overlapping processing cannot grant multiple credits for the same downgrade. The advisory identifies 1.5.7 as patched; its release notes explicitly link the fix.",
       "prerequisites": [
         "Basic application state machines, authorization and database transaction concepts"
       ],
