@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-11T15:08:38Z.
+**Capture time:** 2026-11-12T16:01:05Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/cloudflare/assets/download_csv.csv>)
 
-## In-scope entries (52)
+## In-scope entries (51)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -69,9 +69,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | SSL/TLS | OTHER | — | — | Bounty eligible |
 | Cloudflare Workers CI | OTHER | — | — | Bounty eligible |
 | https://github\.com/cloudflare/vinext | SOURCE\_CODE | — | — | Bounty eligible |
-| https://php-rce\.cloudflare\.app/ | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (31)
+## Out-of-scope entries (33)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -104,8 +103,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://github\.com/cloudflare/cf | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/security-audit-skill | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://playground\.ai\.cloudflare\.com/ | URL | — | — | Not bounty eligible |
+| https://php-rce\.cloudflare\.app/ | URL | — | — | Not bounty eligible |
 | https://github\.com/cloudflare/vibesdk | SOURCE\_CODE | — | — | Not bounty eligible |
 | https://vibecoder\.cloudflare\.dev/ | URL | — | — | Not bounty eligible |
+| https://github\.com/cloudflare/boringtun | SOURCE\_CODE | — | — | Not bounty eligible |
 
 **Limits**
 

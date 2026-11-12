@@ -105,7 +105,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/onetrust/changelog/33280231-4d3c-4ce3-9c8f-8d8ee98aeec7.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-11T14:53:45Z",
+      "retrieved_at": "2026-11-12T15:46:09Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -128,7 +128,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-11T14:53:45Z",
+    "verified_at": "2026-11-12T15:46:09Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

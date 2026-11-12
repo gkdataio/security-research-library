@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-11T15:10:20Z.
+**Capture time:** 2026-11-12T16:02:49Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hilton/assets/download_csv.csv>)
 
-## In-scope entries (23)
+## In-scope entries (24)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -41,6 +41,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Hilton Third Party Applications - \*\.hilton\.com | OTHER | — | — | Bounty eligible |
 | Managed Property Assets | OTHER | — | — | Bounty eligible |
 | resmax\.hilton\.com | URL | — | — | Bounty eligible |
+| \*\.hilton\.com\.cn | WILDCARD | — | — | Bounty eligible |
 
 ## Out-of-scope entries (13)
 

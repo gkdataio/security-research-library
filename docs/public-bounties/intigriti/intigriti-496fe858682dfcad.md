@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-11T15:17:36Z.
+**Capture time:** 2026-11-12T16:10:02Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/nexuzhealth/nexuzhealth/detail>)
 

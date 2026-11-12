@@ -12960,6 +12960,224 @@
           ]
         }
       ]
+    },
+    {
+      "id": "5a54f886e2dd4cf64fac107946ac064484db99d1ca63cf5b7c741de07bc1442c",
+      "recorded_at": "2026-11-12T16:12:05Z",
+      "baseline_commit": "751d44de6fff63b63242db73a29d33a007123593",
+      "baseline_digest": "722771cd109354fd0160f120c46684942476492f5f052fad696eb89939430dcc",
+      "current_digest": "a86f2d6d434b4f250630efe50492b55beae718df3ec1d531f611b963ebe522d9",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-298d2da40b206bbb",
+          "name": "Moneytree KK",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/moneytreekkog",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "website",
+                  "group": "Staging @ moneytree.jp",
+                  "location": "https://fitbit-lottery.getmoneytree.com/",
+                  "name": "fitbit-lottery (temporary)",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "Staging @ moneytree.jp",
+                  "location": "https://fitbit-lottery-staging.getmoneytree.com/",
+                  "name": "fitbit-lottery (temporary)",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-06T08:17:46.390Z",
+              "after": "2026-11-12T01:42:03.915Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/moneytreekkog/changelog/ddf77c9e-277c-40f8-938a-2f32d58e0187.json",
+              "after": "https://bugcrowd.com/engagements/moneytreekkog/changelog/13d36094-505c-4d33-a099-770f5d1ebbdb.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9e66537b932e44c2",
+          "name": "Optus Managed Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/optus-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "android",
+                  "group": "In Scope - Optus ",
+                  "location": "https://play.google.com/store/apps/details?id=au.com.optus.selfservice&hl=en_AU&gl=US",
+                  "name": "Optus android app",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "ios",
+                  "group": "In Scope - Optus ",
+                  "location": "https://apps.apple.com/au/app/my-optus/id503716230",
+                  "name": "Optus iOS App",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "android",
+                  "group": "In Scope - Optus ",
+                  "location": "https://play.google.com/store/apps/details?id=au.com.optus.selfservice&hl=en_AU&gl=US",
+                  "name": "Optus Android Application",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "ios",
+                  "group": "In Scope - Optus ",
+                  "location": "https://apps.apple.com/au/app/my-optus/id503716230",
+                  "name": "Optus iOS Application",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "website",
+                  "group": "Out of Scope",
+                  "location": null,
+                  "name": "*.nsw.optusnet.com.au",
+                  "scope": "out"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "network",
+                  "group": "Out of Scope",
+                  "location": null,
+                  "name": "*.nsw.optusnet.com.au",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "Out of Scope",
+                  "location": null,
+                  "name": "brand.optus.com.au",
+                  "scope": "out"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-06-24T05:08:42.545Z",
+              "after": "2026-11-12T03:47:12.712Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/optus-mbb-og/changelog/e1f284c8-3041-4ae0-ab63-b76726884600.json",
+              "after": "https://bugcrowd.com/engagements/optus-mbb-og/changelog/f038b67d-2ee9-45dc-b196-835db3dbc7c5.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-eea0c59a12298ac4",
+          "name": "Macquarie Group Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/macquarie-group-vdp",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-02T05:44:07.890Z",
+              "after": "2026-11-12T12:50:44.521Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/macquarie-group-vdp/changelog/da1978e1-ed3f-437b-8a19-7003927c6338.json",
+              "after": "https://bugcrowd.com/engagements/macquarie-group-vdp/changelog/27bba904-b3e8-4516-a7ef-bea8501cfe68.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-6fb7a0454f1fd1a0",
+          "name": "Hilton",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/hilton?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.hilton.com.cn",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-f851f0727c99b3af",
+          "name": "Cloudflare Public Bug Bounty",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/cloudflare?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "https://php-rce.cloudflare.app/",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "SOURCE_CODE",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "https://github.com/cloudflare/boringtun",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "https://php-rce.cloudflare.app/",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

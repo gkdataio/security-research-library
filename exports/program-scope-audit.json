@@ -16,7 +16,7 @@
     "bugcrowd_scope_captured": 507,
     "bugcrowd_scope_gaps": 9,
     "bugcrowd_in_scope_rows": 5562,
-    "bugcrowd_out_of_scope_rows": 1435,
+    "bugcrowd_out_of_scope_rows": 1436,
     "cross_platform_bounty_candidates": 627,
     "bounty_by_platform": {
       "Bugcrowd": 293,
@@ -26,7 +26,7 @@
     "bounty_scope_captured": 591,
     "bounty_scope_gaps": 36,
     "bounty_in_scope_rows": 9188,
-    "bounty_out_of_scope_rows": 3189,
+    "bounty_out_of_scope_rows": 3192,
     "catalog_overlap": 293,
     "distinct_catalog_programs": 850,
     "distinct_scope_captured": 808,
@@ -35,7 +35,7 @@
     "distinct_with_non_redacted_scope_rows": 778,
     "distinct_redacted_asset_rows": 293,
     "distinct_in_scope_rows": 11819,
-    "distinct_out_of_scope_rows": 3494,
+    "distinct_out_of_scope_rows": 3497,
     "duplicate_source_rows_collapsed": 77,
     "by_gap_status": {
       "fetch_failed": 2,

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-11T15:16:38Z.
+**Capture time:** 2026-11-12T16:09:05Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dstny/dstnybugbounty/detail>)
 

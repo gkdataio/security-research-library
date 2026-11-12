@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-11T14:49:53Z.
+**Capture time:** 2026-11-12T15:42:17Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/macquarie-group-vdp/changelog/da1978e1-ed3f-437b-8a19-7003927c6338.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/macquarie-group-vdp/changelog/27bba904-b3e8-4516-a7ef-bea8501cfe68.json>)
 
 ## In-scope entries (26)
 
