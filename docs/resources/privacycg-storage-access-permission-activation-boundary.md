@@ -7,7 +7,7 @@
 <a id="original-summary"></a>
 ## Main takeaway
 
-The Storage Access API draft separates permission for a pair of sites, active access in a document and whether cookies may accompany a particular request\. Secure-context, origin, embedding-policy and sandbox conditions still apply, and navigation or redirects can interrupt access; document access does not permit arbitrary cross-origin cookie attachment\. The companion Headers draft lets a resource activate an existing permission, separately from permission to read a cross-origin response\.
+The Storage Access API draft distinguishes permission for a pair of sites, whether storage access is enabled in a document, and whether cookies may accompany a particular request\. Enabling document access is distinct from a user gesture\. Secure-context, origin, embedding-policy and sandbox conditions still apply, and navigation or redirects can interrupt access; document access does not permit arbitrary cross-origin cookie attachment\. The companion Headers draft lets a resource use an existing permission; it neither grants initial permission nor permits reading a cross-origin response\.
 
 ## Defensive use
 

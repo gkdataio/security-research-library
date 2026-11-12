@@ -15,7 +15,7 @@ GitHub Actions could give an unauthorized workflow access to repository secrets 
 <a id="root-cause"></a>
 ## What went wrong
 
-Object validation differed between creation and mutation; automation relied on a branch-type invariant that was not consistently enforced\.
+GitHub checked that a pull request's base reference was a branch when creating it, but not consistently when that reference changed\. Actions relied on that assumption when deciding which workflows could receive repository secrets and write permissions\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
@@ -24,7 +24,7 @@ Repository secrets and write authority could become available to an unauthorized
 
 ## Defensive lessons
 
-- Enforce security invariants at every mutation and at their privileged consumers\.
+- Check that a pull request's base reference identifies a valid branch whenever it changes and before using it to grant workflow privileges\.
 - Keep repository secrets confined to explicitly trusted execution contexts\.
 
 ## Award and evidence
