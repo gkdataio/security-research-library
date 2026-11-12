@@ -2592,7 +2592,7 @@
         "patch-verification"
       ],
       "summary": "A PostgreSQL extension could violate text-encoding rules that other routines relied on for safe memory calculations. The vendor confirms that an authenticated database user could reach code execution with the database operating-system account's privileges. Team Bugz Bunnies received a $30,000 individual-entry award at ZeroDay.cloud, and the vendor subsequently issued CVE-2026-2006.",
-      "root_cause": "A trusted extension did not uphold a database-wide text-encoding invariant, while downstream text routines relied on that invariant for memory-safe length calculations. Defensive reviews should verify contracts across parser and extension boundaries.",
+      "root_cause": "The trusted pgcrypto extension could return text that did not match the database's configured character encoding. Other text routines assumed that this validation had already happened and relied on it to calculate character lengths safely. The mismatch could corrupt memory. Defensive reviews should check that extensions and parsers enforce the encoding rules their callers rely on.",
       "impact": "Vendor confirms that an authenticated database user could reach code execution with the database operating-system account's privileges.",
       "defensive_takeaways": [
         "Validate encoding contracts at every trusted extension boundary.",
@@ -3474,11 +3474,11 @@
         "defensive-evidence-writing"
       ],
       "summary": "Angular's build automation did not adequately separate untrusted work from trusted build state. The researcher demonstrated credential exposure and described a possible route to repository control, but did not carry out the final supply-chain change. Google awarded the report a bounty.",
-      "root_cause": "Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence.",
+      "root_cause": "A workflow did not separate untrusted input from executable instructions. Its build cache was shared with more privileged jobs. Some bot-created pull requests also kept their approvals after their contents changed, weakening the review safeguard.",
       "impact": "The researcher demonstrated credential exposure and modeled the remaining path to repository control without executing the final supply-chain modification. Google classified the report as a flagship supply-chain compromise.",
       "defensive_takeaways": [
         "Separate caches and artifacts according to trust level.",
-        "Apply consistent review invalidation and least-privilege rules to automated identities.",
+        "Require a new review when bot-created pull requests change, and give automation accounts only the permissions they need.",
         "Record which impacts were directly demonstrated versus established through design evidence."
       ],
       "reward": {

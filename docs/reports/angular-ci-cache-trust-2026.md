@@ -15,7 +15,7 @@ Angular's build automation did not adequately separate untrusted work from trust
 <a id="root-cause"></a>
 ## What went wrong
 
-Untrusted workflow input and shared build state crossed trust boundaries; bot-specific approval assumptions increased the potential consequence\.
+A workflow did not separate untrusted input from executable instructions\. Its build cache was shared with more privileged jobs\. Some bot-created pull requests also kept their approvals after their contents changed, weakening the review safeguard\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
@@ -25,7 +25,7 @@ The researcher demonstrated credential exposure and modeled the remaining path t
 ## Defensive lessons
 
 - Separate caches and artifacts according to trust level\.
-- Apply consistent review invalidation and least-privilege rules to automated identities\.
+- Require a new review when bot-created pull requests change, and give automation accounts only the permissions they need\.
 - Record which impacts were directly demonstrated versus established through design evidence\.
 
 ## Award and evidence
