@@ -15,7 +15,7 @@ YouTube and Pixel Recorder exposed links between identities that could reveal pr
 <a id="root-cause"></a>
 ## What went wrong
 
-Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity\.
+Privacy checks did not prevent identifiers and email fields exposed by separate products from being linked\. This weakened the separation between a public YouTube identity and private contact details\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
@@ -25,7 +25,7 @@ Researchers reported that private email addresses associated with YouTube users 
 ## Defensive lessons
 
 - Treat cross-product identifiers as sensitive correlation data\.
-- Require entitlement before returning identity attributes\.
+- Check whether the requester is allowed to see each identity field before returning it\.
 - Verify remediation across every affected component\.
 
 ## Award and evidence

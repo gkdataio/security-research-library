@@ -18,11 +18,11 @@
     "defensive-evidence-writing"
   ],
   "summary": "YouTube and Pixel Recorder exposed links between identities that could reveal private email addresses associated with YouTube users. The researchers report this privacy failure, but no mass breach is established. The one report received USD 3,133 plus a USD 7,500 adjustment, totaling USD 10,633.",
-  "root_cause": "Cross-product identifier exposure and insufficient field-level privacy controls weakened account pseudonymity.",
+  "root_cause": "Privacy checks did not prevent identifiers and email fields exposed by separate products from being linked. This weakened the separation between a public YouTube identity and private contact details.",
   "impact": "Researchers reported that private email addresses associated with YouTube users could be revealed. No mass breach is established.",
   "defensive_takeaways": [
     "Treat cross-product identifiers as sensitive correlation data.",
-    "Require entitlement before returning identity attributes.",
+    "Check whether the requester is allowed to see each identity field before returning it.",
     "Verify remediation across every affected component."
   ],
   "reward": {

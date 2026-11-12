@@ -11,7 +11,7 @@ A page token says where to continue a result set; it does not grant permission t
 
 ## Defensive use
 
-Editorial lesson: document continuation state and actor/resource policy as separate design contracts\. An integration following a stored cursor must still rely on the service's per-request authorization decision\. Treat query continuity as a request-consistency requirement, not evidence of entitlement\.
+Editorial lesson: document where pagination continues separately from who may read the results\. An integration reusing a saved page token must still rely on the service to authorize every request\. Keeping query arguments consistent preserves the pagination contract; it does not prove permission to access the data\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
