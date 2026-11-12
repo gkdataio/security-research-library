@@ -11,7 +11,7 @@ LibreChat could deny access to a private agent yet accept unauthorized additions
 
 ## Defensive use
 
-The source recommends checking agent-edit permission for uploads\. Editorial review principle: enumerate every mutation of an agent’s effective context, including attachments and retrieval indexes; hiding its configuration does not protect those mutations\.
+The source recommends checking agent-edit permission for uploads\. Editorial review principle: identify every way the information an agent uses can change, including attachments and retrieval indexes\. Preventing users from viewing its configuration does not prevent unauthorized changes to that information\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 

@@ -15,7 +15,7 @@ GitHub build and development services could confuse internal Ruby packages with 
 <a id="root-cause"></a>
 ## What went wrong
 
-Dependency resolution crossed the intended boundary between internal Ruby packages and a public package source\.
+Package lookup could select a publicly supplied Ruby package where GitHub expected an internal dependency\. A matching package name did not ensure that the package came from the intended source\.
 
 <a id="bounded-impact"></a>
 ## What the evidence shows
