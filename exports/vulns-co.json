@@ -348,7 +348,7 @@
       "root_cause": "Untrusted file selection reached privileged storage copying. Shared temporary outputs relied on obscurity, while diagnostic metadata weakened filename secrecy.",
       "impact": "Unauthenticated copying was possible, but demonstrated retrieval required the separately reported Firefly capability. The panel explicitly discounted difficult exploitation and additional access requirements.",
       "defensive_takeaways": [
-        "Editorial lesson: isolate temporary outputs by authenticated principal and enforce access controls independent of filename secrecy.",
+        "Editorial lesson: keep temporary outputs separate for each authenticated user or service, and enforce access checks even when filenames are hard to guess.",
         "Editorial lesson: restrict file-source capabilities and minimize diagnostic disclosure; document dependencies before assigning standalone impact."
       ]
     },

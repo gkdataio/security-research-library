@@ -24,7 +24,7 @@ Unauthenticated copying was possible, but demonstrated retrieval required the se
 
 ## Defensive lessons
 
-- Editorial lesson: isolate temporary outputs by authenticated principal and enforce access controls independent of filename secrecy\.
+- Editorial lesson: keep temporary outputs separate for each authenticated user or service, and enforce access checks even when filenames are hard to guess\.
 - Editorial lesson: restrict file-source capabilities and minimize diagnostic disclosure; document dependencies before assigning standalone impact\.
 
 ## Award and evidence

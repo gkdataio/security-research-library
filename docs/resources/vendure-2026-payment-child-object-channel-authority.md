@@ -11,7 +11,7 @@ Vendure restricted access to orders by channel but did not carry those checks in
 
 ## Defensive use
 
-Editorial lesson: derive child-object authority from the parent order and current channel before any external effect\. A later database rejection cannot reliably undo an earlier gateway action\. Review alternate entry points against the same invariant, rather than assuming protected parent reads cover mutations\.
+Editorial lesson: check that each payment, refund or fulfillment belongs to an order in the current channel before changing state or contacting a payment gateway\. A later database rejection cannot reliably undo an earlier gateway action\. Apply the same checks at every entry point; restricting access to an order does not automatically protect changes to its related objects\.
 
 Educational reference only; linked material does not authorize testing unrelated systems.
 
