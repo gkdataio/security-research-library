@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:07Z.
 
-**Latest refresh failed (2026-11-12T15:59:32Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-13T01:22:16Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Bug Bounty.
 

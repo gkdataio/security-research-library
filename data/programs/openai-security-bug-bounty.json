@@ -83,7 +83,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/openai/changelog/9cb985b1-a7c8-42fd-95bc-e944991529aa.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-12T15:46:21Z",
+      "retrieved_at": "2026-11-13T01:09:06Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -100,7 +100,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-12T15:46:21Z",
+    "verified_at": "2026-11-13T01:09:06Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

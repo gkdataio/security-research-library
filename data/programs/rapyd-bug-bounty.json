@@ -105,7 +105,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/rapyd/changelog/b7d3849b-cc64-466e-afe2-9a8d564f96f8.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-12T15:50:05Z",
+      "retrieved_at": "2026-11-13T01:12:50Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -126,7 +126,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-12T15:50:05Z",
+    "verified_at": "2026-11-13T01:12:50Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:49:27Z.
 
-**Latest refresh failed (2026-11-12T16:08:29Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-13T01:31:06Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/daytona/daytonabugbounty/preview/detail>)
 

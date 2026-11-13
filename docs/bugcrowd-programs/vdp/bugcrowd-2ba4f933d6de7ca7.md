@@ -12,7 +12,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Capture time:** 2026-11-07T14:58:47Z.
 
-**Latest refresh failed (2026-11-12T15:35:01Z):** Validated public scope structure contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-13T00:57:46Z):** Validated public scope structure contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Vulnerability Disclosure.
 

@@ -58,7 +58,7 @@
       "title": "Current published public asset table",
       "url": "https://hackerone.com/teams/gitlab/assets/download_csv.csv",
       "publisher": "HackerOne",
-      "retrieved_at": "2026-11-12T16:02:37Z",
+      "retrieved_at": "2026-11-13T01:25:14Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -75,7 +75,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-12T16:02:37Z",
+    "verified_at": "2026-11-13T01:25:14Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

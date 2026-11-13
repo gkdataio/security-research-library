@@ -100,7 +100,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/okta/changelog/d4dc2398-db8d-4b89-9f7f-0aae75251307.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-12T15:46:01Z",
+      "retrieved_at": "2026-11-13T01:08:46Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -108,7 +108,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-12T15:46:01Z",
+    "verified_at": "2026-11-13T01:08:46Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
