@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-13T01:32:27Z.
+**Capture time:** 2026-11-14T14:23:04Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/liferay/liferaydxp/detail>)
 

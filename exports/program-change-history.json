@@ -13206,6 +13206,172 @@
           ]
         }
       ]
+    },
+    {
+      "id": "bdf0f63f89e1e45abfbb45797b16c727eea2f96ea065c3071fde89e12e503ccb",
+      "recorded_at": "2026-11-14T14:25:23Z",
+      "baseline_commit": "28b1b7931e7de65777e25ab90f922fe7790fd26f",
+      "baseline_digest": "ababf81f29e9bf3d1288a096fd79bc2e55ee070aec4094cde565828818cd8875",
+      "current_digest": "8a85e4e96984ebb34479ca570e948257a731db74119c01582ffa47c0913da5c7",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-346dc81c66411d21",
+          "name": "Bitso Managed Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/bitso-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-06T19:56:36.194Z",
+              "after": "2026-11-13T23:08:34.371Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/bitso-mbb-og/changelog/9ba515c8-b8d4-4a93-a50a-93685d63f9a0.json",
+              "after": "https://bugcrowd.com/engagements/bitso-mbb-og/changelog/5a54b64c-9a59-4a47-9a59-b3c41656e6b4.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-6dc6d2585b340380",
+          "name": "Deviniti",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/deviniti",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "In Scope",
+                  "location": "https://marketplace.atlassian.com/apps/2831389750/requira-requirements-traceability-for-jira",
+                  "name": "Requira - Requirements & Traceability for Jira - https://marketplace.atlassian.com/apps/2831389750/requira-requirements-traceability-for-jira?tab=overview",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-12T07:46:14.793Z",
+              "after": "2026-11-13T23:31:35.229Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/deviniti/changelog/0a59a811-49b6-4cac-a2be-11b8db91cf4d.json",
+              "after": "https://bugcrowd.com/engagements/deviniti/changelog/9b39a46d-e63b-4304-9965-2b7f30cd7b14.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8a7562d7d64064d9",
+          "name": "Vinted Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/vinted-uab-mbb",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "network",
+                  "group": "Secondary Target Group",
+                  "location": "https://*.integrations.vintedgo.com",
+                  "name": "Vinted Go Integrations"
+                },
+                {
+                  "asset_type": "network",
+                  "group": "Secondary Target Group",
+                  "location": "https://aim-marketplace.vinted.com",
+                  "name": "Vinted"
+                },
+                {
+                  "asset_type": "network",
+                  "group": "Secondary Target Group",
+                  "location": "https://ems.it.vinted.com",
+                  "name": "Vinted"
+                },
+                {
+                  "asset_type": "network",
+                  "group": "Secondary Target Group",
+                  "location": "https://gemstash-integrations.vintedgo.com",
+                  "name": "Vinted Go g_integrations"
+                },
+                {
+                  "asset_type": "network",
+                  "group": "Secondary Target Group",
+                  "location": "https://qnrs.vintedgo.com",
+                  "name": "Vinted Go"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9052f631389a67cb",
+          "name": "T-Mobile",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/t-mobile",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-10T19:50:27.669Z",
+              "after": "2026-11-13T19:04:26.892Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/t-mobile/changelog/9de013ca-a21b-4193-912f-f72e0568d526.json",
+              "after": "https://bugcrowd.com/engagements/t-mobile/changelog/0321b91b-3ef5-46d3-a2c2-1e37a8a3bd9e.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-bd3dbed8680001d1",
+          "name": "AXIS OS",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/axis-os-public",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-25T11:15:40.368Z",
+              "after": "2026-11-13T09:23:20.972Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/axis-os-public/changelog/8678b92a-d1e6-4dab-8969-adc57ee5b4d6.json",
+              "after": "https://bugcrowd.com/engagements/axis-os-public/changelog/ab316707-bd4f-4ed0-b9e8-539f37808cdb.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-8cd014b6cccdc484",
+          "name": "AT&T",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/att?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "att.com.mx",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

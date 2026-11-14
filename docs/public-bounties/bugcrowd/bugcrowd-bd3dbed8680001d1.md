@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-13T00:50:58Z.
+**Capture time:** 2026-11-14T13:41:34Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/axis-os-public/changelog/8678b92a-d1e6-4dab-8969-adc57ee5b4d6.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/axis-os-public/changelog/ab316707-bd4f-4ed0-b9e8-539f37808cdb.json>)
 
 ## In-scope entries (1)
 

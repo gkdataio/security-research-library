@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-13T01:23:04Z.
+**Capture time:** 2026-11-14T14:13:41Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/att/assets/download_csv.csv>)
 
@@ -20,7 +20,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | --- | --- | --- | --- | --- |
 | Other Assets | OTHER | — | — | Bounty eligible |
 
-## Out-of-scope entries (76)
+## Out-of-scope entries (77)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -100,6 +100,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.comtrain\.directv\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.learning\.directv\.com | WILDCARD | — | — | Not bounty eligible |
 | http://accesspro\.att\.com | URL | — | — | Not bounty eligible |
+| att\.com\.mx | URL | — | — | Not bounty eligible |
 
 **Limits**
 

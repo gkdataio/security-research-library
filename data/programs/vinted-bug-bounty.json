@@ -105,9 +105,9 @@
     {
       "id": "automated-public-asset-scope",
       "title": "Current published public asset table",
-      "url": "https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/0a61783f-81be-4cd8-8b6d-e9a819e97ead.json",
+      "url": "https://bugcrowd.com/engagements/vinted-uab-mbb/changelog/fc3310d2-8533-461e-9c92-5dd38dbf3d04.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-13T01:20:50Z",
+      "retrieved_at": "2026-11-14T14:11:27Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -117,7 +117,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-13T01:20:50Z",
+    "verified_at": "2026-11-14T14:11:27Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
@@ -216,6 +216,51 @@
         "name": "News Vinted",
         "asset_type": "website",
         "location": "https://news.vinted.com",
+        "group": "Secondary Target Group",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "Vinted",
+        "asset_type": "network",
+        "location": "https://ems.it.vinted.com",
+        "group": "Secondary Target Group",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "Vinted Go",
+        "asset_type": "network",
+        "location": "https://qnrs.vintedgo.com",
+        "group": "Secondary Target Group",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "Vinted",
+        "asset_type": "network",
+        "location": "https://aim-marketplace.vinted.com",
+        "group": "Secondary Target Group",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "Vinted Go Integrations",
+        "asset_type": "network",
+        "location": "https://*.integrations.vintedgo.com",
+        "group": "Secondary Target Group",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
+        "name": "Vinted Go g_integrations",
+        "asset_type": "network",
+        "location": "https://gemstash-integrations.vintedgo.com",
         "group": "Secondary Target Group",
         "source_ids": [
           "automated-public-asset-scope"
