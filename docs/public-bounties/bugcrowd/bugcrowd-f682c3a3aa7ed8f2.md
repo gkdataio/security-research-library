@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-14T13:42:10Z.
+**Capture time:** 2026-11-15T14:08:11Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Finance.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/binance/changelog/3074eb70-195f-4d4c-8a56-0de459eecc80.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/binance/changelog/79e8cacd-63e1-4aba-9ccf-db4a0498d3de.json>)
 
-## In-scope entries (21)
+## In-scope entries (20)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | CoinMarketCap Android app | android | — | In Scope | — |
 | Trustwallet Android App | android | — | In Scope | — |
 | Trustwallet iOS App | ios | — | In Scope | — |
-| https://github\.com/trustwallet/wallet-core/ | other | — | In Scope | — |
 | CoinMarketCap iOS app | ios | — | In Scope | — |
 | portal-api\.coinmarketcap\.com | api | — | In Scope | — |
 | coinmarketcap\.com | website | — | In Scope | — |
@@ -46,7 +45,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Trustwallet Chrome Extension | website | — | In Scope | — |
 | https://binance\.th/ | website | — | In Scope | — |
 
-## Out-of-scope entries (10)
+## Out-of-scope entries (11)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -60,6 +59,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | support\.coinmarketcap\.com | website | — | Out of Scope | — |
 | blockchain\.coinmarketcap\.com | website | — | Out of Scope | — |
 | \*\.coinmarketcap\.com | other | — | Out of Scope | — |
+| Trustwallet-core | other | https://github\.com/trustwallet/wallet-core/ | Out of Scope | — |
 
 **Limits**
 

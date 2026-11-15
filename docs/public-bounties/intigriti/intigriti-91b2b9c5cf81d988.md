@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-14T14:22:16Z.
+**Capture time:** 2026-11-15T14:48:20Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dropbox/dropbox/detail>)
 

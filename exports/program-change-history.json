@@ -13372,6 +13372,79 @@
           ]
         }
       ]
+    },
+    {
+      "id": "df861606687d2ac8d9ad9a01a7707d012e93ddd7d8ecf4b09081b2d92117b5c2",
+      "recorded_at": "2026-11-15T14:51:33Z",
+      "baseline_commit": "789e83f7609faf175ed5627b976378b3120cbbe9",
+      "baseline_digest": "8a85e4e96984ebb34479ca570e948257a731db74119c01582ffa47c0913da5c7",
+      "current_digest": "c781201aeda1a8b12298b5965a330ac5cfd8c48ae312b1938a7e348068973ac1",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-663c428857ba5298",
+          "name": "BOJA Consulting Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/boja",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-07-16T04:21:51.375Z",
+              "after": "2026-11-15T09:54:09.238Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/boja/changelog/eb9c83e2-62f3-4642-b7e5-b5c23efd0e55.json",
+              "after": "https://bugcrowd.com/engagements/boja/changelog/7487f014-2693-438b-8476-ccd6296f378c.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-f682c3a3aa7ed8f2",
+          "name": "Binance",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/binance",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "other",
+                  "group": "In Scope",
+                  "location": null,
+                  "name": "https://github.com/trustwallet/wallet-core/",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "other",
+                  "group": "Out of Scope",
+                  "location": "https://github.com/trustwallet/wallet-core/",
+                  "name": "Trustwallet-core",
+                  "scope": "out"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-21T16:53:16.934Z",
+              "after": "2026-11-15T07:04:59.344Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/binance/changelog/3074eb70-195f-4d4c-8a56-0de459eecc80.json",
+              "after": "https://bugcrowd.com/engagements/binance/changelog/79e8cacd-63e1-4aba-9ccf-db4a0498d3de.json"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

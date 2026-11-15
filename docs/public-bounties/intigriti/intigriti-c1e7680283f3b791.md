@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:33Z.
 
-**Latest refresh failed (2026-11-14T14:23:42Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-15T14:49:46Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/sdworx/myworkandme/tac/detail>)
 

@@ -17,17 +17,17 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Bugcrowd public listings | 516 |
 | Bugcrowd published scope captured | 507 |
 | Bugcrowd scope gaps | 9 |
-| Bugcrowd in-scope / out-of-scope rows | 5568 / 1436 |
+| Bugcrowd in-scope / out-of-scope rows | 5567 / 1437 |
 | Cross-platform bounty candidates | 627 |
 | Bounty published scope captured | 591 |
 | Bounty scope gaps | 36 |
-| Bounty in-scope / out-of-scope rows | 9194 / 3193 |
+| Bounty in-scope / out-of-scope rows | 9193 / 3194 |
 | Overlapping Bugcrowd bounty listings | 293 |
 | Distinct programs across both catalogs | 850 |
 | Distinct programs with captured scope rows | 808 |
 | Distinct unresolved scope gaps | 42 |
-| Distinct in-scope rows | 11825 |
-| Distinct out-of-scope rows | 3498 |
+| Distinct in-scope rows | 11824 |
+| Distinct out-of-scope rows | 3499 |
 | Repeated source rows collapsed | 77 |
 
 The 293 overlapping Bugcrowd bounty pages are counted once in the distinct totals. The 40 separately reviewed policies include 23 bounty-catalog records; they are not added again. The October 3 Bugcrowd snapshot is paired with the earlier HackerOne and Intigriti directory observations.

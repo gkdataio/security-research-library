@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-14T14:24:34Z.
+**Capture time:** 2026-11-15T14:50:38Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/yahoo/yahoobugbounty/detail>)
 
