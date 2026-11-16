@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-15T14:43:02Z.
+**Capture time:** 2026-11-16T16:40:23Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/meesho_bbp/assets/download_csv.csv>)
 
-## In-scope entries (12)
+## In-scope entries (16)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,15 +28,18 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.valmo\.in | URL | — | — | Bounty eligible |
 | com\.valmo\.valmo | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | superstoreapp\.meesho\.com | URL | — | — | Bounty eligible |
+| grocery-supplier\.meesho\.com | URL | — | — | Bounty eligible |
 | investor\.meesho\.com | URL | — | — | Bounty eligible |
+| console\.valmo\.in | URL | — | — | Bounty eligible |
+| com\.valmo\.ops | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
+| com\.valmo\.rider | OTHER | — | — | Bounty eligible |
 | meesho\.io | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (17)
+## Out-of-scope entries (15)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | Other Asset | OTHER | — | — | Not bounty eligible |
-| grocery-supplier\.meesho\.com | URL | — | — | Not bounty eligible |
 | farmiso\.meeshosupply\.com | URL | — | — | Not bounty eligible |
 | atlas\.valmo\.in | URL | — | — | Not bounty eligible |
 | affiliate-c\.meesho\.com | URL | — | — | Not bounty eligible |
@@ -45,7 +48,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.meeshogcp\.in | WILDCARD | — | — | Not bounty eligible |
 | di-prd-superset\.meesho\.com | URL | — | — | Not bounty eligible |
 | \*\.meeshoaiservices\.ai | WILDCARD | — | — | Not bounty eligible |
-| console\.valmo\.in | URL | — | — | Not bounty eligible |
 | log10-web-staging\.valmo\.in | URL | — | — | Not bounty eligible |
 | \*\.meesho\.com | WILDCARD | — | — | Not bounty eligible |
 | \*\.meeshosupply\.com | WILDCARD | — | — | Not bounty eligible |

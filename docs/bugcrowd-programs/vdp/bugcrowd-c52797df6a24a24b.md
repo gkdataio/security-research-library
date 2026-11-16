@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-15T14:36:12Z.
+**Capture time:** 2026-11-16T16:33:22Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/united-vdp/changelog/507b321c-25a9-4552-b8b8-ae7f20cabc02.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/united-vdp/changelog/d8f478dc-36bf-4cc6-a729-d07d28d2664b.json>)
 
 ## In-scope entries (6)
 
@@ -31,11 +31,12 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | MileagePlus X App for iOS | ios | — | In Scope Targets | — |
 | MileagePlus X App for Android | android | — | In Scope Targets | — |
 
-## Out-of-scope entries (49)
+## Out-of-scope entries (50)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | mpdining\.rewardsnetwork\.com | website | — | Out of Scope Targets | — |
+| Onboard Wi-Fi, entertainment systems or avionics | other | — | Out of Scope Targets | — |
 | 3rd party applications/services | other | — | Out of Scope Targets | — |
 | hotels\.united\.com | website | — | Out of Scope Targets | — |
 | vacations\.united\.com | website | — | Out of Scope Targets | — |
@@ -71,16 +72,16 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | unitedexplorer\.com | website | — | Out of Scope Targets | — |
 | unitedexplorercard\.com | website | — | Out of Scope Targets | — |
 | mileageplusawards\.com | website | — | Out of Scope Targets | — |
-| Onboard Wi-Fi, entertainment systems or avionics | other | — | Out of Scope Targets | — |
-| m\.mpdining\.rewardsnetwork\.com | website | — | Out of Scope Targets | — |
 | news\.united\.com/responsys | website | — | Out of Scope Targets | — |
 | survey\.continental\.com/vovici\.net | website | — | Out of Scope Targets | — |
 | booking\.unitedcargo\.com | website | — | Out of Scope Targets | — |
 | chargerback\.com | website | — | Out of Scope Targets | — |
 | \*\.unitedvacationsdive\.com | website | — | Out of Scope Targets | — |
 | packages\.united\.com | website | — | Out of Scope Targets | — |
+| m\.mpdining\.rewardsnetwork\.com | website | — | Out of Scope Targets | — |
 | bp\.ual\.com | website | https://bp\.ual\.com | Out of Scope Targets | — |
 | mycargo\.unitedcargo\.com | website | https://mycargo\.unitedcargo\.com | Out of Scope Targets | — |
+| ethicsandcompliancehub\.ual\.com | website | — | Out of Scope Targets | — |
 | chartercateringops\.united\.com | website | — | Out of Scope Targets | — |
 | salesuat\.united\.com | website | — | Out of Scope Targets | — |
 | chartersmanifest\.united\.com | website | — | Out of Scope Targets | — |

@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-13T01:24:42Z.
 
-**Latest refresh failed (2026-11-15T14:41:20Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-16T16:38:33Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/eufy_security/assets/download_csv.csv>)
 
