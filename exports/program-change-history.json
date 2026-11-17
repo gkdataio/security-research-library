@@ -13698,6 +13698,190 @@
           ]
         }
       ]
+    },
+    {
+      "id": "768b78edde57a2adc0a8be2f444e153eee7167c5450c62bc6dbe60898aee37b2",
+      "recorded_at": "2026-11-17T16:59:50Z",
+      "baseline_commit": "b741ef9bd0dc58b72376a4790d8a4085ddc5d7e4",
+      "baseline_digest": "edab8964e5b845fb5c79d352773cad85504369f5e201a13ef5fbbac2337e374a",
+      "current_digest": "663c342717c2f3be98f91421063cb1e2f84f32154b81a0de85036f5d0420d574",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-78e9b168b036d683",
+          "name": "New Blue Website (NBW) - VWFS Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/volkswagen-vwfs-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2025-10-28T07:34:21.694Z",
+              "after": "2026-11-17T12:50:52.792Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/volkswagen-vwfs-mbb-og/changelog/b503b4ee-59b2-4fc5-8273-b7edb619462d.json",
+              "after": "https://bugcrowd.com/engagements/volkswagen-vwfs-mbb-og/changelog/e815baf1-ffee-40e7-a341-36eedf3aaa92.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-fa9b0872ef612eaf",
+          "name": "Shuffle Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/shuffle-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "Out of Scope",
+                  "location": "https://shuffle.store",
+                  "name": "https://shuffle.store",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "Out of Scope",
+                  "location": "https://shufflecommunity.com",
+                  "name": "https://shufflecommunity.com",
+                  "scope": "out"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-08T22:19:35.412Z",
+              "after": "2026-11-17T05:11:05.758Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/cdcb3cdf-846b-406c-a0ae-8f324b44b9da.json",
+              "after": "https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/75306841-cccc-459c-9227-8555e893c76e.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-9b1526800575fa1e",
+          "name": "Hyatt Hotels",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/hyatt?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "CIDR",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "199.66.248.0/22",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-6880eb71eafb4af7",
+          "name": "Posti Bug Bounty",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/posti/postibugbounty",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://admin.postikuori.posti.fi",
+                  "name": "admin.postikuori.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://api.postikuori.posti.fi",
+                  "name": "api.postikuori.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://cms.postikuori.posti.fi",
+                  "name": "cms.postikuori.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://etavarasto.posti.fi",
+                  "name": "etavarasto.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://iam.postikuori.posti.fi",
+                  "name": "iam.postikuori.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://iamapp.postikuori.posti.fi",
+                  "name": "iamapp.postikuori.posti.fi",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://rebl-ai-webchat-postikuori.azurewebsites.net",
+                  "name": "rebl-ai-webchat-postikuori.azurewebsites.net",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-d346f2c3e002e82e",
+          "name": "Ninja Kiwi Games Bug Bounty program",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/ninjakiwigames/ninjakiwigames",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://mynk.ninjakiwi.com",
+                  "name": "mynk.ninjakiwi.com",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": "No bounty",
+                  "location": "http://mynk.ninjakiwi.com",
+                  "name": "mynk.ninjakiwi.com",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

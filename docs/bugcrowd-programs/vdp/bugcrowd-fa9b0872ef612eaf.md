@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-16T16:28:44Z.
+**Capture time:** 2026-11-17T16:39:36Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/cdcb3cdf-846b-406c-a0ae-8f324b44b9da.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/75306841-cccc-459c-9227-8555e893c76e.json>)
 
 ## In-scope entries (2)
 
@@ -27,10 +27,12 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | \*\.shuffle\.com | website | — | In Scope  | — |
 | \*\.shuffle\.us | website | — | In Scope  | — |
 
-## Out-of-scope entries (1)
+## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| https://shufflecommunity\.com | website | https://shufflecommunity\.com | Out of Scope | — |
+| https://shuffle\.store | website | https://shuffle\.store | Out of Scope | — |
 | Third Party Software | other | — | Out of Scope | — |
 
 **Limits**

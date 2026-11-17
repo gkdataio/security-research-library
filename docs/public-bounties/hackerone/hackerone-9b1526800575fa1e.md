@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-16T16:39:30Z.
+**Capture time:** 2026-11-17T16:50:16Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/hyatt/assets/download_csv.csv>)
 
-## In-scope entries (59)
+## In-scope entries (58)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -73,7 +73,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.triseptdemo\.com | URL | — | — | Bounty eligible |
 | vacations\.united\.com | URL | — | — | Bounty eligible |
 | www\.applevacations\.com | URL | — | — | Bounty eligible |
-| 199\.66\.248\.0/22 | CIDR | — | — | Bounty eligible |
 | res\.hyattinclusivecollection\.com | URL | — | — | Bounty eligible |
 | www\.hyattinclusivecollection\.com | URL | — | — | Bounty eligible |
 | booking\.applevacations\.com | URL | — | — | Bounty eligible |

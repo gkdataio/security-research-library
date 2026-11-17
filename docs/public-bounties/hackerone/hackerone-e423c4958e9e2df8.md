@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-16T16:40:41Z.
+**Capture time:** 2026-11-17T16:51:18Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/moonpay/assets/download_csv.csv>)
 

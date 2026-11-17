@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-16T16:47:02Z.
+**Capture time:** 2026-11-17T16:57:31Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/ninjakiwigames/ninjakiwigames/detail>)
 
@@ -31,7 +31,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | boomer2\.ninjakiwi\.com | URL | http://boomer2\.ninjakiwi\.com | Tier 3 | — |
 | ct\.ninjakiwi\.com | URL | http://ct\.ninjakiwi\.com | Tier 3 | — |
 | mynk-dash\.ninjakiwi\.com | URL | http://mynk-dash\.ninjakiwi\.com | Tier 3 | — |
-| mynk\.ninjakiwi\.com | URL | http://mynk\.ninjakiwi\.com | Tier 3 | — |
+| mynk\.ninjakiwi\.com | URL | http://mynk\.ninjakiwi\.com | No bounty | — |
 | \*\.souparea\.com | Wildcard | — | No bounty | — |
 
 ## Out-of-scope entries (5)

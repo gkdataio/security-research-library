@@ -63,7 +63,7 @@
       "no_published_assets": 7
     },
     "in_scope_entries": 5564,
-    "out_of_scope_entries": 1441,
+    "out_of_scope_entries": 1443,
     "duplicate_source_rows_removed": 76
   },
   "programs": [
@@ -89,7 +89,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:22Z",
+      "scope_captured_at": "2026-11-17T16:43:14Z",
       "scope_published_at": "2026-08-28T14:33:24.441Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -269,7 +269,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:59Z",
+      "scope_captured_at": "2026-11-17T16:23:52Z",
       "scope_published_at": "2026-07-08T20:13:41.061Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -389,7 +389,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:45Z",
+      "scope_captured_at": "2026-11-17T16:59:15Z",
       "scope_published_at": "2026-08-25T15:20:04.598Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -442,7 +442,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:49Z",
+      "scope_captured_at": "2026-11-17T16:59:19Z",
       "scope_published_at": "2026-10-01T17:54:49.265Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -532,7 +532,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:58Z",
+      "scope_captured_at": "2026-11-17T16:59:27Z",
       "scope_published_at": "2026-08-13T03:52:36.373Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -707,7 +707,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:49:10Z",
+      "scope_captured_at": "2026-11-17T16:59:39Z",
       "scope_published_at": "2026-09-23T18:07:00.338Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -754,7 +754,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:49:05Z",
+      "scope_captured_at": "2026-11-17T16:59:35Z",
       "scope_published_at": "2026-08-05T14:57:42.187Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -843,7 +843,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:24Z",
+      "scope_captured_at": "2026-11-17T16:59:43Z",
       "scope_published_at": "2026-07-14T01:16:46.707Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -944,7 +944,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:55Z",
+      "scope_captured_at": "2026-11-17T16:14:48Z",
       "scope_published_at": "2026-10-11T01:09:05.359Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -1244,7 +1244,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:28Z",
+      "scope_captured_at": "2026-11-17T16:14:20Z",
       "scope_published_at": "2026-09-28T20:46:08.739Z",
       "scope_group_count": 8,
       "capture_error": null,
@@ -1472,7 +1472,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:32Z",
+      "scope_captured_at": "2026-11-17T16:14:24Z",
       "scope_published_at": "2026-09-03T00:42:32.024Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -1603,7 +1603,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:43Z",
+      "scope_captured_at": "2026-11-17T16:15:36Z",
       "scope_published_at": "2026-02-19T01:08:33.157Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -1674,7 +1674,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:00Z",
+      "scope_captured_at": "2026-11-17T16:15:52Z",
       "scope_published_at": "2023-02-28T20:27:23.074Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -1751,7 +1751,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:52Z",
+      "scope_captured_at": "2026-11-17T16:14:43Z",
       "scope_published_at": "2026-08-29T18:07:12.334Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -1835,7 +1835,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:59Z",
+      "scope_captured_at": "2026-11-17T16:14:51Z",
       "scope_published_at": "2026-06-18T05:14:32.053Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -1900,7 +1900,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:23Z",
+      "scope_captured_at": "2026-11-17T16:23:16Z",
       "scope_published_at": "2026-09-03T00:34:38.916Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -1947,7 +1947,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:07Z",
+      "scope_captured_at": "2026-11-17T16:15:00Z",
       "scope_published_at": "2026-07-21T17:16:56.332Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -2223,7 +2223,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:19Z",
+      "scope_captured_at": "2026-11-17T16:15:11Z",
       "scope_published_at": "2026-02-03T18:26:16.895Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -2361,7 +2361,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:27Z",
+      "scope_captured_at": "2026-11-17T16:15:20Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -2971,7 +2971,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:32Z",
+      "scope_captured_at": "2026-11-17T16:15:24Z",
       "scope_published_at": "2026-09-16T18:48:27.359Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -3763,7 +3763,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:36Z",
+      "scope_captured_at": "2026-11-17T16:15:27Z",
       "scope_published_at": "2026-08-26T12:16:39.908Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -3847,7 +3847,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:40Z",
+      "scope_captured_at": "2026-11-17T16:15:32Z",
       "scope_published_at": "2026-10-05T16:19:08.112Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -4111,7 +4111,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:47Z",
+      "scope_captured_at": "2026-11-17T16:15:39Z",
       "scope_published_at": "2026-11-13T09:23:20.972Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -4158,7 +4158,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:52Z",
+      "scope_captured_at": "2026-11-17T16:15:44Z",
       "scope_published_at": "2026-10-15T00:30:42.897Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -4253,7 +4253,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:55Z",
+      "scope_captured_at": "2026-11-17T16:15:48Z",
       "scope_published_at": "2025-03-10T08:48:32.895Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -4318,7 +4318,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:23Z",
+      "scope_captured_at": "2026-11-17T16:16:16Z",
       "scope_published_at": "2026-11-15T07:04:59.344Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -4546,7 +4546,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:27Z",
+      "scope_captured_at": "2026-11-17T16:16:19Z",
       "scope_published_at": "2026-08-12T11:42:12.162Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -4762,7 +4762,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:32Z",
+      "scope_captured_at": "2026-11-17T16:16:24Z",
       "scope_published_at": "2020-02-13T00:32:33.727Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -4828,7 +4828,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:40Z",
+      "scope_captured_at": "2026-11-17T16:16:32Z",
       "scope_published_at": "2026-06-17T18:53:57.489Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -4899,7 +4899,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:43Z",
+      "scope_captured_at": "2026-11-17T16:16:36Z",
       "scope_published_at": "2026-08-12T18:16:23.068Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -4971,7 +4971,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:47Z",
+      "scope_captured_at": "2026-11-17T16:16:40Z",
       "scope_published_at": "2026-11-10T09:01:09.765Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -5127,7 +5127,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:51Z",
+      "scope_captured_at": "2026-11-17T16:16:44Z",
       "scope_published_at": "2026-11-13T23:08:34.371Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -5415,7 +5415,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:04Z",
+      "scope_captured_at": "2026-11-17T16:16:56Z",
       "scope_published_at": "2026-01-22T10:38:26.679Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -5486,7 +5486,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:11Z",
+      "scope_captured_at": "2026-11-17T16:17:04Z",
       "scope_published_at": "2026-07-01T14:46:54.301Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -5569,7 +5569,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:15Z",
+      "scope_captured_at": "2026-11-17T16:17:07Z",
       "scope_published_at": "2026-10-01T06:08:13.892Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -5712,7 +5712,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:24Z",
+      "scope_captured_at": "2026-11-17T16:17:15Z",
       "scope_published_at": "2026-11-15T09:54:09.238Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -5777,7 +5777,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:27Z",
+      "scope_captured_at": "2026-11-17T16:17:20Z",
       "scope_published_at": "2026-10-13T13:51:51.791Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -5897,7 +5897,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:36Z",
+      "scope_captured_at": "2026-11-17T16:17:28Z",
       "scope_published_at": "2026-08-27T02:26:22.820Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -5974,7 +5974,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:40Z",
+      "scope_captured_at": "2026-11-17T16:17:31Z",
       "scope_published_at": "2026-06-11T00:39:26.957Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -6075,7 +6075,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:43Z",
+      "scope_captured_at": "2026-11-17T16:17:36Z",
       "scope_published_at": "2026-08-19T23:43:34.549Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -6140,7 +6140,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:47Z",
+      "scope_captured_at": "2026-11-17T16:17:39Z",
       "scope_published_at": "2026-05-27T08:26:41.022Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -6314,7 +6314,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:55Z",
+      "scope_captured_at": "2026-11-17T16:17:48Z",
       "scope_published_at": "2025-04-09T13:04:09.187Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -6374,7 +6374,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:52Z",
+      "scope_captured_at": "2026-11-17T16:17:43Z",
       "scope_published_at": "2024-09-06T12:42:45.162Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -6440,7 +6440,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:04Z",
+      "scope_captured_at": "2026-11-17T16:17:56Z",
       "scope_published_at": "2026-10-09T09:10:14.829Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -6541,7 +6541,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:12Z",
+      "scope_captured_at": "2026-11-17T16:18:04Z",
       "scope_published_at": "2026-08-13T06:17:29.490Z",
       "scope_group_count": 8,
       "capture_error": null,
@@ -6690,7 +6690,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:16Z",
+      "scope_captured_at": "2026-11-17T16:18:07Z",
       "scope_published_at": "2026-09-12T18:47:57.071Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -6809,7 +6809,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:28Z",
+      "scope_captured_at": "2026-11-17T16:18:20Z",
       "scope_published_at": "2026-09-10T18:04:25.210Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -6898,7 +6898,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:36Z",
+      "scope_captured_at": "2026-11-17T16:18:27Z",
       "scope_published_at": "2026-05-06T18:16:42.649Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -7079,7 +7079,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:08Z",
+      "scope_captured_at": "2026-11-17T16:24:00Z",
       "scope_published_at": "2025-02-12T16:17:22.340Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -7139,7 +7139,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:57Z",
+      "scope_captured_at": "2026-11-17T16:18:50Z",
       "scope_published_at": "2026-11-02T21:54:19.300Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -7313,7 +7313,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:02Z",
+      "scope_captured_at": "2026-11-17T16:18:53Z",
       "scope_published_at": "2025-08-20T18:01:35.296Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -7390,7 +7390,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:21Z",
+      "scope_captured_at": "2026-11-17T16:19:14Z",
       "scope_published_at": "2026-09-15T21:12:19.217Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -7570,7 +7570,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:40Z",
+      "scope_captured_at": "2026-11-17T16:42:32Z",
       "scope_published_at": "2026-01-16T19:17:29.168Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -7654,7 +7654,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:31Z",
+      "scope_captured_at": "2026-11-17T16:19:24Z",
       "scope_published_at": "2026-11-09T17:15:04.013Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -7906,7 +7906,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:35Z",
+      "scope_captured_at": "2026-11-17T16:19:28Z",
       "scope_published_at": "2026-02-05T23:53:36.468Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -8050,7 +8050,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:40Z",
+      "scope_captured_at": "2026-11-17T16:19:32Z",
       "scope_published_at": "2026-08-24T06:02:00.354Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -8140,7 +8140,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:43Z",
+      "scope_captured_at": "2026-11-17T16:19:36Z",
       "scope_published_at": "2025-01-27T10:06:11.007Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -8224,7 +8224,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:07Z",
+      "scope_captured_at": "2026-11-17T16:20:00Z",
       "scope_published_at": "2026-08-27T21:52:58.145Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -8290,7 +8290,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:55Z",
+      "scope_captured_at": "2026-11-17T16:19:48Z",
       "scope_published_at": "2026-09-10T17:21:09.930Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -8337,7 +8337,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:00Z",
+      "scope_captured_at": "2026-11-17T16:19:52Z",
       "scope_published_at": "2026-09-09T19:21:01.813Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -8414,7 +8414,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:03Z",
+      "scope_captured_at": "2026-11-17T16:19:56Z",
       "scope_published_at": "2024-10-31T09:01:34.489Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -8551,7 +8551,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:22Z",
+      "scope_captured_at": "2026-11-17T16:58:51Z",
       "scope_published_at": "2025-06-13T19:14:15.367Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -8647,7 +8647,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:16Z",
+      "scope_captured_at": "2026-11-17T16:20:07Z",
       "scope_published_at": "2025-03-26T13:35:59.703Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -8700,7 +8700,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:12Z",
+      "scope_captured_at": "2026-11-17T16:20:04Z",
       "scope_published_at": "2025-06-16T16:56:07.512Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -8808,7 +8808,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:24Z",
+      "scope_captured_at": "2026-11-17T16:20:16Z",
       "scope_published_at": "2026-04-16T05:28:33.130Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -9025,7 +9025,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:31Z",
+      "scope_captured_at": "2026-11-17T16:20:24Z",
       "scope_published_at": "2026-08-10T19:35:03.297Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -9109,7 +9109,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:40Z",
+      "scope_captured_at": "2026-11-17T16:20:32Z",
       "scope_published_at": "2026-05-21T18:59:04.876Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -9296,7 +9296,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:59Z",
+      "scope_captured_at": "2026-11-17T16:20:52Z",
       "scope_published_at": "2022-03-21T01:23:46.706Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -9355,7 +9355,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:04Z",
+      "scope_captured_at": "2026-11-17T16:20:56Z",
       "scope_published_at": "2026-09-10T16:27:31.564Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -9426,7 +9426,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:19Z",
+      "scope_captured_at": "2026-11-17T16:21:12Z",
       "scope_published_at": "2024-03-11T14:09:05.800Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -9788,7 +9788,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:35Z",
+      "scope_captured_at": "2026-11-17T16:21:28Z",
       "scope_published_at": "2026-10-28T20:14:40.904Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -9847,7 +9847,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:39Z",
+      "scope_captured_at": "2026-11-17T16:21:32Z",
       "scope_published_at": "2026-09-23T17:38:04.230Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -9894,7 +9894,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:44Z",
+      "scope_captured_at": "2026-11-17T16:21:36Z",
       "scope_published_at": "2026-11-13T23:31:35.229Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10037,7 +10037,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:48Z",
+      "scope_captured_at": "2026-11-17T16:21:40Z",
       "scope_published_at": "2026-08-19T23:47:50.206Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10174,7 +10174,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:08Z",
+      "scope_captured_at": "2026-11-17T16:22:00Z",
       "scope_published_at": "2026-09-21T04:17:45.595Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10312,7 +10312,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:36Z",
+      "scope_captured_at": "2026-11-17T16:22:28Z",
       "scope_published_at": "2026-06-11T00:39:44.948Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10430,7 +10430,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:47Z",
+      "scope_captured_at": "2026-11-17T16:22:40Z",
       "scope_published_at": "2026-03-25T11:18:52.328Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10501,7 +10501,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:55Z",
+      "scope_captured_at": "2026-11-17T16:28:48Z",
       "scope_published_at": "2026-02-23T15:42:51.448Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10554,7 +10554,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:20Z",
+      "scope_captured_at": "2026-11-17T16:40:12Z",
       "scope_published_at": "2026-01-05T13:56:31.373Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10613,7 +10613,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:56Z",
+      "scope_captured_at": "2026-11-17T16:22:48Z",
       "scope_published_at": "2026-03-25T14:59:06.412Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10702,7 +10702,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:59Z",
+      "scope_captured_at": "2026-11-17T16:22:52Z",
       "scope_published_at": "2026-05-14T05:36:54.518Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10864,7 +10864,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:07Z",
+      "scope_captured_at": "2026-11-17T16:23:00Z",
       "scope_published_at": "2026-08-20T22:49:55.583Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -10941,7 +10941,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:12Z",
+      "scope_captured_at": "2026-11-17T16:23:04Z",
       "scope_published_at": "2025-04-22T12:00:31.213Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11054,7 +11054,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:20Z",
+      "scope_captured_at": "2026-11-17T16:23:12Z",
       "scope_published_at": "2026-08-26T12:28:52.496Z",
       "scope_group_count": 9,
       "capture_error": null,
@@ -11312,7 +11312,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:28Z",
+      "scope_captured_at": "2026-11-17T16:23:20Z",
       "scope_published_at": "2026-06-05T15:48:33.393Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11401,7 +11401,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:32Z",
+      "scope_captured_at": "2026-11-17T16:23:24Z",
       "scope_published_at": "2026-04-20T21:12:50.730Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -11557,7 +11557,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:51Z",
+      "scope_captured_at": "2026-11-17T16:23:44Z",
       "scope_published_at": "2026-09-23T17:01:25.709Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11610,7 +11610,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:25Z",
+      "scope_captured_at": "2026-11-17T16:58:55Z",
       "scope_published_at": "2026-10-01T17:24:06.479Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11657,7 +11657,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:15Z",
+      "scope_captured_at": "2026-11-17T16:24:08Z",
       "scope_published_at": "2026-09-23T14:00:10.673Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11704,7 +11704,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:12Z",
+      "scope_captured_at": "2026-11-17T16:24:04Z",
       "scope_published_at": "2026-02-12T13:49:31.665Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -11763,7 +11763,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:20Z",
+      "scope_captured_at": "2026-11-17T16:24:12Z",
       "scope_published_at": "2026-10-29T15:36:17.396Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -11823,7 +11823,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:23Z",
+      "scope_captured_at": "2026-11-17T16:24:16Z",
       "scope_published_at": "2026-11-06T17:55:12.957Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -11943,7 +11943,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:28Z",
+      "scope_captured_at": "2026-11-17T16:24:20Z",
       "scope_published_at": "2026-09-09T03:58:28.681Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -12027,7 +12027,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:07Z",
+      "scope_captured_at": "2026-11-17T16:25:00Z",
       "scope_published_at": "2026-08-26T14:31:25.204Z",
       "scope_group_count": 6,
       "capture_error": null,
@@ -12153,7 +12153,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:15Z",
+      "scope_captured_at": "2026-11-17T16:25:08Z",
       "scope_published_at": "2026-10-30T16:52:27.062Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -12303,7 +12303,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:20Z",
+      "scope_captured_at": "2026-11-17T16:25:12Z",
       "scope_published_at": "2026-02-05T15:30:17.011Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -12374,7 +12374,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:23Z",
+      "scope_captured_at": "2026-11-17T16:25:16Z",
       "scope_published_at": "2026-07-20T19:38:13.790Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -12427,7 +12427,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:48Z",
+      "scope_captured_at": "2026-11-17T16:25:40Z",
       "scope_published_at": "2026-09-23T17:34:47.418Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -12510,7 +12510,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:55Z",
+      "scope_captured_at": "2026-11-17T16:25:48Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -12607,7 +12607,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:00Z",
+      "scope_captured_at": "2026-11-17T16:25:52Z",
       "scope_published_at": "2026-10-14T02:19:23.086Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -12685,7 +12685,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:08Z",
+      "scope_captured_at": "2026-11-17T16:26:00Z",
       "scope_published_at": "2026-06-26T19:53:11.113Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -12859,7 +12859,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:20Z",
+      "scope_captured_at": "2026-11-17T16:26:12Z",
       "scope_published_at": "2026-07-08T19:01:56.071Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -12960,7 +12960,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:36Z",
+      "scope_captured_at": "2026-11-17T16:26:28Z",
       "scope_published_at": "2026-04-10T21:01:59.887Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -13122,7 +13122,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:40Z",
+      "scope_captured_at": "2026-11-17T16:26:32Z",
       "scope_published_at": "2026-03-06T11:41:56.668Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -13338,7 +13338,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:44Z",
+      "scope_captured_at": "2026-11-17T16:26:36Z",
       "scope_published_at": "2026-10-15T00:14:55.764Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -13470,7 +13470,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:48Z",
+      "scope_captured_at": "2026-11-17T16:26:40Z",
       "scope_published_at": "2026-10-27T19:36:30.329Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -13535,7 +13535,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:52Z",
+      "scope_captured_at": "2026-11-17T16:26:44Z",
       "scope_published_at": "2026-11-16T15:56:00.223Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -13678,7 +13678,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:20Z",
+      "scope_captured_at": "2026-11-17T16:42:12Z",
       "scope_published_at": "2025-12-23T20:06:15.104Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -13749,7 +13749,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:55Z",
+      "scope_captured_at": "2026-11-17T16:26:48Z",
       "scope_published_at": "2026-06-03T22:09:27.578Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -13796,7 +13796,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:04Z",
+      "scope_captured_at": "2026-11-17T16:26:56Z",
       "scope_published_at": "2026-03-12T09:57:02.002Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -13909,7 +13909,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:08Z",
+      "scope_captured_at": "2026-11-17T16:27:00Z",
       "scope_published_at": "2026-10-22T16:14:48.523Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -14119,7 +14119,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:16Z",
+      "scope_captured_at": "2026-11-17T16:27:08Z",
       "scope_published_at": "2026-10-29T14:31:06.923Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -14329,7 +14329,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:19Z",
+      "scope_captured_at": "2026-11-17T16:27:12Z",
       "scope_published_at": "2026-03-27T10:35:08.089Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -14424,7 +14424,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:23Z",
+      "scope_captured_at": "2026-11-17T16:27:16Z",
       "scope_published_at": "2026-06-11T00:40:02.442Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -14471,7 +14471,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:34Z",
+      "scope_captured_at": "2026-11-17T16:59:03Z",
       "scope_published_at": "2026-06-18T05:17:46.896Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -14536,7 +14536,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:32Z",
+      "scope_captured_at": "2026-11-17T16:27:24Z",
       "scope_published_at": "2026-09-29T05:50:01.933Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -14608,7 +14608,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:35Z",
+      "scope_captured_at": "2026-11-17T16:27:28Z",
       "scope_published_at": "2026-08-24T12:49:47.136Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -14830,7 +14830,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:40Z",
+      "scope_captured_at": "2026-11-17T16:27:32Z",
       "scope_published_at": "2026-11-11T07:30:41.953Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -15016,7 +15016,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:44Z",
+      "scope_captured_at": "2026-11-17T16:27:36Z",
       "scope_published_at": "2026-09-09T01:30:05.802Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -15081,7 +15081,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:48Z",
+      "scope_captured_at": "2026-11-17T16:27:40Z",
       "scope_published_at": "2026-11-02T09:06:17.361Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -15164,7 +15164,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:52Z",
+      "scope_captured_at": "2026-11-17T16:27:44Z",
       "scope_published_at": "2026-05-19T01:37:38.093Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -15392,7 +15392,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:12Z",
+      "scope_captured_at": "2026-11-17T16:28:04Z",
       "scope_published_at": "2026-10-20T19:26:27.330Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -15739,7 +15739,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:20Z",
+      "scope_captured_at": "2026-11-17T16:28:12Z",
       "scope_published_at": "2025-09-26T22:38:27.277Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -15979,7 +15979,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:28Z",
+      "scope_captured_at": "2026-11-17T16:28:20Z",
       "scope_published_at": "2025-11-20T13:51:18.385Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -16099,7 +16099,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:35Z",
+      "scope_captured_at": "2026-11-17T16:28:28Z",
       "scope_published_at": "2026-03-11T12:13:59.447Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -16249,7 +16249,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:40Z",
+      "scope_captured_at": "2026-11-17T16:28:32Z",
       "scope_published_at": "2025-03-05T00:20:01.981Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -16513,7 +16513,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:48Z",
+      "scope_captured_at": "2026-11-17T16:28:40Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -16664,7 +16664,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:08Z",
+      "scope_captured_at": "2026-11-17T16:29:00Z",
       "scope_published_at": "2026-10-21T05:12:10.834Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -16736,7 +16736,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:12Z",
+      "scope_captured_at": "2026-11-17T16:29:04Z",
       "scope_published_at": "2026-10-21T05:15:44.465Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -16868,7 +16868,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:16Z",
+      "scope_captured_at": "2026-11-17T16:29:08Z",
       "scope_published_at": "2026-01-29T15:13:16.289Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -17066,7 +17066,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:20Z",
+      "scope_captured_at": "2026-11-17T16:29:12Z",
       "scope_published_at": "2026-10-12T03:26:07.459Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -17246,7 +17246,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:24Z",
+      "scope_captured_at": "2026-11-17T16:29:16Z",
       "scope_published_at": "2026-09-09T08:47:33.296Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -17299,7 +17299,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:40Z",
+      "scope_captured_at": "2026-11-17T16:29:32Z",
       "scope_published_at": "2026-09-22T21:12:08.291Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -17473,7 +17473,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:47Z",
+      "scope_captured_at": "2026-11-17T16:29:40Z",
       "scope_published_at": "2026-10-28T11:30:01.968Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -17556,7 +17556,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:00Z",
+      "scope_captured_at": "2026-11-17T16:29:52Z",
       "scope_published_at": "2026-10-13T13:57:15.480Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -17669,7 +17669,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:08Z",
+      "scope_captured_at": "2026-11-17T16:30:00Z",
       "scope_published_at": "2026-07-29T11:35:16.211Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -17872,7 +17872,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:56Z",
+      "scope_captured_at": "2026-11-17T16:45:48Z",
       "scope_published_at": "2026-10-28T11:05:59.825Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -17950,7 +17950,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:56Z",
+      "scope_captured_at": "2026-11-17T16:29:48Z",
       "scope_published_at": "2026-10-29T05:20:09.712Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -18076,7 +18076,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:12Z",
+      "scope_captured_at": "2026-11-17T16:30:04Z",
       "scope_published_at": "2026-08-03T11:06:23.599Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -18267,7 +18267,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:20Z",
+      "scope_captured_at": "2026-11-17T16:18:11Z",
       "scope_published_at": "2025-09-01T15:54:10.461Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -18339,7 +18339,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:16Z",
+      "scope_captured_at": "2026-11-17T16:30:08Z",
       "scope_published_at": "2026-08-13T04:38:05.097Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -18410,7 +18410,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:28Z",
+      "scope_captured_at": "2026-11-17T16:30:20Z",
       "scope_published_at": "2026-06-24T04:49:56.769Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -18481,7 +18481,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:36Z",
+      "scope_captured_at": "2026-11-17T16:30:28Z",
       "scope_published_at": "2026-10-27T14:07:35.967Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -18648,7 +18648,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:39Z",
+      "scope_captured_at": "2026-11-17T16:30:32Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -18699,7 +18699,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:43Z",
+      "scope_captured_at": "2026-11-17T16:30:36Z",
       "scope_published_at": "2026-09-04T15:33:01.896Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -18879,7 +18879,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:00Z",
+      "scope_captured_at": "2026-11-17T16:30:52Z",
       "scope_published_at": "2026-10-01T06:06:54.923Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -18939,7 +18939,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:04Z",
+      "scope_captured_at": "2026-11-17T16:30:56Z",
       "scope_published_at": "2026-09-07T14:34:23.190Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -19022,7 +19022,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:08Z",
+      "scope_captured_at": "2026-11-17T16:31:00Z",
       "scope_published_at": "2026-04-23T07:08:29.356Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -19154,7 +19154,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:16Z",
+      "scope_captured_at": "2026-11-17T16:31:08Z",
       "scope_published_at": "2026-08-13T04:42:16.453Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -19285,7 +19285,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:23Z",
+      "scope_captured_at": "2026-11-17T16:31:16Z",
       "scope_published_at": "2026-09-01T22:14:37.600Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -19614,7 +19614,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:27Z",
+      "scope_captured_at": "2026-11-17T16:31:20Z",
       "scope_published_at": "2026-11-12T01:42:03.915Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -19752,7 +19752,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:32Z",
+      "scope_captured_at": "2026-11-17T16:31:24Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -19858,7 +19858,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:35Z",
+      "scope_captured_at": "2026-11-17T16:31:28Z",
       "scope_published_at": "2025-04-24T16:07:03.936Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -19912,7 +19912,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:44Z",
+      "scope_captured_at": "2026-11-17T16:31:36Z",
       "scope_published_at": "2026-08-19T23:36:43.857Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -20019,7 +20019,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:48Z",
+      "scope_captured_at": "2026-11-17T16:31:40Z",
       "scope_published_at": "2025-09-24T19:40:03.554Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -20091,7 +20091,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:04Z",
+      "scope_captured_at": "2026-11-17T16:31:56Z",
       "scope_published_at": "2026-04-30T16:37:58.170Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -20145,7 +20145,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:07Z",
+      "scope_captured_at": "2026-11-17T16:32:00Z",
       "scope_published_at": "2026-08-27T02:23:12.613Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -20192,7 +20192,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:15Z",
+      "scope_captured_at": "2026-11-17T16:32:08Z",
       "scope_published_at": "2026-10-05T09:08:19.618Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -20245,7 +20245,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:20Z",
+      "scope_captured_at": "2026-11-17T16:32:12Z",
       "scope_published_at": "2025-12-24T14:31:19.232Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -20388,14 +20388,14 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:52Z",
-      "scope_published_at": "2025-10-28T07:34:21.694Z",
+      "scope_captured_at": "2026-11-17T16:45:44Z",
+      "scope_published_at": "2026-11-17T12:50:52.792Z",
       "scope_group_count": 1,
       "capture_error": null,
       "scope_source_duplicate_rows": 0,
       "gap_review": null,
       "scope_source_urls": [
-        "https://bugcrowd.com/engagements/volkswagen-vwfs-mbb-og/changelog/b503b4ee-59b2-4fc5-8273-b7edb619462d.json"
+        "https://bugcrowd.com/engagements/volkswagen-vwfs-mbb-og/changelog/e815baf1-ffee-40e7-a341-36eedf3aaa92.json"
       ],
       "in_scope": [
         {
@@ -20555,7 +20555,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:28Z",
+      "scope_captured_at": "2026-11-17T16:32:20Z",
       "scope_published_at": "2026-10-15T15:38:41.617Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -20777,7 +20777,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:51Z",
+      "scope_captured_at": "2026-11-17T16:32:44Z",
       "scope_published_at": "2026-10-01T15:33:26.210Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -21017,7 +21017,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:11Z",
+      "scope_captured_at": "2026-11-17T16:33:04Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -21177,7 +21177,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:20Z",
+      "scope_captured_at": "2026-11-17T16:33:12Z",
       "scope_published_at": "2026-09-07T08:41:14.292Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -21309,7 +21309,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:15Z",
+      "scope_captured_at": "2026-11-17T16:33:08Z",
       "scope_published_at": "2025-10-28T02:04:41.378Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -21457,7 +21457,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:36Z",
+      "scope_captured_at": "2026-11-17T16:33:28Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -21851,7 +21851,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:44Z",
+      "scope_captured_at": "2026-11-17T16:33:36Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -22137,7 +22137,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:51Z",
+      "scope_captured_at": "2026-11-17T16:33:44Z",
       "scope_published_at": "2026-08-13T03:55:15.625Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -22196,7 +22196,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:55Z",
+      "scope_captured_at": "2026-11-17T16:33:48Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -22355,7 +22355,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:08Z",
+      "scope_captured_at": "2026-11-17T16:34:00Z",
       "scope_published_at": "2026-09-01T19:23:26.211Z",
       "scope_group_count": 11,
       "capture_error": null,
@@ -22462,7 +22462,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:12Z",
+      "scope_captured_at": "2026-11-17T16:34:04Z",
       "scope_published_at": "2026-05-11T10:02:25.561Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -23170,7 +23170,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:19Z",
+      "scope_captured_at": "2026-11-17T16:34:12Z",
       "scope_published_at": "2026-04-07T21:21:19.663Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -23254,7 +23254,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:24Z",
+      "scope_captured_at": "2026-11-17T16:34:16Z",
       "scope_published_at": "2026-09-30T19:31:29.243Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -23392,7 +23392,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:28Z",
+      "scope_captured_at": "2026-11-17T16:34:20Z",
       "scope_published_at": "2026-11-12T03:47:12.712Z",
       "scope_group_count": 7,
       "capture_error": null,
@@ -24838,7 +24838,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:36Z",
+      "scope_captured_at": "2026-11-17T16:34:28Z",
       "scope_published_at": "2026-07-08T21:07:20.275Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25023,7 +25023,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:47Z",
+      "scope_captured_at": "2026-11-17T16:34:40Z",
       "scope_published_at": "2026-08-10T08:13:09.092Z",
       "scope_group_count": 10,
       "capture_error": null,
@@ -25305,7 +25305,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:51Z",
+      "scope_captured_at": "2026-11-17T16:34:44Z",
       "scope_published_at": "2026-03-31T15:59:29.712Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -25377,7 +25377,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:00Z",
+      "scope_captured_at": "2026-11-17T16:34:52Z",
       "scope_published_at": "2026-08-19T23:41:24.254Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25442,7 +25442,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:27Z",
+      "scope_captured_at": "2026-11-17T16:35:20Z",
       "scope_published_at": "2026-01-28T02:35:02.851Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25489,7 +25489,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:48Z",
+      "scope_captured_at": "2026-11-17T16:35:40Z",
       "scope_published_at": "2026-09-09T04:06:43.452Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25536,7 +25536,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:55Z",
+      "scope_captured_at": "2026-11-17T16:35:48Z",
       "scope_published_at": "2025-11-04T14:51:44.478Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25655,7 +25655,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:00Z",
+      "scope_captured_at": "2026-11-17T16:35:52Z",
       "scope_published_at": "2024-12-13T17:28:32.921Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25702,7 +25702,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:03Z",
+      "scope_captured_at": "2026-11-17T16:35:56Z",
       "scope_published_at": "2026-11-12T16:09:24.588Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -25773,7 +25773,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:12Z",
+      "scope_captured_at": "2026-11-17T16:36:04Z",
       "scope_published_at": "2025-10-30T22:52:33.905Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -26111,7 +26111,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:31Z",
+      "scope_captured_at": "2026-11-17T16:36:24Z",
       "scope_published_at": "2026-09-23T17:32:36.696Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26212,7 +26212,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:36Z",
+      "scope_captured_at": "2026-11-17T16:36:28Z",
       "scope_published_at": "2026-11-04T05:07:05.219Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26289,7 +26289,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:51Z",
+      "scope_captured_at": "2026-11-17T16:36:44Z",
       "scope_published_at": "2026-03-12T14:53:12.123Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26336,7 +26336,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:55Z",
+      "scope_captured_at": "2026-11-17T16:36:48Z",
       "scope_published_at": "2024-09-03T13:51:53.678Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -26437,7 +26437,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:03Z",
+      "scope_captured_at": "2026-11-17T16:36:56Z",
       "scope_published_at": "2026-04-28T20:50:51.109Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26538,7 +26538,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:08Z",
+      "scope_captured_at": "2026-11-17T16:37:00Z",
       "scope_published_at": "2026-05-06T18:18:23.011Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26591,7 +26591,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:16Z",
+      "scope_captured_at": "2026-11-17T16:37:08Z",
       "scope_published_at": "2025-10-13T20:28:10.156Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -26675,7 +26675,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:23Z",
+      "scope_captured_at": "2026-11-17T16:37:16Z",
       "scope_published_at": "2026-08-19T23:53:13.846Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26740,7 +26740,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:28Z",
+      "scope_captured_at": "2026-11-17T16:37:20Z",
       "scope_published_at": "2026-09-10T16:09:46.393Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -26812,7 +26812,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:36Z",
+      "scope_captured_at": "2026-11-17T16:37:28Z",
       "scope_published_at": "2026-10-23T17:21:20.036Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -26859,7 +26859,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:39Z",
+      "scope_captured_at": "2026-11-17T16:37:32Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -27091,7 +27091,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:44Z",
+      "scope_captured_at": "2026-11-17T16:37:36Z",
       "scope_published_at": "2026-07-27T00:27:49.052Z",
       "scope_group_count": 17,
       "capture_error": null,
@@ -28202,7 +28202,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:48Z",
+      "scope_captured_at": "2026-11-17T16:37:40Z",
       "scope_published_at": "2026-06-17T06:40:52.877Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -28363,7 +28363,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:56Z",
+      "scope_captured_at": "2026-11-17T16:37:48Z",
       "scope_published_at": "2026-07-30T23:27:10.503Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -28434,7 +28434,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:59Z",
+      "scope_captured_at": "2026-11-17T16:37:52Z",
       "scope_published_at": "2026-05-06T18:17:11.517Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -28523,7 +28523,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:04Z",
+      "scope_captured_at": "2026-11-17T16:37:56Z",
       "scope_published_at": "2026-06-03T22:08:57.737Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -28606,7 +28606,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:08Z",
+      "scope_captured_at": "2026-11-17T16:38:00Z",
       "scope_published_at": "2026-06-24T23:40:19.459Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -28708,7 +28708,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:12Z",
+      "scope_captured_at": "2026-11-17T16:38:04Z",
       "scope_published_at": "2026-11-04T15:45:40.510Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -28942,7 +28942,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:20Z",
+      "scope_captured_at": "2026-11-17T16:38:12Z",
       "scope_published_at": "2026-09-23T17:36:45.963Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29007,7 +29007,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:44Z",
+      "scope_captured_at": "2026-11-17T16:38:36Z",
       "scope_published_at": "2026-07-08T20:34:19.683Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29096,7 +29096,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:48Z",
+      "scope_captured_at": "2026-11-17T16:38:40Z",
       "scope_published_at": "2026-08-19T19:10:10.985Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29197,7 +29197,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:59Z",
+      "scope_captured_at": "2026-11-17T16:33:52Z",
       "scope_published_at": "2026-08-07T18:31:30.219Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -29269,7 +29269,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:00Z",
+      "scope_captured_at": "2026-11-17T16:38:52Z",
       "scope_published_at": "2026-07-06T08:44:07.947Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29460,7 +29460,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:04Z",
+      "scope_captured_at": "2026-11-17T16:38:56Z",
       "scope_published_at": "2026-11-05T14:40:00.440Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29519,7 +29519,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:40Z",
+      "scope_captured_at": "2026-11-17T16:24:32Z",
       "scope_published_at": "2026-11-09T16:53:42.469Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29578,7 +29578,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:20Z",
+      "scope_captured_at": "2026-11-17T16:39:12Z",
       "scope_published_at": "2026-04-08T18:24:52.236Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29631,7 +29631,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:24Z",
+      "scope_captured_at": "2026-11-17T16:39:16Z",
       "scope_published_at": "2026-09-08T23:49:18.446Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -29877,7 +29877,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:40Z",
+      "scope_captured_at": "2026-11-17T16:39:32Z",
       "scope_published_at": "2026-09-03T00:38:29.583Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -29930,7 +29930,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:48Z",
+      "scope_captured_at": "2026-11-17T16:39:40Z",
       "scope_published_at": "2026-11-16T14:46:18.816Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -30158,7 +30158,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:56Z",
+      "scope_captured_at": "2026-11-17T16:39:48Z",
       "scope_published_at": "2026-11-02T11:50:41.585Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -30205,7 +30205,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:08Z",
+      "scope_captured_at": "2026-11-17T16:40:00Z",
       "scope_published_at": "2026-01-07T12:03:08.954Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -30289,7 +30289,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:04Z",
+      "scope_captured_at": "2026-11-17T16:39:56Z",
       "scope_published_at": "2026-01-08T15:31:56.624Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -30379,7 +30379,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:00Z",
+      "scope_captured_at": "2026-11-17T16:39:52Z",
       "scope_published_at": "2026-01-07T12:01:14.122Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -30463,7 +30463,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:16Z",
+      "scope_captured_at": "2026-11-17T16:40:08Z",
       "scope_published_at": "2026-10-30T17:33:34.918Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -30613,7 +30613,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:28Z",
+      "scope_captured_at": "2026-11-17T16:40:20Z",
       "scope_published_at": "2026-11-04T07:00:03.087Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -30660,7 +30660,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:32Z",
+      "scope_captured_at": "2026-11-17T16:40:24Z",
       "scope_published_at": "2026-04-24T06:22:22.654Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -30732,7 +30732,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:36Z",
+      "scope_captured_at": "2026-11-17T16:40:28Z",
       "scope_published_at": "2026-08-13T04:00:34.336Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -30821,7 +30821,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:44Z",
+      "scope_captured_at": "2026-11-17T16:40:36Z",
       "scope_published_at": "2025-12-04T10:00:53.560Z",
       "scope_group_count": 6,
       "capture_error": null,
@@ -31001,7 +31001,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:48Z",
+      "scope_captured_at": "2026-11-17T16:40:40Z",
       "scope_published_at": "2026-05-05T14:16:58.152Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -31072,7 +31072,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:52Z",
+      "scope_captured_at": "2026-11-17T16:40:44Z",
       "scope_published_at": "2026-01-29T14:30:30.666Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -31276,7 +31276,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:55Z",
+      "scope_captured_at": "2026-11-17T16:40:48Z",
       "scope_published_at": "2026-08-31T23:58:39.380Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -31463,7 +31463,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:16Z",
+      "scope_captured_at": "2026-11-17T16:41:08Z",
       "scope_published_at": "2026-07-14T01:10:27.939Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -31522,7 +31522,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:28Z",
+      "scope_captured_at": "2026-11-17T16:41:20Z",
       "scope_published_at": "2026-04-07T21:21:10.467Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -31575,7 +31575,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:36Z",
+      "scope_captured_at": "2026-11-17T16:41:28Z",
       "scope_published_at": "2026-09-26T12:23:26.932Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -31707,7 +31707,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:40Z",
+      "scope_captured_at": "2026-11-17T16:41:32Z",
       "scope_published_at": "2026-10-30T16:45:10.581Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -31851,7 +31851,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:55Z",
+      "scope_captured_at": "2026-11-17T16:41:48Z",
       "scope_published_at": "2026-08-13T03:56:46.720Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -31898,7 +31898,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:00Z",
+      "scope_captured_at": "2026-11-17T16:41:52Z",
       "scope_published_at": "2026-11-13T19:04:26.892Z",
       "scope_group_count": 7,
       "capture_error": null,
@@ -32450,7 +32450,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:04Z",
+      "scope_captured_at": "2026-11-17T16:41:56Z",
       "scope_published_at": "2025-08-18T07:05:30.607Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -32534,7 +32534,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:24Z",
+      "scope_captured_at": "2026-11-17T16:42:16Z",
       "scope_published_at": "2025-10-30T20:56:26.010Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -32726,7 +32726,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:16Z",
+      "scope_captured_at": "2026-11-17T16:26:08Z",
       "scope_published_at": "2026-10-15T07:17:48.082Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -32816,7 +32816,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:08Z",
+      "scope_captured_at": "2026-11-17T16:36:00Z",
       "scope_published_at": "2026-06-15T10:58:20.652Z",
       "scope_group_count": 7,
       "capture_error": null,
@@ -32899,7 +32899,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:36Z",
+      "scope_captured_at": "2026-11-17T16:42:28Z",
       "scope_published_at": "2026-01-13T21:19:57.046Z",
       "scope_group_count": 5,
       "capture_error": null,
@@ -33259,7 +33259,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:32Z",
+      "scope_captured_at": "2026-11-17T16:42:24Z",
       "scope_published_at": "2026-07-08T11:51:29.717Z",
       "scope_group_count": 6,
       "capture_error": null,
@@ -33567,7 +33567,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:56Z",
+      "scope_captured_at": "2026-11-17T16:42:48Z",
       "scope_published_at": "2026-08-19T23:46:12.381Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -33614,7 +33614,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:04Z",
+      "scope_captured_at": "2026-11-17T16:42:56Z",
       "scope_published_at": "2026-04-07T21:21:13.219Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -33758,7 +33758,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:12Z",
+      "scope_captured_at": "2026-11-17T16:43:04Z",
       "scope_published_at": "2026-03-06T15:17:09.231Z",
       "scope_group_count": 7,
       "capture_error": null,
@@ -34118,7 +34118,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:16Z",
+      "scope_captured_at": "2026-11-17T16:43:08Z",
       "scope_published_at": "2026-08-28T22:24:00.113Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34171,7 +34171,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:26Z",
+      "scope_captured_at": "2026-11-17T16:43:18Z",
       "scope_published_at": "2026-08-26T18:41:33.999Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34224,7 +34224,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:42Z",
+      "scope_captured_at": "2026-11-17T16:43:34Z",
       "scope_published_at": "2025-09-01T13:39:45.892Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34277,7 +34277,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:46Z",
+      "scope_captured_at": "2026-11-17T16:43:38Z",
       "scope_published_at": "2025-07-31T12:32:55.108Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34330,7 +34330,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:38Z",
+      "scope_captured_at": "2026-11-17T16:43:30Z",
       "scope_published_at": "2025-06-30T12:14:33.558Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34395,7 +34395,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:49Z",
+      "scope_captured_at": "2026-11-17T16:43:42Z",
       "scope_published_at": "2025-09-30T12:45:14.709Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34442,7 +34442,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:02Z",
+      "scope_captured_at": "2026-11-17T16:43:54Z",
       "scope_published_at": "2026-03-30T14:21:26.639Z",
       "scope_group_count": 7,
       "capture_error": null,
@@ -34700,7 +34700,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:58Z",
+      "scope_captured_at": "2026-11-17T16:43:50Z",
       "scope_published_at": "2025-12-01T17:11:34.405Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -34886,7 +34886,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:14Z",
+      "scope_captured_at": "2026-11-17T16:44:06Z",
       "scope_published_at": "2026-09-21T15:46:55.429Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -34939,7 +34939,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:26Z",
+      "scope_captured_at": "2026-11-17T16:44:18Z",
       "scope_published_at": "2026-06-29T09:34:55.969Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -35034,7 +35034,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:34Z",
+      "scope_captured_at": "2026-11-17T16:44:26Z",
       "scope_published_at": "2025-07-31T19:48:19.946Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -35232,7 +35232,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:38Z",
+      "scope_captured_at": "2026-11-17T16:44:30Z",
       "scope_published_at": "2026-03-05T20:12:45.742Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -35567,7 +35567,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:16Z",
+      "scope_captured_at": "2026-11-17T16:45:08Z",
       "scope_published_at": "2026-09-10T17:14:21.048Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -35656,7 +35656,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:20Z",
+      "scope_captured_at": "2026-11-17T16:45:12Z",
       "scope_published_at": "2026-05-27T13:33:00.969Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -35763,7 +35763,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:24Z",
+      "scope_captured_at": "2026-11-17T16:45:16Z",
       "scope_published_at": "2026-10-06T09:27:53.187Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -35919,7 +35919,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:28Z",
+      "scope_captured_at": "2026-11-17T16:45:20Z",
       "scope_published_at": "2026-09-23T18:10:19.254Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -35966,7 +35966,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:40Z",
+      "scope_captured_at": "2026-11-17T16:45:32Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -36152,7 +36152,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:48Z",
+      "scope_captured_at": "2026-11-17T16:45:40Z",
       "scope_published_at": "2026-10-15T08:11:51.479Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -36206,7 +36206,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:00Z",
+      "scope_captured_at": "2026-11-17T16:45:52Z",
       "scope_published_at": "2026-09-23T09:47:05.388Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -36253,7 +36253,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:08Z",
+      "scope_captured_at": "2026-11-17T16:46:00Z",
       "scope_published_at": null,
       "scope_group_count": null,
       "capture_error": null,
@@ -36386,7 +36386,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:04Z",
+      "scope_captured_at": "2026-11-17T16:45:56Z",
       "scope_published_at": "2026-09-08T15:09:13.846Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -36571,7 +36571,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:28Z",
+      "scope_captured_at": "2026-11-17T16:46:20Z",
       "scope_published_at": "2026-05-19T09:35:32.812Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -36799,7 +36799,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:36Z",
+      "scope_captured_at": "2026-11-17T16:46:28Z",
       "scope_published_at": "2026-09-24T16:46:53.166Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -37166,7 +37166,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:48Z",
+      "scope_captured_at": "2026-11-17T16:46:40Z",
       "scope_published_at": "2026-09-03T00:30:39.322Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -37213,7 +37213,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:52Z",
+      "scope_captured_at": "2026-11-17T16:46:44Z",
       "scope_published_at": "2026-03-05T21:41:59.525Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -37388,7 +37388,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:38Z",
+      "scope_captured_at": "2026-11-17T16:59:07Z",
       "scope_published_at": "2025-12-12T12:43:30.599Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -39583,7 +39583,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:42Z",
+      "scope_captured_at": "2026-11-17T16:59:11Z",
       "scope_published_at": "2026-07-22T14:37:29.710Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -39690,7 +39690,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:53Z",
+      "scope_captured_at": "2026-11-17T16:59:23Z",
       "scope_published_at": "2025-10-07T11:50:34.097Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -39749,7 +39749,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:35Z",
+      "scope_captured_at": "2026-11-17T16:14:27Z",
       "scope_published_at": "2024-09-18T18:00:24.626Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -40024,7 +40024,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:39Z",
+      "scope_captured_at": "2026-11-17T16:14:31Z",
       "scope_published_at": "2026-08-18T22:09:10.317Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -40071,7 +40071,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:43Z",
+      "scope_captured_at": "2026-11-17T16:14:36Z",
       "scope_published_at": "2026-05-07T05:33:09.091Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -40185,7 +40185,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:04Z",
+      "scope_captured_at": "2026-11-17T16:14:56Z",
       "scope_published_at": "2026-10-15T06:13:38.026Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -40286,7 +40286,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:15Z",
+      "scope_captured_at": "2026-11-17T16:15:08Z",
       "scope_published_at": "2026-04-02T14:25:44.250Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -40423,7 +40423,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:04:24Z",
+      "scope_captured_at": "2026-11-17T16:15:16Z",
       "scope_published_at": "2026-02-19T19:22:30.583Z",
       "scope_group_count": 10,
       "capture_error": null,
@@ -40686,7 +40686,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:03Z",
+      "scope_captured_at": "2026-11-17T16:15:55Z",
       "scope_published_at": "2026-07-13T20:36:08.256Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -40757,7 +40757,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:04Z",
+      "scope_captured_at": "2026-11-17T16:34:56Z",
       "scope_published_at": "2026-07-03T20:46:38.341Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -40853,7 +40853,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:07Z",
+      "scope_captured_at": "2026-11-17T16:15:59Z",
       "scope_published_at": "2025-10-09T22:33:22.641Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -40925,7 +40925,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:12Z",
+      "scope_captured_at": "2026-11-17T16:16:03Z",
       "scope_published_at": "2026-09-17T04:27:18.324Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -41163,7 +41163,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:55Z",
+      "scope_captured_at": "2026-11-17T16:16:48Z",
       "scope_published_at": "2025-12-11T17:22:35.859Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -41295,7 +41295,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:19Z",
+      "scope_captured_at": "2026-11-17T16:17:11Z",
       "scope_published_at": "2026-11-01T20:06:55.927Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41354,7 +41354,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:32Z",
+      "scope_captured_at": "2026-11-17T16:17:23Z",
       "scope_published_at": "2024-09-03T14:31:15.263Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41413,7 +41413,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:06:59Z",
+      "scope_captured_at": "2026-11-17T16:17:52Z",
       "scope_published_at": "2026-04-29T02:45:36.711Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41526,7 +41526,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:15Z",
+      "scope_captured_at": "2026-11-17T16:16:08Z",
       "scope_published_at": "2022-09-21T22:09:38.010Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41573,7 +41573,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:59Z",
+      "scope_captured_at": "2026-11-17T16:16:52Z",
       "scope_published_at": "2023-10-04T23:57:48.646Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41626,7 +41626,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:50Z",
+      "scope_captured_at": "2026-11-17T16:44:42Z",
       "scope_published_at": "2024-04-22T23:52:41.119Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41685,7 +41685,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:08Z",
+      "scope_captured_at": "2026-11-17T16:18:00Z",
       "scope_published_at": "2026-09-22T18:00:00.689Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -41744,7 +41744,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:39Z",
+      "scope_captured_at": "2026-11-17T16:18:32Z",
       "scope_published_at": "2026-05-07T19:06:30.145Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -41984,7 +41984,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:51Z",
+      "scope_captured_at": "2026-11-17T16:19:44Z",
       "scope_published_at": "2026-10-29T00:05:36.198Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -42086,7 +42086,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:53Z",
+      "scope_captured_at": "2026-11-17T16:18:46Z",
       "scope_published_at": "2026-10-20T07:20:34.679Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -42224,7 +42224,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:05Z",
+      "scope_captured_at": "2026-11-17T16:18:57Z",
       "scope_published_at": "2023-03-14T18:43:02.620Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -42302,7 +42302,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:03:47Z",
+      "scope_captured_at": "2026-11-17T16:14:40Z",
       "scope_published_at": "2025-03-07T21:27:49.087Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -42374,7 +42374,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:13Z",
+      "scope_captured_at": "2026-11-17T16:19:05Z",
       "scope_published_at": "2024-03-26T16:37:26.166Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -42427,7 +42427,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:17Z",
+      "scope_captured_at": "2026-11-17T16:19:10Z",
       "scope_published_at": "2024-10-09T12:00:00.403Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -42540,7 +42540,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:44Z",
+      "scope_captured_at": "2026-11-17T16:42:36Z",
       "scope_published_at": "2024-11-18T21:32:47.180Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -42611,7 +42611,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:27Z",
+      "scope_captured_at": "2026-11-17T16:19:19Z",
       "scope_published_at": "2026-09-15T22:01:15.348Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -42821,7 +42821,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:35Z",
+      "scope_captured_at": "2026-11-17T16:20:28Z",
       "scope_published_at": "2026-10-22T14:55:57.598Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -43137,7 +43137,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:55Z",
+      "scope_captured_at": "2026-11-17T16:20:48Z",
       "scope_published_at": "2026-04-16T13:56:47.785Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -43286,7 +43286,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:51Z",
+      "scope_captured_at": "2026-11-17T16:20:44Z",
       "scope_published_at": "2026-10-07T17:20:31.648Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -43712,7 +43712,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:08:10Z",
+      "scope_captured_at": "2026-11-17T16:19:02Z",
       "scope_published_at": "2023-12-22T20:33:01.834Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -43771,7 +43771,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:12Z",
+      "scope_captured_at": "2026-11-17T16:21:04Z",
       "scope_published_at": "2021-08-02T15:08:46.087Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -43824,7 +43824,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:20Z",
+      "scope_captured_at": "2026-11-17T16:22:11Z",
       "scope_published_at": "2024-12-12T17:19:11.551Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -43948,7 +43948,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:00Z",
+      "scope_captured_at": "2026-11-17T16:21:52Z",
       "scope_published_at": "2025-12-19T20:32:33.783Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -44248,7 +44248,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:24Z",
+      "scope_captured_at": "2026-11-17T16:22:16Z",
       "scope_published_at": "2023-10-24T23:10:33.787Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -44313,7 +44313,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:28Z",
+      "scope_captured_at": "2026-11-17T16:22:20Z",
       "scope_published_at": "2026-06-12T15:11:33.457Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -44666,7 +44666,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:00Z",
+      "scope_captured_at": "2026-11-17T16:42:52Z",
       "scope_published_at": "2025-02-24T18:22:56.958Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -45313,7 +45313,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:12Z",
+      "scope_captured_at": "2026-11-17T16:45:04Z",
       "scope_published_at": "2025-07-29T13:46:31.113Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -45402,7 +45402,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:28Z",
+      "scope_captured_at": "2026-11-17T16:21:20Z",
       "scope_published_at": "2026-04-28T12:00:00.093Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -45479,7 +45479,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:32Z",
+      "scope_captured_at": "2026-11-17T16:21:23Z",
       "scope_published_at": "2026-04-24T16:35:36.991Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -45533,7 +45533,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:03Z",
+      "scope_captured_at": "2026-11-17T16:21:56Z",
       "scope_published_at": "2026-04-13T23:06:43.414Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -45676,7 +45676,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:31Z",
+      "scope_captured_at": "2026-11-17T16:22:24Z",
       "scope_published_at": "2026-08-21T21:01:14.540Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -45934,7 +45934,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:15Z",
+      "scope_captured_at": "2026-11-17T16:22:08Z",
       "scope_published_at": "2025-10-14T16:15:16.453Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46053,7 +46053,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:03Z",
+      "scope_captured_at": "2026-11-17T16:22:55Z",
       "scope_published_at": "2025-03-04T11:03:44.530Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -46130,7 +46130,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:11:51Z",
+      "scope_captured_at": "2026-11-17T16:22:44Z",
       "scope_published_at": "2022-04-27T19:38:25.587Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46243,7 +46243,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:35Z",
+      "scope_captured_at": "2026-11-17T16:23:28Z",
       "scope_published_at": "2026-06-23T18:00:00.278Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46290,7 +46290,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:40Z",
+      "scope_captured_at": "2026-11-17T16:23:32Z",
       "scope_published_at": "2021-11-23T22:03:14.744Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46337,7 +46337,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:44Z",
+      "scope_captured_at": "2026-11-17T16:23:36Z",
       "scope_published_at": "2022-03-04T23:17:55.379Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46564,7 +46564,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:48Z",
+      "scope_captured_at": "2026-11-17T16:23:40Z",
       "scope_published_at": "2023-06-01T01:47:39.025Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46629,7 +46629,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:56Z",
+      "scope_captured_at": "2026-11-17T16:23:48Z",
       "scope_published_at": "2024-05-07T04:58:28.041Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46776,7 +46776,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:43Z",
+      "scope_captured_at": "2026-11-17T16:24:36Z",
       "scope_published_at": "2025-08-29T13:55:16.486Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46859,7 +46859,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:47Z",
+      "scope_captured_at": "2026-11-17T16:24:40Z",
       "scope_published_at": "2026-02-04T18:36:10.912Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -46984,7 +46984,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:04Z",
+      "scope_captured_at": "2026-11-17T16:23:56Z",
       "scope_published_at": "2026-11-09T21:32:31.075Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -47055,7 +47055,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:35Z",
+      "scope_captured_at": "2026-11-17T16:24:28Z",
       "scope_published_at": "2026-02-16T02:22:54.213Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -47144,7 +47144,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:55Z",
+      "scope_captured_at": "2026-11-17T16:24:48Z",
       "scope_published_at": "2025-07-24T14:34:40.574Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -47342,7 +47342,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:04Z",
+      "scope_captured_at": "2026-11-17T16:24:56Z",
       "scope_published_at": "2026-09-03T17:16:18.010Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -47389,7 +47389,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:48:30Z",
+      "scope_captured_at": "2026-11-17T16:58:59Z",
       "scope_published_at": "2026-06-30T18:59:38.197Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -47448,7 +47448,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:11Z",
+      "scope_captured_at": "2026-11-17T16:25:04Z",
       "scope_published_at": "2026-08-05T20:16:25.830Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -47628,7 +47628,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:31Z",
+      "scope_captured_at": "2026-11-17T16:25:23Z",
       "scope_published_at": "2025-12-23T19:53:29.799Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -47711,7 +47711,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:35Z",
+      "scope_captured_at": "2026-11-17T16:25:28Z",
       "scope_published_at": "2026-06-23T18:10:55.966Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -47795,7 +47795,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:40Z",
+      "scope_captured_at": "2026-11-17T16:25:31Z",
       "scope_published_at": "2020-02-13T00:33:03.013Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -47867,7 +47867,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:44Z",
+      "scope_captured_at": "2026-11-17T16:25:36Z",
       "scope_published_at": "2026-09-02T16:37:30.957Z",
       "scope_group_count": 9,
       "capture_error": null,
@@ -48065,7 +48065,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:52Z",
+      "scope_captured_at": "2026-11-17T16:25:44Z",
       "scope_published_at": "2026-10-29T16:37:03.176Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -48215,7 +48215,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:12Z",
+      "scope_captured_at": "2026-11-17T16:26:04Z",
       "scope_published_at": "2025-10-15T15:10:51.467Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -48269,7 +48269,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:32Z",
+      "scope_captured_at": "2026-11-17T16:26:24Z",
       "scope_published_at": "2026-05-08T13:51:53.897Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -48472,7 +48472,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:28Z",
+      "scope_captured_at": "2026-11-17T16:26:20Z",
       "scope_published_at": "2026-09-29T12:48:40.077Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -48531,7 +48531,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:00Z",
+      "scope_captured_at": "2026-11-17T16:26:52Z",
       "scope_published_at": "2026-08-25T03:31:30.180Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -48765,7 +48765,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:23Z",
+      "scope_captured_at": "2026-11-17T16:26:15Z",
       "scope_published_at": "2022-12-13T23:54:37.280Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -48812,7 +48812,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:11Z",
+      "scope_captured_at": "2026-11-17T16:27:04Z",
       "scope_published_at": "2025-11-04T16:02:56.597Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -48865,7 +48865,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:28Z",
+      "scope_captured_at": "2026-11-17T16:27:20Z",
       "scope_published_at": "2026-06-02T15:07:43.588Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -48936,7 +48936,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:55Z",
+      "scope_captured_at": "2026-11-17T16:27:48Z",
       "scope_published_at": "2026-02-11T01:53:35.094Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49001,7 +49001,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:16:59Z",
+      "scope_captured_at": "2026-11-17T16:27:52Z",
       "scope_published_at": "2026-02-05T18:00:00.524Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49066,7 +49066,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:03Z",
+      "scope_captured_at": "2026-11-17T16:27:56Z",
       "scope_published_at": "2026-07-21T18:00:02.787Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -49138,7 +49138,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:15Z",
+      "scope_captured_at": "2026-11-17T16:28:08Z",
       "scope_published_at": "2026-09-16T05:58:32.674Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -49215,7 +49215,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:31Z",
+      "scope_captured_at": "2026-11-17T16:28:24Z",
       "scope_published_at": "2025-04-29T12:56:25.078Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49394,7 +49394,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:51Z",
+      "scope_captured_at": "2026-11-17T16:28:44Z",
       "scope_published_at": "2026-06-16T20:13:01.125Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49441,7 +49441,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:59Z",
+      "scope_captured_at": "2026-11-17T16:28:52Z",
       "scope_published_at": "2025-07-01T15:48:48.768Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49506,7 +49506,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:03Z",
+      "scope_captured_at": "2026-11-17T16:28:56Z",
       "scope_published_at": "2020-04-08T19:15:03.690Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49583,7 +49583,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:32Z",
+      "scope_captured_at": "2026-11-17T16:29:24Z",
       "scope_published_at": "2026-11-02T17:53:22.124Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -49660,7 +49660,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:35Z",
+      "scope_captured_at": "2026-11-17T16:29:28Z",
       "scope_published_at": "2026-01-20T01:28:44.767Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -49714,7 +49714,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:43Z",
+      "scope_captured_at": "2026-11-17T16:29:36Z",
       "scope_published_at": "2026-11-04T21:14:59.266Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -49846,7 +49846,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:51Z",
+      "scope_captured_at": "2026-11-17T16:29:44Z",
       "scope_published_at": "2026-11-12T12:50:44.521Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -50043,7 +50043,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:24Z",
+      "scope_captured_at": "2026-11-17T16:30:15Z",
       "scope_published_at": "2025-06-12T17:47:29.262Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -50109,7 +50109,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:52Z",
+      "scope_captured_at": "2026-11-17T16:30:44Z",
       "scope_published_at": "2026-10-26T11:53:56.954Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -50162,7 +50162,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:56Z",
+      "scope_captured_at": "2026-11-17T16:30:48Z",
       "scope_published_at": "2026-05-26T21:11:15.525Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -50636,7 +50636,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:48Z",
+      "scope_captured_at": "2026-11-17T16:30:40Z",
       "scope_published_at": "2021-09-03T04:13:10.427Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -50689,7 +50689,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:11Z",
+      "scope_captured_at": "2026-11-17T16:31:04Z",
       "scope_published_at": "2024-03-20T17:45:39.008Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -50898,7 +50898,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:20Z",
+      "scope_captured_at": "2026-11-17T16:31:12Z",
       "scope_published_at": "2026-01-20T00:39:37.422Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -50969,7 +50969,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:56Z",
+      "scope_captured_at": "2026-11-17T16:31:48Z",
       "scope_published_at": "2025-03-18T07:20:03.887Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51106,7 +51106,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:51Z",
+      "scope_captured_at": "2026-11-17T16:31:44Z",
       "scope_published_at": "2026-05-01T20:24:52.269Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51165,7 +51165,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:11Z",
+      "scope_captured_at": "2026-11-17T16:32:04Z",
       "scope_published_at": "2025-04-09T18:39:20.659Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51218,7 +51218,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:36Z",
+      "scope_captured_at": "2026-11-17T16:32:28Z",
       "scope_published_at": "2026-09-11T14:25:57.929Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51295,7 +51295,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:39Z",
+      "scope_captured_at": "2026-11-17T16:32:32Z",
       "scope_published_at": "2024-04-11T21:15:05.249Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51342,7 +51342,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:47Z",
+      "scope_captured_at": "2026-11-17T16:32:40Z",
       "scope_published_at": "2021-07-28T16:25:07.605Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51389,7 +51389,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:59Z",
+      "scope_captured_at": "2026-11-17T16:32:52Z",
       "scope_published_at": "2024-04-30T12:43:34.757Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51454,7 +51454,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:04Z",
+      "scope_captured_at": "2026-11-17T16:32:56Z",
       "scope_published_at": "2023-08-17T01:56:17.115Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -51525,7 +51525,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:08Z",
+      "scope_captured_at": "2026-11-17T16:33:00Z",
       "scope_published_at": "2022-09-22T16:52:25.712Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -51572,7 +51572,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:24Z",
+      "scope_captured_at": "2026-11-17T16:32:16Z",
       "scope_published_at": "2026-07-16T13:26:22.714Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -51626,7 +51626,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:43Z",
+      "scope_captured_at": "2026-11-17T16:32:36Z",
       "scope_published_at": "2026-08-18T06:37:14.334Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -51938,7 +51938,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:56Z",
+      "scope_captured_at": "2026-11-17T16:32:48Z",
       "scope_published_at": "2024-10-14T15:20:48.299Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -52123,7 +52123,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:47Z",
+      "scope_captured_at": "2026-11-17T16:33:39Z",
       "scope_published_at": "2022-09-20T13:09:27.292Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52224,7 +52224,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:56Z",
+      "scope_captured_at": "2026-11-17T16:34:48Z",
       "scope_published_at": "2025-01-21T18:18:46.081Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -52278,7 +52278,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:27Z",
+      "scope_captured_at": "2026-11-17T16:33:20Z",
       "scope_published_at": "2025-08-14T18:00:00.095Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52349,7 +52349,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:22:39Z",
+      "scope_captured_at": "2026-11-17T16:33:32Z",
       "scope_published_at": "2025-12-11T23:14:20.627Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52432,7 +52432,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:32Z",
+      "scope_captured_at": "2026-11-17T16:34:24Z",
       "scope_published_at": "2023-02-28T01:49:57.651Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -52720,7 +52720,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:11Z",
+      "scope_captured_at": "2026-11-17T16:35:04Z",
       "scope_published_at": "2025-01-22T18:02:14.769Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52767,7 +52767,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:16Z",
+      "scope_captured_at": "2026-11-17T16:35:08Z",
       "scope_published_at": "2025-01-22T18:01:52.606Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52820,7 +52820,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:20Z",
+      "scope_captured_at": "2026-11-17T16:35:12Z",
       "scope_published_at": "2025-01-22T18:02:03.374Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -52867,7 +52867,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:07Z",
+      "scope_captured_at": "2026-11-17T16:35:00Z",
       "scope_published_at": "2026-02-10T18:20:13.681Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -52945,7 +52945,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:31Z",
+      "scope_captured_at": "2026-11-17T16:35:24Z",
       "scope_published_at": "2023-10-23T12:55:00.663Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53010,7 +53010,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:44Z",
+      "scope_captured_at": "2026-11-17T16:35:36Z",
       "scope_published_at": "2026-10-06T10:22:09.729Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -53220,7 +53220,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:52Z",
+      "scope_captured_at": "2026-11-17T16:35:44Z",
       "scope_published_at": "2024-05-28T19:11:11.525Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53267,7 +53267,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:16Z",
+      "scope_captured_at": "2026-11-17T16:36:08Z",
       "scope_published_at": "2025-05-07T16:57:55.234Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -53357,7 +53357,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:28Z",
+      "scope_captured_at": "2026-11-17T16:36:20Z",
       "scope_published_at": "2024-09-18T23:34:07.257Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53404,7 +53404,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:24Z",
+      "scope_captured_at": "2026-11-17T16:36:16Z",
       "scope_published_at": "2025-09-10T19:05:46.281Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53469,7 +53469,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:59Z",
+      "scope_captured_at": "2026-11-17T16:36:52Z",
       "scope_published_at": "2022-03-09T17:56:14.593Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53534,7 +53534,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:36Z",
+      "scope_captured_at": "2026-11-17T16:35:28Z",
       "scope_published_at": "2021-07-28T21:08:20.309Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53581,7 +53581,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:49Z",
+      "scope_captured_at": "2026-11-17T16:18:42Z",
       "scope_published_at": "2026-06-26T12:58:37.779Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53652,7 +53652,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:44Z",
+      "scope_captured_at": "2026-11-17T16:20:36Z",
       "scope_published_at": "2025-04-09T22:09:47.965Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53699,7 +53699,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:09:47Z",
+      "scope_captured_at": "2026-11-17T16:20:40Z",
       "scope_published_at": "2024-09-16T18:03:48.045Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53764,7 +53764,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:16Z",
+      "scope_captured_at": "2026-11-17T16:21:08Z",
       "scope_published_at": "2025-04-09T22:14:13.097Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53847,7 +53847,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:51Z",
+      "scope_captured_at": "2026-11-17T16:21:44Z",
       "scope_published_at": "2026-06-24T15:29:59.471Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -53990,7 +53990,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:31Z",
+      "scope_captured_at": "2026-11-17T16:24:24Z",
       "scope_published_at": "2025-04-09T22:00:48.234Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54037,7 +54037,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:18:27Z",
+      "scope_captured_at": "2026-11-17T16:29:20Z",
       "scope_published_at": "2025-04-09T22:11:36.005Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54090,7 +54090,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:20Z",
+      "scope_captured_at": "2026-11-17T16:30:12Z",
       "scope_published_at": "2026-05-12T15:28:22.601Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54275,7 +54275,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:20:40Z",
+      "scope_captured_at": "2026-11-17T16:31:32Z",
       "scope_published_at": "2025-07-31T14:19:30.318Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54340,7 +54340,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:23:04Z",
+      "scope_captured_at": "2026-11-17T16:33:56Z",
       "scope_published_at": "2025-04-09T21:58:43.390Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54411,7 +54411,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:36Z",
+      "scope_captured_at": "2026-11-17T16:39:28Z",
       "scope_published_at": "2025-05-13T13:25:49.354Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -54507,7 +54507,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:51Z",
+      "scope_captured_at": "2026-11-17T16:39:44Z",
       "scope_published_at": "2025-04-09T22:00:03.294Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54566,7 +54566,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:24Z",
+      "scope_captured_at": "2026-11-17T16:46:16Z",
       "scope_published_at": "2026-04-09T19:40:24.161Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54619,7 +54619,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:32Z",
+      "scope_captured_at": "2026-11-17T16:46:24Z",
       "scope_published_at": "2024-09-16T18:13:54.912Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54672,7 +54672,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:48Z",
+      "scope_captured_at": "2026-11-17T16:36:40Z",
       "scope_published_at": "2026-01-27T18:00:00.464Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54719,7 +54719,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:25:39Z",
+      "scope_captured_at": "2026-11-17T16:36:32Z",
       "scope_published_at": "2025-10-23T13:55:53.618Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54832,7 +54832,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:12Z",
+      "scope_captured_at": "2026-11-17T16:37:04Z",
       "scope_published_at": "2025-04-03T19:24:59.082Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -54892,7 +54892,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:36Z",
+      "scope_captured_at": "2026-11-17T16:38:28Z",
       "scope_published_at": "2022-09-06T17:49:00.588Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -54939,7 +54939,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:32Z",
+      "scope_captured_at": "2026-11-17T16:37:24Z",
       "scope_published_at": "2026-09-16T01:54:37.257Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -55172,7 +55172,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:24Z",
+      "scope_captured_at": "2026-11-17T16:38:16Z",
       "scope_published_at": "2025-12-12T04:46:35.538Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -55262,7 +55262,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:28Z",
+      "scope_captured_at": "2026-11-17T16:38:20Z",
       "scope_published_at": "2023-08-17T04:11:46.522Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -55393,7 +55393,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:32Z",
+      "scope_captured_at": "2026-11-17T16:38:24Z",
       "scope_published_at": "2024-08-14T04:13:15.596Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -55446,7 +55446,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:26:20Z",
+      "scope_captured_at": "2026-11-17T16:37:12Z",
       "scope_published_at": "2026-08-11T07:12:44.650Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -55512,7 +55512,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:40Z",
+      "scope_captured_at": "2026-11-17T16:38:32Z",
       "scope_published_at": "2025-10-09T20:54:55.161Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -55559,7 +55559,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:52Z",
+      "scope_captured_at": "2026-11-17T16:38:44Z",
       "scope_published_at": "2026-08-17T15:50:00.621Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -55606,7 +55606,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:27:56Z",
+      "scope_captured_at": "2026-11-17T16:38:48Z",
       "scope_published_at": "2025-03-11T13:48:00.530Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -55785,7 +55785,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:11Z",
+      "scope_captured_at": "2026-11-17T16:39:04Z",
       "scope_published_at": "2023-10-25T18:34:25.737Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -55994,7 +55994,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:15Z",
+      "scope_captured_at": "2026-11-17T16:39:08Z",
       "scope_published_at": "2026-11-05T21:16:53.134Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -56060,7 +56060,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:32Z",
+      "scope_captured_at": "2026-11-17T16:39:24Z",
       "scope_published_at": "2025-08-14T00:08:30.024Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -56126,14 +56126,14 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:44Z",
-      "scope_published_at": "2026-09-08T22:19:35.412Z",
+      "scope_captured_at": "2026-11-17T16:39:36Z",
+      "scope_published_at": "2026-11-17T05:11:05.758Z",
       "scope_group_count": 2,
       "capture_error": null,
       "scope_source_duplicate_rows": 0,
       "gap_review": null,
       "scope_source_urls": [
-        "https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/cdcb3cdf-846b-406c-a0ae-8f324b44b9da.json"
+        "https://bugcrowd.com/engagements/shuffle-vdp-pro/changelog/75306841-cccc-459c-9227-8555e893c76e.json"
       ],
       "in_scope": [
         {
@@ -56150,6 +56150,18 @@
         }
       ],
       "out_of_scope": [
+        {
+          "name": "https://shufflecommunity.com",
+          "asset_type": "website",
+          "location": "https://shufflecommunity.com",
+          "group": "Out of Scope"
+        },
+        {
+          "name": "https://shuffle.store",
+          "asset_type": "website",
+          "location": "https://shuffle.store",
+          "group": "Out of Scope"
+        },
         {
           "name": "Third Party Software",
           "asset_type": "other",
@@ -56186,7 +56198,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:12Z",
+      "scope_captured_at": "2026-11-17T16:40:04Z",
       "scope_published_at": "2024-08-09T08:33:36.485Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -56240,7 +56252,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:23Z",
+      "scope_captured_at": "2026-11-17T16:40:16Z",
       "scope_published_at": "2022-02-24T15:42:57.282Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56311,7 +56323,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:08Z",
+      "scope_captured_at": "2026-11-17T16:41:00Z",
       "scope_published_at": "2026-02-27T16:55:53.219Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -56395,7 +56407,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:39Z",
+      "scope_captured_at": "2026-11-17T16:40:32Z",
       "scope_published_at": "2026-09-02T05:14:07.179Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56448,7 +56460,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:29:59Z",
+      "scope_captured_at": "2026-11-17T16:40:52Z",
       "scope_published_at": "2025-08-20T15:05:51.968Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -56682,7 +56694,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:12Z",
+      "scope_captured_at": "2026-11-17T16:41:04Z",
       "scope_published_at": "2025-05-13T18:38:00.675Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56753,7 +56765,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:20Z",
+      "scope_captured_at": "2026-11-17T16:41:12Z",
       "scope_published_at": "2026-02-05T18:00:01.392Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56800,7 +56812,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:24Z",
+      "scope_captured_at": "2026-11-17T16:41:16Z",
       "scope_published_at": "2025-01-21T19:02:22.338Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56871,7 +56883,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:07:32Z",
+      "scope_captured_at": "2026-11-17T16:18:23Z",
       "scope_published_at": "2023-02-07T17:12:58.315Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -56918,7 +56930,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:19:32Z",
+      "scope_captured_at": "2026-11-17T16:30:24Z",
       "scope_published_at": "2026-09-01T15:06:54.093Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -57037,7 +57049,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:43Z",
+      "scope_captured_at": "2026-11-17T16:41:36Z",
       "scope_published_at": "2026-01-09T19:11:14.712Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -57175,7 +57187,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:48Z",
+      "scope_captured_at": "2026-11-17T16:41:40Z",
       "scope_published_at": "2026-02-25T23:54:19.124Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -57229,7 +57241,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:30:51Z",
+      "scope_captured_at": "2026-11-17T16:41:44Z",
       "scope_published_at": "2026-11-09T22:46:49.442Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -57325,7 +57337,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:08Z",
+      "scope_captured_at": "2026-11-17T16:42:00Z",
       "scope_published_at": "2023-08-07T05:42:15.008Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -57661,7 +57673,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:12Z",
+      "scope_captured_at": "2026-11-17T16:42:04Z",
       "scope_published_at": "2025-10-09T22:35:23.022Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -57720,7 +57732,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:16Z",
+      "scope_captured_at": "2026-11-17T16:42:08Z",
       "scope_published_at": "2025-10-09T22:29:55.412Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -58067,7 +58079,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:05:20Z",
+      "scope_captured_at": "2026-11-17T16:16:12Z",
       "scope_published_at": "2022-09-22T13:48:56.375Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58114,7 +58126,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:17:23Z",
+      "scope_captured_at": "2026-11-17T16:28:16Z",
       "scope_published_at": "2026-09-08T16:42:45.469Z",
       "scope_group_count": 6,
       "capture_error": null,
@@ -58432,7 +58444,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:21:00Z",
+      "scope_captured_at": "2026-11-17T16:31:52Z",
       "scope_published_at": "2026-11-11T11:39:43.361Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58623,7 +58635,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:31:52Z",
+      "scope_captured_at": "2026-11-17T16:42:44Z",
       "scope_published_at": "2026-09-15T18:25:30.652Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58682,7 +58694,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:08Z",
+      "scope_captured_at": "2026-11-17T16:43:00Z",
       "scope_published_at": "2025-12-29T02:49:02.885Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58729,7 +58741,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:24:24Z",
+      "scope_captured_at": "2026-11-17T16:35:16Z",
       "scope_published_at": "2026-08-31T13:55:47.489Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58776,7 +58788,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:55Z",
+      "scope_captured_at": "2026-11-17T16:21:47Z",
       "scope_published_at": "2023-03-23T22:57:13.247Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58823,7 +58835,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:10:07Z",
+      "scope_captured_at": "2026-11-17T16:21:00Z",
       "scope_published_at": "2022-11-16T01:21:03.596Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -58876,7 +58888,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:58Z",
+      "scope_captured_at": "2026-11-17T16:44:50Z",
       "scope_published_at": "2026-04-20T19:36:16.337Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -59546,7 +59558,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:13:51Z",
+      "scope_captured_at": "2026-11-17T16:24:44Z",
       "scope_published_at": "2023-01-27T17:39:30.552Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -59599,7 +59611,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:14:28Z",
+      "scope_captured_at": "2026-11-17T16:25:20Z",
       "scope_published_at": "2026-09-30T01:14:48.804Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60138,7 +60150,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:04Z",
+      "scope_captured_at": "2026-11-17T16:44:56Z",
       "scope_published_at": "2024-09-13T14:38:20.660Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60323,7 +60335,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:36:18Z",
+      "scope_captured_at": "2026-11-17T16:47:09Z",
       "scope_published_at": "2026-11-09T22:30:15.653Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60370,7 +60382,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:28:07Z",
+      "scope_captured_at": "2026-11-17T16:39:00Z",
       "scope_published_at": "2025-01-28T18:00:01.319Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60435,7 +60447,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:30Z",
+      "scope_captured_at": "2026-11-17T16:43:22Z",
       "scope_published_at": "2025-04-24T18:57:26.406Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60488,7 +60500,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:34Z",
+      "scope_captured_at": "2026-11-17T16:43:26Z",
       "scope_published_at": "2025-10-23T17:14:59.467Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60571,7 +60583,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:32:54Z",
+      "scope_captured_at": "2026-11-17T16:43:46Z",
       "scope_published_at": "2026-10-20T10:24:00.769Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60665,7 +60677,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:18Z",
+      "scope_captured_at": "2026-11-17T16:44:10Z",
       "scope_published_at": "2025-09-11T08:05:09.018Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -60718,7 +60730,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:22Z",
+      "scope_captured_at": "2026-11-17T16:44:14Z",
       "scope_published_at": "2026-11-16T16:14:22.672Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -61096,7 +61108,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:46Z",
+      "scope_captured_at": "2026-11-17T16:44:38Z",
       "scope_published_at": "2023-01-23T19:20:25.040Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61185,7 +61197,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:54Z",
+      "scope_captured_at": "2026-11-17T16:44:46Z",
       "scope_published_at": "2021-11-19T18:37:22.865Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61298,7 +61310,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:08Z",
+      "scope_captured_at": "2026-11-17T16:45:00Z",
       "scope_published_at": "2023-07-26T18:25:01.552Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61345,7 +61357,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:42Z",
+      "scope_captured_at": "2026-11-17T16:44:34Z",
       "scope_published_at": "2025-07-22T19:15:20.306Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61470,7 +61482,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:30Z",
+      "scope_captured_at": "2026-11-17T16:44:22Z",
       "scope_published_at": "2025-11-20T01:32:13.276Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61541,7 +61553,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:33:06Z",
+      "scope_captured_at": "2026-11-17T16:43:58Z",
       "scope_published_at": "2024-10-02T05:01:05.667Z",
       "scope_group_count": 3,
       "capture_error": null,
@@ -61672,7 +61684,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:12:16Z",
+      "scope_captured_at": "2026-11-17T16:23:08Z",
       "scope_published_at": "2023-01-20T18:06:37.421Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61773,7 +61785,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:32Z",
+      "scope_captured_at": "2026-11-17T16:45:24Z",
       "scope_published_at": "2026-05-13T13:21:35.595Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61844,7 +61856,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:36Z",
+      "scope_captured_at": "2026-11-17T16:45:28Z",
       "scope_published_at": "2024-09-19T05:57:39.052Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -61987,7 +61999,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:34:44Z",
+      "scope_captured_at": "2026-11-17T16:45:36Z",
       "scope_published_at": "2026-09-30T21:20:35.055Z",
       "scope_group_count": 4,
       "capture_error": null,
@@ -62118,7 +62130,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:12Z",
+      "scope_captured_at": "2026-11-17T16:46:04Z",
       "scope_published_at": "2026-08-14T19:40:18.304Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -62328,7 +62340,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:16Z",
+      "scope_captured_at": "2026-11-17T16:46:08Z",
       "scope_published_at": "2020-08-20T15:38:50.946Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -62394,7 +62406,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:20Z",
+      "scope_captured_at": "2026-11-17T16:46:12Z",
       "scope_published_at": "2026-08-05T01:11:33.019Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -62525,7 +62537,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:40Z",
+      "scope_captured_at": "2026-11-17T16:46:32Z",
       "scope_published_at": "2024-11-26T03:34:36.035Z",
       "scope_group_count": 2,
       "capture_error": null,
@@ -62644,7 +62656,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:35:56Z",
+      "scope_captured_at": "2026-11-17T16:46:48Z",
       "scope_published_at": "2025-10-20T17:15:39.642Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -62703,7 +62715,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:36:00Z",
+      "scope_captured_at": "2026-11-17T16:46:52Z",
       "scope_published_at": "2026-10-28T12:55:58.760Z",
       "scope_group_count": 1,
       "capture_error": null,
@@ -64178,7 +64190,7 @@
         "is_private": false
       },
       "scope_status": "captured",
-      "scope_captured_at": "2026-11-16T16:15:03Z",
+      "scope_captured_at": "2026-11-17T16:25:56Z",
       "scope_published_at": "2024-09-05T12:00:00.274Z",
       "scope_group_count": 1,
       "capture_error": null,

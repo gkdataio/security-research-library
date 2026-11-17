@@ -12,7 +12,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Capture time:** 2026-10-03T16:44:14Z.
 
-**Latest refresh failed (2026-11-16T16:36:08Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-17T16:47:00Z):** HTTP 404; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Vulnerability Disclosure.
 

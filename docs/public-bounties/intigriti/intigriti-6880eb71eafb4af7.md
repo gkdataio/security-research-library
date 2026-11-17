@@ -10,14 +10,21 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-16T16:47:17Z.
+**Capture time:** 2026-11-17T16:57:46Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/posti/postibugbounty/detail>)
 
-## In-scope entries (43)
+## In-scope entries (50)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| rebl-ai-webchat-postikuori\.azurewebsites\.net | URL | http://rebl-ai-webchat-postikuori\.azurewebsites\.net | Tier 2 | — |
+| api\.postikuori\.posti\.fi | URL | http://api\.postikuori\.posti\.fi | Tier 2 | — |
+| cms\.postikuori\.posti\.fi | URL | http://cms\.postikuori\.posti\.fi | Tier 2 | — |
+| admin\.postikuori\.posti\.fi | URL | http://admin\.postikuori\.posti\.fi | Tier 2 | — |
+| iamapp\.postikuori\.posti\.fi | URL | http://iamapp\.postikuori\.posti\.fi | Tier 2 | — |
+| iam\.postikuori\.posti\.fi | URL | http://iam\.postikuori\.posti\.fi | Tier 2 | — |
+| etavarasto\.posti\.fi | URL | http://etavarasto\.posti\.fi | Tier 2 | — |
 | postikuori\.posti\.fi | URL | http://postikuori\.posti\.fi | Tier 2 | — |
 | logout\.id\.posti\.fi | URL | http://logout\.id\.posti\.fi | Tier 2 | — |
 | mfa\.posti\.fi | URL | http://mfa\.posti\.fi | Tier 2 | — |
