@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-17T16:51:01Z.
+**Capture time:** 2026-11-18T16:25:30Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/marriott/assets/download_csv.csv>)
 
-## In-scope entries (59)
+## In-scope entries (58)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -22,7 +22,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | splunk-phantom-nlb\.marriott\.com | URL | — | — | Bounty eligible |
 | joinmarriottbonvoy\.com | URL | — | — | Bounty eligible |
 | sso\.marriott\.com | URL | — | — | Bounty eligible |
-| reservations\.all-inclusive\.marriott\.com | URL | — | — | Not bounty eligible |
 | marrtool\.com | URL | — | — | Bounty eligible |
 | \*uat\.marriott\.com | WILDCARD | — | — | Not bounty eligible |
 | mgs\.marriott\.com | URL | — | — | Bounty eligible |
@@ -78,7 +77,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | prod-mipaasiaasservices\.marriott\.com | URL | — | — | Bounty eligible |
 | www\.travel-brilliantly\.marriott\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (40)
+## Out-of-scope entries (41)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -88,6 +87,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | oasisprod\.marriott\.com | URL | — | — | Not bounty eligible |
 | ofhub\.marriott\.com | URL | — | — | Not bounty eligible |
 | clmagtest\.marriott\.com | URL | — | — | Not bounty eligible |
+| reservations\.all-inclusive\.marriott\.com | URL | — | — | Not bounty eligible |
 | mi\.bookmarriott\.com | URL | — | — | Not bounty eligible |
 | jobs\.marriott\.com | URL | — | — | Not bounty eligible |
 | vacations\.marriott\.com | URL | — | — | Not bounty eligible |

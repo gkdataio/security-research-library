@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-17T16:57:34Z.
+**Capture time:** 2026-11-18T16:32:45Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail>)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-17T16:56:25Z.
+**Capture time:** 2026-11-18T16:31:37Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/tweakers/detail>)
 

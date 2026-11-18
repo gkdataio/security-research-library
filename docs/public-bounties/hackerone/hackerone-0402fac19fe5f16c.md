@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-07T14:55:35Z.
 
-**Latest refresh failed (2026-11-17T16:51:55Z):** Validated CSV contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-18T16:26:30Z):** Validated CSV contains zero asset rows; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/phabricator/assets/download_csv.csv>)
 

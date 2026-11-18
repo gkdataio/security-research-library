@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-17T16:47:59Z.
+**Capture time:** 2026-11-18T16:22:28Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/bookingcom/assets/download_csv.csv>)
 
@@ -68,7 +68,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://play\.google\.com/store/apps/details?id=com\.booking\.hotelmanager&amp;hl=en | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://apps\.apple\.com/us/app/pulse-for-booking-com-partners/id992795726 | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 
-## Out-of-scope entries (26)
+## Out-of-scope entries (27)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -98,6 +98,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | workforce\.booking\.com | URL | — | — | Not bounty eligible |
 | workforce-dev\.voicedqs\.booking\.com | URL | — | — | Not bounty eligible |
 | surveys\.booking\.com | URL | — | — | Not bounty eligible |
+| 1996\.merchandise\.booking\.com | URL | — | — | Not bounty eligible |
 
 **Limits**
 
