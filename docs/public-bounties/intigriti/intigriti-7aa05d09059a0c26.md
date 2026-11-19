@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** verified policy record.
 
-**Capture time:** 2026-11-18T16:32:45Z.
+**Capture time:** 2026-11-19T16:36:55Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail>)
 
@@ -21,9 +21,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | new CDI-based architecture | Other | — | Tier 1 | — |
 | All Other NVIDIA Container Toolkit Assets | Other | — | Tier 2 | — |
 | libNVVM API | Other | — | Tier 1 | — |
-| Nsight Systems | Other | — | Tier 1 | — |
-| NVIDIA Nsight Developer Tools | Other | — | Tier 1 | — |
-| NVRTC library | Other | — | Tier 1 | — |
+| Nsight Systems | Other | — | No bounty | — |
+| NVIDIA Nsight Developer Tools | Other | — | No bounty | — |
+| NVRTC library | Other | — | No bounty | — |
 | CUDA Libraries | Other | — | Tier 2 | — |
 | NVCC | Other | — | Tier 2 | — |
 | nvJitLink APIs | Other | — | Tier 2 | — |

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:08:28Z.
+**Capture time:** 2026-11-19T16:13:29Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Computer Software.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/opensea/changelog/fcf4828b-8af5-4c9a-9516-6b41140343eb.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/opensea/changelog/bed98aab-c6b1-4df8-9368-a8fb042bac71.json>)
 
-## In-scope entries (11)
+## In-scope entries (12)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | http://wallet\.opensea\.io/ | website | http://wallet\.opensea\.io/ | Embedded Wallet Experience Powered by Privy | — |
 | io\.opensea - Android App | android | https://play\.google\.com/store/apps/details?id=io\.opensea&amp;hl=en\_US&amp;gl=US | io\.opensea - Android App | — |
 | io\.opensea - iOS App | ios | https://apps\.apple\.com/us/app/opensea-nft-marketplace/id1582861796 | io\.opensea - iOS App | — |
-| OpenSea MCP | other | https://mcp\.opensea\.io | OpenSea MCP | — |
+| OpenSea MCP | other | https://mcp\.opensea\.io/mcp | OpenSea MCP | — |
+| OpenSea MCP II | other | http://mcp\.opensea\.io/sse | OpenSea MCP | — |
 | https://github\.com/ProjectOpenSea/seaport\#deployments | other | https://github\.com/ProjectOpenSea/seaport\#deployments | Seaport Deployment | — |
 | https://etherscan\.io/address/0x0000a26b00c1F0DF003000390027140000fAa719 | other | https://etherscan\.io/address/0x0000a26b00c1F0DF003000390027140000fAa719 | Fee Collector Smart Contract | — |
 | https://etherscan\.io/address/0x00005EA00Ac477B1030CE78506496e8C2dE24bf5 | other | https://etherscan\.io/address/0x00005EA00Ac477B1030CE78506496e8C2dE24bf5 | Seadrop Smart Contract | — |

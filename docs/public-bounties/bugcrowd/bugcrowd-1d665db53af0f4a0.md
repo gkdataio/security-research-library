@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:04:16Z.
+**Capture time:** 2026-11-19T16:09:17Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Retail.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/maffashion/changelog/51694445-9568-4c21-8e57-ec7153185035.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/maffashion/changelog/a2509372-2ad6-4fd0-9096-2cab53435357.json>)
 
 ## In-scope entries (13)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:00:28Z.
+**Capture time:** 2026-11-19T16:05:29Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hpe-networking-product-public/changelog/044c5c65-a22e-46b1-9b5b-468bd951526b.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/hpe-networking-product-public/changelog/a0345513-83c1-47b3-b930-39c813a5beef.json>)
 
 ## In-scope entries (20)
 

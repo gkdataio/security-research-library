@@ -6,226 +6,226 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 | Program | Industry | Displayed reward | Scope status | In scope | Out of scope | Capture time |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| [AB InBev Vulnerability Disclosure Program](<vdp/bugcrowd-cf8bf42e36610b0e.md>) | Retail | — | Published scope captured | 359 | 0 | 2026-11-18T16:34:19Z |
-| [Absolute Software Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-cfe72f3e5fc2c3ad.md>) | — | — | Published scope captured | 11 | 0 | 2026-11-18T16:34:23Z |
-| [Adore Me Vulnerability Disclosure Engagement](<vdp/bugcrowd-47f964ad0bd8b299.md>) | Retail | — | Published scope captured | 3 | 0 | 2026-11-18T16:34:35Z |
-| [Allstate Vulnerability Disclosure Program](<vdp/bugcrowd-532b23e0d5d74ea2.md>) | Computer Software | — | Published scope captured | 29 | 2 | 2026-11-18T15:48:55Z |
+| [AB InBev Vulnerability Disclosure Program](<vdp/bugcrowd-cf8bf42e36610b0e.md>) | Retail | — | Published scope captured | 359 | 0 | 2026-11-19T16:38:29Z |
+| [Absolute Software Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-cfe72f3e5fc2c3ad.md>) | — | — | Published scope captured | 11 | 0 | 2026-11-19T16:38:32Z |
+| [Adore Me Vulnerability Disclosure Engagement](<vdp/bugcrowd-47f964ad0bd8b299.md>) | Retail | — | Published scope captured | 3 | 0 | 2026-11-19T16:38:44Z |
+| [Allstate Vulnerability Disclosure Program](<vdp/bugcrowd-532b23e0d5d74ea2.md>) | Computer Software | — | Published scope captured | 29 | 2 | 2026-11-19T15:53:57Z |
 | [American Battle Monuments Commission](<vdp/bugcrowd-8771185d1ea0d2e2.md>) | Government | — | Published scope captured | 1 | 0 | 2026-10-03T16:45:27Z |
-| [Anecdotes Vulnerability Disclosure Program](<vdp/bugcrowd-5d2702b7c730d88b.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T15:48:59Z |
-| [ANZ Responsible Disclosure Program](<vdp/bugcrowd-51c2f41345fbfb0f.md>) | Banking | — | Published scope captured | 9 | 3 | 2026-11-18T15:49:03Z |
-| [APRA Vulnerability Disclosure Engagement](<vdp/bugcrowd-68f6a6e49f86ee2f.md>) | Finance | — | Published scope captured | 2 | 0 | 2026-11-18T15:49:23Z |
+| [Anecdotes Vulnerability Disclosure Program](<vdp/bugcrowd-5d2702b7c730d88b.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T15:54:01Z |
+| [ANZ Responsible Disclosure Program](<vdp/bugcrowd-51c2f41345fbfb0f.md>) | Banking | — | Published scope captured | 9 | 3 | 2026-11-19T15:54:05Z |
+| [APRA Vulnerability Disclosure Engagement](<vdp/bugcrowd-68f6a6e49f86ee2f.md>) | Finance | — | Published scope captured | 2 | 0 | 2026-11-19T15:54:25Z |
 | [Arlo Kudos Rewards](<vdp/bugcrowd-1ee3d56124cf736f.md>) | — | — | No published asset rows found | 0 | 0 | 2026-11-07T14:58:31Z |
-| [Arrow Electronics VDP](<vdp/bugcrowd-652615b72f46a9d5.md>) | Electronics | — | Published scope captured | 16 | 0 | 2026-11-18T15:49:35Z |
-| [Assa Abloy America's](<vdp/bugcrowd-adcf7bf752d545e1.md>) | Corporate Services | — | Published scope captured | 37 | 0 | 2026-11-18T15:49:43Z |
-| [Bath &amp; Body Works Vulnerability Disclosure Program](<vdp/bugcrowd-a09d168334b66eff.md>) | Retail | — | Published scope captured | 5 | 0 | 2026-11-18T15:50:23Z |
-| [Bed Bath and Beyond, Inc\. \| Vulnerability Disclosure Program](<vdp/bugcrowd-5a391402e5454bc8.md>) | eCommerce | — | Published scope captured | 7 | 2 | 2026-11-18T16:09:24Z |
-| [Belong Vulnerability Disclosure Engagement](<vdp/bugcrowd-d3efba32a6353f0b.md>) | Technology | — | Published scope captured | 3 | 2 | 2026-11-18T15:50:27Z |
-| [Bendigo Bank Responsible Disclosure Program](<vdp/bugcrowd-75595334e20289eb.md>) | Banking | — | Published scope captured | 23 | 0 | 2026-11-18T15:50:31Z |
+| [Arrow Electronics VDP](<vdp/bugcrowd-652615b72f46a9d5.md>) | Electronics | — | Published scope captured | 16 | 0 | 2026-11-19T15:54:37Z |
+| [Assa Abloy America's](<vdp/bugcrowd-adcf7bf752d545e1.md>) | Corporate Services | — | Published scope captured | 37 | 0 | 2026-11-19T15:54:45Z |
+| [Bath &amp; Body Works Vulnerability Disclosure Program](<vdp/bugcrowd-a09d168334b66eff.md>) | Retail | — | Published scope captured | 5 | 0 | 2026-11-19T15:55:25Z |
+| [Bed Bath and Beyond, Inc\. \| Vulnerability Disclosure Program](<vdp/bugcrowd-5a391402e5454bc8.md>) | eCommerce | — | Published scope captured | 7 | 2 | 2026-11-19T16:14:25Z |
+| [Belong Vulnerability Disclosure Engagement](<vdp/bugcrowd-d3efba32a6353f0b.md>) | Technology | — | Published scope captured | 3 | 2 | 2026-11-19T15:55:29Z |
+| [Bendigo Bank Responsible Disclosure Program](<vdp/bugcrowd-75595334e20289eb.md>) | Banking | — | Published scope captured | 23 | 0 | 2026-11-19T15:55:33Z |
 | [BitDiscovery](<vdp/bugcrowd-c8208ebdb3ec36a3.md>) | Computer Software | — | Published scope captured | 3 | 0 | 2026-11-10T15:04:47Z |
-| [Blackbaud Vulnerability Disclosure Program](<vdp/bugcrowd-112810daad054747.md>) | Computer Software | — | Published scope captured | 13 | 2 | 2026-11-18T15:51:15Z |
-| [BNZ Responsible Disclosure Program](<vdp/bugcrowd-e3ce6906961d0763.md>) | Banking | — | Published scope captured | 3 | 0 | 2026-11-18T15:51:39Z |
-| [Bord Gais Energy VDP](<vdp/bugcrowd-a9f73492d6ef0af0.md>) | Oil &amp; Gas | — | Published scope captured | 3 | 0 | 2026-11-18T15:51:51Z |
-| [Bupa Australia Vulnerability Disclosure Engagement](<vdp/bugcrowd-1c6c7c25f57c6d83.md>) | Healthcare | — | Published scope captured | 12 | 0 | 2026-11-18T15:52:19Z |
-| [Bureau of Indian Affairs](<vdp/bugcrowd-0f1026e5dd2b27d6.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T15:50:35Z |
-| [Bureau of Land Management](<vdp/bugcrowd-31814cfd557274cc.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T15:51:19Z |
-| [Bureau of Reclamation](<vdp/bugcrowd-344191bfa8641401.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-18T16:19:10Z |
-| [Candid VDP Pro Engagement](<vdp/bugcrowd-070bd2d57ac040bf.md>) | Computer Software | — | Published scope captured | 3 | 0 | 2026-11-18T15:52:27Z |
-| [Cengage VDP](<vdp/bugcrowd-f369ba0553b514fd.md>) | Technology | — | Published scope captured | 28 | 5 | 2026-11-18T15:52:59Z |
-| [Centers for Medicare &amp; Medicaid Services \(CMS\) - Vulnerability Disclosure Program](<vdp/bugcrowd-af9e1984c38f5f93.md>) | Government | — | Published scope captured | 5 | 5 | 2026-11-18T15:54:11Z |
-| [Chemist Warehouse Vulnerability Disclosure Engagement](<vdp/bugcrowd-d8b5d00b8363e318.md>) | Retail | — | Published scope captured | 15 | 1 | 2026-11-18T15:53:13Z |
-| [CIBC VDP](<vdp/bugcrowd-e5ca717cf2893bc3.md>) | Banking | — | Published scope captured | 5 | 1 | 2026-11-18T15:53:25Z |
-| [Cisco AppDynamics Vulnerability Disclosure Program](<vdp/bugcrowd-5705f22cee6d598b.md>) | Computer Software | — | Published scope captured | 1 | 4 | 2026-11-18T15:49:07Z |
-| [Cisco Customer and Partner Experience Cloud](<vdp/bugcrowd-68affce778843956.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-18T15:53:33Z |
-| [Cisco Meraki Responsible Disclosure](<vdp/bugcrowd-a27b3354138d2f05.md>) | Computer Hardware | — | Published scope captured | 2 | 0 | 2026-11-18T15:53:37Z |
+| [Blackbaud Vulnerability Disclosure Program](<vdp/bugcrowd-112810daad054747.md>) | Computer Software | — | Published scope captured | 13 | 2 | 2026-11-19T15:56:17Z |
+| [BNZ Responsible Disclosure Program](<vdp/bugcrowd-e3ce6906961d0763.md>) | Banking | — | Published scope captured | 3 | 0 | 2026-11-19T15:56:41Z |
+| [Bord Gais Energy VDP](<vdp/bugcrowd-a9f73492d6ef0af0.md>) | Oil &amp; Gas | — | Published scope captured | 3 | 0 | 2026-11-19T15:56:53Z |
+| [Bupa Australia Vulnerability Disclosure Engagement](<vdp/bugcrowd-1c6c7c25f57c6d83.md>) | Healthcare | — | Published scope captured | 12 | 0 | 2026-11-19T15:57:21Z |
+| [Bureau of Indian Affairs](<vdp/bugcrowd-0f1026e5dd2b27d6.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T15:55:37Z |
+| [Bureau of Land Management](<vdp/bugcrowd-31814cfd557274cc.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T15:56:21Z |
+| [Bureau of Reclamation](<vdp/bugcrowd-344191bfa8641401.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-19T16:24:11Z |
+| [Candid VDP Pro Engagement](<vdp/bugcrowd-070bd2d57ac040bf.md>) | Computer Software | — | Published scope captured | 3 | 0 | 2026-11-19T15:57:29Z |
+| [Cengage VDP](<vdp/bugcrowd-f369ba0553b514fd.md>) | Technology | — | Published scope captured | 28 | 5 | 2026-11-19T15:58:01Z |
+| [Centers for Medicare &amp; Medicaid Services \(CMS\) - Vulnerability Disclosure Program](<vdp/bugcrowd-af9e1984c38f5f93.md>) | Government | — | Published scope captured | 5 | 5 | 2026-11-19T15:59:13Z |
+| [Chemist Warehouse Vulnerability Disclosure Engagement](<vdp/bugcrowd-d8b5d00b8363e318.md>) | Retail | — | Published scope captured | 15 | 1 | 2026-11-19T15:58:15Z |
+| [CIBC VDP](<vdp/bugcrowd-e5ca717cf2893bc3.md>) | Banking | — | Published scope captured | 5 | 1 | 2026-11-19T15:58:27Z |
+| [Cisco AppDynamics Vulnerability Disclosure Program](<vdp/bugcrowd-5705f22cee6d598b.md>) | Computer Software | — | Published scope captured | 1 | 4 | 2026-11-19T15:54:09Z |
+| [Cisco Customer and Partner Experience Cloud](<vdp/bugcrowd-68affce778843956.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-19T15:58:35Z |
+| [Cisco Meraki Responsible Disclosure](<vdp/bugcrowd-a27b3354138d2f05.md>) | Computer Hardware | — | Published scope captured | 2 | 0 | 2026-11-19T15:58:39Z |
 | [Cisco Responsible Disclosure](<vdp/bugcrowd-78d1fe8fa4d18fe9.md>) | Technology | — | Published scope captured | 1 | 2 | 2026-10-03T16:45:51Z |
-| [Cisco ThousandEyes Vulnerability Disclosure Program \(VDP\)](<vdp/bugcrowd-42e6a84359dc0556.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-18T16:17:04Z |
-| [Citi's Responsible Disclosure Program](<vdp/bugcrowd-4b30e6365f6ad86f.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-11-18T15:53:47Z |
+| [Cisco ThousandEyes Vulnerability Disclosure Program \(VDP\)](<vdp/bugcrowd-42e6a84359dc0556.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-19T16:22:05Z |
+| [Citi's Responsible Disclosure Program](<vdp/bugcrowd-4b30e6365f6ad86f.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-11-19T15:58:49Z |
 | [Coles Group Limited Vulnerability Disclosure Program](<vdp/bugcrowd-364dac5184d92780.md>) | Retail | — | Published scope captured | 12 | 8 | 2026-11-10T15:08:31Z |
-| [Connecteam Vulnerability Disclosure Engagement](<vdp/bugcrowd-2eb33abfb0688da6.md>) | Computer Software | — | Published scope captured | 14 | 0 | 2026-11-18T15:54:55Z |
+| [Connecteam Vulnerability Disclosure Engagement](<vdp/bugcrowd-2eb33abfb0688da6.md>) | Computer Software | — | Published scope captured | 14 | 0 | 2026-11-19T15:59:57Z |
 | [Consumer Financial Protection Bureau - Vulnerability Disclosure Program](<vdp/bugcrowd-fbf9bb6ecda2a16a.md>) | Government | — | Published scope captured | 25 | 0 | 2026-11-09T16:23:58Z |
-| [Consumer Product Safety Commission \(CPSC\) Vulnerability Disclosure Program](<vdp/bugcrowd-74b105b955894436.md>) | — | — | Published scope captured | 18 | 0 | 2026-11-18T15:55:15Z |
-| [CoStar Vulnerability Disclosure Engagement](<vdp/bugcrowd-801fed70d571ca5b.md>) | Real Estate | — | Published scope captured | 63 | 1 | 2026-11-18T15:55:11Z |
-| [Council of the Inspectors General on Integrity and Efficiency Vulnerability Disclosure Program](<vdp/bugcrowd-aa6fb08d87c09188.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-18T15:53:29Z |
-| [Court Services and Offender Supervision Agency: Vulnerability Disclosure Program](<vdp/bugcrowd-737abd31e9dd2406.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T15:55:31Z |
-| [Defense Nuclear Facilities Safety Board - Vulnerability Disclosure Program](<vdp/bugcrowd-5acd80cbc8c0bf75.md>) | Government | — | Published scope captured | 6 | 0 | 2026-11-18T15:56:39Z |
+| [Consumer Product Safety Commission \(CPSC\) Vulnerability Disclosure Program](<vdp/bugcrowd-74b105b955894436.md>) | — | — | Published scope captured | 18 | 0 | 2026-11-19T16:00:17Z |
+| [CoStar Vulnerability Disclosure Engagement](<vdp/bugcrowd-801fed70d571ca5b.md>) | Real Estate | — | Published scope captured | 63 | 1 | 2026-11-19T16:00:13Z |
+| [Council of the Inspectors General on Integrity and Efficiency Vulnerability Disclosure Program](<vdp/bugcrowd-aa6fb08d87c09188.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-19T15:58:31Z |
+| [Court Services and Offender Supervision Agency: Vulnerability Disclosure Program](<vdp/bugcrowd-737abd31e9dd2406.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:00:33Z |
+| [Defense Nuclear Facilities Safety Board - Vulnerability Disclosure Program](<vdp/bugcrowd-5acd80cbc8c0bf75.md>) | Government | — | Published scope captured | 6 | 0 | 2026-11-19T16:01:41Z |
 | [Demo-EU-admin-VDP-1](<vdp/bugcrowd-94a554da0000cd71.md>) | Biotech | — | Published scope captured | 1 | 0 | 2026-10-03T16:44:14Z |
-| [Department of Homeland Security: Vulnerability Disclosure Program](<vdp/bugcrowd-49ecb66ca67b8ec8.md>) | Government | — | Published scope captured | 42 | 1 | 2026-11-18T15:56:19Z |
-| [Department of Interior: Vulnerability Disclosure Program](<vdp/bugcrowd-3bb71a5ebc90a36f.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T15:56:43Z |
-| [Department of Labor](<vdp/bugcrowd-d00055c06e8765d7.md>) | Government | — | Published scope captured | 52 | 0 | 2026-11-18T15:56:47Z |
-| [Department of the Treasury: Vulnerability Disclosure Program](<vdp/bugcrowd-d780088bd6773da5.md>) | Government | — | Published scope captured | 101 | 0 | 2026-11-18T16:17:20Z |
-| [Department of Veterans Affairs](<vdp/bugcrowd-5bdbdbd2473c3954.md>) | Government | — | Published scope captured | 8 | 0 | 2026-11-18T16:19:32Z |
-| [Despegar Vulnerability Disclosure Engagement](<vdp/bugcrowd-7da01efb82909d82.md>) | Tourism | — | Published scope captured | 6 | 0 | 2026-11-18T15:55:47Z |
-| [Deutsche Bank Vulnerability Disclosure Program](<vdp/bugcrowd-0d8d3749e2e946e0.md>) | Banking | — | Published scope captured | 1 | 1 | 2026-11-18T15:55:51Z |
-| [DICK'S Sporting Goods](<vdp/bugcrowd-b347db983f855b21.md>) | Retail | — | Published scope captured | 17 | 0 | 2026-11-18T15:56:23Z |
-| [Domain Vulnerability Disclosure Program](<vdp/bugcrowd-23dff461bdefa0a5.md>) | Real Estate | — | Published scope captured | 15 | 13 | 2026-11-18T15:56:51Z |
+| [Department of Homeland Security: Vulnerability Disclosure Program](<vdp/bugcrowd-49ecb66ca67b8ec8.md>) | Government | — | Published scope captured | 42 | 1 | 2026-11-19T16:01:21Z |
+| [Department of Interior: Vulnerability Disclosure Program](<vdp/bugcrowd-3bb71a5ebc90a36f.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:01:45Z |
+| [Department of Labor](<vdp/bugcrowd-d00055c06e8765d7.md>) | Government | — | Published scope captured | 52 | 0 | 2026-11-19T16:01:49Z |
+| [Department of the Treasury: Vulnerability Disclosure Program](<vdp/bugcrowd-d780088bd6773da5.md>) | Government | — | Published scope captured | 101 | 0 | 2026-11-19T16:22:21Z |
+| [Department of Veterans Affairs](<vdp/bugcrowd-5bdbdbd2473c3954.md>) | Government | — | Published scope captured | 8 | 0 | 2026-11-19T16:24:33Z |
+| [Despegar Vulnerability Disclosure Engagement](<vdp/bugcrowd-7da01efb82909d82.md>) | Tourism | — | Published scope captured | 6 | 0 | 2026-11-19T16:00:49Z |
+| [Deutsche Bank Vulnerability Disclosure Program](<vdp/bugcrowd-0d8d3749e2e946e0.md>) | Banking | — | Published scope captured | 1 | 1 | 2026-11-19T16:00:53Z |
+| [DICK'S Sporting Goods](<vdp/bugcrowd-b347db983f855b21.md>) | Retail | — | Published scope captured | 17 | 0 | 2026-11-19T16:01:25Z |
+| [Domain Vulnerability Disclosure Program](<vdp/bugcrowd-23dff461bdefa0a5.md>) | Real Estate | — | Published scope captured | 15 | 13 | 2026-11-19T16:01:53Z |
 | [Dyson Demo VDP Engagement](<vdp/bugcrowd-2ba4f933d6de7ca7.md>) | Computer Hardware | — | No published asset rows found | 0 | 0 | 2026-11-07T14:58:47Z |
-| [EchoStar Vulnerability Disclosure Engagement](<vdp/bugcrowd-cbd850681ea26a44.md>) | Utilities | — | Published scope captured | 13 | 0 | 2026-11-18T15:56:35Z |
-| [eMAG Vulnerability Disclosure Engagement](<vdp/bugcrowd-dba9db18617fecf6.md>) | Retail | — | Published scope captured | 6 | 0 | 2026-11-18T15:57:23Z |
-| [Equal Employment Opportunity Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-da40f9c4f9014295.md>) | Government | — | Published scope captured | 12 | 0 | 2026-11-18T15:57:11Z |
-| [Eurofins Vulnerability Disclosure Engagement](<vdp/bugcrowd-24d0a65646a22b7a.md>) | Science | — | Published scope captured | 1 | 0 | 2026-11-18T15:57:55Z |
-| [EXIM - Vulnerability Disclosure Program](<vdp/bugcrowd-73281dad94769db3.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T15:57:59Z |
-| [Federal Communications Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-f59a708cb6c667ac.md>) | Government | — | Published scope captured | 31 | 0 | 2026-11-18T15:58:03Z |
-| [Federal Deposit Insurance Corporation - Vulnerability Disclosure Program](<vdp/bugcrowd-c899a759eba6f44f.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T15:58:07Z |
-| [Federal Housing Finance Agency Vulnerability Disclosure Program](<vdp/bugcrowd-8ff1cfe2a76d2397.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T15:58:15Z |
+| [EchoStar Vulnerability Disclosure Engagement](<vdp/bugcrowd-cbd850681ea26a44.md>) | Utilities | — | Published scope captured | 13 | 0 | 2026-11-19T16:01:37Z |
+| [eMAG Vulnerability Disclosure Engagement](<vdp/bugcrowd-dba9db18617fecf6.md>) | Retail | — | Published scope captured | 6 | 0 | 2026-11-19T16:02:25Z |
+| [Equal Employment Opportunity Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-da40f9c4f9014295.md>) | Government | — | Published scope captured | 12 | 0 | 2026-11-19T16:02:13Z |
+| [Eurofins Vulnerability Disclosure Engagement](<vdp/bugcrowd-24d0a65646a22b7a.md>) | Science | — | Published scope captured | 1 | 0 | 2026-11-19T16:02:57Z |
+| [EXIM - Vulnerability Disclosure Program](<vdp/bugcrowd-73281dad94769db3.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:03:01Z |
+| [Federal Communications Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-f59a708cb6c667ac.md>) | Government | — | Published scope captured | 31 | 0 | 2026-11-19T16:03:05Z |
+| [Federal Deposit Insurance Corporation - Vulnerability Disclosure Program](<vdp/bugcrowd-c899a759eba6f44f.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:03:09Z |
+| [Federal Housing Finance Agency Vulnerability Disclosure Program](<vdp/bugcrowd-8ff1cfe2a76d2397.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:03:17Z |
 | [FEDERAL MARITIME COMMISSION - VDP](<vdp/bugcrowd-24bb0555751df42e.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-10T15:35:26Z |
 | [Federal Mine Safety and Health Review Commission - Vulnerability Disclosure](<vdp/bugcrowd-076240c3d76bf0d1.md>) | Government | — | Published scope captured | 1 | 0 | 2026-10-03T16:45:33Z |
-| [Federal Retirement Thrift Investment Board : Vulnerability Disclosure Program](<vdp/bugcrowd-078823dc61730919.md>) | Government | — | Published scope captured | 7 | 0 | 2026-11-18T15:59:03Z |
-| [Federal Trade Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-138d0c3f74ef4e65.md>) | Government | — | Published scope captured | 14 | 0 | 2026-11-18T15:59:07Z |
-| [Figment Vulnerability Disclosure Program](<vdp/bugcrowd-4ec7fd30567b4542.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-18T15:58:23Z |
-| [Flybuys Australia Vulnerability Disclosure Program](<vdp/bugcrowd-4ae2715df2ffb0bd.md>) | Computer Software | — | Published scope captured | 8 | 0 | 2026-11-18T15:58:55Z |
-| [Gaming Corps Vulnerability Disclosure Engagement](<vdp/bugcrowd-3808970cd65d3efc.md>) | Games | — | Published scope captured | 1 | 0 | 2026-11-18T15:59:15Z |
+| [Federal Retirement Thrift Investment Board : Vulnerability Disclosure Program](<vdp/bugcrowd-078823dc61730919.md>) | Government | — | Published scope captured | 7 | 0 | 2026-11-19T16:04:05Z |
+| [Federal Trade Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-138d0c3f74ef4e65.md>) | Government | — | Published scope captured | 14 | 0 | 2026-11-19T16:04:09Z |
+| [Figment Vulnerability Disclosure Program](<vdp/bugcrowd-4ec7fd30567b4542.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-19T16:03:25Z |
+| [Flybuys Australia Vulnerability Disclosure Program](<vdp/bugcrowd-4ae2715df2ffb0bd.md>) | Computer Software | — | Published scope captured | 8 | 0 | 2026-11-19T16:03:57Z |
+| [Gaming Corps Vulnerability Disclosure Engagement](<vdp/bugcrowd-3808970cd65d3efc.md>) | Games | — | Published scope captured | 1 | 0 | 2026-11-19T16:04:17Z |
 | [Gap Inc\.](<vdp/bugcrowd-12f03056ae8dc130.md>) | Retail | — | Published scope captured | 11 | 7 | 2026-11-10T15:13:11Z |
-| [Gartner Responsible Vulnerability Disclosure Program](<vdp/bugcrowd-4ce578ca5c8bf21f.md>) | Technology | — | Published scope captured | 1 | 0 | 2026-11-18T15:59:23Z |
-| [Genius](<vdp/bugcrowd-42b31bfce7a25953.md>) | Entertainment | — | Published scope captured | 3 | 0 | 2026-11-18T16:34:11Z |
-| [Geotab: VDP](<vdp/bugcrowd-2caa89d050033398.md>) | Automotive | — | Published scope captured | 9 | 14 | 2026-11-18T15:59:31Z |
-| [Gusto VDP](<vdp/bugcrowd-958c1e8fac3d3616.md>) | Computer Software | — | Published scope captured | 7 | 0 | 2026-11-18T15:59:51Z |
-| [Hack Me\!](<vdp/bugcrowd-300dcb9af533e5a1.md>) | Construction | — | Published scope captured | 4 | 3 | 2026-11-18T15:59:55Z |
-| [HealthifyMe's Vulnerability Disclosure Program](<vdp/bugcrowd-9e1eee25140f90fc.md>) | — | — | Published scope captured | 4 | 1 | 2026-11-18T15:59:59Z |
-| [Hemi Labs VDP](<vdp/bugcrowd-1f1847755606b1cd.md>) | Technology | — | Published scope captured | 25 | 1 | 2026-11-18T16:00:03Z |
-| [Home Depot Vulnerability Disclosure Engagement](<vdp/bugcrowd-9189e65bdbd62586.md>) | Retail | — | Published scope captured | 3 | 15 | 2026-11-18T16:00:11Z |
-| [HSBC Vulnerability Disclosure Program](<vdp/bugcrowd-c37433af4243ba18.md>) | Banking | — | Published scope captured | 1 | 1 | 2026-11-18T16:00:32Z |
-| [IAG Loyalty \(Avios\) Vulnerability Disclosure Program](<vdp/bugcrowd-af80cc8bd809ceac.md>) | Transportation | — | Published scope captured | 27 | 0 | 2026-11-18T16:00:52Z |
-| [IAG Transform Vulnerability Disclosure Engagement](<vdp/bugcrowd-f1e469c7b87bc83f.md>) | Transportation | — | Published scope captured | 3 | 0 | 2026-11-18T16:00:48Z |
-| [Insignia Financial Vulnerability Disclosure Program](<vdp/bugcrowd-0c5cf30568bd0447.md>) | Finance | — | Published scope captured | 23 | 9 | 2026-11-18T16:01:20Z |
-| [Inter-American Foundation - Vulnerability Disclosure Program](<vdp/bugcrowd-4ceada98a80e3b3a.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:00:44Z |
-| [InterWell Health Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e7a19b68af96f6b.md>) | Healthcare | — | Published scope captured | 2 | 0 | 2026-11-18T16:01:32Z |
-| [JLL Vulnerability Disclosure Engagement](<vdp/bugcrowd-e1b6b9e178643936.md>) | Real Estate | — | Published scope captured | 5 | 0 | 2026-11-18T16:01:48Z |
-| [Keurig Dr Pepper Vulnerability Disclosure Engagement](<vdp/bugcrowd-a7f76b9001605f74.md>) | Food and Beverage | — | Published scope captured | 4 | 0 | 2026-11-18T16:02:16Z |
-| [Kick Vulnerability Disclosure Engagement](<vdp/bugcrowd-ca86c25123ba829e.md>) | Entertainment | — | Published scope captured | 4 | 0 | 2026-11-18T16:02:20Z |
-| [Kinaxis Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e6726836cb104fd.md>) | Computer Software | — | Published scope captured | 4 | 1 | 2026-11-18T16:02:24Z |
-| [Kmart Group \(Kmart, Target\) Vulnerability Disclosure Program](<vdp/bugcrowd-77c0d0ae60e884b2.md>) | Retail | — | Published scope captured | 6 | 0 | 2026-11-18T16:02:36Z |
-| [Labcorp's Vulnerability Disclosure Program](<vdp/bugcrowd-4ebefa556cae109d.md>) | — | — | Published scope captured | 3 | 0 | 2026-11-18T16:02:52Z |
+| [Gartner Responsible Vulnerability Disclosure Program](<vdp/bugcrowd-4ce578ca5c8bf21f.md>) | Technology | — | Published scope captured | 1 | 0 | 2026-11-19T16:04:25Z |
+| [Genius](<vdp/bugcrowd-42b31bfce7a25953.md>) | Entertainment | — | Published scope captured | 3 | 0 | 2026-11-19T16:38:20Z |
+| [Geotab: VDP](<vdp/bugcrowd-2caa89d050033398.md>) | Automotive | — | Published scope captured | 9 | 14 | 2026-11-19T16:04:33Z |
+| [Gusto VDP](<vdp/bugcrowd-958c1e8fac3d3616.md>) | Computer Software | — | Published scope captured | 7 | 0 | 2026-11-19T16:04:53Z |
+| [Hack Me\!](<vdp/bugcrowd-300dcb9af533e5a1.md>) | Construction | — | Published scope captured | 4 | 3 | 2026-11-19T16:04:57Z |
+| [HealthifyMe's Vulnerability Disclosure Program](<vdp/bugcrowd-9e1eee25140f90fc.md>) | — | — | Published scope captured | 4 | 1 | 2026-11-19T16:05:01Z |
+| [Hemi Labs VDP](<vdp/bugcrowd-1f1847755606b1cd.md>) | Technology | — | Published scope captured | 25 | 1 | 2026-11-19T16:05:05Z |
+| [Home Depot Vulnerability Disclosure Engagement](<vdp/bugcrowd-9189e65bdbd62586.md>) | Retail | — | Published scope captured | 3 | 15 | 2026-11-19T16:05:13Z |
+| [HSBC Vulnerability Disclosure Program](<vdp/bugcrowd-c37433af4243ba18.md>) | Banking | — | Published scope captured | 1 | 1 | 2026-11-19T16:05:33Z |
+| [IAG Loyalty \(Avios\) Vulnerability Disclosure Program](<vdp/bugcrowd-af80cc8bd809ceac.md>) | Transportation | — | Published scope captured | 27 | 0 | 2026-11-19T16:05:53Z |
+| [IAG Transform Vulnerability Disclosure Engagement](<vdp/bugcrowd-f1e469c7b87bc83f.md>) | Transportation | — | Published scope captured | 3 | 0 | 2026-11-19T16:05:49Z |
+| [Insignia Financial Vulnerability Disclosure Program](<vdp/bugcrowd-0c5cf30568bd0447.md>) | Finance | — | Published scope captured | 23 | 9 | 2026-11-19T16:06:21Z |
+| [Inter-American Foundation - Vulnerability Disclosure Program](<vdp/bugcrowd-4ceada98a80e3b3a.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:05:45Z |
+| [InterWell Health Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e7a19b68af96f6b.md>) | Healthcare | — | Published scope captured | 2 | 0 | 2026-11-19T16:06:33Z |
+| [JLL Vulnerability Disclosure Engagement](<vdp/bugcrowd-e1b6b9e178643936.md>) | Real Estate | — | Published scope captured | 5 | 0 | 2026-11-19T16:06:49Z |
+| [Keurig Dr Pepper Vulnerability Disclosure Engagement](<vdp/bugcrowd-a7f76b9001605f74.md>) | Food and Beverage | — | Published scope captured | 4 | 0 | 2026-11-19T16:07:17Z |
+| [Kick Vulnerability Disclosure Engagement](<vdp/bugcrowd-ca86c25123ba829e.md>) | Entertainment | — | Published scope captured | 4 | 0 | 2026-11-19T16:07:21Z |
+| [Kinaxis Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e6726836cb104fd.md>) | Computer Software | — | Published scope captured | 4 | 1 | 2026-11-19T16:07:25Z |
+| [Kmart Group \(Kmart, Target\) Vulnerability Disclosure Program](<vdp/bugcrowd-77c0d0ae60e884b2.md>) | Retail | — | Published scope captured | 6 | 0 | 2026-11-19T16:07:37Z |
+| [Labcorp's Vulnerability Disclosure Program](<vdp/bugcrowd-4ebefa556cae109d.md>) | — | — | Published scope captured | 3 | 0 | 2026-11-19T16:07:53Z |
 | [Latitude Financial Services Vulnerability Disclosure Program](<vdp/bugcrowd-7b00f3e4451f80fe.md>) | — | — | Published scope captured | 13 | 0 | 2026-11-10T15:16:55Z |
-| [Ledn Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-7629677d39ad433c.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-11-18T16:03:12Z |
-| [LegalZoom VDP](<vdp/bugcrowd-1094fe4db4d801c3.md>) | Technology | — | Published scope captured | 4 | 0 | 2026-11-18T16:03:20Z |
-| [Lenovo Responsible Disclosure](<vdp/bugcrowd-fe6d5bc8fef13cfb.md>) | — | — | Published scope captured | 6 | 0 | 2026-11-18T16:03:24Z |
-| [LTK Vulnerability Disclosure Engagement](<vdp/bugcrowd-626ab5ec1ed8c0b9.md>) | Computer Software | — | Published scope captured | 6 | 0 | 2026-11-18T16:03:52Z |
-| [Lucid Motors Vulnerability Disclosure Program](<vdp/bugcrowd-a5738a5f17e0c95b.md>) | Computer Software | — | Published scope captured | 1 | 1 | 2026-11-18T16:03:56Z |
-| [Lumen VDP](<vdp/bugcrowd-565e1101006fd714.md>) | Technology | — | Published scope captured | 8 | 7 | 2026-11-18T16:04:04Z |
-| [Macquarie Group Vulnerability Disclosure Program](<vdp/bugcrowd-eea0c59a12298ac4.md>) | Finance | — | Published scope captured | 26 | 0 | 2026-11-18T16:04:12Z |
-| [Marqeta Vulnerability Disclosure Engagement](<vdp/bugcrowd-abca5c5b07e8b5c1.md>) | Finance | — | Published scope captured | 3 | 1 | 2026-11-18T16:04:44Z |
-| [McDonald's Vulnerability Disclosure Engagement](<vdp/bugcrowd-0a3150264aab4dfa.md>) | Food and Beverage | — | Published scope captured | 2 | 0 | 2026-11-18T16:05:12Z |
-| [McKesson Vulnerability Disclosure Program \(VDP\) Engagement](<vdp/bugcrowd-fb954472edaadf7b.md>) | Healthcare | — | Published scope captured | 68 | 4 | 2026-11-18T16:05:16Z |
-| [Millennium Challenge Corporation: Vulnerability Disclosure Program](<vdp/bugcrowd-1c49604c4f41bc09.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-18T16:05:08Z |
-| [Minnesota Secretary of State VDP](<vdp/bugcrowd-aac137ad807c42ac.md>) | Government | — | Published scope captured | 28 | 0 | 2026-11-18T16:05:32Z |
-| [Monash University Vulnerability Disclosure Program](<vdp/bugcrowd-38c97d24fdf159da.md>) | Education | — | Published scope captured | 5 | 0 | 2026-11-18T16:05:40Z |
-| [NAB's Responsible Disclosure Program](<vdp/bugcrowd-7cf047ea05caec15.md>) | — | — | Published scope captured | 16 | 0 | 2026-11-18T16:06:16Z |
-| [National Aeronautics and Space Administration \(NASA\) - Vulnerability Disclosure Program](<vdp/bugcrowd-ec0cf9c95db08ebd.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-18T16:06:12Z |
-| [National Credit Union Administration \(NCUA\) Vulnerability Disclosure Program](<vdp/bugcrowd-f879c07b1a6c1d3c.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T16:06:32Z |
-| [National Football League \(NFL\) Vulnerability Disclosure Engagement](<vdp/bugcrowd-44dd6d0545553be0.md>) | Media | — | Published scope captured | 6 | 0 | 2026-11-18T16:06:56Z |
-| [National Indian Gaming Commission](<vdp/bugcrowd-7450daba086d6421.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:07:00Z |
-| [National Labor Relations Board: Vulnerability Disclosure Program](<vdp/bugcrowd-ab85491a5d994c11.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:07:08Z |
-| [National Park Service](<vdp/bugcrowd-6ef4a4b54cfa2e8a.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T16:07:20Z |
-| [National Science Foundation - Vulnerability Disclosure Program](<vdp/bugcrowd-6900e29439c8992b.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-18T16:07:24Z |
-| [National Transportation Safety Board: Vulnerability Disclosure Program](<vdp/bugcrowd-f1bb7ea38a43f7f1.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T16:07:28Z |
-| [New Balance VDP](<vdp/bugcrowd-43ac52ea8dc25024.md>) | Retail | — | Published scope captured | 1 | 1 | 2026-11-18T16:06:44Z |
-| [Nine Entertainment Vulnerability Disclosure Program](<vdp/bugcrowd-c5afa41cc99047fe.md>) | Entertainment | — | Published scope captured | 43 | 2 | 2026-11-18T16:07:04Z |
-| [Northwestern Mutual VDP](<vdp/bugcrowd-095eb4e6e0032ac4.md>) | Finance | — | Published scope captured | 2 | 13 | 2026-11-18T16:07:16Z |
+| [Ledn Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-7629677d39ad433c.md>) | Finance | — | Published scope captured | 1 | 0 | 2026-11-19T16:08:13Z |
+| [LegalZoom VDP](<vdp/bugcrowd-1094fe4db4d801c3.md>) | Technology | — | Published scope captured | 4 | 0 | 2026-11-19T16:08:21Z |
+| [Lenovo Responsible Disclosure](<vdp/bugcrowd-fe6d5bc8fef13cfb.md>) | — | — | Published scope captured | 6 | 0 | 2026-11-19T16:08:25Z |
+| [LTK Vulnerability Disclosure Engagement](<vdp/bugcrowd-626ab5ec1ed8c0b9.md>) | Computer Software | — | Published scope captured | 6 | 0 | 2026-11-19T16:08:53Z |
+| [Lucid Motors Vulnerability Disclosure Program](<vdp/bugcrowd-a5738a5f17e0c95b.md>) | Computer Software | — | Published scope captured | 1 | 1 | 2026-11-19T16:08:57Z |
+| [Lumen VDP](<vdp/bugcrowd-565e1101006fd714.md>) | Technology | — | Published scope captured | 8 | 7 | 2026-11-19T16:09:05Z |
+| [Macquarie Group Vulnerability Disclosure Program](<vdp/bugcrowd-eea0c59a12298ac4.md>) | Finance | — | Published scope captured | 26 | 0 | 2026-11-19T16:09:13Z |
+| [Marqeta Vulnerability Disclosure Engagement](<vdp/bugcrowd-abca5c5b07e8b5c1.md>) | Finance | — | Published scope captured | 3 | 1 | 2026-11-19T16:09:45Z |
+| [McDonald's Vulnerability Disclosure Engagement](<vdp/bugcrowd-0a3150264aab4dfa.md>) | Food and Beverage | — | Published scope captured | 2 | 0 | 2026-11-19T16:10:13Z |
+| [McKesson Vulnerability Disclosure Program \(VDP\) Engagement](<vdp/bugcrowd-fb954472edaadf7b.md>) | Healthcare | — | Published scope captured | 68 | 4 | 2026-11-19T16:10:17Z |
+| [Millennium Challenge Corporation: Vulnerability Disclosure Program](<vdp/bugcrowd-1c49604c4f41bc09.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-19T16:10:09Z |
+| [Minnesota Secretary of State VDP](<vdp/bugcrowd-aac137ad807c42ac.md>) | Government | — | Published scope captured | 28 | 0 | 2026-11-19T16:10:33Z |
+| [Monash University Vulnerability Disclosure Program](<vdp/bugcrowd-38c97d24fdf159da.md>) | Education | — | Published scope captured | 5 | 0 | 2026-11-19T16:10:41Z |
+| [NAB's Responsible Disclosure Program](<vdp/bugcrowd-7cf047ea05caec15.md>) | — | — | Published scope captured | 16 | 0 | 2026-11-19T16:11:17Z |
+| [National Aeronautics and Space Administration \(NASA\) - Vulnerability Disclosure Program](<vdp/bugcrowd-ec0cf9c95db08ebd.md>) | Government | — | Published scope captured | 3 | 0 | 2026-11-19T16:11:13Z |
+| [National Credit Union Administration \(NCUA\) Vulnerability Disclosure Program](<vdp/bugcrowd-f879c07b1a6c1d3c.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:11:33Z |
+| [National Football League \(NFL\) Vulnerability Disclosure Engagement](<vdp/bugcrowd-44dd6d0545553be0.md>) | Media | — | Published scope captured | 6 | 0 | 2026-11-19T16:11:57Z |
+| [National Indian Gaming Commission](<vdp/bugcrowd-7450daba086d6421.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:12:01Z |
+| [National Labor Relations Board: Vulnerability Disclosure Program](<vdp/bugcrowd-ab85491a5d994c11.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:12:09Z |
+| [National Park Service](<vdp/bugcrowd-6ef4a4b54cfa2e8a.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:12:21Z |
+| [National Science Foundation - Vulnerability Disclosure Program](<vdp/bugcrowd-6900e29439c8992b.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-19T16:12:25Z |
+| [National Transportation Safety Board: Vulnerability Disclosure Program](<vdp/bugcrowd-f1bb7ea38a43f7f1.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T16:12:29Z |
+| [New Balance VDP](<vdp/bugcrowd-43ac52ea8dc25024.md>) | Retail | — | Published scope captured | 1 | 1 | 2026-11-19T16:11:45Z |
+| [Nine Entertainment Vulnerability Disclosure Program](<vdp/bugcrowd-c5afa41cc99047fe.md>) | Entertainment | — | Published scope captured | 43 | 2 | 2026-11-19T16:12:05Z |
+| [Northwestern Mutual VDP](<vdp/bugcrowd-095eb4e6e0032ac4.md>) | Finance | — | Published scope captured | 2 | 13 | 2026-11-19T16:12:17Z |
 | [Occupational Safety and Health Review Commission: Vulnerability Disclosure Program](<vdp/bugcrowd-e3b0535225f7bf84.md>) | Government | — | Published scope captured | 0 | 2 | 2026-10-03T16:45:36Z |
-| [Office of Natural Resources Revenue](<vdp/bugcrowd-b28aaf562ba986af.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-18T16:08:08Z |
+| [Office of Natural Resources Revenue](<vdp/bugcrowd-b28aaf562ba986af.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-19T16:13:09Z |
 | [Office of Personnel Management - Vulnerability Disclosure Program](<vdp/bugcrowd-ff6465c6cc35cf62.md>) | Government | — | No published asset rows found | 0 | 0 | 2026-11-07T15:03:02Z |
-| [Office of Surface Mining Reclamation and Enforcement: Vulnerability Disclosure Program](<vdp/bugcrowd-4314ea528b25d94b.md>) | Government | — | Published scope captured | 1 | 1 | 2026-11-18T16:09:16Z |
-| [Ohio Attorney General's Office Vulnerability Disclosure Engagement](<vdp/bugcrowd-421f456b68dfcbd2.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-18T16:07:48Z |
-| [OLX Group VDP](<vdp/bugcrowd-d69facd33e7ecd4a.md>) | eCommerce | — | Published scope captured | 7 | 0 | 2026-11-18T16:08:00Z |
-| [Optus Vulnerability Disclosure Program](<vdp/bugcrowd-ae4b86c37438d87f.md>) | Technology | — | Published scope captured | 2 | 39 | 2026-11-18T16:08:52Z |
-| [OWASP CSRFGuard](<vdp/bugcrowd-719ce60d2a8589fa.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T16:09:32Z |
-| [OWASP Java Encoder](<vdp/bugcrowd-6aedc45de07eaf89.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-18T16:09:36Z |
-| [OWASP Java HTML Sanitizer](<vdp/bugcrowd-691f938f1f29047d.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T16:09:40Z |
-| [OWASP Vulnerability Disclosure Program Engagement](<vdp/bugcrowd-532a73adc8d04862.md>) | Computer Software | — | Published scope captured | 3 | 3 | 2026-11-18T16:09:28Z |
-| [Pension Benefit Guaranty Corporation VDP](<vdp/bugcrowd-ccf046c5dda3ecab.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T16:09:52Z |
-| [Petpooja Vulnerability Disclosure Program](<vdp/bugcrowd-28627fc78f00152f.md>) | Computer Software | — | Published scope captured | 20 | 8 | 2026-11-18T16:10:04Z |
-| [Phyn - Vulnerability Disclosure Program](<vdp/bugcrowd-e661eafe0b59ae6e.md>) | Technology | — | Published scope captured | 1 | 0 | 2026-11-18T16:10:12Z |
-| [Plusgrade Vulnerability Disclosure Program](<vdp/bugcrowd-bbae4f26f5090fc6.md>) | Computer Software | — | Published scope captured | 6 | 2 | 2026-11-18T16:10:36Z |
-| [Postal Regulatory Commission Vulnerability Disclosure Program](<vdp/bugcrowd-8c67412f6c0dc54b.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T16:10:48Z |
-| [PostHog Vulnerability Disclosure Engagement](<vdp/bugcrowd-f39dea04a403f50d.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-18T16:10:44Z |
-| [Pretrial Services Agency for the District of Columbia](<vdp/bugcrowd-7653bfc5ccf84843.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T16:11:20Z |
-| [Privacy and Civil Liberties Oversight Board: Vulnerability Disclosure Program](<vdp/bugcrowd-860f8c609806624d.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:09:56Z |
-| [Progress Software - Chef](<vdp/bugcrowd-6dcae5c84de0ef71.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-18T15:53:09Z |
-| [Progress Software - Corporate Websites](<vdp/bugcrowd-49d78a9b4cfd8f29.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T15:55:03Z |
-| [Progress Software - Corticon](<vdp/bugcrowd-a8ef9474b21e5951.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-18T15:55:07Z |
-| [Progress Software - DataDirect](<vdp/bugcrowd-5be4b58034ae1886.md>) | Computer Software | — | Published scope captured | 7 | 0 | 2026-11-18T15:55:35Z |
-| [Progress Software - DevTools](<vdp/bugcrowd-46525098f8c35021.md>) | Computer Software | — | Published scope captured | 17 | 0 | 2026-11-18T15:56:11Z |
-| [Progress Software - Flowmon](<vdp/bugcrowd-6efb733bde8b066b.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T15:58:51Z |
-| [Progress Software - LoadMaster](<vdp/bugcrowd-2e557751bbb760b0.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-18T16:03:48Z |
-| [Progress Software - MarkLogic VDP](<vdp/bugcrowd-b23f5229bb465e41.md>) | Computer Software | — | Published scope captured | 24 | 0 | 2026-11-18T16:04:40Z |
-| [Progress Software - MOVEit - VDP](<vdp/bugcrowd-caba97e9ef67ae3a.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-18T16:06:00Z |
-| [Progress Software - OpenEdge](<vdp/bugcrowd-528154630603f573.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-18T16:08:24Z |
-| [Progress Software - ShareFile](<vdp/bugcrowd-9662bdb6f75d8cdb.md>) | Computer Software | — | Published scope captured | 4 | 5 | 2026-11-18T16:13:56Z |
-| [Progress Software - Sitefinity](<vdp/bugcrowd-ce0e41603f0fdace.md>) | Computer Software | — | Published scope captured | 3 | 0 | 2026-11-18T16:14:12Z |
-| [Progress Software - WhatsUp Gold](<vdp/bugcrowd-51ede7c87dd139b2.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-18T16:20:44Z |
-| [Progress Software - WS\_FTP VDP](<vdp/bugcrowd-03ad855d497c688d.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-18T16:20:52Z |
-| [Progress Software RAG](<vdp/bugcrowd-85f99677611c65d8.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T16:11:08Z |
-| [Progress Software – Podio](<vdp/bugcrowd-7f8d68a8b22773ea.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-18T16:11:00Z |
+| [Office of Surface Mining Reclamation and Enforcement: Vulnerability Disclosure Program](<vdp/bugcrowd-4314ea528b25d94b.md>) | Government | — | Published scope captured | 1 | 1 | 2026-11-19T16:14:17Z |
+| [Ohio Attorney General's Office Vulnerability Disclosure Engagement](<vdp/bugcrowd-421f456b68dfcbd2.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-19T16:12:49Z |
+| [OLX Group VDP](<vdp/bugcrowd-d69facd33e7ecd4a.md>) | eCommerce | — | Published scope captured | 7 | 0 | 2026-11-19T16:13:01Z |
+| [Optus Vulnerability Disclosure Program](<vdp/bugcrowd-ae4b86c37438d87f.md>) | Technology | — | Published scope captured | 2 | 39 | 2026-11-19T16:13:53Z |
+| [OWASP CSRFGuard](<vdp/bugcrowd-719ce60d2a8589fa.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T16:14:33Z |
+| [OWASP Java Encoder](<vdp/bugcrowd-6aedc45de07eaf89.md>) | — | — | Published scope captured | 2 | 0 | 2026-11-19T16:14:37Z |
+| [OWASP Java HTML Sanitizer](<vdp/bugcrowd-691f938f1f29047d.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T16:14:41Z |
+| [OWASP Vulnerability Disclosure Program Engagement](<vdp/bugcrowd-532a73adc8d04862.md>) | Computer Software | — | Published scope captured | 3 | 3 | 2026-11-19T16:14:29Z |
+| [Pension Benefit Guaranty Corporation VDP](<vdp/bugcrowd-ccf046c5dda3ecab.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:14:53Z |
+| [Petpooja Vulnerability Disclosure Program](<vdp/bugcrowd-28627fc78f00152f.md>) | Computer Software | — | Published scope captured | 20 | 8 | 2026-11-19T16:15:05Z |
+| [Phyn - Vulnerability Disclosure Program](<vdp/bugcrowd-e661eafe0b59ae6e.md>) | Technology | — | Published scope captured | 1 | 0 | 2026-11-19T16:15:13Z |
+| [Plusgrade Vulnerability Disclosure Program](<vdp/bugcrowd-bbae4f26f5090fc6.md>) | Computer Software | — | Published scope captured | 6 | 2 | 2026-11-19T16:15:37Z |
+| [Postal Regulatory Commission Vulnerability Disclosure Program](<vdp/bugcrowd-8c67412f6c0dc54b.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T16:15:49Z |
+| [PostHog Vulnerability Disclosure Engagement](<vdp/bugcrowd-f39dea04a403f50d.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-19T16:15:45Z |
+| [Pretrial Services Agency for the District of Columbia](<vdp/bugcrowd-7653bfc5ccf84843.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:16:21Z |
+| [Privacy and Civil Liberties Oversight Board: Vulnerability Disclosure Program](<vdp/bugcrowd-860f8c609806624d.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:14:57Z |
+| [Progress Software - Chef](<vdp/bugcrowd-6dcae5c84de0ef71.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-19T15:58:11Z |
+| [Progress Software - Corporate Websites](<vdp/bugcrowd-49d78a9b4cfd8f29.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T16:00:05Z |
+| [Progress Software - Corticon](<vdp/bugcrowd-a8ef9474b21e5951.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-19T16:00:09Z |
+| [Progress Software - DataDirect](<vdp/bugcrowd-5be4b58034ae1886.md>) | Computer Software | — | Published scope captured | 7 | 0 | 2026-11-19T16:00:37Z |
+| [Progress Software - DevTools](<vdp/bugcrowd-46525098f8c35021.md>) | Computer Software | — | Published scope captured | 17 | 0 | 2026-11-19T16:01:13Z |
+| [Progress Software - Flowmon](<vdp/bugcrowd-6efb733bde8b066b.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T16:03:53Z |
+| [Progress Software - LoadMaster](<vdp/bugcrowd-2e557751bbb760b0.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-19T16:08:49Z |
+| [Progress Software - MarkLogic VDP](<vdp/bugcrowd-b23f5229bb465e41.md>) | Computer Software | — | Published scope captured | 24 | 0 | 2026-11-19T16:09:41Z |
+| [Progress Software - MOVEit - VDP](<vdp/bugcrowd-caba97e9ef67ae3a.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-19T16:11:01Z |
+| [Progress Software - OpenEdge](<vdp/bugcrowd-528154630603f573.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-19T16:13:25Z |
+| [Progress Software - ShareFile](<vdp/bugcrowd-9662bdb6f75d8cdb.md>) | Computer Software | — | Published scope captured | 4 | 5 | 2026-11-19T16:18:57Z |
+| [Progress Software - Sitefinity](<vdp/bugcrowd-ce0e41603f0fdace.md>) | Computer Software | — | Published scope captured | 3 | 0 | 2026-11-19T16:19:13Z |
+| [Progress Software - WhatsUp Gold](<vdp/bugcrowd-51ede7c87dd139b2.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-19T16:25:45Z |
+| [Progress Software - WS\_FTP VDP](<vdp/bugcrowd-03ad855d497c688d.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-19T16:25:53Z |
+| [Progress Software RAG](<vdp/bugcrowd-85f99677611c65d8.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T16:16:09Z |
+| [Progress Software – Podio](<vdp/bugcrowd-7f8d68a8b22773ea.md>) | Computer Software | — | Published scope captured | 4 | 0 | 2026-11-19T16:16:01Z |
 | [Progress Software – Progress Data Cloud](<vdp/bugcrowd-ee194a4857e12397.md>) | Computer Software | — | No published asset rows found | 0 | 0 | 2026-11-07T15:02:44Z |
-| [Quitelike Vulnerability Disclosure Engagement](<vdp/bugcrowd-b713d12b7c22bd5a.md>) | Retail | — | Published scope captured | 1 | 2 | 2026-11-18T16:11:32Z |
-| [Railroad Retirement Board - Vulnerability Disclosure Program](<vdp/bugcrowd-6b7585814fcbbbef.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:12:56Z |
-| [Rakuten Group, Inc\. Vulnerability Disclosure Program](<vdp/bugcrowd-89f7ed96409117ab.md>) | eCommerce | — | Published scope captured | 21 | 3 | 2026-11-18T16:11:52Z |
+| [Quitelike Vulnerability Disclosure Engagement](<vdp/bugcrowd-b713d12b7c22bd5a.md>) | Retail | — | Published scope captured | 1 | 2 | 2026-11-19T16:16:33Z |
+| [Railroad Retirement Board - Vulnerability Disclosure Program](<vdp/bugcrowd-6b7585814fcbbbef.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:17:57Z |
+| [Rakuten Group, Inc\. Vulnerability Disclosure Program](<vdp/bugcrowd-89f7ed96409117ab.md>) | eCommerce | — | Published scope captured | 21 | 3 | 2026-11-19T16:16:53Z |
 | [Retool Vulnerability Disclosure Program](<vdp/bugcrowd-06abb373b71e61d1.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-10T15:26:27Z |
-| [RMIT University Vulnerability Disclosure Program](<vdp/bugcrowd-069a1848ccad9ded.md>) | Education | — | Published scope captured | 7 | 1 | 2026-11-18T16:12:44Z |
-| [ROKT Vulnerability Disclosure](<vdp/bugcrowd-7cbddce73dc49402.md>) | Computer Software | — | Published scope captured | 15 | 0 | 2026-11-18T16:12:48Z |
-| [Roobet Vulnerability Disclosure Program](<vdp/bugcrowd-937b97c4c90ad946.md>) | Entertainment | — | Published scope captured | 2 | 0 | 2026-11-18T16:12:52Z |
-| [Royal Automotive Club of Victoria \(RACV\) Vulnerability Disclosure Engagement](<vdp/bugcrowd-0715b82e337d0133.md>) | Automotive | — | Published scope captured | 3 | 1 | 2026-11-18T16:11:40Z |
-| [RSAC Vulnerability Disclosure Engagement](<vdp/bugcrowd-76f8a9a7d7e1fa56.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T16:13:00Z |
-| [Samsonite Vulnerability Disclosure Engagement](<vdp/bugcrowd-43691e3a06eb087c.md>) | Retail | — | Published scope captured | 1 | 0 | 2026-11-18T16:13:12Z |
-| [Santos Vulnerability Disclosure Program](<vdp/bugcrowd-e19ce1fc3800a807.md>) | Oil &amp; Gas | — | Published scope captured | 23 | 0 | 2026-11-18T16:13:16Z |
-| [Seagate VDP](<vdp/bugcrowd-96ff452445575134.md>) | — | — | Published scope captured | 28 | 0 | 2026-11-18T16:13:32Z |
-| [SeatGeek Vulnerability Disclosure Engagement](<vdp/bugcrowd-40bbb4cb12d3b284.md>) | Computer Software | — | Published scope captured | 3 | 1 | 2026-11-18T16:13:36Z |
-| [Service NSW Vulnerability Disclosure Program](<vdp/bugcrowd-85439885c06dc115.md>) | Government | — | Published scope captured | 3 | 1 | 2026-11-18T16:13:52Z |
-| [Shuffle Vulnerability Disclosure Program](<vdp/bugcrowd-fa9b0872ef612eaf.md>) | Computer Software | — | Published scope captured | 2 | 3 | 2026-11-18T16:14:04Z |
-| [Sky Disclosure Program](<vdp/bugcrowd-935bead7d64aba0b.md>) | Entertainment | — | Published scope captured | 1 | 1 | 2026-11-18T16:14:32Z |
-| [SmartThings Vulnerability Disclosure](<vdp/bugcrowd-48a6e3066aa434d6.md>) | — | — | Published scope captured | 5 | 0 | 2026-11-18T16:14:44Z |
-| [Social Security Administration: Vulnerability Disclosure Program](<vdp/bugcrowd-13e674ef647905d8.md>) | Government | — | Published scope captured | 5 | 2 | 2026-11-18T16:15:28Z |
-| [Sonic Healthcare Vulnerability Disclosure Engagement](<vdp/bugcrowd-04b3e8f8a195f5f3.md>) | Healthcare | — | Published scope captured | 2 | 0 | 2026-11-18T16:15:00Z |
-| [Sprout Social](<vdp/bugcrowd-78a14f552eabc658.md>) | Computer Software | — | Published scope captured | 26 | 6 | 2026-11-18T16:15:20Z |
-| [Stability AI US Services Vulnerability Disclosure Engagement](<vdp/bugcrowd-c1cc0dad55d4175e.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-18T16:15:32Z |
-| [Stake Vulnerability Disclosure Engagement](<vdp/bugcrowd-ad34d7cb1aed40db.md>) | Entertainment | — | Published scope captured | 1 | 0 | 2026-11-18T16:15:40Z |
-| [State Farm VDP](<vdp/bugcrowd-df20a542ee9a99ae.md>) | Finance | — | Published scope captured | 5 | 0 | 2026-11-18T16:15:44Z |
-| [State of California VDP](<vdp/bugcrowd-b098c78c5513add9.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-18T15:52:51Z |
-| [State of Maryland Vulnerability Disclosure Program](<vdp/bugcrowd-2ef6b6e1540b7c93.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-18T16:04:52Z |
+| [RMIT University Vulnerability Disclosure Program](<vdp/bugcrowd-069a1848ccad9ded.md>) | Education | — | Published scope captured | 7 | 1 | 2026-11-19T16:17:45Z |
+| [ROKT Vulnerability Disclosure](<vdp/bugcrowd-7cbddce73dc49402.md>) | Computer Software | — | Published scope captured | 15 | 0 | 2026-11-19T16:17:49Z |
+| [Roobet Vulnerability Disclosure Program](<vdp/bugcrowd-937b97c4c90ad946.md>) | Entertainment | — | Published scope captured | 2 | 0 | 2026-11-19T16:17:53Z |
+| [Royal Automotive Club of Victoria \(RACV\) Vulnerability Disclosure Engagement](<vdp/bugcrowd-0715b82e337d0133.md>) | Automotive | — | Published scope captured | 3 | 1 | 2026-11-19T16:16:41Z |
+| [RSAC Vulnerability Disclosure Engagement](<vdp/bugcrowd-76f8a9a7d7e1fa56.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T16:18:01Z |
+| [Samsonite Vulnerability Disclosure Engagement](<vdp/bugcrowd-43691e3a06eb087c.md>) | Retail | — | Published scope captured | 1 | 0 | 2026-11-19T16:18:13Z |
+| [Santos Vulnerability Disclosure Program](<vdp/bugcrowd-e19ce1fc3800a807.md>) | Oil &amp; Gas | — | Published scope captured | 23 | 0 | 2026-11-19T16:18:17Z |
+| [Seagate VDP](<vdp/bugcrowd-96ff452445575134.md>) | — | — | Published scope captured | 28 | 0 | 2026-11-19T16:18:33Z |
+| [SeatGeek Vulnerability Disclosure Engagement](<vdp/bugcrowd-40bbb4cb12d3b284.md>) | Computer Software | — | Published scope captured | 3 | 1 | 2026-11-19T16:18:37Z |
+| [Service NSW Vulnerability Disclosure Program](<vdp/bugcrowd-85439885c06dc115.md>) | Government | — | Published scope captured | 3 | 1 | 2026-11-19T16:18:53Z |
+| [Shuffle Vulnerability Disclosure Program](<vdp/bugcrowd-fa9b0872ef612eaf.md>) | Computer Software | — | Published scope captured | 2 | 3 | 2026-11-19T16:19:05Z |
+| [Sky Disclosure Program](<vdp/bugcrowd-935bead7d64aba0b.md>) | Entertainment | — | Published scope captured | 1 | 1 | 2026-11-19T16:19:33Z |
+| [SmartThings Vulnerability Disclosure](<vdp/bugcrowd-48a6e3066aa434d6.md>) | — | — | Published scope captured | 5 | 0 | 2026-11-19T16:19:45Z |
+| [Social Security Administration: Vulnerability Disclosure Program](<vdp/bugcrowd-13e674ef647905d8.md>) | Government | — | Published scope captured | 5 | 2 | 2026-11-19T16:20:29Z |
+| [Sonic Healthcare Vulnerability Disclosure Engagement](<vdp/bugcrowd-04b3e8f8a195f5f3.md>) | Healthcare | — | Published scope captured | 2 | 0 | 2026-11-19T16:20:01Z |
+| [Sprout Social](<vdp/bugcrowd-78a14f552eabc658.md>) | Computer Software | — | Published scope captured | 26 | 6 | 2026-11-19T16:20:21Z |
+| [Stability AI US Services Vulnerability Disclosure Engagement](<vdp/bugcrowd-c1cc0dad55d4175e.md>) | Computer Software | — | Published scope captured | 5 | 0 | 2026-11-19T16:20:33Z |
+| [Stake Vulnerability Disclosure Engagement](<vdp/bugcrowd-ad34d7cb1aed40db.md>) | Entertainment | — | Published scope captured | 1 | 0 | 2026-11-19T16:20:41Z |
+| [State Farm VDP](<vdp/bugcrowd-df20a542ee9a99ae.md>) | Finance | — | Published scope captured | 5 | 0 | 2026-11-19T16:20:45Z |
+| [State of California VDP](<vdp/bugcrowd-b098c78c5513add9.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-19T15:57:53Z |
+| [State of Maryland Vulnerability Disclosure Program](<vdp/bugcrowd-2ef6b6e1540b7c93.md>) | Government | — | Published scope captured | 5 | 0 | 2026-11-19T16:09:53Z |
 | [Stickman 2](<vdp/bugcrowd-3c7ab64d8b64c31f.md>) | — | — | No published asset rows found | 0 | 0 | 2026-11-07T14:59:15Z |
-| [StrongDM Vulnerability Disclosure Engagement](<vdp/bugcrowd-f968b7d15829664c.md>) | Computer Software | — | Published scope captured | 10 | 6 | 2026-11-18T16:16:04Z |
-| [Stryker](<vdp/bugcrowd-0a33bb240db28f3d.md>) | Healthcare | — | Published scope captured | 1 | 1 | 2026-11-18T16:16:08Z |
-| [Sunrun Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-207944c1beac290c.md>) | Consumer Services | — | Published scope captured | 7 | 2 | 2026-11-18T16:16:12Z |
-| [Telefónica Germany](<vdp/bugcrowd-1cba7d35621f83d7.md>) | Computer Software | — | Published scope captured | 32 | 17 | 2026-11-18T16:16:28Z |
-| [Telstra Health VDP](<vdp/bugcrowd-7ca118b10b258890.md>) | Healthcare | — | Published scope captured | 3 | 0 | 2026-11-18T16:16:32Z |
-| [Telstra VDP](<vdp/bugcrowd-ec1f3cf76173302c.md>) | Technology | — | Published scope captured | 7 | 5 | 2026-11-18T16:16:36Z |
+| [StrongDM Vulnerability Disclosure Engagement](<vdp/bugcrowd-f968b7d15829664c.md>) | Computer Software | — | Published scope captured | 10 | 6 | 2026-11-19T16:21:05Z |
+| [Stryker](<vdp/bugcrowd-0a33bb240db28f3d.md>) | Healthcare | — | Published scope captured | 1 | 1 | 2026-11-19T16:21:09Z |
+| [Sunrun Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-207944c1beac290c.md>) | Consumer Services | — | Published scope captured | 7 | 2 | 2026-11-19T16:21:13Z |
+| [Telefónica Germany](<vdp/bugcrowd-1cba7d35621f83d7.md>) | Computer Software | — | Published scope captured | 32 | 17 | 2026-11-19T16:21:29Z |
+| [Telstra Health VDP](<vdp/bugcrowd-7ca118b10b258890.md>) | Healthcare | — | Published scope captured | 3 | 0 | 2026-11-19T16:21:33Z |
+| [Telstra VDP](<vdp/bugcrowd-ec1f3cf76173302c.md>) | Technology | — | Published scope captured | 7 | 5 | 2026-11-19T16:21:37Z |
 | [Tennessee Valley Authority \(TVA\) Vulnerability Disclosure Program](<vdp/bugcrowd-613327db0373c32b.md>) | Government | — | Published scope captured | 24 | 0 | 2026-11-09T16:48:36Z |
 | [test engagement](<vdp/bugcrowd-6df51f6ee18c7b08.md>) | Computer Software | — | No published asset rows found | 0 | 0 | 2026-11-07T15:00:42Z |
-| [The Bureau of Indian Education Vulnerability Disclosure Program](<vdp/bugcrowd-50f63105821abc11.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T15:50:39Z |
-| [The Kroger Co - Vulnerability Disclosure Program](<vdp/bugcrowd-3cdc1c553ef3cb0e.md>) | Retail | — | Published scope captured | 42 | 4 | 2026-11-18T16:02:44Z |
-| [The NatWest Group Vulnerability Disclosure Program](<vdp/bugcrowd-d6bd13de58bd71bb.md>) | Banking | — | Published scope captured | 25 | 0 | 2026-11-18T16:06:20Z |
-| [TNS Vulnerability Disclosure Engagement](<vdp/bugcrowd-43c11be0aa0ab435.md>) | Telecommunications | — | Published scope captured | 3 | 0 | 2026-11-18T16:17:12Z |
-| [Trimble Vulnerability Disclosure Program](<vdp/bugcrowd-3e64310688312f0f.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-18T16:17:28Z |
-| [U\. S\. Wildland Fire Service - Vulnerability Disclosure Program](<vdp/bugcrowd-41cd7e796024ae5c.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:09:44Z |
-| [U\.S International Development Finance Corporation - Vulnerability Disclosure Program](<vdp/bugcrowd-d89165c920da9585.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T15:56:15Z |
-| [U\.S\. Chemical Safety and Hazard Investigation Board - Vulnerability Disclosure Program](<vdp/bugcrowd-4455b195f329f1fb.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T15:55:27Z |
-| [U\.S\. Department of Commerce - Vulnerability Disclosure Program](<vdp/bugcrowd-ae917c39e7b919a9.md>) | Government | — | Published scope captured | 80 | 0 | 2026-11-18T16:19:18Z |
+| [The Bureau of Indian Education Vulnerability Disclosure Program](<vdp/bugcrowd-50f63105821abc11.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T15:55:41Z |
+| [The Kroger Co - Vulnerability Disclosure Program](<vdp/bugcrowd-3cdc1c553ef3cb0e.md>) | Retail | — | Published scope captured | 42 | 4 | 2026-11-19T16:07:45Z |
+| [The NatWest Group Vulnerability Disclosure Program](<vdp/bugcrowd-d6bd13de58bd71bb.md>) | Banking | — | Published scope captured | 25 | 0 | 2026-11-19T16:11:21Z |
+| [TNS Vulnerability Disclosure Engagement](<vdp/bugcrowd-43c11be0aa0ab435.md>) | Telecommunications | — | Published scope captured | 3 | 0 | 2026-11-19T16:22:13Z |
+| [Trimble Vulnerability Disclosure Program](<vdp/bugcrowd-3e64310688312f0f.md>) | Computer Software | — | Published scope captured | 1 | 0 | 2026-11-19T16:22:29Z |
+| [U\. S\. Wildland Fire Service - Vulnerability Disclosure Program](<vdp/bugcrowd-41cd7e796024ae5c.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:14:45Z |
+| [U\.S International Development Finance Corporation - Vulnerability Disclosure Program](<vdp/bugcrowd-d89165c920da9585.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:01:17Z |
+| [U\.S\. Chemical Safety and Hazard Investigation Board - Vulnerability Disclosure Program](<vdp/bugcrowd-4455b195f329f1fb.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:00:29Z |
+| [U\.S\. Department of Commerce - Vulnerability Disclosure Program](<vdp/bugcrowd-ae917c39e7b919a9.md>) | Government | — | Published scope captured | 80 | 0 | 2026-11-19T16:24:19Z |
 | [U\.S\. Department of Transportation \(DOT\) Vulnerability Disclosure Program](<vdp/bugcrowd-0881b8b54f593689.md>) | Government | — | Published scope captured | 18 | 0 | 2026-11-09T16:50:20Z |
-| [U\.S\. Fish and Wildlife Service](<vdp/bugcrowd-27f823813122bd6e.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T15:59:11Z |
-| [U\.S\. General Services Administration - Vulnerability Disclosure Program](<vdp/bugcrowd-db9cf4d2fe92b4a2.md>) | Government | — | Published scope captured | 83 | 0 | 2026-11-18T15:59:47Z |
-| [U\.S\. Geological Survey](<vdp/bugcrowd-d77c7baf93f1cc2c.md>) | Government | — | Published scope captured | 24 | 0 | 2026-11-18T16:19:24Z |
-| [U\.S\. Securities and Exchange Commission \(SEC\) - Vulnerability Disclosure Program](<vdp/bugcrowd-ff5ec604673ccb13.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:21:38Z |
-| [U\.S\. Small Business Administration \(SBA\) Vulnerability Disclosure Program](<vdp/bugcrowd-b15a62573a7a45d6.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-18T16:13:29Z |
-| [Udall Foundation Vulnerability Disclosure Program](<vdp/bugcrowd-4e34f86d65a857f2.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-18T16:17:50Z |
-| [Ulta Beauty Vulnerability Disclosure Program](<vdp/bugcrowd-114edfb42cacce71.md>) | Retail | — | Published scope captured | 7 | 0 | 2026-11-18T16:17:54Z |
-| [Umbrella Corporation Demo VDP](<vdp/bugcrowd-a58abab0f863f55a.md>) | Biotech | — | Published scope captured | 1 | 0 | 2026-11-18T16:18:14Z |
+| [U\.S\. Fish and Wildlife Service](<vdp/bugcrowd-27f823813122bd6e.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:04:13Z |
+| [U\.S\. General Services Administration - Vulnerability Disclosure Program](<vdp/bugcrowd-db9cf4d2fe92b4a2.md>) | Government | — | Published scope captured | 83 | 0 | 2026-11-19T16:04:49Z |
+| [U\.S\. Geological Survey](<vdp/bugcrowd-d77c7baf93f1cc2c.md>) | Government | — | Published scope captured | 24 | 0 | 2026-11-19T16:24:25Z |
+| [U\.S\. Securities and Exchange Commission \(SEC\) - Vulnerability Disclosure Program](<vdp/bugcrowd-ff5ec604673ccb13.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:26:39Z |
+| [U\.S\. Small Business Administration \(SBA\) Vulnerability Disclosure Program](<vdp/bugcrowd-b15a62573a7a45d6.md>) | Government | — | Published scope captured | 4 | 0 | 2026-11-19T16:18:29Z |
+| [Udall Foundation Vulnerability Disclosure Program](<vdp/bugcrowd-4e34f86d65a857f2.md>) | Government | — | Published scope captured | 2 | 0 | 2026-11-19T16:22:51Z |
+| [Ulta Beauty Vulnerability Disclosure Program](<vdp/bugcrowd-114edfb42cacce71.md>) | Retail | — | Published scope captured | 7 | 0 | 2026-11-19T16:22:55Z |
+| [Umbrella Corporation Demo VDP](<vdp/bugcrowd-a58abab0f863f55a.md>) | Biotech | — | Published scope captured | 1 | 0 | 2026-11-19T16:23:15Z |
 | [Unilever Vulnerability Disclosure Program](<vdp/bugcrowd-ab809b2562b9e467.md>) | — | — | Published scope captured | 1 | 0 | 2026-11-10T15:32:21Z |
-| [Unisys Vulnerability Disclosure Engagement](<vdp/bugcrowd-fca1fac7601afb6e.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-18T16:18:38Z |
-| [United Airlines](<vdp/bugcrowd-c52797df6a24a24b.md>) | Transportation | — | Published scope captured | 6 | 50 | 2026-11-18T16:18:42Z |
-| [United States Agency for Global Media Vulnerability Disclosure Program](<vdp/bugcrowd-ca613a154649d177.md>) | Government | — | Published scope captured | 8 | 0 | 2026-11-18T16:19:06Z |
-| [United States Department of Agriculture: Vulnerability Disclosure Program](<vdp/bugcrowd-62c0ae6770c0076f.md>) | Government | — | Published scope captured | 12 | 0 | 2026-11-18T16:19:14Z |
-| [United States International Trade Commission - Vulnerability Disclosure Program](<vdp/bugcrowd-a273a5da9b902045.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-18T16:19:28Z |
-| [Universal Service Administrative Co Vulnerability Disclosure Engagement](<vdp/bugcrowd-4d6a776d68a4a951.md>) | Telecommunications | — | Published scope captured | 14 | 0 | 2026-11-18T16:19:02Z |
-| [University of Canterbury Vulnerability Disclosure Engagement](<vdp/bugcrowd-8597cbd662608759.md>) | Education | — | Published scope captured | 5 | 0 | 2026-11-18T16:18:50Z |
-| [University of Melbourne Vulnerability Disclosure Program](<vdp/bugcrowd-0b330b4385e9d5bb.md>) | — | — | Published scope captured | 15 | 0 | 2026-11-18T16:18:26Z |
-| [US Environmental Protection Agency Vulnerability Disclosure](<vdp/bugcrowd-2a024f681d2cd9f3.md>) | Government | — | Published scope captured | 10 | 0 | 2026-11-18T15:57:35Z |
-| [Victoria's Secret Vulnerability Disclosure Engagement](<vdp/bugcrowd-7c0aaff62ad54c8e.md>) | Retail | — | Published scope captured | 5 | 0 | 2026-11-18T16:19:52Z |
-| [Village Roadshow Vulnerability Disclosure Program](<vdp/bugcrowd-330f2dc452433035.md>) | Entertainment | — | Published scope captured | 17 | 0 | 2026-11-18T16:19:56Z |
-| [Virtru Vulnerability Disclosure Program](<vdp/bugcrowd-57b4ef5a3f8a81a0.md>) | Media | — | Published scope captured | 15 | 0 | 2026-11-18T16:20:04Z |
-| [Webflow Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-173851f15943efca.md>) | — | — | Published scope captured | 22 | 6 | 2026-11-18T16:20:32Z |
-| [WestJet's Vulnerability Disclosure Program](<vdp/bugcrowd-4934c276349e84c5.md>) | — | — | Published scope captured | 2 | 2 | 2026-11-18T16:20:36Z |
-| [Westpac Banking Corporation Vulnerability Disclosure Engagement](<vdp/bugcrowd-62086aa9074899ce.md>) | Banking | — | Published scope captured | 15 | 0 | 2026-11-18T16:20:40Z |
-| [Xero Vulnerability Disclosure Engagement](<vdp/bugcrowd-d23b515978448edf.md>) | — | — | Published scope captured | 13 | 0 | 2026-11-18T16:21:00Z |
-| [Zaxbys Vulnerability Disclosure Engagement](<vdp/bugcrowd-3509f9e9b2bc36d5.md>) | Hospitality | — | Published scope captured | 3 | 0 | 2026-11-18T16:21:16Z |
-| [Ziff Davis Vulnerability Disclosure Program](<vdp/bugcrowd-bfd15b71beacd9c3.md>) | Computer Software | — | Published scope captured | 239 | 0 | 2026-11-18T16:21:20Z |
-| [Zoopla Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e9c27f12ad0432c.md>) | Real Estate | — | Published scope captured | 6 | 0 | 2026-11-18T16:00:24Z |
+| [Unisys Vulnerability Disclosure Engagement](<vdp/bugcrowd-fca1fac7601afb6e.md>) | Computer Software | — | Published scope captured | 2 | 0 | 2026-11-19T16:23:39Z |
+| [United Airlines](<vdp/bugcrowd-c52797df6a24a24b.md>) | Transportation | — | Published scope captured | 6 | 50 | 2026-11-19T16:23:43Z |
+| [United States Agency for Global Media Vulnerability Disclosure Program](<vdp/bugcrowd-ca613a154649d177.md>) | Government | — | Published scope captured | 8 | 0 | 2026-11-19T16:24:07Z |
+| [United States Department of Agriculture: Vulnerability Disclosure Program](<vdp/bugcrowd-62c0ae6770c0076f.md>) | Government | — | Published scope captured | 12 | 0 | 2026-11-19T16:24:15Z |
+| [United States International Trade Commission - Vulnerability Disclosure Program](<vdp/bugcrowd-a273a5da9b902045.md>) | Government | — | Published scope captured | 1 | 0 | 2026-11-19T16:24:29Z |
+| [Universal Service Administrative Co Vulnerability Disclosure Engagement](<vdp/bugcrowd-4d6a776d68a4a951.md>) | Telecommunications | — | Published scope captured | 14 | 0 | 2026-11-19T16:24:03Z |
+| [University of Canterbury Vulnerability Disclosure Engagement](<vdp/bugcrowd-8597cbd662608759.md>) | Education | — | Published scope captured | 5 | 0 | 2026-11-19T16:23:51Z |
+| [University of Melbourne Vulnerability Disclosure Program](<vdp/bugcrowd-0b330b4385e9d5bb.md>) | — | — | Published scope captured | 15 | 0 | 2026-11-19T16:23:27Z |
+| [US Environmental Protection Agency Vulnerability Disclosure](<vdp/bugcrowd-2a024f681d2cd9f3.md>) | Government | — | Published scope captured | 10 | 0 | 2026-11-19T16:02:37Z |
+| [Victoria's Secret Vulnerability Disclosure Engagement](<vdp/bugcrowd-7c0aaff62ad54c8e.md>) | Retail | — | Published scope captured | 5 | 0 | 2026-11-19T16:24:53Z |
+| [Village Roadshow Vulnerability Disclosure Program](<vdp/bugcrowd-330f2dc452433035.md>) | Entertainment | — | Published scope captured | 17 | 0 | 2026-11-19T16:24:57Z |
+| [Virtru Vulnerability Disclosure Program](<vdp/bugcrowd-57b4ef5a3f8a81a0.md>) | Media | — | Published scope captured | 15 | 0 | 2026-11-19T16:25:05Z |
+| [Webflow Vulnerability Disclosure Pro Engagement](<vdp/bugcrowd-173851f15943efca.md>) | — | — | Published scope captured | 22 | 6 | 2026-11-19T16:25:33Z |
+| [WestJet's Vulnerability Disclosure Program](<vdp/bugcrowd-4934c276349e84c5.md>) | — | — | Published scope captured | 2 | 2 | 2026-11-19T16:25:37Z |
+| [Westpac Banking Corporation Vulnerability Disclosure Engagement](<vdp/bugcrowd-62086aa9074899ce.md>) | Banking | — | Published scope captured | 15 | 0 | 2026-11-19T16:25:41Z |
+| [Xero Vulnerability Disclosure Engagement](<vdp/bugcrowd-d23b515978448edf.md>) | — | — | Published scope captured | 13 | 0 | 2026-11-19T16:26:01Z |
+| [Zaxbys Vulnerability Disclosure Engagement](<vdp/bugcrowd-3509f9e9b2bc36d5.md>) | Hospitality | — | Published scope captured | 3 | 0 | 2026-11-19T16:26:17Z |
+| [Ziff Davis Vulnerability Disclosure Program](<vdp/bugcrowd-bfd15b71beacd9c3.md>) | Computer Software | — | Published scope captured | 239 | 0 | 2026-11-19T16:26:21Z |
+| [Zoopla Vulnerability Disclosure Engagement](<vdp/bugcrowd-5e9c27f12ad0432c.md>) | Real Estate | — | Published scope captured | 6 | 0 | 2026-11-19T16:05:25Z |

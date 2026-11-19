@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:28:28Z.
+**Capture time:** 2026-11-19T16:33:09Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/twilio/assets/download_csv.csv>)
 
@@ -102,7 +102,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | trunking\.twilio\.com | API | — | — | Bounty eligible |
 | 1console\.twilio\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (28)
+## Out-of-scope entries (29)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -134,6 +134,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | All Twilio acquisitions unless explicitly listed as in-scope | OTHER | — | — | Not bounty eligible |
 | chatagotchi\.app | URL | — | — | Not bounty eligible |
 | github\.com/stytchauth/sqx | SOURCE\_CODE | — | — | Not bounty eligible |
+| \*\.ramp\.twilio\.com | WILDCARD | — | — | Not bounty eligible |
 
 **Limits**
 

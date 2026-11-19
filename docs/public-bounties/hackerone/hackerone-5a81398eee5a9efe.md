@@ -10,29 +10,26 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:26:07Z.
+**Capture time:** 2026-11-19T16:31:01Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/newegg/assets/download_csv.csv>)
 
-## In-scope entries (8)
+## In-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | http://\*\.newegg\.com | WILDCARD | — | — | Bounty eligible |
 | http://\*\.newegg\.ca | WILDCARD | — | — | Bounty eligible |
-| sellerportal\.newegg\.com | URL | — | — | Not bounty eligible |
 | com\.newegg\.app | APPLE\_STORE\_APP\_ID | — | — | Bounty eligible |
 | com\.newegg\.app | GOOGLE\_PLAY\_APP\_ID | — | — | Bounty eligible |
 | https://secure\.newegg\.com | URL | — | — | Bounty eligible |
 | secure\.newegg\.ca | URL | — | — | Bounty eligible |
 | pmtcards\.newegg\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (3)
+## Out-of-scope entries (1)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
-| http://\*\.neweggbusiness\.com | WILDCARD | — | — | Not bounty eligible |
-| jobs\.newegg\.com | URL | — | — | Not bounty eligible |
 | sellingpilot\.newegg\.com | URL | — | — | Not bounty eligible |
 
 **Limits**

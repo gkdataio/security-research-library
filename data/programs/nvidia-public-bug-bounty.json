@@ -77,7 +77,7 @@
       "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail",
       "publisher": "Intigriti",
-      "retrieved_at": "2026-11-18T16:32:45Z",
+      "retrieved_at": "2026-11-19T16:36:55Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -85,7 +85,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-18T16:32:45Z",
+    "verified_at": "2026-11-19T16:36:55Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
@@ -121,7 +121,7 @@
         "name": "Nsight Systems",
         "asset_type": "Other",
         "location": null,
-        "group": "Tier 1",
+        "group": "No bounty",
         "source_ids": [
           "automated-public-asset-scope"
         ]
@@ -130,7 +130,7 @@
         "name": "NVIDIA Nsight Developer Tools",
         "asset_type": "Other",
         "location": null,
-        "group": "Tier 1",
+        "group": "No bounty",
         "source_ids": [
           "automated-public-asset-scope"
         ]
@@ -139,7 +139,7 @@
         "name": "NVRTC library",
         "asset_type": "Other",
         "location": null,
-        "group": "Tier 1",
+        "group": "No bounty",
         "source_ids": [
           "automated-public-asset-scope"
         ]

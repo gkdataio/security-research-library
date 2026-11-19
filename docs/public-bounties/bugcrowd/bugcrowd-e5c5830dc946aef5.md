@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T15:52:39Z.
+**Capture time:** 2026-11-19T15:57:41Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Retail.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/carrefour/changelog/d7ee1cb5-3958-4a62-93ab-0747552a0aea.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/carrefour/changelog/620c50c8-9a07-4a4c-988b-dd6baab3b561.json>)
 
 ## In-scope entries (4)
 

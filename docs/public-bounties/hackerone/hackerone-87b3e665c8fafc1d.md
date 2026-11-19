@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:28:47Z.
+**Capture time:** 2026-11-19T16:33:17Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/unico_idtech/assets/download_csv.csv>)
 
-## In-scope entries (17)
+## In-scope entries (16)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -27,7 +27,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | idpay-uat\.unico\.io | URL | — | — | Bounty eligible |
 | issuer\.idpay-uat\.unico\.io | URL | — | — | Bounty eligible |
 | idcash-uat\.unico\.io | URL | — | — | Bounty eligible |
-| openfinance\.unico\.io | URL | — | — | Bounty eligible |
 | secure\.unico\.io | URL | — | — | Bounty eligible |
 | blog\.unico\.io | URL | — | — | Bounty eligible |
 | unico\.io | URL | — | — | Bounty eligible |

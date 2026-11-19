@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:04:28Z.
+**Capture time:** 2026-11-19T16:09:29Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Retail.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/majidalfuttaim-loyalty/changelog/c1fed137-acc0-4508-9396-ee9ea7a6c625.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/majidalfuttaim-loyalty/changelog/067b7fea-d3e7-4ed3-b566-865374e0b609.json>)
 
-## In-scope entries (27)
+## In-scope entries (40)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -51,6 +51,19 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | MAFID-MOE-MOBILE | website | https://lazzx4o5mh\.execute-api\.eu-west-1\.amazonaws\.com/production/landing/client/mPbXCx7lA4dQNyEhhyCGMV6XKjuccbk8 | MPASS Targets | — |
 | www\.premogiftcards\.com/ | website | https://www\.premogiftcards\.com/ | MPASS Targets | — |
 | MPASS MAFid, Identity\.majidalfutaaim\.com | website | https://identity\.majidalfuttaim\.com | MPASS Targets | — |
+| https://www\.malloftheemirates\.com | website | https://www\.malloftheemirates\.com/en | MPASS Targets | — |
+| https://www\.mallofegypt\.com/en | website | https://www\.mallofegypt\.com/en | MPASS Targets | — |
+| City Centre Unified | website | https://www\.citycentremalls\.com/en | MPASS Targets | — |
+| City Centre Mirdif | website | https://www\.citycentremalls\.com/en-ae/city-centre-mirdif | MPASS Targets | — |
+| City Centre Al Zahia | website | https://www\.citycentremalls\.com/en-ae/city-centre-zahia | MPASS Targets | — |
+| City Centre Deira | website | https://www\.citycentremalls\.com/en-ae/city-centre-deira | MPASS Targets | — |
+| City Centre Ajman | website | https://www\.citycentremalls\.com/en-ae/city-centre-ajman | MPASS Targets | — |
+| City Centre Sharjah | website | https://www\.citycentremalls\.com/en-ae/city-centre-sharjah | MPASS Targets | — |
+| City Centre Bahrain | website | https://www\.citycentremalls\.com/en-bh/city-centre-bahrain | MPASS Targets | — |
+| Mall of Oman | website | https://www\.mallofoman\.net/en | MPASS Targets | — |
+| City Centre Me'aisem | website | https://www\.citycentremalls\.com/en-ae/city-centre-meaisem | MPASS Targets | — |
+| Mall of the Emirates \(iOS\) | ios | https://apps\.apple\.com/app/mall-of-the-emirates-moe/id1449578693 | MPASS Targets | — |
+| Mall of the Emirates \(Android\) | android | https://play\.google\.com/store/search?q=mall\+of\+emirates&amp;c=apps&amp;hl=en\_IN | MPASS Targets | — |
 
 ## Out-of-scope entries (0)
 

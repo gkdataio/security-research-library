@@ -14068,6 +14068,527 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ed45b6b33ecd01bc2065b343a33d09ff719915d3ca0377d82307cf93cbcc3856",
+      "recorded_at": "2026-11-19T16:39:21Z",
+      "baseline_commit": "af2809c308fc6c32c25f3e31a6e036a2d00d2009",
+      "baseline_digest": "81b096ffb31a5bdb9ed013fc3f1f97027db756a5441f56beaab138ffae20d2d7",
+      "current_digest": "f67bbdd83c6ca364aecc30934e4a1389e9b7d2f03c9e9b38446b0c14860ad418",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-1d665db53af0f4a0",
+          "name": "Majid Al Futtaim Lifestyle",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/maffashion",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-29T05:20:09.712Z",
+              "after": "2026-11-19T09:28:59.451Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/maffashion/changelog/51694445-9568-4c21-8e57-ec7153185035.json",
+              "after": "https://bugcrowd.com/engagements/maffashion/changelog/a2509372-2ad6-4fd0-9096-2cab53435357.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-2eb33abfb0688da6",
+          "name": "Connecteam Vulnerability Disclosure Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/connecteam-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-22T14:55:57.598Z",
+              "after": "2026-11-19T15:06:13.957Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/connecteam-vdp-pro/changelog/d0ec2e24-3fe6-4e10-a3d3-b654b032b3d6.json",
+              "after": "https://bugcrowd.com/engagements/connecteam-vdp-pro/changelog/91725bdf-8fa6-4d0d-89be-01c231f559e3.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-5be877d1d2b3dfa7",
+          "name": "Majid Al Futtaim Customer Solutions",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/majidalfuttaim-loyalty",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "android",
+                  "group": "MPASS Targets",
+                  "location": "https://play.google.com/store/search?q=mall+of+emirates&c=apps&hl=en_IN",
+                  "name": "Mall of the Emirates (Android)",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "ios",
+                  "group": "MPASS Targets",
+                  "location": "https://apps.apple.com/app/mall-of-the-emirates-moe/id1449578693",
+                  "name": "Mall of the Emirates (iOS)",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en",
+                  "name": "City Centre Unified",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-ajman",
+                  "name": "City Centre Ajman",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-deira",
+                  "name": "City Centre Deira",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-meaisem",
+                  "name": "City Centre Me'aisem",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-mirdif",
+                  "name": "City Centre Mirdif",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-sharjah",
+                  "name": "City Centre Sharjah",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-ae/city-centre-zahia",
+                  "name": "City Centre Al Zahia",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.citycentremalls.com/en-bh/city-centre-bahrain",
+                  "name": "City Centre Bahrain",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.mallofegypt.com/en",
+                  "name": "https://www.mallofegypt.com/en",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.mallofoman.net/en",
+                  "name": "Mall of Oman",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "MPASS Targets",
+                  "location": "https://www.malloftheemirates.com/en",
+                  "name": "https://www.malloftheemirates.com",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-07-29T11:35:16.211Z",
+              "after": "2026-11-19T11:07:48.049Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/majidalfuttaim-loyalty/changelog/c1fed137-acc0-4508-9396-ee9ea7a6c625.json",
+              "after": "https://bugcrowd.com/engagements/majidalfuttaim-loyalty/changelog/067b7fea-d3e7-4ed3-b566-865374e0b609.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-790d2d69602f2358",
+          "name": "Majid Al Futtaim Properties",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/mallofemirates",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "android",
+                  "group": "Mall of Emirates",
+                  "location": "https://play.google.com/store/search?q=mall+of+emirates&c=apps&hl=en_IN",
+                  "name": "Mall of the Emirates",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "ios",
+                  "group": "Mall of Emirates",
+                  "location": "https://apps.apple.com/app/mall-of-the-emirates-moe/id1449578693",
+                  "name": "https://apps.apple.com/app/mall-of-the-emirates-moe/id1449578693",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "ios",
+                  "group": "Mall of Emirates",
+                  "location": "https://apps.apple.com/in/app/mall-of-the-emirates-moe/id1449578693",
+                  "name": "Mall of the Emirates IOS",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "Mall of Emirates",
+                  "location": "https://citycentredeira.com/",
+                  "name": "City Centre Deira",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "Mall of Emirates",
+                  "location": "https://www.citycentremalls.com/en",
+                  "name": "https://www.citycentremalls.com/en",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "website",
+                  "group": "Mall of Emirates",
+                  "location": "https://www.malloftheemirates.com",
+                  "name": "https://www.malloftheemirates.com",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-03T11:06:23.599Z",
+              "after": "2026-11-19T10:22:34.799Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/mallofemirates/changelog/df50d9f1-2116-4dbe-aec5-6c901d965e07.json",
+              "after": "https://bugcrowd.com/engagements/mallofemirates/changelog/5cae79f4-9a52-4f61-95a3-03e4c5ed1c72.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8aad9224e529fec9",
+          "name": "OpenSea Managed Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/opensea",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "other",
+                  "group": "OpenSea MCP",
+                  "location": "https://mcp.opensea.io",
+                  "name": "OpenSea MCP",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "other",
+                  "group": "OpenSea MCP",
+                  "location": "http://mcp.opensea.io/sse",
+                  "name": "OpenSea MCP II",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "other",
+                  "group": "OpenSea MCP",
+                  "location": "https://mcp.opensea.io/mcp",
+                  "name": "OpenSea MCP",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-01T19:23:26.211Z",
+              "after": "2026-11-18T18:36:41.953Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/opensea/changelog/fcf4828b-8af5-4c9a-9516-6b41140343eb.json",
+              "after": "https://bugcrowd.com/engagements/opensea/changelog/bed98aab-c6b1-4df8-9368-a8fb042bac71.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-b64daeba96f57b22",
+          "name": "HPE Networking Product Public Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/hpe-networking-product-public",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-06-26T19:53:11.113Z",
+              "after": "2026-11-18T21:44:06.881Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/hpe-networking-product-public/changelog/044c5c65-a22e-46b1-9b5b-468bd951526b.json",
+              "after": "https://bugcrowd.com/engagements/hpe-networking-product-public/changelog/a0345513-83c1-47b3-b930-39c813a5beef.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-e5c5830dc946aef5",
+          "name": "Majid Al Futtaim Retail",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/carrefour",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2025-09-01T15:54:10.461Z",
+              "after": "2026-11-19T09:42:38.264Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/carrefour/changelog/d7ee1cb5-3958-4a62-93ab-0747552a0aea.json",
+              "after": "https://bugcrowd.com/engagements/carrefour/changelog/620c50c8-9a07-4a4c-988b-dd6baab3b561.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-e9a9f536e2fdf50d",
+          "name": "Majid Al Futtaim Entertainment",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/vox",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-28T11:05:59.825Z",
+              "after": "2026-11-19T09:28:16.691Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/vox/changelog/d3018c94-cdfb-43f6-8011-a8ad02001ec5.json",
+              "after": "https://bugcrowd.com/engagements/vox/changelog/94ad307c-6e89-496a-817f-a0001c875e6d.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-5a81398eee5a9efe",
+          "name": "Newegg",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/newegg?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "sellerportal.newegg.com",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "jobs.newegg.com",
+                  "scope": "out"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "http://*.neweggbusiness.com",
+                  "scope": "out"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-87b3e665c8fafc1d",
+          "name": "Unico IDtech",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/unico_idtech?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "openfinance.unico.io",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-8912ab2c0977be9a",
+          "name": "Twilio",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/twilio?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "*.ramp.twilio.com",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-7aa05d09059a0c26",
+          "name": "NVIDIA Public Bug Bounty",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.in_scope",
+              "removed": [
+                {
+                  "asset_type": "Other",
+                  "group": "Tier 1",
+                  "location": null,
+                  "name": "NVIDIA Nsight Developer Tools"
+                },
+                {
+                  "asset_type": "Other",
+                  "group": "Tier 1",
+                  "location": null,
+                  "name": "NVRTC library"
+                },
+                {
+                  "asset_type": "Other",
+                  "group": "Tier 1",
+                  "location": null,
+                  "name": "Nsight Systems"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": "No bounty",
+                  "location": null,
+                  "name": "NVIDIA Nsight Developer Tools"
+                },
+                {
+                  "asset_type": "Other",
+                  "group": "No bounty",
+                  "location": null,
+                  "name": "NVRTC library"
+                },
+                {
+                  "asset_type": "Other",
+                  "group": "No bounty",
+                  "location": null,
+                  "name": "Nsight Systems"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-a3ffa1f1256a691e",
+          "name": "Here Technologies",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/heretechnologies/heretechnologies",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://xyz.api.here.com",
+                  "name": "xyz.api.here.com",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://api.naksha.here.com",
+                  "name": "api.naksha.here.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://interactive.data.api.platform.here.com",
+                  "name": "interactive.data.api.platform.here.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 3",
+                  "location": "http://xyz.api.here.com",
+                  "name": "xyz.api.here.com",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

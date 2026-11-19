@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:31:19Z.
+**Capture time:** 2026-11-19T16:35:30Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/demorgen/detail>)
 

@@ -12,7 +12,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Capture time:** 2026-10-03T16:45:33Z.
 
-**Latest refresh deferred (2026-11-18T16:34:59Z):** Source access excluded; no request made; current scope unknown; last-good data retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh deferred (2026-11-19T16:39:12Z):** Source access excluded; no request made; current scope unknown; last-good data retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Vulnerability Disclosure.
 

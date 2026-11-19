@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-18T16:31:56Z.
+**Capture time:** 2026-11-19T16:36:07Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/heretechnologies/heretechnologies/detail>)
 
-## In-scope entries (23)
+## In-scope entries (25)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -35,9 +35,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | account\.here\.com | URL | http://account\.here\.com | Tier 2 | — |
 | listing\.here\.com | URL | http://listing\.here\.com | Tier 2 | — |
 | mapcreator\.here\.com | URL | http://mapcreator\.here\.com | Tier 2 | — |
-| xyz\.api\.here\.com | URL | http://xyz\.api\.here\.com | Tier 2 | — |
 | \*\.scbe\.api\.here\.com | Wildcard | — | Tier 2 | — |
 | \*\.here\.com | Wildcard | — | Tier 3 | — |
+| xyz\.api\.here\.com | URL | http://xyz\.api\.here\.com | Tier 3 | — |
+| api\.naksha\.here\.com | URL | http://api\.naksha\.here\.com | Tier 3 | — |
+| interactive\.data\.api\.platform\.here\.com | URL | http://interactive\.data\.api\.platform\.here\.com | Tier 3 | — |
 | Leaked/Compromised Employee Credentials | Other | — | Tier 2 | — |
 | Leaked Service Credentials | Other | — | Tier 2 | — |
 | All other related services owned by HERE | Other | — | Tier 3 | — |
