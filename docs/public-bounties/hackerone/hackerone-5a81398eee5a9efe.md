@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-19T16:31:01Z.
+**Capture time:** 2026-11-20T16:13:52Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/newegg/assets/download_csv.csv>)
 
-## In-scope entries (7)
+## In-scope entries (8)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -25,12 +25,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://secure\.newegg\.com | URL | — | — | Bounty eligible |
 | secure\.newegg\.ca | URL | — | — | Bounty eligible |
 | pmtcards\.newegg\.com | URL | — | — | Bounty eligible |
+| www\.sellingpilot\.com | URL | — | — | Bounty eligible |
 
-## Out-of-scope entries (1)
+## Out-of-scope entries (0)
 
-| Asset | Type | Location | Group | Qualification |
-| --- | --- | --- | --- | --- |
-| sellingpilot\.newegg\.com | URL | — | — | Not bounty eligible |
+No explicit asset rows were captured in this category. The policy may still impose exclusions.
 
 **Limits**
 

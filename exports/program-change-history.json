@@ -14589,6 +14589,200 @@
           ]
         }
       ]
+    },
+    {
+      "id": "955e040c990d1e0055f2f4fb9dd32a21993da9e46ca519208206ef98f63eaee3",
+      "recorded_at": "2026-11-20T16:22:17Z",
+      "baseline_commit": "a066321c166a1a0734dde517f642f83eb4d963c7",
+      "baseline_digest": "f67bbdd83c6ca364aecc30934e4a1389e9b7d2f03c9e9b38446b0c14860ad418",
+      "current_digest": "1d7b54fd2ac1e5ba3f144d543354bd0383837447e9b71f67a1b550ef55e81897",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-6a006f4f968cdcdc",
+          "name": "Imperva - Thales Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/imperva-mbb",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-27T19:36:30.329Z",
+              "after": "2026-11-19T16:22:40.447Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/imperva-mbb/changelog/787b5105-7414-4dff-9f28-75060a204ef8.json",
+              "after": "https://bugcrowd.com/engagements/imperva-mbb/changelog/c2ded3a8-641d-4349-9b81-c57aea4aa1e6.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8965552f30be5e0b",
+          "name": "Mattermost Public Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/mattermost-mbb-public",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "other",
+                  "group": "In Scope",
+                  "location": "https://github.com/mattermost/mattermost-plugin-msteams",
+                  "name": "Mattermost MSTeams Plugin",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "other",
+                  "group": "In Scope",
+                  "location": "https://github.com/mattermost/mattermost-plugin-channel-export",
+                  "name": "Mattermost Channel Export Plugin",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "other",
+                  "group": "In Scope",
+                  "location": "https://github.com/mattermost/mattermost-plugin-metrics",
+                  "name": "Mattermost Metrics Plugin",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-04T15:33:01.896Z",
+              "after": "2026-11-20T10:44:02.586Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/12e51944-fd89-4d71-bf45-6e5868fa4d9c.json",
+              "after": "https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/d135ab5d-7017-4b22-8cf4-d6f6927d1d08.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9052f631389a67cb",
+          "name": "T-Mobile",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/t-mobile",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-17T21:18:01.659Z",
+              "after": "2026-11-19T23:12:02.696Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/t-mobile/changelog/aeea6cc7-9cbb-4899-a5e5-7b3873299aa1.json",
+              "after": "https://bugcrowd.com/engagements/t-mobile/changelog/dd6629c8-185c-460d-be30-892cbb48e255.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-5a81398eee5a9efe",
+          "name": "Newegg",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/newegg?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "www.sellingpilot.com",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "sellingpilot.newegg.com",
+                  "scope": "out"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-87b3e665c8fafc1d",
+          "name": "Unico IDtech",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/unico_idtech?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "blog.unico.io",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "backend-sdk.prod.private.unico.run",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "cadastro.unico.app",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-948ca6c9ff8f5ff6",
+          "name": "Visa",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/visa?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "http://test.payworks.io/uis/mngr/",
+                  "scope": "in"
+                }
+              ],
+              "added": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }

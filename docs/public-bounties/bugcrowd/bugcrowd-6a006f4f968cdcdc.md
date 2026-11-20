@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-19T16:06:09Z.
+**Capture time:** 2026-11-20T15:48:56Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Not listed.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/imperva-mbb/changelog/787b5105-7414-4dff-9f28-75060a204ef8.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/imperva-mbb/changelog/c2ded3a8-641d-4349-9b81-c57aea4aa1e6.json>)
 
 ## In-scope entries (4)
 

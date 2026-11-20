@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-19T16:10:05Z.
+**Capture time:** 2026-11-20T15:52:52Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Technology.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/12e51944-fd89-4d71-bf45-6e5868fa4d9c.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/d135ab5d-7017-4b22-8cf4-d6f6927d1d08.json>)
 
-## In-scope entries (16)
+## In-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -39,7 +39,8 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Mattermost Microsoft Calendar Plugin | other | https://github\.com/mattermost/mattermost-plugin-mscalendar | In Scope | — |
 | Mattermost Plugin for Microsoft Teams Meetings | other | https://github\.com/mattermost/mattermost-plugin-msteams-meetings | In Scope | — |
 | Mattermost Confluence Plugin | other | https://github\.com/mattermost/mattermost-plugin-confluence | In Scope | — |
-| Mattermost MSTeams Plugin | other | https://github\.com/mattermost/mattermost-plugin-msteams | In Scope | — |
+| Mattermost Metrics Plugin | other | https://github\.com/mattermost/mattermost-plugin-metrics | In Scope | — |
+| Mattermost Channel Export Plugin | other | https://github\.com/mattermost/mattermost-plugin-channel-export | In Scope | — |
 
 ## Out-of-scope entries (7)
 

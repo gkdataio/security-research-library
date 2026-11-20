@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-19T16:36:45Z.
+**Capture time:** 2026-11-20T16:19:40Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/mv/mobilevikings/detail>)
 

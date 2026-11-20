@@ -10,14 +10,15 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-19T16:33:17Z.
+**Capture time:** 2026-11-20T16:16:11Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/unico_idtech/assets/download_csv.csv>)
 
-## In-scope entries (16)
+## In-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
+| backend-sdk\.prod\.private\.unico\.run | URL | — | — | Bounty eligible |
 | \[Unico\] Liveness Bypass | OTHER | — | — | Bounty eligible |
 | accountshomolog\.acesso\.io | URL | — | — | Bounty eligible |
 | identityhomolog\.acesso\.io | URL | — | — | Bounty eligible |
@@ -28,12 +29,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | issuer\.idpay-uat\.unico\.io | URL | — | — | Bounty eligible |
 | idcash-uat\.unico\.io | URL | — | — | Bounty eligible |
 | secure\.unico\.io | URL | — | — | Bounty eligible |
-| blog\.unico\.io | URL | — | — | Bounty eligible |
 | unico\.io | URL | — | — | Bounty eligible |
 | humantoken\.unico\.app | URL | — | — | Bounty eligible |
 | api\.humantoken\.unico\.app | URL | — | — | Bounty eligible |
 | dashboard\.unico\.app | URL | — | — | Bounty eligible |
 | developer\.unico\.io | URL | — | — | Bounty eligible |
+| cadastro\.unico\.app | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (2)
 
