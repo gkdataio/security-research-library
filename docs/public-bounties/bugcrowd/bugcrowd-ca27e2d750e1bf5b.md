@@ -10,9 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-13T01:08:42Z.
-
-**Latest refresh failed (2026-11-20T15:55:36Z):** Public scope rows contain only redacted identifiers; no usable public asset identifiers verified; last-good scope retained. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Capture time:** 2026-11-21T15:06:03Z.
 
 **Directory category:** Bug Bounty.
 
@@ -20,7 +18,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Computer Software.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/okapya/changelog/7589ea6b-f167-4ca8-8e62-134ba3af5c61.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/okapya/changelog/9cbf0faa-62de-4f7a-8ee6-1c19f979b5f7.json>)
 
 ## In-scope entries (1)
 

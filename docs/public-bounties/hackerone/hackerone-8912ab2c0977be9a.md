@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-20T16:16:03Z.
+**Capture time:** 2026-11-21T15:26:20Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/twilio/assets/download_csv.csv>)
 
-## In-scope entries (83)
+## In-scope entries (84)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -101,6 +101,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | test\.stytch\.com | API | — | — | Bounty eligible |
 | trunking\.twilio\.com | API | — | — | Bounty eligible |
 | 1console\.twilio\.com | URL | — | — | Bounty eligible |
+| verify\.twilio\.com | API | — | — | Bounty eligible |
 
 ## Out-of-scope entries (29)
 

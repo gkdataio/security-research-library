@@ -14783,6 +14783,131 @@
           ]
         }
       ]
+    },
+    {
+      "id": "dcf40a32876a410815e3df53df2e2207a5bdcf53192de30ed247e978ca1393a4",
+      "recorded_at": "2026-11-21T15:32:39Z",
+      "baseline_commit": "3456502bc71da956ad118200675adb1f1faa4e28",
+      "baseline_digest": "1d7b54fd2ac1e5ba3f144d543354bd0383837447e9b71f67a1b550ef55e81897",
+      "current_digest": "e6b8b453d15ade71cee6ec54cbfe165903b344894931780e56e61cd96c87613d",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-663c428857ba5298",
+          "name": "BOJA Consulting Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/boja",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "In Scope",
+                  "location": "https://marketplace.atlassian.com/apps/2394034939/email-attach-automation-exporter-pdf-word-claude-mcp?hosting=cloud&tab=overview",
+                  "name": "https://marketplace.atlassian.com/apps/2394034939/email-attach-automation-exporter-pdf-word-claude-mcp?hosting=cloud&tab=overview",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-15T09:54:09.238Z",
+              "after": "2026-11-21T10:10:39.774Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/boja/changelog/7487f014-2693-438b-8476-ccd6296f378c.json",
+              "after": "https://bugcrowd.com/engagements/boja/changelog/da640444-3729-49a8-993f-48830faa282a.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-8aad9224e529fec9",
+          "name": "OpenSea Managed Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/opensea",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-18T18:36:41.953Z",
+              "after": "2026-11-20T20:46:15.977Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/opensea/changelog/bed98aab-c6b1-4df8-9368-a8fb042bac71.json",
+              "after": "https://bugcrowd.com/engagements/opensea/changelog/04c8d3cb-5e8b-43e1-853d-4985f7806588.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-ca27e2d750e1bf5b",
+          "name": "Okapya",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/okapya",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-03T14:56:36.501Z",
+              "after": "2026-11-21T00:56:52.882Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/okapya/changelog/7589ea6b-f167-4ca8-8e62-134ba3af5c61.json",
+              "after": "https://bugcrowd.com/engagements/okapya/changelog/9cbf0faa-62de-4f7a-8ee6-1c19f979b5f7.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-8912ab2c0977be9a",
+          "name": "Twilio",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/twilio?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "API",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "verify.twilio.com",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-948ca6c9ff8f5ff6",
+          "name": "Visa",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/visa?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "https://ebc2test.cybersource.com/currencyconversion",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

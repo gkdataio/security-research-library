@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-20T16:17:16Z.
+**Capture time:** 2026-11-21T15:27:31Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/amd/amd/detail>)
 

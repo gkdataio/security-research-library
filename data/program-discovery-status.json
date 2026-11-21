@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "completed_at": "2026-11-20T15:36:45.610564Z",
+  "completed_at": "2026-11-21T14:47:13.172115Z",
   "status": "incomplete",
   "mode": "offline_observation_import",
   "notice": "New means absent from the historical URL baseline, not newly launched. Directory listings are not testing authorization. No removals inferred; canonical data is unchanged.",
@@ -39,8 +39,8 @@
       "reason": "No current browser-observed complete directory supplied. No live collector is implemented."
     }
   ],
-  "baseline_sha256": "992c5e6d87dc3536435898ed98f30ed262d491c17b207f34422a5d0b767dd99c",
-  "workflow_run_id": "44764954895",
+  "baseline_sha256": "5767e8d82bc7f66a14518bc05b8366c194d234cd39505b1aa95d656535c4d236",
+  "workflow_run_id": "44915681720",
   "workflow_run_attempt": "1",
-  "baseline_commit": "a066321c166a1a0734dde517f642f83eb4d963c7"
+  "baseline_commit": "3456502bc71da956ad118200675adb1f1faa4e28"
 }

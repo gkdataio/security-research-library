@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-20T16:16:24Z.
+**Capture time:** 2026-11-21T15:26:42Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/visa/assets/download_csv.csv>)
 
-## In-scope entries (170)
+## In-scope entries (171)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -188,6 +188,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://ebctest\.cybersource\.com/unifiedpayments | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/apm | URL | — | — | Bounty eligible |
 | https://ebctest\.cybersource\.com/devicemanagement | URL | — | — | Bounty eligible |
+| https://ebc2test\.cybersource\.com/currencyconversion | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (3)
 
