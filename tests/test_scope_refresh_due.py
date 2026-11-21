@@ -166,7 +166,9 @@ class DailyRefreshDueTests(unittest.TestCase):
         self.assertLess(validation.index(check), validation.index('python scripts/export_programs.py'))
         self.assertLess(publication.index(check), publication.index('git add'))
         self.assertLess(publication.index(check), publication.index('git push'))
-        self.assertIn('counts = validate_audit(audit)', coverage)
+        self.assertIn('python scripts/scope_refresh_report.py --check-coverage data/scope-refresh-status.json', coverage)
+        self.assertNotIn('  push:', workflow)
+        self.assertIn('  workflow_dispatch:', workflow)
 
     def test_timezone_is_compared_in_utc(self):
         self.audit['started_at'] = '2026-11-08T23:00:00-08:00'
