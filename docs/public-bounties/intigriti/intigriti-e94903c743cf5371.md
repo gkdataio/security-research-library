@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-21T15:27:44Z.
+**Capture time:** 2026-11-22T15:23:39Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/aswatson/marionnaud/detail>)
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-21T15:27:06Z.
+**Capture time:** 2026-11-22T15:23:02Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/xiaomi/assets/download_csv.csv>)
 

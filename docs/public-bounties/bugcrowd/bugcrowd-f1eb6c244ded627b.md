@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-21T14:52:31Z.
+**Capture time:** 2026-11-22T14:48:26Z.
 
 **Directory category:** Bug Bounty.
 
@@ -18,9 +18,9 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Industry:** Not listed.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/codeclou/changelog/27f47b90-c4e1-4743-a175-e55baa4dd3a9.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/codeclou/changelog/b6787dbb-b5fe-403a-be2d-7b5b6a3afd7b.json>)
 
-## In-scope entries (6)
+## In-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -29,7 +29,6 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence?hosting=datacenter&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence?hosting=datacenter&amp;tab=overview | In Scope | — |
 | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence/version-history | website | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence/version-history | In Scope | — |
 | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence?hosting=cloud | website | https://marketplace\.atlassian\.com/apps/1211159/advanced-codeblocks-for-confluence?hosting=cloud | In Scope | — |
-| https://marketplace\.atlassian\.com/apps/1212096/customfield-editor-for-jira?hosting=server&amp;tab=overview | website | https://marketplace\.atlassian\.com/apps/1212096/customfield-editor-for-jira?hosting=datacenter&amp;tab=overview | In Scope | — |
 
 ## Out-of-scope entries (0)
 

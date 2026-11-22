@@ -15,7 +15,7 @@
     "bugcrowd_public_listings": 516,
     "bugcrowd_scope_captured": 507,
     "bugcrowd_scope_gaps": 9,
-    "bugcrowd_in_scope_rows": 5574,
+    "bugcrowd_in_scope_rows": 5573,
     "bugcrowd_out_of_scope_rows": 1443,
     "cross_platform_bounty_candidates": 627,
     "bounty_by_platform": {
@@ -25,7 +25,7 @@
     },
     "bounty_scope_captured": 591,
     "bounty_scope_gaps": 36,
-    "bounty_in_scope_rows": 9215,
+    "bounty_in_scope_rows": 9214,
     "bounty_out_of_scope_rows": 3196,
     "catalog_overlap": 293,
     "distinct_catalog_programs": 850,
@@ -34,7 +34,7 @@
     "distinct_redacted_only_programs": 30,
     "distinct_with_non_redacted_scope_rows": 778,
     "distinct_redacted_asset_rows": 293,
-    "distinct_in_scope_rows": 11846,
+    "distinct_in_scope_rows": 11845,
     "distinct_out_of_scope_rows": 3504,
     "duplicate_source_rows_collapsed": 77,
     "by_gap_status": {
