@@ -14949,6 +14949,76 @@
           ]
         }
       ]
+    },
+    {
+      "id": "ec49fa33c7746d34ee77e67bf664c951d601d4714b4ef19afc4f1624909429d0",
+      "recorded_at": "2026-11-23T19:13:42Z",
+      "baseline_commit": "29b216fda8339daf8a28e689e13ac8dee3e137d7",
+      "baseline_digest": "6a06539ff2e0742521bd94b7ff9da693d7554a64919006c71d9242ebcc9e6322",
+      "current_digest": "b56d3d56b33752ecc64e6d8e81987a7c53a0d420d96b3794c42d7ed21d590897",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-4b30e6365f6ad86f",
+          "name": "Citi's Responsible Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/citi",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-15T22:01:15.348Z",
+              "after": "2026-11-23T17:18:39.772Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/citi/changelog/975d97fd-8795-42ca-8d4d-ea588b94027a.json",
+              "after": "https://bugcrowd.com/engagements/citi/changelog/75448233-28fd-4ab7-9b2d-ab8101bd6419.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-bd3dbed8680001d1",
+          "name": "AXIS OS",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/axis-os-public",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-13T09:23:20.972Z",
+              "after": "2026-11-23T12:56:55.122Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/axis-os-public/changelog/ab316707-bd4f-4ed0-b9e8-539f37808cdb.json",
+              "after": "https://bugcrowd.com/engagements/axis-os-public/changelog/f94f666f-926b-4a67-a2bc-56badd864139.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-948ca6c9ff8f5ff6",
+          "name": "Visa",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/visa?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "lac-visa-payments-day.visa.com",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

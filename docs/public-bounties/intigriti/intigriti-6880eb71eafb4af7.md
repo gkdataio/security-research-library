@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-22T15:26:13Z.
+**Capture time:** 2026-11-23T19:11:12Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/posti/postibugbounty/detail>)
 

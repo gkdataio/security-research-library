@@ -29,7 +29,7 @@
       "name": "Progress Software - WS_FTP VDP",
       "program_url": "https://bugcrowd.com/engagements/wsftp-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:58Z",
+      "captured_at": "2026-11-23T18:59:57Z",
       "published_asset_count": 2
     },
     {
@@ -59,7 +59,7 @@
       "name": "Sonic Healthcare Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/sonic-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:06Z",
+      "captured_at": "2026-11-23T18:54:05Z",
       "published_asset_count": 2
     },
     {
@@ -131,7 +131,7 @@
       "name": "RMIT University Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/rmit-university-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:06:50Z",
+      "captured_at": "2026-11-23T18:51:49Z",
       "published_asset_count": 8
     },
     {
@@ -191,7 +191,7 @@
       "name": "Candid VDP Pro Engagement",
       "program_url": "https://bugcrowd.com/engagements/candid-vdppro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:46:34Z",
+      "captured_at": "2026-11-23T18:31:32Z",
       "published_asset_count": 3
     },
     {
@@ -235,7 +235,7 @@
       "name": "Royal Automotive Club of Victoria (RACV) Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/racv-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:46Z",
+      "captured_at": "2026-11-23T18:50:45Z",
       "published_asset_count": 4
     },
     {
@@ -322,7 +322,7 @@
       "name": "Federal Retirement Thrift Investment Board : Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/frtib-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:10Z",
+      "captured_at": "2026-11-23T18:38:09Z",
       "published_asset_count": 7
     },
     {
@@ -585,7 +585,7 @@
       "name": "Northwestern Mutual VDP",
       "program_url": "https://bugcrowd.com/engagements/northwestern-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:22Z",
+      "captured_at": "2026-11-23T18:46:21Z",
       "published_asset_count": 15
     },
     {
@@ -615,7 +615,7 @@
       "name": "McDonald's Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/mcdonalds",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:59:18Z",
+      "captured_at": "2026-11-23T18:44:17Z",
       "published_asset_count": 2
     },
     {
@@ -645,7 +645,7 @@
       "name": "Stryker",
       "program_url": "https://bugcrowd.com/engagements/stryker-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:14Z",
+      "captured_at": "2026-11-23T18:55:13Z",
       "published_asset_count": 2
     },
     {
@@ -766,7 +766,7 @@
       "name": "University of Melbourne Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/uni-melbourne-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:32Z",
+      "captured_at": "2026-11-23T18:57:31Z",
       "published_asset_count": 15
     },
     {
@@ -1006,7 +1006,7 @@
       "name": "Insignia Financial Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/insigniafinancial",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:55:26Z",
+      "captured_at": "2026-11-23T18:40:24Z",
       "published_asset_count": 32
     },
     {
@@ -1036,7 +1036,7 @@
       "name": "Deutsche Bank Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/deutschebank-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:58Z",
+      "captured_at": "2026-11-23T18:34:56Z",
       "published_asset_count": 2
     },
     {
@@ -1059,7 +1059,7 @@
       "name": "Bureau of Indian Affairs",
       "program_url": "https://bugcrowd.com/engagements/bia-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:44:42Z",
+      "captured_at": "2026-11-23T18:29:40Z",
       "published_asset_count": 1
     },
     {
@@ -1103,7 +1103,7 @@
       "name": "LegalZoom VDP",
       "program_url": "https://bugcrowd.com/engagements/legalzoom-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:57:26Z",
+      "captured_at": "2026-11-23T18:42:25Z",
       "published_asset_count": 4
     },
     {
@@ -1224,7 +1224,7 @@
       "name": "Blackbaud Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/blackbaud-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:45:22Z",
+      "captured_at": "2026-11-23T18:30:20Z",
       "published_asset_count": 15
     },
     {
@@ -1289,7 +1289,7 @@
       "name": "Ulta Beauty Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ultabeauty-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:00Z",
+      "captured_at": "2026-11-23T18:56:59Z",
       "published_asset_count": 7
     },
     {
@@ -1546,7 +1546,7 @@
       "name": "Federal Trade Commission: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ftc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:14Z",
+      "captured_at": "2026-11-23T18:38:13Z",
       "published_asset_count": 14
     },
     {
@@ -1611,7 +1611,7 @@
       "name": "Social Security Administration: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ssa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:34Z",
+      "captured_at": "2026-11-23T18:54:33Z",
       "published_asset_count": 7
     },
     {
@@ -1823,7 +1823,7 @@
       "name": "Webflow Vulnerability Disclosure Pro Engagement",
       "program_url": "https://bugcrowd.com/engagements/webflow-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:38Z",
+      "captured_at": "2026-11-23T18:59:37Z",
       "published_asset_count": 28
     },
     {
@@ -1853,7 +1853,7 @@
       "name": "Millennium Challenge Corporation: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/mcc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:59:14Z",
+      "captured_at": "2026-11-23T18:44:13Z",
       "published_asset_count": 2
     },
     {
@@ -1953,7 +1953,7 @@
       "name": "Bupa Australia Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/bupa-aus-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:46:26Z",
+      "captured_at": "2026-11-23T18:31:24Z",
       "published_asset_count": 12
     },
     {
@@ -2312,7 +2312,7 @@
       "name": "Telefónica Germany",
       "program_url": "https://bugcrowd.com/engagements/telefonicavdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:34Z",
+      "captured_at": "2026-11-23T18:55:33Z",
       "published_asset_count": 49
     },
     {
@@ -2532,7 +2532,7 @@
       "name": "Hemi Labs VDP",
       "program_url": "https://bugcrowd.com/engagements/hemi",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:10Z",
+      "captured_at": "2026-11-23T18:39:09Z",
       "published_asset_count": 26
     },
     {
@@ -2611,7 +2611,7 @@
       "name": "Sunrun Vulnerability Disclosure Pro Engagement",
       "program_url": "https://bugcrowd.com/engagements/sunrun-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:18Z",
+      "captured_at": "2026-11-23T18:55:17Z",
       "published_asset_count": 9
     },
     {
@@ -2823,7 +2823,7 @@
       "name": "Domain Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/domain-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:58Z",
+      "captured_at": "2026-11-23T18:35:56Z",
       "published_asset_count": 28
     },
     {
@@ -2869,7 +2869,7 @@
       "name": "Eurofins Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/eurofins-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:02Z",
+      "captured_at": "2026-11-23T18:37:01Z",
       "published_asset_count": 1
     },
     {
@@ -2899,7 +2899,7 @@
       "name": "U.S. Fish and Wildlife Service",
       "program_url": "https://bugcrowd.com/engagements/fws-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:18Z",
+      "captured_at": "2026-11-23T18:38:16Z",
       "published_asset_count": 2
     },
     {
@@ -3111,7 +3111,7 @@
       "name": "Petpooja Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/petpooja-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:10Z",
+      "captured_at": "2026-11-23T18:49:09Z",
       "published_asset_count": 28
     },
     {
@@ -3197,7 +3197,7 @@
       "name": "US Environmental Protection Agency Vulnerability Disclosure",
       "program_url": "https://bugcrowd.com/engagements/epa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:51:42Z",
+      "captured_at": "2026-11-23T18:36:41Z",
       "published_asset_count": 10
     },
     {
@@ -3396,7 +3396,7 @@
       "name": "Geotab: VDP",
       "program_url": "https://bugcrowd.com/engagements/geotab-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:38Z",
+      "captured_at": "2026-11-23T18:38:37Z",
       "published_asset_count": 23
     },
     {
@@ -3426,7 +3426,7 @@
       "name": "Progress Software - LoadMaster",
       "program_url": "https://bugcrowd.com/engagements/loadmaster-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:57:54Z",
+      "captured_at": "2026-11-23T18:42:52Z",
       "published_asset_count": 2
     },
     {
@@ -3540,7 +3540,7 @@
       "name": "Connecteam Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/connecteam-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:02Z",
+      "captured_at": "2026-11-23T18:34:00Z",
       "published_asset_count": 14
     },
     {
@@ -3591,7 +3591,7 @@
       "name": "State of Maryland Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/maryland-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:58Z",
+      "captured_at": "2026-11-23T18:43:57Z",
       "published_asset_count": 5
     },
     {
@@ -3656,7 +3656,7 @@
       "name": "Hack Me!",
       "program_url": "https://bugcrowd.com/engagements/hackme",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:02Z",
+      "captured_at": "2026-11-23T18:39:01Z",
       "published_asset_count": 7
     },
     {
@@ -3686,7 +3686,7 @@
       "name": "Bureau of Land Management",
       "program_url": "https://bugcrowd.com/engagements/blm-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:45:26Z",
+      "captured_at": "2026-11-23T18:30:24Z",
       "published_asset_count": 2
     },
     {
@@ -3821,7 +3821,7 @@
       "name": "Village Roadshow Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/village-roadshow-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:02Z",
+      "captured_at": "2026-11-23T18:59:01Z",
       "published_asset_count": 17
     },
     {
@@ -3858,7 +3858,7 @@
       "name": "Bureau of Reclamation",
       "program_url": "https://bugcrowd.com/engagements/usbr-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:16Z",
+      "captured_at": "2026-11-23T18:58:15Z",
       "published_asset_count": 3
     },
     {
@@ -3895,7 +3895,7 @@
       "name": "Zaxbys Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/zaxbys-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:15:22Z",
+      "captured_at": "2026-11-23T19:00:21Z",
       "published_asset_count": 3
     },
     {
@@ -4075,7 +4075,7 @@
       "name": "Gaming Corps Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/gamingcorps-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:22Z",
+      "captured_at": "2026-11-23T18:38:21Z",
       "published_asset_count": 1
     },
     {
@@ -4126,7 +4126,7 @@
       "name": "Monash University Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/monash-esf",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:59:46Z",
+      "captured_at": "2026-11-23T18:44:44Z",
       "published_asset_count": 5
     },
     {
@@ -4170,7 +4170,7 @@
       "name": "Department of Interior: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/doi-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:50Z",
+      "captured_at": "2026-11-23T18:35:48Z",
       "published_asset_count": 4
     },
     {
@@ -4530,7 +4530,7 @@
       "name": "The Kroger Co - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/kroger-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:50Z",
+      "captured_at": "2026-11-23T18:41:49Z",
       "published_asset_count": 46
     },
     {
@@ -4553,7 +4553,7 @@
       "name": "Trimble Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/trimble-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:11:34Z",
+      "captured_at": "2026-11-23T18:56:33Z",
       "published_asset_count": 1
     },
     {
@@ -4597,7 +4597,7 @@
       "name": "SeatGeek Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/seatgeek-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:42Z",
+      "captured_at": "2026-11-23T18:52:41Z",
       "published_asset_count": 4
     },
     {
@@ -4620,7 +4620,7 @@
       "name": "U. S. Wildland Fire Service - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/owf-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:50Z",
+      "captured_at": "2026-11-23T18:48:49Z",
       "published_asset_count": 1
     },
     {
@@ -4671,7 +4671,7 @@
       "name": "Ohio Attorney General's Office Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/ohio-ago-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:54Z",
+      "captured_at": "2026-11-23T18:46:53Z",
       "published_asset_count": 5
     },
     {
@@ -4708,7 +4708,7 @@
       "name": "Genius",
       "program_url": "https://bugcrowd.com/engagements/Genius-VDP",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:27:26Z",
+      "captured_at": "2026-11-23T19:12:25Z",
       "published_asset_count": 3
     },
     {
@@ -4759,7 +4759,7 @@
       "name": "Cisco ThousandEyes Vulnerability Disclosure Program (VDP)",
       "program_url": "https://bugcrowd.com/engagements/thousandeyes-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:11:10Z",
+      "captured_at": "2026-11-23T18:56:09Z",
       "published_asset_count": 5
     },
     {
@@ -4789,7 +4789,7 @@
       "name": "Office of Surface Mining Reclamation and Enforcement: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/osmre-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:22Z",
+      "captured_at": "2026-11-23T18:48:20Z",
       "published_asset_count": 2
     },
     {
@@ -4812,7 +4812,7 @@
       "name": "Samsonite Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/samsonite-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:18Z",
+      "captured_at": "2026-11-23T18:52:17Z",
       "published_asset_count": 1
     },
     {
@@ -4842,7 +4842,7 @@
       "name": "New Balance VDP",
       "program_url": "https://bugcrowd.com/engagements/newbalance-vdppro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:50Z",
+      "captured_at": "2026-11-23T18:45:49Z",
       "published_asset_count": 2
     },
     {
@@ -4879,7 +4879,7 @@
       "name": "TNS Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/tns-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:11:18Z",
+      "captured_at": "2026-11-23T18:56:17Z",
       "published_asset_count": 3
     },
     {
@@ -4909,7 +4909,7 @@
       "name": "U.S. Chemical Safety and Hazard Investigation Board - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/csb-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:34Z",
+      "captured_at": "2026-11-23T18:34:33Z",
       "published_asset_count": 2
     },
     {
@@ -4967,7 +4967,7 @@
       "name": "National Football League (NFL) Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/nfl-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:02Z",
+      "captured_at": "2026-11-23T18:46:01Z",
       "published_asset_count": 6
     },
     {
@@ -5102,7 +5102,7 @@
       "name": "Progress Software - DevTools",
       "program_url": "https://bugcrowd.com/engagements/devtools-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:18Z",
+      "captured_at": "2026-11-23T18:35:17Z",
       "published_asset_count": 17
     },
     {
@@ -5139,7 +5139,7 @@
       "name": "Adore Me Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/adoreme-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:27:50Z",
+      "captured_at": "2026-11-23T19:12:49Z",
       "published_asset_count": 3
     },
     {
@@ -5190,7 +5190,7 @@
       "name": "SmartThings Vulnerability Disclosure",
       "program_url": "https://bugcrowd.com/engagements/smartthings",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:08:50Z",
+      "captured_at": "2026-11-23T18:53:49Z",
       "published_asset_count": 5
     },
     {
@@ -5234,7 +5234,7 @@
       "name": "WestJet's Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/westjet-disclose",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:42Z",
+      "captured_at": "2026-11-23T18:59:41Z",
       "published_asset_count": 4
     },
     {
@@ -5257,7 +5257,7 @@
       "name": "Progress Software - Corporate Websites",
       "program_url": "https://bugcrowd.com/engagements/corporatewebsites-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:10Z",
+      "captured_at": "2026-11-23T18:34:08Z",
       "published_asset_count": 1
     },
     {
@@ -5574,7 +5574,7 @@
       "name": "Department of Homeland Security: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/dhs-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:26Z",
+      "captured_at": "2026-11-23T18:35:25Z",
       "published_asset_count": 43
     },
     {
@@ -5646,7 +5646,7 @@
       "name": "Flybuys Australia Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/flybuys-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:02Z",
+      "captured_at": "2026-11-23T18:38:01Z",
       "published_asset_count": 8
     },
     {
@@ -5660,16 +5660,16 @@
           "scope": "in"
         }
       ],
-      "source_url": "https://bugcrowd.com/engagements/citi/changelog/975d97fd-8795-42ca-8d4d-ea588b94027a.json",
+      "source_url": "https://bugcrowd.com/engagements/citi/changelog/75448233-28fd-4ab7-9b2d-ab8101bd6419.json",
       "source_method": "public_bugcrowd_scope_groups",
       "scope_groups": 1,
-      "published_at": "2026-09-15T22:01:15.348Z",
+      "published_at": "2026-11-23T17:18:39.772Z",
       "listing_id": "bugcrowd-4b30e6365f6ad86f",
       "platform": "Bugcrowd",
       "name": "Citi's Responsible Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/citi",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:54Z",
+      "captured_at": "2026-11-23T18:32:52Z",
       "published_asset_count": 1
     },
     {
@@ -5692,7 +5692,7 @@
       "name": "Gartner Responsible Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/gartner-disclosure",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:30Z",
+      "captured_at": "2026-11-23T18:38:29Z",
       "published_asset_count": 1
     },
     {
@@ -5715,7 +5715,7 @@
       "name": "Inter-American Foundation - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/iaf-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:50Z",
+      "captured_at": "2026-11-23T18:39:48Z",
       "published_asset_count": 1
     },
     {
@@ -5829,7 +5829,7 @@
       "name": "Universal Service Administrative Co Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/usac-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:08Z",
+      "captured_at": "2026-11-23T18:58:07Z",
       "published_asset_count": 14
     },
     {
@@ -5859,7 +5859,7 @@
       "name": "Udall Foundation Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/udall-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:11:56Z",
+      "captured_at": "2026-11-23T18:56:55Z",
       "published_asset_count": 2
     },
     {
@@ -5896,7 +5896,7 @@
       "name": "Labcorp's Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/labcorp-vdp1",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:58Z",
+      "captured_at": "2026-11-23T18:41:56Z",
       "published_asset_count": 3
     },
     {
@@ -5947,7 +5947,7 @@
       "name": "Figment Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/figment-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:30Z",
+      "captured_at": "2026-11-23T18:37:29Z",
       "published_asset_count": 5
     },
     {
@@ -5970,7 +5970,7 @@
       "name": "The Bureau of Indian Education Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/bie-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:44:46Z",
+      "captured_at": "2026-11-23T18:29:44Z",
       "published_asset_count": 1
     },
     {
@@ -6070,7 +6070,7 @@
       "name": "ANZ Responsible Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/anz-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:28:30Z",
+      "captured_at": "2026-11-23T19:13:29Z",
       "published_asset_count": 12
     },
     {
@@ -6100,7 +6100,7 @@
       "name": "Progress Software - WhatsUp Gold",
       "program_url": "https://bugcrowd.com/engagements/whatsupgold-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:50Z",
+      "captured_at": "2026-11-23T18:59:49Z",
       "published_asset_count": 2
     },
     {
@@ -6151,7 +6151,7 @@
       "name": "Progress Software - OpenEdge",
       "program_url": "https://bugcrowd.com/engagements/openedge-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:02:30Z",
+      "captured_at": "2026-11-23T18:47:29Z",
       "published_asset_count": 5
     },
     {
@@ -6209,7 +6209,7 @@
       "name": "OWASP Vulnerability Disclosure Program Engagement",
       "program_url": "https://bugcrowd.com/engagements/owasp-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:34Z",
+      "captured_at": "2026-11-23T18:48:33Z",
       "published_asset_count": 6
     },
     {
@@ -6442,7 +6442,7 @@
       "name": "Allstate Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/allstate-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:28:22Z",
+      "captured_at": "2026-11-23T19:13:21Z",
       "published_asset_count": 31
     },
     {
@@ -6563,7 +6563,7 @@
       "name": "Lumen VDP",
       "program_url": "https://bugcrowd.com/engagements/lumenvdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:10Z",
+      "captured_at": "2026-11-23T18:43:09Z",
       "published_asset_count": 15
     },
     {
@@ -6614,7 +6614,7 @@
       "name": "Cisco AppDynamics Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/appdynamics-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:43:14Z",
+      "captured_at": "2026-11-23T19:13:33Z",
       "published_asset_count": 5
     },
     {
@@ -6735,7 +6735,7 @@
       "name": "Virtru Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/virtru-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:10Z",
+      "captured_at": "2026-11-23T18:59:09Z",
       "published_asset_count": 15
     },
     {
@@ -6814,7 +6814,7 @@
       "name": "Bed Bath and Beyond, Inc. | Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/overstockvdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:30Z",
+      "captured_at": "2026-11-23T18:48:29Z",
       "published_asset_count": 9
     },
     {
@@ -6872,7 +6872,7 @@
       "name": "Defense Nuclear Facilities Safety Board - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/dnfsb-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:46Z",
+      "captured_at": "2026-11-23T18:35:44Z",
       "published_asset_count": 6
     },
     {
@@ -6944,7 +6944,7 @@
       "name": "Department of Veterans Affairs",
       "program_url": "https://bugcrowd.com/engagements/va-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:38Z",
+      "captured_at": "2026-11-23T18:58:37Z",
       "published_asset_count": 8
     },
     {
@@ -7009,7 +7009,7 @@
       "name": "Progress Software - DataDirect",
       "program_url": "https://bugcrowd.com/engagements/datadirect-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:42Z",
+      "captured_at": "2026-11-23T18:34:40Z",
       "published_asset_count": 7
     },
     {
@@ -7032,7 +7032,7 @@
       "name": "Anecdotes Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/anecdotes-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:28:26Z",
+      "captured_at": "2026-11-23T19:13:25Z",
       "published_asset_count": 1
     },
     {
@@ -7083,7 +7083,7 @@
       "name": "Kinaxis Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/kinaxis-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:30Z",
+      "captured_at": "2026-11-23T18:41:28Z",
       "published_asset_count": 5
     },
     {
@@ -7113,7 +7113,7 @@
       "name": "InterWell Health Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/interwell-health-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:55:38Z",
+      "captured_at": "2026-11-23T18:40:36Z",
       "published_asset_count": 2
     },
     {
@@ -7171,7 +7171,7 @@
       "name": "Zoopla Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/houseful-zoopla-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:30Z",
+      "captured_at": "2026-11-23T18:39:28Z",
       "published_asset_count": 6
     },
     {
@@ -7476,7 +7476,7 @@
       "name": "Westpac Banking Corporation Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/westpac-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:14:46Z",
+      "captured_at": "2026-11-23T18:59:45Z",
       "published_asset_count": 15
     },
     {
@@ -7534,7 +7534,7 @@
       "name": "LTK Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/ltk-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:57:58Z",
+      "captured_at": "2026-11-23T18:42:57Z",
       "published_asset_count": 6
     },
     {
@@ -7634,7 +7634,7 @@
       "name": "United States Department of Agriculture: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/usda-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:20Z",
+      "captured_at": "2026-11-23T18:58:19Z",
       "published_asset_count": 12
     },
     {
@@ -7762,7 +7762,7 @@
       "name": "Arrow Electronics VDP",
       "program_url": "https://bugcrowd.com/engagements/arrow-electronics-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:43:42Z",
+      "captured_at": "2026-11-23T18:28:40Z",
       "published_asset_count": 16
     },
     {
@@ -7792,7 +7792,7 @@
       "name": "Cisco Customer and Partner Experience Cloud",
       "program_url": "https://bugcrowd.com/engagements/cisco-cpx-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:40Z",
+      "captured_at": "2026-11-23T18:32:38Z",
       "published_asset_count": 2
     },
     {
@@ -7822,7 +7822,7 @@
       "name": "APRA Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/apra-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:43:30Z",
+      "captured_at": "2026-11-23T18:28:28Z",
       "published_asset_count": 2
     },
     {
@@ -7873,7 +7873,7 @@
       "name": "National Science Foundation - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/nsf-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:30Z",
+      "captured_at": "2026-11-23T18:46:29Z",
       "published_asset_count": 5
     },
     {
@@ -7896,7 +7896,7 @@
       "name": "OWASP Java HTML Sanitizer",
       "program_url": "https://bugcrowd.com/engagements/owaspjavasanitizer",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:46Z",
+      "captured_at": "2026-11-23T18:48:45Z",
       "published_asset_count": 1
     },
     {
@@ -7926,7 +7926,7 @@
       "name": "OWASP Java Encoder",
       "program_url": "https://bugcrowd.com/engagements/owaspjavaencoder",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:42Z",
+      "captured_at": "2026-11-23T18:48:40Z",
       "published_asset_count": 2
     },
     {
@@ -7949,7 +7949,7 @@
       "name": "Railroad Retirement Board - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/rrb-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:02Z",
+      "captured_at": "2026-11-23T18:52:01Z",
       "published_asset_count": 1
     },
     {
@@ -8000,7 +8000,7 @@
       "name": "Progress Software - Chef",
       "program_url": "https://bugcrowd.com/engagements/chef-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:16Z",
+      "captured_at": "2026-11-23T18:32:15Z",
       "published_asset_count": 5
     },
     {
@@ -8066,7 +8066,7 @@
       "name": "National Park Service",
       "program_url": "https://bugcrowd.com/engagements/nps-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:26Z",
+      "captured_at": "2026-11-23T18:46:24Z",
       "published_asset_count": 4
     },
     {
@@ -8089,7 +8089,7 @@
       "name": "Progress Software - Flowmon",
       "program_url": "https://bugcrowd.com/engagements/flowmon-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:58Z",
+      "captured_at": "2026-11-23T18:37:56Z",
       "published_asset_count": 1
     },
     {
@@ -8112,7 +8112,7 @@
       "name": "OWASP CSRFGuard",
       "program_url": "https://bugcrowd.com/engagements/owaspcrsfguard",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:38Z",
+      "captured_at": "2026-11-23T18:48:37Z",
       "published_asset_count": 1
     },
     {
@@ -8135,7 +8135,7 @@
       "name": "EXIM - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/exim-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:06Z",
+      "captured_at": "2026-11-23T18:37:05Z",
       "published_asset_count": 1
     },
     {
@@ -8165,7 +8165,7 @@
       "name": "Court Services and Offender Supervision Agency: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/csosa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:38Z",
+      "captured_at": "2026-11-23T18:34:36Z",
       "published_asset_count": 2
     },
     {
@@ -8188,7 +8188,7 @@
       "name": "National Indian Gaming Commission",
       "program_url": "https://bugcrowd.com/engagements/nigc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:06Z",
+      "captured_at": "2026-11-23T18:46:04Z",
       "published_asset_count": 1
     },
     {
@@ -8330,7 +8330,7 @@
       "name": "Consumer Product Safety Commission (CPSC) Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/cpsc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:22Z",
+      "captured_at": "2026-11-23T18:34:21Z",
       "published_asset_count": 18
     },
     {
@@ -8507,7 +8507,7 @@
       "name": "Bendigo Bank Responsible Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/bendigobank-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:44:38Z",
+      "captured_at": "2026-11-23T18:29:36Z",
       "published_asset_count": 23
     },
     {
@@ -8530,7 +8530,7 @@
       "name": "Ledn Vulnerability Disclosure Pro Engagement",
       "program_url": "https://bugcrowd.com/engagements/ledn-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:57:18Z",
+      "captured_at": "2026-11-23T18:42:17Z",
       "published_asset_count": 1
     },
     {
@@ -8574,7 +8574,7 @@
       "name": "Pretrial Services Agency for the District of Columbia",
       "program_url": "https://bugcrowd.com/engagements/psa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:26Z",
+      "captured_at": "2026-11-23T18:50:25Z",
       "published_asset_count": 4
     },
     {
@@ -8597,7 +8597,7 @@
       "name": "RSAC Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/rsac-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:06Z",
+      "captured_at": "2026-11-23T18:52:05Z",
       "published_asset_count": 1
     },
     {
@@ -8655,7 +8655,7 @@
       "name": "Kmart Group (Kmart, Target) Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/kmartaustralia-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:42Z",
+      "captured_at": "2026-11-23T18:41:41Z",
       "published_asset_count": 6
     },
     {
@@ -8895,7 +8895,7 @@
       "name": "Sprout Social",
       "program_url": "https://bugcrowd.com/engagements/sproutsocial",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:26Z",
+      "captured_at": "2026-11-23T18:54:25Z",
       "published_asset_count": 32
     },
     {
@@ -9090,7 +9090,7 @@
       "name": "Victoria's Secret Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/victoriassecret-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:58Z",
+      "captured_at": "2026-11-23T18:58:57Z",
       "published_asset_count": 5
     },
     {
@@ -9127,7 +9127,7 @@
       "name": "Telstra Health VDP",
       "program_url": "https://bugcrowd.com/engagements/telstra-health",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:38Z",
+      "captured_at": "2026-11-23T18:55:37Z",
       "published_asset_count": 3
     },
     {
@@ -9248,7 +9248,7 @@
       "name": "ROKT Vulnerability Disclosure",
       "program_url": "https://bugcrowd.com/engagements/rokt-pte-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:06:54Z",
+      "captured_at": "2026-11-23T18:51:53Z",
       "published_asset_count": 15
     },
     {
@@ -9376,7 +9376,7 @@
       "name": "NAB's Responsible Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/nationalaustraliabankog",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:22Z",
+      "captured_at": "2026-11-23T18:45:21Z",
       "published_asset_count": 16
     },
     {
@@ -9434,7 +9434,7 @@
       "name": "Despegar Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/despegar-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:54Z",
+      "captured_at": "2026-11-23T18:34:52Z",
       "published_asset_count": 6
     },
     {
@@ -9478,7 +9478,7 @@
       "name": "Progress Software – Podio",
       "program_url": "https://bugcrowd.com/engagements/progress-podio-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:06Z",
+      "captured_at": "2026-11-23T18:50:05Z",
       "published_asset_count": 4
     },
     {
@@ -9942,7 +9942,7 @@
       "name": "CoStar Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/costar-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:18Z",
+      "captured_at": "2026-11-23T18:34:17Z",
       "published_asset_count": 64
     },
     {
@@ -9986,7 +9986,7 @@
       "name": "Service NSW Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/service-nsw-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:58Z",
+      "captured_at": "2026-11-23T18:52:57Z",
       "published_asset_count": 4
     },
     {
@@ -10037,7 +10037,7 @@
       "name": "University of Canterbury Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/university-canterbury-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:56Z",
+      "captured_at": "2026-11-23T18:57:55Z",
       "published_asset_count": 5
     },
     {
@@ -10060,7 +10060,7 @@
       "name": "Progress Software RAG",
       "program_url": "https://bugcrowd.com/engagements/progresssoftware-rag",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:14Z",
+      "captured_at": "2026-11-23T18:50:13Z",
       "published_asset_count": 1
     },
     {
@@ -10083,7 +10083,7 @@
       "name": "Privacy and Civil Liberties Oversight Board: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/pclob-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:02Z",
+      "captured_at": "2026-11-23T18:49:00Z",
       "published_asset_count": 1
     },
     {
@@ -10289,7 +10289,7 @@
       "name": "Rakuten Group, Inc. Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/rakuten-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:58Z",
+      "captured_at": "2026-11-23T18:50:57Z",
       "published_asset_count": 24
     },
     {
@@ -10312,7 +10312,7 @@
       "name": "Postal Regulatory Commission Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/prc-vdp1",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:54Z",
+      "captured_at": "2026-11-23T18:49:53Z",
       "published_asset_count": 1
     },
     {
@@ -10342,7 +10342,7 @@
       "name": "Federal Housing Finance Agency Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/fhfa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:22Z",
+      "captured_at": "2026-11-23T18:37:21Z",
       "published_asset_count": 2
     },
     {
@@ -10484,7 +10484,7 @@
       "name": "Home Depot Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/home-depot-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:18Z",
+      "captured_at": "2026-11-23T18:39:16Z",
       "published_asset_count": 18
     },
     {
@@ -10514,7 +10514,7 @@
       "name": "Sky Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/sky-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:08:38Z",
+      "captured_at": "2026-11-23T18:53:37Z",
       "published_asset_count": 2
     },
     {
@@ -10544,7 +10544,7 @@
       "name": "Roobet Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/roobet-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:06:58Z",
+      "captured_at": "2026-11-23T18:51:57Z",
       "published_asset_count": 2
     },
     {
@@ -10631,7 +10631,7 @@
       "name": "Gusto VDP",
       "program_url": "https://bugcrowd.com/engagements/gusto-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:58Z",
+      "captured_at": "2026-11-23T18:38:57Z",
       "published_asset_count": 7
     },
     {
@@ -10710,7 +10710,7 @@
       "name": "Progress Software - ShareFile",
       "program_url": "https://bugcrowd.com/engagements/sharefile-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:08:02Z",
+      "captured_at": "2026-11-23T18:53:00Z",
       "published_asset_count": 9
     },
     {
@@ -10922,7 +10922,7 @@
       "name": "Seagate VDP",
       "program_url": "https://bugcrowd.com/engagements/seagate-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:38Z",
+      "captured_at": "2026-11-23T18:52:37Z",
       "published_asset_count": 28
     },
     {
@@ -10973,7 +10973,7 @@
       "name": "HealthifyMe's Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/healthifyme",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:06Z",
+      "captured_at": "2026-11-23T18:39:04Z",
       "published_asset_count": 5
     },
     {
@@ -11024,7 +11024,7 @@
       "name": "Bath & Body Works Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/bbw-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:44:30Z",
+      "captured_at": "2026-11-23T18:29:28Z",
       "published_asset_count": 5
     },
     {
@@ -11047,7 +11047,7 @@
       "name": "United States International Trade Commission - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/usitc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:34Z",
+      "captured_at": "2026-11-23T18:58:33Z",
       "published_asset_count": 1
     },
     {
@@ -11077,7 +11077,7 @@
       "name": "Cisco Meraki Responsible Disclosure",
       "program_url": "https://bugcrowd.com/engagements/cisco-meraki-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:44Z",
+      "captured_at": "2026-11-23T18:32:43Z",
       "published_asset_count": 2
     },
     {
@@ -11107,7 +11107,7 @@
       "name": "Lucid Motors Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/lucidmotors-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:02Z",
+      "captured_at": "2026-11-23T18:43:00Z",
       "published_asset_count": 2
     },
     {
@@ -11130,7 +11130,7 @@
       "name": "Umbrella Corporation Demo VDP",
       "program_url": "https://bugcrowd.com/engagements/umbrella-demo-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:20Z",
+      "captured_at": "2026-11-23T18:57:19Z",
       "published_asset_count": 1
     },
     {
@@ -11174,7 +11174,7 @@
       "name": "Keurig Dr Pepper Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/keurigdrpepper-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:22Z",
+      "captured_at": "2026-11-23T18:41:20Z",
       "published_asset_count": 4
     },
     {
@@ -11218,7 +11218,7 @@
       "name": "Progress Software - Corticon",
       "program_url": "https://bugcrowd.com/engagements/corticon-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:49:14Z",
+      "captured_at": "2026-11-23T18:34:13Z",
       "published_asset_count": 4
     },
     {
@@ -11255,7 +11255,7 @@
       "name": "Bord Gais Energy VDP",
       "program_url": "https://bugcrowd.com/engagements/bordgaisenergy",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:45:58Z",
+      "captured_at": "2026-11-23T18:30:56Z",
       "published_asset_count": 3
     },
     {
@@ -11292,7 +11292,7 @@
       "name": "Council of the Inspectors General on Integrity and Efficiency Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/cigie-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:36Z",
+      "captured_at": "2026-11-23T18:32:34Z",
       "published_asset_count": 3
     },
     {
@@ -11504,7 +11504,7 @@
       "name": "Minnesota Secretary of State VDP",
       "program_url": "https://bugcrowd.com/engagements/mn-secretary-of-state-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:59:38Z",
+      "captured_at": "2026-11-23T18:44:37Z",
       "published_asset_count": 28
     },
     {
@@ -11550,7 +11550,7 @@
       "name": "National Labor Relations Board: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/nlrb-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:14Z",
+      "captured_at": "2026-11-23T18:46:13Z",
       "published_asset_count": 1
     },
     {
@@ -11594,7 +11594,7 @@
       "name": "Marqeta Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/marqeta-vdp-public",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:50Z",
+      "captured_at": "2026-11-23T18:43:49Z",
       "published_asset_count": 4
     },
     {
@@ -11617,7 +11617,7 @@
       "name": "Stake Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/stake-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:46Z",
+      "captured_at": "2026-11-23T18:54:44Z",
       "published_asset_count": 1
     },
     {
@@ -11892,7 +11892,7 @@
       "name": "Assa Abloy America's",
       "program_url": "https://bugcrowd.com/engagements/assaabloy-americas-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:43:50Z",
+      "captured_at": "2026-11-23T18:28:48Z",
       "published_asset_count": 37
     },
     {
@@ -12195,7 +12195,7 @@
       "name": "Optus Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/optus-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:02:58Z",
+      "captured_at": "2026-11-23T18:47:56Z",
       "published_asset_count": 41
     },
     {
@@ -12771,7 +12771,7 @@
       "name": "U.S. Department of Commerce - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/usdoc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:24Z",
+      "captured_at": "2026-11-23T18:58:23Z",
       "published_asset_count": 80
     },
     {
@@ -12976,7 +12976,7 @@
       "name": "IAG Loyalty (Avios) Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/iagloyalty-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:58Z",
+      "captured_at": "2026-11-23T18:39:57Z",
       "published_asset_count": 27
     },
     {
@@ -13062,7 +13062,7 @@
       "name": "Centers for Medicare & Medicaid Services (CMS) - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/cms-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:48:18Z",
+      "captured_at": "2026-11-23T18:33:16Z",
       "published_asset_count": 10
     },
     {
@@ -13085,7 +13085,7 @@
       "name": "State of California VDP",
       "program_url": "https://bugcrowd.com/engagements/cdt-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:46:58Z",
+      "captured_at": "2026-11-23T18:31:57Z",
       "published_asset_count": 1
     },
     {
@@ -13129,7 +13129,7 @@
       "name": "U.S. Small Business Administration (SBA) Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/sba-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:34Z",
+      "captured_at": "2026-11-23T18:52:33Z",
       "published_asset_count": 4
     },
     {
@@ -13313,7 +13313,7 @@
       "name": "Progress Software - MarkLogic VDP",
       "program_url": "https://bugcrowd.com/engagements/marklogic-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:46Z",
+      "captured_at": "2026-11-23T18:43:45Z",
       "published_asset_count": 24
     },
     {
@@ -13343,7 +13343,7 @@
       "name": "Office of Natural Resources Revenue",
       "program_url": "https://bugcrowd.com/engagements/onrr-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:02:14Z",
+      "captured_at": "2026-11-23T18:47:13Z",
       "published_asset_count": 2
     },
     {
@@ -13478,7 +13478,7 @@
       "name": "DICK'S Sporting Goods",
       "program_url": "https://bugcrowd.com/engagements/dickssportinggoods",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:30Z",
+      "captured_at": "2026-11-23T18:35:28Z",
       "published_asset_count": 17
     },
     {
@@ -13515,7 +13515,7 @@
       "name": "Quitelike Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/quitelike-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:05:38Z",
+      "captured_at": "2026-11-23T18:50:36Z",
       "published_asset_count": 3
     },
     {
@@ -13587,7 +13587,7 @@
       "name": "Plusgrade Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/plusgrade-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:42Z",
+      "captured_at": "2026-11-23T18:49:41Z",
       "published_asset_count": 8
     },
     {
@@ -15276,7 +15276,7 @@
       "name": "Ziff Davis Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ziffdavis-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:15:26Z",
+      "captured_at": "2026-11-23T19:00:25Z",
       "published_asset_count": 239
     },
     {
@@ -15327,7 +15327,7 @@
       "name": "Stability AI US Services Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/stability-ai-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:38Z",
+      "captured_at": "2026-11-23T18:54:37Z",
       "published_asset_count": 5
     },
     {
@@ -15357,7 +15357,7 @@
       "name": "HSBC Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/hsbc-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:38Z",
+      "captured_at": "2026-11-23T18:39:36Z",
       "published_asset_count": 2
     },
     {
@@ -15765,7 +15765,7 @@
       "name": "United Airlines",
       "program_url": "https://bugcrowd.com/engagements/united-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:48Z",
+      "captured_at": "2026-11-23T18:57:47Z",
       "published_asset_count": 56
     },
     {
@@ -16096,7 +16096,7 @@
       "name": "Nine Entertainment Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/nine-entertainment-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:10Z",
+      "captured_at": "2026-11-23T18:46:08Z",
       "published_asset_count": 45
     },
     {
@@ -16177,7 +16177,7 @@
       "name": "Federal Deposit Insurance Corporation - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/fdic-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:14Z",
+      "captured_at": "2026-11-23T18:37:13Z",
       "published_asset_count": 4
     },
     {
@@ -16249,7 +16249,7 @@
       "name": "United States Agency for Global Media Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/usagm-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:12Z",
+      "captured_at": "2026-11-23T18:58:11Z",
       "published_asset_count": 8
     },
     {
@@ -16293,7 +16293,7 @@
       "name": "Kick Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/kick-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:56:26Z",
+      "captured_at": "2026-11-23T18:41:24Z",
       "published_asset_count": 4
     },
     {
@@ -16337,7 +16337,7 @@
       "name": "Progress Software - MOVEit - VDP",
       "program_url": "https://bugcrowd.com/engagements/moveit-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:06Z",
+      "captured_at": "2026-11-23T18:45:05Z",
       "published_asset_count": 4
     },
     {
@@ -16444,7 +16444,7 @@
       "name": "EchoStar Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/dish-network-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:42Z",
+      "captured_at": "2026-11-23T18:35:41Z",
       "published_asset_count": 13
     },
     {
@@ -16488,7 +16488,7 @@
       "name": "Pension Benefit Guaranty Corporation VDP",
       "program_url": "https://bugcrowd.com/engagements/pbgc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:03:58Z",
+      "captured_at": "2026-11-23T18:48:57Z",
       "published_asset_count": 4
     },
     {
@@ -16525,7 +16525,7 @@
       "name": "Progress Software - Sitefinity",
       "program_url": "https://bugcrowd.com/engagements/sitefinity-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:08:18Z",
+      "captured_at": "2026-11-23T18:53:16Z",
       "published_asset_count": 3
     },
     {
@@ -19054,7 +19054,7 @@
       "name": "AB InBev Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/abinbev-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:27:34Z",
+      "captured_at": "2026-11-23T19:12:33Z",
       "published_asset_count": 359
     },
     {
@@ -19147,7 +19147,7 @@
       "name": "Absolute Software Vulnerability Disclosure Pro Engagement",
       "program_url": "https://bugcrowd.com/engagements/absolutesoftware-vdp-pro2",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:27:38Z",
+      "captured_at": "2026-11-23T19:12:37Z",
       "published_asset_count": 11
     },
     {
@@ -19527,7 +19527,7 @@
       "name": "Department of Labor",
       "program_url": "https://bugcrowd.com/engagements/dol-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:54Z",
+      "captured_at": "2026-11-23T18:35:53Z",
       "published_asset_count": 52
     },
     {
@@ -19634,7 +19634,7 @@
       "name": "Xero Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/xero-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:15:06Z",
+      "captured_at": "2026-11-23T19:00:05Z",
       "published_asset_count": 13
     },
     {
@@ -19685,7 +19685,7 @@
       "name": "Belong Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/belong-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:44:34Z",
+      "captured_at": "2026-11-23T18:29:32Z",
       "published_asset_count": 5
     },
     {
@@ -19750,7 +19750,7 @@
       "name": "OLX Group VDP",
       "program_url": "https://bugcrowd.com/engagements/olx-eu",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:02:06Z",
+      "captured_at": "2026-11-23T18:47:05Z",
       "published_asset_count": 7
     },
     {
@@ -19941,7 +19941,7 @@
       "name": "The NatWest Group Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/natwest-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:26Z",
+      "captured_at": "2026-11-23T18:45:25Z",
       "published_asset_count": 25
     },
     {
@@ -20125,7 +20125,7 @@
       "name": "U.S. Geological Survey",
       "program_url": "https://bugcrowd.com/engagements/usgs-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:13:30Z",
+      "captured_at": "2026-11-23T18:58:29Z",
       "published_asset_count": 24
     },
     {
@@ -20848,7 +20848,7 @@
       "name": "Department of the Treasury: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/treasury-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:11:26Z",
+      "captured_at": "2026-11-23T18:56:25Z",
       "published_asset_count": 101
     },
     {
@@ -20871,7 +20871,7 @@
       "name": "U.S International Development Finance Corporation - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/dfc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:50:22Z",
+      "captured_at": "2026-11-23T18:35:20Z",
       "published_asset_count": 1
     },
     {
@@ -20999,7 +20999,7 @@
       "name": "Chemist Warehouse Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/chemistwarehouse-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:20Z",
+      "captured_at": "2026-11-23T18:32:19Z",
       "published_asset_count": 16
     },
     {
@@ -21099,7 +21099,7 @@
       "name": "Equal Employment Opportunity Commission: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/eeoc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:51:18Z",
+      "captured_at": "2026-11-23T18:36:17Z",
       "published_asset_count": 12
     },
     {
@@ -21696,7 +21696,7 @@
       "name": "U.S. General Services Administration - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/gsa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:53:54Z",
+      "captured_at": "2026-11-23T18:38:53Z",
       "published_asset_count": 83
     },
     {
@@ -21754,7 +21754,7 @@
       "name": "eMAG Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/emag-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:51:30Z",
+      "captured_at": "2026-11-23T18:36:29Z",
       "published_asset_count": 6
     },
     {
@@ -21805,7 +21805,7 @@
       "name": "State Farm VDP",
       "program_url": "https://bugcrowd.com/engagements/statefarm-esf",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:09:50Z",
+      "captured_at": "2026-11-23T18:54:49Z",
       "published_asset_count": 5
     },
     {
@@ -21982,7 +21982,7 @@
       "name": "Santos Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/santos-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:07:22Z",
+      "captured_at": "2026-11-23T18:52:21Z",
       "published_asset_count": 23
     },
     {
@@ -22033,7 +22033,7 @@
       "name": "JLL Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/jll-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:55:54Z",
+      "captured_at": "2026-11-23T18:40:52Z",
       "published_asset_count": 5
     },
     {
@@ -22099,7 +22099,7 @@
       "name": "BNZ Responsible Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/bnz",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:45:46Z",
+      "captured_at": "2026-11-23T18:30:45Z",
       "published_asset_count": 3
     },
     {
@@ -22157,7 +22157,7 @@
       "name": "CIBC VDP",
       "program_url": "https://bugcrowd.com/engagements/cibc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:32Z",
+      "captured_at": "2026-11-23T18:32:30Z",
       "published_asset_count": 6
     },
     {
@@ -22180,7 +22180,7 @@
       "name": "Phyn - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/phyn-belkin-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:18Z",
+      "captured_at": "2026-11-23T18:49:16Z",
       "published_asset_count": 1
     },
     {
@@ -22217,7 +22217,7 @@
       "name": "National Aeronautics and Space Administration (NASA) - Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/nasa-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:18Z",
+      "captured_at": "2026-11-23T18:45:17Z",
       "published_asset_count": 3
     },
     {
@@ -22317,7 +22317,7 @@
       "name": "Telstra VDP",
       "program_url": "https://bugcrowd.com/engagements/telstra-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:42Z",
+      "captured_at": "2026-11-23T18:55:41Z",
       "published_asset_count": 12
     },
     {
@@ -22537,7 +22537,7 @@
       "name": "Macquarie Group Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/macquarie-group-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:58:18Z",
+      "captured_at": "2026-11-23T18:43:17Z",
       "published_asset_count": 26
     },
     {
@@ -22560,7 +22560,7 @@
       "name": "National Transportation Safety Board: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ntsb-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:01:34Z",
+      "captured_at": "2026-11-23T18:46:33Z",
       "published_asset_count": 1
     },
     {
@@ -22597,7 +22597,7 @@
       "name": "IAG Transform Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/iag-transform-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:54:54Z",
+      "captured_at": "2026-11-23T18:39:52Z",
       "published_asset_count": 3
     },
     {
@@ -22844,7 +22844,7 @@
       "name": "Cengage VDP",
       "program_url": "https://bugcrowd.com/engagements/cengage-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:47:06Z",
+      "captured_at": "2026-11-23T18:32:04Z",
       "published_asset_count": 33
     },
     {
@@ -22888,7 +22888,7 @@
       "name": "PostHog Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/posthog-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:04:50Z",
+      "captured_at": "2026-11-23T18:49:49Z",
       "published_asset_count": 4
     },
     {
@@ -23121,7 +23121,7 @@
       "name": "Federal Communications Commission: Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/fcc-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:52:10Z",
+      "captured_at": "2026-11-23T18:37:09Z",
       "published_asset_count": 31
     },
     {
@@ -23151,7 +23151,7 @@
       "name": "National Credit Union Administration (NCUA) Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/ncua-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:00:38Z",
+      "captured_at": "2026-11-23T18:45:37Z",
       "published_asset_count": 2
     },
     {
@@ -23279,7 +23279,7 @@
       "name": "StrongDM Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/strongdm",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:10:10Z",
+      "captured_at": "2026-11-23T18:55:09Z",
       "published_asset_count": 16
     },
     {
@@ -23330,7 +23330,7 @@
       "name": "Shuffle Vulnerability Disclosure Program",
       "program_url": "https://bugcrowd.com/engagements/shuffle-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:08:10Z",
+      "captured_at": "2026-11-23T18:53:09Z",
       "published_asset_count": 5
     },
     {
@@ -23850,7 +23850,7 @@
       "name": "McKesson Vulnerability Disclosure Program (VDP) Engagement",
       "program_url": "https://bugcrowd.com/engagements/mckesson-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:59:22Z",
+      "captured_at": "2026-11-23T18:44:21Z",
       "published_asset_count": 72
     },
     {
@@ -24071,7 +24071,7 @@
       "name": "Unisys Vulnerability Disclosure Engagement",
       "program_url": "https://bugcrowd.com/engagements/unisys-vdp-pro",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:12:44Z",
+      "captured_at": "2026-11-23T18:57:43Z",
       "published_asset_count": 2
     },
     {
@@ -24129,7 +24129,7 @@
       "name": "Lenovo Responsible Disclosure",
       "program_url": "https://bugcrowd.com/engagements/lenovoresponsibledisclosure",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T14:57:30Z",
+      "captured_at": "2026-11-23T18:42:29Z",
       "published_asset_count": 6
     },
     {
@@ -24152,7 +24152,7 @@
       "name": "U.S. Securities and Exchange Commission (SEC) - Vulnerability Disclosure Program",
       "program_url": "https://gov.bugcrowd.net/engagements/sec-vdp",
       "directory_program_type": "vulnerability_disclosure",
-      "captured_at": "2026-11-22T15:15:44Z",
+      "captured_at": "2026-11-23T19:00:42Z",
       "published_asset_count": 1
     },
     {

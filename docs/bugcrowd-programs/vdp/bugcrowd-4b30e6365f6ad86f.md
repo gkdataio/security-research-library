@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-22T14:47:54Z.
+**Capture time:** 2026-11-23T18:32:52Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/citi/changelog/975d97fd-8795-42ca-8d4d-ea588b94027a.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/citi/changelog/75448233-28fd-4ab7-9b2d-ab8101bd6419.json>)
 
 ## In-scope entries (1)
 

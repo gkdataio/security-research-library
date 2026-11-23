@@ -21,12 +21,12 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Cross-platform bounty candidates | 627 |
 | Bounty published scope captured | 591 |
 | Bounty scope gaps | 36 |
-| Bounty in-scope / out-of-scope rows | 9214 / 3196 |
+| Bounty in-scope / out-of-scope rows | 9215 / 3196 |
 | Overlapping Bugcrowd bounty listings | 293 |
 | Distinct programs across both catalogs | 850 |
 | Distinct programs with captured scope rows | 808 |
 | Distinct unresolved scope gaps | 42 |
-| Distinct in-scope rows | 11845 |
+| Distinct in-scope rows | 11846 |
 | Distinct out-of-scope rows | 3504 |
 | Repeated source rows collapsed | 77 |
 
