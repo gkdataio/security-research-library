@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-23T19:10:16Z.
+**Capture time:** 2026-11-24T18:38:41Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/innogames/innogames/detail>)
 

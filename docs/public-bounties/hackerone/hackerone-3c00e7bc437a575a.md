@@ -10,11 +10,11 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-23T19:04:06Z.
+**Capture time:** 2026-11-24T18:32:29Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/khealth/assets/download_csv.csv>)
 
-## In-scope entries (13)
+## In-scope entries (17)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -31,6 +31,10 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.primarycareondemand\.mayoclinic\.org | WILDCARD | — | — | Bounty eligible |
 | \*\.novanthealthvirtualprimarycare\.org | WILDCARD | — | — | Bounty eligible |
 | \*\.pennmedicine\.connect-visit\.com | WILDCARD | — | — | Bounty eligible |
+| \*\.atlantichealthvirtualcare\.org | WILDCARD | — | — | Bounty eligible |
+| \*\.uvahealthpcod\.org | WILDCARD | — | — | Bounty eligible |
+| pennmedicine\.k-test\.connect-visit\.com | URL | — | — | Bounty eligible |
+| patientgpt\.pennmedicine\.k-test\.connect-visit\.com | URL | — | — | Bounty eligible |
 
 ## Out-of-scope entries (5)
 

@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-23T18:40:24Z.
+**Capture time:** 2026-11-24T18:08:46Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/insigniafinancial/changelog/13bf421e-07b2-449b-93d0-a9972c283f49.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/insigniafinancial/changelog/59941edf-eb9a-4a86-8520-50188f35904f.json>)
 
 ## In-scope entries (23)
 

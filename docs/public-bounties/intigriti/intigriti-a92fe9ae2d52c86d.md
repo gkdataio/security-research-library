@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-23T19:11:10Z.
+**Capture time:** 2026-11-24T18:39:36Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/portofantwerp/portofantwerp/detail>)
 

@@ -15019,6 +15019,138 @@
           ]
         }
       ]
+    },
+    {
+      "id": "dcb83cd28d23f33131fe74223019d0768bc510b60dc5360a5f81c78bdab8af7f",
+      "recorded_at": "2026-11-24T18:42:08Z",
+      "baseline_commit": "91c7b15ac13eb8c665aa4c0acf1621a14538fd7d",
+      "baseline_digest": "b56d3d56b33752ecc64e6d8e81987a7c53a0d420d96b3794c42d7ed21d590897",
+      "current_digest": "a50b774c06e63b9623aee70ef3e77e0e49065571e2281e78fe6b601f4a6f6634",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-0715b82e337d0133",
+          "name": "Royal Automotive Club of Victoria (RACV) Vulnerability Disclosure Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/racv-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-11T07:12:44.650Z",
+              "after": "2026-11-24T03:42:08.481Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/racv-vdp-pro/changelog/80d0d164-dc93-4e80-a266-3e2c86ae100c.json",
+              "after": "https://bugcrowd.com/engagements/racv-vdp-pro/changelog/94cee905-f39e-49c5-a81c-eaa9a6a1e2a1.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-0c5cf30568bd0447",
+          "name": "Insignia Financial Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/insigniafinancial",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-25T03:31:30.180Z",
+              "after": "2026-11-24T03:41:08.345Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/insigniafinancial/changelog/13bf421e-07b2-449b-93d0-a9972c283f49.json",
+              "after": "https://bugcrowd.com/engagements/insigniafinancial/changelog/59941edf-eb9a-4a86-8520-50188f35904f.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-663c428857ba5298",
+          "name": "BOJA Consulting Bug Bounty",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/boja",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-21T10:10:39.774Z",
+              "after": "2026-11-24T16:39:55.922Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/boja/changelog/da640444-3729-49a8-993f-48830faa282a.json",
+              "after": "https://bugcrowd.com/engagements/boja/changelog/1b6ba5b6-5c15-48bb-9db6-0f461ba74ea3.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-d4b607788ef63337",
+          "name": "Stiltsoft",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/stiltsoft",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-26T12:23:26.932Z",
+              "after": "2026-11-24T10:14:34.463Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/stiltsoft/changelog/a463c8f2-1492-4087-8d68-ecf85e3d05ae.json",
+              "after": "https://bugcrowd.com/engagements/stiltsoft/changelog/8d4843f4-97a2-41d6-b690-68b9d3d65198.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-3c00e7bc437a575a",
+          "name": "KHealth",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/khealth?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "patientgpt.pennmedicine.k-test.connect-visit.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "pennmedicine.k-test.connect-visit.com",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.atlantichealthvirtualcare.org",
+                  "scope": "in"
+                },
+                {
+                  "asset_type": "WILDCARD",
+                  "bounty_eligible": true,
+                  "group": null,
+                  "location": null,
+                  "name": "*.uvahealthpcod.org",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -91,7 +91,7 @@
       "title": "Current published public asset table",
       "url": "https://bugcrowd.com/engagements/atlassian/changelog/983ceab8-ee25-460d-8da3-d30233c261cb.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-23T18:28:53Z",
+      "retrieved_at": "2026-11-24T17:57:14Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -108,7 +108,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-23T18:28:53Z",
+    "verified_at": "2026-11-24T17:57:14Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
