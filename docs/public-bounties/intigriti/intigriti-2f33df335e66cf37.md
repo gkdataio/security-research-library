@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-24T18:37:05Z.
+**Capture time:** 2026-11-25T18:04:52Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/aswatson/superdrug/detail>)
 

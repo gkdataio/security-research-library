@@ -103,9 +103,9 @@
     {
       "id": "automated-public-asset-scope",
       "title": "Current published public asset table",
-      "url": "https://bugcrowd.com/engagements/nubank/changelog/90947bf4-bb77-470a-85a7-a71bc80b9ef2.json",
+      "url": "https://bugcrowd.com/engagements/nubank/changelog/c4c1f683-5cb8-4ef9-b3bd-8ae2c92d844c.json",
       "publisher": "Bugcrowd",
-      "retrieved_at": "2026-11-24T18:14:59Z",
+      "retrieved_at": "2026-11-25T17:42:50Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -126,7 +126,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-24T18:14:59Z",
+    "verified_at": "2026-11-25T17:42:50Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],
@@ -204,6 +204,15 @@
         ]
       },
       {
+        "name": "*nubank.world",
+        "asset_type": "website",
+        "location": null,
+        "group": "Primary Assets",
+        "source_ids": [
+          "automated-public-asset-scope"
+        ]
+      },
+      {
         "name": "*.nuinvest.com.br",
         "asset_type": "website",
         "location": "https://www.nuinvest.com.br/",
@@ -234,15 +243,6 @@
       },
       {
         "name": "international.nubank.com.br",
-        "asset_type": "website",
-        "location": null,
-        "group": "Out of Scope",
-        "source_ids": [
-          "automated-public-asset-scope"
-        ]
-      },
-      {
-        "name": "NuCommunity endpoints (BR, MX, CO)",
         "asset_type": "website",
         "location": null,
         "group": "Out of Scope",

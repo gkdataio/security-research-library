@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-24T18:39:24Z.
+**Capture time:** 2026-11-25T18:07:10Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/ninjakiwigames/ninjakiwigames/detail>)
 
@@ -26,7 +26,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | battles\.tv | URL | http://battles\.tv | Tier 2 | — |
 | data\.ninjakiwi\.com | URL | http://data\.ninjakiwi\.com | Tier 2 | — |
 | ninja\.kiwi | URL | http://ninja\.kiwi | Tier 2 | — |
-| ninjakiwi\.com | URL | http://ninjakiwi\.com | Tier 2 | — |
+| ninjakiwi\.com | URL | http://ninjakiwi\.com | No bounty | — |
 | alerts\.ninjakiwi\.com | URL | http://alerts\.ninjakiwi\.com | Tier 3 | — |
 | boomer2\.ninjakiwi\.com | URL | http://boomer2\.ninjakiwi\.com | Tier 3 | — |
 | ct\.ninjakiwi\.com | URL | http://ct\.ninjakiwi\.com | Tier 3 | — |

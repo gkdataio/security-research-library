@@ -15151,6 +15151,141 @@
           ]
         }
       ]
+    },
+    {
+      "id": "14eee0e533d1d3244be56d1aafc0246cbe4ef2241ab0132f2681d7e5cc203e5f",
+      "recorded_at": "2026-11-25T18:09:59Z",
+      "baseline_commit": "331df82151ca31b4cc0a946750207b6fed58f45f",
+      "baseline_digest": "a50b774c06e63b9623aee70ef3e77e0e49065571e2281e78fe6b601f4a6f6634",
+      "current_digest": "8d7310d3e77bc39fe84ffdf2103e8fb4d1bb60dc712053bd8033509e2dd4dec9",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-52bd57313a7f7e27",
+          "name": "Nubank Brasil Managed Bug Bounty Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/nubank",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "policy.asset_scope.in_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "Primary Assets",
+                  "location": null,
+                  "name": "*nubank.world"
+                }
+              ]
+            },
+            {
+              "field": "policy.asset_scope.out_of_scope",
+              "removed": [
+                {
+                  "asset_type": "website",
+                  "group": "Out of Scope",
+                  "location": null,
+                  "name": "NuCommunity endpoints (BR, MX, CO)"
+                }
+              ],
+              "added": []
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-bfd15b71beacd9c3",
+          "name": "Ziff Davis Vulnerability Disclosure Program",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/ziffdavis-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "website",
+                  "group": "In Scope Targets",
+                  "location": "https://www.babycenter.ca/",
+                  "name": "BabyCenter CANADA",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "website",
+                  "group": "In Scope Targets",
+                  "location": "https://*.babycenter.ca/",
+                  "name": "BabyCenter CANADA",
+                  "scope": "in"
+                }
+              ]
+            },
+            {
+              "field": "capture.published_at",
+              "before": "2026-10-28T12:55:58.760Z",
+              "after": "2026-11-25T06:50:46.030Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/ziffdavis-vdp-pro/changelog/7bdc8b26-04e4-41c2-a360-b800bdfa7772.json",
+              "after": "https://bugcrowd.com/engagements/ziffdavis-vdp-pro/changelog/0e12d7ba-1a46-4f23-b9e5-4602b3a14588.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:hackerone-926f228b821f4e97",
+          "name": "Booking.com",
+          "platform": "HackerOne",
+          "program_url": "https://hackerone.com/bookingcom?type=team",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "bounty_eligible": false,
+                  "group": null,
+                  "location": null,
+                  "name": "merchandise.booking.com",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-d346f2c3e002e82e",
+          "name": "Ninja Kiwi Games Bug Bounty program",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/ninjakiwigames/ninjakiwigames",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.in_scope",
+              "removed": [
+                {
+                  "asset_type": "URL",
+                  "group": "Tier 2",
+                  "location": "http://ninjakiwi.com",
+                  "name": "ninjakiwi.com",
+                  "scope": "in"
+                }
+              ],
+              "added": [
+                {
+                  "asset_type": "URL",
+                  "group": "No bounty",
+                  "location": "http://ninjakiwi.com",
+                  "name": "ninjakiwi.com",
+                  "scope": "in"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

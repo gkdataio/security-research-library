@@ -83,7 +83,7 @@
       "title": "Current published public asset table",
       "url": "https://app.intigriti.com/programs/dropbox/dropbox/detail",
       "publisher": "Intigriti",
-      "retrieved_at": "2026-11-24T18:38:22Z",
+      "retrieved_at": "2026-11-25T18:06:09Z",
       "provenance": "official_primary",
       "access_method": "text"
     }
@@ -109,7 +109,7 @@
   "asset_scope": {
     "capture_status": "published_list",
     "collection_method": "official_platform_scope_table",
-    "verified_at": "2026-11-24T18:38:22Z",
+    "verified_at": "2026-11-25T18:06:09Z",
     "source_ids": [
       "automated-public-asset-scope"
     ],

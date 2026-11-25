@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-24T18:28:47Z.
+**Capture time:** 2026-11-25T17:56:38Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/ziffdavis-vdp-pro/changelog/7bdc8b26-04e4-41c2-a360-b800bdfa7772.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/ziffdavis-vdp-pro/changelog/0e12d7ba-1a46-4f23-b9e5-4602b3a14588.json>)
 
 ## In-scope entries (239)
 
@@ -156,7 +156,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 | Challenges App - Lose IT\! | website | https://www\.challenges\.app/ | In Scope Targets | — |
 | Fit Now Inc | website | https://fitnowinc\.com/ | In Scope Targets | — |
 | Ad Care | website | https://ad\.care/ | In Scope Targets | — |
-| BabyCenter CANADA | website | https://www\.babycenter\.ca/ | In Scope Targets | — |
+| BabyCenter CANADA | website | https://\*\.babycenter\.ca/ | In Scope Targets | — |
 | BabyCenter Australia | website | https://babycenter\.com\.au/ | In Scope Targets | — |
 | BabyCenter Germany | website | https://babycenter\.de/ | In Scope Targets | — |
 | BabyCenter India | website | https://babycenter\.in/ | In Scope Targets | — |

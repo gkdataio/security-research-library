@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:33Z.
 
-**Latest refresh failed (2026-11-24T18:40:11Z):** Missing or ambiguous complete SSR asset table. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-25T18:07:59Z):** Missing or ambiguous complete SSR asset table. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/ubisoft/ubisoftgamesecbbp/preview/detail>)
 

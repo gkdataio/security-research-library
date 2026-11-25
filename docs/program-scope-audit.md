@@ -9,7 +9,7 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Measure | Count |
 | --- | ---: |
 | Separately reviewed policy records | 40 |
-| Reviewed policy in-scope / out-of-scope rows | 479 / 198 |
+| Reviewed policy in-scope / out-of-scope rows | 480 / 197 |
 | Discovery program-page listings | 1156 |
 | Discovery listings linked to reviewed policies | 33 |
 | Discovery listings with captured public scope tables | 785 |
@@ -17,16 +17,16 @@ Counts cover dated public directory snapshots and published scope rows. A visibl
 | Bugcrowd public listings | 516 |
 | Bugcrowd published scope captured | 507 |
 | Bugcrowd scope gaps | 9 |
-| Bugcrowd in-scope / out-of-scope rows | 5573 / 1443 |
+| Bugcrowd in-scope / out-of-scope rows | 5574 / 1442 |
 | Cross-platform bounty candidates | 627 |
 | Bounty published scope captured | 591 |
 | Bounty scope gaps | 36 |
-| Bounty in-scope / out-of-scope rows | 9219 / 3196 |
+| Bounty in-scope / out-of-scope rows | 9220 / 3196 |
 | Overlapping Bugcrowd bounty listings | 293 |
 | Distinct programs across both catalogs | 850 |
 | Distinct programs with captured scope rows | 808 |
 | Distinct unresolved scope gaps | 42 |
-| Distinct in-scope rows | 11850 |
+| Distinct in-scope rows | 11851 |
 | Distinct out-of-scope rows | 3504 |
 | Repeated source rows collapsed | 77 |
 
