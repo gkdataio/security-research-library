@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:59Z.
+**Capture time:** 2026-11-26T17:46:02Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/humo/detail>)
 
@@ -25,7 +25,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.humo\.be/abonnementen | URL | http://www\.humo\.be/abonnementen | Tier 2 | — |
 | \*\.humo\.be | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (5)
+## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | humo\.be/service | URL | http://humo\.be/service | — | — |
 | abonnement\.humo\.be | URL | http://abonnement\.humo\.be | — | — |
 | actie\.humo\.be | URL | http://actie\.humo\.be | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

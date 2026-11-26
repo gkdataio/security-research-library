@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:49Z.
+**Capture time:** 2026-11-26T17:45:52Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/demorgen/detail>)
 
@@ -23,7 +23,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.demorgen\.be/abonnementen | URL | http://www\.demorgen\.be/abonnementen | Tier 2 | — |
 | \*\.demorgen\.be | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (6)
+## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -33,6 +33,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | demorgen\.be/registreren | URL | http://demorgen\.be/registreren | — | — |
 | demorgen\.be/service | URL | http://demorgen\.be/service | — | — |
 | abonnement\.demorgen\.be | URL | http://abonnement\.demorgen\.be | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

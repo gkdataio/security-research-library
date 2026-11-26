@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:57Z.
+**Capture time:** 2026-11-26T17:46:00Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/hetparool/detail>)
 
@@ -25,7 +25,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.parool\.nl/abonnementen | URL | http://www\.parool\.nl/abonnementen | Tier 2 | — |
 | \*\.parool\.nl | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (6)
+## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -35,6 +35,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | parool\.nl/registreren | URL | http://parool\.nl/registreren | — | — |
 | parool\.nl/service | URL | http://parool\.nl/service | — | — |
 | abonnement\.parool\.nl | URL | http://abonnement\.parool\.nl | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

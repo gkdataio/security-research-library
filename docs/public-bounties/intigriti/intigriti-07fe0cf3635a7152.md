@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:06:07Z.
+**Capture time:** 2026-11-26T17:46:11Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/vtmgo/detail>)
 
@@ -24,7 +24,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.vtm\.be | Wildcard | — | Tier 3 | — |
 | \*\.vtmgo\.be | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (6)
+## Out-of-scope entries (7)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | vtmgo\.be/service | URL | http://vtmgo\.be/service | — | — |
 | shop\.vtm\.be | URL | http://shop\.vtm\.be | — | — |
 | customerservice\.vtm\.be | URL | http://customerservice\.vtm\.be | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

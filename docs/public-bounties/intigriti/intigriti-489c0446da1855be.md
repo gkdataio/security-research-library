@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:07:56Z.
+**Capture time:** 2026-11-26T17:48:00Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/truelayer/truelayer/detail>)
 

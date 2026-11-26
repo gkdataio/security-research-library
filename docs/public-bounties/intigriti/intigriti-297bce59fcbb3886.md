@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:55Z.
+**Capture time:** 2026-11-26T17:45:58Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/hetlaatstenieuws/detail>)
 
@@ -26,12 +26,13 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.hln\.be | URL | http://www\.hln\.be | Tier 2 | — |
 | \*\.hln\.be | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (2)
+## Out-of-scope entries (3)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | actie\.hln\.be | URL | http://actie\.hln\.be | — | — |
 | hln\.be/service | URL | http://hln\.be/service | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

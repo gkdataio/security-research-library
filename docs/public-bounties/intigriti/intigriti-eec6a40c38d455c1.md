@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:06:04Z.
+**Capture time:** 2026-11-26T17:46:08Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/tweakers/detail>)
 
@@ -22,11 +22,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.tweakers\.net | Wildcard | — | Tier 2 | — |
 | \*\.tweakimg\.net | Wildcard | — | Tier 2 | — |
 
-## Out-of-scope entries (1)
+## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | elect\.tweakers\.net | URL | http://elect\.tweakers\.net | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

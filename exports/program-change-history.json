@@ -15286,6 +15286,314 @@
           ]
         }
       ]
+    },
+    {
+      "id": "22fb414657528c5f47555791ce78800f69a78825a3600d2ec74cd871815e2747",
+      "recorded_at": "2026-11-26T17:50:06Z",
+      "baseline_commit": "6a6750f9b1c5fe3b655fa4093aca25aceaa44a2d",
+      "baseline_digest": "8d7310d3e77bc39fe84ffdf2103e8fb4d1bb60dc712053bd8033509e2dd4dec9",
+      "current_digest": "c17932beaccb64a4fe180c2129d8bc90f520ef7a8436ebee39cc7d098b21762f",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-8965552f30be5e0b",
+          "name": "Mattermost Public Bug Bounty Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/mattermost-mbb-public",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-20T10:44:02.586Z",
+              "after": "2026-11-26T10:46:21.399Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/d135ab5d-7017-4b22-8cf4-d6f6927d1d08.json",
+              "after": "https://bugcrowd.com/engagements/mattermost-mbb-public/changelog/122e29b7-848c-4d60-841c-123a868ee201.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-9a22346f0a1e442c",
+          "name": "Electroneum Legacy Blockchain: EOL",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/legacy-blockchain-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-02-23T15:42:51.448Z",
+              "after": "2026-11-26T15:32:39.075Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/legacy-blockchain-mbb-og/changelog/f40fb416-593a-4902-82eb-03b902a32c84.json",
+              "after": "https://bugcrowd.com/engagements/legacy-blockchain-mbb-og/changelog/b07055a7-7201-4d0e-9d6b-e7e35c88b18e.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-ff5dfe058d078681",
+          "name": "Electroneum Smart Chain (ETN-SC) — EVM-Compatible Blockchain",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/smartchain-mbb-og",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-01-05T13:56:31.373Z",
+              "after": "2026-11-26T15:36:12.151Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/smartchain-mbb-og/changelog/4db6dd3f-e0bf-43cf-8835-3892423b790b.json",
+              "after": "https://bugcrowd.com/engagements/smartchain-mbb-og/changelog/1bd8aac2-d7bd-4d3e-8e9f-23c3f4fed3d6.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-07fe0cf3635a7152",
+          "name": "VTM GO",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/vtmgo",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-297bce59fcbb3886",
+          "name": "Het Laatste Nieuws",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/hetlaatstenieuws",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-3910db8612daa791",
+          "name": "De Morgen",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/demorgen",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-5bfd84aa5993ae61",
+          "name": "Het Parool",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/hetparool",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-7d9777b80a650ca2",
+          "name": "Algemeen Dagblad",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/algemeendagblad",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-84d7a98b220b8a42",
+          "name": "Humo",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/humo",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-9112625a73815592",
+          "name": "Trouw",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/trouw",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-a9d9849de0a71f23",
+          "name": "DPG Media",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/dpgmedia",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-c825fcbd13fba543",
+          "name": "De Volkskrant",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/devolkskrant",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-ce47061ed8e1ea9b",
+          "name": "Libelle",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/libelle",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "key": "listing:intigriti-eec6a40c38d455c1",
+          "name": "Tweakers",
+          "platform": "Intigriti",
+          "program_url": "https://app.intigriti.com/programs/dpgm/tweakers",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.out_of_scope",
+              "removed": [],
+              "added": [
+                {
+                  "asset_type": "Other",
+                  "group": null,
+                  "location": null,
+                  "name": "SaaS Applications",
+                  "scope": "out"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

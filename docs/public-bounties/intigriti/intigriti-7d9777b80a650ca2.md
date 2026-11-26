@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:47Z.
+**Capture time:** 2026-11-26T17:45:50Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/algemeendagblad/detail>)
 
@@ -23,11 +23,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.ad\.nl/abonnementen | URL | http://www\.ad\.nl/abonnementen | Tier 2 | — |
 | \*\.ad\.nl | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (1)
+## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | actie\.ad\.nl | URL | http://actie\.ad\.nl | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-11-22T14:51:54Z.
 
-**Latest refresh failed (2026-11-25T17:33:02Z):** More than half of prior asset identities disappeared; manual review required. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-26T17:13:06Z):** More than half of prior asset identities disappeared; manual review required. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Directory category:** Bug Bounty.
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:53Z.
+**Capture time:** 2026-11-26T17:45:56Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/dpgmedia/detail>)
 
@@ -22,7 +22,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | \*\.dpgmedia\.nl | Wildcard | — | Tier 2 | — |
 | Any related DPG media domain | Other | — | Tier 3 | — |
 
-## Out-of-scope entries (4)
+## Out-of-scope entries (5)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | Qualifio Subdomains | Other | — | — | — |
 | actie\.\*\.\* | Wildcard | — | — | — |
 | cadeau\.videoland\.com | URL | http://cadeau\.videoland\.com | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:06:01Z.
+**Capture time:** 2026-11-26T17:46:04Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/libelle/detail>)
 
@@ -21,7 +21,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.libelle\.nl | URL | http://www\.libelle\.nl | Tier 2 | — |
 | \*\.libelle\.nl | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (5)
+## Out-of-scope entries (6)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | libelle\.nl/registreren | URL | http://libelle\.nl/registreren | — | — |
 | libelle\.nl/service | URL | http://libelle\.nl/service | — | — |
 | actie\.libelle\.nl | URL | http://actie\.libelle\.nl | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

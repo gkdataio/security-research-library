@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-25T18:05:51Z.
+**Capture time:** 2026-11-26T17:45:54Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/dpgm/devolkskrant/detail>)
 
@@ -23,11 +23,12 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 | www\.volkskrant\.nl/abonnementen | URL | http://www\.volkskrant\.nl/abonnementen | Tier 2 | — |
 | \*\.volkskrant\.nl | Wildcard | — | Tier 3 | — |
 
-## Out-of-scope entries (1)
+## Out-of-scope entries (2)
 
 | Asset | Type | Location | Group | Qualification |
 | --- | --- | --- | --- | --- |
 | actie\.volkskrant\.nl | URL | http://actie\.volkskrant\.nl | — | — |
+| SaaS Applications | Other | — | — | — |
 
 **Limits**
 

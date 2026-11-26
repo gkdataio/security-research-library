@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:51:37Z.
 
-**Latest refresh failed (2026-11-25T18:08:02Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-26T17:48:05Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/upcloud/upcloud/preview/detail>)
 

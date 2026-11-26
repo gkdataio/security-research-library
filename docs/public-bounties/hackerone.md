@@ -6,225 +6,225 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 | Program | Scope status | In scope | Out of scope | Review flags | Capture time |
 | --- | --- | ---: | ---: | ---: | --- |
-| [1Password - Enterprise Password Manager](<hackerone/hackerone-df9e660827f32e55.md>) | Published scope captured | 4 | 4 | 0 | 2026-11-25T17:56:57Z |
-| [1win](<hackerone/hackerone-da644f4b80e67dcd.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-25T17:56:59Z |
-| [23andMe Bug Bounty](<hackerone/hackerone-17f38648acfa6655.md>) | Published scope captured | 18 | 0 | 0 | 2026-11-25T17:57:02Z |
-| [3CX](<hackerone/hackerone-1f339a1376d2de7f.md>) | Published scope captured | 14 | 2 | 0 | 2026-11-25T17:57:03Z |
-| [8x8](<hackerone/hackerone-13a495ec90ff1384.md>) | Published scope captured | 117 | 23 | 0 | 2026-11-25T17:57:05Z |
-| [Abercrombie &amp; Fitch Bug Bounty](<hackerone/hackerone-6b9cf8eb4b652f82.md>) | Published scope captured | 8 | 2 | 0 | 2026-11-25T17:57:07Z |
-| [Acronis](<hackerone/hackerone-1cb34dcf5007950c.md>) | Published scope captured | 21 | 2 | 0 | 2026-11-25T17:57:09Z |
-| [Affirm](<hackerone/hackerone-2719017326e56636.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-25T17:57:11Z |
-| [Agoda Public](<hackerone/hackerone-e79446e3e4ad057a.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-25T17:57:13Z |
-| [Airbnb](<hackerone/hackerone-1f9339ddf7cb529e.md>) | Published scope captured | 27 | 8 | 0 | 2026-11-25T17:57:15Z |
-| [Airtable](<hackerone/hackerone-1ace0edc1ef505f4.md>) | Published scope captured | 7 | 11 | 0 | 2026-11-25T17:57:17Z |
-| [ALSCO](<hackerone/hackerone-1cb8aa6e2728fe27.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-25T17:57:19Z |
-| [Amazon Vulnerability Research Program](<hackerone/hackerone-0373299e645bdb72.md>) | Published scope captured | 120 | 10 | 0 | 2026-11-25T17:57:22Z |
-| [Anduril Industries](<hackerone/hackerone-9c22f93a3085991d.md>) | Published scope captured | 4 | 2 | 0 | 2026-11-25T17:57:23Z |
-| [Anthropic](<hackerone/hackerone-4636d52dbfb788be.md>) | Published scope captured | 14 | 1 | 0 | 2026-11-25T17:57:25Z |
-| [Arc](<hackerone/hackerone-82b66e90f50d458b.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-25T17:57:27Z |
-| [Arkose Labs](<hackerone/hackerone-db4d7f1f13fba4fa.md>) | Published scope captured | 8 | 2 | 0 | 2026-11-25T17:57:29Z |
-| [AT&amp;T](<hackerone/hackerone-8cd014b6cccdc484.md>) | Published scope captured | 1 | 77 | 0 | 2026-11-25T17:57:31Z |
-| [Audible](<hackerone/hackerone-992ffc070c0267ce.md>) | Published scope captured | 4 | 12 | 0 | 2026-11-25T17:57:33Z |
-| [Automattic](<hackerone/hackerone-72dfb267385f03d8.md>) | Published scope captured | 30 | 12 | 0 | 2026-11-25T17:57:35Z |
-| [Banco Plata](<hackerone/hackerone-8501ce85809a9bd4.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-25T17:57:37Z |
-| [Basecamp](<hackerone/hackerone-c8992f1ef77a0a82.md>) | Published scope captured | 17 | 3 | 0 | 2026-11-25T17:57:39Z |
-| [Blend Labs](<hackerone/hackerone-a7f2e5a79c12843c.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T17:57:43Z |
-| [Booking\.com](<hackerone/hackerone-926f228b821f4e97.md>) | Published scope captured | 49 | 28 | 0 | 2026-11-25T17:57:45Z |
-| [Boozt Fashion AB](<hackerone/hackerone-346f746b3317984a.md>) | Published scope captured | 7 | 3 | 0 | 2026-11-25T17:57:47Z |
-| [Box BB](<hackerone/hackerone-6d951fd506bfdf62.md>) | Published scope captured | 12 | 2 | 0 | 2026-11-25T17:57:49Z |
-| [Braze, Inc\.](<hackerone/hackerone-ec82b7e39c5712b0.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T17:57:51Z |
-| [Bumba](<hackerone/hackerone-fe7206c8f2fec054.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T17:57:54Z |
-| [Bumble](<hackerone/hackerone-3a39587567acbaf0.md>) | Published scope captured | 50 | 5 | 0 | 2026-11-25T17:57:55Z |
-| [Bybit Fintech Ltd](<hackerone/hackerone-fc841c8ac5a3b8ce.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-25T17:57:57Z |
-| [Bykea](<hackerone/hackerone-57ac53ff2963eb5d.md>) | Published scope captured | 16 | 2 | 0 | 2026-11-25T17:57:59Z |
-| [Capital One Bug Bounty](<hackerone/hackerone-f69ab9781883de03.md>) | Published scope captured | 10 | 2 | 0 | 2026-11-25T17:58:01Z |
-| [Chainlink](<hackerone/hackerone-4fdb0e8d03bf76eb.md>) | Published scope captured | 8 | 15 | 0 | 2026-11-25T17:58:03Z |
-| [Chaturbate](<hackerone/hackerone-0aface240d991a6f.md>) | Published scope captured | 9 | 3 | 0 | 2026-11-25T17:58:05Z |
-| [Chia Network](<hackerone/hackerone-8756d9f7bdf35d4e.md>) | Published scope captured | 9 | 0 | 0 | 2026-11-25T17:58:07Z |
-| [Circle](<hackerone/hackerone-1a5cf3e4261f4650.md>) | Published scope captured | 22 | 0 | 0 | 2026-11-25T17:58:09Z |
-| [CLEAR](<hackerone/hackerone-048bc8fbfcdeb0ce.md>) | Published scope captured | 17 | 4 | 0 | 2026-11-25T17:58:11Z |
-| [Cloud Software Group](<hackerone/hackerone-4aaa7dee426399c5.md>) | Published scope captured | 17 | 16 | 0 | 2026-11-25T17:58:35Z |
-| [Cloudflare Public Bug Bounty](<hackerone/hackerone-f851f0727c99b3af.md>) | Published scope captured | 51 | 33 | 0 | 2026-11-25T17:58:13Z |
-| [Coinbase](<hackerone/hackerone-af813ba803adf77c.md>) | Published scope captured | 16 | 5 | 0 | 2026-11-25T17:58:15Z |
+| [1Password - Enterprise Password Manager](<hackerone/hackerone-df9e660827f32e55.md>) | Published scope captured | 4 | 4 | 0 | 2026-11-26T17:37:02Z |
+| [1win](<hackerone/hackerone-da644f4b80e67dcd.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-26T17:37:04Z |
+| [23andMe Bug Bounty](<hackerone/hackerone-17f38648acfa6655.md>) | Published scope captured | 18 | 0 | 0 | 2026-11-26T17:37:06Z |
+| [3CX](<hackerone/hackerone-1f339a1376d2de7f.md>) | Published scope captured | 14 | 2 | 0 | 2026-11-26T17:37:08Z |
+| [8x8](<hackerone/hackerone-13a495ec90ff1384.md>) | Published scope captured | 117 | 23 | 0 | 2026-11-26T17:37:10Z |
+| [Abercrombie &amp; Fitch Bug Bounty](<hackerone/hackerone-6b9cf8eb4b652f82.md>) | Published scope captured | 8 | 2 | 0 | 2026-11-26T17:37:12Z |
+| [Acronis](<hackerone/hackerone-1cb34dcf5007950c.md>) | Published scope captured | 21 | 2 | 0 | 2026-11-26T17:37:14Z |
+| [Affirm](<hackerone/hackerone-2719017326e56636.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-26T17:37:16Z |
+| [Agoda Public](<hackerone/hackerone-e79446e3e4ad057a.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-26T17:37:18Z |
+| [Airbnb](<hackerone/hackerone-1f9339ddf7cb529e.md>) | Published scope captured | 27 | 8 | 0 | 2026-11-26T17:37:20Z |
+| [Airtable](<hackerone/hackerone-1ace0edc1ef505f4.md>) | Published scope captured | 7 | 11 | 0 | 2026-11-26T17:37:22Z |
+| [ALSCO](<hackerone/hackerone-1cb8aa6e2728fe27.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-26T17:37:24Z |
+| [Amazon Vulnerability Research Program](<hackerone/hackerone-0373299e645bdb72.md>) | Published scope captured | 120 | 10 | 0 | 2026-11-26T17:37:26Z |
+| [Anduril Industries](<hackerone/hackerone-9c22f93a3085991d.md>) | Published scope captured | 4 | 2 | 0 | 2026-11-26T17:37:28Z |
+| [Anthropic](<hackerone/hackerone-4636d52dbfb788be.md>) | Published scope captured | 14 | 1 | 0 | 2026-11-26T17:37:30Z |
+| [Arc](<hackerone/hackerone-82b66e90f50d458b.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-26T17:37:32Z |
+| [Arkose Labs](<hackerone/hackerone-db4d7f1f13fba4fa.md>) | Published scope captured | 8 | 2 | 0 | 2026-11-26T17:37:34Z |
+| [AT&amp;T](<hackerone/hackerone-8cd014b6cccdc484.md>) | Published scope captured | 1 | 77 | 0 | 2026-11-26T17:37:36Z |
+| [Audible](<hackerone/hackerone-992ffc070c0267ce.md>) | Published scope captured | 4 | 12 | 0 | 2026-11-26T17:37:38Z |
+| [Automattic](<hackerone/hackerone-72dfb267385f03d8.md>) | Published scope captured | 30 | 12 | 0 | 2026-11-26T17:37:40Z |
+| [Banco Plata](<hackerone/hackerone-8501ce85809a9bd4.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-26T17:37:42Z |
+| [Basecamp](<hackerone/hackerone-c8992f1ef77a0a82.md>) | Published scope captured | 17 | 3 | 0 | 2026-11-26T17:37:44Z |
+| [Blend Labs](<hackerone/hackerone-a7f2e5a79c12843c.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:37:48Z |
+| [Booking\.com](<hackerone/hackerone-926f228b821f4e97.md>) | Published scope captured | 49 | 28 | 0 | 2026-11-26T17:37:50Z |
+| [Boozt Fashion AB](<hackerone/hackerone-346f746b3317984a.md>) | Published scope captured | 7 | 3 | 0 | 2026-11-26T17:37:52Z |
+| [Box BB](<hackerone/hackerone-6d951fd506bfdf62.md>) | Published scope captured | 12 | 2 | 0 | 2026-11-26T17:37:54Z |
+| [Braze, Inc\.](<hackerone/hackerone-ec82b7e39c5712b0.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:37:56Z |
+| [Bumba](<hackerone/hackerone-fe7206c8f2fec054.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:37:58Z |
+| [Bumble](<hackerone/hackerone-3a39587567acbaf0.md>) | Published scope captured | 50 | 5 | 0 | 2026-11-26T17:38:00Z |
+| [Bybit Fintech Ltd](<hackerone/hackerone-fc841c8ac5a3b8ce.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-26T17:38:02Z |
+| [Bykea](<hackerone/hackerone-57ac53ff2963eb5d.md>) | Published scope captured | 16 | 2 | 0 | 2026-11-26T17:38:04Z |
+| [Capital One Bug Bounty](<hackerone/hackerone-f69ab9781883de03.md>) | Published scope captured | 10 | 2 | 0 | 2026-11-26T17:38:06Z |
+| [Chainlink](<hackerone/hackerone-4fdb0e8d03bf76eb.md>) | Published scope captured | 8 | 15 | 0 | 2026-11-26T17:38:08Z |
+| [Chaturbate](<hackerone/hackerone-0aface240d991a6f.md>) | Published scope captured | 9 | 3 | 0 | 2026-11-26T17:38:10Z |
+| [Chia Network](<hackerone/hackerone-8756d9f7bdf35d4e.md>) | Published scope captured | 9 | 0 | 0 | 2026-11-26T17:38:12Z |
+| [Circle](<hackerone/hackerone-1a5cf3e4261f4650.md>) | Published scope captured | 22 | 0 | 0 | 2026-11-26T17:38:14Z |
+| [CLEAR](<hackerone/hackerone-048bc8fbfcdeb0ce.md>) | Published scope captured | 17 | 4 | 0 | 2026-11-26T17:38:16Z |
+| [Cloud Software Group](<hackerone/hackerone-4aaa7dee426399c5.md>) | Published scope captured | 17 | 16 | 0 | 2026-11-26T17:38:40Z |
+| [Cloudflare Public Bug Bounty](<hackerone/hackerone-f851f0727c99b3af.md>) | Published scope captured | 51 | 33 | 0 | 2026-11-26T17:38:18Z |
+| [Coinbase](<hackerone/hackerone-af813ba803adf77c.md>) | Published scope captured | 16 | 5 | 0 | 2026-11-26T17:38:20Z |
 | [CoinMate\.io](<hackerone/hackerone-506fc9236b351984.md>) | No published asset rows found | 0 | 0 | 0 | 2026-11-07T14:53:40Z |
-| [CoinSpot](<hackerone/hackerone-9fb3b8bf1923ee31.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T17:58:20Z |
-| [Compass](<hackerone/hackerone-e14b1026056fd046.md>) | Published scope captured | 3 | 37 | 0 | 2026-11-25T17:58:23Z |
-| [Coupang Taiwan](<hackerone/hackerone-3d133609f9fb7801.md>) | Published scope captured | 47 | 0 | 0 | 2026-11-25T17:58:25Z |
-| [Credit Karma](<hackerone/hackerone-b575df220d46283e.md>) | Published scope captured | 14 | 10 | 0 | 2026-11-25T17:58:27Z |
-| [Crowdstrike](<hackerone/hackerone-4318147bbac81dda.md>) | Published scope captured | 20 | 3 | 0 | 2026-11-25T17:58:29Z |
-| [Crypto\.com](<hackerone/hackerone-6d0aca6e36ecf809.md>) | Published scope captured | 24 | 7 | 0 | 2026-11-25T17:58:32Z |
-| [CS Money](<hackerone/hackerone-c3f228f4cfb65d14.md>) | Published scope captured | 5 | 3 | 0 | 2026-11-25T17:58:33Z |
-| [d-you App &amp; German EUDI Wallet Ecosystem](<hackerone/hackerone-077a226296df271f.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-25T17:58:21Z |
-| [Databricks](<hackerone/hackerone-066b23fc84620102.md>) | Published scope captured | 9 | 4 | 0 | 2026-11-25T17:58:39Z |
-| [Deribit](<hackerone/hackerone-13427421e09fd998.md>) | Published scope captured | 8 | 5 | 0 | 2026-11-25T17:58:41Z |
-| [Deriv\.com](<hackerone/hackerone-6e7e739d37e61a8e.md>) | Published scope captured | 18 | 7 | 0 | 2026-11-25T17:58:43Z |
-| [Discourse](<hackerone/hackerone-43fa2a30bf85ad89.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-25T17:58:45Z |
+| [CoinSpot](<hackerone/hackerone-9fb3b8bf1923ee31.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:38:24Z |
+| [Compass](<hackerone/hackerone-e14b1026056fd046.md>) | Published scope captured | 3 | 37 | 0 | 2026-11-26T17:38:28Z |
+| [Coupang Taiwan](<hackerone/hackerone-3d133609f9fb7801.md>) | Published scope captured | 47 | 0 | 0 | 2026-11-26T17:38:30Z |
+| [Credit Karma](<hackerone/hackerone-b575df220d46283e.md>) | Published scope captured | 14 | 10 | 0 | 2026-11-26T17:38:32Z |
+| [Crowdstrike](<hackerone/hackerone-4318147bbac81dda.md>) | Published scope captured | 20 | 3 | 0 | 2026-11-26T17:38:34Z |
+| [Crypto\.com](<hackerone/hackerone-6d0aca6e36ecf809.md>) | Published scope captured | 24 | 7 | 0 | 2026-11-26T17:38:36Z |
+| [CS Money](<hackerone/hackerone-c3f228f4cfb65d14.md>) | Published scope captured | 5 | 3 | 0 | 2026-11-26T17:38:38Z |
+| [d-you App &amp; German EUDI Wallet Ecosystem](<hackerone/hackerone-077a226296df271f.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-26T17:38:26Z |
+| [Databricks](<hackerone/hackerone-066b23fc84620102.md>) | Published scope captured | 9 | 4 | 0 | 2026-11-26T17:38:44Z |
+| [Deribit](<hackerone/hackerone-13427421e09fd998.md>) | Published scope captured | 8 | 5 | 0 | 2026-11-26T17:38:46Z |
+| [Deriv\.com](<hackerone/hackerone-6e7e739d37e61a8e.md>) | Published scope captured | 18 | 7 | 0 | 2026-11-26T17:38:48Z |
+| [Discourse](<hackerone/hackerone-43fa2a30bf85ad89.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-26T17:38:50Z |
 | [Django](<hackerone/hackerone-be10e8ab9c7750da.md>) | No published asset rows found | 0 | 0 | 0 | 2026-11-07T14:53:54Z |
-| [DoorDash](<hackerone/hackerone-0e742ef0ac68e7fd.md>) | Published scope captured | 3 | 16 | 0 | 2026-11-25T17:58:50Z |
-| [Doppler](<hackerone/hackerone-0b26afeb0f903c23.md>) | Published scope captured | 6 | 6 | 0 | 2026-11-25T17:58:51Z |
-| [Dynatrace](<hackerone/hackerone-786b4464ac339999.md>) | Published scope captured | 10 | 7 | 0 | 2026-11-25T17:58:53Z |
-| [Dyson](<hackerone/hackerone-01636bf90c479b43.md>) | Published scope captured | 66 | 32 | 0 | 2026-11-25T17:58:55Z |
-| [Early Warning](<hackerone/hackerone-1e50f0caf2c49b77.md>) | Published scope captured | 17 | 16 | 0 | 2026-11-25T17:58:57Z |
-| [eero](<hackerone/hackerone-9a6f8a4f012ddf44.md>) | Published scope captured | 5 | 3 | 0 | 2026-11-25T17:58:59Z |
-| [Elastic](<hackerone/hackerone-c94a85f143650391.md>) | Published scope captured | 34 | 39 | 0 | 2026-11-25T17:59:01Z |
-| [Enjin](<hackerone/hackerone-f244151680c83618.md>) | Published scope captured | 6 | 7 | 0 | 2026-11-25T17:59:03Z |
-| [Epic Games](<hackerone/hackerone-849058e2387b747d.md>) | Published scope captured | 86 | 103 | 0 | 2026-11-25T17:59:05Z |
-| [Eternal](<hackerone/hackerone-aab7e8d2f30909bd.md>) | Published scope captured | 34 | 15 | 0 | 2026-11-25T17:59:07Z |
+| [DoorDash](<hackerone/hackerone-0e742ef0ac68e7fd.md>) | Published scope captured | 3 | 16 | 0 | 2026-11-26T17:38:54Z |
+| [Doppler](<hackerone/hackerone-0b26afeb0f903c23.md>) | Published scope captured | 6 | 6 | 0 | 2026-11-26T17:38:56Z |
+| [Dynatrace](<hackerone/hackerone-786b4464ac339999.md>) | Published scope captured | 10 | 7 | 0 | 2026-11-26T17:38:58Z |
+| [Dyson](<hackerone/hackerone-01636bf90c479b43.md>) | Published scope captured | 66 | 32 | 0 | 2026-11-26T17:39:00Z |
+| [Early Warning](<hackerone/hackerone-1e50f0caf2c49b77.md>) | Published scope captured | 17 | 16 | 0 | 2026-11-26T17:39:02Z |
+| [eero](<hackerone/hackerone-9a6f8a4f012ddf44.md>) | Published scope captured | 5 | 3 | 0 | 2026-11-26T17:39:04Z |
+| [Elastic](<hackerone/hackerone-c94a85f143650391.md>) | Published scope captured | 34 | 39 | 0 | 2026-11-26T17:39:06Z |
+| [Enjin](<hackerone/hackerone-f244151680c83618.md>) | Published scope captured | 6 | 7 | 0 | 2026-11-26T17:39:08Z |
+| [Epic Games](<hackerone/hackerone-849058e2387b747d.md>) | Published scope captured | 86 | 103 | 0 | 2026-11-26T17:39:10Z |
+| [Eternal](<hackerone/hackerone-aab7e8d2f30909bd.md>) | Published scope captured | 34 | 15 | 0 | 2026-11-26T17:39:12Z |
 | [eufy Security](<hackerone/hackerone-ebb43d877451dbe1.md>) | Published scope captured | 19 | 0 | 0 | 2026-11-13T01:24:42Z |
-| [Evernote](<hackerone/hackerone-c01cd0677db4334d.md>) | Published scope captured | 9 | 2 | 0 | 2026-11-25T17:59:11Z |
-| [EXNESS](<hackerone/hackerone-279eb4b2a7f631df.md>) | Published scope captured | 14 | 1 | 0 | 2026-11-25T17:59:13Z |
-| [Exodus](<hackerone/hackerone-9970a869a4d513da.md>) | Published scope captured | 28 | 34 | 0 | 2026-11-25T17:59:15Z |
-| [Expedia Group Bug Bounty](<hackerone/hackerone-58030e9572e48f03.md>) | Published scope captured | 77 | 3 | 0 | 2026-11-25T17:59:17Z |
-| [FanDuel](<hackerone/hackerone-8aa3bd7b67d92531.md>) | Published scope captured | 20 | 3 | 0 | 2026-11-25T17:59:19Z |
-| [Faraday, Inc\.](<hackerone/hackerone-2d5d714bdf4e2b81.md>) | Published scope captured | 12 | 4 | 0 | 2026-11-25T17:59:21Z |
-| [FetLife](<hackerone/hackerone-ca54cf0a75b03578.md>) | Published scope captured | 3 | 9 | 0 | 2026-11-25T17:59:23Z |
-| [Figma](<hackerone/hackerone-12dcafdd4e490253.md>) | Published scope captured | 8 | 1 | 0 | 2026-11-25T17:59:25Z |
-| [Files\.com](<hackerone/hackerone-c6cb359d6b73b906.md>) | Published scope captured | 10 | 4 | 0 | 2026-11-25T17:59:27Z |
-| [Flickr](<hackerone/hackerone-a69f11874826e3db.md>) | Published scope captured | 5 | 17 | 0 | 2026-11-25T17:59:29Z |
-| [Flipkart](<hackerone/hackerone-f78540575f647669.md>) | Published scope captured | 10 | 0 | 0 | 2026-11-25T17:59:32Z |
-| [FloQast](<hackerone/hackerone-0b6f23f3ba8510d4.md>) | Published scope captured | 4 | 4 | 0 | 2026-11-25T17:59:33Z |
-| [Flutter UK&amp;I](<hackerone/hackerone-6fdffedcced7675a.md>) | Published scope captured | 44 | 36 | 0 | 2026-11-25T17:59:35Z |
-| [ForeScout Technologies](<hackerone/hackerone-2852d82770f2b82b.md>) | Published scope captured | 63 | 8 | 0 | 2026-11-25T17:59:38Z |
-| [Front](<hackerone/hackerone-5c3e0872ae6b58dd.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T17:59:39Z |
+| [Evernote](<hackerone/hackerone-c01cd0677db4334d.md>) | Published scope captured | 9 | 2 | 0 | 2026-11-26T17:39:16Z |
+| [EXNESS](<hackerone/hackerone-279eb4b2a7f631df.md>) | Published scope captured | 14 | 1 | 0 | 2026-11-26T17:39:18Z |
+| [Exodus](<hackerone/hackerone-9970a869a4d513da.md>) | Published scope captured | 28 | 34 | 0 | 2026-11-26T17:39:20Z |
+| [Expedia Group Bug Bounty](<hackerone/hackerone-58030e9572e48f03.md>) | Published scope captured | 77 | 3 | 0 | 2026-11-26T17:39:22Z |
+| [FanDuel](<hackerone/hackerone-8aa3bd7b67d92531.md>) | Published scope captured | 20 | 3 | 0 | 2026-11-26T17:39:24Z |
+| [Faraday, Inc\.](<hackerone/hackerone-2d5d714bdf4e2b81.md>) | Published scope captured | 12 | 4 | 0 | 2026-11-26T17:39:26Z |
+| [FetLife](<hackerone/hackerone-ca54cf0a75b03578.md>) | Published scope captured | 3 | 9 | 0 | 2026-11-26T17:39:28Z |
+| [Figma](<hackerone/hackerone-12dcafdd4e490253.md>) | Published scope captured | 8 | 1 | 0 | 2026-11-26T17:39:30Z |
+| [Files\.com](<hackerone/hackerone-c6cb359d6b73b906.md>) | Published scope captured | 10 | 4 | 0 | 2026-11-26T17:39:32Z |
+| [Flickr](<hackerone/hackerone-a69f11874826e3db.md>) | Published scope captured | 5 | 17 | 0 | 2026-11-26T17:39:34Z |
+| [Flipkart](<hackerone/hackerone-f78540575f647669.md>) | Published scope captured | 10 | 0 | 0 | 2026-11-26T17:39:36Z |
+| [FloQast](<hackerone/hackerone-0b6f23f3ba8510d4.md>) | Published scope captured | 4 | 4 | 0 | 2026-11-26T17:39:38Z |
+| [Flutter UK&amp;I](<hackerone/hackerone-6fdffedcced7675a.md>) | Published scope captured | 44 | 36 | 0 | 2026-11-26T17:39:40Z |
+| [ForeScout Technologies](<hackerone/hackerone-2852d82770f2b82b.md>) | Published scope captured | 63 | 8 | 0 | 2026-11-26T17:39:42Z |
+| [Front](<hackerone/hackerone-5c3e0872ae6b58dd.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:39:44Z |
 | [GitHub](<hackerone/hackerone-78c75c2f15e70de8.md>) | Published scope captured | 27 | 24 | 0 | 2026-11-07T14:48:59Z |
-| [GitLab](<hackerone/hackerone-11fb4dcd46f4d597.md>) | Published scope captured | 19 | 25 | 0 | 2026-11-25T17:59:41Z |
-| [Goldman Sachs](<hackerone/hackerone-44dcd09820086753.md>) | Published scope captured | 39 | 20 | 0 | 2026-11-25T17:59:43Z |
-| [GoodRx](<hackerone/hackerone-4588c0655c7a95e9.md>) | Published scope captured | 3 | 7 | 0 | 2026-11-25T17:59:45Z |
-| [Grab](<hackerone/hackerone-cc4625170e3d2b82.md>) | Published scope captured | 32 | 1 | 0 | 2026-11-25T17:59:47Z |
-| [Greenhouse\.io](<hackerone/hackerone-4304c321ea98e0b5.md>) | Published scope captured | 12 | 3 | 0 | 2026-11-25T17:59:49Z |
-| [Grindr](<hackerone/hackerone-72cfb26828611859.md>) | Published scope captured | 9 | 16 | 0 | 2026-11-25T17:59:51Z |
-| [HackerOne](<hackerone/hackerone-3c380cec9385aec5.md>) | Published scope captured | 26 | 8 | 0 | 2026-11-25T18:02:31Z |
-| [Hilton](<hackerone/hackerone-6fb7a0454f1fd1a0.md>) | Published scope captured | 24 | 13 | 0 | 2026-11-25T17:59:54Z |
-| [hostinger ](<hackerone/hackerone-c11655104a7ffb56.md>) | Published scope captured | 13 | 0 | 0 | 2026-11-25T17:59:56Z |
-| [HubSpot](<hackerone/hackerone-d583fe0bc6c60232.md>) | Published scope captured | 15 | 6 | 0 | 2026-11-25T17:59:57Z |
-| [Hyatt Hotels](<hackerone/hackerone-9b1526800575fa1e.md>) | Published scope captured | 58 | 0 | 0 | 2026-11-25T18:00:00Z |
-| [HYPR](<hackerone/hackerone-36c64c28743d2ac3.md>) | Published scope captured | 6 | 4 | 0 | 2026-11-25T18:00:01Z |
-| [Inditex](<hackerone/hackerone-2e0d6200af192657.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T18:00:03Z |
-| [inDrive](<hackerone/hackerone-eecd057ab79e141f.md>) | Published scope captured | 174 | 5 | 0 | 2026-11-25T18:00:05Z |
-| [Insightly](<hackerone/hackerone-1f26185a60574534.md>) | Published scope captured | 9 | 17 | 0 | 2026-11-25T18:00:07Z |
-| [Inspectorio](<hackerone/hackerone-bdb377400c03ba29.md>) | Published scope captured | 11 | 0 | 0 | 2026-11-25T18:00:09Z |
-| [Instacart](<hackerone/hackerone-d7614d7d57cad8a3.md>) | Published scope captured | 10 | 11 | 0 | 2026-11-25T18:00:11Z |
-| [Judge\.me ](<hackerone/hackerone-32855a40ca375ec2.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T18:00:13Z |
-| [KAYAK](<hackerone/hackerone-7bb261375848615b.md>) | Published scope captured | 12 | 7 | 0 | 2026-11-25T18:00:15Z |
-| [KHealth](<hackerone/hackerone-3c00e7bc437a575a.md>) | Published scope captured | 17 | 5 | 0 | 2026-11-25T18:00:17Z |
-| [Kiwi\.com](<hackerone/hackerone-199022bdc17fe291.md>) | Published scope captured | 9 | 23 | 0 | 2026-11-25T18:00:19Z |
-| [Klarna](<hackerone/hackerone-33f43a97e85494f0.md>) | Published scope captured | 8 | 8 | 0 | 2026-11-25T18:00:21Z |
-| [KOHO](<hackerone/hackerone-a70e087be0446ae5.md>) | Published scope captured | 11 | 2 | 0 | 2026-11-25T18:00:23Z |
+| [GitLab](<hackerone/hackerone-11fb4dcd46f4d597.md>) | Published scope captured | 19 | 25 | 0 | 2026-11-26T17:39:46Z |
+| [Goldman Sachs](<hackerone/hackerone-44dcd09820086753.md>) | Published scope captured | 39 | 20 | 0 | 2026-11-26T17:39:48Z |
+| [GoodRx](<hackerone/hackerone-4588c0655c7a95e9.md>) | Published scope captured | 3 | 7 | 0 | 2026-11-26T17:39:50Z |
+| [Grab](<hackerone/hackerone-cc4625170e3d2b82.md>) | Published scope captured | 32 | 1 | 0 | 2026-11-26T17:39:52Z |
+| [Greenhouse\.io](<hackerone/hackerone-4304c321ea98e0b5.md>) | Published scope captured | 12 | 3 | 0 | 2026-11-26T17:39:54Z |
+| [Grindr](<hackerone/hackerone-72cfb26828611859.md>) | Published scope captured | 9 | 16 | 0 | 2026-11-26T17:39:56Z |
+| [HackerOne](<hackerone/hackerone-3c380cec9385aec5.md>) | Published scope captured | 26 | 8 | 0 | 2026-11-26T17:42:36Z |
+| [Hilton](<hackerone/hackerone-6fb7a0454f1fd1a0.md>) | Published scope captured | 24 | 13 | 0 | 2026-11-26T17:39:58Z |
+| [hostinger ](<hackerone/hackerone-c11655104a7ffb56.md>) | Published scope captured | 13 | 0 | 0 | 2026-11-26T17:40:00Z |
+| [HubSpot](<hackerone/hackerone-d583fe0bc6c60232.md>) | Published scope captured | 15 | 6 | 0 | 2026-11-26T17:40:02Z |
+| [Hyatt Hotels](<hackerone/hackerone-9b1526800575fa1e.md>) | Published scope captured | 58 | 0 | 0 | 2026-11-26T17:40:04Z |
+| [HYPR](<hackerone/hackerone-36c64c28743d2ac3.md>) | Published scope captured | 6 | 4 | 0 | 2026-11-26T17:40:06Z |
+| [Inditex](<hackerone/hackerone-2e0d6200af192657.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:40:08Z |
+| [inDrive](<hackerone/hackerone-eecd057ab79e141f.md>) | Published scope captured | 174 | 5 | 0 | 2026-11-26T17:40:10Z |
+| [Insightly](<hackerone/hackerone-1f26185a60574534.md>) | Published scope captured | 9 | 17 | 0 | 2026-11-26T17:40:12Z |
+| [Inspectorio](<hackerone/hackerone-bdb377400c03ba29.md>) | Published scope captured | 11 | 0 | 0 | 2026-11-26T17:40:14Z |
+| [Instacart](<hackerone/hackerone-d7614d7d57cad8a3.md>) | Published scope captured | 10 | 11 | 0 | 2026-11-26T17:40:16Z |
+| [Judge\.me ](<hackerone/hackerone-32855a40ca375ec2.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:40:18Z |
+| [KAYAK](<hackerone/hackerone-7bb261375848615b.md>) | Published scope captured | 12 | 7 | 0 | 2026-11-26T17:40:20Z |
+| [KHealth](<hackerone/hackerone-3c00e7bc437a575a.md>) | Published scope captured | 17 | 5 | 0 | 2026-11-26T17:40:22Z |
+| [Kiwi\.com](<hackerone/hackerone-199022bdc17fe291.md>) | Published scope captured | 9 | 23 | 0 | 2026-11-26T17:40:24Z |
+| [Klarna](<hackerone/hackerone-33f43a97e85494f0.md>) | Published scope captured | 8 | 8 | 0 | 2026-11-26T17:40:26Z |
+| [KOHO](<hackerone/hackerone-a70e087be0446ae5.md>) | Published scope captured | 11 | 2 | 0 | 2026-11-26T17:40:28Z |
 | [Kong](<hackerone/hackerone-c06b2179f9ff3ee5.md>) | Published scope captured | 14 | 10 | 0 | 2026-10-03T15:52:17Z |
-| [Krisp](<hackerone/hackerone-fcc1cbc0cf5cbd81.md>) | Published scope captured | 15 | 6 | 0 | 2026-11-25T18:00:28Z |
-| [Kubernetes](<hackerone/hackerone-ad585ed38d23dd3c.md>) | Published scope captured | 82 | 2 | 0 | 2026-11-25T18:00:29Z |
-| [Lark Technologies](<hackerone/hackerone-647b102a2580ed64.md>) | Published scope captured | 17 | 0 | 0 | 2026-11-25T18:00:31Z |
-| [LinkedIn](<hackerone/hackerone-cfc47e0f2fb4023d.md>) | Published scope captured | 5 | 0 | 0 | 2026-11-25T18:00:33Z |
-| [Live Nation](<hackerone/hackerone-68ee1d985c2695d6.md>) | Published scope captured | 25 | 0 | 0 | 2026-11-25T18:00:35Z |
-| [Logitech](<hackerone/hackerone-3e26953a15a7b521.md>) | Published scope captured | 86 | 7 | 0 | 2026-11-25T18:00:37Z |
-| [Lyst](<hackerone/hackerone-b101a671cf81bf03.md>) | Published scope captured | 7 | 1 | 0 | 2026-11-25T18:00:39Z |
-| [Magic Eden](<hackerone/hackerone-4e9c2659476d38ce.md>) | Published scope captured | 2 | 15 | 0 | 2026-11-25T18:00:41Z |
-| [Malwarebytes](<hackerone/hackerone-751224ddab8e7db1.md>) | Published scope captured | 25 | 6 | 0 | 2026-11-25T18:00:43Z |
-| [Marriott Bug Bounty Program](<hackerone/hackerone-168d379057d4efbd.md>) | Published scope captured | 58 | 41 | 0 | 2026-11-25T18:00:45Z |
-| [Matomo](<hackerone/hackerone-6b56fd7a835400a5.md>) | Published scope captured | 11 | 5 | 0 | 2026-11-25T18:00:47Z |
-| [Meesho](<hackerone/hackerone-651dfd1ec9282b37.md>) | Published scope captured | 16 | 15 | 0 | 2026-11-25T18:00:49Z |
-| [MercadoLibre](<hackerone/hackerone-0a964b6640f044fb.md>) | Published scope captured | 78 | 9 | 0 | 2026-11-25T18:00:51Z |
-| [Mergify](<hackerone/hackerone-083acc05565add07.md>) | Published scope captured | 2 | 3 | 0 | 2026-11-25T18:00:54Z |
-| [MetaMask](<hackerone/hackerone-00b4fbc2448f61ca.md>) | Published scope captured | 13 | 22 | 0 | 2026-11-25T18:00:55Z |
-| [Modern Treasury](<hackerone/hackerone-303eb2dfd9dd9f77.md>) | Published scope captured | 2 | 6 | 0 | 2026-11-25T18:00:57Z |
-| [Moneybird](<hackerone/hackerone-5a3a0c54fb45f15c.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T18:00:59Z |
-| [MongoDB](<hackerone/hackerone-a69ab289f68ae3eb.md>) | Published scope captured | 30 | 0 | 0 | 2026-11-25T18:01:02Z |
-| [MoonPay ](<hackerone/hackerone-e423c4958e9e2df8.md>) | Published scope captured | 21 | 19 | 0 | 2026-11-25T18:01:03Z |
-| [NBA Public Bug Bounty](<hackerone/hackerone-cf81d600977a6a5e.md>) | Published scope captured | 460 | 29 | 0 | 2026-11-25T18:01:07Z |
-| [Neon](<hackerone/hackerone-e5c8c944bb1bb522.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T18:01:09Z |
-| [Netflix](<hackerone/hackerone-991e61b782021406.md>) | Published scope captured | 30 | 9 | 0 | 2026-11-25T18:01:11Z |
-| [Netlify](<hackerone/hackerone-92a8d20bbbfe3215.md>) | Published scope captured | 14 | 8 | 0 | 2026-11-25T18:01:13Z |
-| [NetScaler Public Program](<hackerone/hackerone-32bf241b5dba2270.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-25T18:01:15Z |
-| [Newegg](<hackerone/hackerone-5a81398eee5a9efe.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-25T18:01:17Z |
-| [Nextcloud](<hackerone/hackerone-77b0a541bfafd4b9.md>) | Published scope captured | 94 | 8 | 1 | 2026-11-25T18:01:19Z |
-| [Nintendo](<hackerone/hackerone-18bbf0c481f44e77.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-25T18:01:22Z |
-| [Node\.js](<hackerone/hackerone-c3c832707d1b77c9.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T18:01:23Z |
-| [Notion Labs, Inc\.](<hackerone/hackerone-ffe4ec7b21238db6.md>) | Published scope captured | 13 | 0 | 0 | 2026-11-25T18:01:25Z |
-| [OKG](<hackerone/hackerone-e2521299c0c15290.md>) | Published scope captured | 10 | 7 | 0 | 2026-11-25T18:01:28Z |
-| [Omarchy](<hackerone/hackerone-4e08cf5dbf75df7f.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T18:01:29Z |
-| [OPPO](<hackerone/hackerone-4f6c580ad93e25d2.md>) | Published scope captured | 133 | 1 | 0 | 2026-11-25T18:01:31Z |
-| [Palantir Public](<hackerone/hackerone-4098ddf23f2ec872.md>) | Published scope captured | 2 | 16 | 0 | 2026-11-25T18:01:33Z |
-| [Payoneer](<hackerone/hackerone-2caec1b148dda141.md>) | Published scope captured | 5 | 10 | 0 | 2026-11-25T18:01:35Z |
-| [PayPal](<hackerone/hackerone-012d67a58a1e6aa1.md>) | Published scope captured | 42 | 8 | 0 | 2026-11-25T18:01:37Z |
+| [Krisp](<hackerone/hackerone-fcc1cbc0cf5cbd81.md>) | Published scope captured | 15 | 6 | 0 | 2026-11-26T17:40:32Z |
+| [Kubernetes](<hackerone/hackerone-ad585ed38d23dd3c.md>) | Published scope captured | 82 | 2 | 0 | 2026-11-26T17:40:34Z |
+| [Lark Technologies](<hackerone/hackerone-647b102a2580ed64.md>) | Published scope captured | 17 | 0 | 0 | 2026-11-26T17:40:36Z |
+| [LinkedIn](<hackerone/hackerone-cfc47e0f2fb4023d.md>) | Published scope captured | 5 | 0 | 0 | 2026-11-26T17:40:38Z |
+| [Live Nation](<hackerone/hackerone-68ee1d985c2695d6.md>) | Published scope captured | 25 | 0 | 0 | 2026-11-26T17:40:40Z |
+| [Logitech](<hackerone/hackerone-3e26953a15a7b521.md>) | Published scope captured | 86 | 7 | 0 | 2026-11-26T17:40:42Z |
+| [Lyst](<hackerone/hackerone-b101a671cf81bf03.md>) | Published scope captured | 7 | 1 | 0 | 2026-11-26T17:40:44Z |
+| [Magic Eden](<hackerone/hackerone-4e9c2659476d38ce.md>) | Published scope captured | 2 | 15 | 0 | 2026-11-26T17:40:46Z |
+| [Malwarebytes](<hackerone/hackerone-751224ddab8e7db1.md>) | Published scope captured | 25 | 6 | 0 | 2026-11-26T17:40:48Z |
+| [Marriott Bug Bounty Program](<hackerone/hackerone-168d379057d4efbd.md>) | Published scope captured | 58 | 41 | 0 | 2026-11-26T17:40:50Z |
+| [Matomo](<hackerone/hackerone-6b56fd7a835400a5.md>) | Published scope captured | 11 | 5 | 0 | 2026-11-26T17:40:52Z |
+| [Meesho](<hackerone/hackerone-651dfd1ec9282b37.md>) | Published scope captured | 16 | 15 | 0 | 2026-11-26T17:40:54Z |
+| [MercadoLibre](<hackerone/hackerone-0a964b6640f044fb.md>) | Published scope captured | 78 | 9 | 0 | 2026-11-26T17:40:56Z |
+| [Mergify](<hackerone/hackerone-083acc05565add07.md>) | Published scope captured | 2 | 3 | 0 | 2026-11-26T17:40:58Z |
+| [MetaMask](<hackerone/hackerone-00b4fbc2448f61ca.md>) | Published scope captured | 13 | 22 | 0 | 2026-11-26T17:41:00Z |
+| [Modern Treasury](<hackerone/hackerone-303eb2dfd9dd9f77.md>) | Published scope captured | 2 | 6 | 0 | 2026-11-26T17:41:02Z |
+| [Moneybird](<hackerone/hackerone-5a3a0c54fb45f15c.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:41:04Z |
+| [MongoDB](<hackerone/hackerone-a69ab289f68ae3eb.md>) | Published scope captured | 30 | 0 | 0 | 2026-11-26T17:41:06Z |
+| [MoonPay ](<hackerone/hackerone-e423c4958e9e2df8.md>) | Published scope captured | 21 | 19 | 0 | 2026-11-26T17:41:08Z |
+| [NBA Public Bug Bounty](<hackerone/hackerone-cf81d600977a6a5e.md>) | Published scope captured | 460 | 29 | 0 | 2026-11-26T17:41:12Z |
+| [Neon](<hackerone/hackerone-e5c8c944bb1bb522.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:41:14Z |
+| [Netflix](<hackerone/hackerone-991e61b782021406.md>) | Published scope captured | 30 | 9 | 0 | 2026-11-26T17:41:16Z |
+| [Netlify](<hackerone/hackerone-92a8d20bbbfe3215.md>) | Published scope captured | 14 | 8 | 0 | 2026-11-26T17:41:18Z |
+| [NetScaler Public Program](<hackerone/hackerone-32bf241b5dba2270.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-26T17:41:20Z |
+| [Newegg](<hackerone/hackerone-5a81398eee5a9efe.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-26T17:41:22Z |
+| [Nextcloud](<hackerone/hackerone-77b0a541bfafd4b9.md>) | Published scope captured | 94 | 8 | 1 | 2026-11-26T17:41:24Z |
+| [Nintendo](<hackerone/hackerone-18bbf0c481f44e77.md>) | Published scope captured | 7 | 2 | 0 | 2026-11-26T17:41:26Z |
+| [Node\.js](<hackerone/hackerone-c3c832707d1b77c9.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:41:28Z |
+| [Notion Labs, Inc\.](<hackerone/hackerone-ffe4ec7b21238db6.md>) | Published scope captured | 13 | 0 | 0 | 2026-11-26T17:41:30Z |
+| [OKG](<hackerone/hackerone-e2521299c0c15290.md>) | Published scope captured | 10 | 7 | 0 | 2026-11-26T17:41:32Z |
+| [Omarchy](<hackerone/hackerone-4e08cf5dbf75df7f.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:41:34Z |
+| [OPPO](<hackerone/hackerone-4f6c580ad93e25d2.md>) | Published scope captured | 133 | 1 | 0 | 2026-11-26T17:41:36Z |
+| [Palantir Public](<hackerone/hackerone-4098ddf23f2ec872.md>) | Published scope captured | 2 | 16 | 0 | 2026-11-26T17:41:38Z |
+| [Payoneer](<hackerone/hackerone-2caec1b148dda141.md>) | Published scope captured | 5 | 10 | 0 | 2026-11-26T17:41:40Z |
+| [PayPal](<hackerone/hackerone-012d67a58a1e6aa1.md>) | Published scope captured | 42 | 8 | 0 | 2026-11-26T17:41:43Z |
 | [Phabricator](<hackerone/hackerone-0402fac19fe5f16c.md>) | No published asset rows found | 0 | 0 | 0 | 2026-11-07T14:55:35Z |
-| [Ping Identity](<hackerone/hackerone-3b233fa8dbefd0e1.md>) | Published scope captured | 10 | 16 | 0 | 2026-11-25T18:01:41Z |
-| [pixiv](<hackerone/hackerone-68a2d02689a689f6.md>) | Published scope captured | 18 | 3 | 0 | 2026-11-25T18:01:43Z |
-| [Plaid](<hackerone/hackerone-1d70fb59b821bbbf.md>) | Published scope captured | 12 | 1 | 0 | 2026-11-25T18:01:46Z |
-| [PlayStation](<hackerone/hackerone-0ae0f0abcd9f1bf5.md>) | Published scope captured | 24 | 0 | 0 | 2026-11-25T18:01:47Z |
-| [Playtika](<hackerone/hackerone-271e08de6db62deb.md>) | Published scope captured | 65 | 0 | 0 | 2026-11-25T18:01:49Z |
-| [Polygon Technology](<hackerone/hackerone-cb354b491a6a1e62.md>) | Published scope captured | 8 | 6 | 0 | 2026-11-25T18:01:52Z |
-| [PornBox](<hackerone/hackerone-da664b317804fd8c.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T18:01:53Z |
-| [PortSwigger Web Security](<hackerone/hackerone-dbd66347ba0eb606.md>) | Published scope captured | 10 | 3 | 0 | 2026-11-25T18:01:55Z |
-| [Priceline](<hackerone/hackerone-56f0e651cd324f30.md>) | Published scope captured | 13 | 45 | 0 | 2026-11-25T18:01:57Z |
-| [Privy \(Bounty\)](<hackerone/hackerone-c07ca7b89de0ad7b.md>) | Published scope captured | 12 | 4 | 0 | 2026-11-25T18:01:59Z |
-| [Quora](<hackerone/hackerone-705a38fece1de806.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-25T18:02:01Z |
-| [Razorpay](<hackerone/hackerone-dfad3106c71f5614.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T18:02:03Z |
-| [Reddit](<hackerone/hackerone-b8aa4d7b6a909e14.md>) | Published scope captured | 27 | 2 | 0 | 2026-11-25T18:02:05Z |
-| [Redox](<hackerone/hackerone-10502c04383ede18.md>) | Published scope captured | 9 | 6 | 0 | 2026-11-25T18:02:07Z |
-| [REI BBP](<hackerone/hackerone-c216c38fbaf801c2.md>) | Published scope captured | 6 | 20 | 0 | 2026-11-25T18:02:09Z |
-| [Remitly](<hackerone/hackerone-298c0611acddd5ba.md>) | Published scope captured | 73 | 1 | 0 | 2026-11-25T18:02:11Z |
-| [Ring](<hackerone/hackerone-cfd05f8a66f49fb6.md>) | Published scope captured | 30 | 3 | 0 | 2026-11-25T18:02:15Z |
-| [Ripio](<hackerone/hackerone-095c6b08f13df04b.md>) | Published scope captured | 24 | 0 | 0 | 2026-11-25T18:02:18Z |
-| [Robinhood Markets Bounty](<hackerone/hackerone-3f6fca7559bb3b76.md>) | Published scope captured | 25 | 43 | 0 | 2026-11-25T18:02:19Z |
-| [Roblox](<hackerone/hackerone-d5ff17df9da45ead.md>) | Published scope captured | 7 | 1 | 0 | 2026-11-25T18:02:21Z |
-| [Rockstar Games](<hackerone/hackerone-339885df6b37d30f.md>) | Published scope captured | 9 | 6 | 0 | 2026-11-25T18:02:23Z |
-| [Ruby](<hackerone/hackerone-a461a6e306e2ee1d.md>) | Published scope captured | 1 | 1 | 1 | 2026-11-25T18:02:25Z |
-| [S-Pankki](<hackerone/hackerone-45d61b1c047c9691.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-25T18:02:27Z |
-| [Scopely](<hackerone/hackerone-48ed906fb7a2881a.md>) | Published scope captured | 24 | 4 | 0 | 2026-11-25T18:02:29Z |
-| [Semrush](<hackerone/hackerone-b883a2de21ea0333.md>) | Published scope captured | 14 | 2 | 0 | 2026-11-25T18:02:33Z |
-| [Sheer](<hackerone/hackerone-14f59f804cd5df6d.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-25T18:02:36Z |
-| [SHEIN](<hackerone/hackerone-0cee8a293a0871cc.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-25T18:02:37Z |
-| [Shopify](<hackerone/hackerone-3debf79c9e794a10.md>) | Published scope captured | 24 | 10 | 0 | 2026-11-25T18:02:39Z |
-| [SIX Group](<hackerone/hackerone-3a67b253f8de14ec.md>) | Published scope captured | 57 | 13 | 0 | 2026-11-25T18:02:41Z |
-| [Slack](<hackerone/hackerone-f2861720b960bfb6.md>) | Published scope captured | 19 | 6 | 0 | 2026-11-25T18:02:43Z |
-| [SMTP2GO BBP](<hackerone/hackerone-b6225b1e97d9cb91.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-25T18:02:45Z |
-| [Snapchat](<hackerone/hackerone-47c0ed72a80250fc.md>) | Published scope captured | 40 | 6 | 0 | 2026-11-25T18:02:47Z |
-| [Sorare](<hackerone/hackerone-76fc9eabadee5bb8.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-25T18:02:49Z |
-| [Spotify](<hackerone/hackerone-0bad3e7ce61c64ab.md>) | Published scope captured | 45 | 9 | 0 | 2026-11-25T18:02:51Z |
-| [Starbucks](<hackerone/hackerone-7fd23ee449e142e0.md>) | Published scope captured | 10 | 6 | 0 | 2026-11-25T18:02:53Z |
-| [Starbucks China](<hackerone/hackerone-977a9a3eb5cf6e47.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-25T18:02:55Z |
-| [Starbucks Japan](<hackerone/hackerone-15d8280983f43334.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-25T18:02:57Z |
-| [Stripchat](<hackerone/hackerone-31cfb48f4f24b986.md>) | Published scope captured | 2 | 9 | 0 | 2026-11-25T18:03:00Z |
-| [Stripe](<hackerone/hackerone-511dcd018ac31f8b.md>) | Published scope captured | 55 | 3 | 0 | 2026-11-25T18:03:01Z |
-| [Superbet](<hackerone/hackerone-2508ae1b5e96cf3e.md>) | Published scope captured | 26 | 17 | 0 | 2026-11-25T18:03:04Z |
-| [Superhuman \(formerly Grammarly\)](<hackerone/hackerone-b72f75de28feb0fd.md>) | Published scope captured | 29 | 2 | 0 | 2026-11-25T18:03:05Z |
-| [Syfe](<hackerone/hackerone-a9e7d05ce0502050.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-25T18:03:07Z |
-| [Temu](<hackerone/hackerone-4c387951bfbc9b93.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T18:03:09Z |
-| [The Browser Company of NYC](<hackerone/hackerone-1c6388c9199b6308.md>) | Published scope captured | 6 | 5 | 0 | 2026-11-25T17:57:41Z |
-| [TikTok](<hackerone/hackerone-b7411606785f28e7.md>) | Published scope captured | 35 | 14 | 0 | 2026-11-25T18:03:11Z |
-| [Tinder](<hackerone/hackerone-295545fd0cb601c5.md>) | Published scope captured | 8 | 5 | 0 | 2026-11-25T18:03:13Z |
-| [Tools for Humanity](<hackerone/hackerone-ee8b3018e41b8341.md>) | Published scope captured | 22 | 3 | 0 | 2026-11-25T18:03:16Z |
-| [Tor](<hackerone/hackerone-0f04a22510d4afeb.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T18:03:17Z |
-| [Trendyol](<hackerone/hackerone-a817b6b76a06cd80.md>) | Published scope captured | 11 | 0 | 0 | 2026-11-25T18:03:19Z |
-| [Trip\.com](<hackerone/hackerone-c83bd9435f02861c.md>) | Published scope captured | 16 | 4 | 0 | 2026-11-25T18:03:21Z |
-| [TRON DAO](<hackerone/hackerone-10c3ed6c591eada2.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-25T18:03:23Z |
-| [Twilio](<hackerone/hackerone-8912ab2c0977be9a.md>) | Published scope captured | 84 | 29 | 0 | 2026-11-25T18:03:25Z |
-| [Uber](<hackerone/hackerone-349032f1d4571d4a.md>) | Published scope captured | 4 | 20 | 0 | 2026-11-25T18:03:28Z |
-| [Ubiquiti Inc\.](<hackerone/hackerone-5cc112a4979f3a8c.md>) | Published scope captured | 53 | 14 | 0 | 2026-11-25T18:03:32Z |
-| [Udemy](<hackerone/hackerone-c16550dd976c192e.md>) | Published scope captured | 2 | 20 | 0 | 2026-11-25T18:03:29Z |
+| [Ping Identity](<hackerone/hackerone-3b233fa8dbefd0e1.md>) | Published scope captured | 10 | 16 | 0 | 2026-11-26T17:41:46Z |
+| [pixiv](<hackerone/hackerone-68a2d02689a689f6.md>) | Published scope captured | 18 | 3 | 0 | 2026-11-26T17:41:48Z |
+| [Plaid](<hackerone/hackerone-1d70fb59b821bbbf.md>) | Published scope captured | 12 | 1 | 0 | 2026-11-26T17:41:50Z |
+| [PlayStation](<hackerone/hackerone-0ae0f0abcd9f1bf5.md>) | Published scope captured | 24 | 0 | 0 | 2026-11-26T17:41:52Z |
+| [Playtika](<hackerone/hackerone-271e08de6db62deb.md>) | Published scope captured | 65 | 0 | 0 | 2026-11-26T17:41:54Z |
+| [Polygon Technology](<hackerone/hackerone-cb354b491a6a1e62.md>) | Published scope captured | 8 | 6 | 0 | 2026-11-26T17:41:56Z |
+| [PornBox](<hackerone/hackerone-da664b317804fd8c.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:41:58Z |
+| [PortSwigger Web Security](<hackerone/hackerone-dbd66347ba0eb606.md>) | Published scope captured | 10 | 3 | 0 | 2026-11-26T17:42:00Z |
+| [Priceline](<hackerone/hackerone-56f0e651cd324f30.md>) | Published scope captured | 13 | 45 | 0 | 2026-11-26T17:42:02Z |
+| [Privy \(Bounty\)](<hackerone/hackerone-c07ca7b89de0ad7b.md>) | Published scope captured | 12 | 4 | 0 | 2026-11-26T17:42:04Z |
+| [Quora](<hackerone/hackerone-705a38fece1de806.md>) | Published scope captured | 4 | 0 | 0 | 2026-11-26T17:42:06Z |
+| [Razorpay](<hackerone/hackerone-dfad3106c71f5614.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:42:08Z |
+| [Reddit](<hackerone/hackerone-b8aa4d7b6a909e14.md>) | Published scope captured | 27 | 2 | 0 | 2026-11-26T17:42:10Z |
+| [Redox](<hackerone/hackerone-10502c04383ede18.md>) | Published scope captured | 9 | 6 | 0 | 2026-11-26T17:42:12Z |
+| [REI BBP](<hackerone/hackerone-c216c38fbaf801c2.md>) | Published scope captured | 6 | 20 | 0 | 2026-11-26T17:42:14Z |
+| [Remitly](<hackerone/hackerone-298c0611acddd5ba.md>) | Published scope captured | 73 | 1 | 0 | 2026-11-26T17:42:16Z |
+| [Ring](<hackerone/hackerone-cfd05f8a66f49fb6.md>) | Published scope captured | 30 | 3 | 0 | 2026-11-26T17:42:20Z |
+| [Ripio](<hackerone/hackerone-095c6b08f13df04b.md>) | Published scope captured | 24 | 0 | 0 | 2026-11-26T17:42:22Z |
+| [Robinhood Markets Bounty](<hackerone/hackerone-3f6fca7559bb3b76.md>) | Published scope captured | 25 | 43 | 0 | 2026-11-26T17:42:24Z |
+| [Roblox](<hackerone/hackerone-d5ff17df9da45ead.md>) | Published scope captured | 7 | 1 | 0 | 2026-11-26T17:42:26Z |
+| [Rockstar Games](<hackerone/hackerone-339885df6b37d30f.md>) | Published scope captured | 9 | 6 | 0 | 2026-11-26T17:42:28Z |
+| [Ruby](<hackerone/hackerone-a461a6e306e2ee1d.md>) | Published scope captured | 1 | 1 | 1 | 2026-11-26T17:42:30Z |
+| [S-Pankki](<hackerone/hackerone-45d61b1c047c9691.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-26T17:42:32Z |
+| [Scopely](<hackerone/hackerone-48ed906fb7a2881a.md>) | Published scope captured | 24 | 4 | 0 | 2026-11-26T17:42:34Z |
+| [Semrush](<hackerone/hackerone-b883a2de21ea0333.md>) | Published scope captured | 14 | 2 | 0 | 2026-11-26T17:42:38Z |
+| [Sheer](<hackerone/hackerone-14f59f804cd5df6d.md>) | Published scope captured | 2 | 0 | 0 | 2026-11-26T17:42:40Z |
+| [SHEIN](<hackerone/hackerone-0cee8a293a0871cc.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-26T17:42:42Z |
+| [Shopify](<hackerone/hackerone-3debf79c9e794a10.md>) | Published scope captured | 24 | 10 | 0 | 2026-11-26T17:42:44Z |
+| [SIX Group](<hackerone/hackerone-3a67b253f8de14ec.md>) | Published scope captured | 57 | 13 | 0 | 2026-11-26T17:42:46Z |
+| [Slack](<hackerone/hackerone-f2861720b960bfb6.md>) | Published scope captured | 19 | 6 | 0 | 2026-11-26T17:42:48Z |
+| [SMTP2GO BBP](<hackerone/hackerone-b6225b1e97d9cb91.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-26T17:42:50Z |
+| [Snapchat](<hackerone/hackerone-47c0ed72a80250fc.md>) | Published scope captured | 40 | 6 | 0 | 2026-11-26T17:42:53Z |
+| [Sorare](<hackerone/hackerone-76fc9eabadee5bb8.md>) | Published scope captured | 3 | 0 | 0 | 2026-11-26T17:42:54Z |
+| [Spotify](<hackerone/hackerone-0bad3e7ce61c64ab.md>) | Published scope captured | 45 | 9 | 0 | 2026-11-26T17:42:56Z |
+| [Starbucks](<hackerone/hackerone-7fd23ee449e142e0.md>) | Published scope captured | 10 | 6 | 0 | 2026-11-26T17:42:58Z |
+| [Starbucks China](<hackerone/hackerone-977a9a3eb5cf6e47.md>) | Published scope captured | 3 | 1 | 0 | 2026-11-26T17:43:00Z |
+| [Starbucks Japan](<hackerone/hackerone-15d8280983f43334.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-26T17:43:02Z |
+| [Stripchat](<hackerone/hackerone-31cfb48f4f24b986.md>) | Published scope captured | 2 | 9 | 0 | 2026-11-26T17:43:04Z |
+| [Stripe](<hackerone/hackerone-511dcd018ac31f8b.md>) | Published scope captured | 55 | 3 | 0 | 2026-11-26T17:43:06Z |
+| [Superbet](<hackerone/hackerone-2508ae1b5e96cf3e.md>) | Published scope captured | 26 | 17 | 0 | 2026-11-26T17:43:08Z |
+| [Superhuman \(formerly Grammarly\)](<hackerone/hackerone-b72f75de28feb0fd.md>) | Published scope captured | 29 | 2 | 0 | 2026-11-26T17:43:10Z |
+| [Syfe](<hackerone/hackerone-a9e7d05ce0502050.md>) | Published scope captured | 8 | 0 | 0 | 2026-11-26T17:43:12Z |
+| [Temu](<hackerone/hackerone-4c387951bfbc9b93.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:43:14Z |
+| [The Browser Company of NYC](<hackerone/hackerone-1c6388c9199b6308.md>) | Published scope captured | 6 | 5 | 0 | 2026-11-26T17:37:46Z |
+| [TikTok](<hackerone/hackerone-b7411606785f28e7.md>) | Published scope captured | 35 | 14 | 0 | 2026-11-26T17:43:16Z |
+| [Tinder](<hackerone/hackerone-295545fd0cb601c5.md>) | Published scope captured | 8 | 5 | 0 | 2026-11-26T17:43:18Z |
+| [Tools for Humanity](<hackerone/hackerone-ee8b3018e41b8341.md>) | Published scope captured | 22 | 3 | 0 | 2026-11-26T17:43:20Z |
+| [Tor](<hackerone/hackerone-0f04a22510d4afeb.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:43:22Z |
+| [Trendyol](<hackerone/hackerone-a817b6b76a06cd80.md>) | Published scope captured | 11 | 0 | 0 | 2026-11-26T17:43:24Z |
+| [Trip\.com](<hackerone/hackerone-c83bd9435f02861c.md>) | Published scope captured | 16 | 4 | 0 | 2026-11-26T17:43:26Z |
+| [TRON DAO](<hackerone/hackerone-10c3ed6c591eada2.md>) | Published scope captured | 1 | 0 | 0 | 2026-11-26T17:43:28Z |
+| [Twilio](<hackerone/hackerone-8912ab2c0977be9a.md>) | Published scope captured | 84 | 29 | 0 | 2026-11-26T17:43:30Z |
+| [Uber](<hackerone/hackerone-349032f1d4571d4a.md>) | Published scope captured | 4 | 20 | 0 | 2026-11-26T17:43:32Z |
+| [Ubiquiti Inc\.](<hackerone/hackerone-5cc112a4979f3a8c.md>) | Published scope captured | 53 | 14 | 0 | 2026-11-26T17:43:36Z |
+| [Udemy](<hackerone/hackerone-c16550dd976c192e.md>) | Published scope captured | 2 | 20 | 0 | 2026-11-26T17:43:34Z |
 | [Unico IDtech](<hackerone/hackerone-87b3e665c8fafc1d.md>) | Published scope captured | 17 | 2 | 0 | 2026-11-24T18:35:48Z |
-| [Urban Company](<hackerone/hackerone-d3b51dae0c3f0eb6.md>) | Published scope captured | 6 | 1 | 0 | 2026-11-25T18:03:35Z |
-| [Valve](<hackerone/hackerone-85918720d8eeefaf.md>) | Published scope captured | 21 | 5 | 0 | 2026-11-25T18:03:38Z |
-| [Varonis](<hackerone/hackerone-d1cb437e64fff5a7.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-25T18:03:39Z |
-| [Vercel](<hackerone/hackerone-4d6a13c23ed1da52.md>) | Published scope captured | 26 | 1 | 0 | 2026-11-25T18:03:41Z |
-| [Verily Life Sciences](<hackerone/hackerone-802a120c710a4141.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T18:03:44Z |
-| [Via](<hackerone/hackerone-c9db05e34bcf3c4b.md>) | Published scope captured | 13 | 6 | 0 | 2026-11-25T18:02:13Z |
-| [Vimeo](<hackerone/hackerone-e1f453b60fd3bf62.md>) | Published scope captured | 30 | 39 | 0 | 2026-11-25T18:03:45Z |
-| [Visa](<hackerone/hackerone-948ca6c9ff8f5ff6.md>) | Published scope captured | 172 | 3 | 0 | 2026-11-25T18:03:47Z |
-| [Vodafone Oman](<hackerone/hackerone-9e8b2c50f8b891fb.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-25T18:03:49Z |
-| [Walt\.io](<hackerone/hackerone-01350c382d147687.md>) | Published scope captured | 11 | 3 | 0 | 2026-11-25T18:03:52Z |
-| [Wealthsimple](<hackerone/hackerone-22f0beaf6ecd3a39.md>) | Published scope captured | 6 | 13 | 0 | 2026-11-25T18:03:53Z |
-| [Wells Fargo Bounty](<hackerone/hackerone-138ac4fca16a5da5.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-25T18:03:55Z |
-| [Whatnot](<hackerone/hackerone-d6751b75144820e2.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-25T18:03:58Z |
-| [Whoop Bug Bounty](<hackerone/hackerone-a9717fdc8930b44c.md>) | Published scope captured | 8 | 4 | 0 | 2026-11-25T18:04:00Z |
-| [Wickr](<hackerone/hackerone-19410716c93f3988.md>) | Published scope captured | 13 | 1 | 0 | 2026-11-25T18:04:02Z |
-| [WisdomTree, Inc\.](<hackerone/hackerone-066eed54718ea6a5.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-25T18:04:04Z |
-| [Wolt](<hackerone/hackerone-715873e15b2e87a2.md>) | Published scope captured | 12 | 12 | 0 | 2026-11-25T18:04:05Z |
-| [WordPress](<hackerone/hackerone-283069b8a0f4c015.md>) | Published scope captured | 23 | 10 | 0 | 2026-11-25T18:04:07Z |
-| [X / xAI](<hackerone/hackerone-441cfdf2fe7aac5e.md>) | Published scope captured | 23 | 1 | 0 | 2026-11-25T18:04:09Z |
-| [Xiaomi](<hackerone/hackerone-12275be548221ef0.md>) | Published scope captured | 66 | 0 | 0 | 2026-11-25T18:04:11Z |
-| [XVIDEOS](<hackerone/hackerone-79c51c2e3a3d21d5.md>) | Published scope captured | 5 | 2 | 0 | 2026-11-25T18:04:13Z |
-| [Yelp](<hackerone/hackerone-0500a6238c38ee02.md>) | Published scope captured | 8 | 7 | 0 | 2026-11-25T18:04:18Z |
-| [Yoti](<hackerone/hackerone-06ff1835f329622d.md>) | Published scope captured | 9 | 4 | 0 | 2026-11-25T18:04:20Z |
-| [Yuga Labs](<hackerone/hackerone-f46392a06bbe04ba.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-25T18:04:21Z |
-| [Zooplus](<hackerone/hackerone-43c6d3331c32744a.md>) | Published scope captured | 4 | 34 | 0 | 2026-11-25T18:04:23Z |
+| [Urban Company](<hackerone/hackerone-d3b51dae0c3f0eb6.md>) | Published scope captured | 6 | 1 | 0 | 2026-11-26T17:43:40Z |
+| [Valve](<hackerone/hackerone-85918720d8eeefaf.md>) | Published scope captured | 21 | 5 | 0 | 2026-11-26T17:43:42Z |
+| [Varonis](<hackerone/hackerone-d1cb437e64fff5a7.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-26T17:43:44Z |
+| [Vercel](<hackerone/hackerone-4d6a13c23ed1da52.md>) | Published scope captured | 26 | 1 | 0 | 2026-11-26T17:43:46Z |
+| [Verily Life Sciences](<hackerone/hackerone-802a120c710a4141.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:43:48Z |
+| [Via](<hackerone/hackerone-c9db05e34bcf3c4b.md>) | Published scope captured | 13 | 6 | 0 | 2026-11-26T17:42:18Z |
+| [Vimeo](<hackerone/hackerone-e1f453b60fd3bf62.md>) | Published scope captured | 30 | 39 | 0 | 2026-11-26T17:43:50Z |
+| [Visa](<hackerone/hackerone-948ca6c9ff8f5ff6.md>) | Published scope captured | 172 | 3 | 0 | 2026-11-26T17:43:52Z |
+| [Vodafone Oman](<hackerone/hackerone-9e8b2c50f8b891fb.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-26T17:43:54Z |
+| [Walt\.io](<hackerone/hackerone-01350c382d147687.md>) | Published scope captured | 11 | 3 | 0 | 2026-11-26T17:43:56Z |
+| [Wealthsimple](<hackerone/hackerone-22f0beaf6ecd3a39.md>) | Published scope captured | 6 | 13 | 0 | 2026-11-26T17:43:58Z |
+| [Wells Fargo Bounty](<hackerone/hackerone-138ac4fca16a5da5.md>) | Published scope captured | 14 | 0 | 0 | 2026-11-26T17:44:00Z |
+| [Whatnot](<hackerone/hackerone-d6751b75144820e2.md>) | Published scope captured | 7 | 0 | 0 | 2026-11-26T17:44:02Z |
+| [Whoop Bug Bounty](<hackerone/hackerone-a9717fdc8930b44c.md>) | Published scope captured | 8 | 4 | 0 | 2026-11-26T17:44:04Z |
+| [Wickr](<hackerone/hackerone-19410716c93f3988.md>) | Published scope captured | 13 | 1 | 0 | 2026-11-26T17:44:06Z |
+| [WisdomTree, Inc\.](<hackerone/hackerone-066eed54718ea6a5.md>) | Published scope captured | 6 | 3 | 0 | 2026-11-26T17:44:08Z |
+| [Wolt](<hackerone/hackerone-715873e15b2e87a2.md>) | Published scope captured | 12 | 12 | 0 | 2026-11-26T17:44:12Z |
+| [WordPress](<hackerone/hackerone-283069b8a0f4c015.md>) | Published scope captured | 23 | 10 | 0 | 2026-11-26T17:44:14Z |
+| [X / xAI](<hackerone/hackerone-441cfdf2fe7aac5e.md>) | Published scope captured | 23 | 1 | 0 | 2026-11-26T17:44:15Z |
+| [Xiaomi](<hackerone/hackerone-12275be548221ef0.md>) | Published scope captured | 66 | 0 | 0 | 2026-11-26T17:44:17Z |
+| [XVIDEOS](<hackerone/hackerone-79c51c2e3a3d21d5.md>) | Published scope captured | 5 | 2 | 0 | 2026-11-26T17:44:19Z |
+| [Yelp](<hackerone/hackerone-0500a6238c38ee02.md>) | Published scope captured | 8 | 7 | 0 | 2026-11-26T17:44:21Z |
+| [Yoti](<hackerone/hackerone-06ff1835f329622d.md>) | Published scope captured | 9 | 4 | 0 | 2026-11-26T17:44:23Z |
+| [Yuga Labs](<hackerone/hackerone-f46392a06bbe04ba.md>) | Published scope captured | 6 | 0 | 0 | 2026-11-26T17:44:25Z |
+| [Zooplus](<hackerone/hackerone-43c6d3331c32744a.md>) | Published scope captured | 4 | 34 | 0 | 2026-11-26T17:44:27Z |
