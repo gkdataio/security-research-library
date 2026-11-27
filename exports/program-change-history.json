@@ -15594,6 +15594,91 @@
           ]
         }
       ]
+    },
+    {
+      "id": "7f191016bf6cf036cd09b03f61e467e2d09e21dbd46e3aa066e694c19d850f99",
+      "recorded_at": "2026-11-27T17:34:53Z",
+      "baseline_commit": "69b9b158be71ed29ed7ffd5b840ea54435a7d120",
+      "baseline_digest": "c17932beaccb64a4fe180c2129d8bc90f520ef7a8436ebee39cc7d098b21762f",
+      "current_digest": "9c89b1a662d1d23007d22953070234465e30e9cf3aa72022aa67562e08f49fca",
+      "changes": [
+        {
+          "key": "listing:bugcrowd-75b9247529d02120",
+          "name": "Bitdefender",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/bitdefender",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-12T11:42:12.162Z",
+              "after": "2026-11-27T10:09:24.868Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/bitdefender/changelog/3a45252c-eccf-4d60-a163-77362fa66418.json",
+              "after": "https://bugcrowd.com/engagements/bitdefender/changelog/2a923059-48fc-4306-b0cf-03500fd1267b.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-c8b3be65a8ce7ce4",
+          "name": "SaaSJet",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/saasjet",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-08-19T19:10:10.985Z",
+              "after": "2026-11-27T10:06:36.965Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/saasjet/changelog/be05e638-e07d-4601-84cc-47c2b7facc60.json",
+              "after": "https://bugcrowd.com/engagements/saasjet/changelog/2abe9f32-dc40-4af0-b38c-1343f14f8965.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-f1e469c7b87bc83f",
+          "name": "IAG Transform Vulnerability Disclosure Engagement",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/iag-transform-vdp-pro",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-09-29T12:48:40.077Z",
+              "after": "2026-11-26T18:56:21.066Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/iag-transform-vdp-pro/changelog/04799316-ac45-47bf-b1e4-bb6641147f74.json",
+              "after": "https://bugcrowd.com/engagements/iag-transform-vdp-pro/changelog/926e7649-2da2-417d-a781-f6457ea90f4d.json"
+            }
+          ]
+        },
+        {
+          "key": "listing:bugcrowd-f1eb6c244ded627b",
+          "name": "codeclou GmbH",
+          "platform": "Bugcrowd",
+          "program_url": "https://bugcrowd.com/engagements/codeclou",
+          "kind": "changed",
+          "fields": [
+            {
+              "field": "capture.published_at",
+              "before": "2026-11-22T10:44:21.636Z",
+              "after": "2026-11-27T12:51:59.846Z"
+            },
+            {
+              "field": "capture.source_url",
+              "before": "https://bugcrowd.com/engagements/codeclou/changelog/b6787dbb-b5fe-403a-be2d-7b5b6a3afd7b.json",
+              "after": "https://bugcrowd.com/engagements/codeclou/changelog/a19f539a-119a-45ce-9a48-dfb149771597.json"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

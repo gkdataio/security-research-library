@@ -10,7 +10,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-26T17:16:10Z.
+**Capture time:** 2026-11-27T17:00:52Z.
 
 **Directory category:** Vulnerability Disclosure.
 
@@ -18,7 +18,7 @@ Official public Bugcrowd directory and scope-table snapshots. A listing or asset
 
 **Access label:** open.
 
-**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/iag-transform-vdp-pro/changelog/04799316-ac45-47bf-b1e4-bb6641147f74.json>)
+**Scope source:** [Official source 1](<https://bugcrowd.com/engagements/iag-transform-vdp-pro/changelog/926e7649-2da2-417d-a781-f6457ea90f4d.json>)
 
 ## In-scope entries (3)
 

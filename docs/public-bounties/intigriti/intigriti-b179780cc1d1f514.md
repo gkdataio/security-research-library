@@ -12,7 +12,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Capture time:** 2026-10-03T15:50:03Z.
 
-**Latest refresh failed (2026-11-26T17:46:28Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
+**Latest refresh failed (2026-11-27T17:31:09Z):** Redirect requires manual review; no redirect was followed. The capture status, rows and date on this page are retained evidence, not a current scope verification. [Refresh audit](<../../../data/scope-refresh-status.json>).
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/ideals/ideals/preview/detail>)
 
