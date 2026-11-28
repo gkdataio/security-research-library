@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-27T17:32:16Z.
+**Capture time:** 2026-11-28T16:23:43Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/rivian/rivianbugbounty/detail>)
 

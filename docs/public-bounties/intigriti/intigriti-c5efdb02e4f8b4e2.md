@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-27T17:33:04Z.
+**Capture time:** 2026-11-28T16:24:30Z.
 
 **Scope source:** [Official source 1](<https://app.intigriti.com/programs/vrtnv/vrtnv/detail>)
 

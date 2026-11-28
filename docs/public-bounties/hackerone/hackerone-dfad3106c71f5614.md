@@ -10,7 +10,7 @@ Dated official directory and scope-table snapshots for publicly listed bounties.
 
 **Policy review:** scope table only.
 
-**Capture time:** 2026-11-27T17:26:52Z.
+**Capture time:** 2026-11-28T16:18:18Z.
 
 **Scope source:** [Official source 1](<https://hackerone.com/teams/razorpay/assets/download_csv.csv>)
 
